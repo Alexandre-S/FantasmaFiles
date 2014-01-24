@@ -26,14 +26,12 @@ if(side _source != west && alive _source) then
 	{
 		if(alive _source) then
 		{
-			serv_killed = [_source,"187V"];
-			publicVariableServer "serv_killed";
+			[[getPlayerUID _source,name _source,"187V"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		};
 	}
 		else
 	{
-		serv_killed = [_source,"187"];
-		publicVariableServer "serv_killed";
+		[[getPlayerUID _source,name _source,"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	};
 };
 
@@ -46,16 +44,27 @@ if(side _source == west && !life_use_atm) then
 	};
 };
 
+//New addition for idiots.
+if(side _source == civilian) then
+{
+	if(vehicle _source isKindOf "LandVehicle") then {
+		[[2],"life_fnc_removeLicenses",_source,false] spawn life_fnc_MP;
+	} else {
+		[[3],"life_fnc_removeLicenses",_source,false] spawn life_fnc_MP;
+	};
+};
+
 if(side _source == west && vehicle _source == _source && playerSide == civilian) then
 {
 	[[player,_source,true],"life_fnc_wantedBounty",false,false] spawn life_fnc_MP;
-	[[player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
+	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
+	[[getPlayerUID player],"life_fnc_wantedPunish",false,false] spawn life_fnc_MP;
 }
 	else
 {
 	if(playerSide == civilian) then
 	{
-		[[player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
+		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 	};
 };
 { _unit removeAction _x; } foreach life_actions;

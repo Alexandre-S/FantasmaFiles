@@ -21,6 +21,7 @@ publicVariable "life_fnc_vehInventory";
 [] execVM "\life_server\vars.sqf";
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
+[] call compile preProcessFileLineNumbers "\life_server\SHK_pos\shk_pos_init.sqf";
 
 //Only run if truly dedicated
 if(!hasInterface) then
@@ -29,8 +30,6 @@ if(!hasInterface) then
 };
 
 [] spawn STS_fnc_cleanup;
-life_fnc_wantedAdd = compileFinal PreprocessFileLineNumbers "\life_server\wanted_add.sqf";
-life_fnc_wantedRemove = compileFinal PreprocessFileLineNumbers "\life_server\wanted_remove.sqf";
 life_gang_list = [];
 publicVariable "life_gang_list";
 life_wanted_list = [];
@@ -64,3 +63,14 @@ publicVariable "STS_fnc_addVehicle2Chain";
 publicVariable "life_fnc_fedSuccess";
 
 [] spawn STS_fnc_federalUpdate;
+
+[] spawn
+{
+	while {true} do
+	{
+		sleep (30 * 60);
+		{
+			_x setVariable["sellers",[],true];
+		} foreach [Dealer_1,Dealer_2,Dealer_3];
+	};
+};

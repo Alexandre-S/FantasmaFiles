@@ -25,6 +25,7 @@ life_action_inUse = false;
 life_spikestrip = ObjNull;
 life_respawn_timer = 35;
 life_has_insurance = false;
+life_knockout = false;
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];
 /*
@@ -32,8 +33,8 @@ life_clothing_purchase = [-1,-1,-1,-1,-1];
 ****** Weight Variables *****
 *****************************
 */
-life_maxWeight = 64; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
-life_maxWeightT = 64; //Static variable representing the players max carrying weight on start.
+life_maxWeight = 24; //Identifies the max carrying weight (gets adjusted throughout game when wearing different types of clothing).
+life_maxWeightT = 24; //Static variable representing the players max carrying weight on start.
 life_carryWeight = 0; //Represents the players current inventory weight (MUST START AT 0).
 
 /*
@@ -137,7 +138,8 @@ life_inv_items =
 	"life_inv_diamondr",
 	"life_inv_spikeStrip",
 	"life_inv_rock",
-	"life_inv_cement"
+	"life_inv_cement",
+	"life_inv_goldbar"
 ];
 
 //Setup variable inv vars.
@@ -152,7 +154,6 @@ life_licenses =
 	["license_civ_air","civ"],
 	["license_civ_heroin","civ"],
 	["license_civ_marijuana","civ"],
-	["license_civ_medmarijuana","civ"],
 	["license_civ_gang","civ"],
 	["license_civ_boat","civ"],
 	["license_civ_oil","civ"],

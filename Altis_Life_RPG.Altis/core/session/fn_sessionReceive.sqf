@@ -50,7 +50,7 @@ switch (playerSide) do
 		life_blacklisted = call compile format["%1",(_session select 8)];
 		[] spawn life_fnc_loadGear;
 		//if(life_adminlevel > 0) then {[] execVM "core\client\aconfig.sqf";};
-		life_donator = 0;
+		life_donator = parseNumber (_session select 9);
 	};
 	
 	case civilian:

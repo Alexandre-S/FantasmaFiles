@@ -23,7 +23,7 @@ switch (_side) do
 			When add new additional licenses, positions, etc to the cop side please add the rows to the database and add those rows in here and adjust the client-side receivers,
 			If you do not adjust both server-side & client side receivers your new added in content will be broken and a waste of time.
 		*/
-		_query = format["SELECT playerid, name, cash, bankacc, coplevel, cop_licenses, cop_gear, adminlevel, blacklist FROM players WHERE playerid='%1'",_uid];
+		_query = format["SELECT playerid, name, cash, bankacc, coplevel, cop_licenses, cop_gear, adminlevel, blacklist, donatorlvl FROM players WHERE playerid='%1'",_uid];
 	};
 	
 	case civilian:

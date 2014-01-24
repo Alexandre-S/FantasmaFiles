@@ -3,9 +3,9 @@ class CfgPatches
 {
 	class life_server
 	{
-		units[] = {};
+		units[] = {"C_man_1"};
 		weapons[] = {};
-		requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Soft_F_Offroad_01"};
+		requiredAddons[] = {"A3_Data_F","A3_Soft_F","A3_Soft_F_Offroad_01","A3_Characters_F"};
 		fileName = "life_server.pbo";
 		author[]= {"TAW_Tonic"}; 
 	};
@@ -47,6 +47,9 @@ class CfgFunctions
 			class wantedBounty {};
 			class wantedTicket {};
 			class wantedPardon {};
+			class wantedRemove {};
+			class wantedAdd {};
+			class wantedPunish {};
 		};
 		
 		class Jail_Sys
@@ -62,6 +65,10 @@ class CfgFunctions
 			class vehTakeItem {};
 			class vehInventory {};
 			class fedSuccess {};
+			class safeOpen {};
+			class safeInventory {};
+			class safeTake {};
+			class safeStore {};
 		};	
 	};
 	
@@ -91,6 +98,7 @@ class CfgFunctions
 			class robberyState {};
 			class logIt {};
 			class federalUpdate {};
+			class isUIDActive {};
 		};
 	};
 };
@@ -98,6 +106,21 @@ class CfgFunctions
 class CfgVehicles
 {
 	class Car_F;
+	class CAManBase;
+	class Civilian;
+	class Civilian_F : Civilian
+	{
+		class EventHandlers;
+	};
+	
+	class C_man_1 : Civilian_F
+	{
+		class EventHandlers: EventHandlers
+		{
+			init = "(_this select 0) execVM ""\life_server\fix_headgear.sqf""";
+		};
+	};
+	
 	class Offroad_01_base_F: Car_F
 	{
 		class EventHandlers;
