@@ -50,7 +50,7 @@ class Life_vehicle_shop {
 			w = 0.76; h = 0.4;
 		};
 		
-		class ColorList : Life_RscCombo 
+		class ColorList : Life_RscCombo
 		{
 			idc = 2303;
 			x = 0.42; y = 0.68;
