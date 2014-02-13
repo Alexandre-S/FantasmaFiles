@@ -158,6 +158,7 @@ class Life_Client_Core
 		class clearVehicleAmmo {};
 		class pulloutVeh {};
 		class nearUnits {};
+		class fedSuccess {};
 	};
 	
 	class Network
@@ -192,6 +193,9 @@ class Life_Client_Core
 		class openInventory {};
 		class lockVehicle {};
 		class vehicleOwners {};
+		class vehStoreItem {};
+		class vehTakeItem {};
+		class vehInventory {};
 	};
 	
 	class Cop
@@ -250,6 +254,9 @@ class Life_Client_Core
 		class virt_menu {};
 		class virt_update {};
 		class virt_sell {};
+		class chopShopMenu {};
+		class chopShopSelection {};
+		class chopShopSell {};
 	};
 	
 	class Items

@@ -152,7 +152,7 @@ class TAW_VD
 		{
 			idc = -1;
 			text = "Tags ON";
-			action = "[] call life_fnc_playerTags";
+			action = "LIFE_ID_PlayerTags = [""LIFE_PlayerTags"",""onEachFrame"",""life_fnc_playerTags""] call BIS_fnc_addStackedEventHandler;";
 			sizeEx = 0.04;
 			
 			x = 0.38; y = 0.50;
@@ -163,7 +163,7 @@ class TAW_VD
 		{
 			idc = -1;
 			text = "Tags OFF";
-			action = "onEachFrame {nil}";
+			action = "[LIFE_ID_PlayerTags,""onEachFrame""] call BIS_fnc_removeStackedEventHandler;";
 			sizeEx = 0.04;
 			
 			x = 0.56; y = 0.50;

@@ -11,7 +11,7 @@ class Life_RscScrollBar
 	scrollSpeed = 0.06;
 	width = 0;
 	height = 0;
-	autoScrollEnabled = 0;
+	autoScrollEnabled = 1;
 	autoScrollSpeed = -1;
 	autoScrollDelay = 5;
 	autoScrollRewind = 0;
@@ -77,9 +77,16 @@ class Life_RscListNBox
 	colorScrollbar[] = {0.95,0.95,0.95,1};
 	colorSelect[] = {0,0,0,1};
 	colorSelect2[] = {0,0,0,1};
-	colorSelectBackground[] = {0.95,0.95,0.95,1};
+	colorSelectBackground[] = {0.8,0.8,0.8,1};
 	colorSelectBackground2[] = {1,1,1,0.5};
+	soundSelect[] = {"",0.1,1};
+	soundExpand[] = {"",0.1,1};
+	soundCollapse[] = {"",0.1,1};
 	period = 1.2;
+	maxHistoryDelay = 0.5;
+	autoScrollSpeed = -1;
+	autoScrollDelay = 5;
+	autoScrollRewind = 0;
 	class ListScrollBar: Life_RscScrollBar{};
 	class ScrollBar: Life_RscScrollBar{};
 };

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_weaponShopCfg.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -51,7 +52,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (life_coplevel < 2): {"You are not at a patrol officer rank!"};
+			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
 			default
 			{
 				["Altis Patrol Officer Shop",
@@ -76,7 +77,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"You are not a cop!"};
-			case (life_coplevel < 3): {"You are not at a sergeant rank!"};
+			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
 			default
 			{
 				["Altis Sergeant Officer Shop",
@@ -154,8 +155,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (life_donator == 0): {"You are not a donator!"};
-			case (life_donator == 1):
+			case (__GETC__(life_donator) == 0): {"You are not a donator!"};
+			case (__GETC__(life_donator) == 1):
 			{
 				["STS Donator Shop Tier 1",
 					[
@@ -170,7 +171,7 @@ switch(_shop) do
 				];
 			};
 
-			case (life_donator == 2):
+			case (__GETC__(life_donator) == 2):
 			{
 				["STS Donator Shop Tier 2",
 					[
@@ -188,7 +189,7 @@ switch(_shop) do
 				];
 			};
 
-			case (life_donator >= 3):
+			case (__GETC__(life_donator) >= 3):
 			{
 				["STS Donator Shop Tier 3",
 					[

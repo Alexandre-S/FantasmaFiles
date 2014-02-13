@@ -28,15 +28,15 @@ switch (playerSide) do
 		//Impound Car
 		life_actions = life_actions +
 		[player addAction["Impound Vehicle",life_fnc_impoundAction,"",0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Car"' ]];
+		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Car" && !life_action_inUse' ]];
 		//Impound Air
 		life_actions = life_actions +
 		[player addAction["Impound Vehicle",life_fnc_impoundAction,"",0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Air"' ]];
+		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Air" && !life_action_inUse' ]];
 		//Impound Boat
 		life_actions = life_actions +
 		[player addAction["Impound Vehicle",life_fnc_impoundAction,"",0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship"' ]];
+		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship" && !life_action_inUse' ]];
 		//Unrest Action
 		life_actions = life_actions + [player addAction["Unrestrain",life_fnc_unrestrain,cursorTarget,0,false,false,"",
 		' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && animationState cursorTarget == "AmovPercMstpSnonWnonDnon_Ease" && (side cursorTarget == civilian) && player distance cursorTarget < 3.5 && (cursorTarget getVariable "restrained") && !(cursorTarget getVariable "Escorting") ']];
@@ -50,26 +50,26 @@ switch (playerSide) do
 		' !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && animationState cursorTarget == "AmovPercMstpSnonWnonDnon_Ease" && (side cursorTarget == civilian) && player distance cursorTarget < 3.5 && !(cursorTarget getVariable "Escorting") ']];
 		//Pull out of car
 		life_actions = life_actions + [player addAction["Pull out of vehicle",life_fnc_pulloutAction,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 4 && (count crew cursorTarget) > 0 && speed cursorTarget < 2 && cursorTarget isKindOF "Car"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 4 && (count crew cursorTarget) > 0 && speed cursorTarget < 2 && cursorTarget isKindOF "Car" && !life_action_inUse']];
 		life_actions = life_actions + [player addAction["Pull out of vehicle",life_fnc_pulloutAction,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 4 && (count crew cursorTarget) > 0 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 4 && (count crew cursorTarget) > 0 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship" && !life_action_inUse']];
 		life_actions = life_actions + [player addAction["Pull out of vehicle",life_fnc_pulloutAction,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 4 && (count crew cursorTarget) > 0 && speed cursorTarget < 2 && cursorTarget isKindOf "Air"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 4 && (count crew cursorTarget) > 0 && speed cursorTarget < 2 && cursorTarget isKindOf "Air" && !life_action_inUse']];
 		//Search Vehicle
 		
 		life_actions = life_actions + [player addAction["Search Vehicle",life_fnc_searchVehAction,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Car"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Car" && !life_action_inUse']];
 		life_actions = life_actions + [player addAction["Search Vehicle",life_fnc_searchVehAction,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Air"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Air" && !life_action_inUse']];
 		life_actions = life_actions + [player addAction["Search Vehicle",life_fnc_searchVehAction,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship" ']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 5 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship" && !life_action_inUse']];
 		
 		life_actions = life_actions + [player addAction["Search Trunk",life_fnc_vehInvSearch,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Car"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Car" && !life_action_inUse']];
 		life_actions = life_actions + [player addAction["Search Trunk",life_fnc_vehInvSearch,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 10 && speed cursorTarget < 2 && cursorTarget isKindOf "Air"']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 10 && speed cursorTarget < 2 && cursorTarget isKindOf "Air" && !life_action_inUse']];
 		life_actions = life_actions + [player addAction["Search Trunk",life_fnc_vehInvSearch,cursorTarget,0,false,false,"",
-		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship" ']];
+		' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && cursorTarget isKindOf "Ship" && !life_action_inUse']];
 		
 		//Pickup Deployed Spike strip
 		life_actions = life_actions + [player addAction["Pack up Spike Strip",life_fnc_packupSpikes,"",0,false,false,"",
@@ -77,8 +77,8 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Pickup Spike Strip",life_fnc_pickupItem,"",0,false,false,"",
 		' !isNull cursorTarget && (typeOf cursorTarget) == "Land_Suitcase_F" && ((cursorTarget getVariable "item") select 0) == "spikeStrip" && (player distance cursorTarget) < 3 ']];
 		//Lights?
-		life_actions = life_actions + [player addAction["Siren Lights ON",{[[vehicle player,0.22],"life_fnc_copLights",true,false] spawn life_fnc_MP; vehicle player setVariable["lights",true,true];},"",0,false,false,"",' vehicle player != player && (typeOf vehicle player) == "C_Offroad_01_F" && !isNil {vehicle player getVariable "lights"} && ((driver vehicle player) == player) && !(vehicle player getVariable "lights") && sunOrMoon < 1']];
-		life_actions = life_actions + [player addAction["Siren Lights OFF",{vehicle player setVariable["lights",false,true];},"",0,false,false,"", ' vehicle player != player && (typeOf vehicle player) == "C_Offroad_01_F" && !isNil {vehicle player getVariable "lights"} && ((driver vehicle player) == player) && (vehicle player getVariable "lights") ']];
+		life_actions = life_actions + [player addAction["Siren Lights ON",{[[vehicle player,0.22],"life_fnc_copLights",true,false] spawn life_fnc_MP; vehicle player setVariable["lights",true,true];},"",0,false,false,"",' vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"] && !isNil {vehicle player getVariable "lights"} && ((driver vehicle player) == player) && !(vehicle player getVariable "lights") && sunOrMoon < 1']];
+		life_actions = life_actions + [player addAction["Siren Lights OFF",{vehicle player setVariable["lights",false,true];},"",0,false,false,"", ' vehicle player != player && (typeOf vehicle player) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F"] && !isNil {vehicle player getVariable "lights"} && ((driver vehicle player) == player) && (vehicle player getVariable "lights") ']];
 		
 	};
 	

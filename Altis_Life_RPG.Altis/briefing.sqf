@@ -24,9 +24,18 @@ player createDiarySubject ["controls","Controls"];
 */
 	player createDiaryRecord["changelog",
 		[
-			"Bug / Feature Tracker",
+			"Official Change Log",
 				"
-					The change log can be found on www.sealteamsloth.com or http://rm.iamtonic.co/projects/altis-life/roadmap
+					The official change log can be found on the BIS forums (search Altis Life RPG)
+				"
+		]
+	];
+	
+	player createDiaryRecord["changelog",
+		[
+			"Custom Change Log",
+				"
+					This section is meant for people doing their own edits to the mission, DO NOT REMOVE THE ABOVE.
 				"
 		]
 	];

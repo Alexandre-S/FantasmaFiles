@@ -61,10 +61,6 @@ class CfgFunctions
 		class Client_Code
 		{
 			file = "\life_server\core\clientside";
-			class vehStoreItem {};
-			class vehTakeItem {};
-			class vehInventory {};
-			class fedSuccess {};
 			class safeOpen {};
 			class safeInventory {};
 			class safeTake {};
@@ -99,6 +95,7 @@ class CfgFunctions
 			class logIt {};
 			class federalUpdate {};
 			class isUIDActive {};
+			class chopShopSell {};
 		};
 	};
 };

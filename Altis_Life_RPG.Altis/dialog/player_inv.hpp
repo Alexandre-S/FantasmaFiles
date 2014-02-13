@@ -289,21 +289,10 @@ class playerSettings {
 			h = (1 / 25);
 		};
 		
-		class ButtonFixSCreen : Life_RscButtonMenu {
+		class ButtonAdminMenu : Life_RscButtonMenu {
 			idc = 2021;
 			text = "Admin Menu";
 			onButtonClick = "createDialog ""life_admin_menu"";";
-			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.805;
-			w = (6.25 / 40);
-			h = (1 / 25);
-		};
-		
-		class ButtonGcam : life_RscButtonMenu {
-			idc = 2020;
-			//shortcuts[] = {0x00050000 + 2};
-			text = "GCam";
-			onButtonClick = "closeDialog 0; [] execVM ""gcam.sqf"";";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;
 			w = (6.25 / 40);

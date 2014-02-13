@@ -34,7 +34,7 @@ switch (_side) do
 		_query = format["SELECT playerid, name, cash, bankacc, civ_licenses, arrested, adminlevel, donatorlvl, civ_gear FROM players WHERE playerid='%1'",_uid];
 	};
 };
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['arma3life', '%1']", _query];
+_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
 _sql = call compile format["%1", _sql];
 if(isNil {((_sql select 0) select 0)}) then
 {

@@ -18,10 +18,5 @@ _ret = false;
 //Error check
 if(_faction == sideUnknown) exitWith {_ret};
 
-{
-	if(side _x == _faction && alive _x && _position distance _x < _radius) exitWith {
-		_ret = true;
-	};
-} foreach playableUnits;
-
+_ret = {_x != player && side _x == _faction && alive _x && _position distance _x < _radius} count playableUnits > 0;
 _ret;

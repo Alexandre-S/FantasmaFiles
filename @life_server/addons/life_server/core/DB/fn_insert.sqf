@@ -25,7 +25,7 @@ _query = format["SELECT name, aliases FROM players WHERE playerid='%1'",_uid];
 	called when the initial client was told there wasn't a search result found for him, if so then why
 	is this being executed again?
 */
-_result = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['arma3life', '%1']", _query];
+_result = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
 _result = call compile format["%1", _result];
 if(!isNil {((_result select 0) select 0)}) exitWith
 {
@@ -40,7 +40,7 @@ if(!isNil {((_result select 0) select 0)}) exitWith
 		_aliases set[count _aliases, _name];
 		_aliases = [_aliases] call DB_fnc_mresArray;
 		_query = format["UPDATE players SET aliases='%1' WHERE playerid='%2'",_aliases,_uid];
-		_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['arma3life', '%1']", _query];
+		_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
 	};
 };
 
@@ -69,5 +69,5 @@ switch (_side) do
 };
 
 //Execute our SQL statement
-_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['arma3life', '%1']", _query];
+_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
 waitUntil {typeName _sql == "STRING"};
