@@ -1,4 +1,4 @@
-version=12;
+﻿version=12;
 class Mission
 {
 	addOns[]=
@@ -3576,7 +3576,7 @@ class Mission
 			side="GUER";
 			class Vehicles
 			{
-				items=10;
+				items=4;
 				class Item0
 				{
 					position[]={8424.9258,99.930687,25177.225};
