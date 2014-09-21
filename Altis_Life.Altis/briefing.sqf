@@ -1,4 +1,4 @@
-waitUntil {!isNull player && player == player};
+ï»¿waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
 player createDiarySubject ["sealteamsloth","Altisrp.fr"];
@@ -199,12 +199,12 @@ player createDiarySubject ["controls","Controles"];
 			"Modifie par altisrp.fr",
 				"
 					Changed: Baisse du court du sel<br/>
-					Added: Ajout de voitures banalisees pour les gendarmes et mise à jour des grades de gendarmes<br/>
+					Added: Ajout de voitures banalisees pour les gendarmes et mise Ã  jour des grades de gendarmes<br/>
 					Changed: Traduction en FR par altisrp.fr<br/>
-					Added: Ajout des Grenades Fumigènes pour les Gendarmes<br/>
-					Added: Ajout d'un little bird armé pour les rebels (Sans missiles)<br/>
-					Changed: Menu Police wanted. Accès au Pardon pour tous les Gendarmes<br/>
-					Changed: Crochetage tentative réduite à 5%<br/>
+					Added: Ajout des Grenades FumigÃ¨nes pour les Gendarmes<br/>
+					Added: Ajout d'un little bird armÃ© pour les rebels (Sans missiles)<br/>
+					Changed: Menu Police wanted. AccÃ¨s au Pardon pour tous les Gendarmes<br/>
+					Changed: Crochetage tentative rÃ©duite Ã  5%<br/>
 					Changed: Ajout de messages (spam) si tentative de vol<br/>
 				"
 		]
@@ -214,7 +214,7 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Definitions", 
 				"
-				1. Les bâtiments importants sont la banque, les superettes, DAB, magasins généraux, etc...<br/><br/>
+				1. Les bÃ¢timents importants sont la banque, les superettes, DAB, magasins gÃ©nÃ©raux, etc...<br/><br/>
 				"
 		]
 	];
@@ -222,17 +222,17 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Exploits", 
 				"
-				Si vous êtes considéré comme utilisateur d'exploits bugs, vous ne serez pas kické, mais bannis. Ceci est votre seul avertissement.<br/><br/>
+				Si vous Ãªtes considÃ©rÃ© comme utilisateur d'exploits bugs, vous ne serez pas kickÃ©, mais bannis. Ceci est votre seul avertissement.<br/><br/>
 				
 				Il est interdit de :<br/><br/>
 
-				1. Sortir de prison sans avoir purger sa peine, sans avoir payé sa caution ou sans une évacuation aérienne.<br/>
-				2. Se suicider ou de se déconnecter afin de sortir d'une situation délicate.<br/>
-				3. Écraser des gens sans raison.<br/>
+				1. Sortir de prison sans avoir purger sa peine, sans avoir payÃ© sa caution ou sans une Ã©vacuation aÃ©rienne.<br/>
+				2. Se suicider ou de se dÃ©connecter afin de sortir d'une situation dÃ©licate.<br/>
+				3. Ã‰craser des gens sans raison.<br/>
 				4. Freekill (tuer une personne sans raison valable est une action GRAVE)<br/>
-				5. Dupliquer du matériel et de l'argent, ou d'utiliser des objets provenant de hack.<br/>
+				5. Dupliquer du matÃ©riel et de l'argent, ou d'utiliser des objets provenant de hack.<br/>
 				6. De ne pas respecter le code de la route.<br/>
-				7. D'insulter à tout va (ex: le Rôle Play racaille/insulte moisi n'est pas toléré).<br/><br/>
+				7. D'insulter Ã  tout va (ex: le RÃ´le Play racaille/insulte moisi n'est pas tolÃ©rÃ©).<br/><br/>
 				"
 		]
 	];
@@ -242,9 +242,9 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Infractions punissables de BAN", 
 				"
-				Il n'y aura pas d'avertissement, pas de kick, juste un BAN pour activités frauduleuses. Ceci est votre seul avertissement.<br/><br/>
+				Il n'y aura pas d'avertissement, pas de kick, juste un BAN pour activitÃ©s frauduleuses. Ceci est votre seul avertissement.<br/><br/>
 				
-				1. Tout piratage, script, flood, attaque réseau et autres activités illégales se traduiront par un BAN permanent et pourra aboutir à l'interdiction de votre plage d'adresses IP.<br/>
+				1. Tout piratage, script, flood, attaque rÃ©seau et autres activitÃ©s illÃ©gales se traduiront par un BAN permanent et pourra aboutir Ã  l'interdiction de votre plage d'adresses IP.<br/>
 				2. Exploiter les lags serveur, des bugs de Arma3 ou utiliser n'importe quelle autre faille du jeu ou du serveur sera puni d'un Ban temporaire, voir permanent. <br/><br/>
 				"
 		]
@@ -254,12 +254,12 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Interraction avec la Gendarmerie", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
-				1. Les civils peuvent être arrêtés pour avoir fouillé dans un sac ou un véhicule de la gendarmerie. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
-				2. Les civils peuvent être arrêtés pour avoir suivi les gendarmes afin de donner leur position aux autres joueurs. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
-				3. Les civils ou rebelles s'amusant à tuer les gendarmes en ville ou ailleurs sans raison Role Play et valable sera considéré comme du FreeKill.<br/>
-				4. Suivre ou harceler les gendarmes durant une longue période sera considéré comme du troll, et ceci entrainera un BAN sur le serveur.<br/>
-				5. Bloquer de façon active la gendarmerie peut conduire à votre arrestation. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/><br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				1. Les civils peuvent Ãªtre arrÃªtÃ©s pour avoir fouillÃ© dans un sac ou un vÃ©hicule de la gendarmerie. Si vous Ãªtes surpris Ã  effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
+				2. Les civils peuvent Ãªtre arrÃªtÃ©s pour avoir suivi les gendarmes afin de donner leur position aux autres joueurs. Si vous Ãªtes surpris Ã  effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
+				3. Les civils ou rebelles s'amusant Ã  tuer les gendarmes en ville ou ailleurs sans raison Role Play et valable sera considÃ©rÃ© comme du FreeKill.<br/>
+				4. Suivre ou harceler les gendarmes durant une longue pÃ©riode sera considÃ©rÃ© comme du troll, et ceci entrainera un BAN sur le serveur.<br/>
+				5. Bloquer de faÃ§on active la gendarmerie peut conduire Ã  votre arrestation. Si vous Ãªtes surpris Ã  effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/><br/>
 				"
 		]
 	];
@@ -268,10 +268,10 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Bateaux", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
-				1. Constamment pousser vers le large les bâteaux d'un port sans permission.<br/>
-				2. Pousser un bateau dans l'intention de hurter ou de tuer quelqu'un. Ceci n'est en aucun cas Rôle Play !<br/>
-				3. Voler un Speedboat de police dans l'intention de tirer en ville ou dans un aéroport. Vue aussi comme du FreeKill.<br/><br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				1. Constamment pousser vers le large les bÃ¢teaux d'un port sans permission.<br/>
+				2. Pousser un bateau dans l'intention de hurter ou de tuer quelqu'un. Ceci n'est en aucun cas RÃ´le Play !<br/>
+				3. Voler un Speedboat de police dans l'intention de tirer en ville ou dans un aÃ©roport. Vue aussi comme du FreeKill.<br/><br/>
 				"
 		]
 	];
@@ -280,67 +280,67 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Aviation", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
-				1. Heurter délibérément avec un hélicoptère n'importe quoi (ex : Autre hélico, véhicules, bâtiments)<br/>
-				2. Voler de façon constante à moins de 500m ou au-dessus d'une ville. Premièrement c'est illégal, et de plus, vous risquez de vous crasher dans la ville. C'est une question de bon sens.<br/><br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				1. Heurter dÃ©libÃ©rÃ©ment avec un hÃ©licoptÃ¨re n'importe quoi (ex : Autre hÃ©lico, vÃ©hicules, bÃ¢timents)<br/>
+				2. Voler de faÃ§on constante Ã  moins de 500m ou au-dessus d'une ville. PremiÃ¨rement c'est illÃ©gal, et de plus, vous risquez de vous crasher dans la ville. C'est une question de bon sens.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Véhicules", 
+			"VÃ©hicules", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
 				
-				1. Courir délibérément sur la route sans faire attention à la circulation. Vous risquez de vous faire écraser. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
-				2. Se lancer délibérément vers un véhicule pour être hurté ou pour mourir sans raison Rôle Play valable.<br/>
-				3. Heurter d'autres véhicules dans le but de créer une explosion. Ceci n'est en aucun cas Rôle Play !<br/>
-				4. Chercher constamment à voler des véhicules qui ne vous appartiennent pas afin de faire rager le propriétaire du véhicule. Ceci n'aide pas au Rôle Play.<br/>
-				5. Voler un véhicule dans l'intention de le crasher ou de le jeter dans l'eau.<br/>
-				6. Acheter une multitudes de véhicules pour effectuer les actions précédemment cités.<br/><br/>
+				1. Courir dÃ©libÃ©rÃ©ment sur la route sans faire attention Ã  la circulation. Vous risquez de vous faire Ã©craser. Si vous Ãªtes surpris Ã  effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
+				2. Se lancer dÃ©libÃ©rÃ©ment vers un vÃ©hicule pour Ãªtre hurtÃ© ou pour mourir sans raison RÃ´le Play valable.<br/>
+				3. Heurter d'autres vÃ©hicules dans le but de crÃ©er une explosion. Ceci n'est en aucun cas RÃ´le Play !<br/>
+				4. Chercher constamment Ã  voler des vÃ©hicules qui ne vous appartiennent pas afin de faire rager le propriÃ©taire du vÃ©hicule. Ceci n'aide pas au RÃ´le Play.<br/>
+				5. Voler un vÃ©hicule dans l'intention de le crasher ou de le jeter dans l'eau.<br/>
+				6. Acheter une multitudes de vÃ©hicules pour effectuer les actions prÃ©cÃ©demment citÃ©s.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Règles de communications", 
+			"RÃ¨gles de communications", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
 				
 				1. Il est interdit d'utiliser le Chat Global en vocal.<br/>
 				2. Utiliser excessivement le Chat Global entrainera un BAN sur le serveur.<br/>
 				3. Spamer n'importe quel channel entrainera un BAN sur le serveur.<br/>
-				4. Les channels TeamSpeak sont séparés pour des raisons précises. Les gendarmes doivent être dans leurs channels en tout temps.<br/>
-				5. Les civils ne doivent jamais se trouver dans les channels de police hormis 911 - Secours. Un civil prit dans un chan de police afin d'écouter les conversations se verra recevoir un BAN sur le serveur de jeu et TeamSpeak.<br/><br/>
+				4. Les channels TeamSpeak sont sÃ©parÃ©s pour des raisons prÃ©cises. Les gendarmes doivent Ãªtre dans leurs channels en tout temps.<br/>
+				5. Les civils ne doivent jamais se trouver dans les channels de police hormis 911 - Secours. Un civil prit dans un chan de police afin d'Ã©couter les conversations se verra recevoir un BAN sur le serveur de jeu et TeamSpeak.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["serverrules",
 		[
-			"Règle de combat", 
+			"RÃ¨gle de combat", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
 				
-				1. Tuer n'importe qui sans raison Rôle Play.<br/>
-				2. Déclarer une rébellion n'est pas une cause valable pour tuer n'importe qui, même les gendarmes.<br/>
-				3. Gendarmes et civils/rebelles peuvent commencer une fusillade seulement si il y a des raisons liés à un crime.<br/>
-				4. Si vous n'êtes pas lié à un crime, et que vous ne souhaitez pas mourir, quittez les lieux des fusillades. Vous ne pourrez pas vous plaindre de mourir si vous trouvez que rester dans une banque en train d'être dérobé par des rebelles est une bonne idée.<br/><br/>
-				Toutes ces actions seront jugés au cas par cas par les admins.<br/><br/>
+				1. Tuer n'importe qui sans raison RÃ´le Play.<br/>
+				2. DÃ©clarer une rÃ©bellion n'est pas une cause valable pour tuer n'importe qui, mÃªme les gendarmes.<br/>
+				3. Gendarmes et civils/rebelles peuvent commencer une fusillade seulement si il y a des raisons liÃ©s Ã  un crime.<br/>
+				4. Si vous n'Ãªtes pas liÃ© Ã  un crime, et que vous ne souhaitez pas mourir, quittez les lieux des fusillades. Vous ne pourrez pas vous plaindre de mourir si vous trouvez que rester dans une banque en train d'Ãªtre dÃ©robÃ© par des rebelles est une bonne idÃ©e.<br/><br/>
+				Toutes ces actions seront jugÃ©s au cas par cas par les admins.<br/><br/>
 				"
 		]
 	];
 	player createDiaryRecord ["serverrules",
 		[
-			"Règle de respawn", 
+			"RÃ¨gle de respawn", 
 				"
-				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
-				1. Si vous êtes prit sur le fait de vous suicider votre compte sera réinitialisé.<br/>
+				Les Ã©lÃ©ments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
+				1. Si vous Ãªtes prit sur le fait de vous suicider votre compte sera rÃ©initialisÃ©.<br/>
 				2. Si vous mourrez, vous ne pouvez pas prendre votre revanche.<br/>
-				3. Si vous êtes mourrez dans une ville, vous devez réapparaitre dans une autre ville.<br/>
-				4. Si vous vous déconnectez/reconnectez, vous serez toujours recherché en cas de délits.<br/><br/>
+				3. Si vous Ãªtes mourrez dans une ville, vous devez rÃ©apparaitre dans une autre ville.<br/>
+				4. Si vous vous dÃ©connectez/reconnectez, vous serez toujours recherchÃ© en cas de dÃ©lits.<br/><br/>
 				"
 		]
 	];	
@@ -382,7 +382,7 @@ player createDiarySubject ["controls","Controles"];
 			"Dons",
 				"
 				Les dons permettent de garder le serveur en marche, n'importe quelle somme nous aide.<br/>
-				dons sécurisés par Paypal<br/><br/>
+				dons sÃ©curisÃ©s par Paypal<br/><br/>
 				https://dons.altisrp.fr<br/><br/>
 				"
 		]
@@ -394,9 +394,9 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Gendarmerie",
 				"
-				1. Toutes personnes rebelles ou travaillant avec les rebelles sera considérés comme un criminel et sera recherchés.<br/>
-				2. Toutes personnes trouvés portant des vêtements de rebelle, ou conduisant un véhicule rebelle sera considérés comme un rebelle.<br/>
-				3. La force léthal contre les rebelles peut-être utilisé si ils représentent une menace direct.<br/>
+				1. Toutes personnes rebelles ou travaillant avec les rebelles sera considÃ©rÃ©s comme un criminel et sera recherchÃ©s.<br/>
+				2. Toutes personnes trouvÃ©s portant des vÃªtements de rebelle, ou conduisant un vÃ©hicule rebelle sera considÃ©rÃ©s comme un rebelle.<br/>
+				3. La force lÃ©thal contre les rebelles peut-Ãªtre utilisÃ© si ils reprÃ©sentent une menace direct.<br/>
 				4. Le Freekill s'applique aux gendarmes comme aux rebelles.<br/><br/>
 				"
 		]
@@ -406,11 +406,11 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Braquage de banque",
 				"
-				1. Si la banque est en train d'être braqué, tous les gendarmes disponibles doivent se déplacer pour arrêter les malfrats.<br/>
-				2. En raison des mécaniques de jeu actuelles, la force letale peut-être utilisé pendant le braquage de banque si aucune autre alternative n'est envisageable. Arrêter ou Tazer les malfrats doit être tout de même abordé lors du plan d'attaque.<br/>
-				3. Les gendarmes devront à tout prix évacuer les civils du batiment pendant le braquage.<br/>
-				4. Tous civils empêchant la police d'entrer dans le bâtiement pourra être tazé et arrêté ou tué si nécessaire.<br/>
-				5. L'agent de supervision peut employer un individu ou un groupe d'individus à travailler comme gardes de sécurité à la banque.<br/>
+				1. Si la banque est en train d'Ãªtre braquÃ©, tous les gendarmes disponibles doivent se dÃ©placer pour arrÃªter les malfrats.<br/>
+				2. En raison des mÃ©caniques de jeu actuelles, la force letale peut-Ãªtre utilisÃ© pendant le braquage de banque si aucune autre alternative n'est envisageable. ArrÃªter ou Tazer les malfrats doit Ãªtre tout de mÃªme abordÃ© lors du plan d'attaque.<br/>
+				3. Les gendarmes devront Ã  tout prix Ã©vacuer les civils du batiment pendant le braquage.<br/>
+				4. Tous civils empÃªchant la police d'entrer dans le bÃ¢tiement pourra Ãªtre tazÃ© et arrÃªtÃ© ou tuÃ© si nÃ©cessaire.<br/>
+				5. L'agent de supervision peut employer un individu ou un groupe d'individus Ã  travailler comme gardes de sÃ©curitÃ© Ã  la banque.<br/>
 				"
 		]
 	];
@@ -418,23 +418,23 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Aviation",
 				"
-				1. Aucun hélicoptère ne peut ce poser en ville sans l'autorisation de l'officier le plus haut gradé en ligne.<br/>
-				2. L'héliport sur les quais est un le seul espace autorisé pour garer un hélicoptère après autorisation.<br/>
-				3. L'héliport peut être fermé pour un court moment si la police est en opération, mais ne peut rester fermé indéfiniment.<br/>
-				4. Les hélicoptères ne doivent pas voler au dessous de 500m sauf autorisation d'un officier.<br/>
-				5. Les hélicoptères civil ne doivent pas rester en stationnaire au dessus d'une ville.<br/>
-				6. Les hélicoptères sont interdit au sol sur les routes !<br/><br/>
+				1. Aucun hÃ©licoptÃ¨re ne peut ce poser en ville sans l'autorisation de l'officier le plus haut gradÃ© en ligne.<br/>
+				2. L'hÃ©liport sur les quais est un le seul espace autorisÃ© pour garer un hÃ©licoptÃ¨re aprÃ¨s autorisation.<br/>
+				3. L'hÃ©liport peut Ãªtre fermÃ© pour un court moment si la police est en opÃ©ration, mais ne peut rester fermÃ© indÃ©finiment.<br/>
+				4. Les hÃ©licoptÃ¨res ne doivent pas voler au dessous de 500m sauf autorisation d'un officier.<br/>
+				5. Les hÃ©licoptÃ¨res civil ne doivent pas rester en stationnaire au dessus d'une ville.<br/>
+				6. Les hÃ©licoptÃ¨res sont interdit au sol sur les routes !<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Zones illégales", 
+			"Zones illÃ©gales", 
 				"
-				1. Les zones de gang ne sont pas considérés comme illégales. Ainsi, les gendarmes peuvent entrer sans effectuer de raid, mais ne peut pas arrêter une personne à l'intérieur sans raison valable!<br/>
-				2. Si vous chassez quelqu'un dans une zone illégale, appelez de l'aide.<br/>
-				3. En aucun cas un gendarme ne peut camper une zone illégale.<br/><br/>
+				1. Les zones de gang ne sont pas considÃ©rÃ©s comme illÃ©gales. Ainsi, les gendarmes peuvent entrer sans effectuer de raid, mais ne peut pas arrÃªter une personne Ã  l'intÃ©rieur sans raison valable!<br/>
+				2. Si vous chassez quelqu'un dans une zone illÃ©gale, appelez de l'aide.<br/>
+				3. En aucun cas un gendarme ne peut camper une zone illÃ©gale.<br/><br/>
 				"
 		]
 	];
@@ -443,30 +443,30 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Patrouilles", 
 				"
-				1. Un gendarme se doit patrouiller sur les routes et en villes à la recherche de véhicules abandonnés ou d'activités criminelles sur l'île.<br/><br/>
+				1. Un gendarme se doit patrouiller sur les routes et en villes Ã  la recherche de vÃ©hicules abandonnÃ©s ou d'activitÃ©s criminelles sur l'Ã®le.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Points de contrôles", 
+			"Points de contrÃ´les", 
 				"
-				Les gendarmes sont encouragés à effectuer des points de contrôles à des endroits stratégiques pour aider à combattre le crime sur l'île et promouvoir la sécurité routière.<br/><br/>
+				Les gendarmes sont encouragÃ©s Ã  effectuer des points de contrÃ´les Ã  des endroits stratÃ©giques pour aider Ã  combattre le crime sur l'Ã®le et promouvoir la sÃ©curitÃ© routiÃ¨re.<br/><br/>
 				
-				1. Un point de contrôle ne peut pas être placé à moins de 300m d'une zone illégale.<br/><br/>
+				1. Un point de contrÃ´le ne peut pas Ãªtre placÃ© Ã  moins de 300m d'une zone illÃ©gale.<br/><br/>
 
 
-				Suggestion de procédure de points de contrôles :<br/>
-				1. Demandez au conducteur dans sa voiture de se garez de façon sécuritaire avec le moteur coupé.<br/>
+				Suggestion de procÃ©dure de points de contrÃ´les :<br/>
+				1. Demandez au conducteur dans sa voiture de se garez de faÃ§on sÃ©curitaire avec le moteur coupÃ©.<br/>
 				2. Demandez au conducteur si des armes sont en leur possession.<br/>
-				3. Demandez au conducteur et aux passagers de quitter le véhicule.<br/>
-				4. Demandez où est-ce qu'ils se dirigent.<br/>
-				5. Demandez si ils sont recherchés.<br/>
-				6. Si l'un d'eux est recherché, vous pouvez le menotter et le fouiller.<br/>
-				7. Si aucun d'eux n'est recherché, vous devez les laisser passer en ayant vérifier le permis de conduire du conducteur, à moins qu'il y est une faute probable.<br/>
-				8. Après une fouille ne donnant aucun résultat, vous pouvez leur permettre de réintégrer leur véhicule et de continuer leur route.<br/>
-				9. En cas d'objet illégale sur une personne ou dans le véhicule, la personne peut recevoir une contravension ou être arrêté. La fouille de ses compagnons est de mise.<br/><br/>
+				3. Demandez au conducteur et aux passagers de quitter le vÃ©hicule.<br/>
+				4. Demandez oÃ¹ est-ce qu'ils se dirigent.<br/>
+				5. Demandez si ils sont recherchÃ©s.<br/>
+				6. Si l'un d'eux est recherchÃ©, vous pouvez le menotter et le fouiller.<br/>
+				7. Si aucun d'eux n'est recherchÃ©, vous devez les laisser passer en ayant vÃ©rifier le permis de conduire du conducteur, Ã  moins qu'il y est une faute probable.<br/>
+				8. AprÃ¨s une fouille ne donnant aucun rÃ©sultat, vous pouvez leur permettre de rÃ©intÃ©grer leur vÃ©hicule et de continuer leur route.<br/>
+				9. En cas d'objet illÃ©gale sur une personne ou dans le vÃ©hicule, la personne peut recevoir une contravension ou Ãªtre arrÃªtÃ©. La fouille de ses compagnons est de mise.<br/><br/>
 				"
 		]
 	];
@@ -475,14 +475,14 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Vehicule", 
 				"
-				1. Les véhicules qui semblent abandonnés, cassés, sans conducteur, doivent être mis en fourrière.<br/>
-				2. La mise en fourrière est le travail essentiel des gendarmes, vous aiderez à garder le serveur propre et à éviter les lags.<br/>
+				1. Les vÃ©hicules qui semblent abandonnÃ©s, cassÃ©s, sans conducteur, doivent Ãªtre mis en fourriÃ¨re.<br/>
+				2. La mise en fourriÃ¨re est le travail essentiel des gendarmes, vous aiderez Ã  garder le serveur propre et Ã  Ã©viter les lags.<br/>
 
-				Les véhicules illégaux appartiennent aux rebelles. Il est autorisé de les mettre hors service pour procéder ensuite à une arrestation.<br/><br/>
+				Les vÃ©hicules illÃ©gaux appartiennent aux rebelles. Il est autorisÃ© de les mettre hors service pour procÃ©der ensuite Ã  une arrestation.<br/><br/>
 
-				Véhicules illégaux:<br/>
-				1. Tout véhicule rebelle<br/>
-				2. Si un civil est au contrôle d'un véhicule de dengarmerie.<br/>
+				VÃ©hicules illÃ©gaux:<br/>
+				1. Tout vÃ©hicule rebelle<br/>
+				2. Si un civil est au contrÃ´le d'un vÃ©hicule de dengarmerie.<br/>
 				"
 		]
 	];
@@ -493,36 +493,36 @@ player createDiarySubject ["controls","Controles"];
 				"
 				<br/><br/>
 
-				1. Vous devez informer le suspect du pourquoi est-il arreté avant de proceder à l’arrestion en elle même.<br/>
-				2. Si quelqu’un est recherché vous devez l’arreter. Ne le tuez pas sauf si la situation se retrouve dans l’un des cas du chapitre “Utilisation de la force letale”.<br/><br/>
+				1. Vous devez informer le suspect du pourquoi est-il arretÃ© avant de proceder Ã  lâ€™arrestion en elle mÃªme.<br/>
+				2. Si quelquâ€™un est recherchÃ© vous devez lâ€™arreter. Ne le tuez pas sauf si la situation se retrouve dans lâ€™un des cas du chapitre â€œUtilisation de la force letaleâ€.<br/><br/>
 
 
-				Mettre une contravension à un civil est considéré comme un avertissement pour les civil.<br/><br/>
+				Mettre une contravension Ã  un civil est considÃ©rÃ© comme un avertissement pour les civil.<br/><br/>
 
 				1. La contravension doit suivre la liste que tout gendarme doit avoir en sa possession (Cf. www.altisrp.fr - Section QG POLICE).<br/>
-				2. Un refus de payer une contravension légitime est un motif d'arrestation.<br/>
-				3. Donner à un civil une contravension illégitime, par exemple 100K€ pour vitesse exessive n'est pas autorisé par le département de la gendarmerie et peut amener à suspendre l'autorisation d'effectuer son travail à un gendarme.<br/><br/>
+				2. Un refus de payer une contravension lÃ©gitime est un motif d'arrestation.<br/>
+				3. Donner Ã  un civil une contravension illÃ©gitime, par exemple 100Kâ‚¬ pour vitesse exessive n'est pas autorisÃ© par le dÃ©partement de la gendarmerie et peut amener Ã  suspendre l'autorisation d'effectuer son travail Ã  un gendarme.<br/><br/>
 				"
 		]
 	];
 		
 	player createDiaryRecord ["policerules",
 		[
-			"Armes illégal avec ou sans permis de port d'armes.", 
+			"Armes illÃ©gal avec ou sans permis de port d'armes.", 
 				"
-				Armes légale pour civil avec un permis de port d'arme:<br/>
+				Armes lÃ©gale pour civil avec un permis de port d'arme:<br/>
 				1. Rook<br/>
 				2. PDW<br/>
 				3. ACP.45<br/><br/>
 				
-				Armes légale pour vigil avec un permis de port d'arme:<br/>
+				Armes lÃ©gale pour vigil avec un permis de port d'arme:<br/>
 				1. Vermin .45 ACP<br/>
 				2. TRG21<br/>
 
-				Toutes les autres armes (Inclus le P07 silencieux [Considéré comme arme de gendarme]) sont illégales.<br/><br/>
+				Toutes les autres armes (Inclus le P07 silencieux [ConsidÃ©rÃ© comme arme de gendarme]) sont illÃ©gales.<br/><br/>
 
-				1. Vous ne devez jamais avoir l’arme à la main ou que ce soit. Dans le sac ou le holster.<br/>
-				2. Il n’y a qu’en cas de légitime défense que vous pouvez la sortir, dans tous les cas vous devez avoir un permis.<br/><br/>
+				1. Vous ne devez jamais avoir lâ€™arme Ã  la main ou que ce soit. Dans le sac ou le holster.<br/>
+				2. Il nâ€™y a quâ€™en cas de lÃ©gitime dÃ©fense que vous pouvez la sortir, dans tous les cas vous devez avoir un permis.<br/><br/>
 				"
 		]
 	];
@@ -540,31 +540,31 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Raid/Camp",
 				"
-				Un Raid est defini comme l’action de se rendre sur une zone d’activité illégale seulement si un civil vous donne un tuyaux et la position de la zone.<br/><br/>
+				Un Raid est defini comme lâ€™action de se rendre sur une zone dâ€™activitÃ© illÃ©gale seulement si un civil vous donne un tuyaux et la position de la zone.<br/><br/>
 
-				1. Toute personne se trouvant dans une zone illégale à ce moment est susceptible d’être fouillée, si rien ne peut être engagé contre elle, vous devez la relâcher.<br/>
-				2. Si des substances illicites/illégales sont trouvées vous devez procéder à l’arrestation.<br/>
-				3. La force létale est autorisée dans un cas de coup de feu sur les agents des forces de l'ordre - voir chapitre.<br/>
-				4. Après inspection les officiers doivent quitter les lieux.<br/>
-				5. Les zones de Raid ne doivent pas être campées trop longtemps ou “spammées” régulièrement.<br/>
+				1. Toute personne se trouvant dans une zone illÃ©gale Ã  ce moment est susceptible dâ€™Ãªtre fouillÃ©e, si rien ne peut Ãªtre engagÃ© contre elle, vous devez la relÃ¢cher.<br/>
+				2. Si des substances illicites/illÃ©gales sont trouvÃ©es vous devez procÃ©der Ã  lâ€™arrestation.<br/>
+				3. La force lÃ©tale est autorisÃ©e dans un cas de coup de feu sur les agents des forces de l'ordre - voir chapitre.<br/>
+				4. AprÃ¨s inspection les officiers doivent quitter les lieux.<br/>
+				5. Les zones de Raid ne doivent pas Ãªtre campÃ©es trop longtemps ou â€œspammÃ©esâ€ rÃ©guliÃ¨rement.<br/>
 				6. Si tous les officiers meurent pendant un Raid ils ne doivent pas revenir sur zone.<br/>
 
 				Camper est le fait de rester trop longtemps sur une zone.<br/><br/>
 
-				1. Camper les zones illégales avant ou après un raid de manière abusive est interdit.<br/><br/>
+				1. Camper les zones illÃ©gales avant ou aprÃ¨s un raid de maniÃ¨re abusive est interdit.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Hiérarchie",
+			"HiÃ©rarchie",
 				"
-				Le plus haut gradé commande les officiers en jeu en cas d’absence admin. Il est aussi chargé de dénoncer tout abus de gendarmes et lui-même suivre ses directives.<br/><br/>
+				Le plus haut gradÃ© commande les officiers en jeu en cas dâ€™absence admin. Il est aussi chargÃ© de dÃ©noncer tout abus de gendarmes et lui-mÃªme suivre ses directives.<br/><br/>
 
 				Hierarchie :<br/>
 				1. Gouverneur<br/>
-				2. Général<br/>
+				2. GÃ©nÃ©ral<br/>
 				3. Colonel<br/>
 				4. Capitaine<br/>
 				5. Lieutenant<br/>
@@ -576,21 +576,21 @@ player createDiarySubject ["controls","Controles"];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Utilisation de la force létale",
+			"Utilisation de la force lÃ©tale",
 				"
-				1. Utiliser la force létale est uniquement permis en cas de légitime défense, de protection des forces de l’ordre ou d’autres civils, si et seulement si, d’autres manières n’auraient pas étés efficace.<br/>
-				2. Décharger son arme en tirant dans le vide sans être sous la menace ou dans un exercice de tir est interdit. <br/>
-				3. Ne pas suivre une discipline stricte quant au port d’arme, vous fera radier des forces de l’ordre et parfois du serveur.<br/><br/>
+				1. Utiliser la force lÃ©tale est uniquement permis en cas de lÃ©gitime dÃ©fense, de protection des forces de lâ€™ordre ou dâ€™autres civils, si et seulement si, dâ€™autres maniÃ¨res nâ€™auraient pas Ã©tÃ©s efficace.<br/>
+				2. DÃ©charger son arme en tirant dans le vide sans Ãªtre sous la menace ou dans un exercice de tir est interdit. <br/>
+				3. Ne pas suivre une discipline stricte quant au port dâ€™arme, vous fera radier des forces de lâ€™ordre et parfois du serveur.<br/><br/>
 				"
 		]
 	];
 	
 	player createDiaryRecord ["policerules",
 		[
-			"Règles TeamSpeak",
+			"RÃ¨gles TeamSpeak",
 				"
-				1. Tous les policiers doivent être sur le TeamSpeak dans les chan prévus à cet effet. Être absent du TS en temps que policier peut vous valoir un kick.<br/>
-				2. Rejoignez le TS AVANT d’apparaitre en policier, d’une manière générale avant même de rejoindre le serveur.<br/><br/>
+				1. Tous les policiers doivent Ãªtre sur le TeamSpeak dans les chan prÃ©vus Ã  cet effet. ÃŠtre absent du TS en temps que policier peut vous valoir un kick.<br/>
+				2. Rejoignez le TS AVANT dâ€™apparaitre en policier, dâ€™une maniÃ¨re gÃ©nÃ©rale avant mÃªme de rejoindre le serveur.<br/><br/>
 				"
 		]
 	];
@@ -600,34 +600,34 @@ player createDiarySubject ["controls","Controles"];
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
 		[
-			"Règles rebelle",
+			"RÃ¨gles rebelle",
 				"
-				Un rebelle est quelqu’un qui a pris les armes face à un gouvernement. Ici on parle de gendarmes. Toujours est-il que dû au faible pourcentage de policiers comparé aux potentiels rebelles, ne les attaquez pas sans raison, soyez intelligent et utiliser votre bon-sens, ne prenez pas le terme rebelle trop litteralement, mais cherchez plutôt a élaborer des scènes RP notamment ou encore créer des situations inédites et amusantes.<br/><br/>
+				Un rebelle est quelquâ€™un qui a pris les armes face Ã  un gouvernement. Ici on parle de gendarmes. Toujours est-il que dÃ» au faible pourcentage de policiers comparÃ© aux potentiels rebelles, ne les attaquez pas sans raison, soyez intelligent et utiliser votre bon-sens, ne prenez pas le terme rebelle trop litteralement, mais cherchez plutÃ´t a Ã©laborer des scÃ¨nes RP notamment ou encore crÃ©er des situations inÃ©dites et amusantes.<br/><br/>
 
-				1. Un rebelle doit premièrement créer un gang, ainsi qu’en déclarer les intentions.<br/>
-				2. La rebellion n’excuse pas le FreeKill. (Voir chapitre sur le FreeKill.)<br/>
-				3. Les rebelles plus que quiconque doivent jouer RolePlay et faire autre chose qu’attaquer la résèrve fédérale, par exemple.<br/>
-				4. Une raison VALABLE doit se trouver derrière chaque attaque.<br/>
-				5. L’utilisation d’explosifs si autorisée sur un plan technique, ne doit pas vous donner le droit de tout casser. Essayez de ne pas saboter les batiments importants.<br/>
-				6. Pas de placements ni d’utilisation aléatoires des explosifs, si abus, la règle sur le FreeKill sera appliquée.<br/><br/>
+				1. Un rebelle doit premiÃ¨rement crÃ©er un gang, ainsi quâ€™en dÃ©clarer les intentions.<br/>
+				2. La rebellion nâ€™excuse pas le FreeKill. (Voir chapitre sur le FreeKill.)<br/>
+				3. Les rebelles plus que quiconque doivent jouer RolePlay et faire autre chose quâ€™attaquer la rÃ©sÃ¨rve fÃ©dÃ©rale, par exemple.<br/>
+				4. Une raison VALABLE doit se trouver derriÃ¨re chaque attaque.<br/>
+				5. Lâ€™utilisation dâ€™explosifs si autorisÃ©e sur un plan technique, ne doit pas vous donner le droit de tout casser. Essayez de ne pas saboter les batiments importants.<br/>
+				6. Pas de placements ni dâ€™utilisation alÃ©atoires des explosifs, si abus, la rÃ¨gle sur le FreeKill sera appliquÃ©e.<br/><br/>
 				"
 		]
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Les règles des gangs",
+			"Les rÃ¨gles des gangs",
 				"
-				1. Être dans un gang n’est pas illégal. Sauf si des crimes y sont commis.<br/>
-				2. Les gangs peuvent tenir et contrôler des zones de gang. Les autres gangs peuvent les attaquer pour contrôler à leur tour la zone.<br/>
-				3. Pour déclarer la guerre à un autre gang, le leader doit en faire l’annonce en chat global et tous les membres des deux gangs doivent en etre notifiés. Pour une guerre totale et à plus long terme une declaration doit être faites sur le forum.<br/><br/>
+				1. ÃŠtre dans un gang nâ€™est pas illÃ©gal. Sauf si des crimes y sont commis.<br/>
+				2. Les gangs peuvent tenir et contrÃ´ler des zones de gang. Les autres gangs peuvent les attaquer pour contrÃ´ler Ã  leur tour la zone.<br/>
+				3. Pour dÃ©clarer la guerre Ã  un autre gang, le leader doit en faire lâ€™annonce en chat global et tous les membres des deux gangs doivent en etre notifiÃ©s. Pour une guerre totale et Ã  plus long terme une declaration doit Ãªtre faites sur le forum.<br/><br/>
 				"
 		]
 	];
 	player createDiaryRecord ["illegalitems",
 		[
-			"Véhicules illegaux",
+			"VÃ©hicules illegaux",
 				"
-				Toute personne possédant ou au volant des véhicules suivants est exposée aux conséquences définies dans la loi sur l’interdiction de la possession des véhicules interdits.<br/><br/>
+				Toute personne possÃ©dant ou au volant des vÃ©hicules suivants est exposÃ©e aux consÃ©quences dÃ©finies dans la loi sur lâ€™interdiction de la possession des vÃ©hicules interdits.<br/><br/>
 
 				1. Tout vehicule Rebelle.
 				2. Tout vehicule Gendarme. (Si personne non-gendarme...)
@@ -638,7 +638,7 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Armes illegales",
 				"
-				Toute personne en possession des armes suivantes est exposée aux conséquences définies dans la loi sur le port d’arme illégal.<br/><br/>
+				Toute personne en possession des armes suivantes est exposÃ©e aux consÃ©quences dÃ©finies dans la loi sur le port dâ€™arme illÃ©gal.<br/><br/>
 
 				1.Toutes sauf Rook, PDW, ACP.45 pour les civils et Vermin .45 ACP, TRG21 pour vigile.<br/><br/>
 				"
@@ -655,54 +655,54 @@ player createDiarySubject ["controls","Controles"];
 		]
 	];
 	
-// Métiers
+// MÃ©tiers
 	player createDiaryRecord ["metiers",
 		[
-			"Règles : Vigil",
+			"RÃ¨gles : Vigil",
 				"
-				En tant que vigil vous devez vous conformer à certaines règles ou risquez la suppression de votre licence voir tout simplement être banni du serveur.
+				En tant que vigil vous devez vous conformer Ã  certaines rÃ¨gles ou risquez la suppression de votre licence voir tout simplement Ãªtre banni du serveur.
 				
-				1. Vous êtes toujours un civil et devez obéir à toutes les règles qui s'appliquent donc aux civils.<br/>
-				2. Tirer sur d'un autre joueurs est toujours considéré comme du freekill si vous ne faite pas de sommations verbales dans un premier temps. (voir section freekill)<br/>
+				1. Vous Ãªtes toujours un civil et devez obÃ©ir Ã  toutes les rÃ¨gles qui s'appliquent donc aux civils.<br/>
+				2. Tirer sur d'un autre joueurs est toujours considÃ©rÃ© comme du freekill si vous ne faite pas de sommations verbales dans un premier temps. (voir section freekill)<br/>
 				3. Vous ne devez pas attaquer une personne sans qu'il y ais eu provocation, et toujours leur donner une chance de se rendre avant d'ouvrir le feu.<br/>
-				4. En tant que vigil, votre travail consiste à proteger vos clients uniquement des groupuscules rebelles et des criminels.<br/><br/>
+				4. En tant que vigil, votre travail consiste Ã  proteger vos clients uniquement des groupuscules rebelles et des criminels.<br/><br/>
 				"	
 		]
 	];
 	
 	player createDiaryRecord ["metiers",
 		[
-			"Règles : Médecin",
+			"RÃ¨gles : MÃ©decin",
 				"
-				En tant que médecin vous devez vous conformer à certaines règles ou risquez la suppression de votre licence voir tout simplement être banni du serveur.
+				En tant que mÃ©decin vous devez vous conformer Ã  certaines rÃ¨gles ou risquez la suppression de votre licence voir tout simplement Ãªtre banni du serveur.
 				
-				1. Vous êtes toujours un civil et devez obéir à toutes les règles qui s'appliquent donc aux civils.<br/>
-				2. Un médecin ne doit pas se promener avec une arme à la main.<br/>
-				3. Un médecin n'est pas un soldat.<br/>
-				4. En tant que médecin, votre travail consiste à venir au secours de la population et en priorité aux forces de l'ordre.<br/><br/>
+				1. Vous Ãªtes toujours un civil et devez obÃ©ir Ã  toutes les rÃ¨gles qui s'appliquent donc aux civils.<br/>
+				2. Un mÃ©decin ne doit pas se promener avec une arme Ã  la main.<br/>
+				3. Un mÃ©decin n'est pas un soldat.<br/>
+				4. En tant que mÃ©decin, votre travail consiste Ã  venir au secours de la population et en prioritÃ© aux forces de l'ordre.<br/><br/>
 				"	
 		]
 	];
 	
 	player createDiaryRecord ["metiers",
 		[
-			"Règles : Dépanneur",
+			"RÃ¨gles : DÃ©panneur",
 				"
-				En tant que Dépanneur vous devez vous conformer à certaines règles ou risquez la suppression de votre licence voir tout simplement être banni du serveur.
+				En tant que DÃ©panneur vous devez vous conformer Ã  certaines rÃ¨gles ou risquez la suppression de votre licence voir tout simplement Ãªtre banni du serveur.
 				
-				1. Vous êtes toujours un civil et devez obéir à toutes les règles qui s'appliquent donc aux civils.<br/>
-				2. Un dépanneur ne doit pas se promener avec une arme à la main.<br/>
-				3. Un dépanneur n'est pas un soldat.<br/>
-				4. En tant que dépanneur, votre travail consiste à venir au secours de la population et en priorité aux forces de l'ordre.<br/><br/>
+				1. Vous Ãªtes toujours un civil et devez obÃ©ir Ã  toutes les rÃ¨gles qui s'appliquent donc aux civils.<br/>
+				2. Un dÃ©panneur ne doit pas se promener avec une arme Ã  la main.<br/>
+				3. Un dÃ©panneur n'est pas un soldat.<br/>
+				4. En tant que dÃ©panneur, votre travail consiste Ã  venir au secours de la population et en prioritÃ© aux forces de l'ordre.<br/><br/>
 				"	
 		]
 	];
 
 	*/
 // Controls Section
-	player createDiaryRecord ["Contrôles",
+	player createDiaryRecord ["ContrÃ´les",
 		[
-			"Contrôles",
+			"ContrÃ´les",
 				"
 				Shift + C : Assomer<br/>
 				Y: Open Player Menu<br/>
@@ -710,8 +710,8 @@ player createDiarySubject ["controls","Controles"];
 				F: Sirene (Si policier)<br/>
 				T: Inventaire vehicule<br/>
 				Left Shift + R: Menotter (Si policier)<br/>
-				Left Shift + G: Assomer (Civil seulement, utilisé pour voler une personne)<br/>
-				Left Windows: Interaction pricnipal pour différente situation - Prendre item ou argent - interaction avec les véhicules - interaction police à civil. Peut-être modifié dans vos configuration personnalisable Configure->Controls->Custom->Use Action 10<br/>
+				Left Shift + G: Assomer (Civil seulement, utilisÃ© pour voler une personne)<br/>
+				Left Windows: Interaction pricnipal pour diffÃ©rente situation - Prendre item ou argent - interaction avec les vÃ©hicules - interaction police Ã  civil. Peut-Ãªtre modifiÃ© dans vos configuration personnalisable Configure->Controls->Custom->Use Action 10<br/>
 				Left Shift + L: Girophares (Si policier)<br/>
 				Left Shift + H: Ranger sont arme<br/>
 				"
