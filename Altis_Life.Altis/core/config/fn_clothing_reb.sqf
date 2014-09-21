@@ -33,11 +33,25 @@ switch (_filter) do
 	{
 		[
 			["H_ShemagOpen_tan",nil,850],
+			["H_Shemag_tan",nil,850],
 			["H_Shemag_olive",nil,850],
 			["H_ShemagOpen_khk",nil,800],
-			["H_HelmetO_ocamo",nil,2500],
 			["H_MilCap_oucamo",nil,1200],
-			["H_Bandanna_camo",nil,650]
+			["H_Watchcap_cbr",nil,700],
+			["H_Booniehat_dgtl",nil,100],
+			["H_Cap_brn_SPECOPS",nil,1200],
+			["H_Cap_tan_specops_US",nil,1200],
+			["H_Cap_khaki_specops_UK",nil,1200],
+			["H_Cap_blk_Raven",nil,1200],
+			["H_Bandanna_camo",nil,650],
+			["H_Bandanna_mcamo",nil,650],
+			["H_HelmetO_ocamo",nil,1700],
+			["H_HelmetO_oucamo",nil,1700],
+			["H_HelmetLeaderO_ocamo",nil,1700],
+			["H_HelmetLeaderO_oucamo",nil,1700],
+			["H_HelmetSpecO_ocamo",nil,1700],
+			["H_PilotHelmetHeli_O",nil,2000],
+			["H_HelmetCrew_O",nil,2000]
 		];
 	};
 	
@@ -53,7 +67,15 @@ switch (_filter) do
 			["G_Sport_BlackWhite",nil,20],
 			["G_Squares",nil,10],
 			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55]
+			["G_Combat",nil,55],
+			["G_Bandanna_beast",nil,55],
+			["G_Bandanna_aviator",nil,55],
+			["G_Balaclava_blk",nil,100],
+			["G_Balaclava_oli",nil,100],
+			["G_Balaclava_combat",nil,300],
+			["G_Balaclava_lowprofile",nil,300],
+			["G_Balaclava_blk",nil,300],
+			["G_Balaclava_oli",nil,300]
 		];
 	};
 	
@@ -78,7 +100,9 @@ switch (_filter) do
 			["B_Bergen_sgg",nil,4500],
 			["B_Kitbag_cbr",nil,4500],
 			["B_Carryall_oli",nil,5000],
-			["B_Carryall_khk",nil,5000]
+			["B_Carryall_khk",nil,5000],
+			["B_Carryall_oucamo",nil,5000],
+			["B_Parachute",nil,15000]
 		];
 	};
 };
