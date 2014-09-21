@@ -262,6 +262,57 @@ switch(_shop) do
 		};
 	};
 	
+	case "rebel_leader":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Vous n'êtes pas rebelle !"};
+			case ((!license_civ_rebel) &&(__GETC__(life_adminlevel) == 0)): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
+			default
+			{
+				["Marché Noir Leader",
+					[
+						["arifle_TRG20_F",nil,25000],
+						["30Rnd_556x45_Stanag",nil,300],
+						["arifle_Katiba_F",nil,30000],
+						["30Rnd_65x39_caseless_green",nil,275],
+						["srifle_DMR_01_F",nil,50000],
+						["10Rnd_762x51_Mag",nil,500],
+						["arifle_SDAR_F",nil,20000],
+						["20Rnd_556x45_UW_mag",nil,125],
+						["30Rnd_556x45_Stanag",nil,300],
+						["arifle_Mk20_F",nil,20000],
+						["30Rnd_556x45_Stanag",nil,125],
+						["LMG_Zafir_F",nil,75000],
+						["150Rnd_762x51_Box",nil,600],
+						["hgun_Pistol_heavy_02_F",nil,10000],
+						["6Rnd_45ACP_Cylinder",nil,100],
+						["optic_ACO_grn",nil,3500],
+						["optic_Aco",nil,3500],
+						["optic_Holosight",nil,3600],
+						["optic_MRCO",nil,8000],
+						["optic_Hamr",nil,8000],
+						["optic_Arco",nil,8000],
+						["acc_flashlight",nil,1000],
+						["acc_pointer_IR",nil,2000],
+						["ItemGPS",nil,100],
+						["ItemCompass",nil,75],
+						["ItemWatch",nil,50],
+						["ItemRadio",nil,25],
+						["ItemMap",nil,10],
+						["SmokeShellRed",nil,1000],
+						["SmokeShellGreen",nil,1000],
+						["SmokeShellYellow",nil,1000],
+						["SmokeShellPurple",nil,1000],
+						["SmokeShellBlue",nil,1000],
+						["SmokeShellOrange",nil,1000],
+						["SatchelCharge_Remote_Mag",nil,700000]
+					]
+				];
+			};
+		};
+	};
+	
 	case "gun":
 	{
 		switch(true) do
