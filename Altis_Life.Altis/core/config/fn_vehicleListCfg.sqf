@@ -104,7 +104,7 @@ switch (_shop) do
 			_return pushBack
 			["O_MRAP_02_hmg_F",1250000];
 			_return pushBack
-			["O_APC_Wheeled_02_rcws_F";2500000];
+			["O_APC_Wheeled_02_rcws_F",2500000];
 		};
 	};
 	
