@@ -280,7 +280,6 @@ switch(_shop) do
 						["APERSTripMine_Wire_Mag",nil,400000],
 						["SatchelCharge_Remote_Mag",nil,700000],
 						["O_HMG_01_high_weapon_F",nil,1000000],
-						["O_GMG_01_high_weapon_F",nil,1000000],
 						["O_HMG_01_support_high_F",nil,7000]						
 					]
 				];
