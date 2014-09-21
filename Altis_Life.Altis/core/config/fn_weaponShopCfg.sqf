@@ -255,7 +255,6 @@ switch(_shop) do
 						["SmokeShellPurple",nil,1000],
 						["SmokeShellBlue",nil,1000],
 						["SmokeShellOrange",nil,1000],
-						["SatchelCharge_Remote_Mag",nil,700000]
 					]
 				];
 			};
@@ -272,41 +271,17 @@ switch(_shop) do
 			{
 				["Marché Noir Leader",
 					[
-						["arifle_TRG20_F",nil,25000],
-						["30Rnd_556x45_Stanag",nil,300],
-						["arifle_Katiba_F",nil,30000],
-						["30Rnd_65x39_caseless_green",nil,275],
-						["srifle_DMR_01_F",nil,50000],
-						["10Rnd_762x51_Mag",nil,500],
-						["arifle_SDAR_F",nil,20000],
-						["20Rnd_556x45_UW_mag",nil,125],
-						["30Rnd_556x45_Stanag",nil,300],
-						["arifle_Mk20_F",nil,20000],
-						["30Rnd_556x45_Stanag",nil,125],
-						["LMG_Zafir_F",nil,75000],
-						["150Rnd_762x51_Box",nil,600],
-						["hgun_Pistol_heavy_02_F",nil,10000],
-						["6Rnd_45ACP_Cylinder",nil,100],
-						["optic_ACO_grn",nil,3500],
-						["optic_Aco",nil,3500],
-						["optic_Holosight",nil,3600],
-						["optic_MRCO",nil,8000],
-						["optic_Hamr",nil,8000],
-						["optic_Arco",nil,8000],
-						["acc_flashlight",nil,1000],
-						["acc_pointer_IR",nil,2000],
-						["ItemGPS",nil,100],
-						["ItemCompass",nil,75],
-						["ItemWatch",nil,50],
-						["ItemRadio",nil,25],
-						["ItemMap",nil,10],
-						["SmokeShellRed",nil,1000],
-						["SmokeShellGreen",nil,1000],
-						["SmokeShellYellow",nil,1000],
-						["SmokeShellPurple",nil,1000],
-						["SmokeShellBlue",nil,1000],
-						["SmokeShellOrange",nil,1000],
-						["SatchelCharge_Remote_Mag",nil,700000]
+						["launch_RPG32_F",nil,700000],
+						["RPG32_F",nil,5000],
+						["srifle_GM6_F",nil,1000000],
+						["5Rnd_127x108_Mag",nil,5000],
+						["optic_SOS",nil,3500],
+						["APERSMine_Range_Mag",nil,500000],
+						["APERSTripMine_Wire_Mag",nil,400000],
+						["SatchelCharge_Remote_Mag",nil,700000],
+						["O_HMG_01_high_weapon_F",nil,1000000],
+						["O_GMG_01_high_weapon_F",nil,1000000],
+						["O_HMG_01_support_high_F",nil,7000]						
 					]
 				];
 			};

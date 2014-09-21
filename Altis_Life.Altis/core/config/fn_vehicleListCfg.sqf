@@ -81,6 +81,12 @@ switch (_shop) do
 			_return pushBack
 			["B_G_Offroad_01_armed_F",750000];
 		};
+		if(__GETC__(life_adminlevel) >= 1) then
+		{
+			_return pushBack
+			["O_MRAP_02_hmg_F",1250000];
+			["O_APC_Wheeled_02_rcws_F";2500000];
+		};
 	};
 	
 	case "cop_car":
