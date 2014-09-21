@@ -1,5 +1,5 @@
 author = "Tonic";
-onLoadName = "Altis Life RPG v3.1.4.8";
+onLoadName = "Altis Life RPG v5.0";
 onLoadMission = "Un Jeu de Rôle développé par Tonic et Havena";
 joinUnassigned = 1;
 respawn = BASE;

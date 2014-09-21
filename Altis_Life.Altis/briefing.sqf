@@ -700,9 +700,10 @@ player createDiarySubject ["controls","Controles"];
 
 	*/
 // Controls Section
-	player createDiaryRecord ["controls",
+	player createDiaryRecord ["Contrôles",
 		[
-			""
+			"Contrôles",
+				"
 				Shift + C : Assomer<br/>
 				Y: Open Player Menu<br/>
 				U: Lock and unlock cars<br/>
