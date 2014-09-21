@@ -254,7 +254,7 @@ switch(_shop) do
 						["SmokeShellYellow",nil,1000],
 						["SmokeShellPurple",nil,1000],
 						["SmokeShellBlue",nil,1000],
-						["SmokeShellOrange",nil,1000],
+						["SmokeShellOrange",nil,1000]
 					]
 				];
 			};
