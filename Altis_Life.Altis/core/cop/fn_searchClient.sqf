@@ -16,12 +16,10 @@ _robber = false;
 	_val = missionNamespace getVariable _var;
 	if(_val > 0) then
 	{
-		_inv set[count _inv,[_x select 0,_val]];
+		_inv pushBack [_x select 0,_val];
+		[false,(_x select 0),_val] call life_fnc_handleInv;
 	};
-	missionNamespace setVariable[_var,0];
 } foreach life_illegal_items;
-
-if(_licenses == "") then {_licenses = "No licenses<br/>"};
 
 if(!life_use_atm) then 
 {

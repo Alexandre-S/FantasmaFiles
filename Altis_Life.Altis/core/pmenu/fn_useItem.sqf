@@ -7,7 +7,7 @@
 */
 private["_item"];
 disableSerialization;
-if((lbCurSel 2005) == -1) exitWith {hint "You need to select an item first!";};
+if((lbCurSel 2005) == -1) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
 _item = lbData[2005,(lbCurSel 2005)];
 
 switch (true) do
@@ -21,6 +21,25 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "boltcutter"): {
+		[cursorTarget] spawn life_fnc_boltcutter;
+		closeDialog 0;
+	};
+	
+	case (_item == "blastingcharge"): {
+		player reveal fed_bank;
+		(group player) reveal fed_bank;
+		[cursorTarget] spawn life_fnc_blastingCharge;
+	};
+	
+	case (_item == "defusekit"): {
+		[cursorTarget] spawn life_fnc_defuseKit;
+	};
+	
+	case (_item in ["storagesmall","storagebig"]): {
+		[_item] call life_fnc_storageBox;
+	};
+	
 	case (_item == "redgull"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -30,7 +49,7 @@ switch (true) do
 			[] spawn
 			{
 				life_redgull_effect = time;
-				titleText["You can now run farther for 3 minutes","PLAIN"];
+				titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
@@ -40,33 +59,17 @@ switch (true) do
 	
 	case (_item == "spikeStrip"):
 	{
-		if(!isNull life_spikestrip) exitWith {hint "You already have a Spike Strip active in deployment"};
+		if(!isNull life_spikestrip) exitWith {hint localize "STR_ISTR_SpikesDeployment"};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_spikeStrip;
 		};
 	};
 	
-	case (_item == "heroinp"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			[] spawn fnc_drug_use;
-		};
-	};
-	
 	case (_item == "fuelF"):
 	{
-		if(vehicle player != player) exitWith {hint "You can't refuel the vehicle while in it!"};
+		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
 		[] spawn life_fnc_jerryRefuel;
-	};
-	
-	case (_item == "marijuana"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			[] spawn fnc_drugweed_use;
-		};
 	};
 	
 	case (_item == "lockpick"):
@@ -78,12 +81,7 @@ switch (true) do
 	{
 		[_item] call life_fnc_eatFood;
 	};
-	
-	case "fishing":
-	{
-		[] spawn fnc_fishing;
-	};
-	
+
 	case (_item == "pickaxe"):
 	{
 		[] spawn life_fnc_pickAxeUse;
@@ -91,7 +89,7 @@ switch (true) do
 	
 	default
 	{
-		hint "This item isn't usable.";
+		hint localize "STR_ISTR_NotUsable";
 	};
 };
 	

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_actionKeyHandler.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -9,6 +10,7 @@
 private["_curTarget","_isWater"];
 _curTarget = cursorTarget;
 if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
+if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
 if(isNull _curTarget) exitWith {
 	if(_isWater) then {
@@ -17,11 +19,36 @@ if(isNull _curTarget) exitWith {
 		if(!isNil "_fish") then {
 			[_fish] call life_fnc_catchFish;
 		};
+	} else {
+		if(playerSide == civilian) then {
+			_handle = [] spawn life_fnc_gather;
+			waitUntil {scriptDone _handle};
+		};
 	};
 };
+
+if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {
+	[_curTarget] call life_fnc_houseMenu;
+};
+
 if(dialog) exitWith {}; //Don't bother when a dialog is open.
 if(vehicle player != player) exitWith {}; //He's in a vehicle, cancel!
 life_action_inUse = true;
+
+//Temp fail safe.
+[] spawn {
+	sleep 60;
+	life_action_inUse = false;
+};
+
+//Check if it's a dead body.
+if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
+	//Hotfix code by ins0
+	if(((playerSide == blufor && {(call life_revive_cops)}) || playerSide == independent) && {"Medikit" in (items player)}) then {
+		[_curTarget] call life_fnc_revivePlayer;
+	};
+};
+
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
@@ -64,8 +91,9 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 				waitUntil {scriptDone _handle};
 			} else {
 				//It wasn't a misc item so is it money?
-				if((typeOf _curTarget) == _money) then {
+				if((typeOf _curTarget) == _money && {!(_curTarget getVariable["inUse",false])}) then {
 					private["_handle"];
+					_curTarget setVariable["inUse",TRUE,TRUE];
 					_handle = [_curTarget] spawn life_fnc_pickupMoney;
 					waitUntil {scriptDone _handle};
 				};
