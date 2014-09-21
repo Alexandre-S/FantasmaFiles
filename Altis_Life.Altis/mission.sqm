@@ -9771,7 +9771,7 @@ class Mission
 		{
 			position[]={25943.723,17.185471,21374.17};
 			name="Kavala Freight Yard_1_1_1_1_1";
-			text="Sofia Freight Yard";
+			text="Zone de fret de Sofia";
 			type="mil_dot";
 			colorName="ColorUnknown";
 			angle=-415.91299;
