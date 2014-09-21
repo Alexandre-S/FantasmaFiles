@@ -1,6 +1,6 @@
 author = "Tonic";
 onLoadName = "Altis Life RPG v3.1.4.8";
-onLoadMission = "A RPG game mode developed by Tonic";
+onLoadMission = "Un Jeu de Rôle développé par Tonic et Havena";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
@@ -66,9 +66,9 @@ class CfgDebriefing
 {
 	class NotWhitelisted
 	{
-		title = "Mission Failed";
-		subtitle = "You are not white-listed to use this slot";
-		description = "You are not allowed to use this slot because you do not have the appropriate permissions, try another slot.";
+		title = "Echec de mission";
+		subtitle = "Vous n'êtes pas white-listé pour utiliser ce slot";
+		description = "Vous n'êtes pas aurotisé a utiliser ce slot car vous n'avez pas les permissions requises, essayez un autre slot.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -76,9 +76,9 @@ class CfgDebriefing
 	
 	class Blacklisted
 	{
-		title = "Mission Failed";
-		subtitle = "You are blacklisted from cops";
-		description = "You are not allowed to be a cop due to previous actions and the admins have removed you from being a cop.";
+		title = "Echec de mission";
+		subtitle = "Vous êtes blacklisté par la gendarmerie";
+		description = "Vous n'êtes pas autorisé à être gendarme dû à vos précédentes actions et les admins vous ont retiré l'accès pour être gendarme.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -86,9 +86,9 @@ class CfgDebriefing
 	
 	class SpyGlass
 	{
-		title = "The SpyGlass sees you";
-		subTitle = "You were detected by the SpyGlass";
-		description = "You were detected for cheating and have been reported to the server. Enjoy your day.";
+		title = "Le SpyGlass t'a vu !";
+		subTitle = "Vous êtes détecté par le SpyGlass";
+		description = "Vous êtes détecté comme cheateur et un report a été adressé au serveur. Profitez bien de votre journée.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
