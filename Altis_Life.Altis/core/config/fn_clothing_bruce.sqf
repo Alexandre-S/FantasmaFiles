@@ -31,7 +31,17 @@ switch (_filter) do
 		["U_C_HunterBody_grn","The Hunters Look",1500],
 		["U_C_WorkerCoveralls","Mechanic Coveralls",2500],
 		["U_OrestesBody","Surfing On Land",1100],
-		["U_NikosAgedBody","Casual Wears",5000]
+		["U_C_Poor_1","Poor",1500],
+		["U_BG_Guerilla3_1","Hunter",2000],
+		["U_I_G_Story_Protagonist_F","Work",2000],
+		["U_BG_Guerilla2_2","Bucheron",2600],
+		["U_BG_Guerilla2_3","Routine",2600],
+		["U_BG_Guerilla2_1","Routine",2600],
+		["U_NikosBody","Rakail",3500],
+		["U_NikosAgedBody","Casual Wears",5000],
+		["U_Marshal","Casual Wears",5500],	
+		["U_I_HeliPilotCoveralls","Work on airport",6000],
+		["U_C_Journalist","AAN",6500]
 		];
 	};
 	
@@ -93,6 +103,10 @@ switch (_filter) do
 	case 3:
 	{
 		[
+			["V_BandollierB_oli",nil,1200],
+			["V_BandollierB_blk",nil,1200],
+			["V_BandollierB_rgr",nil,1200],
+			["V_Press_F",nil,2000]
 		];
 	};
 	
@@ -101,13 +115,25 @@ switch (_filter) do
 	{
 		[
 			["B_AssaultPack_cbr",nil,2500],
+			["B_AssaultPack_khk",nil,2500],
+			["B_AssaultPack_mcamo",nil,2500],
+			["B_AssaultPack_sgg",nil,2500],
+			["B_AssaultPack_rgr",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
+			["B_Kitbag_sgg",nil,4500],
 			["B_TacticalPack_oli",nil,3500],
-			["B_FieldPack_ocamo",nil,3000],
+			["B_FieldPack_cbr",nil,3000],
+			["B_FieldPack_khk",nil,3000],
+			["B_FieldPack_oli",nil,3000],
 			["B_Bergen_sgg",nil,4500],
 			["B_Kitbag_cbr",nil,4500],
+			["B_TacticalPack_mcamo",nil,4500],
+			["B_TacticalPack_blk",nil,4500],
+			["B_TacticalPack_oli",nil,4500],
+			["B_TacticalPack_rgr",nil,4500],
 			["B_Carryall_oli",nil,5000],
-			["B_Carryall_khk",nil,5000]
+			["B_Carryall_khk",nil,5000],
+			["B_Carryall_cbr",nil,5000]
 		];
 	};
 };
