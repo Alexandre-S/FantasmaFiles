@@ -104,7 +104,7 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","O_APC_Wheeled_02_rcws_F","B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F"];
+life_vShop_rentalOnly = [""];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -381,6 +381,10 @@ life_garage_sell =
 	["B_SDV_01_F",1],
 	["B_MRAP_01_F",1],
 	["I_MRAP_03_F",1],
-	["B_Heli_Attack_01_F",1]
+	["B_Heli_Attack_01_F",1],
+	["B_MRAP_01_hmg_F",1],
+	["O_APC_Wheeled_02_rcws_F",1],
+	["B_G_Offroad_01_armed_F",225000],
+	["O_MRAP_02_hmg_F",375000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
