@@ -257,7 +257,7 @@ player createDiarySubject ["controls","Controles"];
 				Les éléments de cette liste non exhaustive peuvent entrainer des sanctions sur le serveur.<br/><br/>
 				1. Les civils peuvent être arrêtés pour avoir fouillé dans un sac ou un véhicule de la gendarmerie. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
 				2. Les civils peuvent être arrêtés pour avoir suivi les gendarmes afin de donner leur position aux autres joueurs. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/>
-				3. Les civils ou rebelles s'amusant à tuer les gendarmes en ville ou ailleurs sans raison Role Play et valable sera considéré comme du FreeKill.<br/>
+				3. Les civils ou terroristes s'amusant à tuer les gendarmes en ville ou ailleurs sans raison Role Play et valable sera considéré comme du FreeKill.<br/>
 				4. Suivre ou harceler les gendarmes durant une longue période sera considéré comme du troll, et ceci entrainera un BAN sur le serveur.<br/>
 				5. Bloquer de façon active la gendarmerie peut conduire à votre arrestation. Si vous êtes surpris à effectuer cette action constamment vous pouvez avoir un BAN sur le serveur.<br/><br/>
 				"
@@ -326,8 +326,8 @@ player createDiarySubject ["controls","Controles"];
 				
 				1. Tuer n'importe qui sans raison Rôle Play.<br/>
 				2. Déclarer une rébellion n'est pas une cause valable pour tuer n'importe qui, même les gendarmes.<br/>
-				3. Gendarmes et civils/rebelles peuvent commencer une fusillade seulement si il y a des raisons liés à un crime.<br/>
-				4. Si vous n'êtes pas lié à un crime, et que vous ne souhaitez pas mourir, quittez les lieux des fusillades. Vous ne pourrez pas vous plaindre de mourir si vous trouvez que rester dans une banque en train d'être dérobé par des rebelles est une bonne idée.<br/><br/>
+				3. Gendarmes et civils/terroristes peuvent commencer une fusillade seulement si il y a des raisons liés à un crime.<br/>
+				4. Si vous n'êtes pas lié à un crime, et que vous ne souhaitez pas mourir, quittez les lieux des fusillades. Vous ne pourrez pas vous plaindre de mourir si vous trouvez que rester dans une banque en train d'être dérobé par des terroristes est une bonne idée.<br/><br/>
 				Toutes ces actions seront jugés au cas par cas par les admins.<br/><br/>
 				"
 		]
@@ -394,10 +394,10 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Gendarmerie",
 				"
-				1. Toutes personnes rebelles ou travaillant avec les rebelles sera considérés comme un criminel et sera recherchés.<br/>
-				2. Toutes personnes trouvés portant des vêtements de rebelle, ou conduisant un véhicule rebelle sera considérés comme un rebelle.<br/>
-				3. La force léthal contre les rebelles peut-être utilisé si ils représentent une menace direct.<br/>
-				4. Le Freekill s'applique aux gendarmes comme aux rebelles.<br/><br/>
+				1. Toutes personnes terroristes ou travaillant avec les terroristes sera considérés comme un criminel et sera recherchés.<br/>
+				2. Toutes personnes trouvés portant des vêtements de terroriste, ou conduisant un véhicule terroriste sera considérés comme un terroriste.<br/>
+				3. La force léthal contre les terroristes peut-être utilisé si ils représentent une menace direct.<br/>
+				4. Le Freekill s'applique aux gendarmes comme aux terroristes.<br/><br/>
 				"
 		]
 	];
@@ -478,10 +478,10 @@ player createDiarySubject ["controls","Controles"];
 				1. Les véhicules qui semblent abandonnés, cassés, sans conducteur, doivent être mis en fourrière.<br/>
 				2. La mise en fourrière est le travail essentiel des gendarmes, vous aiderez à garder le serveur propre et à éviter les lags.<br/>
 
-				Les véhicules illégaux appartiennent aux rebelles. Il est autorisé de les mettre hors service pour procéder ensuite à une arrestation.<br/><br/>
+				Les véhicules illégaux appartiennent aux terroristes. Il est autorisé de les mettre hors service pour procéder ensuite à une arrestation.<br/><br/>
 
 				Véhicules illégaux:<br/>
-				1. Tout véhicule rebelle<br/>
+				1. Tout véhicule terroriste<br/>
 				2. Si un civil est au contrôle d'un véhicule de dengarmerie.<br/>
 				"
 		]
@@ -600,13 +600,13 @@ player createDiarySubject ["controls","Controles"];
 // Illegal Items Section
 	player createDiaryRecord ["illegalitems",
 		[
-			"Règles rebelle",
+			"Règles terroriste",
 				"
-				Un rebelle est quelqu’un qui a pris les armes face à un gouvernement. Ici on parle de gendarmes. Toujours est-il que dû au faible pourcentage de policiers comparé aux potentiels rebelles, ne les attaquez pas sans raison, soyez intelligent et utiliser votre bon-sens, ne prenez pas le terme rebelle trop litteralement, mais cherchez plutôt a élaborer des scènes RP notamment ou encore créer des situations inédites et amusantes.<br/><br/>
+				Un terroriste est quelqu’un qui a pris les armes face à un gouvernement. Ici on parle de gendarmes. Toujours est-il que dû au faible pourcentage de policiers comparé aux potentiels terroristes, ne les attaquez pas sans raison, soyez intelligent et utiliser votre bon-sens, ne prenez pas le terme terroriste trop litteralement, mais cherchez plutôt a élaborer des scènes RP notamment ou encore créer des situations inédites et amusantes.<br/><br/>
 
-				1. Un rebelle doit premièrement créer un gang, ainsi qu’en déclarer les intentions.<br/>
+				1. Un terroriste doit premièrement créer un gang, ainsi qu’en déclarer les intentions.<br/>
 				2. La rebellion n’excuse pas le FreeKill. (Voir chapitre sur le FreeKill.)<br/>
-				3. Les rebelles plus que quiconque doivent jouer RolePlay et faire autre chose qu’attaquer la résèrve fédérale, par exemple.<br/>
+				3. Les terroristes plus que quiconque doivent jouer RolePlay et faire autre chose qu’attaquer la résèrve fédérale, par exemple.<br/>
 				4. Une raison VALABLE doit se trouver derrière chaque attaque.<br/>
 				5. L’utilisation d’explosifs si autorisée sur un plan technique, ne doit pas vous donner le droit de tout casser. Essayez de ne pas saboter les batiments importants.<br/>
 				6. Pas de placements ni d’utilisation aléatoires des explosifs, si abus, la règle sur le FreeKill sera appliquée.<br/><br/>
@@ -629,7 +629,7 @@ player createDiarySubject ["controls","Controles"];
 				"
 				Toute personne possédant ou au volant des véhicules suivants est exposée aux conséquences définies dans la loi sur l’interdiction de la possession des véhicules interdits.<br/><br/>
 
-				1. Tout vehicule Rebelle.
+				1. Tout vehicule terroriste.
 				2. Tout vehicule Gendarme. (Si personne non-gendarme...)
 				"
 		]
@@ -665,7 +665,7 @@ player createDiarySubject ["controls","Controles"];
 				1. Vous êtes toujours un civil et devez obéir à toutes les règles qui s'appliquent donc aux civils.<br/>
 				2. Tirer sur d'un autre joueurs est toujours considéré comme du freekill si vous ne faite pas de sommations verbales dans un premier temps. (voir section freekill)<br/>
 				3. Vous ne devez pas attaquer une personne sans qu'il y ais eu provocation, et toujours leur donner une chance de se rendre avant d'ouvrir le feu.<br/>
-				4. En tant que vigil, votre travail consiste à proteger vos clients uniquement des groupuscules rebelles et des criminels.<br/><br/>
+				4. En tant que vigil, votre travail consiste à proteger vos clients uniquement des groupuscules terroristes et des criminels.<br/><br/>
 				"	
 		]
 	];

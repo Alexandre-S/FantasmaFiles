@@ -215,7 +215,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Vous n'êtes pas rebelle !"};
+			case (playerSide != civilian): {"Vous n'êtes pas un terroriste !"};
 			case (!license_civ_rebel): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
 			default
 			{
@@ -265,7 +265,7 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Vous n'êtes pas rebelle !"};
+			case (playerSide != civilian): {"Vous n'êtes pas un terroriste !"};
 			case ((!license_civ_rebel) &&(__GETC__(life_adminlevel) == 0)): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
 			default
 			{
