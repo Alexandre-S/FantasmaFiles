@@ -51,12 +51,12 @@ switch (_filter) do
 	case 1:
 	{
 		_ret pushBack ["H_MilCap_blue",nil,0];
-		if(__GETC__(life_coplevel) => 2) then
+		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["H_Booniehat_mcamo",nil,0];
 			_ret pushBack ["H_HelmetB_plain_mcamo",nil,0];
 		};
-		if(__GETC__(life_coplevel) => 3) then
+		if(__GETC__(life_coplevel) >= 3) then
 		{
 			_ret pushBack ["H_Cap_headphones",nil,0];
 			_ret pushBack ["H_HelmetB_light",nil,0];
@@ -107,12 +107,12 @@ switch (_filter) do
 	case 3:
 	{
 		_ret pushBack ["V_Rangemaster_belt",nil,0];
-		if(__GETC__(life_coplevel) => 2) then
+		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["V_TacVest_khk",nil,0];
 			_ret pushBack ["V_TacVest_camo",nil,0];
 		};
-		if(__GETC__(life_coplevel) => 3) then
+		if(__GETC__(life_coplevel) >= 3) then
 		{
 			_ret pushBack ["V_PlateCarrierL_CTRG",nil,0];
 			_ret pushBack ["V_PlateCarrierH_CTRG",nil,0];
