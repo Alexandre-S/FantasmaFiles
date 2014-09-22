@@ -698,8 +698,6 @@ player createDiarySubject ["controls","Controles"];
 		]
 	];
 
-	*/
-// Controls Section
 	player createDiaryRecord ["Contrôles",
 		[
 			"Contrôles",
