@@ -91,7 +91,8 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
 			["O_MRAP_02_F",150000],
-			["B_Heli_Light_01_F",325000]
+			["B_Heli_Light_01_F",325000],
+			["I_Heli_Transport_02_F",700000]
 		];
 		
 		if(license_civ_rebel) then
