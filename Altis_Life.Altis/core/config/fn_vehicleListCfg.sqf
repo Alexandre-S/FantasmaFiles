@@ -171,7 +171,7 @@ switch (_shop) do
 			["sab_UN_Heli",0];
 			_return pushBack
 			["sab_UN_Large_Heli",0];
-		}
+		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
@@ -205,7 +205,7 @@ switch (_shop) do
 			["sab_UN_Heli",0];
 			_return pushBack
 			["sab_UN_Large_Heli",0];
-		}
+		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
@@ -237,7 +237,7 @@ switch (_shop) do
 			["B_Boat_Transport_01_F",0];
 			_return pushBack
 			["sab_UN_Boat",0];
-		}
+		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
