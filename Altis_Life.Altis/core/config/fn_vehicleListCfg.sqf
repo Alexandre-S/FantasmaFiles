@@ -129,13 +129,13 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_return pushBack
-			["B_MRAP_01_F",0];
+			["sab_UN_Hunter",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
 		{
 			_return pushBack
-			["B_MRAP_01_hmg_F",0];
+			["sab_UN_Hunter_hmg",0];
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
