@@ -270,6 +270,7 @@ class Life_Client_Core
 	class Cop
 	{
 		file = "core\cop";
+		class copEnter {};
 		class copMarkers {};
 		class copLights {};
 		class vehInvSearch {};
@@ -293,6 +294,7 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
+		class seizeObjects {};
 	};
 	
 	class Gangs
