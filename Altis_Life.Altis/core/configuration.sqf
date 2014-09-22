@@ -125,6 +125,7 @@ life_inv_items =
 	"life_inv_catshark",
 	"life_inv_turtle",
 	"life_inv_fishingpoles",
+	"life_inv_fishingpoles",
 	"life_inv_water",
 	"life_inv_donuts",
 	"life_inv_turtlesoup",
