@@ -30,7 +30,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 3) then
 		{
 			_ret pushBack ["U_B_HeliPilotCoveralls",nil,0];
-			_ret pushBack ["U_B_CombatUniform_mcam_tshirt 	",nil,0];
+			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,0];
 		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
@@ -68,7 +68,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["H_Beret_blk",nil,0];
-			_ret pushBack ["H_Beret_red",nil,0];
 			_ret pushBack ["H_Beret_02",nil,0];
 			_ret pushBack ["H_Beret_Colonel",nil,0];
 			_ret pushBack ["H_Booniehat_tan",nil,0];
