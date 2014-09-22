@@ -178,10 +178,10 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Boat_Transport_01_F",3000],
-			["C_Boat_Civil_01_police_F",20000],
-			["B_Boat_Armed_01_minigun_F",75000],
-			["B_SDV_01_F",100000]
+			["B_Boat_Transport_01_F",0],
+			["C_Boat_Civil_01_police_F",0],
+			["B_Boat_Armed_01_minigun_F",0],
+			["B_SDV_01_F",0]
 		];
 	};
 };

@@ -104,7 +104,7 @@ switch (playerSide) do
 /*
 	Master Array of items?
 */
-life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","B_G_Offroad_01_armed_F"];
+life_vShop_rentalOnly = ["B_MRAP_01_hmg_F","O_APC_Wheeled_02_rcws_F","B_G_Offroad_01_armed_F","O_MRAP_02_hmg_F"];
 __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can never be bought and only 'rented'. Used as a balancer & money sink. If you want your server to be chaotic then fine.. Remove it..
 
 life_inv_items = 
@@ -310,7 +310,17 @@ life_weapon_shop_array =
 	["SMG_01_F",1500],
 	["arifle_Mk20C_F",4500],
 	["30Rnd_45ACP_Mag_SMG_01",60],
-	["30Rnd_9x21_Mag",30]
+	["30Rnd_9x21_Mag",30],
+	["launch_RPG32_F",nil,210000],
+	["RPG32_F",nil,1500],
+	["srifle_GM6_F",nil,300000],
+	["5Rnd_127x108_Mag",nil,1500],
+	["optic_SOS",nil,1050],
+	["APERSMine_Range_Mag",nil,150000],
+	["APERSTripMine_Wire_Mag",nil,150000],
+	["SatchelCharge_Remote_Mag",nil,210000],
+	["O_HMG_01_high_weapon_F",nil,300000],
+	["O_HMG_01_support_high_F",nil,2100]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
@@ -339,7 +349,8 @@ life_garage_prices =
 	["C_Boat_Civil_01_police_F",3500],
 	["B_Boat_Armed_01_minigun_F",16500],
 	["B_SDV_01_F",25000],
-	["B_MRAP_01_F",7500]
+	["B_MRAP_01_F",7500],
+	["I_MRAP_03_F",7500]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -364,10 +375,12 @@ life_garage_sell =
 	["O_Heli_Light_02_unarmed_F",72500],
 	["C_Rubberboat",950],
 	["C_Boat_Civil_01_F",6800],
-	["B_Boat_Transport_01_F",850],
-	["C_Boat_Civil_01_police_F",4950],
-	["B_Boat_Armed_01_minigun_F",21000],
-	["B_SDV_01_F",45000],
-	["B_MRAP_01_F",10000]
+	["B_Boat_Transport_01_F",1],
+	["C_Boat_Civil_01_police_F",1],
+	["B_Boat_Armed_01_minigun_F",1],
+	["B_SDV_01_F",1],
+	["B_MRAP_01_F",1],
+	["I_MRAP_03_F",1],
+	["B_Heli_Attack_01_F",1]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
