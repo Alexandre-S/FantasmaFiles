@@ -11,3 +11,4 @@ _state = [_this,1,2,[0,false]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {};
 
 _vehicle lock _state;
+//_vehicle say3D "SirenLong";
