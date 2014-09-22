@@ -239,7 +239,7 @@ switch (_code) do
 							_veh lock 0;
 						} else {
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
-							[[_veh, "Beep",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
+							[[_veh],"life_fnc_vehBeep",nil,true] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
 					} else {
@@ -247,7 +247,7 @@ switch (_code) do
 							_veh lock 2;
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
-							[[_veh, "BeepBeep",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
+							[[_veh],"life_fnc_vehBeepBeep",nil,true] spawn life_fnc_MP;
 						};	
 						systemChat localize "STR_MISC_VehLock";
 					};
