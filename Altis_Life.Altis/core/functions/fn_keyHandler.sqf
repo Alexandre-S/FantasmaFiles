@@ -109,7 +109,8 @@ switch (_code) do
 	};
 	
 	//Knock out, this is experimental and yeah...
-	case 34:
+	//case 34:
+	case 46:
 	{
 		if(_shift) then {_handled = true;};
 		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
