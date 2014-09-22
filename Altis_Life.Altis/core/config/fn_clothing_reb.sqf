@@ -17,29 +17,14 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_IG_Guerilla1_1",nil,5000];
-		// Faction 1
-		if(__GETC__(life_factnumber) = 1) then
-		{
-			_ret pushBack ["U_I_G_resistanceLeader_F",nil,11500];
-			// Si leader de faction
-			if(__GETC__(life_reblevel) = 3) then
-			{
-				_ret pushBack ["U_O_SpecopsUniform_ocamo",nil,17500];
-				_ret pushBack ["U_O_GhillieSuit",nil,50000];
-			};
-		};
-		// Faction 2
-		if(__GETC__(life_factnumber) = 2) then
-		{
-			_ret pushBack ["U_O_PilotCoveralls",nil,15610];
-			// Si leader de faction
-			if(__GETC__(life_reblevel) = 3) then
-			{
-				_ret pushBack ["U_IG_leader",nil,15340];
-				_ret pushBack ["U_O_GhillieSuit",nil,50000];
-			};
-		};
+		[
+			["U_IG_Guerilla1_1",nil,5000],
+			["U_I_G_resistanceLeader_F",nil,11500],
+			["U_O_SpecopsUniform_ocamo",nil,17500],
+			["U_O_PilotCoveralls",nil,15610],
+			["U_IG_leader","Guerilla Leader",15340],
+			["U_O_GhillieSuit",nil,50000]
+		];
 	};
 	
 	//Hats
