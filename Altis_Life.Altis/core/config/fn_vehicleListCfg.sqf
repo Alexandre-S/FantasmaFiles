@@ -110,7 +110,7 @@ switch (_shop) do
 	case "cop_car":
 	{
 		_return pushBack
-		["sab_UN_Car",0];
+		["sab_UN_Car","Hayon ONU",0];
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
