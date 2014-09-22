@@ -5,7 +5,7 @@ marker_mapesp = true;
 //Alle Vehicle
 //_list_vec = (allMissionObjects "Plane")+(allMissionObjects "LandVehicle")+(allMissionObjects "Helicopter")+(allMissionObjects "Ship");
 //<-----GLOBAL-VARIABLE----->
-
+private["_actualunit"];
 //hint "Adding Markers on the map";
 admin_F4_EH = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 0x3E) then {marker_mapesp = false;};"];	
 

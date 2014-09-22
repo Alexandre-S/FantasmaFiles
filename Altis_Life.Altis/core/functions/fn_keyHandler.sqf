@@ -113,7 +113,7 @@ switch (_code) do
 	case 46:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == civilian && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
 		{
 			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
 			{
@@ -177,7 +177,8 @@ switch (_code) do
 	//F Key
 	case 33:
 	{
-		if(playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
+		if(_shift) then {_handled = true;};
+		if(_shift && playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
 		{
 			[] spawn
 			{
@@ -238,6 +239,7 @@ switch (_code) do
 							_veh lock 0;
 						} else {
 							[[_veh,0],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
+							[[_veh, "Beep",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 						};
 						systemChat localize "STR_MISC_VehUnlock";
 					} else {
@@ -245,6 +247,7 @@ switch (_code) do
 							_veh lock 2;
 						} else {
 							[[_veh,2],"life_fnc_lockVehicle",_veh,false] spawn life_fnc_MP;
+							[[_veh, "BeepBeep",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 						};	
 						systemChat localize "STR_MISC_VehLock";
 					};

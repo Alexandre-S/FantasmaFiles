@@ -395,10 +395,10 @@ player createDiarySubject ["controls","Controles"];
 				Shift + C : Assomer<br/>
 				Y: Open Player Menu<br/>
 				U: Lock and unlock cars<br/>
-				F: Sirene (Si policier)<br/>
+				Shift + F: Sirene (Si policier)<br/>
 				T: Inventaire vehicule<br/>
 				Left Shift + R: Menotter (Si policier)<br/>
-				Left Shift + G: Assomer (Civil seulement, utilisé pour voler une personne)<br/>
+				Left Shift + G: Assomer (utilisé pour voler une personne)<br/>
 				Left Windows: Interaction pricnipal pour différente situation - Prendre item ou argent - interaction avec les véhicules - interaction police à civil. Peut-être modifié dans vos configuration personnalisable Configure->Controls->Custom->Use Action 10<br/>
 				Left Shift + L: Girophares (Si policier)<br/>
 				Left Shift + H: Ranger sont arme<br/>
