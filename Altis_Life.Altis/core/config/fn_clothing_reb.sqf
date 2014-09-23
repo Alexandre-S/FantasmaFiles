@@ -39,7 +39,8 @@ switch (_filter) do
 			["U_PMC_CombatUniformLS_ChckP_BPBB","Para Chemise combat rouge",20000],
 			["U_PMC_CombatUniformLS_BSSPBB","Para Veste combat noire bas clair",20000],
 			["U_PMC_CombatUniformLS_GSBPBB","Para Veste combat verte bas foncé",20000],
-			["U_PMC_CombatUniformLS_IndPBSBB","Para Veste combat noire bas camo",20000]
+			["U_PMC_CombatUniformLS_IndPBSBB","Para Veste combat noire bas camo",20000],
+			["vip_clothes","Para Tenue VIP",50000]
 		];
 	};
 	
