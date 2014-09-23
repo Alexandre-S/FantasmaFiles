@@ -76,7 +76,9 @@ class Mission
 		"A3_Structures_F_EPB_Civ_Garbage",
 		"A3_Structures_F_Households_Addons",
 		"A3_Structures_F_Kart_Civ_SportsGrounds",
-		"sab_UN"
+		"sab_UN",
+		"PG_Services_PMC_UNITS",
+		"pg_services_pmc_client"
 	};
 	addOnsAuto[]=
 	{
@@ -145,7 +147,9 @@ class Mission
 		"A3_Structures_F_Households_Addons",
 		"A3_Structures_F_Kart_Civ_SportsGrounds",
 		"a3_map_altis",
-		"sab_UN"
+		"sab_UN",
+		"PG_Services_PMC_UNITS",
+		"pg_services_pmc_client"
 	};
 	randomSeed=2004553;
 	class Intel

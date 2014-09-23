@@ -38,7 +38,9 @@ switch (_filter) do
 		["U_NikosAgedBody","Casual Wears",5000],
 		["U_Marshal","Casual Wears",5500],	
 		["U_I_HeliPilotCoveralls","Work on airport",6000],
-		["U_C_Journalist","AAN",6500]
+		["U_C_Journalist","AAN",6500],
+		["U_PMC_BluePlaidShirt_BeigeCords","Chemise bleu et pantalon beige",3500],
+		["U_PMC_RedPlaidShirt_DenimCords","Chemise rouge et jean bleu",3500]
 		];
 	};
 	

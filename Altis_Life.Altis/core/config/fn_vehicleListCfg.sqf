@@ -104,6 +104,12 @@ switch (_shop) do
 		{
 			_return pushBack
 			["O_MRAP_02_hmg_F",1250000];
+			_return pushBack
+			["PMC_Offroad_Armed",750000];
+			_return pushBack
+			["PMC_Offroad_Transport",15000];
+			_return pushBack
+			["PMC_MH9",253000];
 		};
 	};
 	

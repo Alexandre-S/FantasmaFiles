@@ -244,6 +244,7 @@ switch(_shop) do
 						["optic_Arco",nil,8000],
 						["acc_flashlight",nil,1000],
 						["acc_pointer_IR",nil,2000],
+						["pmc_earpiece",nil,1000],
 						["ItemGPS",nil,100],
 						["ItemCompass",nil,75],
 						["ItemWatch",nil,50],
@@ -255,6 +256,7 @@ switch(_shop) do
 						["SmokeShellPurple",nil,1000],
 						["SmokeShellBlue",nil,1000],
 						["SmokeShellOrange",nil,1000]
+						
 					]
 				];
 			};

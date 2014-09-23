@@ -146,6 +146,7 @@ switch (_filter) do
 		{
 			_ret pushBack ["B_Carryall_cbr",nil,0];
 			_ret pushBack ["B_Carryall_khk",nil,0];
+			_ret pushBack ["B_Carryall_mcamo",nil,0];
 			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
 		};
 	};
