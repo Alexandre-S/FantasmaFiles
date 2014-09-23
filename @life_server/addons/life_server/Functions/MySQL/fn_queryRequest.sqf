@@ -26,7 +26,7 @@ _query = switch(_side) do {
 	case west: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	// START CHANGES
 	// HERE I'VE ADDED MY 3 FIELDS ON CIVILIAN
-	case civilian: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb FROM players WHERE playerid='%1'",_uid];};
 	// END CHANGES
 	case independent: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
 };
@@ -82,6 +82,9 @@ switch (_side) do {
 	
 	case civilian: {
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
+		
+		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
+
 		// START CHANGES
 		// HERE I CONVERT CIVLIAN BLACKLIST TO BOOLEAN
 		// END CHANGES
@@ -96,7 +99,7 @@ switch (_side) do {
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
 // vvvvvv DID I NEED TO CHANGE THIS ? vvvvvv
-_queryResult set[12,_keyArr];
+_queryResult set[14,_keyArr];
 // ^^^^^^ DID I NEED TO CHANGE THIS ? ^^^^^^
 
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

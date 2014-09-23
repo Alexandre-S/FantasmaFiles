@@ -30,6 +30,10 @@ life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 
+life_isblacklisted = false;
+life_factnumber = 0;
+life_reblevel = 0;
+
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothing_reb.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -19,11 +20,11 @@ switch (_filter) do
 	{
 		[
 			["U_IG_Guerilla1_1",nil,5000],
-			["U_I_G_resistanceLeader_F",nil,11500],
-			["U_O_SpecopsUniform_ocamo",nil,17500],
-			["U_O_GhillieSuit",nil,50000],
-			["U_O_PilotCoveralls",nil,15610],
-			["U_IG_leader",nil,15340],
+			// ["U_I_G_resistanceLeader_F",nil,11500],
+			// ["U_O_SpecopsUniform_ocamo",nil,17500],
+			// ["U_O_GhillieSuit",nil,50000],
+			// ["U_O_PilotCoveralls",nil,15610],
+			// ["U_IG_leader",nil,15340],
 			["U_PMC_GTShirt_DJeans","Para TeeShirt vert et jean",10000],
 			["U_PMC_GTShirt_SJeans","Para TeeShirt vert et bas blanc",10000],
 			["U_PMC_BlkTShirt_DJeans","Para TeeShirt noir et jean",10000],
@@ -42,6 +43,29 @@ switch (_filter) do
 			["U_PMC_CombatUniformLS_IndPBSBB","Para Veste combat noire bas camo",20000],
 			["vip_clothes","Para Tenue VIP",50000]
 		];
+		
+		// Faction 1
+		if(__GETC__(life_factnumber) == 1) then
+		{
+			_ret pushBack ["U_I_G_resistanceLeader_F",nil,11500];
+			// Si leader de faction
+			if(__GETC__(life_reblevel) > 2) then
+			{
+				_ret pushBack ["U_O_SpecopsUniform_ocamo",nil,17500];
+				_ret pushBack ["U_O_GhillieSuit",nil,50000];
+			};
+		};
+		// Faction 2
+		if(__GETC__(life_factnumber) == 2) then
+		{
+			_ret pushBack ["U_O_PilotCoveralls",nil,15610];
+			// Si leader de faction
+			if(__GETC__(life_reblevel) > 2) then
+			{
+				_ret pushBack ["U_IG_leader",nil,15340];
+				_ret pushBack ["U_O_GhillieSuit",nil,50000];
+			};
+		};
 	};
 	
 	//Hats
