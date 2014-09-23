@@ -57,7 +57,7 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
 		// START CHANGES
-		__CONST__(life_isblacklisted, _this select 9);
+		life_isblacklisted = _this select 9;
 		__CONST__(life_factnumber, parseNumber(_this select 10));
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
