@@ -170,3 +170,5 @@ switch (_filter) do
 		];
 	};
 };
+
+_ret;
