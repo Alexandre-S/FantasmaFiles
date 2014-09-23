@@ -26,7 +26,7 @@ _query = switch(_side) do {
 	case west: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, blacklist FROM players WHERE playerid='%1'",_uid];};
 	// START CHANGES
 	// HERE I'VE ADDED MY 3 FIELDS ON CIVILIAN
-	case civilian: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 12; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear FROM players WHERE playerid='%1'",_uid];};
 	// END CHANGES
 	case independent: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear FROM players WHERE playerid='%1'",_uid];};
 };
@@ -84,7 +84,6 @@ switch (_side) do {
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
 		// START CHANGES
 		// HERE I CONVERT CIVLIAN BLACKLIST TO BOOLEAN
-		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 		// END CHANGES
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
 		waitUntil {scriptDone _houseData};

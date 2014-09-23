@@ -1,4 +1,3 @@
-#include <macro.h>
 /*
 	File: fn_clothing_reb.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -6,48 +5,31 @@
 	Description:
 	Master configuration file for Reb shop.
 */
-private["_filter","_ret"];
+private["_filter"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
 ctrlSetText[3103,"Mohammed's Jihadi Shop"];
 
-_ret = [];
 switch (_filter) do
 {
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_IG_Guerilla1_1",nil,5000];
-		// rebz grp 1
-		if(__GETC__(life_factnumber) = 1) then
-		{
-			_ret pushBack ["U_I_G_resistanceLeader_F",nil,11500];
-			// If rebz leader
-			if(__GETC__(life_reblevel) = 3) then
-			{
-				_ret pushBack ["U_O_SpecopsUniform_ocamo",nil,17500];
-				_ret pushBack ["U_O_GhillieSuit",nil,50000];
-			};
-		};
-		// rebz grp 2
-		if(__GETC__(life_factnumber) = 2) then
-		{
-			_ret pushBack ["U_O_PilotCoveralls",nil,15610];
-			// if rebz leader
-			if(__GETC__(life_reblevel) = 3) then
-			{
-				_ret pushBack ["U_IG_leader",nil,15340];
-				_ret pushBack ["U_O_GhillieSuit",nil,50000];
-			};
-		};
+		[
+			["U_IG_Guerilla1_1",nil,5000],
+			["U_I_G_resistanceLeader_F",nil,11500],
+			["U_O_SpecopsUniform_ocamo",nil,17500],
+			["U_O_GhillieSuit",nil,50000],
+			["U_O_PilotCoveralls",nil,15610],
+			["U_IG_leader",nil,15340]
+		];
 	};
 	
 	//Hats
 	case 1:
-	{
-		_ret = 
+	{ 
 		[
 			["H_ShemagOpen_tan",nil,850],
 			["H_Shemag_tan",nil,850],
@@ -75,7 +57,6 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
-		_ret = 
 		[
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -100,7 +81,6 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		_ret = 
 		[
 			["V_TacVest_khk",nil,12500],
 			["V_BandollierB_cbr",nil,4500],
@@ -111,7 +91,6 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-		_ret = 
 		[
 			["B_AssaultPack_ocamo",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
