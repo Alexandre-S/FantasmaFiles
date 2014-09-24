@@ -121,7 +121,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_return pushBack
-			["sab_UN_Offroad","ONU Pickup",0];
+			["sab_UN_Offroad",0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then

@@ -33,7 +33,13 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
+			[_path + "hatchback_01_ext_sport01_co.paa","cop"],
+			[_path + "hatchback_01_ext_sport02_co.paa","cop"],
+			[_path + "hatchback_01_ext_sport03_co.paa","cop"],
+			[_path + "hatchback_01_ext_sport04_co.paa","cop"],
+			[_path + "hatchback_01_ext_sport05_co.paa","cop"],
+			[_path + "hatchback_01_ext_sport06_co.paa","cop"]
 		];
 	};
 		
