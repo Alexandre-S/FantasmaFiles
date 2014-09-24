@@ -33,7 +33,7 @@ life_removeWanted = false;
 life_isblacklisted = false;
 life_factnumber = 0;
 life_reblevel = 0;
-life_fatigue = 0.5; //Set the max fatigue limit (50%)
+life_fatigue = 0.6; //Set the max fatigue
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
