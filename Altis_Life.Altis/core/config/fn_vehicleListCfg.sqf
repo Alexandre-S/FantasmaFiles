@@ -100,16 +100,21 @@ switch (_shop) do
 			_return pushBack
 			["B_G_Offroad_01_armed_F",750000];
 		};
-		if(__GETC__(life_adminlevel) >= 1) then
+		// Faction 1 = Armée Privée
+		if(__GETC__(life_factnumber) == 1) then
 		{
-			_return pushBack
-			["O_MRAP_02_hmg_F",1250000];
-			_return pushBack
-			["PMC_Offroad_Armed",750000];
 			_return pushBack
 			["PMC_Offroad_Transport",15000];
 			_return pushBack
-			["PMC_MH9",253000];
+			["PMC_Offroad_Armed",750000];
+			_return pushBack
+			["PMC_MH9",325000];
+			// Si leader de faction
+			if(__GETC__(life_reblevel) >= 3) then
+			{
+				_return pushBack
+				["O_MRAP_02_hmg_F",1250000];
+			};
 		};
 	};
 	
@@ -140,6 +145,14 @@ switch (_shop) do
 		{
 			_return pushBack
 			["sab_UN_Hunter",0];
+			_return pushBack
+			["sab_UN_Truck_Fuel",0];
+			_return pushBack
+			["sab_UN_Truck_Medi",0];
+			_return pushBack
+			["sab_UN_Truck_Rep",0];
+			_return pushBack
+			["sab_UN_Truck_Ammo",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
@@ -163,6 +176,9 @@ switch (_shop) do
 			["sab_UN_CRV",0]; // Impossible de ranger au garage
 			_return pushBack
 			["sab_UN_Kuma",0];
+			_return pushBack
+			["sab_UN_Panther",0];
+			
 		};
 	};
 	
