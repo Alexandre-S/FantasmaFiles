@@ -30,6 +30,10 @@ life_versionInfo = "Altis Life RPG v5.0";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 
+if(playerSide == west) then {
+	{_x setMarkerAlphaLocal 0} forEach ["Dealer_1","Dealer_2","gang_area_1","gang_area_2","gang_area_3","Rebelop","Rebelop_1","Rebelop_2","turle_dealer_1","turtle_1_name_1","turtle_2","turtle_3","turtle_1_name_2","chop_shop_1","chop_shop_4","chop_shop_3","turtle_1_name","turtle_1","Weed_p_1","heroin_p","coke_area","cocaine_1","Dealer_1_4","Dealer_1_3","heroin_1","heroin_area","cocaine_processing","weed_1"];
+};
+
 [] execVM "admintools\loop.sqf";
 
 StartProgress = true;

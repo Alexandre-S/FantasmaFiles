@@ -220,6 +220,7 @@ class Life_Client_Core
 		class loadGear {};
 		class stripDownPlayer {};
 		class playSound {};
+		class fatigueReset {};
 	};
 	
 	class Network

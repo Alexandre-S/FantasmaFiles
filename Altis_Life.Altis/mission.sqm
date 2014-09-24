@@ -12712,7 +12712,7 @@ class Mission
 		class Item25
 		{
 			position[]={5880.5322,114.13192,12464.515};
-			name="cocaine processing";
+			name="cocaine_processing";
 			text="Traitement de la cocaine";
 			type="mil_dot";
 			colorName="Color1_FD_F";
