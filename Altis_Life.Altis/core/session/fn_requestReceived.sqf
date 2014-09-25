@@ -49,7 +49,8 @@ switch(playerSide) do {
 	case west: {
 		__CONST__(life_coplevel, parseNumber(_this select 7));
 		__CONST__(life_medicLevel,0);
-		life_blacklisted = _this select 9;
+		// life_blacklisted = _this select 9;
+		life_position = _this select 9;
 	};
 	
 	case civilian: {
@@ -75,16 +76,18 @@ switch(playerSide) do {
 		};
 		[] spawn life_fnc_initHouses;
 		// END CHANGES
+		life_position = _this select 14;
 	};
 	
 	case independent: {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
+		life_position = _this select 9;
 	};
 };
 
 // DID I NEED TO CHANGE "_this select 12" ? To what ? 
-if(count (_this select 14) > 0) then {
+if(count (_this select 15) > 0) then {
 	// DID I NEED TO CHANGE "_this select 12" ? To what ? 
 	{life_vehicles pushBack _x;} foreach (_this select 14);
 };
