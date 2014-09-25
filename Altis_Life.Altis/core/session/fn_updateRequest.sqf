@@ -2,8 +2,8 @@
 	File: fn_updateRequest.sqf
 	Author: Tonic
 */
-private["_packet","_array","_flag"];
-_packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash,_position];
+private["_packet","_array","_flag","_position"];
+_packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 _position = getPosATL player;
@@ -19,6 +19,8 @@ _packet pushBack _array;
 _packet pushBack life_gear;
 
 _packet pushBack _position;
+
+if(!(player getVariable["Revive",false]) || !alive player) then {life_is_alive = false;} 
 _packet pushBack life_is_alive;
 
 switch (playerSide) do {

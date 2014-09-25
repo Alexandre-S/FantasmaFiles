@@ -51,6 +51,7 @@ switch(playerSide) do {
 		__CONST__(life_medicLevel,0);
 		// life_blacklisted = _this select 9;
 		life_position = _this select 9;
+		life_is_alive = _this select 10;
 	};
 	
 	case civilian: {
@@ -63,31 +64,33 @@ switch(playerSide) do {
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
-		life_houses = _this select 13;
+		life_houses = _this select 14;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
 		// Same here, select 10 + 3 fields, is that right ?
-		life_gangData = _This select 14;
+		life_gangData = _This select 15;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
 		[] spawn life_fnc_initHouses;
 		// END CHANGES
 		life_position = _this select 12;
+		life_is_alive = _this select 13;
 	};
 	
 	case independent: {
 		__CONST__(life_medicLevel, parseNumber(_this select 7));
 		__CONST__(life_coplevel,0);
 		life_position = _this select 9;
+		life_is_alive = _this select 10;
 	};
 };
 
 // DID I NEED TO CHANGE "_this select 12" ? To what ? 
-if(count (_this select 15) > 0) then {
+if(count (_this select 16) > 0) then {
 	// DID I NEED TO CHANGE "_this select 12" ? To what ? 
 	{life_vehicles pushBack _x;} foreach (_this select 14);
 };

@@ -23,12 +23,12 @@ _ownerID = owner _ownerID;
 	The other part is well the SQL statement.
 */
 _query = switch(_side) do {
-	case west: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position FROM players WHERE playerid='%1'",_uid];};
+	case west: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive FROM players WHERE playerid='%1'",_uid];};
 	// START CHANGES
 	// HERE I'VE ADDED MY 3 FIELDS ON CIVILIAN
-	case civilian: {_returnCount = 13; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 14; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive FROM players WHERE playerid='%1'",_uid];};
 	// END CHANGES
-	case independent: {_returnCount = 9; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, position FROM players WHERE playerid='%1'",_uid];};
+	case independent: {_returnCount = 10; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, position, alive FROM players WHERE playerid='%1'",_uid];};
 };
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
@@ -82,6 +82,8 @@ switch (_side) do {
 		_new = [(_queryResult select 9)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[9,_new];
+		//alive
+		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
 	};
 	
 	case civilian: {
@@ -103,6 +105,8 @@ switch (_side) do {
 		_new = [(_queryResult select 12)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[12,_new];
+		//alive
+		_queryResult set[13,([_queryResult select 13,1] call DB_fnc_bool)];
 	};
 	
 	case independent: {
@@ -110,12 +114,14 @@ switch (_side) do {
 		_new = [(_queryResult select 9)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
 		_queryResult set[9,_new];
+		//alive
+		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
 	};
 };
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
 // vvvvvv DID I NEED TO CHANGE THIS ? vvvvvv
-_queryResult set[15,_keyArr];
+_queryResult set[16,_keyArr];
 // ^^^^^^ DID I NEED TO CHANGE THIS ? ^^^^^^
 
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;
