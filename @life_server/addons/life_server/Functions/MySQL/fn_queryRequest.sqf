@@ -100,9 +100,9 @@ switch (_side) do {
 		_queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
 		
 		//POS
-		_new = [(_queryResult select 14)] call DB_fnc_mresToArray;
+		_new = [(_queryResult select 12)] call DB_fnc_mresToArray;
 		if(typeName _new == "STRING") then {_new = call compile format["%1", _new];};
-		_queryResult set[14,_new];
+		_queryResult set[12,_new];
 	};
 	
 	case independent: {

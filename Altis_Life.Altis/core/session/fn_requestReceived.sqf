@@ -63,20 +63,20 @@ switch(playerSide) do {
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
-		life_houses = _this select 12;
+		life_houses = _this select 13;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
 		// Same here, select 10 + 3 fields, is that right ?
-		life_gangData = _This select 13;
+		life_gangData = _This select 14;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
 		[] spawn life_fnc_initHouses;
 		// END CHANGES
-		life_position = _this select 14;
+		life_position = _this select 12;
 	};
 	
 	case independent: {
