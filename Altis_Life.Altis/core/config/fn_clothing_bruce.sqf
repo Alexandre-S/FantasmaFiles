@@ -11,6 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 
 //Shop Title Name
 ctrlSetText[3103,"Bruce's Outback Outfits"];
+comment "Remove existing items";
 
 switch (_filter) do
 {
@@ -40,7 +41,9 @@ switch (_filter) do
 		["U_I_HeliPilotCoveralls","Work on airport",6000],
 		["U_C_Journalist","AAN",6500],
 		["U_PMC_BluePlaidShirt_BeigeCords","Chemise bleu et pantalon beige",3500],
-		["U_PMC_RedPlaidShirt_DenimCords","Chemise rouge et jean bleu",3500]
+		["U_PMC_RedPlaidShirt_DenimCords","Chemise rouge et jean bleu",3500],
+		["IRA_Soldier_Outfit_7","Polo Guinness et jean",3500],
+		["UVF_Soldier_Outfit_4","Polo Rugby",3500]
 		];
 	};
 	

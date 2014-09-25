@@ -50,14 +50,29 @@ switch (_filter) do
 				_ret pushBack ["vip_clothes",nil,50000];
 			};
 		};
-		// Faction 2
+		// Faction 2 = Mafia
 		if(__GETC__(life_factnumber) == 2) then
 		{
-			_ret pushBack ["U_IG_Guerilla1_1",nil,5000];
+			_ret pushBack ["UVF_Soldier_Outfit_1","Veste noire ouverte et jean",10000];
+			_ret pushBack ["IRA_Soldier_Outfit_3","Veste camo ouverte et jean Vert",10000];
+			_ret pushBack ["IRA_Soldier_Outfit_2","Veste camo ouverte et jean Bleu",10000];
+			_ret pushBack ["IRA_Soldier_Outfit_5","Veste khaki ouverte et jean",10000];
+			_ret pushBack ["UVF_Soldier_Outfit_3","Tenue noire et bas noir",10000];
+			_ret pushBack ["IRA_Soldier_Outfit_6","Tenue marron et bas vert",10000];
+			_ret pushBack ["UVF_Soldier_Outfit_6","Tenue marron et bas noir",10000];
+			_ret pushBack ["IRA_Soldier_Outfit_8","Tenue verte et bas camo",10000];
+			_ret pushBack ["UVF_Soldier_Outfit_5","Tenue bleue et bas noir ",10000];
+			// Si leader de faction
+			if(__GETC__(life_reblevel) >= 2) then
+			{
+				_ret pushBack ["IRA_Soldier_Outfit_1","Uniforme vert",20000];
+			};
 			// Si leader de faction
 			if(__GETC__(life_reblevel) >= 3) then
 			{
 				_ret pushBack ["U_O_GhillieSuit",nil,50000];
+				_ret pushBack ["UVF_Soldier_Outfit_2","Uniforme noir",50000];
+				_ret pushBack ["IRA_Soldier_Outfit_4","Uniforme camo",50000];
 			};
 		};
 	};
@@ -121,7 +136,8 @@ switch (_filter) do
 			["G_Balaclava_combat",nil,300],
 			["G_Balaclava_lowprofile",nil,300],
 			["G_Balaclava_blk",nil,300],
-			["G_Balaclava_oli",nil,300]
+			["G_Balaclava_oli",nil,300],
+			["IRA_Balaclava_Brown",nil,300]
 		];
 	};
 	

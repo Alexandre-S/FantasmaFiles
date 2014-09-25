@@ -78,7 +78,8 @@ class Mission
 		"A3_Structures_F_Kart_Civ_SportsGrounds",
 		"sab_UN",
 		"PG_Services_PMC_UNITS",
-		"pg_services_pmc_client"
+		"pg_services_pmc_client",
+		"bravo93_uvf_soldier5"
 	};
 	addOnsAuto[]=
 	{
@@ -149,7 +150,8 @@ class Mission
 		"a3_map_altis",
 		"sab_UN",
 		"PG_Services_PMC_UNITS",
-		"pg_services_pmc_client"
+		"pg_services_pmc_client",
+		"bravo93_uvf_soldier5"
 	};
 	randomSeed=2004553;
 	class Intel

@@ -113,7 +113,9 @@ _patchList =
 "A3_Characters_F_Bootcamp","A3_Weapons_F_Bootcamp_LongRangeRifles_M320","A3_Weapons_F_Bootcamp_LongRangeRifles_GM6","A3_Structures_F_Bootcamp_Items_Food","A3_Structures_F_Bootcamp_Items_Electronics","A3_Structures_F_Bootcamp_Civ_SportsGrounds",
 "A3_Structures_F_Bootcamp_Civ_Camping","A3_Language_F_Bootcamp","A3_Functions_F_Bootcamp","A3_Structures_F_Bootcamp_VR_Helpers","A3_Structures_F_Bootcamp_VR_CoverObjects","A3_Structures_F_Bootcamp_VR_Blocks","A3_Structures_F_Bootcamp_Training",
 "A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Items_Sport","A3_Structures_F_Bootcamp_Ind_Cargo","A3_Sounds_F_Bootcamp","A3_Data_F_Bootcamp","A3_Map_VR_Scenes","A3_Missions_F_Bootcamp","A3_Music_F_Bootcamp","Map_VR",
-"sab_UN","PG_Services_PMC_UNITS","pg_services_pmc_client","PG_Services_PMC_Bags","PG_Services_PMC_CLIENT","PG_Services_PMC_Gear","PG_SERVICES_PMC_UNDERWEAR","PG_SERVICES_PMC_UNIFORMS","PG_Services_PMC_Goggles","PG_Services_PMC_Ammoboxes"
+"sab_UN","PG_Services_PMC_UNITS","pg_services_pmc_client","PG_Services_PMC_Bags","PG_Services_PMC_CLIENT","PG_Services_PMC_Gear","PG_SERVICES_PMC_UNDERWEAR","PG_SERVICES_PMC_UNIFORMS","PG_Services_PMC_Goggles","PG_Services_PMC_Ammoboxes",
+"Bravo93_Balaclava","Bravo93_IRA_Soldier4","Bravo93_IRA_Soldier1","Bravo93_IRA_Soldier3","Bravo93_IRA_Soldier2","Bravo93_IRA_Soldier5","Bravo93_IRA_Soldier6","Bravo93_IRA_Soldier7","Bravo93_IRA_Soldier8",
+"Bravo93_UVF_Soldier1","Bravo93_UVF_Soldier2","Bravo93_UVF_Soldier3","Bravo93_UVF_Soldier4","Bravo93_UVF_Soldier5","Bravo93_UVF_Soldier6","Bravo93_UVF_Soldier7","Bravo93_UVF_Soldier8"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
