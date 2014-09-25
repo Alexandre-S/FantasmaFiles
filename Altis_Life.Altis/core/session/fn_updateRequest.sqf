@@ -20,7 +20,7 @@ _packet pushBack life_gear;
 
 _packet pushBack _position;
 
-if(!(player getVariable["Revive",false]) || !alive player) then {life_is_alive = false;};
+if((player getVariable["Revive",false]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
 _packet pushBack life_is_alive;
 
 switch (playerSide) do {
