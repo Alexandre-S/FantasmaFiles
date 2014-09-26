@@ -79,7 +79,11 @@ class Mission
 		"sab_UN",
 		"PG_Services_PMC_UNITS",
 		"pg_services_pmc_client",
-		"bravo93_uvf_soldier5"
+		"bravo93_uvf_soldier5",
+		"mas_weapons_m4",
+		"mas_weapons",
+		"mas_weapons_nw",
+		"mas_weapons_ak"
 	};
 	addOnsAuto[]=
 	{
@@ -151,7 +155,11 @@ class Mission
 		"sab_UN",
 		"PG_Services_PMC_UNITS",
 		"pg_services_pmc_client",
-		"bravo93_uvf_soldier5"
+		"bravo93_uvf_soldier5",
+		"mas_weapons_m4",
+		"mas_weapons",
+		"mas_weapons_nw",
+		"mas_weapons_ak"
 	};
 	randomSeed=2004553;
 	class Intel
