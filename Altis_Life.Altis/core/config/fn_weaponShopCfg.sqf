@@ -14,10 +14,10 @@
 		[classname,Custom Name (set nil for default),price]
 	]]
 */
-private["_shop"];
+private["_shop","_ret"];
 _shop = [_this,0,"",[""]] call BIS_fnc_param;
 if(_shop == "") exitWith {closeDialog 0}; //Bad shop type passed.
-
+_ret = [];
 switch(_shop) do
 {
 	case "cop_basic":
@@ -27,6 +27,7 @@ switch(_shop) do
 			case (playerSide != west): {"Interdit aux civils !"};
 			default
 			{
+				_ret =
 				["Equipement General",
 					[
 						["arifle_sdar_F","Taser Rifle",0],
@@ -81,6 +82,7 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 2): {"Réservé aux brigadiers !"};
 			default
 			{
+				_ret =
 				["Armurerie : Brigadier",
 					[
 						["arifle_MXC_F",nil,0],
@@ -110,6 +112,7 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
 			default
 			{
+				_ret =
 				["Armurerie : Lieutenant",
 					[
 						["srifle_EBR_F",nil,0],
@@ -137,6 +140,7 @@ switch(_shop) do
 			case ((__GETC__(life_coplevel) < 4)&&(__GETC__(life_adminlevel) == 0)): {"Réservé aux capitaines"};
 			default
 			{
+				_ret =
 				["Armurerie : Capitaine",
 					[
 						["LMG_Mk200_F",nil,0],
@@ -160,6 +164,7 @@ switch(_shop) do
 			case ((__GETC__(life_coplevel) < 5)&&(__GETC__(life_adminlevel) == 0)): {"Réservé aux Hauts Gradés"};
 			default
 			{
+				_ret =
 				["Armurerie : Hauts Gradés",
 					[
 						["srifle_LRR_F",nil,0],
@@ -188,6 +193,7 @@ switch(_shop) do
 		{
 			case (playerSide != independent): {"Vous n'êtes pas membre de la Croix-Rouge !"};
 			default {
+				_ret =
 				["Magasin Croix-Rouge",
 					[
 						["ItemGPS",nil,100],
@@ -219,8 +225,9 @@ switch(_shop) do
 			case (!license_civ_rebel): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
 			default
 			{
+				_ret =
 				["Marché Noir",
-					[
+					[					
 						["arifle_TRG20_F",nil,25000],
 						["30Rnd_556x45_Stanag",nil,300],
 						["arifle_Katiba_F",nil,30000],
@@ -271,6 +278,7 @@ switch(_shop) do
 			case ((!license_civ_rebel) &&(__GETC__(life_adminlevel) == 0)): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
 			default
 			{
+				_ret =
 				["Marché Noir Leader",
 					[
 						["launch_RPG32_F",nil,700000],
@@ -293,10 +301,11 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != civilian): {"Vous n'êtes pas civil !"};
+			//case (playerSide != civilian): {"Vous n'êtes pas civil !"};
 			case (!license_civ_gun): {"Désolé monsieur, vous n'avez pas le permis de port d'armes !"};
 			default
 			{
+				_ret = 
 				["Armurerie",
 					[
 						["hgun_Rook40_F",nil,6500],
@@ -321,6 +330,7 @@ switch(_shop) do
 			case (playerSide != civilian): {"Vous n'êtes pas civil !"};
 			default
 			{
+				_ret = 
 				["Armurerie de gang",
 					[
 						["hgun_Rook40_F",nil,2500],
@@ -340,6 +350,7 @@ switch(_shop) do
 	
 	case "genstore":
 	{
+		_ret = 
 		["Magasin Général",
 			[
 				["Binocular",nil,150],
@@ -359,3 +370,4 @@ switch(_shop) do
 		];
 	};
 };
+_ret;
