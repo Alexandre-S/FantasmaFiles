@@ -75,6 +75,28 @@ switch (_filter) do
 				_ret pushBack ["IRA_Soldier_Outfit_4","Uniforme camo",50000];
 			};
 		};
+		// Faction 3 = Religieux
+		if(__GETC__(life_factnumber) == 3) then
+		{
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03b","Veste khaki marron ouverte et bas vert",10000];
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03c","Veste khaki vert ouverte et bas vert",10000];
+			_ret pushBack ["U_CAF_AG_ME_FATIGUES_01a","Tenue noir et pantalon khaki",10000];
+			_ret pushBack ["U_CAF_AG_ME_FATIGUES_01d","Tenue noir et pantalon khaki foncé",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_mil_01a","Veste ouverte beige et robe marron",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_01","Tenue gris et vert avec veston bleu",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_02a","Veste ouverte noir et robe marron",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_03d","Veston noir et robe blanche",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04a","Veste marron et robe verte et marron",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04c","Veste bleu et robe bleu",10000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04d","Veste marron et robe verte et marron",10000];
+			// Si leader de faction
+			if(__GETC__(life_reblevel) >= 3) then
+			{
+				_ret pushBack ["U_O_GhillieSuit",nil,50000];
+				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01","Uniforme Vert",50000];
+				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
+			};
+		};
 	};
 	
 	//Hats
@@ -112,6 +134,19 @@ switch (_filter) do
 			_ret pushBack ["H_Booniehat_rgr",nil,450];
 			_ret pushBack ["H_Cap_pmc_headphones",nil,1000];
 			_ret pushBack ["H_PilotHelmetHeli_PMC",nil,2000];
+		};
+		// Faction 3 = Religieux
+		if(__GETC__(life_factnumber) == 3) then
+		{
+			_ret pushBack ["H_caf_ag_beanie",nil,300];
+			_ret pushBack ["H_caf_ag_fur2",nil,300];
+			_ret pushBack ["H_caf_ag_fur",nil,300];
+			_ret pushBack ["H_caf_ag_paktol_02",nil,300];
+			_ret pushBack ["H_caf_ag_paktol_03",nil,300];
+			_ret pushBack ["H_caf_ag_paktol",nil,300];
+			_ret pushBack ["H_caf_ag_paktol_04",nil,300];
+			_ret pushBack ["H_caf_ag_wrap",nil,450];			
+			_ret pushBack ["H_caf_ag_turban",nil,450];
 		};
 	};
 	

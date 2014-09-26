@@ -25,6 +25,8 @@ switch (_filter) do
 		["U_C_Poloshirt_salmon","Poloshirt Salmon",175],
 		["U_C_Poloshirt_stripped","Poloshirt stripped",125],
 		["U_C_Poloshirt_tricolour","Poloshirt Tricolor",350],
+		["U_CAF_AG_AFR_CLOTHES_02b","Trehit Sale",100],
+		["U_CAF_AG_AFR_CLOTHES_02a","Poloshirt Sale",100],		
 		["U_C_Poor_2","Rag tagged clothes",250],
 		["U_IG_Guerilla2_2","Green stripped shirt & Pants",650],
 		["U_BG_Guerilla2_1","Routine",700],
