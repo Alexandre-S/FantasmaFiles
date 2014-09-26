@@ -255,239 +255,710 @@ switch(_shop) do
 			case (!license_civ_rebel): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
 			default
 			{
-				_ret pushBack ["arifle_mas_bizon",nil,25000];
-				_ret pushBack ["64Rnd_mas_9x18_mag",nil,750];
-				// Faction 1 = Armée Privée
-				if(__GETC__(life_factnumber) == 1) then
+				// Faction 1 = Armée Privée et rang 1
+				if(__GETC__(life_factnumber) == 1 && __GETC__(life_reblevel) == 1) then
 				{
-					_ret pushBack ["pmc_earpiece",nil,1000];
-					_ret pushBack ["arifle_mas_m1014",nil,15000];
-					_ret pushBack ["7Rnd_mas_12Gauge_Slug",nil,150];
-					_ret pushBack ["7Rnd_mas_12Gauge_Pellets",nil,150];
-					_ret pushBack ["arifle_mas_m4",nil,20000];
-					_ret pushBack ["arifle_mas_m4_v",nil,20000];
-					_ret pushBack ["arifle_mas_m4_d",nil,20000];
-					_ret pushBack ["arifle_mas_m4_gl",nil,20000];
-					_ret pushBack ["arifle_mas_m4_gl_v",nil,20000];
-					_ret pushBack ["arifle_mas_m4_gl_d",nil,20000];
-					_ret pushBack ["arifle_mas_l119",nil,25000];
-					_ret pushBack ["arifle_mas_l119_v",nil,25000];
-					_ret pushBack ["arifle_mas_l119_d",nil,25000];
-					_ret pushBack ["arifle_mas_l119_gl",nil,30000];
-					_ret pushBack ["arifle_mas_l119_gl_v",nil,30000];
-					_ret pushBack ["arifle_mas_l119_gl_d",nil,30000];
-					_ret pushBack ["arifle_mas_mk16",nil,25000];
-					_ret pushBack ["arifle_mas_mk16_l",nil,25000];
-					_ret pushBack ["arifle_mas_mk16_gl",nil,30000];
-					_ret pushBack ["30Rnd_mas_556x45_Stanag",nil,300];
-					_ret pushBack ["UGL_FlareGreen_F",nil,500];
-					_ret pushBack ["UGL_FlareYellow_F",nil,500];
-					_ret pushBack ["UGL_FlareRed_F",nil,500];
-					_ret pushBack ["1Rnd_Smoke_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeRed_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeGreen_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeYellow_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokePurple_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeBlue_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeOrange_Grenade_shell",nil,350];
-					_ret pushBack ["arifle_mas_g3",nil,45000];
-					_ret pushBack ["arifle_mas_g3s",nil,45000];
-					_ret pushBack ["arifle_mas_fal",nil,45000];
-					_ret pushBack ["20Rnd_mas_762x51_Stanag",nil,700];
-					// Si lieutenant
-					if(__GETC__(life_reblevel) >= 2) then
-					{
-						_ret pushBack ["srifle_mas_m24",nil,60000];
-						_ret pushBack ["srifle_mas_m24_v",nil,60000];
-						_ret pushBack ["srifle_mas_m24_d",nil,60000];
-						_ret pushBack ["5Rnd_mas_762x51_Stanag",nil,900];
-						_ret pushBack ["LMG_mas_M249_F",nil,90000];
-						_ret pushBack ["LMG_mas_M249_F_v",nil,90000];
-						_ret pushBack ["LMG_mas_M249_F_d",nil,90000];
-						_ret pushBack ["200Rnd_mas_556x45_Stanag",nil,1200];
-						_ret pushBack ["LMG_mas_pkm_F",nil,120000];
-						_ret pushBack ["100Rnd_mas_762x54_mag",nil,1500];
-					};
-					// Si leader
-					if(__GETC__(life_reblevel) >= 3) then
-					{
-						_ret pushBack ["mas_launch_Stinger_F",nil,700000];
-						_ret pushBack ["mas_Stinger",nil,10000];
-						_ret pushBack ["mas_launch_M136_F",nil,700000];
-						_ret pushBack ["mas_M136",nil,10000];
-						_ret pushBack ["srifle_mas_m107_d",nil,700000];
-						_ret pushBack ["5Rnd_mas_127x99_Stanag",nil,5000];
-						_ret pushBack ["optic_SOS",nil,3500];
-						_ret pushBack ["APERSMine_Range_Mag",nil,500000];
-						_ret pushBack ["APERSTripMine_Wire_Mag",nil,400000];
-						_ret pushBack ["SatchelCharge_Remote_Mag",nil,700000];
-						_ret pushBack ["O_HMG_01_high_weapon_F",nil,1000000];
-						_ret pushBack ["O_HMG_01_support_high_F",nil,7000];
-					};
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["pmc_earpiece",nil,1000],
+							["arifle_mas_m1014",nil,15000],
+							["7Rnd_mas_12Gauge_Slug",nil,150],
+							["7Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_m4",nil,20000],
+							["arifle_mas_m4_v",nil,20000],
+							["arifle_mas_m4_d",nil,20000],
+							["arifle_mas_m4_gl",nil,20000],
+							["arifle_mas_m4_gl_v",nil,20000],
+							["arifle_mas_m4_gl_d",nil,20000],
+							["arifle_mas_l119",nil,25000],
+							["arifle_mas_l119_v",nil,25000],
+							["arifle_mas_l119_d",nil,25000],
+							["arifle_mas_l119_gl",nil,30000],
+							["arifle_mas_l119_gl_v",nil,30000],
+							["arifle_mas_l119_gl_d",nil,30000],
+							["arifle_mas_mk16",nil,25000],
+							["arifle_mas_mk16_l",nil,25000],
+							["arifle_mas_mk16_gl",nil,30000],
+							["30Rnd_mas_556x45_Stanag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_g3",nil,45000],
+							["arifle_mas_g3s",nil,45000],
+							["arifle_mas_fal",nil,45000],
+							["20Rnd_mas_762x51_Stanag",nil,700],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
 				};
-				// Faction 2 = Mafia
-				if(__GETC__(life_factnumber) == 2) then
+				// Faction 1 = Armée Privée et rang 2
+				if(__GETC__(life_factnumber) == 1 && __GETC__(life_reblevel) == 2) then
 				{
-					_ret pushBack ["arifle_mas_saiga",nil,15000];
-					_ret pushBack ["10Rnd_mas_12Gauge_Slug",nil,150];
-					_ret pushBack ["10Rnd_mas_12Gauge_Pellets",nil,150];
-					_ret pushBack ["arifle_mas_ak_74m",nil,20000];
-					_ret pushBack ["arifle_mas_ak_74m_c",nil,20000];
-					_ret pushBack ["arifle_mas_aks74",nil,20000];
-					_ret pushBack ["arifle_mas_ak_74m_gl",nil,25000];
-					_ret pushBack ["arifle_mas_ak_74m_gl_c",nil,25000];
-					_ret pushBack ["arifle_mas_aks74_gl",nil,25000];
-					_ret pushBack ["arifle_mas_ak_74m_sf",nil,30000];
-					_ret pushBack ["arifle_mas_ak_74m_sf_c",nil,30000];
-					_ret pushBack ["arifle_mas_ak_74m_sf_gl",nil,35000];
-					_ret pushBack ["arifle_mas_ak_74m_sf_gl_c",nil,35000];
-					_ret pushBack ["30Rnd_mas_545x39_mag",nil,300];
-					_ret pushBack ["UGL_FlareGreen_F",nil,500];
-					_ret pushBack ["UGL_FlareYellow_F",nil,500];
-					_ret pushBack ["UGL_FlareRed_F",nil,500];
-					_ret pushBack ["1Rnd_Smoke_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeRed_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeGreen_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeYellow_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokePurple_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeBlue_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeOrange_Grenade_shell",nil,350];
-					_ret pushBack ["arifle_mas_g3",nil,45000];
-					_ret pushBack ["arifle_mas_g3s",nil,45000];
-					_ret pushBack ["20Rnd_mas_762x51_Stanag",nil,700];
-					_ret pushBack ["arifle_mas_akms",nil,40000];
-					_ret pushBack ["arifle_mas_akms_c",nil,40000];
-					_ret pushBack ["arifle_mas_akms_gl",nil,45000];
-					_ret pushBack ["arifle_mas_akms_gl_c",nil,45000];
-					_ret pushBack ["arifle_mas_akm_gl",nil,50000];
-					_ret pushBack ["arifle_mas_akm",nil,45000];
-					_ret pushBack ["30Rnd_mas_762x39_mag",nil,700];
-					
-					// Si lieutenant
-					if(__GETC__(life_reblevel) >= 2) then
-					{
-						_ret pushBack ["srifle_mas_m24",nil,60000];
-						_ret pushBack ["srifle_mas_m24_v",nil,60000];
-						_ret pushBack ["srifle_mas_m24_d",nil,60000];
-						_ret pushBack ["5Rnd_mas_762x51_Stanag",nil,900];
-						_ret pushBack ["LMG_mas_M249_F",nil,90000];
-						_ret pushBack ["LMG_mas_M249_F_v",nil,90000];
-						_ret pushBack ["LMG_mas_M249_F_d",nil,90000];
-						_ret pushBack ["200Rnd_mas_556x45_Stanag",nil,1200];
-						_ret pushBack ["LMG_mas_pkm_F",nil,120000];
-						_ret pushBack ["100Rnd_mas_762x54_mag",nil,1500];
-					};
-					// Si leader
-					if(__GETC__(life_reblevel) >= 3) then
-					{
-						_ret pushBack ["mas_launch_Strela_F",nil,700000];
-						_ret pushBack ["mas_Strela",nil,10000];
-						_ret pushBack ["mas_launch_RPG7_F",nil,700000];
-						_ret pushBack ["mas_PG7V",nil,10000];
-						_ret pushBack ["srifle_mas_ksvk",nil,700000];
-						_ret pushBack ["5Rnd_mas_127x108_mag",nil,5000];
-						_ret pushBack ["optic_SOS",nil,3500];
-						_ret pushBack ["APERSMine_Range_Mag",nil,500000];
-						_ret pushBack ["APERSTripMine_Wire_Mag",nil,400000];
-						_ret pushBack ["SatchelCharge_Remote_Mag",nil,700000];
-						_ret pushBack ["O_HMG_01_high_weapon_F",nil,1000000];
-						_ret pushBack ["O_HMG_01_support_high_F",nil,7000];
-					};
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["pmc_earpiece",nil,1000],
+							["arifle_mas_m1014",nil,15000],
+							["7Rnd_mas_12Gauge_Slug",nil,150],
+							["7Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_m4",nil,20000],
+							["arifle_mas_m4_v",nil,20000],
+							["arifle_mas_m4_d",nil,20000],
+							["arifle_mas_m4_gl",nil,20000],
+							["arifle_mas_m4_gl_v",nil,20000],
+							["arifle_mas_m4_gl_d",nil,20000],
+							["arifle_mas_l119",nil,25000],
+							["arifle_mas_l119_v",nil,25000],
+							["arifle_mas_l119_d",nil,25000],
+							["arifle_mas_l119_gl",nil,30000],
+							["arifle_mas_l119_gl_v",nil,30000],
+							["arifle_mas_l119_gl_d",nil,30000],
+							["arifle_mas_mk16",nil,25000],
+							["arifle_mas_mk16_l",nil,25000],
+							["arifle_mas_mk16_gl",nil,30000],
+							["30Rnd_mas_556x45_Stanag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_g3",nil,45000],
+							["arifle_mas_g3s",nil,45000],
+							["arifle_mas_fal",nil,45000],
+							["20Rnd_mas_762x51_Stanag",nil,700],
+							["srifle_mas_m24",nil,60000],
+							["srifle_mas_m24_v",nil,60000],
+							["srifle_mas_m24_d",nil,60000],
+							["5Rnd_mas_762x51_Stanag",nil,900],
+							["optic_LRPS",nil,2500],
+							["LMG_mas_M249_F",nil,90000],
+							["LMG_mas_M249_F_v",nil,90000],
+							["LMG_mas_M249_F_d",nil,90000],
+							["200Rnd_mas_556x45_Stanag",nil,1200],
+							["LMG_mas_pkm_F",nil,120000],
+							["100Rnd_mas_762x54_mag",nil,1500],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
 				};
-				// Faction 3 = Religieux
-				if(__GETC__(life_factnumber) == 3) then
+				// Faction 1 = Armée Privée et rang 3
+				if(__GETC__(life_factnumber) == 1 && __GETC__(life_reblevel) == 3) then
 				{
-					
-					_ret pushBack ["arifle_mas_saiga",nil,15000];
-					_ret pushBack ["10Rnd_mas_12Gauge_Slug",nil,150];
-					_ret pushBack ["10Rnd_mas_12Gauge_Pellets",nil,150];
-					_ret pushBack ["arifle_mas_ak_74m",nil,20000];
-					_ret pushBack ["arifle_mas_ak_74m_c",nil,20000];
-					_ret pushBack ["arifle_mas_aks74",nil,20000];
-					_ret pushBack ["arifle_mas_ak_74m_gl",nil,25000];
-					_ret pushBack ["arifle_mas_ak_74m_gl_c",nil,25000];
-					_ret pushBack ["arifle_mas_aks74_gl",nil,25000];
-					_ret pushBack ["arifle_mas_aks74u",nil,25000];
-					_ret pushBack ["arifle_mas_aks74u_c",nil,25000];
-					_ret pushBack ["arifle_mas_ak_74m_sf",nil,30000];
-					_ret pushBack ["arifle_mas_ak_74m_sf_c",nil,30000];
-					_ret pushBack ["arifle_mas_ak_74m_sf_gl",nil,35000];
-					_ret pushBack ["arifle_mas_ak_74m_sf_gl_c",nil,35000];
-					_ret pushBack ["30Rnd_mas_545x39_mag",nil,300];
-					_ret pushBack ["UGL_FlareGreen_F",nil,500];
-					_ret pushBack ["UGL_FlareYellow_F",nil,500];
-					_ret pushBack ["UGL_FlareRed_F",nil,500];
-					_ret pushBack ["1Rnd_Smoke_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeRed_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeGreen_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeYellow_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokePurple_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeBlue_Grenade_shell",nil,350];
-					_ret pushBack ["1Rnd_SmokeOrange_Grenade_shell",nil,350];
-					_ret pushBack ["arifle_mas_m70",nil,45000];
-					_ret pushBack ["arifle_mas_m70ab",nil,45000];
-					_ret pushBack ["arifle_mas_m70_gl",nil,50000];
-					_ret pushBack ["arifle_mas_m70ab_gl",nil,50000];
-					_ret pushBack ["arifle_mas_akms",nil,40000];
-					_ret pushBack ["arifle_mas_akms_c",nil,40000];
-					_ret pushBack ["arifle_mas_akms_gl",nil,45000];
-					_ret pushBack ["arifle_mas_akms_gl_c",nil,45000];
-					_ret pushBack ["arifle_mas_akm_gl",nil,50000];
-					_ret pushBack ["arifle_mas_akm",nil,45000];
-					_ret pushBack ["30Rnd_mas_762x39_mag",nil,700];
-					
-					// Si lieutenant
-					if(__GETC__(life_reblevel) >= 2) then
-					{
-						_ret pushBack ["LMG_mas_rpk_F",nil,60000];
-						_ret pushBack ["100Rnd_mas_545x39_T_mag",nil,800];
-						_ret pushBack ["srifle_mas_m91",nil,70000];
-						_ret pushBack ["10Rnd_mas_762x54_mag",nil,900];
-						_ret pushBack ["srifle_mas_svd",nil,80000];
-						_ret pushBack ["10Rnd_mas_762x54_mag",nil,1100];
-						_ret pushBack ["LMG_mas_m72_F",nil,90000];
-						_ret pushBack ["100Rnd_mas_762x39_mag",nil,1200];
-						_ret pushBack ["LMG_mas_pkm_F",nil,120000];
-						_ret pushBack ["100Rnd_mas_762x54_mag",nil,1500];
-					};
-					// Si leader
-					if(__GETC__(life_reblevel) >= 3) then
-					{
-						_ret pushBack ["mas_launch_Strela_F",nil,700000];
-						_ret pushBack ["mas_Strela",nil,10000];
-						_ret pushBack ["mas_launch_RPG7_F",nil,700000];
-						_ret pushBack ["mas_PG7V",nil,10000];
-						_ret pushBack ["srifle_mas_ksvk_c",nil,700000];
-						_ret pushBack ["5Rnd_mas_127x108_mag",nil,5000];
-						_ret pushBack ["optic_SOS",nil,3500];
-						_ret pushBack ["APERSMine_Range_Mag",nil,500000];
-						_ret pushBack ["APERSTripMine_Wire_Mag",nil,400000];
-						_ret pushBack ["SatchelCharge_Remote_Mag",nil,700000];
-						_ret pushBack ["O_HMG_01_high_weapon_F",nil,1000000];
-						_ret pushBack ["O_HMG_01_support_high_F",nil,7000];
-					};
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["pmc_earpiece",nil,1000],
+							["arifle_mas_m1014",nil,15000],
+							["7Rnd_mas_12Gauge_Slug",nil,150],
+							["7Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_m4",nil,20000],
+							["arifle_mas_m4_v",nil,20000],
+							["arifle_mas_m4_d",nil,20000],
+							["arifle_mas_m4_gl",nil,20000],
+							["arifle_mas_m4_gl_v",nil,20000],
+							["arifle_mas_m4_gl_d",nil,20000],
+							["arifle_mas_l119",nil,25000],
+							["arifle_mas_l119_v",nil,25000],
+							["arifle_mas_l119_d",nil,25000],
+							["arifle_mas_l119_gl",nil,30000],
+							["arifle_mas_l119_gl_v",nil,30000],
+							["arifle_mas_l119_gl_d",nil,30000],
+							["arifle_mas_mk16",nil,25000],
+							["arifle_mas_mk16_l",nil,25000],
+							["arifle_mas_mk16_gl",nil,30000],
+							["30Rnd_mas_556x45_Stanag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_g3",nil,45000],
+							["arifle_mas_g3s",nil,45000],
+							["arifle_mas_fal",nil,45000],
+							["20Rnd_mas_762x51_Stanag",nil,700],
+							["srifle_mas_m24",nil,60000],
+							["srifle_mas_m24_v",nil,60000],
+							["srifle_mas_m24_d",nil,60000],
+							["5Rnd_mas_762x51_Stanag",nil,900],
+							["optic_LRPS",nil,2500],
+							["LMG_mas_M249_F",nil,90000],
+							["LMG_mas_M249_F_v",nil,90000],
+							["LMG_mas_M249_F_d",nil,90000],
+							["200Rnd_mas_556x45_Stanag",nil,1200],
+							["LMG_mas_pkm_F",nil,120000],
+							["100Rnd_mas_762x54_mag",nil,1500],
+							["mas_launch_Stinger_F",nil,700000],
+							["mas_Stinger",nil,10000],
+							["mas_launch_M136_F",nil,700000],
+							["mas_M136",nil,10000],
+							["srifle_mas_m107_d",nil,700000],
+							["5Rnd_mas_127x99_Stanag",nil,5000],
+							["optic_SOS",nil,3500],
+							["APERSMine_Range_Mag",nil,500000],
+							["APERSTripMine_Wire_Mag",nil,400000],
+							["SatchelCharge_Remote_Mag",nil,700000],
+							["O_HMG_01_high_weapon_F",nil,1000000],
+							["O_HMG_01_support_high_F",nil,7000],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
 				};
-				_ret pushBack ["hgun_Pistol_heavy_02_F",nil,10000];
-				_ret pushBack ["6Rnd_45ACP_Cylinder",nil,100];
-				_ret pushBack ["optic_ACO_grn",nil,3500];
-				_ret pushBack ["optic_Aco",nil,3500];
-				_ret pushBack ["optic_Holosight",nil,3600];
-				_ret pushBack ["optic_MRCO",nil,8000];
-				_ret pushBack ["optic_Hamr",nil,8000];
-				_ret pushBack ["optic_Arco",nil,8000];
-				_ret pushBack ["acc_flashlight",nil,1000];
-				_ret pushBack ["acc_pointer_IR",nil,2000];
-				_ret pushBack ["ItemGPS",nil,100];
-				_ret pushBack ["ItemCompass",nil,75];
-				_ret pushBack ["ItemWatch",nil,50];
-				_ret pushBack ["ItemRadio",nil,25];
-				_ret pushBack ["ItemMap",nil,10];
-				_ret pushBack ["SmokeShellRed",nil,1000];
-				_ret pushBack ["SmokeShellGreen",nil,1000];
-				_ret pushBack ["SmokeShellYellow",nil,1000];
-				_ret pushBack ["SmokeShellPurple",nil,1000];
-				_ret pushBack ["SmokeShellBlue",nil,1000];
-				_ret pushBack ["SmokeShellOrange",nil,1000];
+				// Faction 2 = Mafia et rang 1
+				if(__GETC__(life_factnumber) == 2 && __GETC__(life_reblevel) == 1) then
+				{
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["arifle_mas_saiga",nil,15000],
+							["10Rnd_mas_12Gauge_Slug",nil,150],
+							["10Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_ak_74m",nil,20000],
+							["arifle_mas_ak_74m_c",nil,20000],
+							["arifle_mas_aks74",nil,20000],
+							["arifle_mas_ak_74m_gl",nil,25000],
+							["arifle_mas_ak_74m_gl_c",nil,25000],
+							["arifle_mas_aks74_gl",nil,25000],
+							["arifle_mas_ak_74m_sf",nil,30000],
+							["arifle_mas_ak_74m_sf_c",nil,30000],
+							["arifle_mas_ak_74m_sf_gl",nil,35000],
+							["arifle_mas_ak_74m_sf_gl_c",nil,35000],
+							["30Rnd_mas_545x39_mag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_g3",nil,45000],
+							["arifle_mas_g3s",nil,45000],
+							["20Rnd_mas_762x51_Stanag",nil,700],
+							["arifle_mas_akms",nil,40000],
+							["arifle_mas_akms_c",nil,40000],
+							["arifle_mas_akms_gl",nil,45000],
+							["arifle_mas_akms_gl_c",nil,45000],
+							["arifle_mas_akm_gl",nil,50000],
+							["arifle_mas_akm",nil,45000],
+							["30Rnd_mas_762x39_mag",nil,700],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
+				};
+				// Faction 2 = Mafia et rang 2
+				if(__GETC__(life_factnumber) == 2 && __GETC__(life_reblevel) == 2) then
+				{
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["arifle_mas_saiga",nil,15000],
+							["10Rnd_mas_12Gauge_Slug",nil,150],
+							["10Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_ak_74m",nil,20000],
+							["arifle_mas_ak_74m_c",nil,20000],
+							["arifle_mas_aks74",nil,20000],
+							["arifle_mas_ak_74m_gl",nil,25000],
+							["arifle_mas_ak_74m_gl_c",nil,25000],
+							["arifle_mas_aks74_gl",nil,25000],
+							["arifle_mas_ak_74m_sf",nil,30000],
+							["arifle_mas_ak_74m_sf_c",nil,30000],
+							["arifle_mas_ak_74m_sf_gl",nil,35000],
+							["arifle_mas_ak_74m_sf_gl_c",nil,35000],
+							["30Rnd_mas_545x39_mag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_g3",nil,45000],
+							["arifle_mas_g3s",nil,45000],
+							["20Rnd_mas_762x51_Stanag",nil,700],
+							["arifle_mas_akms",nil,40000],
+							["arifle_mas_akms_c",nil,40000],
+							["arifle_mas_akms_gl",nil,45000],
+							["arifle_mas_akms_gl_c",nil,45000],
+							["arifle_mas_akm_gl",nil,50000],
+							["arifle_mas_akm",nil,45000],
+							["30Rnd_mas_762x39_mag",nil,700],
+							["srifle_mas_m24",nil,60000],
+							["srifle_mas_m24_v",nil,60000],
+							["srifle_mas_m24_d",nil,60000],
+							["5Rnd_mas_762x51_Stanag",nil,900],
+							["optic_LRPS",nil,2500],
+							["LMG_mas_M249_F",nil,90000],
+							["LMG_mas_M249_F_v",nil,90000],
+							["LMG_mas_M249_F_d",nil,90000],
+							["200Rnd_mas_556x45_Stanag",nil,1200],
+							["LMG_mas_pkm_F",nil,120000],
+							["100Rnd_mas_762x54_mag",nil,1500],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
+				};
+				// Faction 2 = Mafia et rang 3
+				if(__GETC__(life_factnumber) == 2 && __GETC__(life_reblevel) == 3) then
+				{
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["arifle_mas_m1014",nil,15000],
+							["7Rnd_mas_12Gauge_Slug",nil,150],
+							["7Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_m4",nil,20000],
+							["arifle_mas_m4_v",nil,20000],
+							["arifle_mas_m4_d",nil,20000],
+							["arifle_mas_m4_gl",nil,20000],
+							["arifle_mas_m4_gl_v",nil,20000],
+							["arifle_mas_m4_gl_d",nil,20000],
+							["arifle_mas_l119",nil,25000],
+							["arifle_mas_l119_v",nil,25000],
+							["arifle_mas_l119_d",nil,25000],
+							["arifle_mas_l119_gl",nil,30000],
+							["arifle_mas_l119_gl_v",nil,30000],
+							["arifle_mas_l119_gl_d",nil,30000],
+							["arifle_mas_mk16",nil,25000],
+							["arifle_mas_mk16_l",nil,25000],
+							["arifle_mas_mk16_gl",nil,30000],
+							["30Rnd_mas_556x45_Stanag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_g3",nil,45000],
+							["arifle_mas_g3s",nil,45000],
+							["arifle_mas_fal",nil,45000],
+							["20Rnd_mas_762x51_Stanag",nil,700],
+							["srifle_mas_m24",nil,60000],
+							["srifle_mas_m24_v",nil,60000],
+							["srifle_mas_m24_d",nil,60000],
+							["5Rnd_mas_762x51_Stanag",nil,900],
+							["optic_LRPS",nil,2500],
+							["LMG_mas_M249_F",nil,90000],
+							["LMG_mas_M249_F_v",nil,90000],
+							["LMG_mas_M249_F_d",nil,90000],
+							["200Rnd_mas_556x45_Stanag",nil,1200],
+							["LMG_mas_pkm_F",nil,120000],
+							["100Rnd_mas_762x54_mag",nil,1500],
+							["mas_launch_Strela_F",nil,700000],
+							["mas_Strela",nil,10000],
+							["mas_launch_RPG7_F",nil,700000],
+							["mas_PG7V",nil,10000],
+							["srifle_mas_ksvk",nil,700000],
+							["5Rnd_mas_127x108_mag",nil,5000],
+							["optic_SOS",nil,3500],
+							["APERSMine_Range_Mag",nil,500000],
+							["APERSTripMine_Wire_Mag",nil,400000],
+							["SatchelCharge_Remote_Mag",nil,700000],
+							["O_HMG_01_high_weapon_F",nil,1000000],
+							["O_HMG_01_support_high_F",nil,7000],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
+				};
+				// Faction 3 = Religieux et rang 1
+				if(__GETC__(life_factnumber) == 3 && __GETC__(life_reblevel) == 1) then
+				{
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["arifle_mas_saiga",nil,15000],
+							["10Rnd_mas_12Gauge_Slug",nil,150],
+							["10Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_ak_74m",nil,20000],
+							["arifle_mas_ak_74m_c",nil,20000],
+							["arifle_mas_aks74",nil,20000],
+							["arifle_mas_ak_74m_gl",nil,25000],
+							["arifle_mas_ak_74m_gl_c",nil,25000],
+							["arifle_mas_aks74_gl",nil,25000],
+							["arifle_mas_aks74u",nil,25000],
+							["arifle_mas_aks74u_c",nil,25000],
+							["arifle_mas_ak_74m_sf",nil,30000],
+							["arifle_mas_ak_74m_sf_c",nil,30000],
+							["arifle_mas_ak_74m_sf_gl",nil,35000],
+							["arifle_mas_ak_74m_sf_gl_c",nil,35000],
+							["30Rnd_mas_545x39_mag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_m70",nil,45000],
+							["arifle_mas_m70ab",nil,45000],
+							["arifle_mas_m70_gl",nil,50000],
+							["arifle_mas_m70ab_gl",nil,50000],
+							["arifle_mas_akms",nil,40000],
+							["arifle_mas_akms_c",nil,40000],
+							["arifle_mas_akms_gl",nil,45000],
+							["arifle_mas_akms_gl_c",nil,45000],
+							["arifle_mas_akm_gl",nil,50000],
+							["arifle_mas_akm",nil,45000],
+							["30Rnd_mas_762x39_mag",nil,700],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
+				};
+				// Faction 3 = Religieux et rang 2
+				if(__GETC__(life_factnumber) == 3 && __GETC__(life_reblevel) == 2) then
+				{
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["arifle_mas_saiga",nil,15000],
+							["10Rnd_mas_12Gauge_Slug",nil,150],
+							["10Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_ak_74m",nil,20000],
+							["arifle_mas_ak_74m_c",nil,20000],
+							["arifle_mas_aks74",nil,20000],
+							["arifle_mas_ak_74m_gl",nil,25000],
+							["arifle_mas_ak_74m_gl_c",nil,25000],
+							["arifle_mas_aks74_gl",nil,25000],
+							["arifle_mas_aks74u",nil,25000],
+							["arifle_mas_aks74u_c",nil,25000],
+							["arifle_mas_ak_74m_sf",nil,30000],
+							["arifle_mas_ak_74m_sf_c",nil,30000],
+							["arifle_mas_ak_74m_sf_gl",nil,35000],
+							["arifle_mas_ak_74m_sf_gl_c",nil,35000],
+							["30Rnd_mas_545x39_mag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_m70",nil,45000],
+							["arifle_mas_m70ab",nil,45000],
+							["arifle_mas_m70_gl",nil,50000],
+							["arifle_mas_m70ab_gl",nil,50000],
+							["arifle_mas_akms",nil,40000],
+							["arifle_mas_akms_c",nil,40000],
+							["arifle_mas_akms_gl",nil,45000],
+							["arifle_mas_akms_gl_c",nil,45000],
+							["arifle_mas_akm_gl",nil,50000],
+							["arifle_mas_akm",nil,45000],
+							["30Rnd_mas_762x39_mag",nil,700],
+							["LMG_mas_rpk_F",nil,60000],
+							["100Rnd_mas_545x39_T_mag",nil,800],
+							["srifle_mas_m91",nil,70000],
+							["10Rnd_mas_762x54_mag",nil,900],
+							["srifle_mas_svd",nil,80000],
+							["10Rnd_mas_762x54_mag",nil,1100],
+							["LMG_mas_m72_F",nil,90000],
+							["100Rnd_mas_762x39_mag",nil,1200],
+							["LMG_mas_pkm_F",nil,120000],
+							["100Rnd_mas_762x54_mag",nil,1500],
+							["optic_SOS",nil,3500],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
+				};
+				// Faction 3 = Religieux et rang 3
+				if(__GETC__(life_factnumber) == 3 && __GETC__(life_reblevel) == 3) then
+				{
+					_ret =
+					["Marché noir",
+						[
+							["arifle_mas_bizon",nil,25000],
+							["64Rnd_mas_9x18_mag",nil,750],
+							["arifle_mas_saiga",nil,15000],
+							["10Rnd_mas_12Gauge_Slug",nil,150],
+							["10Rnd_mas_12Gauge_Pellets",nil,150],
+							["arifle_mas_ak_74m",nil,20000],
+							["arifle_mas_ak_74m_c",nil,20000],
+							["arifle_mas_aks74",nil,20000],
+							["arifle_mas_ak_74m_gl",nil,25000],
+							["arifle_mas_ak_74m_gl_c",nil,25000],
+							["arifle_mas_aks74_gl",nil,25000],
+							["arifle_mas_aks74u",nil,25000],
+							["arifle_mas_aks74u_c",nil,25000],
+							["arifle_mas_ak_74m_sf",nil,30000],
+							["arifle_mas_ak_74m_sf_c",nil,30000],
+							["arifle_mas_ak_74m_sf_gl",nil,35000],
+							["arifle_mas_ak_74m_sf_gl_c",nil,35000],
+							["30Rnd_mas_545x39_mag",nil,300],
+							["UGL_FlareGreen_F",nil,500],
+							["UGL_FlareYellow_F",nil,500],
+							["UGL_FlareRed_F",nil,500],
+							["1Rnd_Smoke_Grenade_shell",nil,350],
+							["1Rnd_SmokeRed_Grenade_shell",nil,350],
+							["1Rnd_SmokeGreen_Grenade_shell",nil,350],
+							["1Rnd_SmokeYellow_Grenade_shell",nil,350],
+							["1Rnd_SmokePurple_Grenade_shell",nil,350],
+							["1Rnd_SmokeBlue_Grenade_shell",nil,350],
+							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
+							["arifle_mas_m70",nil,45000],
+							["arifle_mas_m70ab",nil,45000],
+							["arifle_mas_m70_gl",nil,50000],
+							["arifle_mas_m70ab_gl",nil,50000],
+							["arifle_mas_akms",nil,40000],
+							["arifle_mas_akms_c",nil,40000],
+							["arifle_mas_akms_gl",nil,45000],
+							["arifle_mas_akms_gl_c",nil,45000],
+							["arifle_mas_akm_gl",nil,50000],
+							["arifle_mas_akm",nil,45000],
+							["30Rnd_mas_762x39_mag",nil,700],
+							["LMG_mas_rpk_F",nil,60000],
+							["100Rnd_mas_545x39_T_mag",nil,800],
+							["srifle_mas_m91",nil,70000],
+							["10Rnd_mas_762x54_mag",nil,900],
+							["srifle_mas_svd",nil,80000],
+							["10Rnd_mas_762x54_mag",nil,1100],
+							["LMG_mas_m72_F",nil,90000],
+							["100Rnd_mas_762x39_mag",nil,1200],
+							["LMG_mas_pkm_F",nil,120000],
+							["100Rnd_mas_762x54_mag",nil,1500],
+							["optic_SOS",nil,3500],
+							["mas_launch_Strela_F",nil,700000],
+							["mas_Strela",nil,10000],
+							["mas_launch_RPG7_F",nil,700000],
+							["mas_PG7V",nil,10000],
+							["srifle_mas_ksvk_c",nil,700000],
+							["5Rnd_mas_127x108_mag",nil,5000],
+							["optic_SOS",nil,3500],
+							["APERSMine_Range_Mag",nil,500000],
+							["APERSTripMine_Wire_Mag",nil,400000],
+							["SatchelCharge_Remote_Mag",nil,700000],
+							["O_HMG_01_high_weapon_F",nil,1000000],
+							["O_HMG_01_support_high_F",nil,7000],
+							["hgun_Pistol_heavy_02_F",nil,10000],
+							["6Rnd_45ACP_Cylinder",nil,100],
+							["optic_ACO_grn",nil,3500],
+							["optic_Aco",nil,3500],
+							["optic_Holosight",nil,3600],
+							["optic_MRCO",nil,8000],
+							["optic_Hamr",nil,8000],
+							["optic_Arco",nil,8000],
+							["acc_flashlight",nil,1000],
+							["acc_pointer_IR",nil,2000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch",nil,50],
+							["ItemRadio",nil,25],
+							["ItemMap",nil,10],
+							["SmokeShellRed",nil,1000],
+							["SmokeShellGreen",nil,1000],
+							["SmokeShellYellow",nil,1000],
+							["SmokeShellPurple",nil,1000],
+							["SmokeShellBlue",nil,1000],
+							["SmokeShellOrange",nil,1000]
+						]
+					];
+				};
 			};
 		};
 	};
@@ -503,16 +974,7 @@ switch(_shop) do
 				_ret =
 				["Marché Noir Leader",
 					[
-						["launch_RPG32_F",nil,700000],
-						["RPG32_F",nil,5000],
-						["srifle_GM6_F",nil,1000000],
-						["5Rnd_127x108_Mag",nil,5000],
-						["optic_SOS",nil,3500],
-						["APERSMine_Range_Mag",nil,500000],
-						["APERSTripMine_Wire_Mag",nil,400000],
-						["SatchelCharge_Remote_Mag",nil,700000],
-						["O_HMG_01_high_weapon_F",nil,1000000],
-						["O_HMG_01_support_high_F",nil,7000]						
+						["Binocular",nil,700000]					
 					]
 				];
 			};
