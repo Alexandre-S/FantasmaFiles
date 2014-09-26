@@ -83,7 +83,8 @@ class Mission
 		"mas_weapons_m4",
 		"mas_weapons",
 		"mas_weapons_nw",
-		"mas_weapons_ak"
+		"mas_weapons_ak",
+		"arc_units"
 	};
 	addOnsAuto[]=
 	{
@@ -159,7 +160,8 @@ class Mission
 		"mas_weapons_m4",
 		"mas_weapons",
 		"mas_weapons_nw",
-		"mas_weapons_ak"
+		"mas_weapons_ak",
+		"arc_units"
 	};
 	randomSeed=2004553;
 	class Intel

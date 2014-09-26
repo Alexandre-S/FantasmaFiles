@@ -30,6 +30,10 @@ switch(_shop) do
 				_ret =
 				["Equipement General",
 					[
+						["arifle_mas_mp5",nil,0],
+						["arifle_mas_mp5_v",nil,0],
+						["arifle_mas_mp5_d",nil,0],
+						["30Rnd_mas_9x21_Stanag",nil,0],
 						["arifle_mas_m1014",nil,0],
 						["7Rnd_mas_12Gauge_Slug",nil,0],
 						["7Rnd_mas_12Gauge_Pellets",nil,0],
@@ -136,6 +140,9 @@ switch(_shop) do
 						["arifle_mas_hk417",nil,0],
 						["arifle_mas_hk417_v",nil,0],
 						["arifle_mas_hk417_d",nil,0],
+						["srifle_mas_sr25",nil,0],
+						["srifle_mas_sr25_v",nil,0],
+						["srifle_mas_sr25_d",nil,0],
 						["20Rnd_mas_762x51_Stanag",nil,0],
 						["hgun_mas_usp_F",nil,0],
 						["12Rnd_mas_45acp_Mag",nil,0],
@@ -175,7 +182,10 @@ switch(_shop) do
 						["optic_DMS",nil,0],
 						["optic_SOS",nil,0],
 						["optic_Yorris",nil,0],
-						["muzzle_snds_H_MG",nil,0]
+						["muzzle_mas_snds_M",nil,0],
+						["muzzle_mas_snds_Mc",nil,0],
+						["muzzle_mas_snds_SM",nil,0],
+						["muzzle_mas_snds_SMc",nil,0]
 					]
 				];
 			};

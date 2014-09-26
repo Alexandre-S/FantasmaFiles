@@ -19,25 +19,29 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Cop Uniform",0];
+		_ret pushBack ["ARC_FR_CE_Uniform_tshirt","Tenue recrue 1",0];
+		_ret pushBack ["ARC_FR_Daguet_Uniform_tshirt","Tenue recrue 2",0];
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam",nil,0];
-			_ret pushBack ["U_B_CombatUniform_mcam_vest",nil,0];
+			_ret pushBack ["ARC_FR_CE_Uniform",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Uniform",nil,0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
+			_ret pushBack ["ARC_FR_CE_Uniform_vest",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Uniform_vest",nil,0];
 			_ret pushBack ["U_B_HeliPilotCoveralls",nil,0];
-			_ret pushBack ["U_B_CombatUniform_mcam_tshirt",nil,0];
 		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["U_B_GhillieSuit",nil,0];
-			_ret pushBack ["U_B_CombatUniform_mcam_worn",nil,0];
 			_ret pushBack ["U_B_survival_uniform",nil,0];
+			_ret pushBack ["ARC_FR_Uniform_Serval",nil,0];
+			_ret pushBack ["ARC_FR_CE_Uniform_Light",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Uniform_Light",nil,0];
 			_ret pushBack ["U_BG_Guerilla2_1",nil,0];
 			_ret pushBack ["U_BG_Guerilla2_2",nil,0];
 			_ret pushBack ["U_BG_Guerilla2_3",nil,0];
@@ -54,25 +58,37 @@ switch (_filter) do
 		_ret pushBack ["sab_UN_cap",nil,0];
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["H_Booniehat_mcamo",nil,0];
-			_ret pushBack ["H_HelmetB_plain_mcamo",nil,0];
+		
+			_ret pushBack ["ARC_FR_CE_Milcap",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Milcap",nil,0];
+			_ret pushBack ["ARC_FR_CE_Helmet_simple",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Helmet_simple",nil,0];
+			_ret pushBack ["ARC_FR_CE_Mich",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Mich",nil,0];
 			_ret pushBack ["sab_UN_capHP",nil,0];
 			_ret pushBack ["sab_UN_Helmet",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 3) then
 		{
-			_ret pushBack ["H_Cap_headphones",nil,0];
-			_ret pushBack ["H_HelmetB_light",nil,0];
-			_ret pushBack ["H_HelmetSpecB_paint2",nil,0];
+			_ret pushBack ["ARC_FR_CE_booniehat",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_booniehat",nil,0];
+			_ret pushBack ["ARC_FR_CE_Helmet",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Helmet",nil,0];
+			_ret pushBack ["ARC_FR_CE_Helmet_Light",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Helmet_Light",nil,0];
 			_ret pushBack ["H_PilotHelmetHeli_B",nil,0];
 			_ret pushBack ["H_HelmetCrew_B",nil,0];
+			_ret pushBack ["H_Cap_headphones",nil,0];
+			_ret pushBack ["H_Watchcap_khk",nil,0];
+			
+			
 		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_ret pushBack ["H_Beret_blk",nil,0];
 			_ret pushBack ["H_Beret_02",nil,0];
-			_ret pushBack ["H_Beret_Colonel",nil,0];
+			_ret pushBack ["sab_UN_Beret",nil,0];
+			_ret pushBack ["H_Beret_blk",nil,0];
 			_ret pushBack ["H_Booniehat_tan",nil,0];
 			_ret pushBack ["H_Hat_grey",nil,0];
 			_ret pushBack ["H_Hat_tan",nil,0];
@@ -80,8 +96,11 @@ switch (_filter) do
 			_ret pushBack ["H_Cap_blu",nil,0];
 			_ret pushBack ["H_Cap_grn",nil,0];
 			_ret pushBack ["H_Cap_grn_BI",nil,0];
-			_ret pushBack ["sab_UN_Beret",nil,0];
-		
+		};
+		// Grade Colonel
+		if(__GETC__(life_coplevel) >= 4) then
+		{
+			_ret pushBack ["H_Beret_Colonel",nil,0];
 		};
 	};
 	
@@ -92,6 +111,8 @@ switch (_filter) do
 		[
 			["G_Shades_Black",nil,0],
 			["G_Shades_Blue",nil,0],
+			["G_Shades_Green",nil,0],
+			["G_Shades_Red",nil,0],
 			["G_Sport_Blackred",nil,0],
 			["G_Sport_Checkered",nil,0],
 			["G_Sport_Blackyellow",nil,0],
@@ -100,39 +121,55 @@ switch (_filter) do
 			["G_Squares",nil,0],
 			["G_Lowprofile",nil,0],
 			["G_Combat",nil,0],
-			["G_Bandanna_tan",nil,0],
-			["G_Bandanna_khk",nil,0],
-			["G_Bandanna_blk",nil,0],
-			["G_Bandanna_oli",nil,0]
+			["G_Tactical_Clear",nil,0]
+			
 		];
 	};
 	
 	//Vest
 	case 3:
 	{
-		_ret pushBack ["V_Rangemaster_belt",nil,0];
-		_ret pushBack ["sab_UN_Vest",nil,0];
+		_ret pushBack ["ARC_FR_CE_rangemaster_belt","Ceinture recrue 1",0];
+		_ret pushBack ["ARC_FR_Daguet_rangemaster_belt","Ceinture recrue 2",0];
+		_ret pushBack ["ARC_FR_CE_BandollierB_rgr","Bandoulière recrue 1",0];
+		_ret pushBack ["ARC_FR_Daguet_BandollierB_rgr","Bandoulière recrue 2",0];
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["V_TacVest_khk",nil,0];
-			_ret pushBack ["V_TacVest_camo",nil,0];
-			_ret pushBack ["sab_UN_mVest",nil,0];
+			_ret pushBack ["sab_UN_Vest",nil,0];
+			_ret pushBack ["ARC_FR_CE_PlateCarrier_1",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_PlateCarrier_1",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 3) then
 		{
-			_ret pushBack ["V_PlateCarrierL_CTRG",nil,0];
-			_ret pushBack ["V_PlateCarrierH_CTRG",nil,0];
+			_ret pushBack ["sab_UN_mVest",nil,0];
+			_ret pushBack ["ARC_FR_CE_PlateCarrier_2",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_PlateCarrier_2",nil,0];
+		};
+		if(__GETC__(life_coplevel) >= 4) then
+		{
 			_ret pushBack ["sab_UN_hVest",nil,0];
+			_ret pushBack ["ARC_FR_CE_Plate_Carrier",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Plate_Carrier",nil,0];
+			_ret pushBack ["ARC_FR_TANOD_Plate_Carrier",nil,0];
+		};
+		if(__GETC__(life_coplevel) >= 5) then
+		{
+			_ret pushBack ["ARC_FR_CE_Plate_Carrier_H",nil,0];
+			_ret pushBack ["ARC_FR_Daguet_Plate_Carrier_H",nil,0];
+			_ret pushBack ["ARC_FR_TANOD_Plate_Carrier_H",nil,0];
 		};
 	};
 	
 	//Backpacks
 	case 4:
 	{
-		_ret pushBack ["B_OutdoorPack_tan",nil,0];
+		_ret pushBack ["ARC_FR_Backpack_compact_CE",nil,0];
+		_ret pushBack ["ARC_FR_Backpack_compact_Daguet",nil,0];
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_ret pushBack ["ARC_FR_Kitbag_compact_CE",nil,0];
+			_ret pushBack ["ARC_FR_Kitbag_compact_Daguet",nil,0];
 			_ret pushBack ["B_AssaultPack_dgtl",nil,0];
 			_ret pushBack ["B_AssaultPack_blk",nil,0];
 			_ret pushBack ["B_AssaultPack_Kerry",nil,0];
