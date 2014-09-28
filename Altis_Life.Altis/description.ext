@@ -97,8 +97,8 @@ class CfgDebriefing
 	class Blacklisted
 	{
 		title = "Echec de mission";
-		subtitle = "Vous êtes blacklisté par la gendarmerie";
-		description = "Vous n'êtes pas autorisé à être gendarme dû à vos précédentes actions et les admins vous ont retiré l'accès pour être gendarme.";
+		subtitle = "Vous êtes blacklisté par l'ONU";
+		description = "Vous n'êtes pas autorisé à être membre de l'ONU dû à vos précédentes actions et les admins vous ont retiré l'accès pour être membre de l'ONU.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
