@@ -21,6 +21,7 @@ _packet pushBack life_gear;
 _packet pushBack _position;
 
 if((player getVariable["Revive",false]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
+diag_log format ["DEBUG CLIENT UPDATE %1, %2", player getVariable["Revive",false], alive player];
 _packet pushBack life_is_alive;
 
 switch (playerSide) do {

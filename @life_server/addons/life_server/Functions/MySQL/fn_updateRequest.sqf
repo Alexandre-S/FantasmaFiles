@@ -16,7 +16,7 @@ _gear = [_this,6,[],[[]]] call BIS_fnc_param;
 
 _position = [_this,7,""] call BIS_fnc_param;
 _alive = [_this select 8] call DB_fnc_bool;
-
+diag_log format ["DEBUG SERVER REQUEST %1", _alive];
 //Get to those error checks.
 if((_uid == "") OR (_name == "")) exitWith {};
 
