@@ -85,10 +85,7 @@ class Mission
 		"mas_weapons_nw",
 		"mas_weapons_ak",
 		"arc_units",
-		"caf_ag_faction_afr_p",
-		"caf_ag_vehicles_afr_p",
-		"caf_ag_vehicles_eeur_r",
-		"caf_ag_vehicles_me_t"
+		"caf_ag_faction_afr_p"
 	};
 	addOnsAuto[]=
 	{
@@ -166,10 +163,7 @@ class Mission
 		"mas_weapons_nw",
 		"mas_weapons_ak",
 		"arc_units",
-		"caf_ag_faction_afr_p",
-		"caf_ag_vehicles_afr_p",
-		"caf_ag_vehicles_eeur_r",
-		"caf_ag_vehicles_me_t"
+		"caf_ag_faction_afr_p"
 	};
 	randomSeed=2004553;
 	class Intel
