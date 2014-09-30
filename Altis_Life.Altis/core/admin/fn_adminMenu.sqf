@@ -21,4 +21,5 @@ lbClear _list;
 	_list lbAdd format["%1 - %2", _x getVariable["realname",name _x],_side];
 	_list lbSetdata [(lbSize _list)-1,str(_x)];
 } foreach playableUnits;
+_list = _list call BIS_fnc_sortAlphabetically;
 if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
