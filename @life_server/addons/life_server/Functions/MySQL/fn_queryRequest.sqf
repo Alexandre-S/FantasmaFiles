@@ -87,8 +87,10 @@ switch (_side) do {
 	};
 	
 	case civilian: {
+		//Arrested
 		_queryResult set[7,([_queryResult select 7,1] call DB_fnc_bool)];
 		
+		//Blacklisted
 		_queryResult set[9,([_queryResult select 9,1] call DB_fnc_bool)];
 
 		// START CHANGES

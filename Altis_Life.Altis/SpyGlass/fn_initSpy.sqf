@@ -116,9 +116,12 @@ _patchList =
 "sab_UN","PG_Services_PMC_UNITS","pg_services_pmc_client","PG_Services_PMC_Bags","PG_Services_PMC_CLIENT","PG_Services_PMC_Gear","PG_SERVICES_PMC_UNDERWEAR","PG_SERVICES_PMC_UNIFORMS","PG_Services_PMC_Goggles","PG_Services_PMC_Ammoboxes",
 "Bravo93_Balaclava","Bravo93_IRA_Soldier4","Bravo93_IRA_Soldier1","Bravo93_IRA_Soldier3","Bravo93_IRA_Soldier2","Bravo93_IRA_Soldier5","Bravo93_IRA_Soldier6","Bravo93_IRA_Soldier7","Bravo93_IRA_Soldier8",
 "Bravo93_UVF_Soldier1","Bravo93_UVF_Soldier2","Bravo93_UVF_Soldier3","Bravo93_UVF_Soldier4","Bravo93_UVF_Soldier5","Bravo93_UVF_Soldier6","Bravo93_UVF_Soldier7","Bravo93_UVF_Soldier8",
-"mas_weapons_m4","mas_weapons","mas_weapons_nw","mas_weapons_ak","mas_weapons_pack","arc_units","ARC_Units",
+"mas_weapons_m4","mas_weapons","mas_weapons_nw","mas_weapons_ak","mas_weapons_pack","arc_units","ARC_Units","Modified_MPInterrupt",
 "caf_ag_faction_afr_p","caf_ag_vehicles_afr_p","caf_ag_vehicles_eeur_r","caf_ag_vehicles_me_t","caf_ag_equip","caf_ag_equip_c","caf_ag_equip_afr_backpack","caf_ag_africa_equip_h","caf_ag_equip_afr_clothes_01","caf_ag_equip_afr_clothes_02","caf_ag_equip_me_backpack","caf_ag_eeur_equip_h_beanie","caf_ag_eeur_equip_h_boonie","caf_ag_eeur_equip_h_furhat","caf_ag_equip_EEUR_fatigues_01","caf_ag_equip_EEUR_fatigues_02","caf_ag_equip_EEUR_fatigues_03","caf_ag_middleeast_equip_h",
-"caf_ag_equip_me_fatigues_01","caf_ag_equip_me_robe_01","caf_ag_equip_me_robe_02","caf_ag_equip_me_robe_03","caf_ag_equip_me_robe_04","caf_ag_equip_t","caf_ag_faction_afr","caf_ag_faction_afr_civ","caf_ag_groups_afr_p","caf_ag_afr_p_mtr","caf_ag_faction_eur","caf_ag_faction_eeur_r","caf_ag_groups_eeur_r","caf_ag_eeur_r_mtr","caf_ag_faction_me","caf_ag_faction_me_civ","caf_ag_faction_me_t","caf_ag_groups_me_t","caf_ag_me_t_mtr","caf_ag_vehicles_T55","caf_wp_weapons_c","caf_wp_weapons_ak47","caf_wp_weapons_ak74","caf_wp_weapons_pkm","caf_wp_weapons_rpg","caf_wp_weapons_rpk","caf_wp_weapons_strela","caf_wp_weapons_svd","caf_wp_weapons_s","caf_wp_weapons_T","caf_wp_weapons"
+"caf_ag_equip_me_fatigues_01","caf_ag_equip_me_robe_01","caf_ag_equip_me_robe_02","caf_ag_equip_me_robe_03","caf_ag_equip_me_robe_04","caf_ag_equip_t","caf_ag_faction_afr","caf_ag_faction_afr_civ","caf_ag_groups_afr_p","caf_ag_afr_p_mtr","caf_ag_faction_eur","caf_ag_faction_eeur_r","caf_ag_groups_eeur_r","caf_ag_eeur_r_mtr","caf_ag_faction_me","caf_ag_faction_me_civ","caf_ag_faction_me_t","caf_ag_groups_me_t","caf_ag_me_t_mtr","caf_ag_vehicles_T55","caf_wp_weapons_c","caf_wp_weapons_ak47","caf_wp_weapons_ak74","caf_wp_weapons_pkm","caf_wp_weapons_rpg","caf_wp_weapons_rpk","caf_wp_weapons_strela","caf_wp_weapons_svd","caf_wp_weapons_s","caf_wp_weapons_T","caf_wp_weapons",
+"altisrpfr","GNT_C185","rds_A2_Civilians","cba_xeh","Extended_EventHandlers","CBA_Extended_EventHandlers","cba_common","cba_events","cba_hashes","cba_network","cba_strings","cba_vectors",
+"SakuWeaponShake","task_force_radio_items","cba_ai","cba_arrays","cba_diagnostic","cba_help","cba_keybinding","cba_ui","cba_ui_helper","cba_versioning","STStaminaBar",
+"HK430_M4benelli","Unlocked_Uniforms","cba_main","cba_main_a3","PLP_truckColors","RAV_Lifter_A3","task_force_radio","cba_xeh_a3","rds_A2_Civilians_c","Modified_MPInterrupt"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
@@ -144,7 +147,7 @@ private["_children","_allowedChildren"];
 _children = [configFile >> "RscDisplayMPInterrupt" >> "controls",0] call BIS_fnc_returnChildren;
 _allowedChildren = [
 "Title","MissionTitle","DifficultyTitle","PlayersName","ButtonCancel","ButtonSAVE","ButtonSkip","ButtonRespawn","ButtonOptions",
-"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox"
+"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox","Modified_MPInterrupt"
 ];
 
 {

@@ -25,6 +25,7 @@ _name = [_name] call DB_fnc_mresString;
 _gear = [_gear] call DB_fnc_mresArray;
 _cash = [_cash] call DB_fnc_numberSafe;
 _bank = [_bank] call DB_fnc_numberSafe;
+_position = [_position] call DB_fnc_mresArray;
 
 //Does something license related but I can't remember I only know it's important?
 for "_i" from 0 to count(_licenses)-1 do {
