@@ -13,6 +13,9 @@ _license = [_type,0] call life_fnc_licenseType;
 if(isNil "life_isblacklisted") then{
 	life_isblacklisted = false;
 };
+if(isNil "_licence") then{
+	_licence = "";
+};
 
 if(!life_isblacklisted && _licence == "license_civ_rebel") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre une faction terroriste"};
 
