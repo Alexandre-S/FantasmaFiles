@@ -1,0 +1,5 @@
+ca donne quoi la save?
+
+le résultat du diag_log format ["DEBUG REQUESTRECEIVE %1", _this]; ?
+
+si tu passe alive a 1 et que tu te co?
