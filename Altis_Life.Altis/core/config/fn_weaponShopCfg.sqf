@@ -270,7 +270,6 @@ switch(_shop) do
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
-							["pmc_earpiece",nil,1000],
 							["arifle_mas_m1014",nil,15000],
 							["7Rnd_mas_12Gauge_Slug",nil,150],
 							["7Rnd_mas_12Gauge_Pellets",nil,150],
@@ -336,7 +335,6 @@ switch(_shop) do
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
-							["pmc_earpiece",nil,1000],
 							["arifle_mas_m1014",nil,15000],
 							["7Rnd_mas_12Gauge_Slug",nil,150],
 							["7Rnd_mas_12Gauge_Pellets",nil,150],
@@ -413,7 +411,6 @@ switch(_shop) do
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
-							["pmc_earpiece",nil,1000],
 							["arifle_mas_m1014",nil,15000],
 							["7Rnd_mas_12Gauge_Slug",nil,150],
 							["7Rnd_mas_12Gauge_Pellets",nil,150],
