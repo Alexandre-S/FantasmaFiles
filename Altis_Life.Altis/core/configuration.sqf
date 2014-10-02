@@ -242,7 +242,7 @@ sell_array =
 	["spikeStrip",0],
 	["cement",1950],
 	["goldbar",95000],
-	["defusekit",0],
+	["defusekit",0]
 ];
 __CONST__(sell_array,sell_array);
 
