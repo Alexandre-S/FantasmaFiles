@@ -243,7 +243,7 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
 						["NVGoggles_INDEP",nil,1200],
-						["_FieldPack_blk ",nil,3000],
+						["FieldPack_blk",nil,3000],
 						["Chemlight_red",nil,100],
 						["Chemlight_green",nil,100],
 						["Chemlight_blue",nil,100],

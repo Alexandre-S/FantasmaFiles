@@ -20,7 +20,7 @@ switch (_shop) do
 {
 	case "reb":
 	{
-		ctrlSetText[2505,"Altis Rebel Shop"];
+		ctrlSetText[2505,"Marché noir"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -28,13 +28,13 @@ switch (_shop) do
 	
 	case "cop":
 	{
-		ctrlSetText[2505,"Altis Cop Shop"];
+		ctrlSetText[2505,"Magasin de l'ONU"];
 		ctrlShow[2503,false];
 	};
 	
 	case "gun":
 	{
-		ctrlSetText[2505,"Altis Gun Store"];
+		ctrlSetText[2505,"Armurerie d'Altis"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -42,7 +42,7 @@ switch (_shop) do
 	
 	case "gang":
 	{
-		ctrlSetText[2505,"Gang Shop"];
+		ctrlSetText[2505,"Magasin de Gang"];
 		ctrlShow[2503,false];
 		ctrlShow[2513,false];
 		ctrlShow[2514,false];
@@ -50,7 +50,7 @@ switch (_shop) do
 	
 	case "dive":
 	{
-		ctrlSetText[2505,"Altis Diving Shop"];
+		ctrlSetText[2505,"Magasin de Pêche"];
 		ctrlShow[2503,false];
 		ctrlShow[2510,false];
 		ctrlShow[2511,false];
@@ -82,7 +82,7 @@ switch (_shop) do
 	
 	case "admin":
 	{
-		ctrlSetText[2505,"Admin Shop"];
+		ctrlSetText[2505,"Magasin d'admin"];
 	};
 };
 
