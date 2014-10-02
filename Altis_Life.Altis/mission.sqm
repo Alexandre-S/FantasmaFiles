@@ -3911,7 +3911,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=839;
+		items=838;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -4963,6 +4963,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			skill=0.60000002;
+			text="gate";
 			init="this allowDamage false;";
 		};
 		class Item100
@@ -12052,16 +12053,8 @@ class Mission
 		};
 		class Item837
 		{
-			position[]={26043.35,22.554937,21512.721};
+			position[]={26040.943,22.282211,21508.221};
 			id=1083;
-			side="EMPTY";
-			vehicle="Flag_UNO_F";
-			skill=0.60000002;
-		};
-		class Item838
-		{
-			position[]={26049.906,22.418764,21510.199};
-			id=1084;
 			side="EMPTY";
 			vehicle="Flag_UNO_F";
 			skill=0.60000002;
@@ -14036,6 +14029,44 @@ class Mission
 			text="Héliport";
 			type="c_air";
 			colorName="ColorBlack";
+		};
+	};
+	class Sensors
+	{
+		items=2;
+		class Item0
+		{
+			position[]={3350.8606,2.1057513,12964.242};
+			a=6;
+			b=10;
+			angle=46.42083;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="gate animate [""Door_1_rot"", 1]";
+			expDesactiv="gate animate [""Door_1_rot"", 0]";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={26047.832,22.160557,21506.025};
+			a=5.5;
+			b=10;
+			angle=198.40401;
+			rectangular=1;
+			activationBy="WEST";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			expActiv="bargate_sofia_hq animate [""Door_1_rot"", 1]";
+			expDesactiv="bargate_sofia_hq animate [""Door_1_rot"", 0]";
+			class Effects
+			{
+			};
 		};
 	};
 };
