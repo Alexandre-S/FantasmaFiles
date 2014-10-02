@@ -12,7 +12,7 @@ if(isNull _veh) exitWith {};
 
 switch (true) do
 {
-	case (_veh isKindOf "Car") :
+	case (_veh isKindOf "Land") :
 	{
 		switch(true) do
 		{

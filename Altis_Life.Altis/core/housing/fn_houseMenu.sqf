@@ -100,7 +100,7 @@ if(!(_curTarget in life_vehicles) OR isNil {_curTarget getVariable "house_owner"
 		};
 		
 		_Btn2 ctrlSetText localize "STR_pInAct_AccessGarage";
-		_Btn2 buttonSetAction "[life_pInact_curTarget,""Car""] spawn life_fnc_vehicleGarage; closeDialog 0;";
+		_Btn2 buttonSetAction "[life_pInact_curTarget,""Land""] spawn life_fnc_vehicleGarage; closeDialog 0;";
 		_Btn2 ctrlShow true;
 		
 		_Btn3 ctrlSetText localize "STR_pInAct_StoreVeh";

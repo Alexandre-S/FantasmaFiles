@@ -16,7 +16,7 @@ while {true} do
 		_veh = _x;
 		_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
 		
-		if(_vehicleClass in ["Car","Air","Ship","Armored","Submarine"]) then
+		if(_vehicleClass in ["Land","Air","Ship","Armored","Submarine"]) then
 		{
 			_dbInfo = _veh getVariable["dbInfo",[]];
 			_units = {(_x distance _veh < 300)} count playableUnits;
