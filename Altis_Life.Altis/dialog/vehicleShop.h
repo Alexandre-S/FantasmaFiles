@@ -69,7 +69,7 @@ class Life_Vehicle_Shop_v2
 			h = (1 / 25);
 		};
 		
-		class RentCar : Life_RscButtonMenu
+		/*class RentCar : Life_RscButtonMenu
 		{
 			idc = -1;
 			text = "$STR_Global_RentVeh";
@@ -78,14 +78,14 @@ class Life_Vehicle_Shop_v2
 			y = 0.9 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
-		};
+		};*/
 		
 		class BuyCar : life_RscButtonMenu 
 		{
 			idc = 2309;
 			text = "$STR_Global_Buy";
 			onButtonClick = "[true] spawn life_fnc_vehicleShopBuy;";
-			x = 0.26 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.9 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
