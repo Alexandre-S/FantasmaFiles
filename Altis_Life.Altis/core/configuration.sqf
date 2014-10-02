@@ -221,9 +221,9 @@ sell_array =
 	["oilp",3200],
 	["turtle",3000],
 	["water",5],
-	["coffee",5],
+	["coffee",0],
 	["turtlesoup",1000],
-	["donuts",60],
+	["donuts",0],
 	["marijuana",2350],
 	["tbacon",25],
 	["lockpick",75],
@@ -239,9 +239,10 @@ sell_array =
 	["salt_r",1650],
 	["glass",1450],
 	["fuelF",500],
-	["spikeStrip",1200],
+	["spikeStrip",0],
 	["cement",1950],
-	["goldbar",95000]
+	["goldbar",95000],
+	["defusekit",0],
 ];
 __CONST__(sell_array,sell_array);
 
@@ -258,18 +259,18 @@ buy_array =
 	["water",10],
 	["turtle",4000],
 	["turtlesoup",2500],
-	["donuts",120],
-	["coffee",10],
+	["donuts",0],
+	["coffee",0],
 	["tbacon",75],
 	["lockpick",150],
 	["pickaxe",1200],
 	["redgull",1500],
 	["fuelF",850],
 	["peach",68],
-	["spikeStrip",2500],
+	["spikeStrip",0],
 	["blastingcharge",35000],
 	["boltcutter",7500],
-	["defusekit",2500],
+	["defusekit",0],
 	["storagesmall",75000],
 	["storagebig",150000]
 ];
@@ -278,17 +279,17 @@ __CONST__(buy_array,buy_array);
 life_weapon_shop_array =
 [
 	["arifle_sdar_F",7500],
-	["hgun_P07_snds_F",650],
-	["hgun_P07_F",1500],
+	["hgun_P07_snds_F",0],
+	["hgun_P07_F",0],
 	["ItemGPS",45],
 	["ToolKit",75],
 	["FirstAidKit",65],
 	["Medikit",450],
 	["NVGoggles",980],
-	["16Rnd_9x21_Mag",15],
+	["16Rnd_9x21_Mag",0],
 	["20Rnd_556x45_UW_mag",35],
-	["ItemMap",35],
-	["ItemCompass",25],
+	["ItemMap",0],
+	["ItemCompass",0],
 	["Chemlight_blue",50],
 	["Chemlight_yellow",50],
 	["Chemlight_green",50],
@@ -396,6 +397,15 @@ life_garage_sell =
 	["sab_UN_Hunter_hmg",0],
 	["I_MRAP_03_hmg_F",0],
 	["B_APC_Tracked_01_CRV_F",0],
-	["B_APC_Wheeled_01_cannon_F",0]
+	["B_APC_Wheeled_01_cannon_F",0],
+	["sab_UN_Heli",0],
+	["sab_UN_Large_Heli",0],
+	["I_Heli_light_03_unarmed_F",0],
+	["B_Heli_Transport_01_F",0],
+	["sab_UN_Heli_armed",0],
+	["B_Heli_Attack_01_F",0],
+	["sab_UN_Boat",0],
+	["sab_UN_Boat_armed",0],
+	["B_SDV_01_F",0]
 ];
 __CONST__(life_garage_sell,life_garage_sell);
