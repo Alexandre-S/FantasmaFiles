@@ -25,7 +25,7 @@ _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) 
 if(side player == west) then {
 	_retrievePrice = 0;
 	_sellPrice = 0;
-}
+};
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
