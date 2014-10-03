@@ -79,8 +79,8 @@ switch (_shop) do
 	
 	case "med_air_hs": {
 		_return = [
-			["B_Heli_Light_01_F",50000],
-			["O_Heli_Light_02_unarmed_F",75000]
+			["B_Heli_Light_01_F",253000],
+			["O_Heli_Light_02_unarmed_F",750000]
 		];
 	};
 	
@@ -260,8 +260,8 @@ switch (_shop) do
 			_return pushBack
 			["sab_UN_Boat",0];
 		};
-		// Grade Lieutenant
-		if(__GETC__(life_coplevel) >= 3) then
+		// Grade Haut-Gradés
+		if(__GETC__(life_coplevel) >= 5) then
 		{
 			_return pushBack
 			["sab_UN_Boat_armed",0];

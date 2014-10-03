@@ -1,16 +1,16 @@
 /*
-	File: fn_clothing_dive.sqf
+	File: fn_clothing_copdive.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
-	Master configuration file for Altis Diving Shop.
+	Master configuration file for Altis Cop Diving Shop.
 */
 private["_filter"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Magasin de plongée"];
+ctrlSetText[3103,"Magasin de plongée ONU"];
 
 switch (_filter) do
 {
@@ -18,7 +18,8 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["U_B_Wetsuit",nil,2000]
+			["U_B_Wetsuit",nil,0],
+			["U_O_Wetsuit",nil,0]
 		];
 	};
 	
@@ -33,7 +34,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
-			["G_Diving",nil,500]
+			["G_Diving",nil,0]
 		];
 	};
 	
@@ -41,7 +42,10 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_RebreatherB",nil,5000]
+			["V_RebreatherB",nil,0],
+			["V_RebreatherIR",nil,0],
+			["V_RebreatherIA",nil,0]
+			
 		];
 	};
 	

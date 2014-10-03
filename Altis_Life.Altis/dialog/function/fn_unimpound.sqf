@@ -19,6 +19,9 @@ if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
 _price = [_vehicle,__GETC__(life_garage_prices)] call TON_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
+if(side player == west) then {
+	_price = 0;
+}
 if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
