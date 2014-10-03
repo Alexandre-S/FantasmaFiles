@@ -132,6 +132,10 @@ switch (_code) do
 				if((vehicle player) in life_vehicles) then
 				{
 					[vehicle player] call life_fnc_openInventory;
+				} else {
+					if(playerSide == west) then {
+						[vehicle player] call life_fnc_openInventory;
+					};
 				};
 			}
 				else
@@ -140,6 +144,10 @@ switch (_code) do
 				{
 					if(cursorTarget in life_vehicles OR {!(cursorTarget getVariable ["locked",true])}) then
 					{
+						[cursorTarget] call life_fnc_openInventory;
+					};
+				} else {
+					if(playerSide == west) then {
 						[cursorTarget] call life_fnc_openInventory;
 					};
 				};
