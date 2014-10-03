@@ -14,7 +14,7 @@ if(isNil "life_isblacklisted") then{
 	life_isblacklisted = false;
 };
 
-if(!life_isblacklisted && _license == "license_civ_rebel") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre une faction terroriste"};
+if(!life_isblacklisted && (_license select 0) == "license_civ_rebel") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre une faction terroriste"};
 
 
 if(life_cash < _price) exitWith {hint format[localize "STR_NOTF_NE_1",[_price] call life_fnc_numberText,_license select 1];};
