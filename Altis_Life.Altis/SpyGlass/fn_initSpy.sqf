@@ -121,10 +121,19 @@ _patchList =
 "caf_ag_equip_me_fatigues_01","caf_ag_equip_me_robe_01","caf_ag_equip_me_robe_02","caf_ag_equip_me_robe_03","caf_ag_equip_me_robe_04","caf_ag_equip_t","caf_ag_faction_afr","caf_ag_faction_afr_civ","caf_ag_groups_afr_p","caf_ag_afr_p_mtr","caf_ag_faction_eur","caf_ag_faction_eeur_r","caf_ag_groups_eeur_r","caf_ag_eeur_r_mtr","caf_ag_faction_me","caf_ag_faction_me_civ","caf_ag_faction_me_t","caf_ag_groups_me_t","caf_ag_me_t_mtr","caf_ag_vehicles_T55","caf_wp_weapons_c","caf_wp_weapons_ak47","caf_wp_weapons_ak74","caf_wp_weapons_pkm","caf_wp_weapons_rpg","caf_wp_weapons_rpk","caf_wp_weapons_strela","caf_wp_weapons_svd","caf_wp_weapons_s","caf_wp_weapons_T","caf_wp_weapons",
 "altisrpfr","GNT_C185","rds_A2_Civilians","cba_xeh","Extended_EventHandlers","CBA_Extended_EventHandlers","cba_common","cba_events","cba_hashes","cba_network","cba_strings","cba_vectors",
 "SakuWeaponShake","task_force_radio_items","cba_ai","cba_arrays","cba_diagnostic","cba_help","cba_keybinding","cba_ui","cba_ui_helper","cba_versioning","STStaminaBar",
-"HK430_M4benelli","Unlocked_Uniforms","cba_main","cba_main_a3","PLP_truckColors","RAV_Lifter_A3","task_force_radio","cba_xeh_a3","rds_A2_Civilians_c"
+"HK430_M4benelli","Unlocked_Uniforms","cba_main","cba_main_a3","PLP_truckColors","RAV_Lifter_A3","task_force_radio","cba_xeh_a3","rds_A2_Civilians_c",
+"JSRS2_120mm_Cannon","JSRS2_127","JSRS2_155mm_AMOS","JSRS_Environment","JSRS2_Gau8","DragonFyre_Titan","JSRS2_CAS_Plane1","JSRS2_CAS_Plane2",
+"JSRS2_230mm_Titan","JSRS2_30mm_Cannon","JSRS2_35mm_Autocannon","JSRS2_4Five45","JSRS2_ACPC","JSRS2_Autocannon","JSRS2_Bullethits","JSRS2_DAGR","JSRS2_DAR","JSRS2_EBR","JSRS2_Explosions","JSRS2_Explosives","JSRS2_Filters","JSRS2_FS2000",
+"JSRS2_Gatling","JSRS2_GMG20","JSRS2_GMG40","JSRS2_Khaybar","JSRS2_LMGRCWS","JSRS2_M134","JSRS2_M200","JSRS2_M320R","JSRS2_M6","JSRS2_Minigun","JSRS2_MX","JSRS2_NLAW","JSRS2_P07","JSRS2_PDW","JSRS2_Rahim","JSRS2_Rook40","JSRS2_RPG32",
+"JSRS2_Scorpian","JSRS2_SDAR","JSRS2_Skalpel_ATGM","JSRS2_Skyfire","JSRS2_Sonic_Cracks","JSRS2_Titan","JSRS2_TRG20","JSRS2_Vector","JSRS2_Veh_Titan","JSRS2_Zafir","JSRS2_Zubr45","Blastcore_VEP","cba_ai","cba_arrays","cba_diagnostic","cba_help",
+"cba_ui_helper","cba_versioning","JSRS2_Movement","JSRS2_Silencers","cba_main","cba_main_a3","JSRS2_2S9_Sorcher","JSRS2_AFV4_Gorgon","JSRS2_AH99_Blackfoot","JSRS2_AH9_Pawnee","JSRS2_AMV7_Marshal","JSRS2_BTRK_Kamysh","JSRS2_CH49_Mohawk","JSRS2_Distance",
+"JSRS2_FighterPlane3","JSRS2_FV720_Mora","JSRS2_Hunter","JSRS2_Ifrit","JSRS2_IFV6a_Cheetah","JSRS2_IFV6c_Panther","JSRS2_M2A1_Slammer","JSRS2_M4_Scorcher","JSRS2_M5_Sandstorm","JSRS2_MBT52_Kuma","JSRS2_Mi48_Kajman","JSRS2_MSE3_Marid","JSRS2_Offroad",
+"JSRS2_Po30_Orca","JSRS2_Strider","JSRS2_SUV","JSRS2_T100_Varsuk","JSRS2_Truck1","JSRS2_Truck2","JSRS2_UAV_1","JSRS2_UH80_GhostHawk","JSRS2_Van","JSRS2_WY55_Hellcat","JSRS2_ZSU39_Tigris"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
+
+spyglass_kick = false;
 
 _endM = compile PreProcessFileLineNumbers "\a3\functions_f\Misc\fn_endMission.sqf";
 
@@ -136,7 +145,8 @@ for "_i" from 0 to count (_binConfigPatches)-1 do {
 			[[profileName,getPlayerUID player,(configName _patchEntry)],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 			[[profileName,format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 			sleep 0.5;
-			["SpyGlass",false,false] call _endM;
+			//["SpyGlass",false,false] call _endM;
+			spyglass_kick = true;
 		};
 	};
 };
@@ -155,7 +165,8 @@ _allowedChildren = [
 		[[profileName,getPlayerUID player,"Modified_MPInterrupt"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 		[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 		sleep 0.5;
-		["SpyGlass",false,false] call _endM;
+		//["SpyGlass",false,false] call _endM;
+		spyglass_kick = true;
 	};
 } foreach _children;
 
@@ -172,7 +183,8 @@ _allowedChildren = [
 		[[profileName,getPlayerUID player,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
 		[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 		sleep 0.5;
-		["SpyGlass",false,false] call _endM;
+		//["SpyGlass",false,false] call _endM;
+		spyglass_kick = true;
 	};
 }
 foreach [
@@ -202,6 +214,10 @@ foreach [
 [] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
 [] execVM "SpyGlass\fn_variableCheck.sqf";
 [] execVM "SpyGlass\fn_menuCheck.sqf";
+
+if(spyglass_kick) then{
+	["SpyGlass",false,false] call _endM;
+};
 
 //Create a no-recoil hack check.
 [] spawn {
