@@ -11,7 +11,7 @@ if(isNull _house OR !(_house isKindOf "House_F")) exitWith {};
 if(isNil {(_house getVariable "house_owner")}) exitWith {hint localize "STR_House_Raid_NoOwner"};
 
 _uid = (_house getVariable "house_owner") select 0;
-if(!([_uid] call life_fnc_isUIDActive)) exitWith {hint localize "STR_House_Raid_OwnerOff"};
+//if(!([_uid] call life_fnc_isUIDActive)) exitWith {hint localize "STR_House_Raid_OwnerOff"};
 _houseInv = _house getVariable ["Trunk",[[],0]];
 if(_houseInv isEqualTo [[],0]) exitWith {hint localize "STR_House_Raid_Nothing"};
 life_action_inUse = true;
