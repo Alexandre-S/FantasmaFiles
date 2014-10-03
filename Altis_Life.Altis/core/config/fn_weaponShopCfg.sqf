@@ -266,7 +266,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 1 && __GETC__(life_reblevel) == 1) then
 				{
 					_ret =
-					["Marché noir Armée Privée Rang 1",
+					["Marché noir Armée Privée 1",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -332,7 +332,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 1 && __GETC__(life_reblevel) == 2) then
 				{
 					_ret =
-					["Marché noir Armée Privée Rang 2",
+					["Marché noir Armée Privée 2",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -409,7 +409,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 1 && __GETC__(life_reblevel) == 3) then
 				{
 					_ret =
-					["Marché noir Armée Privée Rang 3",
+					["Marché noir Armée Privée 3",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -498,7 +498,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 2 && __GETC__(life_reblevel) == 1) then
 				{
 					_ret =
-					["Marché noir Mafia Rang 1",
+					["Marché noir Mafia 1",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -563,7 +563,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 2 && __GETC__(life_reblevel) == 2) then
 				{
 					_ret =
-					["Marché noir Mafia Rang 2",
+					["Marché noir Mafia 2",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -639,7 +639,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 2 && __GETC__(life_reblevel) == 3) then
 				{
 					_ret =
-					["Marché noir Mafia Rang 3",
+					["Marché noir Mafia 3",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -727,7 +727,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 3 && __GETC__(life_reblevel) == 1) then
 				{
 					_ret =
-					["Marché noir Religieux Rang 1",
+					["Marché noir Religieux 1",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -796,7 +796,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 3 && __GETC__(life_reblevel) == 2) then
 				{
 					_ret =
-					["Marché noir Religieux Rang 2",
+					["Marché noir Religieux 2",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
@@ -876,7 +876,7 @@ switch(_shop) do
 				if(__GETC__(life_factnumber) == 3 && __GETC__(life_reblevel) == 3) then
 				{
 					_ret =
-					["Marché noir Religieux Rang 3",
+					["Marché noir Religieux 3",
 						[
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
