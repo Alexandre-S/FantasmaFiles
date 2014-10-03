@@ -47,7 +47,12 @@ switch (_filter) do
 			_ret pushBack ["U_BG_Guerilla2_3",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_1",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
-			_ret pushBack ["sab_UN_Officer_Clothing",nil,0];			
+		};
+		
+		// Grade Haut-Gradés
+		if(__GETC__(life_coplevel) >= 5) then
+		{
+			_ret pushBack ["sab_UN_Officer_Clothing",nil,0];
 		};
 	};
 	
