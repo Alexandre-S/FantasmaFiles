@@ -392,6 +392,7 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Contrôles",
 				"
+				Shift + G: Mettre les mains derrière la tête<br/>
 				Shift + H: Ranger son arme (Holster)<br/>
 				Ctrl + H: Sortir son arme (Holster)<br/>
 				Shift + C: Assomer (utilisé pour voler une personne)<br/>
