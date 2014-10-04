@@ -179,20 +179,25 @@ switch (_filter) do
 	//Vest
 	case 3:
 	{
-		
-		_ret pushBack ["V_TacVest_khk",nil,12500];
-		_ret pushBack ["V_BandollierB_cbr",nil,4500];
-		_ret pushBack ["V_HarnessO_brn",nil,7500];
+		_ret pushBack ["V_BandollierB_cbr",nil,1200];
+		_ret pushBack ["V_TacVest_khk",nil,4000];
+		_ret pushBack ["V_TacVest_oli",nil,4000];
+		_ret pushBack ["V_TacVest_blk",nil,4000];
+		_ret pushBack ["V_TacVest_camo",nil,4000];
+		_ret pushBack ["V_HarnessO_brn",nil,5000];
+		_ret pushBack ["V_Chestrig_oli",nil,7500];
+		_ret pushBack ["V_Chestrig_khk ",nil,7500];
+		_ret pushBack ["V_PlateCarrier2_rgr",nil,10000];
+		_ret pushBack ["V_PlateCarrierIA2_dgtl",nil,15000];
 		// Faction 1 = Armée Privée
 		if(__GETC__(life_factnumber) == 1) then
 		{
-			_ret pushBack ["V_PlateCarrierInd_PMC_blk","Gilet noir Lourd",12500];
-			_ret pushBack ["V_PlateCarrier1_PMC_blk","Gilet noir léger",7500];
-			_ret pushBack ["V_PlateCarrierInd_PMC_grn","Gilet vert Lourd",12500];
-			_ret pushBack ["V_PlateCarrier1_PMC_rgr","Gilet vert léger",7500];
-			_ret pushBack ["V_PlateCarrier1_PMC_khki","Gilet khaki Lourd",7500];
-			_ret pushBack ["V_PlateCarrier1_PMC_marpat","Gilet camo léger",7500];
-			_ret pushBack ["V_TacVest_darkblck","Veste tactique",6000];
+			_ret pushBack ["V_PlateCarrier1_PMC_blk","Gilet noir léger",10000];
+			_ret pushBack ["V_PlateCarrier1_PMC_rgr","Gilet vert léger",10000];
+			_ret pushBack ["V_PlateCarrier1_PMC_khki","Gilet khaki léger",10000];
+			_ret pushBack ["V_PlateCarrier1_PMC_marpat","Gilet camo léger",10000];
+			_ret pushBack ["V_PlateCarrierInd_PMC_grn","Gilet vert Lourd",15000];
+			_ret pushBack ["V_PlateCarrierInd_PMC_blk","Gilet noir Lourd",15000];
 		};
 	};
 	
