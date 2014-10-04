@@ -47,7 +47,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 switch (_code) do
 {
 	//Space key for Jumping
-	case 57:
+	/*case 57:
 	{
 		if(isNil "jumpActionTime") then {jumpActionTime = 0;};
 		if(_shift && {animationState player != "AovrPercMrunSrasWrflDf"} && {isTouchingGround player} && {stance player == "STAND"} && {speed player > 2} && {!life_is_arrested} && {(velocity player) select 2 < 2.5} && {time - jumpActionTime > 1.5}) then {
@@ -56,7 +56,7 @@ switch (_code) do
 			[[player,false],"life_fnc_jumpFnc",nil,FALSE] call life_fnc_MP; //Global execution 
 			_handled = true;
 		};
-	};
+	};*/
 	
 	//Map Key
 	case _mapKey:
@@ -151,7 +151,7 @@ switch (_code) do
 				if(playerSide == west) then {
 					[vehicle player] call life_fnc_openInventory;
 				} else {
-					if((vehicle player) in life_vehicles) then
+					if((vehicle player) in life_vehicles && player distance vehicle < 7) then
 					{
 						[vehicle player] call life_fnc_openInventory;
 					};

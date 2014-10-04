@@ -186,6 +186,8 @@ switch (_filter) do
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_ret pushBack ["ARC_FR_Backpack_Carryall_CE",nil,0];
+			_ret pushBack ["ARC_FR_Backpack_Carryall_Daguet",nil,0];
 			_ret pushBack ["B_Carryall_cbr",nil,0];
 			_ret pushBack ["B_Carryall_khk",nil,0];
 			_ret pushBack ["B_Carryall_mcamo",nil,0];
