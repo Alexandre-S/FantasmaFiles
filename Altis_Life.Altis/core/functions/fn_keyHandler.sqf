@@ -151,7 +151,7 @@ switch (_code) do
 				if(playerSide == west) then {
 					[vehicle player] call life_fnc_openInventory;
 				} else {
-					if((vehicle player) in life_vehicles && player distance vehicle < 7) then
+					if((vehicle player) in life_vehicles && (player distance (vehicle player)) < 7) then
 					{
 						[vehicle player] call life_fnc_openInventory;
 					};

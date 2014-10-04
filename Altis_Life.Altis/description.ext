@@ -1,4 +1,4 @@
-author = "Tonic";
+author = "Tonic & Havena";
 onLoadName = "Altis Life RPG v5.0";
 onLoadMission = "Un Jeu de Rôle développé par Tonic et Havena";
 joinUnassigned = 1;
@@ -13,7 +13,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 115;
+	maxPlayers = 117;
 };
 
 wreckLimit = 3;
