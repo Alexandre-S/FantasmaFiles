@@ -173,6 +173,7 @@ switch (_filter) do
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_ret pushBack ["tf_rt1523g",nil,0];
 			_ret pushBack ["ARC_FR_Kitbag_compact_CE",nil,0];
 			_ret pushBack ["ARC_FR_Kitbag_compact_Daguet",nil,0];
 			_ret pushBack ["B_AssaultPack_dgtl",nil,0];

@@ -65,7 +65,8 @@ switch(_shop) do
 						["SmokeShellYellow",nil,0],
 						["SmokeShellPurple",nil,0],
 						["SmokeShellBlue",nil,0],
-						["SmokeShellOrange",nil,0]
+						["SmokeShellOrange",nil,0],
+						["tf_anprc152",nil,0]
 					]
 				];
 			};
@@ -270,6 +271,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Armée Privée 1",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_saiga",nil,15000],
@@ -338,6 +340,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Armée Privée 2",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_saiga",nil,15000],
@@ -418,6 +421,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Armée Privée 3",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_saiga",nil,15000],
@@ -510,6 +514,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Mafia 1",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_m1014",nil,15000],
@@ -575,6 +580,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Mafia 2",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_m1014",nil,15000],
@@ -651,6 +657,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Mafia 3",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_m1014",nil,15000],
@@ -739,6 +746,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Religieux 1",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_saiga",nil,15000],
@@ -808,6 +816,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Religieux 2",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_saiga",nil,15000],
@@ -888,6 +897,7 @@ switch(_shop) do
 					_ret =
 					["Marché noir Religieux 3",
 						[
+							["tf_anprc148jem",nil,5000],
 							["arifle_mas_bizon",nil,25000],
 							["64Rnd_mas_9x18_mag",nil,750],
 							["arifle_mas_saiga",nil,15000],
@@ -1072,6 +1082,7 @@ switch(_shop) do
 		_ret = 
 		["Magasin Général",
 			[
+				["tf_anprc148jem",nil,5000],
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
 				["ItemCompass",nil,75],

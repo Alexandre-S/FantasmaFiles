@@ -137,7 +137,8 @@ switch (_filter) do
 			["B_TacticalPack_rgr",nil,4500],
 			["B_Carryall_oli",nil,5000],
 			["B_Carryall_khk",nil,5000],
-			["B_Carryall_cbr",nil,5000]
+			["B_Carryall_cbr",nil,5000],
+			["tf_anprc155",nil,15000]
 		];
 	};
 };

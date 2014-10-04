@@ -216,7 +216,8 @@ switch (_filter) do
 			["B_Carryall_oucamo",nil,5000],
 			["B_Carryall_mcamo",nil,5000],
 			["B_Carryall_ocamo",nil,5000],
-			["B_Parachute",nil,15000]
+			["B_Parachute",nil,15000],
+			["tf_anprc155",nil,15000]
 		];
 	};
 };
