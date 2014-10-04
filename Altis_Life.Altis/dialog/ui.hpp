@@ -15,7 +15,7 @@
 			{
 			
 				idc = -1;
-				text = "icons\food.paa";
+				text = "altisrpfr\icons\food.paa";
 				x = safeZoneX+safeZoneW-0.115; y = safeZoneY+safeZoneH-0.54;
 				w = 0.03; h = 0.04;
 			};
@@ -24,7 +24,7 @@
 			{
 			
 				idc = -1;
-				text = "icons\water.paa";
+				text = "altisrpfr\icons\water.paa";
 				x = safeZoneX+safeZoneW-0.12; y = safeZoneY+safeZoneH-0.50;
 				w = 0.04; h = 0.04;
 			};
@@ -33,7 +33,7 @@
 			{
 				
 				idc = -1;
-				text = "icons\health.paa";
+				text = "altisrpfr\icons\health.paa";
 				x = safeZoneX+safeZoneW-0.11; y = safeZoneY+safeZoneH-0.445;
 				w = 0.02; h = 0.03;
 			};

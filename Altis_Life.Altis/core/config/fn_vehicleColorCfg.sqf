@@ -123,7 +123,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\heli_police_light.paa","cop"],
+			["altisrpfr\textures\heli_police_light.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
@@ -137,7 +137,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["textures\heli_medic_light.paa","med"]
+			["altisrpfr\textures\heli_medic_light.paa","med"]
 		];
 	};
 	
@@ -149,7 +149,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
-			["textures\orca_croix_rouge.paa","med"]
+			["altisrpfr\textures\orca_croix_rouge.paa","med"]
 		];
 	};
 	
