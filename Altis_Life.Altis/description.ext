@@ -1,11 +1,12 @@
 author = "Tonic & Havena";
-onLoadName = "Altis Life RPG v5.0";
-onLoadMission = "Un Jeu de Rôle développé par Tonic et Havena";
+onLoadName = "AltisLife Fantasma 5.0";
+onLoadMission = "Un Jeu de rôle de www.altisrp.fr";
 joinUnassigned = 1;
 respawn = BASE;
 respawndelay = 5;
 disabledAI = true;
 disableChannels[]={0,1,2};
+loadScreen = "altisrpfr\images\mission_splash.paa";
 enableDebugConsole = 1;
 respawnDialog = 0;
 
