@@ -39,3 +39,9 @@ if(playerSide == west) then {
 StartProgress = true;
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
+
+[] spawn
+{
+	sleep 60;
+	[] call life_fnc_updateClothing;
+};
