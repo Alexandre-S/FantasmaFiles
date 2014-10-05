@@ -29,6 +29,7 @@ life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
+life_action_gathering = false;
 
 life_isblacklisted = false;
 life_factnumber = 0;
