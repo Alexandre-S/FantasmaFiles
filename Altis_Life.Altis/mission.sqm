@@ -12085,7 +12085,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=245;
+		items=247;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -12116,7 +12116,7 @@ class Mission
 		{
 			position[]={3765.8088,18.85,12990.187};
 			name="hospital_marker";
-			text="Hôpital";
+			text="Hôpital de Kavala";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -12410,7 +12410,7 @@ class Mission
 		};
 		class Item42
 		{
-			position[]={14037.903,25.621716,18750.951};
+			position[]={14043.053,25.786663,18746.732};
 			name="civ_car_3";
 			type="Empty";
 			angle=126.40627;
@@ -13199,7 +13199,7 @@ class Mission
 		};
 		class Item139
 		{
-			position[]={14040.283,25.544865,18752.355};
+			position[]={14047.704,25.565245,18752.643};
 			name="car_g_3";
 			type="Empty";
 			angle=511.55499;
@@ -13232,7 +13232,7 @@ class Mission
 		};
 		class Item143
 		{
-			position[]={17569.355,0,18928.193};
+			position[]={17574.461,0,18924.066};
 			name="civ_ship_3";
 			text="Spawn maritime";
 			type="loc_Quay";
@@ -13569,19 +13569,15 @@ class Mission
 		{
 			position[]={15600.498,18.554039,17211.836};
 			name="hospital_2";
-			text="Hôpital";
-			type="loc_Hospital";
-			colorName="ColorRed";
-			angle=-1.303826;
+			type="Empty";
+			angle=-52.633999;
 		};
 		class Item186
 		{
 			position[]={17171.316,15.402454,12586.778};
 			name="hospital_3";
-			text="Hôpital";
-			type="loc_Hospital";
-			colorName="ColorRed";
-			angle=1.9634763;
+			type="Empty";
+			angle=-45.916599;
 		};
 		class Item187
 		{
@@ -13964,14 +13960,14 @@ class Mission
 		};
 		class Item235
 		{
-			position[]={14400.417,38.25,19015.766};
+			position[]={14402.09,38.25,19012.301};
 			name="civ_truck_2_2";
 			type="Empty";
 			angle=-128.33386;
 		};
 		class Item236
 		{
-			position[]={14391.854,38.24828,19023.502};
+			position[]={14389.106,38.242237,19022.428};
 			name="civ_truck_2_1_1";
 			type="Empty";
 			angle=-128.33386;
@@ -14037,6 +14033,22 @@ class Mission
 			type="loc_Tourism";
 			colorName="ColorGreen";
 			angle=-221.33403;
+		};
+		class Item245
+		{
+			position[]={15600,18.503464,17207.787};
+			name="hosto_airport";
+			text="Hôpital de l'aeroport";
+			type="loc_Hospital";
+			colorName="ColorRed";
+		};
+		class Item246
+		{
+			position[]={17170.848,15.233319,12583.642};
+			name="Hopital_Pyrgos";
+			text="Hôpital de Pyrgos";
+			type="loc_Hospital";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
