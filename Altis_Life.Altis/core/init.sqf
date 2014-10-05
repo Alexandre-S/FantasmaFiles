@@ -105,3 +105,10 @@ life_fnc_garageRefund = compileFinal
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 [] spawn life_fnc_fatigueReset;
+//auto update
+[] spawn
+{
+	sleep 60;
+	[] call SOCK_fnc_updateRequest;
+	[] call life_fnc_updateClothing;
+};
