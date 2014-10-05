@@ -15,7 +15,7 @@ if(_shooter isKindOf "Man" && alive player) then
 	if(!life_istazed) then
 	{
 		life_istazed = true;
-		_curWep = currentWeapon player;
+		/*_curWep = currentWeapon player;
 		_curMags = magazines player;
 		_attach = if(primaryWeapon player != "") then {primaryWeaponItems _unit} else {[]};
 		{player removeMagazine _x} foreach _curMags;
@@ -30,7 +30,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		if(count _curMags != 0) then
 		{
 			{player addMagazine _x;} foreach _curMags;
-		};
+		};*/
 		
 		[[_unit],"life_fnc_tazeSound",true,false] spawn life_fnc_MP;
 		_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL _unit);
@@ -46,6 +46,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		};
 		life_istazed = false;
 		player allowDamage true;
+		deleteVehicle _obj;
 		disableUserInput false;
 	};
 }
