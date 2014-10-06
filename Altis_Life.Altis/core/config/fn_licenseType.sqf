@@ -25,6 +25,8 @@ switch (_mode) do
 			case "cair": {_var = "license_cop_air"}; //Cop Pilot License cost
 			case "swat": {_var = "license_cop_swat"}; //Swat License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
+			case "piloteauto": {_var = "license_cop_piloteauto"}; //Pilote Automobile ONU
+			case "snipe": {_var = "license_cop_snipe"}; // Sniper ONU
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
 			case "marijuana": {_var = "license_civ_marijuana"}; //Marijuana processing license cost
 			case "medmarijuana": {_var = "license_civ_medmarijuana"}; //Medical Marijuana processing license cost
@@ -57,6 +59,8 @@ switch (_mode) do
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
+			case "license_cop_piloteauto": {_var = "piloteauto"}; //piloteauto License cost
+			case "license_cop_snipe": {_var = "snipe"}; //snipe license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost
 			case "license_civ_medmarijuana": {_var = "medmarijuana"}; //Medical Marijuana processing license cost
