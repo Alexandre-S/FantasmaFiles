@@ -208,7 +208,6 @@ switch(_shop) do
 						["srifle_mas_m107_v",nil,0],
 						["srifle_mas_m107_d",nil,0],
 						["5Rnd_mas_127x99_Stanag",nil,0],
-						["5Rnd_mas_127x99_dem_Stanag",nil,0],
 						["mas_launch_maaws_F",nil,0],
 						["mas_MAAWS",nil,0],
 						["mas_launch_M136_F",nil,0],
