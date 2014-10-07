@@ -90,13 +90,14 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
-			["O_MRAP_02_F",150000],
 			["B_Heli_Light_01_F",325000],
 			["I_Heli_Transport_02_F",700000]
 		];
-		
-		if(license_civ_rebel) then
+		// Grade 2
+		if(__GETC__(life_reblevel) >= 2) then
 		{
+			_return pushBack
+			["O_MRAP_02_F",150000];
 			_return pushBack
 			["B_G_Offroad_01_armed_F",750000];
 		};
@@ -105,10 +106,14 @@ switch (_shop) do
 		{
 			_return pushBack
 			["PMC_Offroad_Transport",15000];
-			_return pushBack
-			["PMC_Offroad_Armed",750000];
-			_return pushBack
-			["PMC_MH9",325000];
+			// Grade 2
+			if(__GETC__(life_reblevel) >= 2) then
+			{
+				_return pushBack
+				["PMC_Offroad_Armed",750000];
+				_return pushBack
+				["PMC_MH9",325000];
+			};
 			// Si leader de faction
 			if(__GETC__(life_reblevel) >= 3) then
 			{

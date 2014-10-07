@@ -948,6 +948,8 @@ switch(_shop) do
 							["100Rnd_mas_762x39_mag",nil,1200],
 							["LMG_mas_pkm_F",nil,120000],
 							["100Rnd_mas_762x54_mag",nil,1500],
+							["srifle_mas_ksvk",nil,700000],
+							["5Rnd_mas_127x108_mag",nil,5000],
 							["optic_SOS",nil,3500],
 							["mas_launch_Strela_F",nil,700000],
 							["mas_Strela",nil,10000],
