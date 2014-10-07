@@ -23,7 +23,7 @@ if(side player == west) then {
 	_price = 1;
 };
 if(side player == independent) then {
-	_price = 1;
+	_price = 100;
 };
 if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 

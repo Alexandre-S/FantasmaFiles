@@ -27,8 +27,8 @@ if(side player == west) then {
 	_sellPrice = 1;
 };
 if(side player == independent) then {
-	_retrievePrice = 1;
-	_sellPrice = 1;
+	_retrievePrice = 100;
+	_sellPrice = 100;
 };
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
