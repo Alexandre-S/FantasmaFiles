@@ -10,9 +10,9 @@ tf_radio_channel_name = "EN JEU TASK FORCE RADIO";
 tf_radio_channel_password = "123tfr";
 TF_terrain_interception_coefficient = 4.0;
 
-// tf_west_radio_code = "_fantasma";
-// tf_east_radio_code = "_fantasma";
-// tf_guer_radio_code = "_fantasma";
+tf_west_radio_code = "_fantasma";
+tf_east_radio_code = "_fantasma";
+tf_guer_radio_code = "_fantasma";
 
 TF_give_personal_radio_to_regular_soldier = true;
 
