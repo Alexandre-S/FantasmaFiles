@@ -37,6 +37,11 @@ if(playerSide == west) then {
 
 [] execVM "admintools\loop.sqf";
 
+//spam radio
+{_x setVariable ["BIS_noCoreConversations", true]} forEach allUnits;
+0 fadeRadio 0;
+enableSentences false;
+
 StartProgress = true;
 
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
