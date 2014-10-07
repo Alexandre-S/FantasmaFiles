@@ -19,7 +19,7 @@ while {true} do
 		if(_vehicleClass in ["Land","Air","Ship","Armored","Submarine"]) then
 		{
 			_dbInfo = _veh getVariable["dbInfo",[]];
-			_units = {(_x distance _veh < 300)} count playableUnits;
+			_units = {(_x distance _veh < 3000)} count playableUnits; //Delete des véhicules à plus de 3000m quand on déco
 			if(count crew _x == 0) then
 			{
 				switch (true) do
@@ -29,7 +29,7 @@ while {true} do
 					case ((_x getHitPointDamage "HitLF2Wheel") > 0.98 && _units == 0) : {deleteVehicle _x; _deleted = true;};
 					case ((_x getHitPointDamage "HitRFWheel") > 0.98 && _units == 0) : {deleteVehicle _x; _deleted = true;};
 					case ((_x getHitPointDamage "HitRF2Wheel") > 0.98 && _units == 0) : {deleteVehicle _x; _deleted = true;};
-					case (_units == 0): {deleteVehicle _x; _deleted = true;};
+					//case (_units == 0): {deleteVehicle _x; _deleted = true;};
 				};
 			};
 			
