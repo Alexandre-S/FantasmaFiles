@@ -172,6 +172,7 @@ if(count (handGunItems player) > 0) then
     ["life_inv_storagesmall", life_inv_storagesmall],
     ["life_inv_storagebig", life_inv_storagebig]
 ];
+// Youri : Ici qu'on rajoute les items Y a sauvegardé. Les ressources n'y sont pas pour le moment, volonté de Tonic & Vampire pour éviter les glitch
 
 _return pushBack _uItems;
 _return pushBack _uMags;
