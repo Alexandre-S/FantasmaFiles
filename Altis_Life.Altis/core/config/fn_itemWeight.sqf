@@ -11,11 +11,11 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
-	case "oilu": {7};
-	case "oilp": {6};
-	case "heroinu": {6};
-	case "heroinp": {4};
-	case "cannabis": {4};
+	case "oilu": {6};
+	case "oilp": {5};
+	case "heroinu": {2};
+	case "heroinp": {3};
+	case "cannabis": {2};
 	case "marijuana": {3};
 	case "apple": {1};
 	case "water": {1};
@@ -23,10 +23,10 @@ switch (_item) do
 	case "salema": {2};
 	case "ornate": {2};
 	case "mackerel": {4};
-	case "tuna": {6};
+	case "tuna": {4};
 	case "mullet": {4};
 	case "catshark": {6};
-	case "turtle": {6};
+	case "turtle": {5};
 	case "fishing": {2};
 	case "turtlesoup": {2};
 	case "donuts": {1};
@@ -35,18 +35,18 @@ switch (_item) do
 	case "fuelF": {5};
 	case "money": {0};
 	case "pickaxe": {2};
-	case "copperore": {4};
+	case "copperore": {5};
 	case "ironore": {5};
-	case "copper_r": {3};
-	case "iron_r": {3};
+	case "copper_r": {4};
+	case "iron_r": {4};
 	case "sand": {3};
 	case "salt": {3};
 	case "salt_r": {1};
 	case "glass": {1};
 	case "diamond": {4};
 	case "diamondc": {2};
-	case "cocaine": {6};
-	case "cocainep": {4};
+	case "cocaine": {2};
+	case "cocainep": {3};
 	case "spikeStrip": {15};
 	case "rock": {6};
 	case "cement": {5};
