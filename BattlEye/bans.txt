@@ -1,0 +1,939 @@
+b3e3e6dd896edfbd72d6e2eeee9df070 -1 : DW : scr.ch. #0140
+3e26c7e5f8e4fe96f770f0c759dad3c6 -1 : DW : scr.ch. #0139
+e9d7e1ace10a6c604e5e9d1e9124d07b -1 : DW : scr.ch. #0138
+c52fc23e411a8eea1dbf36c42c7e0fdd -1 : DW : scr.ch. #0137
+52f8cb8137532905b7c95f1c03dde0dc -1 : DW : scr.ch. #0136
+5f3e3b1429f3deacc59edf358ba381d9 -1 : DW : scr.ch. #0135
+36a0b6c07d30fdf97d440a33487c9b38 -1 : DW : scr.ch. #0134
+5e50a047ffbe9bcfea1b03719dde5960 -1 : DW : scr.ch. #0133
+600ae8fb7349d3ba568c6d3062086b97 -1 : DW : scr.ch. #0132
+f93396ef9a2352d446d0393687d8a15c -1 : DW : scr.ch. #0131
+e4eb40fecc1a4386ac8079556fa0b262 -1 : DW : scr.ch. #0130
+7aa5c66b6970b5b53f460127c4073efa -1 : DW : scr.ch. #0129
+0afcc53900e7c67a46f79f7137494fba -1 : DW : scr.ch. #0128
+205c6bf9795636b12cddbc3f24d83238 -1 : DW : scr.ch. #0127
+9b25180c85acca973f55e9c509044eb3 -1 : DW : scr.ch. #0126
+630f006a2dd7a84ed12c751c762705e9 -1 : DW : scr.ch. #0125
+b0fb0ff47fbacc834ee69751ae0c3587 -1 : DW : scr.ch. #0124
+e99aa7f8c02cd6b352b1588d21afa517 -1 : DW : scr.ch. #0123
+6357f136cd97f36810e165b6cbf166d2 -1 : DW : scr.ch. #0122
+8c72cb6406e7329e799ac9c727e69307 -1 : DW : scr.ch. #0121
+35b6320629b113137315d1e0034594fe -1 : DW : scr.ch. #0120
+e9aa9b9eef8808571fb92ace72bfc55e -1 : DW : scr.ch. #0119
+d591ce06fc4ba48aea5c03b8f3e7f3b0 -1 : DW : scr.ch. #0118
+39e46fddef3943ac9b676d0eb7457ace -1 : DW : scr.ch. #0117
+3c80db04fe9554382fcd0aafb3e5af80 -1 : DW : scr.ch. #0116
+02b997529527a3e67f5f843616383ee0 -1 : DW : scr.ch. #0115
+5cbca4bd56887d063ecb26c67596a8bf -1 : DW : scr.ch. #0114
+0f2b4efcb2f270931ae8b0fe7a60652f -1 : DW : scr.ch. #0113
+f7ef84ff6a7346cb25ce8e41a9c21e03 -1 : DW : scr.ch. #0112
+3422e13371ab13854a73f2ea82008ba6 -1 : DW : scr.ch. #0111
+e991bdbbe65af004463feebc7b72507f -1 : DW : scr.ch. #0110
+9a230984cd2fbf7e2005789cbfc3de0e -1 : DW : scr.ch. #0109
+b501a01fa37e6a02843f624e3eae3d57 -1 : DW : scr.ch. #0108
+88d5c4df627f9d0570e9be92ae47c37c -1 : DW : scr.ch. #0107
+f9d9fb7fc60cefd806f838c284661f35 -1 : DW : scr.ch. #0106
+bd949a82a7df86474750d1b6f78ca6aa -1 : DW : scr.ch. #0105 
+1514581ab93545bad73c4f0c95bc1ac9 -1 : DW : scr.ch. #0104
+b8bac17a84a52ce661d1ff6fd478a3c8 -1 : DW : scr.ch. #0103
+9ffdece97525d3fc4a93475dee6a583d -1 : DW : scr.ch. #0102
+7c9611deba09f13848196fef27e56c35 -1 : DW : scr.ch. #0101
+86681304d086d32bd674df86f4bb8d98 -1 : DW : scr.ch. #0100 
+fbbcce7ebf571e83cc232347676e0eff -1 : DW : scr.ch. #0099
+589a16d94d411c08b8b5bdb756b02e55 -1 : DW : scr.ch. #0098
+61de13896fc346688cac16a8ca52bd17 -1 : DW : scr.ch. #0097
+859a5a21fee59a5ff1d42ef475687bb8 -1 : DW : scr.ch. #0096
+81de5b88b39f53fd02761d2b87b96c6c -1 : DW : scr.ch. #0095
+6534cc0fd7475d76dccdc8d4087f2d9c -1 : DW : scr.ch. #0094
+c842c820edda01253040262dd96e022c -1 : DW : scr.ch. #0093
+0774c467fa8ab70bd6329f751fc6537c -1 : DW : scr.ch. #0092
+bc3697ae15d2f51810de6d89e21c3f4a -1 : DW : scr.ch. #0091
+d691631b4ff0e094b596c4435dcd8c21 -1 : DW : scr.ch. #0090
+6b338c42387a55bb806b7a7d24fa0e12 -1 : DW : scr.ch. #0089
+2a3981bea5d01d450e6152a1b71c962c -1 : DW : scr.ch. #0088
+aeb50801a36a2ba016b528409804c926 -1 : DW : scr.ch. #0087
+9d88578eec4cb0538903c0e7de9911bc -1 : DW : scr.ch. #0086
+5339fcfa048f27c8469249f3ba52e1fd -1 : DW : scr.ch. #0085
+8e2c124e22f3ea804308cc1ce9f8c77c -1 : DW : scr.ch. #0084
+05f59105a20e5d06a5aefe67014dfe54 -1 : DW : scr.ch. #0083
+b750dbafc596f3f3e6a5941fed42bfdb -1 : DW : scr.ch. #0082
+c3e3dce798bc1ee6736b91558b189526 -1 : DW : scr.ch. #0081
+bd8db3fb62e706dbcec1563cae873628 -1 : DW : scr.ch. #0080
+835c6c31c658b10c3476e43e016fb007 -1 : DW : scr.ch. #0079
+95e7acfda91cb238e8fa99cf25a99fcd -1 : DW : scr.ch. #0078
+e8e16f85556480754bf3a7e421a1c806 -1 : DW : scr.ch. #0077
+ba8458c2bd371edb4f4c645447ed8351 -1 : DW : scr.ch. #0076
+96cb6c57b57fb568e20d3fe036ec3993 -1 : DW : offensive #0001
+61acce00980dff66716ecba7ffc5990b -1 : DW : scr.ch. #0075
+5fa03e2bcba978013f28be208c2ebfde -1 : DW : scr.ch. #0074
+d1326bdde73ec5b0645c722eeb82b322 -1 : DW : scr.ch. #0073
+cec73c31640b61f25f0aa011ed0a64f7 -1 : DW : scr.ch. #0072
+f36be9b86c2dd0f0d6c4a82637192c00 -1 : DW : scr.ch. #0071
+dd3b3cfcf6ce63bd6492d0d675d4cfff -1 : DW : scr.ch. #0070
+1483d217ae52702a8732007682487267 -1 : DW : scr.ch. #0069
+4f510d83778f624dcf653c0c241344ac -1 : DW : scr.ch. #0068
+229c764e9789390045131cfc75ca2cc8 -1 : DW : scr.ch. #0067
+9b0eb57f26ad01811c42c484f5394ee3 -1 : DW : scr.ch. #0066
+c9df4cf80759f130691851a7061cf66e -1 : DW : scr.ch. #0065
+1d7aeba19b22b99d593f23cbd451407f -1 : DW : scr.ch. #0064 
+1add6f5b9c8f89ef664b26f013b5875f -1 : DW : scr.ch. #0063
+ddb2ab5e8ad95d7365326b486c00da99 -1 : DW : scr.ch. #0062
+3c5273f45e57ab06c7f230003f73e864 -1 : DW : scr.ch. #0061
+2b65b8dbf64bb6762dab3e7dfce9ee5b -1 : DW : scr.ch. #0060
+157802c0546e11053a4946965e31f1c4 -1 : DW : scr.ch. #0059
+5ad0a1082cf146eba41dadb0bfe27a5a -1 : DW : scr.ch. #0058
+217ebe6b64739ee39d8315ffd01628d0 -1 : DW : scr.ch. #0057
+b31ff0dcb976b7e876f3711a8ec8f917 -1 : DW : scr.ch. #0056
+538bb4163df11e36eb5a67dbb91a74ea -1 : DW : scr.ch. #0055
+9edaa29af738d6e8035a1cff6e45ce08 -1 : DW : scr.ch. #0054
+28f96540e2a893c9c6a2904b3a88efdb -1 : DW : scr.ch. #0053
+d72d8fea721a8c46a9db3379910b68ce -1 : DW : scr.ch. #0052
+eb69202ffb828657c4237736c0fd0a89 -1 : DW : scr.ch. #0051
+39b4dec1e0bb102f82caf861dc5af01b -1 : DW : scr.ch. #0050
+5a2844ec14dc46455f6aac1297f3c297 -1 : DW : scr.ch. #0049
+5a2844ec14dc46455f6aac1297f3c297 -1 : DW : scr.ch. #0048
+7386eb87890f72409a499a21686279f8 -1 : DW : scr.ch. #0047
+c5d30c4349cd8ae9e05d8ab14e5ccfcf -1 : DW : scr.ch. #0046
+a6d0d88f16060de5bdbd0572266732c2 -1 : DW : scr.ch. #0045 {fin infinite}
+4a342abe1bb4bf368832e4c2d39ad613 -1 : DW : scr.ch. #0044
+4a5449a4bbbd84e13d2a811caa45c0ae -1 : DW : scr.ch. #0043
+326aef22a76f7b4c043c4d8a4b888a87 -1 : DW : scr.ch. #0042
+3db702073dda41bed5f93adc52e2e0e7 -1 : DW : scr.ch. #0041
+673554b5c6da827a1dea2e4b57aa72f1 -1 : DW : scr.ch. #0040 {fin infinite}
+2e70a0abd8c3e0fafd0d840f703a7529 -1 : DW : scr.ch. #0039 {fin infinite}
+acc415b25182cd1c472a885d7b509572 -1 : DW : scr.ch. #0038 {fin infinite}
+acbaa42227d95d852533e503283bf67d -1 : DW : scr.ch. #0037 {fin infinite}
+1c62e55ea75f3b632068f4af7ac6149a -1 : DW : scr.ch. #0036
+5e74a93ba7282d720009ff7db7463a65 -1 : DW : scr.ch. #0035
+a5959c6ad6f70b580cefafa2adcefac2 -1 : DW : scr.ch. #0034
+23f7417846bef699d54322809fd56395 -1 : DW : scr.ch. #0033
+7e831ab8a4eed145d86e20e7d4268a16 -1 : DW : scr.ch. #0032
+9bfac749ff352456440b3d246c9ddb1f -1 : DW : scr.ch. #0031
+dc730648ec0fc50741ae41715c780714 -1 : DW : scr.ch. #0030
+4d163727f193771f489a023bef52e810 -1 : DW : scr.ch. #0029
+61bf8158af2385c6d1fb12aa0d3d033d -1 : DW : scr.ch. #0028
+07978c8154c4c69019e022f5f40ae06a -1 : DW : scr.ch. #0027
+fbb63bf765b5abdd5226a827fa77b5d0 -1 : DW : scr.ch. #0026
+1dc601c6c71da0955b23279cf76095b4 -1 : DW : scr.ch. #0025
+eddcf0c3fa23220455c35e85ea2c53b5 -1 : DW : scr.ch. #0024
+9aa801637333769215d8a019f32dc532 -1 : DW : scr.ch. #0023
+189d3db0fa4c395b4819fbe260c3679a -1 : DW : scr.ch. #0022
+76b900fdffbc9fcefcb7b03d8fb774fa -1 : DW : scr.ch. #0021
+2950f5e87d7046a7d4885843b97e6859 -1 : DW : scr.ch. #0020
+6a372f4384b672c8415f1708ce67e3c6 -1 : DW : scr.ch. #0019
+276a58e220c0981823fd434f377c9cdb -1 : DW : scr.ch. #0018
+2d8c16e8fdbab30f1f3fc657fcdfcc26 -1 : DW : scr.ch. #0017
+3494e4654d76bd44915832634c5567cf -1 : DW : scr.ch. #0016
+54d28b35fb05475ef77c651aa1bab7b8 -1 : DW : scr.ch. #0015
+e48ebf7afd424abf26e540b3c68d3bca -1 : DW : scr.ch. #0014
+9bc3dc7b5d0368fdb2ed22940f2dc994 -1 : DW : scr.ch. #0013
+63b242d13c41e3ae361196a5eb3675d9 -1 : DW : scr.ch. #0012 
+7106dd9b99cf9f7fe9dda6f4dca6040c -1 : DW : scr.ch. #0011
+4b80146ce697713fe9e1c4053fd90ae1 -1 : DW : scr.ch. #0010
+536edbafe07cf2b9aa5980586c027086 -1 : DW : scr.ch. #0009
+83c1763b758c5715e4433aed032f568d -1 : DW : scr.ch. #0008
+78cabb2c3e54a26d9afc217d801eea1f -1 : DW : scr.ch. #0007
+974248d149908d335145dfcf6c0946c3 -1 : DW : scr.ch. #0006
+2b41acd1e4031a33f203bbe942ab3dac -1 : DW : scr.ch. #0005
+169b6a70c16bfd4857dac408a3413261 -1 : DW : scr.ch. #0004
+78c744e6af95696ed44dd8437bc1fbef -1 : DW : scr.ch. #0003
+1b64465fb7ae005cf1f8130b9da99342 -1 : DW : scr.ch. #0002
+8e9a122c3d13bf4304384f6f55dce7cb -1 : DW : scr.ch. #0001
+8b3aa1d304d86f719d5a1a84a706da5a -1 : DW : GH #38
+21d9f165c0b9e2d8fefdd03fbd4ed594 -1 : DW : GH #38
+895cf2bc6a34edc023b498c976a2ef6e -1 : DW : GH #38
+d36e24ed963ea5179a6168ae973d24f2 -1 : DW : GH #38
+3f6699d47d2f3a96149305508dbfa4d7 -1 : DW : GH #38
+2e53ec98604b75a0719acf56ca23728f -1 : DW : GH #38
+f5d46dd741a1366e9ae83d902e1ee9b1 -1 : DW : GH #38
+ba3265f8a34bcc17b1a6943917c3d793 -1 : DW : GH #38
+4b8b5846d3e1a3158f2883c6a2544b17 -1 : DW : GH #38
+cacd112f8c679b0b98adbece9f1abe03 -1 : DW : GH #38
+70552c5b7cbfb5001df89fa0b448ce4b -1 : DW : GH #38
+a065bb59bd6e9cab887881146f71f7c6 -1 : DW : GH #38
+af9a49709875b1610af715dfdcbe704c -1 : DW : GH #38
+5f206ec287ce6c74bb83e3ef1d2f1cc3 -1 : DW : GH #38
+1103882ed603cf586948c80cfb834558 -1 : DW : GH #38
+b048e4f07e52867a8fecd1633ec87954 -1 : DW : GH #38
+a4763c3dd7a398d8f9837453f333a3b6 -1 : DW : GH #38
+974248d149908d335145dfcf6c0946c3 -1 : DW : GH #38
+ef3f356f7d3513b1a27d3aff91accaeb -1 : DW : GH #38
+7004fb681ef64e751a9c96bc2687d084 -1 : DW : GH #38
+2b1f75bcfc35e665ae45b1a7003d97a2 -1 : DW : GH #38
+6374d8e22620eb2f40f6ff9eff0eae48 -1 : DW : GH #11
+9bb7d69fdf1eb335025c8aeea94ec3f0 -1 : DW : GH #38
+838e30a391694acee631c50ee52a14c7 -1 : DW : GH #34
+378fc57679bb32477febd72a1d38d528 -1 : DW : GH #38
+e8f777be19613d937ccc787b14181d13 -1 : DW : GH #38
+bff6bd230c923f4418a2222b7be65389 -1 : DW : GH #38
+4ba6039075601bad2dbb5df2d8b2fcad -1 : DW : GH #38
+cb788882d66e1bf76670451cf9dd48f0 -1 : DW : GH #38
+cd2741ae862dff524d09f8823a0bf64a -1 : DW : GH #38
+aff9a806a41ff12be498b1947a4cb1d1 -1 : DW : GH #38
+c0b5b7934ebe8bf27f6a3da2c70edddd -1 : DW : GH #38
+982bb66ee09dd1c08f6e395e739eb7f1 -1 : DW : GH #38
+3327f680c5aa467b231e44810c62a753 -1 : DW : GH #38
+7eaf6977e1be589a540ba905dedaad5d -1 : DW : GH #38
+d61559152176252492e02a8bcd1a1a67 -1 : DW : GH #38
+e220ec483e44761b28a4ee36c262c3ac -1 : DW : GH #38
+aa7783b33ce1b0ddc9d28926c5751c73 -1 : DW : GH #38
+340f4921df64801e430d8030141e9781 -1 : DW : GH #38
+f7712ce477f650e73c8692042187c4b9 -1 : DW : GH #38
+f3c2d5db049a3fc91385b9a53e417193 -1 : DW : GH #38
+7925bdb5e5a574ecc501ba0289e2fb86 -1 : DW : GH #38
+5252396f329f8cb1d2fb33e9165d950d -1 : DW : GH #38
+73ba98ea5fdb105e22590e63c42679ff -1 : DW : GH #38
+3fe39624208ef5186fa6eb646f796574 -1 : DW : GH #38
+3c5273f45e57ab06c7f230003f73e864 -1 : DW : GH #38
+31ce23152e54cbb2132329b9be8abf2b -1 : DW : GH #38
+8be1f35683c5a7094d726906f579ab00 -1 : DW : GH #38
+e089d046a3e6f47114255882c9cc3dd4 -1 : DW : GH #38
+f393a748063c35df3ff9ca382e0de5b7 -1 : DW : GH #38
+ab402ebf532356b705473fa782b608a8 -1 : DW : GH #38
+6f66c11fe1deb1d46b3c63c1f95d110b -1 : DW : GH #38
+e3b60c1de30ff75d7fc96718582a335b -1 : DW : GH #38
+6b4cb9cbd7b9d43db794d0cf05c8ec91 -1 : DW : GH #38
+e3b60c1de30ff75d7fc96718582a335b -1 : DW : GH #38
+6b4cb9cbd7b9d43db794d0cf05c8ec91 -1 : DW : GH #38
+6d51f488ede86babffa6efb5fcb2a187 -1 : DW : GH #38
+0db540464d24df5f5daefcb70898edd1 -1 : DW : GH #38
+de1a3bbd7ec0fdb61eb2fbf18d803ba6 -1 : DW : GH #38
+5ab0affe628848ce6666e3ca95431767 -1 : DW : GH #38
+e1bf01a280f50f9869a2c6ea4ab63f9d -1 : DW : GH #38
+b487b05f09a65ea71418edd9279f27c3 -1 : DW : GH #38
+cd5f2e38f77b923f504aa125b8efb31a -1 : DW : GH #37
+eb59c72e3cf5a458c81bf1db982f62eb -1 : DW : GH #38
+e74d3989db4064d302e663732d059c72 -1 : DW : GH #38
+b0134904afe8490f26a3fbd988bfd08f -1 : DW : GH #38
+2639557e12964836bb73943e9895e64c -1 : DW : GH #38
+5286d3de4f03828e5b2c6440b8a1291a -1 : DW : GH #38
+f7ef84ff6a7346cb25ce8e41a9c21e03 -1 : DW : GH #38
+c5cf84b1cb504d737a4da9e9d77126a0 -1 : scr.ch. w.s. {fin infinite}
+d86b93ce59ca8254dd08877ad8532c1f -1 : scr.ch. w.s. {fin infinite}
+dc9db276c8efa7a49832fd711523c34b -1 : scr.ch. w.s. {fin infinite}
+59beceb8b48220997233344244149c9d -1 : scr.ch. w.s. {fin infinite}
+7e31a5525c4aad311ba34f799628162e -1 : scr.ch. w.s. {fin infinite}
+13e6776ce90272ef611eacd96d7f3dbe -1 : scr.ch. w.s. {fin infinite}
+a0f4a805851d172aaa5a902c1f33f792 -1 : scr.ch. w.s. {fin infinite}
+60d1b3a5f9691e1d7381c4c99ce8415e -1 : scr.ch. w.s. {fin infinite}
+638ca8ca7a4ce4c553ffe6ce78f2bdeb -1 : scr.ch. w.s. {fin infinite}
+fe628d5bc5f39794070468c2cfc43858 -1 : scr.ch. w.s. {fin infinite}
+cdd04b81b17718827fe07bea460eab73 -1 : scr.ch. w.s. {fin infinite}
+6eca819d8d431a849e0b54ff6edfe195 -1 : scr.ch. w.s. {fin infinite}
+5093e3457469a5bd37f1d2c86e079cb9 -1 : scr.ch. w.s. {fin infinite}
+326b3eaf4c3fc0b0c7ef9ba00416fe33 -1 : scr.ch. w.s. {fin infinite}
+cadd6bed8ad4506d6eb96916743ae824 -1 : scr.ch. w.s. {fin infinite}
+ba730c6831d215b83e2bb7302c66dac9 -1 : scr.ch. w.s. {fin infinite}
+1fb3d7975af75c000b808d60b6c7020d -1 : scr.ch. w.s. {fin infinite}
+25221e785ade69bc9f2566a5997e6915 -1 : scr.ch. w.s. {fin infinite}
+ac742d388d3db2f4f41788f40d242002 -1 : scr.ch. w.s. {fin infinite}
+01a767e2fee4a89f9fd4fb0df456bdb4 -1 : scr.ch. w.s. {fin infinite}
+bac9230d895f309482406d77d36eadd9 -1 : scr.ch. w.s. {fin infinite}
+406f0a1ee11f7b763f984a9e09c863f0 -1 : scr.ch. w.s. {fin infinite}
+157c8d774658de79f658f9d5227e18e4 -1 : scr.ch. w.s. {fin infinite}
+f793b730d6f4f836244d1604514eec61 -1 : scr.ch. w.s. {fin infinite}
+2e45fe9f1facaa17e9cc69ff69ef597f -1 : scr.ch. w.s. {fin infinite}
+84acf185e75d6c09e2de50907a95b248 -1 : GH #38 ban w.s. 
+2f6e3a25620518c869aa6d720987b21f -1 : GH #38 ban w.s. 
+740f1845f0fca4ff6239f1884205890b -1 : GH #38 ban w.s. 
+60b66161539e283a7ed9d2d8def6dd2e -1 : GH #38 ban w.s. 
+145dec85ee6a36f50802eb2f66053591 -1 : GH #38 ban w.s. 
+0b04b21c28c47e1f378eef1234d6aa25 -1 : GH #38 ban w.s. 
+8faa908f22adaa1f6a59013f769e8aa9 -1 : GH #38 ban w.s. 
+d6b127a97300be48b1a1b2e1a530bed4 -1 : GH #38 ban w.s. 
+3f75bb941e79e116b515466383fae601 -1 : GH #38 ban w.s. 
+b2d721ac77b95748ea2d97a30f75dd12 -1 : GH #38 ban w.s. 
+6a3d2d9eae0cfecf317e9ef7f6d9bde6 -1 : GH #26 ban w.s. 
+5ff8bf8d94b5691a462a917e8129310c -1 : GH #38 ban w.s. 
+cf6fa8fb573dd6e5da25216990babb4f -1 : GH #38 ban w.s. 
+4b61b538205818a70a3145b448a4428d -1 : GH #38 ban w.s. 
+15eda64c60211194165273cef129a369 -1 : GH #38 ban w.s. 
+c64cbb66849a9c88a7793f9dcc46f00c -1 : GH #34 ban w.s. 
+13b300553b0c2cf8aa298a189c520a0f -1 : GH #38 ban w.s. 
+02bdb749e045629aa798e2a543295c1b -1 : GH #38 ban w.s. 
+511ad43b9559f079a3ac1a6638c9910a -1 : GH #38 ban w.s. 
+116499f394f3e65af82faf6138dc3e17 -1 : GH #38 ban w.s. 
+cff93c03029b1b4a960143bef52247da -1 : GH #28 ban w.s. 
+2015e87e6d5bae61367653ba803fd658 -1 : GH #38 ban w.s. 
+c6b26f13f3e231dcd1d27e5774fd5663 -1 : GH #38 ban w.s. 
+3c409bdbda07b4d5ac85f1211c4b7b71 -1 : GH #38 ban w.s. 
+07770e6cc2184e9293bd7c475939d806 -1 : GH #38 ban w.s. 
+a1e31f215c1676747bf913695dd9e27f -1 : GH #34 ban w.s. 
+9906b300afa9c4fc672a2d99b57ea958 -1 : GH #38 ban w.s. 
+a297e562785b9b23c9a9bb43d1ef2fd0 -1 : GH #34 ban w.s. 
+400d2d598d0a1c4d100233b0f2c17fd7 -1 : GH #38 ban w.s. 
+acf04967871516105c8837f29931cf91 -1 : GH #38 ban w.s. 
+100bad51ebd3cf9c5a6495cf3223273b -1 : GH #38 ban w.s. 
+ad35c9920539f41220e7a7b11f5a1673 -1 : GH #38 ban w.s. 
+9389230527ccc65318c3974e41896b95 -1 : GH #38 ban w.s. 
+0bb246757f03197a7070e8ae8e49c313 -1 : GH #38 ban w.s. 
+5ef51ac6a440d3658451b798c42daea1 -1 : GH #34 ban w.s. 
+3ba55dbe46350d4d17977f77ed5a4587 -1 : GH #38 ban w.s. 
+67ad84760a77fd0f81a74e55691722c2 -1 : GH #38 ban w.s. 
+bc598f4f6fa44b3e0ce73c35d13d79e9 -1 : GH #38 ban w.s. 
+25162047728cc94625da05eb77557441 -1 : GH #38 ban w.s. 
+2ff89c85224081d4704ae4bea441024c -1 : GH #38 ban w.s. 
+80d57e8816af8745c9ec39f62ec97dbf -1 : GH #38 ban w.s. 
+6560e9ae3223c9bec1da5f769151fc69 -1 : GH #38 ban w.s. 
+f58d0b51d132f067788e4c9dd643cbaf -1 : GH #38 ban w.s. 
+2f1d840bc9f0d2ca1e497c4e4e4682f2 -1 : GH #38 ban w.s. 
+e7e6302f1aec53e3caf86be59203eef1 -1 : GH #38 ban w.s. 
+04ab7644f2bd235692c49697d5e2d9ef -1 : GH #38 ban w.s. 
+ae8500517cb02e4c8186d09fc55a2a59 -1 : GH #38 ban w.s. 
+e70c1db16da6603a2500123f1b9c5f6d -1 : GH #38 ban w.s. 
+9b7ad045252a937e08d8e9a09d4d40db -1 : GH #38 ban w.s. 
+68fecd163a617b96287bfb424a5f3bab -1 : GH #38 ban w.s. 
+999f60535cf466cce8e2153f3add9675 -1 : GH #34 ban w.s. 
+fc4749b4463aa366547957c5ca2a5ae9 -1 : GH #38 ban w.s. 
+1c84e6133e8e8ec4447a7fec0b0e3008 -1 : GH #38 ban w.s. 
+0e035f9dee2ae6f3f0caf7fd74996b44 -1 : GH #38 ban w.s. 
+dd92c66d3ac9dbe9fbdf1bb754bba7fa -1 : GH #38 ban w.s. 
+29fe2ba0da174308da1dcaae5ef34a61 -1 : GH #28 ban w.s. 
+d7b416cbb8837ed40a7ea3e9866e633e -1 : GH #38 ban w.s. 
+f5d18dcac0d4b08a8a4c5a2d763dc85a -1 : GH #38 ban w.s. 
+aeb9c4e5bec1c5adf9662375f97db87e -1 : GH #38 ban w.s. 
+4e33a563a2ccc32586ca97fc27e06638 -1 : GH #38 ban w.s. 
+5996bae6e78762a4cdef7acf78e74e2e -1 : GH #28 ban w.s. 
+0759c27b8c74e5846f369b574a675217 -1 : GH #38 ban w.s. 
+c590f0a13ab2d51efb603e74516e4b1d -1 : GH #38 ban w.s. 
+8a2c63e21f5246e5883a7e41307e37db -1 : GH #38 ban w.s. 
+8eff674a5b4f16541ba5e8391ccde42a -1 : GH #38 ban w.s. 
+67feee7782de4d727f4f3e175d6f1f2f -1 : GH #34 ban w.s. 
+2dec16d748e56928c6bc9a7d2e064945 -1 : GH #38 ban w.s. 
+c72bdf9cf1d6cae03ce9d6e2b984b53f -1 : GH #34 ban w.s. 
+269095080c849b202770381f0e1b3ba1 -1 : GH #38 ban w.s. 
+ee3fb90744e6e2371f11b386698ba53b -1 : GH #37 ban w.s. 
+5c72f0368a4fe38feabf55520dd03a1f -1 : GH #38 ban w.s. 
+63ddce5f74e56181772df5bffc638dbe -1 : GH #38 ban w.s. 
+7848569db06e40dcb6c85463004d3e16 -1 : GH #38 ban w.s. 
+e8e5ff231dd0f4bcd099a8d7aa2fce11 -1 : GH #38 ban w.s. 
+b2a9cba768b90b08c3ccb07c3c45cae7 -1 : GH #38 ban w.s. 
+889bc24d6cfe506e4c5b175a3ce0a251 -1 : GH #38 ban w.s. 
+af9a49709875b1610af715dfdcbe704c -1 : GH #38 ban w.s. 
+281e5e630d7e6e261019742ca629a58a -1 : GH #38 ban w.s. 
+e58589fcde68eead9bc8467c5fa17b85 -1 : GH #38 ban w.s. 
+d80698744ade7d6717c29fa757ca792b -1 byepm
+8ac69e7189ecd2ff4235142feff0bd26 -1 Script Detection: setVehicleInit DoThis;
+1c8aa5e919c37da5f3a2b13a2cf69aff -1 Script Detection: Really? tupidmistake.sqf? Don't come back.
+deb593123be01dbde1c7edea7faabd32 -1 Cheats
+4e99bd0d34e40ed468b0f77d35e3f618 -1 Cheats
+55a38ff775b4042e33b01c2c66bb18a7 -1 Cheats
+1d1a1d581fa6727c3640f12ca5672154 -1 Teleport
+cd50fd48f878b9c15472204836f6108a -1 Teleport
+7370eda2cdb1ed2d4d01c73c70c0b1ab -1 Teleport
+9537ef4af92ef79991215e244a0daf03 -1 Way to many detections to count
+f0db022e291f756199bf6dea4e91a152 -1 Setting of markers... 
+04978068af921920cdff09a995ce0007 -1 Teleporting is lame
+957bb08c4d1a85e35f712375683eddc6 -1 Script Detections
+b3a63ced51adc8b4c24d2d243f685796 -1 Script Detections
+4aa19ffbf656e6f94a618bfcfe2219e7 -1 Teleporting
+531f730c87aaa40b75564b7813f67a41 -1 Birds up to you as well.
+9d68913c949b9773e202d6bd8d30cfaf -1 Script Detections
+3c7c89290e244eafc17a0ec7153d3606 -1 Loki's is bad for you.
+342e03ec351f8e2664698e48dccdb388 -1 Loki's is bad for you.
+7583fbacc8e4309ac83052e85556e2e0 -1 Loki's is bad for you.
+af63f3e7add71f951e9526a7d97cc79b -1 Alex and gerk don't mix. Try again.
+695c315c58bde550c6847af10c065607 -1 Loki's is bad for you.
+7583fbacc8e4309ac83052e85556e2e0 -1 Loki's bad, but jesus is good.
+f6226e9b7f31b5982e6d92e9b1c5359e -1 Seriously fuck off
+dd0eff0cb64efbd6b67f33fdd1d19c0f -1 Loki's
+f01db0c943869c0816126ebfd9eb654b -1 Setting of markers
+b46a987d0dc2e38ec986db493ff3d573 -1 Executing commands not in DayZ
+76adee3079fb1303f210666e7dee98ea -1 Loki's
+e12d13c38d5dd8ab5372d13cf848576c -1 Loki's
+e12d13c38d5dd8ab5372d13cf848576c -1 Setting of markers
+95444d83792ad402e7dfe7dff6317694 -1 Questional Code contact DayZ
+9f3370c39061e203729fca670fe5413f -1 Lol adding AA12
+535e4bf8d28caf27d8bdead88c07412d -1 Execution of Code
+0989b356813259607b669f7b752a2619 -1 Alex/Gerk
+eb2cd1b519d38afc4e2d5fb76a91bd25 -1 Birds up to you as well.
+4ffe46696948ff335540d6da08923efa -1 Jesus doesn't use Loki's
+4f3b9c4c1a8815b4ef96c5fd66eeaa1a -1 Denied.
+de3af396d11adb4e1b72758c1e8f2a58 -1 Adding weapons to everyone.
+1a5969de65add8f9e4fb7c2a3deafa4a -1 Adding of markers and other stuff.
+d53007dbeb48d6f595b8d5c4259e64c6 -1 Setting markers
+d9d8bfa34e7c4d904de920e8cb061bbc -1 Go away.
+f9d82f22a1155c74680c5d57b3d68c8d -1 No cheat for you!
+c983952a088c046383ba3d9b613b260f -1 No cheat for you!
+d9d8bfa34e7c4d904de920e8cb061bbc -1 Teleporting can make you sick.
+4a2386b96300aef49dd1b33a447c9cab -1 Cheating makes you sick. Should get it checked out.
+d0001829a1ebcb2897549858c411ecba -1 Cheating makes you sick. Should get it checked out.
+f9d82f22a1155c74680c5d57b3d68c8d -1 Cheats are bad mmmmkkkkk.
+382578c33306e1615f645a537194edbf -1 cheating is wrong
+e926dde0288f284eac7c0398211469c8 -1 Cheating, shame on you.
+086aca59819ba7cbe1cd8f259ee0a9bc -1 Cheating
+90a36b532c195466388b36958f187c5b -1 You mad bro?
+e93ec7c0b5c89080f751c003a8ed2788 -1 You mad bro?
+6386f3636c438bee10384e00c59cb362 -1 You mad bro?
+9ce6db3136265b858964d07d22619a95 -1 You mad bro?
+90d5d07366c53ea3f6f98b54be24d8a6 -1 You mad bro?
+6d3f0676cb33419a8c523b52014bef6b -1 You mad bro?
+b97161c2fb7235a20517a7f8da70d4e2 -1 spawning ammo crates
+b53c09df43954b00b04c96bf2d1af366 -1 same shit different GUID.
+1a5eed054e5f843522b00d09814ead4c -1 Such a failure to life.
+70cf145f47f499d743d49b079bda9284 -1 TKC is for skiddies.
+9f3370c39061e203729fca670fe5413f -1 Same stuff new GUID.
+115f39a32dc86cc981b4babbf418f120 -1 No ammo for you!
+882fb01ed3b766a33a78c5442f305b8d -1 TKC Blows bro
+6121fe7b1ba57d6cc75c6afd22493c7d -1 Idiot
+fbb0a8401a555b2042920d85b0cc21f6 -1 Spawning ammo boxes
+19ba7ae749b25ebe492c833681044837 -1 Teleporting
+dc2362f6565fa66705d2ad1923ff6fdc -1 Get lost bro
+b9bb632f835c65183e8ff5b8cec5c632 -1 Yeah.. Banned...
+faae2a8a8ab50beed469a40f953ae588 -1 No markers for you
+21a19e1142119eef41594dbc43fa3878 -1 Script kiddie trolol.
+d9dc6709c314e95ce173f2a94bddbfd6 -1 You've been trolled.
+dd16060daaa73b57171fa85659197179 -1 You have probably been trolled
+dc683b0f84a3942805133f66c8b9ab1d -1 My kungfu is strong
+bf50d8aa2b5f65810c5231cc8271c199 -1 You have been detected with an STD.
+d2aba4141792b06813bc7c25b1d29d4b -1 Guess who's back!
+455c180dc23c11e888fd893ae15d8f7d -1 Giggity ban bro.
+19ba7ae749b25ebe492c833681044837 -1 I like puddin and being an asshole.
+a28703aa42af5367252edf29cd5e6794 -1 Yet another ban yay.
+4a2386b96300aef49dd1b33a447c9cab -1 Love those bans!
+e0a73089dbba1de5c9b7481e9efa7041 -1 He has crabs.
+f882fa2a0d02ba6995b20152b7bee781 -1 Running out of ban reasons.
+5ce90e28c21e71b76ca17a1a8946e6ed -1 Dont know what to say
+4eca1302efe45aa1c9fbe0b5577c1725 -1 How cute.
+dec49607ac619c6bd574504e0d5f1231 -1 Sexy butt
+dd16060daaa73b57171fa85659197179 -1 script kiddie
+d054ba6ef7b566fa670992311ea3a852 -1 script kiddie
+e65cc8ba55e54c988f3d80ac6b12f70f -1 script kiddie
+233f71eb781bfabb95733d179b4cd15c -1 markers + the rest
+6f0e679649f800d5dd0957acef5e95c9 -1 markers
+fc5ed89b5bedd564a1dae8f758bb83de -1 markers
+adee0dfbea37da9980900209cbf14cb5 -1 markers
+98df9a98cd938460f65c124a7c15594b -1 script kiddie
+0a60cdbf6c70807a2433dd2189df049c -1 spawning crates + the rest
+d3022b6a40b5f14fa4cdf2c7d920493c -1 crate spawning
+dfdad159bf46a3fc12bc4f197fcfde2a -1 scripts
+d551f3219f26595009be63c7425b6a9c -1 markers
+1a248f29aaa37bc4c345012861003bc8 -1 Next time you stream dont let your GUID be shown
+8889b1db6bfc88a8bfae0f9f9a2048da -1 You should know why Mr. Cheater
+1b3e79fc7f70b462286087d9936f40e2 -1 Love banning you people.
+d292dc20cfa3f43f08ebdfd0ba7f55ee -1 Dreaded cheater bans huh?
+aa3e39d97b8e11c7cbfda8c106079b19 -1 Hey Clarence we got another cheater!
+c0a10b12edaca6ee4b37ceb1fcb5336a -1 No surprise just another ban.
+1dd7d7d71969c6d98bc5aff5d4182414 -1 We dont like cheaters be gone satan!
+6b31461530e9e12cccce9af88438fa48 -1 Stop using the same stuff over and over again!
+b7f0e476f52e30832915a7f2c349aec2 -1 Hey look.. Another person using an ammobox spawner
+3bb2c51a08cf2311088cf1258fbc00e8 -1 Give up already
+28717f2d7763fe2a4ded65fe8c061133 -1 We gon find you
+582a6bf84a177a0a3bead1096d1d9664 -1 lol spawning local vehicles is useless
+b97161c2fb7235a20517a7f8da70d4e2 -1 The jig is up boy
+fc784f42110ca9e5b5aea8ac5d6f4f9d -1 Just your friendly neighborhood ban
+d243c464a2e0f61233d0111a9ef9c636 -1 sigh another ammo box spawner
+468bd7a4163977644a55a9e02e612704 -1 sigh another ammo box spawner
+3b73c68a7a7d8d1fb8650561a2152576 -1 oh look another script kiddie
+a0863f85ec742329e27cfc0fa20145bc -1 finally someone making their own cheats
+8032fd2ddb93b93e02fdaf541eb376b7 -1 for the love of god just give up
+cdda40a871835d92273becaf4f9fec3e -1 Script kiddies get banned
+ffdf4cfaa25375f870b5da523c2253b9 -1 Tehee you got ban!
+33d599a66702ab2a1752a37a448d5384 -1 Starting to loose count on how many of you use this known cheat
+984fdf8e80ff94c36f158713fac94954 -1 zZzZzZzZzZ getting bored
+bfdea2da3314fe5ee8a613a3f9411fa6 -1 dumbest name ever
+403269f081137dbe14fdb12679ae51e0 -1 DUDE REALLY ANOTHER AMMO BOX SPAWNER
+fdf1915e82e1aca5fe449c37bb4c9cb2 -1 Getting bored of banning you people
+105d11f493a616a27a87869d056ab94b -1 Hoosah a cheater
+59b06a037cc8aed4375dc0184a2d2bb5 -1 Taking out the trash
+9cf0bd0a6bf4c1f2e395233cee2b40cb -1 More cheating trash hoosah!
+e19c1b76e46b82063407b9a252104d0a -1 You cant fly
+2a75f62815967c93c595bf6d8da4ec3f -1 Sigh just another ban
+886e50aff2beb52cb8c54fea0a26d3c6 -1 and another ban yet again
+cd4c8c7dd6b4d9dab4346e2d50902334 -1 lol cant even change infammook what a skiddie
+6cd9a0c79e069e38f207cee707ad7e4b -1 Boredummmmmmm
+a28703aa42af5367252edf29cd5e6794 -1 ban ban ban ban
+4a2386b96300aef49dd1b33a447c9cab -1 plenty of bans to pass around
+6828742fe98cd5cd6ef30750349cfd34 -1 Nom nom ban
+38e35d2ffc0ac15c761d70bfe4ecece5 -1 Smoke the ban bro
+20b1f7b093d83de19e4f8a8140d07ed0 -1 Loosing count on how many bans this is
+b9d74c46da442199a79e97953a1ccb26 -1 lol MrMedic
+182a95c1fb82683f49165d45eee960c5 -1 uber ban bro
+c3c3c37cddb28977e4cd0ae41cbe4ae9 -1 For your sake stop cheating
+f4d91c844bb8e89db77a10d4b4d93787 -1 We like passing bans around
+794fcc9391e52cbdb88b5b6c471ec7b1 -1 Hope you enjoy your ban
+4eca1302efe45aa1c9fbe0b5577c1725 -1 No god mode for you
+0d00eb71226db1460a8fa74c37f09caf -1 I am the bananator 
+4eca1302efe45aa1c9fbe0b5577c1725 -1 Please just stop cheating it is pointless
+b9d74c46da442199a79e97953a1ccb26 -1 Silly cheater scripts are for kids
+4eca1302efe45aa1c9fbe0b5577c1725 -1 The atomic gun thats pretty old school
+4eca1302efe45aa1c9fbe0b5577c1725 -1 Yet another script user
+869ac323f7d5a4b8a8c1a4096ffff272 -1 Nope is right
+7cc332db044ebbc56b84dbbbbafb7e96 -1 WOW lots of bans today
+ddecb38ccd68c74517da1546520c3884 -1 You have balls to cheat on dayz not...
+b9bb632f835c65183e8ff5b8cec5c632 -1 ban ban ban ban ban ban
+c87b726fba67bc092e9db793b70263e1 -1 Like my new script detection?
+bdd0f07fc7f6f5714be079656112c211 -1 New anti-cheats sucks huh?
+56fea542239b086944205ad722c8f4ee -1 <3 new anticheat
+e7d5c3257975cd11a683fb717a54d36b -1 DENIED!
+55101c2990a63a73fe7a988d0281f9fd -1 DENIED
+e2ab5a70fbce99f46e19a321b19ec3dc -1 Love Tonic
+ff00afb58cadde624fb7bd4eb30fbb1f -1 Enjoy your bann on all DayZ servers
+9d3a36ac8ee51778e2e94c60cfaa0be2 -1 Lol banned
+e6586bd6efea7652b433b5a0ba41436a -1 BANNNNNNNNEDDDDDD
+9d3a36ac8ee51778e2e94c60cfaa0be2 -1 New Script detection works good huh?
+c2c522b5b5b6cbb4a6747459ec85557e -1 Cheating is pointless
+a60df4872502dc224852a29b14ecc01f -1 Yepp its a ban
+2e0c85ebec4a046c220924259359e6d5 -1 lol ammo box fail
+8d63bb956796ab43f1705e9d2a27ac11 -1 Ohhh denied
+62f084c3ffc429e97e0de04fc4310587 -1 Init cock block
+ce4ec90eae510685c08adbd5458503f3 -1 yet more ammo box fail
+aa41a7c43de1ff9d16b614f4e8f84a89 -1 Enjoy the ban
+840733a1884f929800f24fd75febb0db -1 You lost the pissing contest
+fd8a6c337bd4aa77248b9169b92cf313 -1 Another ammo box fail
+358255903f69dcc87a415b87a03d84a6 -1 Another ammo box fail
+9068b0e100fcd13e87c7ab8892c29bff -1 Spawning Ammo boxes and failed
+01e239e1bd27b1396739125834340f7a -1 Not being creative enough
+afbda17a2ac00a01c01f8a2955ddc601 -1 lol fail
+44e1b94854339c1b5f57e8e5e4db4f5f -1 Fail
+aa14845b9c0cc7e3b44b4d0d062324bb -1 Really not creative
+1364d70f43b1a127853bef238874bba6 -1 Meh.
+eb639023564e41ae5e1650261141007d -1 ohh denied
+2893b620c65a207a3de2cafcb2f9b2a1 -1 Banned for cheating
+9068b0e100fcd13e87c7ab8892c29bff -1 Banned for cheating
+01e239e1bd27b1396739125834340f7a -1 Banned for cheating
+afbda17a2ac00a01c01f8a2955ddc601 -1 Banned for cheating
+44e1b94854339c1b5f57e8e5e4db4f5f -1 Banned for cheating
+aa14845b9c0cc7e3b44b4d0d062324bb -1 lol not very smart
+d03395b697082771e9aee5f76d474771 -1 denied of ammo
+d1e1d3f6c591a934cc2dd425aa043a9d -1 No ammo for you
+f6cc6749082fbfdb3e55bc002a7fb267 -1 No Ammo for you
+9231b942e595276a417dc38fbf0b9824 -1 Ammo box spawning fail
+eb639023564e41ae5e1650261141007d -1 Spawning ammo box fail
+cb3af23b2721375465cf528aff353522 -1 banhammerlove
+4dc4aeef6f339a1aa6e1cd4dc86feacd -1 banhammerlove
+ad35bbf25c6c770b52bd2f0b38ff70e6 -1 banhammerlove
+cefff21efd148d3fa5201843be954ff4 -1 banhammerlove
+634bebf4d7a1a2b08a3d8b738485224b -1 banhammerlove
+2f3d0a79e84f57be50e8105564b3a6fc -1 banhammerlove
+e1ec7050e8de0b021edb93ffe21f50eb -1 banhammerlove
+8e7cf5a6fa6c25a12c58a59423a8503a -1 banhammerlove
+8d1af88516999099216095acf3f9e37f -1 banhammerlove
+2893b620c65a207a3de2cafcb2f9b2a1 -1 Love Tonic
+9068b0e100fcd13e87c7ab8892c29bff -1 Love Tonic
+01e239e1bd27b1396739125834340f7a -1 Love Tonic
+afbda17a2ac00a01c01f8a2955ddc601 -1 Love Tonic
+44e1b94854339c1b5f57e8e5e4db4f5f -1 Love Tonic
+bec8bbcacdde44c830f63520461365a6 -1 Love Tonic
+8621bd9b10ac6a8904ded301a86ae15f -1 Dupeing backpacks
+03bb2497133a4799630c22fe0b21388a -1 Duping with Lemaxo
+2540e35496f80e2b62bb53e63e93c014 -1 Admin Ban
+ec5b6090b77ffb975de7e8f5959f7962 -1 BEC : GameHack #38
+df20453e6cdf4d246fe69c377dd890dd -1 Combat logging and stream sniping
+9d25481301e296aa6982ad4e77a35f04 -1 Not smart.
+113cf913a36cbc914cbb7f6f12982cfa -1 Because
+9d25481301e296aa6982ad4e77a35f04 -1 Admin Ban
+5e90453ff9412a570f1a964397f902b4 -1 Admin Ban
+244cc115637c70c1300a92908cf15089 -1 Don't like it, bring your case before us.
+d288fcb55dde89c1153880c85a83fb50 -1 Admin Ban
+2c904e217ba3fe6f6547aa779cc1bff9 -1 spawing in objects
+c38e99892d6c528f8e6f08ddf998f484 -1 Scripting
+c38e99892d6c528f8e6f08ddf998f484 -1 Scripting
+493fc6d0b316f0134bca77bb244463d2 -1 Scripting
+2c904e217ba3fe6f6547aa779cc1bff9 -1 Scripting
+11a050f632630cf117e9134bd48da3bb -1 Scripting
+ec024eb6f155ca6936f1b40e8186ad0c -1 Admin Ban
+2c904e217ba3fe6f6547aa779cc1bff9 -1 Admin Ban
+493fc6d0b316f0134bca77bb244463d2 -1 Admin Ban
+c38e99892d6c528f8e6f08ddf998f484 -1 Admin Ban
+5cb84378c55b814ec3c147ecc1757120 -1 Nice try
+a950a2cfd2e926c5b0cc803ef4e14f5c -1 Scripting #101
+d323ce9ef5113ef1dcdf40669c125be6 -1 Scripting #102
+d323ce9ef5113ef1dcdf40669c125be6 -1 Scripting #102
+a82f377a501d5903e750eabb13e982cb -1 Script Restriction #201
+7165f49e10c85cccfeba0dd3d33e6940 -1 Admin Ban
+ae26e9a71e2aad0e71e460903756ab39 -1 Admin Ban
+804665142fee0d6966538403f8f051f2 -1 Admin Ban
+67dde977e84452cda163f688e68b8288 -1 Troll
+f2d1c6b2bfe82858cb6e5f6329e7346b -1 Troll
+8a4fe6546a1bb8c107393f4985cbda10 -1 Admin Ban
+32250645c5ebdc2df1775ef5d6623287 -1 Admin Ban
+38df85173ab325da5826954f3862cb22 -1 Troll
+db2809df4476255ee076188ad56b37d3 -1 Déco en controle
+2e53ec98604b75a0719acf56ca23728f -1 BEC : GameHack #38
+0b819c4d0db2af9023f5c11ce6957708 -1 BEC : GameHack #38
+5e903b2dcadd674f6c8185a06b8c7d19 -1 Merci de troller ailleur
+8043632ffee0834b9dd23ba1fe90a4ec -1 Merci de troller ailleur
+9ef3b75cbe338c801c2ec8d6bd020ade -1 Insultes et troll
+5285a4c418bd0c15a3cf732d835ede51
+53504b6800b808f0fa74a29e15f3914b -1 Troll / insultes / freekill 
+c558c8b2505e995d4597e08b2f2388c6 -1 Au lit
+93d8b05034a6f9e8da19ce2e723fa1ab -1 La tienne avant 
+b28c1e4f61679982edf07607d64a6900 -1 Le RP tu connait ?
+56e8158c26f5962ee79f6d00c1fc8fc2 -1 TROLL
+6a3cb98a9806d8c73b7609240ed0bbc4 -1 troll
+4b121c1d949a8f940d0717415755e522 -1 prison déco? wtf
+5f61dfc5c436b62276551d6908690314 -1 troll? micro?
+b291ec699254044da735fe71880b7c8a -1 TROLL
+590cc49d142dcd260a55c0c36a940325 -1 TROLL
+7e3b8c1cbe6c7e753f76098a212a7ebd -1 Freekill, troll, et compagnie
+aaf69a749d8e630491a822972a40dfb3 -1 gamin
+1aa1c84944ef3b1f858ec155d7fa458c
+bc6adbfe4de7c9a2457aed1e225f7630
+e2d1c2791542060d750381989a6c5fb7
+59dd0c12cb72e8fb0a9e3665d03fb28e -1 Au revoir :)
+d84f3b05d2835be0015433f432e38df4 -1 BEC : GameHack #38
+edffba33134e0c377cade72aa1c92acb -1 BEC : GameHack #38
+ac528461fb05942ef8407057842bb7a2 -1 Va troller ailleur
+db7a7d6fb2b83ea863e76809a49c33f8 -1 au lit !!
+c293e6af378d8e544e49e5ad99479b0b -1 Troll prison
+c293e6af378d8e544e49e5ad99479b0b -1 va troller ailleur
+a183936cc39e4eb36ada74a4c4d53243 -1 Insultes
+a183936cc39e4eb36ada74a4c4d53243 -1 insultes/troll/gamin
+b425112d0664ddc23baabe13c4639395 -1 Glitch abuse
+0d17505e0631cf9a23ce1e37d7433106 -1 Cheat ou Exploit
+9435b79cb197c1a1ac5cba0cc2200a7b -1 troll
+9e9745005534da19c15dd3c741cddb7b -1 troll
+5fe4ddb1633871b47fb79ed30d780a15
+37d7a662077abd658eb3e09df176bd78 -1 gamin?
+8cdc0478205132b149f62cf9e3503b27 -1 RP wikipedia
+b6e571bfd69b5932eb0cc48178511747
+d90b8834ba97b08da7c252fb954a500e -1 Serieusement ?
+79ad9501c453b4bdb941e6aed3cbdc26 -1 They see me trolling...
+9f2436e681e8ce45655e384687903e98 -1 Deco/Reco
+78c744e6af95696ed44dd8437bc1fbef -1 BEC : GameHack #38
+9e2c894eb9fb3f7db259f7d389962576 -1 gamin?
+6262eff316967e430f5ab29cafe00e32 -1 fugue?
+1be3df2dd9d6768cb3607ebdf911c64c -1 fugue
+5809b70ea52cad21f1bf37a370102a5e -1 roleplay wikipedia
+49df1b2f91a7ee1aa1158e8f8efde027 -1 Trou de balle
+4248d61a31b2c33e5b7ffdac5b30dc4b -1 BEC : GameHack #34
+72a70d6f7706b24f109bbd902b1db00f -1 BEC : GameHack #28
+ce828b37acf02723158b387b91276f35 -1 Cheat
+adc38b655afa9effddfc803e639e2879 -1 Va voir ailleur
+fda4589f996ccf8445f99142d527edbf -1 Va voir ailleur
+2755b85a2c7bb6efa49b6cae318d1e17 -1 BEC : GameHack #38
+dfaefe0611c5a6b9849b597636ba754b -1 Trololol
+f2cb10778a270e1c37518edd3b2e3804 -1 TROLL
+77edd82f970bc500aa6e952798e2fab6 -1 TROLL
+5d4f53a31502199c3ffa99c2f19fb3e6 -1 troll
+ec979d1be8409baa0a7d4631e85b1ecc -1 troll
+55fa0e8ece5c559feb683bf591e37111 -1 Troll - Freekill
+270ca3729e4056d91351b966db921479 -1 freekill
+b46997f6a50d4a4e93ab9e4b93d06776 -1 chut
+78cabb2c3e54a26d9afc217d801eea1f -1 5 freekill - anti RP - ban
+b28a357eb56276b33c0a0c8db9106eae -1 ecrase des flics au postes
+4c56d9a0a5291ecab58d3ebd7ff35484 -1 BEC : GameHack #38
+72bd9eacfb0ff5349f6d5e0c10145374 -1 Troll - freekill civil
+afafc2530c10610152972655c46d2335 -1 roleplay wikipedia
+a9925cd7cfae49de6b8b76ec7a60ce13 -1 Admin Ban
+35751b8824a1c182747cb0f40e0adcfe -1 Troll
+8447e047a066046f23bbe8613d549d2f -1 Cheat - 88M en 4 jours
+a0433052d13ddd74327c983a3b5571d8 -1 Ok joue ailleurs
+b7c0eada1d178837477d8445249fd094 -1 Troll - Freekill - Deco
+21c2f5750402c86381750cd2ffc5e614 -1 Deco en combat
+92aae4ea1a1165b122bac9df9badb424 -1 Timonas_Ban (Troll - Saute des batiments)
+afbb848dc55ebc9b38d1c764f0d9a1d1 -1 Timonas_Ban (Va jouer à COD + reset compte bancaire)
+a890f8fa194ca204cb93cc19bf1296d6 -1 Timonas_Ban (Insulte)
+10f039b798f70a44a59e0dd141bc12c3 -1 WTF?
+714e25cf82f8beac4acd08319cf5a0f4 -1 Timonas_Ban (Insulte - Freekill)
+88fa68f0e1634280698f02ed0b05e3a6 -1 TROLL
+bbfb6b11e84a4805e18ec507e15ddcab -1 insultes
+1a0a3a5fcf1aa3347df537ceff99a01c -1 troll
+e14a99ca03ef02e38eee8059f426ba1b -1 Timonas_Ban (Troll)
+e458febed2fe5c8cca980542b8361aa4 -1 Timonas_Ban (Freekill)
+aabbda8bc8239089fcd6b55add5c5389 -1 Timonas_Ban (Troll - Glitch - Cheat)
+e8945396b87f5642c89074bc372dce2c -1 Timonas_Ban (Cheater)
+1c3beb8f4a01bd5cd5f4e6155b1505c6 -1 Timonas_Ban (Multiple ceinture explosive - Freekill)
+009b2f1edd74cd5197a02a6c19c9a2a8 -1 Timonas_Ban (Freekill - ceinture)
+6b88ef6c58e5264b4fb11e081a0a8156 -1 Timonas_Ban (Déco en controle)
+d456d525b4b79cdd2ea0592f83ea4ee1 -1 Timonas_Ban (Freekill puis déco)
+f4e4245d17c00b8f9d92a57f98426616 -1 cheater
+dd5584894ebbce6da463ec9735acaa68 -1 cheats
+cabeda7f8e95a53bc9aa77852658f958 -1 Timonas_Ban (Troll - Freekill)
+95c57fdc417922a1eacd6a5c3a8f63fe -1 Timonas_Ban (Cheater)
+78ea75ddb1a39071c45e3f80fd72507a -1 un troll comme on les aime :)
+002dc2bde12bceed43af3cd4a8a918c6 -1 Timonas_Ban (Troll + Freekill + Derniere chance passé)
+eda18a50a81c3d8a93a18f2c6fd58d35 -1 Timonas_Ban (Freekil - Vol - 6 report)
+f01ae444783ecad60f0eeb8450d10f91 -1 Timonas_Ban (Cheater)
+e526960a5589114da459c3ae5fc5e72c
+6406bdae1f49743c44625b0e21862fbe
+751922ffffde27122b660c451b838656 -1 Timonas_Ban (Cheater)
+aa4966a769858cbd7036cf0eb9b078e6 -1 Timonas_Ban (Cheater)
+a24a5123613fbb2f2e14faaeca65a745 -1 Timonas_Ban (Ne correspond pas a l'esprit du serveur)
+a24a5123613fbb2f2e14faaeca65a745 -1 Ne respect pas l'esprit du serveur
+cba7013ea563c25f8e03f03bb37be258 -1 Timonas_Ban (Cheater)
+ebc727cede19c62b9571861921523e8d -1 Picpus ban (cheat/spawn argent)
+5bb35e4f9e6bb1666bbf7926ea99fefe -1 Timonas_Ban Cheater
+5bb35e4f9e6bb1666bbf7926ea99fefe -1 Timonas_Ban (Cheater)
+c0c64f5872101d2c9945f815eedfae9c -1 Timonas_Ban (Cheat probable - Reu TS)
+c42dcb6bd20f2e86b03ec247c685c3f1 -1 Timonas_Ban (Troll)
+520d4846be27d250cf6c924f3f574d36 -1 Timonas_Ban (Troll)
+8bd0602dad08c7b83b716464bf07e690 -1 Timonas_Ban (Troll)
+4c562e9fe34eefd75d42596b72fb1bc7 -1 Timonas_Ban (Troll)
+bf0b0233531c9268c1cbb324da4a537f -1 Timonas_Ban (Troll)
+a60b800c7aa9dcc6a39d31b93954d34e -1 BEC : GameHack #38
+05a1e20a79e60c8bd8a95ff6072eb1ce -1 Timonas_Ban (Cheat/Troll)
+4957c1b428f898ea28020d81de342c14 -1 Timonas_Ban (Cheater)
+79dc55ff31f8765dde246e76880fe5c9 -1 Picpus ban (on se revoi sur ts)
+8641a4e3cd61b7c53fce142ae9366871 -1 cheater
+61f7b54b39a6764a51593b1db3319970 -1 Timonas_Ban (Cheater)
+47f5109093bc6cd50f5b1e83a22c6c6a -1 Timonas_Ban (Cheater)
+f0e4f82d253b287bbe9018a6cb511dca -1 Timonas_Ban (Cheater)
+07fa8eae1cdcd353fe5a400bc5d52e72 -1 Timonas_Ban (Cheater)
+c0c64f5872101d2c9945f815eedfae9c -1 Timonas_Ban (Cheater)
+d1a40165029dac239116245c5d5cabae -1 Timonas_Ban (Cheater)
+a669e7b606eedb1ca77f2f9f25c778e4 -1 Timonas_Ban (Cheater)
+0e3033ac96f66765caa09f69c1dd9499 -1 Timonas_Ban (Insulte + troll)
+a7b7d9bb92ce0cc37b5dcab24fec23cb -1 Timonas_Ban (Troll)
+f6a182af6ec26140fd2543ad8499c043 -1 troll
+2ff263db0783a4133f8a4f593c0ccb32 -1 troll
+2ff263db0783a4133f8a4f593c0ccb32 -1 Timonas_Ban (Troll)
+8366ae1aee013f959a2903a44266016a -1 Timonas_Ban (Troll)
+00a5951420ef1746e7d0c465afec7ba0 -1 cheater dupli argent
+3874b67427404b5b9dcfc1817492cde1 -1 cheat?
+409310099ba0623f0be03206a650989c -1 Timonas_Ban (Troll)
+fe43f44bdeb96f5d748ead0adb2e69da -1 KayZze_ban(cheats )
+09e4422b5608cd106e758d4066e89d27 -1 KayZze_ban(cheats )
+82348d1139eb21e899b0143e728e72f8 -1 KayZze_ban(cheats -16M )
+6740c9b46d30e5db94b5ec31930a3ace -1 Trolololo
+0fbd422fbe480ac1b21674d6bf2a1b9b -1 Sankoz - Trolololo
+c3af034088ad468f4cac975b6a2d66c5 -1 Timonas_Ban (Troll)
+41f3ab15660792f97a2474974990f15a -1 Timonas_Ban (Ferme la un peu - Troll)
+a7777a899b1a6f23e449c7f9d28a7d42 -1 Timonas_Ban (Déco)
+ced25b04f63ed7a8bd1466d4940a1e56 -1 Cheat remoteexec
+8641a4e3cd61b7c53fce142ae9366871 -1 Cheat remoteexec
+1c510d7d8ca570f2ff54ac8c4a5a8811 -1 troll
+3fb7027926b24ed38541699595963308 -1 cheat havena
+7ef7f287197588483a97ce6d6005f850 -1 cheat havena
+83b50ca401ffe7e77b833aa7c519eaa2 -1 cheat havena
+ba38d0a64fdcc8a51fcfc2d576449d2f -1 Timonas_Ban (Money Hack)
+4e76de9f990a9ee27af282f3231671a7 -1 BEC : GameHack #38
+f156d03345a64b6e957302a1db7aeb75 -1 Timonas_Ban (Troll - Refuse)
+7def01318605d68e401f8b68613cbc2a -1 Timonas_Ban (Troll - Refuse)
+4ad6033d3642325173b13ba872f12b01 -1 Timonas_Ban (Troll - Refuse)
+062ea91ab56a96037ba18612079e4bab -1 Timonas_Ban (Troll - Refuse)
+d0ee070b7dd06d366e8f9d83b1733ecc -1 Blitz_ban 
+8162a829c4e2032b09801334187cb731 -1 Blitz_ban (Troll, déco, Malette)
+1110ca6d789ca206718f7de1d69648ea -1 Timonas_Ban (Money Hack)
+974af6bd892659b7263d860a112fb75a -1 BEC : GameHack #38
+f7de35943e4043e3e9016af281438aa8 -1 Blitz_ban (Inuslte, HRP, déco, troll)
+610d7324f3ab223769ae9582b148999e -1 Blitz_ban (use bug malette)
+1f916b1ff9437a7733fabf8d4271e423 -1 Erkeo_Katibann (Refusé dans la commu)
+7dd5439a2dc16a1a0528535210691a10 -1 Timonas_Ban (Refuse ds la commu)
+ae0216299af61e8961003dbadc41e21b -1 Timonas_Ban (Troll valise)
+4a900180295f713447e614892b244ce2 -1 Pavel_Ban ( insultes HRP + usebug  )
+896aedcaa9f414cc470c1ee3982e1540 -1 Pavel_Ban ( usebug  )
+e324476b0dea645e29540f5db01a3cd0 -1 Pavel_Ban ( troll valise  )
+e562875f14cac511fcf03268aca9de10 -1 Timonas_Ban (Refuse ds la commu)
+e8c38861c2505bdf15d24519d685f43f -1 Erkeo_Katiban (troll lobby)
+58e4c9cf57d245b416df9645d8942e33 -1 Erkeo_Katiban (troll carkill)
+f40a7f7ac0c4e8fc704e053572a70521 -1 Erkeo_Katiban (MONEY HACK)
+e711aefce98508f12c41255b4d9ddf77 -1 Timonas_Ban (Money Hack)
+168e3150cdf53adce881df8d98c63c5c -1 Blitz_ban (troll malette #63]
+5eaa5c39b155916648988795ae894e74 -1 Blitz_ban (troll malette + freekill + déco #63]
+7e037fbbd63046c21fb7d7fc3c10d08d -1 cheat havena
+e0a2e78ca90c16bd2b2ca6555dc745e4 -1 cheat havena
+1cd53bdedd570400107bae433d00b5ad -1 cheat havena
+d30fbd38be87e479d058d191d6f192e9 -1 cheat havena
+d30fbd38be87e479d058d191d6f192e9 -1 Money hack - Perm / Blitz
+b35cfbc7d3026fb4b193fbaca9211bf5 -1 TROLL INSULTES
+5d7ee443b8fa545d1f94c71a027d1626 -1 Erkeo_Katiban (carkill trollissime)
+fd6a8f041b4c0c327e099f25e2628e87 -1 Erkeo_Katiban (Troll valises/ Ban permanent)
+8cd2f089bcadc770f13eaf9ea21ddfd0 -1 Erkeo_Katiban (Manque de respect TS / Perma)
+8cd2f089bcadc770f13eaf9ea21ddfd0 -1 Erkeo_Katiban (Manque de respect TS / Ban Perm)
+c43dc68520ec5ecff00865f662f4afbd -1 Erkeo_Katiban (INSULTE PERMA)
+db9536514d63bf9dd4412306f876c938 -1 troll havena
+821a9629ff82c48b83834e2f2a40ac36 -1 Blitz_ban (stop troll va sur un autre serveur)
+ff1be6f5a9242e94032eb4a7b0045d31 -1 Blitz_ban (Refuser dans la communauté ban perm)
+b8fdbac478215c628c634c7eedd84f51 -1 Timonas_Ban (Troll - Valise)
+465fed88f178239968e5e7227cd84222 -1 Timonas_Ban (Troll - Deco)
+2f88760369fd9356e8f0767a58313002 -1 Blitz_ban (refusé dans la communauté)
+07b250e7018df441713125db30505085 -1 Blitz_ban (refusé dans la communauté)
+b8fdbac478215c628c634c7eedd84f51 -1 Erkeo_Katiban (Troll malettes / Perma ban )
+cb98471b0ca1849be8ab96759ff8db8c -1 BEC : GameHack #38
+a981c6f8614a67c1bb08389babb808d1 -1 BEC : GameHack #34
+18d46b644736d56e154912c799829b08 -1 BEC : GameHack #34
+93932fd73c406d4ca034f702c2237195 -1 Pavel_Ban ( insulte + HRP + troll )
+5cdd8969edac09807d616373b18e5439 -1 Blitz_ban (Troll malette)
+363c0148345ce31726fef6effede7355 -1 Pavel_Ban ( Troll de l'année  )
+93a20a526222752d210122056f82a934 -1 Pavel_Ban ( troll, permaban  )
+8d53c4877f29f80ba467743455a9e8b4 -1 Erkeo_Katiban (insulte et troll ban perm)
+5c1189b76f4bd642e8558a7cb1a9c5c6 -1 Pavel_Ban ( troll / HRP )
+bcc91aca9cdff0f9cb82e2be4297000a -1 BEC : GameHack #38
+4b021ee9258dd7a602f2dad04cc8c1b1 -1 Erkeo_Katiban (hrp)
+4cc6cc14b1e38c32dda81b9915458973 -1 Timonas_Ban (Glitch)
+4cc6cc14b1e38c32dda81b9915458973 -1 Erkeo_Katiban (Glitch / ban forever ever )
+ad3b1e9f9055ab8d0b911a2df12fed47 -1 Timonas_Ban (Manque de respect - Refuse dans la commu)
+3358ff8c5db6c80b61c69b17dc8ca924 -1 Carnage_trololololol
+d70c0891b5db2eea4a8152353b339c9c -1 BEC : GameHack #38
+d5605d93bcc8872f3b79105d120d81c3 -1 Battleye : Client not responding
+a1d7be413073ce4741351809f5f9a596 -1 Timonas_Ban (Insutle + HRP)
+f6f6969699e9b9662e2e1c960edb9062 -1 Erkeo_Katiban (Ban hack troll perma)
+fef823f0af9458589adf295e7611e0c3 -1 Erkeo_Katiban (PSEUDO INCORRECT)
+4d7a67432c14242de7040253dee54360 -1 Erkeo_Katiban (PSEUDO INCORRECT)
+c3752039f858ec28b3f3e3d381d25a5a -1 Erkeo_Katiban (pseudo incorrect)
+eb33ffbf7812f70b961845d9b3fe95a0 -1 Erkeo_Katiban (money hack : PERMA)
+e16e523cd11e40b0bc01e45aa5b86995 -1 BEC : GameHack #38
+bc5f0011d70da0094b7fbf2fd1c6bce5 -1 Blitz_ban (Money HACK)
+82cb143d02f04b39704c1d6c7be8824a -1 Carnage_trololol
+f3319992e544bf937d4c3023124436da -1 Carnage_Cheateur 
+2d9929d91ba6a85a075ab00053f7928e -1 Carnage_Cheater
+10c0f22ed3a806bafe84aa866e6d4414 -1 Carnage_Cheater
+98bdf0a39735c70362d0b80da6d15d33 -1 Carnage_Cheater
+13f5c2b43dbff78b65a1393d15c9fc17 -1 Carnage_TROLOLO Perma
+a288e680b01f0550e237a464b384b6f5 -1 Carnage_TROLOLO Perma
+6d5dcda824556525bf5d78dd3c6c5aea -1 Battleye : Detect Hack #45896*T
+94407a3394f016e80799c5ee26df0b47 -1 Battleye : Detect Hack #48962*T
+cc3d4ce19f3b774490e23304978b2124 -1 havena_cheater
+41489eebff03e397c66707f4aa9301f3 -1 havena_cheater
+d2ab6a9c894125e9b84ea25de495f588 -1 Blitz_ban (Money Hack)
+22b68f72de1e24779f366ff48f5e5f05 -1 Erkeo_Katiban (Insultes sur admins (enfants qui ne savent pas ge
+283be12980f16924e6b03e0414a84342 -1 Pavel_Ban ( hack, permaban  )
+a64def0692320e2cd1b0f9130c08555e -1 BEC : GameHack #38
+68b48826840349825fd777bfce7ce46b -1 BEC : GameHack #38
+d12b22d9dd3e4d4c2d13748cf20436e9 -1 Carnage_Moneyhack
+8337450273e472410185336b74a16c87 -1 Pavel_Ban ( troll + insultes HRP, permaban )
+31ce90cd6caa6968ddc4e82f37e08908 -1 BEC : GameHack #38
+b57559a590d484959d5f8ee8aaa5baab -1 Carnage_PUB
+3f7ad9fc4bad2926c6541d0528143d2f -1 Carnage_Multi pseudo , Alt+f4 Perma
+6aeec9d01deb0811ec4ae2f6f41979f5 -1 BEC : GameHack #38
+7614faa554eb9137096ddde058bf3603 -1 Erkeo_Katiban (hack money)
+ab3058ced7c6ef3dc31abfe6f62d683d -1 Erkeo_Katiban (BAD SCRIPT)
+33d2ba8f1fc2012ef801be100e3fc9b8 -1 BEC : GameHack #38
+57efb791a4bd620e56428b22501c7d70 -1 quadkill, troll, insultes HRP, Alt+F4
+d4bca59a3c06797e10e3f545b9ae3593 -1 Pavel_Ban ( quadkill, troll, insultes HRP, Alt+F4  )
+c433e3e749df8818476ee293c48af26b -1 BEC : GameHack #38
+851748421d954e67086bc1fd94599df1 -1 Timonas_Ban (Troll)
+4c446bf20b86cb85604debeb083daacf -1 Erkeo_Katiban (TROLL :BAN PERM)
+8bbc59934dda478a25b5af78b0474f5d -1 Blitz_ban (Money Hack)
+3a5e4b4884bb327829540a67d89c6376 -1 BEC : GameHack #34
+2d1eed42ab450730792fd2387bd9dfe3 -1 Timonas_Ban (Menace)
+a1150b14703d7576d9bc0fe2547849c7 -1 Carnage_trolll
+de283f6fcdd82219754575df2933ef27 -1 Carnage_trolll
+fe21a887dc085704bff926af6af8f3cd -1 Erkeo_Katiban (Troll / HRP/Ban perma)
+c446547ecc6edd84783145df0f0b7132 -1 BEC : GameHack #38
+54611ab531e7a3f0ef57b5f57ccbf554 -1 Erkeo_Katiban (Money Hack / Ban permanent)
+3dcfc211d75017393d395ffe260384a7 -1 Timonas_Ban (HRP)
+802c38e892390f034e78ebf4a3d9c17e -1 Erkeo_Katiban (TROLL ET INSULTES BAN PERMA)
+802c38e892390f034e78ebf4a3d9c17e -1 Erkeo_Katiban (TROLL INSULTE BVAN PERMA)
+2b92a2d10ee65772e8b53488a4debf03 -1 Timonas_Ban (Ciao bandino)
+60d84c3c6242a51e722a744f5a79c06f -1 Erkeo_Katiban (Troll valises / Ban perma)
+a78474407aca855eecf7a9bb5fadb269 -1 Erkeo_Katiban (manque de respect / ban perma)
+ff5f753076c44fc3956876cd5d6037b7 -1 Erkeo_Katiban (troll et insultes / permaban)
+42681ef43cacaa0890f1f1f744b7248f -1 Erkeo_Katiban (troll , carkill, alt+f4, insulte, hrp etc... / pe
+7d84fd0d7d65a68970d9a9f175c77c6a -1 Erkeo_Katiban (CARKILL SUPER TROLLISSIME BAN PERMA)
+1915af21c0215d1ac3b8557bd7ffd343 -1 Erkeo_Katiban (Insultes: BAN PERMA)
+38ce22aec24a9f85c80b4447638284fa -1 Erkeo_Katiban (Nom comportant pub pour youtube)
+57efb791a4bd620e56428b22501c7d70 -1 Heli_Ban quadkill, troll, insultes HRP, Alt+F4
+19e6bba7a1be1cc5ce250b9a70749ca8 -1 Timonas_Ban (Plagiat)
+ffb8491bd0ec969aae1554b7f96485f7 -1 Heli_Zubban(Inusltes/troll/carkill ban perma)
+031733a7d7531b81b9193e33565bed21 -1 Heli_Zubban(Inusltes/troll/carkill ban perma)
+8f7f12c5f2d285263365ca9f520b63b3 -1 Carnage_Aurevoir Salvatores x3
+4506797ff8e65e5388be46389c8766a9 -1 Heli_Zubban(Freekill/troll 4 jours)
+699d32b631e4ede7618ffa6dc2cbdf54 -1 Heli_Zubban(Insultes/Hrp/Carkill/Freekill perma)
+699d32b631e4ede7618ffa6dc2cbdf54 -1 Heli_Zubban(Insultes/Hrp/Carkill/Freekill perma)
+d98d99a6d271aeaa44ac7ac90d5313ae -1 Heli_Zubban(Insultes/Troll/Alt+f4 Perma)
+b87d8e692b5e088a1f05cae9e85df3b7 -1 havena cheat createvehicle
+fca5ea3559ebbdf6d9a0f092ae784c52 -1 Timonas_Ban (Troll)
+c53f76b35bb5f23ac3f4c9deffe75e63 -1 Timonas_Ban (Troll - 15 carkill)
+742c154168b92ddf758230630da85d56 -1 BEC : GameHack #38
+40ea5a5beb870ac6fa744dcfb63966b7 -1 Pavel_Ban ( insultes HRP, permaban )
+f541783b3344bc3e31ac1f440ed01f9a -1 Timonas_Ban (Refusé commu)
+4e3b095dfe1039b4b0ee8feaded12a01 -1 Timonas_Ban (MONEY HACK)
+66ccf573d8e0f31521e16d59a36bf427 -1 Timonas_Ban (Freekill + Insulte)
+c707e90dcd769234cbb3ee34df630143 -1 Timonas_Ban (Freekill + Insulte)
+eb33ffbf7812f70b961845d9b3fe95a0 -1 Timonas_Ban (Money Hack)
+71bac2b4500fafa6958f3ec4f267a1ab -1 Timonas_Ban (Money Hack)
+4fa4a5176b188ea4f62921f2928be37e -1 Timonas_Ban (Cheat)
+0bd7e5cf3b0921c2c232796ac50a3961 -1 Carnage_no Rp
+0bd7e5cf3b0921c2c232796ac50a3961 -1 Carnage_MoneyHack
+d97fe83ad9de3991f50e3e278851a243 -1 Timonas_Ban (Troll)
+2ab2a6f2870c9a030c25f9728c0069d5 -1 Timonas_Ban (Troll)
+012b6f4da5fee9616fc77bc82c0e708a -1 Timonas_Ban (Troll)
+7d60180bc290e7c4078443153fe03885 -1 Timonas_Ban (Troll)
+d7c22b71ac72e3741af69c51c282d390 -1 Timonas_Ban (Troll)
+807142aa6c64c4542c1a10e13ffd3842 -1 Carnage_insulte
+037da18c6126a0536a9b5d18533139e4 -1 Carnage_Insulte troll carkill exploitbug
+b6a9de4da3c27d149a3f0cc2d84ced04 -1 Carnage_Insulte troll carkill exploitbug
+52a1c8de9f374b61b7bca42338680e2e -1 Carnage_Insulte troll carkill exploitbug
+7f8a011a030a481076bbe2817337b90e -1 Carnage_Insulte troll carkill exploitbug
+e32307f5afa8f8209a4e0bb8d43af128 -1 Carnage_Cheater
+ee4035092f8c4bc7992ea07578e48168 -1 Carnage_Cheater
+27816fe37448f84af513740faeedb9dc -1 Carnage_Cheater
+e32307f5afa8f8209a4e0bb8d43af128 -1 Carnage_Cheater
+27816fe37448f84af513740faeedb9dc -1 Carnage_Cheater
+21096c441742ca3d6ea8814b048703bc -1 Heli_Zubban(Hack Perma)
+7dcdf71612e0d2b7a4ab84eba075a01c -1 troll (havena)
+8e76caa2f7b55c818f8da047fb830a9a -1 Timonas_Ban (Refuse commu)
+110918ce50b8056bd481eae237afb8e6 -1 Timonas_Ban (Refuse commu)
+e66e39b9f1640ddb29e8dcbb3ca39ba4 -1 Heli_Zubban(Insultes)
+47dac56c989754f87760697732a68ad5 -1 Carnage_aurevoir
+64a496dbe204c0f3af54ed9e047885ab -1 Carnage_Aurevoir
+525d322880e91619c79b08f4a45ade38 -1 Carnage_Aurevoir
+77a6e7ca902024a6c76e9da4f32a8091 -1 Carnage_Aurevoir
+42bfa21475a2062eca321637a817901d -1 Timonas_Ban (Demande acceptÃ©)
+7ee77af84ebc0285d7ea1444b3f38b88 -1 TROLL (1JOURS)
+8b032de2992a4e4f9a506616db1fb4f9 -1 Cheater (havena)
+006f30391bb1f456578420879570cc4a -1 Timonas_Ban (Refuse commu)
+b393aa2396c47f558144362c7542622c -1 Timonas_Ban (Troll + ALT+F4 - Refus commu)
+006b7caf3feb11410dbf6bede670902d -1 Heli_Zubban(Hack perma)
+29f59bec2f7f89ceaa5cf2d9e6e5836e -1 Timonas_Ban (Refuse commu)
+3f49149cefdba12ea759e9c0e7bd4187 -1 Timonas_Ban (Cheater report by anti-cheat)
+36ea1db2078b9454a6ad3bf18367cada -1 Timonas_Ban (Cheat detected)
+b182d941b945f25a8b0c0a15ebcd794a -1 troll insulte micro general (havena)
+bb46eb11fb52137616f046fd57b1a807 -1 troll HRP (havena)
+8df3a09c0835a136e3ac5eb63a9a6153 -1 TROLL VTT
+21e15587a29d8107ecb7c582016bd403 -1 TROLL VTT
+3b526f2b64ee45864d776503070aa55a -1 Heli_Zubban( Troll/Insultes HRP/propos HRP)
+e49bcb5b44912c3c02003ef35b245423 -1 Timonas_Ban (Nouvelle plainte - refusÃ© communautÃ©)
+f6455bb0da4d9572afc4c7b06d82b795 -1 Timonas_Ban (Troll quad)
+1430bcca0ab3a5a96c0d99ff6464b386 -1 Heli_Zubban(Troll valise perma)
+2953f9213d87631ac7079ee28ca788a2 -1 Heli_Zubban(Troll valise perma)
+3f91f6d5fafc490de7731240c02ffd1a -1 Carnage_Refus commu
+7106a665da8e46522ad66e07f12c66a0 -1 Carnage_bye
+7106a665da8e46522ad66e07f12c66a0 -1 Timonas_Ban (PEGI 18)
+a907df6b356dcd95be77adcf62409b71 -1 Carnage_
+30ebd7158fcca6a04547c9a3ee26dd56 -1 BEC : GameHack #38
+38bfaf574451126ca068996f676ec8c1 -1 Timonas_Ban (Guerre vs flic)
+89f3eb0d17c717a24e5d77f819647e45 -1 Timonas_Ban (Guerre vs flic)
+645b2b51d154c5a69ac76260af01ea95 -1 Timonas_Ban (Guerre vs flic)
+b8714a58e027aef0695a093165088d52 -1 Timonas_Ban (Guerre vs flic)
+184ba21f636b3c48bdc2bc7114c470f1 -1 Timonas_Ban (Guerre vs Flic)
+4b9895ee27f239e9c240a4e7cacedddc -1 Youri_ban(perma. Troll. Alt+F4, etc...)
+9a6b1a220ccd792d7459a445c60cdea4 -1 Carnage_Money hack
+77c1f28a17822d01a03c427e74b7075c -1 Timonas_Ban (menu.sqf)
+71bac2b4500fafa6958f3ec4f267a1ab -1 Timonas_Ban (Glitch Money)
+4e3b095dfe1039b4b0ee8feaded12a01 -1 Timonas_Ban (Glitch Money)
+35e69cc373aa79b941297aba0f2e6430 -1 Youri_ban(Pub, Perma)
+85a7fa9e459218b20dcedaab6475c6d6 -1 Timonas_Ban (Guerre vs flic - perma)
+0d95914de7bcb8590c610e73a67fac13 -1 BEC : GameHack #38
+afc31f737636499631f1ca65f08ae7ce -1 pub
+7da8c473be5adba1c00af611ec7872f2 -1 Timonas_Ban (Aurevoir)
+83cd0e1f139dbbd00ef2d71b2cfcbcf3 -1 Timonas_Ban (Argent disparut)
+1321d4de756fd1c1f99b66d1aabe5a7e -1 Erkeo_Katiban (sous demande 24f)
+5252f0312906dc7b896eec26132d9e56 -1 BEC : GameHack #38
+ba03924b8b878f851519025382858580 -1 BEC : GameHack #38
+0ad0826b42c4096a7c04009ed7923426 -1 troll (havena)
+59e84424e3ed4725e9084d2f86c64e1e -1 Carnage_Refus commnunautÃ©
+e0d13162ae9da3082a53f4e45744edde -1 Carnage_Refus communautÃ©
+594a1c953a706d0791046bb0bf19ed88 -1 Heli_Zubban(Troll/Insultes/Hrp Perma)
+8df535461e8a1ede7b3232dd675c1a12 -1 Heli_Zubban(Perma/Insultes)
+148898f02bcbff4b1d119a169c743dbe -1 PP (havena)
+04a781eb3ee6f2566e4767b2f0ec9d0a -1 Carnage_Hack panel altislife.fr
+79095083e2c3bc5f76c4ed7a76a07ea7 -1 enfant
+d93ce8408aae8b320ecb45dbc66c7d35 -1 Heli_Zubban(Hack ban perma)
+f1328350e190220d5aafd205a914d113 -1 BEC : GameHack #38
+ee3ef4281ae7687c461b01e410ce80d4 -1 BEC : GameHack #38
+8bcf156b158f78dde5324b2a17e47f3f -1 cheat (havena)
+c86d25b2896d740c66ebd7e04feaed15 -1 Heli:
+efa3df51efab057e9350f646747e9af5 -1 Youri_ban(Perma, Freekill)
+e257c10b3df3fd3cbd22428bb16d00af -1 Youri_ban(Freekil & refus d'expli)
+3f3d745c65ad0075267b7c2848463b94 -1 cheat (havena)
+00da68e1734e1ba4d52b9d9d21955935 -1 Youri_ban(Troll / insultes / ddos)
+706437cf2f9631a9bce15e02df3b8496 -1 Carnage_trololo
+ad30240f8232fc2859aade1e401b1d76 -1 Heli:(RefusÃ©e communautÃ©)
+fd37289f2abe823508424383e3df1302 -1 RDA (Troll Power)
+c436ce39cb258095a800597a556b79ad -1 RDA (Troll Power
+aee28c76100de2eabe70a267289cf23a -1 RDA (Troll Power)
+bc508ce8051475292c1a934f4e442bf1 -1 Heli:Insultes/Hrp/Troll Perma
+28135c6a51985c76215aef6cc2c45bc8 -1 BEC : GameHack #143
+c91444d8279f7828c2cb2a3abf0dd1e1 -1 Heli:Troll ban perma
+3c7694786cfc89749aafe26978c6b92f -1 Heli:Insultes admin ban perma
+687c658790e4cf3a92e2c04698f289ba -1 Timonas_Ban (Merci de contacter Heli/Raztoux/Youri)
+0b806db578ed0afc31c2f611dd5eb96d -1 Youri_ban(menaces, insultes)
+9ffe7f0dc0e5d3ec2d6a315cec79572c -1 Timonas_Ban (RefusÃ©_commu)
+38bfaf574451126ca068996f676ec8c1 -1 Timonas_Ban (Refuse_commu)
+d056224d416f5003e00565235c1b3fe5 -1 Timonas_Ban (Refuse_commu)
+dd9ed9c378def03925b56ec5a6d7049b -1 Erkeo_Katiban (Pub pour son serveur Ban perma)
+178.193.90.80 -1 Erkeo_Katiban (Pub pour son serveur Ban perma)

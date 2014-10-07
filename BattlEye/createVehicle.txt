@@ -1,0 +1,25 @@
+// 404 Wasteland TPG Edition - createVehicle.txt BattlEye filters by AgentRev
+
+// Vehicles
+5 "_APC_"
+5 "_Boat_" !"C_Boat_Civil_01_F" !"B_Boat_Transport_01_F" !"C_Boat_Civil_01_police_F" !"B_Boat_Armed_01_minigun_F"
+5 "_Heli_" !"B_Heli_Light_01_F" !"O_Heli_Light_02_unarmed_F" !"I_Heli_Transport_02_F" !"B_Heli_Transport_01_F" !"I_Heli_light_03_unarmed_F" !"B_Heli_Attack_01_F" !"Land_HelipadEmpty_F"
+5 "_Lifeboat"
+5 "_Mortar_"
+5 "_MRAP_" !"B_MRAP_01_hmg_F" !"B_MRAP_01_F" !"I_MRAP_03_F" !"O_MRAP_02_F"
+5 "_Offroad_" !"C_Offroad_01_F" !"B_G_Offroad_01_F" !"B_G_Offroad_01_armed_F" !"PMC_Offroad_Transport" !"sab_UN_Offroad_gun"
+5 "_Quadbike_" !"B_Quadbike_01_F"
+5 "_Rubberboat" !"C_Rubberboat"
+5 "_SDV_" !"B_SDV_01_F"
+5 "_Truck_" !"I_Truck_02_transport_F" !"I_Truck_02_covered_F" !"B_Truck_01_transport_F" !"B_Truck_01_box_F" !"B_Truck_01_covered_F" !"B_Truck_01_mover_F" !"O_Truck_03_transport_F" !"O_Truck_03_covered_F" !"O_Truck_03_device_F" !"sab_UN_Truck_C" !"sab_UN_Truck_Medi" !"O_Truck_03_medical_F"
+
+// Ammo boxes
+5 "Box_" !"B_Truck_01_box_F" !"C_Van_01_box_F" !"Box_NATO_AmmoVeh_F" !"Box_NATO_Support_F" !"Box_IND_Grenades_F"
+5 "_supplyCrate_" !"B_supplyCrate_F"
+
+// Units
+5 "C_man_" !"C_man_1" !"C_man_polo_6_F" !"C_man_polo_4_F" !"C_man_1_2_F" !"C_man_polo_1_F" !"C_man_1_3_F"
+
+// Buildings & objects
+5 "Bomb"
+5 "Land_" !"Land_Sack_F" !"Land_Rope_F" !"Land_BottlePlastic_V1_F" !"Land_TacticalBacon_F" !"Land_Can_V3_F" !"Land_CanisterFuel_F" !"Land_Money_F" !"Land_Suitcase_F" !"Land_Razorwire_F" !"Land_ClutterCutter_small_F" !"Land_HelipadEmpty_F" !"Land_SportGround_fence_noLC_F" !"Land_PlasticBarrier_01_line_x2_F" !"Land_PlasticBarrier_01_line_x4_F"

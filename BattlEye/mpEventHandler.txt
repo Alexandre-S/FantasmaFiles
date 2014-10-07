@@ -1,0 +1,3 @@
+// 404 Wasteland TPG Edition - mpEventHandler.txt BattlEye filters by AgentRev
+
+5 "" !"[_this,"bis_fnc_curatorrespawn",false] call bis_fnc_mp;"

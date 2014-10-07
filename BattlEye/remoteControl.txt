@@ -1,0 +1,3 @@
+// 404 Wasteland TPG Edition - remoteControl.txt BattlEye filters by AgentRev
+
+5 ""
