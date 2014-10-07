@@ -245,6 +245,8 @@ switch(_shop) do
 						["NVGoggles_INDEP",nil,1200],
 						["ARC_FR_Backpack_CE_Med",nil,2000],
 						["ARC_FR_Backpack_Daguet_Med",nil,2000],
+						["V_Chestrig_khk",nil,1000],
+						["V_HarnessO_brn",nil,1500],
 						["B_FieldPack_blk",nil,3000],
 						["Chemlight_red",nil,100],
 						["Chemlight_green",nil,100],
