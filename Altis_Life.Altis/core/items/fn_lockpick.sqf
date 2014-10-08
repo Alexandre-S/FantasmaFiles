@@ -5,7 +5,7 @@
 	Description:
 	Main functionality for lock-picking.
 */
-private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance"];
+private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance","_chance"];
 _curTarget = cursorTarget;
 life_interrupted = false;
 if(life_action_inUse) exitWith {};
@@ -65,17 +65,31 @@ if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 
 life_action_inUse = false;
-
-if(!_isVehicle) then {
-	_curTarget setVariable["restrained",false,true];
-	_curTarget setVariable["Escorting",false,true];
-	_curTarget setVariable["transporting",false,true];
+if (_curTarget isKindOf "Air") then{
+	_chance = 10;
 } else {
-	_dice = random(100);
-	if(_dice < 30) then {
+	_chance = 15;
+};
+_dice = random(100);
+if(!_isVehicle) then {
+	if(_dice <= _chance) then
+	{
+		titleText["Vous avez libéré cette personne.","PLAIN"];
+		_curTarget setVariable["restrained",false,true];
+		_curTarget setVariable["Escorting",false,true];
+		_curTarget setVariable["transporting",false,true];
+	}
+	else
+	{
+		titleText["Le kit de crochetage est cassé.","PLAIN"];
+		//[[0,format["%1 est en train de crocheter les menottes de %2.",profileName,name _curTarget]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+	};
+} else {
+	if(_dice <= _chance) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
 		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 	} else {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
