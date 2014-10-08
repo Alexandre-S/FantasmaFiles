@@ -76,7 +76,10 @@ class Mission
 		"arc_units",
 		"caf_ag_faction_afr_p",
 		"A3_Structures_F_EPB_Furniture",
-		"A3_Structures_F_Bootcamp_Civ_SportsGrounds"
+		"A3_Structures_F_Bootcamp_Civ_SportsGrounds",
+		"A3_Structures_F_EPB_Items_Documents",
+		"A3_Structures_F_EPC_Items_Documents",
+		"A3_Structures_F_Items_Stationery"
 	};
 	addOnsAuto[]=
 	{
@@ -138,6 +141,9 @@ class Mission
 		"A3_Structures_F_Kart_Civ_SportsGrounds",
 		"A3_Structures_F_EPB_Furniture",
 		"A3_Structures_F_Bootcamp_Civ_SportsGrounds",
+		"A3_Structures_F_EPB_Items_Documents",
+		"A3_Structures_F_EPC_Items_Documents",
+		"A3_Structures_F_Items_Stationery",
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -3944,7 +3950,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=766;
+		items=782;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -11273,6 +11279,176 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_HQ_V1_F";
 			skill=0.60000002;
+		};
+		class Item766
+		{
+			position[]={3276.77,2.2094409,12962.5};
+			azimut=224.013;
+			offsetY=12.05;
+			id=1015;
+			side="EMPTY";
+			vehicle="Land_PortableLight_single_F";
+			skill=0.60000002;
+		};
+		class Item767
+		{
+			position[]={3278.78,2.2191727,12969.4};
+			azimut=89.016098;
+			offsetY=12.05;
+			id=1016;
+			side="EMPTY";
+			vehicle="Land_Rack_F";
+			skill=0.60000002;
+		};
+		class Item768
+		{
+			position[]={3277.5701,2.2192955,12966.9};
+			azimut=359.55099;
+			offsetY=12.05;
+			id=1017;
+			side="EMPTY";
+			vehicle="Land_TableDesk_F";
+			skill=0.60000002;
+		};
+		class Item769
+		{
+			position[]={3280.76,2.2196813,12964};
+			azimut=359.25;
+			offsetY=12.05;
+			id=1018;
+			side="EMPTY";
+			vehicle="Land_Bench_F";
+			skill=0.60000002;
+		};
+		class Item770
+		{
+			position[]={3280.6101,2.2222793,12968.9};
+			azimut=0.0154504;
+			offsetY=12.05;
+			id=1019;
+			side="EMPTY";
+			vehicle="Land_ShelvesWooden_F";
+			skill=0.60000002;
+		};
+		class Item771
+		{
+			position[]={3276.5901,2.21436,12969};
+			azimut=359.189;
+			offsetY=12.05;
+			id=1020;
+			side="EMPTY";
+			vehicle="Land_ShelvesWooden_F";
+			skill=0.60000002;
+		};
+		class Item772
+		{
+			position[]={3277.24,2.2182932,12968};
+			azimut=325.60999;
+			offsetY=12.05;
+			id=1021;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V1_F";
+			skill=0.60000002;
+		};
+		class Item773
+		{
+			position[]={3280.7,2.2221355,12965.9};
+			azimut=89.458801;
+			offsetY=12.05;
+			id=1022;
+			side="EMPTY";
+			vehicle="Land_WaterCooler_01_new_F";
+			skill=0.60000002;
+		};
+		class Item774
+		{
+			position[]={3277.0901,2.2156835,12965.9};
+			azimut=200.543;
+			offsetY=12.05;
+			id=1023;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+		};
+		class Item775
+		{
+			position[]={3278.3201,2.2190943,12966};
+			azimut=154.312;
+			offsetY=12.05;
+			id=1024;
+			side="EMPTY";
+			vehicle="Land_CampingChair_V2_F";
+			skill=0.60000002;
+		};
+		class Item776
+		{
+			position[]={3275.6858,2.2035549,12962.422};
+			azimut=137.00694;
+			offsetY=12.05;
+			id=1025;
+			side="EMPTY";
+			vehicle="Land_PortableLight_single_F";
+			skill=0.60000002;
+		};
+		class Item777
+		{
+			position[]={3277.8987,2.2197604,12966.921};
+			azimut=265;
+			offsetY=12.85;
+			id=1026;
+			side="EMPTY";
+			vehicle="Land_Map_altis_F";
+			leader=1;
+			skill=1;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item778
+		{
+			position[]={3278.1316,2.220216,12967.029};
+			azimut=144.213;
+			offsetY=12.855;
+			id=1027;
+			side="EMPTY";
+			vehicle="Land_File_research_F";
+			leader=1;
+			skill=1;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item779
+		{
+			position[]={3277.0474,2.2168128,12966.919};
+			azimut=45;
+			offsetY=12.85;
+			id=1028;
+			side="EMPTY";
+			vehicle="Land_Laptop_unfolded_F";
+			leader=1;
+			skill=1;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Federal Reserve - Front Entrance"",life_fnc_fedCamDisplay,""front""];  this addAction[""Federal Reserve - Side Entrance"",life_fnc_fedCamDisplay,""side""];  this addAction[""Federal Reserve - Back Entrance"",life_fnc_fedCamDisplay,""back""];  this addAction[""Federal Reserve - Vault View"",life_fnc_fedCamDisplay,""vault""]; this addAction[""Turn Off Display"",life_fnc_fedCamDisplay,""off""];";
+		};
+		class Item780
+		{
+			position[]={3278.095,2.2202795,12967.114};
+			azimut=20;
+			offsetY=12.86;
+			id=1029;
+			side="EMPTY";
+			vehicle="Land_MobilePhone_smart_F";
+			leader=1;
+			skill=1;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item781
+		{
+			position[]={3277.6692,2.2193494,12966.842};
+			azimut=-121.02541;
+			offsetY=12.86;
+			id=1030;
+			side="EMPTY";
+			vehicle="Land_PencilRed_F";
+			leader=1;
+			skill=1;
+			init="this enableSimulation false; this allowDamage false;";
 		};
 	};
 	class Markers
