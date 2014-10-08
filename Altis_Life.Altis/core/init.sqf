@@ -110,6 +110,6 @@ __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 [] spawn
 {
 	sleep 60;
-	[] call SOCK_fnc_updateRequest;
+	[8] call SOCK_fnc_updatePartial; //Silent pos Sync
 	[] call life_fnc_updateClothing;
 };
