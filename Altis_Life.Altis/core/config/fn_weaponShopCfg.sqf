@@ -232,6 +232,7 @@ switch(_shop) do
 				_ret =
 				["Magasin Croix-Rouge",
 					[
+						["U_Rangemaster",nil,250],
 						["tf_anprc148jem",nil,5000],
 						["ItemGPS",nil,100],
 						["ItemCompass",nil,75],
