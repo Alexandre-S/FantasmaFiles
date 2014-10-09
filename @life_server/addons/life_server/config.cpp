@@ -128,8 +128,14 @@ class CfgFunctions
 			class removeGang {};
 			class updateGang {};
 		};
+		class Smartphone
+		{
+			file = "\life_server\Functions\Smartphone";
+			class handleMessages {};
+			class msgRequest {};
+		};
 	};
-	class GHBSystem
+	/*class GHBSystem
 	{
 		tag = "GHB";
 		class Smartphone
@@ -138,7 +144,7 @@ class CfgFunctions
 			class handleMessages {};
 			class msgRequest {};
 		};	
-	};
+	};*/
 };
 
 class CfgVehicles
