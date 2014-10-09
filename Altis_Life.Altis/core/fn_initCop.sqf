@@ -16,7 +16,7 @@ _end = false;
 	sleep 30;
 };*/
 
-diag_log["%1 - %2",__GETC__(life_coplevel),__GETC__(life_donator)];
+diag_log format["%1 - %2",__GETC__(life_coplevel),__GETC__(life_donator)];
 
 if((str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_5","cop_6","cop_7","cop_8","cop_9","cop_10","cop_11","cop_12","cop_13","cop_14","cop_15"])) then {
 	if(__GETC__(life_coplevel) == 0) then {
