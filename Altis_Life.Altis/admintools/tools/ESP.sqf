@@ -26,22 +26,24 @@ while {marker_mapesp} do
         _actualunit = _unitList_player select _o; //Player1
         //hint format["%1", actualunit];
         
-        if ( isplayer _actualunit && alive _actualunit ) then 
-        {
-            deleteMarkerLocal ("Player" + (str _o));
-            _yo = _o + 1;
-            deleteMarkerLocal ("Player" + (str _yo));
-                
-            _namePlayer = "";
-            _namePlayer = name _actualunit;
-        
-            _mark_player = "Player" + (str _o); //Player0, Player1, Player2
-            _mark_player = createMarkerLocal [_mark_player,getPos _actualunit];
-            _mark_player setMarkerTypeLocal "waypoint";
-            _mark_player setMarkerPosLocal (getPos _actualunit);
-            _mark_player setMarkerColorLocal "ColorBlue";
-            _mark_player setMarkerTextLocal format ["%1",_namePlayer];
-        };
+		if (!isNil "_actualunit") then{
+			if ( isplayer _actualunit && alive _actualunit ) then 
+			{
+				deleteMarkerLocal ("Player" + (str _o));
+				_yo = _o + 1;
+				deleteMarkerLocal ("Player" + (str _yo));
+					
+				_namePlayer = "";
+				_namePlayer = name _actualunit;
+			
+				_mark_player = "Player" + (str _o); //Player0, Player1, Player2
+				_mark_player = createMarkerLocal [_mark_player,getPos _actualunit];
+				_mark_player setMarkerTypeLocal "waypoint";
+				_mark_player setMarkerPosLocal (getPos _actualunit);
+				_mark_player setMarkerColorLocal "ColorBlue";
+				_mark_player setMarkerTextLocal format ["%1",_namePlayer];
+			};
+		};
     };    
     //bit of sleep
     sleep 1;
