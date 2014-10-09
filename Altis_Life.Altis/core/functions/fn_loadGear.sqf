@@ -52,13 +52,102 @@ if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn lif
 if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_vest != "") then {_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-{_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
 
-{player addItemToUniform _x;} foreach (_uItems);
+_items2 = [];
+_uItems2 = [];
+_vItems2 = [];
+_bItems2 = [];
+
+if(life_tfrreboot) then {
+	_TFRclassname = ["tf_pnr1000a","tf_anprc154","tf_rf7800str","tf_fadak","tf_anprc148jem","tf_anprc152","tf_mr3000","tf_anprc155","tf_rt1523g","tf_mr6000l","tf_anarc164","tf_anarc210"];
+	if(count _uItems > 0) then {
+		{
+			_itemacheckfind = "";
+			_itemacheck = _x;
+			{
+				if([_itemacheck,_x] call KRON_StrInStr) exitWith {
+					_itemacheckfind = _x;
+				};
+			} forEach _TFRclassname;
+			if(_itemacheckfind != "") then {
+				_uItems2 set [count(_uItems2), _itemacheckfind];
+			}
+			else{
+				_uItems2 set [count(_uItems2), _itemacheck];
+			};
+		} foreach _uItems;
+	};
+	if(count _bItems > 0) then {
+		{
+			_itemacheckfind = "";
+			_itemacheck = _x;
+			{
+				if([_itemacheck,_x] call KRON_StrInStr)  exitWith {
+					_itemacheckfind = _x;
+				};
+			} forEach _TFRclassname;
+			if(_itemacheckfind != "") then {
+				_bItems2 set [count(_bItems2), _itemacheckfind];
+			}
+			else{
+				_bItems2 set [count(_bItems2), _itemacheck];
+			};
+		} foreach _bItems;
+	};
+	if(count _vItems > 0) then {
+		{
+			_itemacheckfind = "";
+			_itemacheck = _x;
+			{
+				if([_itemacheck,_x] call KRON_StrInStr)  exitWith {
+					_itemacheckfind = _x;
+				};
+			} forEach _TFRclassname;
+			if(_itemacheckfind != "") then {
+				_vItems2 set [count(_vItems2), _itemacheckfind];
+			}
+			else{
+				_vItems2 set [count(_vItems2), _itemacheck];
+			};
+		} foreach _vItems;
+	};
+	if(count _items > 0) then {
+		{
+			_itemacheckfind = "";
+			_itemacheck = _x;
+			{
+				if([_itemacheck,_x] call KRON_StrInStr)  exitWith {
+					_itemacheckfind = _x;
+				};
+			} forEach _TFRclassname;
+			if(_itemacheckfind != "") then {
+				_items2 set [count(_items2), _itemacheckfind];
+			}
+			else{
+				_items2 set [count(_items2), _itemacheck];
+			};
+		} foreach _items;
+	};
+	
+	[[getPlayerUID player],"TON_fnc_tfrreboot",false,false] spawn life_fnc_MP;
+}else{
+_items2 = _items;
+_uItems2 = _uItems;
+_bItems2 = _bItems;
+_vItems2 = _vItems;
+};
+
+// {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
+{_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items2;
+
+// {player addItemToUniform _x;} foreach (_uItems);
+{player addItemToUniform _x;} foreach (_uItems2);
 {(uniformContainer player) addItemCargoGlobal [_x,1];} foreach (_uMags);
-{player addItemToVest _x;} foreach (_vItems);
+// {player addItemToVest _x;} foreach (_vItems);
+{player addItemToVest _x;} foreach (_vItems2);
 {(vestContainer player) addItemCargoGlobal [_x,1];} foreach (_vMags);
-{player addItemToBackpack _x;} foreach (_bItems);
+// {player addItemToBackpack _x;} foreach (_bItems);
+{player addItemToBackpack _x;} foreach (_bItems2);
 {(backpackContainer player) addItemCargoGlobal [_x,1];} foreach (_bMags);
 life_maxWeight = 100;
 {

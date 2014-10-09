@@ -106,6 +106,7 @@ class CfgFunctions
 			class setObjVar {};
 			class keyManagement {};
 			class InsureCar {};
+			class tfrreboot {};
 		};
 		
 		class Housing
