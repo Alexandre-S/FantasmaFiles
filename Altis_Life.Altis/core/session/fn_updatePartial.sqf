@@ -52,7 +52,7 @@ switch(_mode) do {
 	};
 	
 	case 8: {
-		_packet set[2,getPosATL player];
+		_packet set[2,(getPosATL player)];
 		if((player getVariable["Revive",true]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
 		_packet set[4,life_is_alive];
 	};
