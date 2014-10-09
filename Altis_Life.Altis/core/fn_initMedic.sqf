@@ -25,7 +25,7 @@ if(str(player) in ["medic_7","medic_8","medic_9","medic_10"]) then {
 	};
 };
 
-if (!life_is_alive || count life_position == 0) then
+if (!life_is_alive || (count life_position) == 0) then
 {
 	[] call life_fnc_spawnMenu;
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
