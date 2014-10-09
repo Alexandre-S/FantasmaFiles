@@ -10808,7 +10808,7 @@ class Mission
 		};
 		class Item718
 		{
-			position[]={3345.3987,2.359791,12971.784};
+			position[]={3347.4919,2.3312769,12971.28};
 			id=966;
 			side="EMPTY";
 			vehicle="Flag_UNO_F";
