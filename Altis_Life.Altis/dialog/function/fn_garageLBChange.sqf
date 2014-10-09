@@ -39,7 +39,7 @@ if(side player == independent) then {
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
-	"Prix assurance:" <t color='#8cff9b'>%9€</t><br/>
+	"Prix assurance:" <t color='#8cff9b'>%9â‚¬</t><br/>
 	"Etat de l'assurance:" %10<br/>
 	" +(localize "STR_Shop_Veh_UI_Color")+ " %8<br/>
 	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>
@@ -47,7 +47,7 @@ if(side player == independent) then {
 	" +(localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>
 	" +(localize "STR_Shop_Veh_UI_Trunk")+ " %6<br/>
 	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>
-	"Résistance :" %11
+	"RÃ©sistance :" %11
 	",
 [_retrievePrice] call life_fnc_numberText,
 [_sellPrice] call life_fnc_numberText,
@@ -58,7 +58,7 @@ if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleColor,
 [_assurPrice] call life_fnc_numberText,
-if(_assur == 1) then {"<t color='#8cff9b'>Assuré</t>"} else {"<t color='#FF0000'>Pas d'assurance</t>"},
+if(_assur == 1) then {"<t color='#8cff9b'>AssurÃ©</t>"} else {"<t color='#FF0000'>Pas d'assurance</t>"},
 _vehicleInfo select 9
 ];
 
