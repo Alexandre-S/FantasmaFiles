@@ -15,6 +15,18 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 
-[] call life_fnc_spawnMenu;
-waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
-waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+
+if (!life_is_alive || count life_position == 0) then
+{
+	[] call life_fnc_spawnMenu;
+	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
+	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+	life_is_alive = true; // Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
+}	
+else 
+{
+	player setPosATL life_position;
+	hint format["Your character is still alive. You have been placed at your last saved position."];
+	life_is_alive = true;
+};

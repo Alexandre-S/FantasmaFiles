@@ -23,7 +23,7 @@ if(str(player) in ["civ_51","civ_52","civ_53","civ_54","civ_55","civ_56","civ_57
 	};
 };
 
-if (!life_is_alive) then
+if (!life_is_alive || count life_position == 0) then
 {
 	[] call life_fnc_spawnMenu;
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
