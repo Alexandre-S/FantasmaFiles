@@ -22,7 +22,7 @@ if(_vid == -1 OR _pid == "") exitWith {};
 if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
@@ -109,5 +109,12 @@ if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
 {
 	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
-[[1,"Your vehicle is ready!"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+if((_vInfo select 9) == 1) then
+{
+  [[1,"Votre vehicule et dispo et assurer ! "],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+}
+else
+{
+  [[1,"Votre vehicule et dispo !"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+};
 serv_sv_use = serv_sv_use - [_vid];

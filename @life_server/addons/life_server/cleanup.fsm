@@ -1,4 +1,4 @@
-/*%FSM<COMPILE "D:\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Server-Side Cleanup">*/
+/*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, Server-Side Cleanup">*/
 /*%FSM<HEAD>*/
 /*
 item0[] = {"init",0,250,-65.004578,-391.651611,24.995417,-341.651672,0.000000,"init"};
@@ -17,8 +17,8 @@ link4[] = {4,5};
 link5[] = {5,3};
 link6[] = {6,7};
 link7[] = {7,2};
-globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-629.444153,611.207214,293.309357,-434.050568,1243,911,1};
-window[] = {2,-1,-1,-32000,-32000,910,150,1793,150,3,1261};
+globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-407.881226,389.642914,482.854736,-505.641113,735,911,1};
+window[] = {2,-1,-1,-32000,-32000,835,75,1453,75,3,753};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -82,12 +82,31 @@ class FSM
        "		{" \n
        "			_uid = _dbInfo select 0;" \n
        "			_plate = _dbInfo select 1;" \n
-       "" \n
-       "			_query = format[""UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'"",_uid,_plate];" \n
-       "			_query spawn {" \n
-       "				waitUntil {!DB_Async_Active};" \n
-       "				_thread = [_this,1] spawn DB_fnc_asyncCall;" \n
-       "			};" \n
+       "			_insureSystem = _dbInfo select 2;" \n
+       "			diag_log "" destroy vehicule !"";" \n
+       "			diag_log format[""insureSystem = %1 "", _insureSystem];" \n
+       "			if(_insureSystem == 1) then " \n
+       "			{" \n
+       "				diag_log "" Assurer !"";" \n
+       "				diag_log format[""insureSystem = %1 "", _insureSystem];" \n
+       "				_query_0 = format[""UPDATE vehicles SET alive='1', insure='0', active='0' WHERE pid='%1' AND plate='%2'"",_uid,_plate]; " \n
+       "				_query_0 spawn " \n
+       "				{" \n
+       "					waitUntil {!DB_Async_Active};" \n
+       "					_thread_0 = [_this,1] spawn DB_fnc_asyncCall;" \n
+       "				};" \n
+       "			} " \n
+       "			else  " \n
+       "			{" \n
+       "				diag_log "" Pas Assurer !"";" \n
+       "				diag_log format[""insureSystem = %1 "", _insureSystem];" \n
+       "				_query = format[""UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'"",_uid,_plate];  " \n
+       "				_query spawn " \n
+       "				{" \n
+       "					waitUntil {!DB_Async_Active};" \n
+       "					_thread = [_this,1] spawn DB_fnc_asyncCall;" \n
+       "				};   " \n
+       "			}; " \n
        "		};" \n
        "		if(!isNil ""_x"" && {!isNull _x}) then {" \n
        "			deleteVehicle _x;" \n
