@@ -1691,7 +1691,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_51";
-					description="Civ 51";
+					description="Réservé premium - Civ 51";
 				};
 			};
 		};
@@ -1713,7 +1713,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_52";
-					description="Civ 52";
+					description="Réservé premium - Civ 52";
 				};
 			};
 		};
@@ -1735,7 +1735,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_53";
-					description="Civ 53";
+					description="Réservé premium - Civ 53";
 				};
 			};
 		};
@@ -1757,7 +1757,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_54";
-					description="Civ 54";
+					description="Réservé premium - Civ 54";
 				};
 			};
 		};
@@ -1779,7 +1779,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_55";
-					description="Civ 55";
+					description="Réservé premium - Civ 55";
 				};
 			};
 		};
@@ -1801,7 +1801,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_56";
-					description="Civ 56";
+					description="Réservé premium - Civ 56";
 				};
 			};
 		};
@@ -1823,7 +1823,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_57";
-					description="Civ 57";
+					description="Réservé premium - Civ 57";
 				};
 			};
 		};
@@ -1845,7 +1845,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_58";
-					description="Civ 58";
+					description="Réservé premium - Civ 58";
 				};
 			};
 		};
@@ -1867,7 +1867,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_59";
-					description="Civ 59";
+					description="Réservé premium - Civ 59";
 				};
 			};
 		};
@@ -1889,7 +1889,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_60";
-					description="Civ 60";
+					description="Réservé premium - Civ 60";
 				};
 			};
 		};
@@ -1911,7 +1911,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_61";
-					description="Civ 61";
+					description="Réservé premium - Civ 61";
 				};
 			};
 		};
@@ -1933,7 +1933,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_62";
-					description="Civ 62";
+					description="Réservé premium - Civ 62";
 				};
 			};
 		};
@@ -1955,7 +1955,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_63";
-					description="Civ 63";
+					description="Réservé premium - Civ 63";
 				};
 			};
 		};
@@ -1977,7 +1977,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_64";
-					description="Civ 64";
+					description="Réservé premium - Civ 64";
 				};
 			};
 		};
@@ -1999,7 +1999,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_65";
-					description="Civ 65";
+					description="Réservé premium - Civ 65";
 				};
 			};
 		};
@@ -2021,7 +2021,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
-					description="Civ 70";
+					description="Réservé premium - Civ 70";
 				};
 			};
 		};
@@ -2043,7 +2043,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_69";
-					description="Civ 69";
+					description="Réservé premium - Civ 69";
 				};
 			};
 		};
@@ -2065,7 +2065,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_68";
-					description="Civ 68";
+					description="Réservé premium - Civ 68";
 				};
 			};
 		};
@@ -2087,7 +2087,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_67";
-					description="Civ 67";
+					description="Réservé premium - Civ 67";
 				};
 			};
 		};
@@ -2109,7 +2109,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_66";
-					description="Civ 66";
+					description="Réservé premium - Civ 66";
 				};
 			};
 		};
@@ -2131,7 +2131,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_75";
-					description="Civ 75";
+					description="Réservé premium - Civ 75";
 				};
 			};
 		};
@@ -2153,7 +2153,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_74";
-					description="Civ 74";
+					description="Réservé premium - Civ 74";
 				};
 			};
 		};
@@ -2175,7 +2175,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_73";
-					description="Civ 73";
+					description="Réservé premium - Civ 73";
 				};
 			};
 		};
@@ -2197,7 +2197,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_72";
-					description="Civ 72";
+					description="Réservé premium - Civ 72";
 				};
 			};
 		};
@@ -2219,7 +2219,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_71";
-					description="Civ 71";
+					description="Réservé premium - Civ 71";
 				};
 			};
 		};
