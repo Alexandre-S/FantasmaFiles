@@ -135,6 +135,16 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
+	class NotCiv
+	{
+		title = "Réservé Civils";
+		subtitle = "Vous n'êtes pas civil";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas civil. Essayez un slot Medic ou ONU";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
 	class SessionError
 	{
 		title = "Erreur de chargement";
