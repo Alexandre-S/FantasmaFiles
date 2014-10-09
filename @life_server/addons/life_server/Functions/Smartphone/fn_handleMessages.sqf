@@ -11,6 +11,8 @@ _msg = [_this,1,"",[""]] call BIS_fnc_param;
 _player = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,-1] call BIS_fnc_param;
 
+diag_log format["messageTEST %1",_this];
+
 switch(_type) do
 {
 	//normal message
