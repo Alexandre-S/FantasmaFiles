@@ -16,6 +16,14 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 };
 
 
+if(str(player) in ["medic_7","medic_8","medic_9","medic_10"]) then {
+	if(__GETC__(life_donator) == 0) then
+	{
+		player enableSimulation false;
+		["NotPremium",false,true] call BIS_fnc_endMission;
+		sleep 35;
+	};
+};
 
 if (!life_is_alive || count life_position == 0) then
 {

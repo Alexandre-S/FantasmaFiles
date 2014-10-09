@@ -3870,7 +3870,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_7";
-					description="Membre Croix-Rouge 7";
+					description="Réservé premium - Membre Croix-Rouge 7";
 				};
 				class Item7
 				{
@@ -3883,7 +3883,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_8";
-					description="Membre Croix-Rouge 8";
+					description="Réservé premium - Membre Croix-Rouge 8";
 				};
 				class Item8
 				{
@@ -3896,7 +3896,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_9";
-					description="Membre Croix-Rouge 9";
+					description="Réservé premium - Membre Croix-Rouge 9";
 				};
 				class Item9
 				{
@@ -3909,7 +3909,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_10";
-					description="Membre Croix-Rouge 10";
+					description="Réservé premium - Membre Croix-Rouge 10";
 				};
 			};
 		};
