@@ -36,6 +36,7 @@ life_factnumber = 0;
 life_reblevel = 0;
 life_fatigue = 0.6; //Set the max fatigue
 life_is_alive = false;
+life_smartphoneTarget = ObjNull;
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
