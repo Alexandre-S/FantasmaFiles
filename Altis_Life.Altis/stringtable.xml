@@ -5067,4 +5067,50 @@
 			<Portuguese>Roubar Jogador</Portuguese>
 		</Key>
 	</Package>
+	<Package name="Smartphone">
+		<Key ID="STR_PM_Smartphone">
+			<Original>Smartphone</Original>
+			<French>Smartphone</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_TITLE">
+			<Original>Smartphone Menu</Original>
+			<French>Menu du smartphone</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_PLAYERLISTTITLE">
+			<Original>Playerlist</Original>
+			<French>Liste joueurs</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_MESSAGETITLE">
+			<Original>Nachrichten  | VON | WANN</Original>
+			<French>Nouveau | DE | EN </French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_RANDOMTITLE">
+			<Original>Nachricht zum lesen auswählen</Original>
+			<French>Sélectionnez un message à lire</French>
+		</Key>
+		<Key ID="STR_Global_Close">
+			<Original>Close</Original>
+			<French>Fermer</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_SCHREIBEN">
+			<Original>Schreiben</Original>
+			<French>Lettre</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NOTRUF">
+			<Original>Notruf</Original>
+			<French>Appel d'urgence</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Absenden">
+			<Original>Absenden</Original>
+			<French>Envoyer</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_NACHRICHTTITLE">
+			<Original>Nachricht an:</Original>
+			<French>Email:</French>
+		</Key>
+		<Key ID="STR_SMARTPHONE_Notruftitle">
+			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
+			<French>APPELS D'URGENCE | Ne pas abuser</French>
+		</Key>
+	</Package>
 </Project>
