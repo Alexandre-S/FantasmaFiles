@@ -157,7 +157,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case ((__GETC__(life_coplevel) < 4)&&(__GETC__(life_adminlevel) == 0)): {"Réservé aux capitaines"};
+			case (__GETC__(life_coplevel) < 4): {"Réservé aux capitaines!"};
 			default
 			{
 				_ret =
@@ -194,7 +194,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case ((__GETC__(life_coplevel) < 5)&&(__GETC__(life_adminlevel) == 0)): {"Réservé aux Hauts Gradés"};
+			case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
 			default
 			{
 				_ret =
