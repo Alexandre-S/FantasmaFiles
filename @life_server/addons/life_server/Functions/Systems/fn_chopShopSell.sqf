@@ -5,7 +5,7 @@
 	Description:
 	Checks whether or not the vehicle is persistent or temp and sells it.
 */
-private["_unit","_vehicle","_price","_cash"];
+private["_unit","_vehicle","_price","_cash","query"];
 _unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _vehicle = [_this,1,objNull,[objNull]] call BIS_fnc_param;
 _price = [_this,2,500,[0]] call BIS_fnc_param;
@@ -24,8 +24,16 @@ _dbInfo = _vehicle getVariable["dbInfo",[]];
 if(count _dbInfo > 0) then {
 	_uid = _dbInfo select 0;
 	_plate = _dbInfo select 1;
-
-	_query = format["UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+	_assur = _dbInfo select 2;
+	
+	if(_assur == 1) then
+	{
+		_query = format["UPDATE vehicles SET alive='1', insure='0', active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate]; 
+	} 
+	else  
+	{
+		_query = format["UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+	}; 
 	waitUntil {!DB_Async_Active};
 	_sql = [_query,1] call DB_fnc_asyncCall;
 };

@@ -39,15 +39,15 @@ if(side player == independent) then {
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
-	"Prix assurance:" <t color='#8cff9b'>%9€</t><br/>
-	"Etat de l'assurance:" %10<br/>
+	Prix assurance: <t color='#8cff9b'>%9€</t><br/>
+	Etat de l'assurance: %10<br/>
 	" +(localize "STR_Shop_Veh_UI_Color")+ " %8<br/>
 	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>
 	" +(localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>
 	" +(localize "STR_Shop_Veh_UI_PSeats")+ " %5<br/>
 	" +(localize "STR_Shop_Veh_UI_Trunk")+ " %6<br/>
 	" +(localize "STR_Shop_Veh_UI_Fuel")+ " %7<br/>
-	"Résistance :" %11
+	Résistance : %11
 	",
 [_retrievePrice] call life_fnc_numberText,
 [_sellPrice] call life_fnc_numberText,
