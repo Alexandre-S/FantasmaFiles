@@ -31,7 +31,7 @@ switch(_type) do
 	//normal message
 	case 1:
 	{
-		if(isNUll life_smartphoneTarget) exitWith {hint format["Keine Person ausgw‰hlt!"];};
+		if(isNUll life_smartphoneTarget) exitWith {hint format["Keine Person ausgw√§hlt!"];};
 		ctrlShow[88885, false];
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[88885, true];};
 		[[life_smartphoneTarget,_msg,player,0],"GHB_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -42,7 +42,7 @@ switch(_type) do
 	//copmessage
 	case 2:
 	{
-		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es sp‰ter nochmal."];};
+		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es sp√§ter nochmal."];};
 		ctrlShow[888895,false];
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888895,true];};
 		[[ObjNull,_msg,player,1],"GHB_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -65,7 +65,7 @@ switch(_type) do
 	//emsrequest
 	case 4:
 	{
-		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es sp‰ter nochmal."];};
+		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es sp√§ter nochmal."];};
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,3],"GHB_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -77,7 +77,7 @@ switch(_type) do
 	case 5:
 	{
 		if((call life_adminlevel) < 1) exitWith {hint "You are not an admin!";};
-		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgw‰hlt!"];};
+		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgw√§hlt!"];};
 		if(_msg == "") exitWith {hint "You must enter a message to send!";};
 		[[life_smartphoneTarget,_msg,player,4],"GHB_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Admin Message Sent To: %1 - Message: %2",name life_smartphoneTarget,_msg];
