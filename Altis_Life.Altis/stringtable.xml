@@ -5094,11 +5094,11 @@
 		</Key>
 		<Key ID="STR_SMARTPHONE_SCHREIBEN">
 			<Original>Schreiben</Original>
-			<French>Lettre</French>
+			<French>Ecrire SMS</French>
 		</Key>
 		<Key ID="STR_SMARTPHONE_NOTRUF">
 			<Original>Notruf</Original>
-			<French>Appel d'urgence</French>
+			<French>Urgences</French>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Absenden">
 			<Original>Absenden</Original>
@@ -5110,7 +5110,7 @@
 		</Key>
 		<Key ID="STR_SMARTPHONE_Notruftitle">
 			<Original>NOTRUFE | Abuse führt zum BAN!</Original>
-			<French>APPELS D'URGENCE | Ne pas abuser</French>
+			<French>APPELS D'URGENCE</French>
 		</Key>
 	</Package>
 </Project>
