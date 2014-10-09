@@ -114,6 +114,66 @@ class CfgDebriefing
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
+	
+	class NotPremium
+	{
+		title = "Place réservée";
+		subtitle = "Vous n'êtes pas autorisé a utiliser ce slot";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas membre premium, essayez un autre emplacement";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotCop
+	{
+		title = "Réservé ONU";
+		subtitle = "Vous ne faite pas parti de l'ONU";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas un membre de l'ONU, essayez un autre emplacement.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class SessionError
+	{
+		title = "Erreur de chargement";
+		subtitle = "Erreur lors du chargement de la session";
+		description = "Erreur lors du chargement de la session, reessayez de vous connecter.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class BadName
+	{
+		title = "mauvaise identité";
+		subtitle = "Nom de joueur inconnu";
+		description = "Vous n'êtes pas autorisé à changer de nom sans passer par la préfecture. Merci de vous reconnecter avec votre ancien nom.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NewName
+	{
+		title = "Changement d'identité";
+		subtitle = "Changement d'identité en cours";
+		description = "Vous venez de faire une demande de changement d'identité. Merci de vous reconnecter avec votre nouveau nom.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class ServerRP
+	{
+		title = "Serveur Roleplay";
+		subtitle = "Vous êtes sur un serveur Roleplay (RP)";
+		description = "Vous devez incarner votre personne au plus proche de la réalité. Merci de lire les règles.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 };
 
 class CfgNotifications
