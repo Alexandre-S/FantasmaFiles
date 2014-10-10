@@ -6,6 +6,7 @@
 	Main functionality for gathering.
 */
 if(isNil "life_action_gathering") then {life_action_gathering = false;};
+if(life_action_inUse) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
 _resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1"];
 _zone = "";
@@ -37,12 +38,12 @@ if(vehicle player != player) exitWith {};
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 life_action_inUse = true;
-for "_i" from 0 to 2 do
-{
+//for "_i" from 0 to 2 do
+//{
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-	sleep 2.5;
-};
+	sleep 5;
+//};
 
 if(([true,_gather,_diff] call life_fnc_handleInv)) then
 {
