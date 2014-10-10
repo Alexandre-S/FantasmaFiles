@@ -22,6 +22,9 @@ _escSync = {
 		waitUntil {
 			_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
 			_abortButton ctrlCommit 0;
+			if(round(_timeStamp - time) == 5) then {
+				[] call SOCK_fnc_updateRequest; //call our silent sync.
+			};
 			round(_timeStamp - time) <= 0 || isNull (findDisplay 49)
 		};
 		
@@ -30,7 +33,7 @@ _escSync = {
 	};
 	
 	_abortButton = (findDisplay 49) displayCtrl 104;
-	[] call SOCK_fnc_updateRequest; //call our silent sync.
+	// [] call SOCK_fnc_updateRequest; //call our silent sync.
 	
 	if(_this) then {
 		_thread = [] spawn _syncManager;
