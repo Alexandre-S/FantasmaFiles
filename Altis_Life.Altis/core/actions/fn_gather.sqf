@@ -38,12 +38,12 @@ if(vehicle player != player) exitWith {};
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 life_action_inUse = true;
-//for "_i" from 0 to 2 do
-//{
+for "_i" from 0 to 2 do
+{
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
 	sleep 5;
-//};
+};
 
 if(([true,_gather,_diff] call life_fnc_handleInv)) then
 {
