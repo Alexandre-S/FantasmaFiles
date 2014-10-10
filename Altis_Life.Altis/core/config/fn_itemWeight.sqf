@@ -45,8 +45,8 @@ switch (_item) do
 	case "glass": {1};
 	case "diamond": {4};
 	case "diamondc": {2};
-	case "cocaine": {2};
-	case "cocainep": {3};
+	case "cocaine": {3};
+	case "cocainep": {2};
 	case "spikeStrip": {15};
 	case "rock": {6};
 	case "cement": {5};
