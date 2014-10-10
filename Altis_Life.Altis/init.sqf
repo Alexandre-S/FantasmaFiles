@@ -26,7 +26,7 @@ tf_no_auto_long_range_radio = true;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "Altis Life RPG v5.0";
+life_versionInfo = "Altis Life RPG v5.1";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 execVM "randomWeather2.sqf";
