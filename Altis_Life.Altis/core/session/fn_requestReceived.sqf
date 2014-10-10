@@ -44,7 +44,6 @@ if(count (_this select 6) > 0) then {
 };
 
 life_gear = _this select 8;
-[] call life_fnc_loadGear;
 
 //Parse side specific information.
 switch(playerSide) do {
@@ -93,6 +92,8 @@ switch(playerSide) do {
 		life_tfrreboot = _this select 11;
 	};
 };
+
+[] call life_fnc_loadGear;
 
 if(count (_this select 17) > 0) then {
 	{life_vehicles pushBack _x;} foreach (_this select 17);
