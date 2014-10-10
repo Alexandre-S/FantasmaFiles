@@ -21,12 +21,12 @@ while {marker_mapesp} do
     _o = 0;
     _yo = 0;
 
-    for "_o" from 0 to _totalunits do
+    for "_o" from 0 to (_totalunits-1) do
     {
         _actualunit = _unitList_player select _o; //Player1
         //hint format["%1", actualunit];
         
-		if (!isNil "_actualunit" && !isNull "_actualunit") then{
+		if (!isNil "_actualunit") then{
 			if ( isplayer _actualunit && alive _actualunit ) then 
 			{
 				deleteMarkerLocal ("Player" + (str _o));
