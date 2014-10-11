@@ -51,4 +51,5 @@ if(([true,_gather,_diff] call life_fnc_handleInv)) then
 	titleText[format[localize "STR_NOTF_Gather_Success",_itemName,_diff],"PLAIN"];
 };
 
+life_action_gathering = false;
 life_action_inUse = false;
