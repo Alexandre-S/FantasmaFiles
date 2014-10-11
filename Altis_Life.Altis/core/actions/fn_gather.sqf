@@ -6,7 +6,6 @@
 	Main functionality for gathering.
 */
 if(isNil "life_action_gathering") then {life_action_gathering = false;};
-if(life_action_inUse) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
 _resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1"];
 _zone = "";
@@ -51,5 +50,4 @@ if(([true,_gather,_diff] call life_fnc_handleInv)) then
 	titleText[format[localize "STR_NOTF_Gather_Success",_itemName,_diff],"PLAIN"];
 };
 
-life_action_gathering = false;
 life_action_inUse = false;
