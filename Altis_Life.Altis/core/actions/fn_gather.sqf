@@ -6,6 +6,7 @@
 	Main functionality for gathering.
 */
 if(isNil "life_action_gathering") then {life_action_gathering = false;};
+if(life_action_inUse) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
 _resourceZones = ["apple_1","apple_2","apple_3","apple_4","peaches_1","peaches_2","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1"];
 _zone = "";
@@ -20,6 +21,7 @@ life_action_gathering = true;
 
 if(_zone == "") exitWith {
 	life_action_inUse = false;
+	life_action_gathering = false;
 };
 
 //Get the resource that will be gathered from the zone name...
@@ -32,10 +34,10 @@ switch(true) do {
 	default {""};
 };
 //gather check??
-if(vehicle player != player) exitWith {};
+if(vehicle player != player) exitWith {life_action_inUse = false;life_action_gathering = false;};
 
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
+if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull";life_action_inUse = false;life_action_gathering = false;};
 life_action_inUse = true;
 for "_i" from 0 to 2 do
 {
@@ -51,3 +53,4 @@ if(([true,_gather,_diff] call life_fnc_handleInv)) then
 };
 
 life_action_inUse = false;
+life_action_gathering = false;
