@@ -15,14 +15,16 @@ _escSync = {
 	
 	_syncManager = {
 		disableSerialization;
-		private["_abortButton","_timeStamp"];
+		private["_abortButton","_timeStamp","_save"];
 		_abortButton = (findDisplay 49) displayCtrl 104;
 		_timeStamp = time + 10;
 		
+		_save = false;
 		waitUntil {
 			_abortButton ctrlSetText format[localize "STR_NOTF_AbortESC",[(_timeStamp - time),"SS.MS"] call BIS_fnc_secondsToString];
 			_abortButton ctrlCommit 0;
-			if(round(_timeStamp - time) == 5) then {
+			if(round(_timeStamp - time) == 5 && !_save) then {
+				_save = true;
 				[] call SOCK_fnc_updateRequest; //call our silent sync.
 			};
 			round(_timeStamp - time) <= 0 || isNull (findDisplay 49)
