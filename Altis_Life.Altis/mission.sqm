@@ -3291,7 +3291,7 @@ class Mission
 				class Item90
 				{
 					position[]={8541.2754,11.466966,7332.4951};
-					azimut=407.98581;
+					azimut=407.98599;
 					special="NONE";
 					id=195;
 					side="CIV";
@@ -11617,7 +11617,7 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={2613.447,5.0651455,22232.934};
+			position[]={2608.0166,5.5614948,22230.025};
 			name="chop_shop_1";
 			text="Receleur";
 			type="o_armor";
@@ -11760,10 +11760,10 @@ class Mission
 		};
 		class Item42
 		{
-			position[]={14043.053,25.786663,18746.732};
+			position[]={14042.396,25.990568,18741.105};
 			name="civ_car_3";
 			type="Empty";
-			angle=126.40627;
+			angle=125.81879;
 		};
 		class Item43
 		{
@@ -11839,7 +11839,7 @@ class Mission
 		};
 		class Item52
 		{
-			position[]={4563.9795,262.76147,15414.913};
+			position[]={4547.4546,263.18533,15415.1};
 			name="7News_1";
 			text="Channel 7 News";
 			type="loc_Transmitter";
@@ -11847,7 +11847,7 @@ class Mission
 		};
 		class Item53
 		{
-			position[]={14032.284,25.46665,18758.639};
+			position[]={14034.733,25.384054,18759.25};
 			name="car1_2_1_1";
 			text="Concessionnaire";
 			type="c_car";
@@ -12539,10 +12539,10 @@ class Mission
 		};
 		class Item138
 		{
-			position[]={14047.704,25.565245,18752.643};
+			position[]={14045.71,25.844965,18745.732};
 			name="car_g_3";
 			type="Empty";
-			angle=511.55499;
+			angle=492.41187;
 		};
 		class Item139
 		{
@@ -12722,7 +12722,7 @@ class Mission
 		};
 		class Item160
 		{
-			position[]={21791.67,6.4987841,6011.0527};
+			position[]={21792.852,5.7747631,6013.3706};
 			name="chop_shop_3";
 			text="Receleur";
 			type="o_armor";
@@ -12731,7 +12731,7 @@ class Mission
 		};
 		class Item161
 		{
-			position[]={8535.8428,10.533108,7334.8979};
+			position[]={8542.7598,11.486133,7334.0005};
 			name="chop_shop_4";
 			text="Receleur";
 			type="o_armor";
