@@ -95,7 +95,8 @@ switch(playerSide) do {
 
 [] call life_fnc_loadGear;
 
-if(count (_this select 17) > 0) then {
+// recup des clefs houses/vehicles
+if(count (_this select 17) > 0) then { 
 	{life_vehicles pushBack _x;} foreach (_this select 17);
 };
 
