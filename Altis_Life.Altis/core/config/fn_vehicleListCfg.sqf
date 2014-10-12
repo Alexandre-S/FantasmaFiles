@@ -114,12 +114,12 @@ switch (_shop) do
 				_return pushBack
 				["PMC_MH9",325000];
 			};
-			// Si leader de faction
-			if(__GETC__(life_reblevel) >= 3) then
-			{
+		};
+		// Si leader de faction
+		if(__GETC__(life_reblevel) >= 3) then
+		{
 				_return pushBack
 				["O_MRAP_02_hmg_F",1250000];
-			};
 		};
 	};
 	
