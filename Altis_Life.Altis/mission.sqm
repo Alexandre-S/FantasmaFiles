@@ -2382,8 +2382,8 @@ class Mission
 				};
 				class Item12
 				{
-					position[]={8316.3594,183.41377,18038.025};
-					azimut=76.836494;
+					position[]={8311.8145,183.24045,18035.082};
+					azimut=261.23688;
 					special="NONE";
 					id=117;
 					side="CIV";
@@ -3193,8 +3193,8 @@ class Mission
 				};
 				class Item81
 				{
-					position[]={5880.3604,114.15245,12465.051};
-					azimut=-540.75232;
+					position[]={10885.461,17.253384,12186.438};
+					azimut=-380.72812;
 					special="NONE";
 					id=186;
 					side="CIV";
@@ -12870,11 +12870,12 @@ class Mission
 		};
 		class Item22
 		{
-			position[]={8318.959,183.55238,18039.861};
+			position[]={8309.0898,183.13223,18033.48};
 			name="iron_processing";
 			text="Traitement du fer";
 			type="mil_box";
 			colorName="ColorBrown";
+			angle=184.40039;
 		};
 		class Item23
 		{
@@ -12895,11 +12896,12 @@ class Mission
 		};
 		class Item25
 		{
-			position[]={5880.5322,114.13192,12464.515};
+			position[]={10885.13,17.240614,12186.898};
 			name="cocaine_processing";
 			text="Traitement de la cocaine";
 			type="mil_dot";
 			colorName="Color1_FD_F";
+			angle=160.02422;
 		};
 		class Item26
 		{
@@ -13642,7 +13644,7 @@ class Mission
 		};
 		class Item118
 		{
-			position[]={4705.1831,217.60806,21160.746};
+			position[]={5867.1201,191.37396,19560.451};
 			name="cocaine_1";
 			text="Champ de coca";
 			type="mil_dot";
@@ -13650,7 +13652,7 @@ class Mission
 		};
 		class Item119
 		{
-			position[]={4707.8022,217.04317,21165.113};
+			position[]={5869.7393,191.85631,19564.818};
 			name="coke_area";
 			markerType="ELLIPSE";
 			type="Empty";
