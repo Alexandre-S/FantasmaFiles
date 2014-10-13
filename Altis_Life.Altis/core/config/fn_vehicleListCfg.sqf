@@ -32,6 +32,12 @@ switch (_shop) do
 			["C_SUV_01_F",35000],
 			["C_Van_01_transport_F",40000]
 		];
+		// Si donateur
+		if(__GETC__(life_donator) > 0) then
+		{
+			_return pushBack
+			["C_Hatchback_01_sport_F",11300];
+		};
 	};
 	
 	case "civ_truck":
@@ -44,9 +50,15 @@ switch (_shop) do
 			["B_Truck_01_transport_F",275000],
 			["O_Truck_03_transport_F",200000],
 			["O_Truck_03_covered_F",250000],
-			["B_Truck_01_box_F",350000],
-			["O_Truck_03_device_F",450000]
-		];	
+			["B_Truck_01_box_F",350000]
+			
+		];
+		// Si donateur
+		if(__GETC__(life_donator) > 0) then
+		{
+			_return pushBack
+			["O_Truck_03_device_F",450000];
+		};
 	};
 	
 	case "civ_air":
