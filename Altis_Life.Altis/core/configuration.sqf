@@ -240,7 +240,7 @@ sell_array =
 	["diamondc",2500],
 	["iron_r",2300],
 	["copper_r",1500],
-	["salt_r",1650],
+	["salt_r",1550],
 	["glass",1450],
 	["fuelF",0],
 	["spikeStrip",0],

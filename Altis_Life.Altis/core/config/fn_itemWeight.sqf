@@ -41,7 +41,7 @@ switch (_item) do
 	case "iron_r": {3};
 	case "sand": {3};
 	case "salt": {3};
-	case "salt_r": {1};
+	case "salt_r": {2};
 	case "glass": {1};
 	case "diamond": {4};
 	case "diamondc": {2};
