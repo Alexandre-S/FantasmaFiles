@@ -228,6 +228,8 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class playSound {};
 		class fatigueReset {};
+		class UnLockCarSound {};
+		class LockCarSound {};
 	};
 	
 	class Network

@@ -68,16 +68,16 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-	class Beep
+	class car_lock
 	{
-		name = "Beep";
+		name = "car_lock";
 		sound[] = {"\sounds\Beep.ogg", 1.0, 1};
 		titles[] = {};
 	};
 	
-	class BeepBeep
+	class car_unlock
 	{
-		name = "BeepBeep";
+		name = "car_unlock";
 		sound[] = {"\sounds\BeepBeep.ogg", 1.0, 1};
 		titles[] = {};
 	};
