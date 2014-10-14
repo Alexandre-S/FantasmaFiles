@@ -18,6 +18,6 @@ switch(true) do
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\medic_uniform.paa"];
 		
-		if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
+		//if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
 };
