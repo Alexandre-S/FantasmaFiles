@@ -10,6 +10,9 @@ private["_ui","_units"];
 #define iconID 78000
 #define scale 0.8
 
+// tag si admin
+if(__GETC__(life_adminlevel) < 1) exitWith {};
+
 if(visibleMap OR {!alive player} OR {dialog}) exitWith {
 	500 cutText["","PLAIN"];
 };
