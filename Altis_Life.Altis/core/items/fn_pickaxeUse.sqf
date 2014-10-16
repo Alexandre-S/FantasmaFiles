@@ -5,6 +5,7 @@
 	Description:
 	Main functionality for pickaxe in mining.
 */
+if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 closeDialog 0;
 private["_mine","_itemWeight","_diff","_itemName","_val"];
 switch (true) do
