@@ -24,7 +24,7 @@ if(!_preset) then
 		_vehicle animate[_animate select 0,_animate select 1];
 	};
 }
-	else
+else
 {
 	switch (_animate) do
 	{

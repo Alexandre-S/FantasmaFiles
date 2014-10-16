@@ -12,6 +12,7 @@ diag_log "----------------------------------------------------------------------
 diag_log "--------------------------------- Starting Altis Life Client Init ----------------------------------";
 diag_log "------------------------------------------------------------------------------------------------------";
 waitUntil {!isNull player && player == player}; //Wait till the player is ready
+[] call compile PreprocessFileLineNumbers "core\clientValidator.sqf";
 //Setup initial client core functions
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
@@ -105,6 +106,7 @@ life_fnc_garageRefund = compileFinal
 //[] execVM "core\fn_addKey.sqf"; doublon
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
+player enableFatigue (__GETC__(life_enableFatigue));
 [] spawn life_fnc_fatigueReset;
 //auto update
 [] spawn

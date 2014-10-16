@@ -56,7 +56,7 @@ __CONST__(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"No");
 */
 	
 _patchList = 
-["life_server","CAData","A3Data","A3_Data_F_Hook","A3_BaseConfig_F","A3_Dubbing_Radio_F","A3_Functions_F","A3_Functions_F_EPA","A3_Functions_F_EPC","A3_Data_F","A3_Data_F_ParticleEffects","A3_Editor_F","A3_Functions_F_Curator",
+["life_server","CAData","A3_BaseConfig_F","A3_Dubbing_Radio_F","A3_Functions_F","A3_Functions_F_EPA","A3_Functions_F_EPC","A3_Data_F","A3_Data_F_ParticleEffects","A3_Editor_F","A3_Functions_F_Curator",
 "A3_Language_F","A3_Language_F_Beta","A3_Language_F_Curator","A3_Language_F_EPA","A3_Language_F_EPB","A3_Language_F_EPC","A3_Language_F_Gamma","A3_LanguageMissions_F","A3_LanguageMissions_F_Beta",
 "A3_LanguageMissions_F_Gamma","A3_Misc_F","A3_Misc_F_Helpers","A3_Modules_F","A3_Modules_F_DynO","A3_Modules_F_Effects","A3_Modules_F_Events","A3_Modules_F_GroupModifiers","A3_Modules_F_HC",
 "A3_Modules_F_Intel","A3_Modules_F_LiveFeed","A3_Modules_F_Marta","A3_Modules_F_Misc","A3_Modules_F_Multiplayer","A3_Modules_F_ObjectModifiers","A3_Modules_F_Sites","A3_Modules_F_Skirmish",
@@ -112,8 +112,8 @@ _patchList =
 "A3_Soft_F_Bootcamp_Truck","A3_Soft_F_Bootcamp_Quadbike","A3_Soft_F_Bootcamp_Offroad_01","A3_Weapons_F_Bootcamp","A3_Modules_F_Bootcamp_Misc","A3_Modules_F_Bootcamp","A3_Characters_F_Bootcamp_Common","A3_Weapons_F_Bootcamp_Ammoboxes","A3_UI_F_Bootcamp",
 "A3_Characters_F_Bootcamp","A3_Weapons_F_Bootcamp_LongRangeRifles_M320","A3_Weapons_F_Bootcamp_LongRangeRifles_GM6","A3_Structures_F_Bootcamp_Items_Food","A3_Structures_F_Bootcamp_Items_Electronics","A3_Structures_F_Bootcamp_Civ_SportsGrounds",
 "A3_Structures_F_Bootcamp_Civ_Camping","A3_Language_F_Bootcamp","A3_Functions_F_Bootcamp","A3_Structures_F_Bootcamp_VR_Helpers","A3_Structures_F_Bootcamp_VR_CoverObjects","A3_Structures_F_Bootcamp_VR_Blocks","A3_Structures_F_Bootcamp_Training",
-"A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Items_Sport","A3_Structures_F_Bootcamp_Ind_Cargo","A3_Sounds_F_Bootcamp","A3_Data_F_Bootcamp","A3_Map_VR_Scenes","A3_Missions_F_Bootcamp","A3_Music_F_Bootcamp","Map_VR",
-"sab_UN","PG_Services_PMC_UNITS","pg_services_pmc_client","PG_Services_PMC_Bags","PG_Services_PMC_CLIENT","PG_Services_PMC_Gear","PG_SERVICES_PMC_UNDERWEAR","PG_SERVICES_PMC_UNIFORMS","PG_Services_PMC_Goggles","PG_Services_PMC_Ammoboxes",
+"A3_Structures_F_Bootcamp_System","A3_Structures_F_Bootcamp_Items_Sport","A3_Structures_F_Bootcamp_Ind_Cargo","A3_Sounds_F_Bootcamp","A3_Data_F_Bootcamp","A3_Map_VR_Scenes","A3_Missions_F_Bootcamp","A3_Music_F_Bootcamp","Map_VR","A3Data",
+"A3_Data_F_Hook","sab_UN","PG_Services_PMC_UNITS","pg_services_pmc_client","PG_Services_PMC_Bags","PG_Services_PMC_CLIENT","PG_Services_PMC_Gear","PG_SERVICES_PMC_UNDERWEAR","PG_SERVICES_PMC_UNIFORMS","PG_Services_PMC_Goggles","PG_Services_PMC_Ammoboxes",
 "Bravo93_Balaclava","Bravo93_IRA_Soldier4","Bravo93_IRA_Soldier1","Bravo93_IRA_Soldier3","Bravo93_IRA_Soldier2","Bravo93_IRA_Soldier5","Bravo93_IRA_Soldier6","Bravo93_IRA_Soldier7","Bravo93_IRA_Soldier8",
 "Bravo93_UVF_Soldier1","Bravo93_UVF_Soldier2","Bravo93_UVF_Soldier3","Bravo93_UVF_Soldier4","Bravo93_UVF_Soldier5","Bravo93_UVF_Soldier6","Bravo93_UVF_Soldier7","Bravo93_UVF_Soldier8",
 "mas_weapons_m4","mas_weapons","mas_weapons_nw","mas_weapons_ak","mas_weapons_pack","arc_units","ARC_Units",
