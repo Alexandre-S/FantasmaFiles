@@ -13,10 +13,10 @@ switch (_item) do
 {
 	case "oilu": {5};
 	case "oilp": {4};
-	case "heroinu": {2};
-	case "heroinp": {3};
-	case "cannabis": {2};
-	case "marijuana": {3};
+	case "heroinu": {3};
+	case "heroinp": {2};
+	case "cannabis": {3};
+	case "marijuana": {2};
 	case "apple": {1};
 	case "water": {1};
 	case "rabbit": {1};
