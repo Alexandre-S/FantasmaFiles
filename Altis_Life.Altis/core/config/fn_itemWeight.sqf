@@ -40,11 +40,11 @@ switch (_item) do
 	case "copper_r": {3};
 	case "iron_r": {3};
 	case "sand": {3};
-	case "salt": {3};
-	case "salt_r": {2};
-	case "glass": {1};
+	case "salt": {4};
+	case "salt_r": {3};
+	case "glass": {2};
 	case "diamond": {4};
-	case "diamondc": {2};
+	case "diamondc": {3};
 	case "cocaine": {3};
 	case "cocainep": {2};
 	case "spikeStrip": {15};
