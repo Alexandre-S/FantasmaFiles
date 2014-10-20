@@ -118,6 +118,13 @@ switch (_code) do
 			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(player getVariable["surrender",false])) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
+				if("ItemWatch" in assignedItems cursorTarget) then {
+					cursorTarget removeweapon "ItemWatch";
+					hint "La smartwatch de la personne est désormais au sol.";
+					_defenceplace1 = "Item_ItemWatch" createVehicle (player modelToWorld[0,0,0]);
+				} else { 
+					hint "La personne n'a pas de smartwatch !";
+				};
 			};
 		};
 	};
