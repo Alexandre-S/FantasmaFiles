@@ -120,7 +120,7 @@ switch (_code) do
 				[cursorTarget] spawn life_fnc_knockoutAction;
 				if("ItemWatch" in assignedItems cursorTarget) then {
 					cursorTarget removeweapon "ItemWatch";
-					hint "La smartwatch de la personne est désormais au sol.";
+					hint "La smartwatch de la personne est dÃ©sormais au sol.";
 					_defenceplace1 = "Item_ItemWatch" createVehicle (player modelToWorld[0,0,0]);
 				} else { 
 					hint "La personne n'a pas de smartwatch !";
