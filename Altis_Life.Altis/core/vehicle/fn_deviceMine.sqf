@@ -4,7 +4,7 @@
 	Description:
 	Starts automated mining of resource from the tempest device.
 */
-private["_vehicle","_resourceZones","_zone","_weight","_item","_vInv","_itemIndex"];
+private["_vehicle","_resourceZones","_zone","_weight","_item","_vInv","_itemIndex","_random_sel"];
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {}; //Null was passed?
 if(!isNil {_vehicle getVariable "mining"}) exitWith {hint localize "STR_NOTF_DeviceIsMining";}; //Mining is already in process..
@@ -67,7 +67,8 @@ while {true} do {
 	_space = _vInv select 1;
 	_itemIndex = [_item,_items] call TON_fnc_index;
 	_weight = [_vehicle] call life_fnc_vehicleWeight;
-	_sum = [_item,3,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
+	_random_sel = [5,6,7,8,9,10] call BIS_fnc_selectRandom;
+	_sum = [_item,_random_sel,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
 	if(_sum < 1) exitWith {titleText[localize "STR_NOTF_DeviceFull","PLAIN"];};
 	_itemWeight = ([_item] call life_fnc_itemWeight) * _sum;
 	if(_itemIndex == -1) then {
@@ -90,7 +91,7 @@ while {true} do {
 	titleText[format[localize "STR_NOTF_DeviceMined",_sum],"PLAIN"];
 	_vehicle setVariable["Trunk",[_items,_space + _itemWeight],true];
 	_weight = [_vehicle] call life_fnc_vehicleWeight;
-	_sum = [_item,3,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
+	_sum = [_item,_random_sel,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
 	if(_sum < 1) exitWith {titleText[localize "STR_NOTF_DeviceFull","PLAIN"];};
 	sleep 2;
 };

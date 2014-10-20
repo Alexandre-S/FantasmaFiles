@@ -33,7 +33,7 @@ switch(true) do {
 };
 //gather check??
 if(vehicle player != player) exitWith {};
-
+_val = [1,2,3,4] call BIS_fnc_selectRandom;
 _diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 life_action_inUse = true;
