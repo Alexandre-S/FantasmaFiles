@@ -22,9 +22,10 @@ switch (_vehicle) do
 			case 3: {_color = "Bleu";};
 			case 4: {_color = "Rouge foncé";};
 			case 5: {_color = "Bleu et Blanc"};
-			case 6: {_color = "Noir"};
+			case 6: {_color = "Rouillé"};
 			case 7: {_color = "Noir"};
-			case 8: {_color = "Medic"};
+			case 8: {_color = "Noir"};
+			case 9: {_color = "Medic"};
 		};
 	};
 	
@@ -53,13 +54,17 @@ switch (_vehicle) do
 			case 3: {_color = "Noir et blanc"};
 			case 4: {_color = "Marron"};
 			case 5: {_color = "Vert"};
-			case 6: {_color = "Noir"};
-			case 7: {_color = "Rouge"};
-			case 8: {_color = "Bleu foncé"};
-			case 9: {_color = "Orange"};
-			case 10: {_color = "Noir et blanc"};
-			case 11: {_color = "Marron"};
-			case 12: {_color = "Vert"};
+			case 6: {_color = "Ken Block"};
+			case 7: {_color = "RedGull"};
+			case 8: {_color = "Noir"};
+			case 9: {_color = "Rouge"};
+			case 10: {_color = "Bleu foncé"};
+			case 11: {_color = "Orange"};
+			case 12: {_color = "Noir et blanc"};
+			case 13: {_color = "Marron"};
+			case 14: {_color = "Vert"};
+			case 15: {_color = "Ken Block"};
+			case 16: {_color = "RedGull"};
 		};
 	};
 	
@@ -71,7 +76,10 @@ switch (_vehicle) do
 			case 1: {_color = "Noir";};
 			case 2: {_color = "Argenté";};
 			case 3: {_color = "Orange";};
-			case 4: {_color = "Cop";};
+			case 4: {_color = "Noir et flammes bleues";};
+			case 5: {_color = "Léopard";};
+			case 6: {_color = "Rouillé";};
+			case 7: {_color = "Cop";};
 		};
 	};
 	
