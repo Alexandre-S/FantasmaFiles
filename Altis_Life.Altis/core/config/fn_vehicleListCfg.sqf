@@ -179,6 +179,8 @@ switch (_shop) do
 			// Douscka ONU
 			_return pushBack
 			["sab_UN_Offroad_gun",0];
+			_return pushBack
+			["sab_UN_APC",0]; // GMG
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
@@ -187,8 +189,6 @@ switch (_shop) do
 			["sab_UN_Strider",0];
 			_return pushBack
 			["sab_UN_Strider_hmg",0];
-			_return pushBack
-			["sab_UN_APC",0]; // GMG
 			_return pushBack
 			["sab_UN_CRV",0]; // Impossible de ranger au garage
 			_return pushBack
