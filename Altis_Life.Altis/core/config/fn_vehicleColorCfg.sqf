@@ -33,8 +33,6 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["altisrpfr\textures\hsport_kblock.paa","civ"],
-			["altisrpfr\textures\hsport_redgull.paa","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			[_path + "hatchback_01_ext_sport01_co.paa","cop"],
 			[_path + "hatchback_01_ext_sport02_co.paa","cop"],
@@ -42,6 +40,8 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","cop"],
 			[_path + "hatchback_01_ext_sport05_co.paa","cop"],
 			[_path + "hatchback_01_ext_sport06_co.paa","cop"],
+			["altisrpfr\textures\hsport_kblock.paa","civ"],
+			["altisrpfr\textures\hsport_redgull.paa","civ"],
 			["altisrpfr\textures\hsport_kblock.paa","cop"],
 			["altisrpfr\textures\hsport_redgull.paa","cop"],
 		];
@@ -57,10 +57,10 @@ switch (_vehicle) do
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","civ"],
 			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","civ"],
-			["altisrpfr\textures\offroad_rouille.paa","civ"],
 			["#(ai,64,64,1)Fresnel(0.3,3)","cop"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
-			["altisrpfr\textures\med_offroad.paa","med"]
+			["altisrpfr\textures\med_offroad.paa","med"],
+			["altisrpfr\textures\offroad_rouille.paa","civ"]
 		];
 	};
 	
@@ -87,10 +87,10 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","civ"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
+			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["altisrpfr\textures\suv_bleuflamme.paa","civ"],
 			["altisrpfr\textures\suv_leopard.paa","civ"],
-			["altisrpfr\textures\suv_rouille.paa","civ"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["altisrpfr\textures\suv_rouille.paa","civ"]
 		];
 	};
 	
