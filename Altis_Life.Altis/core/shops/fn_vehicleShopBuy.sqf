@@ -70,19 +70,24 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 //Side Specific actions.
 switch(playerSide) do {
 	case west: {
+		_vehicle setVariable ["tf_side", playerSide, true];	
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 	
 	case civilian: {
+		_vehicle setVariable ["tf_side", playerSide, true];	
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
 	
 	case independent: {
+		_vehicle setVariable ["tf_side", "civilian", true];	
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 };
+_vehicle setVariable ["tf_hasRadio", true, true];
+_vehicle setVariable ["tf_range", 50000, true];
 
 _vehicle allowDamage true;
 

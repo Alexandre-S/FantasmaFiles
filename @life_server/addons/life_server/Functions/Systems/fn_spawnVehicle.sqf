@@ -82,6 +82,24 @@ if(typeName _sp == "STRING") then {
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
 };
+
+//Side Specific actions.
+switch(_side) do {
+	case west: {
+		_vehicle setVariable ["tf_side", _side, true];	
+	};
+	
+	case civilian: {
+		_vehicle setVariable ["tf_side", _side, true];	
+	};
+	
+	case independent: {
+		_vehicle setVariable ["tf_side", "civilian", true];	
+	};
+};
+_vehicle setVariable ["tf_hasRadio", true, true];
+_vehicle setVariable ["tf_range", 50000, true];
+
 _vehicle allowDamage true;
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
