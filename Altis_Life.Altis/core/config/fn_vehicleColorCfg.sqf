@@ -43,7 +43,7 @@ switch (_vehicle) do
 			["altisrpfr\textures\hsport_kblock.paa","civ"],
 			["altisrpfr\textures\hsport_redgull.paa","civ"],
 			["altisrpfr\textures\hsport_kblock.paa","cop"],
-			["altisrpfr\textures\hsport_redgull.paa","cop"],
+			["altisrpfr\textures\hsport_redgull.paa","cop"]
 		];
 	};
 		
