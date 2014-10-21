@@ -1,5 +1,8 @@
 enableSaving [false, false];
 
+//FLIR OFF
+{ _x disableTIEquipment true;} foreach vehicles;
+
 X_Server = false;
 X_Client = false;
 X_JIP = false;
