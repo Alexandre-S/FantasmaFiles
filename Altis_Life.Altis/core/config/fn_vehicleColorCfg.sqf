@@ -197,6 +197,16 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "I_Heli_light_03_unarmed_F":
+	{
+		_ret = 
+		[
+			["altisrpfr\textures\hellcat.paa","civ"],
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
+			["\A3\air_f_epb\Heli_Light_03\data\heli_light_03_base_co.paa","cop"]
+		];
+	};
+	
 	case "O_Heli_Attack_02_black_F":
 	{
 		_ret = 

@@ -212,6 +212,16 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "I_Heli_light_03_unarmed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Hellcat"};
+			case 1: {_color = "Noir"};
+			case 2: {_color = "Standard"};
+		};
+	};
+	
 	case "B_APC_Wheeled_01_cannon_F":
 	{
 		switch (_index) do
