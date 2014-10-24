@@ -21,6 +21,7 @@ _sel = lbCurSel _plist;
 _unit = _plist lbData _sel;
 _unit = call compile format["%1", _unit];
 if(isNull _unit OR isNil "_unit") exitWith {}; 
+if(player distance _unit > 20) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 
 _uid = getPlayerUID _unit;
 _owners = _vehicle getVariable "vehicle_info_owners";

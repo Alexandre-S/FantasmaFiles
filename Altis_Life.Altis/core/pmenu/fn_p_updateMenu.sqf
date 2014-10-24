@@ -29,6 +29,7 @@ lbClear _near;
 lbClear _near_i;
 
 //Near players
+/*
 _near_units = [];
 { if(player distance _x < 10) then {_near_units pushBack _x};} foreach playableUnits;
 {
@@ -39,6 +40,34 @@ _near_units = [];
 		_near_i lbAdd format["%1 - %2",_x getVariable["realname",name _x], side _x];
 		_near_i lbSetData [(lbSize _near)-1,str(_x)];
 	};
+} foreach _near_units;
+*/
+_near_units = [];
+{  _near_units set [count _near_units, name _x]; } foreach playableUnits;
+_near_units = _near_units call BIS_fnc_sortAlphabetically;
+{
+	_name = _x;
+	{
+		if (name _x == _name && alive _x && _x != player) then
+		{
+			switch (side _x) do
+			{
+				case west: {
+					_type = "ONU";
+				};
+				case civilian: {
+					_type = "Civ";
+				};
+				case resistance: {
+					_type = "Med";
+				};
+			};
+			_near lbAdd format["%1 (%2)",_x getVariable["realname",name _x], _type];
+			_near lbSetData [(lbSize _near)-1,str(_x)];
+			_near_i lbAdd format["%1 (%2)",_x getVariable["realname",name _x], _type];
+			_near_i lbSetData [(lbSize _near)-1,str(_x)];
+		};
+	} foreach playableUnits;
 } foreach _near_units;
 
 _mstatus ctrlSetStructuredText parseText format["<img size='1.3' image='altisrpfr\icons\bank.paa'/> <t size='0.8px'>$%1</t><br/><img size='1.2' image='altisrpfr\icons\money.paa'/> <t size='0.8'>$%2</t>",[life_atmcash] call life_fnc_numberText,[life_cash] call life_fnc_numberText];

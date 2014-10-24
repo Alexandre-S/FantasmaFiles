@@ -14,6 +14,7 @@ _unit = call compile format["%1",_unit];
 if(isNil "_unit") exitWith {ctrlShow[2001,true];};
 if(_unit == player) exitWith {ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};
+if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 
 //A series of checks *ugh*
 if(!life_use_atm) exitWith {hint "You recently robbed the bank! You can't give money away just yet.";ctrlShow[2001,true];};
