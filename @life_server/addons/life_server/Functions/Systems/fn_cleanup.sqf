@@ -16,7 +16,7 @@ while {true} do
 		_veh = _x;
 		_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "vehicleClass");
 		
-		if(_vehicleClass in ["Land","Air","Ship","Armored","Submarine"]) then
+		if(_vehicleClass in ["LandVehicle","Air","Ship","Armored","Submarine"]) then
 		{
 			_dbInfo = _veh getVariable["dbInfo",[]];
 			_units = {(_x distance _veh < 3000)} count playableUnits; //Delete des véhicules à plus de 3000m quand on déco

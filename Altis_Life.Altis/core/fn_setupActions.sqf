@@ -14,7 +14,7 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction["Descendre",life_fnc_copEnter,"exit",149,false,false,"",'(vehicle player != player) && (locked(vehicle player)==2)']];
 		life_actions = life_actions + [player addAction["Saisir objets",life_fnc_seizeObjects,cursorTarget,0,false,false,"",'((count(nearestObjects [player,["WeaponHolder"],3])>0) || (count(nearestObjects [player,["GroundWeaponHolder"],3])>0) || (count(nearestObjects [player,["WeaponHolderSimulated"],3])>0))']];
 		//put in car
-		life_actions = life_actions + [player addAction["<t color='#00FFFF'>Mettre dans le véhicule</t>",life_fnc_putInCar,cursorTarget,200,false,false,"",' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && (cursorTarget isKindOf "Land" || cursorTarget isKindOf "Air" || cursorTarget isKindOf "Ship" || cursorTarget isKindOf "Submarine")']];
+		life_actions = life_actions + [player addAction["<t color='#00FFFF'>Mettre dans le véhicule</t>",life_fnc_putInCar,cursorTarget,200,false,false,"",' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && (cursorTarget isKindOf "LandVehicle" || cursorTarget isKindOf "Air" || cursorTarget isKindOf "Ship" || cursorTarget isKindOf "Submarine")']];
 		//fast travel
 		life_actions = life_actions + [player addAction["<t color='#FFFF33'>Métro</t>",life_fnc_spawnMenu,"",151,false,false,"",'{side _x == west} count playableUnits <= 8 && ((player distance (getMarkerPos "cop_spawn_1") < 30) OR  (player distance (getMarkerPos "cop_spawn_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR  (player distance (getMarkerPos "cop_spawn_4") < 30) OR  (player distance (getMarkerPos "cop_spawn_5") < 30)) ']];
 	};

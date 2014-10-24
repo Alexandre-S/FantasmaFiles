@@ -52,7 +52,7 @@ if((_vInfo select 6) == 1) exitWith
 	[[1,format[(localize "STR_Garage_SQLError_Active"),_vInfo select 2]],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
 if(typeName _sp != "STRING") then {
-	_nearVehicles = nearestObjects[_sp,["Land","Air","Ship"],10];
+	_nearVehicles = nearestObjects[_sp,["LandVehicle","Air","Ship"],10];
 } else {
 	_nearVehicles = [];
 };

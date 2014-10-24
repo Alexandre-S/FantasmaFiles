@@ -3,7 +3,7 @@
 */
 private["_vehicle","_data"];
 _vehicle = cursorTarget;
-if((_vehicle isKindOf "Land") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship")) then
+if((_vehicle isKindOf "LandVehicle") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship")) then
 {
 	_owners = _vehicle getVariable "vehicle_info_owners";
 	if(isNil {_owners}) exitWith {hint localize "STR_NOTF_VehCheat"; deleteVehicle _vehicle;};
