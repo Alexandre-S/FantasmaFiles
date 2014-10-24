@@ -55,7 +55,7 @@ _near_units = _near_units call BIS_fnc_sortAlphabetically;
 {
 	_name = _x;
 	{
-		if (name _x == _name && alive _x && _x != player) then
+		if (!isNull _x && name _x == _name && alive _x && _x != player) then
 		{
 			switch (side _x) do
 			{
@@ -70,7 +70,7 @@ _near_units = _near_units call BIS_fnc_sortAlphabetically;
 				};
 			};
 			_plist lbAdd format["%1 (%2)",_x getVariable["realname",name _x], _type];
-			_plist lbSetData [(lbSize _near)-1,str(_x)];
+			_plist lbSetData [(lbSize _plist)-1,str(_x)];
 		};
 	} foreach playableUnits;
 } foreach _near_units;
