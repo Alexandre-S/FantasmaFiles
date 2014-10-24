@@ -164,9 +164,9 @@ switch (_code) do
 					};
 				};
 			}
-				else
+			else
 			{
-				if(playerSide == west && player distance cursorTarget < 7 && vehicle player == player) then {
+				if(playerSide == west && player distance cursorTarget < 7 && (vehicle player) == player) then {
 					[cursorTarget] call life_fnc_openInventory;
 				} else {
 					if((cursorTarget isKindOf "Land" OR cursorTarget isKindOf "Air" OR cursorTarget isKindOf "Ship" OR cursorTarget isKindOf "House_F") && player distance cursorTarget < 7 && vehicle player == player && alive cursorTarget) then
