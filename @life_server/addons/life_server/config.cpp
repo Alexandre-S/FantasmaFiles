@@ -107,7 +107,6 @@ class CfgFunctions
 			class keyManagement {};
 			class InsureCar {};
 			class tfrreboot {};
-			class cleanupgroup {};
 		};
 		
 		class Housing

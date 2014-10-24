@@ -73,7 +73,6 @@ fed_bank setVariable["safe",(count playableUnits),true];
 addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
 
 [] spawn TON_fnc_cleanup;
-[] spawn TON_fnc_cleanupgroup;
 life_gang_list = [];
 publicVariable "life_gang_list";
 life_wanted_list = [];

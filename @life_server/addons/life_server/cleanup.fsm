@@ -18,7 +18,7 @@ link5[] = {5,3};
 link6[] = {6,7};
 link7[] = {7,2};
 globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-407.881226,389.642914,482.854736,-505.641113,735,911,1};
-window[] = {2,-1,-1,-32000,-32000,835,75,1453,75,3,753};
+window[] = {2,-1,-1,-1,-1,860,100,1743,100,3,1261};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -135,7 +135,14 @@ class FSM
        "	};" \n
        "} foreach allMissionObjects ""Air"";" \n
        "" \n
-       "_cars = time;"/*%FSM</STATEINIT""">*/;
+	   "_cars = time;" \n
+	   "" \n
+	   "//Group cleanup." \n
+	   "{" \n
+	   "	if(count units _x == 0 && local _x) then {" \n
+	   "		deleteGroup _x;" \n
+	   "	};" \n
+	   "} foreach allGroups;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
