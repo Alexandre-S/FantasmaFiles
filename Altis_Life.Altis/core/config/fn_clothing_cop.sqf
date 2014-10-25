@@ -19,6 +19,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
+		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		_ret pushBack ["ARC_FR_CE_Uniform_tshirt","Tenue recrue 1",0];
 		_ret pushBack ["ARC_FR_Daguet_Uniform_tshirt","Tenue recrue 2",0];
 		// Grade Brigadier
@@ -59,6 +60,7 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
+		_ret pushBack ["rds_police_cap",nil,0];
 		_ret pushBack ["H_MilCap_blue",nil,0];
 		_ret pushBack ["sab_UN_cap",nil,0];
 		if(__GETC__(life_coplevel) >= 2) then
@@ -173,7 +175,7 @@ switch (_filter) do
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["tf_rt1523g",nil,0];
+			_ret pushBack ["tf_rt1523g_big",nil,0];
 			_ret pushBack ["ARC_FR_Kitbag_compact_CE",nil,0];
 			_ret pushBack ["ARC_FR_Kitbag_compact_Daguet",nil,0];
 			_ret pushBack ["B_AssaultPack_dgtl",nil,0];
