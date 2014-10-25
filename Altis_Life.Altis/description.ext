@@ -1,5 +1,5 @@
 author = "Tonic & Havena";
-onLoadName = "AltisLife Fantasma 5.1.5";
+onLoadName = "AltisLife Fantasma 5.1.5.1";
 onLoadMission = "Un Jeu de rôle de www.altisrp.fr";
 joinUnassigned = 1;
 respawn = BASE;
