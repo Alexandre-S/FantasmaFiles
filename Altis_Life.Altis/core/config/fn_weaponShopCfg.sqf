@@ -253,7 +253,25 @@ switch(_shop) do
 						["Chemlight_red",nil,100],
 						["Chemlight_green",nil,100],
 						["Chemlight_blue",nil,100],
-						["Chemlight_yellow",nil,100]
+						["Chemlight_yellow",nil,100],
+						["hgun_mas_mak_F",nil,5000],
+						["8Rnd_mas_9x18_Mag",nil,15],
+						["hgun_Rook40_F",nil,6500],
+						["16Rnd_9x21_Mag",nil,25],
+						["hgun_mas_bhp_F",nil,8000],
+						["15Rnd_mas_9x21_Mag",nil,25],
+						["hgun_mas_grach_F",nil,9500],
+						["17Rnd_mas_9x21_Mag",nil,35],
+						["hgun_ACPC2_F",nil,11500],
+						["9Rnd_45ACP_Mag",nil,45],
+						["hgun_PDW2000_F",nil,20000],
+						["30Rnd_9x21_Mag",nil,75],
+						["hgun_mas_uzi_F",nil,20000],
+						["25Rnd_mas_9x19_Mag",nil,75],
+						["hgun_mas_sa61_F",nil,20000],
+						["20Rnd_mas_765x17_Mag",nil,75],
+						["optic_ACO_grn_smg",nil,2500],
+						["optic_Aco_smg",nil,2500]
 					]
 				];
 			};
