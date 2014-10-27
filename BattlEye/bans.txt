@@ -821,9 +821,6 @@ ffb8491bd0ec969aae1554b7f96485f7 -1 Heli_Zubban(Inusltes/troll/carkill ban perma
 031733a7d7531b81b9193e33565bed21 -1 Heli_Zubban(Inusltes/troll/carkill ban perma)
 8f7f12c5f2d285263365ca9f520b63b3 -1 Carnage_Aurevoir Salvatores x3
 4506797ff8e65e5388be46389c8766a9 -1 Heli_Zubban(Freekill/troll 4 jours)
-699d32b631e4ede7618ffa6dc2cbdf54 -1 Heli_Zubban(Insultes/Hrp/Carkill/Freekill perma)
-699d32b631e4ede7618ffa6dc2cbdf54 -1 Heli_Zubban(Insultes/Hrp/Carkill/Freekill perma)
-d98d99a6d271aeaa44ac7ac90d5313ae -1 Heli_Zubban(Insultes/Troll/Alt+f4 Perma)
 b87d8e692b5e088a1f05cae9e85df3b7 -1 havena cheat createvehicle
 fca5ea3559ebbdf6d9a0f092ae784c52 -1 Timonas_Ban (Troll)
 c53f76b35bb5f23ac3f4c9deffe75e63 -1 Timonas_Ban (Troll - 15 carkill)
@@ -941,5 +938,20 @@ a5925e607d5d353a162906e58e12b5df -1 Timonas_Ban (Refusé commu)
 5d96e945822d75f06db27c9d255c0df8 -1 Timonas_Ban (Refusé commu)
 81896ce6d83497ad50e1d668bec21edb -1 Timonas_Ban (Refusé commu)
 ae56d2d1c9e437f5a10b81b557caaaa4 -1 Erkeo_Katiban (REFUSE COMMU)
-178.193.90.80 -1 Erkeo_Katiban (Pub pour son serveur Ban perma)
-78.125.143.139 -1 Erkeo_Katiban (REFUSE COMMU)
+c145c6ea2582f26ff88533771657faed -1 Youri_ban(FreeKill ONU QG Kavala)
+14dafd82b3a6f637811794bc0e61d2a3 -1 Timonas_Ban (Refusé commu)
+7c455608e28de5502e0e93325ad59ac3 -1 Timonas_Ban (PEGI 18 - Troll - Racisme)
+b293a1288ff0a9ca08ff9a2f1ad352be -1 Erkeo_Katiban (Troll suprême / refusé commu)
+f539c00f34647d077fb69bbeae1a34ab -1 BEC : GameHack #38
+eb284ab04cc67cf258a3d366055d0f9d -1 Erkeo_Katiban (TROLL REFUSE)
+3f53373a66f9f462d855c093661e769e -1 Timonas_Ban (Refusé commu)
+fcb8cd967505a181a6f08d45a14a26d9 -1 Nom déplacé, bye bye
+ba6957d1df90e2aec5673871af206496 -1 Timonas_Ban (Refusé communauté)
+2eb5afecafdbc5848ac1114a32b18185 -1 Erkeo_Katiban (Insulte ban definitif refusé commu)
+5e916ee647207b5e0bdad440fb446d3f -1 Erkeo_Katiban (TROLL KAVALA BAN PERM)
+6ce143eac79c7a6dc396495ac42779a9 1414445039 Erkeo_Katiban (Flagrant délit de ALT + F4 / 24 heures de ban)
+948f82230707a3e5754fea5272ecbb92 -1 Erkeo_Katiban (TS obligatoire muets intedits / Ban jusqu'a régu
+dc2f67857b11359494c8b02f68b6c697 1414544384 Erkeo_Katiban (Ban pour carkill 48h)
+91.178.67.17 1414445039 Erkeo_Katiban (Flagrant délit de ALT + F4 / 24 heures de ban)
+91.176.83.101 -1 Erkeo_Katiban (TS obligatoire muets intedits / Ban jusqu'a régu
+87.231.89.117 1414544384 Erkeo_Katiban (Ban pour carkill 48h)
