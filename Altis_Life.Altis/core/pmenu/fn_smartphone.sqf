@@ -37,6 +37,8 @@ switch(_type) do
 			};
 		} forEach playableUnits;
 		
+		_cPlayerList = _cPlayerList call BIS_fnc_sortAlphabetically;
+		
 		[[getPlayerUID player, player],"TON_fnc_msgRequest",false] spawn life_fnc_MP;
 		ctrlEnable[887892,false];
 	};
