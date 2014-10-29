@@ -10,6 +10,10 @@ _type = _this select 3;
 
 _price = [_type] call life_fnc_licensePrice;
 _license = [_type,0] call life_fnc_licenseType;
+
+//achat licence donator
+_price = _price - (((__GETC__(life_donator) * 5) / 100) * _price);
+
 if(isNil "life_isblacklisted") then{
 	life_isblacklisted = false;
 };
