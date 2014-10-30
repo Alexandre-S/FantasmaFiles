@@ -42,5 +42,3 @@ execVM "randomWeather2.sqf";
 enableSentences false;
 
 StartProgress = true;
-
-"BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
