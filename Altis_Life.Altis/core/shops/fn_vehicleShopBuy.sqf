@@ -82,7 +82,7 @@ switch(playerSide) do {
 	};
 	
 	case independent: {
-		_vehicle setVariable ["tf_side", "civilian", true];	
+		_vehicle setVariable ["tf_side", civilian, true];	
 		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 };

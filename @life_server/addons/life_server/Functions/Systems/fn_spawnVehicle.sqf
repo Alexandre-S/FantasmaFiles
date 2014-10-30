@@ -94,7 +94,7 @@ switch(_side) do {
 	};
 	
 	case independent: {
-		_vehicle setVariable ["tf_side", "civilian", true];	
+		_vehicle setVariable ["tf_side", civilian, true];	
 	};
 };
 _vehicle setVariable ["tf_hasRadio", true, true];
