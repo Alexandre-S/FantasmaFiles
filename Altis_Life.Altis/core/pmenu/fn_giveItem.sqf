@@ -18,6 +18,7 @@ _item = lbData [2005,(lbCurSel 2005)];
 if(isNil "_unit") exitWith {ctrlShow[2002,true];};
 if(_unit == player) exitWith {ctrlShow[2002,true];};
 if(isNull _unit) exitWith {ctrlShow[2002,true];};
+if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 
 //A series of checks *ugh*
 if(!([_val] call TON_fnc_isnumber)) exitWith {hint "You didn't enter an actual number format.";ctrlShow[2002,true];};
