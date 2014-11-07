@@ -65,6 +65,7 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["C_Heli_Light_01_civil_F",253000],
 			["B_Heli_Light_01_F",253000],
 			["O_Heli_Light_02_unarmed_F",750000]
 		];
@@ -82,18 +83,42 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",10000],
-			["I_Truck_02_medical_F",25000],
-			["O_Truck_03_medical_F",45000],
-			["B_Truck_01_medical_F",60000]
+			["C_Offroad_01_F",10000]
 		];
+		if(__GETC__(life_medicLevel) >= 2 && __GETC__(life_donator) > 0) then
+		{
+			_return pushBack
+			["C_Hatchback_01_sport_F",11300];
+		};
+		if(__GETC__(life_medicLevel) >= 3) then
+		{
+			_return pushBack
+			["I_Truck_02_medical_F",25000];
+			_return pushBack
+			["O_Truck_03_medical_F",45000];
+			_return pushBack
+			["B_Truck_01_medical_F",60000];
+		};
 	};
 	
 	case "med_air_hs": {
-		_return = [
-			["B_Heli_Light_01_F",253000],
-			["O_Heli_Light_02_unarmed_F",750000]
-		];
+		if(__GETC__(life_medicLevel) >= 1) then
+		{
+			_return pushBack
+			["C_Heli_Light_01_civil_F",253000];
+			_return pushBack
+			["B_Heli_Light_01_F",253000];
+		};
+		if(__GETC__(life_medicLevel) >= 2) then
+		{
+			_return pushBack
+			["O_Heli_Light_02_unarmed_F",750000];
+		};
+		if(__GETC__(life_medicLevel) >= 4 && __GETC__(life_donator) > 0) then
+		{
+			_return pushBack
+			["O_Heli_Transport_04_medevac_F",1500000];
+		};
 	};
 	
 	case "reb_car":
@@ -102,6 +127,7 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",2500],
 			["B_G_Offroad_01_F",15000],
+			["C_Heli_Light_01_civil_F",325000],
 			["B_Heli_Light_01_F",325000],
 			["I_Heli_Transport_02_F",700000]
 		];
@@ -207,6 +233,8 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_return pushBack
+			["C_Heli_Light_01_civil_F",0];
+			_return pushBack
 			["B_Heli_Light_01_F",0];
 			_return pushBack
 			["sab_UN_Heli",0];
@@ -218,12 +246,18 @@ switch (_shop) do
 		{
 			_return pushBack
 			["I_Heli_light_03_unarmed_F",0];
+			_return pushBack
+			["B_Heli_Transport_03_unarmed_F",0];
+			_return pushBack
+			["O_Heli_Transport_04_bench_F",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
 		{
 			_return pushBack
 			["B_Heli_Transport_01_F",0];
+			_return pushBack
+			["B_Heli_Transport_03_F",0];
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
@@ -241,6 +275,8 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_return pushBack
+			["C_Heli_Light_01_civil_F",0];
+			_return pushBack
 			["B_Heli_Light_01_F",0];
 			_return pushBack
 			["sab_UN_Heli",0];
@@ -252,12 +288,18 @@ switch (_shop) do
 		{
 			_return pushBack
 			["I_Heli_light_03_unarmed_F",0];
+			_return pushBack
+			["B_Heli_Transport_03_unarmed_F",0];
+			_return pushBack
+			["O_Heli_Transport_04_bench_F",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
 		{
 			_return pushBack
 			["B_Heli_Transport_01_F",0];
+			_return pushBack
+			["B_Heli_Transport_03_F",0];
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then

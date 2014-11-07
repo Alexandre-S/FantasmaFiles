@@ -24,7 +24,7 @@ switch (_vehicle) do
 			case 5: {_color = "Bleu et Blanc"};
 			case 6: {_color = "Noir"};
 			case 7: {_color = "Noir"};
-			case 8: {_color = "Medic"};
+			case 8: {_color = "Croix-Rouge"};
 			case 9: {_color = "Rouillé"};
 		};
 	};
@@ -65,6 +65,7 @@ switch (_vehicle) do
 			case 14: {_color = "RedGull"};
 			case 15: {_color = "Ken Block"};
 			case 16: {_color = "RedGull"};
+			case 17: {_color = "Croix-Rouge"};
 		};
 	};
 	
@@ -130,21 +131,43 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "ONU"};
-			case 1: {_color = "Noir"};
-			case 2: {_color = "Civ bleu"};
-			case 3: {_color = "Civ rouge"};
-			case 4: {_color = "Vert digital"};
-			case 5: {_color = "Bleuline"};
-			case 6: {_color = "Elliptical"};
-			case 7: {_color = "Furious"};
-			case 8: {_color = "Jeans Bleu"};
-			case 9: {_color = "Speedy Redline"};
-			case 10: {_color = "Sunset"};
-			case 11: {_color = "Vrana"};
-			case 12: {_color = "Waves Blue"};
-			case 13: {_color = "Terroriste Digital"};
-			case 14: {_color = "Croix-Rouge"};
+			case 0: {_color = "N-ONU"};
+			case 1: {_color = "N-Noir"};
+			case 2: {_color = "N-Civ bleu"};
+			case 3: {_color = "N-Civ rouge"};
+			case 4: {_color = "N-Vert digital"};
+			case 5: {_color = "N-Bleuline"};
+			case 6: {_color = "N-Elliptical"};
+			case 7: {_color = "N-Furious"};
+			case 8: {_color = "N-Jeans Bleu"};
+			case 9: {_color = "N-Speedy Redline"};
+			case 10: {_color = "N-Sunset"};
+			case 11: {_color = "N-Vrana"};
+			case 12: {_color = "N-Waves Blue"};
+			case 13: {_color = "N-Terroriste Digital"};
+			case 14: {_color = "N-Croix-Rouge"};
+		};
+	};
+	
+	case "C_Heli_Light_01_civil_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "P-ONU"};
+			case 1: {_color = "P-Noir"};
+			case 2: {_color = "P-Civ bleu"};
+			case 3: {_color = "P-Civ rouge"};
+			case 4: {_color = "P-Vert digital"};
+			case 5: {_color = "P-Bleuline"};
+			case 6: {_color = "P-Elliptical"};
+			case 7: {_color = "P-Furious"};
+			case 8: {_color = "P-Jeans Bleu"};
+			case 9: {_color = "P-Speedy Redline"};
+			case 10: {_color = "P-Sunset"};
+			case 11: {_color = "P-Vrana"};
+			case 12: {_color = "P-Waves Blue"};
+			case 13: {_color = "P-Terroriste Digital"};
+			case 14: {_color = "P-Croix-Rouge"};
 		};
 	};
 	

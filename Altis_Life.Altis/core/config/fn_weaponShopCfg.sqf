@@ -229,51 +229,213 @@ switch(_shop) do
 		{
 			case (playerSide != independent): {"Vous n'êtes pas membre de la Croix-Rouge !"};
 			default {
-				_ret =
-				["Magasin Croix-Rouge",
-					[
-						["U_Rangemaster",nil,250],
-						["rds_uniform_doctor",nil,250],
-						["tf_anprc148jem",nil,5000],
-						["ItemGPS",nil,100],
-						["ItemCompass",nil,75],
-						["ItemWatch","SmartWatch",50],
-						["ItemMap",nil,10],
-						["Binocular",nil,150],
-						["ToolKit",nil,250],
-						["FirstAidKit",nil,150],
-						["Medikit",nil,500],
-						["NVGoggles_INDEP",nil,1200],
-						["ARC_FR_Backpack_CE_Med",nil,2000],
-						["ARC_FR_Backpack_Daguet_Med",nil,2000],
-						["tf_anprc155",nil,5000],
-						["V_Chestrig_khk",nil,1000],
-						["V_HarnessO_brn",nil,1500],
-						["B_FieldPack_blk",nil,3000],
-						["Chemlight_red",nil,100],
-						["Chemlight_green",nil,100],
-						["Chemlight_blue",nil,100],
-						["Chemlight_yellow",nil,100],
-						["hgun_mas_mak_F",nil,5000],
-						["8Rnd_mas_9x18_Mag",nil,15],
-						["hgun_Rook40_F",nil,6500],
-						["16Rnd_9x21_Mag",nil,25],
-						["hgun_mas_bhp_F",nil,8000],
-						["15Rnd_mas_9x21_Mag",nil,25],
-						["hgun_mas_grach_F",nil,9500],
-						["17Rnd_mas_9x21_Mag",nil,35],
-						["hgun_ACPC2_F",nil,11500],
-						["9Rnd_45ACP_Mag",nil,45],
-						["hgun_PDW2000_F",nil,20000],
-						["30Rnd_9x21_Mag",nil,75],
-						["hgun_mas_uzi_F",nil,20000],
-						["25Rnd_mas_9x19_Mag",nil,75],
-						["hgun_mas_sa61_F",nil,20000],
-						["20Rnd_mas_765x17_Mag",nil,75],
-						["optic_ACO_grn_smg",nil,2500],
-						["optic_Aco_smg",nil,2500]
-					]
-				];
+				// Croix Rouge rang 1
+				if(__GETC__(life_medicLevel) == 1) then
+				{
+					_ret =
+					["Magasin Croix-Rouge",
+						[
+							["U_Rangemaster",nil,250],
+							["tf_anprc148jem",nil,5000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch","SmartWatch",50],
+							["ItemMap",nil,10],
+							["Binocular",nil,150],
+							["ToolKit",nil,250],
+							["FirstAidKit",nil,150],
+							["Medikit",nil,500],
+							["NVGoggles_INDEP",nil,1200],
+							["ARC_FR_Backpack_CE_Med",nil,2000],
+							["ARC_FR_Backpack_Daguet_Med",nil,2000],
+							["tf_anprc155",nil,5000],
+							["V_Chestrig_khk",nil,1000],
+							["V_HarnessO_brn",nil,1500],
+							["B_FieldPack_blk",nil,3000],
+							["Chemlight_red",nil,100],
+							["Chemlight_green",nil,100],
+							["Chemlight_blue",nil,100],
+							["Chemlight_yellow",nil,100]
+						]
+					];
+				};
+				// Croix Rouge rang 2
+				if(__GETC__(life_medicLevel) == 2) then
+				{
+					_ret =
+					["Magasin Croix-Rouge",
+						[
+							["U_Rangemaster",nil,250],
+							["tf_anprc148jem",nil,5000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch","SmartWatch",50],
+							["ItemMap",nil,10],
+							["Binocular",nil,150],
+							["ToolKit",nil,250],
+							["FirstAidKit",nil,150],
+							["Medikit",nil,500],
+							["NVGoggles_INDEP",nil,1200],
+							["ARC_FR_Backpack_CE_Med",nil,2000],
+							["ARC_FR_Backpack_Daguet_Med",nil,2000],
+							["tf_anprc155",nil,5000],
+							["V_Chestrig_khk",nil,1000],
+							["V_HarnessO_brn",nil,1500],
+							["B_FieldPack_blk",nil,3000],
+							["Chemlight_red",nil,100],
+							["Chemlight_green",nil,100],
+							["Chemlight_blue",nil,100],
+							["Chemlight_yellow",nil,100],
+							["hgun_mas_mak_F",nil,5000],
+							["8Rnd_mas_9x18_Mag",nil,15],
+							["hgun_Rook40_F",nil,6500],
+							["16Rnd_9x21_Mag",nil,25],
+							["hgun_mas_bhp_F",nil,8000],
+							["15Rnd_mas_9x21_Mag",nil,25],
+							["hgun_mas_grach_F",nil,9500],
+							["17Rnd_mas_9x21_Mag",nil,35],
+							["hgun_ACPC2_F",nil,11500],
+							["9Rnd_45ACP_Mag",nil,45]
+						]
+					];
+				};
+				// Croix Rouge rang 3
+				if(__GETC__(life_medicLevel) == 3) then
+				{
+					_ret =
+					["Magasin Croix-Rouge",
+						[
+							["U_Rangemaster",nil,250],
+							["tf_anprc148jem",nil,5000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch","SmartWatch",50],
+							["ItemMap",nil,10],
+							["Binocular",nil,150],
+							["ToolKit",nil,250],
+							["FirstAidKit",nil,150],
+							["Medikit",nil,500],
+							["NVGoggles_INDEP",nil,1200],
+							["ARC_FR_Backpack_CE_Med",nil,2000],
+							["ARC_FR_Backpack_Daguet_Med",nil,2000],
+							["tf_anprc155",nil,5000],
+							["V_Chestrig_khk",nil,1000],
+							["V_HarnessO_brn",nil,1500],
+							["B_FieldPack_blk",nil,3000],
+							["Chemlight_red",nil,100],
+							["Chemlight_green",nil,100],
+							["Chemlight_blue",nil,100],
+							["Chemlight_yellow",nil,100],
+							["hgun_mas_mak_F",nil,5000],
+							["8Rnd_mas_9x18_Mag",nil,15],
+							["hgun_Rook40_F",nil,6500],
+							["16Rnd_9x21_Mag",nil,25],
+							["hgun_mas_bhp_F",nil,8000],
+							["15Rnd_mas_9x21_Mag",nil,25],
+							["hgun_mas_grach_F",nil,9500],
+							["17Rnd_mas_9x21_Mag",nil,35],
+							["hgun_ACPC2_F",nil,11500],
+							["9Rnd_45ACP_Mag",nil,45],
+							["hgun_PDW2000_F",nil,20000],
+							["30Rnd_9x21_Mag",nil,75],
+							["optic_ACO_grn_smg",nil,2500],
+							["optic_Aco_smg",nil,2500]
+						]
+					];
+				};
+				// Croix Rouge rang 4
+				if(__GETC__(life_medicLevel) == 4) then
+				{
+					_ret =
+					["Magasin Croix-Rouge",
+						[
+							["U_Rangemaster",nil,250],
+							["tf_anprc148jem",nil,5000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch","SmartWatch",50],
+							["ItemMap",nil,10],
+							["Binocular",nil,150],
+							["ToolKit",nil,250],
+							["FirstAidKit",nil,150],
+							["Medikit",nil,500],
+							["NVGoggles_INDEP",nil,1200],
+							["ARC_FR_Backpack_CE_Med",nil,2000],
+							["ARC_FR_Backpack_Daguet_Med",nil,2000],
+							["tf_anprc155",nil,5000],
+							["V_Chestrig_khk",nil,1000],
+							["V_HarnessO_brn",nil,1500],
+							["B_FieldPack_blk",nil,3000],
+							["Chemlight_red",nil,100],
+							["Chemlight_green",nil,100],
+							["Chemlight_blue",nil,100],
+							["Chemlight_yellow",nil,100],
+							["hgun_mas_mak_F",nil,5000],
+							["8Rnd_mas_9x18_Mag",nil,15],
+							["hgun_Rook40_F",nil,6500],
+							["16Rnd_9x21_Mag",nil,25],
+							["hgun_mas_bhp_F",nil,8000],
+							["15Rnd_mas_9x21_Mag",nil,25],
+							["hgun_mas_grach_F",nil,9500],
+							["17Rnd_mas_9x21_Mag",nil,35],
+							["hgun_ACPC2_F",nil,11500],
+							["9Rnd_45ACP_Mag",nil,45],
+							["hgun_mas_sa61_F",nil,20000],
+							["20Rnd_mas_765x17_Mag",nil,75],
+							["optic_ACO_grn_smg",nil,2500],
+							["optic_Aco_smg",nil,2500]
+						]
+					];
+				};
+				// Croix Rouge rang 5
+				if(__GETC__(life_medicLevel) == 5) then
+				{
+					_ret =
+					["Magasin Croix-Rouge",
+						[
+							["U_Rangemaster",nil,250],
+							["rds_uniform_doctor",nil,250],
+							["tf_anprc148jem",nil,5000],
+							["ItemGPS",nil,100],
+							["ItemCompass",nil,75],
+							["ItemWatch","SmartWatch",50],
+							["ItemMap",nil,10],
+							["Binocular",nil,150],
+							["ToolKit",nil,250],
+							["FirstAidKit",nil,150],
+							["Medikit",nil,500],
+							["NVGoggles_INDEP",nil,1200],
+							["ARC_FR_Backpack_CE_Med",nil,2000],
+							["ARC_FR_Backpack_Daguet_Med",nil,2000],
+							["tf_anprc155",nil,5000],
+							["V_Chestrig_khk",nil,1000],
+							["V_HarnessO_brn",nil,1500],
+							["B_FieldPack_blk",nil,3000],
+							["Chemlight_red",nil,100],
+							["Chemlight_green",nil,100],
+							["Chemlight_blue",nil,100],
+							["Chemlight_yellow",nil,100],
+							["hgun_mas_mak_F",nil,5000],
+							["8Rnd_mas_9x18_Mag",nil,15],
+							["hgun_Rook40_F",nil,6500],
+							["16Rnd_9x21_Mag",nil,25],
+							["hgun_mas_bhp_F",nil,8000],
+							["15Rnd_mas_9x21_Mag",nil,25],
+							["hgun_mas_grach_F",nil,9500],
+							["17Rnd_mas_9x21_Mag",nil,35],
+							["hgun_ACPC2_F",nil,11500],
+							["9Rnd_45ACP_Mag",nil,45],
+							["hgun_PDW2000_F",nil,20000],
+							["30Rnd_9x21_Mag",nil,75],
+							["hgun_mas_uzi_F",nil,20000],
+							["25Rnd_mas_9x19_Mag",nil,75],
+							["hgun_mas_sa61_F",nil,20000],
+							["20Rnd_mas_765x17_Mag",nil,75],
+							["optic_ACO_grn_smg",nil,2500],
+							["optic_Aco_smg",nil,2500]
+						]
+					];
+				};
 			};
 		};
 	};
@@ -344,6 +506,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -424,6 +587,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -516,6 +680,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -581,6 +746,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -657,6 +823,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -745,6 +912,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -814,6 +982,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -894,6 +1063,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
@@ -988,6 +1158,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],

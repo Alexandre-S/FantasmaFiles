@@ -27,8 +27,10 @@ switch (_className) do
 	case "O_Truck_03_covered_F": {300};
 	case "B_Truck_01_box_F": {450};
 	case "O_Truck_03_device_F": {350};
+	case "C_Heli_Light_01_civil_F": {10};
 	case "B_Heli_Light_01_F": {10};
 	case "O_Heli_Light_02_unarmed_F": {30};
+	case "O_Heli_Transport_04_medevac_F": {40};
 	case "C_Rubberboat": {45};
 	case "C_Boat_Civil_01_F": {85};
 	case "I_Truck_02_medical_F": {250};
@@ -39,6 +41,7 @@ switch (_className) do
 	case "PMC_Offroad_Transport": {65};
 	case "PMC_Offroad_Armed": {65};
 	case "PMC_MH9": {10};
+	case "O_MRAP_02_F": {60};
 	case "O_MRAP_02_hmg_F": {60};
 	case "sab_UN_Car": {40};
 	case "sab_UN_Offroad": {65};
@@ -64,6 +67,9 @@ switch (_className) do
 	case "B_Heli_Transport_01_F": {70};
 	case "sab_UN_Heli_armed": {20};
 	case "B_Heli_Attack_01_F": {20};
+	case "O_Heli_Transport_04_bench_F": {30};
+	case "B_Heli_Transport_03_unarmed_F": {40};
+	case "B_Heli_Transport_03_F": {40};
 	case "B_Boat_Transport_01_F": {45};
 	case "sab_UN_Boat": {30};
 	case "sab_UN_Boat_armed": {50};
