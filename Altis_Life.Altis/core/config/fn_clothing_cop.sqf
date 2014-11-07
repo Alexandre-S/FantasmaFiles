@@ -140,9 +140,9 @@ switch (_filter) do
 		_ret pushBack ["ARC_FR_Daguet_rangemaster_belt","Ceinture recrue 2",0];
 		_ret pushBack ["ARC_FR_CE_BandollierB_rgr","Bandoulière recrue 1",0];
 		_ret pushBack ["ARC_FR_Daguet_BandollierB_rgr","Bandoulière recrue 2",0];
+		_ret pushBack ["sab_UN_Vest",nil,0];
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["sab_UN_Vest",nil,0];
 			_ret pushBack ["ARC_FR_CE_PlateCarrier_1",nil,0];
 			_ret pushBack ["ARC_FR_Daguet_PlateCarrier_1",nil,0];
 		};
