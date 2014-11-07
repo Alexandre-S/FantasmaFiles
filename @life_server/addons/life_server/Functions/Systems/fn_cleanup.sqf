@@ -46,8 +46,9 @@ while {true} do
 					systemChat "Fixing...";
 					_uid = _dbInfo select 0;
 					_plate = _dbInfo select 1;
+					_fuel = fuel _veh;
 
-					_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+					_query = format["UPDATE vehicles SET active='0', fuel='%1' WHERE pid='%2' AND plate='%3'",_fuel,_uid,_plate];
 					waitUntil {!DB_Async_Active};
 					[_query,1] call DB_fnc_asyncCall;
 				};

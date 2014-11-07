@@ -5,7 +5,7 @@
 	Description:
 	Stores the vehicle in the 'Garage'
 */
-private["_vehicle","_impound","_vInfo","_vInfo","_plate","_uid","_query","_sql","_unit"];
+private["_vehicle","_impound","_vInfo","_vInfo","_plate","_uid","_query","_sql","_unit","_fuel"];
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _impound = [_this,1,false,[true]] call BIS_fnc_param;
 _unit = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -17,6 +17,7 @@ if(count _vInfo > 0) then
 {
 	_plate = _vInfo select 1;
 	_uid = _vInfo select 0;
+	_fuel = fuel _vehicle;
 };
 
 if(_impound) then
@@ -31,7 +32,7 @@ if(_impound) then
 	} 
 		else
 	{
-		_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+		_query = format["UPDATE vehicles SET active='0', fuel='%1' WHERE pid='%2' AND plate='%3'",_fuel,_uid,_plate];
 		waitUntil {!DB_Async_Active};
 		_thread = [_query,1] call DB_fnc_asyncCall;
 		//waitUntil {scriptDone _thread};
@@ -58,7 +59,7 @@ if(_impound) then
 		(owner _unit) publicVariableClient "life_garage_store";
 	};
 	
-	_query = format["UPDATE vehicles SET active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+	_query = format["UPDATE vehicles SET active='0', fuel='%1' WHERE pid='%2' AND plate='%3'",_fuel,_uid,_plate];
 	waitUntil {!DB_Async_Active};
 	_thread = [_query,1] call DB_fnc_asyncCall;
 	//waitUntil {scriptDone _thread};

@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir"];
+private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel"];
 _vid = [_this,0,-1,[0]] call BIS_fnc_param;
 _pid = [_this,1,"",[""]] call BIS_fnc_param;
 _sp = [_this,2,[],[[],""]] call BIS_fnc_param;
@@ -22,7 +22,7 @@ if(_vid == -1 OR _pid == "") exitWith {};
 if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
@@ -62,6 +62,7 @@ if(count _nearVehicles > 0) exitWith
 	[[_price,_unit_return],"life_fnc_garageRefund",_unit,false] spawn life_fnc_MP;
 	[[1,(localize "STR_Garage_SpawnPointError")],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
+_fuel = parseNumber(_vInfo select 10);
 
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
@@ -81,6 +82,7 @@ if(typeName _sp == "STRING") then {
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);
 	_vehicle setDir _dir;
+	_vehicle setFuel _fuel;
 };
 
 //Side Specific actions.
@@ -122,17 +124,16 @@ if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["sab_UN_Offroad","sab_UN_
 {
 	[[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
-
 if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
 {
 	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
 if((_vInfo select 9) == 1) then
 {
-  [[1,"Votre vehicule et dispo et assurer ! "],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+  [[1,"Votre vehicule est dispo et assuré ! "],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 }
 else
 {
-  [[1,"Votre vehicule et dispo !"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+  [[1,"Votre vehicule est dispo !"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
 serv_sv_use = serv_sv_use - [_vid];
