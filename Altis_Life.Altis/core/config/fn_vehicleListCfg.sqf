@@ -69,6 +69,11 @@ switch (_shop) do
 			["B_Heli_Light_01_F",253000],
 			["O_Heli_Light_02_unarmed_F",750000]
 		];
+		if(__GETC__(life_donator) > 0) then
+		{
+			_return pushBack
+			["O_Heli_Transport_04_F",2000000];
+		};
 	};
 	
 	case "civ_ship":
@@ -159,7 +164,7 @@ switch (_shop) do
 			_return pushBack
 			["O_MRAP_02_hmg_F",1250000];
 			_return pushBack
-			["I_Heli_light_03_unarmed_F",2500000];
+			["O_Heli_Transport_04_covered_F",2500000];
 		};
 	};
 	
