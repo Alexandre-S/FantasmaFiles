@@ -252,6 +252,58 @@ switch (_vehicle) do
 			case 0: {_color = "Noir"};
 		};
 	};
+	
+	case "bwi_a3_t6a_7":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "BeechCraft"};
+			case 1: {_color = "USAF Academy"};
+			case 2: {_color = "NAVY"};
+			case 3: {_color = "Tiger"};
+			case 4: {_color = "Shark"};
+			case 5: {_color = "Irak"};
+			case 6: {_color = "Greek"};
+			case 7: {_color = "Canada"};
+			case 8: {_color = "Warthunder"};
+			case 9: {_color = "USAF Academy"};
+		};
+	};
+	
+	case "BAF_Offroad_D":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Beige Bâché"};
+			case 1: {_color = "Vert Bâché"};
+			case 2: {_color = "Rouge Bâché"};
+			case 3: {_color = "Vert Camo Bâché"};
+			case 4: {_color = "Désert Camo Bâché"};
+		};
+	};
+	
+	case "LandRover_ACR":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Beige Débâché"};
+			case 1: {_color = "Vert Débâché"};
+			case 2: {_color = "Rouge Débâché"};
+			case 3: {_color = "Vert Camo Débâché"};
+			case 4: {_color = "Désert Camo Débâché"};
+		};
+	};
+	
+	case "BAF_Offroad_D_HMG":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Beige"};
+			case 1: {_color = "Vert"};
+			case 3: {_color = "Vert Camo"};
+			case 4: {_color = "Désert Camo"};
+		};
+	};
 };
 
 _color;

@@ -237,6 +237,58 @@ switch (_vehicle) do
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
 		];
 	};
+	
+	case "bwi_a3_t6a_7":
+	{
+		_ret = 
+		[
+			["bwi_a3_t6\tex\beech\t6_1_t.paa","civ","bwi_a3_t6\tex\beech\t6_2_t.paa", "bwi_a3_t6\tex\beech\t6_3_t.paa", "bwi_a3_t6\tex\beech\t6_4_t.paa"],
+			["bwi_a3_t6\tex\usaf\t6_1_t.paa","civ","bwi_a3_t6\tex\usaf\t6_2_t.paa","bwi_a3_t6\tex\usaf\t6_3_t.paa","bwi_a3_t6\tex\usaf\t6_4_t.paa"],
+			["bwi_a3_t6\tex\usn\t6_1_t.paa","civ","bwi_a3_t6\tex\usn\t6_2_t.paa","bwi_a3_t6\tex\usn\t6_3_t.paa","bwi_a3_t6\tex\usn\t6_4_t.paa"],
+			["bwi_a3_t6\tex\usaf_1\t6_1_t.paa","civ","bwi_a3_t6\tex\usaf_1\t6_2_t.paa","bwi_a3_t6\tex\usaf_1\t6_3_t.paa","bwi_a3_t6\tex\usaf_1\t6_4_t.paa"],
+			["bwi_a3_t6\tex\usn_1\t6_1_t.paa","civ","bwi_a3_t6\tex\usn_1\t6_2_t.paa","bwi_a3_t6\tex\usn_1\t6_3_t.paa","bwi_a3_t6\tex\usn_1\t6_4_t.paa"],
+			["bwi_a3_t6\tex\iraq\t6_1_t.paa","civ","bwi_a3_t6\tex\iraq\t6_2_t.paa","bwi_a3_t6\tex\iraq\t6_3_t.paa","bwi_a3_t6\tex\iraq\t6_4_t.paa"],
+			["bwi_a3_t6\tex\greek\t6_1_t.paa","civ","bwi_a3_t6\tex\greek\t6_2_t.paa","bwi_a3_t6\tex\greek\t6_3_t.paa","bwi_a3_t6\tex\greek\t6_4_t.paa"],
+			["bwi_a3_t6\tex\canada\t6_1_t.paa","civ","bwi_a3_t6\tex\canada\t6_2_t.paa","bwi_a3_t6\tex\canada\t6_3_t.paa","bwi_a3_t6\tex\canada\t6_4_t.paa"],
+			["bwi_a3_t6\tex\dog\t6_1_t.paa","civ","bwi_a3_t6\tex\dog\t6_2_t.paa", "bwi_a3_t6\tex\dog\t6_3_t.paa", "bwi_a3_t6\tex\dog\t6_4_t.paa"],
+			["bwi_a3_t6\tex\usaf\t6_1_t.paa","cop","bwi_a3_t6\tex\usaf\t6_2_t.paa","bwi_a3_t6\tex\usaf\t6_3_t.paa","bwi_a3_t6\tex\usaf\t6_4_t.paa"]
+		];
+	};
+	
+	case "BAF_Offroad_D":
+	{
+		_ret = 
+		[
+			["pansy\LandRover\data\lr_base_baf_co","civ","pansy\LandRover\data\lr_special_baf_co"],
+			["pansy\LandRover\data\lr_acr_base_co","civ","pansy\LandRover\data\lr_acr_spec_co"],
+			["pansy\LandRover\data\lr_base_red_co","civ","pansy\LandRover\data\lr_special_red_co"],
+			["pansy\LandRover\data\lr_base_w_baf_co","civ","pansy\LandRover\data\lr_special_w_baf_co"],
+			["pansy\LandRover\data\lr_base_acrs_co","civ","pansy\LandRover\data\lr_special_acr_co"]
+		];
+	};
+	
+	case "LandRover_ACR":
+	{
+		_ret = 
+		[
+			["pansy\LandRover\data\lr_base_baf_co","civ","pansy\LandRover\data\lr_special_baf_co"],
+			["pansy\LandRover\data\lr_acr_base_co","civ","pansy\LandRover\data\lr_acr_spec_co"],
+			["pansy\LandRover\data\lr_base_red_co","civ","pansy\LandRover\data\lr_special_red_co"],
+			["pansy\LandRover\data\lr_base_w_baf_co","civ","pansy\LandRover\data\lr_special_w_baf_co"],
+			["pansy\LandRover\data\lr_base_acrs_co","civ","pansy\LandRover\data\lr_special_acr_co"]
+		];
+	};
+	
+	case "BAF_Offroad_D_HMG":
+	{
+		_ret = 
+		[
+			["pansy\LandRover\data\lr_base_baf_co","reb","pansy\LandRover\data\lr_special_baf_co","pansy\LandRover\data\lr_mg-spg9_baf_co"],
+			["pansy\LandRover\data\lr_acr_base_co","reb","pansy\LandRover\data\lr_acr_spec_co","pansy\LandRover\data\lr_mg-spg9_ind_co"],
+			["pansy\LandRover\data\lr_base_w_baf_co","reb","pansy\LandRover\data\lr_special_w_baf_co","pansy\LandRover\data\lr_mg-spg9_w_baf_co"],
+			["pansy\LandRover\data\lr_base_ind_co","reb","pansy\LandRover\data\lr_special_w_baf_co","pansy\LandRover\data\lr_mg-spg9_ind_co"]
+		];
+	};
 };
 
 _ret;

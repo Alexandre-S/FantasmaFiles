@@ -17,6 +17,9 @@ switch (_className) do
 	case "B_Quadbike_01_F": {25};
 	case "C_Hatchback_01_F": {40};
 	case "C_Offroad_01_F": {65};
+	case "BAF_Offroad_D": {75};
+	case "LandRover_ACR": {75};
+	case "ACR_LandRover_AMB": {75};
 	case "C_SUV_01_F": {50};
 	case "C_Van_01_transport_F": {100};
 	case "C_Van_01_box_F": {150};
@@ -33,6 +36,8 @@ switch (_className) do
 	case "O_Heli_Transport_04_medevac_F": {40};
 	case "O_Heli_Transport_04_covered_F": {40};
 	case "O_Heli_Transport_04_F": {40};
+	case "bwi_a3_t6a_7": {15};
+	case "bwi_a3_at6b_3": {15};
 	case "C_Rubberboat": {45};
 	case "C_Boat_Civil_01_F": {85};
 	case "I_Truck_02_medical_F": {250};
@@ -40,6 +45,7 @@ switch (_className) do
 	case "B_Truck_01_medical_F": {325};
 	case "I_Heli_Transport_02_F": {70};
 	case "B_G_Offroad_01_armed_F": {65};
+	case "BAF_Offroad_D_HMG": {65};
 	case "PMC_Offroad_Transport": {65};
 	case "PMC_Offroad_Armed": {65};
 	case "PMC_MH9": {10};

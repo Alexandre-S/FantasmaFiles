@@ -29,6 +29,8 @@ switch (_shop) do
 			["B_Quadbike_01_F",2500],
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
+			["BAF_Offroad_D",17500],
+			["LandRover_ACR",17500],
 			["C_SUV_01_F",35000],
 			["C_Van_01_transport_F",40000]
 		];
@@ -67,7 +69,8 @@ switch (_shop) do
 		[
 			["C_Heli_Light_01_civil_F",253000],
 			["B_Heli_Light_01_F",253000],
-			["O_Heli_Light_02_unarmed_F",750000]
+			["O_Heli_Light_02_unarmed_F",750000],
+			["bwi_a3_t6a_7",375000]
 		];
 		if(__GETC__(life_donator) > 0) then
 		{
@@ -88,7 +91,8 @@ switch (_shop) do
 	case "med_shop":
 	{
 		_return = [
-			["C_Offroad_01_F",10000]
+			["C_Offroad_01_F",10000],
+			["ACR_LandRover_AMB",15000]
 		];
 		if(__GETC__(life_medicLevel) >= 2 && __GETC__(life_donator) > 0) then
 		{
@@ -143,6 +147,8 @@ switch (_shop) do
 			["O_MRAP_02_F",150000];
 			_return pushBack
 			["B_G_Offroad_01_armed_F",750000];
+			_return pushBack
+			["BAF_Offroad_D_HMG",750000];
 		};
 		// Faction 1 = Armée Privée
 		if(__GETC__(life_factnumber) == 1) then
@@ -255,6 +261,10 @@ switch (_shop) do
 			["B_Heli_Transport_03_unarmed_F",0];
 			_return pushBack
 			["O_Heli_Transport_04_bench_F",0];
+			_return pushBack
+			["bwi_a3_t6a_7",0];
+			_return pushBack
+			["bwi_a3_at6b_3",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
@@ -297,6 +307,10 @@ switch (_shop) do
 			["B_Heli_Transport_03_unarmed_F",0];
 			_return pushBack
 			["O_Heli_Transport_04_bench_F",0];
+			_return pushBack
+			["bwi_a3_t6a_7",0];
+			_return pushBack
+			["bwi_a3_at6b_3",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then

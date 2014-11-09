@@ -57,11 +57,19 @@ else
 			_vehicle setVariable["lights",false,true];
 		};
 		
+		case "landrover_nocov":
+		{
+			/*if(typeOf _vehicle == "LandRover_ACR") then {
+				waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
+			};*/
+			_vehicle animate ["Hide_Tent", 1];
+		};
+		
 		case "cop_offroad":
 		{
-			if(typeOf _vehicle == "sab_UN_Offroad") then {
+			/*if(typeOf _vehicle == "sab_UN_Offroad") then {
 				waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
-			};
+			};*/
 			_vehicle animate ["HidePolice", 0];
 			_vehicle animate ["HideBumper1", 0];
 			_vehicle setVariable["lights",false,true];
