@@ -8,9 +8,9 @@ _vehicle = (call compile format["%1",_vehicle]) select 0;
 _vid = lbValue[2802,(lbCurSel 2802)];
 _pid = getPlayerUID player;
 _unit = player;
- 
- 
-if(isNil "_vehicle") exitWith {hint "Il y a une erreur dans la sÈlection..."};
+
+if(isNil "_vehicle") exitWith {hint "Il y a une erreur dans la s√©lection..."};
+if(_vehicle == "BAF_Offroad_D_HMG" || _vehicle == "O_MRAP_02_F" || _vehicle == "B_G_Offroad_01_armed_F" || _vehicle == "PMC_Offroad_Armed" || _vehicle == "O_MRAP_02_hmg_F") exitWith {hint "Vous ne pouvez pas assurer ce v√©hicule..."};
  
 _price = [_vehicle,__GETC__(life_assur_prices)] call TON_fnc_index;
 if(_price == -1) then {_price = 10000;} else {_price = (__GETC__(life_assur_prices) select _price) select 1;};
@@ -18,7 +18,7 @@ if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"
  
 [[_vid,_pid,_unit,_price],"TON_fnc_InsureCar",false,false] spawn life_fnc_MP;
  
-hint "Votre vÈhicule est dÈsormais assurÈ";
+hint "Votre v√©hicule est d√©sormais assur√©";
  
 life_atmcash = life_atmcash - _price;
 closeDialog 0;
