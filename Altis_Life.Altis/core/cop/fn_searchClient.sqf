@@ -5,7 +5,7 @@
 	Description:
 	Searches the player and he returns information back to the player.
 */
-private["_cop","_guns","_inv","_var","_val","_robber","_cfg","_licenses"];
+private["_cop","_guns","_inv","_var","_val","_robber","_cfg"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 if(isNull _cop) exitWith {};
 _inv = [];
@@ -66,4 +66,4 @@ if(!life_use_atm) then
 	_robber = true;
 };
 
-[[player,_inv,_licenses,_robber,_guns, life_atmcash, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;
+[[player,_inv,_robber,_guns, life_atmcash, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;
