@@ -501,6 +501,21 @@
 			<Italian>Invito Gang</Italian>
 			<Portuguese>Convite para Gangue</Portuguese>
 		</Key>
+		<Key ID="STR_Gang_Promote">
+			<Original>Promote Player</Original>
+			<English>Promote Player</English>
+			<French>Promouvoir joueur</French>
+		</Key>
+		<Key ID="STR_Gang_Demote">
+			<Original>Demote Player</Original>
+			<English>Demote Player</English>
+			<French>Rétrograder joueur</French>
+		</Key>
+		<Key ID="STR_Gang_Withdraw">
+			<Original>Withdraw</Original>
+			<English>Withdraw</English>
+			<French>Retrait Argent</French>
+		</Key>
 		<Key ID="STR_Gang_Transfer">
 			<Original>Transfer Gang Leadership</Original>
 			<English>Transfer Gang Leadership</English>
