@@ -1,0 +1,1467 @@
+=====================================================================
+== C:\Games\ArmA3\A3Master\arma3server.exe
+== "C:\Games\ArmA3\A3Master\arma3server.exe"  -nosplash -nosound -world=Altis -name=atl -profiles=Users -cfg=Users\Administrator\Arma3.cfg -config=CONFIG_Vanilla.cfg -mod=@extDB;@life_server;@altisrpfr -port=2302 -ip=178.33.110.219 -enableHT -maxMem=2047 -malloc=tbbmalloc
+
+Original output filename: Arma3Retail_Server
+Exe timestamp: 2014/11/04 14:08:33
+Current time:  2014/11/17 08:00:15
+
+Type: Public
+Branch: Stable
+Version: 1.34.128075
+
+Allocator: C:\Games\ArmA3\A3Master\dll\tbb4malloc_bi.dll
+=====================================================================
+
+ 8:00:15 ManagerConfig()
+ 8:00:17 Conflicting addon caf_ag_equip_me_backpack in 'caf_ag_equip_c\middleeast\backpacks\', previous definition in 'caf_ag_equip_c\easteurope\backpacks\'
+ 8:00:17 Conflicting addon example_uniform_config in 'FANTASMA_Units\blackhunter\', previous definition in 'FANTASMA_Units\medic\'
+ 8:00:17 Conflicting addon example_uniform_config in 'FANTASMA_Units\giletpolo\', previous definition in 'FANTASMA_Units\medic\'
+ 8:00:17 Conflicting addon PG_Services_PMC_UNITS in 'pg_services_pmc_config\vehicles\', previous definition in 'pg_services_pmc_config\characters\pmc\'
+ 8:00:17 Unsupported language English in stringtable
+ 8:00:17 Unsupported language English in stringtable
+ 8:00:18 Updating base class ->Base, by a3\dubbing_radio_f\config.bin/CfgHQIdentities/PAPA_BEAR/
+ 8:00:18 Updating base class ->Base, by a3\dubbing_radio_f\config.bin/CfgHQIdentities/AirBase/
+ 8:00:19 Updating base class ->LandVehicle, by a3\data_f\config.bin/CfgVehicles/StaticWeapon/
+ 8:00:19 Updating base class ->Wreck, by a3\data_f\config.bin/CfgVehicles/PlaneWreck/
+ 8:00:19 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayEditObject/Controls/B_OK/
+ 8:00:19 Updating base class RscSliderH->RscXSliderH, by a3\editor_f\config.bin/RscDisplayEditObject/Slider/
+ 8:00:19 Updating base class RscText->RscPicture, by a3\editor_f\config.bin/RscDisplayEditObject/Preview/
+ 8:00:19 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionLoad/Controls/B_OK/
+ 8:00:19 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionSave/Controls/B_OK/
+ 8:00:19 Updating base class ->FlagCarrier_Asym, by a3\structures_f\mil\flags\config.bin/CfgVehicles/Flag_UNO_F/
+ 8:00:19 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoScrollbars/
+ 8:00:19 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoHScrollbars/
+ 8:00:19 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoVScrollbars/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscLine/
+ 8:00:19 Updating base class ->RscActiveText, by a3\ui_f\config.bin/RscActivePicture/
+ 8:00:19 Updating base class ->RscButton, by a3\ui_f\config.bin/RscButtonTextOnly/
+ 8:00:19 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscShortcutButtonMain/
+ 8:00:19 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonEditor/
+ 8:00:19 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscIGUIShortcutButton/
+ 8:00:19 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscGearShortcutButton/
+ 8:00:19 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonMenu/
+ 8:00:19 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuOK/
+ 8:00:19 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuCancel/
+ 8:00:19 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuSteam/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscLoadingText/
+ 8:00:19 Updating base class ->RscListBox, by a3\ui_f\config.bin/RscIGUIListBox/
+ 8:00:19 Updating base class ->RscListNBox, by a3\ui_f\config.bin/RscIGUIListNBox/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackground/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUI/
+ 8:00:19 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUILeft/
+ 8:00:19 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIRight/
+ 8:00:19 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIBottom/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUITop/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUIDark/
+ 8:00:19 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/RscBackgroundLogo/
+ 8:00:19 Updating base class ->RscMapControl, by a3\ui_f\config.bin/RscMapControlEmpty/
+ 8:00:19 Updating base class ->RscPicture, by a3\ui_f\config.bin/CA_Mainback/
+ 8:00:19 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Back/
+ 8:00:19 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Title_Back/
+ 8:00:19 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Black_Back/
+ 8:00:19 Updating base class ->RscTitle, by a3\ui_f\config.bin/CA_Title/
+ 8:00:19 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/CA_Logo/
+ 8:00:19 Updating base class ->CA_Logo, by a3\ui_f\config.bin/CA_Logo_Small/
+ 8:00:19 Updating base class ->RscButton, by a3\ui_f\config.bin/CA_RscButton/
+ 8:00:19 Updating base class ->CA_RscButton, by a3\ui_f\config.bin/CA_RscButton_dialog/
+ 8:00:19 Updating base class ->RscActiveText, by a3\ui_f\config.bin/CA_Ok/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image2/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_text/
+ 8:00:19 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscVignette/
+ 8:00:19 Updating base class ->RscControlsGroupNoScrollbars, by a3\ui_f\config.bin/RscMapControlTooltip/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_OK/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Cancel/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Clear/
+ 8:00:19 Updating base class ->RscText, by a3\ui_f\config.bin/RscDisplayCapture/controls/TimeLines/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonAverages/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonSavePreviousData/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonPreviousData/
+ 8:00:19 Updating base class RscControlsGroup->RscControlsGroupNoHScrollbars, by a3\ui_f\config.bin/RscDisplayMain/controls/ModIcons/
+ 8:00:19 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/IconPicture/
+ 8:00:19 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcOwnedIconPicture/
+ 8:00:19 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcIconPicture/
+ 8:00:19 Updating base class RscListBox->RscCombo, by a3\ui_f\config.bin/RscDisplayCustomizeController/Steepness/
+ 8:00:19 Updating base class ->RscStandardDisplay, by a3\ui_f\config.bin/RscDisplayControlSchemes/
+ 8:00:19 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonCancel/
+ 8:00:19 Updating base class RscButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonOK/
+ 8:00:19 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayFileSelectImage/controls/OverviewPicture/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayFieldManual/controls/ButtonCancel/
+ 8:00:19 Cannot delete class B_KickOff, it is referenced somewhere (used as a base class probably).
+ 8:00:19 Updating base class RscButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMission/controls/ButtonCancel/
+ 8:00:19 Updating base class RscShortcutButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonOK/
+ 8:00:19 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonCancel/
+ 8:00:19 Updating base class ->RscSubmenu, by a3\ui_f\config.bin/RscMainMenu/
+ 8:00:19 Cannot update non class from class a3\ui_f\config.bin/RscCallSupport/Items/
+ 8:00:19 Cannot update non class from class a3\ui_f\config.bin/RscRadio/Items/
+ 8:00:19 Updating base class ->VehicleMagazine, by a3\weapons_f\config.bin/CfgMagazines/24Rnd_missiles/
+ 8:00:19 Updating base class ->RocketPods, by a3\weapons_f\config.bin/cfgWeapons/missiles_DAR/
+ 8:00:19 Updating base class ->Default, by a3\weapons_f\config.bin/cfgWeapons/ItemCore/
+ 8:00:19 Updating base class ->Binocular, by a3\weapons_f\config.bin/cfgWeapons/NVGoggles/
+ 8:00:19 Updating base class ->Bag_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Kitbag_Base/
+ 8:00:19 Updating base class ->B_TacticalPack_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_TacticalPack_oli/
+ 8:00:19 Updating base class ->B_Bergen_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Bergen_rgr/
+ 8:00:19 Updating base class ->InventoryItem_Base_F, by a3\weapons_f\items\config.bin/CfgWeapons/VestItem/
+ 8:00:19 Updating base class ->arifle_MX_F, by a3\weapons_f\rifles\mx_black\config.bin/CfgWeapons/arifle_MX_Black_F/
+ 8:00:19 Updating base class ->arifle_MX_GL_F, by a3\weapons_f\rifles\mx_black\config.bin/CfgWeapons/arifle_MX_GL_Black_F/
+ 8:00:19 Updating base class ->Car_F, by task_force_radio_items\config.cpp/CfgVehicles/MRAP_03_base_F/
+ 8:00:19 Updating base class ->Truck_F, by task_force_radio_items\config.cpp/CfgVehicles/Truck_02_base_F/
+ 8:00:19 Updating base class ->Offroad_01_base_F, by task_force_radio_items\config.cpp/CfgVehicles/Offroad_01_armed_base_F/
+ 8:00:19 Updating base class ->Man, by a3\characters_f\config.bin/CfgVehicles/CAManBase/
+ 8:00:19 Updating base class Man->Civilian, by a3\characters_f\config.bin/CfgVehicles/Civilian_F/
+ 8:00:19 Updating base class ->CAManBase, by a3\characters_f\config.bin/CfgVehicles/SoldierWB/
+ 8:00:19 Updating base class ->B_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/B_Soldier_02_f/
+ 8:00:19 Updating base class ->B_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/B_soldier_UAV_F/
+ 8:00:19 Updating base class ->SoldierGB, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_base_F/
+ 8:00:19 Updating base class ->I_Soldier_02_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_AR_F/
+ 8:00:19 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_TL_F/
+ 8:00:19 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_M_F/
+ 8:00:19 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_AT_F/
+ 8:00:19 Updating base class ->I_Soldier_02_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_AA_F/
+ 8:00:19 Updating base class ->I_Soldier_02_F, by a3\characters_f\config.bin/CfgVehicles/I_medic_F/
+ 8:00:19 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_engineer_F/
+ 8:00:19 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_crew_F/
+ 8:00:19 Updating base class ->I_Soldier_03_F, by a3\characters_f\config.bin/CfgVehicles/I_helipilot_F/
+ 8:00:19 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_officer_F/
+ 8:00:19 Updating base class Man->O_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/O_Soldier_F/
+ 8:00:19 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Uniform_Base/
+ 8:00:19 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Vest_Camo_Base/
+ 8:00:19 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Vest_NoCamo_Base/
+ 8:00:19 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_PlateCarrier1_rgr/
+ 8:00:19 Updating base class ->Vest_Camo_Base, by a3\characters_f\config.bin/cfgWeapons/V_TacVest_khk/
+ 8:00:19 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_TacVestIR_blk/
+ 8:00:19 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_PlateCarrierIA1_dgtl/
+ 8:00:19 Updating base class ->InventoryItem_Base_F, by a3\characters_f\config.bin/cfgWeapons/HeadgearItem/
+ 8:00:19 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Booniehat_khk/
+ 8:00:19 Updating base class ItemCore->H_HelmetB_plain_mcamo, by a3\characters_f\config.bin/cfgWeapons/H_HelmetB_plain_blk/
+ 8:00:19 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Cap_red/
+ 8:00:19 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Bandanna_surfer/
+ 8:00:19 Updating base class ->None, by a3\characters_f\heads\config.bin/CfgGlasses/G_Diving/
+ 8:00:19 Updating base class ->None, by a3\characters_f\heads\config.bin/CfgGlasses/G_Tactical_Clear/
+ 8:00:19 Updating base class ->HMG_01_high_base_F, by a3\static_f\config.bin/CfgVehicles/I_HMG_01_high_F/
+ 8:00:19 Updating base class ->Mortar_01_base_F, by a3\static_f\mortar_01\config.bin/CfgVehicles/I_Mortar_01_F/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_H/
+ 8:00:19 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_L/
+ 8:00:19 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_M/
+ 8:00:19 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_B/
+ 8:00:19 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_H_MG/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Arco/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Hamr/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Aco/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_ACO_grn/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Holosight/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_SOS/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/acc_pointer_IR/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_MRCO/
+ 8:00:19 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_DMS/
+ 8:00:19 Updating base class B_Soldier_04_f->B_Soldier_base_F, by FANTASMA_Units\config.cpp/CfgVehicles/B_Helipilot_F/
+ 8:00:19 Updating base class B_Soldier_05_f->B_Helipilot_F, by FANTASMA_Units\config.cpp/CfgVehicles/B_Pilot_F/
+ 8:00:19 Updating base class Civilian->Man, by rds_a2port_cman\config.bin/CfgVehicles/Civilian_F/
+ 8:00:19 Updating base class Man->Civilian, by unlocked_uniforms\config.bin/CfgVehicles/Civilian_F/
+ 8:00:19 Updating base class ->Helicopter, by a3\air_f\config.bin/CfgVehicles/Helicopter_Base_F/
+ 8:00:19 Updating base class ->Helicopter_Base_F, by a3\air_f\config.bin/CfgVehicles/Helicopter_Base_H/
+ 8:00:19 Updating base class ->Heli_Light_01_base_F, by a3\air_f\heli_light_01\config.bin/CfgVehicles/B_Heli_Light_01_F/
+ 8:00:19 Updating base class ->Heli_Light_02_base_F, by a3\air_f\heli_light_02\config.bin/CfgVehicles/O_Heli_Light_02_F/
+ 8:00:19 Updating base class ->Heli_Light_02_base_F, by a3\air_f\heli_light_02\config.bin/CfgVehicles/O_Heli_Light_02_unarmed_F/
+ 8:00:19 Updating base class ->Heli_Attack_01_base_F, by a3\air_f_beta\heli_attack_01\config.bin/CfgVehicles/B_Heli_Attack_01_F/
+ 8:00:19 Updating base class ->Heli_Transport_01_base_F, by a3\air_f_beta\heli_transport_01\config.bin/CfgVehicles/B_Heli_Transport_01_F/
+ 8:00:19 Updating base class ->Heli_Transport_02_base_F, by a3\air_f_beta\heli_transport_02\config.bin/CfgVehicles/I_Heli_Transport_02_F/
+ 8:00:19 Updating base class ->I_Heli_light_03_unarmed_base_F, by a3\air_f_epb\heli_light_03\config.bin/CfgVehicles/I_Heli_light_03_unarmed_F/
+ 8:00:19 Updating base class ->Car, by a3\armor_f_beta\config.bin/CfgVehicles/Car_F/
+ 8:00:19 Updating base class ->B_APC_Tracked_01_base_F, by a3\armor_f_beta\apc_tracked_01\config.bin/CfgVehicles/B_APC_Tracked_01_rcws_F/
+ 8:00:19 Updating base class ->B_APC_Tracked_01_base_F, by a3\armor_f_beta\apc_tracked_01\config.bin/CfgVehicles/B_APC_Tracked_01_CRV_F/
+ 8:00:19 Updating base class ->O_APC_Tracked_02_base_F, by a3\armor_f_beta\apc_tracked_02\config.bin/CfgVehicles/O_APC_Tracked_02_cannon_F/
+ 8:00:19 Updating base class Optics_Commander_02->Optics_Armored, by a3\armor_f_epb\apc_tracked_03\config.bin/Optics_Commander_03/
+ 8:00:19 Updating base class ->I_MBT_03_base_F, by a3\armor_f_epb\mbt_03\config.bin/CfgVehicles/I_MBT_03_cannon_F/
+ 8:00:19 Updating base class ->B_MBT_01_base_F, by a3\armor_f_gamma\mbt_01\config.bin/CfgVehicles/B_MBT_01_cannon_F/
+ 8:00:19 Updating base class ->Ship_F, by a3\boat_f\config.bin/CfgVehicles/Boat_F/
+ 8:00:19 Updating base class ->Boat_Armed_01_minigun_base_F, by a3\boat_f_beta\boat_armed_01\config.bin/CfgVehicles/I_Boat_Armed_01_minigun_F/
+ 8:00:19 Updating base class ->Ship_F, by a3\boat_f_gamma\boat_civil_01\config.bin/CfgVehicles/Boat_Civil_01_base_F/
+ 8:00:19 Updating base class ->Boat_Civil_01_base_F, by a3\boat_f_gamma\boat_civil_01\config.bin/CfgVehicles/C_Boat_Civil_01_F/
+ 8:00:19 Updating base class ->B_Helipilot_F, by a3\characters_f\common\config.bin/CfgVehicles/B_UAV_AI/
+ 8:00:20 Updating base class ->Car_F, by a3\soft_f\config.bin/CfgVehicles/Truck_F/
+ 8:00:20 Updating base class ->MRAP_01_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/MRAP_01_gmg_base_F/
+ 8:00:20 Updating base class ->MRAP_01_gmg_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/MRAP_01_hmg_base_F/
+ 8:00:20 Updating base class ->MRAP_01_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/B_MRAP_01_F/
+ 8:00:20 Updating base class ->Car_F, by a3\soft_f\offroad_01\config.bin/CfgVehicles/Offroad_01_base_F/
+ 8:00:20 Updating base class ->MRAP_03_base_F, by a3\soft_f_beta\mrap_03\config.bin/CfgVehicles/MRAP_03_hmg_base_F/
+ 8:00:20 Updating base class ->MRAP_03_hmg_base_F, by a3\soft_f_beta\mrap_03\config.bin/CfgVehicles/MRAP_03_gmg_base_F/
+ 8:00:20 Updating base class ->Truck_02_base_F, by a3\soft_f_beta\truck_02\config.bin/CfgVehicles/I_Truck_02_transport_F/
+ 8:00:20 Updating base class ->Car_F, by a3\soft_f_gamma\hatchback_01\config.bin/CfgVehicles/Hatchback_01_base_F/
+ 8:00:20 Updating base class ->Truck_02_base_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_ammo_F/
+ 8:00:20 Updating base class ->Truck_02_base_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_box_F/
+ 8:00:20 Updating base class ->I_Truck_02_box_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_medical_F/
+ 8:00:20 Updating base class ->Truck_02_base_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_fuel_F/
+ 8:00:20 Updating base class ->AA_01_base_F, by a3\static_f\aa_01\config.bin/CfgVehicles/I_static_AA_F/
+ 8:00:20 Updating base class ->AT_01_base_F, by a3\static_f\at_01\config.bin/CfgVehicles/I_static_AT_F/
+ 8:00:20 Updating base class Car_F->LandRover_Base_FFV_F, by pansy\LandRover\config.bin/CfgVehicles/BAF_Offroad_D/
+ 8:00:20 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+ 8:00:20 Updating base class ->UserActions, by a3\air_f_heli\heli_transport_02\config.bin/CfgVehicles/Heli_Transport_02_base_F/UserActions/
+ 8:00:20 Updating base class ->B_APC_Wheeled_01_base_F, by a3\armor_f_beta\apc_wheeled_01\config.bin/CfgVehicles/B_APC_Wheeled_01_cannon_F/
+ 8:00:20 Updating base class ->UGV_01_base_F, by a3\drones_f\soft_f_gamma\ugv_01\config.bin/CfgVehicles/I_UGV_01_F/
+ 8:00:20 Updating base class ->UGV_01_rcws_base_F, by a3\drones_f\soft_f_gamma\ugv_01\config.bin/CfgVehicles/I_UGV_01_rcws_F/
+ 8:00:20 ragdollHitDmgLimit (0.000000) is lower than minimum (0.010000) and it was set to min.
+ 8:00:20 Initializing Steam Manager
+ 8:00:20 ManagerConfig()
+ 8:00:20 Steam Manager initialized.
+ 8:00:20 
+ 8:00:20 ==== Loaded addons ====
+ 8:00:20 
+ 8:00:20 dta\bin.pbo - unknown
+ 8:00:20 dta\core.pbo - 72362
+ 8:00:20 dta\languagecore_f.pbo - 76057
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\altisrpfr.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\bwi_a3_t6.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_equip.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_equip_c.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_equip_t.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_factions.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_ai.pbo - 004
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_arrays.pbo - 003
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_common.pbo - 014
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_diagnostic.pbo - 004
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_events.pbo - 003
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_extended_eventhandlers.pbo - 002
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_hashes.pbo - 004
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_help.pbo - 004
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_keybinding.pbo - 007
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_main.pbo - 012
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_main_a3.pbo - 002
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_network.pbo - 012
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_strings.pbo - 002
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_ui.pbo - 017
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_ui_helper.pbo - 002
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_vectors.pbo - 002
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_versioning.pbo - 002
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_xeh.pbo - 011
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_xeh_a3.pbo - 007
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\fantasma_units.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\fr_items.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\gnt_c185.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\hk430&m4benelli.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\hk430&m4benelli_noaddons.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\ira_pack.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\landrover.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_nw_rifle.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_ru_rifle.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_us_rifle.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_us_rifle_c.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\pg_services_pmc.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\pg_services_pmc_config.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\plp_truckcolors.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rav_lifter_a3.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rds_a2port_civ.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rds_a2port_civ_c.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rds_a2port_cman.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\sab_un2030.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\sakuweaponshake.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\st_stamina_bar.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\task_force_radio.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\task_force_radio_items.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\unlocked_uniforms.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@altisrpfr\addons\uvf_pack.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\@life_server\addons\life_server.pbo - unknown
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\air_f_heli.ebo - 76060
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\anims_f_heli.ebo - 72362
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\boat_f_heli.ebo - 74189
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\cargoposes_f_heli.ebo - 76039
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\data_f_heli.ebo - 76047
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\dubbing_f_heli.ebo - 75138
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\functions_f_heli.ebo - 75918
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\languagemissions_f_heli.ebo - 76057
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\language_f_heli.ebo - 76057
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\missions_f_heli.ebo - 76039
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\missions_f_heli_data.ebo - 75977
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\missions_f_heli_video.ebo - 75065
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\modules_f_heli.ebo - 76039
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\music_f_heli.ebo - 76012
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\music_f_heli_music.ebo - 76012
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\soft_f_heli.ebo - 74189
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\sounds_f_heli.ebo - 75591
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\structures_f_heli.ebo - 75566
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\supplies_f_heli.ebo - 75687
+ 8:00:20 C:\Games\ArmA3\A3Master\heli\addons\ui_f_heli.ebo - 76012
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\anims_f_kart.pbo - 72362
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\characters_f_kart.pbo - 73106
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\data_f_kart.pbo - 75977
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\languagemissions_f_kart.pbo - 73106
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\language_f_kart.pbo - 76053
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\missions_f_kart.pbo - 75687
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\missions_f_kart_data.pbo - 75687
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\modules_f_kart.pbo - 76023
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\modules_f_kart_data.pbo - 74588
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\soft_f_kart.pbo - 74928
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\sounds_f_kart.pbo - 73106
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\structures_f_kart.pbo - 74572
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\ui_f_kart.pbo - 73106
+ 8:00:20 C:\Games\ArmA3\A3Master\kart\addons\weapons_f_kart.pbo - 76039
+ 8:00:20 C:\Games\ArmA3\A3Master\curator\addons\data_f_curator.pbo - 74685
+ 8:00:20 C:\Games\ArmA3\A3Master\curator\addons\functions_f_curator.pbo - 75024
+ 8:00:20 C:\Games\ArmA3\A3Master\curator\addons\language_f_curator.pbo - 73106
+ 8:00:20 C:\Games\ArmA3\A3Master\curator\addons\missions_f_curator.pbo - 75167
+ 8:00:20 C:\Games\ArmA3\A3Master\curator\addons\modules_f_curator.pbo - 75024
+ 8:00:20 C:\Games\ArmA3\A3Master\curator\addons\ui_f_curator.pbo - 75024
+ 8:00:20 addons\a3.pbo - unknown
+ 8:00:20 addons\air_f.pbo - 75994
+ 8:00:20 addons\air_f_beta.pbo - 76060
+ 8:00:20 addons\air_f_epb.pbo - 76010
+ 8:00:20 addons\air_f_epc.pbo - 75399
+ 8:00:20 addons\air_f_gamma.pbo - 75399
+ 8:00:20 addons\air_f_rtd.pbo - 75688
+ 8:00:20 addons\animals_f.pbo - 72362
+ 8:00:20 addons\animals_f_beta.pbo - 72362
+ 8:00:20 addons\anims_f.pbo - 75912
+ 8:00:20 addons\anims_f_bootcamp.pbo - 72362
+ 8:00:20 addons\anims_f_data.pbo - 72362
+ 8:00:20 addons\anims_f_epa.pbo - 72362
+ 8:00:20 addons\anims_f_epc.pbo - 72362
+ 8:00:20 addons\armor_f.pbo - 72362
+ 8:00:20 addons\armor_f_beta.pbo - 75311
+ 8:00:20 addons\armor_f_epb.pbo - 75319
+ 8:00:20 addons\armor_f_epc.pbo - 74356
+ 8:00:20 addons\armor_f_gamma.pbo - 75311
+ 8:00:20 addons\asm.pbo - unknown
+ 8:00:20 addons\baseconfig_f.pbo - 73106
+ 8:00:20 addons\boat_f.pbo - 75400
+ 8:00:20 addons\boat_f_beta.pbo - 74356
+ 8:00:20 addons\boat_f_epc.pbo - 74356
+ 8:00:20 addons\boat_f_gamma.pbo - 74356
+ 8:00:20 addons\cargoposes_f.pbo - 75766
+ 8:00:20 addons\characters_f.pbo - 76014
+ 8:00:20 addons\characters_f_beta.pbo - 74412
+ 8:00:20 addons\characters_f_bootcamp.pbo - 73106
+ 8:00:20 addons\characters_f_epa.pbo - 75270
+ 8:00:20 addons\characters_f_epb.pbo - 73106
+ 8:00:20 addons\characters_f_epc.pbo - 73106
+ 8:00:20 addons\characters_f_gamma.pbo - 73106
+ 8:00:20 addons\data_f.pbo - 75912
+ 8:00:20 addons\data_f_bootcamp.pbo - 74893
+ 8:00:20 addons\drones_f.pbo - 75566
+ 8:00:20 addons\dubbing_f.pbo - 73106
+ 8:00:20 addons\dubbing_f_beta.pbo - 73106
+ 8:00:20 addons\dubbing_f_bootcamp.pbo - 73106
+ 8:00:20 addons\dubbing_f_epa.pbo - 73106
+ 8:00:20 addons\dubbing_f_epb.pbo - 73106
+ 8:00:20 addons\dubbing_f_epc.pbo - 73106
+ 8:00:20 addons\dubbing_f_gamma.pbo - 73106
+ 8:00:20 addons\dubbing_radio_f.pbo - 74779
+ 8:00:20 addons\dubbing_radio_f_data.pbo - 74858
+ 8:00:20 addons\editor_f.pbo - 74164
+ 8:00:20 addons\functions_f.pbo - 76042
+ 8:00:20 addons\functions_f_bootcamp.pbo - 75242
+ 8:00:20 addons\functions_f_epa.pbo - 73434
+ 8:00:20 addons\functions_f_epc.pbo - 73106
+ 8:00:20 addons\languagemissions_f.pbo - 75912
+ 8:00:20 addons\languagemissions_f_beta.pbo - 73106
+ 8:00:20 addons\languagemissions_f_bootcamp.pbo - 73776
+ 8:00:20 addons\languagemissions_f_epa.pbo - 75086
+ 8:00:20 addons\languagemissions_f_epb.pbo - 73841
+ 8:00:20 addons\languagemissions_f_epc.pbo - 75863
+ 8:00:20 addons\languagemissions_f_gamma.pbo - 73106
+ 8:00:20 addons\language_f.pbo - 75994
+ 8:00:20 addons\language_f_beta.pbo - 74145
+ 8:00:20 addons\language_f_bootcamp.pbo - 75106
+ 8:00:20 addons\language_f_epa.pbo - 73106
+ 8:00:20 addons\language_f_epb.pbo - 73106
+ 8:00:20 addons\language_f_epc.pbo - 75722
+ 8:00:20 addons\language_f_gamma.pbo - 73106
+ 8:00:20 addons\map_altis.pbo - 73767
+ 8:00:20 addons\map_altis_data.pbo - 73106
+ 8:00:20 addons\map_altis_data_layers.pbo - 73106
+ 8:00:20 addons\map_altis_data_layers_00_00.pbo - 73106
+ 8:00:20 addons\map_altis_data_layers_00_01.pbo - 73106
+ 8:00:20 addons\map_altis_data_layers_01_00.pbo - 73106
+ 8:00:20 addons\map_altis_data_layers_01_01.pbo - 73106
+ 8:00:20 addons\map_altis_scenes_f.pbo - 73106
+ 8:00:20 addons\map_data.pbo - 73001
+ 8:00:20 addons\map_stratis.pbo - 72244
+ 8:00:20 addons\map_stratis_data.pbo - 73106
+ 8:00:20 addons\map_stratis_data_layers.pbo - 73106
+ 8:00:20 addons\map_stratis_scenes_f.pbo - 73106
+ 8:00:20 addons\map_vr.pbo - 73106
+ 8:00:20 addons\map_vr_scenes_f.pbo - 73106
+ 8:00:20 addons\misc_f.pbo - 74445
+ 8:00:20 addons\missions_f.pbo - 74929
+ 8:00:20 addons\missions_f_beta.pbo - 75566
+ 8:00:20 addons\missions_f_beta_data.pbo - 75473
+ 8:00:20 addons\missions_f_beta_video.pbo - 73106
+ 8:00:20 addons\missions_f_bootcamp.pbo - 75768
+ 8:00:20 addons\missions_f_bootcamp_data.pbo - 72362
+ 8:00:20 addons\missions_f_bootcamp_video.pbo - 75065
+ 8:00:20 addons\missions_f_data.pbo - 73106
+ 8:00:20 addons\missions_f_epa.pbo - 75928
+ 8:00:20 addons\missions_f_epa_data.pbo - 73106
+ 8:00:20 addons\missions_f_epa_video.pbo - 73106
+ 8:00:20 addons\missions_f_epb.pbo - 75913
+ 8:00:20 addons\missions_f_epb_data.pbo - 73106
+ 8:00:20 addons\missions_f_epb_video.pbo - 73106
+ 8:00:20 addons\missions_f_epc.pbo - 75913
+ 8:00:20 addons\missions_f_epc_data.pbo - 73106
+ 8:00:20 addons\missions_f_epc_video.pbo - 73106
+ 8:00:20 addons\missions_f_gamma.pbo - 76039
+ 8:00:20 addons\missions_f_gamma_data.pbo - 73106
+ 8:00:20 addons\missions_f_gamma_video.pbo - 73106
+ 8:00:20 addons\missions_f_video.pbo - 73106
+ 8:00:20 addons\modules_f.pbo - 75373
+ 8:00:20 addons\modules_f_beta.pbo - 73635
+ 8:00:20 addons\modules_f_beta_data.pbo - 73635
+ 8:00:20 addons\modules_f_bootcamp.pbo - 73106
+ 8:00:20 addons\modules_f_data.pbo - 73106
+ 8:00:20 addons\modules_f_epb.pbo - 73106
+ 8:00:20 addons\music_f.pbo - 73106
+ 8:00:20 addons\music_f_bootcamp.pbo - 73106
+ 8:00:20 addons\music_f_bootcamp_music.pbo - 73106
+ 8:00:20 addons\music_f_epa.pbo - 73106
+ 8:00:20 addons\music_f_epa_music.pbo - 73106
+ 8:00:20 addons\music_f_epb.pbo - 73106
+ 8:00:20 addons\music_f_epb_music.pbo - 73106
+ 8:00:20 addons\music_f_epc.pbo - 73106
+ 8:00:20 addons\music_f_epc_music.pbo - 73106
+ 8:00:20 addons\music_f_music.pbo - 73106
+ 8:00:20 addons\plants_f.pbo - 73106
+ 8:00:20 addons\roads_f.pbo - 73001
+ 8:00:20 addons\rocks_f.pbo - 73767
+ 8:00:20 addons\signs_f.pbo - 72273
+ 8:00:20 addons\soft_f.pbo - 76010
+ 8:00:20 addons\soft_f_beta.pbo - 76010
+ 8:00:20 addons\soft_f_bootcamp.pbo - 74362
+ 8:00:20 addons\soft_f_epc.pbo - 76010
+ 8:00:20 addons\soft_f_gamma.pbo - 76010
+ 8:00:20 addons\sounds_f.pbo - 75994
+ 8:00:20 addons\sounds_f_bootcamp.pbo - 73106
+ 8:00:20 addons\sounds_f_epb.pbo - 73106
+ 8:00:20 addons\sounds_f_epc.pbo - 73106
+ 8:00:20 addons\sounds_f_vehicles.pbo - 75994
+ 8:00:20 addons\sounds_f_weapons.pbo - 74194
+ 8:00:20 addons\static_f.pbo - 75918
+ 8:00:20 addons\static_f_beta.pbo - 73106
+ 8:00:20 addons\static_f_gamma.pbo - 73106
+ 8:00:20 addons\structures_f.pbo - 75500
+ 8:00:20 addons\structures_f_bootcamp.pbo - 73467
+ 8:00:20 addons\structures_f_data.pbo - 75500
+ 8:00:20 addons\structures_f_epa.pbo - 73106
+ 8:00:20 addons\structures_f_epb.pbo - 73106
+ 8:00:20 addons\structures_f_epc.pbo - 75500
+ 8:00:20 addons\structures_f_households.pbo - 75500
+ 8:00:20 addons\structures_f_ind.pbo - 75500
+ 8:00:20 addons\structures_f_mil.pbo - 75500
+ 8:00:20 addons\structures_f_wrecks.pbo - 75500
+ 8:00:20 addons\uifonts_f.pbo - 73106
+ 8:00:20 addons\uifonts_f_data.pbo - 73106
+ 8:00:20 addons\ui_f.pbo - 76048
+ 8:00:20 addons\ui_f_bootcamp.pbo - 73106
+ 8:00:20 addons\ui_f_data.pbo - 75977
+ 8:00:20 addons\weapons_f.pbo - 75746
+ 8:00:20 addons\weapons_f_beta.pbo - 72309
+ 8:00:20 addons\weapons_f_bootcamp.pbo - 73106
+ 8:00:20 addons\weapons_f_epa.pbo - 73106
+ 8:00:20 addons\weapons_f_epb.pbo - 73106
+ 8:00:20 addons\weapons_f_epc.pbo - 73106
+ 8:00:20 addons\weapons_f_gamma.pbo - 73106
+ 8:00:20 
+ 8:00:20 =======================
+ 8:00:20 
+ 8:00:20 InitSound ...
+ 8:00:20 InitSound - complete
+ 8:00:20 PhysX3 SDK Init started ...
+ 8:00:20 PhysX3 SDK Init ended.
+ 8:00:26 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+ 8:00:27 Connected to Steam servers
+ 8:15:02 Item STR_Global_Close listed twice
+ 8:15:02 Unsupported language English in stringtable
+ 8:15:02 Item STR_Global_Close listed twice
+ 8:15:02 Unsupported language English in stringtable
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:04 Server error: Player without identity Linus Torvalds (id 581094148)
+ 8:15:18 Starting mission:
+ 8:15:18  Mission file: altisfrrp (__cur_mp)
+ 8:15:18  Mission world: altis
+ 8:15:18  Mission directory: mpmissions\__cur_mp.altis\
+ 8:15:23 Strange convex component08 in a3\structures_f_epb\civ\garbage\garbagecontainer_closed_f.p3d:geometryView
+ 8:15:23 Strange convex component10 in a3\structures_f_epb\civ\garbage\garbagecontainer_closed_f.p3d:geometryView
+ 8:15:23 Strange convex component145 in a3\plants_f\tree\t_pinuss2s_b_f.p3d:geometryView
+ 8:15:23 Strange convex component149 in a3\plants_f\tree\t_pinuss2s_b_f.p3d:geometryView
+ 8:15:24 Strange convex component01 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 8:15:24 Strange convex component02 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 8:15:24 Strange convex component03 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 8:15:24 Strange convex component04 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+ 8:15:27 Attempt to override final function - bis_functions_list
+ 8:15:27 Attempt to override final function - bis_functions_listpreinit
+ 8:15:27 Attempt to override final function - bis_functions_listpostinit
+ 8:15:27 Attempt to override final function - bis_functions_listrecompile
+ 8:15:27 [59284,912.023,0,"XEH: PreInit Started. v1.0.9.140907. MISSINIT: missionName=altisfrrp, worldName=altis, isMultiplayer=true, isServer=true, isDedicated=true"]
+ 8:15:27 [59284,912.149,0,"XEH: PreInit Finished. CACHE DISABLED? (Disable caching with cba_cache_disable.pbo): SLX_XEH_RECOMPILE=false, CBA_COMPILE_RECOMPILE=false, CBA_FUNC_RECOMPILE=false"]
+ 8:15:27 Attempt to override final function - bis_fnc_missiontaskslocal
+ 8:15:27 Attempt to override final function - bis_fnc_missionconversationslocal
+ 8:15:27 Attempt to override final function - bis_fnc_missionflow
+ 8:15:28 Warning: looped for animation: a3\anims_f\data\anim\sdr\idl\knl\stp\low\rfl\aidlpknlmstpslowwrfldnon_g01.rtm differs (looped now 1)! MoveName: aidlpknlmstpsraswrfldnon_g01
+ 8:15:28 Warning: looped for animation: a3\anims_f\data\anim\sdr\idl\knl\stp\low\rfl\aidlpknlmstpslowwrfldnon_g02.rtm differs (looped now 1)! MoveName: aidlpknlmstpsraswrfldnon_g02
+ 8:15:30 No default vars in bin\config.bin/CfgMovesMaleSdr/States/Acts_UnconsciousStandUp_part1.variantsPlayer
+ 8:15:30 No default vars in bin\config.bin/CfgMovesMaleSdr/States/Acts_UnconsciousStandUp_part2.variantsPlayer
+ 8:15:31 Animation a3\cargoposes_f\anim\kia_driver_truck_03.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim1.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idle.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idle1.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol1.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idlepistol.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idlepistol1.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimtopistol.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimtopistol_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimfrompistol.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimfrompistol_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_binoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_binoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_tobinoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_tobinoc_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_frombinoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_frombinoc_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_tobinoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_tobinoc_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_frombinoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_frombinoc_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idleunarmed.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idleunarmed1.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_binoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_tobinoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_tobinoc_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_frombinoc.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_frombinoc_end.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4die.rtm not found or empty
+ 8:15:31 Animation a3\cargoposes_f_heli\anim\passenger_inside_4diepistol.rtm not found or empty
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+ 8:15:31 No owner
+ 8:15:32 No owner
+ 8:15:32 No owner
+ 8:15:32 No owner
+ 8:15:32 No owner
+ 8:15:32 No speaker given for Ali Egwu
+ 8:15:32 No owner
+ 8:15:33 No speaker given for Batou Awolowo
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Ryan Conrad
+ 8:15:33 No owner
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Teshi Kuma
+ 8:15:33 No speaker given for Liao Suan
+ 8:15:33 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Jack Ryan
+ 8:15:33 No owner
+ 8:15:33 No speaker given for William Bayh
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Edward Acker
+ 8:15:33 No owner
+ 8:15:33 No speaker given for George Halliwell
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Omari Madaki
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Jack Jones
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Alfie Young
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Chad Johnson
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Xu Yeo
+ 8:15:33 No owner
+ 8:15:33 No speaker given for Guo Chong
+ 8:15:33 No owner
+ 8:15:33 No owner
+ 8:15:33 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Chris Morris
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Jack Wood
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Ryan White
+ 8:15:34 No speaker given for Xu Chen
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Oliver Faulkner
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Liam Kelly
+ 8:15:34 No owner
+ 8:15:34 No speaker given for William Hughes
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Thomas Williams
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Imre Osmani
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Dwan Bayh
+ 8:15:34 No owner
+ 8:15:34 No speaker given for William Stewart
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Tavish Davis
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Lewis Smith
+ 8:15:34 No owner
+ 8:15:34 No speaker given for Sean Young
+ 8:15:34 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No speaker given for Shawn Faulkner
+ 8:15:35 No owner
+ 8:15:35 No speaker given for Bradley Lewis
+ 8:15:35 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+ 8:15:35 No speaker given for Dumi Okonjo
+ 8:15:35 No speaker given for Imre Ngige
+ 8:15:35 No speaker given for Idi Okoye
+ 8:15:35 No owner
+ 8:15:35 No owner
+ 8:15:35 No speaker given for Davu Kuma
+ 8:15:35 No owner
+ 8:15:36 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+ 8:15:36 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+ 8:15:36 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+ 8:15:36 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+ 8:15:36 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+ 8:15:36 Error: Object(2 : 3) not found
+ 8:15:36 Error: Object(2 : 186) not found
+ 8:15:36 c:\w\stable\futura\lib\network\networkserver.cpp NetworkServer::OnClientStateChanged:NOT IMPLEMENTED - briefing!
+ 8:15:36 [59288,921.666,0,"XEH: PostInit Started"]
+ 8:15:36 [59288,921.681,0,"CBA_VERSIONING: cba=1.0.9.140907, "]
+ 8:15:36 [59288,921.705,0,"XEH: PostInit Finished. State: _isClient=false, _isJip=false, _isDedClient=false, _isServer=true, _isDedServer=true, _playerCheckDone=true, _sp=false, _startInitDone=true, _postInitDone=true, _mpRespawn=true, _machineType=0, _sessionId=1, _level=0, _timeOut=false, _game=3, BIS_functions=L Modules:1, group=L Modules"]
+ 8:15:37 "extDB: Version: 19"
+ 8:15:37 "extDB: Connected to Database"
+ 8:15:37 Strange convex component322 in a3\structures_f\research\dome_big_f.p3d:geometryFire
+ 8:15:37 Strange convex component327 in a3\structures_f\research\dome_big_f.p3d:geometryFire
+ 8:15:37 "ASM.fsm started"
+ 8:15:53 "------------- Client Query Request -------------"
+ 8:15:53 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198035528880'"
+ 8:15:53 "Time to complete: 0.0440063 (in seconds)"
+ 8:15:53 "Result: ["76561198035528880","Linus Torvalds",4133,220500,"0","6","[[`license_civ_driver`,0],[`license_civ_air`,1],[`license_civ_heroin`,1],[`license_civ_marijuana`,1],[`license_civ_gang`,0],[`license_civ_boat`,1],[`license_civ_oil`,0],[`license_civ_dive`,1],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,1],[`license_civ_coke`,1],[`license_civ_diamond`,1],[`license_civ_copper`,0],[`license_civ_iron`,1],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`IRA_Soldier_Outfit_3`,`V_PlateCarrier2_rgr`,`tf_mr3000_rhs`,`G_Balaclava_blk`,`H_Bandanna_camo`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_27`,`ItemGPS`,`NVGoggles`],`arifle_mas_g3`,``,[],[`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`],[],[],[],[`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`
+ 8:15:53 "------------------------------------------------"
+ 8:15:53 "Debug Initialized Weather - Clear\nOvercast: 0.3\nRain/Snow: 0\nFog: 0\nWind EW|NS: 1|1"
+ 8:15:58 Strange convex component53 in a3\structures_f_epb\civ\playground\slidecastle_f.p3d:geometryFire
+ 8:15:58 Strange convex component27 in a3\structures_f_epb\civ\playground\slidecastle_f.p3d:geometryView
+ 8:16:43 Client: Local object 2:1647 not found
+ 8:16:43 Client: Object 2:1647 (type Type_114) not found.
+ 8:16:43 Client: Object 2:1647 (type Type_89) not found.
+ 8:16:45 Client: Object 2:1647 (type Type_89) not found.
+ 8:16:46 Error: Object(2 : 1647) not found
+ 8:16:46 Client: Object 2:1647 (type Type_114) not found.
+ 8:16:46 Error: Object(2 : 1647) not found
+ 8:16:46 Client: Object 2:1647 (type Type_114) not found.
+ 8:16:47 Error: Object(2 : 1647) not found
+ 8:16:47 Client: Object 2:1647 (type Type_89) not found.
+ 8:16:47 Client: Object 2:1647 (type Type_114) not found.
+ 8:16:50 "------------- Client Query Request -------------"
+ 8:16:50 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 8:16:50 "Time to complete: 0.0440063 (in seconds)"
+ 8:16:50 "Result: ["76561198028827014","Joe Straton",43556,1.21694e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_PlateCarrier2_rgr`,`B_AssaultPack_rgr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_5`,`ItemGPS`,`NVGoggles`,`Binocular`],`arifle_mas_aks74u`,``,[],[],[`ToolKit`,`ToolKit`],[],[`optic_SOS`],[`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`30Rnd_mas_545x39_mag`,`30Rnd_mas_545x39_mag`,`30Rnd_mas_545x39_mag`,`30Rnd_mas_545x39_mag`,`30Rnd_mas_545x39_mag`,`30Rnd_mas_545x39_mag`,`30Rnd_mas_545x39_mag`],[``,`acc_flashlight`,`optic_Hamr`]
+ 8:16:50 "------------------------------------------------"
+ 8:18:40 "------------- Client Query Request -------------"
+ 8:18:40 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198035528880' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+ 8:18:40 "Time to complete: 0.373901 (in seconds)"
+ 8:18:40 "Result: [[718,"civ","B_Truck_01_box_F","LandVehicle","76561198035528880",1,0,975812,0,0],[804,"civ","B_Truck_01_box_F","LandVehicle","76561198035528880",1,0,785951,0,1],[939,"civ","C_Offroad_01_F","LandVehicle","76561198035528880",1,0,896634,0,1],[1205,"civ","C_Offroad_01_F","LandVehicle","76561198035528880",1,0,356656,1,1],[1417,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,911064,3,1],[1425,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,941783,0,1],[1426,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,748910,1,1],[1940,"civ","C_Kart_01_Fuel_F","LandVehicle","76561198035528880",1,0,307125,0,1],[2209,"civ","B_G_Offroad_01_F","LandVehicle","76561198035528880",1,0,820970,0,1],[2278,"civ","B_G_Offroad_01_F","LandVehicle","76561198035528880",1,0,933825,0,1]]"
+ 8:18:40 "------------------------------------------------"
+ 8:18:43 "------------- Client Query Request -------------"
+ 8:18:43 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='1417' AND pid='76561198035528880'"
+ 8:18:43 "Time to complete: 0.386963 (in seconds)"
+ 8:18:43 "Result: [1417,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,911064,3,1,"1"]"
+ 8:18:43 "------------------------------------------------"
+ 8:18:43 No owner
+ 8:21:16 Client: Object 3:11 (type Type_88) not found.
+ 8:21:16 Client: Object 3:11 (type Type_89) not found.
+ 8:21:52 " destroy vehicule !"
+ 8:21:52 "insureSystem = 1 "
+ 8:21:52 " Assurer !"
+ 8:21:52 "insureSystem = 1 "
+ 8:24:35 "------------- Client Query Request -------------"
+ 8:24:35 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198028827014' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+ 8:24:35 "Time to complete: 0.370972 (in seconds)"
+ 8:24:35 "Result: [[288,"civ","B_Quadbike_01_F","LandVehicle","76561198028827014",1,0,461208,7,1],[858,"civ","C_Van_01_transport_F","LandVehicle","76561198028827014",1,0,697359,0,1],[884,"civ","C_Offroad_01_F","LandVehicle","76561198028827014",1,0,654788,5,1],[1040,"civ","B_Truck_01_box_F","LandVehicle","76561198028827014",1,0,179730,0,1],[1491,"civ","O_Truck_03_device_F","LandVehicle","76561198028827014",1,0,52632,0,1],[1507,"civ","B_G_Offroad_01_F","LandVehicle","76561198028827014",1,0,44077,0,1],[3430,"civ","BAF_Offroad_D","LandVehicle","76561198028827014",1,0,977702,4,1],[3431,"civ","LandRover_ACR","LandVehicle","76561198028827014",1,0,51831,3,1]]"
+ 8:24:35 "------------------------------------------------"
+ 8:24:45 "------------- Client Query Request -------------"
+ 8:24:45 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198035528880' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+ 8:24:45 "Time to complete: 0.39209 (in seconds)"
+ 8:24:45 "Result: [[718,"civ","B_Truck_01_box_F","LandVehicle","76561198035528880",1,0,975812,0,0],[804,"civ","B_Truck_01_box_F","LandVehicle","76561198035528880",1,0,785951,0,1],[939,"civ","C_Offroad_01_F","LandVehicle","76561198035528880",1,0,896634,0,1],[1205,"civ","C_Offroad_01_F","LandVehicle","76561198035528880",1,0,356656,1,1],[1417,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,911064,3,0],[1425,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,941783,0,1],[1426,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198035528880",1,0,748910,1,1],[1940,"civ","C_Kart_01_Fuel_F","LandVehicle","76561198035528880",1,0,307125,0,1],[2209,"civ","B_G_Offroad_01_F","LandVehicle","76561198035528880",1,0,820970,0,1],[2278,"civ","B_G_Offroad_01_F","LandVehicle","76561198035528880",1,0,933825,0,1]]"
+ 8:24:45 "------------------------------------------------"
+ 8:24:45 "------------- Client Query Request -------------"
+ 8:24:45 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3431' AND pid='76561198028827014'"
+ 8:24:45 "Time to complete: 0.0419922 (in seconds)"
+ 8:24:45 "Result: [3431,"civ","LandRover_ACR","LandVehicle","76561198028827014",1,0,51831,3,1,"0.710081"]"
+ 8:24:45 "------------------------------------------------"
+ 8:25:47 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f_beta\acc\acco_hamr_f.p3d]
+ 8:25:55 Client: Remote object 4:0 not found
+ 8:25:57 Error: Object(3 : 13) not found
+ 8:26:02 Error: Object(3 : 14) not found
+ 8:27:32 Client: Local object 2:1736 not found
+ 8:27:32 Client: Object 2:1736 (type Type_89) not found.
+ 8:27:32 Client: Object 2:1736 (type Type_114) not found.
+ 8:27:35 Error: Object(2 : 1736) not found
+ 8:27:35 Client: Object 2:1736 (type Type_114) not found.
+ 8:27:35 Client: Object 2:1736 (type Type_89) not found.
+ 8:27:35 Error: Object(2 : 1736) not found
+ 8:27:35 Client: Object 2:1736 (type Type_114) not found.
+ 8:27:39 Error: Object(2 : 1736) not found
+ 8:27:39 Client: Object 2:1736 (type Type_89) not found.
+ 8:27:39 Client: Object 2:1736 (type Type_114) not found.
+ 8:27:45 "------------- Client Query Request -------------"
+ 8:27:45 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 8:27:45 "Time to complete: 0.370972 (in seconds)"
+ 8:27:45 "Result: ["76561198028827014","Joe Straton",43556,1.21729e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_PlateCarrier2_rgr`,`B_AssaultPack_rgr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],`arifle_mas_aks74u`,``,[],[`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`],[`ToolKit`,`ToolKit`],[],[`optic_SOS`],[`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`20Rnd_mas_762x51_Stanag`,`30Rnd_mas_545x39_mag`],[``,`acc_flashlight`,`optic_Hamr`],[],[`life_inv_water`,`life_inv_water`,`life_inv_tbacon`,`lif
+ 8:27:45 "------------------------------------------------"
+ 8:28:47 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f_beta\acc\acco_hamr_f.p3d]
+ 8:33:30 Server: Object 3:25 not found (message Type_324)
+ 8:33:30 Server: Object 3:25 not found (message Type_325)
+ 8:35:19 No owner
+ 8:35:24 "------------- Client Query Request -------------"
+ 8:35:24 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198060298752'"
+ 8:35:24 "Time to complete: 0.0439453 (in seconds)"
+ 8:35:24 "Result: ["76561198060298752","PierreGalet",0,70280,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,1],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_IG_Guerilla3_1`,``,`B_Carryall_cbr`,``,`H_Booniehat_tan`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_58`,`NVGoggles`],``,``,[`FirstAidKit`],[],[],[],[],[],[],[],[`life_inv_apple`,`life_inv_apple`,`life_inv_apple`,`life_inv_apple`,`life_inv_apple`,`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_pickaxe`]]",0,"0","0",[],1,1]"
+ 8:35:24 "------------------------------------------------"
+ 8:35:28 Error: Object(6 : 3) not found
+ 8:36:37 "------------- Client Query Request -------------"
+ 8:36:37 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198060298752' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+ 8:36:37 "Time to complete: 0.393066 (in seconds)"
+ 8:36:37 "Result: [[3955,"civ","BAF_Offroad_D","LandVehicle","76561198060298752",1,0,603067,0,1]]"
+ 8:36:37 "------------------------------------------------"
+ 8:36:40 "------------- Client Query Request -------------"
+ 8:36:40 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3955' AND pid='76561198060298752'"
+ 8:36:40 "Time to complete: 0.373779 (in seconds)"
+ 8:36:40 "Result: [3955,"civ","BAF_Offroad_D","LandVehicle","76561198060298752",1,0,603067,0,1,"0.964298"]"
+ 8:36:40 "------------------------------------------------"
+ 8:41:04 Error: Object(5 : 13) not found
+ 8:45:40 Error: Object(6 : 5) not found
+ 8:49:54 Client: Remote object 5:0 not found
+ 8:54:12 Server: Object info 2:1834 not found.
+ 8:54:12 Can't change owner from 0 to 394028783
+ 8:54:14 "------------- Client Query Request -------------"
+ 8:54:14 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 8:54:14 "Time to complete: 0.375 (in seconds)"
+ 8:54:14 "Result: ["76561198028827014","Joe Straton",43556,1.21869e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],`arifle_mas_g3`,``,[],[`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`],[`arifle_mas_m1014`],[`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`10Rnd_mas_76
+ 8:54:14 "------------------------------------------------"
+ 8:54:28 Error: Object(7 : 8) not found
+ 8:56:11 Error: Object(7 : 9) not found
+ 8:56:50 Client: Remote object 7:0 not found
+ 8:58:40 "------------- Client Query Request -------------"
+ 8:58:40 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 8:58:40 "Time to complete: 0.373047 (in seconds)"
+ 8:58:40 "Result: ["76561198028827014","Joe Straton",43556,1.21869e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[],[`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`,`10Rnd_mas_762x54_mag`],[],[],[],[],[`life_inv_wat
+ 8:58:40 "------------------------------------------------"
+ 8:59:11 Error: Object(8 : 8) not found
+ 9:00:05 Error: Object(8 : 9) not found
+ 9:00:40 Error: Object(8 : 10) not found
+ 9:03:51 Client: Remote object 8:0 not found
+ 9:05:00 Client: Local object 2:1996 not found
+ 9:05:00 Client: Object 2:1996 (type Type_89) not found.
+ 9:05:00 Client: Object 2:1996 (type Type_114) not found.
+ 9:05:02 Error: Object(2 : 1996) not found
+ 9:05:02 Client: Object 2:1996 (type Type_114) not found.
+ 9:05:02 Client: Object 2:1996 (type Type_89) not found.
+ 9:05:05 Error: Object(2 : 1996) not found
+ 9:05:05 Client: Object 2:1996 (type Type_114) not found.
+ 9:05:06 Client: Object 2:1996 (type Type_89) not found.
+ 9:05:06 Error: Object(2 : 1996) not found
+ 9:05:06 Client: Object 2:1996 (type Type_114) not found.
+ 9:05:08 "------------- Client Query Request -------------"
+ 9:05:08 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198124106427'"
+ 9:05:08 "Time to complete: 0.391113 (in seconds)"
+ 9:05:08 "Result: ["76561198124106427","Tanner Hutchinson",0,26300,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_I_HeliPilotCoveralls`,`V_BandollierB_blk`,`B_Carryall_cbr`,`G_Aviator`,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_49`,`ItemGPS`],``,``,[`NVGoggles`],[],[`ToolKit`],[],[`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`],[],[],[],[`life_inv_rabbit`,`life_inv_water`,`life_inv_pickaxe`]]",0,"0","0",[],1,1]"
+ 9:05:08 "------------------------------------------------"
+ 9:05:10 Error: Object(9 : 3) not found
+ 9:05:31 "------------- Client Query Request -------------"
+ 9:05:31 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 9:05:31 "Time to complete: 0.0419922 (in seconds)"
+ 9:05:31 "Result: ["76561198028827014","Joe Straton",43556,1.21904e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[`arifle_mas_m1014`],[`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`],[],[],[],[],[`life_inv_water`,`life_inv_water`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv
+ 9:05:31 "------------------------------------------------"
+ 9:05:36 Error: Object(10 : 7) not found
+ 9:06:45 Client: Remote object 10:0 not found
+ 9:07:01 Error: Object(9 : 6) not found
+ 9:07:05 "------------- Client Query Request -------------"
+ 9:07:05 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198124106427' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+ 9:07:05 "Time to complete: 0.0439453 (in seconds)"
+ 9:07:05 "Result: [[3862,"civ","BAF_Offroad_D","LandVehicle","76561198124106427",1,0,16833,4,1]]"
+ 9:07:05 "------------------------------------------------"
+ 9:07:08 "------------- Client Query Request -------------"
+ 9:07:08 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3862' AND pid='76561198124106427'"
+ 9:07:08 "Time to complete: 0.0441895 (in seconds)"
+ 9:07:08 "Result: [3862,"civ","BAF_Offroad_D","LandVehicle","76561198124106427",1,0,16833,4,1,"0.983458"]"
+ 9:07:08 "------------------------------------------------"
+ 9:08:37 "------------- Client Query Request -------------"
+ 9:08:37 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 9:08:37 "Time to complete: 0.37207 (in seconds)"
+ 9:08:37 "Result: ["76561198028827014","Joe Straton",43556,1.21904e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[`arifle_mas_m1014`],[`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`],[],[],[],[],[`life_inv_water`,`life_inv_water`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv
+ 9:08:37 "------------------------------------------------"
+ 9:08:40 Error: Object(11 : 5) not found
+ 9:09:58 Client: Remote object 11:0 not found
+ 9:12:03 Server: Object info 2:2177 not found.
+ 9:12:03 Can't change owner from 0 to 1496055232
+ 9:12:11 "------------- Client Query Request -------------"
+ 9:12:11 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 9:12:11 "Time to complete: 0.393066 (in seconds)"
+ 9:12:11 "Result: ["76561198028827014","Joe Straton",43556,1.21904e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[`arifle_mas_m1014`],[`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`],[],[],[],[],[`life_inv_water`,`life_inv_water`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv
+ 9:12:11 "------------------------------------------------"
+ 9:12:14 Server: Object info 12:5 not found.
+ 9:12:14 Can't change owner from 0 to 1496055232
+ 9:12:14 Error: Object(12 : 5) not found
+ 9:12:14 Error: Object(12 : 5) not found
+ 9:12:14 Error: Object(12 : 6) not found
+ 9:13:08 Error: Object(12 : 9) not found
+ 9:17:23 Client: Remote object 12:0 not found
+ 9:19:09 Server: Object info 2:2261 not found.
+ 9:19:09 Can't change owner from 0 to 1917927245
+ 9:19:11 "------------- Client Query Request -------------"
+ 9:19:11 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 9:19:11 "Time to complete: 0.0429688 (in seconds)"
+ 9:19:11 "Result: ["76561198028827014","Joe Straton",43556,1.21939e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[`arifle_mas_m1014`,`arifle_mas_g3`],[`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`],[],[],[],[],[`life_inv_water`,`lif
+ 9:19:11 "------------------------------------------------"
+ 9:19:56 Client: Remote object 13:0 not found
+ 9:21:38 "------------- Client Query Request -------------"
+ 9:21:38 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 9:21:38 "Time to complete: 0.0439453 (in seconds)"
+ 9:21:38 "Result: ["76561198028827014","Joe Straton",43556,1.21939e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[`arifle_mas_m1014`,`arifle_mas_g3`],[`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`],[],[],[],[],[`life_inv_water`,`lif
+ 9:21:38 "------------------------------------------------"
+ 9:22:21 Client: Remote object 14:0 not found
+ 9:24:09 "------------- Client Query Request -------------"
+ 9:24:09 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198028827014'"
+ 9:24:09 "Time to complete: 0.388184 (in seconds)"
+ 9:24:09 "Result: ["76561198028827014","Joe Straton",43556,1.21939e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,1],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,1],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_ME_FATIGUES_01d`,`V_HarnessO_brn`,`B_Carryall_cbr`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_2`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[],[],[`arifle_mas_m1014`,`arifle_mas_g3`],[`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`],[],[],[],[],[`life_inv_water`,`lif
+ 9:24:09 "------------------------------------------------"
+ 9:24:14 Client: Remote object 9:0 not found
+ 9:24:15 Warning: Cleanup player - person 2:1997 not found
+ 9:24:16 Warning: Cleanup player - person 2:1997 not found
+ 9:24:21 Error: Object(15 : 8) not found
+ 9:25:50 Error: Object(15 : 10) not found
+ 9:27:00 Server: Object info 2:2510 not found.
+ 9:27:00 Can't change owner from 0 to 1341913487
+ 9:27:05 "------------- Client Query Request -------------"
+ 9:27:05 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561197987711054'"
+ 9:27:05 "Time to complete: 0.0410156 (in seconds)"
+ 9:27:05 "Result: ["76561197987711054","Amanuel Mewael",0,204260,"0","4","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,1],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,0],[`license_civ_rebel`,1],[`license_civ_coke`,1],[`license_civ_diamond`,1],[`license_civ_copper`,0],[`license_civ_iron`,1],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_CAF_AG_EEUR_FATIGUES_03b`,`V_PlateCarrierIA2_dgtl`,`B_TacticalPack_oli`,``,`H_caf_ag_turban`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_55`,`ItemGPS`,`NVGoggles`,`Binocular`],`arifle_mas_akms_c`,``,[],[],[`ToolKit`,`optic_Hamr`],[],[],[`30Rnd_mas_762x39_mag`,`30Rnd_mas_762x39_mag`,`30Rnd_mas_762x39_mag`,`30Rnd_mas_762x39_mag`,`30Rnd_mas_762x39_mag`,`30Rnd_mas_762x39_mag`,`30Rnd_mas_762x39_mag`],[``,``,``],[],[]]",1,"3","1",[],1,1]"
+ 9:27:05 "------------------------------------------------"
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 1c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 2c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 3c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 4c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 5c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 6c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 7c not found
+ 9:40:19 Wrong vertex mapping for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Selection 8c not found
+ 9:40:19 Wrong geometry convex component mapping  for person collision geometry found in a3\characters_f\civil\c_nikos.p3d. Convex component number 3. not found
+ 9:40:22 Array mat in bin\config.bin/CfgVehicles/IRA_Soldier_Outfit_7/Wounds/ not multiply of 3
+ 9:40:23 Array mat in bin\config.bin/CfgVehicles/UVF_Soldier_Outfit_4/Wounds/ not multiply of 3
+ 9:45:21 Client: Remote object 6:0 not found
+ 9:45:22 Warning: Cleanup player - person 2:1821 not found
+ 9:45:26 Warning: Cleanup player - person 2:1821 not found
+10:03:53 Error: Object(15 : 18) not found
+10:04:38 "Query: INSERT INTO messages (fromID, toID, message, fromName, toName) VALUES('76561197987711054', '76561198028827014', '"Tes ou?"', 'Amanuel Mewael', 'Joe Straton')"
+10:13:56 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:56 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:56 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:56 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:57 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:57 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:57 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:13:57 (6200 [receivedMagazine]): Network sync error - NMTFireWeapon
+10:23:31 Client: Remote object 15:0 not found
+10:23:33 Warning: Cleanup player - person 2:2422 not found
+10:23:34 Warning: Cleanup player - person 2:2422 not found
+10:23:36 Client: Remote object 16:0 not found
+10:23:37 Warning: Cleanup player - person 2:2505 not found
+10:23:38 Warning: Cleanup player - person 2:2505 not found
+10:26:53 No owner
+10:26:53 Client: Local object 2:2530 not found
+10:26:53 Client: Object 2:2530 (type Type_89) not found.
+10:26:53 Client: Object 2:2530 (type Type_114) not found.
+10:27:35 Client: Object 2:2530 (type Type_89) not found.
+10:27:36 Error: Object(2 : 2530) not found
+10:27:36 Error: Object(2 : 2530) not found
+10:27:36 Client: Object 2:2530 (type Type_114) not found.
+10:27:36 Client: Object 2:2530 (type Type_89) not found.
+10:27:36 Client: Object 2:2530 (type Type_114) not found.
+10:27:38 "------------- Client Query Request -------------"
+10:27:38 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198030608871'"
+10:27:38 "Time to complete: 0.388672 (in seconds)"
+10:27:38 "Result: ["76561198030608871","Maxime Burel",0,35514,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Poloshirt_tricolour`,``,`B_Kitbag_mcamo`,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_50`],``,``,[`Binocular`],[],[],[],[],[],[],[],[`life_inv_rabbit`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_water`,`life_inv_pickaxe`]]",0,"0","0",[],1,1]"
+10:27:38 "------------------------------------------------"
+10:28:01 Client: Remote object 18:0 not found
+10:41:14 "------------- Client Query Request -------------"
+10:41:14 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198027028921'"
+10:41:14 "Time to complete: 0.390625 (in seconds)"
+10:41:14 "Result: ["76561198027028921","Pong Niaouli",0,1.52039e+006,"0","3","[[`license_civ_driver`,1],[`license_civ_air`,1],[`license_civ_heroin`,1],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,0],[`license_civ_rebel`,1],[`license_civ_coke`,1],[`license_civ_diamond`,1],[`license_civ_copper`,0],[`license_civ_iron`,1],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_IG_leader`,`V_TacVest_blk`,`B_Carryall_cbr`,`G_Balaclava_blk`,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_7`,`ItemGPS`,`NVGoggles`,`Binocular`],`arifle_mas_m4_gl`,``,[],[],[`FirstAidKit`,`acc_pointer_IR`,`rds_worker_cap4`],[],[`FirstAidKit`],[`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`],[``,`acc_flashlight`,`optic_MRCO`],[],[]]",1,"2","1",[
+10:41:14 "------------------------------------------------"
+10:48:00 No owner
+10:48:00 Client: Local object 2:2571 not found
+10:48:00 Client: Object 2:2571 (type Type_89) not found.
+10:48:00 Client: Object 2:2571 (type Type_114) not found.
+10:48:03 Client: Object 2:2571 (type Type_89) not found.
+10:48:03 Error: Object(2 : 2571) not found
+10:48:03 Client: Object 2:2571 (type Type_114) not found.
+10:48:22 Error: Object(2 : 2571) not found
+10:48:22 Client: Object 2:2571 (type Type_114) not found.
+10:48:29 Error: Object(2 : 2571) not found
+10:48:29 Client: Object 2:2571 (type Type_89) not found.
+10:48:29 Client: Object 2:2571 (type Type_114) not found.
+10:48:29 "------------- Client Query Request -------------"
+10:48:29 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198027028921' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+10:48:29 "Time to complete: 0.0419922 (in seconds)"
+10:48:29 "Result: [[339,"civ","B_Quadbike_01_F","LandVehicle","76561198027028921",1,0,531765,5,1],[446,"civ","C_Offroad_01_F","LandVehicle","76561198027028921",1,0,174935,4,1],[694,"civ","C_Van_01_transport_F","LandVehicle","76561198027028921",1,0,234214,0,1],[725,"civ","B_Truck_01_box_F","LandVehicle","76561198027028921",1,0,279629,0,1],[1139,"civ","C_Offroad_01_F","LandVehicle","76561198027028921",1,0,892790,2,1],[1346,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198027028921",1,0,325433,3,1],[1347,"civ","C_Hatchback_01_sport_F","LandVehicle","76561198027028921",1,0,110863,0,0],[2007,"civ","B_G_Offroad_01_F","LandVehicle","76561198027028921",1,0,488940,0,1]]"
+10:48:29 "------------------------------------------------"
+10:48:32 "------------- Client Query Request -------------"
+10:48:32 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='725' AND pid='76561198027028921'"
+10:48:32 "Time to complete: 0.391602 (in seconds)"
+10:48:32 "Result: [725,"civ","B_Truck_01_box_F","LandVehicle","76561198027028921",1,0,279629,0,1,"0.877309"]"
+10:48:32 "------------------------------------------------"
+10:48:39 "------------- Client Query Request -------------"
+10:48:39 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+10:48:39 "Time to complete: 0.393555 (in seconds)"
+10:48:39 "Result: ["76561198085219628","Chris Fulavalacci",1000,1.24996e+006,"0","0","[[`license_cop_air`,0],[`license_cop_swat`,0],[`license_cop_cg`,0],[`license_cop_snipe`,0],[`license_cop_piloteauto`,0]]","2","[`ARC_FR_Daguet_Uniform`,`ARC_FR_Daguet_PlateCarrier_1`,`ARC_FR_Kitbag_compact_Daguet`,`G_Shades_Blue`,`sab_UN_Helmet`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc152_4`,`ItemGPS`],`arifle_mas_hk416_gl_d`,`hgun_P07_snds_F`,[`NVGoggles_OPFOR`],[],[`ARC_FR_Daguet_Mich`,`Medikit`,`ToolKit`],[],[`FirstAidKit`,`FirstAidKit`],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`],[``,`acc_flashlight`,`optic_Arco`],[`muzzle_snds_L`,``,``],[`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,
+10:48:39 "------------------------------------------------"
+10:51:05 "------------- Client Query Request -------------"
+10:51:05 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198085219628' AND alive='1' AND active='0' AND side='cop' AND type='LandVehicle'"
+10:51:05 "Time to complete: 0.371094 (in seconds)"
+10:51:05 "Result: [[728,"cop","sab_UN_Car","LandVehicle","76561198085219628",1,0,116327,0,1],[734,"cop","sab_UN_Car","LandVehicle","76561198085219628",1,0,953927,0,1],[961,"cop","sab_UN_Car","LandVehicle","76561198085219628",1,0,117278,0,1],[1161,"cop","sab_UN_Car","LandVehicle","76561198085219628",1,0,692048,0,1],[1526,"cop","sab_UN_Offroad","LandVehicle","76561198085219628",1,0,716123,0,1],[2946,"cop","sab_UN_Offroad","LandVehicle","76561198085219628",1,0,505561,0,1]]"
+10:51:05 "------------------------------------------------"
+10:51:08 "------------- Client Query Request -------------"
+10:51:08 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='1526' AND pid='76561198085219628'"
+10:51:08 "Time to complete: 0.375 (in seconds)"
+10:51:08 "Result: [1526,"cop","sab_UN_Offroad","LandVehicle","76561198085219628",1,0,716123,0,1,"0.739189"]"
+10:51:08 "------------------------------------------------"
+10:57:59 Client: Remote object 20:0 not found
+10:58:01 Warning: Cleanup player - person 2:2572 not found
+10:58:02 Warning: Cleanup player - person 2:2572 not found
+11:00:03 No owner
+11:00:09 "------------- Client Query Request -------------"
+11:00:09 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+11:00:09 "Time to complete: 0.0429688 (in seconds)"
+11:00:09 "Result: ["76561198085219628","Chris Fulavalacci",1000,1.25046e+006,"0","0","[[`license_cop_air`,0],[`license_cop_swat`,0],[`license_cop_cg`,0],[`license_cop_snipe`,0],[`license_cop_piloteauto`,0]]","2","[`ARC_FR_Daguet_Uniform`,`ARC_FR_Daguet_PlateCarrier_1`,`ARC_FR_Kitbag_compact_Daguet`,`G_Shades_Blue`,`sab_UN_Helmet`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc152_1`,`ItemGPS`,`Rangefinder`],`arifle_mas_hk416_gl_d`,`hgun_P07_snds_F`,[],[`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`],[`ToolKit`,`FirstAidKit`,`FirstAidKit`,`hgun_mas_glock_F`],[`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`],[],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`1Rnd_SmokeBlue_Grenade_shell`,`1Rnd_SmokeBlue_Grenade_s
+11:00:09 "------------------------------------------------"
+11:07:05 "Query: INSERT INTO messages (fromID, toID, message, fromName, toName) VALUES('76561198085219628', '76561198027028921', '"Bonjour Monsieur heuresement que lile est endormie car la radio cryptée a perdu le signal denvoi. ONU"', 'Chris Fulavalacci', 'Pong Niaouli')"
+11:09:07 Client: Remote object 21:0 not found
+11:09:08 Warning: Cleanup player - person 2:2581 not found
+11:09:21 No owner
+11:09:23 "------------- Client Query Request -------------"
+11:09:23 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+11:09:23 "Time to complete: 0.373047 (in seconds)"
+11:09:23 "Result: ["76561198085219628","Chris Fulavalacci",1000,1.25096e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,1],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[``,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`],``,``,[],[],[],[],[],[],[],[],[`life_inv_pickaxe`]]",0,"0","0","[3321.85,12961.5,0.00131655]",1,0]"
+11:09:23 "------------------------------------------------"
+11:10:26 Error: Object(21 : 20) not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 1c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 2c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 3c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 4c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 5c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 6c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 7c not found
+11:10:46 Wrong vertex mapping for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Selection 8c not found
+11:10:46 Wrong geometry convex component mapping  for person collision geometry found in a3\characters_f_epc\civil\c_nikos_aged.p3d. Convex component number 3. not found
+11:11:05 Error: Object(21 : 100) not found
+11:13:02 "Query: INSERT INTO messages (fromID, toID, message, fromName, toName) VALUES('76561198027028921', '76561198085219628', '"**HRP** effectivement.. mais avec le task force il est possible quon soit kick je pense vu que le ts ne fonctionne pas.. je tai écrit hrp car je ne suis pas censé avoir ton numéro personnel HRP***"', 'Pong Niaouli', 'Chris Fulavalacci')"
+11:13:37 Warning: Cleanup player - person 2:2584 not found
+11:13:47 No owner
+11:13:47 Client: Local object 2:2589 not found
+11:13:47 Client: Object 2:2589 (type Type_114) not found.
+11:13:47 Client: Object 2:2589 (type Type_89) not found.
+11:13:48 Client: Object 2:2589 (type Type_89) not found.
+11:13:48 Error: Object(2 : 2589) not found
+11:13:48 Client: Object 2:2589 (type Type_114) not found.
+11:13:48 Error: Object(2 : 2589) not found
+11:13:48 Client: Object 2:2589 (type Type_114) not found.
+11:13:48 Error: Object(2 : 2589) not found
+11:13:48 Client: Object 2:2589 (type Type_89) not found.
+11:13:48 Client: Object 2:2589 (type Type_114) not found.
+11:13:52 "------------- Client Query Request -------------"
+11:13:52 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+11:13:52 "Time to complete: 0.391602 (in seconds)"
+11:13:52 "Result: ["76561198085219628","Chris Fulavalacci",111000,1.14096e+006,"0","0","[[`license_cop_air`,0],[`license_cop_swat`,0],[`license_cop_cg`,0],[`license_cop_snipe`,0],[`license_cop_piloteauto`,0]]","2","[`ARC_FR_Daguet_Uniform`,`ARC_FR_Daguet_PlateCarrier_1`,`ARC_FR_Kitbag_compact_Daguet`,`G_Shades_Blue`,`sab_UN_Helmet`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc152_1`,`ItemGPS`,`Rangefinder`],`arifle_mas_hk416_gl_d`,`hgun_P07_snds_F`,[],[`30Rnd_mas_556x45_Stanag`],[`ToolKit`,`FirstAidKit`,`FirstAidKit`,`hgun_mas_glock_F`],[`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`,`17Rnd_mas_9x21_Mag`],[],[`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556x45_Stanag`,`16Rnd_9x21_Mag`,`30Rnd_mas_556x45_Stanag`,`1Rnd_SmokeBlue_Grenade_shell`,`16Rnd_9x21_Mag`,`1Rnd_SmokeBlue_Grenade_shell`,`30Rnd_mas_556x45_Stanag`,`30Rnd_mas_556
+11:13:52 "------------------------------------------------"
+11:14:57 Warning: Cleanup player - person 2:2590 not found
+11:15:33 Warning: Cleanup player - person 2:2590 not found
+11:18:24 No owner
+11:18:36 "------------- Client Query Request -------------"
+11:18:36 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+11:18:36 "Time to complete: 0.0419922 (in seconds)"
+11:18:36 "Result: ["76561198085219628","Chris Fulavalacci",111000,1.14096e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,1],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[``,``,``,``,``,[`tf_microdagr`],``,``,[],[],[],[],[],[],[],[],[`life_inv_pickaxe`]]",0,"0","0","[3318.97,12959.6,0.00151801]",1,0]"
+11:18:36 "------------------------------------------------"
+11:18:40 NetServer::SendMsg: cannot find channel #738399232, users.card=1
+11:18:40 NetServer: users.get failed when sending to 738399232
+11:18:40 Message not sent - error 0, message ID = ffffffff, to 738399232 (Chris Fulavalacci)
+11:18:40 Client: Remote object 22:0 not found
+11:24:06 No owner
+11:24:06 Client: Local object 2:2600 not found
+11:24:06 Client: Object 2:2600 (type Type_89) not found.
+11:24:06 Client: Object 2:2600 (type Type_114) not found.
+11:24:07 Client: Object 2:2600 (type Type_89) not found.
+11:24:07 Error: Object(2 : 2600) not found
+11:24:07 Client: Object 2:2600 (type Type_114) not found.
+11:24:07 Error: Object(2 : 2600) not found
+11:24:07 Client: Object 2:2600 (type Type_114) not found.
+11:24:08 Error: Object(2 : 2600) not found
+11:24:08 Client: Object 2:2600 (type Type_89) not found.
+11:24:08 Client: Object 2:2600 (type Type_114) not found.
+11:24:13 "------------- Client Query Request -------------"
+11:24:13 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+11:24:13 "Time to complete: 0.392578 (in seconds)"
+11:24:13 "Result: ["76561198085219628","Chris Fulavalacci",111000,1.14096e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,1],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[``,``,``,``,``,[`tf_microdagr`],``,``,[],[],[],[],[],[],[],[],[`life_inv_pickaxe`]]",0,"0","0","[3318.97,12959.6,0.00151801]",1,0]"
+11:24:13 "------------------------------------------------"
+11:24:49 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f_beta\acc\acco_arco_f.p3d]
+11:34:40 "------------- Client Query Request -------------"
+11:34:40 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198085219628' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+11:34:40 "Time to complete: 0.0439453 (in seconds)"
+11:34:40 "Result: [[347,"civ","B_Quadbike_01_F","LandVehicle","76561198085219628",1,0,155715,6,1],[357,"civ","C_Offroad_01_F","LandVehicle","76561198085219628",1,0,110815,5,1]]"
+11:34:40 "------------------------------------------------"
+11:34:43 "------------- Client Query Request -------------"
+11:34:43 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198085219628' AND alive='1' AND active='0' AND side='civ' AND type='Air'"
+11:34:43 "Time to complete: 0.37207 (in seconds)"
+11:34:43 "Result: []"
+11:34:43 "------------------------------------------------"
+11:35:59 "------------- Client Query Request -------------"
+11:35:59 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198085219628' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+11:35:59 "Time to complete: 0.0458984 (in seconds)"
+11:35:59 "Result: [[347,"civ","B_Quadbike_01_F","LandVehicle","76561198085219628",1,0,155715,6,1],[357,"civ","C_Offroad_01_F","LandVehicle","76561198085219628",1,0,110815,5,1]]"
+11:35:59 "------------------------------------------------"
+11:36:02 "------------- Client Query Request -------------"
+11:36:02 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='347' AND pid='76561198085219628'"
+11:36:02 "Time to complete: 0.0458984 (in seconds)"
+11:36:02 "Result: [347,"civ","B_Quadbike_01_F","LandVehicle","76561198085219628",1,0,155715,6,1,"1"]"
+11:36:02 "------------------------------------------------"
+11:39:53 " destroy vehicule !"
+11:39:53 "insureSystem = 1 "
+11:39:53 " Assurer !"
+11:39:53 "insureSystem = 1 "
+11:41:09 Client: Remote object 23:0 not found
+11:41:10 Warning: Cleanup player - person 2:2601 not found
+11:41:26 No owner
+11:41:27 "------------- Client Query Request -------------"
+11:41:27 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr FROM players WHERE playerid='76561198085219628'"
+11:41:27 "Time to complete: 0.0458984 (in seconds)"
+11:41:27 "Result: ["76561198085219628","Chris Fulavalacci",1000,1.21638e+006,"0","0","[[`license_cop_air`,0],[`license_cop_swat`,0],[`license_cop_cg`,0],[`license_cop_snipe`,0],[`license_cop_piloteauto`,0]]","2","[``,``,``,``,``,[],``,``,[],[],[],[],[],[],[],[],[`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_donuts`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_coffee`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`,`life_inv_redgull`]]","[4955.53,10207.3,0.00150013]",1,0]"
+11:41:27 "------------------------------------------------"
+11:41:38 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f_beta\acc\acco_arco_f.p3d]
+11:43:31 Warning: Cleanup player - person 2:2610 not found
+11:43:32 Warning: Cleanup player - person 2:2610 not found
+12:16:10 No owner
+12:16:15 "------------- Client Query Request -------------"
+12:16:15 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198024074245'"
+12:16:15 "Time to complete: 0.37207 (in seconds)"
+12:16:15 "Result: ["76561198024074245","Valherus kulinski",15210,1.05355e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Driver_2`,``,`B_Carryall_cbr`,``,`H_Cap_blu`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_30`,`ItemGPS`,`Binocular`],``,``,[`FirstAidKit`,`FirstAidKit`],[],[`NVGoggles`,`H_Bandanna_surfer`,`FirstAidKit`,`FirstAidKit`],[`30Rnd_9x21_Mag`],[],[],[],[],[`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_water`,`life_inv_water`,`life_inv_water`]]",0,"0","0",[],1,1]"
+12:16:15 "------------------------------------------------"
+12:19:46 "------------- Client Query Request -------------"
+12:19:46 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198024074245' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+12:19:46 "Time to complete: 0.391602 (in seconds)"
+12:19:46 "Result: [[3262,"civ","B_Quadbike_01_F","LandVehicle","76561198024074245",1,0,242915,7,1],[3542,"civ","C_Offroad_01_F","LandVehicle","76561198024074245",1,0,842664,9,1],[3723,"civ","C_Van_01_transport_F","LandVehicle","76561198024074245",1,0,780706,0,1],[3750,"civ","C_Kart_01_Red_F","LandVehicle","76561198024074245",1,0,936199,0,1]]"
+12:19:46 "------------------------------------------------"
+12:22:11 "------------- Client Query Request -------------"
+12:22:11 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198024074245' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+12:22:11 "Time to complete: 0.373047 (in seconds)"
+12:22:11 "Result: [[3262,"civ","B_Quadbike_01_F","LandVehicle","76561198024074245",1,0,242915,7,1],[3542,"civ","C_Offroad_01_F","LandVehicle","76561198024074245",1,0,842664,9,1],[3723,"civ","C_Van_01_transport_F","LandVehicle","76561198024074245",1,0,780706,0,1],[3750,"civ","C_Kart_01_Red_F","LandVehicle","76561198024074245",1,0,936199,0,1]]"
+12:22:11 "------------------------------------------------"
+12:22:17 "------------- Client Query Request -------------"
+12:22:17 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3723' AND pid='76561198024074245'"
+12:22:17 "Time to complete: 0.391602 (in seconds)"
+12:22:17 "Result: [3723,"civ","C_Van_01_transport_F","LandVehicle","76561198024074245",1,0,780706,0,1,"0.364583"]"
+12:22:17 "------------------------------------------------"
+12:53:10 Client: Remote object 24:0 not found
+12:57:02 "------------- Client Query Request -------------"
+12:57:02 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198024074245'"
+12:57:02 "Time to complete: 0.386719 (in seconds)"
+12:57:02 "Result: ["76561198024074245","Valherus kulinski",21206,1.06065e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Driver_2`,``,`B_Carryall_cbr`,``,`H_Cap_blu`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_8`,`ItemGPS`,`Binocular`],``,``,[`FirstAidKit`,`FirstAidKit`],[],[`NVGoggles`,`H_Bandanna_surfer`,`FirstAidKit`,`FirstAidKit`,`ToolKit`],[`30Rnd_9x21_Mag`],[],[],[],[],[`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_water`,`life_inv_water`,`life_inv_water`]]",0,"0","0","[21362.5,16465.8,1.48803]",1,0]"
+12:57:02 "------------------------------------------------"
+12:57:04 Error: Object(25 : 5) not found
+12:58:43 Client: Remote object 25:0 not found
+13:01:38 No owner
+13:01:38 Server: Object info 2:2641 not found.
+13:01:38 Can't change owner from 0 to 1894561828
+13:01:43 "------------- Client Query Request -------------"
+13:01:43 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198024074245'"
+13:01:43 "Time to complete: 0.392578 (in seconds)"
+13:01:43 "Result: ["76561198024074245","Valherus kulinski",21206,1.06065e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Driver_2`,``,`B_Carryall_cbr`,``,`H_Cap_blu`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_8`,`ItemGPS`,`Binocular`],``,``,[`FirstAidKit`,`FirstAidKit`],[],[`NVGoggles`,`H_Bandanna_surfer`,`FirstAidKit`,`FirstAidKit`,`ToolKit`],[`30Rnd_9x21_Mag`],[],[],[],[],[`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_water`,`life_inv_water`,`life_inv_water`]]",0,"0","0","[21362.5,16465.8,1.48803]",1,0]"
+13:01:43 "------------------------------------------------"
+13:01:44 Error: Object(26 : 5) not found
+13:06:46 Unknown entity: '& document.loaded) ? func() : document.observe('script:loaded', func)'
+13:06:46 Unknown entity: 'loc=' + url + '&f=' + url'
+13:06:46 Unknown entity: 'nbsp'
+13:06:46 Unknown entity: 'middot'
+13:06:46 Unknown entity: 'nbsp'
+13:06:46 Unknown entity: 'nbsp'
+13:06:46 Unknown entity: 'nbsp'
+13:06:46 Unknown entity: 'nbsp'
+13:06:46 Unknown entity: 'nbsp'
+13:06:46 Unknown entity: 'nbsp'
+13:07:21 "------------- Client Query Request -------------"
+13:07:21 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561197972674188'"
+13:07:21 "Time to complete: 0.0429688 (in seconds)"
+13:07:21 "Result: ["76561197972674188","Carter Wayne",3710,2.22592e+006,"0","6","[[`license_civ_driver`,1],[`license_civ_air`,1],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_I_HeliPilotCoveralls`,`V_TacVest_brn`,`B_Carryall_cbr`,`G_Shades_Black`,`rds_Woodlander_cap3`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_14`,`ItemGPS`,`Binocular`],`hgun_PDW2000_F`,`hgun_ACPC2_F`,[`rds_Woodlander_cap3`],[],[],[],[`NVGoggles`,`FirstAidKit`],[`30Rnd_9x21_Mag`,`30Rnd_9x21_Mag`,`9Rnd_45ACP_Mag`,`30Rnd_9x21_Mag`,`9Rnd_45ACP_Mag`,`Chemlight_yellow`,`Chemlight_yellow`,`Chemlight_yellow`,`Chemlight_yellow`,`9Rnd_45ACP_Mag`,`30Rnd_9x21_Mag`,`9Rnd_45ACP_Mag`],[``,``,`
+13:07:21 "------------------------------------------------"
+13:07:43 "------------- Client Query Request -------------"
+13:07:43 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561197972674188' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+13:07:43 "Time to complete: 0.390625 (in seconds)"
+13:07:43 "Result: [[687,"civ","C_Offroad_01_F","LandVehicle","76561197972674188",1,0,789082,1,1],[1455,"civ","B_Truck_01_box_F","LandVehicle","76561197972674188",1,0,921790,0,1],[1522,"civ","C_Hatchback_01_sport_F","LandVehicle","76561197972674188",1,0,659742,4,1],[1684,"civ","C_Hatchback_01_sport_F","LandVehicle","76561197972674188",1,0,935802,4,1],[2961,"civ","C_SUV_01_F","LandVehicle","76561197972674188",1,0,960835,1,1],[3376,"civ","BAF_Offroad_D","LandVehicle","76561197972674188",1,0,897741,0,1],[3379,"civ","BAF_Offroad_D","LandVehicle","76561197972674188",1,0,616078,1,1],[3912,"civ","C_SUV_01_F","LandVehicle","76561197972674188",1,0,126598,2,1]]"
+13:07:43 "------------------------------------------------"
+13:07:46 "------------- Client Query Request -------------"
+13:07:46 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='1522' AND pid='76561197972674188'"
+13:07:46 "Time to complete: 0.388672 (in seconds)"
+13:07:46 "Result: [1522,"civ","C_Hatchback_01_sport_F","LandVehicle","76561197972674188",1,0,659742,4,1,"0.940377"]"
+13:07:46 "------------------------------------------------"
+13:07:46 No owner
+13:09:17 Client: Remote object 27:1 not found
+13:09:18 Warning: Cleanup player - person 2:2643 not found
+13:09:20 Warning: Cleanup player - person 2:2643 not found
+13:09:26 Client: Object 26:9 (type Type_88) not found.
+13:09:26 Client: Object 26:9 (type Type_89) not found.
+13:09:26 Ragdoll - loading of ragdoll source "Soldier" started.
+13:09:26 Ragdoll - loading of ragdoll source "Soldier" finished successfully.
+13:09:31 No owner
+13:09:48 Client: Remote object 26:0 not found
+13:09:53 " destroy vehicule !"
+13:09:53 "insureSystem = 1 "
+13:09:53 " Assurer !"
+13:09:53 "insureSystem = 1 "
+13:26:48 Client: Remote object 19:1 not found
+13:26:49 Warning: Cleanup player - person 2:2538 not found
+13:26:51 Warning: Cleanup player - person 2:2538 not found
+13:30:29 No owner
+13:30:29 Client: Local object 2:2657 not found
+13:30:29 Client: Object 2:2657 (type Type_89) not found.
+13:30:29 Client: Object 2:2657 (type Type_114) not found.
+13:30:31 Error: Object(2 : 2657) not found
+13:30:31 Client: Object 2:2657 (type Type_114) not found.
+13:30:31 Client: Object 2:2657 (type Type_89) not found.
+13:30:31 Error: Object(2 : 2657) not found
+13:30:31 Client: Object 2:2657 (type Type_114) not found.
+13:30:32 Error: Object(2 : 2657) not found
+13:30:32 Client: Object 2:2657 (type Type_89) not found.
+13:30:32 Client: Object 2:2657 (type Type_114) not found.
+13:30:34 "------------- Client Query Request -------------"
+13:30:34 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198040489359'"
+13:30:34 "Time to complete: 0.375 (in seconds)"
+13:30:34 "Result: ["76561198040489359","Mamadou Mouloumboulou",0,9192,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Driver_1_red`,``,``,`G_Shades_Black`,`H_RacingHelmet_1_red_F`,[`ItemMap`,`ItemCompass`,`ItemWatch`],``,``,[],[],[],[],[],[],[],[],[]]",0,"0","0",[],1,1]"
+13:30:34 "------------------------------------------------"
+13:32:49 "------------- Client Query Request -------------"
+13:32:49 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198040489359' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+13:32:49 "Time to complete: 0.375 (in seconds)"
+13:32:49 "Result: [[3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1]]"
+13:32:49 "------------------------------------------------"
+13:33:00 "------------- Client Query Request -------------"
+13:33:00 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198040489359' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+13:33:00 "Time to complete: 0.373047 (in seconds)"
+13:33:00 "Result: [[3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1]]"
+13:33:00 "------------------------------------------------"
+13:33:04 "------------- Client Query Request -------------"
+13:33:04 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3910' AND pid='76561198040489359'"
+13:33:04 "Time to complete: 0.375 (in seconds)"
+13:33:04 "Result: [3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1,"0.926653"]"
+13:33:04 "------------------------------------------------"
+13:37:30 No owner
+13:37:30 Client: Local object 2:2665 not found
+13:37:30 Client: Object 2:2665 (type Type_89) not found.
+13:37:30 Client: Object 2:2665 (type Type_114) not found.
+13:37:33 Error: Object(2 : 2665) not found
+13:37:33 Client: Object 2:2665 (type Type_114) not found.
+13:37:34 Client: Object 2:2665 (type Type_89) not found.
+13:37:34 Error: Object(2 : 2665) not found
+13:37:34 Client: Object 2:2665 (type Type_114) not found.
+13:37:37 Error: Object(2 : 2665) not found
+13:37:37 Client: Object 2:2665 (type Type_89) not found.
+13:37:37 Client: Object 2:2665 (type Type_114) not found.
+13:37:39 "------------- Client Query Request -------------"
+13:37:39 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198007049543'"
+13:37:39 "Time to complete: 0.376953 (in seconds)"
+13:37:39 "Result: ["76561198007049543","Jean Eud",0,77400,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Poloshirt_stripped`,``,``,``,``,[`ItemMap`,`ItemCompass`,`tf_microdagr`],``,``,[],[],[],[],[],[],[],[],[]]",0,"0","0",[],0,1]"
+13:37:39 "------------------------------------------------"
+13:39:39 "------------- Client Query Request -------------"
+13:39:39 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198040489359' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+13:39:39 "Time to complete: 0.371094 (in seconds)"
+13:39:39 "Result: [[3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1]]"
+13:39:39 "------------------------------------------------"
+13:39:42 "------------- Client Query Request -------------"
+13:39:42 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3910' AND pid='76561198040489359'"
+13:39:42 "Time to complete: 0.388672 (in seconds)"
+13:39:42 "Result: [3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1,"0.90973"]"
+13:39:42 "------------------------------------------------"
+13:40:25 No owner
+13:40:25 Client: Local object 2:2673 not found
+13:40:25 Client: Object 2:2673 (type Type_89) not found.
+13:40:25 Client: Object 2:2673 (type Type_114) not found.
+13:40:26 Client: Object 2:2673 (type Type_89) not found.
+13:40:26 Error: Object(2 : 2673) not found
+13:40:26 Client: Object 2:2673 (type Type_114) not found.
+13:40:26 Error: Object(2 : 2673) not found
+13:40:26 Client: Object 2:2673 (type Type_114) not found.
+13:40:27 "------------- Client Query Request -------------"
+13:40:27 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198124106427'"
+13:40:27 "Time to complete: 0.0410156 (in seconds)"
+13:40:27 "Result: ["76561198124106427","Tanner Hutchinson",0,30315,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_I_HeliPilotCoveralls`,`V_BandollierB_blk`,`B_Carryall_cbr`,`G_Aviator`,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_4`,`ItemGPS`],``,``,[`NVGoggles`],[],[`ToolKit`],[],[`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`],[],[],[],[`life_inv_rabbit`,`life_inv_rabbit`,`life_inv_water`,`life_inv_water`,`life_inv_pickaxe`,`life_inv_peach`,`life_inv_peach`,`life_inv_peach`,`life_inv_peach`,`life_inv_peach`,`life_inv_peach`,`life_inv_peach`,`life_inv_peach`,`life_in
+13:40:27 "------------------------------------------------"
+13:40:27 Error: Object(2 : 2673) not found
+13:40:27 Client: Object 2:2673 (type Type_89) not found.
+13:40:27 Client: Object 2:2673 (type Type_114) not found.
+13:40:28 Client: Local object 2:2679 not found
+13:40:28 Client: Object 2:2679 (type Type_89) not found.
+13:40:28 Client: Object 2:2679 (type Type_114) not found.
+13:40:31 Client: Object 2:2679 (type Type_89) not found.
+13:40:31 Error: Object(2 : 2679) not found
+13:40:31 Client: Object 2:2679 (type Type_114) not found.
+13:40:31 Error: Object(2 : 2679) not found
+13:40:31 Client: Object 2:2679 (type Type_114) not found.
+13:40:31 Error: Object(2 : 2679) not found
+13:40:31 Client: Object 2:2679 (type Type_89) not found.
+13:40:31 Client: Object 2:2679 (type Type_114) not found.
+13:40:34 "------------- Client Query Request -------------"
+13:40:34 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198024074245'"
+13:40:34 "Time to complete: 0.386719 (in seconds)"
+13:40:34 "Result: ["76561198024074245","Valherus kulinski",0,1.061e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Driver_2`,``,`B_Carryall_cbr`,``,`H_Cap_blu`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_8`,`ItemGPS`,`Binocular`],``,``,[`FirstAidKit`,`FirstAidKit`],[],[`NVGoggles`,`H_Bandanna_surfer`,`FirstAidKit`,`FirstAidKit`,`ToolKit`],[`30Rnd_9x21_Mag`],[],[],[],[],[]]",0,"0","0","[22150.7,18384.1,1.41953]",1,0]"
+13:40:34 "------------------------------------------------"
+13:40:35 Error: Object(30 : 6) not found
+13:41:17 Client: Remote object 31:0 not found
+13:41:18 Warning: Cleanup player - person 2:2674 not found
+13:41:19 Warning: Cleanup player - person 2:2674 not found
+13:41:44 Client: Remote object 29:0 not found
+13:41:48 Warning: Cleanup player - person 2:2666 not found
+13:41:54 Warning: Cleanup player - person 2:2666 not found
+13:46:23 No owner
+13:46:23 Client: Local object 2:2685 not found
+13:46:23 Client: Object 2:2685 (type Type_114) not found.
+13:46:23 Client: Object 2:2685 (type Type_89) not found.
+13:46:24 Error: Object(2 : 2685) not found
+13:46:24 Client: Object 2:2685 (type Type_114) not found.
+13:46:24 Client: Object 2:2685 (type Type_89) not found.
+13:46:24 Error: Object(2 : 2685) not found
+13:46:24 Client: Object 2:2685 (type Type_114) not found.
+13:46:26 Error: Object(2 : 2685) not found
+13:46:26 Client: Object 2:2685 (type Type_89) not found.
+13:46:26 Client: Object 2:2685 (type Type_114) not found.
+13:46:28 "------------- Client Query Request -------------"
+13:46:28 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561197972674188'"
+13:46:28 "Time to complete: 0.0449219 (in seconds)"
+13:46:28 "Result: ["76561197972674188","Carter Wayne",3710,2.22592e+006,"0","6","[[`license_civ_driver`,1],[`license_civ_air`,1],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,1],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_I_HeliPilotCoveralls`,`V_TacVest_brn`,`B_Carryall_cbr`,`G_Shades_Black`,`rds_Woodlander_cap3`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_9`,`ItemGPS`,`Binocular`],`hgun_PDW2000_F`,`hgun_ACPC2_F`,[`rds_Woodlander_cap3`],[],[],[],[`NVGoggles`,`FirstAidKit`],[`30Rnd_9x21_Mag`,`30Rnd_9x21_Mag`,`9Rnd_45ACP_Mag`,`Chemlight_yellow`,`Chemlight_yellow`,`Chemlight_yellow`,`Chemlight_yellow`,`9Rnd_45ACP_Mag`,`30Rnd_9x21_Mag`,`9Rnd_45ACP_Mag`,`30Rnd_9x21_Mag`,`9Rnd_45ACP_Mag`],[``,``,`o
+13:46:28 "------------------------------------------------"
+13:46:37 Error: Object(32 : 6) not found
+13:48:47 Client: Remote object 32:1 not found
+13:48:47 Warning: Cleanup player - person 2:2686 not found
+13:48:50 Warning: Cleanup player - person 2:2686 not found
+13:51:09 "------------- Client Query Request -------------"
+13:51:09 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198040489359' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+13:51:09 "Time to complete: 0.0429688 (in seconds)"
+13:51:09 "Result: [[3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1]]"
+13:51:09 "------------------------------------------------"
+13:51:13 "------------- Client Query Request -------------"
+13:51:13 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='3910' AND pid='76561198040489359'"
+13:51:13 "Time to complete: 0.392578 (in seconds)"
+13:51:13 "Result: [3910,"civ","B_Quadbike_01_F","LandVehicle","76561198040489359",1,0,462219,7,1,"0.87057"]"
+13:51:13 "------------------------------------------------"
+13:57:54 Client: Local object 2:2700 not found
+13:57:54 Client: Object 2:2700 (type Type_89) not found.
+13:57:54 Client: Object 2:2700 (type Type_114) not found.
+13:57:55 Client: Object 2:2700 (type Type_89) not found.
+13:57:56 Error: Object(2 : 2700) not found
+13:57:56 Client: Object 2:2700 (type Type_114) not found.
+13:57:56 Error: Object(2 : 2700) not found
+13:57:56 Client: Object 2:2700 (type Type_114) not found.
+13:58:09 "------------- Client Query Request -------------"
+13:58:09 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561197987319418'"
+13:58:09 "Time to complete: 0.390625 (in seconds)"
+13:58:09 "Result: ["76561197987319418","Vincenzo Salvatore",1550,16950,"0","0","[[`license_civ_driver`,0],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,0],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Poloshirt_tricolour`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`],``,``,[],[],[],[],[],[],[],[],[`life_inv_apple`,`life_inv_pickaxe`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`,`life_inv_tbacon`]]",0,"0","0",[],1,1]"
+13:58:09 "------------------------------------------------"
+13:58:09 Error: Object(2 : 2700) not found
+13:58:09 Client: Object 2:2700 (type Type_89) not found.
+13:58:09 Client: Object 2:2700 (type Type_114) not found.

@@ -1,0 +1,1627 @@
+=====================================================================
+== C:\Games\ArmA3\A3Master\arma3server.exe
+== "C:\Games\ArmA3\A3Master\arma3server.exe"  -nosplash -nosound -world=Altis -name=atl -profiles=Users -cfg=Users\Administrator\Arma3.cfg -config=CONFIG_Vanilla.cfg -mod=@extDB;@life_server;@altisrpfr -port=2302 -ip=178.33.110.219 -enableHT -maxMem=2047 -malloc=tbbmalloc
+
+Original output filename: Arma3Retail_Server
+Exe timestamp: 2014/11/04 14:08:33
+Current time:  2014/11/16 20:10:05
+
+Type: Public
+Branch: Stable
+Version: 1.34.128075
+
+Allocator: C:\Games\ArmA3\A3Master\dll\tbb4malloc_bi.dll
+=====================================================================
+
+20:10:05 ManagerConfig()
+20:10:08 Conflicting addon caf_ag_equip_me_backpack in 'caf_ag_equip_c\middleeast\backpacks\', previous definition in 'caf_ag_equip_c\easteurope\backpacks\'
+20:10:08 Conflicting addon example_uniform_config in 'FANTASMA_Units\blackhunter\', previous definition in 'FANTASMA_Units\medic\'
+20:10:08 Conflicting addon example_uniform_config in 'FANTASMA_Units\giletpolo\', previous definition in 'FANTASMA_Units\medic\'
+20:10:08 Conflicting addon PG_Services_PMC_UNITS in 'pg_services_pmc_config\vehicles\', previous definition in 'pg_services_pmc_config\characters\pmc\'
+20:10:08 Unsupported language English in stringtable
+20:10:08 Unsupported language English in stringtable
+20:10:09 Updating base class ->Base, by a3\dubbing_radio_f\config.bin/CfgHQIdentities/PAPA_BEAR/
+20:10:09 Updating base class ->Base, by a3\dubbing_radio_f\config.bin/CfgHQIdentities/AirBase/
+20:10:09 Updating base class ->LandVehicle, by a3\data_f\config.bin/CfgVehicles/StaticWeapon/
+20:10:09 Updating base class ->Wreck, by a3\data_f\config.bin/CfgVehicles/PlaneWreck/
+20:10:09 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayEditObject/Controls/B_OK/
+20:10:09 Updating base class RscSliderH->RscXSliderH, by a3\editor_f\config.bin/RscDisplayEditObject/Slider/
+20:10:09 Updating base class RscText->RscPicture, by a3\editor_f\config.bin/RscDisplayEditObject/Preview/
+20:10:09 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionLoad/Controls/B_OK/
+20:10:09 Updating base class RscShortcutButton->RscButton, by a3\editor_f\config.bin/RscDisplayMissionSave/Controls/B_OK/
+20:10:09 Updating base class ->FlagCarrier_Asym, by a3\structures_f\mil\flags\config.bin/CfgVehicles/Flag_UNO_F/
+20:10:09 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoScrollbars/
+20:10:09 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoHScrollbars/
+20:10:09 Updating base class ->RscControlsGroup, by a3\ui_f\config.bin/RscControlsGroupNoVScrollbars/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscLine/
+20:10:09 Updating base class ->RscActiveText, by a3\ui_f\config.bin/RscActivePicture/
+20:10:09 Updating base class ->RscButton, by a3\ui_f\config.bin/RscButtonTextOnly/
+20:10:09 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscShortcutButtonMain/
+20:10:09 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonEditor/
+20:10:09 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscIGUIShortcutButton/
+20:10:09 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscGearShortcutButton/
+20:10:09 Updating base class ->RscShortcutButton, by a3\ui_f\config.bin/RscButtonMenu/
+20:10:09 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuOK/
+20:10:09 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuCancel/
+20:10:09 Updating base class ->RscButtonMenu, by a3\ui_f\config.bin/RscButtonMenuSteam/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscLoadingText/
+20:10:09 Updating base class ->RscListBox, by a3\ui_f\config.bin/RscIGUIListBox/
+20:10:09 Updating base class ->RscListNBox, by a3\ui_f\config.bin/RscIGUIListNBox/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackground/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUI/
+20:10:09 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUILeft/
+20:10:09 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIRight/
+20:10:09 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscBackgroundGUIBottom/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUITop/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscBackgroundGUIDark/
+20:10:09 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/RscBackgroundLogo/
+20:10:09 Updating base class ->RscMapControl, by a3\ui_f\config.bin/RscMapControlEmpty/
+20:10:09 Updating base class ->RscPicture, by a3\ui_f\config.bin/CA_Mainback/
+20:10:09 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Back/
+20:10:09 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Title_Back/
+20:10:09 Updating base class ->CA_Mainback, by a3\ui_f\config.bin/CA_Black_Back/
+20:10:09 Updating base class ->RscTitle, by a3\ui_f\config.bin/CA_Title/
+20:10:09 Updating base class ->RscPictureKeepAspect, by a3\ui_f\config.bin/CA_Logo/
+20:10:09 Updating base class ->CA_Logo, by a3\ui_f\config.bin/CA_Logo_Small/
+20:10:09 Updating base class ->RscButton, by a3\ui_f\config.bin/CA_RscButton/
+20:10:09 Updating base class ->CA_RscButton, by a3\ui_f\config.bin/CA_RscButton_dialog/
+20:10:09 Updating base class ->RscActiveText, by a3\ui_f\config.bin/CA_Ok/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_image2/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/CA_Ok_text/
+20:10:09 Updating base class ->RscPicture, by a3\ui_f\config.bin/RscVignette/
+20:10:09 Updating base class ->RscControlsGroupNoScrollbars, by a3\ui_f\config.bin/RscMapControlTooltip/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_OK/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Cancel/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayDebug/Controls/B_Clear/
+20:10:09 Updating base class ->RscText, by a3\ui_f\config.bin/RscDisplayCapture/controls/TimeLines/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonAverages/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonSavePreviousData/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenu, by a3\ui_f\config.bin/RscDisplayCapture/controls/ButtonPreviousData/
+20:10:09 Updating base class RscControlsGroup->RscControlsGroupNoHScrollbars, by a3\ui_f\config.bin/RscDisplayMain/controls/ModIcons/
+20:10:09 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/IconPicture/
+20:10:09 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcOwnedIconPicture/
+20:10:09 Updating base class IconPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayMain/DlcIconPicture/
+20:10:09 Updating base class RscListBox->RscCombo, by a3\ui_f\config.bin/RscDisplayCustomizeController/Steepness/
+20:10:09 Updating base class ->RscStandardDisplay, by a3\ui_f\config.bin/RscDisplayControlSchemes/
+20:10:09 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonCancel/
+20:10:09 Updating base class RscButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayControlSchemes/controls/ButtonOK/
+20:10:09 Updating base class RscPicture->RscPictureKeepAspect, by a3\ui_f\config.bin/RscDisplayFileSelectImage/controls/OverviewPicture/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayFieldManual/controls/ButtonCancel/
+20:10:09 Cannot delete class B_KickOff, it is referenced somewhere (used as a base class probably).
+20:10:09 Updating base class RscButton->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMission/controls/ButtonCancel/
+20:10:09 Updating base class RscShortcutButton->RscButtonMenuOK, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonOK/
+20:10:09 Updating base class ButtonOK->RscButtonMenuCancel, by a3\ui_f\config.bin/RscDisplayPublishMissionSelectTags/controls/ButtonCancel/
+20:10:09 Updating base class ->RscSubmenu, by a3\ui_f\config.bin/RscMainMenu/
+20:10:09 Cannot update non class from class a3\ui_f\config.bin/RscCallSupport/Items/
+20:10:09 Cannot update non class from class a3\ui_f\config.bin/RscRadio/Items/
+20:10:09 Updating base class ->VehicleMagazine, by a3\weapons_f\config.bin/CfgMagazines/24Rnd_missiles/
+20:10:09 Updating base class ->RocketPods, by a3\weapons_f\config.bin/cfgWeapons/missiles_DAR/
+20:10:09 Updating base class ->Default, by a3\weapons_f\config.bin/cfgWeapons/ItemCore/
+20:10:09 Updating base class ->Binocular, by a3\weapons_f\config.bin/cfgWeapons/NVGoggles/
+20:10:09 Updating base class ->Bag_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Kitbag_Base/
+20:10:09 Updating base class ->B_TacticalPack_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_TacticalPack_oli/
+20:10:09 Updating base class ->B_Bergen_Base, by a3\weapons_f\ammoboxes\config.bin/CfgVehicles/B_Bergen_rgr/
+20:10:09 Updating base class ->InventoryItem_Base_F, by a3\weapons_f\items\config.bin/CfgWeapons/VestItem/
+20:10:09 Updating base class ->arifle_MX_F, by a3\weapons_f\rifles\mx_black\config.bin/CfgWeapons/arifle_MX_Black_F/
+20:10:09 Updating base class ->arifle_MX_GL_F, by a3\weapons_f\rifles\mx_black\config.bin/CfgWeapons/arifle_MX_GL_Black_F/
+20:10:09 Updating base class ->Car_F, by task_force_radio_items\config.cpp/CfgVehicles/MRAP_03_base_F/
+20:10:09 Updating base class ->Truck_F, by task_force_radio_items\config.cpp/CfgVehicles/Truck_02_base_F/
+20:10:09 Updating base class ->Offroad_01_base_F, by task_force_radio_items\config.cpp/CfgVehicles/Offroad_01_armed_base_F/
+20:10:10 Updating base class ->Man, by a3\characters_f\config.bin/CfgVehicles/CAManBase/
+20:10:10 Updating base class Man->Civilian, by a3\characters_f\config.bin/CfgVehicles/Civilian_F/
+20:10:10 Updating base class ->CAManBase, by a3\characters_f\config.bin/CfgVehicles/SoldierWB/
+20:10:10 Updating base class ->B_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/B_Soldier_02_f/
+20:10:10 Updating base class ->B_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/B_soldier_UAV_F/
+20:10:10 Updating base class ->SoldierGB, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_base_F/
+20:10:10 Updating base class ->I_Soldier_02_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_AR_F/
+20:10:10 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_TL_F/
+20:10:10 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_M_F/
+20:10:10 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_AT_F/
+20:10:10 Updating base class ->I_Soldier_02_F, by a3\characters_f\config.bin/CfgVehicles/I_Soldier_AA_F/
+20:10:10 Updating base class ->I_Soldier_02_F, by a3\characters_f\config.bin/CfgVehicles/I_medic_F/
+20:10:10 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_engineer_F/
+20:10:10 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_crew_F/
+20:10:10 Updating base class ->I_Soldier_03_F, by a3\characters_f\config.bin/CfgVehicles/I_helipilot_F/
+20:10:10 Updating base class ->I_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/I_officer_F/
+20:10:10 Updating base class Man->O_Soldier_base_F, by a3\characters_f\config.bin/CfgVehicles/O_Soldier_F/
+20:10:10 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Uniform_Base/
+20:10:10 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Vest_Camo_Base/
+20:10:10 Updating base class ->ItemCore, by a3\characters_f\config.bin/cfgWeapons/Vest_NoCamo_Base/
+20:10:10 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_PlateCarrier1_rgr/
+20:10:10 Updating base class ->Vest_Camo_Base, by a3\characters_f\config.bin/cfgWeapons/V_TacVest_khk/
+20:10:10 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_TacVestIR_blk/
+20:10:10 Updating base class ->Vest_NoCamo_Base, by a3\characters_f\config.bin/cfgWeapons/V_PlateCarrierIA1_dgtl/
+20:10:10 Updating base class ->InventoryItem_Base_F, by a3\characters_f\config.bin/cfgWeapons/HeadgearItem/
+20:10:10 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Booniehat_khk/
+20:10:10 Updating base class ItemCore->H_HelmetB_plain_mcamo, by a3\characters_f\config.bin/cfgWeapons/H_HelmetB_plain_blk/
+20:10:10 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Cap_red/
+20:10:10 Updating base class ->H_HelmetB, by a3\characters_f\config.bin/cfgWeapons/H_Bandanna_surfer/
+20:10:10 Updating base class ->None, by a3\characters_f\heads\config.bin/CfgGlasses/G_Diving/
+20:10:10 Updating base class ->None, by a3\characters_f\heads\config.bin/CfgGlasses/G_Tactical_Clear/
+20:10:10 Updating base class ->HMG_01_high_base_F, by a3\static_f\config.bin/CfgVehicles/I_HMG_01_high_F/
+20:10:10 Updating base class ->Mortar_01_base_F, by a3\static_f\mortar_01\config.bin/CfgVehicles/I_Mortar_01_F/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_H/
+20:10:10 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_L/
+20:10:10 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_M/
+20:10:10 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_B/
+20:10:10 Updating base class ->muzzle_snds_H, by a3\weapons_f\acc\config.bin/cfgWeapons/muzzle_snds_H_MG/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Arco/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Hamr/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Aco/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_ACO_grn/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_Holosight/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_SOS/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/acc_pointer_IR/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_MRCO/
+20:10:10 Updating base class ->ItemCore, by a3\weapons_f\acc\config.bin/cfgWeapons/optic_DMS/
+20:10:10 Updating base class B_Soldier_04_f->B_Soldier_base_F, by FANTASMA_Units\config.cpp/CfgVehicles/B_Helipilot_F/
+20:10:10 Updating base class B_Soldier_05_f->B_Helipilot_F, by FANTASMA_Units\config.cpp/CfgVehicles/B_Pilot_F/
+20:10:10 Updating base class Civilian->Man, by rds_a2port_cman\config.bin/CfgVehicles/Civilian_F/
+20:10:10 Updating base class Man->Civilian, by unlocked_uniforms\config.bin/CfgVehicles/Civilian_F/
+20:10:10 Updating base class ->Helicopter, by a3\air_f\config.bin/CfgVehicles/Helicopter_Base_F/
+20:10:10 Updating base class ->Helicopter_Base_F, by a3\air_f\config.bin/CfgVehicles/Helicopter_Base_H/
+20:10:10 Updating base class ->Heli_Light_01_base_F, by a3\air_f\heli_light_01\config.bin/CfgVehicles/B_Heli_Light_01_F/
+20:10:10 Updating base class ->Heli_Light_02_base_F, by a3\air_f\heli_light_02\config.bin/CfgVehicles/O_Heli_Light_02_F/
+20:10:10 Updating base class ->Heli_Light_02_base_F, by a3\air_f\heli_light_02\config.bin/CfgVehicles/O_Heli_Light_02_unarmed_F/
+20:10:10 Updating base class ->Heli_Attack_01_base_F, by a3\air_f_beta\heli_attack_01\config.bin/CfgVehicles/B_Heli_Attack_01_F/
+20:10:10 Updating base class ->Heli_Transport_01_base_F, by a3\air_f_beta\heli_transport_01\config.bin/CfgVehicles/B_Heli_Transport_01_F/
+20:10:10 Updating base class ->Heli_Transport_02_base_F, by a3\air_f_beta\heli_transport_02\config.bin/CfgVehicles/I_Heli_Transport_02_F/
+20:10:10 Updating base class ->I_Heli_light_03_unarmed_base_F, by a3\air_f_epb\heli_light_03\config.bin/CfgVehicles/I_Heli_light_03_unarmed_F/
+20:10:10 Updating base class ->Car, by a3\armor_f_beta\config.bin/CfgVehicles/Car_F/
+20:10:10 Updating base class ->B_APC_Tracked_01_base_F, by a3\armor_f_beta\apc_tracked_01\config.bin/CfgVehicles/B_APC_Tracked_01_rcws_F/
+20:10:10 Updating base class ->B_APC_Tracked_01_base_F, by a3\armor_f_beta\apc_tracked_01\config.bin/CfgVehicles/B_APC_Tracked_01_CRV_F/
+20:10:10 Updating base class ->O_APC_Tracked_02_base_F, by a3\armor_f_beta\apc_tracked_02\config.bin/CfgVehicles/O_APC_Tracked_02_cannon_F/
+20:10:10 Updating base class Optics_Commander_02->Optics_Armored, by a3\armor_f_epb\apc_tracked_03\config.bin/Optics_Commander_03/
+20:10:10 Updating base class ->I_MBT_03_base_F, by a3\armor_f_epb\mbt_03\config.bin/CfgVehicles/I_MBT_03_cannon_F/
+20:10:10 Updating base class ->B_MBT_01_base_F, by a3\armor_f_gamma\mbt_01\config.bin/CfgVehicles/B_MBT_01_cannon_F/
+20:10:10 Updating base class ->Ship_F, by a3\boat_f\config.bin/CfgVehicles/Boat_F/
+20:10:10 Updating base class ->Boat_Armed_01_minigun_base_F, by a3\boat_f_beta\boat_armed_01\config.bin/CfgVehicles/I_Boat_Armed_01_minigun_F/
+20:10:10 Updating base class ->Ship_F, by a3\boat_f_gamma\boat_civil_01\config.bin/CfgVehicles/Boat_Civil_01_base_F/
+20:10:10 Updating base class ->Boat_Civil_01_base_F, by a3\boat_f_gamma\boat_civil_01\config.bin/CfgVehicles/C_Boat_Civil_01_F/
+20:10:10 Updating base class ->B_Helipilot_F, by a3\characters_f\common\config.bin/CfgVehicles/B_UAV_AI/
+20:10:10 Updating base class ->Car_F, by a3\soft_f\config.bin/CfgVehicles/Truck_F/
+20:10:10 Updating base class ->MRAP_01_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/MRAP_01_gmg_base_F/
+20:10:10 Updating base class ->MRAP_01_gmg_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/MRAP_01_hmg_base_F/
+20:10:10 Updating base class ->MRAP_01_base_F, by a3\soft_f\mrap_01\config.bin/CfgVehicles/B_MRAP_01_F/
+20:10:10 Updating base class ->Car_F, by a3\soft_f\offroad_01\config.bin/CfgVehicles/Offroad_01_base_F/
+20:10:10 Updating base class ->MRAP_03_base_F, by a3\soft_f_beta\mrap_03\config.bin/CfgVehicles/MRAP_03_hmg_base_F/
+20:10:10 Updating base class ->MRAP_03_hmg_base_F, by a3\soft_f_beta\mrap_03\config.bin/CfgVehicles/MRAP_03_gmg_base_F/
+20:10:10 Updating base class ->Truck_02_base_F, by a3\soft_f_beta\truck_02\config.bin/CfgVehicles/I_Truck_02_transport_F/
+20:10:10 Updating base class ->Car_F, by a3\soft_f_gamma\hatchback_01\config.bin/CfgVehicles/Hatchback_01_base_F/
+20:10:10 Updating base class ->Truck_02_base_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_ammo_F/
+20:10:10 Updating base class ->Truck_02_base_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_box_F/
+20:10:10 Updating base class ->I_Truck_02_box_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_medical_F/
+20:10:10 Updating base class ->Truck_02_base_F, by a3\soft_f_gamma\truck_02\config.bin/CfgVehicles/I_Truck_02_fuel_F/
+20:10:10 Updating base class ->AA_01_base_F, by a3\static_f\aa_01\config.bin/CfgVehicles/I_static_AA_F/
+20:10:10 Updating base class ->AT_01_base_F, by a3\static_f\at_01\config.bin/CfgVehicles/I_static_AT_F/
+20:10:10 Updating base class Car_F->LandRover_Base_FFV_F, by pansy\LandRover\config.bin/CfgVehicles/BAF_Offroad_D/
+20:10:10 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class Eventhandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Cannot delete class EventHandlers, it is referenced somewhere (used as a base class probably).
+20:10:10 Updating base class ->UserActions, by a3\air_f_heli\heli_transport_02\config.bin/CfgVehicles/Heli_Transport_02_base_F/UserActions/
+20:10:10 Updating base class ->B_APC_Wheeled_01_base_F, by a3\armor_f_beta\apc_wheeled_01\config.bin/CfgVehicles/B_APC_Wheeled_01_cannon_F/
+20:10:10 Updating base class ->UGV_01_base_F, by a3\drones_f\soft_f_gamma\ugv_01\config.bin/CfgVehicles/I_UGV_01_F/
+20:10:10 Updating base class ->UGV_01_rcws_base_F, by a3\drones_f\soft_f_gamma\ugv_01\config.bin/CfgVehicles/I_UGV_01_rcws_F/
+20:10:10 ragdollHitDmgLimit (0.000000) is lower than minimum (0.010000) and it was set to min.
+20:10:10 Initializing Steam Manager
+20:10:10 ManagerConfig()
+20:10:10 Steam Manager initialized.
+20:10:10 
+20:10:10 ==== Loaded addons ====
+20:10:10 
+20:10:10 dta\bin.pbo - unknown
+20:10:10 dta\core.pbo - 72362
+20:10:10 dta\languagecore_f.pbo - 76057
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\altisrpfr.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\bwi_a3_t6.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_equip.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_equip_c.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_equip_t.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\caf_ag_factions.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_ai.pbo - 004
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_arrays.pbo - 003
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_common.pbo - 014
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_diagnostic.pbo - 004
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_events.pbo - 003
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_extended_eventhandlers.pbo - 002
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_hashes.pbo - 004
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_help.pbo - 004
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_keybinding.pbo - 007
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_main.pbo - 012
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_main_a3.pbo - 002
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_network.pbo - 012
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_strings.pbo - 002
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_ui.pbo - 017
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_ui_helper.pbo - 002
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_vectors.pbo - 002
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_versioning.pbo - 002
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_xeh.pbo - 011
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\cba_xeh_a3.pbo - 007
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\fantasma_units.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\fr_items.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\gnt_c185.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\hk430&m4benelli.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\hk430&m4benelli_noaddons.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\ira_pack.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\landrover.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_nw_rifle.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_ru_rifle.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_us_rifle.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\mas_us_rifle_c.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\pg_services_pmc.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\pg_services_pmc_config.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\plp_truckcolors.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rav_lifter_a3.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rds_a2port_civ.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rds_a2port_civ_c.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\rds_a2port_cman.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\sab_un2030.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\sakuweaponshake.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\st_stamina_bar.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\task_force_radio.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\task_force_radio_items.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\unlocked_uniforms.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@altisrpfr\addons\uvf_pack.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\@life_server\addons\life_server.pbo - unknown
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\air_f_heli.ebo - 76060
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\anims_f_heli.ebo - 72362
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\boat_f_heli.ebo - 74189
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\cargoposes_f_heli.ebo - 76039
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\data_f_heli.ebo - 76047
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\dubbing_f_heli.ebo - 75138
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\functions_f_heli.ebo - 75918
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\languagemissions_f_heli.ebo - 76057
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\language_f_heli.ebo - 76057
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\missions_f_heli.ebo - 76039
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\missions_f_heli_data.ebo - 75977
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\missions_f_heli_video.ebo - 75065
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\modules_f_heli.ebo - 76039
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\music_f_heli.ebo - 76012
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\music_f_heli_music.ebo - 76012
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\soft_f_heli.ebo - 74189
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\sounds_f_heli.ebo - 75591
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\structures_f_heli.ebo - 75566
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\supplies_f_heli.ebo - 75687
+20:10:10 C:\Games\ArmA3\A3Master\heli\addons\ui_f_heli.ebo - 76012
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\anims_f_kart.pbo - 72362
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\characters_f_kart.pbo - 73106
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\data_f_kart.pbo - 75977
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\languagemissions_f_kart.pbo - 73106
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\language_f_kart.pbo - 76053
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\missions_f_kart.pbo - 75687
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\missions_f_kart_data.pbo - 75687
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\modules_f_kart.pbo - 76023
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\modules_f_kart_data.pbo - 74588
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\soft_f_kart.pbo - 74928
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\sounds_f_kart.pbo - 73106
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\structures_f_kart.pbo - 74572
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\ui_f_kart.pbo - 73106
+20:10:10 C:\Games\ArmA3\A3Master\kart\addons\weapons_f_kart.pbo - 76039
+20:10:10 C:\Games\ArmA3\A3Master\curator\addons\data_f_curator.pbo - 74685
+20:10:10 C:\Games\ArmA3\A3Master\curator\addons\functions_f_curator.pbo - 75024
+20:10:10 C:\Games\ArmA3\A3Master\curator\addons\language_f_curator.pbo - 73106
+20:10:10 C:\Games\ArmA3\A3Master\curator\addons\missions_f_curator.pbo - 75167
+20:10:10 C:\Games\ArmA3\A3Master\curator\addons\modules_f_curator.pbo - 75024
+20:10:10 C:\Games\ArmA3\A3Master\curator\addons\ui_f_curator.pbo - 75024
+20:10:10 addons\a3.pbo - unknown
+20:10:10 addons\air_f.pbo - 75994
+20:10:10 addons\air_f_beta.pbo - 76060
+20:10:10 addons\air_f_epb.pbo - 76010
+20:10:10 addons\air_f_epc.pbo - 75399
+20:10:10 addons\air_f_gamma.pbo - 75399
+20:10:10 addons\air_f_rtd.pbo - 75688
+20:10:10 addons\animals_f.pbo - 72362
+20:10:10 addons\animals_f_beta.pbo - 72362
+20:10:10 addons\anims_f.pbo - 75912
+20:10:10 addons\anims_f_bootcamp.pbo - 72362
+20:10:10 addons\anims_f_data.pbo - 72362
+20:10:10 addons\anims_f_epa.pbo - 72362
+20:10:10 addons\anims_f_epc.pbo - 72362
+20:10:10 addons\armor_f.pbo - 72362
+20:10:10 addons\armor_f_beta.pbo - 75311
+20:10:10 addons\armor_f_epb.pbo - 75319
+20:10:10 addons\armor_f_epc.pbo - 74356
+20:10:10 addons\armor_f_gamma.pbo - 75311
+20:10:10 addons\asm.pbo - unknown
+20:10:10 addons\baseconfig_f.pbo - 73106
+20:10:10 addons\boat_f.pbo - 75400
+20:10:10 addons\boat_f_beta.pbo - 74356
+20:10:10 addons\boat_f_epc.pbo - 74356
+20:10:10 addons\boat_f_gamma.pbo - 74356
+20:10:10 addons\cargoposes_f.pbo - 75766
+20:10:10 addons\characters_f.pbo - 76014
+20:10:10 addons\characters_f_beta.pbo - 74412
+20:10:10 addons\characters_f_bootcamp.pbo - 73106
+20:10:10 addons\characters_f_epa.pbo - 75270
+20:10:10 addons\characters_f_epb.pbo - 73106
+20:10:10 addons\characters_f_epc.pbo - 73106
+20:10:10 addons\characters_f_gamma.pbo - 73106
+20:10:10 addons\data_f.pbo - 75912
+20:10:10 addons\data_f_bootcamp.pbo - 74893
+20:10:10 addons\drones_f.pbo - 75566
+20:10:10 addons\dubbing_f.pbo - 73106
+20:10:10 addons\dubbing_f_beta.pbo - 73106
+20:10:10 addons\dubbing_f_bootcamp.pbo - 73106
+20:10:10 addons\dubbing_f_epa.pbo - 73106
+20:10:10 addons\dubbing_f_epb.pbo - 73106
+20:10:10 addons\dubbing_f_epc.pbo - 73106
+20:10:10 addons\dubbing_f_gamma.pbo - 73106
+20:10:10 addons\dubbing_radio_f.pbo - 74779
+20:10:10 addons\dubbing_radio_f_data.pbo - 74858
+20:10:10 addons\editor_f.pbo - 74164
+20:10:10 addons\functions_f.pbo - 76042
+20:10:10 addons\functions_f_bootcamp.pbo - 75242
+20:10:10 addons\functions_f_epa.pbo - 73434
+20:10:10 addons\functions_f_epc.pbo - 73106
+20:10:10 addons\languagemissions_f.pbo - 75912
+20:10:10 addons\languagemissions_f_beta.pbo - 73106
+20:10:10 addons\languagemissions_f_bootcamp.pbo - 73776
+20:10:10 addons\languagemissions_f_epa.pbo - 75086
+20:10:10 addons\languagemissions_f_epb.pbo - 73841
+20:10:10 addons\languagemissions_f_epc.pbo - 75863
+20:10:10 addons\languagemissions_f_gamma.pbo - 73106
+20:10:10 addons\language_f.pbo - 75994
+20:10:10 addons\language_f_beta.pbo - 74145
+20:10:10 addons\language_f_bootcamp.pbo - 75106
+20:10:10 addons\language_f_epa.pbo - 73106
+20:10:10 addons\language_f_epb.pbo - 73106
+20:10:10 addons\language_f_epc.pbo - 75722
+20:10:10 addons\language_f_gamma.pbo - 73106
+20:10:10 addons\map_altis.pbo - 73767
+20:10:10 addons\map_altis_data.pbo - 73106
+20:10:10 addons\map_altis_data_layers.pbo - 73106
+20:10:10 addons\map_altis_data_layers_00_00.pbo - 73106
+20:10:10 addons\map_altis_data_layers_00_01.pbo - 73106
+20:10:10 addons\map_altis_data_layers_01_00.pbo - 73106
+20:10:10 addons\map_altis_data_layers_01_01.pbo - 73106
+20:10:10 addons\map_altis_scenes_f.pbo - 73106
+20:10:10 addons\map_data.pbo - 73001
+20:10:10 addons\map_stratis.pbo - 72244
+20:10:10 addons\map_stratis_data.pbo - 73106
+20:10:10 addons\map_stratis_data_layers.pbo - 73106
+20:10:10 addons\map_stratis_scenes_f.pbo - 73106
+20:10:10 addons\map_vr.pbo - 73106
+20:10:10 addons\map_vr_scenes_f.pbo - 73106
+20:10:10 addons\misc_f.pbo - 74445
+20:10:10 addons\missions_f.pbo - 74929
+20:10:10 addons\missions_f_beta.pbo - 75566
+20:10:10 addons\missions_f_beta_data.pbo - 75473
+20:10:10 addons\missions_f_beta_video.pbo - 73106
+20:10:10 addons\missions_f_bootcamp.pbo - 75768
+20:10:10 addons\missions_f_bootcamp_data.pbo - 72362
+20:10:10 addons\missions_f_bootcamp_video.pbo - 75065
+20:10:10 addons\missions_f_data.pbo - 73106
+20:10:10 addons\missions_f_epa.pbo - 75928
+20:10:10 addons\missions_f_epa_data.pbo - 73106
+20:10:10 addons\missions_f_epa_video.pbo - 73106
+20:10:10 addons\missions_f_epb.pbo - 75913
+20:10:10 addons\missions_f_epb_data.pbo - 73106
+20:10:10 addons\missions_f_epb_video.pbo - 73106
+20:10:10 addons\missions_f_epc.pbo - 75913
+20:10:10 addons\missions_f_epc_data.pbo - 73106
+20:10:10 addons\missions_f_epc_video.pbo - 73106
+20:10:10 addons\missions_f_gamma.pbo - 76039
+20:10:10 addons\missions_f_gamma_data.pbo - 73106
+20:10:10 addons\missions_f_gamma_video.pbo - 73106
+20:10:10 addons\missions_f_video.pbo - 73106
+20:10:10 addons\modules_f.pbo - 75373
+20:10:10 addons\modules_f_beta.pbo - 73635
+20:10:10 addons\modules_f_beta_data.pbo - 73635
+20:10:10 addons\modules_f_bootcamp.pbo - 73106
+20:10:10 addons\modules_f_data.pbo - 73106
+20:10:10 addons\modules_f_epb.pbo - 73106
+20:10:10 addons\music_f.pbo - 73106
+20:10:10 addons\music_f_bootcamp.pbo - 73106
+20:10:10 addons\music_f_bootcamp_music.pbo - 73106
+20:10:10 addons\music_f_epa.pbo - 73106
+20:10:10 addons\music_f_epa_music.pbo - 73106
+20:10:10 addons\music_f_epb.pbo - 73106
+20:10:10 addons\music_f_epb_music.pbo - 73106
+20:10:10 addons\music_f_epc.pbo - 73106
+20:10:10 addons\music_f_epc_music.pbo - 73106
+20:10:10 addons\music_f_music.pbo - 73106
+20:10:10 addons\plants_f.pbo - 73106
+20:10:10 addons\roads_f.pbo - 73001
+20:10:10 addons\rocks_f.pbo - 73767
+20:10:10 addons\signs_f.pbo - 72273
+20:10:10 addons\soft_f.pbo - 76010
+20:10:10 addons\soft_f_beta.pbo - 76010
+20:10:10 addons\soft_f_bootcamp.pbo - 74362
+20:10:10 addons\soft_f_epc.pbo - 76010
+20:10:10 addons\soft_f_gamma.pbo - 76010
+20:10:10 addons\sounds_f.pbo - 75994
+20:10:10 addons\sounds_f_bootcamp.pbo - 73106
+20:10:10 addons\sounds_f_epb.pbo - 73106
+20:10:10 addons\sounds_f_epc.pbo - 73106
+20:10:10 addons\sounds_f_vehicles.pbo - 75994
+20:10:10 addons\sounds_f_weapons.pbo - 74194
+20:10:10 addons\static_f.pbo - 75918
+20:10:10 addons\static_f_beta.pbo - 73106
+20:10:10 addons\static_f_gamma.pbo - 73106
+20:10:10 addons\structures_f.pbo - 75500
+20:10:10 addons\structures_f_bootcamp.pbo - 73467
+20:10:10 addons\structures_f_data.pbo - 75500
+20:10:10 addons\structures_f_epa.pbo - 73106
+20:10:10 addons\structures_f_epb.pbo - 73106
+20:10:10 addons\structures_f_epc.pbo - 75500
+20:10:10 addons\structures_f_households.pbo - 75500
+20:10:10 addons\structures_f_ind.pbo - 75500
+20:10:10 addons\structures_f_mil.pbo - 75500
+20:10:10 addons\structures_f_wrecks.pbo - 75500
+20:10:10 addons\uifonts_f.pbo - 73106
+20:10:10 addons\uifonts_f_data.pbo - 73106
+20:10:10 addons\ui_f.pbo - 76048
+20:10:10 addons\ui_f_bootcamp.pbo - 73106
+20:10:10 addons\ui_f_data.pbo - 75977
+20:10:10 addons\weapons_f.pbo - 75746
+20:10:10 addons\weapons_f_beta.pbo - 72309
+20:10:10 addons\weapons_f_bootcamp.pbo - 73106
+20:10:10 addons\weapons_f_epa.pbo - 73106
+20:10:10 addons\weapons_f_epb.pbo - 73106
+20:10:10 addons\weapons_f_epc.pbo - 73106
+20:10:10 addons\weapons_f_gamma.pbo - 73106
+20:10:10 
+20:10:10 =======================
+20:10:10 
+20:10:10 InitSound ...
+20:10:10 InitSound - complete
+20:10:10 PhysX3 SDK Init started ...
+20:10:10 PhysX3 SDK Init ended.
+20:10:16 Initializing Steam server - Game Port: 2302, Steam Query Port: 2303
+20:10:17 Item STR_Global_Close listed twice
+20:10:17 Unsupported language English in stringtable
+20:10:17 Item STR_Global_Close listed twice
+20:10:17 Unsupported language English in stringtable
+20:10:17 Connected to Steam servers
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:20 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:21 Server error: Player without identity Tom Mason (id 1127028575)
+20:10:21 Server error: Player without identity Tom Mason (id 1127028575)
+20:11:47 Starting mission:
+20:11:47  Mission file: altisfrrp (__cur_mp)
+20:11:47  Mission world: altis
+20:11:47  Mission directory: mpmissions\__cur_mp.altis\
+20:11:52 Strange convex component08 in a3\structures_f_epb\civ\garbage\garbagecontainer_closed_f.p3d:geometryView
+20:11:52 Strange convex component10 in a3\structures_f_epb\civ\garbage\garbagecontainer_closed_f.p3d:geometryView
+20:11:53 Strange convex component145 in a3\plants_f\tree\t_pinuss2s_b_f.p3d:geometryView
+20:11:53 Strange convex component149 in a3\plants_f\tree\t_pinuss2s_b_f.p3d:geometryView
+20:11:53 Strange convex component01 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+20:11:53 Strange convex component02 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+20:11:53 Strange convex component03 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+20:11:53 Strange convex component04 in a3\structures_f_epc\civ\accessories\beachbooth_01_f.p3d:geometryView
+20:11:56 Attempt to override final function - bis_functions_list
+20:11:56 Attempt to override final function - bis_functions_listpreinit
+20:11:56 Attempt to override final function - bis_functions_listpostinit
+20:11:56 Attempt to override final function - bis_functions_listrecompile
+20:11:56 [22540,111.441,0,"XEH: PreInit Started. v1.0.9.140907. MISSINIT: missionName=altisfrrp, worldName=altis, isMultiplayer=true, isServer=true, isDedicated=true"]
+20:11:57 [22540,111.567,0,"XEH: PreInit Finished. CACHE DISABLED? (Disable caching with cba_cache_disable.pbo): SLX_XEH_RECOMPILE=false, CBA_COMPILE_RECOMPILE=false, CBA_FUNC_RECOMPILE=false"]
+20:11:57 Attempt to override final function - bis_fnc_missiontaskslocal
+20:11:57 Attempt to override final function - bis_fnc_missionconversationslocal
+20:11:57 Attempt to override final function - bis_fnc_missionflow
+20:11:57 No owner
+20:11:57 Warning: looped for animation: a3\anims_f\data\anim\sdr\idl\knl\stp\low\rfl\aidlpknlmstpslowwrfldnon_g01.rtm differs (looped now 1)! MoveName: aidlpknlmstpsraswrfldnon_g01
+20:11:57 Warning: looped for animation: a3\anims_f\data\anim\sdr\idl\knl\stp\low\rfl\aidlpknlmstpslowwrfldnon_g02.rtm differs (looped now 1)! MoveName: aidlpknlmstpsraswrfldnon_g02
+20:12:00 No default vars in bin\config.bin/CfgMovesMaleSdr/States/Acts_UnconsciousStandUp_part1.variantsPlayer
+20:12:00 No default vars in bin\config.bin/CfgMovesMaleSdr/States/Acts_UnconsciousStandUp_part2.variantsPlayer
+20:12:00 Animation a3\cargoposes_f\anim\kia_driver_truck_03.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim1.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idle.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idle1.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol1.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idlepistol.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idlepistol1.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimtopistol.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimtopistol_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimfrompistol.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimfrompistol_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_binoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_binoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_tobinoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_tobinoc_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_frombinoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aim_frombinoc_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_tobinoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_tobinoc_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_frombinoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimpistol_frombinoc_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idleunarmed.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4idleunarmed1.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_binoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_tobinoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_tobinoc_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_frombinoc.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4aimunarmed_frombinoc_end.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4die.rtm not found or empty
+20:12:00 Animation a3\cargoposes_f_heli\anim\passenger_inside_4diepistol.rtm not found or empty
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone hips doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone headcutscene doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnr doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_backwpnl doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 Error: Bone slot_buttpack doesn't exist in skeleton OFP2_ManSkeleton
+20:12:01 No owner
+20:12:01 No owner
+20:12:01 No owner
+20:12:01 No owner
+20:12:02 No speaker given for Dumi Sekibo
+20:12:02 No owner
+20:12:02 No speaker given for Idi Awolowo
+20:12:02 No owner
+20:12:02 No speaker given for Ryan Hughes
+20:12:02 No owner
+20:12:02 No owner
+20:12:02 No speaker given for Oringo Okadigbo
+20:12:02 No speaker given for Xue Ryu
+20:12:02 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:12:02 No owner
+20:12:02 No speaker given for Finlay Griffiths
+20:12:02 No owner
+20:12:03 No speaker given for Jack Ryan
+20:12:03 No owner
+20:12:03 No speaker given for William Bayh
+20:12:03 No owner
+20:12:03 No speaker given for Edward Acker
+20:12:03 No owner
+20:12:03 No speaker given for Kwame Azikiwe
+20:12:03 No owner
+20:12:03 No speaker given for Harvey Robertson
+20:12:03 No owner
+20:12:03 No speaker given for Jack Jones
+20:12:03 No owner
+20:12:03 No speaker given for Alfie Young
+20:12:03 No owner
+20:12:03 No speaker given for Liao Suan
+20:12:03 No owner
+20:12:03 No speaker given for Mao Hwang
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No speaker given for Jacob White
+20:12:03 No owner
+20:12:03 No speaker given for Chris Morris
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No speaker given for Harrison Ryan
+20:12:03 No speaker given for Cheng Ryu
+20:12:03 No owner
+20:12:03 No owner
+20:12:03 No speaker given for Adam Bennett
+20:12:03 No owner
+20:12:03 No speaker given for Oliver Faulkner
+20:12:03 No owner
+20:12:03 No speaker given for Toby Brown
+20:12:03 No owner
+20:12:04 No owner
+20:12:04 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:12:04 No owner
+20:12:04 No speaker given for Finlay Jackson
+20:12:04 No owner
+20:12:04 No speaker given for Oringo Tinibu
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No speaker given for Charles Stewart
+20:12:04 No owner
+20:12:04 No speaker given for Dwan Bayh
+20:12:04 No owner
+20:12:04 No speaker given for William Stewart
+20:12:04 No owner
+20:12:04 No speaker given for Tavish Moore
+20:12:04 No owner
+20:12:04 No speaker given for Donnan Walker
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No speaker given for Reggie MacDonald
+20:12:04 No owner
+20:12:04 No speaker given for Shawn Faulkner
+20:12:04 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 No owner
+20:12:04 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:12:05 No speaker given for Dumi Okoye
+20:12:05 No speaker given for Hamidi Egwu
+20:12:05 No speaker given for Zaim Achebe
+20:12:05 No owner
+20:12:05 No owner
+20:12:05 No speaker given for Katungi Sekibo
+20:12:05 No owner
+20:12:06 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:12:06 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:12:06 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:12:06 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:12:06 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:12:06 Error: Object(2 : 1) not found
+20:12:06 Error: Object(2 : 186) not found
+20:12:06 c:\w\stable\futura\lib\network\networkserver.cpp NetworkServer::OnClientStateChanged:NOT IMPLEMENTED - briefing!
+20:12:06 [22544,120.93,0,"XEH: PostInit Started"]
+20:12:06 [22544,120.946,0,"CBA_VERSIONING: cba=1.0.9.140907, "]
+20:12:06 [22544,120.969,0,"XEH: PostInit Finished. State: _isClient=false, _isJip=false, _isDedClient=false, _isServer=true, _isDedServer=true, _playerCheckDone=true, _sp=false, _startInitDone=true, _postInitDone=true, _mpRespawn=true, _machineType=0, _sessionId=1, _level=0, _timeOut=false, _game=3, BIS_functions=L Modules:1, group=L Modules"]
+20:12:07 "extDB: Version: 19"
+20:12:07 "extDB: Connected to Database"
+20:12:07 Strange convex component322 in a3\structures_f\research\dome_big_f.p3d:geometryFire
+20:12:07 Strange convex component327 in a3\structures_f\research\dome_big_f.p3d:geometryFire
+20:12:07 "ASM.fsm started"
+20:13:15 Item STR_Global_Close listed twice
+20:13:15 Unsupported language English in stringtable
+20:13:15 Item STR_Global_Close listed twice
+20:13:15 Unsupported language English in stringtable
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:16 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:17 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:17 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:17 Server error: Player without identity Zaven Spaulding (id 2009740337)
+20:13:25 Item STR_Global_Close listed twice
+20:13:25 Unsupported language English in stringtable
+20:13:25 Item STR_Global_Close listed twice
+20:13:25 Unsupported language English in stringtable
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:27 Server error: Player without identity jonathan cumulus (id 1704575946)
+20:13:32 Item STR_Global_Close listed twice
+20:13:32 Unsupported language English in stringtable
+20:13:32 Item STR_Global_Close listed twice
+20:13:32 Unsupported language English in stringtable
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:34 Server error: Player without identity Adil Hossni (id 1084744070)
+20:13:42 Item STR_Global_Close listed twice
+20:13:42 Unsupported language English in stringtable
+20:13:42 Item STR_Global_Close listed twice
+20:13:42 Unsupported language English in stringtable
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:43 Server error: Player without identity Mauricio Lagaza (id 826908699)
+20:13:47 Item STR_Global_Close listed twice
+20:13:47 Unsupported language English in stringtable
+20:13:47 Item STR_Global_Close listed twice
+20:13:47 Unsupported language English in stringtable
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:48 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:49 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:50 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:51 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:52 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:53 Error 20 reading file 'Users\Tmp2302\squads\Gouvernement\drapeau.paa'
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:13:54 Server error: Player without identity Vhaan Garfe (id 564938594)
+20:14:10 Item STR_Global_Close listed twice
+20:14:10 Unsupported language English in stringtable
+20:14:10 Item STR_Global_Close listed twice
+20:14:10 Unsupported language English in stringtable
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:11 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:12 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:12 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:12 Server error: Player without identity Adil Hossni (id 1122194588)
+20:14:14 Item STR_Global_Close listed twice
+20:14:14 Unsupported language English in stringtable
+20:14:15 Item STR_Global_Close listed twice
+20:14:15 Unsupported language English in stringtable
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:16 Server error: Player without identity Jean Phil Ovitch (id 157629765)
+20:14:21 Item STR_Global_Close listed twice
+20:14:21 Unsupported language English in stringtable
+20:14:21 Item STR_Global_Close listed twice
+20:14:21 Unsupported language English in stringtable
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:23 Server error: Player without identity Linus Torvalds (id 288838535)
+20:14:25 Item STR_Global_Close listed twice
+20:14:25 Unsupported language English in stringtable
+20:14:26 Item STR_Global_Close listed twice
+20:14:26 Unsupported language English in stringtable
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:14:27 Server error: Player without identity Pretre Burme (id 1381583332)
+20:15:05 Starting mission:
+20:15:05  Mission file: altisfrrp (__cur_mp)
+20:15:05  Mission world: altis
+20:15:05  Mission directory: mpmissions\__cur_mp.altis\
+20:15:05 Attempt to override final function - bis_functions_list
+20:15:05 Attempt to override final function - bis_functions_listpreinit
+20:15:05 Attempt to override final function - bis_functions_listpostinit
+20:15:05 Attempt to override final function - bis_functions_listrecompile
+20:15:05 [30383,300.421,0,"XEH: PreInit Started. v1.0.9.140907. MISSINIT: missionName=altisfrrp, worldName=altis, isMultiplayer=true, isServer=true, isDedicated=true"]
+20:15:05 [30383,300.457,0,"XEH: PreInit Finished. CACHE DISABLED? (Disable caching with cba_cache_disable.pbo): SLX_XEH_RECOMPILE=false, CBA_COMPILE_RECOMPILE=false, CBA_FUNC_RECOMPILE=false"]
+20:15:05 Attempt to override final function - bis_fnc_missiontaskslocal
+20:15:05 Attempt to override final function - bis_fnc_missionconversationslocal
+20:15:05 Attempt to override final function - bis_fnc_missionflow
+20:15:05 No owner
+20:15:06 No owner
+20:15:06 No owner
+20:15:06 No owner
+20:15:06 No owner
+20:15:06 No owner
+20:15:06 No speaker given for Dumi Sekibo
+20:15:06 No owner
+20:15:06 No speaker given for Idi Awolowo
+20:15:07 No owner
+20:15:07 No speaker given for Ryan Hughes
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No speaker given for Oringo Okadigbo
+20:15:07 No speaker given for Xue Ryu
+20:15:07 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:15:07 No owner
+20:15:07 No speaker given for Finlay Griffiths
+20:15:07 No owner
+20:15:07 No speaker given for Jack Ryan
+20:15:07 No owner
+20:15:07 No speaker given for William Bayh
+20:15:07 No owner
+20:15:07 No speaker given for Edward Acker
+20:15:07 No owner
+20:15:07 No speaker given for Kwame Azikiwe
+20:15:07 No owner
+20:15:07 No speaker given for Harvey Robertson
+20:15:07 No owner
+20:15:07 No speaker given for Jack Jones
+20:15:07 No owner
+20:15:07 No speaker given for Alfie Young
+20:15:07 No owner
+20:15:07 No speaker given for Liao Suan
+20:15:07 No owner
+20:15:07 No speaker given for Mao Hwang
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No speaker given for Jacob White
+20:15:07 No owner
+20:15:07 No speaker given for Chris Morris
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No owner
+20:15:07 No speaker given for Harrison Ryan
+20:15:08 No speaker given for Cheng Ryu
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No speaker given for Adam Bennett
+20:15:08 No owner
+20:15:08 No speaker given for Oliver Faulkner
+20:15:08 No owner
+20:15:08 No speaker given for Toby Brown
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:15:08 No owner
+20:15:08 No speaker given for Finlay Jackson
+20:15:08 No owner
+20:15:08 No speaker given for Oringo Tinibu
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No speaker given for Charles Stewart
+20:15:08 No owner
+20:15:08 No speaker given for Dwan Bayh
+20:15:08 No owner
+20:15:08 No speaker given for William Stewart
+20:15:08 No owner
+20:15:08 No speaker given for Tavish Moore
+20:15:08 No owner
+20:15:08 No speaker given for Donnan Walker
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No speaker given for Reggie MacDonald
+20:15:08 No owner
+20:15:08 No speaker given for Shawn Faulkner
+20:15:08 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 No owner
+20:15:08 soldier[B_diver_F]:Some of magazines weren't stored in soldier Vest or Uniform?
+20:15:09 No speaker given for Dumi Okoye
+20:15:09 No speaker given for Hamidi Egwu
+20:15:09 No speaker given for Zaim Achebe
+20:15:09 No owner
+20:15:09 No owner
+20:15:09 No speaker given for Katungi Sekibo
+20:15:09 No owner
+20:15:09 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:15:09 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:15:09 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:15:09 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:15:09 LODShape::AddLoadHandler: Handler not present in shape [a3\weapons_f\empty.p3d]
+20:15:09 Error: Object(2 : 1613) not found
+20:15:09 Error: Object(2 : 1618) not found
+20:15:09 Error: Object(2 : 1620) not found
+20:15:09 Error: Object(2 : 1622) not found
+20:15:09 Error: Object(2 : 1624) not found
+20:15:09 Error: Object(2 : 1626) not found
+20:15:09 Error: Object(2 : 1628) not found
+20:15:09 Error: Object(2 : 1630) not found
+20:15:09 Error: Object(2 : 1632) not found
+20:15:09 Error: Object(2 : 1634) not found
+20:15:09 Error: Object(2 : 1636) not found
+20:15:09 Error: Object(2 : 1638) not found
+20:15:09 Error: Object(2 : 1640) not found
+20:15:09 Error: Object(2 : 1642) not found
+20:15:09 Error: Object(2 : 1644) not found
+20:15:09 Error: Object(2 : 1646) not found
+20:15:09 Error: Object(2 : 1648) not found
+20:15:09 Error: Object(2 : 1650) not found
+20:15:09 Error: Object(2 : 1652) not found
+20:15:09 Error: Object(2 : 1654) not found
+20:15:09 Error: Object(2 : 1656) not found
+20:15:09 Error: Object(2 : 1658) not found
+20:15:09 Error: Object(2 : 1660) not found
+20:15:09 Error: Object(2 : 1662) not found
+20:15:09 Error: Object(2 : 1664) not found
+20:15:09 Error: Object(2 : 1666) not found
+20:15:09 Error: Object(2 : 1668) not found
+20:15:09 Error: Object(2 : 1670) not found
+20:15:09 Error: Object(2 : 1672) not found
+20:15:09 Error: Object(2 : 1674) not found
+20:15:09 Error: Object(2 : 1676) not found
+20:15:09 Error: Object(2 : 1678) not found
+20:15:09 Error: Object(2 : 1680) not found
+20:15:09 Error: Object(2 : 1682) not found
+20:15:09 Error: Object(2 : 1684) not found
+20:15:09 Error: Object(2 : 1686) not found
+20:15:09 Error: Object(2 : 1688) not found
+20:15:09 Error: Object(2 : 1690) not found
+20:15:09 Error: Object(2 : 1692) not found
+20:15:09 Error: Object(2 : 1694) not found
+20:15:09 Error: Object(2 : 1696) not found
+20:15:09 Error: Object(2 : 1698) not found
+20:15:09 Error: Object(2 : 1700) not found
+20:15:09 Error: Object(2 : 1718) not found
+20:15:09 Error: Object(2 : 1720) not found
+20:15:09 Error: Object(2 : 1722) not found
+20:15:09 Error: Object(2 : 1733) not found
+20:15:09 Error: Object(2 : 1735) not found
+20:15:09 Error: Object(2 : 1737) not found
+20:15:09 Error: Object(2 : 1739) not found
+20:15:09 Error: Object(2 : 1741) not found
+20:15:09 Error: Object(2 : 1743) not found
+20:15:09 Error: Object(2 : 1745) not found
+20:15:09 Error: Object(2 : 1747) not found
+20:15:09 Error: Object(2 : 1749) not found
+20:15:09 Error: Object(2 : 1751) not found
+20:15:09 Error: Object(2 : 1753) not found
+20:15:09 Error: Object(2 : 1755) not found
+20:15:09 Error: Object(2 : 1757) not found
+20:15:09 Error: Object(2 : 1759) not found
+20:15:09 Error: Object(2 : 1761) not found
+20:15:09 Error: Object(2 : 1769) not found
+20:15:09 Error: Object(2 : 1771) not found
+20:15:09 Error: Object(2 : 1782) not found
+20:15:09 Error: Object(2 : 1784) not found
+20:15:09 Error: Object(2 : 1792) not found
+20:15:09 Error: Object(2 : 1794) not found
+20:15:09 Error: Object(2 : 1796) not found
+20:15:09 Error: Object(2 : 1798) not found
+20:15:09 Error: Object(2 : 1807) not found
+20:15:09 Error: Object(2 : 1809) not found
+20:15:09 Error: Object(2 : 1811) not found
+20:15:09 Error: Object(2 : 1813) not found
+20:15:09 Error: Object(2 : 1815) not found
+20:15:09 Error: Object(2 : 1835) not found
+20:15:09 Error: Object(2 : 1837) not found
+20:15:09 Error: Object(2 : 1839) not found
+20:15:09 Error: Object(2 : 1841) not found
+20:15:09 Error: Object(2 : 1843) not found
+20:15:09 Error: Object(2 : 1858) not found
+20:15:09 Error: Object(2 : 1860) not found
+20:15:09 Error: Object(2 : 1862) not found
+20:15:09 Error: Object(2 : 1864) not found
+20:15:09 Error: Object(2 : 1866) not found
+20:15:09 Error: Object(2 : 1868) not found
+20:15:09 Error: Object(2 : 1870) not found
+20:15:09 Error: Object(2 : 1872) not found
+20:15:09 Error: Object(2 : 1874) not found
+20:15:09 Error: Object(2 : 1876) not found
+20:15:09 Error: Object(2 : 1878) not found
+20:15:09 Error: Object(2 : 1880) not found
+20:15:09 Error: Object(2 : 1886) not found
+20:15:09 Error: Object(2 : 1888) not found
+20:15:09 Error: Object(2 : 1890) not found
+20:15:09 Error: Object(2 : 1892) not found
+20:15:09 Error: Object(2 : 1894) not found
+20:15:09 Error: Object(2 : 1896) not found
+20:15:09 Error: Object(2 : 1898) not found
+20:15:09 Error: Object(2 : 1900) not found
+20:15:09 c:\w\stable\futura\lib\network\networkserver.cpp NetworkServer::OnClientStateChanged:NOT IMPLEMENTED - briefing!
+20:15:09 [30384,304.25,0,"XEH: PostInit Started"]
+20:15:09 [30384,304.25,0,"CBA_VERSIONING: cba=1.0.9.140907, "]
+20:15:09 [30384,304.263,0,"XEH: PostInit Finished. State: _isClient=false, _isJip=false, _isDedClient=false, _isServer=true, _isDedServer=true, _playerCheckDone=true, _sp=false, _startInitDone=true, _postInitDone=true, _mpRespawn=true, _machineType=0, _sessionId=2, _level=0, _timeOut=false, _game=3, BIS_functions=L Modules:1, group=L Modules"]
+20:15:10 Attempt to override final function - life_sql_id
+20:15:10 "extDB: Still Connected to Database"
+20:15:10 "ASM.fsm started"
+20:15:59 Server: Object info 2:3231 not found.
+20:15:59 Can't change owner from 0 to 10624168
+20:16:47 No owner
+20:16:47 Server: Object info 2:3235 not found.
+20:16:47 Can't change owner from 0 to 1375934638
+20:16:54 Client: Local object 2:3232 not found
+20:16:55 Client: Object 2:3232 (type Type_89) not found.
+20:16:55 Error: Object(2 : 3232) not found
+20:16:55 Client: Object 2:3232 (type Type_114) not found.
+20:17:03 Warning: Cleanup player - person 2:3227 not found
+20:17:03 Error: Object(2 : 3232) not found
+20:17:03 Client: Object 2:3232 (type Type_114) not found.
+20:17:04 "------------- Client Query Request -------------"
+20:17:04 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr FROM players WHERE playerid='76561198089697955'"
+20:17:04 "Time to complete: 0.0409851 (in seconds)"
+20:17:04 "Result: ["76561198089697955","Tom Mason",100000,1.71223e+006,"0","0","[[`license_cop_air`,0],[`license_cop_swat`,0],[`license_cop_cg`,0],[`license_cop_snipe`,0],[`license_cop_piloteauto`,0]]","3","[`ARC_FR_CE_Uniform_vest`,`ARC_FR_CE_PlateCarrier_2`,`ARC_FR_Backpack_Carryall_CE`,``,`sab_UN_Helmet`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc152_7`,`B_UavTerminal`,`Rangefinder`],`arifle_mas_hk417c_d`,`hgun_P07_snds_F`,[`MineDetector`],[],[`ToolKit`,`Medikit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`NVGoggles_OPFOR`],[],[`ARC_FR_CE_booniehat`,`IRA_Balaclava_Brown`],[`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`,`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`,`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`HandGrenade_Stone`,`HandGrenade_Stone`,`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`],[``,`acc_pointer_IR`,`optic_MRCO`],[`muzzle_snds_L`,``,``],[`life_inv_donuts
+20:17:04 "------------------------------------------------"
+20:17:04 "Debug Initialized Weather - Overcast\nOvercast: 0.5\nRain/Snow: 0\nFog: 0\nWind EW|NS: 2|2"
+20:17:05 Error: Object(26 : 9) not found
+20:17:05 "------------- Client Query Request -------------"
+20:17:05 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198005299106'"
+20:17:05 "Time to complete: 0.402985 (in seconds)"
+20:17:05 "Result: ["76561198005299106","Zaven Spaulding",1580,929105,"0","6","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,1],[`license_civ_dive`,0],[`license_civ_truck`,1],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,0],[`license_civ_copper`,0],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,1],[`license_civ_cement`,0],[`license_civ_home`,1]]",0,"[`U_I_G_Story_Protagonist_F`,`V_BandollierB_khk`,`B_Carryall_cbr`,``,`H_Booniehat_tan`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc148jem_29`,`ItemGPS`,`NVGoggles`,`Binocular`],``,`hgun_mas_uzi_F`,[`FirstAidKit`,`FirstAidKit`],[],[`ToolKit`,`ToolKit`],[],[`optic_ACO_grn_smg`,`G_Bandanna_shades`],[`25Rnd_mas_9x19_Mag`,`25Rnd_mas_9x19_Mag`,`25Rnd_mas_9x19_Mag`,`Chemlight_blue`,`25Rnd_mas_9x19_Mag`],[],[``,``,``],[`life_inv_water`,`life_inv_water`,`life_inv_pickaxe`,`life_inv_pickaxe`,`life_i
+20:17:05 "------------------------------------------------"
+20:17:06 "------------- Client Query Request -------------"
+20:17:06 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr FROM players WHERE playerid='76561198089697955'"
+20:17:06 "Time to complete: 0.0450134 (in seconds)"
+20:17:06 "Result: ["76561198089697955","Tom Mason",100000,1.71223e+006,"0","0","[[`license_cop_air`,0],[`license_cop_swat`,0],[`license_cop_cg`,0],[`license_cop_snipe`,0],[`license_cop_piloteauto`,0]]","3","[`ARC_FR_CE_Uniform_vest`,`ARC_FR_CE_PlateCarrier_2`,`ARC_FR_Backpack_Carryall_CE`,``,`sab_UN_Helmet`,[`ItemMap`,`ItemCompass`,`ItemWatch`,`tf_anprc152_7`,`B_UavTerminal`,`Rangefinder`],`arifle_mas_hk417c_d`,`hgun_P07_snds_F`,[`MineDetector`],[],[`ToolKit`,`Medikit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`FirstAidKit`,`NVGoggles_OPFOR`],[],[`ARC_FR_CE_booniehat`,`IRA_Balaclava_Brown`],[`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`,`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`,`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`20Rnd_mas_762x51_Stanag`,`HandGrenade_Stone`,`HandGrenade_Stone`,`20Rnd_mas_762x51_Stanag`,`16Rnd_9x21_Mag`],[``,`acc_pointer_IR`,`optic_MRCO`],[`muzzle_snds_L`,``,``],[`life_inv_donuts
+20:17:06 "------------------------------------------------"
+20:17:11 Strange convex component53 in a3\structures_f_epb\civ\playground\slidecastle_f.p3d:geometryFire
+20:17:11 Strange convex component27 in a3\structures_f_epb\civ\playground\slidecastle_f.p3d:geometryView
+20:17:39 "------------- Client Query Request -------------"
+20:17:39 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198089697955' AND alive='1' AND active='0' AND side='cop' AND type='LandVehicle'"
+20:17:39 "Time to complete: 0.0410156 (in seconds)"
+20:17:39 "Result: [[1785,"cop","sab_UN_Offroad","LandVehicle","76561198089697955",1,0,50853,0,1],[1786,"cop","sab_UN_Offroad","LandVehicle","76561198089697955",1,0,856165,0,1],[1824,"cop","sab_UN_Car","LandVehicle","76561198089697955",1,0,380793,0,0],[1844,"cop","C_Hatchback_01_sport_F","LandVehicle","76561198089697955",1,0,838668,10,1],[1933,"cop","C_Hatchback_01_sport_F","LandVehicle","76561198089697955",1,0,730916,6,1],[2583,"cop","sab_UN_Truck_C","LandVehicle","76561198089697955",1,0,992286,0,1]]"
+20:17:39 "------------------------------------------------"
+20:17:42 "------------- Client Query Request -------------"
+20:17:42 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='1933' AND pid='76561198089697955'"
+20:17:42 "Time to complete: 0.373993 (in seconds)"
+20:17:42 "Result: [1933,"cop","C_Hatchback_01_sport_F","LandVehicle","76561198089697955",1,0,730916,6,1,"0.495731"]"
+20:17:42 "------------------------------------------------"
+20:17:42 No owner
+20:18:31 Server: Object info 2:3245 not found.
+20:18:31 Can't change owner from 0 to 1312154223
+20:18:36 "------------- Client Query Request -------------"
+20:18:36 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198041979640'"
+20:18:36 "Time to complete: 0.391998 (in seconds)"
+20:18:36 "Result: ["76561198041979640","Adil Hossni",0,1.88391e+006,"0","0","[[`license_civ_driver`,1],[`license_civ_air`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_gang`,0],[`license_civ_boat`,0],[`license_civ_oil`,0],[`license_civ_dive`,0],[`license_civ_truck`,0],[`license_civ_gun`,1],[`license_civ_rebel`,0],[`license_civ_coke`,0],[`license_civ_diamond`,1],[`license_civ_copper`,1],[`license_civ_iron`,0],[`license_civ_sand`,0],[`license_civ_salt`,0],[`license_civ_cement`,0],[`license_civ_home`,0]]",0,"[`U_C_Poloshirt_stripped`,``,``,``,``,[`ItemMap`,`ItemCompass`,`tf_microdagr`],``,``,[`tf_microdagr`],[],[],[],[],[],[],[],[]]",0,"0","0",[],1,1]"
+20:18:36 "------------------------------------------------"
+20:21:31 "------------- Client Query Request -------------"
+20:21:31 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198041979640' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+20:21:31 "Time to complete: 0.392029 (in seconds)"
+20:21:31 "Result: [[1644,"civ","C_Offroad_01_F","LandVehicle","76561198041979640",1,0,806078,2,0],[1895,"civ","C_Hatchback_01_F","LandVehicle","76561198041979640",1,0,629202,0,1],[3713,"civ","B_Quadbike_01_F","LandVehicle","76561198041979640",1,0,68856,2,1],[3930,"civ","C_SUV_01_F","LandVehicle","76561198041979640",1,0,371913,0,1]]"
+20:21:31 "------------------------------------------------"
+20:21:42 "------------- Client Query Request -------------"
+20:21:42 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure FROM vehicles WHERE pid='76561198041979640' AND alive='1' AND active='0' AND side='civ' AND type='LandVehicle'"
+20:21:42 "Time to complete: 0.372986 (in seconds)"
+20:21:42 "Result: [[1644,"civ","C_Offroad_01_F","LandVehicle","76561198041979640",1,0,806078,2,1],[1895,"civ","C_Hatchback_01_F","LandVehicle","76561198041979640",1,0,629202,0,1],[3713,"civ","B_Quadbike_01_F","LandVehicle","76561198041979640",1,0,68856,2,1],[3930,"civ","C_SUV_01_F","LandVehicle","76561198041979640",1,0,371913,0,1]]"
+20:21:42 "------------------------------------------------"
+20:21:45 "------------- Client Query Request -------------"
+20:21:45 "QUERY: SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='1644' AND pid='76561198041979640'"
+20:21:45 "Time to complete: 0.391968 (in seconds)"
+20:21:45 "Result: [1644,"civ","C_Offroad_01_F","LandVehicle","76561198041979640",1,0,806078,2,1,"0.526089"]"
+20:21:45 "------------------------------------------------"
+20:21:45 No owner
+20:22:19 Warning: Cleanup player - person 2:3233 not found
+20:22:34 Warning: Cleanup player - person 2:3233 not found
+20:23:18 Error: Object(38 : 10) not found
+20:28:37 No owner
+20:28:37 Client: Local object 2:3251 not found
+20:28:37 Client: Object 2:3251 (type Type_89) not found.
+20:28:37 Client: Object 2:3251 (type Type_114) not found.
+20:28:52 Client: Object 2:3251 (type Type_89) not found.
+20:28:53 Error: Object(2 : 3251) not found
+20:28:53 Client: Object 2:3251 (type Type_114) not found.
+20:28:55 Error: Object(2 : 3251) not found
+20:28:55 Client: Object 2:3251 (type Type_114) not found.
+20:28:56 Error: Object(2 : 3251) not found
+20:28:57 Client: Object 2:3251 (type Type_89) not found.
+20:28:57 Client: Object 2:3251 (type Type_114) not found.
+20:29:01 "------------- Client Query Request -------------"
+20:29:01 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198030608871'"
+20:29:01 "Time to complete: 0.37207 (in seconds)"
+20:29:01 "Result: []"
+20:29:01 "------------------------------------------------"
+20:29:04 "------------- Insert Query Request -------------"
+20:29:04 "QUERY: SELECT playerid, name FROM players WHERE playerid='76561198030608871'"
+20:29:04 "Time to complete: 0.390015 (in seconds)"
+20:29:04 "Result: []"
+20:29:04 "------------------------------------------------"
+20:29:22 "------------- Client Query Request -------------"
+20:29:22 "QUERY: SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr FROM players WHERE playerid='76561198030608871'"
+20:29:22 "Time to complete: 0.371094 (in seconds)"
+20:29:22 "Result: ["76561198030608871","Maxime Burel",0,5000,"0","0","[]",0,"[]",0,"0","0","[]",1,0]"
+20:29:22 "------------------------------------------------"
+20:31:24 Error: Object(38 : 12) not found
+20:31:41 Error: Object(38 : 17) not found
+20:31:58 Error: Object(38 : 19) not found
+20:32:07 Error: Object(38 : 20) not found
+20:32:07 Error: Object(38 : 21) not found
+20:32:08 Error: Object(38 : 22) not found
+20:32:08 Error: Object(38 : 23) not found
+20:32:11 Error: Object(38 : 25) not found
+20:32:11 Error: Object(38 : 27) not found
+20:32:17 Error: Object(38 : 30) not found
+20:39:03 c:\w\stable\futura\lib\network\networkserver.cpp ClearNetServer:NOT IMPLEMENTED - briefing!
