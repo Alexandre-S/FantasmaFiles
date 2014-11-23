@@ -8,6 +8,7 @@
 private["_cop","_guns","_inv","_var","_val","_robber","_cfg"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 if(isNull _cop) exitWith {};
+_guns = "Aucune arme trouvée";
 _inv = [];
 _robber = false;
 //Illegal items
