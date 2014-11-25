@@ -5,7 +5,7 @@
 	Description:
 	Main functionality for lock-picking.
 */
-private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance","_chance"];
+private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance","_chance","_dicebip","_chancebip"];
 _curTarget = cursorTarget;
 life_interrupted = false;
 if(life_action_inUse) exitWith {};
@@ -71,6 +71,8 @@ if (_curTarget isKindOf "Air") then{
 	_chance = 15;
 };
 _dice = random(100);
+_dicebip = random(100);
+_chancebip = 33;
 if(!_isVehicle) then {
 	if(_dice <= _chance) then
 	{
@@ -89,10 +91,15 @@ if(!_isVehicle) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
 		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		if(_dicebip <= _chancebip) then {
+			[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		};
 	} else {
 		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
+		if(_dicebip <= _chancebip) then {
+			//Play sound
+		};
 	};
 };
