@@ -99,7 +99,8 @@ if(!_isVehicle) then {
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
 		if(_dicebip <= _chancebip) then {
-			//Play sound
+			//Play sound alarmevoiture
+			_curTarget say3D "alarmevoiture";
 		};
 	};
 };

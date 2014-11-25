@@ -141,3 +141,6 @@ else
   [[1,"Votre vehicule est dispo !"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
 serv_sv_use = serv_sv_use - [_vid];
+
+// Problem with TAFR
+[_vehicle,_vInfo select 8] spawn TON_fnc_fixTafr;
