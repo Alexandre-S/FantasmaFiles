@@ -42,9 +42,7 @@ switch(_shop) do
 						["optic_Aco",nil,0],
 						["optic_ACO_grn",nil,0],
 						["optic_Aco_smg",nil,0],
-						["optic_Holosight",nil,0],
 						["acc_flashlight",nil,0],
-						["HandGrenade_Stone","Flashbang",0],
 						["Binocular",nil,0],
 						["ItemGPS",nil,0],
 						["ItemCompass",nil,0],
@@ -52,7 +50,6 @@ switch(_shop) do
 						["ItemMap",nil,0],
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
-						["Medikit",nil,0],
 						["NVGoggles_OPFOR",nil,0],
 						["Chemlight_red",nil,0],
 						["Chemlight_yellow",nil,0],
@@ -72,67 +69,236 @@ switch(_shop) do
 		};
 	};
 
-	case "cop_brigadier":
+	case "cop_armurerie":
 	{
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (__GETC__(life_coplevel) < 2): {"Réservé aux brigadiers !"};
+			case (__GETC__(life_coplevel) < 2): {"Interdit aux recrues !"};
 			default
 			{
 				_ret =
-				["Armurerie : Brigadier",
+				["Armurerie standard",
 					[
 						["arifle_mas_m4",nil,0],
 						["arifle_mas_m4_v",nil,0],
 						["arifle_mas_m4_d",nil,0],
-						["arifle_mas_m4_gl",nil,0],
-						["arifle_mas_m4_gl_v",nil,0],
-						["arifle_mas_m4_gl_d",nil,0],
-						["arifle_mas_hk416",nil,0],
-						["arifle_mas_hk416_v",nil,0],
-						["arifle_mas_hk416_d",nil,0],
-						["arifle_mas_hk416_gl",nil,0],
-						["arifle_mas_hk416_gl_v",nil,0],
-						["arifle_mas_hk416_gl_d",nil,0],
-						["arifle_mas_m16",nil,0],
-						["arifle_mas_m16_gl",nil,0],
 						["30Rnd_mas_556x45_Stanag",nil,0],
+						["optic_Holosight",nil,0],
 						["hgun_mas_m9_F",nil,0],
 						["15Rnd_mas_9x21_Mag",nil,0],
-						["hgun_mas_glock_F",nil,0],
-						["17Rnd_mas_9x21_Mag",nil,0],
-						["optic_MRD",nil,0],
-						["optic_Arco",nil,0],
-						["optic_Hamr",nil,0],
-						["acc_pointer_IR",nil,0],
-						["Rangefinder",nil,0],
-						["UGL_FlareGreen_F",nil,0],
-						["UGL_FlareYellow_F",nil,0],
-						["UGL_FlareRed_F",nil,0],
-						["1Rnd_Smoke_Grenade_shell",nil,0],
-						["1Rnd_SmokeRed_Grenade_shell",nil,0],
-						["1Rnd_SmokeGreen_Grenade_shell",nil,0],
-						["1Rnd_SmokeYellow_Grenade_shell",nil,0],
-						["1Rnd_SmokePurple_Grenade_shell",nil,0],
-						["1Rnd_SmokeBlue_Grenade_shell",nil,0],
-						["1Rnd_SmokeOrange_Grenade_shell",nil,0]
+						["HandGrenade_Stone","Flashbang",0]
 					]
 				];
 			};
 		};
 	};
 
-	case "cop_lieutenant":
+	case "cop_infanterie":
 	{
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
+			case (!license_cop_infanterie): {"Vous n'avez pas la formation infanterie !"};
+			//case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
 			default
 			{
 				_ret =
-				["Armurerie : Lieutenant",
+				["Armurerie : Infanterie",
+					[
+						["arifle_mas_hk416",nil,0],
+						["arifle_mas_hk416_v",nil,0],
+						["arifle_mas_hk416_d",nil,0],
+						["arifle_mas_m16",nil,0],
+						["30Rnd_mas_556x45_Stanag",nil,0],
+						["LMG_mas_M249_F",nil,0],
+						["LMG_mas_M249_F_v",nil,0],
+						["LMG_mas_M249_F_d",nil,0],
+						["200Rnd_mas_556x45_Stanag",nil,0],
+						["hgun_mas_glock_F",nil,0],
+						["17Rnd_mas_9x21_Mag",nil,0],
+						["optic_MRD",nil,0],
+						["optic_Arco",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_MRCO",nil,0],
+						["MineDetector",nil,0],
+						["acc_pointer_IR",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_snipe":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!license_cop_snipe): {"Vous n'avez pas la formation tireur de précision !"};
+			//case (__GETC__(life_coplevel) < 4): {"Réservé aux capitaines!"};
+			default
+			{
+				_ret =
+				["Armurerie : Précision",
+					[
+						["srifle_mas_m24",nil,0],
+						["srifle_mas_m24_v",nil,0],
+						["srifle_mas_m24_d",nil,0],
+						["5Rnd_mas_762x51_Stanag",nil,0],
+						["srifle_mas_sr25",nil,0],
+						["srifle_mas_sr25_v",nil,0],
+						["srifle_mas_sr25_d",nil,0],
+						["srifle_mas_mk17s",nil,0],
+						["srifle_mas_m110",nil,0],
+						["20Rnd_mas_762x51_Stanag",nil,0],
+						["optic_DMS",nil,0],
+						["optic_SOS",nil,0],
+						["optic_NVS",nil,0],
+						["optic_mas_zeiss",nil,0],
+						["optic_mas_zeiss_c",nil,0],
+						["optic_mas_zeiss_eo",nil,0],
+						["optic_mas_zeiss_eo_c",nil,0],
+						["Rangefinder",nil,0],
+						["muzzle_mas_snds_SM",nil,0],
+						["muzzle_mas_snds_SMc",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_grenadier":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!license_cop_grenadier): {"Vous n'avez pas la formation grenadier !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Grenadier",
+					[
+						["arifle_mas_m4_gl",nil,0],
+						["arifle_mas_m4_gl_v",nil,0],
+						["arifle_mas_m4_gl_d",nil,0],
+						["arifle_mas_hk416_gl",nil,0],
+						["arifle_mas_hk416_gl_v",nil,0],
+						["arifle_mas_hk416_gl_d",nil,0],
+						["arifle_mas_m16_gl",nil,0],
+						["30Rnd_mas_556x45_Stanag",nil,0],
+						["mas_launch_maaws_F",nil,0],
+						["mas_MAAWS",nil,0],
+						["mas_launch_M136_F",nil,0],
+						["mas_M136",nil,0],
+						["mas_launch_Stinger_F",nil,0],
+						["mas_Stinger",nil,0],
+						["optic_Hamr",nil,0],
+						["HandGrenade",nil,0],
+						["MiniGrenade",nil,0],
+						["1Rnd_HE_Grenade_shell",nil,0],
+						["1Rnd_Smoke_Grenade_shell",nil,0],
+						["1Rnd_SmokeRed_Grenade_shell",nil,0],
+						["1Rnd_SmokeGreen_Grenade_shell",nil,0],
+						["1Rnd_SmokeYellow_Grenade_shell",nil,0],
+						["1Rnd_SmokePurple_Grenade_shell",nil,0],
+						["1Rnd_SmokeBlue_Grenade_shell",nil,0],
+						["1Rnd_SmokeOrange_Grenade_shell",nil,0],
+						["UGL_FlareGreen_F",nil,0],
+						["UGL_FlareYellow_F",nil,0],
+						["UGL_FlareRed_F",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_airweapons":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!license_cop_air): {"Vous n'avez pas la formation aérienne !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Aérienne",
+					[
+						["arifle_mas_m4c",nil,0],
+						["arifle_mas_m4c_d",nil,0],
+						["arifle_mas_m4c_v",nil,0],
+						["30Rnd_mas_556x45_Stanag",nil,0],
+						["SMG_01_F",nil,0],
+						["30Rnd_45ACP_Mag_SMG_01",nil,0],
+						["30Rnd_45ACP_Mag_SMG_01_Tracer_Green",nil,0],
+						["hgun_Pistol_Signal_F",nil,0],
+						["6Rnd_GreenSignal_F",nil,0],
+						["6Rnd_RedSignal_F",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_onumecano":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!license_cop_onumecano): {"Vous n'avez pas la formation mécano / personnel naviguant !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Mécano / Personnel naviguant",
+					[
+						["SMG_02_F",nil,0],
+						["30Rnd_9x21_Mag",nil,0],
+						["hgun_Pistol_Signal_F",nil,0],
+						["6Rnd_GreenSignal_F",nil,0],
+						["6Rnd_RedSignal_F",nil,0],
+						["MineDetector",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_onumedic":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!license_cop_onumedic): {"Vous n'avez pas la formation médic !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Médic",
+					[
+						["arifle_mas_hk416",nil,0],
+						["arifle_mas_hk416_v",nil,0],
+						["arifle_mas_hk416_d",nil,0],
+						["30Rnd_mas_556x45_Stanag",nil,0],
+						["Medikit",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
+	case "cop_swat":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!license_cop_swat): {"Vous n'avez pas la formation unité tactique !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Unité Tactique",
 					[
 						["arifle_mas_hk417c",nil,0],
 						["arifle_mas_hk417c_v",nil,0],
@@ -143,46 +309,20 @@ switch(_shop) do
 						["20Rnd_mas_762x51_Stanag",nil,0],
 						["hgun_mas_usp_F",nil,0],
 						["12Rnd_mas_45acp_Mag",nil,0],
-						["optic_MRCO",nil,0],
-						["MineDetector",nil,0],
-						["B_UavTerminal",nil,0]
-					]
-				];
-			};
-		};
-	};
-	
-	case "cop_capitaine":
-	{
-		switch(true) do
-		{
-			case (playerSide != west): {"Interdit aux civils !"};
-			case (__GETC__(life_coplevel) < 4): {"Réservé aux capitaines!"};
-			default
-			{
-				_ret =
-				["Armurerie : Capitaine",
-					[
-						["srifle_mas_m24",nil,0],
-						["srifle_mas_m24_v",nil,0],
-						["srifle_mas_m24_d",nil,0],
-						["5Rnd_mas_762x51_Stanag",nil,0],
-						["srifle_mas_mk17s",nil,0],
-						["srifle_mas_m110",nil,0],
-						["20Rnd_mas_762x51_Stanag",nil,0],
-						["LMG_mas_M249_F",nil,0],
-						["LMG_mas_M249_F_v",nil,0],
-						["LMG_mas_M249_F_d",nil,0],
-						["200Rnd_mas_556x45_Stanag",nil,0],
-						["hgun_Pistol_heavy_02_F",nil,0],
-						["6Rnd_45ACP_Cylinder",nil,0],
 						["optic_DMS",nil,0],
-						["optic_SOS",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_tws",nil,0],
 						["optic_Yorris",nil,0],
+						["acc_pointer_IR",nil,0],
+						["Rangefinder",nil,0],
+						["Laserdesignator",nil,0],
+						["B_UavTerminal",nil,0],
+						["MineDetector",nil,0],
 						["muzzle_mas_snds_M",nil,0],
 						["muzzle_mas_snds_Mc",nil,0],
 						["muzzle_mas_snds_SM",nil,0],
-						["muzzle_mas_snds_SMc",nil,0]
+						["muzzle_mas_snds_SMc",nil,0],
+						["muzzle_mas_snds_L",nil,0]
 					]
 				];
 			};
@@ -207,13 +347,9 @@ switch(_shop) do
 						["srifle_mas_m107_v",nil,0],
 						["srifle_mas_m107_d",nil,0],
 						["5Rnd_mas_127x99_Stanag",nil,0],
-						["mas_launch_maaws_F",nil,0],
-						["mas_MAAWS",nil,0],
-						["mas_launch_M136_F",nil,0],
-						["mas_M136",nil,0],
-						["mas_launch_Stinger_F",nil,0],
-						["mas_Stinger",nil,0],
-						["optic_NVS",nil,0],
+						["hgun_Pistol_heavy_02_F",nil,0],
+						["6Rnd_45ACP_Cylinder",nil,0],
+						["optic_Yorris",nil,0],
 						["optic_Nightstalker",nil,0],
 						["optic_LRPS",nil,0],
 						["optic_tws",nil,0]

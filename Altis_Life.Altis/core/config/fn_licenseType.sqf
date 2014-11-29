@@ -30,7 +30,7 @@ switch (_mode) do
 			case "snipe": {_var = "license_cop_snipe"}; // Sniper ONU
 			case "grenadier": {_var = "license_cop_grenadier"}; //grenadier license cost
 			case "onumecano": {_var = "license_cop_onumecano"}; //onumecano license cost
-			case "onumedic": {_var = "license_cop_onumecano"}; //onumecano license cost
+			case "onumedic": {_var = "license_cop_onumedic"}; //onumedic license cost
 			case "heroin": {_var = "license_civ_heroin"}; //Heroin processing license cost
 			case "marijuana": {_var = "license_civ_marijuana"}; //Marijuana processing license cost
 			case "medmarijuana": {_var = "license_civ_medmarijuana"}; //Medical Marijuana processing license cost
@@ -68,7 +68,7 @@ switch (_mode) do
 			case "license_cop_snipe": {_var = "snipe"}; //snipe license cost
 			case "license_cop_grenadier": {_var = "grenadier"}; //grenadier license cost
 			case "license_cop_onumecano": {_var = "onumecano"}; //onumecano license cost
-			case "license_cop_onumedic": {_var = "onumecano"}; //onumecano license cost
+			case "license_cop_onumedic": {_var = "onumedic"}; //onumedic license cost
 			case "license_civ_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "license_civ_marijuana": {_var = "marijuana"}; //Marijuana processing license cost
 			case "license_civ_medmarijuana": {_var = "medmarijuana"}; //Medical Marijuana processing license cost

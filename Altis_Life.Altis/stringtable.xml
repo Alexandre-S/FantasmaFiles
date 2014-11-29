@@ -3517,7 +3517,7 @@
 			<Original>SWAT License</Original>
 			<English>SWAT License</English>
 			<German>SWAT-Lizenz</German>
-			<French>License du SWAT</French>
+			<French>License Unité Tactique</French>
 			<Italian>Licenza SWAT</Italian>
 			<Portuguese>Licença do Bope</Portuguese>
 		</Key>
@@ -3528,6 +3528,54 @@
 			<French>Garde-Cotes</French>
 			<Italian>Licenza Guardia Costiera</Italian>
 			<Portuguese>Licença de Guarda Costeira</Portuguese>
+		</Key>
+		<Key ID="STR_License_Snipe">
+			<Original>Sniper Licence</Original>
+			<English>Sniper Licence</English>
+			<German>Sniper Licence</German>
+			<French>License Tireur de précision</French>
+			<Italian>Sniper Licence</Italian>
+			<Portuguese>Sniper Licence</Portuguese>
+		</Key>
+		<Key ID="STR_License_Infant">
+			<Original>Infant Licence</Original>
+			<English>Infant Licence</English>
+			<German>Infant Licence</German>
+			<French>License Infanterie</French>
+			<Italian>Infant Licence</Italian>
+			<Portuguese>Infant Licence</Portuguese>
+		</Key>
+		<Key ID="STR_License_grenad">
+			<Original>Grenad Licence</Original>
+			<English>Grenad Licence</English>
+			<German>Grenad Licence</German>
+			<French>License Grenadier</French>
+			<Italian>Grenad Licence</Italian>
+			<Portuguese>Grenad Licence</Portuguese>
+		</Key>
+		<Key ID="STR_License_PilotAuto">
+			<Original>Pilot Auto Licence</Original>
+			<English>Pilot Auto Licence</English>
+			<German>Pilot Auto Licence</German>
+			<French>License Pilote Auto</French>
+			<Italian>Pilot Auto Licence</Italian>
+			<Portuguese>Pilot Auto Licence</Portuguese>
+		</Key>
+		<Key ID="STR_License_OMedic">
+			<Original>ONU Medic Licence</Original>
+			<English>ONU Medic Licence</English>
+			<German>ONU Medic Licence</German>
+			<French>License Medic ONU</French>
+			<Italian>ONU Medic Licence</Italian>
+			<Portuguese>ONU Medic Licence</Portuguese>
+		</Key>
+		<Key ID="STR_License_OMecano">
+			<Original>ONU Mecano Licence</Original>
+			<English>ONU Mecano Licence</English>
+			<German>ONU Mecano Licence</German>
+			<French>License Mecano ONU</French>
+			<Italian>ONU Mecano Licence</Italian>
+			<Portuguese>ONU Mecano Licence</Portuguese>
 		</Key>
 		<Key ID="STR_License_Rebel">
 			<Original>Rebel Training</Original>
