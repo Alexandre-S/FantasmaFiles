@@ -196,11 +196,19 @@ switch (_shop) do
 			_return pushBack
 			["sab_UN_Truck_C",0];
 		};
+		// Grade Brigadier
+		if(license_cop_piloteauto) then
+		{
+			_return pushBack
+			["sab_UN_APC",0];
+			_return pushBack
+			["sab_UN_Hunter",0];
+			_return pushBack
+			["sab_UN_Strider",0];
+		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_return pushBack
-			["sab_UN_Hunter",0];
 			_return pushBack
 			["sab_UN_Truck_Fuel",0];
 			_return pushBack
@@ -219,17 +227,13 @@ switch (_shop) do
 			_return pushBack
 			["sab_UN_Offroad_gun",0];
 			_return pushBack
-			["sab_UN_APC",0]; // GMG
+			["sab_UN_CRV",0]; // Impossible de ranger au garage
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
 		{
 			_return pushBack
-			["sab_UN_Strider",0];
-			_return pushBack
 			["sab_UN_Strider_hmg",0];
-			_return pushBack
-			["sab_UN_CRV",0]; // Impossible de ranger au garage
 			_return pushBack
 			["sab_UN_Kuma",0];
 			_return pushBack
@@ -339,14 +343,14 @@ switch (_shop) do
 			["B_Boat_Transport_01_F",0];
 			_return pushBack
 			["sab_UN_Boat",0];
+			_return pushBack
+			["B_SDV_01_F",0];
 		};
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
 			_return pushBack
 			["sab_UN_Boat_armed",0];
-			_return pushBack
-			["B_SDV_01_F",0];
 		};
 	};
 };
