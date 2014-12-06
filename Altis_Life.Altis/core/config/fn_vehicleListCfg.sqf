@@ -27,10 +27,14 @@ switch (_shop) do
 		_return = 
 		[
 			["B_Quadbike_01_F",2500],
+			["RDS_S1203_Civ_01",6500],
 			["C_Hatchback_01_F",9500],
-			["C_Offroad_01_F",12500],
-			["BAF_Offroad_D",17500],
-			["LandRover_ACR",17500],
+			["RDS_Lada_Civ_01",10000],
+			["RDS_Gaz24_Civ_01",12500],
+			["RDS_Golf4_Civ_01",17500],
+			["C_Offroad_01_F",25000],
+			["BAF_Offroad_D",27500],
+			["LandRover_ACR",27500],
 			["C_SUV_01_F",35000],
 			["C_Van_01_transport_F",40000]
 		];
@@ -42,6 +46,35 @@ switch (_shop) do
 		};
 	};
 	
+	case "gvt_car":
+	{
+		_return = 
+		[
+			["B_Quadbike_01_F",2500],
+			["RDS_S1203_Civ_01",6500],
+			["C_Hatchback_01_F",9500],
+			["RDS_Lada_Civ_01",10000],
+			["RDS_Gaz24_Civ_01",12500],
+			["RDS_Golf4_Civ_01",17500],
+			["C_Offroad_01_F",25000],
+			["BAF_Offroad_D",27500],
+			["LandRover_ACR",27500],
+			["C_SUV_01_F",35000],
+			["C_Van_01_transport_F",40000]
+		];
+		// Si donateur
+		if(__GETC__(life_donator) > 0) then
+		{
+			_return pushBack
+			["C_Hatchback_01_sport_F",11300];
+		};
+		if(license_civ_gvt) then
+		{
+			_return pushBack
+			["I_MRAP_03_F",650000];
+		};
+	};
+	
 	case "civ_truck":
 	{
 		_return =
@@ -49,6 +82,7 @@ switch (_shop) do
 			["C_Van_01_box_F",60000],
 			["I_Truck_02_transport_F",75000],
 			["I_Truck_02_covered_F",100000],
+			["RDS_Ikarus_Civ_01",150000],
 			["B_Truck_01_transport_F",275000],
 			["O_Truck_03_transport_F",200000],
 			["O_Truck_03_covered_F",250000],
@@ -67,6 +101,8 @@ switch (_shop) do
 	{
 		_return =
 		[
+			["GNT_C185",207500], // Cessna 185
+			["GNT_C185F",237500], // Cessna 185 Amphibian
 			["C_Heli_Light_01_civil_F",253000],
 			["B_Heli_Light_01_F",253000],
 			["O_Heli_Light_02_unarmed_F",750000],
@@ -217,6 +253,8 @@ switch (_shop) do
 			["sab_UN_Truck_Rep",0];
 			_return pushBack
 			["sab_UN_Truck_Ammo",0];
+			_return pushBack
+			["sab_UN_Hunter",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
@@ -247,6 +285,10 @@ switch (_shop) do
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_return pushBack
+			["GNT_C185",0];
+			_return pushBack
+			["GNT_C185F",0];
 			_return pushBack
 			["C_Heli_Light_01_civil_F",0];
 			_return pushBack
@@ -293,6 +335,10 @@ switch (_shop) do
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_return pushBack
+			["GNT_C185",0];
+			_return pushBack
+			["GNT_C185F",0];
 			_return pushBack
 			["C_Heli_Light_01_civil_F",0];
 			_return pushBack

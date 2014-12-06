@@ -44,6 +44,62 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "RDS_Gaz24_Civ_01":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Bleu";};
+			case 1: {_color = "Gris";};
+			case 2: {_color = "Noir";};
+		};
+	};
+	
+	case "RDS_Ikarus_Civ_01":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Coloré";};
+			case 1: {_color = "Bleu/gris";};
+		};
+	};
+	
+	case "RDS_S1203_Civ_01":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Bleu";};
+			case 1: {_color = "Rouge";};
+			case 2: {_color = "Argent";};
+			case 3: {_color = "Orange";};
+			case 4: {_color = "Blanc";};
+			case 5: {_color = "Vert";};
+		};
+	};
+	
+	case "RDS_Lada_Civ_01":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Blanche";};
+			case 1: {_color = "Rouge";};
+			case 2: {_color = "Verte rouillé";};
+			case 3: {_color = "Décoré";};
+		};
+	};
+	
+	case "RDS_Golf4_Civ_01":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Rouge";};
+			case 1: {_color = "Noir";};
+			case 2: {_color = "Jaune";};
+			case 3: {_color = "Bleu";};
+			case 4: {_color = "Blanche";};
+			case 5: {_color = "Verte";};
+		};
+	};
+	
 	case "C_Hatchback_01_sport_F":
 	{
 		switch(_index) do
@@ -302,6 +358,40 @@ switch (_vehicle) do
 			case 1: {_color = "Vert"};
 			case 3: {_color = "Vert Camo"};
 			case 4: {_color = "Désert Camo"};
+		};
+	};
+	
+	case "I_MRAP_03_F" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Noir";};
+		};
+	};
+	
+	case "GNT_C185":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Blanc / Bleu"};
+			case 1: {_color = "Jaune / Rouge"};
+			case 2: {_color = "Jaune"};
+			case 3: {_color = "Blanc"};
+			case 4: {_color = "Gris"};
+			case 5: {_color = "Gendarmerie"};
+		};
+	};
+	
+	case "GNT_C185F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Blanc / Bleu"};
+			case 1: {_color = "Jaune / Rouge"};
+			case 2: {_color = "Jaune"};
+			case 3: {_color = "Blanc"};
+			case 4: {_color = "Gris"};
+			case 5: {_color = "Gendarmerie"};
 		};
 	};
 };

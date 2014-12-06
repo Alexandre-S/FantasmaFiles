@@ -15,12 +15,17 @@ switch (_className) do
 	case "C_Kart_01_Red_F": {5};
 	case "C_Kart_01_Vrana_F": {5};
 	case "B_Quadbike_01_F": {25};
+	case "RDS_S1203_Civ_01": {90};
 	case "C_Hatchback_01_F": {40};
+	case "RDS_Lada_Civ_01": {40};
+	case "RDS_Gaz24_Civ_01": {40};
+	case "RDS_Golf4_Civ_01": {40};
 	case "C_Offroad_01_F": {65};
 	case "BAF_Offroad_D": {75};
 	case "LandRover_ACR": {75};
 	case "ACR_LandRover_AMB": {75};
 	case "C_SUV_01_F": {50};
+	case "RDS_Ikarus_Civ_01": {75};
 	case "C_Van_01_transport_F": {100};
 	case "C_Van_01_box_F": {150};
 	case "I_Truck_02_transport_F": {200};
@@ -38,6 +43,8 @@ switch (_className) do
 	case "O_Heli_Transport_04_F": {40};
 	case "bwi_a3_t6a_7": {15};
 	case "bwi_a3_at6b_3": {15};
+	case "GNT_C185": {15};
+	case "GNT_C185F": {15};
 	case "C_Rubberboat": {45};
 	case "C_Boat_Civil_01_F": {85};
 	case "I_Truck_02_medical_F": {250};
@@ -51,6 +58,7 @@ switch (_className) do
 	case "PMC_MH9": {10};
 	case "O_MRAP_02_F": {60};
 	case "O_MRAP_02_hmg_F": {60};
+	case "I_MRAP_03_F": {60};
 	case "sab_UN_Car": {40};
 	case "sab_UN_Offroad": {65};
 	case "C_Hatchback_01_sport_F": {40};

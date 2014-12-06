@@ -80,6 +80,62 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "RDS_Gaz24_Civ_01":
+	{
+		_ret =
+		[
+			["\rds_a2port_civ\volha\Data\Volha_ECIV_CO.paa","civ"],
+			["\rds_a2port_civ\volha\Data\Volha_Gray_ECIV_CO.paa","civ"],
+			["\rds_a2port_civ\volha\Data\Volha_Black_ECIV_CO.paa","civ"]
+		];
+	};
+	
+	case "RDS_Ikarus_Civ_01":
+	{
+		_ret =
+		[
+			["\rds_a2port_civ\Ikarus\data\bus_exterior_eciv_co","civ"],
+			["\rds_a2port_civ\Ikarus\data\bus_exterior_co.paa","civ"]
+		];
+	};
+	
+	case "RDS_S1203_Civ_01":
+	{
+		_ret =
+		[
+			["\rds_a2port_civ\S1203\data\s1203_co.paa","civ"],
+			["\rds_a2port_civ\s1203\Data\s1203_red_CO.paa","civ"],
+			["\rds_a2port_civ\s1203\Data\s1203_silver_CO.paa","civ"],
+			["\rds_a2port_civ\s1203\Data\s1203_orange_CO.paa","civ"],
+			["\rds_a2port_civ\s1203\Data\s1203_white_CO.paa","civ"],
+			["\rds_a2port_civ\s1203\Data\s1203_green_CO.paa""civ"]
+		];
+	};
+	
+	case "RDS_Lada_Civ_01":
+	{
+		_ret =
+		[
+			["\rds_a2port_civ\Lada\Data\lada_white_co.paa","civ"],
+			["\rds_a2port_civ\Lada\Data\Lada_red_CO.paa","civ"],
+			["\rds_a2port_civ\Lada\Data\lada_eciv1_co.paa","civ","\rds_a2port_civ\Lada\Data\Lada_glass_ECIV1_CA.paa"],
+			["\rds_a2port_civ\Lada\Data\lada_eciv2_co.paa","civ","\rds_a2port_civ\Lada\Data\Lada_glass_ECIV2_CA.paa"]
+		];
+	};
+	
+	case "RDS_Golf4_Civ_01":
+	{
+		_ret =
+		[
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_co.paa","civ"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_black_CO.paa","civ"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_yellow_CO.paa","civ"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_blue_CO.paa","civ"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_white_CO.paa","civ"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_green_CO.paa","civ"]
+		];
+	};
+	
 	case "C_SUV_01_F":
 	{
 		_ret =
@@ -287,6 +343,41 @@ switch (_vehicle) do
 			["pansy\LandRover\data\lr_acr_base_co","reb","pansy\LandRover\data\lr_acr_spec_co","pansy\LandRover\data\lr_mg-spg9_ind_co"],
 			["pansy\LandRover\data\lr_base_w_baf_co","reb","pansy\LandRover\data\lr_special_w_baf_co","pansy\LandRover\data\lr_mg-spg9_w_baf_co"],
 			["pansy\LandRover\data\lr_base_ind_co","reb","pansy\LandRover\data\lr_special_w_baf_co","pansy\LandRover\data\lr_mg-spg9_ind_co"]
+		];
+	};
+	
+	case "I_MRAP_03_F":
+	{
+		_ret = 
+		[
+			["\A3\soft_f_beta\MRAP_03\Data\mrap_03_ext_co.paa","civ","\a3\data_f\vehicles\turret_co.paa"]
+		];
+	};
+	
+	case "GNT_C185":
+	{
+		_ret = 
+		[
+			["gnt_c185\tex\c185fuse4.paa","civ","gnt_c185\tex\c185wings4.paa"],
+			["gnt_c185\tex\c185fuse2.paa","civ","gnt_c185\tex\c185wings2.paa"],
+			["gnt_c185\tex\c185fuse3.paa","civ","gnt_c185\tex\c185wings3.paa"],
+			["gnt_c185\tex\c185fuse.paa","civ","gnt_c185\tex\c185wings.paa"],
+			["gnt_c185\tex\c185fuse5.paa","civ","gnt_c185\tex\c185wings5.paa"],
+			["altisrpfr\texture\cessna_gen_corps.paa","cop","altisrpfr\texture\cessna_gen_ailes.paa"]
+			
+		];
+	};
+	
+	case "GNT_C185F":
+	{
+		_ret = 
+		[
+			["gnt_c185\tex\c185fuse4.paa","civ","gnt_c185\tex\c185wings4.paa"],
+			["gnt_c185\tex\c185fuse2.paa","civ","gnt_c185\tex\c185wings2.paa"],
+			["gnt_c185\tex\c185fuse3.paa","civ","gnt_c185\tex\c185wings3.paa"],
+			["gnt_c185\tex\c185fuse.paa","civ","gnt_c185\tex\c185wings.paa"],
+			["gnt_c185\tex\c185fuse5.paa","civ","gnt_c185\tex\c185wings5.paa"],
+			["altisrpfr\texture\cessna_gen_corps.paa","cop","altisrpfr\texture\cessna_gen_ailes.paa"]
 		];
 	};
 };
