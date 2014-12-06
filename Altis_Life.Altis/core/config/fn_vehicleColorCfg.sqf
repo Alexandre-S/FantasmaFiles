@@ -363,7 +363,11 @@ switch (_vehicle) do
 			["gnt_c185\tex\c185fuse3.paa","civ","gnt_c185\tex\c185wings3.paa"],
 			["gnt_c185\tex\c185fuse.paa","civ","gnt_c185\tex\c185wings.paa"],
 			["gnt_c185\tex\c185fuse5.paa","civ","gnt_c185\tex\c185wings5.paa"],
-			["altisrpfr\texture\cessna_gen_corps.paa","cop","altisrpfr\texture\cessna_gen_ailes.paa"]
+			["gnt_c185\tex\c185fuse4.paa","cop","gnt_c185\tex\c185wings4.paa"],
+			["gnt_c185\tex\c185fuse2.paa","cop","gnt_c185\tex\c185wings2.paa"],
+			["gnt_c185\tex\c185fuse3.paa","cop","gnt_c185\tex\c185wings3.paa"],
+			["gnt_c185\tex\c185fuse.paa","cop","gnt_c185\tex\c185wings.paa"],
+			["gnt_c185\tex\c185fuse5.paa","cop","gnt_c185\tex\c185wings5.paa"]
 			
 		];
 	};
@@ -377,7 +381,11 @@ switch (_vehicle) do
 			["gnt_c185\tex\c185fuse3.paa","civ","gnt_c185\tex\c185wings3.paa"],
 			["gnt_c185\tex\c185fuse.paa","civ","gnt_c185\tex\c185wings.paa"],
 			["gnt_c185\tex\c185fuse5.paa","civ","gnt_c185\tex\c185wings5.paa"],
-			["altisrpfr\texture\cessna_gen_corps.paa","cop","altisrpfr\texture\cessna_gen_ailes.paa"]
+			["gnt_c185\tex\c185fuse4.paa","cop","gnt_c185\tex\c185wings4.paa"],
+			["gnt_c185\tex\c185fuse2.paa","cop","gnt_c185\tex\c185wings2.paa"],
+			["gnt_c185\tex\c185fuse3.paa","cop","gnt_c185\tex\c185wings3.paa"],
+			["gnt_c185\tex\c185fuse.paa","cop","gnt_c185\tex\c185wings.paa"],
+			["gnt_c185\tex\c185fuse5.paa","cop","gnt_c185\tex\c185wings5.paa"]
 		];
 	};
 };
