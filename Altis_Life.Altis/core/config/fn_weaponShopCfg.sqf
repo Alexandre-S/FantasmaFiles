@@ -442,6 +442,7 @@ switch(_shop) do
 					["Magasin Croix-Rouge",
 						[
 							["U_Rangemaster",nil,250],
+							["FANTASMA_MedicTenue",nil,550],
 							["tf_anprc148jem",nil,5000],
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
