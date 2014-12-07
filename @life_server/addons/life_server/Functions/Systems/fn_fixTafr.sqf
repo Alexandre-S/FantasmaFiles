@@ -16,4 +16,4 @@ _color = _this select 1;
 
 
 sleep 5;
-[[_vehicle,_color],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+[[_vehicle,_color],"life_fnc_colorVehicle",nil,false] spawn life_fnc_MP;

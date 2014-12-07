@@ -92,7 +92,7 @@ switch(playerSide) do {
 _vehicle setVariable ["tf_hasRadio", true, true];
 _vehicle setVariable ["tf_range", 50000, true];
 
-_vehicle allowDamage true;
+
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 life_vehicles pushBack _vehicle;
@@ -103,6 +103,10 @@ if(_mode) then {
 		[[(getPlayerUID player),playerSide,_vehicle,_colorIndex],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
 	//};
 };
+
+sleep 5;
+[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+_vehicle allowDamage true;
 
 [0] call SOCK_fnc_updatePartial;
 closeDialog 0; //Exit the menu.
