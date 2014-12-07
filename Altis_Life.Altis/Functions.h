@@ -95,6 +95,7 @@ class Life_Client_Core
 		class putInCar {};
 		class stopEscorting {};
 		class restrainAction {};
+		class restrain {};
 		class searchAction {};
 		class searchVehAction {};
 		class unrestrain {};
