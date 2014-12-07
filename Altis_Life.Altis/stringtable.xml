@@ -3514,20 +3514,20 @@
 			<Portuguese>Licença de Porte de Armas</Portuguese>
 		</Key>
 		<Key ID="STR_License_Swat">
-			<Original>SWAT License</Original>
-			<English>SWAT License</English>
-			<German>SWAT-Lizenz</German>
+			<Original>Tactical License</Original>
+			<English>Tactical License</English>
+			<German>Tactical-Lizenz</German>
 			<French>License Unité Tactique</French>
-			<Italian>Licenza SWAT</Italian>
-			<Portuguese>Licença do Bope</Portuguese>
+			<Italian>Licenza Tactical</Italian>
+			<Portuguese>Licença Tactical</Portuguese>
 		</Key>
 		<Key ID="STR_License_CG">
-			<Original>Coast Guard License</Original>
-			<English>Coast Guard License</English>
-			<German>Küstenwache</German>
-			<French>Garde-Cotes</French>
-			<Italian>Licenza Guardia Costiera</Italian>
-			<Portuguese>Licença de Guarda Costeira</Portuguese>
+			<Original>Cavalerie</Original>
+			<English>Cavalerie</English>
+			<German>Cavalerie</German>
+			<French>Cavalerie Blindé</French>
+			<Italian>Cavalerie</Italian>
+			<Portuguese>Cavalerie</Portuguese>
 		</Key>
 		<Key ID="STR_License_Snipe">
 			<Original>Sniper Licence</Original>

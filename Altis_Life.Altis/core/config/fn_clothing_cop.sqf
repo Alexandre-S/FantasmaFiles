@@ -148,7 +148,6 @@ switch (_filter) do
 			["G_Lowprofile",nil,0],
 			["G_Combat",nil,0],
 			["G_Tactical_Clear",nil,0]
-			
 		];
 	};
 	
@@ -160,6 +159,11 @@ switch (_filter) do
 		_ret pushBack ["ARC_FR_CE_BandollierB_rgr","Bandoulière recrue 1",0];
 		_ret pushBack ["ARC_FR_Daguet_BandollierB_rgr","Bandoulière recrue 2",0];
 		_ret pushBack ["sab_UN_Vest",nil,0];
+		// Medic
+		if(license_cop_onumedic) then
+		{
+			_ret pushBack ["V_TacVestIR_blk",nil,0];
+		};
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["ARC_FR_CE_PlateCarrier_1",nil,0];
@@ -204,6 +208,11 @@ switch (_filter) do
 			_ret pushBack ["B_FieldPack_blk",nil,0];
 			_ret pushBack ["B_Bergen_blk",nil,0];
 			_ret pushBack ["B_Bergen_mcamo",nil,0];
+		};
+		// Unité Tactique
+		if(license_cop_swat) then
+		{
+			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 2) then
