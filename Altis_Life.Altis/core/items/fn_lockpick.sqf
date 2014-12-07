@@ -80,6 +80,7 @@ if(!_isVehicle) then {
 		_curTarget setVariable["restrained",false,true];
 		_curTarget setVariable["Escorting",false,true];
 		_curTarget setVariable["transporting",false,true];
+		//[[getPlayerUID player,profileName,"486"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 	}
 	else
 	{

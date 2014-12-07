@@ -102,10 +102,51 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1) then
-		{
-			[] call life_fnc_restrainAction;
-		};
+		switch (playerSide) do
+        {
+            case west:
+            {
+            if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !life_knockout&& speed cursorTarget < 1) then
+                {
+                    if([false,"handcuffs",1] call life_fnc_handleInv) then
+                    {
+                        [] call life_fnc_restrainAction;
+                        life_inv_handcuffs = life_inv_handcuffs - 1;
+                        systemChat localize "STR_NOTF_RestrainedPerson";
+                    }else{
+                        systemChat localize "STR_NOTF_NoHandcuffs";
+                    };
+                };
+            };
+            case independent:
+            {
+            if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !life_knockout&& speed cursorTarget < 1) then
+                {
+                    if([false,"handcuffs",1] call life_fnc_handleInv) then
+                    {
+                        [] call life_fnc_restrainAction;
+                        life_inv_handcuffs = life_inv_handcuffs - 1;
+                        systemChat localize "STR_NOTF_RestrainedPerson";
+                    }else{
+                        systemChat localize "STR_NOTF_NoHandcuffs";
+                    };
+                };
+            };
+            case civilian:
+            {
+            if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !life_knockout&& speed cursorTarget < 1) then
+                {
+                    if([false,"handcuffs",1] call life_fnc_handleInv) then
+                    {
+                        [] call life_fnc_restrainAction;
+                        life_inv_handcuffs = life_inv_handcuffs - 1;
+                        systemChat localize "STR_NOTF_RestrainedPerson";
+                    }else{
+                        systemChat localize "STR_NOTF_NoHandcuffs";
+                    };
+                };
+            };
+        };
 	};
 	
 	//Knock out, this is experimental and yeah...
@@ -115,7 +156,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(player getVariable["surrender",false])) then
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(cursorTarget getVariable "restrained")) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
 				if("ItemWatch" in assignedItems cursorTarget) then {

@@ -64,7 +64,7 @@ while {true} do
 		};
 	} foreach (allMissionObjects "Thing");
 	
-	sleep (2 * 60);
+	sleep (10 * 60);
 	{
 		deleteVehicle _x;
 	} foreach (allMissionObjects "GroundWeaponHolder");

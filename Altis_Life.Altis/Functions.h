@@ -107,6 +107,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 		class surrender {};
+		class InteractionMenu {};
 	};
 	
 	class Housing
@@ -289,7 +290,7 @@ class Life_Client_Core
 		class copSearch {};
 		class bountyReceive {};
 		class searchClient {};
-		class restrain {};
+		class InteractionMenu {};
 		class ticketGive {};
 		class ticketPay {};
 		class ticketPrompt {};
