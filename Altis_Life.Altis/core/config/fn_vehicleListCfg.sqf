@@ -138,11 +138,11 @@ switch (_shop) do
 		if(__GETC__(life_medicLevel) >= 3) then
 		{
 			_return pushBack
-			["I_Truck_02_medical_F",25000];
+			["I_Truck_02_medical_F",20000];
 			_return pushBack
-			["O_Truck_03_medical_F",45000];
+			["O_Truck_03_medical_F",25000];
 			_return pushBack
-			["B_Truck_01_medical_F",60000];
+			["B_Truck_01_medical_F",30000];
 		};
 	};
 	
@@ -150,19 +150,19 @@ switch (_shop) do
 		if(__GETC__(life_medicLevel) >= 1) then
 		{
 			_return pushBack
-			["C_Heli_Light_01_civil_F",253000];
+			["C_Heli_Light_01_civil_F",40000];
 			_return pushBack
-			["B_Heli_Light_01_F",253000];
+			["B_Heli_Light_01_F",40000];
 		};
 		if(__GETC__(life_medicLevel) >= 2) then
 		{
 			_return pushBack
-			["O_Heli_Light_02_unarmed_F",750000];
+			["O_Heli_Light_02_unarmed_F",75000];
 		};
 		if(__GETC__(life_medicLevel) >= 4 && __GETC__(life_donator) > 0) then
 		{
 			_return pushBack
-			["O_Heli_Transport_04_medevac_F",1500000];
+			["O_Heli_Transport_04_medevac_F",150000];
 		};
 	};
 	
