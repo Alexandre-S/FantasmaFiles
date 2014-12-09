@@ -8,6 +8,7 @@
 #define Btn1 37450
 #define Btn2 37451
 #define Btn3 37452
+#define Btn4 37453
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3"];
@@ -22,6 +23,7 @@ if(!isPlayer _curTarget && (_curTarget getVariable["restrained",false])) exitWit
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
+_Btn4 = _display displayCtrl Btn4;
 life_pInact_curTarget = _curTarget;
 
 //Set Escort Button
@@ -44,3 +46,6 @@ if([false,"handcuffkeys",1] call life_fnc_handleInv) then
 	_Btn2 buttonSetAction "[] spawn life_fnc_lockpick; closeDialog 0;";
 	if(life_inv_lockpick > 0) then {_Btn2 ctrlEnable true;} else {_Btn2 ctrlEnable false;};
 };
+
+_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
+_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
