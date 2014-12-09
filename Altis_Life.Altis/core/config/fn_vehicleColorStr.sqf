@@ -269,7 +269,92 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Orange"};
-			case 1: {_color = "Noir"};
+			
+			case 1: {_color = "Blanc/Beige"};
+			case 2: {_color = "Blanc"};
+			case 3: {_color = "Blanc/Bleu"};
+			case 4: {_color = "Blanc/Bleu clair"};
+			case 5: {_color = "Blanc/Gris"};
+			case 6: {_color = "Blanc/Jaune"};
+			case 7: {_color = "Blanc/Jaune clair"};
+			case 8: {_color = "Blanc/Orange"};
+			case 9: {_color = "Blanc/Rouge"};
+			case 10: {_color = "Blanc/Vert"};
+			case 11: {_color = "Blanc/Violet"};
+			
+			case 12: {_color = "Jaune clair/Beige"};
+			case 13: {_color = "Jaune clair/Blanc"};
+			case 14: {_color = "Jaune clair/Bleu"};
+			case 15: {_color = "Jaune clair/Bleu clair"};
+			case 16: {_color = "Jaune clair/Gris"};
+			case 17: {_color = "Jaune clair/Jaune"};
+			case 18: {_color = "Jaune clair"};
+			case 19: {_color = "Jaune clair/Orange"};
+			case 20: {_color = "Jaune clair/Rouge"};
+			case 21: {_color = "Jaune clair/Vert"};
+			case 22: {_color = "Jaune clair/Violet"};
+			
+			case 23: {_color = "Jaune/Beige"};
+			case 24: {_color = "Jaune/Blanc"};
+			case 25: {_color = "Jaune/Bleu"};
+			case 26: {_color = "Jaune/Bleu clair"};
+			case 27: {_color = "Jaune/Gris"};
+			case 28: {_color = "Jaune"};
+			case 29: {_color = "Jaune/Jaune clair"};
+			case 30: {_color = "Jaune/Orange"};
+			case 31: {_color = "Jaune/Rouge"};
+			case 32: {_color = "Jaune/Vert"};
+			case 33: {_color = "Jaune/Violet"};
+			
+			case 34: {_color = "Rouge/Beige"};
+			case 35: {_color = "Rouge/Blanc"};
+			case 36: {_color = "Rouge/Bleu"};
+			case 37: {_color = "Rouge/Bleu clair"};
+			case 38: {_color = "Rouge/Gris"};
+			case 39: {_color = "Rouge/Jaune"};
+			case 40: {_color = "Rouge/Jaune clair"};
+			case 41: {_color = "Rouge/Orange"};
+			case 42: {_color = "Rouge"};
+			case 43: {_color = "Rouge/Vert"};
+			case 44: {_color = "Rouge/Violet"};
+			
+			case 45: {_color = "Rouge vif/Beige"};
+			case 46: {_color = "Rouge vif/Blanc"};
+			case 47: {_color = "Rouge vif/Bleu"};
+			case 48: {_color = "Rouge vif/Bleu clair"};
+			case 49: {_color = "Rouge vif/Gris"};
+			case 50: {_color = "Rouge vif/Jaune"};
+			case 51: {_color = "Rouge vif/Jaune clair"};
+			case 52: {_color = "Rouge vif/Orange"};
+			case 53: {_color = "Rouge vif/Rouge"};
+			case 54: {_color = "Rouge vif/Vert"};
+			case 55: {_color = "Rouge vif/Violet"};
+			
+			case 56: {_color = "Vert/Beige"};
+			case 57: {_color = "Vert/Blanc"};
+			case 58: {_color = "Vert/Bleu"};
+			case 59: {_color = "Vert/Bleu clair"};
+			case 60: {_color = "Vert/Gris"};
+			case 61: {_color = "Vert/Jaune"};
+			case 62: {_color = "Vert/Jaune clair"};
+			case 63: {_color = "Vert/Orange"};
+			case 64: {_color = "Vert/Rouge"};
+			case 65: {_color = "Vert"};
+			case 66: {_color = "Vert/Violet"};
+			
+			case 67: {_color = "Violet/Beige"};
+			case 68: {_color = "Violet/Blanc"};
+			case 69: {_color = "Violet/Bleu"};
+			case 70: {_color = "Violet/Bleu clair"};
+			case 71: {_color = "Violet/Gris"};
+			case 72: {_color = "Violet/Jaune"};
+			case 73: {_color = "Violet/Jaune clair"};
+			case 74: {_color = "Violet/Orange"};
+			case 75: {_color = "Violet/Rouge"};
+			case 76: {_color = "Violet/Vert"};
+			case 77: {_color = "Violet"};
+			
+			case 78: {_color = "Noir"};
 		};
 	};
 	
