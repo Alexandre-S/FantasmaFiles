@@ -84,6 +84,19 @@ switch (_code) do
 		};
 	};
 	
+	//ALT F4
+	case 62:
+	{
+		if(_alt) then {
+			exitwith {
+				[[0,format["ATTENTION INTERDIT ! - %1 A ALT F4 - ATTENTION INTERDIT !", profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+				[[0,format["ATTENTION INTERDIT ! - %1 A ALT F4 - ATTENTION INTERDIT !", profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+				[[0,format["ATTENTION INTERDIT ! - %1 A ALT F4 - ATTENTION INTERDIT !", profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+				_handled=false;
+			};
+		};
+	};
+	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
