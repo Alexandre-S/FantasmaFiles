@@ -5,7 +5,7 @@
 	Description:
 	Retrains the client.
 */
-private["_restrainer","_player"];
+private["_restrainer","_player","_position","_radius","_res"];
 _restrainer = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
 
@@ -19,7 +19,12 @@ _player = player;
 		waitUntil {(time - _time) > (10 * 60)};
 		
 		if(!(player getVariable["restrained",FALSE])) exitWith {};
-		if(!([west,getPos player,50] call life_fnc_nearUnits) || !([civilian,getPos player,50] call life_fnc_nearUnits) || !([independent,getPos player,50] call life_fnc_nearUnits) && (player getVariable["restrained",TRUE]) && (vehicle player == player)) exitWith {
+		_position = getPos player;
+		_radius = 50;
+		_res = false;
+		_res = {_x != player && alive _x && _position distance _x < _radius} count playableUnits > 0;
+		
+		if(!(_res) && (player getVariable["restrained",FALSE]) && (vehicle player == player)) exitWith {
 			player setVariable["restrained",FALSE,TRUE];
 			player setVariable["Escorting",FALSE,TRUE];
 			player setVariable["transporting",false,true];
