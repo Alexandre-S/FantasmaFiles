@@ -146,6 +146,14 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Blanc"};
 			case 1: {_color = "Rouge"};
+			case 2: {_color = "Bleu"};
+			case 3: {_color = "Bleu nuit"};
+			case 4: {_color = "Vert foncé"};
+			case 5: {_color = "Vert clair"};
+			case 6: {_color = "Jaune clair"};
+			case 7: {_color = "Orange"};
+			case 8: {_color = "Gris"};
+			case 9: {_color = "Noir"};
 		};
 	};
 	
@@ -155,6 +163,14 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Blanc"};
 			case 1: {_color = "Rouge"};
+			case 2: {_color = "Bleu"};
+			case 3: {_color = "Bleu nuit"};
+			case 4: {_color = "Vert foncé"};
+			case 5: {_color = "Vert clair"};
+			case 6: {_color = "Jaune clair"};
+			case 7: {_color = "Orange"};
+			case 8: {_color = "Gris"};
+			case 9: {_color = "Noir"};
 		};
 	};
 	
