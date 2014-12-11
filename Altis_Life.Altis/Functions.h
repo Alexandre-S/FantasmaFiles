@@ -391,5 +391,7 @@ class Life_Client_Core
 		class vehicleGarage {};
 		class gangDeposit {};
 		class InsureCar{};
+		class calldialog {};
+		class sendChannel {};
 	};
 };

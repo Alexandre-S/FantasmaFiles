@@ -32,6 +32,8 @@ life_removeWanted = false;
 life_action_gathering = false;
 life_handcuffs = ObjNull;
 life_handcuffkeys = ObjNull;
+//Channel 7
+life_channel_send = true;
 
 life_isblacklisted = false;
 life_factnumber = 0;
