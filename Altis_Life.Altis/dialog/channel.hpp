@@ -40,7 +40,7 @@ class controls {
 		class Channel7NewsEditText : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Message global:";
+			text = "Message :";
 			x = 0.12;
             y = 0.4;
 			w = 0.2;
@@ -61,7 +61,7 @@ class controls {
 		class Channel7Description : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Ce message sera envoyé à tout le monde. Attention à ce que vous écrivez !";
+			text = "Ce message sera envoyÃ© Ã  tout le monde. Attention Ã  ce que vous Ã©crivez !";
 			x = 0.12;
             y = 0.5;
 			w = 0.5;
@@ -80,7 +80,7 @@ class controls {
 		
 		class SendButtonKey : Life_RscButtonMenu {
 			idc = 9005;
-			text = "Send";
+			text = "Envoyer";
 			onButtonClick = "[] call life_fnc_sendChannel; closeDialog 0;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
