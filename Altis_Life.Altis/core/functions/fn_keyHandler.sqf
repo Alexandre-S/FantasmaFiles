@@ -85,7 +85,7 @@ switch (_code) do
 	};
 	
 	//ALT F4
-	case 62:
+	/*case 62:
 	{
 		if(_alt) then {
 			exitwith {
@@ -95,7 +95,7 @@ switch (_code) do
 				_handled=false;
 			};
 		};
-	};
+	};*/
 	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
