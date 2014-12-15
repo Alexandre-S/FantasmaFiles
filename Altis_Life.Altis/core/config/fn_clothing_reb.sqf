@@ -87,7 +87,7 @@ switch (_filter) do
 			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
 			_ret pushBack ["UVF_Soldier_Outfit_2","Uniforme noir",50000];
 			_ret pushBack ["IRA_Soldier_Outfit_4","Uniforme camo",50000];
-			_ret pushBack ["vip_clothes",nil,50000];
+			//_ret pushBack ["vip_clothes",nil,50000];
 		};
 	};
 	
