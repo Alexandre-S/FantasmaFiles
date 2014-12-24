@@ -44,6 +44,7 @@ switch(_shop) do
 						["optic_Aco_smg",nil,0],
 						["acc_flashlight",nil,0],
 						["Binocular",nil,0],
+						["SmokeShellYellow","Gaz Lacrimo",0],
 						["ItemGPS",nil,0],
 						["ItemCompass",nil,0],
 						["ItemWatch","SmartWatch",0],
