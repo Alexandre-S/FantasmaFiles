@@ -3709,6 +3709,14 @@
 			<Italian>Gouvernement</Italian>
 			<Portuguese>Gouvernement</Portuguese>
 		</Key>
+		<Key ID="STR_License_Vigil">
+			<Original>Vigil</Original>
+			<English>Vigil</English>
+			<German>Vigil</German>
+			<French>Vigil</French>
+			<Italian>Vigil</Italian>
+			<Portuguese>Vigil</Portuguese>
+		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
 		<Key ID="STR_ISTR_Blast_VaultOnly">

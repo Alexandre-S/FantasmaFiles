@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothing_bruce.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -5,19 +6,20 @@
 	Description:
 	Master configuration file for Bruce's Outback Outfits.
 */
-private["_filter"];
+private["_filter","_ret"];
 _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
 ctrlSetText[3103,"Bruce's Outback Outfits"];
 comment "Remove existing items";
-
+_ret = [];
 switch (_filter) do
 {
 	//Uniforms
 	case 0:
 	{
+		_ret = 
 		[
 			["U_C_Poloshirt_blue","Poloshirt Blue",250],
 			["U_C_Poloshirt_burgundy","Poloshirt Burgundy",275],
@@ -106,11 +108,16 @@ switch (_filter) do
 			["rds_uniform_Functionary2",nil,7500],
 			["rds_uniform_priest",nil,2500]
 		];
+		if(license_civ_vigil) then
+		{
+			_ret pushBack ["vip_clothes","Tenue Vigil",5500];
+		};
 	};
 	
 	//Hats
 	case 1:
 	{
+		_ret = 
 		[
 			["H_Bandanna_camo","Camo Bandanna",120],
 			["H_Bandanna_surfer","Surfer Bandanna",130],
@@ -151,6 +158,7 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
+		_ret = 
 		[
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -172,13 +180,16 @@ switch (_filter) do
 			["G_Bandanna_blk",nil,100],
 			["G_Bandanna_oli",nil,100],
 			["G_Bandanna_shades",nil,100],
-			["G_Bandanna_sport",nil,100]
+			["G_Bandanna_sport",nil,100],
+			["Mask_M40",nil,2000],
+			["Mask_M40_OD",nil,2000],
 		];
 	};
 	
 	//Vest
 	case 3:
 	{
+		_ret = 
 		[
 			["V_BandollierB_oli",nil,1200],
 			["V_BandollierB_blk",nil,1200],
@@ -192,6 +203,7 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
+		_ret = 
 		[
 			["B_AssaultPack_cbr",nil,2500],
 			["B_AssaultPack_khk",nil,2500],
@@ -218,3 +230,4 @@ switch (_filter) do
 		];
 	};
 };
+_ret;

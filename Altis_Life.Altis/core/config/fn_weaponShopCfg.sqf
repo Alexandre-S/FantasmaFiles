@@ -1061,6 +1061,15 @@ switch(_shop) do
 						["optic_Aco_smg",nil,2500]
 					]
 				];
+				if(license_civ_vigil) then
+				{
+					(_ret select 1) pushBack ["arifle_Mk20_F",nil,35000];
+					(_ret select 1) pushBack ["arifle_Mk20C_F",nil,35000];
+					(_ret select 1) pushBack ["30Rnd_556x45_Stanag",nil,250];
+					(_ret select 1) pushBack ["30Rnd_556x45_Stanag_Tracer_Red",nil,250];
+					(_ret select 1) pushBack ["30Rnd_556x45_Stanag_Tracer_Green",nil,250];
+					(_ret select 1) pushBack ["30Rnd_556x45_Stanag_Tracer_Yellow",nil,250];
+				};
 			};
 		};
 	};

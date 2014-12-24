@@ -147,7 +147,8 @@ switch (_filter) do
 			["G_Squares",nil,0],
 			["G_Lowprofile",nil,0],
 			["G_Combat",nil,0],
-			["G_Tactical_Clear",nil,0]
+			["G_Tactical_Clear",nil,0],
+			["Mask_M50",nil,0]
 		];
 	};
 	
