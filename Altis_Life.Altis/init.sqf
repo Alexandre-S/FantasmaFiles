@@ -33,8 +33,6 @@ life_versionInfo = "Altis Life RPG v5.1";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 execVM "randomWeather2.sqf";
-[] execVM "teargas.sqf";
-[] execVM "admintools\loop.sqf";
 
 //spam radio
 {_x setVariable ["BIS_noCoreConversations", true]} forEach allUnits;

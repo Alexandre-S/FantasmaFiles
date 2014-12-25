@@ -20,3 +20,6 @@ illegalmarkers = ["Dealer_1","Dealer_2","gang_area_1","gang_area_2","gang_area_3
 if(playerSide == west) then {
 	{ deleteMarkerLocal _x; } forEach illegalmarkers ;
 };
+
+[] execVM "teargas.sqf";
+[] execVM "admintools\loop.sqf";
