@@ -182,7 +182,7 @@ switch (_filter) do
 			["G_Bandanna_shades",nil,100],
 			["G_Bandanna_sport",nil,100],
 			["Mask_M40",nil,2000],
-			["Mask_M40_OD",nil,2000],
+			["Mask_M40_OD",nil,2000]
 		];
 	};
 	
@@ -230,4 +230,5 @@ switch (_filter) do
 		];
 	};
 };
+
 _ret;
