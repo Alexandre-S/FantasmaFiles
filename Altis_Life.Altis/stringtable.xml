@@ -2599,7 +2599,7 @@
 		<Key ID="STR_House_Max_House">
 			<Original>You can only own %1 houses at a time.</Original>
 			<German>Du darfst nur %1 Häuser zugleich besitzen.</German>
-			<French>Vous ne pouvez posséder que %1 maisons à la fois.</French>
+			<French>Vous ne pouvez posséder que %1 maisons à la fois. Pour en posséder plus vous devez être donateur.</French>
 			<Italian>Puoi possedere solo %1 case</Italian>
 			<Portuguese>Você só pode ter uma casa!</Portuguese>
 		</Key>
