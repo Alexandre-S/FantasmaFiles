@@ -45,7 +45,7 @@ diag_log "------------------------------------------------";
 
 life_market_resources = [
 
-	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
+	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	
 	["oilp", _oilpPrice, 3500, 7000, 3, 1, 
 		[ 

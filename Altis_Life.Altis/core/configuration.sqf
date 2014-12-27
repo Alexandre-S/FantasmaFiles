@@ -226,8 +226,6 @@ life_illegal_items = [["handcuffs",200],["handcuffkeys",100],["heroinu",1850],["
 */
 sell_array = 
 [
-	["handcuffs",200],
-	["handcuffkeys",100],
 	["apple",50],
 	["heroinu",1850],
 	["heroinp",3500],
@@ -262,6 +260,8 @@ sell_array =
 	["spikeStrip",0],
 	["cement",1950],
 	["goldbar",95000],
+	["handcuffs",200],
+	["handcuffkeys",100],
 	["defusekit",0]
 ];
 __CONST__(sell_array,sell_array);
