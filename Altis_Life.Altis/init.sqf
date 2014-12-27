@@ -36,7 +36,7 @@ execVM "randomWeather2.sqf";
 
 if(isDedicated && isNil("life_market_prices")) then
 {
-    [] call AoD_fnc_marketconfiguration;
+    [] call TON_fnc_marketconfiguration;
     diag_log "Market prices generated!";
     "life_market_prices" addPublicVariableEventHandler
     {

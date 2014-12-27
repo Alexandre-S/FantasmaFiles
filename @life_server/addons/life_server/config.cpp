@@ -110,6 +110,7 @@ class CfgFunctions
 			class InsureCar {};
 			class tfrreboot {};
 			class fixTafr {};
+			class marketconfiguration {};
 		};
 		
 		class Housing
@@ -139,15 +140,6 @@ class CfgFunctions
 			class msgRequest {};
 		};
 	};
-	class AoD_System
-    {
-        tag = "AoD";
-        class Market
-        {
-            file = "\life_server\Functions\AoD\Market";
-            class marketconfiguration {};
-        };
-    };
 	/*class GHBSystem
 	{
 		tag = "GHB";
