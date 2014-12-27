@@ -34,6 +34,21 @@ life_versionInfo = "Altis Life RPG v5.1";
 [] execVM "KRON_Strings.sqf";
 execVM "randomWeather2.sqf";
 
+if(isDedicated && isNil("life_market_prices")) then
+{
+	[] call life_fnc_marketconfiguration;
+	diag_log "Market prices generated!";
+
+	"life_market_prices" addPublicVariableEventHandler
+	{
+		diag_log format["Market prices updated! %1", _this select 1];
+	};
+
+	//Start server fsm
+	[] execFSM "core\fsm\server.fsm";
+	diag_log "Server FSM executed";
+};
+
 //spam radio
 {_x setVariable ["BIS_noCoreConversations", true]} forEach allUnits;
 0 fadeRadio 0;

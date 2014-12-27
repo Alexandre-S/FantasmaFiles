@@ -233,6 +233,7 @@ class Life_Client_Core
 		class fatigueReset {};
 		class UnLockCarSound {};
 		class LockCarSound {};
+		class randomRound {};
 	};
 	
 	class Network
@@ -393,5 +394,24 @@ class Life_Client_Core
 		class InsureCar{};
 		class calldialog {};
 		class sendChannel {};
+	};
+	
+	class Market
+	{
+		file = "core\market";
+		
+		class openMarketView;
+		class refreshMarketView;
+		class marketShortView;
+		class marketBuy;
+		class marketSell;
+		class marketGetBuyPrice;
+		class marketGetSellPrice;
+		class marketconfiguration;
+		class marketReset;
+		class marketChange;
+		class marketGetRow;
+		class marketGetPriceRow;
+		class marketSetPriceRow;
 	};
 };
