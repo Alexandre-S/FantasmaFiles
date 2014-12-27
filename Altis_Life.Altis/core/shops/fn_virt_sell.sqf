@@ -34,8 +34,9 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	{ 
 		[_type, _amount] spawn
 		{
-			sleep 120;
-			[_this select 0,_this select 1] call life_fnc_marketSell;
+			sleep 60;
+            [_this select 0,_this select 1] call life_fnc_marketSell;
+            [[_this select 0,_this select 1],"DB_fnc_marketInsertTimes",false,false] call life_fnc_MP; // Sends the shortname and amount of the sold item to the server
 		};
 	};
 	[] call life_fnc_virt_update;

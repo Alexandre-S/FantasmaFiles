@@ -73,6 +73,21 @@ class Life_Client_Core
 		class medicSiren {};
 	};
 	
+	class Market
+    {
+        file = "core\market";
+        class openMarketView;
+        class refreshMarketView;
+        class marketShortView;
+        class marketGetBuyPrice;
+        class marketGetSellPrice;
+        class marketGetRow;
+        class marketGetPriceRow;
+        class marketSetPriceRow;
+        class marketBuy;
+        class marketSell;
+    };
+	
 	class Actions
 	{
 		file = "core\actions";
@@ -394,24 +409,5 @@ class Life_Client_Core
 		class InsureCar{};
 		class calldialog {};
 		class sendChannel {};
-	};
-	
-	class Market
-	{
-		file = "core\market";
-		
-		class openMarketView;
-		class refreshMarketView;
-		class marketShortView;
-		class marketBuy;
-		class marketSell;
-		class marketGetBuyPrice;
-		class marketGetSellPrice;
-		class marketconfiguration;
-		class marketReset;
-		class marketChange;
-		class marketGetRow;
-		class marketGetPriceRow;
-		class marketSetPriceRow;
 	};
 };

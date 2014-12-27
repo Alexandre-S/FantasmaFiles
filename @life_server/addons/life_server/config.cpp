@@ -50,6 +50,8 @@ class CfgFunctions
 			class bool{};
 			class mresString {};
 			class updatePartial {};
+			class marketInsert {};
+			class marketInsertTimes {};
 		};
 	};
 	
@@ -137,6 +139,15 @@ class CfgFunctions
 			class msgRequest {};
 		};
 	};
+	class AoD_System
+    {
+        tag = "AoD";
+        class Market
+        {
+            file = "\life_server\Functions\AoD\Market";
+            class marketconfiguration {};
+        };
+    };
 	/*class GHBSystem
 	{
 		tag = "GHB";
