@@ -3677,6 +3677,10 @@
 			<Italian>Non puoi installare altri contenitori in casa tua.</Italian>
 			<Portuguese>Você não pode colocar mais caixas dentro da sua casa.</Portuguese>
 		</Key>
+		<Key ID="STR_ISTR_Box_HouseFull_don">
+			<Original>You must be donator for place more storage containers in your house.</Original>
+			<French>Vous devez être donateur pour placer d'autres conteneur dans votre maison.</French>
+		</Key>
 		<Key ID="STR_ISTR_Box_HouseFull_2">
 			<Original>No more free storage spaces in your house.</Original>
 			<German>Es gibt keinen freien Stauraum in deinem Haus mehr.</German>

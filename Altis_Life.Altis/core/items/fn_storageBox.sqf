@@ -13,6 +13,7 @@ _containers = _house getVariable["containers",[]];
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 if(count _houseCfg == 0) exitWith {}; //What the fuck happened?
 if(count _containers >= (_houseCfg select 1)) exitWith {hint localize "STR_ISTR_Box_HouseFull"};
+if(count _containers >= (__GETC__(life_donator)+1)) exitWith {hint localize "STR_ISTR_Box_HouseFull_don"};
 
 _slots = _house getVariable ["slots",[]];
 _positions = [_house] call life_fnc_getBuildingPositions;
