@@ -144,7 +144,6 @@ life_market_resources = [
 	
 	["marijuana", _marijuanaPrice, 3500, 5500, 7, 5,   
 		[ 
-			["turtle",1], 
 			["cocainep",1],
 			["heroinp",1],
 			["turtle",1]
