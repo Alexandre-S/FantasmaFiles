@@ -45,6 +45,7 @@ life_deathCamera camCommit 0;
 		_unit setpos getpos _veh;
 	};
 };
+[_unit] spawn H8_addDrag;
 
 //Create a thread for something?
 _unit spawn
