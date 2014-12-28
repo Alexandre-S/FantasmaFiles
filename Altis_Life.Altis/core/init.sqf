@@ -125,4 +125,3 @@ player enableFatigue (__GETC__(life_enableFatigue));
 		};
 	};
 };
-[player] spawn H8_addDrag;
