@@ -144,16 +144,3 @@ serv_sv_use = serv_sv_use - [_vid];
 
 // Problem with TAFR
 [_vehicle,_vInfo select 8] spawn TON_fnc_fixTafr;
-
-[_vehicle] spawn {
-	_veh = _this select 0;
-	while {alive _veh} do {
-		if(speed _veh) < 2) then {
-			_crew = crew _veh;
-			if ({alive _x} count (crew _veh) == 0) then {
-				{_x setpos getpos _veh} foreach crew _veh;
-			};
-		};
-		sleep 1;
-	};
-};
