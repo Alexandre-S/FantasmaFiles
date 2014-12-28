@@ -19,7 +19,7 @@
 #define H8_UNLOTEXT		"Unload Body"	// AddAction text for dropping body
 
  H8_fnc_Action = {
-_dragCond = "vehicle _this != vehicle _target and isNull attachedTo _target and count attachedObjects _this == 0 and _target distance _this < 3";	
+_dragCond = "vehicle _this != vehicle _target and isNull attachedTo _target and count attachedObjects _this == 0 and _target distance _this < 3 && !alive _target";	
 		{
 	_x addaction [H8_DRAGTEXT,{call H8_DragAction},nil,6,false,false,"",_dragCond];	
 		}forEach _this;
@@ -39,9 +39,9 @@ _dragCond = "vehicle _this != vehicle _target and isNull attachedTo _target and 
 	player forceWalk true;
 	
 _dropID= player addAction [H8_DROPTEXT,{call H8_dropAction},_unit,6];
-_hideID =player addAction [H8_LOADTEXT,{call H8_putIncar},_unit,6,false,false,"","_target distance _this < 8 and cursorTarget isKindOf ""LandVehicle"""];
+// _hideID =player addAction [H8_LOADTEXT,{call H8_putIncar},_unit,6,false,false,"","_target distance _this < 8 and cursorTarget isKindOf ""LandVehicle"""];
 	
-	player setVariable ["H8hideVeh",_hideID];
+	// player setVariable ["H8hideVeh",_hideID];
 	player setVariable ["H8dropact",_dropID];
  };
 
