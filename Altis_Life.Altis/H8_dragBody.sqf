@@ -19,7 +19,7 @@
 #define H8_UNLOTEXT		"Unload Body"	// AddAction text for dropping body
 
  H8_fnc_Action = {
-_dragCond = "vehicle _this != vehicle _target and isNull attachedTo _target and count attachedObjects _this == 0 and _target distance _this < 3";	
+_dragCond = "vehicle _this != vehicle _target and isNull attachedTo _target and count attachedObjects _this == 0 and _target distance _this < 3 && !alive _target";	
 		{
 	_x addaction [H8_DRAGTEXT,{call H8_DragAction},nil,6,false,false,"",_dragCond];	
 		}forEach _this;
