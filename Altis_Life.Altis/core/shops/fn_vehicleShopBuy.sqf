@@ -108,6 +108,20 @@ sleep 5;
 [[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 _vehicle allowDamage true;
 
+
+[_vehicle] spawn {
+	_veh = _this select 0;
+	while {alive _veh} do {
+		if(speed _veh) < 2) then {
+			_crew = crew _veh;
+			if ({alive _x} count (crew _veh) == 0) then {
+				{_x setpos getpos _veh} foreach crew _veh;
+			};
+		};
+		sleep 1;
+	};
+};
+
 [0] call SOCK_fnc_updatePartial;
 closeDialog 0; //Exit the menu.
 true;
