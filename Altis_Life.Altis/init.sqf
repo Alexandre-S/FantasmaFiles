@@ -32,7 +32,6 @@ enableSaving[false,false];
 life_versionInfo = "Altis Life RPG v5.1";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
-[] execVM "H8_dragBody.sqf";
 execVM "randomWeather2.sqf";
 
 if(isDedicated && isNil("life_market_prices")) then

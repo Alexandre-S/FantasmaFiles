@@ -11,8 +11,6 @@ _id = _this select 1;
 _uid = _this select 2;
 _name = _this select 3;
 
-[_unit] spawn H8_removeDrag;
-
 _containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
 {deleteVehicle _x;} foreach _containers;
 deleteVehicle _unit;
