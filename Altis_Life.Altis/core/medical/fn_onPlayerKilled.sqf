@@ -32,6 +32,20 @@ life_deathCamera camCommit 0;
 
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 
+[_unit] spawn {
+	private["_unit","_veh"];
+	_unit = _this select 0;
+	_veh = vehicle _unit;
+	// waitUntil { !alive _unit };
+	if(_veh != _unit) then {
+		// diag_log format["check vehB - %1 - %2",_veh,speed _veh];
+		// waitUntil { speed _veh < 2 };
+		// diag_log format["check vehB2 - %1 - %2 - %3",_veh,speed _veh,crew _veh];
+		unassignVehicle (_unit);
+		_unit setpos getpos _veh;
+	};
+};
+
 //Create a thread for something?
 _unit spawn
 {
