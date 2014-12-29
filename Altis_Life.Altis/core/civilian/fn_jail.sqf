@@ -45,5 +45,6 @@ life_is_arrested = true;
 removeAllWeapons player;
 {player removeMagazine _x} foreach (magazines player);
 
-[[player,_bad],"life_fnc_jailSys",false,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+[[player,_bad,havena_id],"life_fnc_jailSys",serverhc,false] spawn life_fnc_MP;
 [5] call SOCK_fnc_updatePartial;

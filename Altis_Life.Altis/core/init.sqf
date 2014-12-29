@@ -17,15 +17,36 @@ waitUntil {!isNull player && player == player}; //Wait till the player is ready
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 diag_log "::Life Client:: Variables initialized";
+
 diag_log "::Life Client:: Setting up Eventhandlers";
 [] call life_fnc_setupEVH;
 diag_log "::Life Client:: Eventhandlers completed";
+
 diag_log "::Life Client:: Setting up user actions";
 [] call life_fnc_setupActions;
 diag_log "::Life Client:: User actions completed";
+
+diag_log "::Life Client:: Waiting for client ID..";
+Havena_idplayer = player;
+publicVariableServer "Havena_idplayer";
+0 cutText["Recuperation de l id client... patientez","BLACK FADED"];
+0 cutFadeOut 9999999;
+waitUntil {sleep 0.5;!isNil "havena_id"};
+player setVariable ["havena_id",havena_id, true];
+
 diag_log "::Life Client:: Waiting for server functions to transfer..";
 waitUntil {(!isNil {TON_fnc_clientGangLeader})};
 diag_log "::Life Client:: Received server functions.";
+
+waitUntil {sleep 0.5;!isNil "server_test"};
+diag_log "::Life Client:: Received HC version.";
+if(!server_test) then {
+	waitUntil {sleep 0.5;!isNil "Havena_HLCOBJ"};
+	diag_log "::Life Client:: Received HC.";
+	waitUntil {sleep 0.5;!isNil "Havena_HLCOBJ2"};
+	diag_log "::Life Client:: Received HCid.";
+};
+
 0 cutText ["Waiting for the server to be ready...","BLACK FADED"];
 0 cutFadeOut 99999999;
 diag_log "::Life Client:: Waiting for the server to be ready..";
@@ -36,6 +57,7 @@ if(!isNil "life_server_extDB_notLoaded") exitWith {
 	999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
 	999999 cutFadeOut 99999999;
 };
+
 [] call SOCK_fnc_dataQuery;
 waitUntil {life_session_completed};
 0 cutText["Finishing client setup procedure","BLACK FADED"];
@@ -114,7 +136,7 @@ player enableFatigue (__GETC__(life_enableFatigue));
 	private["_nb"];
 	_nb = 0;
 	while {true} do {
-		sleep 30;
+		sleep (30 + (random 30));
 		[] call life_fnc_updateClothing;
 		_nb = _nb+1;
 		if(_nb == 5) then {

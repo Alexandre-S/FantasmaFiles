@@ -128,8 +128,8 @@ if(life_tfrreboot) then {
 			};
 		} foreach _items;
 	};
-	
-	[[getPlayerUID player],"TON_fnc_tfrreboot",false,false] spawn life_fnc_MP;
+	[] call life_fnc_getHLC;
+	[[getPlayerUID player],"TON_fnc_tfrreboot",serverhc,false] spawn life_fnc_MP;
 }else{
 _items2 = _items;
 _uItems2 = _uItems;

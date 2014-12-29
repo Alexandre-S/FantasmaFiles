@@ -10,15 +10,16 @@ _unit = [_this,0,objNull,[objNull]] call BIS_fnc_param;
 _vehicle = [_this,1,objNull,[objNull]] call BIS_fnc_param;
 _price = [_this,2,500,[0]] call BIS_fnc_param;
 _cash = [_this,3,0,[0]] call BIS_fnc_param;
+_unitid = [_this,4,-1,[0]] call BIS_fnc_param;
 
 //Error checks
-if(isNull _vehicle OR isNull _unit) exitWith 
+if(isNull _vehicle OR isNull _unit OR _unitid == -1) exitWith 
 {
 	[["life_action_inUse",false],"life_fnc_netSetVar",nil,false] spawn life_fnc_MP;
 };
 
 _displayName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-_unit = owner _unit;
+//_unit = owner _unit;
 
 _dbInfo = _vehicle getVariable["dbInfo",[]];
 if(count _dbInfo > 0) then {
@@ -40,6 +41,6 @@ if(count _dbInfo > 0) then {
 };
 
 deleteVehicle _vehicle;
-[["life_action_inUse",false],"life_fnc_netSetVar",_unit,false] spawn life_fnc_MP;
-[["life_cash",_cash],"life_fnc_netSetVar",_unit,false] spawn life_fnc_MP;
-[[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_price] call life_fnc_numberText]],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
+[["life_action_inUse",false],"life_fnc_netSetVar",_unitid,false] spawn life_fnc_MP;
+[["life_cash",_cash],"life_fnc_netSetVar",_unitid,false] spawn life_fnc_MP;
+[[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_price] call life_fnc_numberText]],"life_fnc_broadcast",_unitid,false] spawn life_fnc_MP;

@@ -10,7 +10,8 @@ _spawnPos = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 
 life_garage_sp = [(_spawnPos modelToWorld [-11.5,0,0]),(getDir _spawnPos)-90];
 life_garage_type = _type;
-[[getPlayerUID player,playerSide,_type,player],"TON_fnc_getVehicles",false,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+[[getPlayerUID player,playerSide,_type,player,havena_id],"TON_fnc_getVehicles",serverhc,false] spawn life_fnc_MP;
 createDialog "Life_impound_menu";
 disableSerialization;
 ctrlSetText[2802,(localize "STR_ANOTF_QueryGarage")];

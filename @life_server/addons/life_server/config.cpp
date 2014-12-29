@@ -111,6 +111,8 @@ class CfgFunctions
 			class tfrreboot {};
 			class fixTafr {};
 			class marketconfiguration {};
+			class hlc_assignOwner {};
+			class getHLC {};
 		};
 		
 		class Housing

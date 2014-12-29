@@ -18,7 +18,8 @@ _badChar = false;
 if(_badChar) exitWith {hint localize "STR_GNOTF_IncorrectChar";};
 if(life_atmcash < (__GETC__(life_gangPrice))) exitWith {hint format[localize "STR_GNOTF_NotEnoughMoney",[((__GETC__(life_gangPrice))-life_atmcash)] call life_fnc_numberText];};
 
-[[player,getPlayerUID player,_gangName],"TON_fnc_insertGang",false,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+[[player,getPlayerUID player,_gangName,havena_id],"TON_fnc_insertGang",serverhc,false] spawn life_fnc_MP;
 hint localize "STR_NOTF_SendingData";
 closeDialog 0;
 life_action_gangInUse = true;

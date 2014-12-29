@@ -36,7 +36,8 @@ switch (_boxType) do {
 		
 		_containers pushBack _container;
 		_house setVariable["containers",_containers,true];
-		[[_house],"TON_fnc_updateHouseContainers",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 		
 		//Empty out the crate
 		clearWeaponCargoGlobal _container;
@@ -51,7 +52,8 @@ switch (_boxType) do {
 		
 		_containers pushBack _container;
 		_house setVariable["containers",_containers,true];
-		[[_house],"TON_fnc_updateHouseContainers",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 		
 		//Empty out the crate
 		clearWeaponCargoGlobal _container;

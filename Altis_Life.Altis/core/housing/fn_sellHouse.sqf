@@ -25,7 +25,8 @@ _action = [
 
 if(_action) then {
 	_house setVariable["house_sold",true,true];
-	[[_house],"TON_fnc_sellHouse",false,false] spawn life_fnc_MP;
+	[] call life_fnc_getHLC;
+	[[_house],"TON_fnc_sellHouse",serverhc,false] spawn life_fnc_MP;
 	_house setVariable["locked",false,true];
 	_house setVariable["Trunk",nil,true];
 	_house setVariable["containers",nil,true];

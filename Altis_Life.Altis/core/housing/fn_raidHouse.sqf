@@ -71,7 +71,8 @@ if(_value > 0) then {
 	[[0,"STR_House_Raid_Successful",true,[[_value] call life_fnc_numberText]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	life_atmcash = life_atmcash + _value;
 	_house setVariable["Trunk",[_houseInvData,_houseInvVal],true];
-	[[_house],"TON_fnc_updateHouseTrunk",false,false] spawn life_fnc_MP;
+	[] call life_fnc_getHLC;
+	[[_house],"TON_fnc_updateHouseTrunk",serverhc,false] spawn life_fnc_MP;
 } else {
 	hint localize "STR_House_Raid_NoIllegal";
 };

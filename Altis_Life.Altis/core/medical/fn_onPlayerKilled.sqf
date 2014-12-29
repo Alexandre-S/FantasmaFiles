@@ -75,13 +75,15 @@ _unit spawn
 //Make the killer wanted
 if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _killer}) then {
 	if(vehicle _killer isKindOf "LandVehicle") then {
-		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187V"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187V"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
 		//Get rid of this if you don't want automatic vehicle license removal.
 		// if(!local _killer) then {
 			// [[2],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
 		// };
 	} else {
-		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[getPlayerUID _killer,_killer getVariable["realname",name _killer],"187"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
 		
 		//if(!local _killer) then {
 		//	[[3],"life_fnc_removeLicenses",_killer,FALSE] spawn life_fnc_MP;
@@ -112,7 +114,8 @@ life_carryWeight = 0;
 life_cash = 0;
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
-[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+[[player,life_sidechat,playerSide],"TON_fnc_managesc",serverhc,false] spawn life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;

@@ -8,11 +8,13 @@ private["_ownerID","_uid","_gangName","_query","_queryResult","_gangMembers","_g
 _ownerID = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _uid = [_this,1,"",[""]] call BIS_fnc_param;
 _gangName = [_this,2,"",[""]] call BIS_fnc_param;
+_unitid = [_this,3,-1,[0]] call BIS_fnc_param;
 _group = group _ownerID;
 
 if(isNull _ownerID OR _uid == "" OR _gangName == "") exitWith {}; //Fail
 
-_ownerID = owner _ownerID;
+//_ownerID = owner _ownerID;
+_ownerID = _unitid;
 _gangName = [_gangName] call DB_fnc_mresString;
 _query = format["SELECT id FROM gangs WHERE name='%1' AND active='1'",_gangName];
 waitUntil{!DB_Async_Active};

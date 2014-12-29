@@ -16,7 +16,8 @@ _price = [_vehicle,__GETC__(life_assur_prices)] call TON_fnc_index;
 if(_price == -1) then {_price = 10000;} else {_price = (__GETC__(life_assur_prices) select _price) select 1;};
 if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
  
-[[_vid,_pid,_unit,_price],"TON_fnc_InsureCar",false,false] spawn life_fnc_MP;
+ [] call life_fnc_getHLC;
+[[_vid,_pid,_unit,_price],"TON_fnc_InsureCar",serverhc,false] spawn life_fnc_MP;
  
 hint "Votre véhicule est désormais assuré";
  

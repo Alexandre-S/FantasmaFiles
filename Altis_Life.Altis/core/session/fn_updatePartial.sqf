@@ -58,4 +58,5 @@ switch(_mode) do {
 	};
 };
 
-[_packet,"DB_fnc_updatePartial",false,false] call life_fnc_MP;
+[] call life_fnc_getHLC;
+[_packet,"DB_fnc_updatePartial",serverhc,false] call life_fnc_MP;

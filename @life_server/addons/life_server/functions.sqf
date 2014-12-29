@@ -23,7 +23,7 @@ compileFinal "
 	_return;
 ";
 
-TON_fnc_player_query =
+/*TON_fnc_player_query =
 compileFinal "
 	private[""_ret""];
 	_ret = _this select 0;
@@ -32,7 +32,7 @@ compileFinal "
 	
 	[[life_atmcash,life_cash,owner player,player],""life_fnc_admininfo"",_ret,false] spawn life_fnc_MP;
 ";
-publicVariable "TON_fnc_player_query";
+publicVariable "TON_fnc_player_query";*/
 
 publicVariable "TON_fnc_index";
 

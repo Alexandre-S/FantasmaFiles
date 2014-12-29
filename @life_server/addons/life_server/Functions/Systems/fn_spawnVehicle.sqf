@@ -16,7 +16,10 @@ _dir = [_this,5,0,[0]] call BIS_fnc_param;
 _unit_return = _unit;
 _name = name _unit;
 _side = side _unit;
-_unit = owner _unit;
+_unitid = [_this,6,-1,[0]] call BIS_fnc_param;
+
+//_unit = owner _unit;
+_unit = _unitid;
 
 if(_vid == -1 OR _pid == "") exitWith {};
 if(_vid in serv_sv_use) exitWith {};

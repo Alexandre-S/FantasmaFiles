@@ -83,4 +83,5 @@ _building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the
 if((_building getVariable["locked",false])) then {
 	_building setVariable["locked",false,true];
 };
-[[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+[[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;

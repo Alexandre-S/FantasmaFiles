@@ -14,9 +14,11 @@ private["_uid","_side","_query","_return","_queryResult","_qResult","_handler","
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
 _ownerID = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
+_unitid = [_this,3,-1,[0]] call BIS_fnc_param;
 
-if(isNull _ownerID) exitWith {};
-_ownerID = owner _ownerID;
+if(isNull _ownerID OR _unitid == -1) exitWith {};
+//_ownerID = owner _ownerID;
+_ownerID = _unitid;
 
 /*
 	_returnCount is the count of entries we are expecting back from the async call.

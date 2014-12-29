@@ -21,5 +21,6 @@ _members = _members - [_unitID];
 grpPlayer setVariable["gang_members",_members,true];
 
 [[_unit,grpPlayer],"TON_fnc_clientGangKick",_unit,false] spawn life_fnc_MP; //Boot that bitch!
-[[4,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP; //Update the database.
+[] call life_fnc_getHLC;
+[[4,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
 [] call life_fnc_gangMenu;

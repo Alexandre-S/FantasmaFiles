@@ -42,6 +42,7 @@ _vehicle spawn
 	waitUntil {isNull (findDisplay 3500)};
 	_this setVariable["trunk_in_use",false,true];
 	if(_this isKindOf "House_F") then {
-		[[_this],"TON_fnc_updateHouseTrunk",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[_this],"TON_fnc_updateHouseTrunk",serverhc,false] spawn life_fnc_MP;
 	};
 };

@@ -12,10 +12,11 @@ _name = [_this,1,"",[""]] call BIS_fnc_param;
 _money = [_this,2,0,[""]] call BIS_fnc_param;
 _bank = [_this,3,2500,[""]] call BIS_fnc_param;
 _returnToSender = [_this,4,ObjNull,[ObjNull]] call BIS_fnc_param;
+_unitid = [_this,5,-1,[0]] call BIS_fnc_param;
 
 //Error checks
 if((_uid == "") OR (_name == "")) exitWith {systemChat "Bad UID or name";}; //Let the client be 'lost' in 'transaction'
-if(isNull _returnToSender) exitWith {systemChat "ReturnToSender is Null!";}; //No one to send this to!
+if(isNull _returnToSender || _unitid == -1) exitWith {systemChat "ReturnToSender is Null!";}; //No one to send this to!
 
 _query = format["SELECT playerid, name FROM players WHERE playerid='%1'",_uid];
 
@@ -30,8 +31,8 @@ diag_log format["Result: %1",_queryResult];
 diag_log "------------------------------------------------";
 
 //Double check to make sure the client isn't in the database...
-if(typeName _queryResult == "STRING") exitWith {[[],"SOCK_fnc_dataQuery",(owner _returnToSender),false] spawn life_fnc_MP;}; //There was an entry!
-if(count _queryResult != 0) exitWith {[[],"SOCK_fnc_dataQuery",(owner _returnToSender),false] spawn life_fnc_MP;};
+if(typeName _queryResult == "STRING") exitWith {[[],"SOCK_fnc_dataQuery",_unitid,false] spawn life_fnc_MP;}; //There was an entry!
+if(count _queryResult != 0) exitWith {[[],"SOCK_fnc_dataQuery",_unitid,false] spawn life_fnc_MP;};
 
 //Clense and prepare some information.
 _name = [_name] call DB_fnc_mresString; //Clense the name of bad chars.
@@ -50,4 +51,4 @@ _query = format["INSERT INTO players (playerid, name, cash, bankacc, aliases, co
 
 waitUntil {!DB_Async_Active};
 [_query,1] call DB_fnc_asyncCall;
-[[],"SOCK_fnc_dataQuery",(owner _returnToSender),false] spawn life_fnc_MP;
+[[],"SOCK_fnc_dataQuery",_unitid,false] spawn life_fnc_MP;

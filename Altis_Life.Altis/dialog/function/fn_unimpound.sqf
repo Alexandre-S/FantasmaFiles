@@ -28,12 +28,15 @@ if(side player == independent) then {
 if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
-	[[_vid,_pid,life_garage_sp select 0,_unit,_price,life_garage_sp select 1],"TON_fnc_spawnVehicle",false,false] spawn life_fnc_MP;
+	[] call life_fnc_getHLC;
+	[[_vid,_pid,life_garage_sp select 0,_unit,_price,life_garage_sp select 1,havena_id],"TON_fnc_spawnVehicle",serverhc,false] spawn life_fnc_MP;
 } else {
 	if(life_garage_sp in ["medic_spawn_1","medic_spawn_2","medic_spawn_3"]) then {
-		[[_vid,_pid,life_garage_sp,_unit,_price],"TON_fnc_spawnVehicle",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[_vid,_pid,life_garage_sp,_unit,_price,0,havena_id],"TON_fnc_spawnVehicle",serverhc,false] spawn life_fnc_MP;
 	} else {
-		[[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,markerDir life_garage_sp],"TON_fnc_spawnVehicle",false,false] spawn life_fnc_MP;
+		[] call life_fnc_getHLC;
+		[[_vid,_pid,(getMarkerPos life_garage_sp),_unit,_price,markerDir life_garage_sp,havena_id],"TON_fnc_spawnVehicle",serverhc,false] spawn life_fnc_MP;
 	};
 };
 

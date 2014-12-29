@@ -26,7 +26,8 @@ if(_action) then {
 	grpPlayer setVariable["gang_owner",_unitID,true];
 	grpPlayer selectLeader _unit;
 	[[_unit,grpPlayer],"TON_fnc_clientGangLeader",_unit,false] spawn life_fnc_MP; //Boot that bitch!
-	[[3,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP; //Update the database.
+	[] call life_fnc_getHLC;
+	[[3,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
 } else {
 	hint localize "STR_GNOTF_TransferCancel";
 };

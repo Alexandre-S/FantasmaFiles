@@ -9,3 +9,6 @@
 
 if(!isServer) exitWith {};
 "life_fnc_MP_packet" addPublicVariableEventHandler {[_this select 0,_this select 1] call life_fnc_MPexec;};
+"PO3_sVAR_HLCKeepAlive" addPublicVariableEventHandler { (_this select 1) call TON_fnc_hlc_assignOwner; };
+"Havena_HLCOBJ" addPublicVariableEventHandler { Havena_HLCOBJ2 = owner (_this select 1); publicVariable "Havena_HLCOBJ2"; };
+"Havena_idplayer" addPublicVariableEventHandler { Havena_id = owner (_this select 1); Havena_id publicVariableClient "Havena_id"; };
