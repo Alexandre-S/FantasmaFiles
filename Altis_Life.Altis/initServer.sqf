@@ -4,8 +4,6 @@
 	Description:
 	Starts the initialization of the server.
 */
-diag_log format ["DEBUG INITserver.SQF - %1, %2", player, time];
-
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 if(!(_this select 0)) exitWith {}; //Not server
 [] call compile PreprocessFileLineNumbers "\life_server\init.sqf";

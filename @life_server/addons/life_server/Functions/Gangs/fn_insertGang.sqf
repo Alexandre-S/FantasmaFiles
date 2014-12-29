@@ -4,7 +4,7 @@
 	Description:
 	Inserts the gang into the database.
 */
-private["_ownerID","_uid","_gangName","_query","_queryResult","_gangMembers","_group"];
+private["_ownerID","_uid","_gangName","_query","_queryResult","_gangMembers","_group","_unitid"];
 _ownerID = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _uid = [_this,1,"",[""]] call BIS_fnc_param;
 _gangName = [_this,2,"",[""]] call BIS_fnc_param;

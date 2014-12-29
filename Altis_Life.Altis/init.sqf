@@ -1,5 +1,4 @@
 enableSaving [false, false];
-diag_log format ["DEBUG INIT START - %1, %2", player, time];
 //FLIR OFF
 { _x disableTIEquipment true;} foreach vehicles;
 
@@ -42,5 +41,3 @@ execVM "randomWeather2.sqf";
 enableSentences false;
 
 StartProgress = true;
-
-diag_log format ["DEBUG INIT END - %1, %2", player, time];

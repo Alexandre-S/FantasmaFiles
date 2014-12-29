@@ -4,13 +4,10 @@
 	Description:
 	Starts the initialization of the player.
 */
-diag_log format ["DEBUG INITplayerlocal.SQF - %1, %2", player, time];
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 //This is a headless client, he doesn't need to do anything but keep being headless..
 if(!hasInterface) then {
-	diag_log format ["DEBUG INITplayerlocal.SQF HC1 - %1, %2", player, time];
 	[] call compile PreprocessFileLineNumbers "\life_server\init.sqf";
-	diag_log format ["DEBUG INITplayerlocal.SQF HC2 - %1, %2", player, time];
 
 	//if(isDedicated && isNil("life_market_prices")) then
 	if(isNil("life_market_prices")) then
@@ -22,7 +19,6 @@ if(!hasInterface) then {
 			diag_log format["Market prices updated! %1", _this select 1];
 		};
 	};
-	diag_log format ["DEBUG INITplayerlocal.SQF HC3 - %1, %2", player, time];
 	
 	[] spawn {
 		waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player is ready
@@ -32,8 +28,6 @@ if(!hasInterface) then {
 		waitUntil {scriptDone _handle};
 	};
 }else{
-	diag_log format ["DEBUG INITplayerlocal.SQF NOT HC - %1, %2", player, time];
-
 	#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 	__CONST__(BIS_fnc_endMission,BIS_fnc_endMission);
 	[] execVM "SpyGlass\fn_initSpy.sqf";
@@ -51,5 +45,4 @@ if(!hasInterface) then {
 
 	[] execVM "teargas.sqf";
 	[] execVM "admintools\loop.sqf";
-
 };
