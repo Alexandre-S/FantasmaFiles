@@ -1,9 +1,9 @@
-life_fnc_sidechat =
+/*life_fnc_sidechat =
 compileFinal "
 	if(life_sidechat) then {life_sidechat = false;} else {life_sidechat = true;};
 	[[player,life_sidechat,playerSide],""TON_fnc_managesc"",false,false] spawn life_fnc_MP;
 	[] call life_fnc_settingsMenu;
-";
+";*/
 
 publicVariable "life_fnc_sidechat";
 

@@ -174,13 +174,13 @@ class SettingsMenu
 			w = 0.275;
 		};
 		
-		class SideChatONOFF : PlayerTagsONOFF
+		/*class SideChatONOFF : PlayerTagsONOFF
 		{
 			idc = 2971;
 			tooltip = "";
 			action = "[] call life_fnc_sidechat;";
 			y = 0.48;
-		};
+		};*/
 		
 		class RevealONOFF : PlayerTagsONOFF
 		{

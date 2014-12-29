@@ -103,7 +103,7 @@ diag_log "----------------------------------------------------------------------
 diag_log format["                End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "------------------------------------------------------------------------------------------------------";
 life_sidechat = true;
-[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
+//[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
