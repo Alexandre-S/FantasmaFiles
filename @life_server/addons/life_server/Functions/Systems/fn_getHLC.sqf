@@ -3,9 +3,12 @@ if(server_test) then {
 }else{
 	waitUntil {!isNil "Havena_HLCOBJ"};
 	waitUntil {!isNil "Havena_HLCOBJ2"};
-	if (!(isplayer Havena_HLCOBJ) || !((getPlayerUID Havena_HLCOBJ) == "76561198128988909")) then {
-		waitUntil {sleep 0.1;(isplayer Havena_HLCOBJ)};
-		waitUntil {sleep 0.1;((getPlayerUID Havena_HLCOBJ) == "76561198128988909")};
+	// if (!(isplayer Havena_HLCOBJ) || !((getPlayerUID Havena_HLCOBJ) == "76561198128988909")) then {
+		if ((isnull Havena_HLCOBJ) || ((typeOf Havena_HLCOBJ) != "HeadlessClient_F")) then {
+		// waitUntil {sleep 0.1;(isplayer Havena_HLCOBJ)};
+		waitUntil {sleep 0.1;(!isnull Havena_HLCOBJ)};
+		// waitUntil {sleep 0.1;((getPlayerUID Havena_HLCOBJ) == "76561198128988909")};
+		waitUntil {sleep 0.1;((typeOf Havena_HLCOBJ) == "HeadlessClient_F")};
 		//0 cutText["Problème de connexion à la base de donnée... veuillez patienter ! ","BLACK FADED"];
 		//sleep 5;
 	};

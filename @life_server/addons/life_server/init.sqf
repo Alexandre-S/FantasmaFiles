@@ -8,8 +8,11 @@ publicVariable "server_test";
 serverhc = false;
 
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
+diag_log format ["DEBUG INITserver ishc? - %1, %2", isHLC, time];
 
 if(!isHLC) then {
+	diag_log format ["DEBUG INITserver NOTHC - %1, %2", isHLC, time];
+
 	last_HC_update = 0;
 	hlcAI = false;
 
@@ -169,9 +172,13 @@ if(!isHLC) then {
 }
 else
 {
+	diag_log format ["DEBUG INITserver HCDETECT - %1, %2", isHLC, time];
+
 	[] execVM "\life_server\functions.sqf";
 	"life_fnc_MP_packet" addPublicVariableEventHandler {[_this select 0,_this select 1] call life_fnc_MPexec;};
 	
+	diag_log format ["DEBUG INITserver HCDETECT2 - %1, %2", isHLC, time];
+
 	_extDB = false;
 
 	//Only need to setup extDB once.
@@ -209,6 +216,9 @@ else
 		diag_log "extDB: Error checked extDB/logs for more info";
 	};
 
+	diag_log format ["DEBUG INITserver HCDETECT3 - %1, %2", isHLC, time];
+
+	
 	//Run procedures for SQL cleanup on mission start.
 	["CALL resetLifeVehicles",1] spawn DB_fnc_asyncCall;
 	["CALL deleteDeadVehicles",1] spawn DB_fnc_asyncCall;
