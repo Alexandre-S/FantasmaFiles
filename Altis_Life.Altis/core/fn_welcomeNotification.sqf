@@ -16,4 +16,5 @@ format["Bienvenue sur Fantasma %1, Le serveur Jeu de Rôle Altis Life Francophon
 	"Méfiez-vous des terroristes, ils sont imprévisibles et aller vers eux peut vous attirer beaucoup d'ennui. Si vous souhaitez rencontrer l'un d'eux, réfléchissez à un plan de secours.",
 	"L'ONU est là pour vous aider. Coopérez avec et vous vous en tirerez toujours bien. Ils sont puissants et bienveillants. Tachez de les respecter. Ils représentent la vraie loi sur l'île."	
 ];
-	
+
+life_firstSpawn = false;

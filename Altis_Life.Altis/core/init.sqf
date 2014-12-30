@@ -88,6 +88,7 @@ switch (playerSide) do
 		waitUntil {scriptDone _handle};
 	};
 };
+waitUntil {sleep 0.5;!life_firstSpawn};
 
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];

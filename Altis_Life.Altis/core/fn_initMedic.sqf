@@ -37,4 +37,7 @@ else
 	player setPosATL life_position;
 	hint format["Your character is still alive. You have been placed at your last saved position."];
 	life_is_alive = true;
+	if(life_firstSpawn) then {
+		[] call life_fnc_welcomeNotification;
+	};
 };
