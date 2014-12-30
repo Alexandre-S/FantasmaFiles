@@ -5,7 +5,7 @@ compileFinal "
 	[] call life_fnc_settingsMenu;
 ";*/
 
-publicVariable "life_fnc_sidechat";
+//publicVariable "life_fnc_sidechat";
 
 TON_fnc_index =
 compileFinal "
@@ -234,6 +234,7 @@ publicVariable "TON_fnc_cell_emsrequest";
 TON_fnc_clientMessage =
 compileFinal "
 	if(isServer) exitWith {};
+	if(!hasinterface) exitWith {};
 	private[""_msg"",""_from"", ""_type""];
 	_msg = _this select 0;
 	_from = _this select 1;

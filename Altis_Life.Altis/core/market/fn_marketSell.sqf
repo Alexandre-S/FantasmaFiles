@@ -33,7 +33,8 @@ if( _price > _max)then {_price = _max;};
 
 //insert into new array
 [_shortname, [_shortname,_price,_globalprice,_modifier], false ] call life_fnc_marketSetPriceRow; //dont broadcast!
-[[_shortname,_price],"DB_fnc_marketInsert",false,false] call life_fnc_MP;
+[] call life_fnc_getHLC;
+[[_shortname,_price],"DB_fnc_marketInsert",serverhc,false] call life_fnc_MP;
 
 
 /////Change related prices
