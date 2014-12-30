@@ -1,5 +1,5 @@
 author = "Tonic & Havena";
-onLoadName = "AltisLife Fantasma 5.1.9D";
+onLoadName = "AltisLife Fantasma 5.2";
 onLoadMission = "Un Jeu de rôle de www.altisrp.fr";
 joinUnassigned = 1;
 respawn = BASE;
@@ -14,7 +14,7 @@ class Header
 {
 	gameType = RPG;
 	minPlayers = 1;
-	maxPlayers = 116;
+	maxPlayers = 161;
 };
 
 wreckLimit = 3;
