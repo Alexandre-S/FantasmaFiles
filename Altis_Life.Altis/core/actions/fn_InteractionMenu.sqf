@@ -42,7 +42,7 @@ if(life_inv_handcuffkeys > 0) then
 	//Set Unrestrain Button
 	_Btn2 ctrlSetText localize "STR_pInAct_Unrestrain";
 	// _Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain;[true,""handcuffs"",1] call life_fnc_handleInv; closeDialog 0;";
-	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain;[true,""handcuffkeys"",1] call life_fnc_handleInv; closeDialog 0;";
+	_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; [true,""handcuffs"",1] call life_fnc_handleInv; [false,""handcuffkeys"",1] call life_fnc_handleInv; closeDialog 0;";
 }else{
 	_Btn2 ctrlSetText localize "STR_pInAct_Unrestrain";
 	_Btn2 buttonSetAction "[] spawn life_fnc_lockpick; closeDialog 0;";

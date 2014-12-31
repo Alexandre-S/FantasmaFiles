@@ -63,8 +63,7 @@ life_pInact_curTarget = _curTarget;
 
 //Set Unrestrain Button
 _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-// _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain;[true,'handcuffs',1] call life_fnc_handleInv; closeDialog 0;"; 
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;"; 
+_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain;[true,'handcuffs',1] call life_fnc_handleInv; [false,'handcuffkeys',1] call life_fnc_handleInv; closeDialog 0;"; 
 if(life_inv_handcuffkeys > 0) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
 //Set Check Licenses Button
@@ -94,7 +93,7 @@ _Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_arrestAction;";
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-if(!_curTarget getVariable["restrained",false]) then {_Btn1 ctrlEnable false; _Btn4 ctrlEnable false; _Btn5 ctrlEnable false; _Btn6 ctrlEnable false; _Btn7 ctrlEnable false;}
+if(!_curTarget getVariable["restrained",false]) then {_Btn1 ctrlEnable false; _Btn4 ctrlEnable false; _Btn5 ctrlEnable false; _Btn6 ctrlEnable false; _Btn7 ctrlEnable false;};
 
 //Check that you are near a place to jail them.
 if(!((player distance (getMarkerPos "police_hq_1") < 30) OR  (player distance (getMarkerPos "police_hq_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR (player distance (getMarkerPos "cop_spawn_5") < 30))) then 

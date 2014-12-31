@@ -139,7 +139,6 @@ switch (_code) do
                     {
                         [] call life_fnc_restrainAction;
                         // life_inv_handcuffs = life_inv_handcuffs - 1;
-						[true,"handcuffs",1] call life_fnc_handleInv; 
                         hint "Vous avez menotté la personne !";
                     }else{
                         systemChat localize "STR_NOTF_NoHandcuffs";
