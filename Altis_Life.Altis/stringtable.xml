@@ -1512,9 +1512,9 @@
 			<Portuguese>Sua saude está perfeita</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_BeingImpounded">
-			<Original>%1 your %2 is being impounded by the police.</Original>
+			<Original>%1 your %2 is being impounded.</Original>
 			<German>%1 dein %2 wird von der Polizei beschlagnahmt.</German>
-			<French>%1 votre %2 est envoyé a la fourrière par la police.</French>
+			<French>%1 votre %2 est envoyé a la fourrière.</French>
 			<Italian>%1 il tuo %2 sta per essere sequestrato dalla Polizia.</Italian>
 			<Portuguese>%1 seu %2 está sendo apreendido pela Polícia</Portuguese>
 		</Key>

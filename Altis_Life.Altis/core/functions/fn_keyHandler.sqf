@@ -131,28 +131,15 @@ switch (_code) do
                     };
                 };
             };
-            case independent:
+            default 
             {
             if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !life_knockout&& speed cursorTarget < 1) then
                 {
                     if([false,"handcuffs",1] call life_fnc_handleInv) then
                     {
                         [] call life_fnc_restrainAction;
-                        life_inv_handcuffs = life_inv_handcuffs - 1;
-                        hint "Vous avez menotté la personne !";
-                    }else{
-                        systemChat localize "STR_NOTF_NoHandcuffs";
-                    };
-                };
-            };
-            case civilian:
-            {
-            if(_shift && !(player getVariable["restrained",false]) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && (side cursorTarget in [west,civilian,independent]) && alive cursorTarget && cursorTarget distance player < 3.5 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && !life_knockout&& speed cursorTarget < 1) then
-                {
-                    if([false,"handcuffs",1] call life_fnc_handleInv) then
-                    {
-                        [] call life_fnc_restrainAction;
-                        life_inv_handcuffs = life_inv_handcuffs - 1;
+                        // life_inv_handcuffs = life_inv_handcuffs - 1;
+						[true,"handcuffs",1] call life_fnc_handleInv; 
                         hint "Vous avez menotté la personne !";
                     }else{
                         systemChat localize "STR_NOTF_NoHandcuffs";

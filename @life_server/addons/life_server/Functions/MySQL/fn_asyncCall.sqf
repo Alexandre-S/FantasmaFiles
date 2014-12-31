@@ -16,7 +16,7 @@ _queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
 _mode = [_this,1,1,[0]] call BIS_fnc_param;
 _multiarr = [_this,2,false,[false]] call BIS_fnc_param;
 
-diag_log format["DEBUGQUERY : %1 - %2 - %3",_queryStmt,_mode,_multiarr];
+//diag_log format["DEBUGQUERY : %1 - %2 - %3",_queryStmt,_mode,_multiarr];
 
 if(_queryStmt == "") exitWith {"_INVALID_SQL_STMT"};
 _return = false;

@@ -12,16 +12,17 @@ _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 
 //Set some vars
-_unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
-_unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
-_unit setVariable["restrained",FALSE,TRUE];
-_unit setVariable["Escorting",FALSE,TRUE];
-_unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
+_unit setVariable["Revive",FALSE,true]; //Set the corpse to a revivable state.
+_unit setVariable["name",profileName,true]; //Set my name so they can say my name.
+_unit setVariable["restrained",FALSE,true];
+_unit setVariable["Escorting",FALSE,true];
+_unit setVariable["transporting",FALSE,true]; //Why the fuck do I have this? Is it used?
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
+_unit setVariable["side",playerSide,true]; //Set the UID.
 
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
-showCinemaBorder TRUE;
+showCinemaBorder true;
 life_deathCamera cameraEffect ["Internal","Back"];
 createDialog "DeathScreen";
 life_deathCamera camSetTarget _unit;

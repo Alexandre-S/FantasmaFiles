@@ -5,7 +5,7 @@
 	Author: Silex
 	
 */
-private["_display","_units","_type","_data","_rowData","_msg"];
+private["_display","_units","_type","_data","_rowData","_msg","_near_units"];
 _type = [_this,0,0] call BIS_fnc_param;
 _data = [_this,1,0,["",[],0]] call BIS_fnc_param;
 
@@ -23,21 +23,28 @@ switch(_type) do
 	case 0:
 	{
 		lbClear _cPlayerList;
-		{
-			if(alive _x && _x != player) then
-			{
-				switch(side _x) do
-				{
-					case west: {_type = "Cop"};
-					case civilian: {_type = "Civ"};
-					case independent: {_type = "Med"};
-				};
-				_cPlayerList lbAdd format["%1 (%2)",_x getVariable["realname", name _x],_type];
-				_cPlayerList lbSetData [(lbSize _cPlayerList)-1,str(_x)];
-			};
-		} forEach playableUnits;
 		
-		_cPlayerList = _cPlayerList call BIS_fnc_sortAlphabetically;
+		_near_units = [];
+		{  _near_units set [count _near_units, name _x]; } foreach playableUnits;
+		_near_units = _near_units call BIS_fnc_sortAlphabetically;
+		{
+			_name = _x;
+			{
+				if (name _x == _name && alive _x && _x != player) then
+				//if(alive _x && _x != player) then
+				{
+					switch(side _x) do
+					{
+						case west: {_type = "Cop"};
+						case civilian: {_type = "Civ"};
+						case independent: {_type = "Med"};
+					};
+					_cPlayerList lbAdd format["%1 (%2)",_x getVariable["realname", name _x],_type];
+					_cPlayerList lbSetData [(lbSize _cPlayerList)-1,str(_x)];
+				};
+			} forEach playableUnits;
+		} foreach _near_units;
+		//_cPlayerList = _cPlayerList call BIS_fnc_sortAlphabetically;
 		[] call life_fnc_getHLC;
 		[[getPlayerUID player, player],"TON_fnc_msgRequest",serverhc,false] spawn life_fnc_MP;
 		ctrlEnable[887892,false];

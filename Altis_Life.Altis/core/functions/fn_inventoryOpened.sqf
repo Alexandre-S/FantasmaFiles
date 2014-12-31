@@ -42,7 +42,7 @@ if(playerSide != west) then{
 };
 
 //Allow alive players who've been knocked out to be looted, just not the dead ones
-if(_container isKindOf "Man" && !alive _container && (side _container) == west) exitWith {
+if(_container isKindOf "Man" && !alive _container && _container getVariable["side",civilian] == west) exitWith {
 	hint localize "STR_NOTF_NoLootingPerson";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
