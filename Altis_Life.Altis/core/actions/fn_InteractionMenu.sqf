@@ -1,5 +1,5 @@
 /*
-	File: fn_copInteractionMenu.sqf
+	File: fn_InteractionMenu.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
