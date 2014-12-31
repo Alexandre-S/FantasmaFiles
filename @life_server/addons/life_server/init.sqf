@@ -87,15 +87,25 @@ if(!isHLC) then {
 		life_wanted_list = [];
 		[] execFSM "\life_server\cleanup.fsm";
 	};
-	
 	//General cleanup for clients disconnecting.
-	addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
+	// addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
 	HC_DC = ["HC_Disconnected","onPlayerDisconnected",{if(!isNil "Havena_HLCOBJ" && {_uid == getPlayerUID Havena_HLCOBJ}) then {life_HC_isActive = false;};}] call BIS_fnc_addStackedEventHandler;
 	
 	// serv var to hc
 	serverloadhc = true;
 	publicVariable "serverloadhc";
 	
+	if(server_test) then {
+	
+		// test
+	}
+	else
+	{
+		waitUntil {sleep 0.1;!isNil "Havena_HLCOBJ2"};
+	};
+	
+	addMissionEventHandler ["HandleDisconnect",{[] call life_fnc_getHLC; [_this,"TON_fnc_clientDisconnect",serverhc,false] call life_fnc_MP; false;}]; //Do not second guess this, this can be stacked this way.
+
 	life_gang_list = [];
 	publicVariable "life_gang_list";
 	// client_session_list = [];
@@ -143,7 +153,7 @@ if(!isHLC) then {
 		waitUntil {sleep 0.1;!isNil "HCserverload"};
 	};
 	
-	
+
 	TON_fnc_player_query =
 	compileFinal "
 		private[""_ret""];
