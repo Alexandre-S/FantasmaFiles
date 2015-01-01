@@ -106,19 +106,19 @@ _vehicle setVariable ["tf_hasRadio", true, true];
 _vehicle setVariable ["tf_range", 50000, true];
 
 _vehicle lock 2;
-sleep 5;
-
 _vehicle allowDamage true;
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
-//Reskin the vehicle 
-[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",nil,false] spawn life_fnc_MP;
+
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9]];
 //_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
 [_vehicle] call life_fnc_clearVehicleAmmo;
 
+sleep 5;
+//Reskin the vehicle 
+[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",nil,false] spawn life_fnc_MP;
 //Sets of animations
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then
 {
