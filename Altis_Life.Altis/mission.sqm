@@ -4071,7 +4071,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="";
+							value="Zeus";
 							parentCls="ModuleCurator_F";
 							typeName="Name";
 						};
@@ -4094,6 +4094,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="zeus";
 				};
 			};
 		};
@@ -4117,7 +4118,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="";
+							value="Zeus";
 							parentCls="ModuleCurator_F";
 							typeName="Name";
 						};
@@ -4140,6 +4141,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="zeus";
 				};
 			};
 		};
@@ -4163,7 +4165,7 @@ class Mission
 						};
 						class Item1
 						{
-							value="";
+							value="Zeus";
 							parentCls="ModuleCurator_F";
 							typeName="Name";
 						};
@@ -4186,6 +4188,7 @@ class Mission
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
+					text="zeus";
 				};
 			};
 		};
