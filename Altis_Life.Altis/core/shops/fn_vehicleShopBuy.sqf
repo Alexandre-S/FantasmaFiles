@@ -71,7 +71,7 @@ if(_mode) then {
 	//};
 };
 
-sleep 5
+sleep 5;
 [[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 [_vehicle] call life_fnc_clearVehicleAmmo;
 [[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
