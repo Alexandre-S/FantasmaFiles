@@ -10,17 +10,9 @@ _crew = crew cursorTarget;
 
 {
 	//if(side _x != west) then
-	if(playerSide == west) then
+	if((playerSide == west) OR (_x getVariable["restrained",false])) then
 	{
-		_x setVariable ["transporting",false,true]; _x setVariable ["Escorting",false,true];
+		//_x setVariable ["transporting",false,true]; _x setVariable ["Escorting",false,true];
 		[[_x],"life_fnc_pulloutVeh",_x,false] spawn life_fnc_MP;
-	}
-	else
-	{
-		if(_x getVariable["restrained",false]) then
-		{
-			_x setVariable ["transporting",false,true]; _x setVariable ["Escorting",false,true];
-			[[_x],"life_fnc_pulloutVeh",_x,false] spawn life_fnc_MP;
-		};
 	};
 } foreach _crew;
