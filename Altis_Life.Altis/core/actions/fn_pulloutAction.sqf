@@ -6,8 +6,9 @@
 	Pulls civilians out of a car if it's stopped.
 */
 private["_crew"];
-_crew = crew cursorTarget;
+if(((cursorTarget getVariable["tf_side",civilian]) == west) && (playerSide != west)) exitWith {};
 
+_crew = crew cursorTarget;
 {
 	//if(side _x != west) then
 	if((playerSide == west) OR (_x getVariable["restrained",false])) then
