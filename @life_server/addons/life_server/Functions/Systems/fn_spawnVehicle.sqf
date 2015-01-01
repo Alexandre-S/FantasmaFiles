@@ -105,11 +105,13 @@ switch(_side) do {
 _vehicle setVariable ["tf_hasRadio", true, true];
 _vehicle setVariable ["tf_range", 50000, true];
 
+_vehicle lock 2;
+sleep 5;
+
 _vehicle allowDamage true;
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
-_vehicle lock 2;
 //Reskin the vehicle 
 [[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",nil,false] spawn life_fnc_MP;
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
@@ -146,4 +148,4 @@ else
 serv_sv_use = serv_sv_use - [_vid];
 
 // Problem with TAFR
-[_vehicle,_vInfo select 8] spawn TON_fnc_fixTafr;
+// [_vehicle,_vInfo select 8] spawn TON_fnc_fixTafr;
