@@ -17,5 +17,5 @@ waitUntil {isNull life_mauer};
 if(!isNil "life_action_mauerDeploy") then {player removeAction life_action_mauerDeploy;};
 if(isNull _mauer) exitWith {life_mauer = ObjNull;};
 _mauer setPos [(getPos _mauer select 0),(getPos _mauer select 1),0];
-_mauer allowDamage false;
-_mauer enableSimulation false;
+//_mauer allowDamage false;
+//_mauer enableSimulation false;
