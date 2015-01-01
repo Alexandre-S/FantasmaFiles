@@ -17,6 +17,10 @@ switch (playerSide) do
 		//life_actions = life_actions + [player addAction["<t color='#00FFFF'>Mettre dans le véhicule</t>",life_fnc_putInCar,cursorTarget,200,false,false,"",' !isNull cursorTarget && (player distance cursorTarget) < 6 && speed cursorTarget < 2 && (cursorTarget isKindOf "LandVehicle" || cursorTarget isKindOf "Air" || cursorTarget isKindOf "Ship" || cursorTarget isKindOf "Submarine")']];
 		//fast travel
 		life_actions = life_actions + [player addAction["<t color='#FFFF33'>Métro</t>",life_fnc_spawnMenu,"",151,false,false,"",'{side _x == west} count playableUnits <= 8 && ((player distance (getMarkerPos "cop_spawn_1") < 30) OR  (player distance (getMarkerPos "cop_spawn_2") < 30) OR (player distance (getMarkerPos "cop_spawn_3") < 30) OR  (player distance (getMarkerPos "cop_spawn_4") < 30) OR  (player distance (getMarkerPos "cop_spawn_5") < 30)) ']];
+		// Prendre barrière
+		life_actions = life_actions + [player addAction["Prendre barrière",life_fnc_packupmauer,"",0,false,false,"",' _mauer = nearestObjects[getPos player,["RoadBarrier_small_F"],8] select 0; !isNil "_mauer" && !isNil {(_mauer getVariable "item")}']];
+		// Prendre cone
+		life_actions = life_actions + [player addAction["Prendre cone",life_fnc_packupcone,"",0,false,false,"",' _cone = nearestObjects[getPos player,["RoadCone_L_F"],8] select 0; !isNil "_cone" && !isNil {(_cone getVariable "item")}']];
 	};
 	case civilian:
 	{

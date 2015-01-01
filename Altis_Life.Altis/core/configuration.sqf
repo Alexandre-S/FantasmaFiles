@@ -172,7 +172,9 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
-	"life_inv_storagebig"
+	"life_inv_storagebig",
+	"life_inv_mauer",
+	"life_inv_cone"
 ];
 
 //Setup variable inv vars.
@@ -262,7 +264,9 @@ sell_array =
 	["goldbar",95000],
 	["handcuffs",200],
 	["handcuffkeys",100],
-	["defusekit",0]
+	["defusekit",0],
+	["mauer",0],
+	["cone",0]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -294,7 +298,9 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",0],
 	["storagesmall",75000],
-	["storagebig",150000]
+	["storagebig",150000],
+	["mauer",10],
+	["cone",10]
 ];
 __CONST__(buy_array,buy_array);
 

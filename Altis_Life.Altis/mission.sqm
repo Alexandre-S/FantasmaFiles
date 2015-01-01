@@ -84,6 +84,7 @@ class Mission
 		"A3_Structures_F_Naval_Piers",
 		"A3_Structures_F_Ind_FuelStation_Small",
 		"A3_Modules_F_Curator_Curator",
+		"a3_data_f_curator_virtual",
 		"rds_a2port_cman",
 		"A3_Structures_F_EPC_Civ_Garbage",
 		"A3_Structures_F_Households_Slum",

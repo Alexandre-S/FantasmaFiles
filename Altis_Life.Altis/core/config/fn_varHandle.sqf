@@ -67,6 +67,8 @@ switch (_mode) do
 			case "defusekit": {"life_inv_defusekit"};
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
+			case "mauer": {"life_inv_mauer"};
+			case "cone": {"life_inv_cone"};
 		};
 	};
 	
@@ -125,6 +127,8 @@ switch (_mode) do
 			case "life_inv_defusekit": {"defusekit"};
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};
+			case "life_inv_mauer": {"mauer"};
+			case "life_inv_cone": {"cone"};
 		};
 	};
 };

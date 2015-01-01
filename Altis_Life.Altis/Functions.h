@@ -125,6 +125,8 @@ class Life_Client_Core
 		class gather {};
 		class surrender {};
 		class InteractionMenu {};
+		class packupmauer {};
+		class packupcone {};
 	};
 	
 	class Housing
@@ -383,6 +385,8 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class mauer {};
+		class cone {};
 	};
 	
 	class Dialog_Controls

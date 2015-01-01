@@ -87,6 +87,24 @@ switch (true) do
 		[] spawn life_fnc_pickAxeUse;
 	};
 	
+	case (_item == "mauer"):
+	{
+		if(!isNull life_mauer) exitWith {hint "Vous avez déjà une barrière!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_mauer;
+		};
+	};
+	
+	case (_item == "cone"):
+	{
+		if(!isNull life_cone) exitWith {hint "Vous avez déjà un cone!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_cone;
+		};
+	};
+	
 	default
 	{
 		hint localize "STR_ISTR_NotUsable";
