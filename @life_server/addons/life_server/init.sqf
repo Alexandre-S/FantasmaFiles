@@ -1,8 +1,7 @@
 #define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
-life_server_isReady = false;
-publicVariable "life_server_isReady";
+
 server_test = false;
 publicVariable "server_test";
 serverhc = false;
@@ -10,6 +9,9 @@ serverhc = false;
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
 
 if(!isHLC) then {
+
+	life_server_isReady = false;
+	publicVariable "life_server_isReady";
 
 	last_HC_update = 0;
 	hlcAI = false;
