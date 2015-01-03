@@ -5,7 +5,7 @@
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
-private["_itemArray","_uniform","_vest","_backpack","_goggles","_headgear","_items","_prim","_seco","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_bMags","_vMags","_handle"];
+private["_itemArray","_uniform","_vest","_backpack","_goggles","_headgear","_items","_prim","_seco","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_bMags","_vMags","_handle","_launcher","_sItems"];
 _itemArray = life_gear;
 waitUntil {!(isNull (findDisplay 46))};
 
@@ -28,6 +28,19 @@ if(count _itemArray == 0) exitWith
         };
     };
 };
+if((count _itemArray) == 17) then {
+	_itemArray set [18, _itemArray select 16];
+	_itemArray set [17, []];
+	_itemArray set [16, _itemArray select 15];
+	_itemArray set [15, _itemArray select 14];
+	_itemArray set [14, _itemArray select 13];
+	_itemArray set [13, _itemArray select 12];
+	_itemArray set [12, _itemArray select 11];
+	_itemArray set [11, _itemArray select 10];
+	_itemArray set [10, _itemArray select 9];
+	_itemArray set [9, _itemArray select 8];
+	_itemArray set [8, ""];
+};
 
 _uniform = [_itemArray,0,"",[""]] call BIS_fnc_param;
 _vest = [_itemArray,1,"",[""]] call BIS_fnc_param;
@@ -37,15 +50,17 @@ _headgear = [_itemArray,4,"",[""]] call BIS_fnc_param;
 _items = [_itemArray,5,[],[[]]] call BIS_fnc_param;
 _prim = [_itemArray,6,"",[""]] call BIS_fnc_param;
 _seco = [_itemArray,7,"",[""]] call BIS_fnc_param;
-_uItems = [_itemArray,8,[],[[]]] call BIS_fnc_param;
-_uMags = [_itemArray,9,[],[[]]] call BIS_fnc_param;
-_bItems = [_itemArray,10,[],[[]]] call BIS_fnc_param;
-_bMags = [_itemArray,11,[],[[]]] call BIS_fnc_param;
-_vItems = [_itemArray,12,[],[[]]] call BIS_fnc_param;
-_vMags = [_itemArray,13,[],[[]]] call BIS_fnc_param;
-_pItems = [_itemArray,14,[],[[]]] call BIS_fnc_param;
-_hItems = [_itemArray,15,[],[[]]] call BIS_fnc_param;
-_yItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
+_launcher = [_itemArray,8,"",[""]] call BIS_fnc_param;
+_uItems = [_itemArray,9,[],[[]]] call BIS_fnc_param;
+_uMags = [_itemArray,10,[],[[]]] call BIS_fnc_param;
+_bItems = [_itemArray,11,[],[[]]] call BIS_fnc_param;
+_bMags = [_itemArray,12,[],[[]]] call BIS_fnc_param;
+_vItems = [_itemArray,13,[],[[]]] call BIS_fnc_param;
+_vMags = [_itemArray,14,[],[[]]] call BIS_fnc_param;
+_pItems = [_itemArray,15,[],[[]]] call BIS_fnc_param;
+_hItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
+_sItems = [_itemArray,17,[],[[]]] call BIS_fnc_param;
+_yItems = [_itemArray,18,[],[[]]] call BIS_fnc_param;
 
 if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
@@ -159,6 +174,7 @@ life_maxWeight = 24;
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if(_prim != "") then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_launcher != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 
 {
     if (_x != "") then {
@@ -170,6 +186,11 @@ if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_ha
         player addHandgunItem _x;
     };
 } foreach (_hItems);
+{
+    if (_x != "") then {
+        player addSecondaryWeaponItem _x;
+    };
+} foreach (_sItems);
 
 if(playerSide == independent && {uniform player == "U_Rangemaster"}) then {
 	[[player,0,"altisrpfr\textures\medic_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;

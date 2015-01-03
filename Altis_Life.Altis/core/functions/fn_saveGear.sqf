@@ -7,7 +7,7 @@
     Description:
     Saves the players gear for syncing to the database for persistence..
 */
-private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled"];
+private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_sItems"];
 _return = [];
 
 _return pushBack uniform player;
@@ -18,7 +18,7 @@ _return pushBack headgear player;
 _return pushBack assignedITems player;
 _return pushBack primaryWeapon player;
 _return pushBack handgunWeapon player;
-
+_return pushBack secondaryWeapon player;
 
 _uItems = [];
 _uMags  = [];
@@ -28,6 +28,7 @@ _vItems = [];
 _vMags  = [];
 _pItems = [];
 _hItems = [];
+_sItems = [];
 _yItems = [];
 _uni = [];
 _ves = [];
@@ -134,6 +135,13 @@ if(count (handGunItems player) > 0) then
     } forEach (handGunItems player);
 };
 
+if(count (secondaryWeaponItems player) > 0) then
+{
+    {
+        _sItems = _sItems + [_x];
+    } forEach (secondaryWeaponItems player);
+};
+
 {
     _name = (_x select 0);
     _val = (_x select 1);
@@ -168,7 +176,9 @@ if(count (handGunItems player) > 0) then
     ["life_inv_spikeStrip", life_inv_spikeStrip],
     ["life_inv_defusekit", life_inv_defusekit],
     ["life_inv_storagesmall", life_inv_storagesmall],
-    ["life_inv_storagebig", life_inv_storagebig]
+    ["life_inv_storagebig", life_inv_storagebig],
+    ["life_inv_mauer", life_inv_mauer],
+    ["life_inv_cone", life_inv_cone]
 ];
 // Youri : Ici qu'on rajoute les items Y a sauvegardé. Les ressources n'y sont pas pour le moment, volonté de Tonic & Vampire pour éviter les glitch
 
@@ -180,6 +190,7 @@ _return pushBack _vItems;
 _return pushBack _vMags;
 _return pushBack _pItems;
 _return pushBack _hItems;
+_return pushBack _sItems;
 if(call life_save_yinv) then {
     _return pushBack _yItems;
 } else {
