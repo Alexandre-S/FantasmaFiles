@@ -150,7 +150,7 @@ private ["_weatherUpdateArray","_weatherUpdateForecasts"];
 		rw2_Next_Weather = _weatherUpdateForecasts select floor(random(count(_weatherUpdateForecasts)));
 		publicVariable "rw2_Next_Weather";
 		sleep 1190;
-        [[],"mb_fnc_UpdateWeather",true] spawn Bis_fnc_MP;
+        [[],"mb_fnc_UpdateWeather",true] spawn life_fnc_MP;
 		rw2_Current_Weather = rw2_Next_Weather;
 		publicVariable "rw2_Current_Weather";
 	};
