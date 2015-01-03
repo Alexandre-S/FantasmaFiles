@@ -29,15 +29,15 @@ if((((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [4096,131
 };
 if(((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [2])) then
 {
-	if(handgunWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as dÈj‡ un flingue."};
+	if(handgunWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as d√©j√† un flingue."};
 };
 if(((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [1])) then
 {
-	if(primaryWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as dÈj‡ une arme."};
+	if(primaryWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as d√©j√† une arme."};
 };
 if(((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [4])) then
 {
-	if(secondaryWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as dÈj‡ un tube."};
+	if(secondaryWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as d√©j√† un tube."};
 };
 
 if(_bad != "") exitWith {hint _bad};
