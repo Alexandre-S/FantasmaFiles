@@ -73,7 +73,8 @@ switch(_mode) do {
 	
 	case 7: {
 		_array = [_this,2,[],[[]]] call BIS_fnc_param;
-		[_uid,_side,_array,0] call TON_fnc_keyManagement;
+		//[_uid,_side,_array,0] call TON_fnc_keyManagement;
+		[[_uid,_side,_array,0],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 	};
 	
 	case 8: {

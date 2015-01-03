@@ -117,7 +117,8 @@ _vehicle setVariable ["tf_range", 50000, true];
 _vehicle lock 2;
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
-[_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
+//[_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
+[[_pid,_side,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9]];

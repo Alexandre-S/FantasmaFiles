@@ -151,6 +151,10 @@ if(!isHLC) then {
 
 	if(server_test) then {
 		[] spawn TON_fnc_initHouses;
+		_handle = [] spawn STS_fnc_spawnVehicleActive;
+		HCserverloadVeh = true;
+		publicVariable "HCserverloadVeh";
+		waitUntil {sleep 0.1;scriptDone _handle};
 	}else{
 		waitUntil {sleep 0.1;!isNil "HCserverload"};
 	};
@@ -232,7 +236,31 @@ else
 	serv_sv_use = [];
 	last_HC_update = 0;
 	waitUntil {sleep 0.1;!isNil "serverloadhc"};
-
+	
+	//verif plantage
+	_handle = [] spawn  {
+		private["_vehicleClass","_dbInfo"];
+		{
+			_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
+			if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
+			{
+				_dbInfo = _x getVariable["dbInfo",[]];
+				if(count _dbInfo > 0) then
+				{
+					sleep 0.1;
+					diag_log format ["::spawn:: vehupdate %1",_x];
+					[_x] spawn  {
+						_x = _this select 0;
+						sleep (random 60);
+						[] call life_fnc_getHLC;
+						[_x,"STS_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
+					};
+				};
+			};
+		} foreach vehicles;
+	};
+	waitUntil {sleep 0.1;scriptDone _handle};
+	
 	fed_bank setVariable["safe",(count playableUnits),true];
 	[] spawn TON_fnc_federalUpdate;
 
@@ -247,6 +275,11 @@ else
 	
 	if(isNil "TON_fnc_player_query") then {	
 		[] spawn TON_fnc_initHouses;
+		_handle = [] spawn STS_fnc_spawnVehicleActive;
+		HCserverloadVeh = true;
+		publicVariable "HCserverloadVeh";
+		waitUntil {sleep 0.1;scriptDone _handle};
+		
 		HCserverload = true;
 		publicVariable "HCserverload";
 	};

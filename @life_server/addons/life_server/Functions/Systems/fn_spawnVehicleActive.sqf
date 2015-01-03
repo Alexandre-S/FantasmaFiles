@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_queryResult","_count","_sql","_vehicle","_nearVehicles","_name","_side","_plate","_color","_classname","_inv","_fuel","_insure","_dir","_t1"];
+private["_vid","_sp","_pid","_query","_queryResult","_count","_sql","_vehicle","_nearVehicles","_name","_side","_plate","_color","_classname","_inv","_fuel","_insure","_dir","_t1","_realside"];
 
 waitUntil{!DB_Async_Active};
 _count = (["SELECT COUNT(*) FROM vehicles WHERE active='1' AND alive='1'",2] call DB_fnc_asyncCall) select 0;
@@ -132,6 +132,12 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_vehicle setFuel (parseNumber _fuel);
 		//Send keys over the network.
 		//[[_vehicle],"STS_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
+		if((_side) == "cop") then {	_realside = west; }
+		if((_side) == "civ") then {	_realside = civilian; };
+		if((_side) == "med") then {	_realside = independent; };
+		// [_pid,_realside,_vehicle,1] call TON_fnc_keyManagement;
+		[[_pid,_realside,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
+
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
 		//Sets of animations
