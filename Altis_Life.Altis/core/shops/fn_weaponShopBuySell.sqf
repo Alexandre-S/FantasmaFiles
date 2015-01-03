@@ -15,12 +15,29 @@ _itemInfo = [_item] call life_fnc_fetchCfgDetails;
 
 _bad = "";
 
-if((_itemInfo select 6) != "CfgVehicles") then
+/*if((_itemInfo select 6) != "CfgVehicles") then
 {
 	if((_itemInfo select 4) in [4096,131072]) then
 	{
 		if(!(player canAdd _item) && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = (localize "STR_NOTF_NoRoom")};
 	};
+};*/
+
+if((((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [4096,131072])) || ((_itemInfo select 6) == "CfgMagazines")) then
+{
+	if(!(player canAdd _item) && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as plus de place."};
+};
+if(((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [2])) then
+{
+	if(handgunWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as déjà un flingue."};
+};
+if(((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [1])) then
+{
+	if(primaryWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as déjà une arme."};
+};
+if(((_itemInfo select 6) == "CfgWeapons") && ((_itemInfo select 4) in [4])) then
+{
+	if(secondaryWeapon player != "" && (uiNamespace getVariable["Weapon_Shop_Filter",0]) != 1) exitWith {_bad = "Hey mon pote t'as déjà un tube."};
 };
 
 if(_bad != "") exitWith {hint _bad};
@@ -68,3 +85,4 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 	};
 };
 [] call life_fnc_saveGear;
+playSound "caching";
