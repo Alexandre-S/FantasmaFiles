@@ -64,5 +64,7 @@ if(_ctrl == "money") then
 	};
 	
 	life_trunk_vehicle setVariable["Trunk",[_inv,(_veh_data select 1) + _itemWeight],true];
+	life_trunk_vehicle setVariable["lootModified",true,true];
+	life_trunk_vehicle setVariable["idleTime",time,true];
 	[life_trunk_vehicle] call life_fnc_vehInventory;
 };

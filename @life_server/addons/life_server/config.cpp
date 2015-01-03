@@ -113,6 +113,8 @@ class CfgFunctions
 			class marketconfiguration {};
 			class hlc_assignOwner {};
 			class getHLC {};
+			class spawnVehicleActive {};
+			class updateVeh {};
 		};
 		
 		class Housing

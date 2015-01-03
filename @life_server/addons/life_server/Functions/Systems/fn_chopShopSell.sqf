@@ -26,11 +26,10 @@ if(count _dbInfo > 0) then {
 	_uid = _dbInfo select 0;
 	_plate = _dbInfo select 1;
 	_assur = _dbInfo select 2;
-	_fuel = fuel _vehicle;
 	
 	if(_assur == 1) then
 	{
-		_query = format["UPDATE vehicles SET alive='1', insure='0', active='0', fuel='%1' WHERE pid='%2' AND plate='%3'",_fuel,_uid,_plate]; 
+		_query = format["UPDATE vehicles SET alive='1', insure='0', active='0' WHERE pid='%1' AND plate='%2'",_uid,_plate]; 
 	} 
 	else  
 	{

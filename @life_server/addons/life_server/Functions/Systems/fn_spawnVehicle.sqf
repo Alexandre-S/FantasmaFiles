@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel","_unitid"];
+private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel","_unitid","_inv"];
 _vid = [_this,0,-1,[0]] call BIS_fnc_param;
 _pid = [_this,1,"",[""]] call BIS_fnc_param;
 _sp = [_this,2,[],[[],""]] call BIS_fnc_param;
@@ -25,7 +25,7 @@ if(_vid == -1 OR _pid == "") exitWith {};
 if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel, _inv FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
@@ -67,6 +67,10 @@ if(count _nearVehicles > 0) exitWith
 };
 _fuel = parseNumber(_vInfo select 10);
 
+_inv = [(_vInfo select 9)] call DB_fnc_mresToArray;
+if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};
+_vehicle setVariable["Trunk",_inv,true];
+
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 waitUntil {!DB_Async_Active};
@@ -88,6 +92,11 @@ if(typeName _sp == "STRING") then {
 	_vehicle setFuel _fuel;
 };
 
+_vehicle setVariable["idleTime",time,true];
+_vehicle setVariable["lootModified",false,true];
+_vehicle setVariable ["R3F_LOG_disabled", false,true];
+_vehicle setVariable["lastPos",[]];
+
 //Side Specific actions.
 switch(_side) do {
 	case west: {
@@ -106,7 +115,6 @@ _vehicle setVariable ["tf_hasRadio", true, true];
 _vehicle setVariable ["tf_range", 50000, true];
 
 _vehicle lock 2;
-_vehicle allowDamage true;
 //Send keys over the network.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
@@ -115,6 +123,7 @@ _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9]];
 //_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
 [_vehicle] call life_fnc_clearVehicleAmmo;
+_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
 sleep 5;
 //Reskin the vehicle 
@@ -146,6 +155,17 @@ else
   [[1,"Votre vehicule est dispo !"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
 serv_sv_use = serv_sv_use - [_vid];
+
+[_vehicle] spawn
+{
+	_vehicle = _this select 0;
+	sleep 5;
+	_vehicle allowDamage true;
+};
+
+// Force session DB save every 1 mins
+[] call life_fnc_getHLC;
+[_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 
 // Problem with TAFR
 // [_vehicle,_vInfo select 8] spawn TON_fnc_fixTafr;

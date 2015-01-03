@@ -253,6 +253,7 @@ class Life_Client_Core
 		class LockCarSound {};
 		class randomRound {};
 		class getHLC {};
+		class vehicleExit {};
 	};
 	
 	class Network

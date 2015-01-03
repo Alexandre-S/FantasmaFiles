@@ -17,8 +17,8 @@ link4[] = {4,5};
 link5[] = {5,3};
 link6[] = {6,7};
 link7[] = {7,2};
-globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-407.881226,389.642914,482.854736,-505.641113,735,911,1};
-window[] = {2,-1,-1,-1,-1,860,100,1743,100,3,1261};
+globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-407.881226,389.642914,482.854736,-505.641113,1243,911,1};
+window[] = {2,-1,-1,-1,-1,910,150,1793,150,3,1261};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -83,14 +83,13 @@ class FSM
        "			_uid = _dbInfo select 0;" \n
        "			_plate = _dbInfo select 1;" \n
        "			_insureSystem = _dbInfo select 2;" \n
-       "			_fuel = fuel _x;" \n
        "			diag_log "" destroy vehicule !"";" \n
        "			diag_log format[""insureSystem = %1 "", _insureSystem];" \n
        "			if(_insureSystem == 1) then " \n
        "			{" \n
        "				diag_log "" Assurer !"";" \n
        "				diag_log format[""insureSystem = %1 "", _insureSystem];" \n
-       "				_query_0 = format[""UPDATE vehicles SET alive='1', insure='0', active='0', fuel='%1' WHERE pid='%2' AND plate='%3'"",_fuel,_uid,_plate]; " \n
+       "				_query_0 = format[""""UPDATE vehicles SET alive='1', insure='0', active='0' WHERE pid='%1' AND plate='%2'"""",_uid,_plate];" \n
        "				_query_0 spawn " \n
        "				{" \n
        "					waitUntil {!DB_Async_Active};" \n
@@ -136,14 +135,14 @@ class FSM
        "	};" \n
        "} foreach allMissionObjects ""Air"";" \n
        "" \n
-	   "_cars = time;" \n
-	   "" \n
-	   "//Group cleanup." \n
-	   "{" \n
-	   "	if(count units _x == 0 && local _x) then {" \n
-	   "		deleteGroup _x;" \n
-	   "	};" \n
-	   "} foreach allGroups;"/*%FSM</STATEINIT""">*/;
+       "_cars = time;" \n
+       "" \n
+       "//Group cleanup." \n
+       "{" \n
+       "	if(count units _x == 0 && local _x) then {" \n
+       "		deleteGroup _x;" \n
+       "	};" \n
+       "} foreach allGroups;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {

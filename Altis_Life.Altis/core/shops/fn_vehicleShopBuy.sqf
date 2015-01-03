@@ -57,8 +57,13 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setPos (getMarkerPos _spawnPoint);
 };
 
+_vehicle setVariable["idleTime",time,true];
+_vehicle setVariable["lootModified",false,true];
+_vehicle setVariable ["R3F_LOG_disabled", false, true];
 _vehicle setVariable ["tf_hasRadio", true, true];
 _vehicle setVariable ["tf_range", 50000, true];
+
+_vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 life_vehicles pushBack _vehicle;
@@ -101,9 +106,18 @@ switch(playerSide) do {
 	};
 };
 
-// sleep 5;
-// [[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-_vehicle allowDamage true;
+playSound "caching";
+
+[_vehicle] spawn
+{
+	_vehicle = _this select 0;
+	sleep 5;
+	_vehicle allowDamage true;
+};
+
+// Force session DB save every 1 mins
+[] call life_fnc_getHLC;
+[_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
 // closeDialog 0; //Exit the menu.
