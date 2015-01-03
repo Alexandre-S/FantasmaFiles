@@ -5,7 +5,7 @@
 	Description:
 	Master handling for processing an item.
 */
-private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP"];
+private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_delayInt"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
@@ -63,9 +63,10 @@ life_is_processing = true;
 
 if(_hasLicense) then
 {
+	_delayInt = _oldVal * 0.03;
 	while{true} do
 	{
-		sleep  0.3;
+		sleep _delayInt;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
@@ -84,9 +85,10 @@ if(_hasLicense) then
 {
 	if(life_cash < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	
+	_delayInt = _oldVal * 0.09;
 	while{true} do
 	{
-		sleep  0.9;
+		sleep _delayInt;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
