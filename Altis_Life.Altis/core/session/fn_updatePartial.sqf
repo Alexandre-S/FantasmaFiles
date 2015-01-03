@@ -55,6 +55,9 @@ switch(_mode) do {
 		_packet set[2,(getPosATL player)];
 		if((player getVariable["Revive",true]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
 		_packet set[4,life_is_alive];
+		_packet set[5,life_hunger];
+		_packet set[6,life_thirst];
+		_packet set[7,damage player];
 	};
 };
 

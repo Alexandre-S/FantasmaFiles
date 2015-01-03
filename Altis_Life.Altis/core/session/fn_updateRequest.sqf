@@ -16,12 +16,15 @@ _packet pushBack _array;
 
 [] call life_fnc_saveGear;
 _packet pushBack life_gear;
-
 _packet pushBack (getPosATL player);
 
 if((player getVariable["Revive",true]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
 //diag_log format ["DEBUG CLIENT UPDATE %1, %2", player getVariable["Revive",false], alive player];
 _packet pushBack life_is_alive;
+
+_packet pushBack life_hunger;
+_packet pushBack life_thirst;
+_packet pushBack (damage player);
 
 switch (playerSide) do {
 	case civilian: {

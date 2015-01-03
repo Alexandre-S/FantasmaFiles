@@ -80,7 +80,10 @@ switch(_mode) do {
 		_value1 = [_this,2,""] call BIS_fnc_param;
 		_value1 = [_value1] call DB_fnc_mresArray;
 		_value2 = [_this select 4] call DB_fnc_bool;
-		_query = format["UPDATE players SET position='%1', alive='%2' WHERE playerid='%3'",_value1,_value2,_uid];
+		_hunger = [_this,5,0,[0]] call BIS_fnc_param;
+		_thirst = [_this,6,0,[0]] call BIS_fnc_param;
+		_damage = [_this,7,0,[0]] call BIS_fnc_param;
+		_query = format["UPDATE players SET position='%1', alive='%2', hunger='%4', thirst='%5', damage='%6' WHERE playerid='%3'",_value1,_value2,_uid,hunger,_thirst,_damage];
 	};
 };
 
