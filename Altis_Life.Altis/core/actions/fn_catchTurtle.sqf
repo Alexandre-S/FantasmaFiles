@@ -6,9 +6,12 @@
 	Catches a dead turtle?
 */
 private["_obj"];
-_obj = cursorTarget;
+_obj = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _obj) exitWith {}; //Not valid
-if(alive _obj) exitWith {}; //It's alive, don't take it charlie!
+if(!(_obj isKindOf "Turtle_F")) exitWith {}; //Not a fishy!
+if(player distance _obj > 3.5) exitWith {};
+
+//if(alive _obj) exitWith {}; //It's alive, don't take it charlie!
 
 if(([true,"turtle",1] call life_fnc_handleInv)) then
 {

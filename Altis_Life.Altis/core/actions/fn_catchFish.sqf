@@ -7,6 +7,7 @@
 */
 private["_fish","_type"];
 _fish = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+if(isNull _fish) exitWith {}; //Not valid
 if(!(_fish isKindOf "Fish_Base_F")) exitWith {}; //Not a fishy!
 if(player distance _fish > 3.5) exitWith {};
 switch(true) do
