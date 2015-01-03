@@ -31,6 +31,7 @@ switch(playerSide) do {
 };
 
 //Bring me back to life.
+player setDamage 0.95;
 player setDir _dir;
 player setPosASL (visiblePositionASL life_corpse);
 life_corpse setVariable["Revive",nil,TRUE];
