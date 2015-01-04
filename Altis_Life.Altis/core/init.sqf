@@ -106,6 +106,84 @@ waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
 player addRating 99999999;
+
+combat_mode = 
+{
+	if(isNull player) exitWith {};
+	dayz_combat = 1;
+	player setVariable ["combat_mode", time, false];
+		[] spawn  {
+			private["_veh","_handled","_ctrlCombat"];
+			while {((player getVariable ["combat_mode",0]) > time - 60)} do
+			{
+				[] call life_fnc_hudUpdate;
+				if (cameraView == "External") then
+				{
+					if(vehicle player == player)then{
+						player switchCamera "Internal";
+					};
+				};
+				sleep 0.1;
+			};
+			player setVariable ["combat_mode", 0, false];
+			dayz_combat = 0;
+			[] call life_fnc_hudUpdate;
+		};
+};
+
+alarm_check = 
+{
+	private["_unit","_mag","_list"];
+	_unit = (_this select 0) select 0;
+	_mag = (_this select 0) select 5;
+	//hint format ["%1 %2",_weapon,_mag];
+	
+	if(side _unit == west) exitwith {};
+	if(_unit getvariable ["alarm_check",false]) exitwith {};
+	
+	if!(_mag in life_chemlist) then {
+	
+		//5 sec
+		_unit setVariable["alarm_check",true];
+		[_unit] spawn {
+			_unit = _this select 0;
+			sleep 5;
+			_unit setVariable["alarm_check",false];
+		};
+		
+		//speakers
+		_list = position player nearObjects ["Land_Loudspeakers_F",600];
+		if (count(_list) > 0) then {
+			[[profileName, position player,"FIRE"],"life_fnc_createMarker",west,false] spawn life_fnc_MP;
+		};
+		
+		{
+			if !(_x getvariable ["alarm_on",false]) then {
+				_x setVariable["alarm_on",true,true];
+				[_x] spawn {
+					_vehicle = _this select 0;
+					sleep 60;
+					_vehicle setVariable["alarm_on",false,true];
+				};
+				[_x] spawn {
+					_vehicle = _this select 0;
+					while {true} do
+					{
+						//_vehicle say3D "bankalarm"; sleep 13;
+						[[_vehicle,"bankalarm",-1],"life_fnc_playSound",true,false] spawn life_fnc_MP;
+						sleep 23.44;
+						if(!(_vehicle getVariable "alarm_on")) exitWith {};
+					};
+				};
+				sleep (random 5);
+			};
+		} foreach _list;
+	};
+};
+
+player addEventHandler ["FiredNear", " if(!((_this select 6) in life_chemlist)) then { [] spawn combat_mode; }; "];
+// player addEventHandler ["fired", "[_this] spawn alarm_check;"];
+
 diag_log "------------------------------------------------------------------------------------------------------";
 diag_log format["                End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "------------------------------------------------------------------------------------------------------";

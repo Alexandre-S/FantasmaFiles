@@ -30,6 +30,33 @@ if(str(player) in ["civ_51","civ_52","civ_53","civ_54","civ_55","civ_56","civ_57
 	};
 };
 
+
+if(life_is_arrested || (!(life_is_alive) && (life_firstSpawn)) ) then
+{
+	life_is_arrested = false;
+	[player,true] spawn life_fnc_jail;
+	[] call life_fnc_welcomeNotification;
+}
+else
+{
+	if (life_is_alive && ((count life_position) > 0)) then
+	{
+		player setPosATL life_position;
+		hint format["Vous êtes toujours en vie. Vous avez respawn à votre dernière position."];
+		if(life_firstSpawn) then {
+			[] call life_fnc_welcomeNotification;
+		};
+	}
+	else
+	{
+		[] call life_fnc_spawnMenu;
+		waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
+		waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+		// life_is_alive = true; // Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
+	};
+};
+
+/*
 if (!life_is_alive || (count life_position) == 0) then
 {
 	[] call life_fnc_spawnMenu;
@@ -53,5 +80,5 @@ else
 	if(life_firstSpawn) then {
 		[] call life_fnc_welcomeNotification;
 	};
-};
+};*/
 player addRating 9999999;

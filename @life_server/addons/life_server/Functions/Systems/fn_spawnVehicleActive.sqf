@@ -14,7 +14,7 @@ _count = (["SELECT COUNT(*) FROM vehicles WHERE active='1' AND alive='1'",2] cal
 for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 	waitUntil{!DB_Async_Active};
 	// _query = format["SELECT id,pid,pos,name,side,plate,color,classname,inventory,fuel,insure,dir FROM vehicles WHERE active='1' AND alive='1' LIMIT %1,10",_x];
-	_query = format["SELECT vehicles.id,vehicles.pid,vehicles.pos,players.name,vehicles.side,vehicles.plate,vehicles.color,vehicles.classname,vehicles.inventory,vehicles.fuel,vehicles.insure,vehicles.dir FROM vehicles,players WHERE vehicles.pid = players.playerid AND vehicles.active='1' AND vehicles.alive='1'  LIMIT %1,10",_x];
+	_query = format["SELECT vehicles.id, vehicles.pid, vehicles.pos, players.name, vehicles.side, vehicles.plate, vehicles.color, vehicles.classname, vehicles.inventory, vehicles.fuel, vehicles.insure, vehicles.dir FROM vehicles, players WHERE vehicles.pid = players.playerid AND vehicles.active='1' AND vehicles.alive='1' LIMIT %1,10",_x];
 
 	_queryResult = [_query,2,true] call DB_fnc_asyncCall;
 	if(count _queryResult == 0) exitWith {};
@@ -105,7 +105,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 		sleep 0.01;
 		//_vehicle setVariable["spawned",false,true];
-		_vehicle setVariable["dbInfo",[(_pid),(call compile format["%1", _plate]),insure],true];
+		_vehicle setVariable["dbInfo",[(_pid),(call compile format["%1", _plate]),_insure],true];
 		sleep 0.01;
 		_vehicle setVariable["lastPos",[]];
 		sleep 0.01;
@@ -132,9 +132,9 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_vehicle setFuel (parseNumber _fuel);
 		//Send keys over the network.
 		//[[_vehicle],"STS_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
-		if((_side) == "cop") then {	_realside = west; }
-		if((_side) == "civ") then {	_realside = civilian; };
-		if((_side) == "med") then {	_realside = independent; };
+		if(_side == "cop") then { _realside = west; };
+		if(_side == "civ") then { _realside = civilian; };
+		if(_side == "med") then { _realside = independent; };
 		// [_pid,_realside,_vehicle,1] call TON_fnc_keyManagement;
 		[[_pid,_realside,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 

@@ -17,8 +17,8 @@ link4[] = {4,5};
 link5[] = {5,3};
 link6[] = {6,7};
 link7[] = {7,2};
-globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-407.881226,389.642914,482.854736,-505.641113,1243,911,1};
-window[] = {2,-1,-1,-1,-1,910,150,1793,150,3,1261};
+globals[] = {0.000000,0,0,0,0,640,480,1,46,6316128,1,-486.796234,468.557831,136.704697,-563.478333,1048,615,1};
+window[] = {0,-1,-1,-1,-1,935,175,1818,175,1,1066};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -89,7 +89,7 @@ class FSM
        "			{" \n
        "				diag_log "" Assurer !"";" \n
        "				diag_log format[""insureSystem = %1 "", _insureSystem];" \n
-       "				_query_0 = format[""""UPDATE vehicles SET alive='1', insure='0', active='0' WHERE pid='%1' AND plate='%2'"""",_uid,_plate];" \n
+       "				_query_0 = format[""UPDATE vehicles SET alive='1', insure='0', active='0' WHERE pid='%1' AND plate='%2'"",_uid,_plate];" \n
        "				_query_0 spawn " \n
        "				{" \n
        "					waitUntil {!DB_Async_Active};" \n

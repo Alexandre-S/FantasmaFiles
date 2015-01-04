@@ -166,8 +166,14 @@ _vItems2 = _vItems;
 {(backpackContainer player) addItemCargoGlobal [_x,1];} foreach (_bMags);
 life_maxWeight = 100;
 {
-    _item = [_x,1] call life_fnc_varHandle;
-    [true,_item,1] call life_fnc_handleInv;
+	if(count _x > 0) then {
+		_item = _x select 0;
+		_item = [_item,1] call life_fnc_varHandle;
+		[true,_item,_x select 1,true] call life_fnc_handleInv;
+	} else {
+		_item = [_x,1] call life_fnc_varHandle;
+		[true,_item,1] call life_fnc_handleInv;
+	};
 } foreach (_yItems);
 life_maxWeight = 24;
 

@@ -55,9 +55,9 @@ switch(playerSide) do {
 		life_is_alive = _this select 10;
 		life_tfrreboot = _this select 11;
 		if(life_is_alive) then {
-			player setdamage parseNumber(_session select 12);
-			life_hunger = parseNumber(_session select 13);
-			life_thirst = parseNumber(_session select 14);
+			player setdamage parseNumber(_this select 12);
+			life_hunger = parseNumber(_this select 13);
+			life_thirst = parseNumber(_this select 14);
 		};
 	};
 	
@@ -88,9 +88,9 @@ switch(playerSide) do {
 		life_is_alive = _this select 13;
 		life_tfrreboot = _this select 14;
 		if(life_is_alive) then {
-			player setdamage parseNumber(_session select 15);
-			life_hunger = parseNumber(_session select 16);
-			life_thirst = parseNumber(_session select 17);
+			player setdamage parseNumber(_this select 15);
+			life_hunger = parseNumber(_this select 16);
+			life_thirst = parseNumber(_this select 17);
 		};
 	};
 	
@@ -101,9 +101,9 @@ switch(playerSide) do {
 		life_is_alive = _this select 10;
 		life_tfrreboot = _this select 11;
 		if(life_is_alive) then {
-			player setdamage parseNumber(_session select 12);
-			life_hunger = parseNumber(_session select 13);
-			life_thirst = parseNumber(_session select 14);
+			player setdamage parseNumber(_this select 12);
+			life_hunger = parseNumber(_this select 13);
+			life_thirst = parseNumber(_this select 14);
 		};
 	};
 };

@@ -117,5 +117,7 @@ life_cash = 0;
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 //[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 
-[0] call SOCK_fnc_updatePartial;
-[3] call SOCK_fnc_updatePartial;
+[] call SOCK_fnc_updateRequest;
+
+// [0] call SOCK_fnc_updatePartial;
+// [3] call SOCK_fnc_updatePartial;

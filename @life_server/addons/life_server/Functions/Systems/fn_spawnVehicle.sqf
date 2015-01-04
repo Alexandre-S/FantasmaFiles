@@ -25,7 +25,7 @@ if(_vid == -1 OR _pid == "") exitWith {};
 if(_vid in serv_sv_use) exitWith {};
 serv_sv_use pushBack _vid;
 
-_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel, _inv FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
+_query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel, inventory FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
@@ -67,10 +67,6 @@ if(count _nearVehicles > 0) exitWith
 };
 _fuel = parseNumber(_vInfo select 10);
 
-_inv = [(_vInfo select 9)] call DB_fnc_mresToArray;
-if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};
-_vehicle setVariable["Trunk",_inv,true];
-
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 waitUntil {!DB_Async_Active};
@@ -91,6 +87,10 @@ if(typeName _sp == "STRING") then {
 	_vehicle setDir _dir;
 	_vehicle setFuel _fuel;
 };
+
+_inv = [(_vInfo select 9)] call DB_fnc_mresToArray;
+if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};
+_vehicle setVariable["Trunk",_inv,true];
 
 _vehicle setVariable["idleTime",time,true];
 _vehicle setVariable["lootModified",false,true];

@@ -5,14 +5,15 @@
 	Description:
 	Do I really need one?
 */
-private["_math","_item","_num","_return","_var","_weight","_value","_diff"];
+private["_math","_item","_num","_return","_var","_weight","_value","_diff","_resp"];
 _math = [_this,0,false,[false]] call BIS_fnc_param; //true = add; false = subtract;
 _item = [_this,1,"",[""]] call BIS_fnc_param; //The item we are using to add or remove.
 _num = [_this,2,0,[0]] call BIS_fnc_param; //Number of items to add or remove.
+_resp = [_this,3,false,[false]] call BIS_fnc_param; //true = resp; false = no;
 if(_item == "" OR _num == 0) exitWith {false};
 
 _var = [_item,0] call life_fnc_varHandle;
-if(_math) then
+if(_math && !_resp) then
 {
 	_diff = [_item,_num,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 	_num = _diff;
@@ -24,7 +25,7 @@ _value = missionNamespace getVariable _var;
 if(_math) then
 {
 	//Lets add!
-	if((life_carryWeight + _weight) <= life_maxWeight) then
+	if((life_carryWeight + _weight) <= life_maxWeight || _resp) then
 	{
 		missionNamespace setVariable[_var,(_value + _num)];
 		
@@ -33,24 +34,24 @@ if(_math) then
 			life_carryWeight = life_carryWeight + _weight;
 			_return = true;
 		}
-			else
+		else
 		{
 			_return = false;
 		};
 	}
-		else
+	else
 	{
 		_return = false;
 	};
 }
-	else
+else
 {
 	//Lets subtract!
 	if((_value - _num) < 0) then
 	{
 		_return = false;
 	}
-		else
+	else
 	{
 		missionNamespace setVariable[_var,(_value - _num)];
 		
@@ -59,7 +60,7 @@ if(_math) then
 			life_carryWeight = life_carryWeight - _weight;
 			_return = true;
 		}
-			else
+		else
 		{
 			_return = false;
 		};

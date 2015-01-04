@@ -38,20 +38,21 @@ if(str(player) in ["cop_16","cop_17","cop_18","cop_19","cop_20","cop_21","cop_22
 	};
 };
 
-
 player setVariable["rank",(__GETC__(life_coplevel)),true];
+
+
 if (!life_is_alive || (count life_position) == 0) then
 {
 	[] call life_fnc_spawnMenu;
 	waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 	waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
-	life_is_alive = true; // Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
+	//life_is_alive = true; // Just in-case the player disconnects before choosing a spawn position I guess? Otherwise debug island it is!
 }	
 else 
 {
 	player setPosATL life_position;
-	hint format["Your character is still alive. You have been placed at your last saved position."];
-	life_is_alive = true;
+	hint format["Vous êtes toujours en vie. Vous avez respawn à votre dernière position."];
+	//life_is_alive = true;
 	if(life_firstSpawn) then {
 		[] call life_fnc_welcomeNotification;
 	};

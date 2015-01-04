@@ -84,7 +84,7 @@ switch(_mode) do {
 		_hunger = [_this,5,0,[0]] call BIS_fnc_param;
 		_thirst = [_this,6,0,[0]] call BIS_fnc_param;
 		_damage = [_this,7,0,[0]] call BIS_fnc_param;
-		_query = format["UPDATE players SET position='%1', alive='%2', hunger='%4', thirst='%5', damage='%6' WHERE playerid='%3'",_value1,_value2,_uid,hunger,_thirst,_damage];
+		_query = format["UPDATE players SET position='%1', alive='%2', hunger='%4', thirst='%5', damage='%6' WHERE playerid='%3'",_value1,_value2,_uid,_hunger,_thirst,_damage];
 	};
 };
 

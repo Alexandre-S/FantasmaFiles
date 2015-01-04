@@ -41,6 +41,10 @@ life_reblevel = 0;
 life_fatigue = 0.6; //Set the max fatigue
 life_is_alive = false;
 life_smartphoneTarget = ObjNull;
+player setVariable ["combat_mode", 0, false];
+dayz_combat = 0;
+
+life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange"];
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?

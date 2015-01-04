@@ -142,7 +142,7 @@ if(count (secondaryWeaponItems player) > 0) then
     } forEach (secondaryWeaponItems player);
 };
 
-{
+/*{
     _name = (_x select 0);
     _val = (_x select 1);
     if (_val > 0) then {
@@ -181,6 +181,16 @@ if(count (secondaryWeaponItems player) > 0) then
     ["life_inv_cone", life_inv_cone]
 ];
 // Youri : Ici qu'on rajoute les items Y a sauvegardé. Les ressources n'y sont pas pour le moment, volonté de Tonic & Vampire pour éviter les glitch
+*/
+
+_yItems = [];
+{
+	_val = missionNameSpace getVariable _x;
+	if(_val > 0) then
+	{
+		_yItems set[count _yItems, [_x,_val]];
+	};
+} foreach life_inv_items;
 
 _return pushBack _uItems;
 _return pushBack _uMags;

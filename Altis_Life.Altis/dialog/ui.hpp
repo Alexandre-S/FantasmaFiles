@@ -11,6 +11,15 @@
 		
 		class controlsBackground 
 		{
+			class combatHIcon : life_RscPicture 
+			{
+			
+				idc = 23450;
+				text = "altisrpfr\icons\status_combat_inside_ca.paa";
+				x = safeZoneX+safeZoneW-0.115; y = safeZoneY+safeZoneH-0.61;
+				w = 0.06; h = 0.08;
+			};
+			
 			class foodHIcon : life_RscPicture 
 			{
 			

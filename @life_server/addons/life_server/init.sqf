@@ -2,9 +2,10 @@
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 
-server_test = false;
+server_test = TRUE;
 publicVariable "server_test";
 serverhc = false;
+server_debug = true;
 
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
 
@@ -99,7 +100,16 @@ if(!isHLC) then {
 	
 	if(server_test) then {
 	
-		// test
+		//if(isDedicated && isNil("life_market_prices")) then
+		if(isNil("life_market_prices")) then
+		{
+			[] call TON_fnc_marketconfiguration;
+			diag_log "Market prices generated!";
+			"life_market_prices" addPublicVariableEventHandler
+			{
+				diag_log format["Market prices updated! %1", _this select 1];
+			};
+		};
 	}
 	else
 	{
@@ -151,7 +161,7 @@ if(!isHLC) then {
 
 	if(server_test) then {
 		[] spawn TON_fnc_initHouses;
-		_handle = [] spawn STS_fnc_spawnVehicleActive;
+		_handle = [] spawn TON_fnc_spawnVehicleActive;
 		HCserverloadVeh = true;
 		publicVariable "HCserverloadVeh";
 		waitUntil {sleep 0.1;scriptDone _handle};
@@ -263,7 +273,7 @@ else
 	
 	fed_bank setVariable["safe",(count playableUnits),true];
 	[] spawn TON_fnc_federalUpdate;
-
+	
 	life_HC_isActive = true;
 	publicVariableServer "life_HC_isActive";
 	Havena_HLCOBJ = player;
@@ -273,9 +283,20 @@ else
 	life_wanted_list = [];
 	[] execFSM "\life_server\cleanup.fsm";
 	
+	//if(isDedicated && isNil("life_market_prices")) then
+	if(isNil("life_market_prices")) then
+	{
+		[] call TON_fnc_marketconfiguration;
+		diag_log "Market prices generated!";
+		"life_market_prices" addPublicVariableEventHandler
+		{
+			diag_log format["Market prices updated! %1", _this select 1];
+		};
+	};
+	
 	if(isNil "TON_fnc_player_query") then {	
 		[] spawn TON_fnc_initHouses;
-		_handle = [] spawn STS_fnc_spawnVehicleActive;
+		_handle = [] spawn TON_fnc_spawnVehicleActive;
 		HCserverloadVeh = true;
 		publicVariable "HCserverloadVeh";
 		waitUntil {sleep 0.1;scriptDone _handle};

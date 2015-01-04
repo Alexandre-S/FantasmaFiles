@@ -8,17 +8,6 @@
 //This is a headless client, he doesn't need to do anything but keep being headless..
 if(!hasInterface) then {
 	[] call compile PreprocessFileLineNumbers "\life_server\init.sqf";
-
-	//if(isDedicated && isNil("life_market_prices")) then
-	if(isNil("life_market_prices")) then
-	{
-		[] call TON_fnc_marketconfiguration;
-		diag_log "Market prices generated!";
-		"life_market_prices" addPublicVariableEventHandler
-		{
-			diag_log format["Market prices updated! %1", _this select 1];
-		};
-	};
 	
 	[] spawn {
 		waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player is ready
