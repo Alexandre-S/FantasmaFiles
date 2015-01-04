@@ -335,6 +335,16 @@ switch (_code) do
 			};
 		};
 	};
+	case 31:
+	{
+		if ((!life_truckreverse_active) and (vehicle player != player && (typeOf vehicle player) in life_truck_types)) then {
+			_veh = [vehicle player,0] call BIS_fnc_param;			
+			if ((speed _veh) < 0) then {
+				life_truckreverse_active = true;
+				[_veh] spawn life_fnc_reverseTruckSound;
+			};
+		};
+	};
 };
 
 _handled;
