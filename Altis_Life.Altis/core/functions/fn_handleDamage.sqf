@@ -49,5 +49,10 @@ if(!isNull _source) then {
 	};
 };
 
+if(!_damage && _part == "") then {
+	[] call life_fnc_getHLC;
+	[[_unit,_source,1],"TON_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
+};
+
 [] call life_fnc_hudUpdate;
 _damage;

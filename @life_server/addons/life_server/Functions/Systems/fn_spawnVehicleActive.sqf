@@ -81,9 +81,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_vehicle setVectorUp (surfaceNormal _sp);
 		_vehicle setPosATL _sp;
 
-		//Reskin the vehicle 
-		// [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
-		[[_vehicle,(call compile format["%1",_color])],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+		
 		sleep 0.01;
 		_vehicle setVariable["idleTime",time,true];
 		sleep 0.01;
@@ -140,48 +138,63 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
-		//Sets of animations
-		/*if(_classname == "B_MRAP_01_hmg_F") then
+		
+		[_vehicle,_color,_classname,_side] spawn
 		{
-		  _vehicle disableTIEquipment true;
-		};*/
-		if(_classname == "C_Van_01_fuel_F") then
-		{
-		 _vehicle setFuelCargo 0;
-		};
-		/*if((_color) == "10" && (_classname) == "C_Offroad_01_F") then
-		{
-			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
-		};*/
+			sleep 5;
+			_vehicle = _this select 0;
+			_color = _this select 1;
+			_classname = _this select 2;
+			_side = _this select 3;
+			
+			//Reskin the vehicle 
+			// [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
+			[[_vehicle,(call compile format["%1",_color])],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+			
+			//Sets of animations
+			/*if(_classname == "B_MRAP_01_hmg_F") then
+			{
+			  _vehicle disableTIEquipment true;
+			};*/
+			if(_classname == "C_Van_01_fuel_F") then
+			{
+			 _vehicle setFuelCargo 0;
+			};
+			/*if((_color) == "10" && (_classname) == "C_Offroad_01_F") then
+			{
+				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
+			};*/
 
-		if((_side) == "med" && (_classname) == "C_Offroad_01_F") then
-		{
-			[_vehicle,"medic_truck",true] spawn life_fnc_vehicleAnimate;
-		};
-		if((_side) == "civ" && (_classname) == "LandRover_ACR") then
-		{
-			[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
-		};
+			if((_side) == "med" && (_classname) == "C_Offroad_01_F") then
+			{
+				[_vehicle,"medic_truck",true] spawn life_fnc_vehicleAnimate;
+			};
+			if((_side) == "civ" && (_classname) == "LandRover_ACR") then
+			{
+				[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
+			};
 
-		/*if((_color) == "11" && (_classname) == "C_Offroad_01_F") then
-		{
-			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate; // vigil
-		};*/
+			/*if((_color) == "11" && (_classname) == "C_Offroad_01_F") then
+			{
+				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate; // vigil
+			};*/
 
-		if((_side) == "civ" && (_classname) == "B_Heli_Light_01_F") then
-		{
-			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
+			if((_side) == "civ" && (_classname) == "B_Heli_Light_01_F") then
+			{
+				[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
+			};
+
+			if((_side) == "cop" && (_classname) in ["sab_UN_Offroad","sab_UN_Hunter","C_SUV_01_F"]) then
+			{
+				[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
+			};
+
+			/*if(_classname in ["B_MRAP_01_F","C_SUV_01_F"] && ((_side) == "cop")) then {
+				_vehicle setVariable["lights",false,true];
+				sleep 0.01;
+			};*/
 		};
-
-		if((_side) == "cop" && (_classname) in ["sab_UN_Offroad","sab_UN_Hunter","C_SUV_01_F"]) then
-		{
-			[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
-		};
-
-		/*if(_classname in ["B_MRAP_01_F","C_SUV_01_F"] && ((_side) == "cop")) then {
-			_vehicle setVariable["lights",false,true];
-			sleep 0.01;
-		};*/
+		
 		[_vehicle] spawn
 		{
 			_vehicle = _this select 0;
