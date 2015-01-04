@@ -28,7 +28,7 @@ if(!isNull _source) then {
 				_isVehicle = if(vehicle player != player) then {true} else {false};
 				_isQuad = if(_isVehicle) then {if(typeOf (vehicle player) == "B_Quadbike_01_F") then {true} else {false}} else {false};
 				
-				_damage = false;
+				_damage = 0;
 				if(_unit distance _source < _distance) then {
 					if(!life_istazed && !(_unit getVariable["restrained",false])) then {
 						if(_isVehicle && _isQuad) then {
@@ -43,13 +43,13 @@ if(!isNull _source) then {
 			
 			//Temp fix for super tasers on cops.
 			if(playerSide == west && side _source == west) then {
-				_damage = false;
+				_damage = 0;
 			};
 		};
 	};
 };
 
-if(!_damage && _part == "") then {
+if((_damage != 0) && (_part == "") && (alive _unit)) then {
 	[] call life_fnc_getHLC;
 	[[_unit,_source,1],"TON_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
 };
