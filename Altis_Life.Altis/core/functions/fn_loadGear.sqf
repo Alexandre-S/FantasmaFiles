@@ -5,7 +5,7 @@
     Description:
     Loads saved civilian gear, this is limited for a reason and that's balance.
 */
-private["_itemArray","_uniform","_vest","_backpack","_goggles","_headgear","_items","_prim","_seco","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_bMags","_vMags","_handle","_launcher","_sItems"];
+private["_itemArray","_uniform","_vest","_backpack","_goggles","_headgear","_items","_prim","_seco","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_bMags","_vMags","_handle","_launcher","_sItems","_oldsys"];
 _itemArray = life_gear;
 waitUntil {!(isNull (findDisplay 46))};
 
@@ -28,7 +28,9 @@ if(count _itemArray == 0) exitWith
         };
     };
 };
+_oldsys = false;
 if((count _itemArray) == 17) then {
+	_oldsys = true;
 	_itemArray set [18, _itemArray select 16];
 	_itemArray set [17, []];
 	_itemArray set [16, _itemArray select 15];
@@ -165,16 +167,18 @@ _vItems2 = _vItems;
 {player addItemToBackpack _x;} foreach (_bItems2);
 {(backpackContainer player) addItemCargoGlobal [_x,1];} foreach (_bMags);
 life_maxWeight = 100;
-{
-	if(count _x > 0) then {
+if(_oldsys) then {
+	{
+		_item = [_x,1] call life_fnc_varHandle;
+		[true,_item,1] call life_fnc_handleInv;
+	} foreach (_yItems);
+} else {
+	{
 		_item = _x select 0;
 		_item = [_item,1] call life_fnc_varHandle;
 		[true,_item,_x select 1,true] call life_fnc_handleInv;
-	} else {
-		_item = [_x,1] call life_fnc_varHandle;
-		[true,_item,1] call life_fnc_handleInv;
-	};
-} foreach (_yItems);
+	} foreach (_yItems);
+};
 life_maxWeight = 24;
 
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
