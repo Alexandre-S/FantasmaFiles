@@ -115,6 +115,7 @@ class CfgFunctions
 			class getHLC {};
 			class spawnVehicleActive {};
 			class updateVeh {};
+			class logdeath {};
 		};
 		
 		class Housing

@@ -31,6 +31,9 @@ life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
 
+[] call life_fnc_getHLC;
+[[player,_source,0],"TON_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
+
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 
 [_unit] spawn {
