@@ -176,6 +176,7 @@ class Life_Client_Core
 		class clothing_kart {};
 		
 		class updateClothing {};
+		class itemIcon {};
 	};
 
 	class Player_Menu
