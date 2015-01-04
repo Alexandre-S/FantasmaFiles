@@ -55,6 +55,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
 	_vehicle setDir (markerDir _spawnPoint);
 	_vehicle setPos (getMarkerPos _spawnPoint);
+	_vehicle setFuel 0.8;
 };
 
 _vehicle setVariable["idleTime",time,true];
@@ -67,7 +68,8 @@ _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
 life_vehicles pushBack _vehicle;
-[[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+[[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",serverhc,false] spawn life_fnc_MP;
 
 if(_mode) then {
 	//if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {

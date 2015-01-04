@@ -135,8 +135,8 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		if(_side == "cop") then { _realside = west; };
 		if(_side == "civ") then { _realside = civilian; };
 		if(_side == "med") then { _realside = independent; };
-		// [_pid,_realside,_vehicle,1] call TON_fnc_keyManagement;
-		[[_pid,_realside,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
+		[_pid,_realside,_vehicle,1] call TON_fnc_keyManagement;
+		//[[_pid,_realside,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 

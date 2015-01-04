@@ -2,7 +2,7 @@
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 
-server_test = TRUE;
+server_test = false;
 publicVariable "server_test";
 serverhc = false;
 server_debug = true;
