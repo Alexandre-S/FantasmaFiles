@@ -88,8 +88,8 @@ if(!isHLC) then {
 
 		[] spawn TON_fnc_cleanup;
 		life_wanted_list = [];
-		[] execFSM "\life_server\cleanup.fsm";
 	};
+	[] execFSM "\life_server\cleanup.fsm";
 	//General cleanup for clients disconnecting.
 	// addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
 	HC_DC = ["HC_Disconnected","onPlayerDisconnected",{if(!isNil "Havena_HLCOBJ" && {_uid == getPlayerUID Havena_HLCOBJ}) then {life_HC_isActive = false;};}] call BIS_fnc_addStackedEventHandler;
@@ -281,7 +281,7 @@ else
 	
 	[] spawn TON_fnc_cleanup;
 	life_wanted_list = [];
-	[] execFSM "\life_server\cleanup.fsm";
+	// [] execFSM "\life_server\cleanup.fsm";
 	
 	//if(isDedicated && isNil("life_market_prices")) then
 	if(isNil("life_market_prices")) then

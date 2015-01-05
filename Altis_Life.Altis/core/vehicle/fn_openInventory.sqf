@@ -19,6 +19,7 @@ if(_vehicle isKindOf "House_F") then {
 	ctrlSetText[3501,format[(localize "STR_MISC_HouseStorage")+ " - %1",getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")]];
 } else {
 	ctrlSetText[3501,format[(localize "STR_MISC_VehStorage")+ " - %1",getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")]];
+	_vehicle setVariable["idleTime",time,true];
 };
 
 if(_vehicle isKindOf "House_F") then {
