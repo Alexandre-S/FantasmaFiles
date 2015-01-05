@@ -49,7 +49,7 @@ if(!isNull _source) then {
 	};
 };
 
-if((_damage > 0.01) && (_part == "") && (alive _unit) && (!isNull _source)) then {
+if((_damage > 0.01) && (_part == "") && (alive _unit) && (!isNull _source) && (_unit != _source)) then {
 	[] call life_fnc_getHLC;
 	[[_unit,_source,1],"TON_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
 };
