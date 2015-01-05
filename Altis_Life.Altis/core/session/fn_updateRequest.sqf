@@ -40,6 +40,6 @@ switch (playerSide) do {
 	};
 };
 
-diag_log format["UPDATEREQ %1",_packet];
+//diag_log format["UPDATEREQ %1",_packet];
 [] call life_fnc_getHLC;
 [_packet,"DB_fnc_updateRequest",serverhc,false] spawn life_fnc_MP;
