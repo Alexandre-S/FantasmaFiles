@@ -25,7 +25,7 @@ while {true} do
 			{
 				//_units = {(_x distance _x < 300)} count playableUnits;
 
-				if(((time - _idleTime) > 80) || (_idleTime==0)) then
+				if(((time - _idleTime) > 180) || (_idleTime==0)) then
 				{
 					_dbInfo = _x getVariable["dbInfo",[]];
 					if(count _dbInfo > 0) then
