@@ -36,7 +36,6 @@ life_versionInfo = "Altis Life RPG v5.1";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 execVM "randomWeather2.sqf";
-[player] execVM "core\simpleEP.sqf";
 
 
 //spam radio
