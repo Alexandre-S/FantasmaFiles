@@ -34,10 +34,10 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(typeName _spawnPoints == typeName []) then {
 		//Find an available spawn point.
-		_spawnPoint = (getMarkerPos (_spawnPoints select 0)) findEmptyPosition [0,100,_className];
+		_spawnPoint = (getMarkerPos (_spawnPoints select 0)) findEmptyPosition [5,100,_className];
 		// {if(count(nearestObjects[(getMarkerPos _x),["LandVehicle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 	} else {
-		_spawnPoint = (getMarkerPos _spawnPoints) findEmptyPosition [0,100,_className];
+		_spawnPoint = (getMarkerPos _spawnPoints) findEmptyPosition [5,100,_className];
 		// if(count(nearestObjects[(getMarkerPos _spawnPoints),["LandVehicle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
 	};
 };

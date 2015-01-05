@@ -57,7 +57,7 @@ if((_vInfo select 6) == 1) exitWith
 _spexit = false;
 if(typeName _sp != "STRING") then {
 	// _nearVehicles = nearestObjects[_sp,["LandVehicle","Air","Ship"],10];
-	_sp = _sp findEmptyPosition [0,100,_vInfo select 2];
+	_sp = _sp findEmptyPosition [5,100,_vInfo select 2];
 	if(count _sp == 0) then { _spexit = true; };
 // } else {
 	// _nearVehicles = [];
