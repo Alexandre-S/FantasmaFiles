@@ -51,7 +51,7 @@
 			{
 				
 				idc = -1;
-				text = "icons\money.paa";
+				text = "altisrpfr\icons\money.paa";
 				x = safeZoneX+safeZoneW-0.11; y = safeZoneY+safeZoneH-0.395;
 				w = 0.02; h = 0.03;
 			};
