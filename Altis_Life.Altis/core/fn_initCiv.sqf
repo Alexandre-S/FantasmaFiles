@@ -81,4 +81,5 @@ else
 		[] call life_fnc_welcomeNotification;
 	};
 };*/
+[] execVM "spawnanim.sqf";
 player addRating 9999999;

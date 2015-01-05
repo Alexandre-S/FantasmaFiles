@@ -41,3 +41,4 @@ else
 		[] call life_fnc_welcomeNotification;
 	};
 };
+[] execVM "spawnanim.sqf";

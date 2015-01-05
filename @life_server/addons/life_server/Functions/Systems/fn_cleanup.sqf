@@ -23,11 +23,11 @@ while {true} do
 			
 			if(!alive _x) then
 			{
-				_dbInfo = _x getVariable["dbInfo",[]];
 				//_units = {(_x distance _x < 300)} count playableUnits;
 
 				if(((time - _idleTime) > 80) || (_idleTime==0)) then
 				{
+					_dbInfo = _x getVariable["dbInfo",[]];
 					if(count _dbInfo > 0) then
 					{
 						_uid = _dbInfo select 0;
@@ -72,7 +72,6 @@ while {true} do
 				_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
 				if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
 				{
-					_dbInfo = _x getVariable["dbInfo",[]];
 					if(_idleTime == 0) then 
 					{
 						_x setVariable["idleTime",time,true];
@@ -81,6 +80,7 @@ while {true} do
 					{
 						if(count crew _x == 0) then
 						{
+							_dbInfo = _x getVariable["dbInfo",[]];
 							if(count _dbInfo > 0) then
 							{
 								_uid = _dbInfo select 0;
@@ -129,7 +129,7 @@ while {true} do
 				{
 					if((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Money_F","Land_Suitcase_F"]) then
 					{
-						if ((time - _idleTime) > 180) then {
+						if ((time - _idleTime) > 600) then {
 							if(!isNil "_x" && {!isNull _x}) then {
 								deleteVehicle _x;
 							};
