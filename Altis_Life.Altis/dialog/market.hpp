@@ -100,7 +100,7 @@ class marketView
 		class RscText_1002: RscText
 		{
 			idc = 1002;
-			text = "Depuis le démarrage du serveur"; //--- ToDo: Localize;
+			text = "Depuis le reboot"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;

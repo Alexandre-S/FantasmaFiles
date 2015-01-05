@@ -204,6 +204,7 @@ class Life_Client_Core
 		class newMsg {};
 		class showMsg {};
 		class cellphone2 {};
+		class revokeLicense {};
 	};
 	
 	class Functions

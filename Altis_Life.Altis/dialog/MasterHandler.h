@@ -28,3 +28,4 @@
 #include "channel.hpp"
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
+#include "revoke_license.h"
