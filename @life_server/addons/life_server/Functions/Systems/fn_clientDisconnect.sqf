@@ -5,39 +5,17 @@
 	When a client disconnects this will remove their corpse and
 	clean up their storage boxes in their house.
 */
-private["_unit","_id","_uid","_name","_containers","_loops"];
+private["_unit","_id","_uid","_name","_containers"];
 _unit = _this select 0;
 _id = _this select 1;
 _uid = _this select 2;
 _name = _this select 3;
 
+_containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
+{deleteVehicle _x;} foreach _containers;
+deleteVehicle _unit;
+
 /*
-_loops = 0;
-while {true} do {
-	if(isNull _unit) exitWith {};
-	if(_loops >= 25) exitWith {};
-	if(!alive _unit) exitWith {
-		[_unit,_name] spawn {
-			_unit = _this select 0;
-			_name = _this select 1;
-			if(!(_unit getVariable ["Revive", true])) then {
-				[[0,format["ATTENTION INTERDIT ! - %1 A DECONNECTE PENDANT UN COMA - ATTENTION INTERDIT !", _name]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-				[[0,format["ATTENTION INTERDIT ! - %1 A DECONNECTE PENDANT UN COMA - ATTENTION INTERDIT !", _name]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-				sleep 600;
-			};
-			_containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
-			if(count _containers > 0) then {
-				{deleteVehicle _x;} foreach _containers; //Delete the containers.
-			};
-			if (!isNull _unit) then {deleteVehicle _unit;}; //Get rid of the corpse.
-		};
-	};
-	
-	_loops = _loops + 1;
-	sleep 1;
-};*/
-
-
 waitUntil{sleep 0.1;count(allDeadMen) > 0};
 {
 	// diag_log format ["DISCO0 %1",_x getVariable["steam64ID",""]];
@@ -60,6 +38,6 @@ waitUntil{sleep 0.1;count(allDeadMen) > 0};
 			if (!isNull _x) then {deleteVehicle _x;}; //Get rid of the corpse.
 		};
 	};
-} foreach allDeadMen;
+} foreach allDeadMen;*/
 
 _uid spawn TON_fnc_houseCleanup;
