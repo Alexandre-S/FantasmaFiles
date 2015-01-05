@@ -7,6 +7,7 @@
 	meant to keep the network traffic down with large sums of data flowing
 	through life_fnc_MP
 */
+if (spawnmenuon > 0) exitwith {};
 private["_mode","_packet","_array","_flag"];
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _packet = [steamid,playerSide,nil,_mode];

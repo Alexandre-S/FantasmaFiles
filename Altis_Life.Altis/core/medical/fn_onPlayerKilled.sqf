@@ -46,7 +46,7 @@ life_deathCamera camCommit 0;
 		// waitUntil { speed _veh < 2 };
 		// diag_log format["check vehB2 - %1 - %2 - %3",_veh,speed _veh,crew _veh];
 		unassignVehicle (_unit);
-		_unit setpos getpos _veh;
+		_unit setposATL getposATL _veh;
 	};
 };
 
@@ -67,7 +67,7 @@ _unit spawn
 	_maxTime = time + (8 * 60);
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn_2",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 OR isNull _this};
-	if(!isNull _this) then { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };
+	if(!isNull _this) then { closeDialog 0; life_respawned = true; spawnmenuon = 1; [] call life_fnc_spawnMenu; };
 };
 
 [] spawn life_fnc_deathScreen;

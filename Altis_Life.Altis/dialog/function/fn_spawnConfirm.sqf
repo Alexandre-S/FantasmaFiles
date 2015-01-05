@@ -66,4 +66,6 @@ if(count life_spawn_point == 0) then
 if(life_firstSpawn) then {
 	[] call life_fnc_welcomeNotification;
 };
+spawnmenuon = 0;
+[] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudSetup;

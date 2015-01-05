@@ -4,6 +4,7 @@
 */
 life_firstSpawn = true;
 life_session_completed = false;
+spawnmenuon = 1;
 private["_handle","_timeStamp"];
 0 cutText["Setting up client, please wait...","BLACK FADED"];
 0 cutFadeOut 9999999;
@@ -95,7 +96,7 @@ switch (playerSide) do
  	};
 };
 waitUntil {sleep 0.5;!life_firstSpawn};
-
+spawnmenuon = 0;
 player setVariable["restrained",false,true];
 player setVariable["Escorting",false,true];
 player setVariable["transporting",false,true];
