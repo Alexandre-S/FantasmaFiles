@@ -5,7 +5,7 @@
 	Description:
 	Does something with vehicle purchasing.
 */
-private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle"];
+private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_hs"];
 _mode = _this select 0;
 if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
@@ -26,9 +26,9 @@ _spawnPoint = [];
 
 if((life_veh_shop select 0) == "med_air_hs") then {
 	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {
-	_spawnPoint = _spawnPoints;
-	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-	_spawnPoint = setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+		_spawnPoint = _spawnPoints;
+		// _hs = ((nearestObjects[getMarkerPos _spawnPoints,["Land_Hospital_side2_F"],50]) select 0);
+		// _spawnPoint = setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
@@ -52,9 +52,9 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
-	// _hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-	_vehicle setPosATL _spawnPoint;
-	// _vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
+	// _vehicle setPosATL _spawnPoint;
+	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	_vehicle lock 2;
 } else {
 	_vehicle = createVehicle [_className, _spawnPoint, [], 0, "NONE"];

@@ -11,6 +11,7 @@ _id = _this select 1;
 _uid = _this select 2;
 _name = _this select 3;
 
+/*
 _loops = 0;
 while {true} do {
 	if(isNull _unit) exitWith {};
@@ -24,7 +25,7 @@ while {true} do {
 				[[0,format["ATTENTION INTERDIT ! - %1 A DECONNECTE PENDANT UN COMA - ATTENTION INTERDIT !", _name]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 				sleep 600;
 			};
-			_containers = nearestObjects[_client,["WeaponHolderSimulated"],5];
+			_containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
 			if(count _containers > 0) then {
 				{deleteVehicle _x;} foreach _containers; //Delete the containers.
 			};
@@ -34,9 +35,9 @@ while {true} do {
 	
 	_loops = _loops + 1;
 	sleep 1;
-};
+};*/
 
-/*
+
 waitUntil{sleep 0.1;count(allDeadMen) > 0};
 {
 	// diag_log format ["DISCO0 %1",_x getVariable["steam64ID",""]];
@@ -60,5 +61,5 @@ waitUntil{sleep 0.1;count(allDeadMen) > 0};
 		};
 	};
 } foreach allDeadMen;
-*/
+
 _uid spawn TON_fnc_houseCleanup;

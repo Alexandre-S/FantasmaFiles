@@ -42,7 +42,7 @@ life_action_delay = time;
 		};
 	} else {
 		_value = ctrlText 2010;
-		if(!([_value] call life_fnc_isnumber)) exitWith {hint "Vous devez définir un nombre.";};
+		if(!([_value] call TON_fnc_isnumber)) exitWith {hint "Vous devez définir un nombre.";};
 		if(parseNumber(_value) <= 0) exitWith {hint "Vous avez besoin de rentrer le montant que vous voulez lacher.";_exit = true;};
 		if(!([false,_var,(parseNumber _value)] call life_fnc_handleInv)) exitWith {hint "Vous ne pouvez pas lacher autant d'objet, peut-être que vous n'en avez pas assez?";_exit = true;};
 		_value = (parseNumber _value);

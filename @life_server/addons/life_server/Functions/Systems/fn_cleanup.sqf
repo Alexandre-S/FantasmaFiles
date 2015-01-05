@@ -15,7 +15,7 @@ while {true} do
 	diag_log format["[debug] fn_cleanup start %1 ", ""];
 	sleep (1 * 60);
 	// if((isHLC) || (!(isHLC) && (time - last_HC_update) > 10)) then {
-	if(isHLC) then {
+	// if(isHLC) then {
 		if(server_debug) then { _t1 = diag_tickTime; };
 		diag_log format["[debug] fn_cleanup foreach - last_HC_update = %1 - %2 : %3", last_HC_update, time, time - last_HC_update];
 		{
@@ -155,5 +155,5 @@ while {true} do
 		} foreach vehicles;
 		_debugmap = false;
 	if(server_debug && ((diag_tickTime - _t1) > 0.1) ) then { diag_log format["[debuglongtime] SYS fn_cleanup %1 ", diag_tickTime - _t1]; };
-	};
+	// };
 };

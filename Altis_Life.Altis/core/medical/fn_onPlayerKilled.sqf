@@ -60,10 +60,14 @@ _unit spawn
 	
 	_maxTime = time + (life_respawn_timer * 60);
 	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	round(_maxTime - time) <= 0 OR isNull _this};
 	_RespawnBtn ctrlEnable true;
-	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
+	// _Timer ctrlSetText localize "STR_Medic_Respawn_2";
+	_maxTime = time + (8 * 60);
+	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn_2",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
+	round(_maxTime - time) <= 0 OR isNull _this};
+	if(!isNull _this) then { closeDialog 0; life_respawned = true; [] call life_fnc_spawnMenu; };
 };
 
 [] spawn life_fnc_deathScreen;
@@ -109,7 +113,7 @@ if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;
 };
 
-_handle = [_unit] spawn life_fnc_dropItems;
+_handle = [_unit,true] spawn life_fnc_dropItems;
 waitUntil {scriptDone _handle};
 
 life_hunger = 100;
