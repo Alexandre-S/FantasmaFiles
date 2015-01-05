@@ -10,7 +10,8 @@ _mode = _this select 0;
 if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
 _vIndex = lbValue[2302,(lbCurSel 2302)];
-_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg; _basePrice = (_vehicleList select _vIndex) select 1;
+_vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
+_basePrice = (_vehicleList select _vIndex) select 1;
  if(_mode) then {_basePrice = round(_basePrice)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
@@ -20,22 +21,29 @@ if(life_cash < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnoug
 if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint localize "STR_Shop_Veh_NoLicense"};
 
 _spawnPoints = life_veh_shop select 1;
-_spawnPoint = "";
+// _spawnPoint = "";
+_spawnPoint = [];
 
 if((life_veh_shop select 0) == "med_air_hs") then {
-	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {_spawnPoint = _spawnPoints};
+	if(count(nearestObjects[(getMarkerPos _spawnPoints),["Air"],35]) == 0) exitWith {
+	_spawnPoint = _spawnPoints;
+	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
+	_spawnPoint = setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	};
 } else {
 	//Check if there is multiple spawn points and find a suitable spawnpoint.
 	if(typeName _spawnPoints == typeName []) then {
 		//Find an available spawn point.
-		{if(count(nearestObjects[(getMarkerPos _x),["LandVehicle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
+		_spawnPoint = (getMarkerPos (_spawnPoints select 0)) findEmptyPosition [0,100,_className];
+		// {if(count(nearestObjects[(getMarkerPos _x),["LandVehicle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _x};} foreach _spawnPoints;
 	} else {
-		if(count(nearestObjects[(getMarkerPos _spawnPoints),["LandVehicle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
+		_spawnPoint = (getMarkerPos _spawnPoints) findEmptyPosition [0,100,_className];
+		// if(count(nearestObjects[(getMarkerPos _spawnPoints),["LandVehicle","Ship","Air"],5]) == 0) exitWith {_spawnPoint = _spawnPoints};
 	};
 };
 
-
-if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
+// if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
+if(count _spawnPoint == 0) exitWith {hint localize "STR_Shop_Veh_Block";};
 life_cash = life_cash - _basePrice;
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
@@ -44,17 +52,18 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
-	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
-	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	// _hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],50] select 0;
+	_vehicle setPosATL _spawnPoint;
+	// _vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	_vehicle lock 2;
 } else {
-	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+	_vehicle = createVehicle [_className, _spawnPoint, [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false; //Temp disable damage handling..
 	_vehicle lock 2;
-	_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
-	_vehicle setDir (markerDir _spawnPoint);
-	_vehicle setPos (getMarkerPos _spawnPoint);
+	_vehicle setVectorUp (surfaceNormal _spawnPoint);
+	// _vehicle setDir (markerDir _spawnPoint);
+	_vehicle setPos _spawnPoint;
 	_vehicle setFuel 0.8;
 };
 

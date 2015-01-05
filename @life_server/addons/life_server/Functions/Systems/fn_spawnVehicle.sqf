@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel","_unitid","_inv"];
+private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel","_unitid","_inv","_spexit"];
 _vid = [_this,0,-1,[0]] call BIS_fnc_param;
 _pid = [_this,1,"",[""]] call BIS_fnc_param;
 _sp = [_this,2,[],[[],""]] call BIS_fnc_param;
@@ -54,12 +54,16 @@ if((_vInfo select 6) == 1) exitWith
 	serv_sv_use = serv_sv_use - [_vid];
 	[[1,format[(localize "STR_Garage_SQLError_Active"),_vInfo select 2]],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
+_spexit = false;
 if(typeName _sp != "STRING") then {
-	_nearVehicles = nearestObjects[_sp,["LandVehicle","Air","Ship"],10];
-} else {
-	_nearVehicles = [];
+	// _nearVehicles = nearestObjects[_sp,["LandVehicle","Air","Ship"],10];
+	_sp = _sp findEmptyPosition [0,100,_vInfo select 2];
+	if(count _sp == 0) then { _spexit = true; };
+// } else {
+	// _nearVehicles = [];
 };
-if(count _nearVehicles > 0) exitWith
+// if(count _nearVehicles > 0) exitWith
+if(_spexit) exitWith
 {
 	serv_sv_use = serv_sv_use - [_vid];
 	[[_price,_unit_return],"life_fnc_garageRefund",_unit,false] spawn life_fnc_MP;
