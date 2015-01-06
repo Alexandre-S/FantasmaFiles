@@ -128,6 +128,7 @@ class Life_Client_Core
 		class packupmauer {};
 		class packupcone {};
 		class holsterWeapon {};
+		class suicideBomb {};
 	};
 	
 	class Housing

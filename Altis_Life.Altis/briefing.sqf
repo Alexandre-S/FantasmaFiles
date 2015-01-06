@@ -402,6 +402,7 @@ player createDiarySubject ["controls","Controles"];
 				Shift + L: Girophares (Medic & ONU)<br/>
 				Shift + F: Sirene (Medic & ONU)<br/>
 				Shift + R: Menotter<br/>
+				Shift + B: Activer veste explosive<br/>
 				"
 		]
 	];

@@ -352,6 +352,13 @@ switch (_code) do
 			};
 		};
 	};
+	// Shift B : BOUM BOUM
+	case 48:
+	{
+		if(_shift && vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")) then {
+			[] call life_fnc_suicideBomb;
+		};
+	};
 };
 
 _handled;

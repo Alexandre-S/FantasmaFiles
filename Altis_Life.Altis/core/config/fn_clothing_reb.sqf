@@ -193,6 +193,7 @@ switch (_filter) do
 		_ret pushBack ["V_PlateCarrier1_PMC_marpat","Gilet camo léger",10000];
 		_ret pushBack ["V_PlateCarrierInd_PMC_grn","Gilet vert Lourd",15000];
 		_ret pushBack ["V_PlateCarrierInd_PMC_blk","Gilet noir Lourd",15000];
+		_ret pushBack ["V_HarnessOGL_brn","Veste Explosive",500000];
 	};
 	
 	//Backpacks
