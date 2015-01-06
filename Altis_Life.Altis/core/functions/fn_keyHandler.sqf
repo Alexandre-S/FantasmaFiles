@@ -44,6 +44,14 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 	true;
 };
 
+if(_code in(actionKeys "PersonView"))then{
+	if(vehicle player != player || (dayz_combat == 0))then{
+		_handled=false;
+	}else{
+		_handled=true;
+	};
+};
+
 switch (_code) do
 {
 	//Space key for Jumping
@@ -69,7 +77,7 @@ switch (_code) do
 	};
 	
 	//Holster / recall weapon.
-	case 35:
+	/*case 35:
 	{
 		if(_shift && !_ctrlKey && currentWeapon player != "") then {
 			life_curWep_h = currentWeapon player;
@@ -82,7 +90,7 @@ switch (_code) do
 				player selectWeapon life_curWep_h;
 			};
 		};
-	};
+	};*/
 	
 	//ALT F4
 	/*case 62:
