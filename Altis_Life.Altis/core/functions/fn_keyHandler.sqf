@@ -82,11 +82,11 @@ switch (_code) do
 				player selectWeapon life_curWep_h;
 			};
 		};*/
-		if(_shift && !_ctrlKey && (currentWeapon player == "")) then {
+		if(_shift && !_ctrlKey && (currentWeapon player != "")) then {
 			[1] call life_fnc_holsterWeapon;
 		};
 		
-		if(!_shift && _ctrlKey && (currentWeapon player != "")) then {
+		if(!_shift && _ctrlKey && (currentWeapon player == "")) then {
 			[0] call life_fnc_holsterWeapon;
 		};	
 	};

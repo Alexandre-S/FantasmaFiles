@@ -20,6 +20,7 @@ switch (_type) do {
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
 				hint "Tu as récupéré l'arme que tu avais sur le dos";
+				life_curWep_h = nil;
 			};
 		}else
 		{
