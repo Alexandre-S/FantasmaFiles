@@ -127,7 +127,6 @@ class Life_Client_Core
 		class InteractionMenu {};
 		class packupmauer {};
 		class packupcone {};
-		class holsterWeapon {};
 		class suicideBomb {};
 	};
 	

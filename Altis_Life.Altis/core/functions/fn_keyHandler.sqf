@@ -71,7 +71,7 @@ switch (_code) do
 	//Holster / recall weapon.
 	case 35:
 	{
-		/*if(_shift && !_ctrlKey && currentWeapon player != "") then {
+		if(_shift && !_ctrlKey && currentWeapon player != "") then {
 			life_curWep_h = currentWeapon player;
 			player action ["SwitchWeapon", player, player, 100];
 			player switchcamera cameraView;
@@ -81,14 +81,7 @@ switch (_code) do
 			if(life_curWep_h in [primaryWeapon player,secondaryWeapon player,handgunWeapon player]) then {
 				player selectWeapon life_curWep_h;
 			};
-		};*/
-		if(_shift && !_ctrlKey) then {
-			if(currentWeapon player != "") then {
-				[1] call life_fnc_holsterWeapon;
-			} else {
-				[0] call life_fnc_holsterWeapon;
-			};
-		};	
+		};
 	};
 	
 	//ALT F4
