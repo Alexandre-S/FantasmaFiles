@@ -83,11 +83,11 @@ switch (_code) do
 			};
 		};*/
 		if(_shift && !_ctrlKey && (currentWeapon player != "")) then {
-			[1] call life_fnc_holsterWeapon;
-		};
-		
-		if(!_shift && _ctrlKey && (currentWeapon player == "")) then {
-			[0] call life_fnc_holsterWeapon;
+			if(currentWeapon player != "") then {
+				[1] call life_fnc_holsterWeapon;
+			} else {
+				[0] call life_fnc_holsterWeapon;
+			};
 		};	
 	};
 	
