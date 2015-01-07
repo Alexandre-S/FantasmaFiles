@@ -352,7 +352,7 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
 				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
@@ -473,7 +473,7 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
 				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
@@ -847,7 +847,7 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
 				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
@@ -1070,7 +1070,7 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
 				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;

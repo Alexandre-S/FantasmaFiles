@@ -70,7 +70,7 @@ _unit spawn
 	if(!isNull _this && !(isNull (findDisplay 7300))) then { closeDialog 0; life_respawned = true; spawnmenuon = 1; [] call life_fnc_spawnMenu; };
 };
 
-[] spawn life_fnc_deathScreen;
+[_unit] spawn life_fnc_deathScreen;
 
 //Create a thread to follow with some what precision view of the corpse.
 [_unit] spawn
