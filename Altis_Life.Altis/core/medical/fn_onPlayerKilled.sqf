@@ -66,8 +66,8 @@ _unit spawn
 	// _Timer ctrlSetText localize "STR_Medic_Respawn_2";
 	_maxTime = time + (13 * 60);
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn_2",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
-	round(_maxTime - time) <= 0 OR isNull _this};
-	if(!isNull _this) then { closeDialog 0; life_respawned = true; spawnmenuon = 1; [] call life_fnc_spawnMenu; };
+	round(_maxTime - time) <= 0 OR isNull _this OR (isNull (findDisplay 7300))};
+	if(!isNull _this && !(isNull (findDisplay 7300))) then { closeDialog 0; life_respawned = true; spawnmenuon = 1; [] call life_fnc_spawnMenu; };
 };
 
 [] spawn life_fnc_deathScreen;
