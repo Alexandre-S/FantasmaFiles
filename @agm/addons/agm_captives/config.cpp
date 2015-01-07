@@ -1,6 +1,6 @@
-﻿////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 //DeRap: Produced from mikero's Dos Tools Dll version 4.52
-//Wed Jan 07 21:17:57 2015 : Source 'file' date Wed Jan 07 21:17:57 2015
+//Wed Jan 07 19:17:16 2015 : Source 'file' date Wed Jan 07 19:17:16 2015
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
@@ -130,7 +130,7 @@ class CfgVehicles
 			{
 				displayName = "$STR_AGM_Captives_SetCaptive";
 				distance = 4;
-				condition = "'AGM_CableTie' in items _player && {alive _target} && {!(_target getVariable ['AGM_isCaptive', false])}";
+				condition = "'AGM_CableTie' in items _player && {alive _target} && {isPlayer _target} && {!(_target getVariable ['AGM_isCaptive', false])}";
 				statement = "player removeItem 'AGM_CableTie'; [_target, true] call AGM_Captives_fnc_setCaptive";
 				showDisabled = 0;
 				priority = 2.4;

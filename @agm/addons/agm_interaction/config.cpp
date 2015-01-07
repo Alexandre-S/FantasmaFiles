@@ -1,6 +1,6 @@
-﻿////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////
 //DeRap: Produced from mikero's Dos Tools Dll version 4.52
-//Wed Jan 07 21:18:18 2015 : Source 'file' date Wed Jan 07 21:18:18 2015
+//Wed Jan 07 01:46:38 2015 : Source 'file' date Wed Jan 07 01:46:38 2015
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
@@ -76,6 +76,7 @@ class CfgFunctions
 			class updateTooltipPosition;
 			class getCaptivityStatus;
 			class setCaptivityStatus;
+			class Surrender;
 		};
 	};
 };
@@ -134,7 +135,7 @@ class AGM_Core_Default_Keys
 		control = 1;
 		alt = 0;
 	};
-	class openDoor
+	/*class openDoor
 	{
 		displayName = "$STR_AGM_Interaction_OpenDoor";
 		condition = "!AGM_Interaction_isOpeningDoor && {[2] call AGM_Interaction_fnc_getDoor select 1 != ''}";
@@ -145,7 +146,7 @@ class AGM_Core_Default_Keys
 		shift = 0;
 		control = 1;
 		alt = 0;
-	};
+	};*/
 	class tapShoulder
 	{
 		displayName = "$STR_AGM_Interaction_TapShoulder";
@@ -165,6 +166,61 @@ class AGM_Core_Default_Keys
 		statementUp = "AGM_Modifier = 0;";
 		exceptions[] = {"AGM_Drag_isNotDragging"};
 		key = 29;
+		shift = 0;
+		control = 0;
+		alt = 0;
+	};
+	class Surrender {
+		displayName = "Se rendre";
+		condition = "!(player getVariable ['AGM_isCaptive', false]) && {!(player getVariable ['AGM_Unconscious', false])}";
+		statement = "[player, true] call AGM_Interaction_fnc_surrender";
+		exceptions[] = {"AGM_Interaction_isNotSurrendering"};
+		key = 35;
+		shift = 0;
+		control = 0;
+		alt = 1;
+	};
+	class Ymenu {
+		displayName = "Menu Y";
+		condition = "!(player getVariable ['AGM_isCaptive', false]) && {!(player getVariable ['AGM_Unconscious', false])} && {!(player getVariable ['AGM_isSurrender', false])}";
+		statement = "[] call life_fnc_p_openMenu";
+		key = 21;
+		shift = 0;
+		control = 0;
+		alt = 0;
+	};
+	class CopSiren {
+		displayName = "Sirène véhicule";
+		condition = "playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}";
+		statement = "[] call life_fnc_sirenstart";
+		key = 33;
+		shift = 1;
+		control = 0;
+		alt = 0;
+	};
+	class CopRadar {
+		displayName = "Radar Gendarmerie";
+		condition = "!(player getVariable ['AGM_Unconscious', false])";
+		statement = "[] call life_fnc_radar";
+		key = 38;
+		shift = 0;
+		control = 0;
+		alt = 0;
+	};
+	class Carlock {
+		displayName = "Vérouiller/Déverouiller véhicule";
+		condition = "!(player getVariable ['AGM_Unconscious', false])";
+		statement = "[] call life_fnc_lockVehicleCheck";
+		key = 22;
+		shift = 0;
+		control = 0;
+		alt = 0;
+	};
+	class OpenInventory {
+		displayName = "Inventaire véhicule";
+		condition = "vehicle player == player";
+		statement = "[] call life_fnc_openInventoryCheck";
+		key = 20;
 		shift = 0;
 		control = 0;
 		alt = 0;
@@ -302,7 +358,7 @@ class CfgVehicles
 				hotkey = "Q";
 				enableInside = 1;
 			};
-			class AGM_JoinGroup
+			/*class AGM_JoinGroup
 			{
 				displayName = "$STR_AGM_Interaction_JoinGroup";
 				distance = 4;
@@ -313,7 +369,7 @@ class CfgVehicles
 				icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
 				hotkey = "J";
 				enableInside = 1;
-			};
+			};*/
 			class AGM_GetDown
 			{
 				displayName = "$STR_AGM_Interaction_GetDown";
@@ -332,7 +388,7 @@ class CfgVehicles
 				showDisabled = 0;
 				priority = 2;
 			};
-			class AGM_Pardon
+			/*class AGM_Pardon
 			{
 				displayName = "$STR_AGM_Interaction_Pardon";
 				distance = 4;
@@ -341,6 +397,79 @@ class CfgVehicles
 				showDisabled = 0;
 				priority = 2.5;
 				enableInside = 1;
+			};*/
+			class AGM_Copinteraction
+			{
+				displayName = "Interaction ONU";
+				distance = 4;
+				condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+				statement = "";
+				showDisabled = 0;
+				priority = 3.2;
+				// icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
+				subMenu[] = {"AGM_Copinteraction",0};
+				hotkey = "C";
+				enableInside = 1;
+				class AGM_CopCheckLicenses
+				{
+					displayName = "$STR_pInAct_checkLicenses";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[[player],""life_fnc_licenseCheck"",_target,FALSE] spawn life_fnc_MP";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_red_ca.paa";
+					priority = 2.4;
+					hotkey = "L";
+					enableInside = 1;
+				};
+				class AGM_CopSearchPlayer
+				{
+					displayName = "$STR_pInAct_SearchPlayer";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[_target] spawn life_fnc_searchAction";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_green_ca.paa";
+					priority = 2.3;
+					hotkey = "S";
+					enableInside = 1;
+				};
+				class AGM_CopTicket
+				{
+					displayName = "$STR_pInAct_TicketBtn";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[_target] call life_fnc_ticketAction";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_blue_ca.paa";
+					priority = 2.2;
+					hotkey = "T";
+					enableInside = 1;
+				};
+				class AGM_RevokeLicense
+				{
+					displayName = "$STR_pInAct_RevokeLicense";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[_target] call life_fnc_revokeLicense";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_yellow_ca.paa";
+					priority = 2.1;
+					hotkey = "R";
+					enableInside = 1;
+				};
+				class AGM_Prison
+				{
+					displayName = "$STR_pInAct_Arrest";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian} && ((player distance (getMarkerPos ""police_hq_1"") < 30) OR  (player distance (getMarkerPos ""police_hq_2"") < 30) OR (player distance (getMarkerPos ""cop_spawn_3"") < 30) OR (player distance (getMarkerPos ""cop_spawn_5"") < 30))";
+					statement = "[_target] call life_fnc_arrestAction";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_white_ca.paa";
+					priority = 2.5;
+					hotkey = "P";
+					enableInside = 1;
+				};
 			};
 		};
 		class AGM_SelfActions
@@ -411,7 +540,7 @@ class CfgVehicles
 					enableInside = 1;
 					hotkey = "N";
 				};
-				class AGM_BecomeLeader
+				/*class AGM_BecomeLeader
 				{
 					displayName = "$STR_AGM_Interaction_BecomeLeader";
 					condition = "count (units group _player) > 1 && {leader group _player != _player}";
@@ -432,7 +561,7 @@ class CfgVehicles
 					icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
 					enableInside = 1;
 					hotkey = "M";
-				};
+				};*/
 			};
 			class AGM_Gestures
 			{

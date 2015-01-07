@@ -39,16 +39,16 @@
       <Italian>Annulla</Italian>
     </Key>
     <Key ID="STR_AGM_Core_Options">
-      <English>AGM Options</English>
-      <German>AGM Optionen</German>
-      <Spanish>Opciones AGM</Spanish>
-      <Polish>Opcje AGM</Polish>
-      <Czech>AGM Nastavení</Czech>
-      <French>AGM Options</French>
-      <Russian>AGM Настройки</Russian>
-      <Portuguese>Opções do AGM</Portuguese>
-      <Hungarian>AGM Opciók</Hungarian>
-      <Italian>Opzioni AGM</Italian>
+      <English>Fantasma Options</English>
+      <German>Fantasma Optionen</German>
+      <Spanish>Opciones Fantasma</Spanish>
+      <Polish>Opcje Fantasma</Polish>
+      <Czech>Fantasma Nastavení</Czech>
+      <French>Fantasma Options</French>
+      <Russian>Fantasma Настройки</Russian>
+      <Portuguese>Opções do Fantasma</Portuguese>
+      <Hungarian>Fantasma Opciók</Hungarian>
+      <Italian>Opzioni Fantasma</Italian>
     </Key>
     <Key ID="STR_AGM_Core_Shift">
       <English>Shift</English>
