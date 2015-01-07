@@ -97,9 +97,9 @@ switch (playerSide) do
 };
 waitUntil {sleep 0.5;!life_firstSpawn};
 spawnmenuon = 0;
-player setVariable["restrained",false,true];
-player setVariable["Escorting",false,true];
-player setVariable["transporting",false,true];
+// player setVariable["restrained",false,true];
+// player setVariable["Escorting",false,true];
+// player setVariable["transporting",false,true];
 diag_log "Past Settings Init";
 [] execFSM "core\fsm\client.fsm";
 diag_log "Executing client.fsm";
