@@ -691,23 +691,251 @@ class CfgVehicles
 	class LandVehicle;
 	class Car: LandVehicle
 	{
-		class AGM_Actions{};
+		class AGM_Actions
+		{
+			class AGM_repair
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copRegistration
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copPullout
+			{
+				displayName = "Sortir tt le monde";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Impound
+			{
+				displayName = "$STR_vInAct_Impound";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Kart
+			{
+				displayName = "$STR_vInAct_GetInKart";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""]} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0} && {locked AGM_Interaction_Target == 0}";
+				statement = "player moveInDriver life_vInact_curTarget";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Unflip
+			{
+				displayName = "$STR_vInAct_Unflip";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
+				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_DeviceMine
+			{
+				displayName = "$STR_vInAct_DeviceMine";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {typeOf AGM_Interaction_Target == ""O_Truck_03_device_F""} && {isNil {(AGM_Interaction_Target getVariable ""mining"")} && {local AGM_Interaction_Target} && {AGM_Interaction_Target in life_vehicles} && {playerSide != west}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_deviceMine";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+		};
 		class AGM_SelfActions{};
 	};
 	class Tank: LandVehicle
 	{
-		class AGM_Actions{};
+		class AGM_Actions
+		{
+			class AGM_repair
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copRegistration
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copPullout
+			{
+				displayName = "Sortir tt le monde";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Impound
+			{
+				displayName = "$STR_vInAct_Impound";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Unflip
+			{
+				displayName = "$STR_vInAct_Unflip";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
+				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+		};
 		class AGM_SelfActions{};
 	};
 	class Air;
 	class Helicopter: Air
 	{
-		class AGM_Actions{};
+		class AGM_Actions
+		{	
+			class AGM_repair
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copRegistration
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copPullout
+			{
+				displayName = "Sortir tt le monde";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Impound
+			{
+				displayName = "$STR_vInAct_Impound";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Unflip
+			{
+				displayName = "$STR_vInAct_Unflip";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
+				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+		};
 		class AGM_SelfActions{};
 	};
 	class Plane: Air
 	{
-		class AGM_Actions{};
+		class AGM_Actions
+		{
+			class AGM_repair
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copRegistration
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copPullout
+			{
+				displayName = "Sortir tt le monde";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Impound
+			{
+				displayName = "$STR_vInAct_Impound";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Unflip
+			{
+				displayName = "$STR_vInAct_Unflip";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
+				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+		};
 		class AGM_SelfActions{};
 	};
 	class Ship;
@@ -715,6 +943,46 @@ class CfgVehicles
 	{
 		class AGM_Actions
 		{
+			class AGM_repair
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copRegistration
+			{
+				displayName = "$STR_vInAct_Registration";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_copPullout
+			{
+				displayName = "Sortir tt le monde";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
+			class AGM_Impound
+			{
+				displayName = "$STR_vInAct_Impound";
+				distance = 4;
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
+				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				showDisabled = 0;
+				priority = 1.6;
+				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
+			};
 			class AGM_Push
 			{
 				displayName = "$STR_AGM_Interaction_Push";
