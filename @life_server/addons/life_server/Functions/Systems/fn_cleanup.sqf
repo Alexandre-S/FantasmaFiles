@@ -142,7 +142,7 @@ while {true} do
 							_idleTime = 1;
 						};
 						//,"Box_NATO_Support_F","Box_NATO_AmmoVeh_F"
-						if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F","B_supplyCrate_F"])) then 
+						if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F","B_supplyCrate_F","AGM_JerryCan","AGM_SpareTrack","AGM_SpareWheel"])) then 
 						{
 							if(!isNil "_x" && {!isNull _x}) then {
 								deleteVehicle _x;

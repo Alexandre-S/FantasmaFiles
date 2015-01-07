@@ -52,6 +52,11 @@ switch(_shop) do
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
 						["NVGoggles_OPFOR",nil,0],
+						["AGM_EarBuds",nil,0],
+						["AGM_ItemKestrel",nil,0],
+						["AGM_MapTools",nil,0],
+						["AGM_SpareBarrel",nil,0],
+						["AGM_CableTie",nil,0],
 						["Chemlight_red",nil,0],
 						["Chemlight_yellow",nil,0],
 						["Chemlight_green",nil,0],
@@ -62,6 +67,11 @@ switch(_shop) do
 						["SmokeShellPurple",nil,0],
 						["SmokeShellBlue",nil,0],
 						["SmokeShellOrange",nil,0],
+						["AGM_HandFlare_White",nil,0],
+						["AGM_HandFlare_Red",nil,0],
+						["AGM_HandFlare_Green",nil,0],
+						["AGM_HandFlare_Yellow",nil,0],
+						["AGM_IR_Strobe_Item",nil,0],
 						["tf_anprc152",nil,0]
 					]
 				];
@@ -87,7 +97,8 @@ switch(_shop) do
 						["optic_Holosight",nil,0],
 						["hgun_mas_m9_F",nil,0],
 						["15Rnd_mas_9x21_Mag",nil,0],
-						["HandGrenade_Stone","Flashbang",0]
+						["HandGrenade_Stone","Flashbang",0],
+						["AGM_Vector",nil,0]
 					]
 				];
 			};
@@ -405,6 +416,11 @@ switch(_shop) do
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
 							["ItemMap",nil,10],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
@@ -461,6 +477,11 @@ switch(_shop) do
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
 							["ItemMap",nil,10],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
@@ -528,6 +549,11 @@ switch(_shop) do
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
 							["ItemMap",nil,10],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
@@ -599,6 +625,11 @@ switch(_shop) do
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
 							["ItemMap",nil,10],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
@@ -671,6 +702,11 @@ switch(_shop) do
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
 							["ItemMap",nil,10],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
@@ -787,6 +823,11 @@ switch(_shop) do
 							["ItemWatch","SmartWatch",50],
 							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
 							//["SmokeShellYellow",nil,1000],
@@ -899,6 +940,11 @@ switch(_shop) do
 							["ItemWatch","SmartWatch",50],
 							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
 							//["SmokeShellYellow",nil,1000],
@@ -1028,6 +1074,11 @@ switch(_shop) do
 							["ItemWatch","SmartWatch",50],
 							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
+							["AGM_CableTie",nil,100],
+							["AGM_EarBuds",nil,25],
+							["AGM_ItemKestrel",nil,500],
+							["AGM_MapTools",nil,500],
+							["AGM_SpareBarrel",nil,1000],
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
 							//["SmokeShellYellow",nil,1000],
@@ -1069,7 +1120,10 @@ switch(_shop) do
 						["hgun_mas_sa61_F",nil,70000],
 						["20Rnd_mas_765x17_Mag",nil,75],
 						["optic_ACO_grn_smg",nil,2500],
-						["optic_Aco_smg",nil,2500]
+						["optic_Aco_smg",nil,2500],
+						["AGM_EarBuds",nil,25],
+						["AGM_ItemKestrel",nil,500],
+						["AGM_SpareBarrel",nil,1000]
 					]
 				];
 				if(license_civ_vigil) then
@@ -1112,7 +1166,10 @@ switch(_shop) do
 						["hgun_mas_sa61_F",nil,10000],
 						["20Rnd_mas_765x17_Mag",nil,75],
 						["optic_ACO_grn_smg",nil,1250],
-						["optic_Aco_smg",nil,1250]
+						["optic_Aco_smg",nil,1250],
+						["AGM_EarBuds",nil,25],
+						["AGM_ItemKestrel",nil,500],
+						["AGM_SpareBarrel",nil,1000]
 					]
 				];
 			};
@@ -1130,6 +1187,7 @@ switch(_shop) do
 				["ItemCompass",nil,75],
 				["ItemWatch","SmartWatch",50],
 				["ItemMap",nil,10],
+				["AGM_MapTools",nil,500],
 				["ToolKit",nil,9500],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
