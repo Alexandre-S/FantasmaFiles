@@ -128,6 +128,7 @@ class Life_Client_Core
 		class packupmauer {};
 		class packupcone {};
 		class suicideBomb {};
+		class sirenstart {};
 	};
 	
 	class Housing
@@ -304,6 +305,8 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 		class reverseTruckSound {};
+		class lockVehicleCheck {};
+		class openInventoryCheck {};
 	};
 	
 	class Cop

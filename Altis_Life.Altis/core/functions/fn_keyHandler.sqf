@@ -20,7 +20,7 @@ _mapKey = actionKeys "ShowMap" select 0;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
-if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["restrained",false])}) exitWith {
+if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["AGM_isCaptive",false])}) exitWith {
 	true;
 };
 
@@ -42,6 +42,10 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 		};
 	};
 	true;
+};
+
+if ((_code==47)||(_code==19)||(_code==20)||(_code==34)) then{
+	_handled = ((playerSide != west) && ((player getVariable ["AGM_isCaptive",false]) OR (player getVariable ["AGM_isEscorting",false])));
 };
 
 if(_code in(actionKeys "PersonView"))then{
@@ -120,7 +124,7 @@ switch (_code) do
 	};
 	
 	//Restraining (Shift + R)
-	case 19:
+	/*case 19:
 	{
 		if(_shift) then {_handled = true;};
 		switch (playerSide) do
@@ -154,7 +158,7 @@ switch (_code) do
                 };
             };
         };
-	};
+	};*/
 	
 	//Knock out, this is experimental and yeah...
 	//case 34:
@@ -163,7 +167,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !(cursorTarget getVariable "restrained")) then
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["AGM_isCaptive",false]) && !life_istazed && !(cursorTarget getVariable "AGM_isCaptive")) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
 				if("ItemWatch" in assignedItems cursorTarget) then {
@@ -178,7 +182,7 @@ switch (_code) do
 	};
 	
 	//surrender... shift + g
-	case 34:
+	/*case 34:
 	{
 		if(_shift) then {_handled = true;};
 		if (_shift) then
@@ -194,10 +198,10 @@ switch (_code) do
 				};
 			};
 		};
-	};
+	};*/
 
 	//T Key (Trunk)
-	case 20:
+	/*case 20:
 	{
 		if(!_alt && !_ctrlKey) then
 		{
@@ -227,7 +231,7 @@ switch (_code) do
 				};
 			};
 		};
-	};
+	};*/
 	//L Key?
 	case 38: 
 	{
@@ -248,16 +252,16 @@ switch (_code) do
 		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu
-	case 21:
+	/*case 21:
 	{
 		if(!_alt && !_ctrlKey && !dialog) then
 		{
 			[] call life_fnc_p_openMenu;
 		};
-	};
+	};*/
 	
 	//F Key
-	case 33:
+	/*case 33:
 	{
 		if(_shift) then {_handled = true;};
 		if(_shift && playerSide in [west,independent] && vehicle player != player && !life_siren_active && ((driver vehicle player) == player)) then
@@ -293,9 +297,9 @@ switch (_code) do
 				};
 			};
 		};
-	};
+	};*/
 	//U Key
-	case 22:
+	/*case 22:
 	{
 		if(!_alt && !_ctrlKey) then {
 			if(vehicle player == player) then {
@@ -342,7 +346,7 @@ switch (_code) do
 				};
 			};
 		};
-	};
+	};*/
 	case 31:
 	{
 		if ((!life_truckreverse_active) and (vehicle player != player && (typeOf vehicle player) in life_truck_types)) then {
@@ -354,12 +358,12 @@ switch (_code) do
 		};
 	};
 	// Shift B : BOUM BOUM
-	case 48:
+	/*case 48:
 	{
 		if(_shift && vest player == "V_HarnessOGL_brn" && alive player && playerSide == civilian && !life_istazed && !(player getVariable "restrained") && !(player getVariable "Escorting") && !(player getVariable "transporting")) then {
 			[] call life_fnc_suicideBomb;
 		};
-	};
+	};*/
 };
 
 _handled;

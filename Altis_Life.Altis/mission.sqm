@@ -95,7 +95,10 @@ class Mission
 		"A3_Structures_F_Heli_Items_Luggage",
 		"A3_Structures_F_Households_House_Big01",
 		"A3_Data_F_Curator_Characters",
-		"A3_Characters_F_Kart"
+		"A3_Characters_F_Kart",
+		"CBA_Main",
+		"task_force_radio_items",
+		"AGM_Core"
 	};
 	addOnsAuto[]=
 	{

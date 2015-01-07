@@ -11,8 +11,8 @@ _cops = [];
 
 sleep 0.5;
 if(visibleMap) then {
-	{if(side _x == west) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
-	
+	{if(side _x == west && !(_x getVariable ["AGM_isCaptive", false])) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+
 	//Create markers
 	{
 		_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];

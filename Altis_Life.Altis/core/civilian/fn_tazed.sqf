@@ -41,7 +41,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		disableUserInput true;
 		sleep 15;
 		[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		if(!(player getVariable["Escorting",false])) then {
+		if(!(player getVariable["AGM_isEscorting",false])) then {
 			detach player;
 		};
 		life_istazed = false;
