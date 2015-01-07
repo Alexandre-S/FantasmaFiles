@@ -398,6 +398,79 @@ class CfgVehicles
 				priority = 2.5;
 				enableInside = 1;
 			};*/
+			class AGM_Copinteraction
+			{
+				displayName = "Interaction ONU";
+				distance = 4;
+				condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+				statement = "";
+				showDisabled = 0;
+				priority = 3.2;
+				// icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
+				subMenu[] = {"AGM_Copinteraction",0};
+				hotkey = "C";
+				enableInside = 1;
+				class AGM_CopCheckLicenses
+				{
+					displayName = "$STR_pInAct_checkLicenses";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[[player],""life_fnc_licenseCheck"",_target,FALSE] spawn life_fnc_MP";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_red_ca.paa";
+					priority = 2.4;
+					hotkey = "L";
+					enableInside = 1;
+				};
+				class AGM_CopSearchPlayer
+				{
+					displayName = "$STR_pInAct_SearchPlayer";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[_target] spawn life_fnc_searchAction";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_green_ca.paa";
+					priority = 2.3;
+					hotkey = "S";
+					enableInside = 1;
+				};
+				class AGM_CopTicket
+				{
+					displayName = "$STR_pInAct_TicketBtn";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[_target] call life_fnc_ticketAction";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_blue_ca.paa";
+					priority = 2.2;
+					hotkey = "T";
+					enableInside = 1;
+				};
+				class AGM_RevokeLicense
+				{
+					displayName = "$STR_pInAct_RevokeLicense";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+					statement = "[_target] call life_fnc_revokeLicense";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_yellow_ca.paa";
+					priority = 2.1;
+					hotkey = "R";
+					enableInside = 1;
+				};
+				class AGM_Prison
+				{
+					displayName = "$STR_pInAct_Arrest";
+					distance = 4;
+					condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian} && ((player distance (getMarkerPos ""police_hq_1"") < 30) OR  (player distance (getMarkerPos ""police_hq_2"") < 30) OR (player distance (getMarkerPos ""cop_spawn_3"") < 30) OR (player distance (getMarkerPos ""cop_spawn_5"") < 30))";
+					statement = "[_target] call life_fnc_arrestAction";
+					showDisabled = 1;
+					// icon = "\AGM_Interaction\UI\team\team_white_ca.paa";
+					priority = 2.5;
+					hotkey = "P";
+					enableInside = 1;
+				};
+			};
 		};
 		class AGM_SelfActions
 		{

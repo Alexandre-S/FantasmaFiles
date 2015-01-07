@@ -53,13 +53,13 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if(((_curTarget getVariable["restrained",false]) || (_curTarget getVariable["surrender",false])) &&  {!(player getVariable["restrained",false])} && !dialog && playerSide == west) then {
+	/*if(((_curTarget getVariable["restrained",false]) || (_curTarget getVariable["surrender",false])) &&  {!(player getVariable["restrained",false])} && !dialog && playerSide == west) then {
 		[_curTarget] call life_fnc_copInteractionMenu;
 	};
 	//Set interactions
 	if((_curTarget getVariable["restrained",false]) && {!(player getVariable["restrained",false])} && !dialog && {playerSide in [civilian,independent]}) exitWith {
 		[_curTarget] call life_fnc_InteractionMenu;
-	}; 
+	}; */
 } else {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money"];
@@ -70,11 +70,11 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	
 	//It's a vehicle! open the vehicle interaction key!
 	if(_isVehicle) then {
-		if(!dialog) then {
+		/*if(!dialog) then {
 			if(player distance _curTarget < ((boundingBox _curTarget select 1) select 0) + 2) then {
 				[_curTarget] call life_fnc_vInteractionMenu;
 			};
-		};
+		};*/
 	} else {
 		//Is it a animal type?
 		if((typeOf _curTarget) in _animalTypes) then {

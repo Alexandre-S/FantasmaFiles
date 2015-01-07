@@ -8,7 +8,7 @@
 private["_cop","_guns","_inv","_var","_val","_robber","_cfg"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 if(isNull _cop) exitWith {};
-_guns = "Aucune arme trouvée";
+_guns = [];
 _inv = [];
 _robber = false;
 //Illegal items
@@ -67,5 +67,8 @@ if(!life_use_atm) then
 	life_cash = 0;
 	_robber = true;
 };
+
+if((count _guns) == 0) then { _guns = "Aucune arme trouvée"; };
+
 
 [[player,_inv,_robber,_guns, life_atmcash, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;
