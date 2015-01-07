@@ -127,6 +127,7 @@ _vehicle lock 2;
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9]];
 //_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
+_vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 [_vehicle] call life_fnc_clearVehicleAmmo;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
