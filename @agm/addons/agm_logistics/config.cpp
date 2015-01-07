@@ -1,276 +1,214 @@
-////////////////////////////////////////////////////////////////////
+﻿////////////////////////////////////////////////////////////////////
 //DeRap: Produced from mikero's Dos Tools Dll version 4.52
-//Wed Jan 07 14:09:47 2015 : Source 'file' date Wed Jan 07 14:09:47 2015
+//Wed Jan 07 21:18:18 2015 : Source 'file' date Wed Jan 07 21:18:18 2015
 //http://dev-heaven.net/projects/list_files/mikero-pbodll
 ////////////////////////////////////////////////////////////////////
 
 #define _ARMA_
 
-//Class C:/Users/sil/Documents/GitHub/altislife/@agm/addons/0_no/agm_logistics/config.bin{
+//Class C:/Users/sil/Documents/GitHub/altislife/@agm/addons/agm_interaction/config.bin{
 class CfgPatches
 {
-	class AGM_Logistics
+	class AGM_Interaction
 	{
-		units[] = {"AGM_JerryCan","AGM_SpareTrack","AGM_SpareWheel","AGM_SandbagBarrier_Crate","AGM_RazorWire_Crate"};
-		weapons[] = {"AGM_UAVBattery"};
+		units[] = {};
+		weapons[] = {};
 		requiredVersion = 0.6;
-		requiredAddons[] = {"AGM_Core","AGM_Interaction"};
+		requiredAddons[] = {"AGM_Core"};
 		version = "0.95";
 		versionStr = "0.95";
 		versionAr[] = {0,95,0};
-		author[] = {"commy2","KoffeinFlummi","Garth 'L-H' de Wet","marc_book","gpgpgpgp","nic547"};
+		author[] = {"commy2","KoffeinFlummi","CAA-Picard"};
 		authorUrl = "https://github.com/commy2/";
 	};
 };
 class CfgFunctions
 {
-	class AGM_Logistics
+	class AGM_Interaction
 	{
-		class AGM_Logistics
+		class AGM_Interaction
 		{
-			file = "\AGM_Logistics\functions";
-			class canLoadItem;
-			class canLoadItemCarried;
-			class canLoadMagazine;
-			class hasLoadedItems;
-			class initLoadedObject;
-			class getLoadableMagazines;
-			class getLoadPoints;
-			class getPosLoadable;
-			class getWeaponsOfMagazine;
-			class loadItem;
-			class loadItemAbort;
-			class loadItemCallback;
-			class loadMagazine;
-			class loadMagazineCallback;
-			class loadMagazineRemote;
-			class openLoadUI;
-			class openMagazineMenu;
-			class openUnloadUI;
-			class remainingSpace;
-			class unloadItem;
-			class unloadItemCallback;
-			class spawnObject;
-		};
-	};
-	class AGM_Drag
-	{
-		class AGM_Drag
-		{
-			file = "\AGM_Logistics\functions\Drag";
-			class initialise
-			{
-				postInit = 1;
-			};
-			class makeDraggable;
-			class makeUndraggable;
-			class dragObject;
-			class releaseObject;
-			class isDraggingObject;
-			class handleScrollWheel;
-			class isDraggable;
-			class GetWeight;
-			class isCarryable;
-			class isCarryingObject;
-			class carryJerrycan;
-			class dropJerrycan;
-		};
-	};
-	class AGM_Repair
-	{
-		class AGM_Repair
-		{
-			file = "\AGM_Logistics\functions\Repair";
-			class canRemoveWheel;
-			class canRepair;
-			class canRepairTrack;
-			class canRepairWheel;
-			class checkVehicle;
-			class checkVehicleCallback;
-			class getHitPointName;
-			class getNearestRepairer;
-			class getNearestTrack;
-			class getNearestWheel;
-			class module;
-			class openSelectWheelUI;
-			class openSelectWheelUI_Salvage;
-			class removeWheel;
-			class removeWheelAbort;
-			class removeWheelCallback;
-			class repair;
-			class repairAbort;
-			class repairCallback;
-			class repairTrack;
-			class repairTrackAbort;
-			class repairTrackCallback;
-			class repairWheel;
-			class repairWheelAbort;
-			class repairWheelCallback;
-			class setDamage;
-			class setHitPointDamage;
-		};
-	};
-	class AGM_StaticWeapons
-	{
-		class AGM_StaticWeapons
-		{
-			file = "\AGM_Logistics\functions\StaticWeapons";
-			class canGetIn;
-			class canRotate;
-			class getIn;
-			class rotate;
-		};
-	};
-	class AGM_UAVs
-	{
-		class AGM_UAVs
-		{
-			file = "\AGM_Logistics\functions\UAVs";
-			class refuel;
-			class refuelCallback;
-		};
-	};
-	class AGM_Wirecutter
-	{
-		class AGM_Wirecutter
-		{
-			file = "\AGM_Logistics\functions\Wirecutter";
-			class cutDownFence;
-			class cutDownFenceAbort;
-			class cutDownFenceCallback;
-		};
-	};
-	class AGM_Resupply
-	{
-		class AGM_Resupply
-		{
-			file = "\AGM_Logistics\functions\Resupply";
-			class getFuelAmount;
-			class getFuelAmountCallback;
-			class getFuelAmountCargo;
-			class getFuelAmountCargoCallback;
-			class getFuelAmountJerrycan;
-			class getNearestRefueler;
-			class canDrainFuel;
-			class canDrainFuelCargo;
-			class canRefuel;
-			class canRefuelCargo;
-			class drainFuel;
-			class drainFuelCallback;
-			class drainFuelCargo;
-			class drainFuelCargoCallback;
-			class refuelVehicle;
-			class refuelVehicleCallback;
-			class refuelVehicleCargo;
-			class refuelVehicleCargoCallback;
-		};
-	};
-	class AGM_Paradrop
-	{
-		class AGM_Paradrop
-		{
-			file = "\AGM_Logistics\functions\Paradrop";
-			class paradrop;
-		};
-	};
-	class AGM_Fortifications
-	{
-		class AGM_Fortifications
-		{
-			file = "\AGM_Logistics\functions\Fortifications";
-			class initialise
-			{
-				postInit = 1;
-			};
-			class canSetupBarrier;
-			class setupApprove;
-			class setupBarrier;
-			class setupCancel;
-			class openSelectBarrierlUI;
+			file = "\AGM_interaction\functions";
+			class addInteraction;
+			class addInteractionSelf;
+			class AddSelectableItem;
+			class addToTooltip;
+			class applyButtons;
+			class canInteractWith;
+			class canLockDoor;
+			class canTapShoulder;
+			class getActions2;
+			class GetActions;
+			class getDoor;
+			class getDoorAnimations;
+			class getDown;
+			class getSelectedButton;
+			class hideMenu;
+			class hideMouseHint;
+			class initialiseInteraction;
+			class isInRange;
+			class joinTeam;
+			class lockDoor;
+			class menuKeyInput;
+			class moveDown;
+			class onButtonDown;
+			class onButtonDownSelf;
+			class onButtonUp;
+			class onClick;
+			class onSelectMenuDblClick;
+			class openDoor;
+			class openMenu;
+			class openMenuSelectUI;
+			class openMenuSelf;
+			class openSelectMenu;
+			class openSubMenu;
+			class openSubMenuSelf;
+			class prepareSelectMenu;
+			class push;
+			class removeInteraction;
+			class removeInteractionSelf;
+			class removeTag;
+			class sendAway;
+			class showMenu;
+			class showMouseHint;
+			class sortOptionsByPriority;
+			class tapShoulder;
+			class updateTooltipPosition;
+			class getCaptivityStatus;
+			class setCaptivityStatus;
 		};
 	};
 };
 class Extended_PostInit_EventHandlers
 {
-	class AGM_Logistics
+	class AGM_Interaction
 	{
-		serverInit = "call compile preprocessFileLineNumbers '\AGM_Logistics\serverInit.sqf'";
+		clientInit = "call compile preprocessFileLineNumbers '\AGM_Interaction\clientInit.sqf'";
 	};
 };
 class Extended_GetIn_EventHandlers
 {
-	class AllVehicles
+	class All
 	{
-		class AGM_DropItem
+		class AGM_AutoCloseMenu
 		{
-			clientGetIn = "if (player == _this select 2) then {(_this select 2) call AGM_Drag_fnc_releaseObject}";
+			clientGetIn = "if (_this select 2 == AGM_player && {!isNull (findDisplay 1713999)}) then {(findDisplay 1713999) closeDisplay 1}";
 		};
 	};
 };
-class Extended_Killed_EventHandlers
+class Extended_GetOut_EventHandlers
 {
-	class CAManBase
+	class All
 	{
-		class AGM_DropItem
+		class AGM_AutoCloseMenu
 		{
-			clientKilled = "if (player == _this select 0) then {(_this select 0) call AGM_Drag_fnc_releaseObject}";
+			clientGetOut = "if (_this select 2 == AGM_player && {!isNull (findDisplay 1713999)}) then {(findDisplay 1713999) closeDisplay 1}";
 		};
 	};
 };
-class Extended_WeaponAssembled_EventHandlers
+class AGM_Core_Default_Keys
 {
-	class CAManBase
+	class openInteractionMenuNew
 	{
-		class AGM_DropItem
-		{
-			clientWeaponAssembled = "if (player == _this select 0) then {(_this select 0) call AGM_Drag_fnc_releaseObject}";
-		};
+		displayName = "$STR_AGM_Interaction_InteractionMenu";
+		condition = "true";
+		statement = "call AGM_Interaction_fnc_onButtonDown";
+		conditionUp = "!isNull (findDisplay 1713999) && {profileNamespace getVariable ['AGM_Interaction_AutoCloseMenu', false]}";
+		statementUp = "if (AGM_Interaction_MenuType mod 2 == 0) then {call AGM_Interaction_fnc_onButtonUp};";
+		exceptions[] = {"AGM_Drag_isNotDragging","AGM_Medical_canTreat","AGM_Interaction_isNotEscorting","AGM_Interaction_isNotSwimming"};
+		key = 219;
+		shift = 0;
+		control = 0;
+		alt = 0;
+	};
+	class openInteractionMenuSelfNew
+	{
+		displayName = "$STR_AGM_Interaction_InteractionMenuSelf";
+		condition = "true";
+		statement = "call AGM_Interaction_fnc_onButtonDownSelf";
+		conditionUp = "!isNull (findDisplay 1713999) && {profileNamespace getVariable ['AGM_Interaction_AutoCloseMenu', false]}";
+		statementUp = "if (AGM_Interaction_MenuType mod 2 == 1) then {call AGM_Interaction_fnc_onButtonUp};";
+		exceptions[] = {"AGM_Drag_isNotDragging","AGM_Medical_canTreat","AGM_Interaction_isNotEscorting","AGM_Interaction_isNotSwimming","AGM_Core_notOnMap"};
+		key = 219;
+		shift = 0;
+		control = 1;
+		alt = 0;
+	};
+	class openDoor
+	{
+		displayName = "$STR_AGM_Interaction_OpenDoor";
+		condition = "!AGM_Interaction_isOpeningDoor && {[2] call AGM_Interaction_fnc_getDoor select 1 != ''}";
+		statement = "call AGM_Interaction_fnc_openDoor";
+		conditionUp = "AGM_Interaction_isOpeningDoor";
+		statementUp = "AGM_Interaction_isOpeningDoor = false";
+		key = 57;
+		shift = 0;
+		control = 1;
+		alt = 0;
+	};
+	class tapShoulder
+	{
+		displayName = "$STR_AGM_Interaction_TapShoulder";
+		condition = "[_player, cursorTarget] call AGM_Interaction_fnc_canTapShoulder";
+		statement = "[_player, cursorTarget] call AGM_Interaction_fnc_tapShoulder";
+		key = 20;
+		shift = 1;
+		control = 0;
+		alt = 0;
+	};
+	class modifierKey
+	{
+		displayName = "$STR_AGM_Interaction_ModifierKey";
+		condition = "";
+		statement = "AGM_Modifier = 1;";
+		conditionUp = "";
+		statementUp = "AGM_Modifier = 0;";
+		exceptions[] = {"AGM_Drag_isNotDragging"};
+		key = 29;
+		shift = 0;
+		control = 0;
+		alt = 0;
 	};
 };
-class Extended_WeaponDisassembled_EventHandlers
+class AGM_Core_Options
 {
-	class CAManBase
+	class Interaction_FlowMenu
 	{
-		class AGM_DropItem
-		{
-			clientWeaponDisassembled = "if (player == _this select 0) then {(_this select 0) call AGM_Drag_fnc_releaseObject}";
-		};
+		displayName = "$STR_AGM_Interaction_FlowMenu";
+		default = 0;
 	};
+	class Interaction_AutoCloseMenu
+	{
+		displayName = "$STR_AGM_Interaction_AutoCloseMenu";
+		default = 0;
+	};
+	class Interaction_AutoCenterCursor
+	{
+		displayName = "$STR_AGM_Interaction_AutoCenterCursor";
+		default = 1;
+	};
+};
+class AGM_Parameters
+{
+	AGM_Modifier = 0;
 };
 class AGM_Core_canInteractConditions
 {
-	class AGM_Drag_isNotDragging
+	class AGM_Interaction_isNotEscorting
 	{
-		condition = "!(_player getVariable ['AGM_isDragging', false])";
+		condition = "!(_player getVariable ['AGM_isEscorting', false])";
 	};
-};
-class CfgAddons
-{
-	class AGM_Repair_Items
+	class AGM_Interaction_isNotCaptive
 	{
-		list[] = {"AGM_Repair_Track","AGM_Repair_Wheel"};
+		condition = "!(_player getVariable ['AGM_isCaptive', false])";
 	};
-};
-class CfgSounds
-{
-	class AGM_Wirecutter_sound
+	class AGM_Interaction_isNotSurrendering
 	{
-		name = "AGM_wirecutter_sound";
-		sound[] = {"AGM_Logistics\sound\wire_cut.ogg","db-0",1};
-		titles[] = {};
+		condition = "!(_player getVariable ['AGM_isSurrender', false])";
 	};
-	class AGM_Wirecutter_sound_long
+	class AGM_Interaction_isNotSwimming
 	{
-		name = "AGM_wirecutter_sound_long";
-		sound[] = {"AGM_Logistics\sound\wire_cut_long.ogg","db-0",1};
-		titles[] = {};
-	};
-};
-class CfgVehicleClasses
-{
-	class AGM_Repair_Items
-	{
-		displayName = "AGM";
+		condition = "!underwater _player";
 	};
 };
 class CfgVehicles
@@ -278,2470 +216,1111 @@ class CfgVehicles
 	class Man;
 	class CAManBase: Man
 	{
+		class AGM_Actions
+		{
+			class AGM_TeamManagement
+			{
+				displayName = "$STR_AGM_Interaction_TeamManagement";
+				distance = 4;
+				condition = "alive _target && {!isPlayer _target} && {_target in units group _player}";
+				statement = "";
+				showDisabled = 0;
+				priority = 3.2;
+				icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
+				subMenu[] = {"AGM_TeamManagement",0};
+				hotkey = "M";
+				enableInside = 1;
+				class AGM_JoinTeamRed
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamRed";
+					distance = 4;
+					condition = "alive _target && {!isPlayer _target} && {_target in units group _player}";
+					statement = "[_target, 'RED'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					icon = "\AGM_Interaction\UI\team\team_red_ca.paa";
+					priority = 2.4;
+					hotkey = "R";
+					enableInside = 1;
+				};
+				class AGM_JoinTeamGreen
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamGreen";
+					distance = 4;
+					condition = "alive _target && {!isPlayer _target} && {_target in units group _player}";
+					statement = "[_target, 'GREEN'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					icon = "\AGM_Interaction\UI\team\team_green_ca.paa";
+					priority = 2.3;
+					hotkey = "G";
+					enableInside = 1;
+				};
+				class AGM_JoinTeamBlue
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamBlue";
+					distance = 4;
+					condition = "alive _target && {!isPlayer _target} && {_target in units group _player}";
+					statement = "[_target, 'BLUE'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					icon = "\AGM_Interaction\UI\team\team_blue_ca.paa";
+					priority = 2.2;
+					hotkey = "B";
+					enableInside = 1;
+				};
+				class AGM_JoinTeamYellow
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamYellow";
+					distance = 4;
+					condition = "alive _target && {!isPlayer _target} && {_target in units group _player}";
+					statement = "[_target, 'YELLOW'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					icon = "\AGM_Interaction\UI\team\team_yellow_ca.paa";
+					priority = 2.1;
+					hotkey = "Y";
+					enableInside = 1;
+				};
+				class AGM_LeaveTeam
+				{
+					displayName = "$STR_AGM_Interaction_LeaveTeam";
+					distance = 4;
+					condition = "alive _target && {!isPlayer _target} && {_target in units group _player} && {assignedTeam _player != 'MAIN'}";
+					statement = "[_target, 'MAIN'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					icon = "\AGM_Interaction\UI\team\team_white_ca.paa";
+					priority = 2.5;
+					hotkey = "N";
+					enableInside = 1;
+				};
+			};
+			class AGM_TapShoulder
+			{
+				displayName = "$STR_AGM_Interaction_TapShoulder";
+				distance = 4;
+				condition = "[_player, _target] call AGM_Interaction_fnc_canTapShoulder";
+				statement = "[_player, _target] call AGM_Interaction_fnc_tapShoulder";
+				showDisabled = 1;
+				priority = 2.8;
+				hotkey = "Q";
+				enableInside = 1;
+			};
+			class AGM_JoinGroup
+			{
+				displayName = "$STR_AGM_Interaction_JoinGroup";
+				distance = 4;
+				condition = "side group _player == side group _target && {group _player != group _target}";
+				statement = "[_player] joinSilent group _target;";
+				showDisabled = 0;
+				priority = 2.6;
+				icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
+				hotkey = "J";
+				enableInside = 1;
+			};
+			class AGM_GetDown
+			{
+				displayName = "$STR_AGM_Interaction_GetDown";
+				distance = 4;
+				condition = "[_target] call AGM_Interaction_fnc_canInteractWith";
+				statement = "[_target] call AGM_Interaction_fnc_getDown";
+				showDisabled = 0;
+				priority = 2.2;
+			};
+			class AGM_SendAway
+			{
+				displayName = "$STR_AGM_Interaction_SendAway";
+				distance = 4;
+				condition = "[_target] call AGM_Interaction_fnc_canInteractWith";
+				statement = "[_target] call AGM_Interaction_fnc_sendAway";
+				showDisabled = 0;
+				priority = 2;
+			};
+			class AGM_Pardon
+			{
+				displayName = "$STR_AGM_Interaction_Pardon";
+				distance = 4;
+				condition = "rating _target < -2000 && {alive _target} && {side group _player == side group _target}";
+				statement = "[_target, '{_this addRating -rating _this}', _target] call AGM_Core_fnc_execRemoteFnc";
+				showDisabled = 0;
+				priority = 2.5;
+				enableInside = 1;
+			};
+		};
 		class AGM_SelfActions
 		{
-			class AGM_ReleaseItemSelf
+			class AGM_TeamManagement
 			{
-				displayName = "$STR_AGM_Drag_EndDrag";
-				condition = "player call AGM_Drag_fnc_isDraggingObject";
-				statement = "player call AGM_Drag_fnc_releaseObject";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 2.1;
-				hotkey = "R";
+				displayName = "$STR_AGM_Interaction_TeamManagement";
+				condition = "true";
+				statement = "";
+				showDisabled = 1;
+				priority = 3.2;
+				icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
+				subMenu[] = {"AGM_TeamManagement",1};
+				enableInside = 1;
+				hotkey = "M";
+				class AGM_JoinTeamRed
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamRed";
+					condition = "true";
+					statement = "[_player, 'RED'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					priority = 2.4;
+					icon = "\AGM_Interaction\UI\team\team_red_ca.paa";
+					enableInside = 1;
+					hotkey = "R";
+				};
+				class AGM_JoinTeamGreen
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamGreen";
+					condition = "true";
+					statement = "[_player, 'GREEN'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					priority = 2.3;
+					icon = "\AGM_Interaction\UI\team\team_green_ca.paa";
+					enableInside = 1;
+					hotkey = "G";
+				};
+				class AGM_JoinTeamBlue
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamBlue";
+					condition = "true";
+					statement = "[_player, 'BLUE'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					priority = 2.2;
+					icon = "\AGM_Interaction\UI\team\team_blue_ca.paa";
+					enableInside = 1;
+					hotkey = "B";
+				};
+				class AGM_JoinTeamYellow
+				{
+					displayName = "$STR_AGM_Interaction_JoinTeamYellow";
+					condition = "true";
+					statement = "[_player, 'YELLOW'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					priority = 2.1;
+					icon = "\AGM_Interaction\UI\team\team_yellow_ca.paa";
+					enableInside = 1;
+					hotkey = "Y";
+				};
+				class AGM_LeaveTeam
+				{
+					displayName = "$STR_AGM_Interaction_LeaveTeam";
+					condition = "assignedTeam _player != 'MAIN'";
+					statement = "[_player, 'MAIN'] call AGM_Interaction_fnc_joinTeam";
+					showDisabled = 1;
+					priority = 2.5;
+					icon = "\AGM_Interaction\UI\team\team_white_ca.paa";
+					enableInside = 1;
+					hotkey = "N";
+				};
+				class AGM_BecomeLeader
+				{
+					displayName = "$STR_AGM_Interaction_BecomeLeader";
+					condition = "count (units group _player) > 1 && {leader group _player != _player}";
+					statement = "_newGroup = createGroup side group _player; (units group _player) joinSilent _newGroup; _newGroup selectLeader _player;";
+					showDisabled = 1;
+					priority = 1;
+					icon = "\AGM_Interaction\UI\team\team_white_ca.paa";
+					enableInside = 1;
+					hotkey = "L";
+				};
+				class AGM_LeaveGroup
+				{
+					displayName = "$STR_AGM_Interaction_LeaveGroup";
+					condition = "count (units group _player) > 1";
+					statement = "_oldGroup = units group _player; _newGroup = createGroup side _player; [_player] joinSilent _newGroup; {_player reveal _x} forEach _oldGroup;";
+					showDisabled = 1;
+					priority = 1.2;
+					icon = "\AGM_Interaction\UI\team\team_management_ca.paa";
+					enableInside = 1;
+					hotkey = "M";
+				};
 			};
-			class AGM_CheckFuelSelf
+			class AGM_Gestures
 			{
-				displayName = "$STR_AGM_Resupply_CheckFuelJerryCan";
-				condition = "(player getVariable ['AGM_carriedItem', objNull]) isKindOf 'AGM_JerryCan'";
-				statement = "[player] call AGM_Resupply_fnc_getFuelAmountJerrycan";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
+				displayName = "$STR_AGM_Interaction_Gestures";
+				condition = "canStand _target";
+				statement = "";
+				showDisabled = 1;
+				priority = 3.5;
+				subMenu[] = {"AGM_Gestures",1};
+				icon = "AGM_Interaction\UI\gestures_ca.paa";
+				hotkey = "G";
+				class AGM_Gesture_Advance
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Advance";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureAdvance';";
+					showDisabled = 1;
+					priority = 1.9;
+					hotkey = "1";
+				};
+				class AGM_Gesture_Go
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Go";
+					condition = "canStand _target";
+					statement = "_target playActionNow (['gestureGo', 'gestureGoB'] select (floor random 2));";
+					showDisabled = 1;
+					priority = 1.8;
+					hotkey = "2";
+				};
+				class AGM_Gesture_Follow
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Follow";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureFollow';";
+					showDisabled = 1;
+					priority = 1.7;
+					hotkey = "3";
+				};
+				class AGM_Gesture_Up
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Up";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureUp';";
+					showDisabled = 1;
+					priority = 1.5;
+					hotkey = "4";
+				};
+				class AGM_Gesture_Cover
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Cover";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureCover';";
+					showDisabled = 1;
+					priority = 1.4;
+					hotkey = "5";
+				};
+				class AGM_Gesture_CeaseFire
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Cease_Fire";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureCeaseFire';";
+					showDisabled = 1;
+					priority = 1.3;
+					hotkey = "6";
+				};
+				class AGM_Gesture_Freeze
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Freeze";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureFreeze';";
+					showDisabled = 1;
+					priority = 1.2;
+					hotkey = "7";
+				};
+				class AGM_Gesture_Yes
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Yes";
+					condition = "canStand _target";
+					statement = "_target playActionNow (['gestureYes', 'gestureNod'] select (floor random 2));";
+					showDisabled = 1;
+					priority = 1.1;
+					hotkey = "8";
+				};
+				class AGM_Gesture_No
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_No";
+					condition = "canStand _target";
+					statement = "_target playActionNow 'gestureNo';";
+					showDisabled = 1;
+					priority = 1;
+					hotkey = "9";
+				};
+				class AGM_Gesture_Hi
+				{
+					displayName = "$STR_AGM_Interaction_Gestures_Hi";
+					condition = "canStand _target";
+					statement = "_target playActionNow (['gestureHi', 'gestureHiB', 'gestureHiC'] select (floor random 3));";
+					showDisabled = 1;
+					priority = 0.9;
+					hotkey = "0";
+				};
+			};
+			class AGM_Equipment
+			{
+				displayName = "$STR_AGM_Interaction_Equipment";
+				condition = "true";
+				statement = "";
+				showDisabled = 1;
+				priority = 4.5;
+				icon = "";
+				subMenu[] = {"AGM_Equipment",1};
+				enableInside = 1;
+				hotkey = "E";
+				class AGM_Dummy
+				{
+					displayName = "";
+					condition = "false";
+					statement = "";
+					showDisabled = 1;
+					priority = -99;
+					icon = "AGM_Core\UI\blank_CO.paa";
+					enableInside = 1;
+				};
 			};
 		};
 	};
 	class LandVehicle;
 	class Car: LandVehicle
 	{
-		AGM_Vehicle_Cargo = 4;
-		class AGM_Actions
-		{
-			class AGM_copRegistration
-			{
-				displayName = "$STR_vInAct_Registration";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_copPullout
-			{
-				displayName = "Sortir tt le monde";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Impound
-			{
-				displayName = "$STR_vInAct_Impound";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Kart
-			{
-				displayName = "$STR_vInAct_GetInKart";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""]} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0} && {locked AGM_Interaction_Target == 0}";
-				statement = "player moveInDriver life_vInact_curTarget";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Unflip
-			{
-				displayName = "$STR_vInAct_Unflip";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_DeviceMine
-			{
-				displayName = "$STR_vInAct_DeviceMine";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {typeOf AGM_Interaction_Target == ""O_Truck_03_device_F""} && {isNil {(AGM_Interaction_Target getVariable ""mining"")} && {local AGM_Interaction_Target} && {AGM_Interaction_Target in life_vehicles} && {playerSide != west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_deviceMine";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_loadItemCarried
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItemCarried";
-				statement = "[player getVariable 'AGM_carriedItem', AGM_Interaction_Target] call AGM_Logistics_fnc_openLoadUI";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_unloadBox
-			{
-				displayName = "$STR_AGM_Logistics_Unload";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_hasLoadedItems && {alive AGM_Interaction_Target}";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openUnloadUI";
-				showDisabled = 1;
-				priority = 1.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_RefuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicleCargo";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuelCargo";
-				statement = "[AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicleCargo";
-				showDisabled = 0;
-				priority = 1.225;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_Refuel
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicle";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicle";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.245;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_DrainFuel
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuel";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuel";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.235;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuel
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuel";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmount";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.295;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
+		class AGM_Actions{};
+		class AGM_SelfActions{};
 	};
 	class Tank: LandVehicle
 	{
-		AGM_Vehicle_Cargo = 4;
-		class AGM_Actions
-		{
-			class AGM_copRegistration
-			{
-				displayName = "$STR_vInAct_Registration";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_copPullout
-			{
-				displayName = "Sortir tt le monde";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Impound
-			{
-				displayName = "$STR_vInAct_Impound";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Unflip
-			{
-				displayName = "$STR_vInAct_Unflip";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_loadItemCarried
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItemCarried";
-				statement = "[player getVariable 'AGM_carriedItem', AGM_Interaction_Target] call AGM_Logistics_fnc_openLoadUI";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_unloadBox
-			{
-				displayName = "$STR_AGM_Logistics_Unload";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_hasLoadedItems && {alive AGM_Interaction_Target}";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openUnloadUI";
-				showDisabled = 1;
-				priority = 1.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_RefuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicleCargo";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuelCargo";
-				statement = "[AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicleCargo";
-				showDisabled = 0;
-				priority = 1.225;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_Refuel
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicle";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicle";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.245;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_DrainFuel
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuel";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuel";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.235;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuel
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuel";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmount";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.295;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_reloadMagazines
-			{
-				displayName = "$STR_AGM_Logistics_ReloadMagazines";
-				distance = 4;
-				condition = "count ([player, AGM_Interaction_Target] call AGM_Logistics_fnc_getLoadableMagazines) > 0";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openMagazineMenu";
-				showDisabled = 1;
-				priority = 1.45;
-				icon = "\A3\ui_f\data\igui\cfg\actions\reammo_ca.paa";
-			};
-		};
-	};
-	class Car_F: Car
-	{
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLF2Wheel","HitRF2Wheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		class HitPoints;
-		AGM_fuelCapacity = 60;
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_Repair
-			{
-				displayName = "$STR_AGM_Repair";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target";
-				statement = "";
-				showDisabled = 1;
-				priority = 1.4;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				subMenu[] = {"AGM_Repair",0};
-				class AGM_Repair_checkVehicle
-				{
-					displayName = "$STR_AGM_Repair_checkVehicle";
-					distance = 4;
-					condition = "alive AGM_Interaction_Target";
-					statement = "[AGM_Interaction_Target] call AGM_Repair_fnc_checkVehicle";
-					showDisabled = 1;
-					priority = 1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Wheels
-				{
-					displayName = "$STR_AGM_Repair_RepairWheel";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, ['HitLFWheel', 'HitLBWheel', 'HitLMWheel', 'HitLF2Wheel', 'HitRFWheel', 'HitRBWheel', 'HitRMWheel', 'HitRF2Wheel']] call AGM_Repair_fnc_canRepairWheel";
-					statement = "[AGM_Interaction_Target, ['HitLFWheel', 'HitLBWheel', 'HitLMWheel', 'HitLF2Wheel', 'HitRFWheel', 'HitRBWheel', 'HitRMWheel', 'HitRF2Wheel']] call AGM_Repair_fnc_openSelectWheelUI";
-					showDisabled = 1;
-					priority = 0.9;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Remove_Wheels
-				{
-					displayName = "$STR_AGM_Repair_RemoveWheel";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, ['HitLFWheel', 'HitLBWheel', 'HitLMWheel', 'HitLF2Wheel', 'HitRFWheel', 'HitRBWheel', 'HitRMWheel', 'HitRF2Wheel']] call AGM_Repair_fnc_canRemoveWheel";
-					statement = "[AGM_Interaction_Target, ['HitLFWheel', 'HitLBWheel', 'HitLMWheel', 'HitLF2Wheel', 'HitRFWheel', 'HitRBWheel', 'HitRMWheel', 'HitRF2Wheel']] call AGM_Repair_fnc_openSelectWheelUI_Salvage";
-					showDisabled = 1;
-					priority = 0.8;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Body
-				{
-					displayName = "$STR_AGM_Repair_HitBody";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitBody'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitBody'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.5;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Engine
-				{
-					displayName = "$STR_AGM_Repair_HitEngine";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.4;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Fuel
-				{
-					displayName = "$STR_AGM_Repair_HitFuel";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitFuel'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitFuel'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.3;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Gun
-				{
-					displayName = "$STR_AGM_Repair_HitGun";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitGun'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitGun'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.2;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Turret
-				{
-					displayName = "$STR_AGM_Repair_HitTurret";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitTurret'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitTurret'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-			};
-		};
-	};
-	class Kart_01_Base_F: Car_F
-	{
-		AGM_fuelCapacity = 4;
-	};
-	class MRAP_01_base_F: Car_F
-	{
-		AGM_fuelCapacity = 163;
-	};
-	class MRAP_02_base_F: Car_F
-	{
-		AGM_fuelCapacity = 200;
-	};
-	class MRAP_03_base_F: Car_F
-	{
-		AGM_fuelCapacity = 230;
-	};
-	class Quadbike_01_base_F: Car_F
-	{
-		AGM_fuelCapacity = 15;
-	};
-	class Offroad_01_base_f: Car_F
-	{
-		AGM_fuelCapacity = 80;
-	};
-	class Truck_F: Car_F
-	{
-		AGM_Vehicle_Cargo = 8;
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLMWheel","HitRMWheel","HitLBWheel","HitRBWheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLMWheel","STR_AGM_Repair_HitRMWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		class HitPoints: HitPoints
-		{
-			class HitLFWheel;
-			class HitLBWheel;
-			class HitLMWheel;
-			class HitLF2Wheel;
-			class HitRFWheel;
-			class HitRBWheel;
-			class HitRMWheel;
-			class HitRF2Wheel;
-		};
-		AGM_fuelCapacity = 240;
-		class AGM_Actions;
-	};
-	class Wheeled_APC_F: Car_F
-	{
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLMWheel","HitRMWheel","HitLBWheel","HitRBWheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLMWheel","STR_AGM_Repair_HitRMWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		AGM_fuelCapacity = 600;
-	};
-	class Tank_F: Tank
-	{
-		AGM_fuelCapacity = 1500;
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_Repair
-			{
-				displayName = "$STR_AGM_Repair";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target";
-				statement = "";
-				showDisabled = 1;
-				priority = 1.4;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				subMenu[] = {"AGM_Repair",0};
-				class AGM_Repair_checkVehicle
-				{
-					displayName = "$STR_AGM_Repair_checkVehicle";
-					distance = 4;
-					condition = "alive AGM_Interaction_Target";
-					statement = "[AGM_Interaction_Target] call AGM_Repair_fnc_checkVehicle";
-					showDisabled = 1;
-					priority = 1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Hull
-				{
-					displayName = "$STR_AGM_Repair_HitHull";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.5;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_LTrack
-				{
-					displayName = "$STR_AGM_Repair_HitLTrack";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitLTrack'] call AGM_Repair_fnc_canRepairTrack";
-					statement = "[AGM_Interaction_Target, 'HitLTrack'] call AGM_Repair_fnc_repairTrack";
-					showDisabled = 0;
-					priority = 0.42;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_RTrack
-				{
-					displayName = "$STR_AGM_Repair_HitRTrack";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitRTrack'] call AGM_Repair_fnc_canRepairTrack";
-					statement = "[AGM_Interaction_Target, 'HitRTrack'] call AGM_Repair_fnc_repairTrack";
-					showDisabled = 0;
-					priority = 0.41;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Engine
-				{
-					displayName = "$STR_AGM_Repair_HitEngine";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.4;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Gun
-				{
-					displayName = "$STR_AGM_Repair_HitGun";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitGun'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitGun'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.2;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Turret
-				{
-					displayName = "$STR_AGM_Repair_HitTurret";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitTurret'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitTurret'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-			};
-		};
-	};
-	class MBT_01_base_F: Tank_F
-	{
-		AGM_fuelCapacity = 1400;
-	};
-	class MBT_02_base_F: Tank_F
-	{
-		AGM_fuelCapacity = 1600;
-	};
-	class MBT_03_base_F: Tank_F
-	{
-		AGM_fuelCapacity = 1200;
+		class AGM_Actions{};
+		class AGM_SelfActions{};
 	};
 	class Air;
 	class Helicopter: Air
 	{
-		AGM_Paradrop = 0;
-		AGM_fuelCapacity = 240;
-		AGM_Vehicle_Cargo = 8;
-		class AGM_Actions
-		{
-			class AGM_copRegistration
-			{
-				displayName = "$STR_vInAct_Registration";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_copPullout
-			{
-				displayName = "Sortir tt le monde";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Impound
-			{
-				displayName = "$STR_vInAct_Impound";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Unflip
-			{
-				displayName = "$STR_vInAct_Unflip";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_loadItemCarried
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItemCarried";
-				statement = "[player getVariable 'AGM_carriedItem', AGM_Interaction_Target] call AGM_Logistics_fnc_openLoadUI";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_unloadBox
-			{
-				displayName = "$STR_AGM_Logistics_Unload";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_hasLoadedItems && {alive AGM_Interaction_Target}";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openUnloadUI";
-				showDisabled = 1;
-				priority = 1.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_RefuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicleCargo";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuelCargo";
-				statement = "[AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicleCargo";
-				showDisabled = 0;
-				priority = 1.225;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_Refuel
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicle";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicle";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.245;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_DrainFuel
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuel";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuel";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.235;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuel
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuel";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmount";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.295;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_reloadMagazines
-			{
-				displayName = "$STR_AGM_Logistics_ReloadMagazines";
-				distance = 4;
-				condition = "count ([player, AGM_Interaction_Target] call AGM_Logistics_fnc_getLoadableMagazines) > 0";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openMagazineMenu";
-				showDisabled = 1;
-				priority = 1.45;
-				icon = "\A3\ui_f\data\igui\cfg\actions\reammo_ca.paa";
-			};
-			class AGM_Repair
-			{
-				displayName = "$STR_AGM_Repair";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target";
-				statement = "";
-				showDisabled = 1;
-				priority = 1.4;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				subMenu[] = {"AGM_Repair",0};
-				class AGM_Repair_checkVehicle
-				{
-					displayName = "$STR_AGM_Repair_checkVehicle";
-					distance = 4;
-					condition = "alive AGM_Interaction_Target";
-					statement = "[AGM_Interaction_Target] call AGM_Repair_fnc_checkVehicle";
-					showDisabled = 1;
-					priority = 1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Body
-				{
-					displayName = "$STR_AGM_Repair_HitHull";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.5;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Engine
-				{
-					displayName = "$STR_AGM_Repair_HitEngine";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.4;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Fuel
-				{
-					displayName = "$STR_AGM_Repair_HitFuel";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitFuel'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitFuel'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.3;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Avionics
-				{
-					displayName = "$STR_AGM_Repair_HitAvionics";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitAvionics'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitAvionics'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.2;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_HRotor
-				{
-					displayName = "$STR_AGM_Repair_HitHRotor";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitHRotor'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitHRotor'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.15;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_VRotor
-				{
-					displayName = "$STR_AGM_Repair_HitVRotor";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitVRotor'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitVRotor'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-			};
-		};
-		class AGM_SelfActions
-		{
-			class AGM_DropCargo
-			{
-				displayName = "$STR_AGM_Paradrop_Unload";
-				distance = 4;
-				condition = "getNumber(configFile >> 'CfgVehicles' >> typeOf vehicle player >> 'AGM_Paradrop') == 1 && {getPosATL vehicle player select 2 > 60} && {count (vehicle player getVariable ['AGM_Logistics_loadedItems', []]) > 0}";
-				conditionShow = "getNumber(configFile >> 'CfgVehicles' >> typeOf vehicle player >> 'AGM_Paradrop') == 1";
-				statement = "[vehicle player] call AGM_Paradrop_fnc_paradrop";
-				priority = 1;
-				enableInside = 1;
-			};
-		};
-	};
-	class Heli_Transport_02_base_F;
-	class I_Heli_Transport_02_F: Heli_Transport_02_base_F
-	{
-		AGM_Vehicle_Cargo = 20;
-		AGM_Paradrop = 1;
+		class AGM_Actions{};
+		class AGM_SelfActions{};
 	};
 	class Plane: Air
 	{
-		AGM_Paradrop = 0;
-		AGM_fuelCapacity = 600;
-		AGM_Vehicle_Cargo = 4;
-		class AGM_Actions
-		{
-			class AGM_copRegistration
-			{
-				displayName = "$STR_vInAct_Registration";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_copPullout
-			{
-				displayName = "Sortir tt le monde";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Impound
-			{
-				displayName = "$STR_vInAct_Impound";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Unflip
-			{
-				displayName = "$STR_vInAct_Unflip";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_loadItemCarried
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItemCarried";
-				statement = "[player getVariable 'AGM_carriedItem', AGM_Interaction_Target] call AGM_Logistics_fnc_openLoadUI";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_unloadBox
-			{
-				displayName = "$STR_AGM_Logistics_Unload";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_hasLoadedItems && {alive AGM_Interaction_Target}";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openUnloadUI";
-				showDisabled = 1;
-				priority = 1.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_RefuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicleCargo";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuelCargo";
-				statement = "[AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicleCargo";
-				showDisabled = 0;
-				priority = 1.225;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_Refuel
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicle";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicle";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.245;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_DrainFuel
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuel";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuel";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.235;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuel
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuel";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmount";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.295;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_reloadMagazines
-			{
-				displayName = "$STR_AGM_Logistics_ReloadMagazines";
-				distance = 4;
-				condition = "count ([player, AGM_Interaction_Target] call AGM_Logistics_fnc_getLoadableMagazines) > 0";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openMagazineMenu";
-				showDisabled = 1;
-				priority = 1.45;
-				icon = "\A3\ui_f\data\igui\cfg\actions\reammo_ca.paa";
-			};
-			class AGM_Repair
-			{
-				displayName = "$STR_AGM_Repair";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target";
-				statement = "";
-				showDisabled = 1;
-				priority = 1.4;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				subMenu[] = {"AGM_Repair",0};
-				class AGM_Repair_checkVehicle
-				{
-					displayName = "$STR_AGM_Repair_checkVehicle";
-					distance = 4;
-					condition = "alive AGM_Interaction_Target";
-					statement = "[AGM_Interaction_Target] call AGM_Repair_fnc_checkVehicle";
-					showDisabled = 1;
-					priority = 1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Body
-				{
-					displayName = "$STR_AGM_Repair_HitHull";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.5;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-			};
-		};
+		class AGM_Actions{};
+		class AGM_SelfActions{};
 	};
 	class Ship;
 	class Ship_F: Ship
 	{
-		AGM_fuelCapacity = 40;
-		AGM_Vehicle_Cargo = 4;
 		class AGM_Actions
 		{
-			class AGM_copRegistration
+			class AGM_Push
 			{
-				displayName = "$STR_vInAct_Registration";
+				displayName = "$STR_AGM_Interaction_Push";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				condition = "getMass _target < 1000 and alive _target";
+				statement = "[_target, [2 * (vectorDir _player select 0), 2 * (vectorDir _player select 1), 0.5]] call AGM_Interaction_fnc_push;";
 				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_copPullout
-			{
-				displayName = "Sortir tt le monde";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Impound
-			{
-				displayName = "$STR_vInAct_Impound";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_Pushboat
-			{
-				displayName = "$STR_vInAct_PushBoat";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {AGM_Interaction_Target isKindOf ""Ship""} && {local AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0}";
-				statement = "[AGM_Interaction_Target] spawn [] spawn life_fnc_pushObject";
-				showDisabled = 0;
-				priority = 1.6;
-				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_loadItemCarried
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItemCarried";
-				statement = "[player getVariable 'AGM_carriedItem', AGM_Interaction_Target] call AGM_Logistics_fnc_openLoadUI";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_unloadBox
-			{
-				displayName = "$STR_AGM_Logistics_Unload";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_hasLoadedItems && {alive AGM_Interaction_Target}";
-				statement = "[AGM_Interaction_Target] call AGM_Logistics_fnc_openUnloadUI";
-				showDisabled = 1;
-				priority = 1.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_RefuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicleCargo";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuelCargo";
-				statement = "[AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicleCargo";
-				showDisabled = 0;
-				priority = 1.225;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_Refuel
-			{
-				displayName = "$STR_AGM_Resupply_RefuelVehicle";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canRefuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_refuelVehicle";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.245;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_DrainFuel
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuel";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuel";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuel";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.235;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuel
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuel";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmount";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.295;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_Repair
-			{
-				displayName = "$STR_AGM_Repair";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target";
-				statement = "";
-				showDisabled = 1;
-				priority = 1.4;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				subMenu[] = {"AGM_Repair",0};
-				class AGM_Repair_checkVehicle
-				{
-					displayName = "$STR_AGM_Repair_checkVehicle";
-					distance = 4;
-					condition = "alive AGM_Interaction_Target";
-					statement = "[AGM_Interaction_Target] call AGM_Repair_fnc_checkVehicle";
-					showDisabled = 1;
-					priority = 1;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Body
-				{
-					displayName = "$STR_AGM_Repair_HitHull";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitHull'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.5;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Engine
-				{
-					displayName = "$STR_AGM_Repair_HitEngine";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitEngine'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.4;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
-				class AGM_Repair_Fuel
-				{
-					displayName = "$STR_AGM_Repair_HitFuel";
-					distance = 4;
-					condition = "[AGM_Interaction_Target, 'HitFuel'] call AGM_Repair_fnc_canRepair";
-					statement = "[AGM_Interaction_Target, 'HitFuel'] call AGM_Repair_fnc_repair";
-					showDisabled = 0;
-					priority = 0.3;
-					icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-				};
+				priority = -1;
 			};
 		};
+		class AGM_SelfActions{};
 	};
 	class StaticWeapon: LandVehicle
 	{
-		AGM_Size = 2;
-		class AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-			class AGM_GetIn
-			{
-				displayName = "$STR_AGM_StaticWeapons_GetIn";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_StaticWeapons_fnc_canGetIn";
-				statement = "[AGM_Interaction_Target] call AGM_StaticWeapons_fnc_getIn";
-				showDisabled = 0;
-				priority = 1;
-			};
-			class AGM_RotateClockwise
-			{
-				displayName = "$STR_AGM_StaticWeapons_RotateClockwise";
-				distance = 4;
-				condition = "[AGM_Interaction_Target, true] call AGM_StaticWeapons_fnc_canRotate";
-				statement = "[AGM_Interaction_Target, true] call AGM_StaticWeapons_fnc_rotate";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\rotate_cw_ca.paa";
-			};
-			class AGM_RotateCounterclockwise
-			{
-				displayName = "$STR_AGM_StaticWeapons_RotateCounterclockwise";
-				distance = 4;
-				condition = "[AGM_Interaction_Target, false] call AGM_StaticWeapons_fnc_canRotate";
-				statement = "[AGM_Interaction_Target, false] call AGM_StaticWeapons_fnc_rotate";
-				showDisabled = 1;
-				priority = 2;
-				icon = "AGM_Logistics\ui\rotate_ccw_ca.paa";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
+		class AGM_Actions{};
+		class AGM_SelfActions{};
 	};
 	class StaticMortar;
 	class Mortar_01_base_F: StaticMortar
 	{
-		AGM_Size = 2;
-		class AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-			class AGM_GetIn
-			{
-				displayName = "$STR_AGM_StaticWeapons_GetIn";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_StaticWeapons_fnc_canGetIn";
-				statement = "[AGM_Interaction_Target] call AGM_StaticWeapons_fnc_getIn";
-				showDisabled = 0;
-				priority = 1;
-			};
-			class AGM_RotateClockwise
-			{
-				displayName = "$STR_AGM_StaticWeapons_RotateClockwise";
-				distance = 4;
-				condition = "[AGM_Interaction_Target, true] call AGM_StaticWeapons_fnc_canRotate";
-				statement = "[AGM_Interaction_Target, true] call AGM_StaticWeapons_fnc_rotate";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\rotate_cw_ca.paa";
-			};
-			class AGM_RotateCounterclockwise
-			{
-				displayName = "$STR_AGM_StaticWeapons_RotateCounterclockwise";
-				distance = 4;
-				condition = "[AGM_Interaction_Target, false] call AGM_StaticWeapons_fnc_canRotate";
-				statement = "[AGM_Interaction_Target, false] call AGM_StaticWeapons_fnc_rotate";
-				showDisabled = 1;
-				priority = 2;
-				icon = "AGM_Logistics\ui\rotate_ccw_ca.paa";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
-	};
-	class ThingX;
-	class ReammoBox_F: ThingX
-	{
-		AGM_Size = 2;
-		AGM_CarryPosition[] = {0,1,1};
-		class AGM_Actions
-		{
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
-	};
-	class EAST_Box_Base: ReammoBox_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-		};
-	};
-	class IND_Box_Base: ReammoBox_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-		};
-	};
-	class NATO_Box_Base: ReammoBox_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-		};
-	};
-	class Box_East_AmmoVeh_F: EAST_Box_Base
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				condition = "false";
-			};
-		};
-	};
-	class Box_NATO_AmmoVeh_F: NATO_Box_Base
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				condition = "false";
-			};
-		};
-	};
-	class Box_IND_AmmoVeh_F: IND_Box_Base
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				condition = "false";
-			};
-		};
-	};
-	class Helicopter_Base_F;
-	class UAV_01_base_F: Helicopter_Base_F
-	{
-		class AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-			class AGM_RefuelUAV
-			{
-				displayName = "$STR_AGM_UAVs_Recharge";
-				distance = 4;
-				condition = "'AGM_UAVBattery' in items player && {fuel cursorTarget < 1}";
-				statement = "[cursorTarget, player] call AGM_UAVs_fnc_refuel";
-				showDisabled = 0;
-				priority = 1.245;
-				icon = "AGM_Logistics\ui\AGM_battery.paa";
-			};
-		};
-	};
-	class Land_CanisterFuel_F;
-	class AGM_JerryCan: Land_CanisterFuel_F
-	{
-		author = "$STR_AGM_Core_AGMTeam";
-		AGM_Size = 1;
-		class AGM_Actions
-		{
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_CarryJerrycan
-			{
-				displayName = "$STR_AGM_Drag_StartCarry";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Drag_fnc_isCarryable";
-				statement = "[player, AGM_Interaction_Target] call AGM_Drag_fnc_carryJerrycan";
-				showDisabled = 1;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_DropJerrycan
-			{
-				displayName = "$STR_AGM_Drag_EndCarry";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Drag_fnc_isCarryingObject";
-				statement = "[player, AGM_Interaction_Target] call AGM_Drag_fnc_dropJerrycan";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_CheckFuelJerrycan
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelJerryCan";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountJerrycan";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		icon = "iconObject_circle";
-		displayName = "$STR_AGM_Repair_JerryCan";
-		mapSize = 0.7;
-		accuracy = 0.2;
-		vehicleClass = "AGM_Repair_Items";
-		destrType = "DesturctNo";
-	};
-	class AGM_SpareTrack: ThingX
-	{
-		author = "Hawkins";
-		AGM_Size = 1;
-		AGM_CarryPosition[] = {0,1,1};
-		scope = 2;
-		model = "\AGM_Logistics\agm_track.p3d";
-		icon = "iconObject_circle";
-		displayName = "$STR_AGM_Repair_SpareTrack";
-		mapSize = 0.7;
-		accuracy = 0.2;
-		vehicleClass = "AGM_Repair_Items";
-		destrType = "DesturctNo";
-		class AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
-	};
-	class AGM_SpareWheel: ThingX
-	{
-		author = "Hawkins";
-		AGM_Size = 1;
-		AGM_CarryPosition[] = {0,1,1};
-		scope = 2;
-		model = "\AGM_Logistics\agm_wheel.p3d";
-		icon = "iconObject_circle";
-		displayName = "$STR_AGM_Repair_SpareWheel";
-		mapSize = 0.7;
-		accuracy = 0.2;
-		vehicleClass = "AGM_Repair_Items";
-		destrType = "DesturctNo";
-		picture = "\AGM_Logistics\ui\tire_ca.paa";
-		class AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
-	};
-	class Land_WoodenBox_F;
-	class AGM_SandbagBarrier_Crate: Land_WoodenBox_F
-	{
-		author = "$STR_AGM_Core_AGMTeam";
-		AGM_Size = 1;
-		AGM_CarryPosition[] = {0,1,1};
-		icon = "iconObject_circle";
-		displayName = "$STR_AGM_Fortifications_SandbagBarrierCrate";
-		mapSize = 0.7;
-		accuracy = 0.2;
-		vehicleClass = "AGM_Repair_Items";
-		destrType = "DesturctNo";
-		class AGM_Actions
-		{
-			class AGM_DragItem
-			{
-				displayName = "$STR_AGM_Drag_StartDrag";
-				distance = 4;
-				condition = "!(player call AGM_Drag_fnc_isDraggingObject)";
-				conditionShow = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_isDraggable";
-				statement = "[AGM_Interaction_Target, player] call AGM_Drag_fnc_dragObject";
-				showDisabled = 0;
-				priority = 3;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-				hotkey = "R";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-			class AGM_PlaceFortification
-			{
-				displayName = "Place Fortification";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target, ['Land_BagFence_Long_F', 'Land_BagFence_Round_F']] call AGM_Fortifications_fnc_canSetupBarrier";
-				statement = "[player, AGM_Interaction_Target, ['Land_BagFence_Long_F', 'Land_BagFence_Round_F']] call AGM_Fortifications_fnc_openSelectBarrierlUI";
-				showDisabled = 0;
-				priority = 0.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-			};
-		};
-	};
-	class AGM_RazorWire_Crate: AGM_SandbagBarrier_Crate
-	{
-		author = "$STR_AGM_Core_AGMTeam";
-		displayName = "$STR_AGM_Fortifications_RazorWireCrate";
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_PlaceFortification
-			{
-				displayName = "Place Fortification";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target, 'Land_Razorwire_F'] call AGM_Fortifications_fnc_canSetupBarrier";
-				statement = "[player, AGM_Interaction_Target, 'Land_Razorwire_F'] call AGM_Fortifications_fnc_setupBarrier";
-				showDisabled = 0;
-				priority = 0.5;
-				icon = "\A3\ui_f\data\igui\cfg\actions\repair_ca.paa";
-			};
-		};
+		class AGM_Actions{};
+		class AGM_SelfActions{};
 	};
 	class Box_NATO_Support_F;
 	class AGM_Box_Misc: Box_NATO_Support_F
 	{
 		class TransportItems
 		{
-			class _xx_AGM_UAVBattery
+			class _xx_AGM_CableTie
 			{
-				count = 6;
-				name = "AGM_UAVBattery";
+				name = "AGM_CableTie";
+				count = 24;
 			};
 		};
 	};
-	class Wall_F;
-	class Land_Net_Fence_4m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Net_Fence_8m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Net_FenceD_8m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_New_WiredFence_5m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_New_WiredFence_10m_Dam_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_New_WiredFence_10m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Pipe_fence_4m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Pipe_fence_4mNoLC_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_SportGround_fence_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Wired_Fence_4m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Wired_Fence_4mD_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Wired_Fence_8m_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class Land_Wired_Fence_8mD_F: Wall_F
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class NonStrategic;
-	class Land_Razorwire_F: NonStrategic
-	{
-		class AGM_Actions
-		{
-			class AGM_Wirecutter_cut
-			{
-				displayName = "$STR_AGM_CutFence";
-				distance = 4;
-				condition = "'ToolKit' in items player && {alive AGM_Interaction_Target}";
-				statement = "[5, AGM_Interaction_Target] call AGM_Wirecutter_fnc_cutDownFence";
-				showDisabled = 1;
-				priority = 2.1;
-				icon = "AGM_Logistics\ui\wirecutter_ca.paa";
-			};
-		};
-	};
-	class House_Small_F;
-	class Land_FuelStation_Feed_F: House_Small_F
-	{
-		class AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 50000;
-		transportFuel = 0;
-	};
-	class Land_fs_feed_F: House_Small_F
-	{
-		class AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 50000;
-		transportFuel = 0;
-	};
-	class APC_Wheeled_01_base_F: Wheeled_APC_F
-	{
-		AGM_fuelCapacity = 600;
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLF2Wheel","HitRF2Wheel","HitLMWheel","HitRMWheel","HitLBWheel","HitRBWheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLF2Wheel","STR_AGM_Repair_HitRF2Wheel","STR_AGM_Repair_HitLMWheel","STR_AGM_Repair_HitRMWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-	};
-	class APC_Wheeled_02_base_F: Wheeled_APC_F
-	{
-		AGM_fuelCapacity = 600;
-	};
-	class APC_Wheeled_03_base_F: Wheeled_APC_F
-	{
-		AGM_fuelCapacity = 228;
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLF2Wheel","HitRF2Wheel","HitLMWheel","HitRMWheel","HitLBWheel","HitRBWheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLF2Wheel","STR_AGM_Repair_HitRF2Wheel","STR_AGM_Repair_HitLMWheel","STR_AGM_Repair_HitRMWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-	};
-	class APC_Tracked_01_base_F: Tank_F
-	{
-		AGM_fuelCapacity = 1400;
-	};
-	class B_APC_Tracked_01_base_F: APC_Tracked_01_base_F
-	{
-		class AGM_Actions;
-	};
-	class B_APC_Tracked_01_CRV_F: B_APC_Tracked_01_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_canRepair = 1;
-		AGM_fuelCapacityCargo = 0;
-		transportRepair = 0;
-		transportFuel = 0;
-	};
-	class APC_Tracked_02_base_F: Tank_F
-	{
-		AGM_fuelCapacity = 800;
-	};
-	class APC_tracked_03_base_F: Tank_F
-	{
-		AGM_fuelCapacity = 770;
-	};
-	class Truck_01_base_F: Truck_F
-	{
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLF2Wheel","HitRF2Wheel","HitLMWheel","HitRMWheel","HitLBWheel","HitRBWheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLF2Wheel","STR_AGM_Repair_HitRF2Wheel","STR_AGM_Repair_HitLMWheel","STR_AGM_Repair_HitRMWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		AGM_fuelCapacity = 587;
-		class AGM_Actions;
-	};
-	class B_Truck_01_transport_F: Truck_01_base_F{};
-	class B_Truck_01_mover_F: B_Truck_01_transport_F{};
-	class B_Truck_01_Repair_F: B_Truck_01_mover_F
-	{
-		AGM_canRepair = 1;
-		transportRepair = 0;
-	};
-	class B_Truck_01_fuel_F: B_Truck_01_mover_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 9464;
-		transportFuel = 0;
-	};
-	class Truck_02_base_F: Truck_F
-	{
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLMWheel","HitRMWheel","HitLF2Wheel","HitRF2Wheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLMWheel","STR_AGM_Repair_HitRMWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		AGM_fuelCapacity = 420;
-		class AGM_Actions: AGM_Actions{};
-	};
-	class O_Truck_02_box_F: Truck_02_base_F
-	{
-		AGM_canRepair = 1;
-		transportRepair = 0;
-	};
-	class O_Truck_02_medical_F: O_Truck_02_box_F
-	{
-		AGM_canRepair = 0;
-	};
-	class O_Truck_02_fuel_F: Truck_02_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 7125;
-		transportFuel = 0;
-	};
-	class I_Truck_02_box_F: Truck_02_base_F
-	{
-		AGM_canRepair = 1;
-		transportRepair = 0;
-	};
-	class I_Truck_02_medical_F: I_Truck_02_box_F
-	{
-		AGM_canRepair = 0;
-	};
-	class I_Truck_02_fuel_F: Truck_02_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 7125;
-		transportFuel = 0;
-	};
-	class Truck_03_base_F: Truck_F
-	{
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLF2Wheel","HitRF2Wheel","HitLBWheel","HitRBWheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLF2Wheel","STR_AGM_Repair_HitRF2Wheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		AGM_fuelCapacity = 420;
-		class AGM_Actions: AGM_Actions{};
-	};
-	class O_Truck_03_repair_F: Truck_03_base_F
-	{
-		AGM_canRepair = 1;
-		transportRepair = 0;
-	};
-	class O_Truck_03_fuel_F: Truck_03_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 7125;
-		transportFuel = 0;
-	};
-	class Van_01_base_F: Truck_F
-	{
-		AGM_Wheels[] = {"HitLFWheel","HitRFWheel","HitLF2Wheel","HitRF2Wheel"};
-		AGM_WheelsLocalized[] = {"STR_AGM_Repair_HitLFWheel","STR_AGM_Repair_HitRFWheel","STR_AGM_Repair_HitLBWheel","STR_AGM_Repair_HitRBWheel"};
-		AGM_fuelCapacity = 80;
-		class AGM_Actions: AGM_Actions{};
-	};
-	class I_G_Van_01_fuel_F: Van_01_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 5000;
-		transportFuel = 0;
-	};
-	class C_Van_01_fuel_F: Van_01_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 5000;
-		transportFuel = 0;
-	};
-	class Helicopter_Base_H;
-	class Heli_Transport_04_base_F: Helicopter_Base_H
-	{
-		class AGM_Actions;
-	};
-	class O_Heli_Transport_04_fuel_F: Heli_Transport_04_base_F
-	{
-		class AGM_Actions: AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 3000;
-		transportFuel = 0;
-	};
-	class O_Heli_Transport_04_repair_F: Heli_Transport_04_base_F
-	{
-		AGM_canRepair = 1;
-		transportRepair = 0;
-	};
-	class CargoNet_01_base_F;
-	class CargoNet_01_barrels_F: CargoNet_01_base_F
-	{
-		class AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 800;
-	};
-	class Items_Base_F;
-	class Land_MetalBarrel_F: Items_Base_F
-	{
-		class AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 200;
-	};
-	class Slingload_01_Base_F;
-	class B_Slingload_01_Fuel_F: Slingload_01_Base_F
-	{
-		class AGM_Actions
-		{
-			class AGM_DrainFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_DrainFuelCargo";
-				distance = 4;
-				condition = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_canDrainFuelCargo";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_drainFuelCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.22;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_CheckFuelCargo
-			{
-				displayName = "$STR_AGM_Resupply_CheckFuelCargo";
-				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0}";
-				statement = "[player, AGM_Interaction_Target] call AGM_Resupply_fnc_getFuelAmountCargo";
-				exceptions[] = {"AGM_Drag_isNotDragging"};
-				showDisabled = 0;
-				priority = 1.24;
-				icon = "\A3\ui_f\data\igui\cfg\actions\refuel_ca.paa";
-			};
-			class AGM_loadItem
-			{
-				displayName = "$STR_AGM_Logistics_LoadItem";
-				distance = 4;
-				condition = "[AGM_Interaction_Target] call AGM_Logistics_fnc_canLoadItem";
-				statement = "[AGM_Interaction_Target, AGM_Logistics_targetVehicle] call AGM_Logistics_fnc_openLoadUI";
-				showDisabled = 1;
-				priority = 1.6;
-				icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
-			};
-		};
-		AGM_fuelCapacityCargo = 24000;
-		transportFuel = 0;
-	};
-	class Module_F;
-	class AGM_ModuleRepair: Module_F
-	{
-		author = "Hawkeye104";
-		category = "AGM";
-		displayName = "Repair System";
-		function = "AGM_Repair_fnc_module";
-		scope = 2;
-		isGlobal = 1;
-		icon = "\AGM_Logistics\UI\Icon_Module_Repair_ca.paa";
-		class Arguments
-		{
-			class TimeRepair
-			{
-				displayName = "Heavy Repair Time";
-				description = "Time to repair engine/turret/body/fuel components (in seconds). Default: 10";
-				typeName = "NUMBER";
-				defaultValue = 10;
-			};
-			class TimeWheelRepair
-			{
-				displayName = "Wheel Replace Time";
-				description = "Time to replace a wheel (in seconds). Default: 10";
-				typeName = "NUMBER";
-				defaultValue = 10;
-			};
-			class TimeTrackRepair
-			{
-				displayName = "Track Replace Time";
-				description = "Time to replace a track (in seconds). Default: 10";
-				typeName = "NUMBER";
-				defaultValue = 10;
-			};
-			class MaxDamageRepair
-			{
-				displayName = "Maximum Repaired Damage";
-				description = "Limits the amount of damage that can be repaired. 0 = Repair all damage, 1 = Cannot repair any damage. Decimal Value. Default: 0";
-				typeName = "NUMBER";
-				defaultValue = 0;
-			};
-		};
-	};
-};
-class CfgMagazines
-{
-	class CA_LauncherMagazine;
-	class Titan_AA: CA_LauncherMagazine
-	{
-		AGM_LoadTime = 10;
-		AGM_MagazineReloadType = 1;
-	};
-	class Titan_AP: Titan_AA{};
-	class Titan_AT: Titan_AA{};
 };
 class CfgWeapons
 {
-	class MissileLauncher;
-	class missiles_titan: MissileLauncher
-	{
-		AGM_Magazines[] = {"Titan_AA"};
-	};
-	class ItemCore;
-	class InventoryItem_Base_F;
-	class ToolKitItem;
-	class ToolKit: ItemCore
-	{
-		type = 4;
-		detectRange = -1;
-		simulation = "ItemMineDetector";
-		class ItemInfo: ToolKitItem
-		{
-			mass = 80;
-			type = 201;
-		};
-	};
 	class AGM_ItemCore;
-	class AGM_UAVBattery: AGM_ItemCore
+	class InventoryItem_Base_F;
+	class AGM_CableTie: AGM_ItemCore
 	{
+		displayName = "$STR_AGM_Interaction_CableTie_Name";
+		descriptionShort = "$STR_AGM_Interaction_CableTie_Description";
+		model = "\AGM_Interaction\agm_cabletie.p3d";
+		picture = "\AGM_Interaction\UI\agm_cabletie_x_ca.paa";
 		scope = 2;
-		displayName = "$STR_AGM_UAVs_Battery_Name";
-		descriptionShort = "$STR_AGM_UAVs_Battery_Description";
-		model = "\AGM_Logistics\agm_battery.p3d";
-		picture = "\AGM_Logistics\ui\AGM_battery.paa";
 		class ItemInfo: InventoryItem_Base_F
 		{
-			mass = 20;
+			mass = 1;
 		};
 	};
 };
-class AGM_Parameters
+class RscStructuredText;
+class AGM_Interaction_Button_Base
 {
-	AGM_Repair_TimeRepair = 10;
-	AGM_Repair_TimeWheelRepair = 10;
-	AGM_Repair_TimeTrackRepair = 10;
-	AGM_Repair_MaxDamageRepair = 0;
+	tooltip = "";
+	action = "";
+	idc = -1;
+	access = 0;
+	type = 1;
+	text = "";
+	font = "PuristaMedium";
+	sizeEx = "0.8 / 40 / (getResolution select 5)";
+	shadow = 2;
+	style = 2;
+	x = 0;
+	y = 0;
+	w = "2.0 / 16 * safezoneW";
+	h = "0.3 / 9 * safezoneH";
+	offsetX = 0.003;
+	offsetY = 0.003;
+	offsetPressedX = 0.002;
+	offsetPressedY = 0.002;
+	borderSize = 0;
+	colorText[] = {1,1,1,1};
+	colorDisabled[] = {0.5,0.5,0.5,1};
+	colorBackground[] = {0,0,0,0.8};
+	colorBackgroundDisabled[] = {0,0,0,0.8};
+	colorBackgroundActive[] = {1,1,1,0};
+	colorFocused[] = {1,1,1,1};
+	colorShadow[] = {0,0,0,0};
+	colorBorder[] = {1,1,1,0.8};
+	soundEnter[] = {"\A3\ui_f\data\sound\RscButton\soundEnter",0.09,1};
+	soundPush[] = {"\A3\ui_f\data\sound\RscButton\soundPush",0.09,1};
+	soundClick[] = {"\A3\ui_f\data\sound\RscButton\soundClick",0.09,1};
+	soundEscape[] = {"\A3\ui_f\data\sound\RscButton\soundEscape",0.09,1};
 };
-class AGM_Rsc_Control_Base;
-class AGM_Rsc_Display_Base;
-class AGM_Repair_Diagnose_Dialog
+class AGM_Interaction_Dialog
 {
-	idd = -1;
+	idd = 1713999;
+	enableSimulation = 1;
 	movingEnable = 0;
-	onLoad = "uiNamespace setVariable ['AGM_dlgDiagnose', _this select 0];";
+	onLoad = "_dlgInteractionDialog = _this select 0; for '_a' from 10 to 19 do {(_dlgInteractionDialog displayCtrl _a) ctrlShow false}; uiNamespace setVariable ['AGM_Interaction_Dialog', _dlgInteractionDialog];";
 	objects[] = {};
-	class controlsBackground
+	class controls
 	{
-		class Background
+		class Interaction_BackgroundMain: AGM_Interaction_Button_Base
 		{
-			idc = -1;
-			moving = 0;
-			font = "TahomaB";
-			text = "";
-			sizeEx = 0;
-			lineSpacing = 0;
-			access = 0;
 			type = 0;
-			style = 0;
-			size = 1;
-			colorBackground[] = {0,0,0,0.25};
-			colorText[] = {0,0,0,0};
-			x = 0;
-			y = 0;
-			w = 1;
-			h = 1;
+			style = 2;
+			idc = 2;
+			colorBackground[] = {0,0,0,0.5};
+			colorBackgroundDisabled[] = {0,0,0,0.5};
+			x = "(0.5-1.8/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.55/9/2 + 0 * 0.04) * safezoneH + safezoneY";
+			w = "1.8 / 16 * safezoneW";
+			h = "0.55 / 9 * safezoneH";
 		};
-		class LFWheel: Background
+		class Interaction_ButtonMain: AGM_Interaction_Button_Base
 		{
-			idc = 10;
-			colorBackground[] = {1,1,1,1};
-			x = "5.5 / 16";
-			y = "1 / 9";
-			w = "0.5 / 16";
-			h = "1.5 / 9";
+			action = "-1 call AGM_Interaction_fnc_onClick;";
+			style = 2;
+			tooltip = "";
+			text = "Interaction Menu";
+			idc = 3;
+			sizeEx = "0.6 / 40 / (getResolution select 5)";
+			colorBackground[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBackgroundActive[] = {1,1,1,0.2};
+			colorFocused[] = {0,0,0,0};
+			x = "(0.5-1.8/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.55/9/2 + 0 * 0.04) * safezoneH + safezoneY";
+			w = "1.8 / 16 * safezoneW";
+			h = "0.55 / 9 * safezoneH";
 		};
-		class LF2Wheel: LFWheel
+		class Interaction_Background0: AGM_Interaction_Button_Base
 		{
-			idc = 11;
-			y = "3 / 9";
+			type = 0;
+			style = 2;
+			idc = 40;
+			colorBackground[] = {0,0,0,0.5};
+			colorBackgroundDisabled[] = {0,0,0,0.5};
+			x = "(0.5-2.0/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class LMWheel: LFWheel
+		class Interaction_Background1: Interaction_Background0
 		{
-			idc = 12;
-			y = "5 / 9";
+			idc = 41;
+			x = "(0.5-2.0/16/2 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class LBWheel: LFWheel
+		class Interaction_Background2: Interaction_Background0
 		{
-			idc = 13;
-			y = "7 / 9";
+			idc = 42;
+			x = "(0.5-2.0/16/2 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class RFWheel: LFWheel
+		class Interaction_Background3: Interaction_Background0
 		{
-			idc = 14;
-			x = "10 / 16";
+			idc = 43;
+			x = "(0.5-2.0/16/2 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class RF2Wheel: RFWheel
+		class Interaction_Background4: Interaction_Background0
 		{
-			idc = 15;
-			y = "3 / 9";
+			idc = 44;
+			x = "(0.5-2.0/16/2 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class RMWheel: RFWheel
+		class Interaction_Background5: Interaction_Background0
 		{
-			idc = 16;
-			y = "5 / 9";
+			idc = 45;
+			x = "(0.5-2.0/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class RBWheel: RFWheel
+		class Interaction_Background6: Interaction_Background0
 		{
-			idc = 17;
-			y = "7 / 9";
+			idc = 46;
+			x = "(0.5-2.0/16/2 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
 		};
-		class Body: LFWheel
+		class Interaction_Background7: Interaction_Background0
 		{
+			idc = 47;
+			x = "(0.5-2.0/16/2 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Background8: Interaction_Background0
+		{
+			idc = 48;
+			x = "(0.5-2.0/16/2 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Background9: Interaction_Background0
+		{
+			idc = 49;
+			x = "(0.5-2.0/16/2 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Icon0: AGM_Interaction_Button_Base
+		{
+			tooltip = "";
+			text = "";
 			idc = 20;
-			x = "7 / 16";
-			y = "4 / 9";
-			w = "2 / 16";
-			h = "1.5 / 9";
+			type = 0;
+			style = 48;
+			colorBackground[] = {0,0,0,0};
+			x = "(0.5-(2.0-0.05)/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 - 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
 		};
-		class Engine: Body
+		class Interaction_Icon1: Interaction_Icon0
 		{
 			idc = 21;
-			y = "2 / 9";
+			x = "(0.5-(2.0-0.05)/16/2 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
 		};
-		class Fuel: Body
+		class Interaction_Icon2: Interaction_Icon0
 		{
 			idc = 22;
-			y = "6 / 9";
+			x = "(0.5-(2.0-0.05)/16/2 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon3: Interaction_Icon0
+		{
+			idc = 23;
+			x = "(0.5-(2.0-0.05)/16/2 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon4: Interaction_Icon0
+		{
+			idc = 24;
+			x = "(0.5-(2.0-0.05)/16/2 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon5: Interaction_Icon0
+		{
+			idc = 25;
+			x = "(0.5-(2.0-0.05)/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 + 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon6: Interaction_Icon0
+		{
+			idc = 26;
+			x = "(0.5-(2.0-0.05)/16/2 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon7: Interaction_Icon0
+		{
+			idc = 27;
+			x = "(0.5-(2.0-0.05)/16/2 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon8: Interaction_Icon0
+		{
+			idc = 28;
+			x = "(0.5-(2.0-0.05)/16/2 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Icon9: Interaction_Icon0
+		{
+			idc = 29;
+			x = "(0.5-(2.0-0.05)/16/2 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-(0.3-0.05)/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "(0.3-0.05) / 16 * safezoneW";
+			h = "(0.3-0.05) / 9 * safezoneH";
+		};
+		class Interaction_Shortcut0: AGM_Interaction_Button_Base
+		{
+			tooltip = "";
+			text = "";
+			idc = 30;
+			style = 2;
+			colorBackground[] = {0,0,0,0};
+			x = "(0.5+2.0/16/2-0.3/16 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut1: Interaction_Shortcut0
+		{
+			idc = 31;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut2: Interaction_Shortcut0
+		{
+			idc = 32;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut3: Interaction_Shortcut0
+		{
+			idc = 33;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut4: Interaction_Shortcut0
+		{
+			idc = 34;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut5: Interaction_Shortcut0
+		{
+			idc = 35;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut6: Interaction_Shortcut0
+		{
+			idc = 36;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut7: Interaction_Shortcut0
+		{
+			idc = 37;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut8: Interaction_Shortcut0
+		{
+			idc = 38;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Shortcut9: Interaction_Shortcut0
+		{
+			idc = 39;
+			type = 0;
+			x = "(0.5+2.0/16/2-0.3/16 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "0.3 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button0: AGM_Interaction_Button_Base
+		{
+			action = "0 call AGM_Interaction_fnc_onClick;";
+			style = 2;
+			tooltip = "";
+			text = "";
+			idc = 10;
+			colorBackground[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBackgroundActive[] = {1,1,1,0.2};
+			colorFocused[] = {0,0,0,0};
+			x = "(0.5-2.0/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button1: Interaction_Button0
+		{
+			action = "1 call AGM_Interaction_fnc_onClick;";
+			idc = 11;
+			x = "(0.5-2.0/16/2 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button2: Interaction_Button0
+		{
+			action = "2 call AGM_Interaction_fnc_onClick;";
+			idc = 12;
+			x = "(0.5-2.0/16/2 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button3: Interaction_Button0
+		{
+			action = "3 call AGM_Interaction_fnc_onClick;";
+			idc = 13;
+			x = "(0.5-2.0/16/2 + 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button4: Interaction_Button0
+		{
+			action = "4 call AGM_Interaction_fnc_onClick;";
+			idc = 14;
+			x = "(0.5-2.0/16/2 + 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button5: Interaction_Button0
+		{
+			action = "5 call AGM_Interaction_fnc_onClick;";
+			idc = 15;
+			x = "(0.5-2.0/16/2 + 0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 2.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button6: Interaction_Button0
+		{
+			action = "6 call AGM_Interaction_fnc_onClick;";
+			idc = 16;
+			x = "(0.5-2.0/16/2 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button7: Interaction_Button0
+		{
+			action = "7 call AGM_Interaction_fnc_onClick;";
+			idc = 17;
+			x = "(0.5-2.0/16/2 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 + 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button8: Interaction_Button0
+		{
+			action = "8 call AGM_Interaction_fnc_onClick;";
+			idc = 18;
+			x = "(0.5-2.0/16/2 - 1.25 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 0.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+		class Interaction_Button9: Interaction_Button0
+		{
+			action = "9 call AGM_Interaction_fnc_onClick;";
+			idc = 19;
+			x = "(0.5-2.0/16/2 - 1.0 * 0.1) * safezoneW + safezoneX";
+			y = "(0.5-0.3/9/2 - 1.5 * 0.04) * safezoneH + safezoneY";
+			w = "2.0 / 16 * safezoneW";
+			h = "0.3 / 9 * safezoneH";
+		};
+	};
+};
+class RscListbox;
+class IGUIBack;
+class RscText;
+class RscAGM_SelectAnItem
+{
+	idd = 8854;
+	movingEnable = 0;
+	class controls
+	{
+		class back: IGUIBack
+		{
+			x = 0.2;
+			y = 0;
+			w = 0.6;
+			h = 0.71;
+			colorBackground[] = {0,0,0,0.2};
+		};
+		class header: RscText
+		{
+			idc = 8870;
+			x = "0.2 + 0.005";
+			y = 0.005;
+			w = 0.59;
+			h = 0.05;
+			style = 2;
+			text = "";
+		};
+		class itemList: RscListbox
+		{
+			onMouseButtonDblClick = "_this call AGM_Interaction_fnc_onSelectMenuDblClick";
+			idc = 8866;
+			x = "0.2 + 0.005";
+			w = 0.59;
+			h = 0.54;
+			y = 0.06;
+		};
+		class cancelBtnBackground: AGM_Interaction_Button_Base
+		{
+			type = 0;
+			style = 2;
+			idc = -1;
+			colorBackground[] = {0,0,0,0.5};
+			colorBackgroundDisabled[] = {0,0,0,0.5};
+			x = "0.2 + 0.005";
+			w = 0.15;
+			h = 0.1;
+			y = 0.605;
+		};
+		class approveBtnBackground: AGM_Interaction_Button_Base
+		{
+			type = 0;
+			style = 2;
+			idc = -1;
+			colorBackground[] = {0,0,0,0.5};
+			colorBackgroundDisabled[] = {0,0,0,0.5};
+			x = "0.2 + 0.445";
+			y = 0.605;
+			h = 0.1;
+			w = 0.15;
+		};
+		class cancelBtn: AGM_Interaction_Button_Base
+		{
+			idc = 8855;
+			x = "0.2 + 0.005";
+			w = 0.15;
+			h = 0.1;
+			y = 0.605;
+			style = 2;
+			text = "$STR_AGM_Interaction_Back";
+			action = "call AGM_Interaction_fnc_hideMenu;";
+			colorBackground[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBackgroundActive[] = {1,1,1,0.2};
+			colorFocused[] = {0,0,0,0};
+		};
+		class approveBtn: AGM_Interaction_Button_Base
+		{
+			idc = 8860;
+			x = "0.2 + 0.445";
+			y = 0.605;
+			h = 0.1;
+			w = 0.15;
+			style = 2;
+			text = "$STR_AGM_Interaction_MakeSelection";
+			action = "call AGM_Interaction_fnc_hideMenu;";
+			colorBackground[] = {0,0,0,0};
+			colorBackgroundDisabled[] = {0,0,0,0};
+			colorBackgroundActive[] = {1,1,1,0.2};
+			colorFocused[] = {0,0,0,0};
+		};
+	};
+};
+class RscPicture;
+class RscInteractionIcon: RscPicture
+{
+	x = "19.25 * (0.025)";
+	y = "15.75 * (0.04)";
+	w = "2*(0.04)";
+	h = "2*(0.04)";
+};
+class RscInteractionHelperIcon: RscInteractionIcon
+{
+	x = "20 * (0.025)";
+	y = "16 * (0.04)";
+	w = "(0.04)";
+	h = "(0.04)";
+};
+class RscInteractionText: RscText
+{
+	x = "21 * (0.025)";
+	y = "16 * (0.04)";
+	w = "8 * (0.025)";
+	h = "1.5 * (0.04)";
+};
+class RscTitles
+{
+	class AGM_FlowMenu
+	{
+		idd = 9920;
+		enableSimulation = 1;
+		movingEnable = 0;
+		fadeIn = 0.5;
+		fadeOut = 0.5;
+		duration = 1e+011;
+		onLoad = "uiNamespace setVariable ['AGM_Flow_Display', _this select 0];";
+		class controls
+		{
+			class RearIcon: RscInteractionIcon
+			{
+				idc = 999;
+				text = "AGM_interaction\UI\CenterIcon_ca.paa";
+				x = "17.9 * (0.025)";
+				y = "10 * (0.04)";
+				w = "3.7 * (0.04)";
+				h = "5.75 * (0.04)";
+			};
+			class TopIcon: RscInteractionIcon
+			{
+				idc = 1200;
+				h = "1 * (0.04)";
+				y = "9 * (0.04)";
+			};
+			class FirstIcon: RscInteractionIcon
+			{
+				idc = 1201;
+				y = "10.25 * (0.04)";
+				h = "1.5 * (0.04)";
+			};
+			class SelectedItemIcon: RscInteractionIcon
+			{
+				idc = 1202;
+				y = "12 * (0.04)";
+			};
+			class ThirdIcon: RscInteractionIcon
+			{
+				idc = 1203;
+				y = "14.25 * (0.04)";
+				h = "1.5 * (0.04)";
+			};
+			class BottomIcon: TopIcon
+			{
+				idc = 1204;
+				y = "16 * (0.04)";
+			};
+			class ItemName: RscText
+			{
+				idc = 1000;
+				style = 1;
+				x = "5.25 * (0.025)";
+				y = "12.15 * (0.04)";
+				w = "13 * (0.025)";
+				h = "1.5 * (0.04)";
+				colorBackground[] = {0.3,0.3,0.3,0.8};
+			};
+			class BackIcon: RscInteractionIcon
+			{
+				idc = 1210;
+				text = "AGM_interaction\UI\backArrow_ca.paa";
+				x = "18.25 * (0.025)";
+				y = "12.69 * (0.04)";
+				w = "0.5 * (0.025)";
+				h = "0.5 * (0.04)";
+			};
+			class ItemDetails: RscStructuredText
+			{
+				idc = 1100;
+				style = 12;
+				x = "23.5 * (0.025)";
+				y = "11 * (0.04)";
+				w = "13 * (0.025)";
+				h = "3.9 * (0.04)";
+				colorBackground[] = {0,0,0,0.4};
+			};
+		};
+	};
+	class AGM_InteractionHelper
+	{
+		idd = 9930;
+		enableSimulation = 1;
+		movingEnable = 0;
+		fadeIn = 0.5;
+		fadeOut = 0.5;
+		duration = 1e+011;
+		onLoad = "uiNamespace setVariable ['AGM_Helper_Display', _this select 0];";
+		class controls
+		{
+			class SelectIcon: RscInteractionHelperIcon
+			{
+				idc = 1200;
+				text = "AGM_interaction\UI\mouse_left_ca.paa";
+				y = "17.5 * (0.04)";
+			};
+			class SelectText: RscInteractionText
+			{
+				idc = 1000;
+				y = "17 * (0.04)";
+				text = "$STR_AGM_Interaction_MakeSelection";
+			};
+			class GoBackIcon: RscInteractionHelperIcon
+			{
+				idc = 1201;
+				text = "AGM_interaction\UI\mouse_right_ca.paa";
+				y = "19.5 * (0.04)";
+			};
+			class GoBackText: RscInteractionText
+			{
+				idc = 1001;
+				y = "19 * (0.04)";
+				text = "$STR_AGM_Interaction_Back";
+			};
+			class ScrollIcon: RscInteractionHelperIcon
+			{
+				idc = 1202;
+				text = "AGM_interaction\UI\mouse_scroll_ca.paa";
+				y = "18.5 * (0.04)";
+			};
+			class ScrollText: RscInteractionText
+			{
+				idc = 1002;
+				y = "18 * (0.04)";
+				text = "$STR_AGM_Interaction_ScrollHint";
+			};
 		};
 	};
 };
 class cfgMods
 {
 	author = "";
-	timepacked = "1419181232";
+	timepacked = "1419181208";
 };
 //};

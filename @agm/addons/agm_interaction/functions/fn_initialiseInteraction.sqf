@@ -69,11 +69,7 @@ if (_this select 2) then {
 	_ctrlInteractionDialog = _dlgInteractionDialog displayCtrl 3;
 	if (profileNamespace getVariable ["AGM_Interaction_AutoCenterCursor", true]) then {setMousePosition [0.5, 0.5]};
 	if !(_subMenu) then {
-		// if(isplayer _target) then {
-			// _ctrlInteractionDialog ctrlSetText ("Cible");
-		// } else {
-			_ctrlInteractionDialog ctrlSetText ([_target] call AGM_Core_fnc_getName);
-		// };
+		_ctrlInteractionDialog ctrlSetText ([_target] call AGM_Core_fnc_getName);
 	} else {
 		_ctrlInteractionDialog ctrlSetText localize "STR_AGM_Interaction_Back";
 	};

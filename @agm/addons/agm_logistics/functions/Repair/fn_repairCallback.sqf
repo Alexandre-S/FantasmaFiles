@@ -7,11 +7,7 @@ _vehicle = _this select 0;
 _part = _this select 1;
 
 // Repair module parameter function call
-if(playerSide in [west,independent] ) then {
-	[_vehicle, _part, AGM_Repair_MaxDamageRepair] call AGM_Repair_fnc_setHitPointDamage;
-} else {
-	[_vehicle, _part, 0.5] call AGM_Repair_fnc_setHitPointDamage;
-};
+[_vehicle, _part, AGM_Repair_MaxDamageRepair] call AGM_Repair_fnc_setHitPointDamage;
 
 [player, "AmovPknlMstpSrasWrflDnon", 1] call AGM_Core_fnc_doAnimation;
 
