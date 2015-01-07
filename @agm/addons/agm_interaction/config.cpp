@@ -76,6 +76,7 @@ class CfgFunctions
 			class updateTooltipPosition;
 			class getCaptivityStatus;
 			class setCaptivityStatus;
+			class Surrender;
 		};
 	};
 };
