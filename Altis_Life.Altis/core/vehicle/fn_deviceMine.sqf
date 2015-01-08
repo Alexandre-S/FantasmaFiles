@@ -4,7 +4,7 @@
 	Description:
 	Starts automated mining of resource from the tempest device.
 */
-private["_vehicle","_resourceZones","_zone","_weight","_item","_vInv","_itemIndex","_random_sel"];
+private["_vehicle","_resourceZones","_zone","_weight","_item","_vInv","_itemIndex","_random_sel","_items","_space","_sum","_time","_itemWeight","_val"];
 _vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {}; //Null was passed?
 if(!isNil {_vehicle getVariable "mining"}) exitWith {hint localize "STR_NOTF_DeviceIsMining";}; //Mining is already in process..

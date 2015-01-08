@@ -392,16 +392,18 @@ player createDiarySubject ["controls","Controles"];
 		[
 			"Contrôles",
 				"
-				Shift + G: Mettre les mains derrière la tête<br/>
-				Shift + H: Ranger/Sortir son arme (Holster)<br/>
-				Shift + C: Assomer (utilisé pour voler une personne)<br/>
+				Windows: Interaction principal pour différente situation - Prendre item ou argent - interaction avec les véhicules - interaction police à civil. Peut-être modifié dans vos configuration personnalisable Configure->Controls->Custom->Use Action 10<br/>
+				CTRL + Windows: Interaction principal sur soi même<br/>
+				ALT + G: Mettre les mains derrière la tête<br/>
+				0: Ranger son arme (Holster)<br/>
+				1: Prendre l'arme secondaire<br/>
+				2: Prendre l'arme principale<br/>
+				SHIFT + C: Assomer (utilisé pour voler une personne)<br/>
 				Y: Menu Joueur<br/>
 				U: Ouvrir et fermer les véhicules, et vos maisons !<br/>
 				T: Inventaire vehicule et inventaire maisons !<br/>
-				Windows: Interaction principal pour différente situation - Prendre item ou argent - interaction avec les véhicules - interaction police à civil. Peut-être modifié dans vos configuration personnalisable Configure->Controls->Custom->Use Action 10<br/>
 				Shift + L: Girophares (Medic & ONU)<br/>
 				Shift + F: Sirene (Medic & ONU)<br/>
-				Shift + R: Menotter<br/>
 				Shift + B: Activer veste explosive<br/>
 				"
 		]
