@@ -76,7 +76,7 @@ class CfgFunctions
 			class updateTooltipPosition;
 			class getCaptivityStatus;
 			class setCaptivityStatus;
-			// class Surrender;
+			class Surrender;
 		};
 	};
 };
@@ -170,7 +170,7 @@ class AGM_Core_Default_Keys
 		control = 0;
 		alt = 0;
 	};
-	/*class Surrender {
+	class Surrender {
 		displayName = "Se rendre";
 		condition = "!(player getVariable ['AGM_isCaptive', false]) && {!(player getVariable ['AGM_Unconscious', false])}";
 		statement = "[player, true] call AGM_Interaction_fnc_surrender";
@@ -179,7 +179,7 @@ class AGM_Core_Default_Keys
 		shift = 0;
 		control = 0;
 		alt = 1;
-	};*/
+	};
 	class Ymenu {
 		displayName = "Menu Y";
 		condition = "!(player getVariable ['AGM_isCaptive', false]) && {!(player getVariable ['AGM_Unconscious', false])} && {!(player getVariable ['AGM_isSurrender', false])}";
