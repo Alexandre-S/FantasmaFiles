@@ -18,16 +18,26 @@ _state = _this select 1;
 
 if (!local _unit) exitWith {[[_unit, _state, true], _fnc_scriptName, _unit] call AGM_Core_fnc_execRemoteFnc};
 
+if (!_state and playerside == west) then {
+	player addItem "AGM_CableTie";
+};
+
 if (_state) then {
   if (_unit getVariable ["AGM_isCaptive", false]) exitWith {};
 
   _unit setVariable ["AGM_isCaptive", true, true];
+  
+  if (_unit getVariable ["AGM_isSurrender", false]) then {
+	_unit setVariable ["AGM_isSurrender", false, true];
+  };
 
   // fix anim on mission start (should work on dedicated servers)
   _unit spawn {
+    _this setVariable ["tf_unable_to_use_radio", true];
+
     [_this, "AGM_Handcuffed", true] call AGM_Core_fnc_setCaptivityStatus;
 
-    if (_this getVariable ["AGM_isCaptive", false] && {vehicle _this == _this}) then {
+  if (_this getVariable ["AGM_isCaptive", false] && {vehicle _this == _this}) then {
       [_this] call AGM_Core_fnc_fixLoweredRifleAnimation;
       [_this, "AGM_AmovPercMstpScapWnonDnon", 0] spawn AGM_Core_fnc_doAnimation;
     };
@@ -54,4 +64,5 @@ if (_state) then {
   if (_unit == AGM_player) then {
     showHUD true;
   };
+  _this setVariable ["tf_unable_to_use_radio", false];
 };
