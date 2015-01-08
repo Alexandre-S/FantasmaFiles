@@ -6,7 +6,7 @@
 	When the player dies collect various information about that player
 	and pull up the death dialog / camera functionality.
 */
-private["_unit","_killer"];
+private["_unit","_killer","_veh"];
 disableSerialization;
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -35,20 +35,6 @@ life_deathCamera camCommit 0;
 [[_unit,_killer,0],"TON_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
 
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
-
-[_unit] spawn {
-	private["_unit","_veh"];
-	_unit = _this select 0;
-	_veh = vehicle _unit;
-	// waitUntil { !alive _unit };
-	if(_veh != _unit) then {
-		// diag_log format["check vehB - %1 - %2",_veh,speed _veh];
-		// waitUntil { speed _veh < 2 };
-		// diag_log format["check vehB2 - %1 - %2 - %3",_veh,speed _veh,crew _veh];
-		unassignVehicle (_unit);
-		_unit setposATL getposATL _veh;
-	};
-};
 
 //Create a thread for something?
 _unit spawn
@@ -99,6 +85,17 @@ if(!isNull _killer && {_killer != _unit} && {side _killer != west} && {alive _ki
 	};
 };
 
+_veh = vehicle _unit;
+// waitUntil { !alive _unit };
+if(_veh != _unit) then {
+	// diag_log format["check vehB - %1 - %2",_veh,speed _veh];
+	// waitUntil { speed _veh < 2 };
+	// diag_log format["check vehB2 - %1 - %2 - %3",_veh,speed _veh,crew _veh];
+	unassignVehicle (_unit);
+	_unit setposATL getposATL _veh;
+	// _unit action ["Eject", _veh];
+};
+
 //Killed by cop stuff...
 if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
@@ -108,7 +105,6 @@ if(side _killer == west && playerSide != west) then {
 		life_cash = 0;
 	};
 };
-
 if(!isNull _killer && {_killer != _unit}) then {
 	life_removeWanted = true;
 };

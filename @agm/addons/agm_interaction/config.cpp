@@ -697,9 +697,9 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
-				showDisabled = 0;
+				condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
+				statement = "[_target] spawn life_fnc_repairTruck";
+				showDisabled = 1;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
 			};
@@ -707,8 +707,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Registration";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_searchVehAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -717,8 +717,8 @@ class CfgVehicles
 			{
 				displayName = "Sortir tt le monde";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+				statement = "[_target] spawn life_fnc_pulloutAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -727,8 +727,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Impound";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_impoundAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -737,8 +737,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_GetInKart";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""]} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0} && {locked AGM_Interaction_Target == 0}";
-				statement = "player moveInDriver AGM_Interaction_Target";
+				condition = "alive _target && {speed _target == 0} && {typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""]} && {canMove _target} && {count crew _target != 0} && {locked _target == 0}";
+				statement = "player moveInDriver _target";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -747,8 +747,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target != 0}";
+				statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -757,8 +757,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_DeviceMine";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {typeOf AGM_Interaction_Target == ""O_Truck_03_device_F""} && {isNil {(AGM_Interaction_Target getVariable ""mining"")} && {local AGM_Interaction_Target} && {AGM_Interaction_Target in life_vehicles} && {playerSide != west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_deviceMine";
+				condition = "alive _target && {typeOf _target == ""O_Truck_03_device_F""} && {playerSide != west} && !(!isNil {(_target getVariable ""mining"")} OR !local _target && {_target in life_vehicles})";
+				statement = "[_target] spawn life_fnc_deviceMine";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -774,8 +774,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
+				statement = "[_target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -784,8 +784,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Registration";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_searchVehAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -794,8 +794,8 @@ class CfgVehicles
 			{
 				displayName = "Sortir tt le monde";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+				statement = "[_target] spawn life_fnc_pulloutAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -804,8 +804,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Impound";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_impoundAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -814,8 +814,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target != 0}";
+				statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -832,8 +832,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
+				statement = "[_target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -842,8 +842,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Registration";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_searchVehAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -852,8 +852,8 @@ class CfgVehicles
 			{
 				displayName = "Sortir tt le monde";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+				statement = "[_target] spawn life_fnc_pulloutAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -862,8 +862,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Impound";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_impoundAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -872,8 +872,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target != 0}";
+				statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -889,8 +889,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
+				statement = "[_target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -899,8 +899,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Registration";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_searchVehAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -909,8 +909,8 @@ class CfgVehicles
 			{
 				displayName = "Sortir tt le monde";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+				statement = "[_target] spawn life_fnc_pulloutAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -919,8 +919,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Impound";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_impoundAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -929,8 +929,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Unflip";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {!(typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove AGM_Interaction_Target)} && {count crew AGM_Interaction_Target != 0}";
-				statement = "AGM_Interaction_Target setPos [getPos AGM_Interaction_Target select 0, getPos AGM_Interaction_Target select 1, (getPos AGM_Interaction_Target select 2)+0.5]";
+				condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target != 0}";
+				statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -947,8 +947,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
+				condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
+				statement = "[_target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -957,8 +957,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Registration";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_searchVehAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_searchVehAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -967,8 +967,8 @@ class CfgVehicles
 			{
 				displayName = "Sortir tt le monde";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {count crew AGM_Interaction_Target != 0} && {playerSide == west}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_pulloutAction";
+				condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+				statement = "[_target] spawn life_fnc_pulloutAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -977,8 +977,8 @@ class CfgVehicles
 			{
 				displayName = "$STR_vInAct_Impound";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {playerSide in [west,independent]}";
-				statement = "[AGM_Interaction_Target] spawn life_fnc_impoundAction";
+				condition = "alive _target && {speed _target == 0} && {playerSide in [west,independent]}";
+				statement = "[_target] spawn life_fnc_impoundAction";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";

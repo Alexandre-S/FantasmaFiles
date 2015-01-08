@@ -22,6 +22,10 @@ player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 
+player setVariable["AGM_isCaptive",false,true];
+player setVariable["AGM_isEscorting",false,true];
+player setVariable["AGM_isSurrender", false, true];
+
 //Load gear for a 'new life'
 switch(playerSide) do
 {
