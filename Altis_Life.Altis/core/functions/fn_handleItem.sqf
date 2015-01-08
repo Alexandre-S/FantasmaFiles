@@ -133,8 +133,10 @@ if(_bool) then
 								} 
 									else 
 								{
-									player addItem _item; 
-									player assignItem _item;
+									player addItem _item;
+									if(!(["AGM_",_item] call BIS_fnc_inString)) then {
+										player assignItem _item;
+									};
 								};
 							};
 						};

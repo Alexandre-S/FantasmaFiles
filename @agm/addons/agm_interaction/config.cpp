@@ -695,9 +695,9 @@ class CfgVehicles
 		{
 			class AGM_repair
 			{
-				displayName = "$STR_vInAct_Registration";
+				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
 				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
@@ -738,7 +738,7 @@ class CfgVehicles
 				displayName = "$STR_vInAct_GetInKart";
 				distance = 4;
 				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {typeOf (AGM_Interaction_Target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""]} && {canMove AGM_Interaction_Target} && {count crew AGM_Interaction_Target != 0} && {locked AGM_Interaction_Target == 0}";
-				statement = "player moveInDriver life_vInact_curTarget";
+				statement = "player moveInDriver AGM_Interaction_Target";
 				showDisabled = 0;
 				priority = 1.6;
 				// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -772,9 +772,9 @@ class CfgVehicles
 		{
 			class AGM_repair
 			{
-				displayName = "$STR_vInAct_Registration";
+				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
 				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
@@ -830,9 +830,9 @@ class CfgVehicles
 		{	
 			class AGM_repair
 			{
-				displayName = "$STR_vInAct_Registration";
+				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
 				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
@@ -887,9 +887,9 @@ class CfgVehicles
 		{
 			class AGM_repair
 			{
-				displayName = "$STR_vInAct_Registration";
+				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
 				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;
@@ -945,9 +945,9 @@ class CfgVehicles
 		{
 			class AGM_repair
 			{
-				displayName = "$STR_vInAct_Registration";
+				displayName = "$STR_vInAct_Repair";
 				distance = 4;
-				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage _curTarget < 1)}";
+				condition = "alive AGM_Interaction_Target && {speed AGM_Interaction_Target == 0} && {""ToolKit"" in (items player)} && {(damage AGM_Interaction_Target > 0)}";
 				statement = "[AGM_Interaction_Target] spawn life_fnc_repairTruck";
 				showDisabled = 0;
 				priority = 1.6;

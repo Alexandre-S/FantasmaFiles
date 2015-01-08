@@ -6,14 +6,14 @@
 	Pulls civilians out of a car if it's stopped.
 */
 private["_crew"];
-if(((cursorTarget getVariable["tf_side",civilian]) == west) && (playerSide != west)) exitWith {};
+if(playerSide != west) exitWith {};
 
 _crew = crew cursorTarget;
 {
-	//if(side _x != west) then
-	if((playerSide == west) OR (_x getVariable["restrained",false])) then
-	{
+	// if(side _x != west) then
+	// if((playerSide == west) OR (_x getVariable["restrained",false])) then
+	// {
 		//_x setVariable ["transporting",false,true]; _x setVariable ["Escorting",false,true];
 		[[_x],"life_fnc_pulloutVeh",_x,false] spawn life_fnc_MP;
-	};
+	// };
 } foreach _crew;
