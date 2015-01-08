@@ -30,10 +30,10 @@ if (_state) then {
   if (_unit getVariable ["AGM_isSurrender", false]) then {
 	_unit setVariable ["AGM_isSurrender", false, true];
   };
+  _unit setVariable ["tf_unable_to_use_radio", true];
 
   // fix anim on mission start (should work on dedicated servers)
   _unit spawn {
-    _this setVariable ["tf_unable_to_use_radio", true];
 
     [_this, "AGM_Handcuffed", true] call AGM_Core_fnc_setCaptivityStatus;
 
@@ -64,5 +64,5 @@ if (_state) then {
   if (_unit == AGM_player) then {
     showHUD true;
   };
-  _this setVariable ["tf_unable_to_use_radio", false];
+  _unit setVariable ["tf_unable_to_use_radio", false];
 };
