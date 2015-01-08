@@ -3891,9 +3891,9 @@
 			<Portuguese>Respawn Disponível em: %1</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_Respawn_2">
-			<Original>You can now respawn - Dead in : %1</Original>
+			<Original>You can now respawn</Original>
 			<German>Du kannst nun respawnen</German>
-			<French>Vous pouvez désormais réapparaître - Mort dans : %1</French>
+			<French>Vous pouvez désormais réapparaître</French>
 			<Italian>Puoi ora fare respawn</Italian>
 			<Portuguese>Você pode dar respawn</Portuguese>
 		</Key>

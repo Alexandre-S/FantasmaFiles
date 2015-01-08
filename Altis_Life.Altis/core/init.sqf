@@ -215,7 +215,7 @@ life_fnc_garageRefund = compileFinal
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 player enableFatigue (__GETC__(life_enableFatigue));
-[] spawn life_fnc_fatigueReset;
+//[] spawn life_fnc_fatigueReset;
 //auto update
 [] spawn
 {
