@@ -5,7 +5,7 @@
 	
 	Description:
 	Adds the light effect to cop vehicles, specifically the offroad.
-*/		_vehicle setVariable ["service_truck", true, true];
+*/
 
 Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed","service_truck"];
 _vehicle = _this select 0;
