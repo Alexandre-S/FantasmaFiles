@@ -105,17 +105,17 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 7000; //Starting Bank Money
+		life_atmcash = 10000; //Starting Bank Money
 		life_paycheck = 500; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 5000; //Starting Bank Money
+		life_atmcash = 10000; //Starting Bank Money
 		life_paycheck = 350; //Paycheck Amount
 	};
 	
 	case independent: {
-		life_atmcash = 7000;
+		life_atmcash = 10000;
 		life_paycheck = 1000;
 	};
 };
@@ -128,8 +128,8 @@ __CONST__(life_vShop_rentalOnly,life_vShop_rentalOnly); //These vehicles can nev
 
 life_inv_items = 
 [
-	"life_inv_handcuffs",
-	"life_inv_handcuffkeys",
+	// "life_inv_handcuffs",
+	// "life_inv_handcuffkeys",
 	"life_inv_oilu",
 	"life_inv_oilp",
 	"life_inv_heroinu",

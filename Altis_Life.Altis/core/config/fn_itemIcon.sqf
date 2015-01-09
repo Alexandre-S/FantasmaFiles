@@ -12,8 +12,8 @@ if(_var == "") exitWith {""};
 switch (_var) do
 {
 	//Virtual Inventory Items
-	case "life_inv_handcuffs": {("altisrpfr\icons\items\handcuffs.paa")};
-	case "life_inv_handcuffkeys": {("altisrpfr\icons\items\handcuffkeys.paa")};
+	// case "life_inv_handcuffs": {("altisrpfr\icons\items\handcuffs.paa")};
+	// case "life_inv_handcuffkeys": {("altisrpfr\icons\items\handcuffkeys.paa")};
 	case "life_inv_oilu": {("altisrpfr\icons\items\oil_unprocessed.paa")};
 	case "life_inv_oilp": {("altisrpfr\icons\items\oil_processed.paa")};
 	case "life_inv_heroinu": {("altisrpfr\icons\items\heroin_unprocessed.paa")};

@@ -66,6 +66,6 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 	};
 	[] call life_fnc_virt_update;
 };
-
+playSound "caching";
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;

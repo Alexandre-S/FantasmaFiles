@@ -16,8 +16,8 @@ switch (_mode) do
 	{
 		switch (_var) do
 		{
-			case "handcuffs": {"life_inv_handcuffs"};
-			case "handcuffkeys": {"life_inv_handcuffkeys"};
+			// case "handcuffs": {"life_inv_handcuffs"};
+			// case "handcuffkeys": {"life_inv_handcuffkeys"};
 			case "oilu": {"life_inv_oilu"};
 			case "oilp": {"life_inv_oilp"};
 			case "heroinu": {"life_inv_heroinu"};
