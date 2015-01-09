@@ -141,6 +141,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		
 		[_vehicle,_color,_classname,_side] spawn
 		{
+			private["_vehicle","_color","_classname","_side"];
 			sleep 5;
 			_vehicle = _this select 0;
 			_color = _this select 1;

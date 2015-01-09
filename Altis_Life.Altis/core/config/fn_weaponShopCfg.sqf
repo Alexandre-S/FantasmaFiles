@@ -441,45 +441,30 @@ switch(_shop) do
 				// Croix Rouge rang 2
 				if(__GETC__(life_medicLevel) >= 2) then
 				{
-					_ret =
-					["Magasin Service Public rang 2",
-						[
-							["hgun_mas_mak_F",nil,5000],
-							["8Rnd_mas_9x18_Mag",nil,15],
-							["hgun_Rook40_F",nil,6500],
-							["16Rnd_9x21_Mag",nil,25],
-							["hgun_mas_bhp_F",nil,8000],
-							["15Rnd_mas_9x21_Mag",nil,25],
-							["hgun_mas_grach_F",nil,9500],
-							["17Rnd_mas_9x21_Mag",nil,35],
-							["hgun_ACPC2_F",nil,11500],
-							["9Rnd_45ACP_Mag",nil,45]
-						]
-					];
+					(_ret select 1) pushBack ["hgun_mas_mak_F",nil,5000];
+					(_ret select 1) pushBack ["8Rnd_mas_9x18_Mag",nil,15];
+					(_ret select 1) pushBack ["hgun_Rook40_F",nil,6500];
+					(_ret select 1) pushBack ["16Rnd_9x21_Mag",nil,25];
+					(_ret select 1) pushBack ["hgun_mas_bhp_F",nil,8000];
+					(_ret select 1) pushBack ["15Rnd_mas_9x21_Mag",nil,25];
+					(_ret select 1) pushBack ["hgun_mas_grach_F",nil,9500];
+					(_ret select 1) pushBack ["17Rnd_mas_9x21_Mag",nil,35];
+					(_ret select 1) pushBack ["hgun_ACPC2_F",nil,11500];
+					(_ret select 1) pushBack ["9Rnd_45ACP_Mag",nil,45];
 				};
 				// Croix Rouge rang 3
 				if(__GETC__(life_medicLevel) >= 3) then
 				{
-					_ret =
-					["Magasin Service Public rang 3",
-						[
-							["hgun_PDW2000_F",nil,20000],
-							["30Rnd_9x21_Mag",nil,75],
-							["optic_ACO_grn_smg",nil,2500],
-							["optic_Aco_smg",nil,2500]
-						]
-					];
+					(_ret select 1) pushBack ["hgun_PDW2000_F",nil,20000];
+					(_ret select 1) pushBack ["30Rnd_9x21_Mag",nil,75];
+					(_ret select 1) pushBack ["optic_ACO_grn_smg",nil,2500];
+					(_ret select 1) pushBack ["optic_Aco_smg",nil,2500];
 				};
 				// Croix Rouge rang 4
 				if(__GETC__(life_medicLevel) >= 4) then
 				{
-					_ret =
-					["Magasin Service Public",
-						[
-							["hgun_mas_sa61_F",nil,20000],
-							["20Rnd_mas_765x17_Mag",nil,75]
-						]
-					];
+					(_ret select 1) pushBack ["hgun_mas_sa61_F",nil,20000];
+					(_ret select 1) pushBack ["20Rnd_mas_765x17_Mag",nil,75];
 				};
 			};
 		};
@@ -581,71 +566,62 @@ switch(_shop) do
 				// Rang 2
 				if(__GETC__(life_reblevel) >= 2) then
 				{
-					_ret =
-					["Marché noir 2 - rang 2",
-						[
-							["arifle_mas_g3",nil,45000],
-							["arifle_mas_g3s",nil,45000],
-							["arifle_mas_fal",nil,45000],
-							["20Rnd_mas_762x51_Stanag",nil,700],
-							["arifle_mas_m70",nil,45000],
-							["arifle_mas_m70ab",nil,45000],
-							["arifle_mas_m70_gl",nil,50000],
-							["arifle_mas_m70ab_gl",nil,50000],
-							["arifle_mas_akms",nil,40000],
-							["arifle_mas_akms_c",nil,40000],
-							["arifle_mas_akms_gl",nil,45000],
-							["arifle_mas_akms_gl_c",nil,45000],
-							["arifle_mas_akm_gl",nil,50000],
-							["arifle_mas_akm",nil,45000],
-							["30Rnd_mas_762x39_mag",nil,700],
-							["LMG_mas_rpk_F",nil,60000],
-							["100Rnd_mas_545x39_mag",nil,800],
-							["srifle_mas_m91",nil,70000],
-							["srifle_mas_svd",nil,80000],
-							["10Rnd_mas_762x54_mag",nil,1100],
-							["LMG_mas_m72_F",nil,90000],
-							["100Rnd_mas_762x39_mag",nil,1200],
-							["srifle_mas_m24",nil,60000],
-							["srifle_mas_m24_v",nil,60000],
-							["srifle_mas_m24_d",nil,60000],
-							["5Rnd_mas_762x51_Stanag",nil,900],
-							["LMG_mas_M249_F",nil,90000],
-							["LMG_mas_M249_F_v",nil,90000],
-							["LMG_mas_M249_F_d",nil,90000],
-							["200Rnd_mas_556x45_Stanag",nil,1200],
-							["LMG_mas_pkm_F",nil,120000],
-							["100Rnd_mas_762x54_mag",nil,1500],
-							["optic_LRPS",nil,2500],
-							["optic_SOS",nil,3500]
-						]
-					];
+					(_ret select 1) pushBack ["arifle_mas_g3",nil,45000];
+					(_ret select 1) pushBack ["arifle_mas_g3s",nil,45000];
+					(_ret select 1) pushBack ["arifle_mas_fal",nil,45000];
+					(_ret select 1) pushBack ["20Rnd_mas_762x51_Stanag",nil,700];
+					(_ret select 1) pushBack ["arifle_mas_m70",nil,45000];
+					(_ret select 1) pushBack ["arifle_mas_m70ab",nil,45000];
+					(_ret select 1) pushBack ["arifle_mas_m70_gl",nil,50000];
+					(_ret select 1) pushBack ["arifle_mas_m70ab_gl",nil,50000];
+					(_ret select 1) pushBack ["arifle_mas_akms",nil,40000];
+					(_ret select 1) pushBack ["arifle_mas_akms_c",nil,40000];
+					(_ret select 1) pushBack ["arifle_mas_akms_gl",nil,45000];
+					(_ret select 1) pushBack ["arifle_mas_akms_gl_c",nil,45000];
+					(_ret select 1) pushBack ["arifle_mas_akm_gl",nil,50000];
+					(_ret select 1) pushBack ["arifle_mas_akm",nil,45000];
+					(_ret select 1) pushBack ["30Rnd_mas_762x39_mag",nil,700];
+					(_ret select 1) pushBack ["LMG_mas_rpk_F",nil,60000];
+					(_ret select 1) pushBack ["100Rnd_mas_545x39_mag",nil,800];
+					(_ret select 1) pushBack ["srifle_mas_m91",nil,70000];
+					(_ret select 1) pushBack ["srifle_mas_svd",nil,80000];
+					(_ret select 1) pushBack ["10Rnd_mas_762x54_mag",nil,1100];
+					(_ret select 1) pushBack ["LMG_mas_m72_F",nil,90000];
+					(_ret select 1) pushBack ["100Rnd_mas_762x39_mag",nil,1200];
+					(_ret select 1) pushBack ["srifle_mas_m24",nil,60000];
+					(_ret select 1) pushBack ["srifle_mas_m24_v",nil,60000];
+					(_ret select 1) pushBack ["srifle_mas_m24_d",nil,60000];
+					(_ret select 1) pushBack ["5Rnd_mas_762x51_Stanag",nil,900];
+					(_ret select 1) pushBack ["LMG_mas_M249_F",nil,90000];
+					(_ret select 1) pushBack ["LMG_mas_M249_F_v",nil,90000];
+					(_ret select 1) pushBack ["LMG_mas_M249_F_d",nil,90000];
+					(_ret select 1) pushBack ["200Rnd_mas_556x45_Stanag",nil,1200];
+					(_ret select 1) pushBack ["LMG_mas_pkm_F",nil,120000];
+					(_ret select 1) pushBack ["100Rnd_mas_762x54_mag",nil,1500];
+					(_ret select 1) pushBack ["optic_LRPS",nil,2500];
+					(_ret select 1) pushBack ["optic_SOS",nil,3500];
 				};
 				// Rang 3
 				if(__GETC__(life_reblevel) >= 3) then
 				{
-					_ret =
-					["Marché noir - rang 3",
-						[
-							["mas_launch_Strela_F",nil,300000],
-							["mas_Strela",nil,10000],
-							["mas_launch_Stinger_F",nil,300000],
-							["mas_Stinger",nil,10000],
-							["mas_launch_RPG7_F",nil,300000],
-							["mas_PG7V",nil,10000],
-							["mas_launch_M136_F",nil,300000],
-							["mas_M136",nil,10000],
-							["srifle_mas_ksvk",nil,700000],
-							["5Rnd_mas_127x108_mag",nil,5000],
-							["srifle_mas_m107_d",nil,700000],
-							["5Rnd_mas_127x99_Stanag",nil,5000],
-							["APERSMine_Range_Mag",nil,70000],
-							["APERSTripMine_Wire_Mag",nil,70000],
-							["SatchelCharge_Remote_Mag",nil,200000],
-							["O_HMG_01_high_weapon_F",nil,400000],
-							["O_HMG_01_support_high_F",nil,7000]
-						]
-					];
+					(_ret select 1) pushBack ["arifle_mas_g3",nil,45000];
+					(_ret select 1) pushBack ["mas_launch_Strela_F",nil,300000];
+					(_ret select 1) pushBack ["mas_Strela",nil,10000];
+					(_ret select 1) pushBack ["mas_launch_Stinger_F",nil,300000];
+					(_ret select 1) pushBack ["mas_Stinger",nil,10000];
+					(_ret select 1) pushBack ["mas_launch_RPG7_F",nil,300000];
+					(_ret select 1) pushBack ["mas_PG7V",nil,10000];
+					(_ret select 1) pushBack ["mas_launch_M136_F",nil,300000];
+					(_ret select 1) pushBack ["mas_M136",nil,10000];
+					(_ret select 1) pushBack ["srifle_mas_ksvk",nil,700000];
+					(_ret select 1) pushBack ["5Rnd_mas_127x108_mag",nil,5000];
+					(_ret select 1) pushBack ["srifle_mas_m107_d",nil,700000];
+					(_ret select 1) pushBack ["5Rnd_mas_127x99_Stanag",nil,5000];
+					(_ret select 1) pushBack ["APERSMine_Range_Mag",nil,70000];
+					(_ret select 1) pushBack ["APERSTripMine_Wire_Mag",nil,70000];
+					(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,200000];
+					(_ret select 1) pushBack ["O_HMG_01_high_weapon_F",nil,400000];
+					(_ret select 1) pushBack ["O_HMG_01_support_high_F",nil,7000];
 				};
 			};
 		};
