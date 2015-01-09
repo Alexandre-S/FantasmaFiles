@@ -26,6 +26,7 @@ switch (_vehicle) do
 			case 7: {_color = "Noir"};
 			case 8: {_color = "Croix-Rouge"};
 			case 9: {_color = "Rouillé"};
+			case 10: {_color = "Dépanneur"};
 		};
 	};
 	
@@ -396,6 +397,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
+			case 2: {_color = "Depanneur"};
 		};
 	};
 	
@@ -414,6 +416,14 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Noir"};
+		};
+	};
+	
+	case "B_Truck_01_mover_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Dépanneuse"};
 		};
 	};
 	

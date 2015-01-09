@@ -167,7 +167,12 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 
 			if((_side) == "med" && (_classname) == "C_Offroad_01_F") then
 			{
-				[_vehicle,"medic_truck",true] spawn life_fnc_vehicleAnimate;
+				if(_color == 10) then {
+					[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
+					_vehicle setVariable ["service_truck", true, true];
+				}else{
+					[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+				};
 			};
 			if((_side) == "civ" && (_classname) == "LandRover_ACR") then
 			{

@@ -112,11 +112,17 @@ switch(playerSide) do {
 	};
 	
 	case independent: {
-		_vehicle setVariable ["tf_side", civilian, true];	
-		[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+		_vehicle setVariable ["tf_side", civilian, true];
+		if(_className == "C_Offroad_01_F") then {
+			if(_colorIndex == 10) then {
+				_vehicle setVariable ["service_truck", true, true];
+				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
+			} else {
+				[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+			};
+		};
 	};
 };
-
 playSound "caching";
 
 [_vehicle] spawn

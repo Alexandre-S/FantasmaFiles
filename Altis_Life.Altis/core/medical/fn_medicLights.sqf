@@ -5,19 +5,30 @@
 	
 	Description:
 	Adds the light effect to cop vehicles, specifically the offroad.
-*/
-Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed"];
+*/		_vehicle setVariable ["service_truck", true, true];
+
+Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed","service_truck"];
 _vehicle = _this select 0;
-	
+service_truck =	_vehicle getVariable["service_truck",FALSE];
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
-_lightRed = [0.1, 0.1, 20];
-_lightBlue = [0.1, 0.1, 20];
+
+if(service_truck) then {
+	_lightRed = [255, 174, 0.1];
+	_lightBlue = [255, 174, 0.1];
+} else {
+	_lightRed = [0.1, 0.1, 20];
+	_lightBlue = [0.1, 0.1, 20];
+};
 
 _lightleft = "#lightpoint" createVehicle getpos _vehicle;   
 sleep 0.2;
 _lightleft setLightColor _lightRed; 
-_lightleft setLightBrightness 0.2;  
-_lightleft setLightAmbient [0.1,0.1,20];
+_lightleft setLightBrightness 0.2;
+if(service_truck) then {
+	_lightleft setLightAmbient [255, 174, 0.1];
+} else {
+	_lightleft setLightAmbient [0.1,0.1,20];
+};
 
 switch (typeOf _vehicle) do
 {
@@ -37,7 +48,12 @@ _lightright = "#lightpoint" createVehicle getpos _vehicle;
 sleep 0.2;
 _lightright setLightColor _lightBlue; 
 _lightright setLightBrightness 0.2;  
-_lightright setLightAmbient [0.1,0.1,20]; 
+
+if(service_truck) then {
+	_lightright setLightAmbient [255, 174, 0.1]; 
+} else {
+	_lightright setLightAmbient [0.1,0.1,20]; 
+};
 
 switch (typeOf _vehicle) do
 {

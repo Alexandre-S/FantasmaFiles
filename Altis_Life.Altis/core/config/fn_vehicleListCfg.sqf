@@ -132,8 +132,8 @@ switch (_shop) do
 		];
 		if(__GETC__(life_medicLevel) >= 2 && __GETC__(life_donator) > 0) then
 		{
-			_return pushBack
-			["C_Hatchback_01_sport_F",11300];
+			_return pushBack ["C_Hatchback_01_sport_F",11300];
+			_return pushBack ["B_Truck_01_mover_F",30000];
 		};
 		if(__GETC__(life_medicLevel) >= 3) then
 		{
@@ -149,10 +149,12 @@ switch (_shop) do
 	case "med_air_hs": {
 		if(__GETC__(life_medicLevel) >= 1) then
 		{
-			_return pushBack
-			["C_Heli_Light_01_civil_F",40000];
-			_return pushBack
-			["B_Heli_Light_01_F",40000];
+			_return pushBack ["C_Heli_Light_01_civil_F",40000];
+			_return pushBack ["B_Heli_Light_01_F",40000];
+		};
+		if(__GETC__(life_medicLevel) >= 1 && __GETC__(life_donator) > 0) then
+		{
+			_return pushBack ["I_Heli_Transport_02_F",75000];
 		};
 		if(__GETC__(life_medicLevel) >= 2) then
 		{

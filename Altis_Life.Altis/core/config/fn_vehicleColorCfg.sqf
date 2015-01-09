@@ -18,7 +18,8 @@ switch (_vehicle) do
 		_ret =
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
-			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"]
+			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
+			["altisrpfr\texture\mohawk_dep_hull.paa","med","altisrpfr\texture\mohawk_dep_back_hull.paa","altisrpfr\texture\mohawk_dep_rotor.paa"]
 		];
 	};
 	
@@ -61,7 +62,8 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","cop"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["altisrpfr\textures\med_offroad.paa","med"],
-			["altisrpfr\textures\offroad_rouille.paa","civ"]
+			["altisrpfr\textures\offroad_rouille.paa","civ"],
+			["altisrpfr\texture\offroad_depannage.paa","med"]
 		];
 	};
 	
@@ -263,6 +265,14 @@ switch (_vehicle) do
 		[
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
+		];
+	};
+	
+	case "B_Truck_01_mover_F":
+	{
+		_ret = 
+		[
+			["altisrpfr\texture\CIV_Depann_hemtt.paa","med"]
 		];
 	};
 	
