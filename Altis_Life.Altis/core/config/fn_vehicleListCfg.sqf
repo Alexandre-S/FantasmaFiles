@@ -154,7 +154,7 @@ switch (_shop) do
 		};
 		if(__GETC__(life_medicLevel) >= 1 && __GETC__(life_donator) > 0) then
 		{
-			_return pushBack ["I_Heli_Transport_02_F",75000];
+			_return pushBack ["I_Heli_Transport_02_F",350000];
 		};
 		if(__GETC__(life_medicLevel) >= 2) then
 		{
