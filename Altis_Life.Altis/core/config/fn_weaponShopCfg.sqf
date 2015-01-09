@@ -383,7 +383,8 @@ switch(_shop) do
 					_ret =
 					["Magasin Service Public rang 1",
 						[
-							["U_Rangemaster",nil,250],
+							["U_Rangemaster","Uniforme Medecin",250],
+							["U_Competitor","Uniforme Dépanneur",250],
 							["FANTASMA_MedicTenue",nil,550],
 							["G_Shades_Black",nil,25],
 							["G_Shades_Blue",nil,20],
