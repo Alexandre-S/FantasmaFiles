@@ -19,7 +19,7 @@ switch (_vehicle) do
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
-			["altisrpfr\texture\mohawk_dep_hull.paa","med","altisrpfr\texture\mohawk_dep_back_hull.paa","altisrpfr\texture\mohawk_dep_rotor.paa"]
+			["altisrpfr\textures\mohawk_dep_hull.paa","med","altisrpfr\textures\mohawk_dep_back_hull.paa","altisrpfr\textures\mohawk_dep_rotor.paa"]
 		];
 	};
 	
@@ -63,7 +63,7 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["altisrpfr\textures\med_offroad.paa","med"],
 			["altisrpfr\textures\offroad_rouille.paa","civ"],
-			["altisrpfr\texture\offroad_depannage.paa","med"]
+			["altisrpfr\textures\offroad_depannage.paa","med"]
 		];
 	};
 	
@@ -272,7 +272,7 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["altisrpfr\texture\CIV_Depann_hemtt.paa","med"]
+			["altisrpfr\textures\CIV_Depann_hemtt.paa","med"]
 		];
 	};
 	

@@ -12,7 +12,7 @@ if(isNull _unit) exitWith {}; //Dafuq?
 if(_unit != player) exitWith {}; //Dafuq?
 if(life_is_arrested) exitWith {}; //Dafuq i'm already arrested
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
-[player, false] call AGM_Captives_fnc_setCaptive
+[player, false] call AGM_Captives_fnc_setCaptive;
 player setVariable["AGM_isCaptive",false,true];
 player setVariable["AGM_isEscorting",false,true];
 

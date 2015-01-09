@@ -477,7 +477,7 @@ switch(_shop) do
 					["Magasin Service Public",
 						[
 							["hgun_mas_sa61_F",nil,20000],
-							["20Rnd_mas_765x17_Mag",nil,75],
+							["20Rnd_mas_765x17_Mag",nil,75]
 						]
 					];
 				};
