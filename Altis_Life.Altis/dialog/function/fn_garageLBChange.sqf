@@ -30,15 +30,17 @@ _assurPrice = if(_assurPrice == -1) then {1000} else {(__GETC__(life_assur_price
 if(side player == west) then {
 	_retrievePrice = 1;
 	_sellPrice = 1;
+	_assurPrice = 1;
 };
 if(side player == independent) then {
 	_retrievePrice = 100;
 	_sellPrice = 100;
+	_assurPrice = 100;
 };
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
-	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
-	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
+	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>%1€</t><br/>
+	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>%2€</t><br/>
 	Prix assurance: <t color='#8cff9b'>%9€</t><br/>
 	Etat de l'assurance: %10<br/>
 	" +(localize "STR_Shop_Veh_UI_Color")+ " %8<br/>

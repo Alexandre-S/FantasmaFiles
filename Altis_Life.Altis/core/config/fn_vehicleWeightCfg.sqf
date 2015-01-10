@@ -28,6 +28,7 @@ switch (_className) do
 	case "RDS_Ikarus_Civ_01": {75};
 	case "C_Van_01_transport_F": {100};
 	case "C_Van_01_box_F": {150};
+	case "C_Van_01_fuel_F": {150};
 	case "I_Truck_02_transport_F": {200};
 	case "I_Truck_02_covered_F": {250};
 	case "B_Truck_01_transport_F": {325};

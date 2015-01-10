@@ -187,6 +187,28 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "C_Van_01_fuel_F":
+	{
+		_ret = 
+		[
+			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa","civ","\A3\soft_f_gamma\van_01\Data\van_01_tank_CO.paa"],
+			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","civ","\A3\soft_f_gamma\van_01\Data\van_01_tank_red_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_blue_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_blue_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_darkblue_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_darkblue_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_darkgreen_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_darkgreen_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_lightgreen_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_lightgreen_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_lightyellow_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_lightyellow_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_orange_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_orange_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_grey_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_grey_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_black_CO.paa","civ","\plp_truckColors\van_tank\van_01_tank_black_CO.paa"],
+			["\A3\soft_f_gamma\van_01\Data\van_01_ext_CO.paa","civ","\plp_truckColors\van_tank_painted\van_01_tank_bp_CO.paa"],
+			["\A3\soft_f_gamma\van_01\Data\van_01_ext_red_CO.paa","civ","\plp_truckColors\van_tank_painted\van_01_tank_china_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_darkblue_CO.paa","civ","\plp_truckColors\van_tank_painted\van_01_tank_bluewhite_CO.paa"],
+			["\A3\soft_f_gamma\van_01\Data\van_01_ext_CO.paa","civ","\plp_truckColors\van_tank_painted\van_01_tank_shell_CO.paa"],
+			["\plp_truckColors\van_front_painted\van_01_ext_fuel_CO.paa","civ","\plp_truckColors\van_tank_painted\van_01_tank_fuel_CO.paa"]
+		];
+	};
+	
 	case "B_Quadbike_01_F":
 	{
 		_ret = 
