@@ -28,6 +28,10 @@ switch (_filter) do
 			_ret pushBack ["O_FEM_CSAT_Long",nil,0];
 			_ret pushBack ["B_FEM_NATO_long",nil,0];
 			_ret pushBack ["I_FEM_AAF_long",nil,0];
+			_ret pushBack ["B_FEM_NATO_Collar",nil,0];
+			_ret pushBack ["B_FEM_NATO_Rolled",nil,0];
+			_ret pushBack ["O_FEM_CSAT_Rolled",nil,0];
+			_ret pushBack ["B_FEM_AAF_Rolled",nil,0];
 		};
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		_ret pushBack ["ARC_FR_CE_Uniform_tshirt","Tenue recrue 1",0];

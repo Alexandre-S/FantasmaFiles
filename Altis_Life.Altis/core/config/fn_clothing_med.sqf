@@ -122,6 +122,10 @@ switch (_filter) do
 			_ret pushBack ["O_FEM_CSAT_Long",nil,1200];
 			_ret pushBack ["B_FEM_NATO_long",nil,1200];
 			_ret pushBack ["I_FEM_AAF_long",nil,1200];
+			_ret pushBack ["B_FEM_NATO_Collar",nil,2100];
+			_ret pushBack ["B_FEM_NATO_Rolled",nil,2100];
+			_ret pushBack ["O_FEM_CSAT_Rolled",nil,2100];
+			_ret pushBack ["B_FEM_AAF_Rolled",nil,2100];
 		};
 	};
 	
