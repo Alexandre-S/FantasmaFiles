@@ -7,7 +7,7 @@
 	Adds the light effect to cop vehicles, specifically the offroad.
 */
 
-Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed","service_truck"];
+Private ["_vehicle","_lightRed","_lightBlue","_lightleft","_lightright","_leftRed","_service_truck"];
 _vehicle = _this select 0;
 service_truck =	_vehicle getVariable["service_truck",FALSE];
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
