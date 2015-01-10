@@ -19,6 +19,16 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
+		if(life_sexe) then
+		{
+			_ret pushBack ["B_FEM_NATO",nil,0];
+			_ret pushBack ["B_FEM_FIA",nil,0];
+			_ret pushBack ["O_FEM_CSAT",nil,0];
+			_ret pushBack ["I_FEM_AAF",nil,0];
+			_ret pushBack ["O_FEM_CSAT_Long",nil,0];
+			_ret pushBack ["B_FEM_NATO_long",nil,0];
+			_ret pushBack ["I_FEM_AAF_long",nil,0];
+		};
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		_ret pushBack ["ARC_FR_CE_Uniform_tshirt","Tenue recrue 1",0];
 		_ret pushBack ["ARC_FR_Daguet_Uniform_tshirt","Tenue recrue 2",0];

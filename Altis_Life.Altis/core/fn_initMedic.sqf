@@ -24,6 +24,12 @@ if(str(player) in ["medic_7","medic_8","medic_9","medic_10"]) then {
 		sleep 35;
 	};
 };
+if(face player in life_women && !life_sexe) then
+{
+	player enableSimulation false;
+	["NotFemale",false,true] call BIS_fnc_endMission;
+	sleep 35;
+};
 
 if (!life_is_alive || (count life_position) == 0) then
 {

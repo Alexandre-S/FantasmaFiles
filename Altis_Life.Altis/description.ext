@@ -127,6 +127,16 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
+	class NotFemale
+	{
+		title = "Echec de connection";
+		subtitle = "Vous n'êtes pas autorisé à utiliser un skin féminin";
+		description = "Vous ne pouvez pas rejoindre le serveur avec un visage féminin. Veuillez le changer dans votre profil ou faire une demande au staff";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
 	class NotCop
 	{
 		title = "Réservé ONU";

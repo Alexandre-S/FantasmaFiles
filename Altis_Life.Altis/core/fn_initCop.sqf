@@ -37,6 +37,12 @@ if(str(player) in ["cop_16","cop_17","cop_18","cop_19","cop_20","cop_21","cop_22
 		sleep 35;
 	};
 };
+if(face player in life_women && !life_sexe) then
+{
+	player enableSimulation false;
+	["NotFemale",false,true] call BIS_fnc_endMission;
+	sleep 35;
+};
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
 

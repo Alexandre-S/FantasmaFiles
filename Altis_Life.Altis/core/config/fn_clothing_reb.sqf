@@ -19,6 +19,16 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
+		if(life_sexe) then
+		{
+			_ret pushBack ["B_FEM_NATO",nil,800];
+			_ret pushBack ["B_FEM_FIA",nil,800];
+			_ret pushBack ["O_FEM_CSAT",nil,800];
+			_ret pushBack ["I_FEM_AAF",nil,800];
+			_ret pushBack ["O_FEM_CSAT_Long",nil,1200];
+			_ret pushBack ["B_FEM_NATO_long",nil,1200];
+			_ret pushBack ["I_FEM_AAF_long",nil,1200];
+		};
 		_ret pushBack ["U_IG_Guerilla1_1",nil,5000];
 		_ret pushBack ["U_I_G_resistanceLeader_F",nil,11500];
 		_ret pushBack ["U_O_SpecopsUniform_ocamo",nil,17500];

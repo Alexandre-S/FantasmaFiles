@@ -14,7 +14,7 @@ civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", ["Land_i_Shop_01_V1_F"
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],250];
 waitUntil {!(isNull (findDisplay 46))};
 
-if(__GETC__(life_coplevel) > 0 || __GETC__(life_medicLevel) > 0) exitWith
+if(__GETC__(life_coplevel) != 0 OR __GETC__(life_medicLevel) != 0) exitWith
 {
 	player enableSimulation false;
 	["NotCiv",false,true] call BIS_fnc_endMission;
@@ -29,7 +29,12 @@ if(str(player) in ["civ_51","civ_52","civ_53","civ_54","civ_55","civ_56","civ_57
 		sleep 35;
 	};
 };
-
+if(face player in life_women && !life_sexe) then
+{
+	player enableSimulation false;
+	["NotFemale",false,true] call BIS_fnc_endMission;
+	sleep 35;
+};
 
 if(life_is_arrested || (!(life_is_alive) && (life_firstSpawn)) ) then
 {

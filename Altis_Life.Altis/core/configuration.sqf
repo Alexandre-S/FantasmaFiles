@@ -34,6 +34,7 @@ life_handcuffs = ObjNull;
 life_handcuffkeys = ObjNull;
 //Channel 7
 life_channel_send = true;
+life_sexe = false;
 
 life_isblacklisted = false;
 life_factnumber = 0;
@@ -46,6 +47,7 @@ dayz_combat = 0;
 life_truckreverse_active  = false;
 life_truck_types = ["B_Truck_01_mover_F","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_fuel_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F","RDS_Ikarus_Civ_01"];
 life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange"];
+life_women = ["Oakes","Oakes_helmet","Oakes_helmet_camo","Tyler","Tyler_scars","Mason","Mason_camo","Mason_Rigged","Mason_scars","Smith","Cheung","Cheung_headgear","Quereshi","Quereshi_Headgear"];
 
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?

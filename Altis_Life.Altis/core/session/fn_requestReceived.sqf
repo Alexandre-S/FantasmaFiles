@@ -59,6 +59,7 @@ switch(playerSide) do {
 			life_hunger = parseNumber(_this select 13);
 			life_thirst = parseNumber(_this select 14);
 		};
+		life_sexe = _this select 15;
 	};
 	
 	case civilian: {
@@ -71,14 +72,14 @@ switch(playerSide) do {
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
-		life_houses = _this select 18;
+		life_houses = _this select 20;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
 		// Same here, select 10 + 3 fields, is that right ?
-		life_gangData = _This select 19;
+		life_gangData = _This select 21;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -92,6 +93,8 @@ switch(playerSide) do {
 			life_hunger = parseNumber(_this select 16);
 			life_thirst = parseNumber(_this select 17);
 		};
+		life_sexe = _this select 18;
+		life_ganglvl = parseNumber(_this select 19);
 	};
 	
 	case independent: {
@@ -105,14 +108,15 @@ switch(playerSide) do {
 			life_hunger = parseNumber(_this select 13);
 			life_thirst = parseNumber(_this select 14);
 		};
+		life_sexe = _this select 15;
 	};
 };
 
 [] call life_fnc_loadGear;
 
 // recup des clefs houses/vehicles
-if(count (_this select 20) > 0) then { 
-	{life_vehicles pushBack _x;} foreach (_this select 20);
+if(count (_this select 22) > 0) then { 
+	{life_vehicles pushBack _x;} foreach (_this select 22);
 };
 
 life_session_completed = true;
