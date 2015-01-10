@@ -411,7 +411,7 @@
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>
 			<German>An die Sanitäter</German>
-			<French>SMS Medic</French>
+			<French>SMS Medic/Dep</French>
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>

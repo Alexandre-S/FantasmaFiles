@@ -165,17 +165,17 @@ switch (_code) do
 	case 46:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1 && (animationState player) != "Incapacitated") then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["AGM_isCaptive",false]) && !life_istazed && !(cursorTarget getVariable "AGM_isCaptive")) then
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["AGM_isCaptive",false]) && !life_istazed && !(cursorTarget getVariable ["AGM_isCaptive",false])) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
 				if("ItemWatch" in assignedItems cursorTarget) then {
 					cursorTarget removeweapon "ItemWatch";
-					hint "La smartwatch de la personne est désormais au sol.";
+					hint "La téléphone de la personne est désormais au sol.";
 					_defenceplace1 = "Item_ItemWatch" createVehicle (player modelToWorld[0,0,0]);
 				} else { 
-					hint "La personne n'a pas de smartwatch !";
+					hint "La personne n'a pas de téléphone !";
 				};
 			};
 		};
@@ -249,7 +249,7 @@ switch (_code) do
 			};
 		};
 		
-		if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
+		// if(!_alt && !_ctrlKey) then { [] call life_fnc_radar; };
 	};
 	//Y Player Menu
 	/*case 21:
