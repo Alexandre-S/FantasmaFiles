@@ -97,8 +97,7 @@ switch(_shop) do
 						["optic_Holosight",nil,0],
 						["hgun_mas_m9_F",nil,0],
 						["15Rnd_mas_9x21_Mag",nil,0],
-						["HandGrenade_Stone","Flashbang",0],
-						["AGM_Vector",nil,0]
+						["HandGrenade_Stone","Flashbang",0]
 					]
 				];
 			};
@@ -170,6 +169,7 @@ switch(_shop) do
 						["optic_mas_zeiss_eo",nil,0],
 						["optic_mas_zeiss_eo_c",nil,0],
 						["Rangefinder",nil,0],
+						["AGM_Vector",nil,0],
 						["muzzle_mas_snds_SM",nil,0],
 						["muzzle_mas_snds_SMc",nil,0]
 					]
@@ -326,6 +326,7 @@ switch(_shop) do
 						["optic_Yorris",nil,0],
 						["acc_pointer_IR",nil,0],
 						["Rangefinder",nil,0],
+						["AGM_Vector",nil,0],
 						["Laserdesignator",nil,0],
 						["Laserbatteries",nil,0],
 						["B_UavTerminal",nil,0],
