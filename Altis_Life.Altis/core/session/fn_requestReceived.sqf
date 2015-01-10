@@ -94,7 +94,6 @@ switch(playerSide) do {
 			life_thirst = parseNumber(_this select 17);
 		};
 		life_sexe = _this select 18;
-		life_ganglvl = parseNumber(_this select 19);
 	};
 	
 	case independent: {
