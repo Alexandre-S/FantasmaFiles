@@ -99,7 +99,8 @@ class Mission
 		"CBA_Main",
 		"task_force_radio_items",
 		"AGM_Core",
-		"A3_Structures_F_Heli_Ind_Machines"
+		"A3_Structures_F_Heli_Ind_Machines",
+		"A3_Characters_F_Beta"
 	};
 	addOnsAuto[]=
 	{
@@ -107,6 +108,7 @@ class Mission
 		"a3_characters_f",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_BLUFOR",
+		"A3_Characters_F_Beta",
 		"A3_Characters_F_Kart",
 		"rds_a2port_cman",
 		"A3_Modules_F_Curator_Curator",
@@ -2932,9 +2934,8 @@ class Mission
 				};
 				class Item56
 				{
-					position[]={17900.955,63.368507,11964.566};
+					position[]={18014.219,75.025856,11863.904};
 					azimut=-157.814;
-					offsetY=0.75;
 					special="NONE";
 					id=161;
 					side="CIV";
@@ -18650,7 +18651,7 @@ class Mission
 		};
 		class Item83
 		{
-			position[]={17899.488,63.269726,11965.257};
+			position[]={18013.037,75.006271,11864.838};
 			name="Dealer_1_3";
 			text="Dealer";
 			type="mil_dot";
