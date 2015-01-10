@@ -46,7 +46,7 @@ if(isnull _source) then {
 //suicide death
 if(_uid == _sid) then {_weapon = "";};
 
-if(_type == 0) then {
+/*if(_type == 0) then {
 	[_unit] spawn {
 		private["_unit","_Object"];
 		_unit = _this select 0;
@@ -66,11 +66,11 @@ if(_type == 0) then {
 		};
 	};
 	//remove body
-	/*[_unit, 600] spawn {
+	[_unit, 600] spawn {
 	  sleep (_this select 1);
 	  deleteVehicle (_this select 0);
-	};*/
-};
+	};
+};*/
 
 _query = format["INSERT INTO logdeath (uid, sid, pos, type, distance, weapon) VALUES ('%1', '%2', '%3', '%4', '%5', '%6')",_uid,_sid,_pos,_type,_distance,_weapon];
 waitUntil{!DB_Async_Active};
