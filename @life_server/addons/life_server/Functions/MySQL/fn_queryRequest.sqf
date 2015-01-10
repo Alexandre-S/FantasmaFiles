@@ -114,7 +114,7 @@ switch (_side) do {
 		//alive
 		_queryResult set[13,([_queryResult select 13,1] call DB_fnc_bool)];
 		_queryResult set[14,([_queryResult select 14,1] call DB_fnc_bool)];
-		_queryResult set[18,([_queryResult select 15,1] call DB_fnc_bool)];
+		_queryResult set[18,([_queryResult select 18,1] call DB_fnc_bool)];
 	};
 	
 	case independent: {
