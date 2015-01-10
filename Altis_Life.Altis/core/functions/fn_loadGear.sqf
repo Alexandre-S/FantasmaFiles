@@ -169,14 +169,18 @@ _vItems2 = _vItems;
 life_maxWeight = 100;
 if(_oldsys) then {
 	{
-		_item = [_x,1] call life_fnc_varHandle;
-		[true,_item,1] call life_fnc_handleInv;
+		if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
+			_item = [_x,1] call life_fnc_varHandle;
+			[true,_item,1] call life_fnc_handleInv;
+		};
 	} foreach (_yItems);
 } else {
 	{
 		_item = _x select 0;
-		_item = [_item,1] call life_fnc_varHandle;
-		[true,_item,_x select 1,true] call life_fnc_handleInv;
+		if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
+			_item = [_item,1] call life_fnc_varHandle;
+			[true,_item,_x select 1,true] call life_fnc_handleInv;
+		};
 	} foreach (_yItems);
 };
 life_maxWeight = 24;
