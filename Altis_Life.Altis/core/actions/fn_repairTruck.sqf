@@ -26,11 +26,29 @@ if((_veh isKindOf "LandVehicle") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Ai
 		_progress progressSetPosition 0.01;
 		_cP = 0.01;
 		
+		// play appropriate anim
+		private "_fnc_playAnim";
+		_fnc_playAnim = {
+			if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
+				_this action ["LadderOff", nearestObject [position _this, "House"]];
+			};
+			waitUntil {isTouchingGround _this};
+			waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
+			if !(alive _this) exitWith {};
+			[_this, "InBaseMoves_repairVehicleKnl", 1, True] call AGM_Core_fnc_doAnimation;
+			sleep 0.15;
+			if (animationState _this != "InBaseMoves_repairVehicleKnl") then {
+				[_this, "InBaseMoves_repairVehicleKnl", 2, True] call AGM_Core_fnc_doAnimation;
+			};
+		};
+
+		playSound "action_repair";
 		while{true} do
 		{
-			if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-				[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-				player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+			if(animationState player != "InBaseMoves_repairVehicleKnl") then {
+				player spawn _fnc_playAnim;
+				// [[player,"InBaseMoves_repairVehicleKnl"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+				// player playMoveNow "InBaseMoves_repairVehicleKnl";
 			};
 			sleep 0.27;
 			_cP = _cP + 0.01;
@@ -47,9 +65,7 @@ if((_veh isKindOf "LandVehicle") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Ai
 		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
-		if(playerSide == civilian) then {
-			player removeItem "ToolKit";
-		};
+		if(playerSide == civilian) then { player removeItem "ToolKit"; };
 		_veh setDamage 0;
 		titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 	};

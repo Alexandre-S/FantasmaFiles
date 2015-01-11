@@ -30,12 +30,29 @@ _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
+// play appropriate anim
+private "_fnc_playAnim";
+_fnc_playAnim = {
+	if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
+		_this action ["LadderOff", nearestObject [position _this, "House"]];
+	};
+	waitUntil {isTouchingGround _this};
+	waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
+	if !(alive _this) exitWith {};
+	[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
+	sleep 0.15;
+	if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
+	};
+};
+
 //Lets reuse the same thing!
 while {true} do
 {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+		player spawn _fnc_playAnim;
+		// [[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		// player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
 	sleep 0.15;
 	_cP = _cP + 0.01;
