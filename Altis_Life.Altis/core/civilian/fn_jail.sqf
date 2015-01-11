@@ -35,6 +35,8 @@ if(player distance (getMarkerPos "jail_marker") > 40) then
 [1] call life_fnc_removeLicenses;
 if(life_inv_heroinu > 0) then {[false,"heroinu",life_inv_heroinu] call life_fnc_handleInv;};
 if(life_inv_heroinp > 0) then {[false,"heroinp",life_inv_heroinp] call life_fnc_handleInv;};
+if(life_inv_seigle > 0) then {[false,"seigle",life_inv_seigle] call life_fnc_handleInv;};
+if(life_inv_lsd > 0) then {[false,"lsd",life_inv_lsd] call life_fnc_handleInv;};
 if(life_inv_coke > 0) then {[false,"cocaine",life_inv_coke] call life_fnc_handleInv;};
 if(life_inv_cokep > 0) then {[false,"cocainep",life_inv_cokep] call life_fnc_handleInv;};
 if(life_inv_turtle > 0) then {[false,"turtle",life_inv_turtle] call life_fnc_handleInv;};

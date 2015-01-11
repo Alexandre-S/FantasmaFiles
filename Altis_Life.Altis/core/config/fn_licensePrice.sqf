@@ -23,6 +23,7 @@ switch (_type) do
 	case "piloteauto": {50000}; //piloteauto License cost
 	case "snipe": {150000}; //snipe license cost
 	case "heroin": {250000}; //Heroin processing license cost
+	case "lsd": {225000}; //LSD processing license cost
 	case "marijuana": {200000}; //Marijuana processing license cost
 	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
 	case "gang": {10000}; //Gang license cost

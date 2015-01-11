@@ -8,7 +8,7 @@
 
 ////////////MAIN CONFIG
 
-private["_queryResult","_query","_item","_itemprice","_oilpPrice","_iron_rPrice","_diamondcPrice","_copper_rPrice","_salt_rPrice","_glassPrice","_cementPrice","_turtlePrice","_marijuanaPrice","_cocainepPrice","_heroinpPrice","_goldbarPrice"];
+private["_queryResult","_query","_item","_itemprice","_oilpPrice","_iron_rPrice","_diamondcPrice","_copper_rPrice","_salt_rPrice","_glassPrice","_cementPrice","_turtlePrice","_marijuanaPrice","_cocainepPrice","_heroinpPrice","_lsdPrice","_goldbarPrice"];
 
 
 _query = format["SELECT resource, price FROM resources"];
@@ -38,6 +38,7 @@ diag_log "------------------------------------------------";
 	if(_item == "marijuana") then {_marijuanaPrice = _itemprice}; // The right price should be assigned
 	if(_item == "cocainep") then {_cocainepPrice = _itemprice}; // The right price should be assigned
 	if(_item == "heroinp") then {_heroinpPrice = _itemprice}; // The right price should be assigned
+	if(_item == "lsd") then {_lsdPrice = _itemprice}; // The right price should be assigned
 	if(_item == "goldbar") then {_goldbarPrice = _itemprice}; // The right price should be assigned
 	
 } forEach _rows;
@@ -138,7 +139,8 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["cocainep",1],
-			["heroinp",1]
+			["heroinp",1],
+			["lsd",1]
 		] 
 	],
 	
@@ -146,7 +148,8 @@ life_market_resources = [
 		[ 
 			["cocainep",1],
 			["heroinp",1],
-			["turtle",1]
+			["turtle",1],
+			["lsd",1]
 		] 
 	],
 	
@@ -154,7 +157,8 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["heroinp",1],
-			["turtle",1]
+			["turtle",1],
+			["lsd",1]
 		] 
 	],
 	
@@ -162,6 +166,16 @@ life_market_resources = [
 		[ 
 			["marijuana",1], 
 			["cocainep",1],
+			["turtle",1],
+			["lsd",1]
+		] 
+	]
+	
+	["lsd", _lsdPrice, 1575, 4875, 8, 6, 
+		[ 
+			["marijuana",1], 
+			["cocainep",1],
+			["heroinp",1],
 			["turtle",1]
 		] 
 	]

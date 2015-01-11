@@ -2868,6 +2868,14 @@
 			<Italian>Eroina processata</Italian>
 			<Portuguese>Heroína Processada</Portuguese>
 		</Key>
+		<Key ID="STR_Item_Seigle">
+			<Original>Seigle</Original>
+			<French>Seigle</French>
+		</Key>
+		<Key ID="STR_Item_LSD">
+			<Original>LSD</Original>
+			<French>LSD</French>
+		</Key>
 		<Key ID="STR_Item_Marijuana">
 			<Original>Marijuana</Original>
 			<German>Marihuana</German>
@@ -3282,6 +3290,10 @@
 			<French>Transformation du Pavot</French>
 			<Italian>Processo Eroina</Italian>
 			<Portuguese>Treinamento de Heroina</Portuguese>
+		</Key>
+		<Key ID="STR_License_LSD">
+			<Original>LSD Training</Original>
+			<French>Transformation du LSD</French>
 		</Key>
 		<Key ID="STR_License_Oil">
 			<Original>Oil Processing</Original>
@@ -3745,6 +3757,13 @@
 			<French>Traitement d'Heroine</French>
 			<Italian>Processando Eroina</Italian>
 			<Portuguese>Processando Heroina</Portuguese>
+		</Key>
+		<Key ID="STR_Process_LSD">
+			<Original>Processing LSD</Original>
+			<German>LSD wird verarbeitet</German>
+			<French>Traitement du LSD</French>
+			<Italian>Processando LSD</Italian>
+			<Portuguese>Processando LSD</Portuguese>
 		</Key>
 		<Key ID="STR_Process_Copper">
 			<Original>Processing Copper</Original>

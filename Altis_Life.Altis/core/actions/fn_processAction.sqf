@@ -17,6 +17,7 @@ _itemInfo = switch (_type) do
 	case "oil": {["oilu","oilp",1200,(localize "STR_Process_Oil")];};
 	case "diamond": {["diamond","diamondc",1350,(localize "STR_Process_Diamond")];};
 	case "heroin": {["heroinu","heroinp",1750,(localize "STR_Process_Heroin")];};
+	case "lsd": {["seigle","lsd",750,(localize "STR_Process_LSD")];};
 	case "copper": {["copperore","copper_r",750,(localize "STR_Process_Copper")];};
 	case "iron": {["ironore","iron_r",1120,(localize "STR_Process_Iron")];};
 	case "sand": {["sand","glass",650,(localize "STR_Process_Sand")];};
