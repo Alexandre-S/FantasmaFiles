@@ -115,7 +115,7 @@ switch(playerSide) do {
 
 // recup des clefs houses/vehicles
 if(count (_this select 21) > 0) then { 
-	{life_vehicles pushBack _x;} foreach (_this select 22);
+	{life_vehicles pushBack _x;} foreach (_this select 21);
 };
 
 life_session_completed = true;
