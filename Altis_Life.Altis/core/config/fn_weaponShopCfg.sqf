@@ -408,6 +408,8 @@ switch(_shop) do
 				["Armurerie : Hauts Gradés",
 					[
 						["CUP_20Rnd_B_AA12_HE",nil,0],
+						["CUP_srifle_M107_Base",nil,0],
+						["CUP_10Rnd_127x99_M107",nil,0],
 						["CUP_5Rnd_127x99_as50_M",nil,0],
 						["CUP_srifle_AS50",nil,0],
 						["CUP_optic_SB_3_12x50_PMII",nil,0],
