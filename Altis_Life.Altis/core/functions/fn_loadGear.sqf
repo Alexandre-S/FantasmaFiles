@@ -188,7 +188,7 @@ life_maxWeight = 24;
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if(_prim != "") then {_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 if(_seco != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_launcher != "") then {_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_launcher != "") then {_handle = [_launcher,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
 
 {
     if (_x != "") then {
