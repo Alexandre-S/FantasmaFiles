@@ -3411,13 +3411,15 @@ class Mission
 				};
 				class Item97
 				{
-					position[]={17564.059,7.3042383,14479.5};
-					azimut=-127.51948;
+					position[]={17563.922,7.29,14475.394};
+					azimut=-497.01483;
+					offsetY=0.2;
+					special="NONE";
 					id=202;
-					side="WEST";
-					vehicle="B_RangeMaster_F";
+					side="CIV";
+					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="removeAllWeapons this; this enableSimulation false; this allowDamage false; this addAction[""Payer contravention"",life_fnc_postBail,"""",0,false,false,"""",' isNil ""life_canpay_bail"" && life_is_arrested '];";
+					init="removeAllWeapons this; removeHeadgear this; this enableSimulation false; this allowDamage false; this addAction[""Payer Caution"",life_fnc_postBail,"""",0,false,false,"""",' isNil ""life_canpay_bail"" && life_is_arrested '];";
 				};
 				class Item98
 				{

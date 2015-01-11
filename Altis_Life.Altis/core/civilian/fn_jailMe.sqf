@@ -10,7 +10,7 @@ _ret = [_this,0,[],[[]]] call BIS_fnc_param;
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
 if(_bad) then { _time = time + 1100; } else { _time = time + (15 * 60); };
 
-if(count _ret > 0) then { life_bail_amount = (_ret select 3); } else { life_bail_amount = 1500; _time = time + (10 * 60); };
+if(count _ret > 0) then { life_bail_amount = (_ret select 3); } else { life_bail_amount = 200000; _time = time + (10 * 60); };
 _esc = false;
 _bail = false;
 
