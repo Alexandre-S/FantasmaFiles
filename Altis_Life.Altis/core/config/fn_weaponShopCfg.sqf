@@ -192,7 +192,7 @@ switch(_shop) do
 						["optic_SOS",nil,0],
 						["optic_NVS",nil,0],
 						["Rangefinder",nil,0],
-						["AGM_Vector",nil,0],
+						["AGM_Vector",nil,0]
 					]
 				];
 			};

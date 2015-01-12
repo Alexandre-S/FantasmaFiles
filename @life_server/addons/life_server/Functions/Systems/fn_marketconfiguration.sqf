@@ -169,7 +169,7 @@ life_market_resources = [
 			["turtle",1],
 			["lsd",1]
 		] 
-	]
+	],
 	
 	["lsd", _lsdPrice, 1575, 4875, 8, 6, 
 		[ 
