@@ -76,7 +76,6 @@ _vehicle setVariable ["tf_range", 50000, true];
 _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 
 //life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
-life_vehicles pushBack _vehicle;
 [] call life_fnc_getHLC;
 [[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",serverhc,false] spawn life_fnc_MP;
 
@@ -87,7 +86,8 @@ if(_mode) then {
 	//};
 };
 
-sleep 5;
+if(_className in life_ver_random) then { sleep 5; };
+life_vehicles pushBack _vehicle;
 [[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 [_vehicle] call life_fnc_clearVehicleAmmo;
 [[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;

@@ -120,7 +120,6 @@ _vehicle setVariable ["tf_range", 50000, true];
 
 _vehicle lock 2;
 //Send keys over the network.
-[[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
 //[[_pid,_side,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 
@@ -131,9 +130,11 @@ _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 [_vehicle] call life_fnc_clearVehicleAmmo;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
-sleep 5;
+if((_vInfo select 2) in life_ver_random) then { sleep 5; };
+
+[[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 //Reskin the vehicle 
-[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",nil,false] spawn life_fnc_MP;
+[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 //Sets of animations
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then
 {

@@ -18087,6 +18087,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Cargo_Tower_V1_F";
 			skill=0.60000002;
+			init="this allowDamage false;";
 		};
 		class Item1322
 		{
