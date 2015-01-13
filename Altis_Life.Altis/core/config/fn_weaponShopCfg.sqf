@@ -238,8 +238,10 @@ switch(_shop) do
 						["CUP_optic_MAAWS_Scope",nil,0],
 						["CUP_MAAWS_HEAT_M",nil,0],
 						["CUP_MAAWS_HEDP_M",nil,0],
-						["CUP_launch_M136",nil,0],
-						["CUP_M136_M",nil,0],
+						["CUP_launch_RPG18",nil,0],
+						["CUP_RPG18_M",nil,0],
+						//["CUP_launch_M136",nil,0],
+						//["CUP_M136_M",nil,0],
 						["CUP_launch_Igla",nil,0],
 						["CUP_Igla_M",nil,0],
 						["CUP_launch_FIM92Stinger",nil,0],
@@ -670,8 +672,8 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_optic_MAAWS_Scope",nil,15000];
 					(_ret select 1) pushBack ["CUP_MAAWS_HEAT_M",nil,10000];
 					(_ret select 1) pushBack ["CUP_MAAWS_HEDP_M",nil,10000];
-					(_ret select 1) pushBack ["CUP_launch_M136",nil,300000];
-					(_ret select 1) pushBack ["CUP_M136_M",nil,10000];
+					//(_ret select 1) pushBack ["CUP_launch_M136",nil,300000];
+					//(_ret select 1) pushBack ["CUP_M136_M",nil,10000];
 					(_ret select 1) pushBack ["CUP_launch_Igla",nil,300000];
 					(_ret select 1) pushBack ["CUP_Igla_M",nil,10000];
 					(_ret select 1) pushBack ["CUP_launch_FIM92Stinger",nil,300000];
