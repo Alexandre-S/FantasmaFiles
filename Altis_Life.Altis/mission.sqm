@@ -235,7 +235,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  1";
+					description="RÃ©servÃ© - ONU  1";
 				};
 				class Item1
 				{
@@ -248,7 +248,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  2";
+					description="RÃ©servÃ© - ONU  2";
 				};
 				class Item2
 				{
@@ -261,7 +261,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  3";
+					description="RÃ©servÃ© - ONU  3";
 				};
 				class Item3
 				{
@@ -274,7 +274,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  4";
+					description="RÃ©servÃ© - ONU  4";
 				};
 				class Item4
 				{
@@ -287,7 +287,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  5";
+					description="RÃ©servÃ© - ONU  5";
 				};
 				class Item5
 				{
@@ -300,7 +300,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_6";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  6";
+					description="RÃ©servÃ© - ONU  6";
 				};
 				class Item6
 				{
@@ -313,7 +313,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_7";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  7";
+					description="RÃ©servÃ© - ONU  7";
 				};
 				class Item7
 				{
@@ -326,7 +326,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_8";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  8";
+					description="RÃ©servÃ© - ONU  8";
 				};
 				class Item8
 				{
@@ -339,7 +339,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_9";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  9";
+					description="RÃ©servÃ© - ONU  9";
 				};
 				class Item9
 				{
@@ -352,7 +352,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_10";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  10";
+					description="RÃ©servÃ© - ONU  10";
 				};
 				class Item10
 				{
@@ -365,7 +365,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_11";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  11";
+					description="RÃ©servÃ© - ONU  11";
 				};
 				class Item11
 				{
@@ -378,7 +378,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_12";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  12";
+					description="RÃ©servÃ© - ONU  12";
 				};
 				class Item12
 				{
@@ -391,7 +391,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_13";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  13";
+					description="RÃ©servÃ© - ONU  13";
 				};
 				class Item13
 				{
@@ -404,7 +404,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_14";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  14";
+					description="RÃ©servÃ© - ONU  14";
 				};
 				class Item14
 				{
@@ -417,7 +417,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_15";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  15";
+					description="RÃ©servÃ© - ONU  15";
 				};
 				class Item15
 				{
@@ -430,7 +430,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_16";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  16";
+					description="RÃ©servÃ© - ONU  16";
 				};
 				class Item16
 				{
@@ -443,7 +443,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_17";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 17";
+					description="RÃ©servÃ© premium - ONU 17";
 				};
 				class Item17
 				{
@@ -456,7 +456,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_18";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 18";
+					description="RÃ©servÃ© premium - ONU 18";
 				};
 				class Item18
 				{
@@ -469,7 +469,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_19";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 19";
+					description="RÃ©servÃ© premium - ONU 19";
 				};
 				class Item19
 				{
@@ -482,7 +482,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_20";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 20";
+					description="RÃ©servÃ© premium - ONU 20";
 				};
 				class Item20
 				{
@@ -495,7 +495,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_21";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 21";
+					description="RÃ©servÃ© premium - ONU 21";
 				};
 				class Item21
 				{
@@ -508,7 +508,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_22";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 22";
+					description="RÃ©servÃ© premium - ONU 22";
 				};
 				class Item22
 				{
@@ -521,7 +521,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_23";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 23";
+					description="RÃ©servÃ© premium - ONU 23";
 				};
 				class Item23
 				{
@@ -534,7 +534,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_24";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 24";
+					description="RÃ©servÃ© premium - ONU 24";
 				};
 				class Item24
 				{
@@ -547,7 +547,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_25";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 25";
+					description="RÃ©servÃ© premium - ONU 25";
 				};
 				class Item25
 				{
@@ -560,7 +560,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_26";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 26";
+					description="RÃ©servÃ© premium - ONU 26";
 				};
 				class Item26
 				{
@@ -573,7 +573,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_27";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 27";
+					description="RÃ©servÃ© premium - ONU 27";
 				};
 				class Item27
 				{
@@ -586,7 +586,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_28";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 28";
+					description="RÃ©servÃ© premium - ONU 28";
 				};
 				class Item28
 				{
@@ -599,7 +599,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_29";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 29";
+					description="RÃ©servÃ© premium - ONU 29";
 				};
 				class Item29
 				{
@@ -612,7 +612,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_30";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 30";
+					description="RÃ©servÃ© premium - ONU 30";
 				};
 			};
 		};
@@ -1734,7 +1734,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_51";
-					description="Réservé premium - Civ 51";
+					description="RÃ©servÃ© premium - Civ 51";
 				};
 			};
 		};
@@ -1756,7 +1756,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_52";
-					description="Réservé premium - Civ 52";
+					description="RÃ©servÃ© premium - Civ 52";
 				};
 			};
 		};
@@ -1778,7 +1778,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_53";
-					description="Réservé premium - Civ 53";
+					description="RÃ©servÃ© premium - Civ 53";
 				};
 			};
 		};
@@ -1800,7 +1800,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_54";
-					description="Réservé premium - Civ 54";
+					description="RÃ©servÃ© premium - Civ 54";
 				};
 			};
 		};
@@ -1822,7 +1822,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_55";
-					description="Réservé premium - Civ 55";
+					description="RÃ©servÃ© premium - Civ 55";
 				};
 			};
 		};
@@ -1844,7 +1844,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_56";
-					description="Réservé premium - Civ 56";
+					description="RÃ©servÃ© premium - Civ 56";
 				};
 			};
 		};
@@ -1866,7 +1866,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_57";
-					description="Réservé premium - Civ 57";
+					description="RÃ©servÃ© premium - Civ 57";
 				};
 			};
 		};
@@ -1888,7 +1888,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_58";
-					description="Réservé premium - Civ 58";
+					description="RÃ©servÃ© premium - Civ 58";
 				};
 			};
 		};
@@ -1910,7 +1910,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_59";
-					description="Réservé premium - Civ 59";
+					description="RÃ©servÃ© premium - Civ 59";
 				};
 			};
 		};
@@ -1932,7 +1932,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_60";
-					description="Réservé premium - Civ 60";
+					description="RÃ©servÃ© premium - Civ 60";
 				};
 			};
 		};
@@ -1954,7 +1954,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_61";
-					description="Réservé premium - Civ 61";
+					description="RÃ©servÃ© premium - Civ 61";
 				};
 			};
 		};
@@ -1976,7 +1976,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_62";
-					description="Réservé premium - Civ 62";
+					description="RÃ©servÃ© premium - Civ 62";
 				};
 			};
 		};
@@ -1998,7 +1998,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_63";
-					description="Réservé premium - Civ 63";
+					description="RÃ©servÃ© premium - Civ 63";
 				};
 			};
 		};
@@ -2020,7 +2020,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_64";
-					description="Réservé premium - Civ 64";
+					description="RÃ©servÃ© premium - Civ 64";
 				};
 			};
 		};
@@ -2042,7 +2042,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_65";
-					description="Réservé premium - Civ 65";
+					description="RÃ©servÃ© premium - Civ 65";
 				};
 			};
 		};
@@ -2064,7 +2064,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
-					description="Réservé premium - Civ 70";
+					description="RÃ©servÃ© premium - Civ 70";
 				};
 			};
 		};
@@ -2086,7 +2086,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_69";
-					description="Réservé premium - Civ 69";
+					description="RÃ©servÃ© premium - Civ 69";
 				};
 			};
 		};
@@ -2108,7 +2108,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_68";
-					description="Réservé premium - Civ 68";
+					description="RÃ©servÃ© premium - Civ 68";
 				};
 			};
 		};
@@ -2130,7 +2130,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_67";
-					description="Réservé premium - Civ 67";
+					description="RÃ©servÃ© premium - Civ 67";
 				};
 			};
 		};
@@ -2152,7 +2152,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_66";
-					description="Réservé premium - Civ 66";
+					description="RÃ©servÃ© premium - Civ 66";
 				};
 			};
 		};
@@ -2174,7 +2174,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_75";
-					description="Réservé premium - Civ 75";
+					description="RÃ©servÃ© premium - Civ 75";
 				};
 			};
 		};
@@ -2196,7 +2196,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_74";
-					description="Réservé premium - Civ 74";
+					description="RÃ©servÃ© premium - Civ 74";
 				};
 			};
 		};
@@ -2218,7 +2218,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_73";
-					description="Réservé premium - Civ 73";
+					description="RÃ©servÃ© premium - Civ 73";
 				};
 			};
 		};
@@ -2240,7 +2240,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_72";
-					description="Réservé premium - Civ 72";
+					description="RÃ©servÃ© premium - Civ 72";
 				};
 			};
 		};
@@ -2262,7 +2262,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_71";
-					description="Réservé premium - Civ 71";
+					description="RÃ©servÃ© premium - Civ 71";
 				};
 			};
 		};
@@ -2297,7 +2297,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1";
-					init="removeallWeapons this;  this enableSimulation false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false; this addAction[""MarchÃ© Noir"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Vestaire illÃ©gal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Armurerie illÃ©gale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item2
 				{
@@ -2488,7 +2488,7 @@ class Mission
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
 					text="carshop1_2";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""civ_truck_1"",""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""civ_truck_1"",""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item18
 				{
@@ -2690,7 +2690,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_2"",""civ"",""Chez Léon, voitures en tout genre""]]; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_2"",""civ"",""Chez LÃ©on, voitures en tout genre""]]; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item35
 				{
@@ -2737,7 +2737,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance médicale"",life_fnc_healHospital];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance mÃ©dicale"",life_fnc_healHospital];";
 				};
 				class Item39
 				{
@@ -2748,7 +2748,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1"",""civ"",""Marchand de bateau""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_1"",""civ"",""Marchand de bateau""]];  this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item40
 				{
@@ -2771,7 +2771,7 @@ class Mission
 					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop";
-					init="this allowDamage false;  this enableSimulation false;  this addAction[format[""%1 ($%2)"",[""license_civ_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !license_civ_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide == civilian ']; this setVariable[""realname"",""Préfécture""];";
+					init="this allowDamage false;  this enableSimulation false;  this addAction[format[""%1 ($%2)"",[""license_civ_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !license_civ_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !license_civ_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !license_civ_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""license_civ_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !license_civ_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""license_civ_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !license_civ_home && playerSide == civilian ']; this setVariable[""realname"",""PrÃ©fÃ©cture""];";
 				};
 				class Item42
 				{
@@ -2783,7 +2783,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_1"",""civ_car_1_1""],""civ"",""Chez LÃ©on, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item43
 				{
@@ -2807,7 +2807,7 @@ class Mission
 					side="WEST";
 					vehicle="B_diver_F";
 					skill=0.60000002;
-					init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[""Magasin de plongée"",life_fnc_clothingMenu,""dive""]; this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];";
+					init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[""Magasin de plongÃ©e"",life_fnc_clothingMenu,""dive""]; this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];";
 				};
 				class Item45
 				{
@@ -2818,7 +2818,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""cop_ship"",west,""cop_ship_1"",""cop"",""APD - Kavala District - Boat Store""]]; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == west']; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""cop_ship"",west,""cop_ship_1"",""cop"",""APD - Kavala District - Boat Store""]]; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_ship_1""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == west']; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item46
 				{
@@ -2829,7 +2829,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Helicopter Shop"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_1"",""cop"",""APD - Kavala District""]];  this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item47
 				{
@@ -2840,7 +2840,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Concessionnaire ONU""];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_1"",""cop"",""APD - Kavala District""]];  this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Concessionnaire ONU""];";
 				};
 				class Item48
 				{
@@ -2853,7 +2853,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : Précision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement GÃ©nÃ©ral"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : PrÃ©cision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : AÃ©rienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : MÃ©cano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : MÃ©dic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : UnitÃ© Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-GradÃ©s"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item49
 				{
@@ -2877,7 +2877,7 @@ class Mission
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop4";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Chez Léon, voitures en tout genre""]]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_2"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_4"",""civ"",""Chez LÃ©on, voitures en tout genre""]]; this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_2"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item51
 				{
@@ -2900,7 +2900,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="removeallWeapons this; this enableSimulation false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this allowDamage false;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire aerien"",life_fnc_vehicleShopMenu,[""cop_airhq"",west,""cop_air_2"",""cop"",""APD - Air HQ""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this; this enableSimulation false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this allowDamage false;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire aerien"",life_fnc_vehicleShopMenu,[""cop_airhq"",west,""cop_air_2"",""cop"",""APD - Air HQ""]];  this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item53
 				{
@@ -2911,7 +2911,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""APD - Athira District""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""APD - Athira District""]];  this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
 				};
 				class Item54
 				{
@@ -2922,7 +2922,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pygros District""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pygros District""]];  this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_3""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
 				};
 				class Item55
 				{
@@ -3110,7 +3110,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 ']; this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : équipement général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : Précision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 ']; this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Ã©quipement gÃ©nÃ©ral"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : PrÃ©cision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : AÃ©rienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : MÃ©cano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : MÃ©dic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : UnitÃ© Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-GradÃ©s"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item71
 				{
@@ -3122,7 +3122,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_2";
-					init="this enableSimulation false;   this allowDamage false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : équipement général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : Précision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false;   this allowDamage false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Ã©quipement gÃ©nÃ©ral"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : PrÃ©cision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : AÃ©rienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : MÃ©cano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : MÃ©dic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : UnitÃ© Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-GradÃ©s"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item72
 				{
@@ -3167,7 +3167,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""MarchÃ© Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illÃ©gal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illÃ©gale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item76
 				{
@@ -3179,7 +3179,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_2";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""MarchÃ© Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illÃ©gal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illÃ©gale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 				};
 				class Item77
 				{
@@ -3203,7 +3203,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Traitement de l'héroine"",life_fnc_processAction,""heroin"",0,false,false,"""",' life_inv_heroinu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_heroin""] call life_fnc_varToStr,[([""heroin""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""heroin"",0,false,false,"""",' !license_civ_heroin && playerSide == civilian '];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Traitement de l'hÃ©roine"",life_fnc_processAction,""heroin"",0,false,false,"""",' life_inv_heroinu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""license_civ_heroin""] call life_fnc_varToStr,[([""heroin""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""heroin"",0,false,false,"""",' !license_civ_heroin && playerSide == civilian '];";
 				};
 				class Item79
 				{
@@ -3215,7 +3215,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_3";
-					init="this enableSimulation false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""]; this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : Précision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement GÃ©nÃ©ral"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""]; this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : PrÃ©cision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : AÃ©rienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : MÃ©cano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : MÃ©dic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : UnitÃ© Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-GradÃ©s"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item80
 				{
@@ -3226,7 +3226,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""APD - Highway Patrol""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_5""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""APD - Highway Patrol""]];  this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_5""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];  ";
 				};
 				class Item81
 				{
@@ -3248,7 +3248,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_3"",""civ"",""Marchand de bateau""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_3""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_3"",""civ"",""Marchand de bateau""]];  this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_3""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item83
 				{
@@ -3282,7 +3282,7 @@ class Mission
 					side="WEST";
 					vehicle="B_diver_F";
 					skill=0.60000002;
-					init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[""Magasin de plongée"",life_fnc_clothingMenu,""dive""]; this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];";
+					init="this allowDamage false; removeallWeapons this; this enableSimulation false; this addAction[""Magasin de plongÃ©e"",life_fnc_clothingMenu,""dive""]; this addAction[format[""%1 ($%2)"",[""license_civ_dive""] call life_fnc_varToStr,[([""dive""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dive"",0,false,false,"""",' !license_civ_dive && playerSide == civilian '];";
 				};
 				class Item86
 				{
@@ -3317,7 +3317,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2"",""civ_truck_2_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2"",""civ_truck_2_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item89
 				{
@@ -3361,7 +3361,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Competitor_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Magasin Service Public"",life_fnc_virt_menu,""med""]; this addAction[""Friperie"",life_fnc_clothingMenu,""med""]; this addAction[""Equipement Service Public"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Concessionnaire Service Public"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Concessionnaire Hélico Service Public"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_1""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Garage Air"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Ranger véhicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Magasin Service Public"",life_fnc_virt_menu,""med""]; this addAction[""Friperie"",life_fnc_clothingMenu,""med""]; this addAction[""Equipement Service Public"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Concessionnaire Service Public"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_1"",""med"",""Kavala Hosptial""]];  this addAction[""Concessionnaire HÃ©lico Service Public"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_1"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_1""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Garage Air"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Ranger vÃ©hicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item93
 				{
@@ -3372,7 +3372,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Competitor_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Magasin Service Public"",life_fnc_virt_menu,""med""]; this addAction[""Friperie"",life_fnc_clothingMenu,""med""]; this addAction[""Equipement Service Public"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Concessionnaire Service Public"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_2"",""med"",""Kavala Hosptial""]];  this addAction[""Concessionnaire Hélico Service Public"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_3"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_2""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Garage Air"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Ranger véhicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Magasin Service Public"",life_fnc_virt_menu,""med""]; this addAction[""Friperie"",life_fnc_clothingMenu,""med""]; this addAction[""Equipement Service Public"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Concessionnaire Service Public"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_2"",""med"",""Kavala Hosptial""]];  this addAction[""Concessionnaire HÃ©lico Service Public"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_3"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_2""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Garage Air"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_3""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Ranger vÃ©hicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item94
 				{
@@ -3383,7 +3383,7 @@ class Mission
 					side="WEST";
 					vehicle="B_Competitor_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Magasin Service Public"",life_fnc_virt_menu,""med""]; this addAction[""Friperie"",life_fnc_clothingMenu,""med""]; this addAction[""Equipement Service Public"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Concessionnaire Service Public"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];  this addAction[""Concessionnaire Hélico Service Public"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_3""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Garage Air"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Ranger véhicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[format[""%1 ($%2)"",[""license_med_air""] call life_fnc_varToStr,[([""mair""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""mair"",0,false,false,"""",' !license_med_air && playerSide == independent ']; this addAction[""Magasin Service Public"",life_fnc_virt_menu,""med""]; this addAction[""Friperie"",life_fnc_clothingMenu,""med""]; this addAction[""Equipement Service Public"",life_fnc_weaponShopMenu,""med_basic""];  this addAction[""Concessionnaire Service Public"",life_fnc_vehicleShopMenu,[""med_shop"",independent,""med_car_3"",""med"",""Kavala Hosptial""]];  this addAction[""Concessionnaire HÃ©lico Service Public"",life_fnc_vehicleShopMenu,[""med_air_hs"",independent,""medic_spawn_2"",""med"",""Kavala Hosptial""]];  this addAction[""Garage"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""med_car_3""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == independent'];  this addAction[""Garage Air"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""medic_spawn_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == independent '];  this addAction[""Ranger vÃ©hicule"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item95
 				{
@@ -3395,7 +3395,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire illégal"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""Marché noir""],0,false,false,"""",'license_civ_rebel']; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_1"";  }]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_1_1"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire illÃ©gal"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,[""reb_v_1"",""reb_v_1_1""],""reb"",""MarchÃ© noir""],0,false,false,"""",'license_civ_rebel']; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_1"";  }]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_1_1"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item96
 				{
@@ -3407,7 +3407,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_3_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire illégal"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""Marché noir""],0,false,false,"""",'license_civ_rebel']; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_2"";  }]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_2"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire illÃ©gal"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_2"",""reb"",""MarchÃ© noir""],0,false,false,"""",'license_civ_rebel']; this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_2"";  }]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_2"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item97
 				{
@@ -3430,7 +3430,7 @@ class Mission
 					side="CIV";
 					vehicle="C_Driver_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire kart"",life_fnc_vehicleShopMenu,[""kart_shop"",civilian,""kart_shop_1"",""civ"",""Go-Kart""]]; this addAction[""Vêtements Kart"",life_fnc_clothingMenu,""kart""]; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""kart_shop_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire kart"",life_fnc_vehicleShopMenu,[""kart_shop"",civilian,""kart_shop_1"",""civ"",""Go-Kart""]]; this addAction[""VÃªtements Kart"",life_fnc_clothingMenu,""kart""]; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""kart_shop_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item99
 				{
@@ -3453,7 +3453,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_2"",""civ"",""Marchand de bateau""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_2""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_2"",""civ"",""Marchand de bateau""]];  this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_2""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item101
 				{
@@ -3497,7 +3497,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire aerien"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_5_1"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_5_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire aerien"",life_fnc_vehicleShopMenu,[""cop_air"",west,""cop_air_5_1"",""cop"",""APD - Kavala District""]];  this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_air_5_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item105
 				{
@@ -3510,7 +3510,7 @@ class Mission
 					vehicle="B_diver_F";
 					skill=0.60000002;
 					text="h2_3_2";
-					init="this allowDamage false; this enableSimulation false; removeallWeapons this; removeBackpack this; this addAction[""Magasin de pêche"",life_fnc_clothingMenu,""copdive"",0,false,playerside == west];";
+					init="this allowDamage false; this enableSimulation false; removeallWeapons this; removeBackpack this; this addAction[""Magasin de pÃªche"",life_fnc_clothingMenu,""copdive"",0,false,playerside == west];";
 				};
 				class Item106
 				{
@@ -3522,7 +3522,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_4";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire illégal"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_3"",""reb"",""Marché noir""],0,false,false,"""",'license_civ_rebel']; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_3"";  }]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_3"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire illÃ©gal"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_v_3"",""reb"",""MarchÃ© noir""],0,false,false,"""",'license_civ_rebel']; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""LandVehicle""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_3"";  }]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""reb_v_3"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item107
 				{
@@ -3666,7 +3666,7 @@ class Mission
 					vehicle="B_diver_F";
 					skill=0.60000002;
 					text="h2_3_2_1";
-					init="this allowDamage false; this enableSimulation false; removeallWeapons this; removeBackpack this; this addAction[""Magasin de pêche"",life_fnc_clothingMenu,""copdive"",0,false,playerside == west]; ";
+					init="this allowDamage false; this enableSimulation false; removeallWeapons this; removeBackpack this; this addAction[""Magasin de pÃªche"",life_fnc_clothingMenu,""copdive"",0,false,playerside == west]; ";
 				};
 				class Item120
 				{
@@ -3678,7 +3678,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2_2"",""civ_truck_2_1_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage à véhicule"",  {   [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_2_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2_2"",""civ_truck_2_1_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage Ã  vÃ©hicule"",  {   [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_2_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item121
 				{
@@ -3701,7 +3701,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2_2_1"",""civ_truck_2_1_1_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_2_2_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_2_2_1"",""civ_truck_2_1_1_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_2_2_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item123
 				{
@@ -3724,7 +3724,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_3"",""civ"",""Chez Léon, voitures en tout genre""]]; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""civ_car_3"",""civ"",""Chez LÃ©on, voitures en tout genre""]]; this addAction[""Garage Ã  vÃ©hicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""car_g_3"";  }]; this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item125
 				{
@@ -3759,7 +3759,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""veh_sp_27"",""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""veh_sp_27"",""civ"",""Chez LÃ©on, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""];";
 				};
 				class Item128
 				{
@@ -3770,7 +3770,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance médicale"",life_fnc_healHospital];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance mÃ©dicale"",life_fnc_healHospital];";
 				};
 				class Item129
 				{
@@ -3781,7 +3781,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_3_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance médicale"",life_fnc_healHospital];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Assistance mÃ©dicale"",life_fnc_healHospital];";
 				};
 				class Item130
 				{
@@ -3804,7 +3804,7 @@ class Mission
 					vehicle="RDS_Functionary1";
 					skill=0.60000002;
 					text="carshop1_1";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Gouvernement"",life_fnc_vehicleShopMenu,[""gvt_car"",civilian,[""civ_car_1_2""],""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_1_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Gouvernement"",life_fnc_vehicleShopMenu,[""gvt_car"",civilian,[""civ_car_1_2""],""civ"",""Chez LÃ©on, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage Ã  vÃ©hicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_1_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item132
 				{
@@ -4173,7 +4173,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_76";
-					description="Réservé premium - Civ 76";
+					description="RÃ©servÃ© premium - Civ 76";
 				};
 			};
 		};
@@ -4195,7 +4195,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_77";
-					description="Réservé premium - Civ 77";
+					description="RÃ©servÃ© premium - Civ 77";
 				};
 			};
 		};
@@ -4217,7 +4217,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_78";
-					description="Réservé premium - Civ 78";
+					description="RÃ©servÃ© premium - Civ 78";
 				};
 			};
 		};
@@ -4239,7 +4239,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_79";
-					description="Réservé premium - Civ 79";
+					description="RÃ©servÃ© premium - Civ 79";
 				};
 			};
 		};
@@ -4261,7 +4261,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_80";
-					description="Réservé premium - Civ 80";
+					description="RÃ©servÃ© premium - Civ 80";
 				};
 			};
 		};
@@ -4283,7 +4283,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_81";
-					description="Réservé premium - Civ 81";
+					description="RÃ©servÃ© premium - Civ 81";
 				};
 			};
 		};
@@ -4305,7 +4305,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_82";
-					description="Réservé premium - Civ 82";
+					description="RÃ©servÃ© premium - Civ 82";
 				};
 			};
 		};
@@ -4327,7 +4327,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_83";
-					description="Réservé premium - Civ 83";
+					description="RÃ©servÃ© premium - Civ 83";
 				};
 			};
 		};
@@ -4349,7 +4349,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_84";
-					description="Réservé premium - Civ 84";
+					description="RÃ©servÃ© premium - Civ 84";
 				};
 			};
 		};
@@ -4371,7 +4371,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_85";
-					description="Réservé premium - Civ 85";
+					description="RÃ©servÃ© premium - Civ 85";
 				};
 			};
 		};
@@ -4393,7 +4393,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_86";
-					description="Réservé premium - Civ 86";
+					description="RÃ©servÃ© premium - Civ 86";
 				};
 			};
 		};
@@ -4415,7 +4415,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_87";
-					description="Réservé premium - Civ 87";
+					description="RÃ©servÃ© premium - Civ 87";
 				};
 			};
 		};
@@ -4437,7 +4437,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_88";
-					description="Réservé premium - Civ 88";
+					description="RÃ©servÃ© premium - Civ 88";
 				};
 			};
 		};
@@ -4459,7 +4459,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_89";
-					description="Réservé premium - Civ 89";
+					description="RÃ©servÃ© premium - Civ 89";
 				};
 			};
 		};
@@ -4481,7 +4481,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_90";
-					description="Réservé premium - Civ 90";
+					description="RÃ©servÃ© premium - Civ 90";
 				};
 			};
 		};
@@ -4503,7 +4503,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_91";
-					description="Réservé premium - Civ 91";
+					description="RÃ©servÃ© premium - Civ 91";
 				};
 			};
 		};
@@ -4525,7 +4525,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_92";
-					description="Réservé premium - Civ 92";
+					description="RÃ©servÃ© premium - Civ 92";
 				};
 			};
 		};
@@ -4547,7 +4547,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_93";
-					description="Réservé premium - Civ 93";
+					description="RÃ©servÃ© premium - Civ 93";
 				};
 			};
 		};
@@ -4569,7 +4569,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_94";
-					description="Réservé premium - Civ 94";
+					description="RÃ©servÃ© premium - Civ 94";
 				};
 			};
 		};
@@ -4591,7 +4591,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_95";
-					description="Réservé premium - Civ 95";
+					description="RÃ©servÃ© premium - Civ 95";
 				};
 			};
 		};
@@ -4613,7 +4613,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_96";
-					description="Réservé premium - Civ 96";
+					description="RÃ©servÃ© premium - Civ 96";
 				};
 			};
 		};
@@ -4635,7 +4635,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_97";
-					description="Réservé premium - Civ 97";
+					description="RÃ©servÃ© premium - Civ 97";
 				};
 			};
 		};
@@ -4657,7 +4657,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_98";
-					description="Réservé premium - Civ 98";
+					description="RÃ©servÃ© premium - Civ 98";
 				};
 			};
 		};
@@ -4679,7 +4679,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_99";
-					description="Réservé premium - Civ 99";
+					description="RÃ©servÃ© premium - Civ 99";
 				};
 			};
 		};
@@ -4701,7 +4701,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_100";
-					description="Réservé premium - Civ 100";
+					description="RÃ©servÃ© premium - Civ 100";
 				};
 			};
 		};
@@ -4723,7 +4723,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_101";
-					description="Réservé premium - Civ 101";
+					description="RÃ©servÃ© premium - Civ 101";
 				};
 			};
 		};
@@ -4745,7 +4745,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_102";
-					description="Réservé premium - Civ 102";
+					description="RÃ©servÃ© premium - Civ 102";
 				};
 			};
 		};
@@ -4767,7 +4767,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_103";
-					description="Réservé premium - Civ 103";
+					description="RÃ©servÃ© premium - Civ 103";
 				};
 			};
 		};
@@ -4789,7 +4789,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_104";
-					description="Réservé premium - Civ 104";
+					description="RÃ©servÃ© premium - Civ 104";
 				};
 			};
 		};
@@ -4811,7 +4811,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_105";
-					description="Réservé premium - Civ 105";
+					description="RÃ©servÃ© premium - Civ 105";
 				};
 			};
 		};
@@ -4833,7 +4833,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_106";
-					description="Réservé premium - Civ 106";
+					description="RÃ©servÃ© premium - Civ 106";
 				};
 			};
 		};
@@ -4855,7 +4855,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_107";
-					description="Réservé premium - Civ 107";
+					description="RÃ©servÃ© premium - Civ 107";
 				};
 			};
 		};
@@ -4877,7 +4877,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_108";
-					description="Réservé premium - Civ 108";
+					description="RÃ©servÃ© premium - Civ 108";
 				};
 			};
 		};
@@ -4899,7 +4899,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_109";
-					description="Réservé premium - Civ 109";
+					description="RÃ©servÃ© premium - Civ 109";
 				};
 			};
 		};
@@ -4921,7 +4921,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_110";
-					description="Réservé premium - Civ 110";
+					description="RÃ©servÃ© premium - Civ 110";
 				};
 			};
 		};
@@ -4943,7 +4943,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_111";
-					description="Réservé premium - Civ 111";
+					description="RÃ©servÃ© premium - Civ 111";
 				};
 			};
 		};
@@ -4965,7 +4965,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_112";
-					description="Réservé premium - Civ 112";
+					description="RÃ©servÃ© premium - Civ 112";
 				};
 			};
 		};
@@ -4987,7 +4987,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_113";
-					description="Réservé premium - Civ 113";
+					description="RÃ©servÃ© premium - Civ 113";
 				};
 			};
 		};
@@ -5009,7 +5009,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_114";
-					description="Réservé premium - Civ 114";
+					description="RÃ©servÃ© premium - Civ 114";
 				};
 			};
 		};
@@ -5031,7 +5031,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_115";
-					description="Réservé premium - Civ 115";
+					description="RÃ©servÃ© premium - Civ 115";
 				};
 			};
 		};
@@ -5053,7 +5053,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_116";
-					description="Réservé premium - Civ 116";
+					description="RÃ©servÃ© premium - Civ 116";
 				};
 			};
 		};
@@ -5075,7 +5075,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_117";
-					description="Réservé premium - Civ 117";
+					description="RÃ©servÃ© premium - Civ 117";
 				};
 			};
 		};
@@ -5097,7 +5097,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_118";
-					description="Réservé premium - Civ 118";
+					description="RÃ©servÃ© premium - Civ 118";
 				};
 			};
 		};
@@ -5119,7 +5119,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_119";
-					description="Réservé premium - Civ 119";
+					description="RÃ©servÃ© premium - Civ 119";
 				};
 			};
 		};
@@ -5141,7 +5141,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_120";
-					description="Réservé premium - Civ 120";
+					description="RÃ©servÃ© premium - Civ 120";
 				};
 			};
 		};
@@ -5202,7 +5202,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_10";
-					description="Réservé premium - Membre Service Public 10";
+					description="RÃ©servÃ© premium - Membre Service Public 10";
 				};
 				class Item4
 				{
@@ -5215,7 +5215,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_9";
-					description="Réservé premium - Membre Service Public 9";
+					description="RÃ©servÃ© premium - Membre Service Public 9";
 				};
 				class Item5
 				{
@@ -5228,7 +5228,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_8";
-					description="Réservé premium - Membre Service Public 8";
+					description="RÃ©servÃ© premium - Membre Service Public 8";
 				};
 				class Item6
 				{
@@ -5280,7 +5280,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_7";
-					description="Réservé premium - Membre Service Public 7";
+					description="RÃ©servÃ© premium - Membre Service Public 7";
 				};
 				class Item10
 				{
@@ -5601,7 +5601,7 @@ class Mission
 			vehicle="Land_CargoBox_V1_F";
 			skill=0.60000002;
 			text="fed_bank";
-			init="this allowDamage false; this enableSimulation false; this addAction[""Ouvrir le coffre"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Réparer le coffre"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Ouvrir le coffre"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""RÃ©parer le coffre"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
 		};
 		class Item25
 		{
@@ -18646,7 +18646,7 @@ class Mission
 		{
 			position[]={3400.7595,1.8830158,12899.346};
 			name="fish_market_1";
-			text="Marché maritime";
+			text="MarchÃ© maritime";
 			type="mil_box";
 			colorName="ColorGreen";
 		};
@@ -18654,7 +18654,7 @@ class Mission
 		{
 			position[]={3765.8088,18.85,12990.187};
 			name="hospital_marker";
-			text="Hôpital de Kavala";
+			text="HÃ´pital de Kavala";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -18749,7 +18749,7 @@ class Mission
 		{
 			position[]={12212.724,3.5401611,22936.912};
 			name="Rebelop";
-			text="Marché Noir";
+			text="MarchÃ© Noir";
 			type="MinefieldAP";
 			colorName="ColorRed";
 			angle=-4.1040401;
@@ -18758,7 +18758,7 @@ class Mission
 		{
 			position[]={14664.382,17.91,16758.365};
 			name="airshop";
-			text="Concessionnaire aérien";
+			text="Concessionnaire aÃ©rien";
 			type="c_plane";
 			colorName="ColorGreen";
 		};
@@ -18774,7 +18774,7 @@ class Mission
 		{
 			position[]={6263.5244,43,16265.374};
 			name="OilP";
-			text="Traitement du pétrole";
+			text="Traitement du pÃ©trole";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -18841,7 +18841,7 @@ class Mission
 		{
 			position[]={163.73174,0.012321081,14411.306};
 			name="lbank";
-			text="Banque fédérale";
+			text="Banque fÃ©dÃ©rale";
 			type="mil_box";
 			colorName="Color4_FD_F";
 		};
@@ -18857,7 +18857,7 @@ class Mission
 		{
 			position[]={169.36064,0.027309759,14608.475};
 			name="Hospital_1";
-			text="Hôpital";
+			text="HÃ´pital";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -18966,7 +18966,7 @@ class Mission
 		{
 			position[]={4345.1636,33.150127,13982.917};
 			name="peaches_2";
-			text="Champ de pêche";
+			text="Champ de pÃªche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -18974,7 +18974,7 @@ class Mission
 		{
 			position[]={10800.928,32.462917,13238.061};
 			name="peaches_1";
-			text="Champ de pêche";
+			text="Champ de pÃªche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -19006,7 +19006,7 @@ class Mission
 		{
 			position[]={13120.37,39.285686,19673.133};
 			name="peaches_3";
-			text="Champ de pêche";
+			text="Champ de pÃªche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
@@ -19014,7 +19014,7 @@ class Mission
 		{
 			position[]={14418.972,18.719999,16244.317};
 			name="air_serv_1";
-			text="Station aérienne";
+			text="Station aÃ©rienne";
 			type="respawn_air";
 			colorName="ColorGreen";
 		};
@@ -19047,7 +19047,7 @@ class Mission
 		{
 			position[]={3638.6743,10.186527,13077.098};
 			name="license_shop";
-			text="Préfecture";
+			text="PrÃ©fecture";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-1.9030067;
@@ -19064,7 +19064,7 @@ class Mission
 		{
 			position[]={3442.2244,3.6601832,12756.235};
 			name="dive_shop";
-			text="Magasin de plongée";
+			text="Magasin de plongÃ©e";
 			type="mil_box";
 			colorName="ColorOrange";
 			angle=-144.45552;
@@ -19324,7 +19324,7 @@ class Mission
 		{
 			position[]={9186.0107,27.468599,13990.347};
 			name="oil_2";
-			text="Champ pétrolifère";
+			text="Champ pÃ©trolifÃ¨re";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -19332,7 +19332,7 @@ class Mission
 		{
 			position[]={24498.563,11.834477,23716.949};
 			name="oil_1";
-			text="Champ pétrolifère";
+			text="Champ pÃ©trolifÃ¨re";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -19405,7 +19405,7 @@ class Mission
 		{
 			position[]={14026.765,26.91745,18705.039};
 			name="license_shop_1";
-			text="Préfecture";
+			text="PrÃ©fecture";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-1.9030067;
@@ -19428,7 +19428,7 @@ class Mission
 		{
 			position[]={26797.605,24.416138,24538.945};
 			name="airshop_1";
-			text="Concessionnaire aérien";
+			text="Concessionnaire aÃ©rien";
 			type="c_plane";
 			colorName="ColorGreen";
 		};
@@ -19521,7 +19521,7 @@ class Mission
 		{
 			position[]={25801.424,20.775288,21409.266};
 			name="license_shop_2";
-			text="Préfecture";
+			text="PrÃ©fecture";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-1.9030067;
@@ -19547,7 +19547,7 @@ class Mission
 		{
 			position[]={16833.916,20.097763,12838.299};
 			name="license_shop_2_1";
-			text="Préfecture";
+			text="PrÃ©fecture";
 			type="c_unknown";
 			colorName="ColorBlue";
 			angle=-198.34755;
@@ -19638,7 +19638,7 @@ class Mission
 		{
 			position[]={5095.2813,3.5759203,9958.125};
 			name="Rebelop_1";
-			text="Marché noir";
+			text="MarchÃ© noir";
 			type="MinefieldAP";
 			colorName="ColorRed";
 			angle=4.3076801;
@@ -19647,7 +19647,7 @@ class Mission
 		{
 			position[]={21605.303,19.334795,21304};
 			name="Rebelop_2";
-			text="Marché noir";
+			text="MarchÃ© noir";
 			type="MinefieldAP";
 			colorName="ColorRed";
 			angle=-1.67064;
@@ -19674,7 +19674,7 @@ class Mission
 		{
 			position[]={13860.563,6.1417441,15185.164};
 			name="heroin_1";
-			text="Champ de Pavot à Opium";
+			text="Champ de Pavot Ã  Opium";
 			type="hd_dot";
 			colorName="Color1_FD_F";
 		};
@@ -19692,7 +19692,7 @@ class Mission
 		{
 			position[]={20880.77,2.7309935,14630.849};
 			name="heroin_p";
-			text="Traitement de l'héroine";
+			text="Traitement de l'hÃ©roine";
 			type="mil_dot";
 			colorName="Color1_FD_F";
 			angle=-105.204;
@@ -19787,7 +19787,7 @@ class Mission
 		{
 			position[]={16018.33,13.650147,16953.154};
 			name="fed_reserve";
-			text="Banque fédérale";
+			text="Banque fÃ©dÃ©rale";
 			type="mil_box";
 			colorName="Color4_FD_F";
 		};
@@ -19810,7 +19810,7 @@ class Mission
 		{
 			position[]={17073.295,24.327265,11361.496};
 			name="rock_1";
-			text="Carrière de pierre";
+			text="CarriÃ¨re de pierre";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -19834,7 +19834,7 @@ class Mission
 		{
 			position[]={16607.678,6.0757751,12488.601};
 			name="dive_shop_1";
-			text="Magasin de plongée";
+			text="Magasin de plongÃ©e";
 			type="mil_box";
 			colorName="ColorOrange";
 			angle=-277.35449;
@@ -20241,7 +20241,7 @@ class Mission
 		{
 			position[]={23114.041,3.1900001,18946.514};
 			name="airshop_1_1";
-			text="Concessionnaire aérien";
+			text="Concessionnaire aÃ©rien";
 			type="c_plane";
 			colorName="ColorGreen";
 			angle=0.11337;
@@ -20264,7 +20264,7 @@ class Mission
 		{
 			position[]={21041.426,26.596836,7123.0039};
 			name="airshop_1_1_1";
-			text="Concessionnaire aérien";
+			text="Concessionnaire aÃ©rien";
 			type="c_plane";
 			colorName="ColorGreen";
 			angle=1.6913;
@@ -20287,7 +20287,7 @@ class Mission
 		{
 			position[]={11645.774,23.131622,11941.945};
 			name="airshop_1_1_1_1";
-			text="Concessionnaire aérien";
+			text="Concessionnaire aÃ©rien";
 			type="c_plane";
 			colorName="ColorGreen";
 			angle=0.202242;
@@ -20310,7 +20310,7 @@ class Mission
 		{
 			position[]={9233.5,16.514078,21594.154};
 			name="airshop_1_1_1_1_1";
-			text="Concessionnaire aérien";
+			text="Concessionnaire aÃ©rien";
 			type="c_plane";
 			colorName="ColorGreen";
 			angle=-0.0300781;
@@ -20398,7 +20398,7 @@ class Mission
 		{
 			position[]={24776.777,3.9700685,19143.207};
 			name="OilP_1";
-			text="Traitement du pétrole";
+			text="Traitement du pÃ©trole";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -20406,7 +20406,7 @@ class Mission
 		{
 			position[]={12580.22,34.345367,16394.215};
 			name="oil_trader_5";
-			text="Revendeur de pétrole";
+			text="Revendeur de pÃ©trole";
 			type="b_unknown";
 			colorName="ColorOrange";
 		};
@@ -20414,7 +20414,7 @@ class Mission
 		{
 			position[]={21540.785,15.286265,16007.226};
 			name="oil_trader_6";
-			text="Revendeur de pétrole";
+			text="Revendeur de pÃ©trole";
 			type="b_unknown";
 			colorName="ColorOrange";
 		};
@@ -20490,32 +20490,32 @@ class Mission
 		class Item235
 		{
 			position[]={3649.4805,6.9768882,13386.33};
-			name="Héliport_1";
-			text="Héliport";
+			name="HÃ©liport_1";
+			text="HÃ©liport";
 			type="c_air";
 			colorName="ColorBlack";
 		};
 		class Item236
 		{
 			position[]={13851.313,19.780001,18598.693};
-			name="Héliport_1_1";
-			text="Héliport";
+			name="HÃ©liport_1_1";
+			text="HÃ©liport";
 			type="c_air";
 			colorName="ColorBlack";
 		};
 		class Item237
 		{
 			position[]={16535.85,2.27,12546.677};
-			name="Héliport_1_2";
-			text="Héliport";
+			name="HÃ©liport_1_2";
+			text="HÃ©liport";
 			type="c_air";
 			colorName="ColorBlack";
 		};
 		class Item238
 		{
 			position[]={25872.221,19.762711,21445.811};
-			name="Héliport_1_3";
-			text="Héliport";
+			name="HÃ©liport_1_3";
+			text="HÃ©liport";
 			type="c_air";
 			colorName="ColorBlack";
 		};
@@ -20531,7 +20531,7 @@ class Mission
 		{
 			position[]={15600,18.503464,17207.787};
 			name="hosto_airport";
-			text="Hôpital de l'aeroport";
+			text="HÃ´pital de l'aeroport";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -20539,7 +20539,7 @@ class Mission
 		{
 			position[]={17170.848,15.233319,12583.642};
 			name="Hopital_Pyrgos";
-			text="Hôpital de Pyrgos";
+			text="HÃ´pital de Pyrgos";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -20571,7 +20571,7 @@ class Mission
 		{
 			position[]={3584.2996,21.864573,14464.464};
 			name="villa_president";
-			text="Villa présidentielle";
+			text="Villa prÃ©sidentielle";
 			type="mil_circle";
 			colorName="ColorGreen";
 		};
@@ -20579,7 +20579,7 @@ class Mission
 		{
 			position[]={17117.686,12.780993,12494.77};
 			name="peaches_2_1";
-			text="Champ de pêche";
+			text="Champ de pÃªche";
 			type="loc_Tree";
 			colorName="Color3_FD_F";
 		};
