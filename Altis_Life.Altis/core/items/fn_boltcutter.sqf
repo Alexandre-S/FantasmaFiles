@@ -96,7 +96,7 @@ life_action_inUse = false;
 // if(life_boltcutter_uses >= 5) then {
 	// [false,"boltcutter",1] call life_fnc_handleInv;
 	// life_boltcutter_uses = 0;
-};
+// };
 
 _chance = 5;
 _dice = random(100);
