@@ -96,7 +96,7 @@ switch(_shop) do
 						["optic_Holosight",nil,0],
 						["CUP_hgun_M9",nil,0],
 						["CUP_15Rnd_9x19_M9",nil,0],
-						["HandGrenade_Stone","Flashbang",0]
+						["AGM_M84",nil,0]
 					]
 				];
 			};

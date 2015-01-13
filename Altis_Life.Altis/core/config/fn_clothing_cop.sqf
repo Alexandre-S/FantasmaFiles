@@ -80,7 +80,22 @@ switch (_filter) do
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
-			_ret pushBack ["sab_UN_Officer_Clothing",nil,0];
+			_ret pushBack ["sab_UN_Officer_ClothingE",nil,0];
+			
+			_ret pushBack ["sab_UN_Soldier_Clothing",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingS",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingP",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingSD",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingPD",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingD",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingU",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingSU",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingPU",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingK",nil,0];
+			_ret pushBack ["sab_UN_Officer_ClothingE",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingA",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingI",nil,0];
+			_ret pushBack ["sab_UN_Soldier_ClothingB",nil,0];	
 		};
 	};
 	
@@ -132,6 +147,9 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["H_Beret_Colonel",nil,0];
+			_ret pushBack ["sab_UN_Turban",nil,0];
+			_ret pushBack ["sab_UN_HelmetHeli",nil,0];
+
 		};
 		// Pilote
 		if(license_cop_air || license_cop_onumecano) then
@@ -199,6 +217,7 @@ switch (_filter) do
 		};
 		if(__GETC__(life_coplevel) >= 5) then
 		{
+			_ret pushBack ["sab_UN_tVest",nil,0];
 			_ret pushBack ["ARC_FR_CE_Plate_Carrier_H",nil,0];
 			_ret pushBack ["ARC_FR_Daguet_Plate_Carrier_H",nil,0];
 			_ret pushBack ["ARC_FR_TANOD_Plate_Carrier_H",nil,0];
