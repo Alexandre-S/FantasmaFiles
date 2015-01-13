@@ -20,10 +20,11 @@ if(isNull _curTarget) exitWith {
 			[_fish] call life_fnc_catchFish;
 		};
 	} else {
-		if(playerSide == civilian && !life_action_gathering) then {
+		// if(playerSide == civilian && !life_action_gathering) then {
+		if(playerSide == civilian) then {
 			_handle = [] spawn life_fnc_gather;
 			waitUntil {scriptDone _handle};
-			life_action_gathering = false;
+			// life_action_gathering = false;
 		};
 	};
 };

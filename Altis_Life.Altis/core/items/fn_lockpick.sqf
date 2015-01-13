@@ -5,7 +5,7 @@
 	Description:
 	Main functionality for lock-picking.
 */
-private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance","_chance","_dicebip","_chancebip"];
+private["_curTarget","_distance","_isVehicle","_title","_progressBar","_cP","_titleText","_dice","_badDistance","_chance"];
 _curTarget = cursorTarget;
 life_interrupted = false;
 if(life_action_inUse) exitWith {};
@@ -32,11 +32,28 @@ _titleText ctrlSetText format["%2 (1%1)...","%",_title];
 _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
+// play appropriate anim
+	private "_fnc_playAnim";
+	_fnc_playAnim = {
+		if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
+			_this action ["LadderOff", nearestObject [position _this, "House"]];
+		};
+		waitUntil {isTouchingGround _this};
+		waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
+		if !(alive _this) exitWith {};
+		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
+		sleep 0.15;
+		if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+			[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
+		};
+	};
+
 while {true} do
 {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+		// [[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		// player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+		player spawn _fnc_playAnim;
 	};
 	sleep 0.26;
 	if(isNull _ui) then {
@@ -71,8 +88,6 @@ if (_curTarget isKindOf "Air") then{
 	_chance = 15;
 };
 _dice = random(100);
-_dicebip = random(100);
-_chancebip = 33;
 if(!_isVehicle) then {
 	if(_dice <= _chance) then
 	{
@@ -80,6 +95,7 @@ if(!_isVehicle) then {
 		[_curTarget, false] call AGM_Interaction_fnc_setCaptive;
 		//[] call life_fnc_getHLC;
 		//[[getPlayerUID player,profileName,"486"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
+		[[0,format["%1 a crocheté les menottes de %2.",profileName,name _curTarget]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 	}
 	else
 	{
@@ -92,17 +108,12 @@ if(!_isVehicle) then {
 		life_vehicles pushBack _curTarget;
 		[] call life_fnc_getHLC;
 		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
-		if(_dicebip <= _chancebip) then {
-			[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-		};
-	} else {
-		[] call life_fnc_getHLC;
-		[[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+	} else {
+		// [] call life_fnc_getHLC;
+		// [[getPlayerUID player,profileName,"215"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
+		// [[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		titleText[localize "STR_ISTR_Lock_Failed","PLAIN"];
-		if(_dicebip <= _chancebip) then {
-			//Play sound alarmevoiture
-			_curTarget say3D "alarmevoiture";
-		};
 	};
+[[_curTarget, "alarmevoiture",75],"life_fnc_playSound",true,false] spawn life_fnc_MP;	
 };
