@@ -475,7 +475,12 @@ switch(_shop) do
 							["tf_anprc155",nil,500],
 							["SmokeShellRed",nil,100],
 							["Chemlight_blue",nil,100],
-							["Chemlight_yellow",nil,100]
+							["Chemlight_yellow",nil,100],
+							["AGM_HandFlare_White",nil,0],
+							["AGM_HandFlare_Red",nil,0],
+							["AGM_HandFlare_Green",nil,0],
+							["AGM_HandFlare_Yellow",nil,0],
+							["AGM_IR_Strobe_Item",nil,0]
 						]
 					];
 				};
@@ -588,7 +593,11 @@ switch(_shop) do
 							//["SmokeShellYellow",nil,1000],
 							["SmokeShellPurple",nil,1000],
 							["SmokeShellBlue",nil,1000],
-							["SmokeShellOrange",nil,1000]
+							["SmokeShellOrange",nil,1000],
+							["AGM_HandFlare_White",nil,1000],
+							["AGM_HandFlare_Red",nil,1000],
+							["AGM_HandFlare_Green",nil,1000],
+							["AGM_HandFlare_Yellow",nil,1000]
 						]
 					];
 				};
@@ -788,7 +797,11 @@ switch(_shop) do
 				["Chemlight_red",nil,300],
 				["Chemlight_yellow",nil,300],
 				["Chemlight_green",nil,300],
-				["Chemlight_blue",nil,300]
+				["Chemlight_blue",nil,300],
+				["AGM_HandFlare_White",nil,1000],
+				["AGM_HandFlare_Red",nil,1000],
+				["AGM_HandFlare_Green",nil,1000],
+				["AGM_HandFlare_Yellow",nil,1000]
 			]
 		];
 	};
