@@ -51,7 +51,6 @@ switch(_shop) do
 						["FirstAidKit",nil,0],
 						["NVGoggles_OPFOR",nil,0],
 						["AGM_EarBuds",nil,0],
-						["AGM_ItemKestrel",nil,0],
 						["AGM_MapTools",nil,0],
 						["AGM_SpareBarrel",nil,0],
 						["AGM_CableTie",nil,0],
@@ -115,8 +114,9 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Infanterie",
 					[
-						["CUP_srifle_M14",nil,0],
-						["CUP_20Rnd_762x51_DMR",nil,0],
+						["CUP_sgun_AA12",nil,0],
+						["CUP_20Rnd_B_AA12_Pellets",nil,0],
+						["CUP_20Rnd_B_AA12_74Slug",nil,0],
 						["CUP_arifle_M16A2",nil,0],
 						["CUP_arifle_M16A4_Base",nil,0],
 						["CUP_arifle_Mk16_STD",nil,0],
@@ -132,10 +132,6 @@ switch(_shop) do
 						["CUP_arifle_Mk17_CQC",nil,0],
 						["CUP_arifle_Mk17_CQC_FG",nil,0],
 						["CUP_arifle_Mk17_CQC_SFG",nil,0],
-						["CUP_arifle_Mk17_STD",nil,0],
-						["CUP_arifle_Mk17_STD_FG",nil,0],
-						["CUP_arifle_Mk17_STD_SFG",nil,0],
-						["CUP_arifle_Mk20",nil,0],
 						["CUP_20Rnd_762x51_B_SCAR",nil,0],
 						["CUP_lmg_M249_para",nil,0],
 						["CUP_lmg_M249",nil,0],
@@ -172,6 +168,10 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Précision",
 					[
+						["CUP_arifle_Mk20",nil,0],
+						["CUP_20Rnd_762x51_B_SCAR",nil,0],
+						["CUP_srifle_M14",nil,0],
+						["CUP_20Rnd_762x51_DMR",nil,0],
 						["CUP_srifle_Mk12SPR",nil,0],
 						["CUP_20Rnd_556x45_Stanag",nil,0],
 						["CUP_srifle_DMR",nil,0],
@@ -191,7 +191,10 @@ switch(_shop) do
 						["optic_DMS",nil,0],
 						["optic_SOS",nil,0],
 						["optic_NVS",nil,0],
+						["AGM_ItemKestrel",nil,0],
 						["Rangefinder",nil,0],
+						["Laserdesignator",nil,0],
+						["Laserbatteries",nil,0],
 						["AGM_Vector",nil,0]
 					]
 				];
@@ -286,6 +289,8 @@ switch(_shop) do
 						["SMG_01_F",nil,0],
 						["30Rnd_45ACP_Mag_SMG_01",nil,0],
 						["30Rnd_45ACP_Mag_SMG_01_Tracer_Green",nil,0],
+						["CUP_smg_EVO",nil,0],
+						["CUP_30Rnd_9x19_EVO",nil,0],
 						["hgun_Pistol_Signal_F",nil,0],
 						["6Rnd_GreenSignal_F",nil,0],
 						["6Rnd_RedSignal_F",nil,0]
@@ -338,6 +343,9 @@ switch(_shop) do
 						["CUP_arifle_Mk16_CQC_FG",nil,0],
 						["CUP_arifle_Mk16_CQC_SFG",nil,0],
 						["CUP_30Rnd_556x45_Stanag",nil,0],
+						["CUP_arifle_G36K",nil,0],
+						["CUP_arifle_G36K_camo",nil,0],
+						["CUP_30Rnd_556x45_G36",nil,0],
 						["Medikit",nil,0]
 					]
 				];
@@ -357,9 +365,10 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Unité Tactique",
 					[
-						["CUP_sgun_AA12",nil,0],
-						["CUP_20Rnd_B_AA12_Pellets",nil,0],
-						["CUP_20Rnd_B_AA12_74Slug",nil,0],
+						["CUP_arifle_Mk17_STD",nil,0],
+						["CUP_arifle_Mk17_STD_FG",nil,0],
+						["CUP_arifle_Mk17_STD_SFG",nil,0],
+						["CUP_20Rnd_762x51_B_SCAR",nil,0],
 						["CUP_arifle_G36A",nil,0],
 						["CUP_arifle_G36A_camo",nil,0],
 						["CUP_arifle_G36K",nil,0],
@@ -368,10 +377,6 @@ switch(_shop) do
 						["CUP_arifle_MG36",nil,0],
 						["CUP_arifle_MG36_camo",nil,0],
 						["CUP_100Rnd_556x45_BetaCMag",nil,0],
-						["CUP_lmg_Mk48_des",nil,0],
-						["CUP_lmg_Mk48_wdl",nil,0],
-						["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,0],
-						["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",nil,0],
 						["CUP_hgun_Duty",nil,0],
 						["CUP_acc_CZ_M3X",nil,0],
 						["16Rnd_9x21_Mag",nil,0],
@@ -388,9 +393,6 @@ switch(_shop) do
 						["MineDetector",nil,0],
 						["CUP_muzzle_snds_G36_black",nil,0],
 						["CUP_muzzle_snds_G36_desert",nil,0],
-						["CUP_muzzle_snds_M16",nil,0],
-						["CUP_muzzle_snds_M16_camo",nil,0],
-						["CUP_muzzle_snds_SCAR_L",nil,0],
 						["CUP_muzzle_snds_SCAR_H",nil,0]
 					]
 				];
@@ -438,7 +440,10 @@ switch(_shop) do
 						["optic_Yorris",nil,0],
 						["optic_Nightstalker",nil,0],
 						["optic_LRPS",nil,0],
-						["optic_tws",nil,0]
+						["optic_tws",nil,0],
+						["CUP_muzzle_snds_M16",nil,0],
+						["CUP_muzzle_snds_M16_camo",nil,0],
+						["CUP_muzzle_snds_SCAR_L",nil,0]
 					]
 				];
 			};
