@@ -50,6 +50,7 @@ switch(_type) do
 		hint format["Vous avez envoyez à %1 le message: %2",_to,_msg];
 		ctrlShow[888895,true];
 		closeDialog 887890;
+		[[profileName, position player],"life_fnc_createMarker",west,false] spawn life_fnc_MP;
 	};
 	//msgadmin
 	case 3:

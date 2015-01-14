@@ -258,6 +258,7 @@ class Life_Client_Core
 		class randomRound {};
 		class getHLC {};
 		class vehicleExit {};
+		class createMarker {};
 	};
 	
 	class Network
