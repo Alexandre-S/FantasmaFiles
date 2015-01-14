@@ -49,7 +49,7 @@ life_truck_types = ["B_Truck_01_mover_F","B_Truck_01_box_F","B_Truck_01_ammo_F",
 life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","AGM_HandFlare_White","AGM_HandFlare_Red","AGM_HandFlare_Green","AGM_HandFlare_Yellow"];
 life_women = ["Oakes","Tyler","Tyler_scars","Mason","Mason_camo","Mason_Rigged","Mason_scars","Smith","Cheung","Quereshi"];
 life_ver_random = ["C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_transport_F"];
-life_civ_weapon = ["CUP_srifle_CZ550","CUP_srifle_LeeEnfield","CUP_hgun_Compact","CUP_hgun_Duty","CUP_hgun_Phantom","CUP_hgun_Colt1911","CUP_hgun_Makarov","CUP_hgun_PB6P9","CUP_hgun_TaurusTracker455","CUP_hgun_TaurusTracker455_gold","hgun_ACPC2_F","CUP_hgun_MicroUzi","CUP_hgun_SA61","hgun_PDW2000_F"];
+life_civ_weapon = ["Binocular","CUP_srifle_CZ550","CUP_srifle_LeeEnfield","CUP_hgun_Compact","CUP_hgun_Duty","CUP_hgun_Phantom","CUP_hgun_Colt1911","CUP_hgun_Makarov","CUP_hgun_PB6P9","CUP_hgun_TaurusTracker455","CUP_hgun_TaurusTracker455_gold","hgun_ACPC2_F","CUP_hgun_MicroUzi","CUP_hgun_SA61","hgun_PDW2000_F"];
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?

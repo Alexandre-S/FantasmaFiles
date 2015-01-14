@@ -49,7 +49,7 @@ if ((_code==47)||(_code==19)||(_code==20)||(_code==34)) then{
 };
 
 if(_code in(actionKeys "PersonView"))then{
-	if(vehicle player != player || (dayz_combat == 0))then{
+	if((vehicle player != player && {driver (vehicle player) == player}) || (dayz_combat == 0))then{
 		_handled=false;
 	}else{
 		_handled=true;

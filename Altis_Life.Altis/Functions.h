@@ -222,6 +222,7 @@ class Life_Client_Core
 		class animSync {};
 		class simDisable {};
 		class keyHandler {};
+		class mouseHandler {};
 		class dropItems {};
 		class handleDamage {};
 		class numberText {};

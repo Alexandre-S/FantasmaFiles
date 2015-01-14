@@ -70,11 +70,11 @@ while {life_carryWeight < life_maxWeight} do
 	if (speed player > 1) exitWith { titleText["Récolte annulée. Vous devez rester immobile pendant la récolte.","PLAIN"]; };
 	_val = [1,2,3,4] call BIS_fnc_selectRandom;
 	_diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-	if((_item == "sand" || _item == "salt" || _item == "rock" || _item == "oilu" || _item == "ironore" || _item == "diamond" || _item == "copperore") && (life_inv_pickaxe < 1)) exitWith {hint "Vous avez besoin d'une pioche pour effectuer cette action.";};
+	if((_gather == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") && (life_inv_pickaxe < 1)) exitWith {hint "Vous avez besoin d'une pioche pour effectuer cette action.";};
 	// if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 	if(!(_diff > 0)) exitWith { titleText [format["Récolte terminé. Vous n'avez plus de place pour stocker plus de %1.", _itemName],"PLAIN"]; };
 
-	if(_item == "sand" || _item == "salt" || _item == "rock" || _item == "oilu" || _item == "ironore" || _item == "diamond" || _item == "copperore") then {
+	if(_item == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") then {
 		//[[player, "mining",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 		playSound "mining";
 	}

@@ -106,6 +106,7 @@ diag_log "Executing client.fsm";
 waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
+(findDisplay 46) displayAddEventHandler ["MouseButtonDown", "_this call life_fnc_mouseHandler"];
 player addRating 99999999;
 
 combat_mode = 
@@ -118,7 +119,7 @@ combat_mode =
 			while {((player getVariable ["combat_mode",0]) > time - 60)} do
 			{
 				[] call life_fnc_hudUpdate;
-				if (cameraView == "External" OR {playerside == civilian && cameraView == "GUNNER" && !license_civ_vigil && !((currentWeapon player) in life_civ_weapon)} ) then
+				if (cameraView == "External" OR {playerside == civilian && cameraView == "GUNNER" && (!license_civ_vigil OR !license_civ_rebel) && !((currentWeapon player) in life_civ_weapon)} ) then
 				{
 					if(vehicle player == player) then{
 						player switchCamera "Internal";
