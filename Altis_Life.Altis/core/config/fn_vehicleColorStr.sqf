@@ -30,6 +30,22 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "sab_UN_Offroad" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "ONU";};
+			case 1: {_color = "Rouge";};
+			case 2: {_color = "Jaune";};
+			case 3: {_color = "Blanc";};
+			case 4: {_color = "Bleu";};
+			case 5: {_color = "Rouge foncé";};
+			case 6: {_color = "Bleu et Blanc"};
+			case 7: {_color = "Noir"};
+			case 8: {_color = "Rouillé"};
+		};
+	};
+	
 	case "C_Hatchback_01_F":
 	{
 		switch (_index) do

@@ -66,6 +66,22 @@ switch (_vehicle) do
 			["altisrpfr\textures\offroad_depannage.paa","dep"]
 		];
 	};
+		
+	case "sab_UN_Offroad":
+	{
+		_ret = 
+		[
+			["sab_UN2030\data\UN_Offroad.paa", "cop"], 
+			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_co.paa", "cop"], 
+			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE01_CO.paa", "cop"],
+			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE02_CO.paa", "cop"],
+			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE03_CO.paa","cop"],
+			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE04_CO.paa","cop"],
+			["\A3\soft_F\Offroad_01\Data\offroad_01_ext_BASE05_CO.paa","cop"],
+			["#(ai,64,64,1)Fresnel(0.3,3)","cop"],
+			["altisrpfr\textures\offroad_rouille.paa","cop"]
+		];
+	};
 	
 	case "C_Hatchback_01_F":
 	{
