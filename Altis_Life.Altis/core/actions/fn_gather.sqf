@@ -17,7 +17,7 @@ life_action_inUse = true;
 
 //Find out what zone we're near
 {
-	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};
+	if(player distance (getMarkerPos _x) < 75) exitWith {_zone = _x;};
 } foreach _resourceZones;
 
 // if(_zone == "") exitWith {
@@ -28,18 +28,18 @@ life_action_inUse = true;
 if(_zone == "") then {
 	switch (true) do
 	{
-		case (player distance (getMarkerPos "lead_1") < 30): {_gather = "copperore"; _val = 2;};
-		case (player distance (getMarkerPos "lead_1_1") < 30): {_gather = "copperore"; _val = 2;};
-		case (player distance (getMarkerPos "iron_1") < 30): {_gather = "ironore"; _val = 2;};
-		case (player distance (getMarkerPos "iron_1_1") < 30): {_gather = "ironore"; _val = 2;};
+		case (player distance (getMarkerPos "lead_1") < 75): {_gather = "copperore"; _val = 2;};
+		case (player distance (getMarkerPos "lead_1_1") < 75): {_gather = "copperore"; _val = 2;};
+		case (player distance (getMarkerPos "iron_1") < 75): {_gather = "ironore"; _val = 2;};
+		case (player distance (getMarkerPos "iron_1_1") < 75): {_gather = "ironore"; _val = 2;};
 		case (player distance (getMarkerPos "salt_1") < 120) : {_gather = "salt"; _val = 4;};
 		case (player distance (getMarkerPos "salt_1_1") < 120) : {_gather = "salt"; _val = 4;};
 		case (player distance (getMarkerPos "sand_1") < 75) : {_gather = "sand"; _val = 5;};
 		case (player distance (getMarkerPos "sand_1_1") < 75) : {_gather = "sand"; _val = 5;};
-		case (player distance (getMarkerPos "diamond_1") < 50): {_gather = "diamond"; _val = 1;};
-		case (player distance (getMarkerPos "oil_1") < 40) : {_gather = "oilu"; _val = 1;};
-		case (player distance (getMarkerPos "oil_2") < 40) : {_gather = "oilu"; _val = 1;};
-		case (player distance (getMarkerPos "rock_1") < 50): {_gather = "rock"; _val = 2;};
+		case (player distance (getMarkerPos "diamond_1") < 75): {_gather = "diamond"; _val = 1;};
+		case (player distance (getMarkerPos "oil_1") < 75) : {_gather = "oilu"; _val = 1;};
+		case (player distance (getMarkerPos "oil_2") < 75) : {_gather = "oilu"; _val = 1;};
+		case (player distance (getMarkerPos "rock_1") < 75): {_gather = "rock"; _val = 2;};
 		default {_gather = "";};
 	};
 } else {
