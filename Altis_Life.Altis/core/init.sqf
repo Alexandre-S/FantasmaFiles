@@ -118,13 +118,17 @@ combat_mode =
 			while {((player getVariable ["combat_mode",0]) > time - 60)} do
 			{
 				[] call life_fnc_hudUpdate;
-				if (cameraView == "External") then
+				if (cameraView == "External" OR {playerside == civilian && cameraView == "GUNNER" && !license_civ_vigil && !((currentWeapon player) in life_civ_weapon)} ) then
 				{
-					if(vehicle player == player)then{
+					if(vehicle player == player) then{
 						player switchCamera "Internal";
+					}else{
+						if(driver (vehicle player) != player) then {
+							player switchCamera "Internal";
+						};
 					};
 				};
-				sleep 0.1;
+				sleep 0.01;
 			};
 			player setVariable ["combat_mode", 0, false];
 			dayz_combat = 0;

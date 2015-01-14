@@ -23,3 +23,5 @@ if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 	[] call life_fnc_getHLC;
 	[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 };
+
+[3] call SOCK_fnc_updatePartial; // save player gear
