@@ -142,12 +142,13 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		[_vehicle,_color,_classname,_side] spawn
 		{
 			private["_vehicle","_color","_classname","_side"];
-			if(_classname in life_ver_random) then { sleep 5; };
 
 			_vehicle = _this select 0;
 			_color = _this select 1;
 			_classname = _this select 2;
 			_side = _this select 3;
+			
+			if(_classname in life_ver_random) then { sleep 5; };
 			
 			//Reskin the vehicle 
 			// [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
