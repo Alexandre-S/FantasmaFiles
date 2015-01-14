@@ -28,7 +28,7 @@ _query = switch(_side) do {
 	case west: {_returnCount = 15; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr, damage, hunger, thirst, sexe FROM players WHERE playerid='%1'",_uid];};
 	// START CHANGES
 	// HERE I'VE ADDED MY 3 FIELDS ON CIVILIAN
-	case civilian: {_returnCount = 18; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr, damage, hunger, thirst, sexe, dep FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 19; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr, damage, hunger, thirst, sexe, dep FROM players WHERE playerid='%1'",_uid];};
 	// END CHANGES
 	case independent: {_returnCount = 15; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, position, alive, tfr, damage, hunger, thirst, sexe FROM players WHERE playerid='%1'",_uid];};
 };
