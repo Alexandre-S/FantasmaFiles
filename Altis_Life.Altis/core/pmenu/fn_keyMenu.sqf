@@ -64,6 +64,7 @@ _near_units = _near_units call BIS_fnc_sortAlphabetically;
 				};
 				case civilian: {
 					_type = "Civ";
+					if(_x getVariable["life_dep",false]) then{ _type = "Dep"; };
 				};
 				case resistance: {
 					_type = "Med";

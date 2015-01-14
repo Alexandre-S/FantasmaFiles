@@ -372,6 +372,19 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
+		class MedReq : life_RscButtonMenu
+		{
+			idc = 888900;
+			text = "DEPANNEUR";
+			colorBackground[] = {0.584, 0.086, 0.086,1.0};
+			onButtonClick = "[8,-1,(ctrlText 888894)] call life_fnc_newMsg;";
+			
+			x = 0.32;
+			y = 0.36;
+			w = 0.2;
+			h = (1 / 25);
+		};
+		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Close";

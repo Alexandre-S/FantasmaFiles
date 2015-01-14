@@ -39,6 +39,8 @@ life_sexe = false;
 life_isblacklisted = false;
 life_factnumber = 0;
 life_reblevel = 0;
+life_isdep = false;
+player setVariable["life_dep",false,true];
 life_fatigue = 0.6; //Set the max fatigue
 life_is_alive = false;
 life_smartphoneTarget = ObjNull;
@@ -223,7 +225,8 @@ life_licenses =
 	["license_med_air","med"],
 	["license_civ_home","civ"],
 	["license_civ_gvt","civ"],
-	["license_civ_vigil","civ"]
+	["license_civ_vigil","civ"],
+	["license_civ_dep","civ"]
 ];
 
 //Setup License Variables

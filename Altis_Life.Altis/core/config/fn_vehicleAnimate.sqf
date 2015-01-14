@@ -48,6 +48,7 @@ else
 			_vehicle animate ["HideDoor3", 1];
 			_vehicle setVariable["lights",false,true];	
 			_vehicle animate ["HideBumper1", 0];
+			_vehicle setVariable ["service_truck", true, true];
 		};
 		
 		case "med_offroad":

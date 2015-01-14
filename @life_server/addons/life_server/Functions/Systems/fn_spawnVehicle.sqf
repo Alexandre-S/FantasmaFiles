@@ -145,14 +145,15 @@ if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["sab_UN_Offroad","sab_UN_
 {
 	[[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
+
+if((_vInfo select 8) == "10" && (_vInfo select 2) == "C_Offroad_01_F") then
+{
+	[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
+};
+
 if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
 {
-	if((_vInfo select 8) == 10) then {
-		[[_vehicle,"service_truck",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
-		_vehicle setVariable ["service_truck", true, true];
-	}else{
-		[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
-	};
+	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "LandRover_ACR") then
 {

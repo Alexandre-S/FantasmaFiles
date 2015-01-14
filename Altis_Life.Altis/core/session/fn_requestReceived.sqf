@@ -94,6 +94,11 @@ switch(playerSide) do {
 			life_thirst = parseNumber(_this select 17);
 		};
 		life_sexe = _this select 18;
+		life_isdep = _this select 19;
+		
+		_other = ["dep",0] call life_fnc_licenseType;
+		// if(!life_isdep) then { missionNamespace setVariable [_other select 0,false]; };
+		if (missionNamespace getVariable[_other select 0,false]) then{ player setVariable["life_dep", true, true];};
 	};
 	
 	case independent: {
@@ -114,8 +119,8 @@ switch(playerSide) do {
 [] call life_fnc_loadGear;
 
 // recup des clefs houses/vehicles
-if(count (_this select 21) > 0) then { 
-	{life_vehicles pushBack _x;} foreach (_this select 21);
+if(count (_this select 22) > 0) then { 
+	{life_vehicles pushBack _x;} foreach (_this select 22);
 };
 
 life_session_completed = true;

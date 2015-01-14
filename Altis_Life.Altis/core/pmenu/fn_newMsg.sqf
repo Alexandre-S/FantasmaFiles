@@ -104,4 +104,15 @@ switch(_type) do
 		hint format["Admin Message envoyé à tous: %1",_msg];
 		closeDialog 887890;
 	};
+	//depreq
+	case 8:
+	{
+		if(({_x getVariable["life_dep",false]} count playableUnits) == 0) exitWith {hint format["Aucun dépanneur disponible. Veuillez re-essayer plus tard."];};
+		ctrlShow[888900,false];
+		if(_msg == "") exitWith {hint "Veuillez entrer un message!";ctrlShow[888900,true];};
+		[[ObjNull,_msg,player,6],"TON_fnc_handleMessages",serverhc] spawn life_fnc_MP;
+		hint format["Vous avez envoyez aux dépanneurs.",_msg];
+		ctrlShow[888900,true];
+		closeDialog 887890;
+	};
 };

@@ -26,7 +26,7 @@
 		titleText [localize "STR_MISC_SirensOFF","PLAIN"];
 		_veh setVariable["siren",false,true];
 	}
-		else
+	else
 	{
 		titleText [localize "STR_MISC_SirensON","PLAIN"];
 		_veh setVariable["siren",true,true];

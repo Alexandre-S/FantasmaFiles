@@ -38,4 +38,5 @@ switch (_type) do
 	case "cement": {15000};
 	case "mair": {15000};
 	case "home": {75000};
+	case "dep": {50000};
 };

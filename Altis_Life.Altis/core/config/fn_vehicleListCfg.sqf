@@ -95,6 +95,10 @@ switch (_shop) do
 			_return pushBack ["B_Truck_01_box_F",450000];
 			_return pushBack ["O_Truck_03_device_F",450000];
 		};
+		if(player getVariable["life_dep",false]) then
+		{
+			_return set[count _return, ["B_Truck_01_mover_F",450000]]; //Service Truck
+		};
 	};
 	
 	case "civ_air":
@@ -112,6 +116,10 @@ switch (_shop) do
 		{
 			// _return pushBack ["I_Heli_Transport_02_F",750000];
 			_return pushBack ["O_Heli_Transport_04_F",1000000];
+		};
+		if(player getVariable["life_dep",false]) then
+		{
+			_return set[count _return, ["I_Heli_Transport_02_F",750000]]; // dep
 		};
 	};
 	
@@ -133,7 +141,7 @@ switch (_shop) do
 		if(__GETC__(life_medicLevel) >= 2 && __GETC__(life_donator) > 0) then
 		{
 			_return pushBack ["C_Hatchback_01_sport_F",45000];
-			_return pushBack ["B_Truck_01_mover_F",30000];
+			//_return pushBack ["B_Truck_01_mover_F",30000];
 		};
 		if(__GETC__(life_medicLevel) >= 3) then
 		{
@@ -149,10 +157,10 @@ switch (_shop) do
 			_return pushBack ["C_Heli_Light_01_civil_F",40000];
 			_return pushBack ["B_Heli_Light_01_F",40000];
 		};
-		if(__GETC__(life_medicLevel) >= 1 && __GETC__(life_donator) > 0) then
-		{
-			_return pushBack ["I_Heli_Transport_02_F",350000];
-		};
+		// if(__GETC__(life_medicLevel) >= 1 && __GETC__(life_donator) > 0) then
+		// {
+			// _return pushBack ["I_Heli_Transport_02_F",350000];
+		// };
 		if(__GETC__(life_medicLevel) >= 2) then
 		{
 			_return pushBack ["O_Heli_Light_02_unarmed_F",75000];

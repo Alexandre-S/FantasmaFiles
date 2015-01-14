@@ -27,6 +27,8 @@ switch (_state) do
 		license_civ_gun = false;
 		license_civ_rebel = false;
 		//license_civ_driver = false;
+		license_civ_dep = false;
+		player setVariable["life_dep", false, true];
 	};
 	
 	//Remove motor vehicle licenses

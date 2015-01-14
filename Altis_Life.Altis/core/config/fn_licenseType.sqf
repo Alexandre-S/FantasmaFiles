@@ -49,6 +49,7 @@ switch (_mode) do
 			case "home": {_var = "license_civ_home"};
 			case "gvt": {_var = "license_civ_gvt"};
 			case "vigil": {_var = "license_civ_vigil"};
+			case "dep": {_var = "license_civ_dep"};
 			default {_var = ""};
 		};
 	};
@@ -90,6 +91,7 @@ switch (_mode) do
 			case "license_civ_home": {_var = "home"};
 			case "license_civ_gvt": {_var = "gvt"};
 			case "license_civ_vigil": {_var = "vigil"};
+			case "license_civ_dep: {_var = "dep"};
 			default {_var = ""};
 		};
 	};

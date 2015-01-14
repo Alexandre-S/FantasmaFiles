@@ -109,17 +109,15 @@ switch(playerSide) do {
 		if((life_veh_shop select 2) == "civ" && {_className == "LandRover_ACR"}) then {
 			[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
 		};
+		if(_className == "C_Offroad_01_F" && _colorIndex == 10) then {
+			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
+		};
 	};
 	
 	case independent: {
 		_vehicle setVariable ["tf_side", civilian, true];
 		if(_className == "C_Offroad_01_F") then {
-			if(_colorIndex == 10) then {
-				_vehicle setVariable ["service_truck", true, true];
-				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
-			} else {
-				[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
-			};
+			[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 		};
 	};
 };

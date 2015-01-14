@@ -62,4 +62,9 @@ switch(_type) do
 	{
 		[[_msg,name _player,4],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
 	};
+	//MSGDEP
+	case 6:
+	{
+		[[_msg,name _player,6],"TON_fnc_clientMessage",true,false] spawn life_fnc_MP;
+	};
 };

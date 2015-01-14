@@ -112,6 +112,10 @@ switch (_filter) do
 		{
 			_ret pushBack ["vip_clothes","Tenue Vigil",5500];
 		};
+		if(player getVariable["life_dep",false]) then
+		{
+			_ret pushBack ["U_Competitor","Uniforme Dépanneur",500];
+		};
 		if(life_sexe) then
 		{
 			_ret pushBack ["B_FEM_NATO",nil,800];
