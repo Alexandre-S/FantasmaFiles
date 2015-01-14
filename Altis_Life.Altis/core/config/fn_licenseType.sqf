@@ -91,7 +91,7 @@ switch (_mode) do
 			case "license_civ_home": {_var = "home"};
 			case "license_civ_gvt": {_var = "gvt"};
 			case "license_civ_vigil": {_var = "vigil"};
-			case "license_civ_dep: {_var = "dep"};
+			case "license_civ_dep": {_var = "dep"};
 			default {_var = ""};
 		};
 	};

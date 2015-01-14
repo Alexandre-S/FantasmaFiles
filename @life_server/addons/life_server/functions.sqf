@@ -236,9 +236,10 @@ TON_fnc_clientMessage =
 compileFinal "
 	if(isServer) exitWith {};
 	if(!hasinterface) exitWith {};
-	private[""_msg"",""_from"", ""_type""];
+	private[""_msg"",""_from"", ""_type"",""_fromplayer""];
 	_msg = _this select 0;
-	_from = _this select 1;
+	_fromplayer = _this select 1;
+	_from = name _fromplayer;
 	_type = _this select 2;
 	if(_from == """") exitWith {};
 	switch (_type) do
@@ -276,7 +277,7 @@ compileFinal "
 			[""AdminDispatch"",[format[""%1 Has Requested An Admin!"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 			playSound ""cell_ring_0"";
-			[name _from, position _from,""ADMIN""] spawn life_fnc_createMarker;
+			[name _fromplayer, position _fromplayer,""ADMIN""] spawn life_fnc_createMarker;
 		};
 		
 		case 3 :
@@ -312,7 +313,7 @@ compileFinal "
 			
 			[""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
 			playSound ""cell_ring_0"";
-			[name _from, position _from,""SAMU""] spawn life_fnc_createMarker;
+			[name _fromplayer, position _fromplayer,""SAMU""] spawn life_fnc_createMarker;
 		};
 		
 		case 6 :
@@ -325,7 +326,7 @@ compileFinal "
 			[""PoliceDispatch"",[format[""Nouvel appel d'urgence de: %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 			playSound ""cell_ring_0"";
-			[name _from, position _from,""DEP""] spawn life_fnc_createMarker;
+			[name _fromplayer, position _fromplayer,""DEP""] spawn life_fnc_createMarker;
 		};	
 	};
 ";

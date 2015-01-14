@@ -22,11 +22,11 @@ switch(true) do
 	};
 };
 
-if {!life_Mask_sound && {goggles player == "Mask_M50" OR goggles player == "Mask_M40" OR goggles player == "Mask_M40_OD"}} then {
+if (!life_Mask_sound && {goggles player == "Mask_M50" OR goggles player == "Mask_M40" OR goggles player == "Mask_M40_OD"}) then {
 	life_Mask_sound = true;
-	while {alive _player AND (goggles _player == "Mask_M50" OR goggles _player == "Mask_M40" OR goggles _player == "Mask_M40_OD")} do 
+	while {alive player AND (goggles player == "Mask_M50" OR goggles player == "Mask_M40" OR goggles player == "Mask_M40_OD")} do 
 	{
-		playsound3d ["A3\sounds_f\characters\human-sfx\other\diver-breath-2.wss", _player,false,getposASL _player, 0.8,1,15];
+		playsound3d ["A3\sounds_f\characters\human-sfx\other\diver-breath-2.wss", player,false,getposASL player, 0.8,1,15];
 		sleep 5;
 	};
 	life_Mask_sound = false;

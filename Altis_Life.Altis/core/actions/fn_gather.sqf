@@ -74,7 +74,7 @@ while {life_carryWeight < life_maxWeight} do
 	// if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 	if(!(_diff > 0)) exitWith { titleText [format["Récolte terminé. Vous n'avez plus de place pour stocker plus de %1.", _itemName],"PLAIN"]; };
 
-	if(_item == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") then {
+	if(_gather == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") then {
 		//[[player, "mining",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 		playSound "mining";
 	}
