@@ -37,7 +37,7 @@ switch(_type) do
 					{
 						case west: {_type = "Cop"};
 						case civilian: {
-							_type = "Civ"
+							_type = "Civ";
 							if(_x getVariable["life_dep",false]) then{ _type = "Dep"; };
 						};
 						case independent: {_type = "Med"};

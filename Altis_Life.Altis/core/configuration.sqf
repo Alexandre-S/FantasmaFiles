@@ -35,6 +35,7 @@ life_handcuffkeys = ObjNull;
 //Channel 7
 life_channel_send = true;
 life_sexe = false;
+life_Mask_sound = false;
 
 life_isblacklisted = false;
 life_factnumber = 0;

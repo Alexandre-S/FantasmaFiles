@@ -8,6 +8,7 @@
 	sort through the information, validate it and if all valid 
 	set the client up.
 */
+private["_other"];
 life_session_tries = life_session_tries + 1;
 if(life_session_completed) exitWith {}; //Why did this get executed when the client already initialized? Fucking arma...
 if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
@@ -72,14 +73,14 @@ switch(playerSide) do {
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
-		life_houses = _this select 19;
+		life_houses = _this select 20;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
 		// Same here, select 10 + 3 fields, is that right ?
-		life_gangData = _This select 20;
+		life_gangData = _This select 21;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		};
@@ -97,7 +98,7 @@ switch(playerSide) do {
 		life_isdep = _this select 19;
 		
 		_other = ["dep",0] call life_fnc_licenseType;
-		// if(!life_isdep) then { missionNamespace setVariable [_other select 0,false]; };
+		if(!life_isdep) then { missionNamespace setVariable [_other select 0,false]; };
 		if (missionNamespace getVariable[_other select 0,false]) then{ player setVariable["life_dep", true, true];};
 	};
 	

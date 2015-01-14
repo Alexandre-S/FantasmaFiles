@@ -251,7 +251,7 @@ compileFinal "
 			
 			[""TextMessage"",[format[""You Received A New Private Message From %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
-			playSound "cell_ring_0";
+			playSound ""cell_ring_0"";
 		};
 		
 		case 1 :
@@ -263,7 +263,7 @@ compileFinal "
 			
 			[""PoliceDispatch"",[format[""A New Police Report From: %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
-			playSound "cell_ring_0";
+			playSound ""cell_ring_0"";
 		};
 		
 		case 2 :
@@ -275,8 +275,8 @@ compileFinal "
 			
 			[""AdminDispatch"",[format[""%1 Has Requested An Admin!"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
-			playSound "cell_ring_0";
-			[name _fromplayer, position _fromplayer,"ADMIN"] spawn life_fnc_createMarker;
+			playSound ""cell_ring_0"";
+			[name _from, position _from,""ADMIN""] spawn life_fnc_createMarker;
 		};
 		
 		case 3 :
@@ -289,7 +289,7 @@ compileFinal "
 			[""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
 			systemChat _message;
 			if((call life_adminlevel) > 0) then {systemChat _admin;};
-			playSound "cell_ring_0";
+			playSound ""cell_ring_0"";
 		};
 		
 		case 4 :
@@ -302,7 +302,7 @@ compileFinal "
 			[""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
 			systemChat _message;
 			if((call life_adminlevel) > 0) then {systemChat _admin;};
-			playSound "cell_ring_0";
+			playSound ""cell_ring_0"";
 		};
 		
 		case 5: {
@@ -311,21 +311,21 @@ compileFinal "
 			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>EMS Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
 			[""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
-			playSound "cell_ring_0";
-			[name _fromplayer, position _fromplayer,"SAMU"] spawn life_fnc_createMarker;
+			playSound ""cell_ring_0"";
+			[name _from, position _from,""SAMU""] spawn life_fnc_createMarker;
 		};
 		
 		case 6 :
 		{
-			if!(player getVariable["life_dep",false]) exitWith {};
-			private["_message"];
-			_message = format["---APPEL DEPANNEUR DE %1: %2",_from,_msg];
-			hint parseText format ["<t color='#316dff'><t size='2'><t align='center'>Nouvelle demande<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Tous les dépanneurs<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2",_from,_msg];
+			if!(player getVariable[""life_dep"",false]) exitWith {};
+			private[""_message""];
+			_message = format[""---APPEL DEPANNEUR DE %1: %2"",_from,_msg];
+			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Nouvelle demande<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Tous les dépanneurs<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			["PoliceDispatch",[format["Nouvel appel d'urgence de: %1",_from]]] call bis_fnc_showNotification;
+			[""PoliceDispatch"",[format[""Nouvel appel d'urgence de: %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
-			playSound "cell_ring_0";
-			[name _fromplayer, position _fromplayer,"DEP"] spawn life_fnc_createMarker;
+			playSound ""cell_ring_0"";
+			[name _from, position _from,""DEP""] spawn life_fnc_createMarker;
 		};	
 	};
 ";

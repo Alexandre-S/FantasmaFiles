@@ -163,7 +163,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 			{
 			 _vehicle setFuelCargo 0;
 			};
-			if((_color) == "10" && (_classname) == "C_Offroad_01_F") then
+			if((_color) == 10 && (_classname) == "C_Offroad_01_F") then
 			{
 				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
 			};

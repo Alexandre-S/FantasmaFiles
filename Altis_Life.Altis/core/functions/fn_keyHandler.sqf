@@ -236,7 +236,7 @@ switch (_code) do
 	case 38: 
 	{
 		//If cop run checks for turning lights on.
-		if(_shift && (playerSide in [west,independent] OR (player getVariable["life_dep",false])) then {
+		if(_shift && (playerSide in [west,independent] OR (player getVariable["life_dep",false]))) then {
 			if(vehicle player != player && (typeOf vehicle player) in ["sab_UN_Offroad","sab_UN_Hunter","sab_UN_Hunter_hmg","C_Offroad_01_F"]) then {
 				if(!isNil {vehicle player getVariable "lights"}) then {
 					if(playerSide == west) then {
