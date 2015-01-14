@@ -55,6 +55,17 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "RDS_Octavia_Civ_01":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Blanche";};
+			case 1: {_color = "Noir";};
+			case 2: {_color = "Jaune";};
+			case 3: {_color = "Bleu";};
+		};
+	};
+	
 	case "RDS_Ikarus_Civ_01":
 	{
 		switch (_index) do

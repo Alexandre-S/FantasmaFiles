@@ -36,6 +36,7 @@ switch (_shop) do
 			["BAF_Offroad_D",47500],
 			["LandRover_ACR",47500],
 			["C_SUV_01_F",52500],
+			["RDS_Octavia_Civ_01",60000],
 			["C_Van_01_transport_F",97500]
 		];
 		// Si donateur

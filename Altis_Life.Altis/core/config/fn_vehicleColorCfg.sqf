@@ -92,6 +92,17 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "RDS_Octavia_Civ_01":
+	{
+		_ret =
+		[
+			["\rds_a2port_civ\octavia\Data\car_body_co.paa","civ","\rds_a2port_civ\octavia\Data\car_body_m_co.paa"],
+			["\rds_a2port_civ\octavia\Data\car_body_black_CO.paa","civ","\rds_a2port_civ\octavia\Data\car_body_m_black_CO.paa"],
+			["\rds_a2port_civ\octavia\Data\car_body_yellow_CO.paa","civ","\rds_a2port_civ\octavia\Data\car_body_m_yellow_CO.paa"],
+			["\rds_a2port_civ\octavia\Data\car_body_blue_CO.paa","civ","\rds_a2port_civ\octavia\Data\car_body_m_blue_CO.paa"]
+		];
+	};
+	
 	case "RDS_Ikarus_Civ_01":
 	{
 		_ret =

@@ -14,7 +14,7 @@ if(str(_target) in life_dp_points) then
 	_point = life_dp_points - [(str(_target))];
 	_dp = _point call BIS_fnc_selectRandom;
 }
-	else
+else
 {
 	_dp = life_dp_points call BIS_fnc_selectRandom;
 };
