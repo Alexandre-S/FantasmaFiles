@@ -254,8 +254,8 @@ switch (_shop) do
 		{
 			_return pushBack["GNT_C185",0];
 			_return pushBack["GNT_C185F",0];
-			_return pushBack["C_Heli_Light_01_civil_F",0];
-			_return pushBack["B_Heli_Light_01_F",0];
+			_return pushBack["sab_UN_bird_civil",0];
+			_return pushBack["sab_UN_bird",0];
 			_return pushBack["sab_UN_Heli",0];
 			_return pushBack["sab_UN_Large_Heli",0];
 		};
@@ -264,7 +264,7 @@ switch (_shop) do
 		{
 			_return pushBack["I_Heli_light_03_unarmed_F",0];
 			_return pushBack["B_Heli_Transport_03_unarmed_F",0];
-			_return pushBack["O_Heli_Transport_04_bench_F",0];
+			_return pushBack["sab_UN_TaruB",0];
 			_return pushBack["bwi_a3_t6a_7",0];
 			_return pushBack["bwi_a3_at6b_3",0];
 		};
@@ -278,6 +278,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 6) then
 		{
 			_return pushBack["sab_UN_Heli_armed",0];
+			_return pushBack["sab_UN_attackHeli",0];
 			_return pushBack["B_Heli_Attack_01_F",0];
 		};
 	};
@@ -314,6 +315,7 @@ switch (_shop) do
 		{
 			_return pushBack["sab_UN_Heli_armed",0];
 			_return pushBack["sab_UN_attackHeli",0];
+			_return pushBack["B_Heli_Attack_01_F",0];
 		};
 	};
 	
