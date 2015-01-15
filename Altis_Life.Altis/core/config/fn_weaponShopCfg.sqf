@@ -373,6 +373,8 @@ switch(_shop) do
 						["CUP_arifle_G36A_camo",nil,0],
 						["CUP_arifle_G36K",nil,0],
 						["CUP_arifle_G36K_camo",nil,0],
+						["CUP_arifle_G36C",nil,0],
+						["CUP_arifle_G36C_camo",nil,0],
 						["CUP_30Rnd_556x45_G36",nil,0],
 						["CUP_arifle_MG36",nil,0],
 						["CUP_arifle_MG36_camo",nil,0],
