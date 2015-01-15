@@ -21,7 +21,7 @@ switch(true) do
 		//if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
 };
-[] spawn {
+/*[] spawn {
 	if (!life_Mask_sound && {goggles player in ["Mask_M50","Mask_M40","Mask_M40_OD"]}) then {
 		life_Mask_sound = true;
 		while {sleep 0.1;alive player AND (goggles player in ["Mask_M50","Mask_M40","Mask_M40_OD"])} do 
@@ -31,4 +31,4 @@ switch(true) do
 		};
 		life_Mask_sound = false;
 	};
-};
+};*/
