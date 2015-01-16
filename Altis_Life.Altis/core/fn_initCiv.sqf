@@ -44,9 +44,11 @@ if(life_is_arrested || (!(life_is_alive) && (life_firstSpawn)) ) then
 }
 else
 {
+	life_position = life_position findEmptyPosition [1,50,typeof player];
+	
 	if (life_is_alive && ((count life_position) > 0)) then
 	{
-		player setPosATL life_position;
+		player setPos life_position;
 		hint format["Vous êtes toujours en vie. Vous avez respawn à votre dernière position."];
 		if(life_firstSpawn) then {
 			[] call life_fnc_welcomeNotification;
