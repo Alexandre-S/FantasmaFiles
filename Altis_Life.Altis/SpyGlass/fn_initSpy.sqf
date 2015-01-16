@@ -55,6 +55,8 @@ CONST(JJJJ_MMMM___EEEEEEE_SPAWN_WEAPON,"false");
 	"JSRS2_FighterPlane3","JSRS2_FV720_Mora","JSRS2_Hunter","JSRS2_Ifrit","JSRS2_IFV6a_Cheetah","JSRS2_IFV6c_Panther","JSRS2_M2A1_Slammer","JSRS2_M4_Scorcher","JSRS2_M5_Sandstorm","JSRS2_MBT52_Kuma","JSRS2_Mi48_Kajman","JSRS2_MSE3_Marid","JSRS2_Offroad",
 	"JSRS2_Po30_Orca","JSRS2_Strider","JSRS2_SUV","JSRS2_T100_Varsuk","JSRS2_Truck1","JSRS2_Truck2","JSRS2_UAV_1","JSRS2_UH80_GhostHawk","JSRS2_Van","JSRS2_WY55_Hellcat","JSRS2_ZSU39_Tigris","cba_xeh_a3"]
 */
+
+life_fail = false;
 	
 _patchList = 
 ["life_server","CAData","A3_BaseConfig_F","A3_Dubbing_Radio_F","A3_Functions_F","A3_Functions_F_EPA","A3_Functions_F_EPC","A3_Data_F","A3_Data_F_ParticleEffects","A3_Editor_F","A3_Functions_F_Curator",
@@ -134,6 +136,7 @@ _patchList =
 "LandRover","bwi_a3_t6","PansyLandRovers","PansyLandRovers","FANTASMA_Units","LT_Characters_S","example_uniform_config","LT_Characters_Male_S","Shemaghs","m50gasmask","gasmask","AGM_Aircraft","AGM_Armour","AGM_Attach","AGM_Backblast","AGM_Backpacks","AGM_Ballistics","AGM_Captives","AGM_Core","AGM_Difficulties","AGM_FastRoping","AGM_FireControlSystem","AGM_GForces","AGM_Goggles","AGM_Grenades","AGM_Hearing","AGM_Interaction","AGM_Inventory","AGM_Logistics","AGM_MagazineRepack","AGM_Map","AGM_Markers","AGM_Movement","AGM_NightVision","AGM_NoRadio","AGM_Overheating","AGM_Parachute","AGM_Ragdolls","AGM_RealisticNames","AGM_Recoil","AGM_Reload","AGM_Resting","AGM_SafeMode","AGM_Scopes","AGM_Smallarms","AGM_Thermals","AGM_Vector","AGM_Vehicles","AGM_WeaponSelect","AGM_Wind",
 "FEMAL3","FEMAL3_Heads","FEMAL3_CustomModels","FEMAL3_Uniforms","FEMAL3_UnitInfo",
 "CUP_BaseConfigs","CUP_BaseData","CUP_Weapons_WeaponsCore","CUP_Weapons_West_Attachments","CUP_Weapons_Ammunition","CUP_Weapons_AS50","CUP_Weapons_AWM","CUP_Weapons_Backpacks","CUP_Weapons_Compact","CUP_Weapons_CZ750","CUP_Weapons_CZ805","CUP_Weapons_DMR","CUP_Weapons_Duty","CUP_Weapons_East_Attachments","CUP_Weapons_EVO","CUP_Weapons_FNFAL","CUP_Weapons_G36","CUP_Weapons_Glock17","CUP_Weapons_GrenadeLaunchers","CUP_Weapons_Grenades","CUP_Weapons_HuntingRifle","CUP_Weapons_IGLA","CUP_Weapons_Items","CUP_Weapons_Javelin","CUP_Weapons_KSVK","CUP_Weapons_L110","CUP_Weapons_L7A2","CUP_Weapons_L85","CUP_Weapons_LeeEnfield","CUP_Weapons_M1014","CUP_Weapons_M107","CUP_Weapons_M110","CUP_Weapons_M136","CUP_Weapons_M14","CUP_Weapons_M16","CUP_Weapons_M24","CUP_Weapons_M47","CUP_Weapons_M60E4","CUP_Weapons_M9","CUP_Weapons_MAAWS","CUP_Weapons_Makarov","CUP_Weapons_Metis_AT_13","CUP_Weapons_MicroUZI","CUP_Weapons_MP5","CUP_Weapons_NLAW","CUP_Weapons_PB_6P9","CUP_Weapons_Phantom","CUP_Weapons_PK","CUP_Weapons_Pods","CUP_Weapons_Put","CUP_Weapons_Revolver","CUP_Weapons_RPG18","CUP_Weapons_RPG7","CUP_Weapons_Sa58","CUP_Weapons_SA61","CUP_Weapons_Saiga12k","CUP_Weapons_SMAW","CUP_Weapons_Stinger","CUP_Weapons_Strela_2","CUP_Weapons_SVD","CUP_Weapons_UK59","CUP_Weapons_VehicleWeapons","CUP_Weapons_VSS","CUP_Weapons_XM8","CUP_Weapons_AA12","CUP_Weapons_AK","CUP_Weapons_Bizon","CUP_Weapons_Colt1911","CUP_Weapons_M240","CUP_Weapons_M249","CUP_Weapons_Mk48","CUP_Weapons_SCAR","CUP_Weapons_AmmoBoxes","CUP_Weapons_Compatibility","CUP_Weapons_Curator","CUP_Creatures_People_Military_DummyInfantrySet","CUP_Creatures_People_Military_DummyInfantrySet_MagazinesMassAdjustment","CUP_Creatures_People_Military_DummyInfantrySet_WeaponsMassAdjustment",
+"DragonFyre_Bullethits","DragonFyre_Explosions","DragonFyre_Sonic_Cracks","DragonFyre_230mm_Titan","DragonFyre_Air_Weapons","DragonFyre_35mm_Autocannon","DragonFyre_120mm_Cannon","DragonFyre_Autocannon","DragonFyre_DAGR","DragonFyre_DAR","DragonFyre_Minigun","DragonFyre_30mm_Cannon","DragonFyre_Gau8","DragonFyre_155mm_AMOS","DragonFyre_M134","DragonFyre_LMGRCWS","DragonFyre_GMG20","DragonFyre_GMG40","DragonFyre_127","DragonFyre_Skalpel_ATGM","DragonFyre_Skyfire","DragonFyre_Veh_Titan","DragonFyre_4Five45","DragonFyre_ACPC","DragonFyre_MX","DragonFyre_M6","DragonFyre_Khaybar","DragonFyre_M320R","DragonFyre_EBR","DragonFyre_FS2000","DragonFyre_M200","DragonFyre_P07","DragonFyre_NLAW","DragonFyre_PDW","DragonFyre_Rahim","DragonFyre_Rook40","DragonFyre_RPG32","DragonFyre_Scorpian","DragonFyre_TRG20","DragonFyre_UGL","DragonFyre_SDAR","DragonFyre_Vector","DragonFyre_Zafir","DragonFyre_Zubr45","DragonFyre_Movement","DragonFyre_Distance","DragonFyre_FighterPlane3","DragonFyre_CAS_Plane1","DragonFyre_AH99_Blackfoot","DragonFyre_AH9_Pawnee","DragonFyre_UAV_1","DragonFyre_CH67_Huron","DragonFyre_CH49_Mohawk","DragonFyre_Mi290_Taru","DragonFyre_Mi48_Kajman","DragonFyre_UAV_2","DragonFyre_Po30_Orca","DragonFyre_CAS_Plane2","DragonFyre_UH80_GhostHawk","DragonFyre_WY55_Hellcat","DragonFyre_Boat_Armed_1","DragonFyre_2S9_Sorcher","DragonFyre_AFV4_Gorgon","DragonFyre_AMV7_Marshal","DragonFyre_BTRK_Kamysh","DragonFyre_FV720_Mora","DragonFyre_IFV6a_Cheetah","DragonFyre_IFV6c_Panther","DragonFyre_M2A1_Slammer","DragonFyre_M4_Scorcher","DragonFyre_M5_Sandstorm","DragonFyre_MBT52_Kuma","DragonFyre_MSE3_Marid","DragonFyre_T100_Varsuk","DragonFyre_ZSU39_Tigris","DragonFyre_Hatchback","DragonFyre_truck1","DragonFyre_Hunter","DragonFyre_Ifrit","DragonFyre_Offroad","DragonFyre_Quadbike","DragonFyre_Strider","DragonFyre_SUV","DragonFyre_truck2","DragonFyre_Van","DragonFyre_Truck3",
 "asdg_jointrails"
 ];
 
@@ -146,9 +149,10 @@ for "_i" from 0 to count (_binConfigPatches)-1 do {
 	if(isClass _patchEntry) then {
 		if(!((configName _patchEntry) in _patchList)) exitWith {
 			[[profileName,steamid,(configName _patchEntry)],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
-			[[profileName,format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+			//[[profileName,format["Unknown Addon Patch: %1",(configName _patchEntry)]],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 			sleep 0.5;
-			failMission "SpyGlass";
+			life_fail = true;
+			//failMission "SpyGlass";
 		};
 	};
 };
@@ -166,9 +170,9 @@ _allowedChildren = [
 	if(!((configName _x) in _allowedChildren)) exitWith {
 		diag_log["SPYGLASS allowedChildren %1",configName _x];
 		[[profileName,steamid,"Modified_MPInterrupt"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
-		[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
+		//[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 		sleep 0.5;
-		failMission "SpyGlass";
+			life_fail = true;
 	};
 } foreach _children;
 
@@ -183,12 +187,13 @@ _allowedChildren = [
 	_onUnload = getText(configFile >> (_x select 0) >> "onUnload");
 	if(_onLoad != (_x select 1) OR _onUnload != (_x select 2)) exitWith {
 		[[profileName,steamid,format["Modified_Method_%1",_x select 0]],"SPY_fnc_cookieJar",false,false] call life_fnc_MP;
-		[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
+		//[[profileName,format["Modified Display Method %1 (Memory Edit)",_x select 0]],"SPY_fnc_notifyAdmins",true,false] call life_fnc_MP;
 		sleep 0.5;
 		vehicle player setVelocity[1e10,1e14,1e18]; //It's a surprise.
 		sleep 3;
 		preProcessFile "SpyGlass\endoftheline.sqf";
 		sleep 2.5;
+		life_fail = true;
 		failMission "SpyGlass";
 	};
 }
@@ -217,6 +222,10 @@ foreach [
 	["RscDisplayVehicleMsgBox","[""onLoad"",_this,""RscDisplayVehicleMsgBox"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""","[""onUnload"",_this,""RscDisplayVehicleMsgBox"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"""]
 	//["RscDisplayInsertMarker","[""onLoad"",_this,""RscDisplayInsertMarker"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf""","[""onUnload"",_this,""RscDisplayInsertMarker"",'GUI'] call compile preprocessfilelinenumbers ""A3\ui_f\scripts\initDisplay.sqf"""]
 ];
+
+if(life_fail) then{
+	failMission "SpyGlass";
+};
 
 [] execVM "SpyGlass\fn_cmdMenuCheck.sqf";
 [] execVM "SpyGlass\fn_variableCheck.sqf";
