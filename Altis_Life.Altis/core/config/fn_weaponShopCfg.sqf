@@ -545,23 +545,26 @@ switch(_shop) do
 							["CUP_sgun_M1014",nil,15000],
 							["CUP_8Rnd_B_Beneli_74Slug",nil,150],
 							["CUP_arifle_AK107",nil,20000],
+							["CUP_arifle_AK107_GL",nil,25000],
 							["CUP_arifle_AK74",nil,20000],
+							["CUP_arifle_AK74_GL",nil,25000],
 							["CUP_arifle_AKS74",nil,20000],
 							["CUP_arifle_AKS74U",nil,20000],
-							["CUP_arifle_AK74_GL",nil,25000],
-							["CUP_arifle_AK107_GL",nil,25000],
 							["CUP_30Rnd_545x39_AK_M",nil,300],
-							["CUP_arifle_XM8_Carbine",nil,20000],
-							["CUP_arifle_XM8_Compact",nil,20000],
-							["CUP_arifle_XM8_Carbine_FG",nil,20000],
-							["CUP_arifle_xm8_sharpshooter",nil,20000],
+							["CUP_arifle_XM8_Compact_Holo_Flashlight",nil,20000],
+							["CUP_arifle_XM8_Railed_Holo_Laser_snds",nil,20000],
+							// ["CUP_arifle_XM8_Carbine",nil,20000],
+							// ["CUP_arifle_XM8_Compact",nil,20000],
+							// ["CUP_arifle_XM8_Carbine_FG",nil,20000],
+							// ["CUP_arifle_xm8_sharpshooter",nil,20000],
 							["CUP_arifle_L85A2",nil,20000],
 							["CUP_arifle_L86A2",nil,20000],
 							["CUP_arifle_L85A2_GL",nil,25000],
-							["CUP_arifle_XM8_Carbine_GL",nil,25000],
+							// ["CUP_arifle_XM8_Carbine_GL",nil,25000],
 							["CUP_30Rnd_556x45_Stanag",nil,300],
-							["CUP_arifle_xm8_SAW",nil,30000],
+							// ["CUP_arifle_xm8_SAW",nil,30000],
 							["CUP_100Rnd_556x45_BetaCMag",nil,300],
+							["UGL_FlareWhite_F",nil,500],
 							["UGL_FlareGreen_F",nil,500],
 							["UGL_FlareYellow_F",nil,500],
 							["UGL_FlareRed_F",nil,500],
@@ -574,15 +577,21 @@ switch(_shop) do
 							["1Rnd_SmokeOrange_Grenade_shell",nil,350],
 							["hgun_Pistol_heavy_02_F",nil,10000],
 							["6Rnd_45ACP_Cylinder",nil,100],
-							["optic_ACO_grn",nil,3500],
+							// ["optic_ACO_grn",nil,3500],
 							["optic_Aco",nil,3500],
-							["optic_Holosight",nil,3600],
-							["CUP_optic_Kobra",nil,4000],
-							["optic_MRCO",nil,8000],
-							["optic_Hamr",nil,8000],
-							["optic_Arco",nil,8000],
-							["acc_flashlight",nil,1000],
-							["acc_pointer_IR",nil,2000],
+							// ["optic_Holosight",nil,3600],
+							["CUP_optic_Kobra",nil,4000], //pts rouge
+							["CUP_optic_Eotech533",nil,4000],
+							["CUP_optic_Eotech533Grey",nil,4000],
+							["CUP_acc_ANPEQ_2",nil,4000],
+							["CUP_acc_ANPEQ_2_grey",nil,4000],
+							["CUP_acc_XM8_light_module",nil,4000],
+							// ["CUP_optic_GOSHAWK",nil,4000],
+							// ["optic_MRCO",nil,8000],
+							// ["optic_Hamr",nil,8000],
+							// ["optic_Arco",nil,8000],
+							// ["acc_flashlight",nil,1000],
+							// ["acc_pointer_IR",nil,2000],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
 							["ItemGPS",nil,100],
@@ -627,16 +636,19 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerY",nil,800];
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerR",nil,800];
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerG",nil,800];
-					(_ret select 1) pushBack ["CUP_srifle_CZ750",nil,60000];
+					(_ret select 1) pushBack ["optic_Arco",nil,8000];
+					// (_ret select 1) pushBack ["CUP_srifle_CZ750",nil,60000];
 					(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750_Tracer",nil,1000];
 					(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750",nil,1000];
 					(_ret select 1) pushBack ["CUP_srifle_SVD",nil,80000];
-					(_ret select 1) pushBack ["CUP_srifle_SVD_des",nil,80000];
+					// (_ret select 1) pushBack ["CUP_srifle_SVD_des",nil,80000];
 					(_ret select 1) pushBack ["CUP_srifle_SVD_wdl_ghillie",nil,90000];
-					(_ret select 1) pushBack ["CUP_srifle_SVD_des_ghillie_pso",nil,90000];
+					// (_ret select 1) pushBack ["CUP_srifle_SVD_des_ghillie_pso",nil,90000];
 					(_ret select 1) pushBack ["CUP_10Rnd_762x54_SVD_M",nil,1000];
 					(_ret select 1) pushBack ["CUP_optic_PSO_1",nil,8000];
-					(_ret select 1) pushBack ["CUP_optic_PSO_3",nil,8000];
+					(_ret select 1) pushBack ["CUP_srifle_M15_Aim",nil,70000];
+					(_ret select 1) pushBack ["CUP_20Rnd_762x51_DMR",nil,1000];
+					(_ret select 1) pushBack ["CUP_optic_CompM2_Black",nil,7000];
 					(_ret select 1) pushBack ["CUP_arifle_FNFAL_railed",nil,45000];
 					(_ret select 1) pushBack ["CUP_20Rnd_762x51_FNFAL_M",nil,700];
 					(_ret select 1) pushBack ["CUP_lmg_L110A1",nil,75000];
@@ -651,8 +663,9 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_lmg_L7A2",nil,85000];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,1100];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",nil,1100];
-					(_ret select 1) pushBack ["CUP_srifle_M24_des",nil,60000];
+					// (_ret select 1) pushBack ["CUP_srifle_M24_des",nil,60000];
 					(_ret select 1) pushBack ["CUP_srifle_M24_wdl",nil,60000];
+					(_ret select 1) pushBack ["CUP_optic_LeupoldMk4_10x40_LRT_Woodland",nil,8000];
 					(_ret select 1) pushBack ["CUP_srifle_M24_ghillie",nil,75000];
 					(_ret select 1) pushBack ["CUP_srifle_M40A3",nil,75000];
 					(_ret select 1) pushBack ["CUP_5Rnd_762x51_M24",nil,900];
@@ -664,14 +677,18 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_lmg_Pecheneg",nil,120000];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",nil,1500];
 					(_ret select 1) pushBack ["CUP_optic_PechenegScope",nil,12000];
-					(_ret select 1) pushBack ["optic_LRPS",nil,12500];
-					(_ret select 1) pushBack ["optic_SOS",nil,13500];
+					// (_ret select 1) pushBack ["optic_LRPS",nil,12500];
+					// (_ret select 1) pushBack ["optic_SOS",nil,13500];
+					(_ret select 1) pushBack ["CUP_optic_SUSAT",nil,4000];
+					(_ret select 1) pushBack ["CUP_optic_CWS",nil,4000];
+					(_ret select 1) pushBack ["CUP_optic_ACOG",nil,4000];
 				};
 				// Rang 3
 				if(__GETC__(life_reblevel) >= 3) then
 				{
 					(_ret select 1) pushBack ["CUP_srifle_ksvk",nil,700000];
 					(_ret select 1) pushBack ["CUP_5Rnd_127x108_KSVK_M",nil,5000];
+					(_ret select 1) pushBack ["CUP_optic_PSO_3",nil,8000];
 					(_ret select 1) pushBack ["CUP_srifle_M107_Base",nil,700000];
 					(_ret select 1) pushBack ["CUP_10Rnd_127x99_M107",nil,5000];
 					(_ret select 1) pushBack ["CUP_launch_9K32Strela",nil,300000];
