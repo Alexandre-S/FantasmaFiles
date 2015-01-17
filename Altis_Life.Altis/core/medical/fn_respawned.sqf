@@ -64,11 +64,11 @@ if(life_is_arrested) exitWith {
 };
 
 //Johnny law got me but didn't let the EMS revive me, reward them half the bounty.
-if(!isNil "life_copRecieve") then {
+/*if(!isNil "life_copRecieve") then {
 	[] call life_fnc_getHLC;
 	[[player,life_copRecieve,true],"life_fnc_wantedBounty",serverhc,false] spawn life_fnc_MP;
 	life_copRecieve = nil;
-};
+};*/
 
 //So I guess a fellow gang member, cop or myself killed myself so get me off that Altis Most Wanted
 if(life_removeWanted) then {
