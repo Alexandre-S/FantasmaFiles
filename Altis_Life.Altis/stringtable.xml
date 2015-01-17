@@ -1610,9 +1610,9 @@
 			<Portuguese>Você pegou uma spike strip.</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_PickedEvidence">
-			<Original>%1 has been placed in evidence, you have received $%2 as a reward.</Original>
+			<Original>%2€ of %1 has been placed in evidence.</Original>
 			<German>%1 hat Beweise hinterlassen, du hast eine Belohnung von $%2 erhalten.</German>
-			<French>Vous avez ramassé la drogue de %1, vous avez reçu %2 € comme récompense.</French>
+			<French>%2 € de %1 ont été saisie.</French>
 			<Italian>E' stata trovata della merce illegale: %1, hai ricevuto €%2 come ricompensa.</Italian>
 			<Portuguese>%1 foi pego como evidência, você recebeu R$%2 como recompensa.</Portuguese>
 		</Key>
