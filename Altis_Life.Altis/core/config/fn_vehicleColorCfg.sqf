@@ -63,7 +63,8 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["altisrpfr\textures\med_offroad.paa","med"],
 			["altisrpfr\textures\offroad_rouille.paa","civ"],
-			["altisrpfr\textures\offroad_depannage.paa","dep"]
+			["altisrpfr\textures\offroad_depannage.paa","dep"],
+			["altisrpfr\textures\offroad_SPC.paa","vig"]
 		];
 	};
 		

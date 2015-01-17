@@ -20,4 +20,8 @@ switch(true) do
 		
 		//if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
+	case (_uniform == "U_B_CombatUniform_mcam" OR _uniform == "U_B_CombatUniform_mcam_vest"):
+	{
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\Uniforme_SPC.paa"];
+	};
 };

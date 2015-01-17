@@ -110,7 +110,9 @@ switch (_filter) do
 		];
 		if(license_civ_vigil) then
 		{
-			_ret pushBack ["vip_clothes","Tenue Vigil",5500];
+			_ret pushBack ["vip_clothes","Tenue Vigil 1",5500];
+			_ret pushBack ["U_B_CombatUniform_mcam","Tenue Vigil 2",7500];
+			_ret pushBack ["U_B_CombatUniform_mcam_vest","Tenue Vigil 3",7500];
 		};
 		if(player getVariable["life_dep",false]) then
 		{
