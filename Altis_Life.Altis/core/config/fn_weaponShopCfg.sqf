@@ -719,8 +719,6 @@ switch(_shop) do
 					(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,200000];
 					(_ret select 1) pushBack ["O_HMG_01_high_weapon_F",nil,400000];
 					(_ret select 1) pushBack ["O_HMG_01_support_high_F",nil,7000];
-					(_ret select 1) pushBack ["optic_LRPS",nil,12500];
-					(_ret select 1) pushBack ["optic_SOS",nil,13500];
 				};
 			};
 		};
