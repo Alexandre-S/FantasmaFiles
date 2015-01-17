@@ -7,13 +7,9 @@ While{true} do
     20 fadeSound 1;     //fades the sound back to normal
 
 
-    waituntil{
-    ((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10)
-    and
-    (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)
-    };
+    waituntil{  sleep 0.3; (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)) };
 
-    if (goggles player != "Mask_M50" && goggles player != "Mask_M40" && goggles player != "Mask_M40_OD") then
+    if (!(goggles player in ["Mask_M50","Mask_M40","Mask_M40_OD"])) then
     {
         "dynamicBlur" ppEffectEnable true; // enables ppeffect
         "dynamicBlur" ppEffectAdjust [20]; // intensity of blur
