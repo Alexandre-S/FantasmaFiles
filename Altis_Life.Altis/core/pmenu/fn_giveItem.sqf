@@ -18,6 +18,7 @@ _item = lbData [2005,(lbCurSel 2005)];
 if(isNil "_unit") exitWith {ctrlShow[2002,true];};
 if(_unit == player) exitWith {ctrlShow[2002,true];};
 if(isNull _unit) exitWith {ctrlShow[2002,true];};
+if(life_is_processing) exitWith {hint "Vous êtes en train de process petit malin.";ctrlShow[2002,true];};
 if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 
 //A series of checks *ugh*

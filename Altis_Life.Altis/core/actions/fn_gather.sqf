@@ -5,14 +5,14 @@
 	Description:
 	Main functionality for gathering.
 */
-// if(isNil "life_action_gathering") then {life_action_gathering = false;};
+if(isNil "life_action_gathering") then {life_action_gathering = false;};
 if(life_action_inUse) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
 _resourceZones = ["apple_1","apple_2","apple_2_1","apple_3","apple_4","peaches_1","peaches_2","peaches_2_1","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","seigle_1"];
 _zone = "";
 _gather = "";
-// if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
-// life_action_gathering = true;
+if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
+life_action_gathering = true;
 life_action_inUse = true;
 
 //Find out what zone we're near
@@ -57,6 +57,7 @@ if(_zone == "") then {
 
 if(_gather == "") exitWith {
 	life_action_inUse = false;
+	life_action_gathering = false;
 };
 
 _itemName = [([_gather,0] call life_fnc_varHandle)] call life_fnc_varToStr;
@@ -103,3 +104,4 @@ while {life_carryWeight < life_maxWeight} do
 };
 
 life_action_inUse = false;
+life_action_gathering = false;

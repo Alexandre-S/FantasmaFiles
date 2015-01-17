@@ -11,6 +11,8 @@ _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _vehicle OR !(_vehicle isKindOf "LandVehicle" OR _vehicle isKindOf "Air" OR _vehicle isKindOf "Ship" OR _vehicle isKindOf "House_F")) exitWith {}; //Either a null or invalid vehicle type.
 
 if((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_MISC_VehInvUse"};
+if(life_is_processing) exitWith {hint "Vous êtes en train de process petit malin.";};
+
 _vehicle setVariable["trunk_in_use",true,true];
 if(!createDialog "TrunkMenu") exitWith {hint localize "STR_MISC_DialogError";}; //Couldn't create the menu?
 disableSerialization;
