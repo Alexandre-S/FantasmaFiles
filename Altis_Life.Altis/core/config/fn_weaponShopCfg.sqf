@@ -188,6 +188,9 @@ switch(_shop) do
 						["CUP_5Rnd_86x70_L115A1",nil,0],
 						["CUP_optic_LeupoldMk4_10x40_LRT_Desert",nil,0],
 						["CUP_optic_LeupoldMk4_10x40_LRT_Woodland",nil,0],
+						["CUP_srifle_CZ750",nil,0],
+						["CUP_10Rnd_762x51_CZ750_Tracer",nil,0],
+						["CUP_10Rnd_762x51_CZ750",nil,0],
 						["optic_DMS",nil,0],
 						["optic_SOS",nil,0],
 						["optic_NVS",nil,0],
@@ -638,8 +641,8 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerG",nil,800];
 					(_ret select 1) pushBack ["optic_Arco",nil,8000];
 					// (_ret select 1) pushBack ["CUP_srifle_CZ750",nil,60000];
-					(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750_Tracer",nil,1000];
-					(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750",nil,1000];
+					//(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750_Tracer",nil,1000];
+					//(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750",nil,1000];
 					(_ret select 1) pushBack ["CUP_srifle_SVD",nil,80000];
 					// (_ret select 1) pushBack ["CUP_srifle_SVD_des",nil,80000];
 					(_ret select 1) pushBack ["CUP_srifle_SVD_wdl_ghillie",nil,90000];
@@ -716,6 +719,8 @@ switch(_shop) do
 					(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,200000];
 					(_ret select 1) pushBack ["O_HMG_01_high_weapon_F",nil,400000];
 					(_ret select 1) pushBack ["O_HMG_01_support_high_F",nil,7000];
+					(_ret select 1) pushBack ["optic_LRPS",nil,12500];
+					(_ret select 1) pushBack ["optic_SOS",nil,13500];
 				};
 			};
 		};
