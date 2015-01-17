@@ -21,17 +21,17 @@ switch (_filter) do
 	{
 		if(life_sexe) then
 		{
-			_ret pushBack ["B_FEM_NATO",nil,0];
-			_ret pushBack ["B_FEM_FIA",nil,0];
-			_ret pushBack ["O_FEM_CSAT",nil,0];
-			_ret pushBack ["I_FEM_AAF",nil,0];
-			_ret pushBack ["O_FEM_CSAT_Long",nil,0];
-			_ret pushBack ["B_FEM_NATO_long",nil,0];
-			_ret pushBack ["I_FEM_AAF_long",nil,0];
-			_ret pushBack ["B_FEM_NATO_Collar",nil,0];
-			_ret pushBack ["B_FEM_NATO_Rolled",nil,0];
-			_ret pushBack ["O_FEM_CSAT_Rolled",nil,0];
-			_ret pushBack ["B_FEM_AAF_Rolled",nil,0];
+			_ret pushBack ["B_FEM_NATO","Tenue femme 1",0];
+			_ret pushBack ["B_FEM_FIA","Tenue femme 2",0];
+			_ret pushBack ["O_FEM_CSAT","Tenue femme 3",0];
+			_ret pushBack ["I_FEM_AAF","Tenue femme 4",0];
+			_ret pushBack ["O_FEM_CSAT_Long","Tenue femme 5",0];
+			_ret pushBack ["B_FEM_NATO_long","Tenue femme 6",0];
+			_ret pushBack ["I_FEM_AAF_long","Tenue femme 7",0];
+			_ret pushBack ["B_FEM_NATO_Collar","Tenue femme 8",0];
+			_ret pushBack ["B_FEM_NATO_Rolled","Tenue femme 9",0];
+			_ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",0];
+			_ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",0];
 		};
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		_ret pushBack ["ARC_FR_CE_Uniform_tshirt","Tenue recrue 1",0];

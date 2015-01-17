@@ -115,17 +115,17 @@ switch (_filter) do
 		];
 		if(life_sexe) then
 		{
-			_ret pushBack ["B_FEM_NATO",nil,800];
-			_ret pushBack ["B_FEM_FIA",nil,800];
-			_ret pushBack ["O_FEM_CSAT",nil,800];
-			_ret pushBack ["I_FEM_AAF",nil,800];
-			_ret pushBack ["O_FEM_CSAT_Long",nil,1200];
-			_ret pushBack ["B_FEM_NATO_long",nil,1200];
-			_ret pushBack ["I_FEM_AAF_long",nil,1200];
-			_ret pushBack ["B_FEM_NATO_Collar",nil,2100];
-			_ret pushBack ["B_FEM_NATO_Rolled",nil,2100];
-			_ret pushBack ["O_FEM_CSAT_Rolled",nil,2100];
-			_ret pushBack ["B_FEM_AAF_Rolled",nil,2100];
+			_ret pushBack ["B_FEM_NATO","Tenue femme 1",800];
+			_ret pushBack ["B_FEM_FIA","Tenue femme 2",800];
+			_ret pushBack ["O_FEM_CSAT","Tenue femme 3",800];
+			_ret pushBack ["I_FEM_AAF","Tenue femme 4",800];
+			_ret pushBack ["O_FEM_CSAT_Long","Tenue femme 5",1200];
+			_ret pushBack ["B_FEM_NATO_long","Tenue femme 6",1200];
+			_ret pushBack ["I_FEM_AAF_long","Tenue femme 7",1200];
+			_ret pushBack ["B_FEM_NATO_Collar","Tenue femme 8",2100];
+			_ret pushBack ["B_FEM_NATO_Rolled","Tenue femme 9",2100];
+			_ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",2100];
+			_ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",2100];
 		};
 	};
 	
