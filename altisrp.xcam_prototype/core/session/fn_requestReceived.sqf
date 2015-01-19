@@ -117,6 +117,10 @@ switch(playerSide) do {
 	};
 };
 
+if ((count life_position) > 0) then {
+	life_position = life_position findEmptyPosition [1,50,typeof player];
+};
+
 [] call life_fnc_loadGear;
 
 // recup des clefs houses/vehicles

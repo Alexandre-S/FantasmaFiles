@@ -22,6 +22,6 @@ switch(true) do
 	};
 	case (_uniform == "U_B_CombatUniform_mcam" OR _uniform == "U_B_CombatUniform_mcam_vest"):
 	{
-		player setObjectTextureGlobal  [0, "altisrpfr\textures\Uniforme_SPC.paa"];
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\clothing1_co.paa"];
 	};
 };

@@ -64,7 +64,7 @@ switch (_vehicle) do
 			["altisrpfr\textures\med_offroad.paa","med"],
 			["altisrpfr\textures\offroad_rouille.paa","civ"],
 			["altisrpfr\textures\offroad_depannage.paa","dep"],
-			["altisrpfr\textures\offroad_SPC.paa","vig"]
+			["altisrpfr\textures\offroad_vigil.paa","vig"]
 		];
 	};
 		

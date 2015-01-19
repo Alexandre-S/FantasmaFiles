@@ -16,7 +16,7 @@ _itemName = [([_itemInfo select 0,0] call life_fnc_varHandle)] call life_fnc_var
 _illegal = [_itemInfo select 0,life_illegal_items] call TON_fnc_index;
 if(playerSide == west && _illegal != -1) exitWith
 {
-	titleText[format[localize "STR_NOTF_PickedEvidence",_itemName,[((life_illegal_items select _illegal) select 1)*_itemInfo select 1] call life_fnc_numberText],"PLAIN"];
+	titleText[format[localize "STR_NOTF_PickedEvidence",_itemName,[(((life_illegal_items select _illegal) select 1)*(_itemInfo select 1))] call life_fnc_numberText],"PLAIN"];
 	// life_atmcash = life_atmcash + ((life_illegal_items select _illegal) select 1);
 	deleteVehicle _obj;
 	//waitUntil {isNull _obj};

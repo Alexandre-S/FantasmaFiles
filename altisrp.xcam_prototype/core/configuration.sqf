@@ -36,6 +36,7 @@ life_handcuffkeys = ObjNull;
 life_channel_send = true;
 life_sexe = false;
 life_Mask_sound = false;
+life_boltcutter_uses = false;
 
 life_isblacklisted = false;
 life_factnumber = 0;

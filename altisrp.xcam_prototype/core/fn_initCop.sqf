@@ -46,8 +46,6 @@ if(face player in life_women && !life_sexe) then
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
 
-life_position = life_position findEmptyPosition [1,50,typeof player];
-
 if (!life_is_alive || (count life_position) == 0) then
 {
 	[] call life_fnc_spawnMenu;

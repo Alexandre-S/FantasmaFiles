@@ -21,9 +21,12 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "boltcutter"): {
-		[cursorTarget] spawn life_fnc_boltcutter;
+	case (_item == "boltcutter" && !life_boltcutter_uses): {
+		life_boltcutter_uses = true;
+		_handle = [cursorTarget] spawn life_fnc_boltcutter;
 		closeDialog 0;
+		waitUntil {scriptDone _handle};
+		life_boltcutter_uses = false;
 	};
 	
 	case (_item == "blastingcharge"): {
