@@ -16,7 +16,7 @@ if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["copdive"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
-if((_this select 3) in ["med"] && playerSide != independent) exitWith { hint "Vous ne faites pas partie du service public"; closeDialog 0;};
+if((_this select 3) in ["med"] && playerSide != independent) exitWith { hint "Vous ne faites pas partie de la Croix-Rouge"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

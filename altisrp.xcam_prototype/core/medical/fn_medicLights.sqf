@@ -13,8 +13,8 @@ service_truck =	_vehicle getVariable["service_truck",FALSE];
 if(isNil "_vehicle" OR isNull _vehicle OR !(_vehicle getVariable "lights")) exitWith {};
 
 if(service_truck) then {
-	_lightRed = [255, 174, 0.1];
-	_lightBlue = [255, 174, 0.1];
+	_lightRed = [20, 20, 6];
+	_lightBlue = [20, 20, 6];
 } else {
 	_lightRed = [0.1, 0.1, 20];
 	_lightBlue = [0.1, 0.1, 20];
@@ -25,7 +25,7 @@ sleep 0.2;
 _lightleft setLightColor _lightRed; 
 _lightleft setLightBrightness 0.2;
 if(service_truck) then {
-	_lightleft setLightAmbient [255, 174, 0.1];
+	_lightleft setLightAmbient [20, 20, 6];
 } else {
 	_lightleft setLightAmbient [0.1,0.1,20];
 };
@@ -50,7 +50,7 @@ _lightright setLightColor _lightBlue;
 _lightright setLightBrightness 0.2;  
 
 if(service_truck) then {
-	_lightright setLightAmbient [255, 174, 0.1]; 
+	_lightright setLightAmbient [20, 20, 6]; 
 } else {
 	_lightright setLightAmbient [0.1,0.1,20]; 
 };
