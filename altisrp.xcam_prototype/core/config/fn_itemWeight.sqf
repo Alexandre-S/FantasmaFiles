@@ -62,5 +62,6 @@ switch (_item) do
 	case "storagebig": {10};
 	case "mauer": {5};
 	case "cone": {5};
+	case "gpstracker": {2};
 	default {1};
 };

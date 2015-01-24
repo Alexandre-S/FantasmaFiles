@@ -24,6 +24,11 @@ if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(play
 	true;
 };
 
+if(_code in (actionKeys "TacticalView")) exitWith {
+	true;
+};
+
+
 if(life_action_inUse) exitWith {
 	if(!life_interrupted && _code in _interruptionKeys) then {life_interrupted = true;};
 	_handled;
@@ -162,7 +167,7 @@ switch (_code) do
 	
 	//Knock out, this is experimental and yeah...
 	//case 34:
-	case 46:
+	/*case 46:
 	{
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1 && (animationState player) != "Incapacitated") then
@@ -170,16 +175,23 @@ switch (_code) do
 			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["AGM_isCaptive",false]) && !life_istazed && !(cursorTarget getVariable ["AGM_isCaptive",false])) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
-				if("ItemWatch" in assignedItems cursorTarget) then {
-					cursorTarget removeweapon "ItemWatch";
-					hint "La téléphone de la personne est désormais au sol.";
-					_defenceplace1 = "Item_ItemWatch" createVehicle (player modelToWorld[0,0,0]);
+				if("ItemWatch" in assignedItems cursorTarget OR "AGM_Altimeter" in assignedItems cursorTarget) then {
+					if("ItemWatch" in assignedItems cursorTarget) then {
+						cursorTarget removeweapon "ItemWatch";
+						hint "La téléphone de la personne est désormais au sol.";
+						_defenceplace1 = "Item_ItemWatch" createVehicle (player modelToWorld[0,0,0]);
+					};
+					if("AGM_Altimeter" in assignedItems cursorTarget) then {
+						cursorTarget removeweapon "AGM_Altimeter";
+						hint "La téléphone de la personne est désormais au sol.";
+						_defenceplace1 = "Item_AGM_Altimeter" createVehicle (player modelToWorld[0,0,0]);
+					};
 				} else { 
 					hint "La personne n'a pas de téléphone !";
 				};
 			};
 		};
-	};
+	};*/
 	
 	//surrender... shift + g
 	/*case 34:

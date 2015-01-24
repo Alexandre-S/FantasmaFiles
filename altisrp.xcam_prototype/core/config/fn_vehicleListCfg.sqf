@@ -85,7 +85,7 @@ switch (_shop) do
 			["RDS_Ikarus_Civ_01",302500],
 			["O_Truck_03_transport_F",310000],
 			["B_Truck_01_transport_F",375000],
-			["O_Truck_03_covered_F",412500],
+			["O_Truck_03_covered_F",393750],
 			["B_Truck_01_covered_F",412500]
 			
 		];

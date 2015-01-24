@@ -6,6 +6,8 @@
 	Description:
 	Buy a virtual item from the store.
 */
+if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
+life_action_delay = time;
 private["_type","_price","_amount","_diff","_name","_hideout","_marketprice"];
 if((lbCurSel 2401) == -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
 _type = lbData[2401,(lbCurSel 2401)];

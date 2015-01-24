@@ -43,6 +43,7 @@ _cP = 0.01;
 		if !(alive _this) exitWith {};
 		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
 		sleep 0.15;
+		if(player != vehicle player) exitWith {};
 		if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 			[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
 		};

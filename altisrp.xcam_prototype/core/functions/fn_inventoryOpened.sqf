@@ -4,7 +4,7 @@
 	Description:
 	For the mean time it blocks the player from opening another persons backpack
 */
-private["_container","_unit"];
+private["_container","_unit","_house","_close"];
 if(count _this == 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
@@ -15,15 +15,22 @@ if(_isPack == 1 && playerSide != west) then {
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
 		closeDialog 0;
+		sleep 0.01;
+		closeDialog 0;
 	};
 };
 if(playerSide != west) then{
 	if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 		_house = nearestBuilding (getPosATL player);
-		if(!(_house in life_vehicles) && {(_house getVariable ["locked",false])}) then {
+		_locked = _house getVariable ["locked",nil];
+		_close = false;
+		if(isNil "_locked") then {_close = true;};
+		if((typeof _house == "Land_Stone_Gate_F") or _close or (!(_house in life_vehicles) && {(_house getVariable ["locked",false])})) then {
 			hint localize "STR_House_ContainerDeny";
 			[] spawn {
 				waitUntil {!isNull (findDisplay 602)};
+				closeDialog 0;
+				sleep 0.01;
 				closeDialog 0;
 			};
 		};
@@ -36,6 +43,8 @@ if(playerSide != west) then{
 			[] spawn {
 				waitUntil {!isNull (findDisplay 602)};
 				closeDialog 0;
+				sleep 0.01;
+				closeDialog 0;
 			};
 		};
 	};
@@ -46,6 +55,8 @@ if(_container isKindOf "Man" && !alive _container && _container getVariable["sid
 	hint localize "STR_NOTF_NoLootingPerson";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
+		closeDialog 0;
+		sleep 0.01;
 		closeDialog 0;
 	};
 };

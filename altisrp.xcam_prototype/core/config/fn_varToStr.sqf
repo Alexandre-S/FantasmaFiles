@@ -67,6 +67,7 @@ switch (_var) do
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	case "life_inv_mauer": {"Barrière"};
 	case "life_inv_cone": {"Cone"};
+	case "life_inv_gpstracker": {"GPS Tracker"};
 
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};

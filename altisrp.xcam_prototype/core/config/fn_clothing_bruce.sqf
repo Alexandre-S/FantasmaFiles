@@ -215,7 +215,8 @@ switch (_filter) do
 			["V_BandollierB_blk",nil,1200],
 			["V_BandollierB_rgr",nil,1200],
 			["V_BandollierB_khk",nil,1200],
-			["V_TacVest_brn",nil,2400],
+			["V_TacVest_brn",nil,4000],
+			["V_TacVest_blk",nil,4000],
 			["V_Press_F",nil,2000]
 		];
 	};

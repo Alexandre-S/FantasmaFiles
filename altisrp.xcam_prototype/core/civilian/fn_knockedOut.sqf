@@ -25,6 +25,7 @@ _fnc_playAnim = {
 	if !(alive _this) exitWith {};
 	// [_this, "Incapacitated", 1, True] call AGM_Core_fnc_doAnimation;
 	// sleep 2;
+	if(player != vehicle player) exitWith {};
 	if (animationState _this != "Incapacitated") then {
 		[_this, "Incapacitated", 2, True] call AGM_Core_fnc_doAnimation;
 	};

@@ -6,6 +6,8 @@
 	Description:
 	Opens the Wanted menu and connects to the APD.
 */
+if((time - life_action_delay) < 10) exitWith {hint "Interpol: Echec de connexion.. Vos identifiants sont bloqués pour quelques secondes"};
+life_action_delay = time;
 private["_display","_list","_name","_crimes","_bounty","_units"];
 disableSerialization;
 
@@ -16,7 +18,7 @@ _list = _display displayCtrl 2401;
 lbClear _list;
 _units = [];
 
-ctrlSetText[2404,"Establishing connection..."];
+ctrlSetText[2404,"Connection en cours..."];
 
 if(__GETC__(life_coplevel) < 3 && __GETC__(life_adminlevel) == 0) then
 {

@@ -31,11 +31,11 @@ switch (_className) do
 	case "C_Van_01_fuel_F": {150};
 	case "I_Truck_02_transport_F": {200};
 	case "I_Truck_02_covered_F": {250};
-	case "B_Truck_01_transport_F": {325};
+	case "B_Truck_01_transport_F": {300};
 	case "O_Truck_03_transport_F": {285};
-	case "B_Truck_01_covered_F": {300};
-	case "O_Truck_03_covered_F": {300};
-	case "B_Truck_01_box_F": {450};
+	case "B_Truck_01_covered_F": {325};
+	case "O_Truck_03_covered_F": {312};
+	case "B_Truck_01_box_F": {400};
 	case "O_Truck_03_device_F": {350};
 	case "C_Heli_Light_01_civil_F": {10};
 	case "B_Heli_Light_01_F": {10};

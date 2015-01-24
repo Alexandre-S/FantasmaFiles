@@ -5,6 +5,8 @@
 	Description:
 	Figure it out again.
 */
+if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
+life_action_delay = time;
 private["_val","_unit","_tax"];
 _val = parseNumber(ctrlText 2702);
 _unit = call compile format["%1",(lbData[2703,(lbCurSel 2703)])];

@@ -5,6 +5,8 @@
 	Description:
 	Master handling for processing an item.
 */
+if((time - life_action_delay) < 1.5) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
+life_action_delay = time;
 private["_vendor","_type","_itemInfo","_oldItem","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_ui","_progress","_pgText","_cP","_delayInt"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;

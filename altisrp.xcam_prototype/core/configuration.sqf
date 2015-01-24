@@ -188,7 +188,8 @@ life_inv_items =
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
 	"life_inv_mauer",
-	"life_inv_cone"
+	"life_inv_cone",
+	"life_inv_gpstracker"
 ];
 
 //Setup variable inv vars.
@@ -296,7 +297,8 @@ sell_array =
 	["goldbar",95000],
 	["defusekit",0],
 	["mauer",0],
-	["cone",0]
+	["cone",0],
+	["gpstracker",10000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -328,7 +330,8 @@ buy_array =
 	["storagesmall",700000],
 	["storagebig",1000000],
 	["mauer",1000],
-	["cone",100]
+	["cone",100],
+	["gpstracker",50000]
 ];
 __CONST__(buy_array,buy_array);
 
@@ -421,7 +424,7 @@ life_garage_sell =
 	["RDS_Ikarus_Civ_01",302500*0.49],
 	["O_Truck_03_transport_F",310000*0.49],
 	["B_Truck_01_transport_F",375000*0.49],
-	["O_Truck_03_covered_F",412500*0.49],
+	["O_Truck_03_covered_F",393750*0.49],
 	["B_Truck_01_covered_F",412500*0.49],
 	
 	["B_Truck_01_box_F",450000*0.49],
@@ -524,7 +527,7 @@ life_garage_prices =
 	["RDS_Ikarus_Civ_01",302500*0.0735],
 	["O_Truck_03_transport_F",310000*0.0735],
 	["B_Truck_01_transport_F",375000*0.0735],
-	["O_Truck_03_covered_F",412500*0.0735],
+	["O_Truck_03_covered_F",393750*0.0735],
 	["B_Truck_01_covered_F",412500*0.0735],
 	
 	["B_Truck_01_box_F",450000*0.0735],
@@ -625,7 +628,7 @@ life_assur_prices =
 	["RDS_Ikarus_Civ_01",302500*0.5],
 	["O_Truck_03_transport_F",310000*0.5],
 	["B_Truck_01_transport_F",375000*0.5],
-	["O_Truck_03_covered_F",412500*0.5],
+	["O_Truck_03_covered_F",393750*0.5],
 	["B_Truck_01_covered_F",412500*0.5],
 	
 	["B_Truck_01_box_F",450000*0.5],

@@ -1,6 +1,8 @@
 /*
 	COPY PASTE TIME
 */
+if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
+life_action_delay = time;
 private["_val"];
 _val = parseNumber(ctrlText 2702);
 if(_val > 999999) exitWith {hint localize "STR_ATM_WithdrawMax";};

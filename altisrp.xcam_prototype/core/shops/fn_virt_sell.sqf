@@ -6,6 +6,8 @@
 	Description:
 	Sell a virtual item to the store / shop
 */
+if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
+life_action_delay = time;
 private["_type","_index","_price","_var","_amount","_name","_marketprice"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];

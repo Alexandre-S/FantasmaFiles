@@ -5,6 +5,8 @@
 	Description:
 	Figure it out.
 */
+if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
+life_action_delay = time;
 private["_value"];
 _value = parseNumber(ctrlText 2702);
 

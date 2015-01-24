@@ -396,6 +396,7 @@ class Life_Client_Core
 		class storageBox {};
 		class mauer {};
 		class cone {};
+		class gpsTracker {};
 	};
 	
 	class Dialog_Controls

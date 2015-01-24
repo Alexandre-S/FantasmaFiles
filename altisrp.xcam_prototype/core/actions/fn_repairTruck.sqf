@@ -37,6 +37,7 @@ if((_veh isKindOf "LandVehicle") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Ai
 			if !(alive _this) exitWith {};
 			[_this, "InBaseMoves_repairVehicleKnl", 1, True] call AGM_Core_fnc_doAnimation;
 			sleep 0.15;
+			if(player != vehicle player) exitWith {};
 			if (animationState _this != "InBaseMoves_repairVehicleKnl") then {
 				[_this, "InBaseMoves_repairVehicleKnl", 2, True] call AGM_Core_fnc_doAnimation;
 			};

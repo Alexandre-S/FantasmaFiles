@@ -27,13 +27,32 @@ _pgText ctrlSetText format["%2 (1%1)...","%",_upp];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
 
+// play appropriate anim
+	private "_fnc_playAnim";
+	_fnc_playAnim = {
+		if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
+			_this action ["LadderOff", nearestObject [position _this, "House"]];
+		};
+		waitUntil {isTouchingGround _this};
+		waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
+		if !(alive _this) exitWith {};
+		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
+		sleep 0.15;
+		if(player != vehicle player) exitWith {};
+		if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
+			[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
+		};
+	};
+
+
 while{true} do
 {
 	if(animationState player != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+		// [[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		// player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
+		player spawn _fnc_playAnim;
 	};
-	sleep 0.2;
+	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";

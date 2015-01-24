@@ -108,6 +108,11 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "gpstracker"): 
+	{
+		[cursorTarget] spawn life_fnc_gpsTracker;
+	}; 
+	
 	default
 	{
 		hint localize "STR_ISTR_NotUsable";

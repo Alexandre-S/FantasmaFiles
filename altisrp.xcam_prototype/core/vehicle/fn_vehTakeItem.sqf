@@ -7,6 +7,8 @@
 	Used in the vehicle trunk menu, takes the selected item and puts it in the players virtual inventory
 	if the player has room.
 */
+if((time - life_action_delay) < 1) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
+life_action_delay = time;
 private["_ctrl","_num","_index","_data","_old","_value","_weight","_diff"];
 disableSerialization;
 if(isNull life_trunk_vehicle OR !alive life_trunk_vehicle) exitWith {hint localize "STR_MISC_VehDoesntExist"};

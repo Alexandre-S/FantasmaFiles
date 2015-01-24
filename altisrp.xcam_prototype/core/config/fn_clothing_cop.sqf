@@ -36,6 +36,8 @@ switch (_filter) do
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		_ret pushBack ["ARC_FR_CE_Uniform_tshirt","Tenue recrue 1",0];
 		_ret pushBack ["ARC_FR_Daguet_Uniform_tshirt","Tenue recrue 2",0];
+		_ret pushBack ["sab_UN_Soldier_ClothingP","Tenue recrue 3",0]; /* Recrue */
+		_ret pushBack ["sab_UN_Soldier_ClothingPD","Tenue recrue 4",0]; /* Recrue */
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
@@ -80,19 +82,14 @@ switch (_filter) do
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
-			_ret pushBack ["sab_UN_Officer_ClothingE",nil,0];
-			
 			_ret pushBack ["sab_UN_Soldier_Clothing",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingS",nil,0];
-			_ret pushBack ["sab_UN_Soldier_ClothingP",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingSD",nil,0];
-			_ret pushBack ["sab_UN_Soldier_ClothingPD",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingD",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingU",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingSU",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingPU",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingK",nil,0];
-			_ret pushBack ["sab_UN_Officer_ClothingE",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingA",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingI",nil,0];
 			_ret pushBack ["sab_UN_Soldier_ClothingB",nil,0];	
@@ -149,7 +146,6 @@ switch (_filter) do
 			_ret pushBack ["H_Beret_Colonel",nil,0];
 			_ret pushBack ["sab_UN_Turban",nil,0];
 			_ret pushBack ["sab_UN_HelmetHeli",nil,0];
-
 		};
 		// Pilote
 		if(license_cop_air || license_cop_onumecano) then
@@ -158,7 +154,14 @@ switch (_filter) do
 			_ret pushBack ["H_HelmetCrew_O",nil,0];
 			_ret pushBack ["H_CrewHelmetHeli_B",nil,0];
 			_ret pushBack ["H_CrewHelmetHeli_O",nil,0];
-			
+		};
+		// Unité tactique
+		if(license_cop_swat) then
+		{
+			_ret pushBack ["H_Cap_oli_hs",nil,0];
+			_ret pushBack ["H_Booniehat_khk_hs",nil,0];
+			_ret pushBack ["H_MilCap_gry",nil,0];
+			_ret pushBack ["H_MilCap_mcamo",nil,0];
 		};
 	};
 	

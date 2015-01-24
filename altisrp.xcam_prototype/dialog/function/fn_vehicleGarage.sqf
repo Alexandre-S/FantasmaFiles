@@ -4,6 +4,8 @@
 	Description:
 	Vehicle Garage, why did I spawn this in an action its self?
 */
+if((time - life_action_delay) < 2) exitWith {hint "Garagiste: Ola! tu m'as pris pour un robot gamin? Attends ton tour.."};
+life_action_delay = time;
 private["_spawnPos","_dir","_type"];
 _type = [_this,1,"",[""]] call BIS_fnc_param;
 _spawnPos = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;

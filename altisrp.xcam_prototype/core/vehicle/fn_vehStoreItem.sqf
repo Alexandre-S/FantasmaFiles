@@ -7,6 +7,8 @@
 	Used in the vehicle trunk menu, stores the selected item and puts it in the vehicles virtual inventory
 	if the vehicle has room for the item.
 */
+if((time - life_action_delay) < 1) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
+life_action_delay = time;
 private["_ctrl","_num","_totalWeight","_itemWeight","_veh_data","_inv","_index","_val"];
 disableSerialization;
 

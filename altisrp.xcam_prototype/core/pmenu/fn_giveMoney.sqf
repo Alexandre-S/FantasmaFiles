@@ -5,6 +5,8 @@
 	Description:
 	Gives the selected amount of money to the selected player.
 */
+if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
+life_action_delay = time;
 private["_unit","_amount"];
 _amount = ctrlText 2018;
 ctrlShow[2001,false];

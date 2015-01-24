@@ -46,6 +46,7 @@ switch(_shop) do
 						["ItemGPS",nil,0],
 						["ItemCompass",nil,0],
 						["ItemWatch","SmartWatch",0],
+						["AGM_Altimeter","SmartWatch Altimètre",0],
 						["ItemMap",nil,0],
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
@@ -416,6 +417,7 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Hauts Gradés",
 					[
+						["CUP_LRTV",nil,0],
 						["CUP_20Rnd_B_AA12_HE",nil,0],
 						["CUP_srifle_M107_Base",nil,0],
 						["CUP_10Rnd_127x99_M107",nil,0],
@@ -649,7 +651,7 @@ switch(_shop) do
 					// (_ret select 1) pushBack ["CUP_srifle_SVD_des_ghillie_pso",nil,90000];
 					(_ret select 1) pushBack ["CUP_10Rnd_762x54_SVD_M",nil,1000];
 					(_ret select 1) pushBack ["CUP_optic_PSO_1",nil,8000];
-					(_ret select 1) pushBack ["CUP_srifle_M15_Aim",nil,70000];
+					(_ret select 1) pushBack ["CUP_srifle_M14_Aim",nil,70000];
 					(_ret select 1) pushBack ["CUP_20Rnd_762x51_DMR",nil,1000];
 					(_ret select 1) pushBack ["CUP_optic_CompM2_Black",nil,7000];
 					(_ret select 1) pushBack ["CUP_arifle_FNFAL_railed",nil,45000];
@@ -780,6 +782,12 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_optic_CompM4",nil,3000];
 					(_ret select 1) pushBack ["CUP_optic_HoloBlack",nil,3000];
 					(_ret select 1) pushBack ["CUP_optic_CompM2_Black",nil,3000];
+				};
+				if(license_civ_gvt) then
+				{
+					(_ret select 1) pushBack ["CUP_arifle_G36C",nil,75000];
+					(_ret select 1) pushBack ["CUP_30Rnd_556x45_G36",nil,575];
+					(_ret select 1) pushBack ["CUP_optic_HoloBlack",nil,2500];
 				};
 			};
 		};

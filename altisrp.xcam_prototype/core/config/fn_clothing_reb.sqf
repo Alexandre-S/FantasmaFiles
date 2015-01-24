@@ -195,7 +195,6 @@ switch (_filter) do
 		_ret pushBack ["V_BandollierB_cbr",nil,1200];
 		_ret pushBack ["V_TacVest_khk",nil,4000];
 		_ret pushBack ["V_TacVest_oli",nil,4000];
-		_ret pushBack ["V_TacVest_blk",nil,4000];
 		_ret pushBack ["V_TacVest_camo",nil,4000];
 		_ret pushBack ["V_HarnessO_brn",nil,5000];
 		_ret pushBack ["V_Chestrig_oli",nil,7500];
