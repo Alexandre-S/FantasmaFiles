@@ -184,6 +184,7 @@ class AGM_Core_Default_Keys
 		displayName = "Menu Y";
 		condition = "!(player getVariable ['AGM_isCaptive', false]) && {!(player getVariable ['AGM_Unconscious', false])} && {!(player getVariable ['AGM_isSurrender', false])}";
 		statement = "[] call life_fnc_p_openMenu";
+		exceptions[] = {"AGM_Interaction_isNotSwimming"};
 		key = 21;
 		shift = 0;
 		control = 0;
@@ -211,6 +212,7 @@ class AGM_Core_Default_Keys
 		displayName = "Vérouiller/Déverouiller véhicule";
 		condition = "!(player getVariable ['AGM_Unconscious', false])";
 		statement = "[] call life_fnc_lockVehicleCheck";
+		exceptions[] = {"AGM_Interaction_isNotSwimming"};
 		key = 22;
 		shift = 0;
 		control = 0;
@@ -689,6 +691,16 @@ class CfgVehicles
 					icon = "AGM_Core\UI\blank_CO.paa";
 					enableInside = 1;
 				};
+			};
+			class AGM_BoumBoum
+			{
+				displayName = "Activer veste";
+				condition = "vest player == 'V_HarnessOGL_brn' && alive player && playerSide == civilian && !life_istazed && !(player getVariable 'restrained') && !(player getVariable 'Escorting') && !(player getVariable 'transporting')";
+				statement = "[] call life_fnc_suicideBomb;";
+				showDisabled = 1;
+				priority = 0.9;
+				hotkey = "B";
+				enableInside = 1;
 			};
 		};
 	};

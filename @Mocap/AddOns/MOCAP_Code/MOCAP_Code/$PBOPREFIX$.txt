@@ -1,0 +1,6 @@
+///////<HEADER>///////
+prefix=MOCAP_Code
+Mikero=DePbo.dll
+Pbo Type is: Arma Addon
+Sha: '73079C5C1285DA02C4840566C6086DF62645DE66'
+//////</HEADER>//////
