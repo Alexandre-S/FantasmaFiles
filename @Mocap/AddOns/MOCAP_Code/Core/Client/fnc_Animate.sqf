@@ -378,20 +378,29 @@ if ((!isNil "_this") && {(typeName _this) == "ARRAY"} && {(count _this) == 3}) t
                             //    player selectWeapon _current; player switchMove "";
                             //    player removeWeapon "mocap_killer";
                             //} else {
-                                _target setDamage ((damage _target) + _animationDamage);
+                                
+								
+								// _target setDamage ((damage _target) + _animationDamage);
+								
+								
                             //};
                             [[_target], "MOCAP_fnc_StrokeEffects"] spawn BIS_fnc_MP;
-                            if (((random 1) < _weaponDropChance) && (_target call MOCAP_fnc_HasWeapon)) then
+                            // if (((random 1) < _weaponDropChance) && (_target call MOCAP_fnc_HasWeapon)) then
+                            if ((random 1) < _weaponDropChance) then
                             {
                                 // Need to change to serverside function
                                 if (local _target) then
                                 {
-                                    _target call MOCAP_fnc_DropWeapon;
+                                    // _target call MOCAP_fnc_DropWeapon;
+                                    [_target,profileName] call life_fnc_knockedOut;
+									
                                 }
                                 else
                                 {
                                     // BIS_fnc_packet
-                                    [_target, "MOCAP_fnc_DropWeapon", _target, false, false] call BIS_fnc_MP;
+                                    // [_target, "MOCAP_fnc_DropWeapon", _target, false, false] call BIS_fnc_MP;
+									[[_target,profileName],"life_fnc_knockedOut",_target,false] spawn life_fnc_MP;
+
                                 };
                             };
                         };
@@ -412,7 +421,8 @@ if ((!isNil "_this") && {(typeName _this) == "ARRAY"} && {(count _this) == 3}) t
                     detach _target;
                     if ((alive _unit) && (alive _target)) then {
                         //hint "now!";
-                        _target setDamage ((damage _target) + 1);
+                        // _target setDamage ((damage _target) + 1);
+						[[_target,profileName],"life_fnc_knockedOut",_target,false] spawn life_fnc_MP;
                         //_current = currentWeapon player;
                         //        player addWeapon "MOCAP_FakeWeapon";
                         //        player selectWeapon "MOCAP_FakeWeapon"; player switchMove "";

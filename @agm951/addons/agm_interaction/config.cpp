@@ -756,9 +756,9 @@ class CfgVehicles {
 	  class AGM_BoumBoum
 	  {
 		displayName = "Activer veste";
-		condition = "vest player == 'V_HarnessOGL_brn' && alive player && playerSide == civilian && !life_istazed && !(player getVariable 'restrained') && !(player getVariable 'Escorting') && !(player getVariable 'transporting')";
-		statement = "[] call life_fnc_suicideBomb;";
-		showDisabled = 0;
+		condition = "vest _player == 'V_HarnessOGL_brn' && alive _player && playerSide == civilian && !life_istazed && !(_player getVariable ['AGM_isEscorting', false]) && !(_player getVariable ['AGM_isCaptive', false]) && !(_player getVariable ['AGM_isSurrender', false])";
+		statement = "[] spawn life_fnc_suicideBomb;";
+		showDisabled = 1;
 		priority = 0.9;
 		hotkey = "B";
 		enableInside = 1;

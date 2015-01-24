@@ -66,7 +66,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setPos _spawnPoint;
 	_vehicle setFuel 0.8;
 };
-_vehicle setVariable["Trunk",[],true]
+_vehicle setVariable["Trunk",[],true];
 _vehicle setVariable["idleTime",time,true];
 _vehicle setVariable["lootModified",false,true];
 _vehicle setVariable ["R3F_LOG_disabled", false, true];

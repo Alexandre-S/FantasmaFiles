@@ -150,7 +150,7 @@ while {true} do
 					// Si l'objet est un véhicule héliporteur
 					if (_fonctionnalites select __can_lift) then
 					{
-						[_objet] call R3F_LOG_FNCT_heliporteur_init;
+						// [_objet] call R3F_LOG_FNCT_heliporteur_init;
 					};
 					
 					// Si l'objet est un véhicule remorqueur
@@ -162,7 +162,7 @@ while {true} do
 					// Si l'objet est un véhicule transporteur
 					if (_fonctionnalites select __can_transport_cargo) then
 					{
-						[_objet] call R3F_LOG_FNCT_transporteur_init;
+						// [_objet] call R3F_LOG_FNCT_transporteur_init;
 					};
 				};
 				

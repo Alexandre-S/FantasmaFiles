@@ -1,8 +1,9 @@
 R3F_LOG_CFG_can_tow = R3F_LOG_CFG_can_tow +
 [
-	"truck_01_base_f",
-	"truck_02_base_f",
-	"truck_03_base_f",
+	"B_Truck_01_mover_F",
+	// "truck_01_base_f",
+	// "truck_02_base_f",
+	// "truck_03_base_f",
 	"b_apc_tracked_01_crv_f"
 ];
 

@@ -27,7 +27,7 @@ _callerName = [_varValue,6,"",[""]] call bis_fnc_param;
 _callerUID = [_varValue,7,"",[""]] call bis_fnc_param;
 
 if(!(["life_fnc_",_functionName] call BIS_fnc_inString) && {!(["SPY_fnc_",_functionName] call BIS_fnc_inString)} && {!(["DB_fnc_",_functionName] call BIS_fnc_inString)} && {!(["TON_fnc_",_functionName] call BIS_fnc_inString)} &&
-{!(toLower(_functionName) in ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledairdestructionstage2","bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","mb_fnc_updateweather"])} && {!(["SOCK_fnc_",_functionName] call BIS_fnc_inString)}) exitWith {diag_log format["===========MPexecFAIL2=========== %1 - %2 - %3",_functionName,_callerName,_callerUID]; false;};
+{!(toLower(_functionName) in ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledairdestructionstage2","bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","mb_fnc_updateweather","mocap_fnc_strokeeffects"])} && {!(["SOCK_fnc_",_functionName] call BIS_fnc_inString)}) exitWith {diag_log format["===========MPexecFAIL2=========== %1 - %2 - %3",_functionName,_callerName,_callerUID]; false;};
 if(toLower(_functionName) == "db_fnc_asynccall") exitWith {false};
 if(toLower(_functionName) == "db_fnc_mresToArray") exitWith {false};
 
