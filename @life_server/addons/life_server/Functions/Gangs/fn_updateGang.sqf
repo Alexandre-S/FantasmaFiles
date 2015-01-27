@@ -4,7 +4,7 @@
 	Description:
 	Updates the gang information?
 */
-private["_mode","_group","_groupID","_bank","_maxMembers","_members","_query","_owner"];
+private["_mode","_group","_groupID","_bank","_maxMembers","_members","_query","_owner","_membersFinal"];
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _group = [_this,1,grpNull,[grpNull]] call BIS_fnc_param;
 

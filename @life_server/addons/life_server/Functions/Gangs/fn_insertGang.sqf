@@ -11,7 +11,7 @@ _gangName = [_this,2,"",[""]] call BIS_fnc_param;
 _unitid = [_this,3,-1,[0]] call BIS_fnc_param;
 _group = group _ownerID;
 
-if(isNull _ownerID OR _uid == "" OR _gangName == "") exitWith {}; //Fail
+if(isNull _ownerID OR _uid == "" OR _gangName == "" OR _unitid == -1) exitWith {}; //Fail
 
 //_ownerID = owner _ownerID;
 _ownerID = _unitid;
@@ -22,7 +22,7 @@ _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 //Check to see if the gang name already exists.
 if(count _queryResult != 0) exitWith {
-	[[1,"There is already a gang created with that name please pick another name."],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP;
+	[[1,"Il y a déjà un groupe utilisant ce nom. Merci d'en choisir un autre."],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP;
 	[["life_action_gangInUse",nil,missionNamespace],"life_fnc_netSetVar",_ownerID,false] spawn life_fnc_MP;
 };
 
@@ -32,7 +32,7 @@ _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 //Check to see if this person already owns or belongs to a gang.
 if(count _queryResult != 0) exitWith {
-	[[1,"You are currently already active in a gang, please leave the gang first."],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP;
+	[[1,"Vous faite déjà parti d'un groupe. Merci de le quitter."],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP;
 	[["life_action_gangInUse",nil,missionNamespace],"life_fnc_netSetVar",_ownerID,false] spawn life_fnc_MP;
 };
 

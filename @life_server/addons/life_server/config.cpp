@@ -137,6 +137,7 @@ class CfgFunctions
 			class queryPlayerGang {};
 			class removeGang {};
 			class updateGang {};
+			class querygang {};
 		};
 		class Smartphone
 		{
