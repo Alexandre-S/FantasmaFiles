@@ -13,6 +13,9 @@ if (count _this > 2) then {
 if (!_remote and _state) then {
 	player removeItem "AGM_CableTie";
 };
+if (!_remote and !_state and playerside == west) then {
+	player addItem "AGM_CableTie";
+};
 
 if (!local _unit) exitWith {[_this + [true], _fnc_scriptName, _unit] call AGM_Core_fnc_execRemoteFnc};
 
@@ -27,7 +30,20 @@ if (_state) then {
 	};
 
 	_unit spawn {
+		private ["_inputDisabled", "_playerGrp"];
 		_inputDisabled = false;
+
+		// diag_log format ["DEBUG SETCAPTIVE - %1",_this];
+		if(side _this == civilian) then {
+			[_this] joinSilent (createGroup civilian);
+			init_gang = false;
+			_this setVariable["init_gang",false,true];
+		} else {
+			_playerGrp = group _this;
+			[_this] joinSilent (createGroup (side _this));
+		};
+		
+		_this setVariable ["tf_unable_to_use_radio", true];
 
 		// fix for lowered rifle animation glitch
 		if (currentWeapon _this != "" && {currentWeapon _this == primaryWeapon _this} && {weaponLowered _this} && {stance _this == "STAND"}) then {
@@ -81,6 +97,17 @@ if (_state) then {
 		};
 
 		if (isPlayer _this) then {showHUD true};
+		
+		_this setVariable ["tf_unable_to_use_radio", false];
+		if(side _this == civilian) then {
+			[] call life_fnc_getHLC;
+			[[(getPlayerUID _this),havena_id],"TON_fnc_querygang",serverhc,false] spawn life_fnc_MP;
+		} else {
+			//join west/indep group
+			if(!isNull _playerGrp) then {
+				[_this] joinSilent (_playerGrp);
+			};
+		};
 	};
 } else {
 	_unit setVariable ["AGM_isCaptive", false, true];
