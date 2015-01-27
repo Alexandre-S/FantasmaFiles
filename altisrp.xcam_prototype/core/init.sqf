@@ -67,7 +67,7 @@ waitUntil {life_session_completed};
 diag_log "::Life Client:: init Gang.";
 0 cutText["Récupération des infos du groupe.... patientez","BLACK FADED"];
 0 cutFadeOut 9999999;
-waitUntil {sleep 0.5;init_gang}};
+waitUntil {sleep 0.5;init_gang};
 
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
