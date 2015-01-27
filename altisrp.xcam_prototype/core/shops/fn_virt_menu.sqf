@@ -12,7 +12,7 @@ life_shop_type = _shop;
 life_shop_npc = _this select 0;
 if(_shop == "cop" && playerSide != west) exitWith {hint localize "STR_NOTF_NotACop"};
 if(_shop == "med" && playerSide != independent) exitWith {hint "Shop reservé aux médecins"};
-if(_shop == "dep" && (player getVariable["life_dep",false])) exitWith {hint "Shop reservé aux dépanneurs"};
+if(_shop == "dep" && !(player getVariable["life_dep",false])) exitWith {hint "Shop reservé aux dépanneurs"};
 createDialog "shops_menu";
 
 [] call life_fnc_virt_update;

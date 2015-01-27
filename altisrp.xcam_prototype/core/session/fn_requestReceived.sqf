@@ -61,6 +61,7 @@ switch(playerSide) do {
 			life_thirst = parseNumber(_this select 14);
 		};
 		life_sexe = _this select 15;
+		init_gang = true;
 	};
 	
 	case civilian: {
@@ -83,7 +84,7 @@ switch(playerSide) do {
 		life_gangData = _This select 21;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
-		};
+		} else { init_gang = true; player setVariable["init_gang",true,true]; };
 		[] spawn life_fnc_initHouses;
 		// END CHANGES
 		life_position = _this select 12;
@@ -114,6 +115,7 @@ switch(playerSide) do {
 			life_thirst = parseNumber(_this select 14);
 		};
 		life_sexe = _this select 15;
+		init_gang = true;
 	};
 };
 

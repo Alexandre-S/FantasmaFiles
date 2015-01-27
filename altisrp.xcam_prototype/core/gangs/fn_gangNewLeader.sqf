@@ -12,6 +12,8 @@ if((lbCurSel 2621) == -1) exitWith {hint localize "STR_GNOTF_TransferSelect"};
 _unit = call compile format["%1",getSelData(2621)];
 if(isNull _unit) exitWith {}; //Bad unit?
 if(_unit == player) exitWith {hint localize "STR_GNOTF_TransferSelf"};
+if!(init_gang) exitwith {};
+if!(_unit getVariable["init_gang",false]) exitwith {hint "Impossible, recommencez dans 30sec.."};
 
 _action = [
 	format[localize "STR_GNOTF_TransferMSG",_unit getVariable ["realname",name _unit]],

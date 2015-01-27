@@ -5,11 +5,19 @@
 	Main initialization for gangs?
 */
 private["_exitLoop","_group","_wait"];
+_wait = round(random(8));
+_group = nil;
+
+//si recup depuis serveur
+if(count (_This select 0) != 0) then {
+	life_gangData = _This select 0;
+	_wait = 1;
+};
+
 if(playerSide != civilian) exitWith {}; //What in the hell?
 [player] join (createGroup civilian);
 if(count life_gangData == 0) exitWith {}; //Dafuq?
 
-_wait = round(random(8));
 sleep _wait;
 
 //Loop through to make sure there is not a group already created with the gang.
@@ -39,3 +47,6 @@ if(!isNil "_group") then {
 	_group setVariable["gang_bank",(life_gangData select 4),true];
 	_group setVariable["gang_members",(life_gangData select 5),true];
 };
+
+init_gang = true;
+player setVariable["init_gang",true,true];

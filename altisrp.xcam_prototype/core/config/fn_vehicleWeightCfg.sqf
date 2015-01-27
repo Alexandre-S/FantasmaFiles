@@ -24,6 +24,7 @@ switch (_className) do
 	case "BAF_Offroad_D": {75};
 	case "LandRover_ACR": {75};
 	case "ACR_LandRover_AMB": {75};
+	case "RDS_Octavia_Civ_01": {50};
 	case "C_SUV_01_F": {50};
 	case "RDS_Ikarus_Civ_01": {75};
 	case "C_Van_01_transport_F": {100};

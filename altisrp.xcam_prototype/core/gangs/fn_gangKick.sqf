@@ -12,6 +12,8 @@ if((lbCurSel 2621) == -1) exitWith {hint localize "STR_GNOTF_SelectKick"};
 _unit = call compile format["%1",getSelData(2621)];
 if(isNull _unit) exitWith {}; //Bad unit?
 if(_unit == player) exitWith {hint localize "STR_GNOTF_KickSelf"};
+if!(init_gang) exitwith {};
+if!(_unit getVariable["init_gang",false]) exitwith {hint "Impossible de kicker cette personne, recommencez dans 30sec.."};
 
 _unitID = getPlayerUID _unit;
 _members = grpPlayer getVariable "gang_members";

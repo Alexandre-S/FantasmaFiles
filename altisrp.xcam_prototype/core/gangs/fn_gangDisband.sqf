@@ -7,7 +7,7 @@
 	disbanded and removed from the database.
 */
 private["_action"];
-
+if!(init_gang) exitwith {};
 _action = [
 	localize "STR_GNOTF_DisbandWarn",
 	localize "STR_Gang_Disband_Gang",
@@ -19,6 +19,7 @@ if(_action) then {
 	hint localize "STR_GNOTF_DisbandGangPro";
 	[] call life_fnc_getHLC;
 	[[grpPlayer],"TON_fnc_removeGang",serverhc,false] spawn life_fnc_MP;
+	closeDialog 0;
 } else {
 	hint localize "STR_GNOTF_DisbandGangCanc";
 };

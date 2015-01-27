@@ -7,9 +7,12 @@
 */
 private["_grp","_grpMembers"];
 if(steamid == (grpPlayer getVariable "gang_owner")) exitWith {hint localize "STR_GNOTF_LeaderLeave"};
+if!(init_gang) exitwith {};
 
 _grp = grpPlayer;
 _grpMembers = grpPlayer getVariable "gang_members";
+if(isNil "_grpMembers") exitWith {};
+if(typeName _grpMembers != "ARRAY") exitWith {};
 _grpMembers = _grpMembers - [steamid];
 _grp setVariable["gang_members",_grpMembers,true];
 [player] joinSilent (createGroup civilian);

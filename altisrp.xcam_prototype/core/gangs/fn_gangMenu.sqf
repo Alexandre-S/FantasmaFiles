@@ -10,7 +10,7 @@ disableSerialization;
 if(isNull (findDisplay 2620)) then {
 	if(!(createDialog "Life_My_Gang_Diag")) exitWith {}; //NOOOOOOOOOOOOOOOOOOOOOOOoooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOO00000000000000oooooo
 };
-
+if!(init_gang) exitwith {};
 _ownerID = grpPlayer getVariable["gang_owner",""];
 if(_ownerID == "") exitWith {closeDialog 0;}; //Bad juju
 _gangName = grpPlayer getVariable "gang_name";

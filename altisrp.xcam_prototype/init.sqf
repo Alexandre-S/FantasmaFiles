@@ -28,6 +28,10 @@ tf_same_lr_frequencies_for_side = true;
 
 TF_give_microdagr_to_soldier = false;
 
+L_immerse_twitch_enabled		= 	true;	// Enabled Twitch, "twitching" when someone shoots nearby
+L_immerse_exShake_enabled		= 	true;	// Enabled ExShake, camshake for explosions, even distant ones! (Feel the Bombs ;))
+L_immerse_recoil_enabled		= 	true;	// A slight camshake when firing weapons, makes them feel "heavier"
+
 if(!isDedicated) then { X_Client = true;};
 
 enableSaving[false,false];
