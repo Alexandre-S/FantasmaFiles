@@ -121,7 +121,7 @@ switch (_filter) do
 			["U_PMC_GrnPolo_BgPants",nil,3500],
 			["U_PMC_WhtPolo_BgPants",nil,3500],
 			["U_PMC_WhtPolo_BluPants","Polo blanc et jean",3500],
-			["U_PMC_WhtPolo_GrnPants",nil,3500]
+			["U_PMC_WhtPolo_GrnPants",nil,3500],
 			
 			["IRA_Soldier_Outfit_7","Polo Guinness et jean",3500],
 			["UVF_Soldier_Outfit_4","Polo Rugby",3500],
