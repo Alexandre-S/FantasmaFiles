@@ -130,7 +130,7 @@ switch (_vehicle) do
 			case 8: {_color = "Banalisée verte"};
 			case 9: {_color = "Banalisée bleu"};
 			case 10: {_color = "Banalisée bleu foncé"};
-			case 11: {_color = "Banalisée ?"};
+			case 11: {_color = "Banalisée beige motif"};
 			case 12: {_color = "Banalisée jaune"};
 			case 13: {_color = "Ken Block"};
 			case 14: {_color = "RedGull"};
@@ -292,9 +292,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Normal"};
+			case 0: {_color = "Kaki"};
 			case 1: {_color = "Noir"};
-			case 2: {_color = "Vert"};
 		};
 	};
 	
@@ -302,7 +301,8 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "Noir"};
+			case 0: {_color = "Kaki"};
+			case 1: {_color = "Noir"};
 		};
 	};
 	
@@ -416,13 +416,13 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "B_APC_Wheeled_01_cannon_F":
+	/*case "B_APC_Wheeled_01_cannon_F":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Noir"};
 		};
-	};
+	};*/
 	
 	case "O_Heli_Attack_02_black_F":
 	{
@@ -449,14 +449,6 @@ switch (_vehicle) do
 			case 0: {_color = "Hellcat"};
 			case 1: {_color = "Noir"};
 			case 2: {_color = "Standard"};
-		};
-	};
-	
-	case "B_APC_Wheeled_01_cannon_F":
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Noir"};
 		};
 	};
 	

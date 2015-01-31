@@ -67,7 +67,7 @@ switch (_vehicle) do
 			["altisrpfr\textures\offroad_rouille.paa","civ"],
 			["altisrpfr\textures\offroad_depannage.paa","dep"],
 			["altisrpfr\textures\offroad_vigil.paa","vig"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["#(ai,64,64,1)Fresnel(1.3,7)","civ"]
 		];
 	};
 	
@@ -307,7 +307,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
+			// ["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"],
 			["altisrpfr\textures\mrap_police_noir.paa","cop","altisrpfr\textures\mrap_police_noir_adds.paa"]
 		];
 	};
@@ -317,7 +317,9 @@ switch (_vehicle) do
 		_ret = 
 		[
 			//["altisrpfr\textures\mrap_police_noir.paa","cop","altisrpfr\textures\mrap_police_noir_adds.paa"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
+			// ["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
+			["\A3\Soft_F\MRAP_01\Data\mrap_01_base_co.paa","cop"],
+			["altisrpfr\textures\mrap_police_noir.paa","cop","altisrpfr\textures\mrap_police_noir_adds.paa"]
 		];
 	};
 
@@ -419,7 +421,7 @@ switch (_vehicle) do
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_vert.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_violet.paa"],
 			
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"]
 		];
 	};
 	
@@ -435,7 +437,7 @@ switch (_vehicle) do
 			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","civ","altisrpfr\textures\zamak_bache_rouge.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","civ","altisrpfr\textures\zamak_bache_vert.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_violet.paa"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop"]
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"]
 		];
 	};
 	
