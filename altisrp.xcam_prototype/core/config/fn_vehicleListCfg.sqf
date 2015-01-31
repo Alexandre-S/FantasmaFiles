@@ -209,49 +209,53 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		_return pushBack ["sab_UN_Car",0];
+		_return pushBack ["B_Quadbike_01_F",0];
+		_return pushBack ["C_Hatchback_01_F",0];
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_return pushBack ["sab_UN_Offroad",0];
-			_return pushBack ["sab_UN_SUV",0];
+			_return pushBack ["C_Offroad_01_F",0];
+			_return pushBack ["C_SUV_01_F",0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
 			_return pushBack ["C_Hatchback_01_sport_F",0];
-			_return pushBack ["sab_UN_Truck_O",0]; //ZAMAK transport
-			_return pushBack ["sab_UN_Truck_C",0]; //ZAMAK Couvert
+			_return pushBack ["I_Truck_02_transport_F",0]; //ZAMAK transport
+			// _return pushBack ["sab_UN_Truck_O",0]; //ZAMAK transport
+			_return pushBack ["I_Truck_02_covered_F",0]; //ZAMAK Couvert
+			// _return pushBack ["sab_UN_Truck_C",0]; //ZAMAK Couvert
 		};
-		// Grade Brigadier
 		if(license_cop_piloteauto) then
 		{
-			_return pushBack["sab_UN_APC",0];
-			_return pushBack["sab_UN_Hunter",0];
-			_return pushBack["sab_UN_Strider",0];
+			// _return pushBack["sab_UN_APC",0];
+			// _return pushBack["sab_UN_Hunter",0];
+			// _return pushBack["sab_UN_Strider",0];
 		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_return pushBack["sab_UN_Truck_Fuel",0];
-			_return pushBack["sab_UN_Truck_Medi",0];
-			_return pushBack["sab_UN_Truck_Rep",0];
-			_return pushBack["sab_UN_Truck_Ammo",0];
-			_return pushBack["sab_UN_Hunter",0];
+			// _return pushBack["sab_UN_Truck_Fuel",0];
+			// _return pushBack["sab_UN_Truck_Medi",0];
+			// _return pushBack["sab_UN_Truck_Rep",0];
+			// _return pushBack["sab_UN_Truck_Ammo",0];
+			_return pushBack["B_MRAP_01_F",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
 		{
-			_return pushBack["sab_UN_Hunter_hmg",0];
-			_return pushBack["sab_UN_Offroad_gun",0];// Douscka ONU
-			_return pushBack["sab_UN_CRV",0]; // Impossible de ranger au garage
+			_return pushBack["B_MRAP_01_hmg_F",0];
+			// _return pushBack["sab_UN_Offroad_gun",0];// Douscka ONU
+			// _return pushBack["sab_UN_CRV",0]; // Impossible de ranger au garage
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
 		{
-			_return pushBack["sab_UN_Strider_hmg",0];
-			_return pushBack["sab_UN_Kuma",0];
-			_return pushBack["sab_UN_Panther",0];
+			// _return pushBack["sab_UN_Strider_hmg",0];
+			// _return pushBack["sab_UN_Kuma",0];
+			// _return pushBack["sab_UN_Panther",];
+			_return pushBack["B_APC_Wheeled_01_cannon_F",0];
+			_return pushBack["I_MRAP_03_F",0];
 			
 		};
 	};
@@ -263,17 +267,18 @@ switch (_shop) do
 		{
 			_return pushBack["GNT_C185",0];
 			_return pushBack["GNT_C185F",0];
-			_return pushBack["sab_UN_bird_civil",0];
-			_return pushBack["sab_UN_bird",0];
-			_return pushBack["sab_UN_Heli",0];
-			_return pushBack["sab_UN_Large_Heli",0];
+			_return pushBack["C_Heli_Light_01_civil_F",0];
+			_return pushBack["B_Heli_Light_01_F",0];
+			// _return pushBack["sab_UN_Heli",0];
+			// _return pushBack["sab_UN_Large_Heli",0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
+			_return pushBack["O_Heli_Light_02_unarmed_F",0];
 			_return pushBack["I_Heli_light_03_unarmed_F",0];
 			_return pushBack["B_Heli_Transport_03_unarmed_F",0];
-			_return pushBack["sab_UN_TaruB",0];
+			_return pushBack["O_Heli_Transport_04_F",0];
 			_return pushBack["bwi_a3_t6a_7",0];
 			_return pushBack["bwi_a3_at6b_3",0];
 		};
@@ -286,61 +291,29 @@ switch (_shop) do
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
 		{
-			_return pushBack["sab_UN_Heli_armed",0];
-			_return pushBack["sab_UN_attackHeli",0];
-			_return pushBack["B_Heli_Attack_01_F",0];
-		};
-	};
-	
-	case "cop_airhq":
-	{
-		// Grade Brigadier
-		if(__GETC__(life_coplevel) >= 2) then
-		{
-			_return pushBack["GNT_C185",0];
-			_return pushBack["GNT_C185F",0];
-			_return pushBack["sab_UN_bird_civil",0];
-			_return pushBack["sab_UN_bird",0];
-			_return pushBack["sab_UN_Heli",0];
-			_return pushBack["sab_UN_Large_Heli",0];
-		};
-		// Grade Lieutenant
-		if(__GETC__(life_coplevel) >= 3) then
-		{
-			_return pushBack["I_Heli_light_03_unarmed_F",0];
-			_return pushBack["B_Heli_Transport_03_unarmed_F",0];
-			_return pushBack["sab_UN_TaruB",0];
-			_return pushBack["bwi_a3_t6a_7",0];
-			_return pushBack["bwi_a3_at6b_3",0];
-		};
-		// Grade Colonel
-		if(__GETC__(life_coplevel) >= 5) then
-		{
-			_return pushBack["B_Heli_Transport_01_F",0];
-			_return pushBack["B_Heli_Transport_03_F",0];
-		};
-		// Grade Général
-		if(__GETC__(life_coplevel) >= 6) then
-		{
-			_return pushBack["sab_UN_Heli_armed",0];
-			_return pushBack["sab_UN_attackHeli",0];
+			// _return pushBack["sab_UN_Heli_armed",0];
+			// _return pushBack["sab_UN_attackHeli",0];
 			_return pushBack["B_Heli_Attack_01_F",0];
 		};
 	};
 	
 	case "cop_ship":
 	{
+		_return pushBack["B_Boat_Transport_01_F",0];
+		_return pushBack["B_Lifeboat",0];
 		// Grade Brigadier
+		if(__GETC__(life_coplevel) >= 1) then
+		{
+			_return pushBack["C_Boat_Civil_01_police_F",0];
+		};
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_return pushBack["B_Boat_Transport_01_F",0];
-			_return pushBack["sab_UN_Boat",0];
-			_return pushBack["B_SDV_01_F",0];
+			_return pushBack["C_Boat_Civil_01_police_F",0];
 		};
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
-			_return pushBack["sab_UN_Boat_armed",0];
+			_return pushBack["B_Boat_Armed_01_minigun_F",0];
 		};
 	};
 };

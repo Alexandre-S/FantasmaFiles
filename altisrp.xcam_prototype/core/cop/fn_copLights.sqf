@@ -21,12 +21,17 @@ _lightleft setLightAmbient [20, 0.1, 0.1];
 
 switch (typeOf _vehicle) do
 {
-	case "sab_UN_Offroad":
+	case "C_Offroad_01_F":
 	{
 		_lightleft lightAttachObject [_vehicle, [-0.37, 0.0, 0.52]];
 	};
 	
-	case "sab_UN_Hunter":
+	case "B_MRAP_01_F":
+	{
+		_lightleft lightAttachObject [_vehicle, [-0.50,1.5,-0.68]];
+	};
+	
+	case "B_MRAP_01_hmg_F":
 	{
 		_lightleft lightAttachObject [_vehicle, [-0.50,1.5,-0.68]];
 	};
@@ -51,12 +56,17 @@ _lightright setLightAmbient [0.1,0.1,20];
 
 switch (typeOf _vehicle) do
 {
-	case "sab_UN_Offroad":
+	case "C_Offroad_01_F":
 	{
 		_lightright lightAttachObject [_vehicle, [0.37, 0.0, 0.52]];
 	};
 	
-	case "sab_UN_Hunter":
+	case "B_MRAP_01_F":
+	{
+		_lightright lightAttachObject [_vehicle, [0.50,1.5,-0.68]];
+	};
+	
+	case "B_MRAP_01_hmg_F":
 	{
 		_lightright lightAttachObject [_vehicle, [0.50,1.5,-0.68]];
 	};

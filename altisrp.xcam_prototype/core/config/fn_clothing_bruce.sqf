@@ -100,8 +100,29 @@ switch (_filter) do
 			["U_Marshal","Casual Wears",5500],	
 			["U_I_HeliPilotCoveralls","Work on airport",6000],
 			["U_C_Journalist","AAN",6500],
+			["vip_clothes","Tenue footing",5500],
+			
+			["U_PMC_GTShirt_DJeans","TeeShirt vert et jean",3500],
+			["U_PMC_GTShirt_SJeans","TeeShirt vert et bas blanc",3500],
+			["U_PMC_BlkTShirt_DJeans","TeeShirt noir et jean",3500],
+			["U_PMC_BlkTShirt_SJeans",nil,3500],
+			["U_PMC_BluTShirt_SJeans",nil,3500],
+			["U_PMC_WTShirt_DJeans","TeeShirt blanc et jean",3500],
 			["U_PMC_BluePlaidShirt_BeigeCords","Chemise bleu et pantalon beige",3500],
 			["U_PMC_RedPlaidShirt_DenimCords","Chemise rouge et jean bleu",3500],
+			["U_PMC_BlackPoloShirt_BeigeCords","Polo noir et pantalon beige",3500],
+			["U_PMC_BluPolo_BgPants","Polo bleu et bas beige",3500],
+			["U_PMC_BgPolo_GrnPants",nil,3500],
+			["U_PMC_BlckPolo_BgPants",nil,3500],
+			["U_PMC_BlckPolo_BluPants",nil,3500],
+			["U_PMC_BluPolo_GrnPants",nil,3500],
+			["U_PMC_BrnPolo_BgPants",nil,3500],
+			["U_PMC_BrnPolo_BluPants","Polo marron et jean",3500],
+			["U_PMC_GrnPolo_BgPants",nil,3500],
+			["U_PMC_WhtPolo_BgPants",nil,3500],
+			["U_PMC_WhtPolo_BluPants","Polo blanc et jean",3500],
+			["U_PMC_WhtPolo_GrnPants",nil,3500]
+			
 			["IRA_Soldier_Outfit_7","Polo Guinness et jean",3500],
 			["UVF_Soldier_Outfit_4","Polo Rugby",3500],
 			["rds_uniform_Functionary1",nil,7500],
@@ -110,9 +131,8 @@ switch (_filter) do
 		];
 		if(license_civ_vigil) then
 		{
-			_ret pushBack ["vip_clothes","Tenue Vigil 1",5500];
-			_ret pushBack ["U_B_CombatUniform_mcam","Tenue Vigil 2",7500];
-			_ret pushBack ["U_B_CombatUniform_mcam_vest","Tenue Vigil 3",7500];
+			_ret pushBack ["U_B_CombatUniform_mcam","Tenue Vigil 1",7500];
+			_ret pushBack ["U_B_CombatUniform_mcam_vest","Tenue Vigil 2",7500];
 		};
 		if(player getVariable["life_dep",false]) then
 		{
@@ -211,6 +231,7 @@ switch (_filter) do
 	{
 		_ret = 
 		[
+			["V_Rangemaster_belt",nil,1200],
 			["V_BandollierB_oli",nil,1200],
 			["V_BandollierB_blk",nil,1200],
 			["V_BandollierB_rgr",nil,1200],

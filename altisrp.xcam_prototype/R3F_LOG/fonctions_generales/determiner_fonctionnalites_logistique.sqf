@@ -51,32 +51,32 @@ _can_be_transported_cargo_cout = 0;
 
 if (_can_be_depl_heli_remorq_transp) then
 {
-	{
+	/*{
 		if (_x in R3F_LOG_CFG_can_be_moved_by_player) exitWith {_can_be_moved_by_player = true;};
 	} forEach _tab_classe_heritage;
 	
 	{
 		if (_x in R3F_LOG_CFG_can_be_lifted) exitWith {_can_be_lifted = true;};
-	} forEach _tab_classe_heritage;
+	} forEach _tab_classe_heritage;*/
 	
 	{
 		if (_x in R3F_LOG_CFG_can_be_towed) exitWith {_can_be_towed = true;};
 	} forEach _tab_classe_heritage;
 	
-	{
+	/*{
 		_idx = R3F_LOG_classes_objets_transportables find _x;
 		if (_idx != -1) exitWith
 		{
 			_can_be_transported_cargo = true;
 			_can_be_transported_cargo_cout = R3F_LOG_CFG_can_be_transported_cargo select _idx select 1;
 		};
-	} forEach _tab_classe_heritage;
+	} forEach _tab_classe_heritage;*/
 };
 
-_can_lift = false;
+_can_lift = false;/*
 {
 	if (_x in R3F_LOG_CFG_can_lift) exitWith {_can_lift = true;};
-} forEach _tab_classe_heritage;
+} forEach _tab_classe_heritage;*/
 
 _can_tow = false;
 {
@@ -85,7 +85,7 @@ _can_tow = false;
 
 _can_transport_cargo = false;
 _can_transport_cargo_cout = 0;
-{
+/*{
 	_idx = R3F_LOG_classes_transporteurs find _x;
 	if (_idx != -1) exitWith
 	{
@@ -96,7 +96,7 @@ _can_transport_cargo_cout = 0;
 
 // Cargo de capacité nulle
 if (_can_transport_cargo_cout <= 0) then {_can_transport_cargo = false;};
-
+*/
 // Retour des fonctionnalités
 [
 	_can_be_depl_heli_remorq_transp,

@@ -45,22 +45,6 @@ switch (_filter) do
 		_ret pushBack ["U_O_OfficerUniform_ocamo",nil,18200];
 		_ret pushBack ["U_BG_leader",nil,15500];
 		_ret pushBack ["U_BG_Guerilla1_1",nil,7500];
-		_ret pushBack ["U_PMC_GTShirt_DJeans","TeeShirt vert et jean",10000];
-		_ret pushBack ["U_PMC_GTShirt_SJeans","TeeShirt vert et bas blanc",10000];
-		_ret pushBack ["U_PMC_BlkTShirt_DJeans","TeeShirt noir et jean",10000];
-		_ret pushBack ["U_PMC_WTShirt_DJeans","TeeShirt blanc et jean",10000];
-		_ret pushBack ["U_PMC_BluPolo_BgPants","Polo bleu et bas beige",10000];
-		_ret pushBack ["U_PMC_WhtPolo_BluPants","Polo blanc et jean",10000];
-		_ret pushBack ["U_PMC_BlackPoloShirt_BeigeCords","Polo noir et bas beige",10000];
-		_ret pushBack ["U_PMC_BrnPolo_BluPants","Polo marron et jean",10000];
-		_ret pushBack ["U_PMC_CombatUniformLS_BSGPBB","Veste combat noire bas foncé",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_SSGPSB","Veste combat beige bas foncé",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_ChckDBS_GPSB","Chemise combat bleu foncé",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_ChckLB_GPBB","Chemise combat bleu clair",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_ChckP_BPBB","Chemise combat rouge",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_BSSPBB","Veste combat noire bas clair",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_GSBPBB","Veste combat verte bas foncé",20000];
-		_ret pushBack ["U_PMC_CombatUniformLS_IndPBSBB","Veste combat noire bas camo",20000];
 		_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_02","Bas treillis et polo 1",15000];
 		_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_02a","Bas treillis et polo 2",15000];
 		_ret pushBack ["UVF_Soldier_Outfit_1","Veste noire ouverte et jean",10000];
@@ -73,6 +57,45 @@ switch (_filter) do
 		_ret pushBack ["IRA_Soldier_Outfit_8","Tenue verte et bas camo",10000];
 		_ret pushBack ["UVF_Soldier_Outfit_5","Tenue bleue et bas noir ",10000];
 		_ret pushBack ["IRA_Soldier_Outfit_1","Uniforme vert",20000];
+		// Armée privée
+		if(__GETC__(life_factnumber) == 1) then
+		{
+			_ret pushBack ["U_PMC_CombatUniformLS_ChckDBS_GPSB","Chemise combat bleu foncé",13500];
+			_ret pushBack ["U_PMC_CombatUniformLS_ChckLB_GPBB","Chemise combat bleu clair",13500];
+			_ret pushBack ["U_PMC_CombatUniformLS_ChckP_BPBB","Chemise combat rouge",13500];
+			_ret pushBack ["U_PMC_IndUniformRS_BSBPBB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_BSGPBB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_BSTPTB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_GSGPBB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_GSBPBB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_GSTPTB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_TSTPTB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_TSBPBB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformRS_TSGPBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_BSGPBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_BSSPBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_GSBPBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_GSSPBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_IndPBSBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_SSBPBB",nil,15000];
+			_ret pushBack ["U_PMC_CombatUniformRS_SSGPBB",nil,15000];
+			_ret pushBack ["U_PMC_IndUniformLS_BSBPBB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_BSGPBB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_BSTPTB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_GSGPBB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_GSBPBB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_GSTPTB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_TSTPTB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_TSBPBB",nil,20000];
+			_ret pushBack ["U_PMC_IndUniformLS_TSGPBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_BSGPBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_BSSPBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_GSBPBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_GSSPBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_IndPBSBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_SSBPBB",nil,20000];
+			_ret pushBack ["U_PMC_CombatUniformLS_SSGPBB",nil,20000];
+		};
 		// Faction 3 = Religieux
 		if(__GETC__(life_factnumber) == 3) then
 		{
@@ -128,15 +151,19 @@ switch (_filter) do
 		_ret pushBack ["H_HelmetSpecO_ocamo",nil,1700];
 		_ret pushBack ["H_PilotHelmetHeli_O",nil,2000];
 		_ret pushBack ["H_HelmetCrew_O",nil,2000];
-		_ret pushBack ["H_Cap_pmc",nil,300];
-		_ret pushBack ["H_Capbw_pmc",nil,300];
-		_ret pushBack ["H_Cap_tan_pmc",nil,300];
-		_ret pushBack ["H_Capbw_tan_pmc",nil,300];
-		_ret pushBack ["H_Booniehat_DMARPAT",nil,450];
-		_ret pushBack ["H_Booniehat_GCAMO",nil,450];
-		_ret pushBack ["H_Booniehat_rgr",nil,450];
-		_ret pushBack ["H_Cap_pmc_headphones",nil,1000];
-		_ret pushBack ["H_PilotHelmetHeli_PMC",nil,2000];
+		// Armée privée
+		if(__GETC__(life_factnumber) == 1) then
+		{
+			_ret pushBack ["H_Cap_pmc",nil,300];
+			_ret pushBack ["H_Capbw_pmc",nil,300];
+			_ret pushBack ["H_Cap_tan_pmc",nil,300];
+			_ret pushBack ["H_Capbw_tan_pmc",nil,300];
+			_ret pushBack ["H_Booniehat_DMARPAT",nil,450];
+			_ret pushBack ["H_Booniehat_GCAMO",nil,450];
+			_ret pushBack ["H_Booniehat_rgr",nil,450];
+			_ret pushBack ["H_Cap_pmc_headphones",nil,1000];
+			_ret pushBack ["H_PilotHelmetHeli_PMC",nil,2000];
+		};
 		// Faction 3 = Religieux
 		if(__GETC__(life_factnumber) == 3) then
 		{
@@ -185,17 +212,21 @@ switch (_filter) do
 			["IRA_Balaclava_Brown",nil,300],
 			["Pomi_Goggles",nil,150],
 			["Pomi_Goggles_Grn",nil,150],
-			["Pomi_Goggles_Snd",nil,150]
+			["Pomi_Goggles_Snd",nil,150],
+			["Mask_M40",nil,2000],
+			["Mask_M40_OD",nil,2000]
 		];
 	};
 	
 	//Vest
 	case 3:
 	{
+		_ret pushBack ["V_Rangemaster_belt",nil,1200];
 		_ret pushBack ["V_BandollierB_cbr",nil,1200];
 		_ret pushBack ["V_TacVest_khk",nil,4000];
 		_ret pushBack ["V_TacVest_oli",nil,4000];
 		_ret pushBack ["V_TacVest_camo",nil,4000];
+		_ret pushBack ["V_TacVest_darkblck",nil,5000];
 		_ret pushBack ["V_HarnessO_brn",nil,5000];
 		_ret pushBack ["V_Chestrig_oli",nil,7500];
 		_ret pushBack ["V_PlateCarrier2_rgr",nil,10000];
@@ -203,6 +234,7 @@ switch (_filter) do
 		_ret pushBack ["V_PlateCarrier1_PMC_blk","Gilet noir léger",10000];
 		_ret pushBack ["V_PlateCarrier1_PMC_rgr","Gilet vert léger",10000];
 		_ret pushBack ["V_PlateCarrier1_PMC_khki","Gilet khaki léger",10000];
+		_ret pushBack ["V_PlateCarrier1_PMC_coyote","Gilet coyote léger",10000];
 		_ret pushBack ["V_PlateCarrier1_PMC_marpat","Gilet camo léger",10000];
 		_ret pushBack ["V_PlateCarrierInd_PMC_grn","Gilet vert Lourd",15000];
 		_ret pushBack ["V_PlateCarrierInd_PMC_blk","Gilet noir Lourd",15000];

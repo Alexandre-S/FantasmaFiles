@@ -54,10 +54,12 @@ switch(_type) do
 	};
 	case 1:
 	{
-		_msg = [_data select 2,40] call KRON_StrLeft;
-		_rowData = [_data select 0, _data select 1, _data select 2, _data select 3];
-		_cMessageList lnbAddRow[_data select 3,format["%1 ...",_msg]];
-		_cMessageList lnbSetData[[((lnbSize _cMessageList) select 0)-1,0],str(_rowData)];
+		{
+			_msg = [_x select 2,40] call KRON_StrLeft;
+			_rowData = [_x select 0, _x select 1, _x select 2, _x select 3];
+			_cMessageList lnbAddRow[_x select 3,format["%1 ...",_msg]];
+			_cMessageList lnbSetData[[((lnbSize _cMessageList) select 0)-1,0],str(_rowData)];
+		}forEach _data;
 	};
 	case 2:
 	{

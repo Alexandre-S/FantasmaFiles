@@ -6,7 +6,7 @@
 	Description:
 	Initializes the medic..
 */
-private["_end"];
+private["_end","_slotpremium","_playerCount"];
 player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
 
@@ -15,12 +15,22 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	sleep 35;
 };
 
+_slotpremium = ["medic_7","medic_8","medic_9","medic_10"];
 
-if(str(player) in ["medic_7","medic_8","medic_9","medic_10"]) then {
+
+if(str(player) in _slotpremium) then {
 	if(__GETC__(life_donator) == 0) then
 	{
 		player enableSimulation false;
 		["NotPremium",false,true] call BIS_fnc_endMission;
+		sleep 35;
+	};
+} else {
+	_playerCount = {!(isPlayer _x)} count _slotpremium;
+	if(__GETC__(life_donator) > 0 && {_playerCount > 2}) then
+	{
+		player enableSimulation false;
+		["IsPremium",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
 };
@@ -40,7 +50,7 @@ if (!life_is_alive || (count life_position) == 0) then
 }	
 else 
 {
-	player setPos life_position;
+	player setPosATL life_position;
 	hint format["Vous êtes toujours en vie. Vous avez respawn à votre dernière position."];
 	// life_is_alive = true;
 	if(life_firstSpawn) then {

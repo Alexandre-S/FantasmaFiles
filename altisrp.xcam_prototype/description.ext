@@ -128,6 +128,16 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
+	class IsPremium
+	{
+		title = "Place non réservée";
+		subtitle = "Vous n'êtes pas autorisé a utiliser ce slot";
+		description = "Il reste des slots réservés premium disponibles ! Merci de vous connecter en priorité sur un slot premium.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
 	class NotFemale
 	{
 		title = "Echec de connection";

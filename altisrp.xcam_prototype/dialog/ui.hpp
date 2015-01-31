@@ -11,6 +11,15 @@
 		
 		class controlsBackground 
 		{
+			class speakerHIcon : life_RscPicture 
+			{
+			
+				idc = 23662;
+				text = "altisrpfr\icons\speaker.paa";
+				x = safeZoneX+safeZoneW-0.115; y = safeZoneY+safeZoneH-0.67;
+				w = 0.04; h = 0.04;
+			};
+			
 			class combatHIcon : life_RscPicture 
 			{
 			
@@ -59,6 +68,23 @@
 		
 		class controls
 		{
+			class speakertext
+			{
+				type=0;
+				idc=23663;
+				style=0;
+				x=-1;
+				y=-1;
+				w=0.3;
+				h=0.05;
+				sizeEx=0.03;
+				size=1;
+				font="PuristaSemibold";
+				colorBackground[]={0,0,0,0};
+				colorText[] = { 1 , 1 , 1 , 1 };
+				shadow=true;
+				text="";
+			};
 			class foodtext
 			{
 				type=0;

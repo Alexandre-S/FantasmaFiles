@@ -543,6 +543,7 @@ switch(_shop) do
 					["Marché noir 1 - rang 1",
 						[
 							["tf_anprc148jem",nil,5000],
+							["Binocular",nil,150],
 							["CUP_smg_bizon",nil,25000],
 							["CUP_64Rnd_9x19_Bizon_M",nil,750],
 							["CUP_sgun_Saiga12K",nil,15000],
@@ -767,7 +768,8 @@ switch(_shop) do
 						["optic_Aco_smg",nil,2500],
 						["AGM_EarBuds",nil,25],
 						["AGM_ItemKestrel",nil,500],
-						["AGM_SpareBarrel",nil,1000]
+						["AGM_SpareBarrel",nil,1000],
+						["AGM_CableTie",nil,100]
 					]
 				];
 				if(license_civ_vigil) then

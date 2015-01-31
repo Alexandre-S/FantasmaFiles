@@ -22,28 +22,13 @@ switch (_vehicle) do
 			case 3: {_color = "Bleu";};
 			case 4: {_color = "Rouge foncé";};
 			case 5: {_color = "Bleu et Blanc"};
-			case 6: {_color = "Noir"};
+			case 6: {_color = "Gendarmerie"};
 			case 7: {_color = "Noir"};
 			case 8: {_color = "Croix-Rouge"};
 			case 9: {_color = "Rouillé"};
 			case 10: {_color = "Dépanneur"};
 			case 11: {_color = "Vigil"};
-		};
-	};
-	
-	case "sab_UN_Offroad" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "ONU";};
-			case 1: {_color = "Rouge";};
-			case 2: {_color = "Jaune";};
-			case 3: {_color = "Blanc";};
-			case 4: {_color = "Bleu";};
-			case 5: {_color = "Rouge foncé";};
-			case 6: {_color = "Bleu et Blanc"};
-			case 7: {_color = "Noir"};
-			case 8: {_color = "Rouillé"};
+			case 12: {_color = "Noir"};
 		};
 	};
 	
@@ -59,6 +44,7 @@ switch (_vehicle) do
 			case 5: {_color = "Blanc"};
 			case 6: {_color = "Gris"};
 			case 7: {_color = "Noir"};
+			case 8: {_color = "Gendarmerie"};
 		};
 	};
 	
@@ -139,18 +125,19 @@ switch (_vehicle) do
 			case 3: {_color = "Noir et blanc"};
 			case 4: {_color = "Marron"};
 			case 5: {_color = "Vert"};
-			case 6: {_color = "Noir"};
-			case 7: {_color = "Rouge"};
-			case 8: {_color = "Bleu foncé"};
-			case 9: {_color = "Orange"};
-			case 10: {_color = "Noir et blanc"};
-			case 11: {_color = "Marron"};
-			case 12: {_color = "Vert"};
+			case 6: {_color = "Gendarmerie"};
+			case 7: {_color = "Banalisée beige"};
+			case 8: {_color = "Banalisée verte"};
+			case 9: {_color = "Banalisée bleu"};
+			case 10: {_color = "Banalisée bleu foncé"};
+			case 11: {_color = "Banalisée ?"};
+			case 12: {_color = "Banalisée jaune"};
 			case 13: {_color = "Ken Block"};
 			case 14: {_color = "RedGull"};
-			case 15: {_color = "Ken Block"};
-			case 16: {_color = "RedGull"};
+			case 15: {_color = "Banalisée blanche"};
+			case 16: {_color = "Banalisée grise"};
 			case 17: {_color = "Croix-Rouge"};
+			case 18: {_color = "Banalisée noir"};
 		};
 	};
 	
@@ -162,10 +149,14 @@ switch (_vehicle) do
 			case 1: {_color = "Noir";};
 			case 2: {_color = "Argenté";};
 			case 3: {_color = "Orange";};
-			case 4: {_color = "Cop";};
+			case 4: {_color = "Gendarmerie";};
 			case 5: {_color = "Noir et flammes bleues";};
 			case 6: {_color = "Léopard";};
 			case 7: {_color = "Rouillé";};
+			case 8: {_color = "Banalisée rouge foncé";};
+			case 9: {_color = "Banalisée Noir";};
+			case 10: {_color = "Banalisée argenté";};
+			case 11: {_color = "Banalisée orange";};		
 		};
 	};
 	
@@ -245,7 +236,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "N-ONU"};
+			case 0: {_color = "N-Gendarmerie"};
 			case 1: {_color = "N-Noir"};
 			case 2: {_color = "N-Civ bleu"};
 			case 3: {_color = "N-Civ rouge"};
@@ -267,7 +258,7 @@ switch (_vehicle) do
 	{
 		switch (_index) do
 		{
-			case 0: {_color = "P-ONU"};
+			case 0: {_color = "P-Gendarmerie"};
 			case 1: {_color = "P-Noir"};
 			case 2: {_color = "P-Civ bleu"};
 			case 3: {_color = "P-Civ rouge"};
@@ -303,6 +294,15 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Normal"};
 			case 1: {_color = "Noir"};
+			case 2: {_color = "Vert"};
+		};
+	};
+	
+	case "B_MRAP_01_hmg_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Noir"};
 		};
 	};
 	
@@ -537,11 +537,12 @@ switch (_vehicle) do
 			case 2: {_color = "Jaune"};
 			case 3: {_color = "Blanc"};
 			case 4: {_color = "Gris"};
-			case 0: {_color = "Blanc / Bleu"};
-			case 1: {_color = "Jaune / Rouge"};
-			case 2: {_color = "Jaune"};
-			case 3: {_color = "Blanc"};
-			case 4: {_color = "Gris"};
+			case 5: {_color = "Gendarmerie"};
+			case 6: {_color = "Blanc / Bleu"};
+			case 7: {_color = "Jaune / Rouge"};
+			case 8: {_color = "Jaune"};
+			case 9: {_color = "Blanc"};
+			case 10: {_color = "Gris"};
 		};
 	};
 	
@@ -554,11 +555,12 @@ switch (_vehicle) do
 			case 2: {_color = "Jaune"};
 			case 3: {_color = "Blanc"};
 			case 4: {_color = "Gris"};
-			case 0: {_color = "Blanc / Bleu"};
-			case 1: {_color = "Jaune / Rouge"};
-			case 2: {_color = "Jaune"};
-			case 3: {_color = "Blanc"};
-			case 4: {_color = "Gris"};
+			case 5: {_color = "Gendarmerie"};
+			case 6: {_color = "Blanc / Bleu"};
+			case 7: {_color = "Jaune / Rouge"};
+			case 8: {_color = "Jaune"};
+			case 9: {_color = "Blanc"};
+			case 10: {_color = "Gris"};
 		};
 	};
 };

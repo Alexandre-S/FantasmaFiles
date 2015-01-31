@@ -15,6 +15,7 @@ if((_house getVariable["house_owned",false])) exitWith {hint "This house is alre
 if(!isNil {(_house getVariable "house_sold")}) exitWith {hint localize "STR_House_Sell_Process"};
 if(!license_civ_home) exitWith {hint localize "STR_House_License"};
 if(count life_houses >= (__GETC__(life_donator)+(__GETC__(life_houseLimit)))) exitWith {hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
+if(count life_houses >= 4) exitWith {hint "Vous ne pouvez pas posséder plus de 4 maisons à la fois.";};
 // if(count life_houses >= (__GETC__(life_houseLimit))) exitWith {hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
 closeDialog 0;
 

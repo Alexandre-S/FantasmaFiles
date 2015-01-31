@@ -17,12 +17,13 @@ _version ctrlSetText format["BETA: 0.%1.%2",(productVersion select 2),(productVe
 
 [] spawn
 {
-	private["_dam","_cash"];
+	private["_dam","_cash","_volumelvl"];
 	while {true} do
 	{
 		_dam = damage player;
 		_cash  = life_cash;
-		waitUntil {((damage player) != _dam) || _cash != life_cash};
+		_volumelvl = TF_speak_volume_level;
+		waitUntil {sleep 0.1; ((damage player) != _dam || _cash != life_cash || _volumelvl != TF_speak_volume_level)};
 		[] call life_fnc_hudUpdate;
 	};
 };

@@ -64,7 +64,7 @@ else
 		
 		case "cop_offroad":
 		{
-			if(typeOf _vehicle == "sab_UN_Offroad") then {
+			if(typeOf _vehicle == "C_Offroad_01_F") then {
 				// waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
 			// };
 			_vehicle animate ["HideConstruction", 0];
@@ -74,7 +74,7 @@ else
 			_vehicle setVariable["lights",false,true];
 		};
 		
-				case "landrover_nocov":
+		case "landrover_nocov":
 		{
 			/*if(typeOf _vehicle == "LandRover_ACR") then {
 				waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};

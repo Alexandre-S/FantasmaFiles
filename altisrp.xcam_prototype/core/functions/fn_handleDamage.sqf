@@ -30,7 +30,7 @@ if(!isNull _source) then {
 				
 				_damage = 0;
 				if(_unit distance _source < _distance) then {
-					if(!life_istazed && !(_unit getVariable["restrained",false])) then {
+					if(!life_istazed && !(_unit getVariable["AGM_isCaptive",false])) then {
 						if(_isVehicle && _isQuad) then {
 							player action ["Eject",vehicle player];
 							[_unit,_source] spawn life_fnc_tazed;

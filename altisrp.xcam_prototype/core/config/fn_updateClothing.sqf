@@ -14,10 +14,13 @@ _uniform = uniform player;
 
 switch(true) do
 {	
+	case (playerSide == west && _uniform == "U_Rangemaster"):
+	{
+		player setObjectTextureGlobal [0, "altisrpfr\textures\gendarmerie_uniform_base.paa"];
+	};
 	case (playerSide == independent && _uniform == "U_Rangemaster"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\medic_uniform.paa"];
-		
 		//if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
 	case (_uniform == "U_B_CombatUniform_mcam" OR _uniform == "U_B_CombatUniform_mcam_vest"):
