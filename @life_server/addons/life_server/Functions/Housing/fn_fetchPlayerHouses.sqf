@@ -53,7 +53,8 @@ _return = [];
 		_container = createVehicle[_className,_pos,[],0,"NONE"];
 		waitUntil{!isNil "_container"};
 		_container setPosATL _pos;
-		//_container enableSimulation false;
+		// _container enableSimulation false;
+		_container allowDamage false;
 		
 		_containers pushBack _container;
 		clearWeaponCargoGlobal _container;
@@ -62,20 +63,26 @@ _return = [];
 		clearBackpackCargoGlobal _container;
 		//Add weapons to the crate.
 		{
-			_weaponCount = (_weapons select 1) select _forEachIndex;
-			_container addWeaponCargoGlobal [_x,_weaponCount];
+			if(!(["mas_",_x] call BIS_fnc_inString)) then {
+				_weaponCount = (_weapons select 1) select _forEachIndex;
+				_container addWeaponCargoGlobal [_x,_weaponCount];
+			};
 		} foreach (_weapons select 0);
 		
 		//Add magazines
 		{
-			_magazineCount = (_magazines select 1) select _forEachIndex;
-			_container addMagazineCargoGlobal [_x,_magazineCount];
+			if(!(["mas_",_x] call BIS_fnc_inString)) then {
+				_magazineCount = (_magazines select 1) select _forEachIndex;
+				_container addMagazineCargoGlobal [_x,_magazineCount];
+			};
 		} foreach (_magazines select 0);
 			
 		//Add items
 		{
-			_itemCount = (_items select 1) select _forEachIndex;
-			_container addItemCargoGlobal [_x,_itemCount];
+			if(!(["mas_",_x] call BIS_fnc_inString)) then {
+				_itemCount = (_items select 1) select _forEachIndex;
+				_container addItemCargoGlobal [_x,_itemCount];
+			};
 		} foreach (_items select 0);
 		
 		//Add backpacks

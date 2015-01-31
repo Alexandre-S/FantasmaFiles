@@ -187,7 +187,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 				[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 			};
 
-			if((_side) == "cop" && (_classname) in ["sab_UN_Offroad","sab_UN_Hunter","C_SUV_01_F"]) then
+			if((_side) == "cop" && (_classname) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","B_MRAP_01_hmg_F"]) then
 			{
 				[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 			};

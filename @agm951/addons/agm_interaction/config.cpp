@@ -191,7 +191,7 @@ class AGM_Core_Default_Keys {
 		alt = 0;
 	};
 	class CopSiren {
-		displayName = "Sirène véhicule";
+		displayName = "SirÃ¨ne vÃ©hicule";
 		condition = "playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}";
 		statement = "[] call life_fnc_sirenstart";
 		key = 33;
@@ -209,7 +209,7 @@ class AGM_Core_Default_Keys {
 		alt = 0;
 	};
 	class Carlock {
-		displayName = "Vérouiller/Déverouiller véhicule";
+		displayName = "VÃ©rouiller/DÃ©verouiller vÃ©hicule";
 		condition = "!(player getVariable ['AGM_Unconscious', false])";
 		statement = "[] call life_fnc_lockVehicleCheck";
 		exceptions[] = {"AGM_Interaction_isNotSwimming"};
@@ -219,7 +219,7 @@ class AGM_Core_Default_Keys {
 		alt = 0;
 	};
 	class OpenInventory {
-		displayName = "Inventaire véhicule";
+		displayName = "Inventaire vÃ©hicule";
 		condition = "vehicle player == player";
 		statement = "[] call life_fnc_openInventoryCheck";
 		key = 20;

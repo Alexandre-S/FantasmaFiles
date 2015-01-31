@@ -11,10 +11,12 @@
  * Nothing
  */
 
-private ["_unit", "_state"];
+private ["_unit", "_state","_remote"];
 
 _unit = _this select 0;
 _state = _this select 1;
+_remote = false;
+
 if (count _this > 2) then {
 	_remote = _this select 2;
 };
@@ -69,10 +71,14 @@ if (_state) then {
 		if (!alive _this) then {
 			_this setVariable ["AGM_isCaptive", false, true];
 		} else {
-			[_this, "AGM_AmovPercMstpScapWnonDnon", 0] spawn AGM_Core_fnc_doAnimation;
+			if(animationState _this != "AGM_AmovPercMstpScapWnonDnon" && {vehicle _this == _this}) then {
+				[_this, "AGM_AmovPercMstpScapWnonDnon", 0] spawn AGM_Core_fnc_doAnimation;
+			};
 		};
 	};
 	
+	[_this, "AGM_Handcuffed", false] call AGM_Core_fnc_setCaptivityStatus;
+	sleep 0.1;
 	if !(_this getVariable ["AGM_Unconscious", false]) then {
 		// _this playMoveNow "AmovPercMstpSnonWnonDnon_EaseOut";
 		if (vehicle _this == _this) then {
@@ -81,8 +87,6 @@ if (_state) then {
 	} else {
 		_this playMoveNow "unconscious";
 	};
-	
-	[_this, "AGM_Handcuffed", false] call AGM_Core_fnc_setCaptivityStatus;
 	
 	if (_this getVariable ["AGM_Captives_CargoIndex", -1] != -1) then {
 		_this setVariable ["AGM_Captives_CargoIndex", -1, true];
