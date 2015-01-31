@@ -26,14 +26,14 @@ if(str(player) in ["cop_1","cop_2","cop_3","cop_4","cop_5","cop_6","cop_7","cop_
 		["NotCop",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
-	_playerCount = {!(isPlayer _x)} count _slotpremium;
+	// _playerCount = {!(isPlayer _x)} count _slotpremium;
 
-	if(__GETC__(life_donator) > 0 && {_playerCount > 2}) then
-	{
-		player enableSimulation false;
-		["IsPremium",false,true] call BIS_fnc_endMission;
-		sleep 35;
-	};
+	// if(__GETC__(life_donator) > 0 && {_playerCount > 2}) then
+	// {
+		// player enableSimulation false;
+		// ["IsPremium",false,true] call BIS_fnc_endMission;
+		// sleep 35;
+	// };
 };
 if(str(player) in _slotpremium) then {
 	if(__GETC__(life_coplevel) == 0) then {

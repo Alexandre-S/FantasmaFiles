@@ -31,13 +31,13 @@ if(str(player) in _slotpremium) then {
 		sleep 35;
 	};
 } else {
-	_playerCount = {!(isPlayer _x)} count _slotpremium;
-	if(__GETC__(life_donator) > 0 && {_playerCount > 5}) then
-	{
-		player enableSimulation false;
-		["IsPremium",false,true] call BIS_fnc_endMission;
-		sleep 35;
-	};
+	// _playerCount = {!(isPlayer _x)} count _slotpremium;
+	// if(__GETC__(life_donator) > 0 && {_playerCount > 5}) then
+	// {
+		// player enableSimulation false;
+		// ["IsPremium",false,true] call BIS_fnc_endMission;
+		// sleep 35;
+	// };
 };
 if(face player in life_women && !life_sexe) then
 {
