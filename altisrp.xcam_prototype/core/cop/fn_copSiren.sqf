@@ -17,7 +17,12 @@ while {true} do
 	if(count (crew (_vehicle)) == 0) then {_vehicle setVariable["siren",false,true]};
 	if(!alive _vehicle) exitWith {};
 	if(isNull _vehicle) exitWith {};
-	_vehicle say3D "SirenLong";
-	sleep 4.7;
+	switch (typeOf _vehicle) do
+	{
+ 		case "B_MRAP_01_F": { _vehicle say3D "SirenSwat"; sleep 13; };
+		case "B_MRAP_01_hmg_F": { _vehicle say3D "SirenSwat"; sleep 13; };
+		case "I_MRAP_03_F": { _vehicle say3D "SirenSwat"; sleep 13; };
+ 		default { _vehicle say3D "SirenLong"; sleep 4.3; };
+ 	};
 	if(!(_vehicle getVariable "siren")) exitWith {};
 };
