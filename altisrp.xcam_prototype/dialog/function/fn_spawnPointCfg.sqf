@@ -17,21 +17,21 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","QG de Kavala","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_2","QG de Pyrgos","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_3","QG d'Athira","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_5","QG de Sofia","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_4","QG Air","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_1","Base principale","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_2","Base secondaire","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			// ["cop_spawn_3","QG d'Athira","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			// ["cop_spawn_5","QG de Sofia","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			// ["cop_spawn_4","QG Air","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 	
 	case civilian:
 	{
 		_return = [
-			["civ_spawn_1","Kavala","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_2","Pyrgos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_3","Athira","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["civ_spawn_4","Sofia","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			["civ_spawn_1","Easy City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_2","West City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_3","Coast Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["civ_spawn_4","Port Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 		];
 		
 		if(count life_houses > 0) then {
@@ -54,9 +54,9 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_1","Hopital de Kavala","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_2","Hopital Aéroport","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
-			["medic_spawn_3","Hopital de Pygros","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			["medic_spawn_1","Hopital Principal","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Hopital Secondaire","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
+			// ["medic_spawn_3","Hopital de Pygros","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
 	};
 };

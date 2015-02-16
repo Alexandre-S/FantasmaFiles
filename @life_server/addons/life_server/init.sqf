@@ -2,7 +2,7 @@
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 
-server_test = false;
+server_test = true;
 publicVariable "server_test";
 serverhc = false;
 server_debug = true;
@@ -88,8 +88,8 @@ if(!isHLC) then {
 	serv_sv_use = [];
 	
 	if(server_test) then {
-		fed_bank setVariable["safe",(count playableUnits),true];
-		[] spawn TON_fnc_federalUpdate;
+		/*fed_bank setVariable["safe",(count playableUnits),true];
+		[] spawn TON_fnc_federalUpdate;*/
 
 		[] spawn TON_fnc_cleanup;
 		life_wanted_list = [];
@@ -302,8 +302,8 @@ else
 	};
 	waitUntil {sleep 0.1;scriptDone _handle};
 	
-	fed_bank setVariable["safe",(count playableUnits),true];
-	[] spawn TON_fnc_federalUpdate;
+	/*fed_bank setVariable["safe",(count playableUnits),true];
+	[] spawn TON_fnc_federalUpdate;*/
 	
 	life_HC_isActive = true;
 	publicVariableServer "life_HC_isActive";
