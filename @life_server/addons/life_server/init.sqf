@@ -2,16 +2,17 @@
 DB_Async_Active = false;
 DB_Async_ExtraLock = false;
 
-server_test = true;
+server_test = false;
 publicVariable "server_test";
 serverhc = false;
 server_debug = true;
-life_ver_random = ["C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_transport_F"];
+// life_ver_random = ["C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_transport_F"];
 
 
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
 
 if(!isHLC) then {
+	//([0,0,0] nearestObject 1122929) setDamage 1;
 
 	life_server_isReady = false;
 	publicVariable "life_server_isReady";
@@ -19,11 +20,13 @@ if(!isHLC) then {
 	last_HC_update = 0;
 	hlcAI = false;
 
-	[] execVM "\life_server\functions.sqf";
+	// [] execVM "\life_server\functions.sqf";
 	[] execVM "\life_server\eventhandlers.sqf";
 
 	//I am aiming to confuse people including myself, ignore the ui checks it's because I test locally.
 	if(server_test) then {
+		
+	
 		_extDB = false;
 
 		//Only need to setup extDB once.
@@ -102,8 +105,7 @@ if(!isHLC) then {
 	
 	if(server_test) then {
 	
-		//if(isDedicated && isNil("life_market_prices")) then
-		if(isNil("life_market_prices")) then
+		/*if(isNil("life_market_prices")) then
 		{
 			[] call TON_fnc_marketconfiguration;
 			diag_log "Market prices generated!";
@@ -111,6 +113,23 @@ if(!isHLC) then {
 			{
 				diag_log format["Market prices updated! %1", _this select 1];
 			};
+		};*/
+		
+		_handle = [] spawn TON_fnc_getSetPrice;
+		waitUntil {sleep 0.1;scriptDone _handle};
+
+		countsellitem = 0;
+		last_sellArrayMulti = 0;
+		// update sellArrayMulti every min
+		[] spawn  {
+		  while{true} do
+		  {
+			sleep (15 * 60);
+			if(countsellitem > 2000 && ((time - last_sellArrayMulti) > 1800)) then {
+				last_sellArrayMulti = time;
+				[] call TON_fnc_sellArrayMulti;
+			};
+		  };
 		};
 	}
 	else
@@ -162,16 +181,21 @@ if(!isHLC) then {
 	} foreach allUnits;
 
 	if(server_test) then {
-		[] spawn TON_fnc_initHouses;
+		_handle = [] spawn TON_fnc_initHouses;
+		waitUntil {sleep 0.1;scriptDone _handle};
 		_handle = [] spawn TON_fnc_spawnVehicleActive;
+		waitUntil {sleep 0.1;scriptDone _handle};
 		HCserverloadVeh = true;
 		publicVariable "HCserverloadVeh";
-		waitUntil {sleep 0.1;scriptDone _handle};
 	}else{
 		waitUntil {sleep 0.1;!isNil "HCserverload"};
 	};
 	
-
+	TON_fnc_hideobjectg = 
+	compileFinal "
+		(_this select 0) hideObjectGlobal (_this select 1);
+	";
+	
 	TON_fnc_player_query =
 	compileFinal "
 		private[""_ret""];
@@ -194,13 +218,18 @@ if(!isHLC) then {
 	_dome allowDamage false;
 	life_server_isReady = true;
 	publicVariable "life_server_isReady";
-
+	
+	if(server_test) then {
+		//[AiCacheDistance(players),TargetFPS(-1 for Auto),Debug,CarCacheDistance,AirCacheDistance,BoatCacheDistance]execvm "zbe_cache\main.sqf";
+		[100,-1,true,100,1000,1000]execvm "\life_server\zbe_cache\main.sqf";
+		[] spawn TON_fnc_huntingZone;
+	};
 }
 else
 {
-	[] execVM "\life_server\functions.sqf";
+	// [] execVM "\life_server\functions.sqf";
 	"life_fnc_MP_packet" addPublicVariableEventHandler {[_this select 0,_this select 1] call life_fnc_MPexec;};
-	
+		
 	_extDB = false;
 
 	//Only need to setup extDB once.
@@ -285,8 +314,7 @@ else
 	life_wanted_list = [];
 	// [] execFSM "\life_server\cleanup.fsm";
 	
-	//if(isDedicated && isNil("life_market_prices")) then
-	if(isNil("life_market_prices")) then
+	/*if(isNil("life_market_prices")) then
 	{
 		[] call TON_fnc_marketconfiguration;
 		diag_log "Market prices generated!";
@@ -294,14 +322,32 @@ else
 		{
 			diag_log format["Market prices updated! %1", _this select 1];
 		};
+	};*/
+	
+	_handle = [] spawn TON_fnc_getSetPrice;
+	waitUntil {sleep 0.1;scriptDone _handle};
+
+	countsellitem = 0;
+	last_sellArrayMulti = 0;
+	// update sellArrayMulti every min
+	[] spawn  {
+	  while{true} do
+	  {
+		sleep (15 * 60);
+		if(countsellitem > 2000 && ((time - last_sellArrayMulti) > 1800)) then {
+			last_sellArrayMulti = time;
+			[] call TON_fnc_sellArrayMulti;
+		};
+	  };
 	};
 	
 	if(isNil "TON_fnc_player_query") then {	
-		[] spawn TON_fnc_initHouses;
+		_handle = [] spawn TON_fnc_initHouses;
+		waitUntil {sleep 0.1;scriptDone _handle};
 		_handle = [] spawn TON_fnc_spawnVehicleActive;
+		waitUntil {sleep 0.1;scriptDone _handle};
 		HCserverloadVeh = true;
 		publicVariable "HCserverloadVeh";
-		waitUntil {sleep 0.1;scriptDone _handle};
 		
 		HCserverload = true;
 		publicVariable "HCserverload";
@@ -321,4 +367,8 @@ else
 			sleep 15;
 		};
 	};
+	
+	//[AiCacheDistance(players),TargetFPS(-1 for Auto),Debug,CarCacheDistance,AirCacheDistance,BoatCacheDistance]execvm "zbe_cache\main.sqf";
+	[100,-1,true,100,1000,1000]execvm "\life_server\zbe_cache\main.sqf";
+	[] spawn TON_fnc_huntingZone;
 };

@@ -25,6 +25,8 @@ if(isNull _vehicle OR !alive _vehicle OR _index == -1) exitWith {};
 switch (typeOf _vehicle) do
 {
 	case "C_Offroad_01_F": {_vehicle setVariable["color",3];};
+	case "B_G_Offroad_01_F": {_vehicle setVariable["color",3];};
+	case "B_G_Offroad_01_armed_F": {_vehicle setVariable["color",3];};
 	case "C_Hatchback_01_F": {_vehicle setVariable["color",1];};
 	case "C_Hatchback_01_sport_F": {_vehicle setVariable["color",1];};
 	case "C_SUV_01_F": {_vehicle setVariable["color",1];};
@@ -66,4 +68,8 @@ if(typeOf _vehicle == "C_Offroad_01_F") then
 	{
 		_vehicle setObjectTexture[1,_texture];
 	};
+};
+if(typeOf _vehicle in ["B_G_Offroad_01_armed_F","B_G_Offroad_01_F"]) then
+{
+	_vehicle setObjectTexture[1,_texture];
 };

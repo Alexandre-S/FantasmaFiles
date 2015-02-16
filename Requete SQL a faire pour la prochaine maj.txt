@@ -1,0 +1,3 @@
+Pour la maj des licences BAC / PJ, fait un 
+
+update players set cop_licenses = '"[]"'

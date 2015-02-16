@@ -20,7 +20,7 @@ if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctr
 
 //A series of checks *ugh*
 if(!life_use_atm) exitWith {hint "You recently robbed the bank! You can't give money away just yet.";ctrlShow[2001,true];};
-if(!([_amount] call TON_fnc_isnumber)) exitWith {hint "You didn't enter an actual number format.";ctrlShow[2001,true];};
+if(!([_amount] call life_fnc_isnumber)) exitWith {hint "You didn't enter an actual number format.";ctrlShow[2001,true];};
 if(parseNumber(_amount) <= 0) exitWith {hint "You need to enter an actual amount you want to give.";ctrlShow[2001,true];};
 if(parseNumber(_amount) > life_cash) exitWith {hint "You don't have that much to give!";ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};

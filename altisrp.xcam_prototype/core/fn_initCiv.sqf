@@ -6,7 +6,7 @@
 	Description:
 	Initializes the civilian.
 */
-private["_spawnPos","_slotpremium","_playerCount"];
+private["_spawnPos"];
 
 civ_spawn_1 = nearestObjects[getMarkerPos  "civ_spawn_1", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],250];
 civ_spawn_2 = nearestObjects[getMarkerPos  "civ_spawn_2", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],250];
@@ -14,30 +14,20 @@ civ_spawn_3 = nearestObjects[getMarkerPos  "civ_spawn_3", ["Land_i_Shop_01_V1_F"
 civ_spawn_4 = nearestObjects[getMarkerPos  "civ_spawn_4", ["Land_i_Shop_01_V1_F","Land_i_Shop_02_V1_F","Land_i_Shop_03_V1_F","Land_i_Stone_HouseBig_V1_F"],250];
 waitUntil {!(isNull (findDisplay 46))};
 
-if(__GETC__(life_coplevel) != 0 OR __GETC__(life_medicLevel) != 0) exitWith
+if(__GETC__(life_coplevel) != 0 OR __GETC__(life_medicLevel) != 0) then
 {
 	player enableSimulation false;
 	["NotCiv",false,true] call BIS_fnc_endMission;
 	sleep 35;
 };
 
-_slotpremium = ["civ_51","civ_52","civ_53","civ_54","civ_55","civ_56","civ_57","civ_58","civ_59","civ_60","civ_61","civ_62","civ_63","civ_64","civ_65","civ_66","civ_67","civ_68","civ_69","civ_70","civ_71","civ_72","civ_73","civ_74","civ_75","civ_76","civ_77","civ_78","civ_79","civ_80","civ_81","civ_82","civ_83","civ_84","civ_85","civ_86","civ_87","civ_88","civ_89","civ_90","civ_91","civ_92","civ_93","civ_94","civ_95","civ_96","civ_97","civ_98","civ_99","civ_100","civ_101","civ_102","civ_103","civ_104","civ_105","civ_106","civ_107","civ_108","civ_109","civ_110","civ_111","civ_112","civ_113","civ_114","civ_115","civ_116","civ_117","civ_118","civ_119","civ_120"];
-
-if(str(player) in _slotpremium) then {
+if(str(player) in ["civ_51","civ_52","civ_53","civ_54","civ_55","civ_56","civ_57","civ_58","civ_59","civ_60","civ_61","civ_62","civ_63","civ_64","civ_65","civ_66","civ_67","civ_68","civ_69","civ_70","civ_71","civ_72","civ_73","civ_74","civ_75","civ_76","civ_77","civ_78","civ_79","civ_80","civ_81","civ_82","civ_83","civ_84","civ_85","civ_86","civ_87","civ_88","civ_89","civ_90","civ_91","civ_92","civ_93","civ_94","civ_95","civ_96","civ_97","civ_98","civ_99","civ_100","civ_101","civ_102","civ_103","civ_104","civ_105","civ_106","civ_107","civ_108","civ_109","civ_110","civ_111","civ_112","civ_113","civ_114","civ_115","civ_116","civ_117","civ_118","civ_119","civ_120"]) then {
 	if(__GETC__(life_donator) == 0) then
 	{
 		player enableSimulation false;
 		["NotPremium",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
-} else {
-	// _playerCount = {!(isPlayer _x)} count _slotpremium;
-	// if(__GETC__(life_donator) > 0 && {_playerCount > 5}) then
-	// {
-		// player enableSimulation false;
-		// ["IsPremium",false,true] call BIS_fnc_endMission;
-		// sleep 35;
-	// };
 };
 if(face player in life_women && !life_sexe) then
 {

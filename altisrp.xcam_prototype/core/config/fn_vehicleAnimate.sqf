@@ -46,9 +46,11 @@ else
 			//waitUntil{!isNil {_vehicle getVariable "color"}};	
 			_vehicle animate ["HideServices", 0];
 			_vehicle animate ["HideDoor3", 1];
-			_vehicle setVariable["lights",false,true];	
 			_vehicle animate ["HideBumper1", 0];
 			_vehicle setVariable ["service_truck", true, true];
+			sleep 0.01;
+			_vehicle setVariable["lights",false,true];
+			sleep 0.01;
 		};
 		
 		case "med_offroad":
@@ -60,6 +62,7 @@ else
 			_vehicle animate ["HidePolice", 0];
 			_vehicle animate ["HideDoor3", 0];
 			_vehicle setVariable["lights",false,true];
+			sleep 0.01;
 		};
 		
 		case "cop_offroad":
@@ -72,6 +75,20 @@ else
 			_vehicle animate ["HideBumper2", 0];
 			};
 			_vehicle setVariable["lights",false,true];
+			sleep 0.01;
+		};
+		
+		case "reb_offroad":
+		{
+			if(typeOf _vehicle in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {
+				// waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
+			// };
+			_vehicle animate [["HideBumper1","HideBumper2"] select floor random 2, 0];
+			_vehicle animate ["HideBackpacks", 0];
+			_vehicle animate ["HideConstruction", 0];
+			_vehicle animate ["HidePolice", 1];
+			_vehicle animate ["HideServices", 1];
+			};
 		};
 		
 		case "landrover_nocov":

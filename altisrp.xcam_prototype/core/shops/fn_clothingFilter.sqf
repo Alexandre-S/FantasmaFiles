@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_clothingFilter.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -6,7 +7,7 @@
 	Functionality for filtering clothing types in the menu.
 */
 disableSerialization;
-private["_control","_selection","_list","_filter"];
+private["_control","_selection","_list","_filter","_price"];
 _control = _this select 0;
 _selection = _this select 1;
 life_clothing_filter = _selection;
@@ -54,6 +55,9 @@ if(count _clothes == 0) exitWith {};
 	};
 	_pic = getText(configFile >> (_details select 6) >> (_x select 0) >> "picture");
 	_list lbSetData [(lbSize _list)-1,_x select 0];
-	_list lbSetValue [(lbSize _list)-1,_x select 2];
+	//achat donator
+	_price = _x select 2;
+	_price = ceil(_price - (((__GETC__(life_donator) * 5) / 100) * _price));
+	_list lbSetValue [(lbSize _list)-1,_price];
 	_list lbSetPicture [(lbSize _list)-1,_pic];
 } foreach _clothes;

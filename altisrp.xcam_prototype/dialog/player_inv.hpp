@@ -302,7 +302,7 @@ class playerSettings {
 			h = (1 / 25);
 		};
 		
-		class ButtonSyncData : life_RscButtonMenu {
+		/*class ButtonSyncData : life_RscButtonMenu {
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
 			text = "$STR_PM_SyncData";
@@ -311,14 +311,25 @@ class playerSettings {
 			y = 0.805;
 			w = (6.25 / 40);
 			h = (1 / 25);
-		};
+		};*/
 		
-		class ButtonMarket : Life_RscButtonMenu {
+		/*class ButtonMarket : Life_RscButtonMenu {
 			idc = -1;
 			text = "Bourse";
 			onButtonClick = "[] spawn life_fnc_openMarketView;";
 			//x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
-			x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			//x = 0.26 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.1;
+			y = 0.805;
+			w = (6.25 / 40);
+			h = (1 / 25);
+		};*/
+		
+		class ButtonBourse : Life_RscButtonMenu {
+			idc = -1;
+			text = "Bourse";
+			onButtonClick = "[] call life_fnc_bourse";
+			x = 0.42 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.805;
 			w = (6.25 / 40);
 			h = (1 / 25);

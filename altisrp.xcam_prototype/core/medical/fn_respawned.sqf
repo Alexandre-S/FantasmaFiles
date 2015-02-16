@@ -15,9 +15,14 @@ life_cash = 0; //Make sure we don't get our cash back.
 life_respawned = false;
 player playMove "amovpercmstpsnonwnondnon";
 
+[[profileName, "COMA"],"life_fnc_deleteMarker",independent,false] spawn life_fnc_MP;
+
 life_corpse setVariable["Revive",nil,TRUE];
 life_corpse setVariable["name",nil,TRUE];
 life_corpse setVariable["Reviving",nil,TRUE];
+life_corpse setVariable["life_corps",nil,TRUE];
+
+player setVariable["life_corpse_var",nil,true];
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];

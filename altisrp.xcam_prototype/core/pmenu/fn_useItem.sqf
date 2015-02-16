@@ -14,8 +14,10 @@ switch (true) do
 {
 	case (_item == "water" or _item == "coffee"):
 	{
+		if(underwater player) exitWith { hint "Vous devez remonter à la surface pour pouvoir vous rafraîchir."; };
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			playSound "drink";
 			life_thirst = 100;
 			player setFatigue 0;
 		};
@@ -38,6 +40,11 @@ switch (true) do
 	case (_item == "defusekit"): {
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
+
+	case (_item == "excavator"):
+	{
+		[] spawn life_fnc_searchWreck;
+	};
 	
 	case (_item in ["storagesmall","storagebig"]): {
 		[_item] call life_fnc_storageBox;
@@ -45,8 +52,10 @@ switch (true) do
 	
 	case (_item == "redgull"):
 	{
+		if(underwater player) exitWith { hint "Vous devez remonter à la surface pour pouvoir vous rafraîchir."; };
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			playSound "soda";
 			life_thirst = 100;
 			player setFatigue 0;
 			[] spawn
@@ -80,7 +89,7 @@ switch (true) do
 		[] spawn life_fnc_lockpick;
 	};
 	
-	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
+	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","sheep","chicken","goat"]):
 	{
 		[_item] call life_fnc_eatFood;
 	};
@@ -99,11 +108,30 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "sandbag"):
+	{
+		if(!isNull life_sandbag) exitWith {hint "Vous avez un sac de sable (droit)!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_sandbag;
+		};
+	};
+	
+	case (_item == "sandbagr"):
+	{
+		if(!isNull life_sandbagr) exitWith {hint "Vous avez un sac de sable (arrondi)!"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_sandbagr;
+		};
+	};
+	
 	case (_item == "cone"):
 	{
 		if(!isNull life_cone) exitWith {hint "Vous avez déjà un cone!"};
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			closedialog 0;
 			[] spawn life_fnc_cone;
 		};
 	};
@@ -112,6 +140,31 @@ switch (true) do
 	{
 		[cursorTarget] spawn life_fnc_gpsTracker;
 	}; 
+	
+	case (_item in ["cannabis","marijuana"]):
+	{
+		[_item] spawn life_fnc_marijuana;
+	};
+	
+	case (_item == "cocainep"):
+	{
+		[] spawn life_fnc_cocaine;
+	};
+	
+	case (_item == "heroinp"):
+	{
+		[] spawn life_fnc_heroin;
+	};
+	
+	case (_item == "lsd"):
+	{
+		[] spawn life_fnc_lsd;
+	};
+		
+	case (_item == "nitro"):
+	{
+		[] spawn life_fnc_nitro;
+	};
 	
 	default
 	{

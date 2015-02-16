@@ -19,7 +19,8 @@ switch (_vehicle) do
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
-			["altisrpfr\textures\mohawk_dep_hull.paa","dep","altisrpfr\textures\mohawk_dep_back_hull.paa","altisrpfr\textures\mohawk_dep_rotor.paa"]
+			["altisrpfr\textures\mohawk_dep_hull.paa","dep","altisrpfr\textures\mohawk_dep_back_hull.paa","altisrpfr\textures\mohawk_dep_rotor.paa"],
+			["altisrpfr\textures\CH49_USMC_1.paa","gvt","altisrpfr\textures\CH49_USMC_2.paa","altisrpfr\textures\CH49_USMC_3.paa"]
 		];
 	};
 	
@@ -67,9 +68,48 @@ switch (_vehicle) do
 			["altisrpfr\textures\offroad_rouille.paa","civ"],
 			["altisrpfr\textures\offroad_depannage.paa","dep"],
 			["altisrpfr\textures\offroad_vigil.paa","vig"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","civ"]
+			["#(ai,64,64,1)Fresnel(1.3,7)","civ"],
+			["altisrpfr\textures\offroad_taxi.paa","taxi"]
 		];
 	};
+	
+	case "B_G_Offroad_01_F":
+	{
+		_ret = 
+		[
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_01_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_02_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_03_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_04_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_05_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_06_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_07_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_08_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_09_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_10_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_11_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_12_CO.paa", "civ"]
+		];
+	};
+	
+	case "B_G_Offroad_01_armed_F":
+	{
+		_ret = 
+		[
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_01_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_02_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_03_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_04_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_05_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_06_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_07_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_08_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_09_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_10_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_11_CO.paa", "civ"],
+			["\A3\Soft_F_Bootcamp\Offroad_01\Data\offroad_01_ext_IG_12_CO.paa", "civ"]
+		];
+	};	
 	
 	case "C_Hatchback_01_F":
 	{
@@ -170,7 +210,8 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","cop"],
-			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","cop"]
+			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","cop"],
+			["altisrpfr\textures\suv_taxi.paa","taxi"]
 		];
 	};
 	
@@ -254,7 +295,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","reb"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa","civ"],
@@ -276,7 +317,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa","cop"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_co.paa","civ"],
-			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","donate"],
+			["\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa","reb"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_blueline_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_elliptical_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_furious_co.paa","civ"],
@@ -296,7 +337,7 @@ switch (_vehicle) do
 		[
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa","cop"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa","civ"],
-			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","donate"],
+			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_indp_co.paa","reb"],
 			["\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa","reb"],
 			["altisrpfr\textures\orca_croix_rouge.paa","med"]
 		];

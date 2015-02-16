@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_weaponShopFilter.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -5,7 +6,7 @@
 	Description:
 	Applies the filter selected and changes the list.
 */
-private["_itemList","_index","_config","_priceTag"];
+private["_itemList","_index","_config","_priceTag","_price"];
 _index = [_this,1,-1,[0]] call BIS_fnc_param;
 _shop = uiNamespace getVariable ["Weapon_Shop",""];
 if(_index == -1 OR _shop == "") exitWith {systemChat "Bad Data Filter"; closeDialog 0;}; //Bad data passing.
@@ -28,7 +29,10 @@ switch (_index) do
 			_itemList lbAdd format["%1",if(isNil {_x select 1}) then {_itemInfo select 1} else {_x select 1}];
 			_itemList lbSetData[(lbSize _itemList)-1,_itemInfo select 0];
 			_itemList lbSetPicture[(lbSize _itemList)-1,_itemInfo select 2];
-			_itemList lbSetValue[(lbSize _itemList)-1,_x select 2];
+			//achat donator
+			_price = _x select 2;
+			_price = ceil(_price - (((__GETC__(life_donator) * 5) / 100) * _price));
+			_itemList lbSetValue[(lbSize _itemList)-1,_price];
 		} foreach (_config select 1);
 		
 		((findDisplay 38400) displayCtrl 38405) ctrlSetText localize "STR_Global_Buy";
@@ -63,7 +67,7 @@ switch (_index) do
 				{
 					_itemList lbAdd format["[%2] %1",_itemInfo select 1,_itemCount];
 				}
-					else
+				else
 				{
 					_itemList lbAdd format["%1",_itemInfo select 1];
 				};

@@ -12,6 +12,7 @@
 	{
 		[_x,_index] spawn life_fnc_colorVehicle;
 	};
+	sleep 0.01;
 } foreach (allMissionObjects "LandVehicle");
 
 {
@@ -20,4 +21,5 @@
 	{
 		[_x,_index] spawn life_fnc_colorVehicle;
 	};
+	sleep 0.01;
 } foreach (allMissionObjects "Air");

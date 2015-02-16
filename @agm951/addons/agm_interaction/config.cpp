@@ -439,6 +439,15 @@ class CfgVehicles {
         showDisabled = 0;
         priority = 2.0;
       };
+      class AGM_Abattre {
+        displayName = "Abattre";
+        distance = 4;
+        condition = "_target isKindOf 'Man' && {!alive _target}";
+        statement = "[_target] spawn life_fnc_abattre";
+		exceptions[] = {"AGM_Interaction_isNotSwimming"};
+        showDisabled = 0;
+        priority = 1.9;
+      };
       /*class AGM_Pardon {
         displayName = "$STR_AGM_Interaction_Pardon";
         distance = 4;
@@ -448,6 +457,17 @@ class CfgVehicles {
         priority = 2.5;
         enableInside = 1;
       };*/
+	  class AGM_Reanimer {
+        displayName = "Réanimer";
+        distance = 4;
+        condition = "_target isKindOf 'Man' && {!alive _target} && {playerSide in [west,independent]} && {'Medikit' in (items player)}";
+        statement = "[_target] spawn life_fnc_revivePlayer";
+		exceptions[] = {"AGM_Interaction_isNotSwimming"};
+        showDisabled = 0;
+        priority = 2.5;
+		hotkey = "R";
+        enableInside = 1;
+      };
 	  class AGM_Copinteraction
 	  {
 		displayName = "Interaction ONU";
@@ -758,11 +778,31 @@ class CfgVehicles {
 		displayName = "Activer veste";
 		condition = "vest _player == 'V_HarnessOGL_brn' && alive _player && playerSide == civilian && !life_istazed && !(_player getVariable ['AGM_isEscorting', false]) && !(_player getVariable ['AGM_isCaptive', false]) && !(_player getVariable ['AGM_isSurrender', false])";
 		statement = "[] spawn life_fnc_suicideBomb;";
-		showDisabled = 1;
+		showDisabled = 0;
 		priority = 0.9;
 		hotkey = "B";
 		enableInside = 1;
 	  };
+	  class AGM_HuntingTrack
+	  {
+		displayName = "Traquer animaux";
+		condition = "alive player && playerSide == civilian && !life_istazed && !(player getVariable 'AGM_isEscorting') && !(player getVariable 'AGM_isCaptive') && !(player getVariable 'AGM_isSurrender')";
+		statement = "[] spawn life_fnc_trackAnimal;";
+		showDisabled = 1;
+		priority = 0.5;
+		hotkey = "C";
+		enableInside = 1;
+	  };
+	  /*class AGM_SkinAnimal
+	  {
+		displayName = "Dépecer";
+		condition = "alive player && playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 4 && !life_istazed && !(player getVariable 'AGM_isEscorting') && !(player getVariable 'AGM_isCaptive') && !(player getVariable 'AGM_isSurrender') && (typeOf cursorTarget) in ['Cock_random_F','Hen_random_F','Goat_random_F','Sheep_random_F'] && !alive life_cursorTarget";
+		statement = "[] spawn life_fnc_skinAnimal;";
+		showDisabled = 1;
+		priority = 0.2;
+		hotkey = "D";
+		enableInside = 1;
+	  };*/
     };
   };
 
@@ -784,7 +824,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Registration";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_searchVehAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -804,7 +844,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Impound";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_impoundAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -860,7 +900,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Registration";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_searchVehAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -880,7 +920,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Impound";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_impoundAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -918,7 +958,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Registration";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))} ";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_searchVehAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -938,7 +978,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Impound";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_impoundAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -974,7 +1014,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Registration";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_searchVehAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -994,7 +1034,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Impound";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_impoundAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -1032,7 +1072,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Registration";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_searchVehAction";
 			showDisabled = 0;
 			priority = 1.6;
@@ -1052,7 +1092,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Impound";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {playerSide == west OR ((playerSide == civilian) && (player getVariable['life_dep',false]))}";
+			condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
 			statement = "[_target] spawn life_fnc_impoundAction";
 			showDisabled = 0;
 			priority = 1.6;

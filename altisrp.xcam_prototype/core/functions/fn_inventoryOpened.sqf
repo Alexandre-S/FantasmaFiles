@@ -4,7 +4,7 @@
 	Description:
 	For the mean time it blocks the player from opening another persons backpack
 */
-private["_container","_unit","_house","_close"];
+private["_container","_unit","_house","_close","_houseCfg","_locked"];
 if(count _this == 1) exitWith {false};
 _unit = _this select 0;
 _container = _this select 1;
@@ -22,6 +22,13 @@ if(_isPack == 1 && playerSide != west) then {
 if(playerSide != west) then{
 	if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 		_house = nearestBuilding (getPosATL player);
+		// add
+		_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
+		if(count _houseCfg == 0) then
+		{
+			_house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
+		};
+		
 		_locked = _house getVariable ["locked",nil];
 		_close = false;
 		if(isNil "_locked") then {_close = true;};

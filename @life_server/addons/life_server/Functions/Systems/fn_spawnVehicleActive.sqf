@@ -73,6 +73,8 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 
 		_vehicle = createVehicle [_classname,[0,0,999],[], 0, "NONE"];
 		waitUntil {!isNil "_vehicle"}; //Wait?
+		_vehicle setVariable ["BIS_enableRandomization",false];
+		sleep 0.01;
 		_vehicle allowDamage false;
 
 		// _vehicle = _classname createVehicle _sp;
@@ -83,10 +85,10 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 
 		
 		sleep 0.01;
-		_vehicle setVariable["idleTime",time,true];
+		_vehicle setVariable["idleTime",time];
 		sleep 0.01;
-		_vehicle setVariable["lootModified",false,true];
-		sleep 0.01;
+		// _vehicle setVariable["lootM",false];
+		// sleep 0.01;
 		_vehicle setVariable ["R3F_LOG_disabled", false,true];
 		sleep 0.01;
 		if((_side) == "cop") then
@@ -104,8 +106,8 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		sleep 0.01;
 		//_vehicle setVariable["spawned",false,true];
 		_vehicle setVariable["dbInfo",[(_pid),(call compile format["%1", _plate]),_insure],true];
-		sleep 0.01;
-		_vehicle setVariable["lastPos",[]];
+		//sleep 0.01;
+		//_vehicle setVariable["lastPos",[]];
 		sleep 0.01;
 		//inv
 		_inv = [_inv] call DB_fnc_mresToArray;
@@ -148,7 +150,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 			_classname = _this select 2;
 			_side = _this select 3;
 			
-			if(_classname in life_ver_random) then { sleep 5; };
+			// if(_classname in life_ver_random) then { sleep 5; };
 			
 			//Reskin the vehicle 
 			// [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
@@ -192,6 +194,11 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 				[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 			};
 
+			if((_side) == "civ" && (_classname) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then
+			{
+				[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
+			};
+			
 			/*if(_classname in ["B_MRAP_01_F","C_SUV_01_F"] && ((_side) == "cop")) then {
 				_vehicle setVariable["lights",false,true];
 				sleep 0.01;

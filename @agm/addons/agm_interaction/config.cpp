@@ -697,9 +697,29 @@ class CfgVehicles
 				displayName = "Activer veste";
 				condition = "vest player == 'V_HarnessOGL_brn' && alive player && playerSide == civilian && !life_istazed && !(player getVariable 'restrained') && !(player getVariable 'Escorting') && !(player getVariable 'transporting')";
 				statement = "[] call life_fnc_suicideBomb;";
-				showDisabled = 1;
+				showDisabled = 0;
 				priority = 0.9;
 				hotkey = "B";
+				enableInside = 1;
+			};
+			class AGM_HuntingTrack
+			{
+				displayName = "Pister animaux";
+				condition = "alive player && playerSide == civilian && !life_istazed && !(player getVariable 'restrained') && !(player getVariable 'Escorting') && !(player getVariable 'transporting')";
+				statement = "[] call life_fnc_trackAnimal;";
+				showDisabled = 1;
+				priority = 0.5;
+				hotkey = "C";
+				enableInside = 1;
+			};
+			class AGM_SkinAnimal
+			{
+				displayName = "Dépecer";
+				condition = "alive player && playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 4 && !life_istazed && !(player getVariable 'restrained') && !(player getVariable 'Escorting') && !(player getVariable 'transporting') && (typeOf cursorTarget) in ['Cock_random_F','Hen_random_F','Goat_random_F','Sheep_random_F'] && !alive life_cursorTarget";
+				statement = "[] spawn life_fnc_skinAnimal;";
+				showDisabled = 0;
+				priority = 0.2;
+				hotkey = "D";
 				enableInside = 1;
 			};
 		};

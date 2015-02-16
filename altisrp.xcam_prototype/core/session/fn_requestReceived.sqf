@@ -8,7 +8,7 @@
 	sort through the information, validate it and if all valid 
 	set the client up.
 */
-private["_other"];
+private["_other","_house","_houseCfg","_other"];
 life_session_tries = life_session_tries + 1;
 if(life_session_completed) exitWith {}; //Why did this get executed when the client already initialized? Fucking arma...
 if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
@@ -38,6 +38,7 @@ life_cash = parseNumber (_this select 2);
 life_atmcash = parseNumber (_this select 3);
 __CONST__(life_adminlevel,parseNumber(_this select 4));
 __CONST__(life_donator,parseNumber(_this select 5));
+if(__GETC__(life_adminlevel)>0) then { player setVariable["is_admin",true,true]; };
 
 //Loop through licenses
 if(count (_this select 6) > 0) then {
@@ -69,19 +70,26 @@ switch(playerSide) do {
 		__CONST__(life_coplevel, 0);
 		__CONST__(life_medicLevel, 0);
 		// START CHANGES
-		life_isblacklisted = _this select 9;
+		life_isrebel = _this select 9;
 		__CONST__(life_factnumber, parseNumber(_this select 10));
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
-		life_houses = _this select 20;
+		life_houses = _this select 21;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
+			// add
+			_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
+			if(count _houseCfg == 0) then
+			{
+				_house = (nearestObjects[(call compile format["%1", _x select 0]),["House_F"],20] select 0);
+			};
+			
 			life_vehicles pushBack _house;
 		} foreach life_houses;
 		
 		// Same here, select 10 + 3 fields, is that right ?
-		life_gangData = _This select 21;
+		life_gangData = _This select 22;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		} else { init_gang = true; player setVariable["init_gang",true,true]; };
@@ -97,10 +105,15 @@ switch(playerSide) do {
 		};
 		life_sexe = _this select 18;
 		life_isdep = _this select 19;
+		life_istaxi = _this select 20;
 		
 		_other = ["dep",0] call life_fnc_licenseType;
 		if(!life_isdep) then { missionNamespace setVariable [_other select 0,false]; };
 		if (missionNamespace getVariable[_other select 0,false]) then{ player setVariable["life_dep", true, true];};
+		
+		_other = ["taxi",0] call life_fnc_licenseType;
+		if(!life_istaxi) then { missionNamespace setVariable [_other select 0,false]; };
+		if (missionNamespace getVariable[_other select 0,false]) then{ player setVariable["life_taxi", true, true];};
 	};
 	
 	case independent: {
@@ -119,6 +132,8 @@ switch(playerSide) do {
 	};
 };
 
+life_paycheck = life_paycheck + (__GETC__(life_donator) * 250);
+
 /*if ((count life_position) > 0) then {
 	life_position = life_position findEmptyPosition [1,50,typeof player];
 };*/
@@ -126,8 +141,8 @@ switch(playerSide) do {
 [] call life_fnc_loadGear;
 
 // recup des clefs houses/vehicles
-if(count (_this select 22) > 0) then { 
-	{life_vehicles pushBack _x;} foreach (_this select 22);
+if(count (_this select 23) > 0) then { 
+	{life_vehicles pushBack _x;} foreach (_this select 23);
 };
 
 life_session_completed = true;

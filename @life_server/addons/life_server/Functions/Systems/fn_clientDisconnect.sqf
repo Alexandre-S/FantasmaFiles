@@ -5,7 +5,7 @@
 	When a client disconnects this will remove their corpse and
 	clean up their storage boxes in their house.
 */
-private["_unit","_id","_uid","_name","_containers"];
+private["_unit","_id","_uid","_name","_containers","_life_corpse_var"];
 _unit = _this select 0;
 _id = _this select 1;
 _uid = _this select 2;
@@ -14,7 +14,17 @@ if(isNull _unit) exitWith {};
 
 _containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
 {deleteVehicle _x;} foreach _containers;
+
+_life_corpse_var = _unit getVariable["life_corpse_var",nil];
+if(!isNil "_life_corpse_var") then {
+	diag_log format ["REMOVE_BODY_DECO - %1",_life_corpse_var];
+	// hideBody _life_corpse_var;
+	deleteVehicle _life_corpse_var;
+};
+
 deleteVehicle _unit;
+
+
 
 /*
 waitUntil{sleep 0.1;count(allDeadMen) > 0};

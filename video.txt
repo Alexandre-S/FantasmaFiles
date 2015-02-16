@@ -1,0 +1,12 @@
+with uiNamespace do {
+    _tv = "Land_Billboard_F" createVehicle (player modelToWorld [0,0.5,0]);
+    _tv setObjectTexture [0,"\a3\missions_f_bootcamp\video\VR_BOOT.ogv"]; 
+    1100 cutRsc ["RscMissionScreen","PLAIN"];
+    _scr = BIS_RscMissionScreen displayCtrl 1100;
+    _scr ctrlSetPosition [-10,-10,0,0];
+    _scr ctrlSetText "\a3\missions_f_bootcamp\video\VR_BOOT.ogv";
+    _scr ctrlAddEventHandler ["VideoStopped", {
+        (uiNamespace getVariable "BIS_RscMissionScreen") closeDisplay 1;
+    }];
+    _scr ctrlCommit 0;
+};

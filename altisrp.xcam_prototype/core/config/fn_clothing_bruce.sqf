@@ -191,7 +191,14 @@ switch (_filter) do
 			["rds_worker_cap1","Bonnet 1",230],
 			["rds_worker_cap2","Bonnet 2",230],
 			["rds_worker_cap3","Bonnet 3",230],
-			["rds_worker_cap4","Bonnet 4",230]
+			["rds_worker_cap4","Bonnet 4",230],
+			["H_Cap_pmc",nil,300],
+			["H_Cap_tan_pmc",nil,300],
+			["H_Capbw_pmc",nil,300],
+			["H_Capbw_tan_pmc",nil,300],
+			["H_Booniehat_rgr",nil,450],
+			["H_Booniehat_DMARPAT",nil,450],
+			["H_Booniehat_GCAMO",nil,450]
 		];
 	};
 	

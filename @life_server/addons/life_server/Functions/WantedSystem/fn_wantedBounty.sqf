@@ -12,7 +12,7 @@ _half = [_this,2,false,[false]] call BIS_fnc_param;
 if(isNull _civ OR isNull _cop) exitWith {};
 _ownerID = _cop;
 
-_id = [(getPlayerUID _civ),life_wanted_list] call TON_fnc_index;
+_id = [(getPlayerUID _civ),life_wanted_list] call life_fnc_index;
 if(_id != -1) then
 {
 	if(_half) then

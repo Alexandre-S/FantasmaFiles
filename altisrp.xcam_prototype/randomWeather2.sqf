@@ -132,12 +132,12 @@ private ["_weatherUpdateArray","_weatherUpdateForecasts"];
         // };
 	// };
 	// Send out Initial Weather Variable
-	initialWeatherParam = floor(random(3));
+	initialWeatherParam = floor(random(2));
 		switch (initialWeatherParam) do{
 			case 0: {rw2_Current_Weather = 0;};    										// Clear
             case 1: {rw2_Current_Weather = 1;};    										// Overcast
-            case 2: {rw2_Current_Weather = 2;};  					// Rain
-            case 3: {rw2_Current_Weather = 5;};  				 	// Fog
+            case 2: {rw2_Current_Weather = 5;};  					// Fog
+            // case 3: {rw2_Current_Weather = 2;};  				 	// Rain
 		};
 	publicVariable "rw2_Current_Weather";
 	[] spawn mb_fnc_InitialWeather;

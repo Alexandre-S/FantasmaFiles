@@ -60,11 +60,12 @@ _near_units = _near_units call BIS_fnc_sortAlphabetically;
 			switch (side _x) do
 			{
 				case west: {
-					_type = "ONU";
+					_type = "Cop";
 				};
 				case civilian: {
 					_type = "Civ";
 					if(_x getVariable["life_dep",false]) then{ _type = "Dep"; };
+					if(_x getVariable["life_taxi",false]) then{ _type = "Taxi"; };
 				};
 				case resistance: {
 					_type = "Med";
@@ -78,6 +79,6 @@ _near_units = _near_units call BIS_fnc_sortAlphabetically;
 
 if(((lbSize _vehicles)-1) == -1) then
 {
-	_vehicles lbAdd "You don't own any vehicles";
+	_vehicles lbAdd "Vous ne possedez aucun vehicle";
 	_vehicles lbSetData [(lbSize _vehicles)-1,str(ObjNull)];
 };

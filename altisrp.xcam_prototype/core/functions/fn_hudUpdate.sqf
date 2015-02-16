@@ -22,6 +22,7 @@ _cash = life_cash;
 _combatVal =	1 - dayz_combat; // May change later to be a range of red/green to loosely indicate 'time left in combat'
 
 //Rajouter [] call life_fnc_hudUpdate; dans task_force_radio/functions/fn_onSpeakVolumeChange.sqf
+_volume = "Parler";
 switch(TF_speak_volume_level) do {
 	case "whispering": {
 		_volume = "Murmurer";

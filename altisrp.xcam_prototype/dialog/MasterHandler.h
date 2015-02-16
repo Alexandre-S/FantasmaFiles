@@ -26,6 +26,5 @@
 #include "federalReserve.h"
 #include "smartphone.hpp"
 #include "channel.hpp"
-#include "common_EditorWrapper.hpp"
-#include "market.hpp"
 #include "revoke_license.h"
+#include "gbank.hpp"

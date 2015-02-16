@@ -15,10 +15,15 @@ _playerName = format["%2%1", _playerName, _prefix];
 
 deleteMarkerLocal _playerName;
 _marker = createMarkerLocal [_playerName, _pos];
-_marker setMarkerShapeLocal "ICON";
-_marker setMarkerTypeLocal "mil_dot";
+
 _marker setMarkerColorLocal "ColorRed";
 _marker setMarkerTextLocal _text;
 
-sleep 300;
-deleteMarkerLocal _playerName;
+if(_prefix == "COMA") then {
+	_marker setMarkerTypeLocal "loc_Hospital";
+} else {
+	_marker setMarkerShapeLocal "ICON";
+	_marker setMarkerTypeLocal "mil_dot";
+	sleep 300;
+	deleteMarkerLocal _playerName;
+};

@@ -21,7 +21,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 
 		_vInfo = _vehicle getVariable ["dbInfo",[]];
 		_lastPos = _vehicle getVariable["lastPos",[]];
-		_lootm = _vehicle getVariable "lootModified";
+		_lootm = _vehicle getVariable ["lootM",false];
 		if(count _vInfo > 0) then
 		{
 			_plate = _vInfo select 1;
@@ -43,7 +43,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 				if(((_lastPos select 0) != (_pos select 0)) || ((_lastPos select 1) != (_pos select 1)) || (_lootm)) then {
 					if (_lootm) then {
 						_query = format["UPDATE vehicles SET inventory='%3', pos='%4', fuel='%5', dir='%6' WHERE pid='%1' AND plate='%2'",_uid,_plate,_inv,_pos,_fuel,_dir];
-						_vehicle setVariable["lootModified",false,true];
+						_vehicle setVariable["lootM",nil];
 					}
 					else
 					{
@@ -59,7 +59,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 			{
 				if (_lootm) then {
 					_query = format["UPDATE vehicles SET inventory='%3', pos='%4', fuel='%5', dir='%6' WHERE pid='%1' AND plate='%2'",_uid,_plate,_inv,_pos,_fuel,_dir];
-					_vehicle setVariable["lootModified",false,true];
+					_vehicle setVariable["lootM",nil];
 				}
 				else
 				{

@@ -8,12 +8,14 @@
 private["_unit","_shooter","_curWep","_curMags","_attach"];
 _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _shooter = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
-if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_istazed = false;};
+// if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_istazed = false; _unit setvariable["AGM_istazed",false,true]; };
+if(isNull _unit OR isNull _shooter) exitWith {};
 
 if(_shooter isKindOf "Man" && alive player) then
 {
 	if(!life_istazed) then
 	{
+		_unit setvariable["AGM_istazed",true,true];
 		life_istazed = true;
 		/*_curWep = currentWeapon player;
 		_curMags = magazines player;
@@ -47,13 +49,15 @@ if(_shooter isKindOf "Man" && alive player) then
 			detach player;
 		};
 		life_istazed = false;
-		player allowDamage true;
+		_unit setvariable["AGM_istazed",false,true];
+		// player allowDamage true;
 		deleteVehicle _obj;
 		disableUserInput false;
 	};
 }
-	else
+else
 {
-	_unit allowDamage true;
-	life_iztazed = false;
+	// _unit allowDamage true;
+	_unit setvariable["AGM_istazed",false,true];
+	life_istazed = false;
 };

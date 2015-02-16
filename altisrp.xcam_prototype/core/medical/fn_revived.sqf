@@ -14,6 +14,8 @@ life_corpse setVariable["realname",nil,true]; //Should correct the double name s
 _dir = getDir life_corpse;
 hint format[localize "STR_Medic_RevivePay",_medic,[(call life_revive_fee)] call life_fnc_numberText];
 
+[[profileName, "COMA"],"life_fnc_deleteMarker",independent,false] spawn life_fnc_MP;
+
 closeDialog 0;
 life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
@@ -36,9 +38,14 @@ player setDir _dir;
 player setPosASL (visiblePositionASL life_corpse);
 life_corpse setVariable["Revive",nil,TRUE];
 life_corpse setVariable["name",nil,TRUE];
-[[life_corpse],"life_fnc_corpse",true,false] spawn life_fnc_MP;
+life_corpse setVariable["life_corps",nil,TRUE];
+
+// [[life_corpse],"life_fnc_corpse",true,false] spawn life_fnc_MP;
+// [] call life_fnc_getHLC;
+// [[life_corpse],"life_fnc_corpse",serverhc,false] spawn life_fnc_MP;
 hideBody life_corpse;
 
+player setVariable["life_corpse_var",nil,TRUE];
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];

@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	Author: Bryan "Tonic" Boardwine
 	
@@ -55,6 +56,8 @@ if(_curTarget isKindOf "House_F" && playerSide == west) exitWith {
 			_Btn1 ctrlSetText localize "STR_House_Raid_Owner";
 			_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_copHouseOwner;";
 			_Btn1 ctrlShow true;
+			if(__GETC__(life_adminlevel) == 0) then { _Btn1 ctrlEnable false; };
+			
 			
 			_Btn2 ctrlSetText localize "STR_pInAct_BreakDown";
 			_Btn2 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_copBreakDoor; closeDialog 0;";

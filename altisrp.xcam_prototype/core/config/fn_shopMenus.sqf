@@ -28,7 +28,7 @@ switch (_shop) do
 	
 	case "cop":
 	{
-		ctrlSetText[2505,"Magasin de l'ONU"];
+		ctrlSetText[2505,"Magasin gendarmerie"];
 		ctrlShow[2503,false];
 	};
 	

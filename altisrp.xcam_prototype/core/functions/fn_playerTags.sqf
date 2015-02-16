@@ -53,6 +53,7 @@ _units = _units - [player];
 					},_x getVariable ["realname",name _x]]};
 				case ((!isNil {_x getVariable "name"} && playerSide == independent)): {format["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
 				case (_x getVariable["life_dep",false]): {format["<t color='#FF0000'><img image='a3\ui_f\data\IGUI\cfg\Actions\repair_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
+				case (_x getVariable["life_taxi",false]): {format["<t color='#FF0000'><img image='a3\ui_f\data\IGUI\cfg\Actions\ico_cpt_land_on_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
 				default {
 					if(!isNil {(group _x) getVariable "gang_name"}) then {
 						format["%1<br/><t size='0.8' color='#B6B6B6'>%2</t>",_x getVariable ["realname",name _x],(group _x) getVariable ["gang_name",""]];

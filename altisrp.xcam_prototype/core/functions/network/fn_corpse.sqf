@@ -11,3 +11,4 @@ if(isNull _corpse) exitWith {};
 if(alive _corpse) exitWith {}; //Stop script kiddies.
 
 _corpse hideObject true;
+//_corpse hideObjectGlobal true;

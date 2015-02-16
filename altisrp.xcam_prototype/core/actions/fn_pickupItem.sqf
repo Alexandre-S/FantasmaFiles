@@ -13,7 +13,7 @@ if((_obj getVariable["PickedUp",false])) exitWith {deleteVehicle _obj;}; //Objec
 if(player distance _obj > 3) exitWith {};
 _itemInfo = _obj getVariable "item";
 _itemName = [([_itemInfo select 0,0] call life_fnc_varHandle)] call life_fnc_varToStr;
-_illegal = [_itemInfo select 0,life_illegal_items] call TON_fnc_index;
+_illegal = [_itemInfo select 0,life_illegal_items] call life_fnc_index;
 if(playerSide == west && _illegal != -1) exitWith
 {
 	titleText[format[localize "STR_NOTF_PickedEvidence",_itemName,[(((life_illegal_items select _illegal) select 1)*(_itemInfo select 1))] call life_fnc_numberText],"PLAIN"];
@@ -44,6 +44,7 @@ if(_diff != _itemInfo select 1) then
 		deleteVehicle _obj;
 		//waitUntil{isNull _obj};
 		player playmove "AinvPknlMstpSlayWrflDnon";
+		playSound "bag";
 		sleep 0.5;
 		titleText[format[localize "STR_NOTF_Picked",_diff,_itemName],"PLAIN"];
 	};

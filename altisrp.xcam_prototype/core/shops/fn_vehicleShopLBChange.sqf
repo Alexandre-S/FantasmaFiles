@@ -17,6 +17,8 @@ _className = _control lbData _index;
 _vIndex = _control lbValue _index;
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
 _basePrice = (_vehicleList select _vIndex) select 1;
+//achat donator
+_basePrice = ceil(_basePrice - (((__GETC__(life_donator) * 5) / 100) * _basePrice));
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
@@ -38,7 +40,7 @@ lbClear _ctrl;
 _colorArray = [_className] call life_fnc_vehicleColorCfg;
 
 for "_i" from 0 to count(_colorArray)-1 do {
-	if((_colorArray select _i) select 1 == (life_veh_shop select 2) OR ((_colorArray select _i) select 1 == "dep" && {(life_veh_shop select 2) == "civ"} && {life_isdep}) OR ((_colorArray select _i) select 1 == "vig" && {(life_veh_shop select 2) == "civ"} && {license_civ_vigil})) then {
+	if((_colorArray select _i) select 1 == (life_veh_shop select 2) OR ((_colorArray select _i) select 1 == "dep" && {(life_veh_shop select 2) == "civ"} && {life_isdep}) OR ((_colorArray select _i) select 1 == "vig" && {(life_veh_shop select 2) == "civ"} && {license_civ_vigil}) OR ((_colorArray select _i) select 1 == "gvt" && {(life_veh_shop select 2) == "civ"} && {license_civ_gvt}) OR ((_colorArray select _i) select 1 == "taxi" && {(life_veh_shop select 2) == "civ"} && {license_civ_taxi})) then {
 		_temp = [_className,_i] call life_fnc_vehicleColorStr;
 		_ctrl lbAdd format["%1",_temp];
 		_ctrl lbSetValue [(lbSize _ctrl)-1,_i];

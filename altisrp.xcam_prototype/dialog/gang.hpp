@@ -123,6 +123,15 @@ class Life_My_Gang_Diag {
 			y = .46;
 		};
 		
+		/*class WithdrawGang : InviteMember
+		{
+			idc = 2633;
+			text = "$STR_Gang_Whithdraw";
+			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] spawn life_fnc_gangWithdraw";
+			y = .51;
+		};*/
+		
 		class ColorList : Life_RscCombo
 		{
 			idc = 2632;

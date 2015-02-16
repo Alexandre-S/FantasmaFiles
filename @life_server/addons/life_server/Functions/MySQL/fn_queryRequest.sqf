@@ -28,7 +28,7 @@ _query = switch(_side) do {
 	case west: {_returnCount = 15; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr, damage, hunger, thirst, sexe FROM players WHERE playerid='%1'",_uid];};
 	// START CHANGES
 	// HERE I'VE ADDED MY 3 FIELDS ON CIVILIAN
-	case civilian: {_returnCount = 19; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr, damage, hunger, thirst, sexe, dep FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 20; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr, damage, hunger, thirst, sexe, dep, taxi FROM players WHERE playerid='%1'",_uid];};
 	// END CHANGES
 	case independent: {_returnCount = 15; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, position, alive, tfr, damage, hunger, thirst, sexe FROM players WHERE playerid='%1'",_uid];};
 };
@@ -101,10 +101,10 @@ switch (_side) do {
 		// HERE I CONVERT CIVLIAN BLACKLIST TO BOOLEAN
 		// END CHANGES
 		_houseData = _uid spawn TON_fnc_fetchPlayerHouses;
-		waitUntil {scriptDone _houseData};
+		waitUntil {sleep 0.01;scriptDone _houseData};
 		_queryResult pushBack (missionNamespace getVariable[format["houses_%1",_uid],[]]);
 		_gangData = _uid spawn TON_fnc_queryPlayerGang;
-		waitUntil{scriptDone _gangData};
+		waitUntil{sleep 0.01;scriptDone _gangData};
 		_queryResult pushBack (missionNamespace getVariable[format["gang_%1",_uid],[]]);
 		
 		//POS
@@ -116,6 +116,7 @@ switch (_side) do {
 		_queryResult set[14,([_queryResult select 14,1] call DB_fnc_bool)];
 		_queryResult set[18,([_queryResult select 18,1] call DB_fnc_bool)];
 		_queryResult set[19,([_queryResult select 19,1] call DB_fnc_bool)];
+		_queryResult set[20,([_queryResult select 20,1] call DB_fnc_bool)];
 	};
 	
 	case independent: {
@@ -131,6 +132,6 @@ switch (_side) do {
 };
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
-_queryResult set[22,_keyArr];
+_queryResult set[23,_keyArr];
 
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

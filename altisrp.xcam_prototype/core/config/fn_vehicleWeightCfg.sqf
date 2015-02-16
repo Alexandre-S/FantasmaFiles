@@ -21,6 +21,7 @@ switch (_className) do
 	case "RDS_Gaz24_Civ_01": {40};
 	case "RDS_Golf4_Civ_01": {40};
 	case "C_Offroad_01_F": {65};
+	case "B_G_Offroad_01_F": {65};
 	case "BAF_Offroad_D": {75};
 	case "LandRover_ACR": {75};
 	case "ACR_LandRover_AMB": {75};
@@ -50,6 +51,7 @@ switch (_className) do
 	case "GNT_C185F": {15};
 	case "C_Rubberboat": {45};
 	case "C_Boat_Civil_01_F": {85};
+	case "D41_Trawler": {400};
 	case "I_Truck_02_medical_F": {250};
 	case "O_Truck_03_medical_F": {300};
 	case "B_Truck_01_medical_F": {325};

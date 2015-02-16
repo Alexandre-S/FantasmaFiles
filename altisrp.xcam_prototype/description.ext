@@ -1,5 +1,5 @@
 author = "Tonic & Havena";
-onLoadName = "AltisLife Fantasma 5.5";
+onLoadName = "AltisLife Fantasma 5.6";
 onLoadMission = "Un Jeu de rôle de www.altisrp.fr";
 joinUnassigned = 1;
 respawn = BASE;
@@ -101,8 +101,8 @@ class CfgDebriefing
 	class Blacklisted
 	{
 		title = "Echec de mission";
-		subtitle = "Vous êtes blacklisté par l'ONU";
-		description = "Vous n'êtes pas autorisé à être membre de l'ONU dû à vos précédentes actions et les admins vous ont retiré l'accès pour être membre de l'ONU.";
+		subtitle = "Vous êtes blacklisté par la Gendarmerie";
+		description = "Vous n'êtes pas autorisé à être membre de la gendarmerie suite à vos précédentes actions et les admins vous ont retiré l'accès pour être membre de la gendarmerie.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -128,16 +128,6 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
-	class IsPremium
-	{
-		title = "Place non réservée";
-		subtitle = "Vous n'êtes pas autorisé a utiliser ce slot";
-		description = "Il reste des slots réservés premium disponibles ! Merci de vous connecter en priorité sur un slot premium.";
-		pictureBackground = "";
-		picture = "";
-		pictureColor[] = {0,0.3,0.6,1};
-	};
-	
 	class NotFemale
 	{
 		title = "Echec de connection";
@@ -150,9 +140,9 @@ class CfgDebriefing
 	
 	class NotCop
 	{
-		title = "Réservé ONU";
-		subtitle = "Vous ne faite pas parti de l'ONU";
-		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas un membre de l'ONU, essayez un autre emplacement.";
+		title = "Réservé Gendarmerie";
+		subtitle = "Vous ne faite pas parti de la Gendarmerie";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas un membre de la Gendarmerie, essayez un autre emplacement.";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -162,7 +152,7 @@ class CfgDebriefing
 	{
 		title = "Réservé Civils";
 		subtitle = "Vous n'êtes pas civil";
-		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas civil. Essayez un slot Medic ou ONU";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas civil. Essayez un slot Medic ou Gendarme";
 		pictureBackground = "";
 		picture = "";
 		pictureColor[] = {0,0.3,0.6,1};

@@ -9,6 +9,7 @@
 private["_food","_val","_sum"];
 _food = [_this,0,"",[""]] call BIS_fnc_param;
 if(_food == "") exitWith {};
+if(underwater player) exitWith { hint "Vous devez remonter à la surface pour pouvoir vous rassasier"; };
 
 if([false,_food,1] call life_fnc_handleInv) then {
 	switch (_food) do
@@ -26,8 +27,12 @@ if([false,_food,1] call life_fnc_handleInv) then {
 		case "donuts": {_val = 30};
 		case "tbacon": {_val = 40};
 		case "peach": {_val = 10};
+		case "chicken": {_val = 30};
+		case "goat": {_val = 60};
+		case "sheep": {_val = 75};
 	};
-
+	
+	playSound "eat";
 	_sum = life_hunger + _val;
 	if(_sum > 100) then {_sum = 100; player setFatigue 1; hint "You have over eaten, you are now feeling fatigued.";};
 	life_hunger = _sum;

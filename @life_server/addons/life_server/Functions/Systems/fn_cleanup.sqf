@@ -69,12 +69,14 @@ while {true} do
 			}
 			else
 			{
-				_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
-				if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
+				// _vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
+				// if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
+				if((_x isKindOf "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then
 				{
 					if(_idleTime == 0) then 
 					{
-						_x setVariable["idleTime",time,true];
+						// _x setVariable["idleTime",time,true];
+						_x setVariable["idleTime",time];
 					};
 					if(((time - _idleTime) > 3600) && (time > 600)) then
 					{
@@ -138,13 +140,15 @@ while {true} do
 					else
 					{
 						if(_debugmap) then {
-							_x setVariable["idleTime",1,true];
+							// _x setVariable["idleTime",1,true];
+							_x setVariable["idleTime",1];
 							_idleTime = 1;
 						};
 						//,"Box_NATO_Support_F","Box_NATO_AmmoVeh_F"
-						if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F","B_supplyCrate_F","AGM_JerryCan","AGM_SpareTrack","AGM_SpareWheel"])) then 
+						if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F","B_supplyCrate_F","AGM_JerryCan","AGM_SpareTrack","AGM_SpareWheel","Land_BagFence_Long_F","Land_BagFence_Round_F"])) then 
 						{
 							if(!isNil "_x" && {!isNull _x}) then {
+								diag_log format["[debug] fn_cleanupdivers %1 ",typeOf _x];
 								deleteVehicle _x;
 							};
 						};

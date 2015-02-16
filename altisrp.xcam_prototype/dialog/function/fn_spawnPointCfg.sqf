@@ -8,7 +8,7 @@
 	Return:
 	[Spawn Marker,Spawn Name,Image Path]
 */
-private["_side","_return"];
+private["_side","_return","_pos","_house","_houseCfg","_houseName"];
 _side = [_this,0,civilian,[civilian]] call BIS_fnc_param;
 
 //Spawn Marker, Spawn Name, PathToImage
@@ -38,6 +38,13 @@ switch (_side) do
 			{
 				_pos = call compile format["%1",_x select 0];
 				_house = nearestBuilding _pos;
+				// add
+				_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
+				if(count _houseCfg == 0) then
+				{
+					_house = (nearestObjects[_pos,["House_F"],20] select 0);
+				};
+				
 				_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
 				
 				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];

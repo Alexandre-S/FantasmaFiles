@@ -28,7 +28,13 @@ switch (_state) do
 		license_civ_rebel = false;
 		//license_civ_driver = false;
 		license_civ_dep = false;
-		player setVariable["life_dep", false, true];
+		if(player getVariable["life_dep", false]) then {
+			player setVariable["life_dep", false, true];
+		};
+		license_civ_taxi = false;
+		if(player getVariable["life_taxi", false]) then {
+			player setVariable["life_taxi", false, true];
+		};
 	};
 	
 	//Remove motor vehicle licenses

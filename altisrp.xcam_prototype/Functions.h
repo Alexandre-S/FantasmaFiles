@@ -74,21 +74,6 @@ class Life_Client_Core
 		class medicSiren {};
 	};
 	
-	class Market
-    {
-        file = "core\market";
-        class openMarketView;
-        class refreshMarketView;
-        class marketShortView;
-        class marketGetBuyPrice;
-        class marketGetSellPrice;
-        class marketGetRow;
-        class marketGetPriceRow;
-        class marketSetPriceRow;
-        class marketBuy;
-        class marketSell;
-    };
-	
 	class Actions
 	{
 		file = "core\actions";
@@ -126,9 +111,12 @@ class Life_Client_Core
 		class surrender {};
 		class InteractionMenu {};
 		class packupmauer {};
+		class packupsandbag {};
+		class packupsandbagr {};
 		class packupcone {};
 		class suicideBomb {};
 		class sirenstart {};
+		class activateNitro {};
 	};
 	
 	class Housing
@@ -146,6 +134,7 @@ class Life_Client_Core
 		class lockupHouse {};
 		class copHouseOwner {};
 		class lockHouse {};
+		class buyHouseConfirm {};
 	};
 	
 	class Config
@@ -255,10 +244,19 @@ class Life_Client_Core
 		class stripDownPlayer {};
 		class playSound {};
 		class fatigueReset {};
-		class randomRound {};
 		class getHLC {};
 		class vehicleExit {};
 		class createMarker {};
+		class deleteMarker {};
+		class bourse {};
+		class clientGangKick {};
+		class clientGangLeader{};
+		class clientGetKey {};
+		class clientWireTransfer {};
+		class index {};
+		class isnumber {};
+		class clientMessage {};
+		class abattre {};
 	};
 	
 	class Network
@@ -289,6 +287,9 @@ class Life_Client_Core
 		class removeLicenses {};
 		class demoChargeTimer {};
 		class civLoadout {};
+		class trackAnimal {};
+		class huntingZone {};
+		class skinAnimal {};
 	};
 	
 	class Vehicle
@@ -308,6 +309,7 @@ class Life_Client_Core
 		class reverseTruckSound {};
 		class lockVehicleCheck {};
 		class openInventoryCheck {};
+		class refuelVehicle {};
 	};
 	
 	class Cop
@@ -339,6 +341,7 @@ class Life_Client_Core
 		class ticketPaid {};
 		class seizeObjects {};
 		class tazerFix {};
+		class copOpener {};
 	};
 	
 	class Gangs
@@ -356,6 +359,7 @@ class Life_Client_Core
 		class gangInvite {};
 		class gangDisband {};
 		class gangDisbanded {};
+		class gangAtmMenu {};
 	};
 	
 	class Shops
@@ -380,6 +384,7 @@ class Life_Client_Core
 		class chopShopMenu {};
 		class chopShopSelection {};
 		class chopShopSell {};
+		class stealVehicle {};
 	};
 	
 	class Items
@@ -395,8 +400,24 @@ class Life_Client_Core
 		class defuseKit {};
 		class storageBox {};
 		class mauer {};
+		class sandbag {};
+		class sandbagr {};
 		class cone {};
 		class gpsTracker {};
+		class nitro {};
+		class searchWreck {};
+	};
+	
+	class Drugs
+	{
+		file = "core\drugs";
+		class marijuana {};
+		class cocaine {};
+		class heroin {};
+		class lsd {};
+		class overdose {};
+		class drugUsed {};
+		class attachSmoke {};
 	};
 	
 	class Dialog_Controls
@@ -406,6 +427,7 @@ class Life_Client_Core
 		class displayHandler {};
 		class spawnConfirm {};
 		class spawnMenu {};
+		class forceSpawnMenu {};
 		class spawnPointCfg {};
 		class spawnPointSelected {};
 		class progressBar {};
@@ -425,5 +447,7 @@ class Life_Client_Core
 		class InsureCar{};
 		class calldialog {};
 		class sendChannel {};
+		class gangWithdraw {};
+		class gangTransfer {};
 	};
 };

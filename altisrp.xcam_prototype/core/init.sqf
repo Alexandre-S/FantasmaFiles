@@ -4,7 +4,7 @@
 */
 life_firstSpawn = true;
 life_session_completed = false;
-spawnmenuon = 1;
+spawnmenuon = 3;
 private["_handle","_timeStamp"];
 0 cutText["Setting up client, please wait...","BLACK FADED"];
 0 cutFadeOut 9999999;
@@ -12,7 +12,7 @@ _timeStamp = diag_tickTime;
 diag_log "------------------------------------------------------------------------------------------------------";
 diag_log "--------------------------------- Starting Altis Life Client Init ----------------------------------";
 diag_log "------------------------------------------------------------------------------------------------------";
-waitUntil {!isNull player && player == player}; //Wait till the player is ready
+waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player is ready
 [] call compile PreprocessFileLineNumbers "core\clientValidator.sqf";
 //Setup initial client core functions
 diag_log "::Life Client:: Initialization Variables";
@@ -34,11 +34,13 @@ publicVariableServer "Havena_idplayer";
 0 cutFadeOut 9999999;
 waitUntil {sleep 0.5;!isNil "havena_id"};
 player setVariable ["havena_id",havena_id, true];
-
+0 cutText["Initialisation du serveur. \n veuillez patientez...","BLACK FADED"];
+0 cutFadeOut 9999999;
 diag_log "::Life Client:: Waiting for server functions to transfer..";
-waitUntil {(!isNil {TON_fnc_clientGangLeader})};
+waitUntil {sleep 0.5;(!isNil {TON_fnc_player_query})};
 diag_log "::Life Client:: Received server functions.";
-
+0 cutText["Initialisation des fonctionnalitées serveur. \n veuillez patientez...","BLACK FADED"];
+0 cutFadeOut 9999999;
 waitUntil {sleep 0.5;!isNil "server_test"};
 diag_log "::Life Client:: Received HC version.";
 if(!server_test) then {
@@ -47,20 +49,20 @@ if(!server_test) then {
 	waitUntil {sleep 0.5;!isNil "Havena_HLCOBJ2"};
 	diag_log "::Life Client:: Received HCid.";
 };
-
-0 cutText ["Waiting for the server to be ready...","BLACK FADED"];
+0 cutText["Récupération des infos du serveur.... patientez","BLACK FADED"];
 0 cutFadeOut 99999999;
 diag_log "::Life Client:: Waiting for the server to be ready..";
-waitUntil{!isNil "life_server_isReady"};
-waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
+waitUntil{sleep 0.5;!isNil "life_server_isReady"};
+waitUntil{sleep 0.1;(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
 if(!isNil "life_server_extDB_notLoaded") exitWith {
 	diag_log "::Life Client:: Server did not load extDB";
-	999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
+	// 999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
+	999999 cutText ["Le serveur semble avoir un problème de chargement. \n merci de contacter un admin.","BLACK FADED"];
 	999999 cutFadeOut 99999999;
 };
 
 [] call SOCK_fnc_dataQuery;
-waitUntil {life_session_completed};
+waitUntil {sleep 0.1;life_session_completed};
 // 0 cutText["Finishing client setup procedure","BLACK FADED"];
 // 0 cutFadeOut 9999999;
 
@@ -71,27 +73,28 @@ waitUntil {sleep 0.5;init_gang};
 
 //diag_log "::Life Client:: Group Base Execution";
 [] spawn life_fnc_escInterupt;
-
+0 cutText["Attente du spawn.... patientez","BLACK FADED"];
+0 cutFadeOut 9999999;
 switch (playerSide) do
 {
 	case west:
 	{
 		_handle = [] spawn life_fnc_initCop;
-		waitUntil {scriptDone _handle};
+		waitUntil {sleep 0.5;scriptDone _handle};
 	};
 	
 	case civilian:
 	{
 		//Initialize Civilian Settings
 		_handle = [] spawn life_fnc_initCiv;
-		waitUntil {scriptDone _handle};
+		waitUntil {sleep 0.5;scriptDone _handle};
 	};
 	
 	case independent:
 	{
 		//Initialize Medics and blah
 		_handle = [] spawn life_fnc_initMedic;
-		waitUntil {scriptDone _handle};
+		waitUntil {sleep 0.5;scriptDone _handle};
 	};
 	
 	case sideLogic:
@@ -106,8 +109,8 @@ spawnmenuon = 0;
 // player setVariable["Escorting",false,true];
 // player setVariable["transporting",false,true];
 diag_log "Past Settings Init";
-[] execFSM "core\fsm\client.fsm";
-diag_log "Executing client.fsm";
+[] execFSM "core\fsm\Fixed_Client987154.fsm";
+diag_log "Executing fsm";
 waitUntil {!(isNull (findDisplay 46))};
 diag_log "Display 46 Found";
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call life_fnc_keyHandler"];
@@ -194,6 +197,16 @@ alarm_check =
 
 player addEventHandler ["FiredNear", " if(!((_this select 6) in life_chemlist)) then { [] spawn combat_mode; }; "];
 // player addEventHandler ["fired", "[_this] spawn alarm_check;"];
+
+diag_log "::Life Client:: Vidage des pompes à essences..";
+_pumps = [];
+_pumpClass = "Land_fs_feed_F";
+_pumps = [[9205.75,12112.2,-0.0487232],[11831.6,14155.9,-0.0342026],[12024.7,15830,-0.0298138],[12026.6,15830.1,-0.0342979],[12028.4,15830,-0.0388737],[9025.78,15729.4,-0.0206451],[9023.75,15729,-0.027153],[9021.82,15728.7,-0.0293427],[16750.9,12513.1,-0.0525198],[6798.15,15561.6,-0.0441475],[6198.83,15081.4,-0.0912418],[14173.2,16541.8,-0.0946102],[5023.26,14429.6,-0.0978947],[5019.68,14436.7,-0.0114822],[4001.12,12592.1,-0.0966625],[17417.2,13936.7,-0.106519],[3757.14,13477.9,-0.0540276],[3757.54,13485.9,-0.010498],[16875.2,15469.4,0.0373325],[16871.7,15476.6,0.0102873],[8481.69,18260.7,-0.0266876],[15297.1,17565.9,-0.283808],[14221.4,18302.5,-0.0697155],[15781,17453.2,-0.285282],[19961.3,11454.6,-0.0349236],[19965.1,11447.6,-0.0483704],[5768.99,20085.7,-0.0189667],[21230.4,7116.56,-0.0604229],[20784.8,16665.9,-0.0521202],[20789.6,16672.3,-0.0213318],[23379.4,19799,-0.0544052],[25701.2,21372.6,-0.0774155]];
+{
+	_pump = (nearestObject [_x, _pumpClass]);
+	_pump setFuelCargo 0;
+	_pump addAction ["Refuel", life_fnc_refuelVehicle, 1, 3, true, true, "", ' _this distance _target < 5 && cursorTarget == _target '];
+} forEach _pumps;
 
 diag_log "------------------------------------------------------------------------------------------------------";
 diag_log format["                End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];

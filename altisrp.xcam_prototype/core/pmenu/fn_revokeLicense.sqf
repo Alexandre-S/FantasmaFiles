@@ -19,8 +19,8 @@ _Btn3 = _display displayCtrl 41004;
 _Btn4 = _display displayCtrl 41005;
 _Btn5 = _display DisplayCtrl 41006;
 _Btn6 = _display DisplayCtrl 41007;
-_Btn7 = _display DisplayCtrl 41008;
-_Btn8 = _display DisplayCtrl 41009;
+// _Btn7 = _display DisplayCtrl 41008;
+// _Btn8 = _display DisplayCtrl 41009;
 life_pInact_curTarget = _curTarget;
 
 //Permis de Conduire
@@ -45,8 +45,8 @@ _Btn5 buttonSetAction "[[14],""life_fnc_removeLicenses"",life_pInact_curTarget,F
 // _Btn7 buttonSetAction "[[16],""life_fnc_removeLicenses"",life_pInact_curTarget,FALSE] spawn life_fnc_MP; closeDialog 0;";
 
 //Licence de port d'armes
-_Btn8 buttonSetAction "[[17],""life_fnc_removeLicenses"",life_pInact_curTarget,FALSE] spawn life_fnc_MP; closeDialog 0;";
+_Btn6 buttonSetAction "[[17],""life_fnc_removeLicenses"",life_pInact_curTarget,FALSE] spawn life_fnc_MP; closeDialog 0;";
 
 
-_Btn6 ctrlEnable false;
-_Btn7 ctrlEnable false;
+// _Btn6 ctrlEnable false;
+// _Btn7 ctrlEnable false;

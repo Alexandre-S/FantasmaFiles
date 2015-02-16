@@ -50,8 +50,6 @@ class CfgFunctions
 			class bool{};
 			class mresString {};
 			class updatePartial {};
-			class marketInsert {};
-			class marketInsertTimes {};
 		};
 	};
 	
@@ -110,12 +108,14 @@ class CfgFunctions
 			class InsureCar {};
 			class tfrreboot {};
 			class fixTafr {};
-			class marketconfiguration {};
 			class hlc_assignOwner {};
 			class getHLC {};
 			class spawnVehicleActive {};
 			class updateVeh {};
 			class logdeath {};
+			class sellArrayMulti {};
+			class updateSAM {};
+			class getSetPrice {};
 		};
 		
 		class Housing

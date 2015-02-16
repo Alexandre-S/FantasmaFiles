@@ -20,12 +20,14 @@ _vehicleColor = [_className,_dataArr select 1] call life_fnc_vehicleColorStr;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
 
-_retrievePrice = [_className,__GETC__(life_garage_prices)] call TON_fnc_index;
-_sellPrice = [_className,__GETC__(life_garage_sell)] call TON_fnc_index;
-_assurPrice = [_className,__GETC__(life_assur_prices)] call TON_fnc_index;
+_retrievePrice = [_className,__GETC__(life_garage_prices)] call life_fnc_index;
+_sellPrice = [_className,__GETC__(life_garage_sell)] call life_fnc_index;
+_assurPrice = [_className,__GETC__(life_assur_prices)] call life_fnc_index;
 _retrievePrice = if(_retrievePrice == -1) then {1000} else {(__GETC__(life_garage_prices) select _retrievePrice) select 1;};
 _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) select _sellPrice) select 1;};
 _assurPrice = if(_assurPrice == -1) then {1000} else {(__GETC__(life_assur_prices) select _assurPrice) select 1;};
+//vente donator
+_sellPrice = ceil(_sellPrice + (((__GETC__(life_donator) * 5) / 100) * _sellPrice));
 
 if(side player == west) then {
 	_retrievePrice = 1;

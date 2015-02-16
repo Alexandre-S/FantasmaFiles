@@ -42,11 +42,11 @@ switch(_type) do
 	//copmessage
 	case 2:
 	{
-		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Aucun membre de l'ONU disponible. Veuillez re-essayer plus tard."];};
+		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Aucun membre de la gendarmerie disponible. Veuillez re-essayer plus tard."];};
 		ctrlShow[888895,false];
 		if(_msg == "") exitWith {hint "Veuillez entrer un message!";ctrlShow[888895,true];};
 		[[ObjNull,_msg,player,1],"TON_fnc_handleMessages",serverhc] spawn life_fnc_MP;
-		_to = "l'ONU";
+		_to = "la gendarmerie";
 		hint format["Vous avez envoyez à %1 le message: %2",_to,_msg];
 		ctrlShow[888895,true];
 		closeDialog 887890;
@@ -114,6 +114,17 @@ switch(_type) do
 		[[ObjNull,_msg,player,6],"TON_fnc_handleMessages",serverhc] spawn life_fnc_MP;
 		hint format["Vous avez envoyez aux dépanneurs.",_msg];
 		ctrlShow[888900,true];
+		closeDialog 887890;
+	};
+	//taxireq
+	case 8:
+	{
+		if(({_x getVariable["life_taxi",false]} count playableUnits) == 0) exitWith {hint format["Aucun Taxi disponible. Veuillez re-essayer plus tard."];};
+		ctrlShow[888901,false];
+		if(_msg == "") exitWith {hint "Veuillez entrer un message!";ctrlShow[888901,true];};
+		[[ObjNull,_msg,player,7],"TON_fnc_handleMessages",serverhc] spawn life_fnc_MP;
+		hint format["Vous avez envoyez aux Taxis.",_msg];
+		ctrlShow[888901,true];
 		closeDialog 887890;
 	};
 };

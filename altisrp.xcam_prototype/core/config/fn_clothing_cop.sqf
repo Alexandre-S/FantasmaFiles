@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Friperie de l'ONU"];
+ctrlSetText[3103,"Friperie Gendarme"];
 
 _ret = [];
 switch (_filter) do
@@ -32,6 +32,26 @@ switch (_filter) do
 		{
 			// _ret pushBack ["ARC_FR_CE_Uniform_vest",nil,0];
 		};
+		// BAC / PJ
+		if(license_cop_bacpj) then
+		{
+			_ret pushBack ["C_Uniform_survivor3_l",nil,0];
+			_ret pushBack ["B_Uniform_survivor2_l",nil,0];
+			_ret pushBack ["U_C_HunterBody_grn",nil,0];
+			_ret pushBack ["U_IG_Guerilla3_1",nil,0];
+			_ret pushBack ["FANTASMA_GiletPolo",nil,0];
+			_ret pushBack ["U_NikosBody",nil,0];
+			_ret pushBack ["vip_clothes",nil,0];
+			_ret pushBack ["U_PMC_BlkTShirt_SJeans",nil,0];
+			_ret pushBack ["U_PMC_BluePlaidShirt_BeigeCords",nil,0];
+			_ret pushBack ["U_PMC_BlckPolo_BgPants",nil,0];
+			_ret pushBack ["UVF_Soldier_Outfit_4",nil,0];
+			_ret pushBack ["U_BG_Guerilla2_1",nil,0];
+			_ret pushBack ["U_BG_Guerilla2_2",nil,0];
+			_ret pushBack ["U_BG_Guerilla2_3",nil,0];
+			_ret pushBack ["U_BG_Guerilla3_1",nil,0];
+			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
+		};
 		// Unité tactique
 		if(license_cop_swat) then
 		{
@@ -45,28 +65,19 @@ switch (_filter) do
 			_ret pushBack ["U_B_HeliPilotCoveralls",nil,0];
 			_ret pushBack ["U_I_HeliPilotCoveralls",nil,0];
 		};
-		// Sniper
-		if(license_cop_snipe) then
-		{
-			_ret pushBack ["U_B_GhillieSuit",nil,0];
-			_ret pushBack ["U_I_GhillieSuit",nil,0];
-			_ret pushBack ["U_O_GhillieSuit",nil,0];
-		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["rpima_uniform",nil,0];
 			_ret pushBack ["U_B_survival_uniform",nil,0];
-			_ret pushBack ["U_BG_Guerilla2_1",nil,0];
-			_ret pushBack ["U_BG_Guerilla2_2",nil,0];
-			_ret pushBack ["U_BG_Guerilla2_3",nil,0];
-			_ret pushBack ["U_BG_Guerilla3_1",nil,0];
-			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
 		};
 		
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
+			_ret pushBack ["U_B_GhillieSuit",nil,0];
+			_ret pushBack ["U_I_GhillieSuit",nil,0];
+			_ret pushBack ["U_O_GhillieSuit",nil,0];
 		};
 		
 		if(life_sexe) then
@@ -102,6 +113,17 @@ switch (_filter) do
 			_ret pushBack ["H_Cap_headphones",nil,0];
 			_ret pushBack ["H_Watchcap_khk",nil,0];
 		};
+		// PJ / BAC
+		if(license_cop_bacpj) then
+		{
+			_ret pushBack ["H_Booniehat_tan",nil,0];
+			_ret pushBack ["H_Hat_grey",nil,0];
+			_ret pushBack ["H_Hat_tan",nil,0];
+			_ret pushBack ["H_Hat_brown",nil,0];
+			_ret pushBack ["H_Cap_blu",nil,0];
+			_ret pushBack ["H_Cap_grn",nil,0];
+			_ret pushBack ["H_Cap_grn_BI",nil,0];
+		};
 		// Unité tactique
 		if(license_cop_swat) then
 		{
@@ -126,13 +148,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["H_Beret_Colonel",nil,0];
-			_ret pushBack ["H_Booniehat_tan",nil,0];
-			_ret pushBack ["H_Hat_grey",nil,0];
-			_ret pushBack ["H_Hat_tan",nil,0];
-			_ret pushBack ["H_Hat_brown",nil,0];
-			_ret pushBack ["H_Cap_blu",nil,0];
-			_ret pushBack ["H_Cap_grn",nil,0];
-			_ret pushBack ["H_Cap_grn_BI",nil,0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
@@ -185,6 +200,7 @@ switch (_filter) do
 		{
 			_ret pushBack["V_BandollierB_oli",nil,0];
 			_ret pushBack["V_BandollierB_blk",nil,0];
+			_ret pushBack["gign_BlackVest",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 3) then
 		{
@@ -204,7 +220,7 @@ switch (_filter) do
 		if(license_cop_swat) then
 		{
 			_ret pushBack["gign_HeavyVest",nil,0];
-			_ret pushBack["gign_BlackVest",nil,0];
+			// _ret pushBack["gign_BlackVest",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 4) then
 		{

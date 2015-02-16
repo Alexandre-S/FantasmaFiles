@@ -21,7 +21,9 @@ if(_vehicle isKindOf "House_F") then {
 	ctrlSetText[3501,format[(localize "STR_MISC_HouseStorage")+ " - %1",getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")]];
 } else {
 	ctrlSetText[3501,format[(localize "STR_MISC_VehStorage")+ " - %1",getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName")]];
-	_vehicle setVariable["idleTime",time,true];
+	//_vehicle setVariable["idleTime",time,true];
+	[] call life_fnc_getHLC;
+	[[_vehicle,"idleTime",time],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
 };
 
 if(_vehicle isKindOf "House_F") then {

@@ -28,4 +28,12 @@ if (count _cargo > 0) then {
   moveOut _target;
   // [_target, "AGM_AmovPercMstpScapWnonDnon", 2] call AGM_Core_fnc_doAnimation;
   [_target, "{unassignVehicle _this}", _target] call AGM_Core_fnc_execRemoteFnc;
+  
+  [_target] spawn {
+	sleep 1;
+	[_this select 0, false, true] call AGM_Captives_fnc_setCaptive;
+	sleep 1;
+	// player removeItem 'AGM_CableTie';
+	[_this select 0, true, true] call AGM_Captives_fnc_setCaptive;
+  };
 };

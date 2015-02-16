@@ -14,7 +14,7 @@ format["Bienvenue sur Fantasma %1, Le serveur Jeu de Rôle Altis Life Francophon
 	Essayez toujours de vous entourer de personne dans vos périples. Les routes sont dangeureuses, et l'union fait la force.",
 	"Concentrez-vous sur une ressource simple au départ, comme les pommes ou les pêches par exemple, pour ensuite partir se concentrer sur des ressources plus importantes.",
 	"Méfiez-vous des terroristes, ils sont imprévisibles et aller vers eux peut vous attirer beaucoup d'ennui. Si vous souhaitez rencontrer l'un d'eux, réfléchissez à un plan de secours.",
-	"L'ONU est là pour vous aider. Coopérez avec et vous vous en tirerez toujours bien. Ils sont puissants et bienveillants. Tachez de les respecter. Ils représentent la vraie loi sur l'île."	
+	"La Gendarmerie est là pour vous aider. Coopérez avec et vous vous en tirerez toujours bien. Ils sont puissants et bienveillants. Tachez de les respecter. Ils représentent la vraie loi sur l'île."	
 ];
 
 life_firstSpawn = false;

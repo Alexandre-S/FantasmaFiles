@@ -53,11 +53,12 @@ _near_units = _near_units call BIS_fnc_sortAlphabetically;
 			switch (side _x) do
 			{
 				case west: {
-					_type = "ONU";
+					_type = "Cop";
 				};
 				case civilian: {
 					_type = "Civ";
 					if(_x getVariable["life_dep",false]) then{ _type = "Dep"; };
+					if(_x getVariable["life_taxi",false]) then{ _type = "Taxi"; };
 				};
 				case resistance: {
 					_type = "Med";

@@ -291,7 +291,8 @@ class Life_smartphone_notruf {
 			x = 0.1;
 			y = 0.2 + (11 / 250);
 			w = 0.64;
-			h = 0.15 - (5 / 250);
+			h = 0.19;
+			// h = 0.15 - (5 / 250);
 		};
 	};
 	
@@ -372,7 +373,7 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
-		class MedReq : life_RscButtonMenu
+		class DepReq : life_RscButtonMenu
 		{
 			idc = 888900;
 			text = "DEPANNEUR";
@@ -385,11 +386,25 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
+		class TaxReq : life_RscButtonMenu
+		{
+			idc = 888901;
+			text = "TAXI";
+			colorBackground[] = {0.584, 0.086, 0.086,1.0};
+			onButtonClick = "[9,-1,(ctrlText 888894)] call life_fnc_newMsg;";
+			
+			x = 0.53;
+			y = 0.36;
+			w = 0.2;
+			h = (1 / 25);
+		};
+		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
-			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			// x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
+			x = (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.36 + (1 / 50);
 			w = (6.25 / 40);
 			h = (1 / 25);

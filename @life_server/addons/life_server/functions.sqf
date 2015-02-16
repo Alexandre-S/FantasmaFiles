@@ -7,7 +7,7 @@ compileFinal "
 
 //publicVariable "life_fnc_sidechat";
 
-TON_fnc_index =
+/*TON_fnc_index =
 compileFinal "
 	private[""_item"",""_stack""];
 	_item = _this select 0;
@@ -22,6 +22,7 @@ compileFinal "
 
 	_return;
 ";
+publicVariable "TON_fnc_index";*/
 
 /*TON_fnc_player_query =
 compileFinal "
@@ -34,9 +35,7 @@ compileFinal "
 ";
 publicVariable "TON_fnc_player_query";*/
 
-publicVariable "TON_fnc_index";
-
-TON_fnc_clientWireTransfer =
+/*TON_fnc_clientWireTransfer =
 compileFinal "
 	private[""_unit"",""_val"",""_from""];
 	_val = _this select 0;
@@ -44,12 +43,12 @@ compileFinal "
 	if(!([str(_val)] call TON_fnc_isnumber)) exitWith {};
 	if(_from == """") exitWith {};
 	life_atmcash = life_atmcash + _val;
-	hint format[""%1 has wire transferred $%2 to you."",_from,[_val] call life_fnc_numberText];
+	hint format[""%1 vous a transferé %2€."",_from,[_val] call life_fnc_numberText];
 	
 ";
-publicVariable "TON_fnc_clientWireTransfer";
+publicVariable "TON_fnc_clientWireTransfer";*/
 
-TON_fnc_isnumber =
+/*TON_fnc_isnumber =
 compileFinal "
 	private[""_valid"",""_value"",""_compare""];
 	_value = _this select 0;
@@ -68,9 +67,9 @@ compileFinal "
 	_return;
 ";
 
-publicVariable "TON_fnc_isnumber";
+publicVariable "TON_fnc_isnumber";*/
 
-TON_fnc_clientGangKick =
+/*TON_fnc_clientGangKick =
 compileFinal "
 	private[""_unit"",""_group""];
 	_unit = _this select 0;
@@ -80,13 +79,13 @@ compileFinal "
 	{
 		life_my_gang = ObjNull;
 		[player] joinSilent (createGroup civilian);
-		hint ""You have been kicked out of the gang."";
+		hint ""Vous avez été ejecté du groupe."";
 		
 	};
 ";
-publicVariable "TON_fnc_clientGangKick";
+publicVariable "TON_fnc_clientGangKick";*/
 
-TON_fnc_clientGetKey =
+/*TON_fnc_clientGetKey =
 compileFinal "
 	private[""_vehicle"",""_unit"",""_giver""];
 	_vehicle = _this select 0;
@@ -96,16 +95,16 @@ compileFinal "
 	if(player == _unit && !(_vehicle in life_vehicles)) then
 	{
 		_name = getText(configFile >> ""CfgVehicles"" >> (typeOf _vehicle) >> ""displayName"");
-		hint format[""%1 has gave you keys for a %2"",_giver,_name];
+		hint format[""%1 vous a donné les clefs de %2"",_giver,_name];
 		life_vehicles pushBack _vehicle;
 		[] call life_fnc_getHLC;
 		[[getPlayerUID player,playerSide,_vehicle,1],""TON_fnc_keyManagement"",serverhc,false] spawn life_fnc_MP;
 	};
 ";
 
-publicVariable "TON_fnc_clientGetKey";
+publicVariable "TON_fnc_clientGetKey";*/
 
-TON_fnc_clientGangLeader =
+/*TON_fnc_clientGangLeader =
 compileFinal "
 	private[""_unit"",""_group""];
 	_unit = _this select 0;
@@ -115,11 +114,11 @@ compileFinal "
 	{
 		player setRank ""COLONEL"";
 		_group selectLeader _unit;
-		hint ""You have been made the new leader."";
+		hint ""Vous êtes désormais le nouveau leader."";
 	};
 ";
 
-publicVariable "TON_fnc_clientGangLeader";
+publicVariable "TON_fnc_clientGangLeader";*/
 
 //Cell Phone Messaging
 /*
@@ -232,7 +231,7 @@ publicVariable "TON_fnc_cell_emsrequest";
 	3 = message from admin
 	4 = admin message to all
 */
-TON_fnc_clientMessage =
+/*TON_fnc_clientMessage =
 compileFinal "
 	if(isServer) exitWith {};
 	if(!hasinterface) exitWith {};
@@ -247,10 +246,10 @@ compileFinal "
 		case 0 :
 		{
 			private[""_message""];
-			_message = format["">>>MESSAGE FROM %1: %2"",_from,_msg];
-			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>New Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format["">>>MESSAGE DE %1: %2"",_from,_msg];
+			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>Nouveau Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Vous<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			[""TextMessage"",[format[""You Received A New Private Message From %1"",_from]]] call bis_fnc_showNotification;
+			[""TextMessage"",[format[""Vous avez reçu un nouveau message privé de %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 			playSound ""cell_ring_0"";
 		};
@@ -259,10 +258,10 @@ compileFinal "
 		{
 			if(side player != west) exitWith {};
 			private[""_message""];
-			_message = format[""---911 DISPATCH FROM %1: %2"",_from,_msg];
-			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>New Dispatch<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Officers<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format[""---APPEL GENDARMERIE DE %1: %2"",_from,_msg];
+			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Nouvelle demande<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Tous les agents<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			[""PoliceDispatch"",[format[""A New Police Report From: %1"",_from]]] call bis_fnc_showNotification;
+			[""PoliceDispatch"",[format[""Nouvel appel d'urgence de: %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 			playSound ""cell_ring_0"";
 		};
@@ -271,10 +270,10 @@ compileFinal "
 		{
 			if((call life_adminlevel) < 1) exitWith {};
 			private[""_message""];
-			_message = format[""???ADMIN REQUEST FROM %1: %2"",_from,_msg];
-			hint parseText format [""<t color='#ffcefe'><t size='2'><t align='center'>Admin Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>Admins<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format[""???DEMANDE D'ADMIN DE  %1: %2"",_from,_msg];
+			hint parseText format [""<t color='#ffcefe'><t size='2'><t align='center'>Demande Admin<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Admins<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			[""AdminDispatch"",[format[""%1 Has Requested An Admin!"",_from]]] call bis_fnc_showNotification;
+			[""AdminDispatch"",[format[""%1 a demandé un Admin!"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
 			playSound ""cell_ring_0"";
 			[name _fromplayer, position _fromplayer,""ADMIN""] spawn life_fnc_createMarker;
@@ -283,11 +282,11 @@ compileFinal "
 		case 3 :
 		{
 			private[""_message""];
-			_message = format[""!!!ADMIN MESSAGE: %1"",_msg];
-			_admin = format[""Sent by admin: %1"", _from];
-			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Admin Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>An Admin<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
+			_message = format[""!!!MESSAGE D'ADMIN: %1"",_msg];
+			_admin = format[""Envoyé par admin: %1"", _from];
+			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Message d'Admin<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Vous<br/><t color='#33CC33'>De: <t color='#ffffff'>Un Admin<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
 			
-			[""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
+			[""AdminMessage"",[""Vous avez reçu un message d'un Admin!""]] call bis_fnc_showNotification;
 			systemChat _message;
 			if((call life_adminlevel) > 0) then {systemChat _admin;};
 			playSound ""cell_ring_0"";
@@ -296,11 +295,11 @@ compileFinal "
 		case 4 :
 		{
 			private[""_message"",""_admin""];
-			_message = format[""!!!ADMIN MESSAGE: %1"",_msg];
-			_admin = format[""Sent by admin: %1"", _from];
-			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Admin Message<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>All Players<br/><t color='#33CC33'>From: <t color='#ffffff'>The Admins<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
+			_message = format[""!!!MESSAGE DE LA PREFECTURE: %1"",_msg];
+			_admin = format[""Envoyé par la prefecture: %1"", _from];
+			hint parseText format [""<t color='#FF0000'><t size='2'><t align='center'>Message de la prefecture<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Tous les joueurs<br/><t color='#33CC33'>De: <t color='#ffffff'>La prefecture<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%1"",_msg];
 			
-			[""AdminMessage"",[""You Have Received A Message From An Admin!""]] call bis_fnc_showNotification;
+			[""AdminMessage"",[""Vous avez reçu un message de le prefecture!""]] call bis_fnc_showNotification;
 			systemChat _message;
 			if((call life_adminlevel) > 0) then {systemChat _admin;};
 			playSound ""cell_ring_0"";
@@ -308,10 +307,10 @@ compileFinal "
 		
 		case 5: {
 			private[""_message""];
-			_message = format[""!!!EMS REQUEST: %1"",_msg];
-			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>EMS Request<br/><br/><t color='#33CC33'><t align='left'><t size='1'>To: <t color='#ffffff'>You<br/><t color='#33CC33'>From: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
+			_message = format[""!!!APPEL D'URGENCE: %1"",_msg];
+			hint parseText format [""<t color='#FFCC00'><t size='2'><t align='center'>Nouvelle demande<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Tous les médecins<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2"",_from,_msg];
 			
-			[""TextMessage"",[format[""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
+			[""TextMessage"",[format[""Nouvel appel d'urgence de: %1"",_from]]] call bis_fnc_showNotification;
 			playSound ""cell_ring_0"";
 			[name _fromplayer, position _fromplayer,""SAMU""] spawn life_fnc_createMarker;
 		};
@@ -330,4 +329,4 @@ compileFinal "
 		};	
 	};
 ";
-publicVariable "TON_fnc_clientMessage";
+publicVariable "TON_fnc_clientMessage";*/

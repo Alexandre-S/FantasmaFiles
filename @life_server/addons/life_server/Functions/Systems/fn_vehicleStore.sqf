@@ -87,5 +87,5 @@ else
 	// (owner _unit) publicVariableClient "life_garage_store";
 	[["life_garage_store",false],"life_fnc_netSetVar",_unitid,false] spawn life_fnc_MP;
 	// [[1,(localize "STR_Garage_Store_Success")],"life_fnc_broadcast",(owner _unit),false] spawn life_fnc_MP;
-	[[1,(localize "STR_Garage_Store_Success")],"life_fnc_broadcast",_unitid,false] spawn life_fnc_MP;
+	[[1,"Le véhicule a été entreposé dans le garage."],"life_fnc_broadcast",_unitid,false] spawn life_fnc_MP;
 };

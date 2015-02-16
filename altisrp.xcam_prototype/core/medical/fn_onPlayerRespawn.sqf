@@ -10,6 +10,8 @@ private["_unit","_corpse"];
 _unit = _this select 0;
 _corpse = _this select 1;
 life_corpse = _corpse;
+life_corpse setVariable["life_corps",true,true];
+_unit setVariable["life_corpse_var",_corpse,true];
 
 //Comment this code out if you want them to keep the weapon on the ground.
 private["_containers"];

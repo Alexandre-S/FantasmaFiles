@@ -154,13 +154,6 @@ switch (_filter) do
 		// Armée privée
 		if(__GETC__(life_factnumber) == 1) then
 		{
-			_ret pushBack ["H_Cap_pmc",nil,300];
-			_ret pushBack ["H_Capbw_pmc",nil,300];
-			_ret pushBack ["H_Cap_tan_pmc",nil,300];
-			_ret pushBack ["H_Capbw_tan_pmc",nil,300];
-			_ret pushBack ["H_Booniehat_DMARPAT",nil,450];
-			_ret pushBack ["H_Booniehat_GCAMO",nil,450];
-			_ret pushBack ["H_Booniehat_rgr",nil,450];
 			_ret pushBack ["H_Cap_pmc_headphones",nil,1000];
 			_ret pushBack ["H_PilotHelmetHeli_PMC",nil,2000];
 		};

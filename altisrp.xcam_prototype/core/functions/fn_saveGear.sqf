@@ -178,6 +178,8 @@ if(count (secondaryWeaponItems player) > 0) then
     ["life_inv_storagesmall", life_inv_storagesmall],
     ["life_inv_storagebig", life_inv_storagebig],
     ["life_inv_mauer", life_inv_mauer],
+    ["life_inv_sandbag", life_inv_sandbag],
+    ["life_inv_sandbagr", life_inv_sandbagr],
     ["life_inv_cone", life_inv_cone]
 ];
 // Youri : Ici qu'on rajoute les items Y a sauvegardé. Les ressources n'y sont pas pour le moment, volonté de Tonic & Vampire pour éviter les glitch

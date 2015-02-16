@@ -25,9 +25,9 @@ switch (_mode) do
 			case "cair": {_var = "license_cop_air"}; //Cop Pilot License cost
 			case "swat": {_var = "license_cop_swat"}; //Swat License cost
 			case "cg": {_var = "license_cop_cg"}; //Coast guard license cost
-			case "infanterie": {_var = "license_cop_infanterie"}; //Infanterie ONU
+			case "bacpj": {_var = "license_cop_bacpj"}; //BacPJ ONU
 			case "piloteauto": {_var = "license_cop_piloteauto"}; //Pilote Automobile ONU
-			case "snipe": {_var = "license_cop_snipe"}; // Sniper ONU
+			//case "snipe": {_var = "license_cop_snipe"}; // Sniper ONU
 			case "grenadier": {_var = "license_cop_grenadier"}; //grenadier license cost
 			case "onumecano": {_var = "license_cop_onumecano"}; //onumecano license cost
 			case "onumedic": {_var = "license_cop_onumedic"}; //onumedic license cost
@@ -50,6 +50,8 @@ switch (_mode) do
 			case "gvt": {_var = "license_civ_gvt"};
 			case "vigil": {_var = "license_civ_vigil"};
 			case "dep": {_var = "license_civ_dep"};
+			case "hunting": {_var = "license_civ_hunting"};
+			case "taxi": {_var = "license_civ_taxi"};
 			default {_var = ""};
 		};
 	};
@@ -67,9 +69,9 @@ switch (_mode) do
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost
 			case "license_cop_swat": {_var = "swat"}; //Swat License cost
 			case "license_cop_cg": {_var = "cg"}; //Coast guard license cost
-			case "license_cop_infanterie": {_var = "infanterie"}; //Infanterie ONU
+			case "license_cop_bacpj": {_var = "bacpj"}; //BacPJ ONU
 			case "license_cop_piloteauto": {_var = "piloteauto"}; //piloteauto License cost
-			case "license_cop_snipe": {_var = "snipe"}; //snipe license cost
+			//case "license_cop_snipe": {_var = "snipe"}; //snipe license cost
 			case "license_cop_grenadier": {_var = "grenadier"}; //grenadier license cost
 			case "license_cop_onumecano": {_var = "onumecano"}; //onumecano license cost
 			case "license_cop_onumedic": {_var = "onumedic"}; //onumedic license cost
@@ -92,6 +94,8 @@ switch (_mode) do
 			case "license_civ_gvt": {_var = "gvt"};
 			case "license_civ_vigil": {_var = "vigil"};
 			case "license_civ_dep": {_var = "dep"};
+			case "license_civ_hunting": {_var = "hunting"};
+			case "license_civ_taxi": {_var = "taxi"};
 			default {_var = ""};
 		};
 	};

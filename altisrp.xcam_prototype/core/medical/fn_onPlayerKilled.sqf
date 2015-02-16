@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_onPlayerKilled.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -43,14 +44,18 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	
-	maxTimeRespawn = time + (life_respawn_timer * 60);
-	_RespawnBtn ctrlEnable false;
-	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(maxTimeRespawn - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
-	round(maxTimeRespawn - time) <= 0 OR isNull _this};
-	_RespawnBtn ctrlEnable true;
-	_Timer ctrlSetText localize "STR_Medic_Respawn_2";
-	maxTimeRespawn = nil;
+	if(__GETC__(life_adminlevel) > 0) then{
+		_RespawnBtn ctrlEnable true;
+		_Timer ctrlSetText localize "STR_Medic_Respawn_2";
+	} else{
+		maxTimeRespawn = time + (life_respawn_timer * 60);
+		_RespawnBtn ctrlEnable false;
+		waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(maxTimeRespawn - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
+		round(maxTimeRespawn - time) <= 0 OR isNull _this};
+		_RespawnBtn ctrlEnable true;
+		_Timer ctrlSetText localize "STR_Medic_Respawn_2";
+		maxTimeRespawn = 0;
+	};
 	// _maxTime = time + (13 * 60);
 	// waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn_2",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	// round(_maxTime - time) <= 0 OR isNull _this OR (isNull (findDisplay 7300))};

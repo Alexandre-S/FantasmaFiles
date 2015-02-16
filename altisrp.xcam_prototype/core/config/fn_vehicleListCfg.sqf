@@ -97,7 +97,7 @@ switch (_shop) do
 		};
 		if(player getVariable["life_dep",false]) then
 		{
-			_return set[count _return, ["B_Truck_01_mover_F",450000]]; //Service Truck
+			_return pushBack ["B_Truck_01_mover_F",30000]; //Service Truck
 		};
 	};
 	
@@ -112,14 +112,13 @@ switch (_shop) do
 			["B_Heli_Light_01_F",337500],
 			["O_Heli_Light_02_unarmed_F",675000]
 		];
+		if(player getVariable["life_dep",false] || {license_civ_gvt} || {__GETC__(life_donator) > 0}) then
+		{
+			_return pushBack ["I_Heli_Transport_02_F",750000]; // dep
+		};
 		if(__GETC__(life_donator) > 0) then
 		{
-			// _return pushBack ["I_Heli_Transport_02_F",750000];
 			_return pushBack ["O_Heli_Transport_04_F",1000000];
-		};
-		if(player getVariable["life_dep",false]) then
-		{
-			_return set[count _return, ["I_Heli_Transport_02_F",750000]]; // dep
 		};
 	};
 	
@@ -128,7 +127,8 @@ switch (_shop) do
 		_return =
 		[
 			["C_Rubberboat",3750],
-			["C_Boat_Civil_01_F",33000]
+			["C_Boat_Civil_01_F",33000],
+			["D41_Trawler",130000]
 		];
 	};
 	
@@ -157,10 +157,6 @@ switch (_shop) do
 			_return pushBack ["C_Heli_Light_01_civil_F",40000];
 			_return pushBack ["B_Heli_Light_01_F",40000];
 		};
-		// if(__GETC__(life_medicLevel) >= 1 && __GETC__(life_donator) > 0) then
-		// {
-			// _return pushBack ["I_Heli_Transport_02_F",350000];
-		// };
 		if(__GETC__(life_medicLevel) >= 2) then
 		{
 			_return pushBack ["O_Heli_Light_02_unarmed_F",75000];
@@ -179,6 +175,7 @@ switch (_shop) do
 			["B_G_Offroad_01_F",33750],
 			["C_Heli_Light_01_civil_F",412500],
 			["B_Heli_Light_01_F",412500],
+			["O_Heli_Light_02_unarmed_F",700000],
 			["I_Heli_Transport_02_F",750000]
 		];
 		// Grade 2
@@ -202,7 +199,7 @@ switch (_shop) do
 		// Si leader de faction
 		if(__GETC__(life_reblevel) >= 3) then
 		{
-			_return pushBack ["O_MRAP_02_hmg_F",1250000];
+			// _return pushBack ["O_MRAP_02_hmg_F",1250000];
 			_return pushBack ["O_Heli_Transport_04_covered_F",2500000];
 		};
 	};

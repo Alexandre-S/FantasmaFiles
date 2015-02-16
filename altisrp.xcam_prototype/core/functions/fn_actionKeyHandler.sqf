@@ -46,9 +46,9 @@ life_action_inUse = true;
 //Check if it's a dead body.
 if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
 	//Hotfix code by ins0
-	if(((playerSide == blufor && {(call life_revive_cops)}) || playerSide == independent) && {"Medikit" in (items player)}) then {
+	/*if(((playerSide == blufor && {(call life_revive_cops)}) || playerSide == independent) && {"Medikit" in (items player)}) then {
 		[_curTarget] call life_fnc_revivePlayer;
-	};
+	};*/
 };
 
 
@@ -67,6 +67,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
 	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
 	_animalTypes = ["Salema_F","Ornate_random_F","Mackerel_F","Tuna_F","Mullet_F","CatShark_F","Turtle_F"];
+	_animalTypes2 = ["Cock_random_F","Goat_random_F","Hen_random_F","Sheep_random_F","Alsatian_Random_F","Fin_random_F"]; 
 	_money = "Land_Money_F";
 	
 	//It's a vehicle! open the vehicle interaction key!
@@ -78,31 +79,39 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		};*/
 	} else {
 		//Is it a animal type?
-		if((typeOf _curTarget) in _animalTypes) then {
-			//if((typeOf _curTarget) == "Turtle_F" && !alive _curTarget) then {
-			if((typeOf _curTarget) == "Turtle_F") then {
-				private["_handle"];
-				_handle = [_curTarget] spawn life_fnc_catchTurtle;
-				waitUntil {scriptDone _handle};
-			} else {
-				private["_handle"];
-				_handle = [_curTarget] spawn life_fnc_catchFish;
-				waitUntil {scriptDone _handle};
-			};
+		if((typeOf _curTarget) in _animalTypes2) then {
+			private["_handle"];
+			_handle = [_curTarget] spawn life_fnc_skinAnimal;
+			waitUntil {scriptDone _handle};
+			
 		} else {
-			//OK, it wasn't a vehicle so let's see what else it could be?
-			if((typeOf _curTarget) in _miscItems) then {
-				//OK, it was a misc item (food,water,etc).
-				private["_handle"];
-				_handle = [_curTarget] spawn life_fnc_pickupItem;
-				waitUntil {scriptDone _handle};
-			} else {
-				//It wasn't a misc item so is it money?
-				if((typeOf _curTarget) == _money && {!(_curTarget getVariable["inUse",false])}) then {
+			if((typeOf _curTarget) in _animalTypes) then {
+				if((typeOf _curTarget) == "Turtle_F") then {
+				//if((typeOf _curTarget) == "Turtle_F" && !alive _curTarget) then {
 					private["_handle"];
-					_curTarget setVariable["inUse",TRUE,TRUE];
-					_handle = [_curTarget] spawn life_fnc_pickupMoney;
+					_handle = [_curTarget] spawn life_fnc_catchTurtle;
 					waitUntil {scriptDone _handle};
+				} else {
+					private["_handle"];
+					_handle = [_curTarget] spawn life_fnc_catchFish;
+					waitUntil {scriptDone _handle};
+				};
+			} else {
+				//OK, it wasn't a vehicle so let's see what else it could be?
+				if((typeOf _curTarget) in _miscItems) then {
+					//OK, it was a misc item (food,water,etc).
+					private["_handle"];
+					_handle = [_curTarget] spawn life_fnc_pickupItem;
+					waitUntil {scriptDone _handle};
+				} else {
+					//It wasn't a misc item so is it money?
+					if((typeOf _curTarget) == _money) then {
+					// if((typeOf _curTarget) == _money && {!(_curTarget getVariable["inUse",false])}) then {
+						private["_handle"];
+						// _curTarget setVariable["inUse",TRUE,TRUE];
+						_handle = [_curTarget] spawn life_fnc_pickupMoney;
+						waitUntil {scriptDone _handle};
+					};
 				};
 			};
 		};

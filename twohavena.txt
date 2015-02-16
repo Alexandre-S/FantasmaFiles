@@ -1,0 +1,32 @@
+havenatow = { private ["_v1","_v2","_rope","_dist","_time","_spd","_v1_pos","_dir","_newPos","_arr"]; 
+
+_v1 = _this select 0;
+_v2 = _this select 1;
+
+_rope = ropeCreate [_v1, [0,-3,0], _v2, [0,1.5,-1], 5];
+
+_dist = 7;
+
+while {alive _v1} do 
+{
+
+_time = 0.07;
+_spd = speed _v1;
+
+_v1_pos = getPosASL _v1;
+
+_dir = (getDir _v1) + 180;
+_newPos = 
+[
+(_v1_pos select 0) + _dist*sin _dir, 
+(_v1_pos select 1) + _dist*cos _dir, 
+_v1_pos select 2
+];
+
+_arr = [getPosASL _v2, _newPos, velocity _v2, velocity _v1, vectorDir _v2, vectorDir _v1, vectorUp _v2, vectorUp _v1, _time];
+if (_spd > 1) then {_v2 setVelocityTransformation _arr};
+};
+
+};
+
+ [car1,car2] call havenatow;

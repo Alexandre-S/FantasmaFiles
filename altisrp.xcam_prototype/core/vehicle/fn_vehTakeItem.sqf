@@ -17,11 +17,11 @@ if(!alive player) exitwith {closeDialog 0;};
 if((lbCurSel 3502) == -1) exitWith {hint localize "STR_Global_NoSelection";};
 _ctrl = ctrlSelData(3502);
 _num = ctrlText 3505;
-if(!([_num] call TON_fnc_isnumber)) exitWith {hint localize "STR_MISC_WrongNumFormat";};
+if(!([_num] call life_fnc_isnumber)) exitWith {hint localize "STR_MISC_WrongNumFormat";};
 _num = parseNumber(_num);
 if(_num < 1) exitWith {hint localize "STR_MISC_Under1";};
 
-_index = [_ctrl,((life_trunk_vehicle getVariable "Trunk") select 0)] call TON_fnc_index;
+_index = [_ctrl,((life_trunk_vehicle getVariable "Trunk") select 0)] call life_fnc_index;
 _data = (life_trunk_vehicle getVariable "Trunk") select 0;
 _old = life_trunk_vehicle getVariable "Trunk";
 if(_index == -1) exitWith {};
@@ -60,8 +60,9 @@ if(_ctrl == "money") then
 			_data set[_index,[_ctrl,(_value - _num)]];
 		};
 		life_trunk_vehicle setVariable["Trunk",[_data,(_old select 1) - _weight],true];
-		life_trunk_vehicle setVariable["lootModified",true,true];
-		life_trunk_vehicle setVariable["idleTime",time,true];
+		[] call life_fnc_getHLC;
+		[[life_trunk_vehicle,"lootM",true],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
+		[[life_trunk_vehicle,"idleTime",time],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
 		[life_trunk_vehicle] call life_fnc_vehInventory;
 	}
 		else

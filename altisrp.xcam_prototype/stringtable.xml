@@ -383,14 +383,14 @@
 		<Key ID="STR_CELL_TextPolice">
 			<Original>Text Police</Original>
 			<German>An die Polizei</German>
-			<French>SMS ONU</French>
+			<French>Gendarmerie</French>
 			<Italian>Msg Polizia</Italian>		
 			<Portuguese>Polícia</Portuguese>
 		</Key>
 		<Key ID="STR_CELL_TextAdmins">
 			<Original>Text Admins</Original>
 			<German>An die Admins</German>
-			<French>SMS Admin</French>
+			<French>Admins</French>
 			<Italian>Msg Admin</Italian>
 			<Portuguese>Text Admin</Portuguese>
 		</Key>
@@ -411,7 +411,7 @@
 		<Key ID="STR_CELL_EMSRequest">
 			<Original>Request EMS</Original>
 			<German>An die Sanitäter</German>
-			<French>SMS Medic/Dep</French>
+			<French>Hospital</French>
 			<Italian>Msg medici</Italian>
 			<Portuguese>Chamar SAMU</Portuguese>
 		</Key>
@@ -523,6 +523,10 @@
 			<French>Dissoudre Gang</French>
 			<Italian>Sciogli Gang</Italian>		
 			<Portuguese>Desfazer Gangue</Portuguese>
+		</Key>
+		<Key ID="STR_Gang_Whithdraw">
+			<Original>Whitdraw Gang</Original>
+			<French>Retirer argent</French>
 		</Key>
 		<Key ID="STR_Gang_Invitation">
 			<Original>Gang Invitation</Original>
@@ -1811,6 +1815,10 @@
 			<Italian>Non hai abbastanza fondi nel tuo conto in banca</Italian>
 			<Portuguese>Você não tem todo esse dinheiro em sua conta bancária.</Portuguese>
  		</Key>
+ 		<Key ID="STR_ATM_GangLimit">
+ 			<Original>You can't add more than %1 € on your gang account</Original>
+ 			<French>Vous ne pouvez pas déposer plus de %1 € sur votre compte de gang</French>
+ 		</Key>
  		<Key ID="STR_NOTF_CouldntAdd">
  			<Original>Couldn't add it to your inventory.</Original>
 			<German>Es konnte nichts zu deinem Inventar hinzugefügt werden</German>
@@ -1901,6 +1909,10 @@
 			<French>Réparation %1</French>
 			<Italian>Repairing %1</Italian>
 			<Portuguese>Repairing %1</Portuguese>
+ 		</Key>
+		<Key ID="STR_NOTF_Rangement">
+ 			<Original>Rangement %1</Original>
+			<French>Rangement %1</French>
  		</Key>
  		<Key ID="STR_NOTF_RepairingInVehicle">
  			<Original>You must be outside of the vehicle to fix it. Sorry that this prevents you from exploiting the system, well not really.</Original>
@@ -3344,12 +3356,12 @@
 			<Italian>Sniper Licence</Italian>
 			<Portuguese>Sniper Licence</Portuguese>
 		</Key>
-		<Key ID="STR_License_Infant">
-			<Original>Infant Licence</Original>
-			<German>Infant Licence</German>
-			<French>License Infanterie</French>
-			<Italian>Infant Licence</Italian>
-			<Portuguese>Infant Licence</Portuguese>
+		<Key ID="STR_License_BacPJ">
+			<Original>BAC/PJ Licence</Original>
+			<German>BAC/PJ Licence</German>
+			<French>License BAC / PJ</French>
+			<Italian>BAC/PJ Licence</Italian>
+			<Portuguese>BAC/PJ Licence</Portuguese>
 		</Key>
 		<Key ID="STR_License_grenad">
 			<Original>Grenad Licence</Original>
@@ -3884,14 +3896,14 @@
 		<Key ID="STR_Medic_Online">
 			<Original>Medics Online: %1</Original>
 			<German>Sanitäter online: %1</German>
-			<French>Medics en ligne: %1</French>
+			<French>Médecins en ligne: %1</French>
 			<Italian>Medici Online: %1</Italian>
 			<Portuguese>Médicos Online: %1</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_Near">
 			<Original>Medics Nearby: %1</Original>
 			<German>Sanitäter in der Nähe: %1</German>
-			<French>Medics à proximité: %1</French>
+			<French>Médecins à proximité: %1</French>
 			<Italian>Medici Vicini: %1</Italian>
 			<Portuguese>Médicos por perto: %1</Portuguese>
 		</Key>

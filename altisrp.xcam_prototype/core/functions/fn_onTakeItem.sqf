@@ -5,7 +5,7 @@
 	Description:
 	Blocks the unit from taking something they should not have.
 */
-private["_unit","_container","_item","_house","_close"];
+private["_unit","_container","_item","_house","_close","_houseCfg","_locked"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _container = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 _item = [_this,2,"",[""]] call BIS_fnc_param;
@@ -39,6 +39,13 @@ if((uniform player) in ["U_Rangemaster","U_B_CombatUniform_mcam","U_B_CombatUnif
 if(playerSide != west) then{
 	if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
 		_house = nearestBuilding (getPosATL player);
+		// add
+		_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
+		if(count _houseCfg == 0) then
+		{
+			_house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
+		};
+		
 		_locked = _house getVariable ["locked",nil];
 		// diag_log format["%1 - %2 - %3","CLOSETAKE3",!(_house in life_vehicles),_locked];
 		_close = false;

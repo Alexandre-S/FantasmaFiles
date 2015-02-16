@@ -5,7 +5,7 @@
 	Description:
 	31 hours of no sleep screw your description.
 */
-private["_ownerID","_gangBank","_gangMax","_gangName","_members","_allUnits","_ctrl"];
+private["_ownerID","_gangBank","_gangMax","_gangName","_members","_allUnits","_ctrl","_near"];
 disableSerialization;
 if(isNull (findDisplay 2620)) then {
 	if(!(createDialog "Life_My_Gang_Diag")) exitWith {}; //NOOOOOOOOOOOOOOOOOOOOOOOoooooooooooooOOOOOOOOOOOOOOOOOOOOOOOOOOO00000000000000oooooo
@@ -23,7 +23,11 @@ if(_ownerID != steamid) then {
 	(getControl(2620,2625)) ctrlEnable false; //Set New Leader
 	(getControl(2620,2630)) ctrlEnable false; //Invite Player
 	(getControl(2620,2631)) ctrlEnable false; //Disband Gang
+	(getControl(2620,2633)) ctrlEnable false; //Withdraw Gang
 };
+
+_near = nearestObjects [player, ["Land_Atm_01_F","Land_Atm_02_F"], 5];
+if(count (_near) == 0) then { (getControl(2620,2633)) ctrlEnable false; };
 
 (getControl(2620,2629)) ctrlSetText _gangName;
 (getControl(2620,601)) ctrlSetText format[(localize "STR_GNOTF_Funds")+ " $%1",[_gangBank] call life_fnc_numberText];

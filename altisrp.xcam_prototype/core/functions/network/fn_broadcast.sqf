@@ -29,6 +29,7 @@ if(_localize) exitWith {
 				case 0: {systemChat _msg;};
 				case 1: {hint _msg;};
 				case 2: {titleText[_msg,"PLAIN"];};
+				case 3: {hintC _msg};
 			};
 		};
 	} else {
@@ -37,6 +38,7 @@ if(_localize) exitWith {
 			case 0: {systemChat _msg;};
 			case 1: {hint _msg;};
 			case 2: {titleText[_msg,"PLAIN"];};
+			case 3: {hintC _msg};
 		};
 	};
 };
@@ -50,15 +52,17 @@ if(typeName _type == typeName []) then
 			case 0: {systemChat _message};
 			case 1: {hint format["%1", _message]};
 			case 2: {titleText[format["%1",_message],"PLAIN"];};
+			case 3: {hintC format["%1", _message]};
 		};
 	};
 }
-	else
+else
 {
 	switch (_type) do
 	{
 		case 0: {systemChat _message};
 		case 1: {hint format["%1", _message]};
 		case 2: {titleText[format["%1",_message],"PLAIN"];};
+		case 3: {hintC format["%1", _message]};
 	};
 };

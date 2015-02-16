@@ -105,7 +105,7 @@ class CfgVehicles {
       class AGM_SetCaptive {
         displayName = "$STR_AGM_Captives_SetCaptive";
         distance = 4;
-        condition = "'AGM_CableTie' in items _player && {alive _target} && {isPlayer _target} && {!(_target getVariable ['AGM_isCaptive', false])} && {(_target getVariable ['AGM_isSurrender', false]) || ((animationState _target) == 'Incapacitated')}";
+        condition = "'AGM_CableTie' in items _player && {alive _target} && {isPlayer _target} && {!(_target getVariable ['AGM_isCaptive', false])} && {(_target getVariable ['AGM_isSurrender', false]) || ((animationState _target) == 'Incapacitated') || (_target getVariable ['AGM_istazed', false])}";
         statement = "player removeItem 'AGM_CableTie'; [_target, true] call AGM_Captives_fnc_setCaptive";
         showDisabled = 0;
         priority = 2.4;

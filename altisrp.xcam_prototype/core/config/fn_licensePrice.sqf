@@ -21,7 +21,7 @@ switch (_type) do
 	case "swat": {35000}; //Swat License cost
 	case "cg": {5000}; //Coast guard license cost
 	case "piloteauto": {50000}; //piloteauto License cost
-	case "snipe": {150000}; //snipe license cost
+	//case "snipe": {150000}; //snipe license cost
 	case "heroin": {250000}; //Heroin processing license cost
 	case "lsd": {225000}; //LSD processing license cost
 	case "marijuana": {200000}; //Marijuana processing license cost
@@ -29,6 +29,7 @@ switch (_type) do
 	case "gang": {10000}; //Gang license cost
 	case "rebel": {150000}; //Rebel license cost
 	case "truck": {250000}; //Truck license cost
+	case "hunting": {25000};
 	case "diamond": {100000};
 	case "salt": {75000};
 	case "cocaine": {300000};
@@ -39,4 +40,5 @@ switch (_type) do
 	case "mair": {15000};
 	case "home": {75000};
 	case "dep": {50000};
+	case "taxi": {50000};
 };

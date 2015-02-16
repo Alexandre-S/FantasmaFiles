@@ -91,32 +91,42 @@ if(typeName _sp == "STRING") then {
 	_vehicle setDir _dir;
 	_vehicle setFuel _fuel;
 };
-
+_vehicle setVariable ["BIS_enableRandomization",false];	
+sleep 0.01;
 _inv = [(_vInfo select 9)] call DB_fnc_mresToArray;
 if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};
 _vehicle setVariable["Trunk",_inv,true];
-
-_vehicle setVariable["idleTime",time,true];
-_vehicle setVariable["lootModified",false,true];
+sleep 0.01;
+_vehicle setVariable["idleTime",time];
+sleep 0.01;
+// _vehicle setVariable["lootM",false];
+// sleep 0.01;
 _vehicle setVariable ["R3F_LOG_disabled", false,true];
-_vehicle setVariable["lastPos",[]];
+//sleep 0.01;
+//_vehicle setVariable["lastPos",[]];
+sleep 0.01;
 
 //Side Specific actions.
 switch(_side) do {
 	case west: {
-		_vehicle setVariable ["tf_side", _side, true];	
+		_vehicle setVariable ["tf_side", _side, true];
+		sleep 0.01;
 	};
 	
 	case civilian: {
-		_vehicle setVariable ["tf_side", _side, true];	
+		_vehicle setVariable ["tf_side", _side, true];
+		sleep 0.01;
 	};
 	
 	case independent: {
-		_vehicle setVariable ["tf_side", civilian, true];	
+		_vehicle setVariable ["tf_side", civilian, true];
+		sleep 0.01;
 	};
 };
 _vehicle setVariable ["tf_hasRadio", true, true];
+sleep 0.01;
 _vehicle setVariable ["tf_range", 50000, true];
+sleep 0.01;
 
 _vehicle lock 2;
 //Send keys over the network.
@@ -124,13 +134,15 @@ _vehicle lock 2;
 //[[_pid,_side,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 
 _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
+sleep 0.01;
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9]];
+sleep 0.01;
 //_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
 _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 [_vehicle] call life_fnc_clearVehicleAmmo;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
-if((_vInfo select 2) in life_ver_random) then { sleep 5; };
+// if((_vInfo select 2) in life_ver_random) then { sleep 5; };
 
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 //Reskin the vehicle 
@@ -158,6 +170,10 @@ if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "LandRover_ACR") then
 {
 	[[_vehicle,"landrover_nocov",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+};
+if((_vInfo select 1) == "civ" && (_vInfo select 2) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then
+{
+	[[_vehicle,"reb_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 };
 if((_vInfo select 9) == 1) then
 {

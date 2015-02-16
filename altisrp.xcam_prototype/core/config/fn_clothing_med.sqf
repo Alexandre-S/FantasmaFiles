@@ -223,8 +223,8 @@ switch (_filter) do
 	{
 		_ret = 
 		[
-			["ARC_FR_Backpack_CE_Med",nil,2000],
-			["ARC_FR_Backpack_Daguet_Med",nil,2000],
+			// ["ARC_FR_Backpack_CE_Med",nil,2000],
+			// ["ARC_FR_Backpack_Daguet_Med",nil,2000],
 			["B_FieldPack_blk",nil,3000],
 			["B_AssaultPack_cbr",nil,2500],
 			["B_AssaultPack_khk",nil,2500],

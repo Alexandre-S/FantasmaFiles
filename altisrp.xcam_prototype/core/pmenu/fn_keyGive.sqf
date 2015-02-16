@@ -25,7 +25,7 @@ if(player distance _unit > 20) exitWith {hint "Cette personne est trop loin";ctr
 
 _uid = getPlayerUID _unit;
 _owners = _vehicle getVariable "vehicle_info_owners";
-_index = [_uid,_owners] call TON_fnc_index;
+_index = [_uid,_owners] call life_fnc_index;
 if(_index == -1) then 
 {
 	_owners pushBack [_uid,_unit getVariable["realname",name _unit]];
@@ -33,4 +33,4 @@ if(_index == -1) then
 };
 
 hint format["You have given %1 keys to your %2",_unit getVariable["realname",name _unit],typeOf _vehicle];
-[[_vehicle,_unit,profileName], "TON_fnc_clientGetKey",_unit,false] spawn life_fnc_MP;
+[[_vehicle,_unit,profileName], "life_fnc_clientGetKey",_unit,false] spawn life_fnc_MP;

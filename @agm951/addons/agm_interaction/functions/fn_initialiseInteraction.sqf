@@ -21,7 +21,7 @@
 	Example:
 		[{"Default" call AGM_Interaction_fnc_openMenu;}, true, (profileNamespace getVariable ["AGM_Interaction_FlowMenu", false]), AGM_Interaction_Target] call AGM_Interaction_fnc_initialiseInteraction;
 */
-private ["_subMenu", "_selfMenu", "_target"];
+private ["_subMenu", "_selfMenu", "_target","_life_corpse_var"];
 AGM_Interaction_MainButton = _this select 0;
 _subMenu = _this select 1;
 _selfMenu = _this select 3;
@@ -69,7 +69,7 @@ if (_this select 2) then {
 	_ctrlInteractionDialog = _dlgInteractionDialog displayCtrl 3;
 	if (profileNamespace getVariable ["AGM_Interaction_AutoCenterCursor", true]) then {setMousePosition [0.5, 0.5]};
 	if !(_subMenu) then {
-		if(isplayer _target && {_target != player} && {_target isKindOf "Man"}) then {
+		if((isplayer _target && {_target != player} && {_target isKindOf "Man"}) || (_target getVariable["life_corps",false])) then {
 			_ctrlInteractionDialog ctrlSetText ("Cible");
 		} else {
 			_ctrlInteractionDialog ctrlSetText ([_target] call AGM_Core_fnc_getName);

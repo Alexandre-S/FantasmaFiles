@@ -94,6 +94,9 @@ switch(_shop) do
 						["CUP_arifle_M4A1_desert",nil,0],
 						["CUP_30Rnd_556x45_Stanag",nil,0],
 						["optic_Holosight",nil,0],
+						["optic_Arco",nil,0],
+						["optic_Hamr",nil,0],
+						["optic_MRCO",nil,0],
 						["CUP_hgun_M9",nil,0],
 						["CUP_15Rnd_9x19_M9",nil,0],
 						["AGM_M84",nil,0]
@@ -103,19 +106,38 @@ switch(_shop) do
 		};
 	};
 
-	case "cop_infanterie":
+	case "cop_bacpj":
 	{
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_infanterie): {"Vous n'avez pas la formation infanterie !"};
+			case (!license_cop_bacpj): {"Vous n'avez pas la formation BAC / PJ !"};
 			//case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
 			default
 			{
 				_ret =
-				["Armurerie : Infanterie",
+				["Armurerie : BAC et PJ",
 					[
-						["CUP_sgun_AA12",nil,0],
+						["CUP_srifle_CZ550",nil,0],
+						["CUP_5x_22_LR_17_HMR_M",nil,0],
+						["CUP_arifle_XM8_Compact_Rail",nil,0],
+						["CUP_arifle_CZ805_A1",nil,0],
+						["CUP_arifle_CZ805_GL",nil,0],
+						["CUP_arifle_CZ805_A2",nil,0],
+						["CUP_30Rnd_556x45_Stanag",nil,0],
+						["CUP_smg_EVO",nil,0],
+						["CUP_30Rnd_9x19_EVO",nil,0],
+						["SMG_01_F",nil,0],
+						["30Rnd_45ACP_Mag_SMG_01",nil,0],
+						["30Rnd_45ACP_Mag_SMG_01_Tracer_Green",nil,0],
+						["CUP_hgun_MicroUzi",nil,0],
+						["CUP_30Rnd_9x19_UZI",nil,0],
+						["CUP_hgun_TaurusTracker455",nil,0],
+						["CUP_6Rnd_45ACP_M",nil,0]
+					
+					
+					
+						/*["CUP_sgun_AA12",nil,0],
 						["CUP_20Rnd_B_AA12_Pellets",nil,0],
 						["CUP_20Rnd_B_AA12_74Slug",nil,0],
 						["CUP_arifle_M16A2",nil,0],
@@ -129,35 +151,35 @@ switch(_shop) do
 						["CUP_arifle_xm8_sharpshooter",nil,0],
 						["CUP_30Rnd_556x45_Stanag",nil,0],
 						["CUP_arifle_xm8_SAW",nil,0],
-						["CUP_100Rnd_556x45_BetaCMag",nil,0],
-						["CUP_arifle_Mk17_CQC",nil,0],
-						["CUP_arifle_Mk17_CQC_FG",nil,0],
-						["CUP_arifle_Mk17_CQC_SFG",nil,0],
-						["CUP_20Rnd_762x51_B_SCAR",nil,0],
-						["CUP_lmg_M249_para",nil,0],
-						["CUP_lmg_M249",nil,0],
-						["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",nil,0],
-						["CUP_200Rnd_TE4_Yellow_Tracer_556x45_M249",nil,0],
-						["CUP_200Rnd_TE1_Red_Tracer_556x45_M249",nil,0],
-						["CUP_hgun_Glock17",nil,0],
+						["CUP_100Rnd_556x45_BetaCMag",nil,0],*/
+						//["CUP_arifle_Mk17_CQC",nil,0],
+						//["CUP_arifle_Mk17_CQC_FG",nil,0],
+						//["CUP_arifle_Mk17_CQC_SFG",nil,0],
+						//["CUP_20Rnd_762x51_B_SCAR",nil,0],
+						//["CUP_lmg_M249_para",nil,0],
+						//["CUP_lmg_M249",nil,0],
+						//["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",nil,0],
+						//["CUP_200Rnd_TE4_Yellow_Tracer_556x45_M249",nil,0],
+						//["CUP_200Rnd_TE1_Red_Tracer_556x45_M249",nil,0],
+						/*["CUP_hgun_Glock17",nil,0],
 						["CUP_acc_Glock17_Flashlight",nil,0],
 						["CUP_17Rnd_9x19_glock17",nil,0],
 						["CUP_hgun_Glock17",nil,0],
 						["CUP_hgun_Colt1911",nil,0],
 						["CUP_7Rnd_45ACP_1911",nil,0],
-						["optic_MRD",nil,0],
-						["optic_Arco",nil,0],
-						["optic_Hamr",nil,0],
-						["optic_MRCO",nil,0],
-						["MineDetector",nil,0],
-						["acc_pointer_IR",nil,0]
+						["optic_MRD",nil,0],*/
+						//["optic_Arco",nil,0],
+						//["optic_Hamr",nil,0],
+						//["optic_MRCO",nil,0],
+						/*["MineDetector",nil,0],
+						["acc_pointer_IR",nil,0]*/
 					]
 				];
 			};
 		};
 	};
 	
-	case "cop_snipe":
+	/*case "cop_snipe":
 	{
 		switch(true) do
 		{
@@ -204,7 +226,7 @@ switch(_shop) do
 				];
 			};
 		};
-	};
+	};*/
 	
 	case "cop_grenadier":
 	{
@@ -233,26 +255,6 @@ switch(_shop) do
 						["CUP_20Rnd_762x51_B_SCAR",nil,0],
 						["CUP_glaunch_M79",nil,0],
 						["CUP_glaunch_Mk13",nil,0],
-						["CUP_launch_9K32Strela",nil,0],
-						["CUP_Strela_2_M",nil,0],
-						["CUP_launch_NLAW",nil,0],
-						["CUP_NLAW_M",nil,0],
-						["CUP_launch_Mk153Mod0",nil,0],
-						["CUP_optic_SMAW_Scope",nil,0],
-						["CUP_SMAW_HEAA_M",nil,0],
-						["CUP_SMAW_HEDP_M",nil,0],
-						["CUP_launch_MAAWS",nil,0],
-						["CUP_optic_MAAWS_Scope",nil,0],
-						["CUP_MAAWS_HEAT_M",nil,0],
-						["CUP_MAAWS_HEDP_M",nil,0],
-						["CUP_launch_RPG18",nil,0],
-						["CUP_RPG18_M",nil,0],
-						//["CUP_launch_M136",nil,0],
-						//["CUP_M136_M",nil,0],
-						["CUP_launch_Igla",nil,0],
-						["CUP_Igla_M",nil,0],
-						["CUP_launch_FIM92Stinger",nil,0],
-						["CUP_Stinger_M",nil,0],
 						["optic_Hamr",nil,0],
 						["HandGrenade",nil,0],
 						["MiniGrenade",nil,0],
@@ -369,6 +371,7 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Unité Tactique",
 					[
+						["gign_shield",nil,0],
 						["CUP_arifle_Mk17_STD",nil,0],
 						["CUP_arifle_Mk17_STD_FG",nil,0],
 						["CUP_arifle_Mk17_STD_SFG",nil,0],
@@ -383,12 +386,17 @@ switch(_shop) do
 						["CUP_arifle_MG36",nil,0],
 						["CUP_arifle_MG36_camo",nil,0],
 						["CUP_100Rnd_556x45_BetaCMag",nil,0],
+						["CUP_srifle_AWM_des",nil,0],
+						["CUP_srifle_AWM_wdl",nil,0],
+						["CUP_5Rnd_86x70_L115A1",nil,0],
+						["CUP_optic_LeupoldMk4_10x40_LRT_Desert",nil,0],
+						["CUP_optic_LeupoldMk4_10x40_LRT_Woodland",nil,0],
 						["CUP_hgun_Duty",nil,0],
 						["CUP_acc_CZ_M3X",nil,0],
 						["16Rnd_9x21_Mag",nil,0],
 						["optic_DMS",nil,0],
 						["optic_Hamr",nil,0],
-						["optic_tws",nil,0],
+						//["optic_tws",nil,0],
 						["optic_Yorris",nil,0],
 						["acc_pointer_IR",nil,0],
 						["Rangefinder",nil,0],
@@ -399,7 +407,11 @@ switch(_shop) do
 						["MineDetector",nil,0],
 						["CUP_muzzle_snds_G36_black",nil,0],
 						["CUP_muzzle_snds_G36_desert",nil,0],
-						["CUP_muzzle_snds_SCAR_H",nil,0]
+						["CUP_muzzle_snds_SCAR_H",nil,0],
+						["AGM_ItemKestrel",nil,0]
+						//["CUP_srifle_DMR",nil,0],
+						//["CUP_20Rnd_762x51_DMR",nil,0],
+						//["CUP_optic_Leupold_VX3",nil,0]
 					]
 				];
 			};
@@ -417,8 +429,9 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Hauts Gradés",
 					[
+						["rpima_shield",nil,0],
 						["CUP_LRTV",nil,0],
-						["CUP_20Rnd_B_AA12_HE",nil,0],
+						//["CUP_20Rnd_B_AA12_HE",nil,0],
 						["CUP_srifle_M107_Base",nil,0],
 						["CUP_10Rnd_127x99_M107",nil,0],
 						["CUP_5Rnd_127x99_as50_M",nil,0],
@@ -433,7 +446,7 @@ switch(_shop) do
 						["CUP_10Rnd_9x39_SP5_VSS_M",nil,0],
 						["CUP_optic_PSO_3",nil,0],
 						["CUP_glaunch_M32",nil,0],
-						["CUP_6Rnd_HE_M203",nil,0],
+						//["CUP_6Rnd_HE_M203",nil,0],
 						["CUP_6Rnd_FlareWhite_M203",nil,0],
 						["CUP_6Rnd_FlareGreen_M203",nil,0],
 						["CUP_6Rnd_FlareRed_M203",nil,0],
@@ -441,7 +454,7 @@ switch(_shop) do
 						["CUP_6Rnd_Smoke_M203",nil,0],
 						["CUP_6Rnd_SmokeRed_M203",nil,0],
 						["CUP_6Rnd_SmokeGreen_M203",nil,0],
-						["CUP_6Rnd_SmokeYellow_M203",nil,0],
+						//["CUP_6Rnd_SmokeYellow_M203",nil,0],
 						["hgun_Pistol_heavy_02_F",nil,0],
 						["6Rnd_45ACP_Cylinder",nil,0],
 						["optic_Yorris",nil,0],
@@ -450,7 +463,27 @@ switch(_shop) do
 						["optic_tws",nil,0],
 						["CUP_muzzle_snds_M16",nil,0],
 						["CUP_muzzle_snds_M16_camo",nil,0],
-						["CUP_muzzle_snds_SCAR_L",nil,0]
+						["CUP_muzzle_snds_SCAR_L",nil,0],
+						["CUP_launch_9K32Strela",nil,0],
+						["CUP_Strela_2_M",nil,0],
+						["CUP_launch_NLAW",nil,0],
+						["CUP_NLAW_M",nil,0],
+						["CUP_launch_Mk153Mod0",nil,0],
+						["CUP_optic_SMAW_Scope",nil,0],
+						["CUP_SMAW_HEAA_M",nil,0],
+						["CUP_SMAW_HEDP_M",nil,0],
+						["CUP_launch_MAAWS",nil,0],
+						["CUP_optic_MAAWS_Scope",nil,0],
+						["CUP_MAAWS_HEAT_M",nil,0],
+						["CUP_MAAWS_HEDP_M",nil,0],
+						["CUP_launch_RPG18",nil,0],
+						["CUP_RPG18_M",nil,0],
+						//["CUP_launch_M136",nil,0],
+						//["CUP_M136_M",nil,0],
+						["CUP_launch_Igla",nil,0],
+						["CUP_Igla_M",nil,0],
+						["CUP_launch_FIM92Stinger",nil,0],
+						["CUP_Stinger_M",nil,0]
 					]
 				];
 			};
@@ -473,6 +506,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["AGM_Altimeter","SmartWatch Altimètre",100],
 							["ItemMap",nil,10],
 							["AGM_MapTools",nil,500],
 							["AGM_SpareBarrel",nil,1000],
@@ -603,6 +637,7 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,75],
 							["ItemWatch","SmartWatch",50],
+							["AGM_Altimeter","SmartWatch Altimètre",100],
 							["NVGoggles",nil,2000],
 							["ItemMap",nil,10],
 							["AGM_CableTie",nil,100],
@@ -643,6 +678,8 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerR",nil,800];
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerG",nil,800];
 					(_ret select 1) pushBack ["optic_Arco",nil,8000];
+					(_ret select 1) pushBack ["optic_Hamr",nil,8000];
+					(_ret select 1) pushBack ["optic_MRCO",nil,8000];
 					// (_ret select 1) pushBack ["CUP_srifle_CZ750",nil,60000];
 					//(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750_Tracer",nil,1000];
 					//(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750",nil,1000];
@@ -652,6 +689,7 @@ switch(_shop) do
 					// (_ret select 1) pushBack ["CUP_srifle_SVD_des_ghillie_pso",nil,90000];
 					(_ret select 1) pushBack ["CUP_10Rnd_762x54_SVD_M",nil,1000];
 					(_ret select 1) pushBack ["CUP_optic_PSO_1",nil,8000];
+					(_ret select 1) pushBack ["CUP_optic_NSPU",nil,16000];
 					(_ret select 1) pushBack ["CUP_srifle_M14_Aim",nil,70000];
 					(_ret select 1) pushBack ["CUP_20Rnd_762x51_DMR",nil,1000];
 					(_ret select 1) pushBack ["CUP_optic_CompM2_Black",nil,7000];
@@ -688,6 +726,7 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_optic_SUSAT",nil,4000];
 					(_ret select 1) pushBack ["CUP_optic_CWS",nil,4000];
 					(_ret select 1) pushBack ["CUP_optic_ACOG",nil,4000];
+					(_ret select 1) pushBack ["Rangefinder",nil,15000];
 				};
 				// Rang 3
 				if(__GETC__(life_reblevel) >= 3) then
@@ -697,6 +736,8 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_optic_PSO_3",nil,8000];
 					(_ret select 1) pushBack ["CUP_srifle_M107_Base",nil,700000];
 					(_ret select 1) pushBack ["CUP_10Rnd_127x99_M107",nil,5000];
+					(_ret select 1) pushBack ["optic_LRPS",nil,12500];
+					(_ret select 1) pushBack ["optic_SOS",nil,13500];
 					(_ret select 1) pushBack ["CUP_launch_9K32Strela",nil,300000];
 					(_ret select 1) pushBack ["CUP_Strela_2_M",nil,10000];
 					(_ret select 1) pushBack ["CUP_launch_RPG7V",nil,300000];
@@ -717,8 +758,12 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_Igla_M",nil,10000];
 					(_ret select 1) pushBack ["CUP_launch_FIM92Stinger",nil,300000];
 					(_ret select 1) pushBack ["CUP_Stinger_M",nil,10000];
+					(_ret select 1) pushBack ["IEDUrbanSmall_Remote_Mag",nil,50000];
+					(_ret select 1) pushBack ["IEDLandSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["APERSMine_Range_Mag",nil,70000];
 					(_ret select 1) pushBack ["APERSTripMine_Wire_Mag",nil,70000];
+					(_ret select 1) pushBack ["CUP_IED_V2_M",nil,100000];
+					(_ret select 1) pushBack ["CUP_IED_V3_M",nil,100000];
 					(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,200000];
 					(_ret select 1) pushBack ["O_HMG_01_high_weapon_F",nil,400000];
 					(_ret select 1) pushBack ["O_HMG_01_support_high_F",nil,7000];
@@ -826,6 +871,7 @@ switch(_shop) do
 				["ItemGPS",nil,100],
 				["ItemCompass",nil,75],
 				["ItemWatch","SmartWatch",50],
+				["AGM_Altimeter","SmartWatch Altimètre",100],
 				["ItemMap",nil,10],
 				["AGM_MapTools",nil,500],
 				["ToolKit",nil,9500],

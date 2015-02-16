@@ -29,6 +29,45 @@ switch (_vehicle) do
 			case 10: {_color = "Dépanneur"};
 			case 11: {_color = "Vigil"};
 			case 12: {_color = "Noir"};
+			case 13: {_color = "Taxi"};
+		};
+	};
+	
+	case "B_G_Offroad_01_F" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Camo";};
+			case 1: {_color = "Camo";};
+			case 2: {_color = "Camo";};
+			case 3: {_color = "Camo";};
+			case 4: {_color = "Camo";};
+			case 5: {_color = "Camo"};
+			case 6: {_color = "Camo"};
+			case 7: {_color = "Camo"};
+			case 8: {_color = "Camo"};
+			case 9: {_color = "Camo"};
+			case 10: {_color = "Camo"};
+			case 11: {_color = "Camo"};
+		};
+	};
+
+	case "B_G_Offroad_01_armed_F" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Camo";};
+			case 1: {_color = "Camo";};
+			case 2: {_color = "Camo";};
+			case 3: {_color = "Camo";};
+			case 4: {_color = "Camo";};
+			case 5: {_color = "Camo"};
+			case 6: {_color = "Camo"};
+			case 7: {_color = "Camo"};
+			case 8: {_color = "Camo"};
+			case 9: {_color = "Camo"};
+			case 10: {_color = "Camo"};
+			case 11: {_color = "Camo"};
 		};
 	};
 	
@@ -157,6 +196,7 @@ switch (_vehicle) do
 			case 9: {_color = "Banalisée Noir";};
 			case 10: {_color = "Banalisée argenté";};
 			case 11: {_color = "Banalisée orange";};		
+			case 12: {_color = "Taxi";};	
 		};
 	};
 	
@@ -439,6 +479,7 @@ switch (_vehicle) do
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
 			case 2: {_color = "Depanneur"};
+			case 3: {_color = "Gouvernement"};
 		};
 	};
 	

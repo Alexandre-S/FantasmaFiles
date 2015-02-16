@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_vehicleShopBuy.sqf
 	Author: Bryan "Tonic" Boardwine
@@ -12,6 +13,8 @@ _className = lbData[2302,(lbCurSel 2302)];
 _vIndex = lbValue[2302,(lbCurSel 2302)];
 _vehicleList = [life_veh_shop select 0] call life_fnc_vehicleListCfg;
 _basePrice = (_vehicleList select _vIndex) select 1;
+//achat donator
+_basePrice = ceil(_basePrice - (((__GETC__(life_donator) * 5) / 100) * _basePrice));
  if(_mode) then {_basePrice = round(_basePrice)};
 _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
@@ -66,12 +69,21 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setPos _spawnPoint;
 	_vehicle setFuel 0.8;
 };
-_vehicle setVariable["Trunk",[],true];
-_vehicle setVariable["idleTime",time,true];
-_vehicle setVariable["lootModified",false,true];
+_vehicle setVariable ["BIS_enableRandomization",false];
+sleep 0.01;
+_vehicle setVariable["Trunk",[[],0],true];
+sleep 0.01;
+[] call life_fnc_getHLC;
+[[_vehicle,"idleTime",time],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
+// sleep 0.01;
+// [[_vehicle,"lootM",false],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
+sleep 0.01;
 _vehicle setVariable ["R3F_LOG_disabled", false, true];
+sleep 0.01;
 _vehicle setVariable ["tf_hasRadio", true, true];
+sleep 0.01;
 _vehicle setVariable ["tf_range", 50000, true];
+sleep 0.01;
 
 _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 
@@ -86,7 +98,7 @@ if(_mode) then {
 	//};
 };
 
-if(_className in life_ver_random) then { sleep 5; };
+// if(_className in life_ver_random) then { sleep 5; };
 life_vehicles pushBack _vehicle;
 [[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 [_vehicle] call life_fnc_clearVehicleAmmo;
@@ -98,11 +110,13 @@ _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 switch(playerSide) do {
 	case west: {
 		_vehicle setVariable ["tf_side", playerSide, true];	
+		sleep 0.01;
 		[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 	};
 	
 	case civilian: {
-		_vehicle setVariable ["tf_side", playerSide, true];	
+		_vehicle setVariable ["tf_side", playerSide, true];
+		sleep 0.01;
 		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
@@ -112,10 +126,14 @@ switch(playerSide) do {
 		if(_className == "C_Offroad_01_F" && _colorIndex == 10) then {
 			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
 		};
+		if(_className in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {
+			[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
+		};
 	};
 	
 	case independent: {
 		_vehicle setVariable ["tf_side", civilian, true];
+		sleep 0.01;
 		if(_className == "C_Offroad_01_F") then {
 			[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 		};

@@ -99,7 +99,11 @@ if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith {life_action_inUs
 	// [false,"boltcutter",1] call life_fnc_handleInv;
 	// life_boltcutter_uses = 0;
 // };
-_chance = 5;
+switch (typeOf _building) do {
+	case "Land_Dome_Big_F": {_chance = 20;};
+	case "Land_Research_house_V1_F": {_chance = 20;};
+	default {_chance = 5;}
+};
 _dice = random(100);
 if(_dice <= _chance) then
 {

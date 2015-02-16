@@ -29,7 +29,7 @@ private
 _key = _this;
 _handled = false;
 
-if ((alive player) && (player == (vehicle player))) then
+if ((alive player) && {player == (vehicle player)}) then
 {
     call
     {
@@ -128,7 +128,7 @@ if ((alive player) && (player == (vehicle player))) then
             _cursorTarget = cursorTarget;
             _relativeDirection = [_cursorTarget, player] call BIS_fnc_RelativeDirTo;
 
-            if ((!isNull _cursorTarget) && {(alive _cursorTarget) && (_cursorTarget isKindOf "CAManBase") && ((player distance _cursorTarget) <= MOCAP_BACK_GRAB_DISTANCE) && (_relativeDirection >= 150) && (_relativeDirection <= 210)}) then
+            if ((!isNull _cursorTarget) && {(alive _cursorTarget) && (_cursorTarget isKindOf "CAManBase") && (isPlayer cursorTarget) && ((player distance _cursorTarget) <= MOCAP_BACK_GRAB_DISTANCE) && (_relativeDirection >= 150) && (_relativeDirection <= 210)}) then
             {
                 _playerStance = stance player;
                 _targetStance = stance _cursorTarget;

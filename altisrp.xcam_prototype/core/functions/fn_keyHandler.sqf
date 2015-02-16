@@ -114,6 +114,14 @@ switch (_code) do
 		};
 	};*/
 	
+	// O, police gate opener
+	case 24:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
+	};
+	
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
@@ -376,6 +384,13 @@ switch (_code) do
 			[] call life_fnc_suicideBomb;
 		};
 	};*/
+	//6 Nitro
+	case 7:
+	{
+		if(!_alt && !_ctrlKey) then {
+			[] spawn life_fnc_activateNitro;
+		};
+	};
 };
 
 _handled;

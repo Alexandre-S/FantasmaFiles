@@ -37,7 +37,7 @@ if(_functionName == "bis_fnc_execvm") then {
 	if(_param2 != "initPlayerServer.sqf") exitWith {_exitScope = true;};
 };
 
-if((_callerName == "" OR _callerUID == "") && (!(toLower(_functionName) in ["bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","mocap_fnc_strokeeffects"]))) exitWith {diag_log format["===========MPexecFAIL3=========== %1 - %2 - %3",_functionName,_callerName,_callerUID];}; //NO.
+if((_callerName == "" OR _callerUID == "") && (!(toLower(_functionName) in ["bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","mocap_fnc_strokeeffects","life_fnc_attachSmoke"]))) exitWith {diag_log format["===========MPexecFAIL3=========== %1 - %2 - %3",_functionName,_callerName,_callerUID];}; //NO.
 
 if(_callerUID != "__SERVER__" && _callerName != "__SERVER__" && toLower(_functionName) in ["spy_fnc_cookiejar","spy_fnc_notifyadmins"]) then {
 	//Check if the sender & reported UID match, if they don't exit.

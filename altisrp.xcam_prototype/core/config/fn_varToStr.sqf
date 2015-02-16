@@ -66,8 +66,21 @@ switch (_var) do
 	case "life_inv_storagesmall": {(localize "STR_Item_StorageBS")};
 	case "life_inv_storagebig": {(localize "STR_Item_StorageBL")};
 	case "life_inv_mauer": {"Barrière"};
+	case "life_inv_sandbag": {"Sacs de sables (droits)"};
+	case "life_inv_sandbagr": {"Sacs de sables (arrondis)"};
 	case "life_inv_cone": {"Cone"};
 	case "life_inv_gpstracker": {"GPS Tracker"};
+	case "life_inv_chicken": {"Viande de poulet"};
+	case "life_inv_goat": {"Viande de chèvre"};
+	case "life_inv_sheep": {"Viande de mouton"};
+	case "life_inv_dog": {"Viande de chien"};
+	case "life_inv_nitro": {"Injecteur Nitro"};
+	case "life_inv_excavator": {"Détecteur sous marin"};
+	case "life_inv_doubloon": {"Doublon d'or"};
+	case "life_inv_silverpiece": {"Pièce d'argent"};
+	case "life_inv_ruby": {"Rubis"};
+	case "life_inv_diamondf": {"Diamant Parfait"};
+	case "life_inv_pearl": {"Perle"};
 
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
@@ -81,8 +94,8 @@ switch (_var) do
 	case "license_cop_air": {(localize "STR_License_Pilot")};
 	case "license_cop_swat": {(localize "STR_License_Swat")};
 	case "license_cop_cg": {(localize "STR_License_CG")};
-	case "license_cop_snipe": {(localize "STR_License_Snipe")};
-	case "license_cop_infanterie": {(localize "STR_License_Infant")};
+	//case "license_cop_snipe": {(localize "STR_License_Snipe")};
+	case "license_cop_bacpj": {(localize "STR_License_BacPJ")};
 	case "license_cop_grenadier": {(localize "STR_License_grenad")};
 	case "license_cop_piloteauto": {(localize "STR_License_PilotAuto")};
 	case "license_cop_onumecano": {(localize "STR_License_OMecano")};
@@ -102,4 +115,7 @@ switch (_var) do
 	case "license_civ_gvt": {(localize "STR_License_Gvt")};
 	case "license_civ_vigil": {(localize "STR_License_Vigil")};
 	case "license_civ_dep": {"Licence de dépanneur"};
+	case "license_civ_hunting": {"Licence de chasseur"};
+	case "license_civ_taxi": {"Licence de taxi"};
+	default {"Erreur"};
 };
