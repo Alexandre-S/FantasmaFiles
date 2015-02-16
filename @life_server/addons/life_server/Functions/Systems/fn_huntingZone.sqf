@@ -99,7 +99,7 @@ goatgroup = createGroup Civilian;
 	{
 		sleep 60*5;
 		{
-			if((_x distance _pos) > 1200) then
+			if((_x distance _pos) > 800) then
 			{
 				deleteVehicle _x;
 				life_animals_array = life_animals_array - [_x];
