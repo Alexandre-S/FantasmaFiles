@@ -130,7 +130,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Altis Life RPG";
-		overviewText="Altis Life RPG 5.5";
+		overviewText="Altis Life RPG 5.6.1";
 		startWeather=0;
 		startWind=0.099999994;
 		startWaves=0.099999994;
@@ -141,8 +141,8 @@ class Mission
 		year=2016;
 		month=8;
 		day=6;
-		hour=18;
-		minute=55;
+		hour=12;
+		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
