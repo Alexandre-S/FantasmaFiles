@@ -192,11 +192,12 @@ switch (_vehicle) do
 			case 5: {_color = "Noir et flammes bleues";};
 			case 6: {_color = "Léopard";};
 			case 7: {_color = "Rouillé";};
-			case 8: {_color = "Banalisée rouge foncé";};
-			case 9: {_color = "Banalisée Noir";};
-			case 10: {_color = "Banalisée argenté";};
-			case 11: {_color = "Banalisée orange";};		
-			case 12: {_color = "Taxi";};	
+			case 8: {_color = "Noir";};
+			case 9: {_color = "Banalisée rouge foncé";};
+			case 10: {_color = "Banalisée Noir";};
+			case 11: {_color = "Banalisée argenté";};
+			case 12: {_color = "Banalisée orange";};		
+			case 13: {_color = "Taxi";};	
 		};
 	};
 	
