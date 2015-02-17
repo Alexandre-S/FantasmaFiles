@@ -167,7 +167,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 1";
+					description="Réservé - ONU  1";
 				};
 				class Item1
 				{
@@ -180,7 +180,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 2";
+					description="Réservé - ONU  2";
 				};
 				class Item2
 				{
@@ -193,7 +193,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 3";
+					description="Réservé - ONU  3";
 				};
 				class Item3
 				{
@@ -206,7 +206,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 4";
+					description="Réservé - ONU  4";
 				};
 				class Item4
 				{
@@ -219,7 +219,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 5";
+					description="Réservé - ONU  5";
 				};
 				class Item5
 				{
@@ -232,7 +232,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_6";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 6";
+					description="Réservé - ONU  6";
 				};
 				class Item6
 				{
@@ -245,7 +245,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_7";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 7";
+					description="Réservé - ONU  7";
 				};
 				class Item7
 				{
@@ -258,7 +258,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_8";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 8";
+					description="Réservé - ONU  8";
 				};
 				class Item8
 				{
@@ -271,7 +271,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_9";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 9";
+					description="Réservé - ONU  9";
 				};
 				class Item9
 				{
@@ -284,7 +284,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_10";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 10";
+					description="Réservé - ONU  10";
 				};
 				class Item10
 				{
@@ -297,7 +297,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_11";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 11";
+					description="Réservé - ONU  11";
 				};
 				class Item11
 				{
@@ -310,7 +310,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_12";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 12";
+					description="Réservé - ONU  12";
 				};
 				class Item12
 				{
@@ -323,7 +323,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_13";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 13";
+					description="Réservé - ONU  13";
 				};
 				class Item13
 				{
@@ -336,7 +336,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_14";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 14";
+					description="Réservé - ONU  14";
 				};
 				class Item14
 				{
@@ -349,7 +349,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_15";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 15";
+					description="Réservé - ONU  15";
 				};
 				class Item15
 				{
@@ -362,7 +362,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_16";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - Gendarmerie 16";
+					description="Réservé - ONU  16";
 				};
 				class Item16
 				{
@@ -375,7 +375,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_17";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 17";
+					description="Réservé premium - ONU 17";
 				};
 				class Item17
 				{
@@ -388,7 +388,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_18";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 18";
+					description="Réservé premium - ONU 18";
 				};
 				class Item18
 				{
@@ -401,7 +401,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_19";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 19";
+					description="Réservé premium - ONU 19";
 				};
 				class Item19
 				{
@@ -414,7 +414,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_20";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 20";
+					description="Réservé premium - ONU 20";
 				};
 				class Item20
 				{
@@ -427,7 +427,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_21";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 21";
+					description="Réservé premium - ONU 21";
 				};
 				class Item21
 				{
@@ -440,7 +440,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_22";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 22";
+					description="Réservé premium - ONU 22";
 				};
 				class Item22
 				{
@@ -453,7 +453,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_23";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 23";
+					description="Réservé premium - ONU 23";
 				};
 				class Item23
 				{
@@ -466,7 +466,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_24";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 24";
+					description="Réservé premium - ONU 24";
 				};
 				class Item24
 				{
@@ -479,7 +479,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_25";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 25";
+					description="Réservé premium - ONU 25";
 				};
 				class Item25
 				{
@@ -492,7 +492,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_26";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 26";
+					description="Réservé premium - ONU 26";
 				};
 				class Item26
 				{
@@ -505,7 +505,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_27";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 27";
+					description="Réservé premium - ONU 27";
 				};
 				class Item27
 				{
@@ -518,7 +518,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_28";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 28";
+					description="Réservé premium - ONU 28";
 				};
 				class Item28
 				{
@@ -531,7 +531,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_29";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 29";
+					description="Réservé premium - ONU 29";
 				};
 				class Item29
 				{
@@ -544,7 +544,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_30";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - Gendarmerie 30";
+					description="Réservé premium - ONU 30";
 				};
 			};
 		};
@@ -2547,8 +2547,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""];  this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
-
+					init="this enableSimulation false; this addAction[""Magasin de lq Gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire de la gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : Précision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item29
 				{
@@ -2697,8 +2696,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_1";
-					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""];  this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
-
+					init="this enableSimulation false; this allowDamage false; this addAction[""Magasin de l'ONU"",life_fnc_virt_menu,""cop""]; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 2 ']; this allowDamage false;  this addAction[""Vestiaire de l'ONU"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : équipement général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : Infanterie"",life_fnc_weaponShopMenu,""cop_infanterie""]; this addAction[""Armurerie : Précision"",life_fnc_weaponShopMenu,""cop_snipe""]; this addAction[""Armurerie : Grenadier"",life_fnc_weaponShopMenu,""cop_grenadier""]; this addAction[""Armurerie : Aérienne"",life_fnc_weaponShopMenu,""cop_airweapons""]; this addAction[""Armurerie : Mécano / Personnel naviguant"",life_fnc_weaponShopMenu,""cop_onumecano""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_onumedic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item42
 				{
@@ -4474,7 +4472,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=325;
+		items=328;
 		class Item0
 		{
 			position[]={631.26245,1.8341906,479.21826};
@@ -7508,10 +7506,40 @@ class Mission
 			vehicle="Land_BoatSmall_2a";
 			skill=0.60000002;
 		};
+		class Item325
+		{
+			position[]={5555.3457,38.155663,2517.561};
+			azimut=362.68259;
+			id=579;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
+		};
+		class Item326
+		{
+			position[]={8876.3105,26.69738,4255.8862};
+			azimut=360.23416;
+			id=580;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
+		};
+		class Item327
+		{
+			position[]={7627.7007,59.66,4736.5952};
+			azimut=276.38092;
+			id=581;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
+		};
 	};
 	class Markers
 	{
-		items=169;
+		items=172;
 		class Item0
 		{
 			position[]={913.10229,7.9576178,494.98779};
@@ -8017,7 +8045,7 @@ class Mission
 		{
 			position[]={5971.3086,16.4,1800.0066};
 			name="oil_trader_2";
-			text="Diamant et trésors";
+			text="Diamant";
 			type="b_unknown";
 			colorName="ColorOrange";
 		};
@@ -8453,7 +8481,7 @@ class Mission
 		};
 		class Item124
 		{
-			position[]={4334.8066,7.73,3511.8396};
+			position[]={4336.9175,7.73,3509.8457};
 			name="civ_car_1_2";
 			type="Empty";
 			angle=71.276016;
@@ -8488,7 +8516,7 @@ class Mission
 			name="peaches_1";
 			text="Plantation de tomates";
 			type="loc_Tree";
-			colorName="ColorCIV";
+			colorName="ColorOrange";
 		};
 		class Item129
 		{
@@ -8797,6 +8825,30 @@ class Mission
 			name="cop_ship_2";
 			type="loc_Quay";
 			colorName="ColorWhite";
+		};
+		class Item169
+		{
+			position[]={5555.3672,38.156761,2517.4604};
+			name="atm_marker_4_2_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=183.46266;
+		};
+		class Item170
+		{
+			position[]={8876.2783,26.697443,4255.8706};
+			name="atm_marker_4_2_1_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=181.01419;
+		};
+		class Item171
+		{
+			position[]={7627.7144,59.66,4736.5601};
+			name="atm_marker_4_2_1_1_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=97.160843;
 		};
 	};
 };
