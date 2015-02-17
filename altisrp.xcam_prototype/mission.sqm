@@ -2229,7 +2229,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1";
-					init="removeallWeapons this;  this enableSimulation false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this allowDamage false;  this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 				};
 				class Item2
 				{
@@ -2741,7 +2741,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_1";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 				};
 				class Item46
 				{
@@ -2753,7 +2753,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
 					text="reb_1_2";
-					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+					init="removeallWeapons this;  this enableSimulation false;  this allowDamage false; this addAction[""Marché Noir"",life_fnc_virt_menu,""rebel""]; this addAction[""Vestaire illégal"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Armurerie illégale"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[format[""%1 ($%2)"",[""license_civ_rebel""] call life_fnc_varToStr,[([""rebel""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""rebel"",0,false,false,"""",' !license_civ_rebel && playerSide == civilian ']; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 				};
 				class Item47
 				{
@@ -4611,7 +4611,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item14
 		{
@@ -4621,7 +4621,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item15
 		{
@@ -4631,7 +4631,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item16
 		{
@@ -4641,7 +4641,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item17
 		{
@@ -4651,7 +4651,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item18
 		{
@@ -4661,7 +4661,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item19
 		{
@@ -4671,7 +4671,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item20
 		{
@@ -6501,7 +6501,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item223
 		{
@@ -6911,7 +6911,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item264
 		{
@@ -7208,7 +7208,7 @@ class Mission
 			vehicle="Land_Atm_01_F";
 			skill=0.60000002;
 			text="a1_2";
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item295
 		{
