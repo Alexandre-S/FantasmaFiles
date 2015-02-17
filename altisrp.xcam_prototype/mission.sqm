@@ -167,7 +167,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_1";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  1";
+					description="Réservé - Gendarmerie 1";
 				};
 				class Item1
 				{
@@ -180,7 +180,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_2";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  2";
+					description="Réservé - Gendarmerie 2";
 				};
 				class Item2
 				{
@@ -193,7 +193,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_3";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  3";
+					description="Réservé - Gendarmerie 3";
 				};
 				class Item3
 				{
@@ -206,7 +206,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  4";
+					description="Réservé - Gendarmerie 4";
 				};
 				class Item4
 				{
@@ -219,7 +219,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_5";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  5";
+					description="Réservé - Gendarmerie 5";
 				};
 				class Item5
 				{
@@ -232,7 +232,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_6";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  6";
+					description="Réservé - Gendarmerie 6";
 				};
 				class Item6
 				{
@@ -245,7 +245,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_7";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  7";
+					description="Réservé - Gendarmerie 7";
 				};
 				class Item7
 				{
@@ -258,7 +258,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_8";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  8";
+					description="Réservé - Gendarmerie 8";
 				};
 				class Item8
 				{
@@ -271,7 +271,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_9";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  9";
+					description="Réservé - Gendarmerie 9";
 				};
 				class Item9
 				{
@@ -284,7 +284,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_10";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  10";
+					description="Réservé - Gendarmerie 10";
 				};
 				class Item10
 				{
@@ -297,7 +297,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_11";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  11";
+					description="Réservé - Gendarmerie 11";
 				};
 				class Item11
 				{
@@ -310,7 +310,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_12";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  12";
+					description="Réservé - Gendarmerie 12";
 				};
 				class Item12
 				{
@@ -323,7 +323,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_13";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  13";
+					description="Réservé - Gendarmerie 13";
 				};
 				class Item13
 				{
@@ -336,7 +336,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_14";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  14";
+					description="Réservé - Gendarmerie 14";
 				};
 				class Item14
 				{
@@ -349,7 +349,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_15";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  15";
+					description="Réservé - Gendarmerie 15";
 				};
 				class Item15
 				{
@@ -362,7 +362,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_16";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé - ONU  16";
+					description="Réservé - Gendarmerie 16";
 				};
 				class Item16
 				{
@@ -375,7 +375,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_17";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 17";
+					description="Réservé premium - Gendarmerie 17";
 				};
 				class Item17
 				{
@@ -388,7 +388,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_18";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 18";
+					description="Réservé premium - Gendarmerie 18";
 				};
 				class Item18
 				{
@@ -401,7 +401,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_19";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 19";
+					description="Réservé premium - Gendarmerie 19";
 				};
 				class Item19
 				{
@@ -414,7 +414,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_20";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 20";
+					description="Réservé premium - Gendarmerie 20";
 				};
 				class Item20
 				{
@@ -427,7 +427,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_21";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 21";
+					description="Réservé premium - Gendarmerie 21";
 				};
 				class Item21
 				{
@@ -440,7 +440,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_22";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 22";
+					description="Réservé premium - Gendarmerie 22";
 				};
 				class Item22
 				{
@@ -453,7 +453,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_23";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 23";
+					description="Réservé premium - Gendarmerie 23";
 				};
 				class Item23
 				{
@@ -466,7 +466,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_24";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 24";
+					description="Réservé premium - Gendarmerie 24";
 				};
 				class Item24
 				{
@@ -479,7 +479,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_25";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 25";
+					description="Réservé premium - Gendarmerie 25";
 				};
 				class Item25
 				{
@@ -492,7 +492,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_26";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 26";
+					description="Réservé premium - Gendarmerie 26";
 				};
 				class Item26
 				{
@@ -505,7 +505,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_27";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 27";
+					description="Réservé premium - Gendarmerie 27";
 				};
 				class Item27
 				{
@@ -518,7 +518,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_28";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 28";
+					description="Réservé premium - Gendarmerie 28";
 				};
 				class Item28
 				{
@@ -531,7 +531,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_29";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 29";
+					description="Réservé premium - Gendarmerie 29";
 				};
 				class Item29
 				{
@@ -544,7 +544,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_30";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="Réservé premium - ONU 30";
+					description="Réservé premium - Gendarmerie 30";
 				};
 			};
 		};
