@@ -45,9 +45,12 @@
 	
 	while{true} do
 	{
-		sleep 600;
+		sleep 900;
 		[] call _fnc_water;
-		sleep 250;
+	};
+	while{true} do
+	{
+		sleep 1200;
 		[] call _fnc_food;
 	};
 };
