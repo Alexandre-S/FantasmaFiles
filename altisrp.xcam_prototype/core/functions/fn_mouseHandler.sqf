@@ -13,7 +13,7 @@ _code = _this select 1;
 _handled = false;
 
 if(_code == 1)then{
-	if((vehicle player != player && {driver (vehicle player) == player}) || (playerside == civilian && (!license_civ_gvt || !license_civ_vigil || !license_civ_rebel) && !((currentWeapon player) in life_civ_weapon)))then{
+	if((vehicle player != player && {driver (vehicle player) == player}) || (playerside == civilian && (!license_civ_gvt && !license_civ_vigil && !license_civ_rebel) && !((currentWeapon player) in life_civ_weapon)))then{
 		_handled=false;
 		[] spawn {
 			sleep 0.2;
