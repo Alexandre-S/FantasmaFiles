@@ -21,7 +21,7 @@ _items set[count _items, "diamondf"];
 if (playerSide == west) exitWith {hint "Les flics ne peuvent pas fouiller une épave de bateau"};
 _nObject = nearestObject[player,"Land_UWreck_FishingBoat_F"];
 if (player distance _nObject > 50) exitWith {titleText["Vous devez être plus proche d'une épave pour utiliser le détecteur","PLAIN"]};
-if ((getPosASL player) select 2 > -10) exitWith {titleText["Le détecteur ne marche pas à cette profondeur (Vous n'êtes pas assez profond).","PLAIN"]};
+if ((getPosASL player) select 2 > -8) exitWith {titleText["Le détecteur ne marche pas à cette profondeur (Vous n'êtes pas assez profond).","PLAIN"]};
 titleText["Détection en cours...","PLAIN"];
 life_action_in_use = true;
 
@@ -32,7 +32,7 @@ while{life_carryWeight < life_maxWeight} do
 {
 	if (speed player > 1) exitWith {};
 	if (player distance _nObject > 50) exitWith {titleText["Vous devez être plus proche d'une épave pour utiliser le détecteur","PLAIN"]};
-	if ((getPosASL player) select 2 > -10) exitWith {titleText["Le détecteur ne marche pas à cette profondeur (Vous n'êtes pas assez profond).","PLAIN"]};
+	if ((getPosASL player) select 2 > -8) exitWith {titleText["Le détecteur ne marche pas à cette profondeur (Vous n'êtes pas assez profond).","PLAIN"]};
 	if (life_carryWeight >= life_maxWeight) exitWith {_success=true;};
 	_random = _items select round (random ((count _items)-1));
 	_sum =[_random,1,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
