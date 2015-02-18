@@ -2280,7 +2280,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
 				class Item6
 				{
@@ -2421,7 +2421,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
 				class Item18
 				{
@@ -3041,7 +3041,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
 				class Item72
 				{
@@ -3052,7 +3052,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
 				class Item73
 				{
@@ -3259,7 +3259,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
 				class Item91
 				{
