@@ -3210,13 +3210,13 @@ class Mission
 				class Item86
 				{
 					position[]={8036.5596,2.24,5212.1636};
-					azimut=-518.95715;
+					azimut=-518.95697;
 					special="NONE";
 					id=191;
 					side="CIV";
 					vehicle="C_man_shorts_3_F_euro";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_5"",""civ"",""Marchand de bateau""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_5""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Marchand de bateau"",life_fnc_vehicleShopMenu,[""civ_ship"",civilian,""civ_ship_6"",""civ"",""Marchand de bateau""]];  this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Ship"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_ship_6""; life_garage_type = ""Ship"";  },"""",0,false,false,"""",'playerSide == civilian'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item87
 				{
@@ -9466,7 +9466,7 @@ class Mission
 		class Item162
 		{
 			position[]={8070.9526,-0.058016069,5263.2725};
-			name="civ_ship_5_1";
+			name="civ_ship_6";
 			type="loc_Quay";
 			colorName="ColorWhite";
 		};
