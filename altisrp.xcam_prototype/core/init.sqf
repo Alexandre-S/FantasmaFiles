@@ -127,7 +127,7 @@ combat_mode =
 			while {((player getVariable ["combat_mode",0]) > time - 60)} do
 			{
 				[] call life_fnc_hudUpdate;
-				if (cameraView == "External" OR {playerside == civilian && cameraView == "GUNNER" && (!license_civ_vigil && !license_civ_rebel) && !((currentWeapon player) in life_civ_weapon)} ) then
+				if (cameraView == "External" OR {playerside == civilian && cameraView == "GUNNER" && (!license_civ_gvt && !license_civ_vigil && !license_civ_rebel) && !((currentWeapon player) in life_civ_weapon)} ) then
 				{
 					if(vehicle player == player) then{
 						player switchCamera "Internal";
