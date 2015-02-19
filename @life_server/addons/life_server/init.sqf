@@ -124,8 +124,8 @@ if(!isHLC) then {
 		[] spawn  {
 		  while{true} do
 		  {
-			sleep (15 * 60);
-			if(countsellitem > 2000 && ((time - last_sellArrayMulti) > 1800)) then {
+			sleep (1 * 60);
+			if(countsellitem > 1000 && ((time - last_sellArrayMulti) > 900)) then {
 				last_sellArrayMulti = time;
 				[] call TON_fnc_sellArrayMulti;
 			};
@@ -333,8 +333,8 @@ else
 	[] spawn  {
 	  while{true} do
 	  {
-		sleep (15 * 60);
-		if(countsellitem > 2000 && ((time - last_sellArrayMulti) > 1800)) then {
+		sleep (1 * 60);
+		if(countsellitem > 1000 && ((time - last_sellArrayMulti) > 900)) then {
 			last_sellArrayMulti = time;
 			[] call TON_fnc_sellArrayMulti;
 		};
