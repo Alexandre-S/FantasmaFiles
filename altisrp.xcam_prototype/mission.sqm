@@ -2354,8 +2354,8 @@ class Mission
 				};
 				class Item12
 				{
-					position[]={4725.4951,7.73,2901.5657};
-					azimut=-193.908;
+					position[]={4703.6436,7.73,2936.2695};
+					azimut=-193.90073;
 					special="NONE";
 					id=117;
 					side="CIV";
@@ -2892,9 +2892,9 @@ class Mission
 				};
 				class Item59
 				{
-					position[]={4170.1567,9.4631472,3867.3928};
-					azimut=-45.258183;
-					offsetY=3.7;
+					position[]={4154.7266,10.783096,3915.4404};
+					azimut=-110.209;
+					offsetY=1.25;
 					special="NONE";
 					id=164;
 					side="WEST";
@@ -3262,14 +3262,14 @@ class Mission
 				class Item91
 				{
 					position[]={7615.272,2.0357325,8537.9502};
-					azimut=-103.85243;
+					azimut=-103.852;
 					special="NONE";
 					id=196;
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
 					text="carshop1_4";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_2""],""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,[""civ_car_2""],""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item92
 				{
@@ -3280,7 +3280,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Concessionnaire ONU""];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_2"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_2""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Concessionnaire ONU""];";
 				};
 				class Item93
 				{
@@ -3325,7 +3325,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_4"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_1""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Concessionnaire ONU""];";
+					init="this enableSimulation false;  this allowDamage false;  this addAction[""Concessionnaire de l'ONU"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_4"",""cop"",""APD - Kavala District""]];  this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""cop_car_4""; life_garage_type = ""LandVehicle"";  },"""",0,false,false,"""",'playerSide == west'];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setVariable[""realname"",""Concessionnaire ONU""];";
 				};
 			};
 		};
@@ -9469,9 +9469,10 @@ class Mission
 		};
 		class Item98
 		{
-			position[]={4166.0146,9.7218485,3865.2397};
+			position[]={4149.9185,11.134257,3915.9673};
 			name="medic_spawn_1";
 			type="Empty";
+			angle=180;
 		};
 		class Item99
 		{
@@ -9520,10 +9521,10 @@ class Mission
 		};
 		class Item105
 		{
-			position[]={4160.9893,10.206817,3876.6072};
+			position[]={4139.6631,12.258626,3910.6902};
 			name="med_car_1";
 			type="Empty";
-			angle=-95.485893;
+			angle=145;
 		};
 		class Item106
 		{
