@@ -26,4 +26,4 @@ if(_medicsOnline) then {
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
 	sleep (2 * 60);
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable true;
-};
+}; 
