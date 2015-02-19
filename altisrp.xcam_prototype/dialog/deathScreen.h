@@ -65,22 +65,6 @@ class DeathScreen
 			};
 		};
 		
-		class MedicBtnAnon : Life_RscButtonMenu
-		{
-			idc = 7306;
-			x = 0.77 * safezoneW + safezoneX;
-			y = 0.0292 * safezoneH + safezoneY;
-			w = (12 / 40);
-			h = (1 / 25);
-			onButtonClick = "[] call life_fnc_requestMedic_Anon;";
-			text = "Appeler Médecin (Anonyme)";
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.7};
-			class Attributes 
-			{
-				align = "center";
-			};
-		};
-		
 		class respawnTime : Life_RscText
 		{
 			idc = 7301;
