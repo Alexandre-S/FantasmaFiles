@@ -38,7 +38,7 @@ _cP = 0.01;
 		if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
 			_this action ["LadderOff", nearestObject [position _this, "House"]];
 		};
-		waitUntil {isTouchingGround _this};
+		waitUntil {isTouchingGround _this OR underwater _this};
 		waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
 		if !(alive _this) exitWith {};
 		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
