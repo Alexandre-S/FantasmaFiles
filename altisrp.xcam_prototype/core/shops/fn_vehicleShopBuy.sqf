@@ -55,9 +55,17 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
 	_vehicle allowDamage false;
-	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],100] select 0;
+	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],100];
+	if(count _hs > 0) then {
+		_hs = _hs select 0;
+		_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	} else {
+		_hs = ((getMarkerPos _spawnPoint) nearestObject 485277);
+		_vehicle setPosATL (_hs modelToWorld [-16.5,-24.3,10.2];
+	};
+
 	// _vehicle setPosATL _spawnPoint;
-	_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
+	
 	_vehicle lock 2;
 } else {
 	_vehicle = createVehicle [_className, _spawnPoint, [], 0, "NONE"];
@@ -71,7 +79,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 };
 _vehicle setVariable ["BIS_enableRandomization",false];
 sleep 0.01;
-_vehicle setVariable["Trunk",[[],0],true];
+_vehicle setVariable ["Trunk",[[],0],true];
 sleep 0.01;
 [] call life_fnc_getHLC;
 [[_vehicle,"idleTime",time],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
