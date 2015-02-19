@@ -3055,13 +3055,13 @@ class Mission
 				class Item73
 				{
 					position[]={1084.1877,18.648218,7214.458};
-					azimut=-555.7735;
+					azimut=-555.77301;
 					special="NONE";
 					id=178;
 					side="CIV";
 					vehicle="C_man_p_beggar_F_afro";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""veh_sp_27"",""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire"",life_fnc_vehicleShopMenu,[""civ_car"",civilian,""veh_sp_27"",""civ"",""Chez Léon, voitures en tout genre""]]; this setVariable[""realname"", ""Concessionnaire""]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""veh_sp_27"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item74
 				{
