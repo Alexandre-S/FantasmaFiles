@@ -42,8 +42,8 @@ switch (_var) do
 	case "life_inv_ironr": {("altisrpfr\icons\items\iron.paa")};
 	case "life_inv_copperr": {("altisrpfr\icons\items\copper.paa")};
 	case "life_inv_sand": {("altisrpfr\icons\items\sand.paa")};
-	case "life_inv_salt": {("altisrpfr\icons\items\salt_unprocessed.paa")};
-	case "life_inv_saltr": {("altisrpfr\icons\items\salt.paa")};
+	case "life_inv_salt": {("altisrpfr\icons\items\bois.paa")};
+	case "life_inv_saltr": {("altisrpfr\icons\items\planche.paa")};
 	case "life_inv_glass": {("altisrpfr\icons\items\glass.paa")};
 	case "life_inv_diamond": {("altisrpfr\icons\items\diamond_unprocessed.paa")};
 	case "life_inv_diamondr": {("altisrpfr\icons\items\diamond.paa")};
