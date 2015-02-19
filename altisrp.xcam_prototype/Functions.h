@@ -66,6 +66,7 @@ class Life_Client_Core
 		class revived {};
 		class medicMarkers {};
 		class requestMedic {};
+		class requestMedic_Anon {};
 		class medicRequest {};
 		class deathScreen {};
 		class medicLoadout {};
