@@ -8753,13 +8753,13 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={5102.9258,8.4300003,3849.6902};
+			position[]={4940.1572,8.4399996,3730.4409};
 			name="civ_spawn_1";
 			type="Empty";
 		};
 		class Item5
 		{
-			position[]={4042.5083,12.807808,3652.7932};
+			position[]={4175.4487,8.3714676,3706.3301};
 			name="civ_spawn_2";
 			type="Empty";
 		};
@@ -9087,7 +9087,7 @@ class Mission
 		};
 		class Item48
 		{
-			position[]={4493.229,7.73,3040.563};
+			position[]={4567.8354,7.73,3038.5288};
 			name="civ_spawn_4";
 			type="Empty";
 		};
