@@ -64,11 +64,31 @@ _hItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
 _sItems = [_itemArray,17,[],[[]]] call BIS_fnc_param;
 _yItems = [_itemArray,18,[],[[]]] call BIS_fnc_param;
 
-if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_vest != "") then {_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_goggles != "") then {
+	if(!(["mas_",_goggles] call BIS_fnc_inString)) then {
+		_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+	};
+};
+if(_headgear != "") then {
+	if(!(["mas_",_headgear] call BIS_fnc_inString)) then {
+		_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+	};
+};
+if(_uniform != "") then {
+	if(!(["mas_",_uniform] call BIS_fnc_inString)) then {
+		_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+	};
+};
+if(_vest != "") then {
+	if(!(["mas_",_vest] call BIS_fnc_inString)) then {
+		_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+	};
+};
+if(_backpack != "") then {
+	if(!(["mas_",_backpack] call BIS_fnc_inString)) then {
+		_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+	};
+};
 
 _items2 = [];
 _uItems2 = [];
@@ -155,7 +175,12 @@ _vItems2 = _vItems;
 };
 
 // {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
-{_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items2;
+{
+	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+		_handle = [_x,true,false,false,false] spawn life_fnc_handleItem;
+		waitUntil {scriptDone _handle};
+	};
+} foreach _items2;
 
 // {player addItemToUniform _x;} foreach (_uItems);
 {
