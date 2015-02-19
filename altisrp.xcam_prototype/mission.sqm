@@ -2355,14 +2355,14 @@ class Mission
 				class Item12
 				{
 					position[]={4725.4951,7.73,2901.5657};
-					azimut=-193.9084;
+					azimut=-193.908;
 					special="NONE";
 					id=117;
 					side="CIV";
 					vehicle="C_man_p_shorts_1_F_afro";
 					skill=0.60000002;
 					text="carshop1_2";
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,""civ_truck_1"",""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage à véhicule"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire Poids-Lourd"",life_fnc_vehicleShopMenu,[""civ_truck"",civilian,[""civ_truck_1""],""civ"",""Concessionnaire Poids-Lourd""]]; this addAction[""Garage à véhicule"",  { [] call life_fnc_getHLC;  [[getPlayerUID player,playerSide,""LandVehicle"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""LandVehicle"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_truck_1"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 				class Item13
 				{
