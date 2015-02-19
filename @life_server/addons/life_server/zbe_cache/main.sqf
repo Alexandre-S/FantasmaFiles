@@ -105,7 +105,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach _assetsair;
 		_assetsboat = zbe_centerPOS nearEntities ["Ship", zbe_mapside];
 		{
-			if !(typeOf _x in ["RoadBarrier_small_F","RoadCone_L_F"]) then {
+			if !(typeOf _x in ["RoadBarrier_small_F","RoadCone_L_F","Land_BuoyBig_F","Land_Camping_Light_F","Land_WavePowerPlantBroken_F","Land_WavePowerPlant_F"]) then {
 				if !(_x in zbe_cached_boat) then {
 					zbe_cached_boat = zbe_cached_boat + [_x];
 						[_x, zbe_vehicleCacheDistBoat] execFSM "\life_server\zbe_cache\zbe_vehicleCaching.fsm";
