@@ -1102,7 +1102,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_AGM_Interaction_Push";
 			distance = 4;
-			condition = "getMass _target < 1000 and alive _target";
+			condition = "getMass _target < 2001 and alive _target";
 			statement = "[_target, [2 * (vectorDir _player select 0), 2 * (vectorDir _player select 1), 0.5]] call AGM_Interaction_fnc_push;";
 			showDisabled = 0;
 			priority = -1;
