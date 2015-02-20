@@ -43,6 +43,7 @@ switch (true) do
 
 	case (_item == "excavator"):
 	{
+		closeDialog 0;
 		[] spawn life_fnc_searchWreck;
 	};
 	
