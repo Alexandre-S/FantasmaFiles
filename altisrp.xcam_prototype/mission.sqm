@@ -2674,7 +2674,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_1";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; this addAction[""Salt Trader"",life_fnc_virt_menu,""salt""];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Wood Trader"",life_fnc_virt_menu,""salt""];";
 				};
 				class Item40
 				{
