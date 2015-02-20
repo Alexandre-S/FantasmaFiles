@@ -96,7 +96,7 @@ switch (_filter) do
 			_ret pushBack ["U_PMC_CombatUniformLS_SSBPBB",nil,20000];
 			_ret pushBack ["U_PMC_CombatUniformLS_SSGPBB",nil,20000];
 		};
-		// Faction 3 = Religieux
+		// Faction 3 = Héphaistos
 		if(__GETC__(life_factnumber) == 3) then
 		{
 			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03","Veste treilli ouverte et bas noir",10000];
@@ -115,6 +115,16 @@ switch (_filter) do
 			_ret pushBack ["U_CAF_AG_ME_ROBES_04a","Veste marron et robe verte et marron",10000];
 			_ret pushBack ["U_CAF_AG_ME_ROBES_04c","Veste bleu et robe bleu",10000];
 			_ret pushBack ["U_CAF_AG_ME_ROBES_04d","Veste marron et robe verte et marron",10000];
+		};
+		// Faction 4 = Milice Sainte Croix
+		if(__GETC__(life_factnumber) == 4) then
+		{
+			_ret pushBack ["msc_R_Yeti",nil,10000];
+			_ret pushBack ["msc_Yeti",nil,10000];
+			_ret pushBack ["msc_R_McamAlpine",nil,10000];
+			_ret pushBack ["msc_McamAlpine",nil,10000];
+			_ret pushBack ["msc_R_SnowMARPAT",nil,10000];
+			_ret pushBack ["msc_SnowMARPAT",nil,10000];
 		};
 		// Si leader de faction
 		if(__GETC__(life_reblevel) >= 3) then
