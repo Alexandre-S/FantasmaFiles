@@ -24,4 +24,4 @@ onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
 	detach _var;
 } foreach ["hospital_2","hospital_3"];*/
 
-[8,true,12] execFSM "core\fsm\timeModule.fsm";
+[4,true,12] execFSM "core\fsm\timeModule.fsm";

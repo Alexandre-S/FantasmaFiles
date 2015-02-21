@@ -99,9 +99,10 @@ if(typeName _sp == "STRING") then {
 };
 _vehicle setVariable ["BIS_enableRandomization",false];	
 sleep 0.01;
-_inv = [(_vInfo select 9)] call DB_fnc_mresToArray;
-if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};
-_vehicle setVariable["Trunk",_inv,true];
+// _inv = [(_vInfo select 11)] call DB_fnc_mresToArray;
+// if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};
+// _vehicle setVariable["Trunk",_inv,true];
+_vehicle setVariable ["Trunk",[[],0],true];
 sleep 0.01;
 _vehicle setVariable["idleTime",time];
 sleep 0.01;

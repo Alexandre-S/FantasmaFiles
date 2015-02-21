@@ -13,7 +13,13 @@ if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; 
 
 if(!isHLC) then {
 	//([0,0,0] nearestObject 1122929) setDamage 1;
-
+	_nObject_list = [302864,513103,514815,130811,130810,339880,519962,519964,519999,519961,519963,520363,520365,520367,520362,520364,520366,520424,520754,520756,520775,520758,520755,520757,520759,520760,530419,530418,530422,430421,530420,368514,368604,529115,530262,530263,530264,530419,530418,530422,530421,530420,526044,367582,366793,366795,366794,366934,89248,14057,14055,14056,72020];
+	{
+		_nObject = [0,0,0] nearestObject _x;
+		_nObject enableSimulationGlobal false;
+		_nObject allowDamage false;
+	} forEach _nObject_list;
+	
 	life_server_isReady = false;
 	publicVariable "life_server_isReady";
 
