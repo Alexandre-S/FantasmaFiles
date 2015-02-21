@@ -1,3 +1,3 @@
 cd "C:\Users\sil\Documents\GitHub\altislife\tool"
-DSSignFile.exe havena.biprivatekey MSC.pbo
+DSSignFile.exe havena.biprivatekey msc_cfg.pbo
 PAUSE
