@@ -5,6 +5,7 @@
 	Description:
 	Main key handler for event 'keyDown'
 */
+if(!alive player) exitwith {};
 private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys"];
 _ctrl = _this select 0;
 _code = _this select 1;
