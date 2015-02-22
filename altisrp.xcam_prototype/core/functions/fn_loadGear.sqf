@@ -159,99 +159,99 @@ _vItems2 = _vItems;
 
 // {player addItemToUniform _x;} foreach (_uItems);
 {
-	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		player addItemToUniform _x;
-	};
+	// };
 } foreach (_uItems2);
 {
-	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		(uniformContainer player) addItemCargoGlobal [_x,1];
-	};
+	// };
 } foreach (_uMags);
 // {player addItemToVest _x;} foreach (_vItems);
 {
-	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		player addItemToVest _x;
-	};
+	// };
 } foreach (_vItems2);
 {
-	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		(vestContainer player) addItemCargoGlobal [_x,1];
-	};
+	// };
 } foreach (_vMags);
 // {player addItemToBackpack _x;} foreach (_bItems);
 {
-	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		player addItemToBackpack _x;
-	};
+	// };
 } foreach (_bItems2);
 {
-	if(!(["mas_",_x] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		(backpackContainer player) addItemCargoGlobal [_x,1];
-	};
+	// };
 } foreach (_bMags);
 life_maxWeight = 100;
 if(_oldsys) then {
 	{
-		if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
+		// if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
 			_item = [_x,1] call life_fnc_varHandle;
 			[true,_item,1] call life_fnc_handleInv;
-		};
+		// };
 	} foreach (_yItems);
 } else {
 	{
 		_item = _x select 0;
-		if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
+		// if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
 			_item = [_item,1] call life_fnc_varHandle;
 			[true,_item,_x select 1,true] call life_fnc_handleInv;
-		};
+		// };
 	} foreach (_yItems);
 };
 life_maxWeight = 24;
 
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if(_prim != "") then {
-	if(!(["mas_",_prim] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_prim] call BIS_fnc_inString)) then {
 		_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
-	};
+	// };
 };
 if(_seco != "") then {
-	if(!(["mas_",_seco] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_seco] call BIS_fnc_inString)) then {
 		_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
-	};
+	// };
 };
 if(_launcher != "") then {
-	if(!(["mas_",_launcher] call BIS_fnc_inString)) then {
+	// if(!(["mas_",_launcher] call BIS_fnc_inString)) then {
 		_handle = [_launcher,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
-	};
+	// };
 };
 
 {
     if (_x != "") then {
-		if(!(["mas_",_x] call BIS_fnc_inString)) then {
+		// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 			player addPrimaryWeaponItem _x;
-		};
+		// };
     };
 } foreach (_pItems);
 {
     if (_x != "") then {
-		if(!(["mas_",_x] call BIS_fnc_inString)) then {
+		// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 			player addHandgunItem _x;
-		};
+		// };
     };
 } foreach (_hItems);
 {
     if (_x != "") then {
-		if(!(["mas_",_x] call BIS_fnc_inString)) then {
+		// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 			player addSecondaryWeaponItem _x;
-		};
+		// };
     };
 } foreach (_sItems);
 
-if(playerSide == independent && {uniform player == "U_Rangemaster"}) then {
+/*if(playerSide == independent && {uniform player == "U_Rangemaster"}) then {
 	[[player,0,"altisrpfr\textures\medic_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
 };
 if(uniform player == "U_B_CombatUniform_mcam" OR {uniform player == "U_B_CombatUniform_mcam_vest"}) then {
 	[[player,0,"altisrpfr\textures\clothing1_co.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
-};
+};*/
 [] call life_fnc_updateClothing;
