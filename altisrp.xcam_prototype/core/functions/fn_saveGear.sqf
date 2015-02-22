@@ -40,7 +40,10 @@ if(uniform player != "") then
         if (_x in (magazines player)) then {
             _uMags = _uMags + [_x];
         } else {
-            _uItems = _uItems + [_x];
+		  // if (_x in (weapons player)) then {
+
+		  // };
+		  _uItems = _uItems + [_x];
         };
     } forEach (uniformItems player);
 };
