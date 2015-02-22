@@ -220,7 +220,7 @@ class AGM_Core_Default_Keys {
 	};
 	class OpenInventory {
 		displayName = "Inventaire véhicule";
-		condition = "vehicle player == player";
+		condition = "";
 		statement = "[] call life_fnc_openInventoryCheck";
 		key = 20;
 		shift = 0;
