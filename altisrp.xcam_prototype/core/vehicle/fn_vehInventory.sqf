@@ -45,7 +45,7 @@ if(count _data == 0) then {_veh setVariable["Trunk",[[],0],true]; _data = [];} e
 			_pInv lbSetPicture [(lbSize _pInv)-1,_icon];
 		};
 	}
-		else
+	else
 	{
 		if(life_cash > 0) then
 		{
@@ -70,7 +70,7 @@ if(count _data == 0) then {_veh setVariable["Trunk",[[],0],true]; _data = [];} e
 			_tInv lbSetPicture [(lbSize _tInv)-1,_icon];
 		};
 	}
-		else
+	else
 	{
 		_val = _x select 1;
 		if(_val > 0) then

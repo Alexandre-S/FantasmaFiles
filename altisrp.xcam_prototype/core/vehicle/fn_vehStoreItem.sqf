@@ -7,7 +7,7 @@
 	Used in the vehicle trunk menu, stores the selected item and puts it in the vehicles virtual inventory
 	if the vehicle has room for the item.
 */
-if((time - life_action_delay) < 1) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
+if((time - life_action_delay) < 0.5) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 life_action_delay = time;
 private["_ctrl","_num","_totalWeight","_itemWeight","_veh_data","_inv","_index","_val"];
 disableSerialization;
@@ -39,7 +39,7 @@ if(_ctrl == "money") then
 	{
 		_inv pushBack [_ctrl,_num];
 	}
-		else
+	else
 	{
 		_val = _inv select _index select 1;
 		_inv set[_index,[_ctrl,_val + _num]];
@@ -49,7 +49,7 @@ if(_ctrl == "money") then
 	life_trunk_vehicle setVariable["Trunk",[_inv,(_veh_data select 1) + _itemWeight],true];
 	[life_trunk_vehicle] call life_fnc_vehInventory;
 }
-	else
+else
 {
 	if(((_totalWeight select 1) + _itemWeight) > (_totalWeight select 0)) exitWith {hint "The vehicle is either full or cannot hold that much."};
 
@@ -59,7 +59,7 @@ if(_ctrl == "money") then
 	{
 		_inv pushBack [_ctrl,_num];
 	}
-		else
+	else
 	{
 		_val = _inv select _index select 1;
 		_inv set[_index,[_ctrl,_val + _num]];

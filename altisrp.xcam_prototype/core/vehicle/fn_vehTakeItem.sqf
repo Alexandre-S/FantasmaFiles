@@ -7,7 +7,7 @@
 	Used in the vehicle trunk menu, takes the selected item and puts it in the players virtual inventory
 	if the player has room.
 */
-if((time - life_action_delay) < 1) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
+if((time - life_action_delay) < 0.5) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 life_action_delay = time;
 private["_ctrl","_num","_index","_data","_old","_value","_weight","_diff"];
 disableSerialization;
@@ -46,7 +46,7 @@ if(_ctrl == "money") then
 	life_trunk_vehicle setVariable["Trunk",[_data,(_old select 1) - _weight],true];
 	[life_trunk_vehicle] call life_fnc_vehInventory;
 }
-	else
+else
 {
 	if([true,_ctrl,_num] call life_fnc_handleInv) then
 	{
@@ -55,7 +55,7 @@ if(_ctrl == "money") then
 			_data set[_index,-1];
 			_data = _data - [-1];
 		}
-			else
+		else
 		{
 			_data set[_index,[_ctrl,(_value - _num)]];
 		};
@@ -65,7 +65,7 @@ if(_ctrl == "money") then
 		[[life_trunk_vehicle,"idleTime",time],"TON_fnc_setObjVar",serverhc,false] spawn life_fnc_MP;
 		[life_trunk_vehicle] call life_fnc_vehInventory;
 	}
-		else
+	else
 	{
 		hint localize "STR_NOTF_InvFull";
 	};
