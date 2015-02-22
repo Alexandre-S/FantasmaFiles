@@ -7,7 +7,7 @@
     Description:
     Saves the players gear for syncing to the database for persistence..
 */
-private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_sItems","_wMag"];
+private["_return","_uItems","_bItems","_vItems","_pItems","_hItems","_yItems","_uMags","_vMags","_bMags","_pMag","_hMag","_uni","_ves","_bag","_handled","_sItems"];
 _return = [];
 
 _return pushBack uniform player;
@@ -40,32 +40,9 @@ if(uniform player != "") then
         if (_x in (magazines player)) then {
             _uMags = _uMags + [_x];
         } else {
-		  if (_x in (weapons player)) then {
-				_wMag = "";
-				_wMag = ((weaponAccessories _x) select 0);
-				if(_wMag != "") then
-				{
-					_uni = player canAddItemToUniform _wMag;
-					_ves = player canAddItemToVest _wMag;
-					_bag = player canAddItemToBackpack _wMag;
-					_handled = false;
-					if(_ves) then
-					{
-						_vMags = _vMags + [_wMag];
-						_handled = true;
-					};
-					if(_uni && !_handled) then
-					{
-						_uMags = _uMags + [_wMag];
-						_handled = true;
-					};
-					if(_bag && !_handled) then
-					{
-						_bMags = _bMags + [_wMag];
-						_handled = true;
-					};
-				};
-		  };
+		  // if (_x in (weapons player)) then {
+
+		  // };
 		  _uItems = _uItems + [_x];
         };
     } forEach (uniformItems player);
@@ -77,32 +54,6 @@ if(backpack player != "") then
         if (_x in (magazines player)) then {
             _bMags = _bMags + [_x];
         } else {
-			if (_x in (weapons player)) then {
-				_wMag = "";
-				_wMag = ((weaponAccessories _x) select 0);
-				if(_wMag != "") then
-				{
-					_uni = player canAddItemToUniform _wMag;
-					_ves = player canAddItemToVest _wMag;
-					_bag = player canAddItemToBackpack _wMag;
-					_handled = false;
-					if(_ves) then
-					{
-						_vMags = _vMags + [_wMag];
-						_handled = true;
-					};
-					if(_uni && !_handled) then
-					{
-						_uMags = _uMags + [_wMag];
-						_handled = true;
-					};
-					if(_bag && !_handled) then
-					{
-						_bMags = _bMags + [_wMag];
-						_handled = true;
-					};
-				};
-			};
             _bItems = _bItems + [_x];
         };
     } forEach (backpackItems player);
@@ -114,32 +65,6 @@ if(vest player != "") then
         if (_x in (magazines player)) then {
             _vMags = _vMags + [_x];
         } else {
-			if (_x in (weapons player)) then {
-				_wMag = "";
-				_wMag = ((weaponAccessories _x) select 0);
-				if(_wMag != "") then
-				{
-					_uni = player canAddItemToUniform _wMag;
-					_ves = player canAddItemToVest _wMag;
-					_bag = player canAddItemToBackpack _wMag;
-					_handled = false;
-					if(_ves) then
-					{
-						_vMags = _vMags + [_wMag];
-						_handled = true;
-					};
-					if(_uni && !_handled) then
-					{
-						_uMags = _uMags + [_wMag];
-						_handled = true;
-					};
-					if(_bag && !_handled) then
-					{
-						_bMags = _bMags + [_wMag];
-						_handled = true;
-					};
-				};
-			};
             _vItems = _vItems + [_x];
         };
     } forEach (vestItems player);
