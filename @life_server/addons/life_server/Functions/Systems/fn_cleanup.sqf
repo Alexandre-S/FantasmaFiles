@@ -71,7 +71,7 @@ while {true} do
 			{
 				// _vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
 				// if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
-				if((_x isKindOf "LandVehicle") || (_x isKindOf "Air") || ((_x isKindOf "Ship") && !(typeOf _x in ["RoadBarrier_small_F","RoadCone_L_F","Land_BuoyBig_F","Land_Camping_Light_F","Land_WavePowerPlantBroken_F","Land_WavePowerPlant_F"]))) then
+				if((_x isKindOf "LandVehicle") || (_x isKindOf "Air") || ((_x isKindOf "Ship") && !(_x isKindOf "FloatingStructure_F"))) then
 				{
 					if(_idleTime == 0) then 
 					{
