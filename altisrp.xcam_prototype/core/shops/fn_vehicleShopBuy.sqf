@@ -88,8 +88,8 @@ _vehicle setVariable ["R3F_LOG_disabled", false, true];
 sleep 0.01;
 _vehicle setVariable ["tf_hasRadio", true, true];
 sleep 0.01;
-_vehicle setVariable ["tf_range", 50000, true];
-sleep 0.01;
+// _vehicle setVariable ["tf_range", 50000, true];
+// sleep 0.01;
 
 _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 
