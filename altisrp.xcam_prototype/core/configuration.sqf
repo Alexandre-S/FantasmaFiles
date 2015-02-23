@@ -268,7 +268,7 @@ life_licenses =
 //Setup License Variables
 {missionNamespace setVariable[(_x select 0),false];} foreach life_licenses;
 
-life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5"];
+life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6"];
 //[shortVar,reward]
 life_illegal_items =
 [

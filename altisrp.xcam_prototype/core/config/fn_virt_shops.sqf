@@ -22,11 +22,11 @@ switch (_shop) do
 	case "glass": {["Altis Glass Dealer",["glass"]]};
 	case "iron": {["Altis Industrial Trader",["iron_r","copper_r"]]};
 	// case "diamond": {["Diamond Dealer",["diamond","diamondc"]]};
-	case "diamond": {["Diamond Dealer",["diamondc","diamondf","ruby","pearl","doubloon","silverpiece"]]};
+	case "diamond": {["Diamond Dealer",["diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
 	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","mauer","cone","gpstracker","sandbag","sandbagr"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
-	case "gold": {["Gold Buyer",["goldbar"]]};
+	case "gold": {["Gold Buyer",["goldbar","diamondf","ruby","pearl","doubloon","silverpiece"]]};
 	case "med": {["Med Item Shop",["donuts","coffee","water","rabbit","apple","redgull","fuelF","mauer","cone"]]};
 	case "dep": {["Dep Shop",["mauer","cone"]]};
 };
