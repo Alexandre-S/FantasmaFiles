@@ -127,25 +127,25 @@ class Mission
 		"A3_Structures_F_Naval_Buoys",
 		"xcam_prototype_config"
 	};
-	randomSeed=10241977;
+	randomSeed = 12180750;
 	class Intel
 	{
 		briefingName="Altis Life RPG";
 		overviewText="Altis Life RPG 5.6.4";
-		startWeather=0;
-		startWind=0.099999994;
-		startWaves=0.099999994;
-		forecastWeather=0;
-		forecastWind=0.099999994;
-		forecastWaves=0.099999994;
-		forecastLightnings=0.099999994;
-		year=2016;
-		month=8;
-		day=6;
-		hour=12;
-		minute=0;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		startWeather = 0.44;
+		startWind = 0.099999994;
+		startWaves = 0.099999994;
+		forecastWeather = 0.32999998;
+		forecastWind = 0.099999994;
+		forecastWaves = 0.099999994;
+		forecastLightnings = 0.099999994;
+		year = 2035;
+		month = 7;
+		day = 6;
+		hour = 9;
+		minute = 50;
+		startFogDecay = 0.0049333;
+		forecastFogDecay = 0.0049333;
 	};
 	class Groups
 	{
@@ -10257,21 +10257,23 @@ class Intro
 	{
 		"xcam_prototype_config"
 	};
-	randomSeed=542031;
+	randomSeed = 12707767;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		month=7;
-		day=6;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		startWeather = 0.48;
+		startFog = 0.03;
+		startWind = 0;
+		startWaves = 0.099999994;
+		forecastWeather = 0.35;
+		forecastWind = 0;
+		forecastWaves = 0.099999994;
+		forecastLightnings = 0.099999994;
+		year = 2035;
+		month = 7;
+		day = 6;
+		hour = 9;
+		startFogDecay = 0.0049333;
+		forecastFogDecay = 0.0049333;
 	};
 };
 class OutroWin
@@ -10284,21 +10286,24 @@ class OutroWin
 	{
 		"xcam_prototype_config"
 	};
-	randomSeed=10711949;
+	randomSeed = 11936415;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		month=7;
-		day=6;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		timeOfChanges = 1800.0002;
+		startWeather = 0.3;
+		startWind = 0.1;
+		startWaves = 0.1;
+		forecastWeather = 0.3;
+		forecastWind = 0.1;
+		forecastWaves = 0.1;
+		forecastLightnings = 0.1;
+		year = 2035;
+		month = 7;
+		day = 6;
+		hour = 14;
+		minute = 15;
+		startFogDecay = 0.0049333;
+		forecastFogDecay = 0.0049333;
 	};
 };
 class OutroLoose
@@ -10311,20 +10316,23 @@ class OutroLoose
 	{
 		"xcam_prototype_config"
 	};
-	randomSeed=2633641;
+	randomSeed = 8195869;
 	class Intel
 	{
-		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
-		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
-		forecastWaves=0.1;
-		forecastLightnings=0.1;
-		month=7;
-		day=6;
-		startFogDecay=0.013;
-		forecastFogDecay=0.013;
+		timeOfChanges = 1800.0002;
+		startWeather = 0.3;
+		startWind = 0.1;
+		startWaves = 0.1;
+		forecastWeather = 0.3;
+		forecastWind = 0.1;
+		forecastWaves = 0.1;
+		forecastLightnings = 0.1;
+		year = 2035;
+		month = 7;
+		day = 6;
+		hour = 14;
+		minute = 15;
+		startFogDecay = 0.0049333;
+		forecastFogDecay = 0.0049333;
 	};
 };
