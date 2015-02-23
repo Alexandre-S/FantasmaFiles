@@ -4600,7 +4600,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=407;
+		items=408;
 		class Item0
 		{
 			position[]={631.26245,1.8341906,479.21826};
@@ -8782,6 +8782,16 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
+		class Item407
+        {
+             position[]={8383.59,-0.665838,3370.92};
+             azimut=91.3324;
+             id=290;
+             side= "EMPTY";
+             vehicle="Dirthump_1_F";
+             skill=0.6;
+             offsetY=0.00222349;
+        };
 	};
 	class Markers
 	{
