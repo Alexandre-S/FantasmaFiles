@@ -4600,7 +4600,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=408;
+		items=418;
 		class Item0
 		{
 			position[]={631.26245,1.8341906,479.21826};
@@ -8783,15 +8783,105 @@ class Mission
 			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
 		};
 		class Item407
-        {
-             position[]={8383.59,-0.665838,3370.92};
-             azimut=91.3324;
-             id=290;
-             side= "EMPTY";
-             vehicle="Dirthump_1_F";
-             skill=0.6;
-             offsetY=0.00222349;
-        };
+		{
+			position[]={8383.5898,-0.665838,3370.9199};
+			azimut=91.332397;
+			offsetY=0.00222349;
+			id=669;
+			side="EMPTY";
+			vehicle="Dirthump_1_F";
+			skill=0.60000002;
+		};
+		class Item408
+		{
+			position[]={6570.7305,23.48,4323.3516};
+			azimut=-88.39151;
+			id=670;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item409
+		{
+			position[]={6573.4526,23.756279,4360.127};
+			azimut=90.463737;
+			id=671;
+			side="EMPTY";
+			vehicle="Land_Crash_barrier_F";
+			skill=0.60000002;
+		};
+		class Item410
+		{
+			position[]={6573.2637,23.662678,4351.4956};
+			azimut=91.153816;
+			id=672;
+			side="EMPTY";
+			vehicle="Land_BarGate_F";
+			skill=0.60000002;
+		};
+		class Item411
+		{
+			position[]={6567.1929,23.48,4312.8418};
+			azimut=-44.908485;
+			id=673;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item412
+		{
+			position[]={6505.9106,23.520578,4276.9722};
+			azimut=0.829597;
+			id=674;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item413
+		{
+			position[]={6422.9331,21.442337,4397.1665};
+			azimut=91.622849;
+			id=675;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item414
+		{
+			position[]={6422.54,21.637661,4389.0122};
+			azimut=91.622849;
+			id=676;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item415
+		{
+			position[]={6448.7612,21.151058,4440.9971};
+			azimut=-0.10415903;
+			id=677;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item416
+		{
+			position[]={6471.4805,21.194084,4440.7393};
+			azimut=-0.10415903;
+			id=678;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
+		class Item417
+		{
+			position[]={6580.7349,22.772661,4410.4028};
+			azimut=92.119316;
+			id=679;
+			side="EMPTY";
+			vehicle="Land_Razorwire_F";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
