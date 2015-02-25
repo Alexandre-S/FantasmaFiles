@@ -76,7 +76,7 @@ switch(_type) do
 		};
 	};
 	//MSGTAXI
-	case 6:
+	case 7:
 	{
 		_tabletemp = [];
 		{
