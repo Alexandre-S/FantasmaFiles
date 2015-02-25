@@ -51,6 +51,7 @@ switch (_filter) do
 			_ret pushBack ["U_BG_Guerilla2_3",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_1",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
+			_ret pushBack ["rpima_uniform",nil,0];
 		};
 		// Unité tactique
 		if(license_cop_swat) then
@@ -68,7 +69,6 @@ switch (_filter) do
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_ret pushBack ["rpima_uniform",nil,0];
 			_ret pushBack ["U_B_survival_uniform",nil,0];
 		};
 		
@@ -123,6 +123,7 @@ switch (_filter) do
 			_ret pushBack ["H_Cap_blu",nil,0];
 			_ret pushBack ["H_Cap_grn",nil,0];
 			_ret pushBack ["H_Cap_grn_BI",nil,0];
+			_ret pushBack ["RPIMA_Balaclava",nil,0];
 		};
 		// Unité tactique
 		if(license_cop_swat) then
@@ -157,7 +158,6 @@ switch (_filter) do
 			_ret pushBack ["ATHhelm_Balaclava2",nil,0];
 			_ret pushBack ["ATHhelm_Balaclava3",nil,0];
 			_ret pushBack ["ATHhelm_Balaclava4",nil,0];
-			_ret pushBack ["RPIMA_Balaclava",nil,0];
 			_ret pushBack ["RPIMA_Balaclava2",nil,0];
 			_ret pushBack ["RPIMA_helm",nil,0];
 		};
