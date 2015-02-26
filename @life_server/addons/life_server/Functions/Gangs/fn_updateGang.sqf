@@ -40,13 +40,18 @@ switch (_mode) do {
 	
 	case 4: {
 		_members = _group getVariable "gang_members";
-		if(count _members > (_group getVariable ["gang_maxMembers",8])) then {
+		if(isNil "_members") exitWith {};
+		if(typeName _members != "ARRAY") exitWith {};
+		_maxMembers = _group getVariable ["gang_maxMembers",8];
+		if(count _members > _maxMembers) then {
 			_membersFinal = [];
 			for "_i" from 0 to _maxMembers -1 do {
 				_membersFinal pushBack (_members select _i);
 			};
+			_membersFinal = [_membersFinal] call DB_fnc_mresArray;
+		} else {
+			_membersFinal = [_members] call DB_fnc_mresArray;
 		};
-		_membersFinal = [(_group getVariable "gang_members")] call DB_fnc_mresArray;
 		_query = format["UPDATE gangs SET members='%1' WHERE id='%2'",_membersFinal,_groupID];
 	};
 };
