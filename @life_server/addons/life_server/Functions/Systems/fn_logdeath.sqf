@@ -24,7 +24,7 @@ if(isnull _source) then {
 } else {
 	
 	//check source car
-	if ((_source isKindOf "car")||(_source isKindOf "tank")||(_source isKindOf "ship")||(_source isKindOf "air")) then {
+	if ((_source isKindOf "LandVehicle")||(_source isKindOf "ship")||(_source isKindOf "air")) then {
 		if (driver _source != _source) then {
 			_weapon = typeOf _source;
 			_source = driver _source;

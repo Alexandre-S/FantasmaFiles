@@ -124,14 +124,14 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		};
 		sleep 0.01;*/
 
-		//_vehicle addEventHandler["Killed",{_this spawn STS_fnc_vehicleDead;}];
+		//_vehicle addEventHandler["Killed",{_this spawn TON_fnc_vehicleDead;}];
 		_vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 		[_vehicle] call life_fnc_clearVehicleAmmo;
 		_vehicle lock 2;
 
 		_vehicle setFuel (parseNumber _fuel);
 		//Send keys over the network.
-		//[[_vehicle],"STS_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
+		//[[_vehicle],"TON_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 		if(_side == "cop") then { _realside = west; };
 		if(_side == "civ") then { _realside = civilian; };
 		if(_side == "med") then { _realside = independent; };

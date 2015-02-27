@@ -71,5 +71,5 @@ life_action_inUse = false;
 _unit setVariable ["do_abattre", true, true];
 // _unit setDamage 1;
 [] call life_fnc_getHLC;
-[[_unit,player,2],"STS_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
+[[_unit,player,2],"TON_fnc_logdeath",serverhc,false] spawn life_fnc_MP;
 [[],"life_fnc_forceSpawnMenu",_unit,FALSE] spawn life_fnc_MP;

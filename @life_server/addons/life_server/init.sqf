@@ -300,7 +300,7 @@ else
 						_x = _this select 0;
 						sleep (random 60);
 						[] call life_fnc_getHLC;
-						[_x,"STS_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
+						[_x,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 					};
 				};
 			};
