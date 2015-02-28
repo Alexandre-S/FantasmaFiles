@@ -5,7 +5,7 @@
 	Description:
 	32 hours...
 */
-private["_unit","_unitID","_members"];
+private["_grp","_unit","_unitID","_members"];
 disableSerialization;
 
 if((lbCurSel 2621) == -1) exitWith {hint localize "STR_GNOTF_SelectKick"};
@@ -15,14 +15,15 @@ if(_unit == player) exitWith {hint localize "STR_GNOTF_KickSelf"};
 if!(init_gang) exitwith {};
 if!(_unit getVariable["init_gang",false]) exitwith {hint "Impossible de kicker cette personne, recommencez dans 30sec.."};
 
+_grp = grpPlayer;
 _unitID = getPlayerUID _unit;
-_members = grpPlayer getVariable "gang_members";
+_members = _grp getVariable "gang_members";
 if(isNil "_members") exitWith {};
 if(typeName _members != "ARRAY") exitWith {};
 _members = _members - [_unitID];
-grpPlayer setVariable["gang_members",_members,true];
+_grp setVariable["gang_members",_members,true];
 
-[[_unit,grpPlayer],"life_fnc_clientGangKick",_unit,false] spawn life_fnc_MP; //Boot that bitch!
+[[_unit,_grp],"life_fnc_clientGangKick",_unit,false] spawn life_fnc_MP; //Boot that bitch!
 [] call life_fnc_getHLC;
-[[4,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
+[[4,_grp],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
 [] call life_fnc_gangMenu;

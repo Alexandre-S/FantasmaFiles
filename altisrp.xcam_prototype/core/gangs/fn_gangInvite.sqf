@@ -29,5 +29,5 @@ if(_action) then {
 	_grpMembers = _grpMembers - [steamid];
 	grpPlayer setVariable["gang_members",_grpMembers,true];
 	[] call life_fnc_getHLC;
-	[[4,_grpMembers],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+	[[4,_group],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 };
