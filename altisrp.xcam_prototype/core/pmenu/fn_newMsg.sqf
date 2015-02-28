@@ -117,7 +117,7 @@ switch(_type) do
 		closeDialog 887890;
 	};
 	//taxireq
-	case 8:
+	case 9:
 	{
 		if(({_x getVariable["life_taxi",false]} count playableUnits) == 0) exitWith {hint format["Aucun Taxi disponible. Veuillez re-essayer plus tard."];};
 		ctrlShow[888901,false];
