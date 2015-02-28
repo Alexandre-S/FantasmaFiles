@@ -38,10 +38,6 @@ closeDialog 0;
 	//[[player, "action_repair",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 	while{true} do
 	{
-		if(animationState player != "InBaseMoves_repairVehicleKnl") then {
-			[[player,"InBaseMoves_repairVehicleKnl"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-			player playMoveNow "InBaseMoves_repairVehicleKnl";
-		};
 		sleep 0.27;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
@@ -58,7 +54,7 @@ closeDialog 0;
 	player playActionNow "stop";
 	if(life_interrupted) exitWith {life_interrupted = false; titleText["Action annulée","PLAIN"]; life_action_inUse = false;};
 	if(player != vehicle player) exitWith {titleText["Vous devez être à l'extérieur du véhicule pour le réparer. Désolé que ça vous empêche d'exploiter le système !","PLAIN"]; life_action_inUse = false;};
-	if(player distance _vehicle > 50)  exitWith {titleText["Le véhicule doit être à moins de 50 mètres !","PLAIN"]; life_action_inUse = false;};
+	if(player distance _vehicle > 50) exitWith {titleText["Le véhicule doit être à moins de 50 mètres !","PLAIN"]; life_action_inUse = false;};
 	[] call life_fnc_getHLC;
 	[[player,_vehicle,_price,_price2,havena_id],"TON_fnc_chopShopSell",serverhc,false] spawn life_fnc_MP;
 	// titleText["Vous avez recelé le véhicule.","PLAIN"];
