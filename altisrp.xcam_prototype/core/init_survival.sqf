@@ -1,26 +1,5 @@
 [] spawn  {
-	private["_fnc_food","_fnc_water"];
-	_fnc_food = 
-	{
-		if(life_hunger < 2) then {
-			if((damage player + 0.1) > 1) then { player setDamage 1; } else {player setDamage (damage player + 0.1); };
-			hint localize "STR_NOTF_EatMSG_Death";
-		}
-		else
-		{
-			if((life_hunger - 10) < 0) then { life_hunger =0; } else {life_hunger = life_hunger - 10;};
-			[] call life_fnc_hudUpdate;
-			if(life_hunger < 2) then {
-			if((damage player + 0.1) > 1) then { player setDamage 1; } else {player setDamage (damage player + 0.1); };
-			hint localize "STR_NOTF_EatMSG_Death";};
-			switch(life_hunger) do {
-				case 30: {hint localize "STR_NOTF_EatMSG_1";};
-				case 20: {hint localize "STR_NOTF_EatMSG_2";};
-				case 10: {hint localize "STR_NOTF_EatMSG_3";player setFatigue 1;};
-			};
-		};
-	};
-	
+	private["_fnc_water"];
 	_fnc_water = 
 	{
 		if(life_thirst < 2) then {
@@ -48,6 +27,31 @@
 		sleep 900;
 		[] call _fnc_water;
 	};
+};
+
+[] spawn  {
+	private["_fnc_food"];
+	_fnc_food = 
+	{
+		if(life_hunger < 2) then {
+			if((damage player + 0.1) > 1) then { player setDamage 1; } else {player setDamage (damage player + 0.1); };
+			hint localize "STR_NOTF_EatMSG_Death";
+		}
+		else
+		{
+			if((life_hunger - 10) < 0) then { life_hunger =0; } else {life_hunger = life_hunger - 10;};
+			[] call life_fnc_hudUpdate;
+			if(life_hunger < 2) then {
+			if((damage player + 0.1) > 1) then { player setDamage 1; } else {player setDamage (damage player + 0.1); };
+			hint localize "STR_NOTF_EatMSG_Death";};
+			switch(life_hunger) do {
+				case 30: {hint localize "STR_NOTF_EatMSG_1";};
+				case 20: {hint localize "STR_NOTF_EatMSG_2";};
+				case 10: {hint localize "STR_NOTF_EatMSG_3";player setFatigue 1;};
+			};
+		};
+	};
+	
 	while{true} do
 	{
 		sleep 1200;
@@ -110,7 +114,9 @@
 				{
 					_walkDis = 0;
 					life_thirst = life_thirst - 5;
+					if(life_thirst < 0) then { life_thirst = 0; };
 					life_hunger = life_hunger - 5;
+					if(life_hunger < 0) then { life_hunger = 0; };
 					[] call life_fnc_hudUpdate;
 				};
 			};
