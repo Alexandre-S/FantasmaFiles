@@ -69,7 +69,7 @@ weatherTemplates = [
 mb_fnc_InitialWeather = {
 	private["_weatherInitialArray","_weatherInitialSettings","_weatherInitialOvercast","_weatherInitialRainSnow","_weatherInitialFog","_weatherInitialWindEW","_weatherInitialWindNS"];
 	
-	waitUntil {!isNil "rw2_Current_Weather"};
+	waitUntil {sleep 0.1; !isNil "rw2_Current_Weather"};
 	_weatherInitialArray = weatherTemplates select rw2_Current_Weather;
     weatherCurrentName = _weatherInitialArray select 0;
     _weatherInitialSettings = _weatherInitialArray select 2;

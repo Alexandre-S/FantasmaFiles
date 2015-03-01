@@ -17,7 +17,7 @@ if (life_drug_level > 1) then { life_drug_level = 1; };
 	hint "Vous vous sentez inarrêtable !";
 	player setFatigue 0;
 	player enableFatigue false;
-	waitUntil {!alive player OR ((time - life_cocaine_effect) > (4 * 60))};
+	waitUntil {sleep 0.1; !alive player OR ((time - life_cocaine_effect) > (4 * 60))};
 	life_cocaine_effect = 0;
 	player enableFatigue true;
 };

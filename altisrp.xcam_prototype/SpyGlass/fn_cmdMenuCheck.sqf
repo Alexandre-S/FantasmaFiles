@@ -18,7 +18,7 @@ _validMenus = [
 _lastMenu = "";
 while {true} do
 {
-	waitUntil {commandingMenu != _lastMenu};
+	waitUntil {sleep 0.1; commandingMenu != _lastMenu};
 	_lastMenu = commandingMenu;
 	
 	if(!(commandingMenu in _validMenus)) then {

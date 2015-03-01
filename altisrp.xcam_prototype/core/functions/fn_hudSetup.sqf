@@ -17,6 +17,7 @@ _version ctrlSetText format["BETA: 0.%1.%2",(productVersion select 2),(productVe
 
 [] spawn
 {
+	sleep 1;
 	private["_dam","_cash","_volumelvl"];
 	while {true} do
 	{

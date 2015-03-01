@@ -8,7 +8,7 @@
 */
 private["_handle"];
 _handle = [] spawn life_fnc_stripDownPlayer;
-waitUntil {scriptDone _handle};
+waitUntil {sleep 0.1; scriptDone _handle};
 
 //Load player with default cop gear.
 player addUniform "U_Rangemaster";

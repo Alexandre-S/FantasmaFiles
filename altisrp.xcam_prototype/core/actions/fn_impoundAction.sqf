@@ -58,7 +58,7 @@ if((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle i
 		life_impound_inuse = true;
 		[] call life_fnc_getHLC;
 		[[_vehicle,true,player,havena_id],"TON_fnc_vehicleStore",serverhc,false] spawn life_fnc_MP;
-		waitUntil {!life_impound_inuse};
+		waitUntil {sleep 0.1; !life_impound_inuse};
 		hint format[localize "STR_NOTF_Impounded",_type,_price];
 		[[0,"STR_NOTF_HasImpounded",true,[profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		life_atmcash = life_atmcash + _price;

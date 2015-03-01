@@ -10,7 +10,7 @@ _itemArray = life_gear;
 waitUntil {!(isNull (findDisplay 46))};
 
 _handle = [] spawn life_fnc_stripDownPlayer;
-waitUntil {scriptDone _handle};
+waitUntil {sleep 0.1; scriptDone _handle};
 
 if(count _itemArray == 0) exitWith
 {
@@ -64,11 +64,11 @@ _hItems = [_itemArray,16,[],[[]]] call BIS_fnc_param;
 _sItems = [_itemArray,17,[],[[]]] call BIS_fnc_param;
 _yItems = [_itemArray,18,[],[[]]] call BIS_fnc_param;
 
-if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_vest != "") then {_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
-if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};};
+if(_goggles != "") then {_handle = [_goggles,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};};
+if(_headgear != "") then {_handle = [_headgear,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};};
+if(_uniform != "") then {_handle = [_uniform,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};};
+if(_vest != "") then {_handle = [_vest,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};};
+if(_backpack != "") then {_handle = [_backpack,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};};
 
 _items2 = [];
 _uItems2 = [];
@@ -155,23 +155,26 @@ _vItems2 = _vItems;
 };
 
 // {_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items;
-{_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};} foreach _items2;
+{_handle = [_x,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.01; scriptDone _handle};} foreach _items2;
 
 // {player addItemToUniform _x;} foreach (_uItems);
 {
 	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		player addItemToUniform _x;
+		sleep 0.01;
 	// };
 } foreach (_uItems2);
 {
 	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		(uniformContainer player) addItemCargoGlobal [_x,1];
+		sleep 0.01;
 	// };
 } foreach (_uMags);
 // {player addItemToVest _x;} foreach (_vItems);
 {
 	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		player addItemToVest _x;
+		sleep 0.01;
 	// };
 } foreach (_vItems2);
 {
@@ -183,6 +186,7 @@ _vItems2 = _vItems;
 {
 	// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 		player addItemToBackpack _x;
+		sleep 0.01;
 	// };
 } foreach (_bItems2);
 {
@@ -195,7 +199,8 @@ if(_oldsys) then {
 	{
 		// if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
 			_item = [_x,1] call life_fnc_varHandle;
-			[true,_item,1] call life_fnc_handleInv;
+			_handle = [true,_item,1] call life_fnc_handleInv;
+			waitUntil {sleep 0.01; scriptDone _handle};
 		// };
 	} foreach (_yItems);
 } else {
@@ -203,7 +208,8 @@ if(_oldsys) then {
 		_item = _x select 0;
 		// if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
 			_item = [_item,1] call life_fnc_varHandle;
-			[true,_item,_x select 1,true] call life_fnc_handleInv;
+			_handle = [true,_item,_x select 1,true] call life_fnc_handleInv;
+			waitUntil {sleep 0.01; scriptDone _handle};
 		// };
 	} foreach (_yItems);
 };
@@ -212,17 +218,17 @@ life_maxWeight = 24;
 //Primary & Secondary (Handgun) should be added last as magazines do not automatically load into the gun.
 if(_prim != "") then {
 	// if(!(["mas_",_prim] call BIS_fnc_inString)) then {
-		_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+		_handle = [_prim,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};
 	// };
 };
 if(_seco != "") then {
 	// if(!(["mas_",_seco] call BIS_fnc_inString)) then {
-		_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+		_handle = [_seco,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};
 	// };
 };
 if(_launcher != "") then {
 	// if(!(["mas_",_launcher] call BIS_fnc_inString)) then {
-		_handle = [_launcher,true,false,false,false] spawn life_fnc_handleItem; waitUntil {scriptDone _handle};
+		_handle = [_launcher,true,false,false,false] spawn life_fnc_handleItem; waitUntil {sleep 0.1; scriptDone _handle};
 	// };
 };
 
@@ -230,6 +236,7 @@ if(_launcher != "") then {
     if (_x != "") then {
 		// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 			player addPrimaryWeaponItem _x;
+			sleep 0.01;
 		// };
     };
 } foreach (_pItems);
@@ -237,6 +244,7 @@ if(_launcher != "") then {
     if (_x != "") then {
 		// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 			player addHandgunItem _x;
+			sleep 0.01;
 		// };
     };
 } foreach (_hItems);
@@ -244,6 +252,7 @@ if(_launcher != "") then {
     if (_x != "") then {
 		// if(!(["mas_",_x] call BIS_fnc_inString)) then {
 			player addSecondaryWeaponItem _x;
+			sleep 0.01;
 		// };
     };
 } foreach (_sItems);

@@ -9,7 +9,7 @@
 private [ "_camera", "_welcomeMessage", "_camDistance" ];
 _welcomeMessage = format["Bienvenue sur Fantasma %1, Le serveur Altis Life Francophone!",format["%1", profileName]];
 _camDistance = 40;
-waitUntil { alive player };
+waitUntil {sleep 0.1;  alive player };
 //waituntil {!isnull (finddisplay 46)};
 showCinemaBorder true;
 camUseNVG false;

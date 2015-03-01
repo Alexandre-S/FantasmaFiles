@@ -22,7 +22,7 @@ player setPos (getMarkerPos "jail_marker");
 
 if(_bad) then
 {
-	waitUntil {alive player};
+	waitUntil {sleep 0.1; alive player};
 	sleep 1;
 };
 

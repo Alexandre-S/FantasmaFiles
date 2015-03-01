@@ -43,7 +43,7 @@ switch(playerSide) do
 	case independent: {
 		_handle = [] spawn life_fnc_medicLoadout;
 	};
-	waitUntil {scriptDone _handle};
+	waitUntil {sleep 0.1; scriptDone _handle};
 };
 
 //Cleanup of weapon containers near the body & hide it.

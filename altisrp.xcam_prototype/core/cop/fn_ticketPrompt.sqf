@@ -24,7 +24,7 @@ _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px
 [] spawn
 {
 	disableSerialization;
-	waitUntil {life_ticket_paid OR (isNull (findDisplay 2600))};
+	waitUntil {sleep 0.1; life_ticket_paid OR (isNull (findDisplay 2600))};
 	if(isNull (findDisplay 2600) && !life_ticket_paid) then
 	{
 		[[0,"STR_Cop_Ticket_Refuse",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;

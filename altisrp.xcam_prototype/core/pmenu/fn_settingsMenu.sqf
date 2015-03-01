@@ -32,7 +32,7 @@ _tags = _display displayCtrl 2970;
 _objs = _display displayCtrl 2972;
 
 if(isNil "life_tagson") then {
-	life_sidechat = true;
+	//life_sidechat = true;
 	life_tagson = true;
 	life_revealObjects = true;
 };
@@ -57,10 +57,10 @@ if(life_tagson) then {
 	_tags buttonSetAction "LIFE_ID_PlayerTags = [""LIFE_PlayerTags"",""onEachFrame"",""life_fnc_playerTags""] call BIS_fnc_addStackedEventHandler; life_tagson = true; [] call life_fnc_settingsMenu;";
 };
 
-if(life_sidechat) then {
+/*if(life_sidechat) then {
 	_side ctrlSetTextColor [0,1,0,1];
 	_side ctrlSetText "ON";
 } else {
 	_side ctrlSetTextColor [1,0,0,1];
 	_side ctrlSetText "OFF";
-};
+};*/

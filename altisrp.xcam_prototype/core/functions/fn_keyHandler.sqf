@@ -43,7 +43,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 		{
 			private["_handle"];
 			_handle = [] spawn life_fnc_actionKeyHandler;
-			waitUntil {scriptDone _handle};
+			waitUntil {sleep 0.1; scriptDone _handle};
 			life_action_inUse = false;
 		};
 	};
@@ -131,7 +131,7 @@ switch (_code) do
 			{
 				private["_handle"];
 				_handle = [] spawn life_fnc_actionKeyHandler;
-				waitUntil {scriptDone _handle};
+				waitUntil {sleep 0.1; scriptDone _handle};
 				life_action_inUse = false;
 			};
 		};

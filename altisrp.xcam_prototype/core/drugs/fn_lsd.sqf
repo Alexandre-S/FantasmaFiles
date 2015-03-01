@@ -48,7 +48,7 @@ life_lsd_effect = time;
 	hint "Vous vous sentez invincible !";
 	player setFatigue 0;
 	player enableFatigue false;
-	waitUntil {!alive player OR ((time - life_lsd_effect) > (4.5 * 60))};
+	waitUntil {sleep 0.1; !alive player OR ((time - life_lsd_effect) > (4.5 * 60))};
 	life_lsd_effect = 0;
 	player enableFatigue true;
 };

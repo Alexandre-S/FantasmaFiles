@@ -34,7 +34,7 @@ player setCurrentTask life_cur_task;
 
 [] spawn
 {
-	waitUntil {!life_delivery_in_progress OR !alive player};
+	waitUntil {sleep 0.1; !life_delivery_in_progress OR !alive player};
 	if(!alive player) then
 	{
 		life_cur_task setTaskState "Failed";

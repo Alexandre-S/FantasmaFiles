@@ -14,7 +14,7 @@ if(!hasInterface) then {
 		player setVariable ["tf_unable_to_use_radio", true];
 		player allowDamage false;
 		_handle = [] spawn life_fnc_stripDownPlayer;
-		waitUntil {scriptDone _handle};
+		waitUntil {sleep 0.1; scriptDone _handle};
 	};
 }else{
 	#define __CONST__(var1,var2) var1 = compileFinal (if(typeName var2 == "STRING") then {var2} else {str(var2)})

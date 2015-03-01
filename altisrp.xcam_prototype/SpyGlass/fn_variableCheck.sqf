@@ -48,6 +48,6 @@ _checkThread = {
 //Create the worker.
 while {true} do {
 	_thread = _badVariables spawn _checkThread;
-	waitUntil {scriptDone _thread};
+	waitUntil {sleep 0.1; scriptDone _thread};
 	sleep 120; //Goto sleep for 2 minutes.
 };

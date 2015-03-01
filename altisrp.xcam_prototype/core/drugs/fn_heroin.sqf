@@ -25,7 +25,7 @@ if (life_heroin_effect == 0) then
 		"chromAberration" ppEffectAdjust [life_drug_level / 10,life_drug_level / 10,true];
 		"chromAberration" ppEffectCommit 1;
 		
-		waitUntil {!alive player || ((time - life_heroin_effect) > (4 * 60))};
+		waitUntil {sleep 0.1; !alive player || ((time - life_heroin_effect) > (4 * 60))};
 		
 		"chromAberration" ppEffectEnable false;
 		"colorCorrections" ppEffectEnable false;

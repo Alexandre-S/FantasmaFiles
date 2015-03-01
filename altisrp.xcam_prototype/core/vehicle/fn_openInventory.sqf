@@ -44,7 +44,7 @@ life_trunk_vehicle = _vehicle;
 
 _vehicle spawn
 {
-	waitUntil {isNull (findDisplay 3500)};
+	waitUntil {sleep 0.1; isNull (findDisplay 3500)};
 	_this setVariable["trunk_in_use",false,true];
 	if(_this isKindOf "House_F") then {
 		[] call life_fnc_getHLC;

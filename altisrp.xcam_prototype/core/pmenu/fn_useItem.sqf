@@ -27,7 +27,7 @@ switch (true) do
 		life_boltcutter_uses = true;
 		_handle = [cursorTarget] spawn life_fnc_boltcutter;
 		closeDialog 0;
-		waitUntil {scriptDone _handle};
+		waitUntil {sleep 0.1; scriptDone _handle};
 		life_boltcutter_uses = false;
 	};
 	
@@ -64,7 +64,7 @@ switch (true) do
 				life_redgull_effect = time;
 				titleText[localize "STR_ISTR_RedGullEffect","PLAIN"];
 				player enableFatigue false;
-				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
+				waitUntil {sleep 1; !alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
 			};
 		};

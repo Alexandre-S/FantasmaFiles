@@ -24,7 +24,7 @@ if(isNull _curTarget) exitWith {
 		if(playerSide == civilian && !life_action_gathering) then {
 			life_action_gathering = true;
 			_handle = [] spawn life_fnc_gather;
-			waitUntil {scriptDone _handle};
+			waitUntil {sleep 0.1; scriptDone _handle};
 			life_action_gathering = false;
 		};
 	};
@@ -83,7 +83,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		if((typeOf _curTarget) in _animalTypes2) then {
 			private["_handle"];
 			_handle = [_curTarget] spawn life_fnc_skinAnimal;
-			waitUntil {scriptDone _handle};
+			waitUntil {sleep 0.1; scriptDone _handle};
 			
 		} else {
 			if((typeOf _curTarget) in _animalTypes) then {
@@ -91,11 +91,11 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 				//if((typeOf _curTarget) == "Turtle_F" && !alive _curTarget) then {
 					private["_handle"];
 					_handle = [_curTarget] spawn life_fnc_catchTurtle;
-					waitUntil {scriptDone _handle};
+					waitUntil {sleep 0.1; scriptDone _handle};
 				} else {
 					private["_handle"];
 					_handle = [_curTarget] spawn life_fnc_catchFish;
-					waitUntil {scriptDone _handle};
+					waitUntil {sleep 0.1; scriptDone _handle};
 				};
 			} else {
 				//OK, it wasn't a vehicle so let's see what else it could be?
@@ -103,7 +103,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 					//OK, it was a misc item (food,water,etc).
 					private["_handle"];
 					_handle = [_curTarget] spawn life_fnc_pickupItem;
-					waitUntil {scriptDone _handle};
+					waitUntil {sleep 0.1; scriptDone _handle};
 				} else {
 					//It wasn't a misc item so is it money?
 					if((typeOf _curTarget) == _money) then {
@@ -111,7 +111,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 						private["_handle"];
 						// _curTarget setVariable["inUse",TRUE,TRUE];
 						_handle = [_curTarget] spawn life_fnc_pickupMoney;
-						waitUntil {scriptDone _handle};
+						waitUntil {sleep 0.1; scriptDone _handle};
 					};
 				};
 			};
