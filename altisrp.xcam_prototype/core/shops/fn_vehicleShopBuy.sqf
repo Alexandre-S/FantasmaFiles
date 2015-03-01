@@ -53,7 +53,7 @@ hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
-	waitUntil {sleep 0.1; !isNil "_vehicle"}; //Wait?
+	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _spawnPoint,["Land_Hospital_side2_F"],100];
 	if(count _hs > 0) then {
@@ -67,7 +67,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle lock 2;
 } else {
 	_vehicle = createVehicle [_className, _spawnPoint, [], 0, "NONE"];
-	waitUntil {sleep 0.1; !isNil "_vehicle"}; //Wait?
+	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false; //Temp disable damage handling..
 	_vehicle lock 2;
 	_vehicle setVectorUp (surfaceNormal _spawnPoint);
