@@ -102,7 +102,7 @@
 	_MaxWalk = 1200;
 	while{true} do 
 	{
-		sleep 0.5;
+		sleep 1;
 		if(!alive player) then {_walkDis = 0;}
 		else
 		{
