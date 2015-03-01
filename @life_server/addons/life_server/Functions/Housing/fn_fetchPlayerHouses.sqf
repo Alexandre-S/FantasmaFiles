@@ -61,7 +61,7 @@ _return = [];
 		if(_pos isEqualTo [0,0,0]) exitWith {};
 		
 		_container = createVehicle[_className,_pos,[],0,"NONE"];
-		waitUntil{!isNil "_container"};
+		waitUntil{sleep 0.1; !isNil "_container"};
 		// _container enableSimulation false;
 		_container allowDamage false;
 		_container setPosATL _pos;

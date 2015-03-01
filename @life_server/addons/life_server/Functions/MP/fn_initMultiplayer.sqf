@@ -18,7 +18,7 @@ if (isMultiplayer) then {
 	"BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call BIS_fnc_MPexec};
 
 	//--- Execute persistent functions
-	waituntil {!isnil "bis_functions_mainscope"};
+	waituntil {sleep 0.1; !isnil "bis_functions_mainscope"};
 	_queue = bis_functions_mainscope getvariable ["BIS_fnc_MP_queue",[]];
 	{
 		//--- Do not declare persistent call again to avoid infinite loop

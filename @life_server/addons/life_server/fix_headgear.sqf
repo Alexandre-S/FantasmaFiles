@@ -44,8 +44,8 @@ if (isServer) then
 	};
 };
 
-waitUntil {!(isNil {_this getVariable "BIS_randomSeed1"})};
-waitUntil {!(isNil {_this getVariable "BIS_randomSeed2"})};
+waitUntil {sleep 0.1; !(isNil {_this getVariable "BIS_randomSeed1"})};
+waitUntil {sleep 0.1; !(isNil {_this getVariable "BIS_randomSeed2"})};
 _randomSeed1 = _this getVariable "BIS_randomSeed1";
 _randomSeed2 = _this getVariable "BIS_randomSeed2";
 

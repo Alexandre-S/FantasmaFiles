@@ -280,7 +280,7 @@ else
 	["CALL deleteOldHouses",1] spawn DB_fnc_asyncCall;
 	["CALL deleteOldGangs",1] spawn DB_fnc_asyncCall; //Maybe delete old gangs
 
-	waitUntil {!isNull player && player == player};
+	waitUntil {sleep 0.1; !isNull player && player == player};
 	serv_sv_use = [];
 	last_HC_update = 0;
 	waitUntil {sleep 0.1;!isNil "serverloadhc"};
@@ -365,7 +365,7 @@ else
 	{
 		while {true} do
 		{
-			waitUntil {!isNull player && player == player};
+			waitUntil {sleep 0.1; !isNull player && player == player};
 
 			PO3_sVAR_HLCKeepAlive = [player,diag_fps,time];
 			publicVariableServer "PO3_sVAR_HLCKeepAlive";

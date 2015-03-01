@@ -11,7 +11,7 @@ private["_nearVehicles","_spikeStrip"];
 _spikeStrip = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _spikeStrip) exitWith {}; //Bad vehicle type passed.
 
-waitUntil {_nearVehicles = nearestObjects[getPos _spikeStrip,["LandVehicle"],5]; count _nearVehicles > 0 OR isNull _spikeStrip};
+waitUntil {sleep 0.1; _nearVehicles = nearestObjects[getPos _spikeStrip,["LandVehicle"],5]; count _nearVehicles > 0 OR isNull _spikeStrip};
 
 if(isNull _spikeStrip) exitWith {}; //It was picked up?
 _vehicle = _nearVehicles select 0;

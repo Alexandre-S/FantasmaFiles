@@ -27,7 +27,7 @@ serv_sv_use pushBack _vid;
 
 _query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel, inventory FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
-waitUntil{sleep (random 0.3); !DB_Async_Active};
+waitUntil{!DB_Async_Active};
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
@@ -77,7 +77,7 @@ waitUntil {!DB_Async_Active};
 [_query,false] spawn DB_fnc_asyncCall;
 if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
-	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
+	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],100];
 	if(count _hs > 0) then {
@@ -90,7 +90,7 @@ if(typeName _sp == "STRING") then {
 	sleep 0.1;
 } else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
-	waitUntil {!isNil "_vehicle" && {!isNull _vehicle}};
+	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_vehicle setPos _sp;
 	_vehicle setVectorUp (surfaceNormal _sp);

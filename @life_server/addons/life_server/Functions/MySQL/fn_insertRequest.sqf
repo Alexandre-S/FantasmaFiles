@@ -20,7 +20,7 @@ if(isNull _returnToSender || _unitid == -1) exitWith {systemChat "ReturnToSender
 
 _query = format["SELECT playerid, name FROM players WHERE playerid='%1'",_uid];
 
-waitUntil{sleep (random 0.3); !DB_Async_Active};
+waitUntil{!DB_Async_Active};
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
