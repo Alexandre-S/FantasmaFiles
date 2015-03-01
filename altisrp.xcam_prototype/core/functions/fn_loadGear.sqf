@@ -199,8 +199,8 @@ if(_oldsys) then {
 	{
 		// if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
 			_item = [_x,1] call life_fnc_varHandle;
-			_handle = [true,_item,1] call life_fnc_handleInv;
-			waitUntil {sleep 0.01; scriptDone _handle};
+			[true,_item,1] call life_fnc_handleInv;
+			sleep 0.01;
 		// };
 	} foreach (_yItems);
 } else {
@@ -208,8 +208,8 @@ if(_oldsys) then {
 		_item = _x select 0;
 		// if(!(_item in ["life_inv_handcuffs","life_inv_handcuffkeys"])) then {
 			_item = [_item,1] call life_fnc_varHandle;
-			_handle = [true,_item,_x select 1,true] call life_fnc_handleInv;
-			waitUntil {sleep 0.01; scriptDone _handle};
+			[true,_item,_x select 1,true] call life_fnc_handleInv;
+			sleep 0.01;
 		// };
 	} foreach (_yItems);
 };
