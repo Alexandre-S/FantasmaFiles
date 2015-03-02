@@ -505,6 +505,7 @@ life_garage_sell =
 	//BOAT
 	["C_Rubberboat",3750*0.49],
 	["C_Boat_Civil_01_F",33000*0.49],
+	["C_Boat_Civil_01_rescue_F",31500*0.49],
 	["D41_Trawler",130000*0.49],
 	["Burnes_MK10_1",500000*0.49],
 	
@@ -621,6 +622,7 @@ life_garage_prices =
 	//BOAT
 	["C_Rubberboat",3750*0.0735],
 	["C_Boat_Civil_01_F",33000*0.0735],
+	["C_Boat_Civil_01_rescue_F",31500*0.0735],
 	["D41_Trawler",130000*0.0735],
 	["Burnes_MK10_1",500000*0.0735],
 	
@@ -735,6 +737,7 @@ life_assur_prices =
 	//BOAT
 	["C_Rubberboat",3750*0.5],
 	["C_Boat_Civil_01_F",33000*0.5],
+	["C_Boat_Civil_01_rescue_F",31500*0.5],
 	["D41_Trawler",130000*0.5],
 	["D41_Trawler",500000*0.5],
 	

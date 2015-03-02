@@ -160,6 +160,13 @@ switch (_shop) do
 		};
 	};
 	
+	case "med_sea":
+	{
+		_return = [
+			["C_Boat_Civil_01_rescue_F",31500]
+		];
+	};
+	
 	case "med_air_hs": {
 		if(__GETC__(life_medicLevel) >= 1) then
 		{
