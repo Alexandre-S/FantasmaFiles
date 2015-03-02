@@ -257,7 +257,7 @@ switch(_shop) do
 						["CUP_glaunch_Mk13",nil,0],
 						["optic_Hamr",nil,0],
 						["HandGrenade",nil,0],
-						["MiniGrenade",nil,0],
+						//["MiniGrenade",nil,0],
 						["1Rnd_HE_Grenade_shell",nil,0],
 						["1Rnd_Smoke_Grenade_shell",nil,0],
 						["1Rnd_SmokeRed_Grenade_shell",nil,0],
@@ -842,7 +842,8 @@ switch(_shop) do
 						["AGM_EarBuds",nil,25],
 						["AGM_ItemKestrel",nil,500],
 						["AGM_SpareBarrel",nil,1000],
-						["AGM_CableTie",nil,100]
+						["AGM_CableTie",nil,100],
+						["MiniGrenade","Molotov",11000]
 					]
 				];
 				//a pu vigil
