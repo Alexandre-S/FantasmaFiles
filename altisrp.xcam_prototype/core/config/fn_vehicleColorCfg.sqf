@@ -508,7 +508,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "bwi_a3_t6a_7":
+	/*case "bwi_a3_t6a_7":
 	{
 		_ret = 
 		[
@@ -522,6 +522,32 @@ switch (_vehicle) do
 			["bwi_a3_t6\tex\canada\t6_1_t.paa","civ","bwi_a3_t6\tex\canada\t6_2_t.paa","bwi_a3_t6\tex\canada\t6_3_t.paa","bwi_a3_t6\tex\canada\t6_4_t.paa"],
 			["bwi_a3_t6\tex\dog\t6_1_t.paa","civ","bwi_a3_t6\tex\dog\t6_2_t.paa", "bwi_a3_t6\tex\dog\t6_3_t.paa", "bwi_a3_t6\tex\dog\t6_4_t.paa"],
 			["bwi_a3_t6\tex\usaf\t6_1_t.paa","cop","bwi_a3_t6\tex\usaf\t6_2_t.paa","bwi_a3_t6\tex\usaf\t6_3_t.paa","bwi_a3_t6\tex\usaf\t6_4_t.paa"]
+		];
+	};*/
+	
+	case "sab_camel":
+	{
+		_ret = 
+		[
+			["sab_camel\data\camel_west_co.paa","civ"],
+			["sab_camel\data\camel_east_co.paa","civ"]
+		];
+	};
+	
+	case "Sab_ana_An2":
+	{
+		_ret = 
+		[
+			["sab_An2\data\czAN2_1.paa","civ","sab_An2\data\czAN2_2.paa","sab_An2\data\czAN2_wings.paa"],
+			["sab_An2\data\fdAN2_1.paa","civ","sab_An2\data\fdAN2_2.paa","sab_An2\data\fdAN2_wings.paa"],
+			["sab_An2\data\Sab_YP_AN2_1.paa","civ","sab_An2\data\Sab_YP_AN2_2.paa","sab_An2\data\Sab_YP_AN2_3.paa"],
+			["sab_An2\data\Sab_AJ_AN2_1.paa","civ","sab_An2\data\Sab_AJ_AN2_2.paa","sab_An2\data\Sab_AJ_AN2_3.paa"],
+			["sab_An2\data\an2_1_b_co.paa","civ","sab_An2\data\an2_2_b_co.paa","sab_An2\data\an2_wings_b_co.paa"],
+			["sab_An2\data\an2_1_a_co.paa","civ","sab_An2\data\an2_2_a_co.paa","sab_An2\data\an2_wings_a_co.paa"],
+			["sab_An2\data\an2_1_co.paa","civ","sab_An2\data\an2_2_co.paa","sab_An2\data\an2_wings_co.paa"],
+			["sab_an2\data\caAN2_1.paa","civ","sab_an2\data\caAN2_2.paa","sab_an2\data\caAN2_wings.paa"],
+			["sab_An2\data\Arma3_AN2_1.paa","civ","sab_An2\data\Arma3_AN2_2.paa","sab_An2\data\Arma3_AN2_wings.paa","sab_An2\data\ee.paa"],
+			["sab_An2\data\Arma3_AN2_1.paa","civ","sab_An2\data\Arma3_AN2_2.paa","sab_An2\data\Arma3_AN2_wings.paa","sab_An2\data\opfor.paa"]
 		];
 	};
 	

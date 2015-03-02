@@ -57,6 +57,10 @@ switch (_filter) do
 		_ret pushBack ["IRA_Soldier_Outfit_8","Tenue verte et bas camo",10000];
 		_ret pushBack ["UVF_Soldier_Outfit_5","Tenue bleue et bas noir ",10000];
 		_ret pushBack ["IRA_Soldier_Outfit_1","Uniforme vert",20000];
+		_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01","Uniforme Vert",50000];
+		_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
+		_ret pushBack ["UVF_Soldier_Outfit_2","Uniforme noir",50000];
+		_ret pushBack ["IRA_Soldier_Outfit_4","Uniforme camo",50000];
 		// Armée privée
 		if(__GETC__(life_factnumber) == 1) then
 		{
@@ -130,10 +134,8 @@ switch (_filter) do
 		if(__GETC__(life_reblevel) >= 3) then
 		{
 			_ret pushBack ["U_O_GhillieSuit",nil,50000];
-			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01","Uniforme Vert",50000];
-			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
-			_ret pushBack ["UVF_Soldier_Outfit_2","Uniforme noir",50000];
-			_ret pushBack ["IRA_Soldier_Outfit_4","Uniforme camo",50000];
+			_ret pushBack ["U_B_GhillieSuit",nil,50000];
+			_ret pushBack ["U_I_GhillieSuit",nil,50000];
 			//_ret pushBack ["vip_clothes",nil,50000];
 		};
 	};
@@ -159,7 +161,15 @@ switch (_filter) do
 		_ret pushBack ["H_HelmetLeaderO_ocamo",nil,1700];
 		_ret pushBack ["H_HelmetLeaderO_oucamo",nil,1700];
 		_ret pushBack ["H_HelmetSpecO_ocamo",nil,1700];
+		_ret pushBack ["H_HelmetB",nil,1700];
+		_ret pushBack ["H_HelmetB_light",nil,1700];
+		_ret pushBack ["H_HelmetB_paint",nil,1700];
+		_ret pushBack ["H_HelmetCrew_I",nil,1700];
+		_ret pushBack ["H_HelmetIA",nil,1700];
+		_ret pushBack ["H_HelmetIA_camo",nil,1700];
+		_ret pushBack ["H_HelmetSpecB_paint1",nil,1700];	
 		_ret pushBack ["H_PilotHelmetHeli_O",nil,2000];
+		_ret pushBack ["H_CrewHelmetHeli_O",nil,2000];
 		_ret pushBack ["H_HelmetCrew_O",nil,2000];
 		// Armée privée
 		if(__GETC__(life_factnumber) == 1) then

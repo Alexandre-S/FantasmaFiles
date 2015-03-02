@@ -80,9 +80,14 @@ switch (_shop) do
 		_return =
 		[
 			["C_Van_01_box_F",127500],
+			["DAR_4x4",175500],
+			["DAR_MK23",195300],
 			["I_Truck_02_transport_F",202500],
+			["DAR_MK27",228500],
 			["I_Truck_02_covered_F",262500],
+			["DAR_MK27T",288500],
 			["RDS_Ikarus_Civ_01",302500],
+			["DAR_LHS_8",335250], //fuel
 			["O_Truck_03_transport_F",310000],
 			["B_Truck_01_transport_F",375000],
 			["O_Truck_03_covered_F",393750],
@@ -93,6 +98,7 @@ switch (_shop) do
 		if(__GETC__(life_donator) > 0) then
 		{
 			_return pushBack ["B_Truck_01_box_F",450000];
+			_return pushBack ["DAR_LHS_16",450000];
 			_return pushBack ["O_Truck_03_device_F",450000];
 		};
 		if(player getVariable["life_dep",false]) then
@@ -107,7 +113,9 @@ switch (_shop) do
 		[
 			["GNT_C185",207500], // Cessna 185
 			["GNT_C185F",237500], // Cessna 185 Amphibian
-			["bwi_a3_t6a_7",375000],
+			//["bwi_a3_t6a_7",375000],
+			["sab_camel",375000],
+			["Sab_ana_An2",415000],
 			["C_Heli_Light_01_civil_F",337500],
 			["B_Heli_Light_01_F",337500],
 			["O_Heli_Light_02_unarmed_F",675000]
@@ -277,8 +285,8 @@ switch (_shop) do
 			_return pushBack["I_Heli_light_03_unarmed_F",0];
 			_return pushBack["B_Heli_Transport_03_unarmed_F",0];
 			_return pushBack["O_Heli_Transport_04_F",0];
-			_return pushBack["bwi_a3_t6a_7",0];
-			_return pushBack["bwi_a3_at6b_3",0];
+			//_return pushBack["bwi_a3_t6a_7",0];
+			//_return pushBack["bwi_a3_at6b_3",0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then

@@ -502,7 +502,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "bwi_a3_t6a_7":
+	/*case "bwi_a3_t6a_7":
 	{
 		switch (_index) do
 		{
@@ -516,6 +516,32 @@ switch (_vehicle) do
 			case 7: {_color = "Canada"};
 			case 8: {_color = "Warthunder"};
 			case 9: {_color = "USAF Academy"};
+		};
+	};*/
+	
+	case "sab_camel":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "West"};
+			case 1: {_color = "East"};
+		};
+	};
+	
+	case "Sab_ana_An2":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Czech Aero Club"};
+			case 1: {_color = "Firefighter"};
+			case 2: {_color = "Big Panda"};
+			case 3: {_color = "Anastasija"};
+			case 4: {_color = "Air Tak"};
+			case 5: {_color = "Aeroflot"};
+			case 6: {_color = "Takistan Army"};
+			case 7: {_color = "Air Racing"};
+			case 8: {_color = "Estonian AF"};
+			case 9: {_color = "Russian AF"};
 		};
 	};
 	

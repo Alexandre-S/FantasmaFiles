@@ -593,6 +593,13 @@ switch(_shop) do
 							["CUP_30Rnd_545x39_AK_M",nil,300],
 							["CUP_arifle_XM8_Compact_Rail",nil,20000],
 							["CUP_arifle_XM8_Railed",nil,20000],
+							["CUP_arifle_M16A2",nil,20000],
+							["CUP_arifle_M16A4_Base",nil,20000],
+							["CUP_arifle_Mk16_STD",nil,20000],
+							["CUP_arifle_Mk16_STD_FG",nil,20000],
+							["CUP_arifle_Mk16_STD_SFG",nil,20000],
+							["CUP_arifle_Mk16_SV",nil,20000],
+							["CUP_arifle_xm8_sharpshooter",nil,20000],
 							// ["CUP_arifle_XM8_Carbine",nil,20000],
 							// ["CUP_arifle_XM8_Compact",nil,20000],
 							// ["CUP_arifle_XM8_Carbine_FG",nil,20000],
@@ -600,10 +607,15 @@ switch(_shop) do
 							["CUP_arifle_L85A2",nil,20000],
 							["CUP_arifle_L86A2",nil,20000],
 							["CUP_arifle_L85A2_GL",nil,25000],
+							["CUP_arifle_CZ805_A1",nil,20000],
+							["CUP_arifle_CZ805_A2",nil,20000],
+							["CUP_arifle_CZ805_GL",nil,25000],
 							// ["CUP_arifle_XM8_Carbine_GL",nil,25000],
 							["CUP_30Rnd_556x45_Stanag",nil,300],
+							["CUP_srifle_Mk12SPR",nil,30000],
+							["CUP_20Rnd_556x45_Stanag",nil,250],
 							// ["CUP_arifle_xm8_SAW",nil,30000],
-							["CUP_100Rnd_556x45_BetaCMag",nil,300],
+							//["CUP_100Rnd_556x45_BetaCMag",nil,300],
 							["UGL_FlareWhite_F",nil,500],
 							["UGL_FlareGreen_F",nil,500],
 							["UGL_FlareYellow_F",nil,500],
@@ -632,6 +644,12 @@ switch(_shop) do
 							// ["optic_Arco",nil,8000],
 							// ["acc_flashlight",nil,1000],
 							// ["acc_pointer_IR",nil,2000],
+							["CUP_optic_SUSAT",nil,8000],
+							["CUP_optic_CWS",nil,8000],
+							["CUP_optic_ACOG",nil,8000],
+							["CUP_optic_CompM2_Black",nil,8000],
+							["CUP_optic_CompM4",nil,8000],
+							["CUP_optic_HoloBlack",nil,8000],
 							["ToolKit",nil,9500],
 							["FirstAidKit",nil,150],
 							["ItemGPS",nil,100],
@@ -677,6 +695,13 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerY",nil,800];
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerR",nil,800];
 					(_ret select 1) pushBack ["CUP_30Rnd_Sa58_M_TracerG",nil,800];
+					(_ret select 1) pushBack ["CUP_arifle_CZ805_B",nil,95000];
+					(_ret select 1) pushBack ["CUP_arifle_CZ805_B_GL",nil,95000];
+					(_ret select 1) pushBack ["CUP_20Rnd_762x51_CZ805B",nil,650];
+					(_ret select 1) pushBack ["CUP_arifle_Mk17_CQC",nil,55000];
+					(_ret select 1) pushBack ["CUP_arifle_Mk17_CQC_FG",nil,45000];
+					(_ret select 1) pushBack ["CUP_arifle_Mk17_CQC_SFG",nil,45000];
+					(_ret select 1) pushBack ["CUP_20Rnd_762x51_B_SCAR",nil,900];
 					(_ret select 1) pushBack ["optic_Arco",nil,8000];
 					(_ret select 1) pushBack ["optic_Hamr",nil,8000];
 					(_ret select 1) pushBack ["optic_MRCO",nil,8000];
@@ -684,15 +709,14 @@ switch(_shop) do
 					//(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750_Tracer",nil,1000];
 					//(_ret select 1) pushBack ["CUP_10Rnd_762x51_CZ750",nil,1000];
 					(_ret select 1) pushBack ["CUP_srifle_SVD",nil,80000];
-					// (_ret select 1) pushBack ["CUP_srifle_SVD_des",nil,80000];
+					(_ret select 1) pushBack ["CUP_srifle_SVD_des",nil,80000];
 					(_ret select 1) pushBack ["CUP_srifle_SVD_wdl_ghillie",nil,90000];
-					// (_ret select 1) pushBack ["CUP_srifle_SVD_des_ghillie_pso",nil,90000];
+					(_ret select 1) pushBack ["CUP_srifle_SVD_des_ghillie_pso",nil,90000];
 					(_ret select 1) pushBack ["CUP_10Rnd_762x54_SVD_M",nil,1000];
 					(_ret select 1) pushBack ["CUP_optic_PSO_1",nil,8000];
 					(_ret select 1) pushBack ["CUP_optic_NSPU",nil,16000];
 					(_ret select 1) pushBack ["CUP_srifle_M14_Aim",nil,70000];
 					(_ret select 1) pushBack ["CUP_20Rnd_762x51_DMR",nil,1000];
-					(_ret select 1) pushBack ["CUP_optic_CompM2_Black",nil,7000];
 					(_ret select 1) pushBack ["CUP_arifle_FNFAL_railed",nil,45000];
 					(_ret select 1) pushBack ["CUP_20Rnd_762x51_FNFAL_M",nil,700];
 					(_ret select 1) pushBack ["CUP_lmg_L110A1",nil,75000];
@@ -707,12 +731,14 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_lmg_L7A2",nil,85000];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,1100];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",nil,1100];
-					// (_ret select 1) pushBack ["CUP_srifle_M24_des",nil,60000];
+					(_ret select 1) pushBack ["CUP_srifle_M24_des",nil,60000];
 					(_ret select 1) pushBack ["CUP_srifle_M24_wdl",nil,60000];
 					(_ret select 1) pushBack ["CUP_optic_LeupoldMk4_10x40_LRT_Woodland",nil,8000];
 					(_ret select 1) pushBack ["CUP_srifle_M24_ghillie",nil,75000];
 					(_ret select 1) pushBack ["CUP_srifle_M40A3",nil,75000];
 					(_ret select 1) pushBack ["CUP_5Rnd_762x51_M24",nil,900];
+					(_ret select 1) pushBack ["CUP_srifle_DMR",nil,85000];
+					(_ret select 1) pushBack ["CUP_20Rnd_762x51_DMR",nil,1000];
 					(_ret select 1) pushBack ["CUP_arifle_RPK74",nil,60000];
 					(_ret select 1) pushBack ["CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",nil,900];
 					(_ret select 1) pushBack ["CUP_lmg_UK59",nil,60000];
@@ -721,12 +747,14 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_lmg_Pecheneg",nil,120000];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",nil,1500];
 					(_ret select 1) pushBack ["CUP_optic_PechenegScope",nil,12000];
-					// (_ret select 1) pushBack ["optic_LRPS",nil,12500];
-					// (_ret select 1) pushBack ["optic_SOS",nil,13500];
-					(_ret select 1) pushBack ["CUP_optic_SUSAT",nil,4000];
-					(_ret select 1) pushBack ["CUP_optic_CWS",nil,4000];
-					(_ret select 1) pushBack ["CUP_optic_ACOG",nil,4000];
+					(_ret select 1) pushBack ["CUP_srifle_M110",nil,80000];
+					(_ret select 1) pushBack ["CUP_20Rnd_762x51_B_M110",nil,1100];
+					(_ret select 1) pushBack ["CUP_srifle_AWM_des",nil,90000];
+					(_ret select 1) pushBack ["CUP_srifle_AWM_wdl",nil,90000];
+					(_ret select 1) pushBack ["CUP_5Rnd_86x70_L115A1",nil,1200];
+					(_ret select 1) pushBack ["optic_DMS",nil,8000];
 					(_ret select 1) pushBack ["Rangefinder",nil,15000];
+					(_ret select 1) pushBack ["AGM_Vector",nil,15000];
 				};
 				// Rang 3
 				if(__GETC__(life_reblevel) >= 3) then
@@ -817,19 +845,11 @@ switch(_shop) do
 						["AGM_CableTie",nil,100]
 					]
 				];
-				if(license_civ_vigil) then
+				//a pu vigil
+				/*if(license_civ_vigil) then
 				{
-					(_ret select 1) pushBack ["CUP_arifle_CZ805_A1",nil,75000];
-					(_ret select 1) pushBack ["CUP_arifle_CZ805_GL",nil,75000];
-					(_ret select 1) pushBack ["CUP_arifle_CZ805_A2",nil,75000];
-					(_ret select 1) pushBack ["CUP_30Rnd_556x45_Stanag",nil,575];
-					(_ret select 1) pushBack ["CUP_arifle_CZ805_B",nil,95000];
-					(_ret select 1) pushBack ["CUP_arifle_CZ805_B_GL",nil,95000];
-					(_ret select 1) pushBack ["CUP_20Rnd_762x51_CZ805B",nil,650];
-					(_ret select 1) pushBack ["CUP_optic_CompM4",nil,3000];
-					(_ret select 1) pushBack ["CUP_optic_HoloBlack",nil,3000];
-					(_ret select 1) pushBack ["CUP_optic_CompM2_Black",nil,3000];
-				};
+
+				};*/
 				if(license_civ_gvt) then
 				{
 					(_ret select 1) pushBack ["CUP_arifle_G36C",nil,75000];

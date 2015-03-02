@@ -472,21 +472,29 @@ life_garage_sell =
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.49],
+	["DAR_4x4",175500*0.49],
+	["DAR_MK23",195300*0.49],
 	["I_Truck_02_transport_F",202500*0.49],
+	["DAR_MK27",228500*0.49],
 	["I_Truck_02_covered_F",262500*0.49],
+	["DAR_MK27T",288500*0.49],
 	["RDS_Ikarus_Civ_01",302500*0.49],
+	["DAR_LHS_8",335250*0.49],
 	["O_Truck_03_transport_F",310000*0.49],
 	["B_Truck_01_transport_F",375000*0.49],
 	["O_Truck_03_covered_F",393750*0.49],
 	["B_Truck_01_covered_F",412500*0.49],
 	
 	["B_Truck_01_box_F",450000*0.49],
+	["DAR_LHS_16",450000*0.49],
 	["O_Truck_03_device_F",450000*0.49],
 	
 	//AIR
 	["GNT_C185",207500*0.49],
 	["GNT_C185F",237500*0.49],
-	["bwi_a3_t6a_7",375000*0.49],
+	//["bwi_a3_t6a_7",375000*0.49],
+	["sab_camel",375000*0.49],
+	["Sab_ana_An2",415000*0.49],
 	["C_Heli_Light_01_civil_F",337500*0.49],
 	["B_Heli_Light_01_F",337500*0.49],
 	["O_Heli_Light_02_unarmed_F",675000*0.49],
@@ -580,21 +588,29 @@ life_garage_prices =
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.0735],
+	["DAR_4x4",175500*0.0735],
+	["DAR_MK23",195300*0.0735],
 	["I_Truck_02_transport_F",202500*0.0735],
+	["DAR_MK27",228500*0.0735],
 	["I_Truck_02_covered_F",262500*0.0735],
+	["DAR_MK27T",288500*0.0735],
 	["RDS_Ikarus_Civ_01",302500*0.0735],
+	["DAR_LHS_8",335250*0.0735],
 	["O_Truck_03_transport_F",310000*0.0735],
 	["B_Truck_01_transport_F",375000*0.0735],
 	["O_Truck_03_covered_F",393750*0.0735],
 	["B_Truck_01_covered_F",412500*0.0735],
 	
 	["B_Truck_01_box_F",450000*0.0735],
+	["DAR_LHS_16",450000*0.0735],
 	["O_Truck_03_device_F",450000*0.0735],
 	
 	//AIR
 	["GNT_C185",207500*0.0735],
 	["GNT_C185F",237500*0.0735],
-	["bwi_a3_t6a_7",375000*0.0735],
+	//["bwi_a3_t6a_7",375000*0.0735],
+	["sab_camel",375000*0.0735],
+	["Sab_ana_An2",415000*0.0735],
 	["C_Heli_Light_01_civil_F",337500*0.245],
 	["B_Heli_Light_01_F",337500*0.245],
 	["O_Heli_Light_02_unarmed_F",675000*0.245],
@@ -686,21 +702,29 @@ life_assur_prices =
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.5],
+	["DAR_4x4",175500*0.5],
+	["DAR_MK23",195300*0.5],
 	["I_Truck_02_transport_F",202500*0.5],
+	["DAR_MK27",228500*0.5],
 	["I_Truck_02_covered_F",262500*0.5],
+	["DAR_MK27T",288500*0.5],
 	["RDS_Ikarus_Civ_01",302500*0.5],
+	["DAR_LHS_8",335250*0.5],
 	["O_Truck_03_transport_F",310000*0.5],
 	["B_Truck_01_transport_F",375000*0.5],
 	["O_Truck_03_covered_F",393750*0.5],
 	["B_Truck_01_covered_F",412500*0.5],
 	
 	["B_Truck_01_box_F",450000*0.5],
+	["DAR_LHS_16",450000*0.5],
 	["O_Truck_03_device_F",450000*0.5],
 	
 	//AIR
 	["GNT_C185",207500*0.5],
 	["GNT_C185F",237500*0.5],
-	["bwi_a3_t6a_7",375000*0.5],
+	//["bwi_a3_t6a_7",375000*0.5],
+	["sab_camel",375000*0.5],
+	["Sab_ana_An2",415000*0.5],
 	["C_Heli_Light_01_civil_F",337500*0.5],
 	["B_Heli_Light_01_F",337500*0.5],
 	["O_Heli_Light_02_unarmed_F",675000*0.5],
