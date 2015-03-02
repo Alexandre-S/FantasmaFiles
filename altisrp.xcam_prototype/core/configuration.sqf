@@ -48,6 +48,8 @@ life_reblevel = 0;
 life_isdep = false;
 // player setVariable["life_dep",false,true];
 life_istaxi = false;
+life_wipe = false;
+life_playername = "";
 // player setVariable["life_taxi",false,true];
 life_fatigue = 0.6; //Set the max fatigue
 life_is_alive = false;

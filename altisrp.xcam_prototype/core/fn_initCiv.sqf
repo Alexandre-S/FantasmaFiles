@@ -35,6 +35,27 @@ if(face player in life_women && !life_sexe) then
 	["NotFemale",false,true] call BIS_fnc_endMission;
 	sleep 35;
 };
+if(__GETC__(life_adminlevel) == 0) then
+{
+	if(((profileName) != (life_playername)) && !(life_wipe)) exitWith {
+		0 cutText[format ["Changement de nom interdit. \nVous devez passer à la prefecture pour changer de nom. \nMerci de vous reconnecter sous le nom : ""%1""",(life_playername)],"BLACK FADED"];
+		0 cutFadeOut 9999999;
+		sleep 20;
+		
+		player enableSimulation false;
+		["BadName",false,true] call BIS_fnc_endMission;
+		sleep 35;
+	};
+};
+if(((profileName) == (life_playername)) && life_wipe) exitWith {
+	0 cutText[format ["Changement d'identité en cours. \nVous venez de passer à la prefecture pour changer de nom, ou vous avez subit une mort RP. \nMerci de vous reconnecter avec un nouveau nom différent de : ""%1""",(life_playername)],"BLACK FADED"];
+	0 cutFadeOut 9999999;
+	sleep 20;
+	
+	player enableSimulation false;
+	["NewName",false,true] call BIS_fnc_endMission;
+	sleep 35;
+};
 
 if(life_is_arrested || (!(life_is_alive) && (life_firstSpawn)) ) then
 {
