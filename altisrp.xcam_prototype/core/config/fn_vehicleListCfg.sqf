@@ -96,7 +96,7 @@ switch (_shop) do
 		// Si donateur
 		if(__GETC__(life_donator) > 0) then
 		{
-			_return pushBack ["DAR_LHS_8",335250];
+			//_return pushBack ["DAR_LHS_8",335250];
 			_return pushBack ["B_Truck_01_box_F",450000];
 			_return pushBack ["DAR_LHS_16",450000];
 			_return pushBack ["O_Truck_03_device_F",450000];
