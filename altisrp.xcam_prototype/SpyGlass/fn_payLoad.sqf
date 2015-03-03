@@ -50,17 +50,17 @@ private["_children","_allowedChildren"];
 _children = [configFile >> "RscDisplayMPInterrupt" >> "controls",0] call BIS_fnc_returnChildren;
 _allowedChildren = [
 "Title","MissionTitle","DifficultyTitle","PlayersName","ButtonCancel","ButtonSAVE","ButtonSkip","ButtonRespawn","ButtonOptions",
-"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox"
+"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox","Version","TraffLight","CBA_CREDITS_CONT_C","CBA_CREDITS_M_P","AGM_Tile"
 ];
 
-/*{
+{
 	if(!((configName _x) in _allowedChildren)) exitWith {
 		[[profileName,getPlayerUID player,"Modified_MPInterrupt"],"SPY_fnc_cookieJar",false,false] spawn life_fnc_MP;
 		[[profileName,"Devcon like executor detected"],"SPY_fnc_notifyAdmins",true,false] spawn life_fnc_MP;
 		sleep 0.5;
 		["SpyGlass",false,false] call BIS_fnc_endMission;
 	};
-} foreach _children;*/
+} foreach _children;
 
 //Validate that RscDisplayInventory is not modified common cheat-engine sqf executor method.
 private["_onLoad","_onUnload"];

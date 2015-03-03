@@ -9754,7 +9754,7 @@ class Mission
 			side="EMPTY";
 			vehicle="SignAd_Sponsor_Fuel_white_F";
 			skill=0.60000002;
-			init="this setVectorUp[0,0,0.1]; this setObjectTexture [0, ""\altisrpfr\images\nemesis.paa""]; this allowDamage false; this enableSimulation false;";
+			init="this setVectorUp[0,0,0.1]; this allowDamage false; this enableSimulation false;";
 		};
 		class Item504
 		{
