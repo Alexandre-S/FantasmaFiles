@@ -9708,7 +9708,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Green_F";
 			skill=0.60000002;
-			init="this setFlagTexture ""\altisrpfr\images\nemesis.paa"";";
 		};
 		class Item499
 		{
@@ -9718,7 +9717,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Green_F";
 			skill=0.60000002;
-			init="this setFlagTexture ""\altisrpfr\images\nemesis.paa"";";
 		};
 		class Item500
 		{
@@ -9738,7 +9736,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Green_F";
 			skill=0.60000002;
-			init="this setFlagTexture ""\altisrpfr\images\nemesis.paa"";";
 		};
 		class Item502
 		{
@@ -9748,7 +9745,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Green_F";
 			skill=0.60000002;
-			init="this setFlagTexture ""\altisrpfr\images\nemesis.paa"";";
 		};
 		class Item503
 		{
@@ -9768,7 +9764,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Green_F";
 			skill=0.60000002;
-			init="this setFlagTexture ""\altisrpfr\images\nemesis.paa"";";
 		};
 		class Item505
 		{
@@ -9778,7 +9773,6 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Green_F";
 			skill=0.60000002;
-			init="this setFlagTexture ""\altisrpfr\images\nemesis.paa"";";
 		};
 		class Item506
 		{
