@@ -9634,7 +9634,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_House_Small_03_V1_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 		class Item492
 		{
@@ -9645,7 +9645,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_House_Small_01_V3_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 		class Item493
 		{
@@ -9656,7 +9656,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_House_Small_02_V1_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 		class Item494
 		{
@@ -9667,7 +9667,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_Garage_V1_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 		class Item495
 		{
@@ -9677,7 +9677,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_Garage_V1_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 		class Item496
 		{
@@ -9688,7 +9688,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_House_Small_03_V1_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 		class Item497
 		{
@@ -9783,7 +9783,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_i_Garage_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this setVectorUp[0,0,0.1];";
+			init="this allowDamage false; this setVectorUp[0,0,0.1];";
 		};
 	};
 	class Markers
