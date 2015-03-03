@@ -25,12 +25,12 @@ _ownerID = _unitid;
 	The other part is well the SQL statement.
 */
 _query = switch(_side) do {
-	case west: {_returnCount = 16; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr, damage, hunger, thirst, sexe, wipe FROM players WHERE playerid='%1'",_uid];};
+	case west: {_returnCount = 15; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, cop_licenses, coplevel, cop_gear, position, alive, tfr, damage, hunger, thirst, sexe FROM players WHERE playerid='%1'",_uid];};
 	// START CHANGES
 	// HERE I'VE ADDED MY 3 FIELDS ON CIVILIAN
-	case civilian: {_returnCount = 21; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr, damage, hunger, thirst, sexe, dep, taxi, wipe FROM players WHERE playerid='%1'",_uid];};
+	case civilian: {_returnCount = 20; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, civ_licenses, arrested, civ_gear, blacklist, faction_reb, grade_reb, position, alive, tfr, damage, hunger, thirst, sexe, dep, taxi FROM players WHERE playerid='%1'",_uid];};
 	// END CHANGES
-	case independent: {_returnCount = 16; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, position, alive, tfr, damage, hunger, thirst, sexe, wipe FROM players WHERE playerid='%1'",_uid];};
+	case independent: {_returnCount = 15; format["SELECT playerid, name, cash, bankacc, adminlevel, donatorlvl, med_licenses, mediclevel, med_gear, position, alive, tfr, damage, hunger, thirst, sexe FROM players WHERE playerid='%1'",_uid];};
 };
 
 waitUntil{sleep (random 0.3); !DB_Async_Active};
@@ -87,10 +87,7 @@ switch (_side) do {
 		//alive
 		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
 		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
-		//Sexe
 		_queryResult set[15,([_queryResult select 15,1] call DB_fnc_bool)];
-		//Wipe
-		_queryResult set[16,([_queryResult select 16,1] call DB_fnc_bool)];
 	};
 	
 	case civilian: {
@@ -119,11 +116,7 @@ switch (_side) do {
 		_queryResult set[14,([_queryResult select 14,1] call DB_fnc_bool)];
 		_queryResult set[18,([_queryResult select 18,1] call DB_fnc_bool)];
 		_queryResult set[19,([_queryResult select 19,1] call DB_fnc_bool)];
-		//Sexe
 		_queryResult set[20,([_queryResult select 20,1] call DB_fnc_bool)];
-		//Wipe
-		_queryResult set[21,([_queryResult select 21,1] call DB_fnc_bool)];
-		
 	};
 	
 	case independent: {
@@ -134,14 +127,11 @@ switch (_side) do {
 		//alive
 		_queryResult set[10,([_queryResult select 10,1] call DB_fnc_bool)];
 		_queryResult set[11,([_queryResult select 11,1] call DB_fnc_bool)];
-		//Sexe
 		_queryResult set[15,([_queryResult select 15,1] call DB_fnc_bool)];
-		//Wipe
-		_queryResult set[16,([_queryResult select 16,1] call DB_fnc_bool)];
 	};
 };
 
 _keyArr = missionNamespace getVariable [format["%1_KEYS_%2",_uid,_side],[]];
-_queryResult set[24,_keyArr];
+_queryResult set[23,_keyArr];
 
 [_queryResult,"SOCK_fnc_requestReceived",_ownerID,false] spawn life_fnc_MP;

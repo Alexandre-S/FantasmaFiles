@@ -34,7 +34,6 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 };
 
 //Parse basic player information.
-life_playername = _this select 1;
 life_cash = parseNumber (_this select 2);
 life_atmcash = parseNumber (_this select 3);
 __CONST__(life_adminlevel,parseNumber(_this select 4));
@@ -63,7 +62,6 @@ switch(playerSide) do {
 			life_thirst = parseNumber(_this select 14);
 		};
 		life_sexe = _this select 15;
-		life_wipe = _this select 16;
 		init_gang = true;
 	};
 	
@@ -108,7 +106,6 @@ switch(playerSide) do {
 		life_sexe = _this select 18;
 		life_isdep = _this select 19;
 		life_istaxi = _this select 20;
-		life_wipe = _this select 21;
 		
 		_other = ["dep",0] call life_fnc_licenseType;
 		if(!life_isdep) then { missionNamespace setVariable [_other select 0,false]; };
@@ -131,7 +128,6 @@ switch(playerSide) do {
 			life_thirst = parseNumber(_this select 14);
 		};
 		life_sexe = _this select 15;
-		life_wipe = _this select 16;
 		init_gang = true;
 	};
 };
