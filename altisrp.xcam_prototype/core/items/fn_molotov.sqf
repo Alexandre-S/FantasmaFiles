@@ -12,4 +12,4 @@ if(count _pos == 0) exitWith {}; //Badddd
 _fire = "test_EmptyObjectForFireBig" createVehicle _pos;
 
 sleep 10;
-{if (typeOf _x == "#particlesource") then {deleteVehicle _x}} forEach ((position _fire) nearObjects 5);  
+{if (typeOf _x == "#particlesource") then {deleteVehicle _x}} forEach ((position _fire) nearObjects 10);  
