@@ -3086,7 +3086,6 @@ class Mission
 				{
 					position[]={3130.6636,7.3425913,5034.9629};
 					azimut=-206.05901;
-					offsetY=0.60000002;
 					special="NONE";
 					id=178;
 					side="CIV";
@@ -3372,7 +3371,6 @@ class Mission
 				{
 					position[]={3090.0554,8.0555859,5028.3906};
 					azimut=-206.05901;
-					offsetY=0.60000002;
 					special="NONE";
 					id=203;
 					side="CIV";
