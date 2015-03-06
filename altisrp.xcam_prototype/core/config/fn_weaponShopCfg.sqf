@@ -842,8 +842,8 @@ switch(_shop) do
 						["AGM_EarBuds",nil,25],
 						["AGM_ItemKestrel",nil,500],
 						["AGM_SpareBarrel",nil,1000],
-						["AGM_CableTie",nil,100],
-						["MiniGrenade","Molotov",11000]
+						["AGM_CableTie",nil,100]
+						//["MiniGrenade","Molotov",11000]
 					]
 				];
 				//a pu vigil
