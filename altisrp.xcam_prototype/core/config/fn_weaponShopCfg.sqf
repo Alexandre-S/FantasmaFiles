@@ -675,6 +675,12 @@ switch(_shop) do
 							["AGM_HandFlare_Yellow",nil,1000]
 						]
 					];
+					if(__GETC__(life_factnumber) == 1) then
+					{
+						(_ret select 1) pushBack ["PMC_m4",nil,20000];
+						(_ret select 1) pushBack ["PMC_m4m203",nil,25000];
+						(_ret select 1) pushBack ["30Rnd_556x45_Stanag",nil,250];
+					};
 				};
 				// Rang 2
 				if(__GETC__(life_reblevel) >= 2) then
@@ -728,6 +734,11 @@ switch(_shop) do
 					(_ret select 1) pushBack ["CUP_200Rnd_TE4_Red_Tracer_556x45_M249",nil,900];
 					(_ret select 1) pushBack ["CUP_200Rnd_TE4_Yellow_Tracer_556x45_M249",nil,900];
 					(_ret select 1) pushBack ["CUP_200Rnd_TE1_Red_Tracer_556x45_M249",nil,900];
+					if(__GETC__(life_factnumber) == 1) then
+					{
+						(_ret select 1) pushBack ["PMC_m249",nil,75000];
+						(_ret select 1) pushBack ["PMC_m249_mag",nil,900];
+					};
 					(_ret select 1) pushBack ["CUP_lmg_L7A2",nil,85000];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",nil,1100];
 					(_ret select 1) pushBack ["CUP_100Rnd_TE4_LRT4_Red_Tracer_762x51_Belt_M",nil,1100];
