@@ -260,7 +260,9 @@ switch (_filter) do
 		_ret = 
 		[
 			["B_AssaultPack_ocamo",nil,2500],
+			["PMC_AssaultPack_Blk",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
+			["PMC_B_Kitbag_blk",nil,4500],
 			["B_TacticalPack_oli",nil,3500],
 			["B_FieldPack_ocamo",nil,3000],
 			["B_FieldPack_oucamo",nil,3000],
@@ -269,6 +271,8 @@ switch (_filter) do
 			["B_Carryall_oucamo",nil,5000],
 			["B_Carryall_mcamo",nil,5000],
 			["B_Carryall_ocamo",nil,5000],
+			["PMC_B_Carryall_blk",nil,5000],
+			["CUP_B_USPack_Black",nil,6000],
 			["B_Parachute",nil,15000],
 			["tf_mr3000",nil,15000],
 			["tf_mr3000_rhs",nil,15000]
