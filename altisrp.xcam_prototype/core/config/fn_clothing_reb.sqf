@@ -272,7 +272,6 @@ switch (_filter) do
 			["B_Carryall_mcamo",nil,5000],
 			["B_Carryall_ocamo",nil,5000],
 			["PMC_B_Carryall_blk",nil,5000],
-			["CUP_B_USPack_Black",nil,6000],
 			["B_Parachute",nil,15000],
 			["tf_mr3000",nil,15000],
 			["tf_mr3000_rhs",nil,15000]

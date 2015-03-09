@@ -254,13 +254,11 @@ switch (_filter) do
 	{
 		_ret = 
 		[
-			["CUP_B_ACRScout_m95",nil,1000],
 			["B_AssaultPack_cbr",nil,2500],
 			["B_AssaultPack_khk",nil,2500],
 			["B_AssaultPack_mcamo",nil,2500],
 			["B_AssaultPack_sgg",nil,2500],
 			["B_AssaultPack_rgr",nil,2500],
-			["CUP_B_CivPack_Wdl",nil,4500],
 			["B_Kitbag_mcamo",nil,4500],
 			["B_Kitbag_sgg",nil,4500],
 			["B_TacticalPack_oli",nil,3500],
@@ -273,12 +271,9 @@ switch (_filter) do
 			["B_TacticalPack_blk",nil,4500],
 			["B_TacticalPack_oli",nil,4500],
 			["B_TacticalPack_rgr",nil,4500],
-			["CUP_B_AlicePack_Khaki",nil,4750],
-			["CUP_B_ACRPara_m95",nil,4750],
 			["B_Carryall_oli",nil,5000],
 			["B_Carryall_khk",nil,5000],
 			["B_Carryall_cbr",nil,5000],
-			["CUP_B_USPack_Coyote",nil,60000],
 			["tf_anarc164",nil,15000],
 			["B_Parachute",nil,15000]
 		];
