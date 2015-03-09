@@ -84,7 +84,7 @@ if(_hasLicense) then
 	titleText[format[localize "STR_Process_Processed",_oldVal,_itemName],"PLAIN"];
 	life_is_processing = false;
 }
-	else
+else
 {
 	if(life_cash < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 	
