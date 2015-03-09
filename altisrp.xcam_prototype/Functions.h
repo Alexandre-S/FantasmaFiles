@@ -406,7 +406,6 @@ class Life_Client_Core
 		class gpsTracker {};
 		class nitro {};
 		class searchWreck {};
-		class molotov {};
 	};
 	
 	class Drugs

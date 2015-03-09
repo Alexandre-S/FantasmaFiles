@@ -18,14 +18,3 @@ if(_ammoType == "GrenadeHand_stone") then {
 		[[_position],"life_fnc_flashbang",true,false] spawn life_fnc_MP;
 	};
 };
-if(_ammoType == "mini_Grenade") then {
-	_projectile spawn {
-		private["_position"];
-		while {!isNull _this} do {
-			_position = getPosATL _this;
-			sleep 0.1;
-		};
-		[[_position],"life_fnc_molotov",true,false] spawn life_fnc_MP;
-		deleteVehicle _this;
-	};
-};

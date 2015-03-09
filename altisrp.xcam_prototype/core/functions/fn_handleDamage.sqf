@@ -47,9 +47,6 @@ if(!isNull _source) then {
 			};*/
 		};
 	};
-	if (_projectile in ["mini_Grenade"]) then {
-		_damage = 0;
-	};
 };
 
 if((_damage > 0.01) && (_part == "") && (alive _unit) && (!isNull _source) && (_unit != _source)) then {
