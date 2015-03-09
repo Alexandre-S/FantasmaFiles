@@ -457,6 +457,42 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "O_Truck_03_transport_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Kaki"};
+			case 1: {_color = "Desert"};
+		};
+	};
+	
+	case "O_Truck_03_covered_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Kaki"};
+			case 1: {_color = "Desert"};
+		};
+	};
+	
+	case "O_Truck_03_device_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Kaki"};
+			case 1: {_color = "Desert"};
+		};
+	};
+	
+	case "O_Truck_03_medical_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Kaki"};
+			case 1: {_color = "Desert"};
+		};
+	};
+	
 	/*case "B_APC_Wheeled_01_cannon_F":
 	{
 		switch (_index) do

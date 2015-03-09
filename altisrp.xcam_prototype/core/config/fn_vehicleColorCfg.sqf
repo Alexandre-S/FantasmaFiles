@@ -482,6 +482,42 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "O_Truck_03_transport_F":
+	{
+		_ret = 
+		[
+			["\bzly_mantrucks\data\wd_ext01.paa","civ","\bzly_mantrucks\data\wd_ext02.paa","\bzly_mantrucks\data\wd_cargo.paa"],
+			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"]
+		];
+	};
+	
+	case "O_Truck_03_covered_F":
+	{
+		_ret = 
+		[
+			["\bzly_mantrucks\data\wd_ext01.paa","civ","\bzly_mantrucks\data\wd_ext02.paa","\bzly_mantrucks\data\wd_cargo.paa"],
+			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"]
+		];
+	};
+	
+	case "O_Truck_03_device_F":
+	{
+		_ret = 
+		[
+			["\bzly_mantrucks\data\wd_ext01.paa","civ","\bzly_mantrucks\data\wd_ext02.paa","\bzly_mantrucks\data\wd_cargo.paa"],
+			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"]
+		];
+	};
+	
+	case "O_Truck_03_medical_F":
+	{
+		_ret = 
+		[
+			["\bzly_mantrucks\data\wd_ext01.paa","civ","\bzly_mantrucks\data\wd_ext02.paa","\bzly_mantrucks\data\wd_cargo.paa"],
+			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"]
+		];
+	};
+	
 	case "B_APC_Wheeled_01_cannon_F":
 	{
 		_ret = 
