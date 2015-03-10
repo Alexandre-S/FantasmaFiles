@@ -43,7 +43,4 @@ if (!life_is_alive || (count life_position) == 0) then {
 		[] call life_fnc_welcomeNotification;
 	};
 };
-[(call TFAR_fnc_activeSwRadio), 2, "51"] call TFAR_fnc_SetChannelFrequency;
-[(call TFAR_fnc_activeSwRadio), 3, "30"] call TFAR_fnc_SetChannelFrequency;
-[(call TFAR_fnc_activeSwRadio), 4, "61"] call TFAR_fnc_SetChannelFrequency;
 [] execVM "spawnanim.sqf";
