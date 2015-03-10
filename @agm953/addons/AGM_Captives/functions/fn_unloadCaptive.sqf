@@ -30,9 +30,9 @@ if (count _cargo > 0) then {
   [_target, "{unassignVehicle _this}", _target] call AGM_Core_fnc_execRemoteFnc;
   
   [_target] spawn {
-	waituntil{ sleep 0.1; (_unit == vehicle _unit) }
+	waituntil{ sleep 0.1; (_unit == vehicle _unit) };
 	[_this select 0, false, true] call AGM_Captives_fnc_setCaptive;
-	waituntil{ sleep 0.1; (_unit getVariable ["tf_unable_to_use_radio", true]) }
+	waituntil{ sleep 0.1; (_unit getVariable ["tf_unable_to_use_radio", true]) };
 	// player removeItem 'AGM_CableTie';
 	[_this select 0, true, true] call AGM_Captives_fnc_setCaptive;
   };
