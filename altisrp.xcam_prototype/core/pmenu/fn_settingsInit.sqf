@@ -9,8 +9,8 @@
 // tawvd_car = viewDistance;
 // tawvd_air = viewDistance;
 tawvd_foot = havena_minview;
-tawvd_car = havena_minview*2;
-tawvd_air = havena_minview*4;
+tawvd_car = 500;
+tawvd_air = 1000;
 tawvd_addon_disable = true;
 
 [] spawn
