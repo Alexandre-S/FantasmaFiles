@@ -32,9 +32,9 @@
 					havena_view = havena_maxview;
 				};
 				
-				if(havena_shadow < 200) then {
-					havena_shadow = havena_shadow + 1;
-				};
+				// if(havena_shadow < 200) then {
+					// havena_shadow = havena_shadow + 1;
+				// };
 			};
 			if(havena_ok < 0) then {
 				_moinsfps = (floor(havena_fps - havena_targetfps)*2) min -5;
@@ -44,16 +44,17 @@
 					havena_view = havena_minview;
 				};
 				
-				if(havena_shadow > 50) then {
-					havena_shadow = havena_shadow - 1;
-				};
+				// if(havena_shadow > 50) then {
+					// havena_shadow = havena_shadow - 1;
+				// };
 			};
 			if(dayz_combat == 1 && havena_view < havena_mincombat) then {
 				havena_view = havena_mincombat;
-				havena_shadow = 50;
+				// havena_shadow = 50;
 			};
 			
 			havena_objectView = round(havena_view*0.8);
+			havena_shadow = round(havena_view*0.1);
 			setObjectViewDistance [havena_objectView,havena_shadow];
 			setViewDistance havena_view;
 			// if(havena_debug) then {
