@@ -7,9 +7,9 @@
 */
 switch (true) do
 {
-	case ((vehicle player) isKindOf "Man"): {havena_minview = tawvd_foot; havena_maxview=tawvd_foot+2000;};
-	case ((vehicle player) isKindOf "LandVehicle"): {havena_minview = tawvd_car; havena_maxview=tawvd_car+2000;};
-	case ((vehicle player) isKindOf "Air"): {havena_minview = tawvd_air; havena_maxview=tawvd_air+2000;};
+	case ((vehicle player) isKindOf "Man"): {havena_minview = tawvd_foot; havena_maxview=tawvd_foot+1000;};
+	case ((vehicle player) isKindOf "LandVehicle"): {havena_minview = tawvd_car; havena_maxview=tawvd_car+1000;};
+	case ((vehicle player) isKindOf "Air"): {havena_minview = tawvd_air; havena_maxview=tawvd_air+1000;};
 };
 if(!life_autofps) then {
 	switch (true) do
