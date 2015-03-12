@@ -65,12 +65,12 @@ life_cocaine_effect = 0;
 life_lsd_effect = 0;
 
 life_autofps = true;
-havena_targetfps = 35;
+havena_targetfps = 30;
 havena_mincombat = 600;
 havena_minview = 300;
 havena_maxview = havena_minview+1000;
 havena_shadow = 50;
-havena_view = 1000;
+havena_view = 500;
 havena_grid = 48;
 
 life_truckreverse_active = false;
