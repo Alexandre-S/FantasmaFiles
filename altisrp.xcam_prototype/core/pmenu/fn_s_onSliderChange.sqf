@@ -33,4 +33,18 @@ switch (_mode) do
 		ctrlSetText[2922,format["%1",round(_value)]];
 		[] call life_fnc_updateViewDistance;
 	};
+	
+	case 3:
+	{
+		havena_targetfps = round(_value);
+		ctrlSetText[2932,format["%1",round(_value)]];
+		// [] call life_fnc_updateViewDistance;
+	};
+	
+	case 4:
+	{
+		havena_mincombat = round(_value);
+		ctrlSetText[2942,format["%1",round(_value)]];
+		// [] call life_fnc_updateViewDistance;
+	};
 };

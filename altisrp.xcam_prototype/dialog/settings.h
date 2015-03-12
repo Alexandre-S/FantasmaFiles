@@ -24,7 +24,7 @@ class SettingsMenu
 			x = 0.3;
 			y = 0.2 + (11 / 250);
 			w = 0.5;
-			h = 0.43 - (22 / 250);
+			h = 0.58 - (22 / 250);
 		};
 		
 		class PlayerTagsHeader : Life_RscText
@@ -34,7 +34,7 @@ class SettingsMenu
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			
 			x = 0.30;
-			y = 0.43;
+			y = 0.53;
 			w = 0.35;
 			h = (1 / 25);
 		};
@@ -46,15 +46,23 @@ class SettingsMenu
 			text = "Auto FPS";
 			shadow = 0;
 			
-			y = 0.48;
+			y = 0.58;
 		};
 		
 		class RevealNearestHeader : PlayerTagsHeader
 		{
 			idc = -1;
-			text = "Reveal Nearest Objects";
+			text = "Révéler les objets proches";
 			
-			y = 0.53;
+			y = 0.63;
+		};
+		
+		class RemoveherbeHeader : PlayerTagsHeader
+		{
+			idc = -1;
+			text = "Supprimer les herbes";
+			
+			y = 0.68;
 		};
 		
 		class Title : life_RscTitle
@@ -95,6 +103,24 @@ class SettingsMenu
 			text = "$STR_SM_inAir";
 			
 			x = 0.32; y = 0.355;
+			w = 0.275; h = 0.04;
+		};
+		
+		class VDtargetFPS : life_RscText
+		{
+			idc = -1;
+			text = "FPS min";
+			
+			x = 0.32; y = 0.405;
+			w = 0.275; h = 0.04;
+		};
+		
+		class VDcombatView : life_RscText
+		{
+			idc = -1;
+			text = "Combat";
+			
+			x = 0.32; y = 0.455;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -164,6 +190,50 @@ class SettingsMenu
 			w = 0.275; h = 0.04;
 		};
 		
+		class VD_targetfps_slider : life_RscXSliderH 
+		{
+			idc = 2931;
+			text = "";
+			onSliderPosChanged = "[3,_this select 1] call life_fnc_s_onSliderChange;";
+			tooltip = "FPS minimum souhaité";
+			x = 0.42;
+			y = 0.45 - (1 / 25);
+			
+			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+		};
+		
+		class VD_targetfps_value : life_RscText
+		{
+			idc = 2932;
+			text = "";
+			
+			x = 0.70; y = 0.41;
+			w = 0.275; h = 0.04;
+		};
+		
+		class VD_combatView_slider : life_RscXSliderH 
+		{
+			idc = 2941;
+			text = "";
+			onSliderPosChanged = "[4,_this select 1] call life_fnc_s_onSliderChange;";
+			tooltip = "Distance minimum en combat";
+			x = 0.42;
+			y = 0.50 - (1 / 25);
+			
+			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
+			h = "1 * 			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25)";
+		};
+		
+		class VD_combatView_value : life_RscText
+		{
+			idc = 2942;
+			text = "";
+			
+			x = 0.70; y = 0.46;
+			w = 0.275; h = 0.04;
+		};
+		
 		class PlayerTagsONOFF : Life_RscActiveText
 		{
 			text = "ON";
@@ -171,7 +241,7 @@ class SettingsMenu
 			idc = 2970;
 			sizeEx = 0.04;
 			x = 0.65;
-			y = 0.43;
+			y = 0.53;
 			w = 0.275;
 		};
 		
@@ -186,15 +256,22 @@ class SettingsMenu
 		class SideChatONOFF : PlayerTagsONOFF
 		{
 			idc = 2971;
-			tooltip = "Réduit ou augmente à la volé la visibilité général, des objets, des ombres pour maintenir vos FPS à 30 min.";
-			y = 0.48;
+			tooltip = "Réduit ou augmente à la volé la visibilité général, des objets, des ombres pour maintenir vos FPS.";
+			y = 0.58;
 		};
 		
 		class RevealONOFF : PlayerTagsONOFF
 		{
 			tooltip = "$STR_GUI_PlayerReveal";
 			idc = 2972;
-			y = 0.53;
+			y = 0.63;
+		};
+		
+		class HerbeONOFF : PlayerTagsONOFF
+		{
+			tooltip = "Désactive l'affichage de l'herbe";
+			idc = 2973;
+			y = 0.68;
 		};
 		
 		class ButtonClose : life_RscButtonMenu {
@@ -203,7 +280,7 @@ class SettingsMenu
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = 0.48;
-			y = 0.63 - (1 / 25);
+			y = 0.78 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
