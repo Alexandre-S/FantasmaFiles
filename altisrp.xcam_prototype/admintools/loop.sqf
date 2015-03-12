@@ -1,8 +1,8 @@
 while {true} do
 {
-  waitUntil {sleep 0.1; alive vehicle player};
+  waitUntil {sleep 1; alive vehicle player};
  [] execVM "admintools\activate.sqf";
 
 
-  waitUntil {sleep 0.1; !alive player};
+  waitUntil {sleep 1; !alive player};
 }; 

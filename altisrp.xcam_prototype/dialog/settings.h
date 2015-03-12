@@ -42,7 +42,8 @@ class SettingsMenu
 		class SideChatHeader : PlayerTagsHeader
 		{
 			idc = -1;
-			text = "$STR_SM_SC";
+			// text = "$STR_SM_SC";
+			text = "Auto FPS";
 			shadow = 0;
 			
 			y = 0.48;
@@ -181,6 +182,13 @@ class SettingsMenu
 			action = "[] call life_fnc_sidechat;";
 			y = 0.48;
 		};*/
+		
+		class SideChatONOFF : PlayerTagsONOFF
+		{
+			idc = 2971;
+			tooltip = "Réduit ou augmente à la volé la visibilité général, des objets, des ombres pour maintenir vos FPS à 30 min.";
+			y = 0.48;
+		};
 		
 		class RevealONOFF : PlayerTagsONOFF
 		{

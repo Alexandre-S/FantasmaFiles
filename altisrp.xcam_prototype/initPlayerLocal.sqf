@@ -6,12 +6,14 @@
 */
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 //This is a headless client, he doesn't need to do anything but keep being headless..
+waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player is ready
+player setVariable ["tf_voiceVolume", 0, true];
+player setVariable ["tf_globalVolume", 0];
+player setVariable ["tf_unable_to_use_radio", true];
 if(!hasInterface) then {
 	[] call compile PreprocessFileLineNumbers "\life_server\init.sqf";
 	
 	[] spawn {
-		waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player is ready
-		player setVariable ["tf_unable_to_use_radio", true];
 		player allowDamage false;
 		_handle = [] spawn life_fnc_stripDownPlayer;
 		waitUntil {sleep 0.1; scriptDone _handle};

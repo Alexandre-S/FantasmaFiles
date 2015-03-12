@@ -213,6 +213,9 @@ diag_log format["                End of Altis Life Client Init :: Total Executio
 diag_log "------------------------------------------------------------------------------------------------------";
 //life_sidechat = true;
 //[[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
+player setVariable ["tf_voiceVolume", 1, true];
+player setVariable ["tf_globalVolume", 1];
+player setVariable ["tf_unable_to_use_radio", false];
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
@@ -234,6 +237,7 @@ life_fnc_garageRefund = compileFinal
 ";
 
 [] execVM "core\init_survival.sqf";
+[] execVM "core\autoFPS.sqf";
 //[] execVM "core\fn_addKey.sqf"; doublon
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.

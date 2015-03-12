@@ -17,7 +17,7 @@ ctrlSetText[2912, format["%1", tawvd_car]];
 ctrlSetText[2922, format["%1", tawvd_air]];
 
 //Setup Sliders range
-{ slidersetRange [_x,100,12000];} foreach [2901,2911,2921];
+{ slidersetRange [_x,500,12000];} foreach [2901,2911,2921];
 //Setup Sliders speed
 { ((findDisplay 2900) displayCtrl _x) sliderSetSpeed [100,100,100]; } foreach [2901,2911,2921];
 //Setup Sliders position
@@ -64,3 +64,12 @@ if(life_tagson) then {
 	_side ctrlSetTextColor [1,0,0,1];
 	_side ctrlSetText "OFF";
 };*/
+if(life_autofps) then {
+	_side ctrlSetTextColor [0,1,0,1];
+	_side ctrlSetText "ON";
+	_objs buttonSetAction "life_autofps=false;setViewDistance -1; [] call life_fnc_settingsMenu;";
+} else {
+	_side ctrlSetTextColor [1,0,0,1];
+	_side ctrlSetText "OFF";
+	_objs buttonSetAction "life_autofps=true; [] call life_fnc_settingsMenu;";
+};
