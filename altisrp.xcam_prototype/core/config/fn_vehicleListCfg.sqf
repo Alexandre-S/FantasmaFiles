@@ -205,11 +205,11 @@ switch (_shop) do
 		if(__GETC__(life_factnumber) == 1) then
 		{
 			_return pushBack ["PMC_Offroad_Transport",33750];
+			_return pushBack ["PMC_MH9",412500];
 			// Grade 2
 			if(__GETC__(life_reblevel) >= 2) then
 			{
 				_return pushBack ["PMC_Offroad_Armed",750000];
-				_return pushBack ["PMC_MH9",412500];
 			};
 		};
 		// Si leader de faction
