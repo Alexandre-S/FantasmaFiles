@@ -18,8 +18,8 @@ switch (_side) do
 	{
 		_return = [
 			["cop_spawn_1","Base principale","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
-			["cop_spawn_2","Base secondaire","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
-			["cop_spawn_3","Base avancée","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_2","Base secondaire","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
+			["cop_spawn_3","Base avancée","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 			// ["cop_spawn_5","QG de Sofia","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"],
 			// ["cop_spawn_4","QG Air","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
