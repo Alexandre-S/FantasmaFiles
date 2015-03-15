@@ -206,7 +206,7 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","civ"],
 			["altisrpfr\textures\suv_police.paa","cop"],
 			["altisrpfr\textures\suv_bleuflamme.paa","civ"],
-			["altisrpfr\textures\suv_leopard.paa","civ"],
+			["altisrpfr\textures\suv_smur.paa","med"],
 			["altisrpfr\textures\suv_rouille.paa","civ"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa","cop"],

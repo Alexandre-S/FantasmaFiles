@@ -145,7 +145,8 @@ switch (_shop) do
 	{
 		_return = [
 			["C_Offroad_01_F",33750],
-			["ACR_LandRover_AMB",33750]
+			["ACR_LandRover_AMB",33750],
+			["C_SUV_01_F",52500]
 		];
 		if(__GETC__(life_medicLevel) >= 2 && __GETC__(life_donator) > 0) then
 		{
