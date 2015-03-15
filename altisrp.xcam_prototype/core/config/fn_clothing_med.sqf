@@ -23,7 +23,8 @@ switch (_filter) do
 		_ret = 
 		[
 			["U_Rangemaster","Uniforme Croix-Rouge",250],
-			["U_Competitor","Uniforme Pompier",25],
+			["U_C_Journalist","Uniforme SAMU",250],
+			["U_Competitor","Uniforme Pompier",250],
 			["U_O_OfficerUniform_ocamo","Pompier intervention noir",550],
 			["U_C_WorkerCoveralls","Pompier intervention rouge",550],
 			//["FANTASMA_MedicTenue",nil,550],

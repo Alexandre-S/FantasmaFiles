@@ -38,6 +38,10 @@ switch(true) do
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\Polo_Pompiers.paa"];
 	};
+	case (playerSide == independent && _uniform == "U_C_Journalist"):
+	{
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\uniforme_samu.paa"];
+	};
 	case (playerSide == independent && _uniform == "U_O_OfficerUniform_ocamo"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\sapeurspompiers.paa"];
