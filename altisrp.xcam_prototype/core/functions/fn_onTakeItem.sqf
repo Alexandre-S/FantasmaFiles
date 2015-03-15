@@ -28,9 +28,9 @@ switch(playerSide) do
 };
 
 
-if((uniform player) in ["U_Rangemaster","U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"]) then {
-	[] call life_fnc_updateClothing;
-};
+// if((uniform player) in ["U_Rangemaster","U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"]) then {
+[] call life_fnc_updateClothing;
+// };
 
 
 // BOX

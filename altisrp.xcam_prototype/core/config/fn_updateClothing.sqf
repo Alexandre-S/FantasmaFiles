@@ -13,7 +13,7 @@ private["_uniform","_backpack"];
 _uniform = uniform player;
 
 switch(true) do
-{	
+{
 	case (playerSide == west && _uniform == "U_Rangemaster"):
 	{
 		player setObjectTextureGlobal [0, "altisrpfr\textures\gendarmerie_uniform_base.paa"];
@@ -27,7 +27,7 @@ switch(true) do
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\Polo_Pompiers.paa"];
 	};
-	case (playerSide == independent && _uniform == "U_I_OfficerUniform"):
+	case (playerSide == independent && _uniform == "U_O_OfficerUniform_ocamo"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\sapeurspompiers.paa"];
 	};

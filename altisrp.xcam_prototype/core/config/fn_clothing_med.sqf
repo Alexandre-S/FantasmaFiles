@@ -24,7 +24,7 @@ switch (_filter) do
 		[
 			["U_Rangemaster","Uniforme Croix-Rouge",250],
 			["U_Competitor","Uniforme Pompier",25],
-			["U_I_OfficerUniform","Pompier intervention noir",550],
+			["U_O_OfficerUniform_ocamo","Pompier intervention noir",550],
 			["U_C_WorkerCoveralls","Pompier intervention rouge",550],
 			//["FANTASMA_MedicTenue",nil,550],
 			["U_I_Wetsuit",nil,1000]
