@@ -155,8 +155,9 @@ switch (_shop) do
 		if(__GETC__(life_medicLevel) >= 3) then
 		{
 			_return pushBack ["I_Truck_02_medical_F",20000];
-			_return pushBack ["O_Truck_03_medical_F",25000];
-			_return pushBack ["B_Truck_01_medical_F",30000];
+			_return pushBack ["O_Truck_02_box_F",20000];
+			// _return pushBack ["O_Truck_03_medical_F",25000];
+			// _return pushBack ["B_Truck_01_medical_F",30000];
 		};
 	};
 	

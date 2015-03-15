@@ -69,7 +69,9 @@ switch (_vehicle) do
 			["altisrpfr\textures\offroad_depannage.paa","dep"],
 			["altisrpfr\textures\offroad_vigil.paa","vig"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","civ"],
-			["altisrpfr\textures\offroad_taxi.paa","taxi"]
+			["altisrpfr\textures\offroad_taxi.paa","taxi"],
+			["altisrpfr\textures\medicoffroad.paa","med"],
+			["altisrpfr\textures\pompieroffroad.paa","med"]
 		];
 	};
 	
@@ -369,6 +371,14 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["altisrpfr\textures\CIV_Depann_hemtt.paa","dep"]
+		];
+	};
+	
+	case "O_Truck_02_box_F":
+	{
+		_ret = 
+		[
+			["altisrpfr\textures\Zamak_Pompiers.paa","med","altisrpfr\textures\Zamak_Back_Pompiers.paa"]
 		];
 	};
 	

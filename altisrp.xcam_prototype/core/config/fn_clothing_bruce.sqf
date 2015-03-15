@@ -259,8 +259,10 @@ switch (_filter) do
 			["B_AssaultPack_mcamo",nil,2500],
 			["B_AssaultPack_sgg",nil,2500],
 			["B_AssaultPack_rgr",nil,2500],
+			["PMC_AssaultPack_Blk",nil,2500],
 			["B_Kitbag_mcamo",nil,4500],
 			["B_Kitbag_sgg",nil,4500],
+			["PMC_B_Kitbag_blk",nil,4500],
 			["B_TacticalPack_oli",nil,3500],
 			["B_FieldPack_cbr",nil,3000],
 			["B_FieldPack_khk",nil,3000],
@@ -274,6 +276,7 @@ switch (_filter) do
 			["B_Carryall_oli",nil,5000],
 			["B_Carryall_khk",nil,5000],
 			["B_Carryall_cbr",nil,5000],
+			["PMC_B_Carryall_blk",nil,5000],
 			["tf_anarc164",nil,15000],
 			["B_Parachute",nil,15000]
 		];

@@ -30,6 +30,8 @@ switch (_vehicle) do
 			case 11: {_color = "Vigil"};
 			case 12: {_color = "Noir"};
 			case 13: {_color = "Taxi"};
+			case 14: {_color = "SAMU"};
+			case 15: {_color = "Pompier"};
 		};
 	};
 	
@@ -344,6 +346,14 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Kaki"};
 			case 1: {_color = "Noir"};
+		};
+	};
+	
+	case "O_Truck_02_box_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Pompier"};
 		};
 	};
 	

@@ -23,6 +23,18 @@ switch(true) do
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\medic_uniform.paa"];
 		//if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
 	};
+	case (playerSide == independent && _uniform == "U_Competitor"):
+	{
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\Polo_Pompiers.paa"];
+	};
+	case (playerSide == independent && _uniform == "U_I_OfficerUniform"):
+	{
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\SapeursPompiers.paa"];
+	};
+	case (playerSide == independent && _uniform == "U_C_WorkerCoveralls"):
+	{
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\sapeurs_pompiers2015.paa"];
+	};
 	case (_uniform == "U_B_CombatUniform_mcam" OR _uniform == "U_B_CombatUniform_mcam_vest"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\clothing1_co.paa"];
