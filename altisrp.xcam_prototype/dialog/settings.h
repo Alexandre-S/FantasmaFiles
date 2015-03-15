@@ -7,21 +7,21 @@ class SettingsMenu
 	
 	class controlsBackground
 	{
-		class RscTitleBackground : life_RscText
+		class fondtablet: Life_RscPicture
 		{
-			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-			idc = -1;
-			x = 0.3;
-			y = 0.2;
-			w = 0.5;
-			h = (1 / 25);
+			idc = 9090909;
+			text = "altisrpfr\textures\menu.paa";
+			x = 0;
+			y = -0.12;
+			w = 1;
+			h = 1.28;
 		};
 		
 		class RscMainBackground : life_RscText
 		{
-			colorBackground[] = {0,0,0,0.7};
+			colorBackground[] = {0,0,0,0.2};
 			idc = -1;
-			x = 0.3;
+			x = 0.26;
 			y = 0.2 + (11 / 250);
 			w = 0.5;
 			h = 0.58 - (22 / 250);
@@ -33,7 +33,7 @@ class SettingsMenu
 			text = "$STR_SM_PlayerTags";
 			colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 			
-			x = 0.30;
+			x = 0.26;
 			y = 0.53;
 			w = 0.35;
 			h = (1 / 25);
@@ -70,7 +70,7 @@ class SettingsMenu
 			idc = -1;
 			colorBackground[] = {0,0,0,0};
 			text = "$STR_SM_Title";
-			x = 0.3;
+			x = 0.1;
 			y = 0.2;
 			w = 0.5;
 			h = (1 / 25);
@@ -84,7 +84,7 @@ class SettingsMenu
 			idc = -1;
 			text = "$STR_SM_onFoot";
 			
-			x = 0.32; y = 0.258;
+			x = 0.26; y = 0.258;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -93,7 +93,7 @@ class SettingsMenu
 			idc = -1;
 			text = "$STR_SM_inCar";
 			
-			x = 0.32; y = 0.305;
+			x = 0.26; y = 0.305;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -102,7 +102,7 @@ class SettingsMenu
 			idc = -1;
 			text = "$STR_SM_inAir";
 			
-			x = 0.32; y = 0.355;
+			x = 0.26; y = 0.355;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -111,7 +111,7 @@ class SettingsMenu
 			idc = -1;
 			text = "FPS min";
 			
-			x = 0.32; y = 0.405;
+			x = 0.26; y = 0.405;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -120,7 +120,7 @@ class SettingsMenu
 			idc = -1;
 			text = "Combat";
 			
-			x = 0.32; y = 0.455;
+			x = 0.26; y = 0.455;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -130,7 +130,7 @@ class SettingsMenu
 			text = "";
 			onSliderPosChanged = "[0,_this select 1] call life_fnc_s_onSliderChange;";
 			tooltip = "$STR_SM_ToolTip1";
-			x = 0.42;
+			x = 0.39;
 			y = 0.30 - (1 / 25);
 			
 			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -142,7 +142,7 @@ class SettingsMenu
 			idc = 2902;
 			text = "";
 			
-			x = 0.70; y = 0.258;
+			x = 0.67; y = 0.258;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -152,7 +152,7 @@ class SettingsMenu
 			text = "";
 			onSliderPosChanged = "[1,_this select 1] call life_fnc_s_onSliderChange;";
 			tooltip = "$STR_SM_ToolTip2";
-			x = 0.42;
+			x = 0.39;
 			y = 0.35 - (1 / 25);
 			
 			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -164,7 +164,7 @@ class SettingsMenu
 			idc = 2912;
 			text = "";
 			
-			x = 0.70; y = 0.31;
+			x = 0.67; y = 0.31;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -174,7 +174,7 @@ class SettingsMenu
 			text = "";
 			onSliderPosChanged = "[2,_this select 1] call life_fnc_s_onSliderChange;";
 			tooltip = "$STR_SM_ToolTip3";
-			x = 0.42;
+			x = 0.39;
 			y = 0.40 - (1 / 25);
 			
 			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -186,7 +186,7 @@ class SettingsMenu
 			idc = 2922;
 			text = "";
 			
-			x = 0.70; y = 0.36;
+			x = 0.67; y = 0.36;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -196,7 +196,7 @@ class SettingsMenu
 			text = "";
 			onSliderPosChanged = "[3,_this select 1] call life_fnc_s_onSliderChange;";
 			tooltip = "FPS minimum souhaité";
-			x = 0.42;
+			x = 0.39;
 			y = 0.45 - (1 / 25);
 			
 			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -208,7 +208,7 @@ class SettingsMenu
 			idc = 2932;
 			text = "";
 			
-			x = 0.70; y = 0.41;
+			x = 0.67; y = 0.41;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -218,7 +218,7 @@ class SettingsMenu
 			text = "";
 			onSliderPosChanged = "[4,_this select 1] call life_fnc_s_onSliderChange;";
 			tooltip = "Distance minimum en combat";
-			x = 0.42;
+			x = 0.39;
 			y = 0.50 - (1 / 25);
 			
 			w = "9 * 			(			((safezoneW / safezoneH) min 1.2) / 40)";
@@ -230,7 +230,7 @@ class SettingsMenu
 			idc = 2942;
 			text = "";
 			
-			x = 0.70; y = 0.46;
+			x = 0.67; y = 0.46;
 			w = 0.275; h = 0.04;
 		};
 		
@@ -277,9 +277,10 @@ class SettingsMenu
 		class ButtonClose : life_RscButtonMenu {
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
+			colorBackground[] = {0, 0, 0, 0.4};	
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
-			x = 0.48;
+			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.78 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
