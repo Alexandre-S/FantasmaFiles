@@ -257,10 +257,4 @@ if(_launcher != "") then {
     };
 } foreach (_sItems);
 
-/*if(playerSide == independent && {uniform player == "U_Rangemaster"}) then {
-	[[player,0,"altisrpfr\textures\medic_uniform.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
-};
-if(uniform player == "U_B_CombatUniform_mcam" OR {uniform player == "U_B_CombatUniform_mcam_vest"}) then {
-	[[player,0,"altisrpfr\textures\clothing1_co.paa"],"life_fnc_setTexture",true,false] spawn life_fnc_MP;
-};*/
 [] call life_fnc_updateClothing;

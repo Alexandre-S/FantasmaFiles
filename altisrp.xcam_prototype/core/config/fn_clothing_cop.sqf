@@ -20,7 +20,8 @@ switch (_filter) do
 	case 0:
 	{
 		_ret pushBack ["U_Rangemaster","Uniforme de gendarme",0];
-		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
+		_ret pushBack ["U_B_CombatUniform_mcam","Polaire Gendarme",0];
+		_ret pushBack ["U_B_SpecopsUniform_sgg","Polaire Bleue Gendarme",0];
 		
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
@@ -69,7 +70,7 @@ switch (_filter) do
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			_ret pushBack ["U_B_survival_uniform",nil,0];
+			// _ret pushBack ["U_B_survival_uniform",nil,0];
 		};
 		
 		// Grade Haut-Gradés
@@ -77,8 +78,10 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_B_GhillieSuit",nil,0];
 			_ret pushBack ["U_I_GhillieSuit",nil,0];
-			_ret pushBack ["U_O_GhillieSuit",nil,0];
+			// _ret pushBack ["U_O_GhillieSuit",nil,0];
 		};
+		
+		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		
 		if(life_sexe) then
 		{
@@ -99,7 +102,6 @@ switch (_filter) do
 	//Hats
 	case 1:
 	{
-		_ret pushBack ["rds_police_cap",nil,0];
 		_ret pushBack ["H_MilCap_blue",nil,0];
 			
 		if(__GETC__(life_coplevel) >= 2) then
@@ -161,6 +163,7 @@ switch (_filter) do
 			_ret pushBack ["RPIMA_Balaclava2",nil,0];
 			_ret pushBack ["RPIMA_helm",nil,0];
 		};
+		_ret pushBack ["rds_police_cap",nil,0];
 	};
 	
 	//Glasses
@@ -239,21 +242,29 @@ switch (_filter) do
 	//Backpacks
 	case 4:
 	{
-		_ret pushBack ["B_Kitbag_mcamo",nil,0];
+		_ret pushBack ["B_AssaultPack_rgr",nil,0];
+		_ret pushBack ["B_AssaultPack_blk",nil,0];
+		_ret pushBack ["B_FieldPack_blk",nil,0];
 		_ret pushBack ["B_TacticalPack_blk",nil,0];
 		_ret pushBack ["B_TacticalPack_rgr",nil,0];
+		_ret pushBack ["PMC_AssaultPack_Blk",nil,0];
+		_ret pushBack ["PMC_B_Kitbag_blk",nil,0];
+		_ret pushBack ["PMC_B_Carryall_blk",nil,0];
+		_ret pushBack ["tf_rt1523g_black",nil,0];
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			_ret pushBack ["tf_rt1523g_big",nil,0];
-			_ret pushBack ["B_AssaultPack_rgr",nil,0];
+			_ret pushBack ["B_Kitbag_mcamo",nil,0];
 			_ret pushBack ["B_AssaultPack_dgtl",nil,0];
-			_ret pushBack ["B_AssaultPack_blk",nil,0];
 			_ret pushBack ["B_AssaultPack_Kerry",nil,0];
 			_ret pushBack ["B_Kitbag_rgr",nil,0];
-			_ret pushBack ["B_FieldPack_blk",nil,0];
-			_ret pushBack ["B_Bergen_blk",nil,0];
+			// _ret pushBack ["B_Bergen_blk",nil,0];
 			_ret pushBack ["B_Bergen_mcamo",nil,0];
+			_ret pushBack ["tf_rt1523g",nil,0];
+			_ret pushBack ["tf_rt1523g_sage",nil,0];
+			_ret pushBack ["tf_rt1523g_green",nil,0];
+			// _ret pushBack ["tf_rt1523g_rhs",nil,0];
+			_ret pushBack ["tf_rt1523g_fabric",nil,0];
 		};
 		// Unité Tactique
 		if(license_cop_swat) then

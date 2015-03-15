@@ -129,11 +129,11 @@ switch (_filter) do
 			["rds_uniform_Functionary2",nil,7500],
 			["rds_uniform_priest",nil,2500]
 		];
-		if(license_civ_vigil) then
+		/*if(license_civ_vigil) then
 		{
 			_ret pushBack ["U_B_CombatUniform_mcam","Tenue Vigil 1",7500];
 			_ret pushBack ["U_B_CombatUniform_mcam_vest","Tenue Vigil 2",7500];
-		};
+		};*/
 		if(player getVariable["life_dep",false]) then
 		{
 			_ret pushBack ["U_Competitor","Uniforme Dépanneur",500];
@@ -277,7 +277,8 @@ switch (_filter) do
 			["B_Carryall_khk",nil,5000],
 			["B_Carryall_cbr",nil,5000],
 			["PMC_B_Carryall_blk",nil,5000],
-			["tf_anarc164",nil,15000],
+			//["tf_anarc164",nil,15000],
+			["tf_anprc155_coyote",nil,15000],
 			["B_Parachute",nil,15000]
 		];
 	};

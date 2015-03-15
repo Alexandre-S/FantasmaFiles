@@ -27,11 +27,7 @@ switch(playerSide) do
 	case independent: {};
 };
 
-
-// if((uniform player) in ["U_Rangemaster","U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"]) then {
 [] call life_fnc_updateClothing;
-// };
-
 
 // BOX
 
