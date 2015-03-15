@@ -645,7 +645,7 @@ switch(_shop) do
 							// ["acc_flashlight",nil,1000],
 							// ["acc_pointer_IR",nil,2000],
 							["CUP_optic_SUSAT",nil,8000],
-							["CUP_optic_CWS",nil,8000],
+							//["CUP_optic_CWS",nil,8000],
 							["CUP_optic_ACOG",nil,8000],
 							["CUP_optic_CompM2_Black",nil,8000],
 							["CUP_optic_CompM4",nil,8000],
