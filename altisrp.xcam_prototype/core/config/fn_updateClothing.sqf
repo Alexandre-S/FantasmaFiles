@@ -29,7 +29,7 @@ switch(true) do
 	};
 	case (playerSide == independent && _uniform == "U_I_OfficerUniform"):
 	{
-		player setObjectTextureGlobal  [0, "altisrpfr\textures\SapeursPompiers.paa"];
+		player setObjectTextureGlobal  [0, "altisrpfr\textures\sapeurspompiers.paa"];
 	};
 	case (playerSide == independent && _uniform == "U_C_WorkerCoveralls"):
 	{
