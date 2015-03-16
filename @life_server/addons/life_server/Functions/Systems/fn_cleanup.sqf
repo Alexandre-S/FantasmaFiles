@@ -13,7 +13,7 @@ _debugmap = true;
 while {true} do
 {
 	diag_log format["[debug] fn_cleanup start %1 ", ""];
-	sleep (1 * 60);
+	uiSleep (1 * 60);
 	// if((isHLC) || (!(isHLC) && (time - last_HC_update) > 10)) then {
 	// if(isHLC) then {
 		if(server_debug) then { _t1 = diag_tickTime; };

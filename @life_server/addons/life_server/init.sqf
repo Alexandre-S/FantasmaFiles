@@ -132,7 +132,7 @@ if(!isHLC) then {
 		[] spawn  {
 		  while{true} do
 		  {
-			sleep (1 * 60);
+			uiSleep (1 * 60);
 			if(countsellitem > 1000 && ((time - last_sellArrayMulti) > 900)) then {
 				last_sellArrayMulti = time;
 				[] call TON_fnc_sellArrayMulti;
@@ -157,7 +157,7 @@ if(!isHLC) then {
 		private["_logic","_queue"];
 		while {true} do
 		{
-			sleep (30 * 60);
+			uiSleep (30 * 60);
 			_logic = missionnamespace getvariable ["bis_functions_mainscope",objnull];
 			_queue = _logic getvariable "BIS_fnc_MP_queue";
 			_logic setVariable["BIS_fnc_MP_queue",[],TRUE];
@@ -169,7 +169,7 @@ if(!isHLC) then {
 	{
 		while {true} do
 		{
-			sleep (30 * 60);
+			uiSleep (30 * 60);
 			{
 				_x setVariable["sellers",[],true];
 			} foreach [Dealer_1,Dealer_2,Dealer_3];
@@ -300,7 +300,7 @@ else
 					diag_log format ["::spawn:: vehupdate %1",_x];
 					[_x] spawn  {
 						_x = _this select 0;
-						sleep (random 60);
+						uiSleep (random 60);
 						[] call life_fnc_getHLC;
 						[_x,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 					};
@@ -341,7 +341,7 @@ else
 	[] spawn  {
 	  while{true} do
 	  {
-		sleep (1 * 60);
+		uiSleep (1 * 60);
 		if(countsellitem > 1000 && ((time - last_sellArrayMulti) > 900)) then {
 			last_sellArrayMulti = time;
 			[] call TON_fnc_sellArrayMulti;
@@ -372,7 +372,7 @@ else
 			publicVariableServer "PO3_sVAR_HLCKeepAlive";
 			diag_log format["%1 sent %2 keepAlive to Server",player,PO3_sVAR_HLCKeepAlive];
 
-			sleep 15;
+			uiSleep 15;
 		};
 	};
 	

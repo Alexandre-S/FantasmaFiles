@@ -13,7 +13,7 @@ if(isNull _client) exitWith {};
 _loops = 0;
 while {true} do {
 	if(isNull _client) exitWith {};
-	if(_loops >= 25) exitWith {};
+	if(_loops >= 60) exitWith {};
 	if(!alive _client) exitWith {
 		_containers = nearestObjects[_client,["WeaponHolderSimulated"],5];
 		if(count _containers > 0) then {

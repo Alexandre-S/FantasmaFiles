@@ -42,7 +42,7 @@ waitUntil{sleep 0.1;count(allDeadMen) > 0};
 			if(!(_unit getVariable ["Revive", true])) then {
 				[[0,format["ATTENTION INTERDIT ! - %1 A DECONNECTE PENDANT UN COMA - ATTENTION INTERDIT !", _name]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 				[[0,format["ATTENTION INTERDIT ! - %1 A DECONNECTE PENDANT UN COMA - ATTENTION INTERDIT !", _name]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-				sleep 600;
+				uiSleep 600;
 			};
 			_containers = nearestObjects[_pos,["WeaponHolderSimulated"],5]; //Fetch list of containers (Simulated = weapons)
 			{deleteVehicle _x;} foreach _containers; //Delete the containers.

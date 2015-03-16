@@ -76,7 +76,7 @@ goatgroup = createGroup Civilian;
 						// _a setPos _p;
 						[_a] spawn {
 							_a = _this select 0;
-							sleep 300;
+							uiSleep 300;
 							life_animals_array = life_animals_array - [_a];
 							if(!isNull _a) then {deleteVehicle _a;};
 						};
@@ -97,7 +97,7 @@ goatgroup = createGroup Civilian;
 	_pos = getMarkerPos "hunting";
 	while {life_animals_spawned} do
 	{
-		sleep 60*5;
+		uiSleep 60*5;
 		{
 			if((_x distance _pos) > 800) then
 			{
