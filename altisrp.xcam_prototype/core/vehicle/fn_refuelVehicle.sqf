@@ -30,6 +30,7 @@ while {_level < 1} do
 	sleep _delay;
 	if (speed player > 1) exitWith {};
 	if (player distance (_this select 0) > 5) exitWith {};
+	if (vehicle player != player) exitWith {);
 	
 	_litres = _litres + 1;
 	_cost = _cost + (60 * (1 + _tax));
@@ -56,4 +57,5 @@ else
 };
 
 life_cash = life_cash - _cost;
+playSound "caching";
 //["atm","take",_cost] call life_fnc_updateCash;

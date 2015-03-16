@@ -211,7 +211,7 @@ _pumps = [["Land_FuelStation",[2554.91,4864.73,-0.00377178]],
 {
 	_pump = (nearestObject [_x select 1, _x select 0]);
 	_pump setFuelCargo 0;
-	_pump addAction ["Refuel", life_fnc_refuelVehicle, 1, 3, true, true, "", ' _this distance _target < 5 && cursorTarget == _target '];
+	_pump addAction ["Faire le plein", life_fnc_refuelVehicle, 1, 3, true, true, "", ' _this distance _target < 5 && cursorTarget == _target '];
 } forEach _pumps;
 
 diag_log "::Life Client:: batiments indestructibles..";
