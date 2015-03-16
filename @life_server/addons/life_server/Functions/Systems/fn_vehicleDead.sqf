@@ -19,7 +19,7 @@ _query = format["UPDATE vehicles SET alive='0' WHERE pid='%1' AND plate='%2'",_u
 waitUntil {!DB_Async_Active};
 _thread = [_query,1] call DB_fnc_asyncCall;
 
-uiSleep (1.3 * 60);
+sleep (1.3 * 60);
 if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 	deleteVehicle _vehicle;
 };

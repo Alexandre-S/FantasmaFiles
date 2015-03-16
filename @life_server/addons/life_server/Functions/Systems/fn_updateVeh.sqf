@@ -72,6 +72,6 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 			};
 		};
 		if(server_debug && ((diag_tickTime - _t1) > 0.1) ) then { diag_log format["[debuglongtime] SYS fn_updateVeh %1 ", diag_tickTime - _t1]; };
-		uiSleep 30;
+		sleep 30;
 	};
 }

@@ -216,7 +216,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		// Force session DB save every 2.5 mins
 		[_vehicle] spawn  {
 			_vehicle = _this select 0;
-			uiSleep (random 60);
+			sleep (random 60);
 			[] call life_fnc_getHLC;
 			[_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 		};

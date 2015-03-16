@@ -22,10 +22,10 @@ zbe_mapside = zbe_mapsize / 2;
 zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 
 [] spawn  {
-	uiSleep 60;
+	sleep 60;
 	private ["_allPlayers","_allAi","_aiacacher","_disable"];
 	while {true} do {
-		uiSleep 15;
+		sleep 15;
 		zbe_players = (switchableUnits + playableUnits);
 		/*{
 			_disable = _x getVariable "zbe_cacheDisabled";
@@ -83,7 +83,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 };
 // Vehicle Caching Beta (for client FPS)
 [] spawn {
-	uiSleep 60;
+	sleep 60;
 	private ["_assetscar", "_assetsair", "_assetsboat"];
 	zbe_cached_cars = [];
 	zbe_cached_air = [];
@@ -129,12 +129,12 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 			};
 		} forEach zbe_cached_boat;
 		zbe_allVehicles = (_assetscar + _assetsair + _assetsboat);
-		uiSleep 15;
+		sleep 15;
 	};
 };
 
 [] spawn {
-	uiSleep 60;
+	sleep 60;
 	if (zbe_debug) then {
 			while {true} do {
 				uiSleep 15;
