@@ -88,7 +88,7 @@ while {life_carryWeight < life_maxWeight} do
 	// {
 		player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 		waitUntil{sleep 0.1; animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
-		uiSleep 5;
+		sleep 5;
 	// };
 
 	if(!([true,_gather,_diff] call life_fnc_handleInv)) then

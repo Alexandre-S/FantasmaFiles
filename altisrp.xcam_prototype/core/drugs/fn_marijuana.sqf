@@ -23,7 +23,7 @@ if (!life_smoking) then
 	player setFatigue 0.75;
 	player enableFatigue false;
 	[[player],"life_fnc_attachSmoke",true,false] spawn life_fnc_MP;
-	uiSleep 180;
+	sleep 300;
 	life_smoking = false;
 	player enableFatigue true;
 };

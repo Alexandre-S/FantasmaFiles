@@ -291,11 +291,11 @@ switch (_code) do
 			{
 				if(playerSide == west) then {
 					life_siren_active = true;
-					uiSleep 4.7;
+					sleep 4.7;
 					life_siren_active = false;
 				} else {
 					life_siren_active = true;
-					uiSleep 5.4;
+					sleep 5.4;
 					life_siren_active = false;
 				};
 			};

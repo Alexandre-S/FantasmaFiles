@@ -37,7 +37,7 @@ _cP = 0.01;
 		waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
 		if !(alive _this) exitWith {};
 		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
-		uiSleep 0.15;
+		sleep 0.15;
 		if(player != vehicle player) exitWith {};
 		if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 			[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
@@ -52,7 +52,7 @@ while{true} do
 		// player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 		player spawn _fnc_playAnim;
 	};
-	uiSleep 0.26;
+	sleep 0.26;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";

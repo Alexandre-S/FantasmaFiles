@@ -20,7 +20,7 @@ while {true} do
 	if(speed _vehicle >= 0) exitWith {};
 	_soundToPlay = "altisrpfr\sounds\truck_reverse.ogg";
 	playSound3D [_soundToPlay, _vehicle];
-	uiSleep 2.56;
+	sleep 2.56;
 };
 
 life_truckreverse_active = false;

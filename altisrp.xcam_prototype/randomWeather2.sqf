@@ -86,7 +86,7 @@ mb_fnc_InitialWeather = {
         86400 setFog _weatherInitialFog;
         setWind [_weatherInitialWindEW,_weatherInitialWindNS,true];
 		skipTime 24;
-		uiSleep 1;
+		sleep 1;
 	    simulWeatherSync;
 			
 		if (rw2Debug == 1) then {diag_log format ["Debug Initialized Weather - %1\nOvercast: %2\nRain/Snow: %3\nFog: %4\nWind EW|NS: %5|%6",weatherCurrentName,_weatherInitialOvercast,_weatherInitialRainSnow,_weatherInitialFog,_weatherInitialWindEW,_weatherInitialWindNS];};
@@ -144,12 +144,12 @@ private ["_weatherUpdateArray","_weatherUpdateForecasts"];
    // Start recurring weather loop.
     while {true} do {
 		// Pick weather template from possible forecasts for next weather update
-		uiSleep 10;
+		sleep 10;
 		_weatherUpdateArray = weatherTemplates select rw2_Current_Weather;
 		_weatherUpdateForecasts = _weatherUpdateArray select 1;
 		rw2_Next_Weather = _weatherUpdateForecasts select floor(random(count(_weatherUpdateForecasts)));
 		publicVariable "rw2_Next_Weather";
-		uiSleep 1190;
+		sleep 1190;
         [[],"mb_fnc_UpdateWeather",true] spawn life_fnc_MP;
 		rw2_Current_Weather = rw2_Next_Weather;
 		publicVariable "rw2_Current_Weather";

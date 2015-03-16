@@ -14,7 +14,7 @@ if (isNull _corpse || !((typeOf _corpse) in _animals) || alive _corpse) exitWith
 
 [[player,"AinvPknlMstpSnonWnonDnon_medic_2"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_2";
-uiSleep 5.2;
+sleep 5.2;
 
 _success = false;
 _item = switch (typeOf _corpse) do

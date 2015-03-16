@@ -41,7 +41,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		//[[0,"STR_NOTF_Tazed",true,[profileName, _shooter getVariable["realname",name _shooter]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		_unit attachTo [_obj,[0,0,0]];
 		disableUserInput true;
-		uiSleep 15;
+		sleep 15;
 		if(animationState player == "AinjPfalMstpSnonWnonDf_carried_fallwc") then {
 			[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		};

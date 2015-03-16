@@ -24,7 +24,7 @@ _fnc_playAnim = {
 	waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
 	if !(alive _this) exitWith {};
 	// [_this, "Incapacitated", 1, True] call AGM_Core_fnc_doAnimation;
-	// uiSleep 2;
+	// sleep 2;
 	if(player != vehicle player) exitWith {};
 	if (animationState _this != "Incapacitated") then {
 		[_this, "Incapacitated", 2, True] call AGM_Core_fnc_doAnimation;
@@ -39,7 +39,7 @@ player spawn _fnc_playAnim;
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
 player attachTo [_obj,[0,0,0]];
-uiSleep 15;
+sleep 15;
 player setVariable ["tf_unable_to_use_radio", false];
 if(animationState player == "Incapacitated") then {
 	player playMoveNow "amovppnemstpsraswrfldnon";

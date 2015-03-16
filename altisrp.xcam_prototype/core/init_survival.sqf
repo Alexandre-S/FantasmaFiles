@@ -24,7 +24,7 @@
 	
 	while{true} do
 	{
-		uiSleep 900;
+		sleep 900;
 		[] call _fnc_water;
 	};
 };
@@ -54,7 +54,7 @@
 	
 	while{true} do
 	{
-		uiSleep 1200;
+		sleep 1200;
 		[] call _fnc_food;
 	};
 };

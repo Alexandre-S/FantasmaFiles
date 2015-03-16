@@ -40,7 +40,7 @@ life_action_inUse = true;
 
 //Temp fail safe.
 [] spawn {
-	uiSleep 60;
+	sleep 60;
 	life_action_inUse = false;
 };
 

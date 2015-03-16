@@ -59,7 +59,7 @@ while {true} do {
 	waitUntil {
 		if(isEngineOn _vehicle) exitWith {titleText[localize "STR_NOTF_MiningStopped","PLAIN"]; true};
 		if(round(_time - time) < 1) exitWith {true};
-		uiSleep 0.2;
+		sleep 0.2;
 		false
 	};
 	if(isEngineOn _vehicle) exitWith {titleText[localize "STR_NOTF_MiningStopped","PLAIN"];};
@@ -94,7 +94,7 @@ while {true} do {
 	_weight = [_vehicle] call life_fnc_vehicleWeight;
 	_sum = [_item,_random_sel,_weight select 1,_weight select 0] call life_fnc_calWeightDiff; //Get a sum base of the remaining weight.. 
 	if(_sum < 1) exitWith {titleText[localize "STR_NOTF_DeviceFull","PLAIN"];};
-	uiSleep 2;
+	sleep 2;
 };
 
 _vehicle setVariable["mining",nil,true];

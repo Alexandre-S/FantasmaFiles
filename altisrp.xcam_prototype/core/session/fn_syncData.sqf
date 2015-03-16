@@ -30,7 +30,7 @@ hint localize "STR_Session_SyncData";
 [] spawn
 {
 	life_session_time = true;
-	uiSleep (5 * 60);
+	sleep (5 * 60);
 	life_session_time = false;
 };
 	
