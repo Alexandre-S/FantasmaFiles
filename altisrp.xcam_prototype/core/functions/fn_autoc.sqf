@@ -20,14 +20,14 @@
 			havena_ok = 0;
 			havena_okk = 0;
 			havena_ok = havena_ok - 1;
-		} else {
-			if(((havena_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview)) then {
-				havena_ok = havena_ok + 1;
+		};
+		
+		if(((havena_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview)) then {
+			havena_ok = havena_ok + 1;
 
-				if(havena_ok > 100) then {
-					havena_okk = 1;
-				};
-			} 
+			if(havena_ok > 100) then {
+				havena_okk = 1;
+			};
 		};
 		
 		
@@ -54,9 +54,10 @@
 			
 			havena_objectView = round(havena_view*0.8);
 			havena_shadow = round(havena_objectView*0.1);
+			setViewDistance havena_view;
 			setObjectViewDistance [havena_objectView,havena_shadow];
 			// setObjectViewDistance havena_objectView;
-			setViewDistance havena_view;
+			
 			if(havena_debug) then {
 				hint format["%1 - %2 [ %3 , %4 ] - %5 | %6",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid,havena_ok];
 			};
