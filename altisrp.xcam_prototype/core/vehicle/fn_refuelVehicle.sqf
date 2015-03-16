@@ -30,7 +30,7 @@ while {_level < 1} do
 	uiSleep _delay;
 	if (speed player > 1) exitWith {};
 	if (player distance (_this select 0) > 5) exitWith {};
-	if (vehicle player != player) exitWith {);
+	if (vehicle player != player) exitWith {};
 	
 	_litres = _litres + 1;
 	_cost = _cost + (60 * (1 + _tax));
