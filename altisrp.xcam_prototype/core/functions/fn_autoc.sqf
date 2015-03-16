@@ -1,6 +1,6 @@
 [] spawn {
 	
-	// havena_debug = false;
+	havena_debug = false;
 	
 	setViewDistance havena_view;
 	havena_objectView = round(havena_view*0.8);
@@ -58,16 +58,16 @@
 			// setObjectViewDistance [havena_objectView,havena_shadow];
 			setObjectViewDistance havena_objectView;
 			setViewDistance havena_view;
-			// if(havena_debug) then {
-				// hint format["%1 - %2 [ %3 , %4 ] - %5 | %6",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid,havena_ok];
-			// };
+			if(havena_debug) then {
+				hint format["%1 - %2 [ %3 , %4 ] - %5 | %6",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid,havena_ok];
+			};
 			waituntil{sleep 0.05;((((diag_fps <= (havena_targetfps)) && (havena_view > havena_minview)) && dayz_combat == 0) OR (havena_view > havena_maxview)) OR (((diag_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview)) OR (dayz_combat == 1 && (havena_view < havena_mincombat))};
 			havena_ok = 0;
 		} else {
-			// if(havena_debug) then {
-				// hint "WTF";
-				// diag_log format["FPS : %1 - Viewdist : %2 [ %3 , %4 ] - Grid : %5 | ok : %6 - targetFPS : %7 - mindist:  %8 - maxdist : %9 - havena_view : %10",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid,havena_ok,havena_targetfps,havena_minview,havena_maxview,havena_view];
-			// };
+			if(havena_debug) then {
+				hint "WTF";
+				diag_log format["FPS : %1 - Viewdist : %2 [ %3 , %4 ] - Grid : %5 | ok : %6 - targetFPS : %7 - mindist:  %8 - maxdist : %9 - havena_view : %10",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid,havena_ok,havena_targetfps,havena_minview,havena_maxview,havena_view];
+			};
 			sleep 0.05;
 		};
 		
