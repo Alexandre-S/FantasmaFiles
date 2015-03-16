@@ -17,14 +17,18 @@
 		};
 		havena_fps = diag_fps;
 		if((((havena_fps <= (havena_targetfps)) && (havena_view > havena_minview)) && dayz_combat == 0) OR (havena_view > havena_maxview)) then {
-			havena_ok = 0;
 			havena_okk = 0;
-			havena_ok = havena_ok - 1;
+			havena_ok = - 1;
 		};
 		
 		if(((havena_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview)) then {
-			havena_ok = havena_ok + 1;
 
+			if(havena_view < havena_minview) then {
+				havena_ok = 101;
+			} else {
+				havena_ok = havena_ok + 1;
+			};
+			
 			if(havena_ok > 100) then {
 				havena_okk = 1;
 			};
