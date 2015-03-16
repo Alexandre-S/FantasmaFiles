@@ -28,10 +28,10 @@ if(!hlcAI) then {
 	
 	diag_log format["Debug: HLCID %1, playerIDs: %2 ",_hcID,_playerIDs];
 	{
-		diag_log format["Check: HLCID %1, Object: %2 Group: %3 groupowner: %4, owner: %5",_hcID,typeOf _x,group _x,groupOwner _x,owner _x];
+		diag_log format["Check: HLCID %1, Object: %2 Group: %3 groupowner: %4, owner: %5",_hcID,typeOf _x,group _x,groupOwner (group _x) ,owner _x];
 		// if(owner _x IN [0,1] && !((owner _x) IN _playerIDs) ) then {
 		// if(groupOwner _x IN [0,1] && !((owner _x) IN _playerIDs) ) then {
-		if(groupOwner _x != _hcID && !((owner _x) IN _playerIDs) ) then {
+		if(groupOwner (group _x) != _hcID && !((owner _x) IN _playerIDs) ) then {
 			if !(isNull _x) then {
 				// if( _x setOwner _hcID ) then {
 				if((group _x) setGroupOwner _hcID) then {
