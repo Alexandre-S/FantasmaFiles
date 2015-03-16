@@ -11,11 +11,11 @@
 	{
 		if(playerSide == west) then {
 			life_siren_active = true;
-			sleep 4.3;
+			uiSleep 4.3;
 			life_siren_active = false;
 		} else {
 			life_siren_active = true;
-			sleep 5.4;
+			uiSleep 5.4;
 			life_siren_active = false;
 		};
 	};

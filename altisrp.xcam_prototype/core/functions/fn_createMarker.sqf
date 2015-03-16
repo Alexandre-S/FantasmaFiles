@@ -24,6 +24,6 @@ if(_prefix == "COMA") then {
 } else {
 	_marker setMarkerShapeLocal "ICON";
 	_marker setMarkerTypeLocal "mil_dot";
-	sleep 300;
+	uiSleep 300;
 	deleteMarkerLocal _playerName;
 };

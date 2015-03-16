@@ -69,7 +69,7 @@ if(_hasLicense) then
 	_delayInt = _oldVal * 0.03;
 	while{true} do
 	{
-		sleep _delayInt;
+		uiSleep _delayInt;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
@@ -91,7 +91,7 @@ else
 	_delayInt = _oldVal * 0.09;
 	while{true} do
 	{
-		sleep _delayInt;
+		uiSleep _delayInt;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];

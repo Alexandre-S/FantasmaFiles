@@ -21,7 +21,7 @@ for "_i" from 1 to _duration do {
 		case (10): { player playActionNow format[_gesture,3]; };
 		case (15): { player playActionNow format[_gesture,4]; };
 	};
-	sleep 2;
+	uiSleep 2;
 };
 
 disableUserInput false;

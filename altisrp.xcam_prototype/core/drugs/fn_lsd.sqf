@@ -22,7 +22,7 @@ if (life_lsd_effect == 0) then
 		"chromAberration" ppEffectEnable true;
 		"chromAberration" ppEffectAdjust [life_drug_level / 10,life_drug_level / 10,true];
 		"chromAberration" ppEffectCommit 1;
-		sleep 2.25;	
+		uiSleep 2.25;	
 		
 		while {alive player && ((time - life_lsd_effect) < (4 * 60))} do
 		{
@@ -32,7 +32,7 @@ if (life_lsd_effect == 0) then
 			"chromAberration" ppEffectEnable true;
 			"chromAberration" ppEffectAdjust [life_drug_level / 10,life_drug_level / 10,true];
 			"chromAberration" ppEffectCommit 1;
-			sleep 2;
+			uiSleep 2;
 		};
 		
 		"chromAberration" ppEffectEnable false;

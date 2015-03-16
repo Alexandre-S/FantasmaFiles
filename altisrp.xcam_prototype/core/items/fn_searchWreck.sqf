@@ -38,7 +38,7 @@ while{life_carryWeight < life_maxWeight} do
 	{
 		if (([true,_random,1] call life_fnc_handleInv)) then
 		{
-			sleep 5;
+			uiSleep 5;
 			titleText["Vous avez trouvé quelque chose !","PLAIN"];
 			titleFadeOut 1;
 		};

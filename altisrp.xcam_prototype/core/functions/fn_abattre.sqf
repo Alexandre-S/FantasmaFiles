@@ -36,7 +36,7 @@ _fnc_playAnim = {
 	waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
 	if !(alive _this) exitWith {};
 	[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
-	sleep 0.15;
+	uiSleep 0.15;
 	if(player != vehicle player) exitWith {};
 	if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
 		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
@@ -50,7 +50,7 @@ while {true} do
 		// [[player,"AinvPknlMstpSnonWnonDnon_medic_1"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		// player playMoveNow "AinvPknlMstpSnonWnonDnon_medic_1";
 	};
-	sleep 0.27;
+	uiSleep 0.27;
 	_cP = _cP + 0.01;
 	_progressBar progressSetPosition _cP;
 	_titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];

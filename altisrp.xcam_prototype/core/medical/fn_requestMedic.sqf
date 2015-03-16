@@ -24,6 +24,6 @@ if(_medicsOnline) then {
 [] spawn 
 {
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
-	sleep (2 * 60);
+	uiSleep (2 * 60);
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable true;
 };

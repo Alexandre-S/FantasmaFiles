@@ -15,7 +15,7 @@ closeDialog 0;
 
 life_action_inUse = true;
 player playMove "AinvPknlMstpSnonWnonDnon_medic_1";
-sleep 4;
+uiSleep 4;
 life_action_inUse = false;
 if(player distance _unit > 4) exitWith {titleText["Vous n'êtes pas à proximité d'un véhicule!","PLAIN"];};
 titleText["Vous avez fixé une puce GPS à ce véhicule.","PLAIN"];
@@ -31,6 +31,6 @@ titleText["Vous avez fixé une puce GPS à ce véhicule.","PLAIN"];
 	while {true} do {
 		if(not alive _veh) exitWith {deleteMarkerLocal _markerName;};
 		_marker setMarkerPosLocal getPos _veh;
-		sleep 0.5;
+		uiSleep 0.5;
 	};
 };

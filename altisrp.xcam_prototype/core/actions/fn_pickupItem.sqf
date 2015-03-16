@@ -31,7 +31,7 @@ if(_diff != _itemInfo select 1) then
 	if(([true,_itemInfo select 0,_diff] call life_fnc_handleInv)) then
 	{
 		player playmove "AinvPknlMstpSlayWrflDnon";
-		sleep 0.5;
+		uiSleep 0.5;
 		_obj setVariable["item",[_itemInfo select 0,((_itemInfo select 1) - _diff)],true];
 		_obj setVariable["PickedUp",false,true];
 		titleText[format[localize "STR_NOTF_Picked",_diff,_itemName],"PLAIN"];
@@ -45,7 +45,7 @@ if(_diff != _itemInfo select 1) then
 		//waitUntil{isNull _obj};
 		player playmove "AinvPknlMstpSlayWrflDnon";
 		playSound "bag";
-		sleep 0.5;
+		uiSleep 0.5;
 		titleText[format[localize "STR_NOTF_Picked",_diff,_itemName],"PLAIN"];
 	};
 };

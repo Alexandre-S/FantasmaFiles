@@ -38,7 +38,7 @@ closeDialog 0;
 	//[[player, "action_repair",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 	while{true} do
 	{
-		sleep 0.27;
+		uiSleep 0.27;
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];

@@ -56,7 +56,7 @@ if(_enable && !life_animals_spawned) then
 				};
 				life_animals_spawned_time = time;
 			};
-			sleep 300;
+			uiSleep 300;
 		};
 	};
 }

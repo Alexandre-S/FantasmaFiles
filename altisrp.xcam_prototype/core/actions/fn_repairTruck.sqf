@@ -36,7 +36,7 @@ if((_veh isKindOf "LandVehicle") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Ai
 			waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
 			if !(alive _this) exitWith {};
 			[_this, "InBaseMoves_repairVehicleKnl", 1, True] call AGM_Core_fnc_doAnimation;
-			sleep 0.15;
+			uiSleep 0.15;
 			if(player != vehicle player) exitWith {};
 			if (animationState _this != "InBaseMoves_repairVehicleKnl") then {
 				[_this, "InBaseMoves_repairVehicleKnl", 2, True] call AGM_Core_fnc_doAnimation;
@@ -51,7 +51,7 @@ if((_veh isKindOf "LandVehicle") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Ai
 				// [[player,"InBaseMoves_repairVehicleKnl"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 				// player playMoveNow "InBaseMoves_repairVehicleKnl";
 			};
-			sleep 0.27;
+			uiSleep 0.27;
 			_cP = _cP + 0.01;
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];

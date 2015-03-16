@@ -27,7 +27,7 @@ if (_vehicle isKindOf "Air") then { _delay = _delay / 3; };
 
 while {_level < 1} do
 {
-	sleep _delay;
+	uiSleep _delay;
 	if (speed player > 1) exitWith {};
 	if (player distance (_this select 0) > 5) exitWith {};
 	if (vehicle player != player) exitWith {);
