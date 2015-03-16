@@ -25,15 +25,15 @@
 			if(((havena_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview)) then {
 				havena_ok = havena_ok + 1;
 
-				if(havena_ok > 120) then {
+				if(havena_ok > 100) then {
 					havena_okk = 1;
 				};
 			} 
 		};
 		
 		
-		if(havena_ok > 120 || havena_okk == 1 || havena_ok < 0 || (dayz_combat == 1 && (havena_view < havena_mincombat))) then {
-			if(havena_ok > 120 || havena_okk == 1) then {
+		if(havena_ok > 100 || havena_okk == 1 || havena_ok < 0 || (dayz_combat == 1 && (havena_view < havena_mincombat))) then {
+			if(havena_ok > 100 || havena_okk == 1) then {
 				_plusfps = (ceil(havena_fps - havena_targetfps)) max 5;
 				havena_view = havena_view + _plusfps;
 				
