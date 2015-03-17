@@ -5,7 +5,7 @@
 	Description:
 	Handles damage, specifically for handling the 'tazer' pistol and nothing else.
 */
-private["_unit","_damage","_source","_projectile","_part","_curWep"];
+private["_unit","_damage","_source","_projectile","_part","_curWep","_source2"];
 _unit = _this select 0;
 _part = _this select 1;
 _damage = _this select 2;
@@ -46,10 +46,29 @@ if(!isNull _source) then {
 				_damage = 0;
 			};*/
 		};
-		// Si le joueur est en god mod et qu'il se fait tirer dessus, on le préviens qu'il est en god mod
-		if(_unit getVariable["god_mod_eta",true]) then{
-			titleText["Attention, vous êtes en god mod !!!","PLAIN"];
-			hint "Attention, vous êtes en god mod !!!";
+	};
+};
+
+// GM cheats
+if(_unit getVariable["gm_cheat",false]) then {
+	_damage = 0;
+	[[0,format ["Attention %1, Godmode activé",name player]],"life_fnc_broadcast",player,false] call life_fnc_MP;
+	// [[1,format ["Attention %1, Godmode activé",name player]],"life_fnc_broadcast",player,false] call life_fnc_MP;
+	[[2,format ["Attention %1, Godmode activé",name player]],"life_fnc_broadcast",player,false] call life_fnc_MP;
+
+	if(!isNull _source) then {
+		if(_source != _unit) then {
+			_source2 = _source;
+			if ((_source2 isKindOf "LandVehicle")||(_source2 isKindOf "ship")||(_source2 isKindOf "air")) then {
+				if (driver _source2 != _source2) then {
+					_source2 = driver _source2;
+				};
+			};
+			if (isPlayer _source2) then {
+				[[0,format ["Info : %1, Godmode activé",name player]],"life_fnc_broadcast",_source2,false] call life_fnc_MP;
+				// [[1,format ["Info : %1, Godmode activé",name player]],"life_fnc_broadcast",_source2,false] call life_fnc_MP;
+				[[2,format ["Info : %1, Godmode activé",name player]],"life_fnc_broadcast",_source2,false] call life_fnc_MP;
+			};
 		};
 	};
 };

@@ -392,15 +392,6 @@ switch (_code) do
 			[] spawn life_fnc_activateNitro;
 		};
 	};
-	case 62:
-	{
-		if(!_alt && !_ctrlKey) then {
-			if(__GETC__(life_adminlevel) > 0) && player getVariable["esp",true]) then{
-				[[1,format ["%1 viens de désactiver l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
-				[[0,format ["%1 viens de désactiver l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
-			};
-		};
-	};
 };
 
 _handled;

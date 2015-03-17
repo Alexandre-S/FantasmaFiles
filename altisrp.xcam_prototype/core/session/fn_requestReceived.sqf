@@ -40,10 +40,6 @@ __CONST__(life_adminlevel,parseNumber(_this select 4));
 __CONST__(life_donator,parseNumber(_this select 5));
 if(__GETC__(life_adminlevel)>0) then { player setVariable["is_admin",true,true]; };
 
-// Pas de godmod quand on se co
-player setVariable["god_mod_eta", false, true];
-player setVariable["esp", false, true];
-
 //Loop through licenses
 if(count (_this select 6) > 0) then {
 	{missionNamespace setVariable [(_x select 0),(_x select 1)];} foreach (_this select 6);
