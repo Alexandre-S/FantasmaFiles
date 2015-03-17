@@ -9,6 +9,9 @@ private["_actualunit"];
 //hint "Adding Markers on the map";
 admin_F4_EH = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 0x3E) then {marker_mapesp = false;};"];	
 titleText ["ESP activé, F4 pour desactiver","PLAIN DOWN"]; titleFadeOut 4;
+[[1,format ["%1 viens d'activer l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+[[0,format ["%1 viens d'activer l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+player setVariable["esp", true, true];
 
 while {marker_mapesp} do
 {

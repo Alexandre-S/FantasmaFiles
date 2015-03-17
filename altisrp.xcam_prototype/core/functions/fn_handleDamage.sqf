@@ -1,4 +1,4 @@
-/*
+ï»¿/*
 	File: fn_handleDamage.sqf
 	Author: Bryan "Tonic" Boardwine
 	
@@ -46,10 +46,10 @@ if(!isNull _source) then {
 				_damage = 0;
 			};*/
 		};
-		// Si le joueur est en god mod et qu'il se fait tirer dessus, on le préviens qu'il est en god mod
+		// Si le joueur est en god mod et qu'il se fait tirer dessus, on le prÃ©viens qu'il est en god mod
 		if(_unit getVariable["god_mod_eta",true]) then{
-			titleText["Attention, vous êtes en god mod !!!","PLAIN"];
-			hint "Attention, vous êtes en god mod !!!";
+			titleText["Attention, vous Ãªtes en god mod !!!","PLAIN"];
+			hint "Attention, vous Ãªtes en god mod !!!";
 		};
 	};
 };
