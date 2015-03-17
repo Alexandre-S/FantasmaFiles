@@ -13,7 +13,7 @@ titleText ["ESP activé pour 2 min, F4 pour desactiver","PLAIN DOWN"]; titleFade
 [[0,format ["GM %1 utilise l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 
 [] spawn {
-	sleep 2*60;
+	sleep 120;
 	marker_mapesp = false;
 };
 
