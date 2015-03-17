@@ -2926,8 +2926,8 @@ class Mission
 				class Item56
 				{
 					position[]={4154.8892,10.778892,3914.8818};
-					azimut=-110.22899;
-					offsetY=1.25;
+					azimut=-110.229;
+					offsetY=1.75;
 					special="NONE";
 					id=161;
 					side="WEST";
@@ -16946,7 +16946,7 @@ class Mission
 		};
 		class Item94
 		{
-			position[]={4149.9185,11.134257,3915.9673};
+			position[]={4143.0674,11.540356,3919.7827};
 			name="medic_spawn_1";
 			type="Empty";
 			angle=180;
@@ -16998,7 +16998,7 @@ class Mission
 		};
 		class Item101
 		{
-			position[]={4139.6631,12.258626,3910.6902};
+			position[]={4138.8574,12.019867,3917.5859};
 			name="med_car_1";
 			type="Empty";
 			angle=145;
