@@ -20,13 +20,12 @@ switch (_filter) do
 	case 0:
 	{
 		_ret pushBack ["U_Rangemaster","Uniforme de gendarme",0];
-		_ret pushBack ["U_B_CombatUniform_mcam","Polaire Gendarme",0];
-		_ret pushBack ["U_B_SpecopsUniform_sgg","Polaire Bleue Gendarme",0];
 		
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			// _ret pushBack ["ARC_FR_CE_Uniform",nil,0];
+			_ret pushBack ["rpima_uniform",nil,0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
@@ -36,6 +35,8 @@ switch (_filter) do
 		// BAC / PJ
 		if(license_cop_bacpj) then
 		{
+			_ret pushBack ["U_B_CombatUniform_mcam","Polaire Gendarme",0];
+			_ret pushBack ["U_B_SpecopsUniform_sgg","Polaire Bleue Gendarme",0];
 			_ret pushBack ["C_Uniform_survivor3_l",nil,0];
 			_ret pushBack ["B_Uniform_survivor2_l",nil,0];
 			_ret pushBack ["U_C_HunterBody_grn",nil,0];
@@ -52,7 +53,6 @@ switch (_filter) do
 			_ret pushBack ["U_BG_Guerilla2_3",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_1",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
-			_ret pushBack ["rpima_uniform",nil,0];
 		};
 		// Unité tactique
 		if(license_cop_swat) then
