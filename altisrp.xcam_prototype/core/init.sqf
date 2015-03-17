@@ -244,7 +244,10 @@ life_fnc_garageRefund = compileFinal
 ";
 
 [] execVM "core\init_survival.sqf";
-[] spawn life_fnc_autoc;
+// [] spawn life_fnc_autoc;
+[] execFSM "core\fsm\autoc.fsm";
+
+
 //[] execVM "core\fn_addKey.sqf"; doublon
 
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
