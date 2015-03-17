@@ -133,7 +133,8 @@ switch(_shop) do
 						["CUP_hgun_MicroUzi",nil,0],
 						["CUP_30Rnd_9x19_UZI",nil,0],
 						["CUP_hgun_TaurusTracker455",nil,0],
-						["CUP_6Rnd_45ACP_M",nil,0]
+						["CUP_6Rnd_45ACP_M",nil,0],
+						["B_UavTerminal",nil,0]
 					
 					
 					
