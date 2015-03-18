@@ -206,6 +206,11 @@ if(!isHLC) then {
 		(_this select 0) hideObjectGlobal (_this select 1);
 	";
 	
+	TON_fnc_rePos = 
+	compileFinal "
+		(_this select 0) setPos (getPos (_this select 0));
+	";
+	
 	TON_fnc_player_query =
 	compileFinal "
 		private[""_ret""];

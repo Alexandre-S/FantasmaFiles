@@ -4,44 +4,47 @@
 item0[] = {"init",0,250,-193.483002,-91.140106,-103.483002,-41.140106,0.000000,"init"};
 item1[] = {"ready_",4,218,-191.749756,-19.800257,-101.749763,30.199743,0.000000,"ready?"};
 item2[] = {"begin",2,250,-195.216248,65.128845,-105.216232,115.128853,0.000000,"begin"};
-item3[] = {"cache_for_AI_",4,218,-306.548492,126.416489,-216.548492,176.416489,1.000000,"cache" \n "for AI?"};
+item3[] = {"cache_for_AI_",4,4314,-306.548492,126.416489,-216.548492,176.416489,1.000000,"cache" \n "for AI?"};
 item4[] = {"cache",2,250,-305.433960,217.955521,-215.433945,267.955475,0.000000,"cache"};
 item5[] = {"unCache_for_AI_",4,218,-193.956940,129.134674,-103.956940,179.134674,1.000000,"unCache" \n "for AI?"};
 item6[] = {"unCache",2,250,-193.956955,218.653885,-103.956940,268.653931,0.000000,"unCache"};
-item7[] = {"end",1,250,-519.399902,383.839478,-429.399597,433.839447,0.000000,"end"};
-item8[] = {"delay",8,218,-453.643311,137.457932,-363.643311,187.457932,0.000000,"delay"};
-item9[] = {"delayed",2,250,-496.324066,202.799103,-406.323944,252.799118,0.000000,"delayed"};
-item10[] = {"done_delay__and",4,218,-484.096313,272.248962,-394.096191,322.248962,0.000000,"done delay?" \n "and setPos"};
-item11[] = {"delay",8,218,-60.272964,138.074768,29.727036,188.074768,0.000000,"delay"};
-item12[] = {"delayed_1",2,250,-34.876671,226.961761,55.123352,276.961761,0.000000,"delayed"};
-item13[] = {"done_delay_",4,218,-71.912933,312.674255,18.087072,362.674255,0.000000,"done delay?"};
-item14[] = {"disabled_",4,218,-314.174438,467.107391,-224.174438,517.107422,3.000000,"disabled?"};
-item15[] = {"if_player_then_",4,218,-158.950836,-149.471191,-43.840740,-96.007736,1.000000,"if player then" \n " exit"};
-item16[] = {"exitIsPlayer",1,250,-49.279797,-188.350754,40.720234,-138.350769,0.000000,"exitIsPlayer"};
-item17[] = {"isNull_",4,4314,-646.310730,185.444565,-556.310364,235.444412,2.000000,"isNull?"};
+item7[] = {"if_player_then_",4,218,-378.105133,352.907867,-288.105133,402.907867,0.000000,"if player then" \n " exit"};
+item8[] = {"end",1,250,-519.399902,383.839478,-429.399597,433.839447,0.000000,"end"};
+item9[] = {"delay",8,218,-453.643311,137.457932,-363.643311,187.457932,0.000000,"delay"};
+item10[] = {"delayed",2,250,-496.324066,202.799103,-406.323944,252.799118,0.000000,"delayed"};
+item11[] = {"done_delay__and",4,218,-484.096313,272.248962,-394.096191,322.248962,0.000000,"done delay?" \n "and setPos"};
+item12[] = {"delay",8,218,-60.272964,138.074768,29.727036,188.074768,0.000000,"delay"};
+item13[] = {"delayed_1",2,250,-34.876671,226.961761,55.123352,276.961761,0.000000,"delayed"};
+item14[] = {"done_delay_",4,218,-71.912933,312.674255,18.087072,362.674255,0.000000,"done delay?"};
+item15[] = {"disabled_",4,218,-314.174438,467.107391,-224.174438,517.107422,3.000000,"disabled?"};
+item16[] = {"if_player_then_",4,218,-158.950836,-149.471191,-43.840740,-96.007736,1.000000,"if player then" \n " exit"};
+item17[] = {"exitIsPlayer",1,250,-49.279797,-188.350754,40.720234,-138.350769,0.000000,"exitIsPlayer"};
+item18[] = {"isNull_",4,218,-646.310730,185.444565,-556.310364,235.444412,2.000000,"isNull?"};
 link0[] = {0,1};
-link1[] = {0,15};
-link2[] = {0,17};
+link1[] = {0,16};
+link2[] = {0,18};
 link3[] = {1,2};
 link4[] = {2,3};
 link5[] = {3,4};
 link6[] = {4,5};
-link7[] = {4,8};
-link8[] = {4,14};
-link9[] = {5,6};
-link10[] = {6,3};
-link11[] = {6,11};
-link12[] = {8,9};
-link13[] = {9,10};
-link14[] = {10,4};
-link15[] = {11,12};
-link16[] = {12,13};
-link17[] = {13,6};
-link18[] = {14,7};
-link19[] = {15,16};
-link20[] = {17,7};
-globals[] = {0.000000,0,0,0,0,640,480,1,40,6316128,1,-737.848633,184.067154,800.640015,-268.557465,820,951,1};
-window[] = {2,-1,-1,-1,-1,822,2103,3217,58,3,838};
+link7[] = {4,7};
+link8[] = {4,9};
+link9[] = {4,15};
+link10[] = {5,6};
+link11[] = {6,3};
+link12[] = {6,12};
+link13[] = {7,8};
+link14[] = {9,10};
+link15[] = {10,11};
+link16[] = {11,4};
+link17[] = {12,13};
+link18[] = {13,14};
+link19[] = {14,6};
+link20[] = {15,8};
+link21[] = {16,17};
+link22[] = {18,8};
+globals[] = {0.000000,0,0,0,0,640,480,1,41,6316128,1,-737.848633,184.067154,800.640015,-268.557465,820,951,1};
+window[] = {2,-1,-1,-32000,-32000,822,2103,3217,58,3,838};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -113,8 +116,7 @@ class FSM
           to="cache";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"({_x distance _ai < _distance} count zbe_players == 0)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"zbe_cachedAi = zbe_cachedAi + [_ai];" \n
-           "[[_ai,true],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"[[_ai,true],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -146,8 +148,7 @@ class FSM
           to="unCache";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"({_x distance _ai < _distance} count zbe_players > 0)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"zbe_cachedAi = zbe_cachedAi - [_ai];" \n
-           "[[_ai,false],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"[[_ai,false],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "delay">*/
@@ -158,6 +159,21 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "if_player_then_">*/
+        class if_player_then_
+        {
+          priority = 0.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isplayer _ai)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"zbe_cachedAi = zbe_cachedAi - [_ai];" \n
+           "[[_ai,false],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;" \n
+           "_ai setVariable [""zbe_cacheDisabled"",true];" \n
+           "if (zbe_debug) then {" \n
+           "diag_log format [""ZBE_Cache ERROR ending for player %1"",_ai];" \n
+           "};"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -178,8 +194,7 @@ class FSM
           to="cache";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"({_x distance _ai < _distance} count zbe_players == 0)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"zbe_cachedAi = zbe_cachedAi + [_ai];" \n
-           "[[_ai,true],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;"/*%FSM</ACTION""">*/;
+          action=/*%FSM<ACTION""">*/"[[_ai,true],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
         /*%FSM<LINK "delay">*/
