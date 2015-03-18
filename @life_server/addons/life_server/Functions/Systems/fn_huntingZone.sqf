@@ -5,16 +5,12 @@
 	Description:
 	Spawns up animals local to the client.
 */
-private["_enable","_presence","_total","_animals","_pos","_pos2"];
 
 life_animals_spawned = true;
 life_animals_spawned_time = -500;
 life_animals_array = [];
 goatgroup = createGroup Civilian; 
-// _enable = [_this,0,false,[false]] call BIS_fnc_param;
 
-// if(_enable && !life_animals_spawned) then
-// {
 [] spawn
 {
 	private ["_alive","_total","_type","_animal","_pos","_pos2","_animals","_z"];
@@ -108,18 +104,3 @@ goatgroup = createGroup Civilian;
 		diag_log format["--- DEBUG ANIMAL INFO --- total : %1",count life_animals_array];
 	};
 };
-
-
-/*}
-else
-{
-	{
-		if(!isNull _x) then
-		{
-			deleteVehicle _x;
-		};
-	} foreach life_animals_array;
-	
-	life_animals_array = [];
-	life_animals_spawned = false;
-};*/

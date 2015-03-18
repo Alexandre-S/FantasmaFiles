@@ -20,7 +20,7 @@ if(!isHLC) then {
 		_nObject = (_x select 1) nearestObject (_x select 0);
 		diag_log format["indestructible - %1",_nObject];
 		_nObject enableSimulation false;
-		_nObject allowDamage false;
+		// _nObject allowDamage false;
 		_nObject addEventHandler ["HandleDamage", {false}];
 	} forEach _nObject_list;
 	

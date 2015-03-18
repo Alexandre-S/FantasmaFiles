@@ -1,41 +1,46 @@
 /*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, autoc">*/
 /*%FSM<HEAD>*/
 /*
-item0[] = {"init",0,250,0.649210,-51.852776,90.649170,-1.852798,0.000000,"init"};
-item1[] = {"ready_",4,218,-144.329956,-50.495338,-54.330132,-0.495155,0.000000,"ready?"};
+item0[] = {"init",0,250,34.428276,-124.815567,124.428238,-74.815567,0.000000,"init"};
+item1[] = {"ready_",8,218,-144.329956,-50.495338,-54.329956,-0.495338,0.000000,"ready?"};
 item2[] = {"lets_go",2,250,-147.617706,28.336708,-57.617729,78.336777,0.000000,"lets go"};
-item3[] = {"low_fps_",4,4314,-302.883453,109.993683,-212.883347,159.993866,2.000000,"low fps?"};
-item4[] = {"high_fps_",4,218,33.595604,110.402313,123.595589,160.402344,1.000000,"high fps?"};
-item5[] = {"OFF",4,218,-280.254608,427.439545,-190.254608,477.439545,0.000000,"OFF"};
-item6[] = {"delayed",2,250,-309.761993,556.829651,-219.761703,606.829346,0.000000,"delayed"};
-item7[] = {"ON",4,218,-135.189850,528.883301,-45.189835,578.882751,0.000000,"ON"};
-item8[] = {"update",2,250,-138.233337,120.064697,-48.233212,170.064728,0.000000,"update"};
-item9[] = {"check",2,250,-136.560242,308.394440,-46.560211,358.394409,0.000000,"check"};
-item10[] = {"ON",4,218,-136.204407,213.393051,-46.204330,263.393127,0.000000,"ON"};
-item11[] = {"GO",2,250,-138.233124,426.425110,-48.233105,476.425110,0.000000,"GO"};
-item12[] = {"delay_done_",4,218,-301.074310,632.222900,-211.074326,682.222900,0.000000,"delay done?"};
-item13[] = {"wait",2,250,-168.979843,628.974548,-78.979897,678.974548,0.000000,"wait"};
+item3[] = {"low_fps_",4,218,-282.616058,151.879715,-192.615921,201.879898,2.000000,"low fps?"};
+item4[] = {"high_fps_",4,218,-20.450897,148.234863,69.548996,198.234894,1.000000,"high fps?"};
+item5[] = {"OFF",4,218,60.844330,455.744904,150.844177,505.744904,0.000000,"OFF"};
+item6[] = {"delayed",2,250,58.992859,589.668762,148.993073,639.668274,0.000000,"delayed"};
+item7[] = {"ON",4,218,266.945129,29.234726,356.945038,79.233841,0.000000,"ON"};
+item8[] = {"update",2,250,-147.215363,281.554871,-57.215199,331.554840,0.000000,"update"};
+item9[] = {"check",2,250,-146.653168,594.266724,-56.653221,644.267029,0.000000,"check"};
+item10[] = {"ON",4,218,-146.934357,379.573608,-56.934265,429.573700,0.000000,"ON"};
+item11[] = {"true",8,218,-149.103882,150.874710,-59.103882,200.874710,0.000000,"true"};
+item12[] = {"delay_done_",4,218,266.604309,452.140198,356.604309,502.139832,0.000000,"delay done?"};
+item13[] = {"wait",2,250,265.898499,315.690491,355.898376,365.690521,0.000000,"wait"};
+item14[] = {"delay",8,218,-269.505646,-102.722237,-179.505646,-52.722237,0.000000,"delay"};
+item15[] = {"delayed_1",2,4346,-417.007996,-101.774094,-327.007965,-51.774048,0.000000,"delayed"};
+item16[] = {"done_delay_",4,218,-317.266266,27.532471,-227.266266,77.532471,0.000000,"done delay?"};
 link0[] = {0,1};
 link1[] = {1,2};
 link2[] = {2,3};
 link3[] = {2,4};
-link4[] = {3,9};
-link5[] = {4,9};
-link6[] = {5,6};
-link7[] = {6,12};
-link8[] = {7,11};
-link9[] = {8,3};
-link10[] = {8,4};
+link4[] = {2,14};
+link5[] = {3,9};
+link6[] = {4,9};
+link7[] = {5,6};
+link8[] = {6,12};
+link9[] = {7,2};
+link10[] = {8,11};
 link11[] = {9,5};
 link12[] = {9,10};
 link13[] = {10,8};
-link14[] = {11,3};
-link15[] = {11,4};
-link16[] = {12,13};
-link17[] = {13,5};
-link18[] = {13,7};
-globals[] = {0.000000,0,0,0,0,640,480,2,54,6316128,1,-399.505341,470.251404,826.841064,-154.496262,608,686,1};
-window[] = {0,-1,-1,-1,-1,904,453,1953,73,1,626};
+link14[] = {11,2};
+link15[] = {12,13};
+link16[] = {13,5};
+link17[] = {13,7};
+link18[] = {14,15};
+link19[] = {15,16};
+link20[] = {16,2};
+globals[] = {0.000000,0,0,0,0,640,480,2,61,6316128,1,-557.983276,389.181641,766.455811,-302.220367,701,738,1};
+window[] = {0,-1,-1,-1,-1,958,75,1793,75,1,719};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -46,8 +51,14 @@ class FSM
     class init
     {
       name = "init";
-      init = /*%FSM<STATEINIT""">*/"private[""_up""];" \n
-       "_up = 0;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"private[""_up"",""_delayed""];" \n
+       "_up = 0;" \n
+       "" \n
+       "havena_objectView = round(havena_view*0.8);" \n
+       "setObjectViewDistance [havena_objectView,havena_shadow];" \n
+       "setViewDistance havena_view;" \n
+       "" \n
+       "setTerrainGrid havena_grid;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -68,167 +79,6 @@ class FSM
     class lets_go
     {
       name = "lets_go";
-      init = /*%FSM<STATEINIT""">*/"havena_objectView = round(havena_view*0.8);" \n
-       "setObjectViewDistance [havena_objectView,havena_shadow];" \n
-       "setViewDistance havena_view;" \n
-       "" \n
-       "setTerrainGrid havena_grid;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "low_fps_">*/
-        class low_fps_
-        {
-          priority = 2.000000;
-          to="check";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((((diag_fps <= (havena_targetfps)) && (havena_view > havena_minview)) && dayz_combat == 0) OR (havena_view > havena_maxview))"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"havena_fps = diag_fps;" \n
-           "//_moinsfps = (floor(havena_fps - havena_targetfps)*2) min -5;" \n
-           "_moinsfps = -1;" \n
-           "havena_view = havena_view + _moinsfps;" \n
-           "				" \n
-           "if(havena_view < havena_minview) then {" \n
-           "	havena_view = havena_minview;" \n
-           "};"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "high_fps_">*/
-        class high_fps_
-        {
-          priority = 1.000000;
-          to="check";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(((diag_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview))"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"havena_fps = diag_fps;" \n
-           "// _plusfps = (ceil(havena_fps - havena_targetfps)) max 5;" \n
-           "_plusfps = 1;" \n
-           "havena_view = havena_view + _plusfps;" \n
-           "				" \n
-           "if(havena_view > havena_maxview) then {" \n
-           "	havena_view = havena_maxview;" \n
-           "};" \n
-           ""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "delayed">*/
-    class delayed
-    {
-      name = "delayed";
-      init = /*%FSM<STATEINIT""">*/"_t = time;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "delay_done_">*/
-        class delay_done_
-        {
-          priority = 0.000000;
-          to="wait";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(time - _t) > 1;"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "update">*/
-    class update
-    {
-      name = "update";
-      init = /*%FSM<STATEINIT""">*/"if(dayz_combat == 1 && havena_view < havena_mincombat) then {" \n
-       "	havena_view = havena_mincombat;" \n
-       "};" \n
-       "" \n
-       "havena_objectView = round(havena_view*0.8);" \n
-       "// havena_shadow = round(havena_objectView*0.1);" \n
-       "// setObjectViewDistance [havena_objectView,havena_shadow];" \n
-       "setObjectViewDistance havena_objectView;" \n
-       "setViewDistance havena_view;" \n
-       "" \n
-       "if(havena_debug) then {" \n
-       "	hint format[""%1 - %2 [ %3 , %4 ] - %5"",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid];" \n
-       "};" \n
-       "//sleep 0.05;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "low_fps_">*/
-        class low_fps_
-        {
-          priority = 2.000000;
-          to="check";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"((((diag_fps <= (havena_targetfps)) && (havena_view > havena_minview)) && dayz_combat == 0) OR (havena_view > havena_maxview))"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"havena_fps = diag_fps;" \n
-           "//_moinsfps = (floor(havena_fps - havena_targetfps)*2) min -5;" \n
-           "_moinsfps = -1;" \n
-           "havena_view = havena_view + _moinsfps;" \n
-           "				" \n
-           "if(havena_view < havena_minview) then {" \n
-           "	havena_view = havena_minview;" \n
-           "};"/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "high_fps_">*/
-        class high_fps_
-        {
-          priority = 1.000000;
-          to="check";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(((diag_fps > (havena_targetfps+5)) && (havena_view < havena_maxview)) OR (havena_view < havena_minview))"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"havena_fps = diag_fps;" \n
-           "// _plusfps = (ceil(havena_fps - havena_targetfps)) max 5;" \n
-           "_plusfps = 1;" \n
-           "havena_view = havena_view + _plusfps;" \n
-           "				" \n
-           "if(havena_view > havena_maxview) then {" \n
-           "	havena_view = havena_maxview;" \n
-           "};" \n
-           ""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "check">*/
-    class check
-    {
-      name = "check";
-      init = /*%FSM<STATEINIT""">*/"_up = 0;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "ON">*/
-        class ON
-        {
-          priority = 0.000000;
-          to="update";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"life_autofps"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "OFF">*/
-        class OFF
-        {
-          priority = 0.000000;
-          to="delayed";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"!life_autofps"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "GO">*/
-    class GO
-    {
-      name = "GO";
       init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
@@ -268,6 +118,102 @@ class FSM
            ""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
+        /*%FSM<LINK "delay">*/
+        class delay
+        {
+          priority = 0.000000;
+          to="delayed_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delayed">*/
+    class delayed
+    {
+      name = "delayed";
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "delay_done_">*/
+        class delay_done_
+        {
+          priority = 0.000000;
+          to="wait";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "update">*/
+    class update
+    {
+      name = "update";
+      init = /*%FSM<STATEINIT""">*/"if(dayz_combat == 1 && havena_view < havena_mincombat) then {" \n
+       "	havena_view = havena_mincombat;" \n
+       "};" \n
+       "" \n
+       "havena_objectView = round(havena_view*0.8);" \n
+       "// havena_shadow = round(havena_objectView*0.1);" \n
+       "// setObjectViewDistance [havena_objectView,havena_shadow];" \n
+       "setObjectViewDistance havena_objectView;" \n
+       "setViewDistance havena_view;" \n
+       "" \n
+       "if(havena_debug) then {" \n
+       "	hint format[""%1 - %2 [ %3 , %4 ] - %5"",havena_fps,viewDistance,havena_objectView,havena_shadow,havena_grid];" \n
+       "};" \n
+       "//sleep 0.05;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "true">*/
+        class true
+        {
+          priority = 0.000000;
+          to="lets_go";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "check">*/
+    class check
+    {
+      name = "check";
+      init = /*%FSM<STATEINIT""">*/""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "ON">*/
+        class ON
+        {
+          priority = 0.000000;
+          to="update";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"life_autofps"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+        /*%FSM<LINK "OFF">*/
+        class OFF
+        {
+          priority = 0.000000;
+          to="delayed";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"!life_autofps"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
@@ -285,7 +231,7 @@ class FSM
         class ON
         {
           priority = 0.000000;
-          to="GO";
+          to="lets_go";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"life_autofps"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -298,6 +244,27 @@ class FSM
           to="delayed";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/"!life_autofps"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delayed_1">*/
+    class delayed_1
+    {
+      name = "delayed_1";
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "done_delay_">*/
+        class done_delay_
+        {
+          priority = 0.000000;
+          to="lets_go";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

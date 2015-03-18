@@ -22,7 +22,7 @@ if(!hlcAI) then {
 
 	_playerIDs = [];
 	{
-		_playerIDs set [count _playerIDs, owner _x];
+		_playerIDs pushBack (owner _x);
 	}forEach (playableUnits);
 	_playerIDs = _playerIDs - [0];
 	

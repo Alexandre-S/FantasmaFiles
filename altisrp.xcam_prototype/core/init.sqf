@@ -212,7 +212,7 @@ _nObject_list = [[173111,[4358.38,3814.93,0.160858]],[284874,[5584.23,2632.9,0.2
 		_nObject = (_x select 1) nearestObject (_x select 0);
 		diag_log format["indestructible - %1",_nObject];
 		_nObject enableSimulation false;
-		_nObject allowDamage false;
+		// _nObject allowDamage false;
 		_nObject addEventHandler ["HandleDamage", {false}];
 	} forEach _nObject_list;
 diag_log "------------------------------------------------------------------------------------------------------";

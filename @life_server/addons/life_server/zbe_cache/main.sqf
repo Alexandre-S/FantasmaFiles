@@ -13,6 +13,7 @@ zbe_cachedVehicles 			= 0;
 zbe_objectView	   			= 0;
 zbe_players					= [];
 zbe_cachedAi 				= [];
+
 call compileFinal preprocessFileLineNumbers "\life_server\zbe_cache\zbe_functions.sqf";
 
 if (zbe_minFrameRate == -1) then {if (isDedicated || !hasinterface) then {zbe_minFrameRate = 16} else {zbe_minFrameRate = 31};};
@@ -21,13 +22,11 @@ zbe_mapsize = [] call bis_fnc_mapSize;
 zbe_mapside = zbe_mapsize / 2;
 zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 
-[] spawn  {
-	sleep 60;
-	private ["_allPlayers","_allAi","_aiacacher","_disable"];
+/*[] spawn  {
 	while {true} do {
 		sleep 15;
 		zbe_players = (switchableUnits + playableUnits);
-		/*{
+		{
 			_disable = _x getVariable "zbe_cacheDisabled";
 			_disable = if (isNil "_disable") then { false;
 				} else {_disable;
@@ -36,7 +35,34 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 					zbe_cachedGroups = zbe_cachedGroups + [_x];
 				 [zbe_aiCacheDist, _x, zbe_minFrameRate, zbe_debug] execFSM "\life_server\zbe_cache\zbe_aiCaching.fsm";
 				};
-		} forEach allGroups;*/
+		} forEach allGroups;
+	};
+};*/
+
+
+[] spawn  {
+	sleep 60;
+	while {true} do {
+		sleep 15;
+		zbe_players = (switchableUnits + playableUnits);
+		{
+			if !(_x in zbe_players) then {
+					_disable = _x getVariable ["zbe_cacheDisabled",false];
+				if (!_disable && !(_x in zbe_cachedAi)) then {
+					zbe_cachedAi = zbe_cachedAi + [_x];
+					[zbe_aiCacheDist, _x, zbe_minFrameRate, zbe_debug] execFSM "\life_server\zbe_cache\zbe_aiCaching2.fsm";
+				};
+			};
+		} forEach allUnits;
+	};
+};
+/*
+[] spawn  {
+	sleep 60;
+	private ["_allPlayers","_allAi","_aiacacher","_disable"];
+	while {true} do {
+		sleep 15;
+		zbe_players = (switchableUnits + playableUnits);
 		
 		_allPlayers = [];
 		_allAi = [];
@@ -52,8 +78,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		diag_log format["======= DEBUG - HAVENA_CACHE CHECK - PLAYER %1 - AI %2 - cached %3",count _allPlayers,count _allAi,count zbe_cachedAi];
 		{
 			_aiacacher = _x;
-			_disable = _aiacacher getVariable "zbe_cacheDisabled";
-			_disable = if (isNil "_disable") then { false; } else {_disable; };
+			_disable = _aiacacher getVariable ["zbe_cacheDisabled",false];
 			
 			if ({_x distance _aiacacher < zbe_aiCacheDist} count _allPlayers == 0) then {
 				if (!_disable && !(_aiacacher in zbe_cachedAi) && !(isPlayer _aiacacher)) then {
@@ -81,6 +106,9 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach zbe_cachedAi
 	};
 };
+*/
+
+
 // Vehicle Caching Beta (for client FPS)
 [] spawn {
 	sleep 60;
