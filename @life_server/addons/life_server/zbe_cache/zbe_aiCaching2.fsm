@@ -8,7 +8,7 @@ item3[] = {"cache_for_AI_",4,218,-306.548492,126.416489,-216.548492,176.416489,1
 item4[] = {"cache",2,250,-305.433960,217.955521,-215.433945,267.955475,0.000000,"cache"};
 item5[] = {"unCache_for_AI_",4,218,-193.956940,129.134674,-103.956940,179.134674,1.000000,"unCache" \n "for AI?"};
 item6[] = {"unCache",2,250,-193.956955,218.653885,-103.956940,268.653931,0.000000,"unCache"};
-item7[] = {"if_player_then_",4,218,-378.105133,352.907867,-288.105133,402.907867,0.000000,"if player then" \n " exit"};
+item7[] = {"if_player_then_",4,218,-378.105133,352.907867,-288.105133,402.907867,4.000000,"if player then" \n " exit"};
 item8[] = {"end",1,250,-519.399902,383.839478,-429.399597,433.839447,0.000000,"end"};
 item9[] = {"delay",8,218,-453.643311,137.457932,-363.643311,187.457932,0.000000,"delay"};
 item10[] = {"delayed",2,250,-496.324066,202.799103,-406.323944,252.799118,0.000000,"delayed"};
@@ -43,8 +43,8 @@ link19[] = {14,6};
 link20[] = {15,8};
 link21[] = {16,17};
 link22[] = {18,8};
-globals[] = {0.000000,0,0,0,0,640,480,1,41,6316128,1,-737.848633,184.067154,800.640015,-268.557465,820,951,1};
-window[] = {2,-1,-1,-32000,-32000,822,2103,3217,58,3,838};
+globals[] = {0.000000,0,0,0,0,640,480,1,41,6316128,1,-737.848633,184.067154,800.640015,-268.557465,820,911,1};
+window[] = {2,-1,-1,-1,-1,989,225,1339,225,3,838};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -130,6 +130,21 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
+        /*%FSM<LINK "if_player_then_">*/
+        class if_player_then_
+        {
+          priority = 4.000000;
+          to="end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"(isplayer _ai)"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/"zbe_cachedAi = zbe_cachedAi - [_ai];" \n
+           "[[_ai,false],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;" \n
+           "_ai setVariable [""zbe_cacheDisabled"",true];" \n
+           "if (zbe_debug) then {" \n
+           "diag_log format [""ZBE_Cache ERROR ending for player %1"",_ai];" \n
+           "};"/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
         /*%FSM<LINK "disabled_">*/
         class disabled_
         {
@@ -159,21 +174,6 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-        /*%FSM<LINK "if_player_then_">*/
-        class if_player_then_
-        {
-          priority = 0.000000;
-          to="end";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"(isplayer _ai)"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/"zbe_cachedAi = zbe_cachedAi - [_ai];" \n
-           "[[_ai,false],""TON_fnc_hideobjectg"",false,false] spawn life_fnc_MP;" \n
-           "_ai setVariable [""zbe_cacheDisabled"",true];" \n
-           "if (zbe_debug) then {" \n
-           "diag_log format [""ZBE_Cache ERROR ending for player %1"",_ai];" \n
-           "};"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
