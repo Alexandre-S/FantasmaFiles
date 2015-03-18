@@ -32,7 +32,7 @@ goatgroup = createGroup Civilian;
 		// _total = 200 - _alive;
 		if (time - life_animals_spawned_time > 60) then
 		{
-			_total = 100 - count life_animals_array;
+			_total = 80 - count life_animals_array;
 			for "_i" from 1 to _total do
 			{
 				_type = _animals call BIS_fnc_selectRandom;
@@ -95,7 +95,7 @@ goatgroup = createGroup Civilian;
 	{
 		sleep 60*5;
 		{
-			if((_x distance _pos) > 800) then
+			if((_x distance _pos) > 600) then
 			{
 				deleteVehicle _x;
 				life_animals_array = life_animals_array - [_x];

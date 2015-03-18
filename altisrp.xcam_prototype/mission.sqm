@@ -17295,8 +17295,8 @@ class Mission
 			type="Empty";
 			colorName="ColorCIV";
 			fillName="FDiagonal";
-			a=600;
-			b=600;
+			a=500;
+			b=500;
 		};
 		class Item140
 		{
