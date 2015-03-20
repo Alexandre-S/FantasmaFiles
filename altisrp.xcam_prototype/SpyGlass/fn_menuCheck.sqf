@@ -164,5 +164,5 @@ while {true} do {
 		];
 	};
 		
-	uiSleep 1;
+	Sleep 1;
 };

@@ -149,18 +149,27 @@ life_fnc_uncache =
 {
 	private["_veh"];
 	_veh = (_this select 0);
-	_veh enablesimulation true;
-	_veh reveal _x;
-	_veh hideobject false;
+	{
+		if(!isNull _x) then {
+			_x enablesimulation true;
+			_x reveal _x;
+			_x hideobject false;
+		};
+	} forEach _veh;
+	if(havena_debugcache) then { systemChat format ["HAVENA_UNCACHE - %1",_veh]	};
 };
 
 life_fnc_cache = 
 {
 	private["_veh"];
 	_veh = (_this select 0);
-	_veh enablesimulation false;
-	_veh hideobject true;
-	// _veh reveal _x;
+	{
+		if(!isNull _x) then {
+			_x hideobject true;
+			_x enablesimulation false;
+		};
+	} forEach _veh;
+	if(havena_debugcache) then { systemChat format ["HAVENA_CACHE - %1",_veh]	};
 };
 
 alarm_check = 
@@ -263,7 +272,11 @@ life_fnc_garageRefund = compileFinal
 
 [] execVM "core\init_survival.sqf";
 // [] spawn life_fnc_autoc;
-[] execFSM "core\fsm\autoc.fsm";
+[] spawn {
+	sleep 15;
+	titleText ["Activation de l'autoFPS","PLAIN DOWN"]; titleFadeOut 4;
+	[] execFSM "core\fsm\autoc.fsm";
+};
 
 
 //[] execVM "core\fn_addKey.sqf"; doublon

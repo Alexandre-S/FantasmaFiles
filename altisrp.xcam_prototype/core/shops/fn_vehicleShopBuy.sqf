@@ -47,8 +47,6 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 
 // if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
 if(count _spawnPoint == 0) exitWith {hint localize "STR_Shop_Veh_Block";};
-life_cash = life_cash - _basePrice;
-hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
@@ -145,6 +143,10 @@ switch(playerSide) do {
 		};
 	};
 };
+
+life_cash = life_cash - _basePrice;
+hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
+
 playSound "caching";
 
 [_vehicle] spawn
