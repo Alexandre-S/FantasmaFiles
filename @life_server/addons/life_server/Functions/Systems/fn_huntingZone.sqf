@@ -87,7 +87,7 @@ goatgroup = createGroup Civilian;
 	};
 };
 
-[] spawn {
+/*[] spawn {
 	private ["_pos","_cb"];
 	_pos = getMarkerPos "hunting";
 	while {life_animals_spawned} do
@@ -106,7 +106,7 @@ goatgroup = createGroup Civilian;
 		};
 		sleep 30;
 	};
-};
+};*/
 
 [] spawn
 {

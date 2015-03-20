@@ -15,6 +15,7 @@ zbe_players					= [];
 zbe_players2				= [];
 zbe_cachedAi 				= [];
 zbe_cachedP 				= [];
+hav_allreal					= [];
 
 call compileFinal preprocessFileLineNumbers "\life_server\zbe_cache\zbe_functions.sqf";
 
@@ -92,7 +93,23 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach zbe_cachedP;
 	};
 };
-		
+
+[] spawn  {
+	private["_landall","_all"];
+	sleep 15;
+	while {true} do {
+	sleep 3;
+		_landall = [];
+		{
+			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
+				_landall pushback _x;
+			};
+		} foreach vehicles;
+		_all = allUnits + _landall + allDead;
+		hav_allreal = _all - (agents - [teamMemberNull]);
+	};
+};
+
 hav_CachePlayer = {
 	private["_distance","_p","_fps","_debug","_trandomc","_trandomu","_while","_life_corpse_var","_preal","_disable"];
 	_distance = _this select 0;
@@ -136,14 +153,14 @@ hav_CachePlayer = {
 		_hav_acache = [];
 		_hav_auncache = [];
 		
-		_landall = [];
+		/*_landall = [];
 		{
 			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
 				_landall pushback _x;
 			};
 		} foreach vehicles;
 		_all = allUnits + _landall + allDead;
-		_allreal = _all - (agents - [teamMemberNull]);
+		_allreal = _all - (agents - [teamMemberNull]);*/
 
 		//verif cache
 		{
@@ -154,25 +171,29 @@ hav_CachePlayer = {
 
 		//cache uncahe
 		{
-			if(_preal distance _x > _distance && !_disable) then {
-				if!(_x in _hav_cached) then {
-					_hav_cached pushBack _x;
-					_hav_acache pushBack _x;
-					// _x hideobject true;
-					// _x enablesimulation false;
-					// [[_x],"life_fnc_cache",_p,false] spawn life_fnc_MP;
-				};
-			} else {
-				if(_x in _hav_cached) then {
-					// [[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
-					// _x enablesimulation true;
-					// _p reveal _x;
-					// _x hideobject false;
-					_hav_auncache pushBack _x;
-					_hav_cached = _hav_cached - [_x];
+			if(!isNull _x) then {
+				if(_preal distance _x > _distance && !_disable) then {
+					if!(_x in _hav_cached) then {
+						if(count _hav_acache < 5) then {
+							_hav_cached pushBack _x;
+							_hav_acache pushBack _x;
+						};
+						// _x hideobject true;
+						// _x enablesimulation false;
+						// [[_x],"life_fnc_cache",_p,false] spawn life_fnc_MP;
+					};
+				} else {
+					if(_x in _hav_cached) then {
+						// [[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
+						// _x enablesimulation true;
+						// _p reveal _x;
+						// _x hideobject false;
+						_hav_auncache pushBack _x;
+						_hav_cached = _hav_cached - [_x];
+					};
 				};
 			};
-		} forEach _allreal;
+		} forEach hav_allreal;
 		
 		//send cache
 		if(count _hav_acache > 0) then {
@@ -183,7 +204,7 @@ hav_CachePlayer = {
 			[[_hav_auncache],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
 		};
 
-		// hint format ["%1 - %2 - unit %3 - veh %4 - vehicles %5 - dead %6 || %7",count _allreal,count _hav_cached,count allUnits, count _landall, count vehicles, count alldead,(diag_tickTime - _t1)];
+		// hint format ["%1 - %2 - unit %3 - veh %4 - vehicles %5 - dead %6 || %7",count hav_allreal,count _hav_cached,count allUnits, count _landall, count vehicles, count alldead,(diag_tickTime - _t1)];
 		sleep 3;
 	};
 };
