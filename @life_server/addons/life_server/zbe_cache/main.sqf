@@ -98,7 +98,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 	private["_landall","_all"];
 	sleep 15;
 	while {true} do {
-	sleep 3;
+	sleep 1;
 		_landall = [];
 		{
 			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
@@ -205,7 +205,7 @@ hav_CachePlayer = {
 		};
 
 		// hint format ["%1 - %2 - unit %3 - veh %4 - vehicles %5 - dead %6 || %7",count hav_allreal,count _hav_cached,count allUnits, count _landall, count vehicles, count alldead,(diag_tickTime - _t1)];
-		sleep 3;
+		sleep 5;
 	};
 };
 
