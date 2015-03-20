@@ -11,6 +11,7 @@ admin_F4_EH = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this sel
 titleText ["ESP activé pour 2 min, F4 pour desactiver","PLAIN DOWN"]; titleFadeOut 4;
 // [[1,format ["GM %1 utilise l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
 [[0,format ["GM %1 utilise l'ESP",name player]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+player setVariable ["hav_cachePDis",true,true];
 
 [] spawn {
 	sleep 120;
@@ -56,6 +57,7 @@ while {marker_mapesp} do
     //bit of sleep
     sleep 1;
 };
+player setVariable ["hav_cachePDis",nil,true];
 (findDisplay 46) displayRemoveEventHandler ["KeyDown", admin_F4_EH];
 _k = 0;
 for "_k" from 0 to 2000 do

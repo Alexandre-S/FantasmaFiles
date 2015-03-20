@@ -7,7 +7,7 @@
 */
 
 life_animals_spawned = true;
-life_animals_spawned_time = -500;
+// life_animals_spawned_time = -500;
 life_animals_array = [];
 goatgroup = createGroup Civilian; 
 
@@ -30,8 +30,8 @@ goatgroup = createGroup Civilian;
 			};
 		} forEach life_animals_array;*/
 		// _total = 200 - _alive;
-		if (time - life_animals_spawned_time > 60) then
-		{
+		// if (time - life_animals_spawned_time > 60) then
+		// {
 			_total = 80 - count life_animals_array;
 			for "_i" from 1 to _total do
 			{
@@ -39,12 +39,12 @@ goatgroup = createGroup Civilian;
 				// _animal = _type createVehicleLocal ([_pos, [1,500] call BIS_fnc_randomInt, [0,359] call BIS_fnc_randomInt] call BIS_fnc_relPos);
 				// _animal = goatgroup createUnit [_type, ([_pos, [1,500] call BIS_fnc_randomInt, [0,359] call BIS_fnc_randomInt] call BIS_fnc_relPos),[],0,"NONE"];
 				// _animal = (createGroup east) createUnit [_type, ([_pos, [1,50] call BIS_fnc_randomInt, [0,50] call BIS_fnc_randomInt] call BIS_fnc_relPos),[],0,"NONE"];
-				_animal = createAgent [_type, _pos,[],1000,"NONE"];
+				_animal = createAgent [_type, _pos,[],450,"NONE"];
 				_animal setdir (random 360);
 				_animal switchmove "walkf";
 				//_animal setVariable ["zbe_cacheDisabled",true];
 				// _animal enableSimulation false;
-				diag_log format["--- CREATE ANIMAL --- %1 - %2 - %3",_type,_animal,position _animal];
+				// diag_log format["--- CREATE ANIMAL --- %1 - %2 - %3",_type,_animal,position _animal];
 
 				/*_pos = getPos _animal;
 				_z = switch (_type) do
@@ -81,9 +81,30 @@ goatgroup = createGroup Civilian;
 				life_animals_array set[count life_animals_array,_animal];
 				sleep 1;
 			};
-			life_animals_spawned_time = time;
+			// life_animals_spawned_time = time;
+		// };
+		sleep 60;
+	};
+};
+
+[] spawn {
+	private ["_pos","_cb"];
+	_pos = getMarkerPos "hunting";
+	while {life_animals_spawned} do
+	{
+		_cb = 0;
+		if({(_x distance _pos) < 700} count playableUnits > 0) then {
+			{if(!simulationEnabled _x) then {_cb = _cb +1; _x enableSimulationGlobal true; };} foreach life_animals_array;
+			if(_cb>0) then {
+				diag_log format["--- DEBUG ANIMAL INFO --- SIMULATION TRUE : %1",_cb];
+			};
+		} else {
+			{if(simulationEnabled _x) then {_cb = _cb +1; _x enableSimulationGlobal false;};} foreach life_animals_array;
+			if(_cb>0) then {
+				diag_log format["--- DEBUG ANIMAL INFO --- SIMULATION FALSE : %1",_cb];
+			};
 		};
-		sleep 15;
+		sleep 30;
 	};
 };
 
@@ -95,7 +116,7 @@ goatgroup = createGroup Civilian;
 	{
 		sleep 60*5;
 		{
-			if((_x distance _pos) > 600) then
+			if((_x distance _pos) > 500) then
 			{
 				deleteVehicle _x;
 				life_animals_array = life_animals_array - [_x];

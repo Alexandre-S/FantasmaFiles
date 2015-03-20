@@ -61,12 +61,12 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 
 
 [] spawn  {
-	sleep 60;
+	sleep 30;
 	while {true} do {
 		sleep 15;
 		zbe_players2 = (switchableUnits + playableUnits);
 		{
-			_disable = _x getVariable ["zbe_cachePDisabled",false];
+			_disable = _x getVariable ["hav_cachePDis",false];
 			if (!_disable && !(_x in zbe_cachedP)) then {
 				zbe_cachedP = zbe_cachedP + [_x];
 				[1200, _x, zbe_minFrameRate, zbe_debug] spawn hav_CachePlayer;
@@ -75,9 +75,26 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach zbe_players2;
 	};
 };
+
+[] spawn  {
+	sleep 30;
+	while {true} do {
+	sleep 3;
+		//check
+		{
+			if(isNull _x) then {
+				zbe_cachedP = zbe_cachedP - [_x];
+			} else {
+				if(!isplayer _x) then {
+					zbe_cachedP = zbe_cachedP - [_x];
+				};
+			};
+		} forEach zbe_cachedP;
+	};
+};
 		
 hav_CachePlayer = {
-	private["_distance","_p","_fps","_debug","_trandomc","_trandomu","_while","_life_corpse_var"];
+	private["_distance","_p","_fps","_debug","_trandomc","_trandomu","_while","_life_corpse_var","_preal","_disable"];
 	_distance = _this select 0;
 	_p = _this select 1;
 	_fps = _this select 2;
@@ -91,22 +108,24 @@ hav_CachePlayer = {
 	while{_while} do {
 		
 		if(isNull _p) exitWith {
-			zbe_cachedP = zbe_cachedP - [_p];
+			// zbe_cachedP = zbe_cachedP - [_p];
 			_while = false;
 			diag_log format["Havena_cacheP - End - player NULL %1",_p];
 		};
 		
 		if(!isplayer _p) exitWith {
-			zbe_cachedP = zbe_cachedP - [_p];
+			// zbe_cachedP = zbe_cachedP - [_p];
 			_while = false;
 			diag_log format["Havena_cacheP - End - not player %1",_p];
 		};
 		
-		if(!alive _p) then {
-			waitUntil{sleep 1;alive _p};
-		};
+		_disable = _p getVariable ["hav_cachePDis",false];
+		// if(!alive _p) then {
+			// waitUntil{sleep 1;alive _p};
+			// sleep 1;
+		// };
 		
-		_life_corpse_var = _unit getVariable["life_corpse_var",nil];
+		_life_corpse_var = _p getVariable["life_corpse_var",nil];
 		if(!isNil "_life_corpse_var") then {
 			_preal = _life_corpse_var;
 		} else {
@@ -135,7 +154,7 @@ hav_CachePlayer = {
 
 		//cache uncahe
 		{
-			if(_preal distance _x > _distance) then {
+			if(_preal distance _x > _distance && !_disable) then {
 				if!(_x in _hav_cached) then {
 					_hav_cached pushBack _x;
 					_hav_acache pushBack _x;
@@ -275,7 +294,7 @@ hav_CachePlayer = {
 };*/
 
 [] spawn {
-	sleep 60;
+	sleep 30;
 	if (zbe_debug) then {
 			while {true} do {
 				Sleep 15;

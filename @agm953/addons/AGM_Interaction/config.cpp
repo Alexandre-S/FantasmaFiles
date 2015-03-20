@@ -95,11 +95,11 @@ class Extended_GetOut_EventHandlers {
 class AGM_Core_Default_Keys {
   class openInteractionMenuNew {
     displayName = "$STR_AGM_Interaction_InteractionMenu";
-    condition = "true";
+    condition = "alive _player && isNil {_player getVariable 'Revive'} && {spawnmenuon == 0}";
     statement = "call AGM_Interaction_fnc_onButtonDown";
     conditionUp = "!isNull (findDisplay 1713999) && {profileNamespace getVariable ['AGM_Interaction_AutoCloseMenu', false]}";
     statementUp = "if (AGM_Interaction_MenuType mod 2 == 0) then {call AGM_Interaction_fnc_onButtonUp};";
-    exceptions[] = {"AGM_Interaction_isNotDead","AGM_Drag_isNotDragging", "AGM_Medical_canTreat", "AGM_Interaction_isNotEscorting", "AGM_Interaction_isNotSwimming"};
+    exceptions[] = {"AGM_Drag_isNotDragging", "AGM_Medical_canTreat", "AGM_Interaction_isNotEscorting", "AGM_Interaction_isNotSwimming"};
     key = 219;
     shift = 0;
     control = 0;
@@ -107,11 +107,11 @@ class AGM_Core_Default_Keys {
   };
   class openInteractionMenuSelfNew {
     displayName = "$STR_AGM_Interaction_InteractionMenuSelf";
-    condition = "true";
+    condition = "alive _player && isNil {_player getVariable 'Revive'} && {spawnmenuon == 0}";
     statement = "call AGM_Interaction_fnc_onButtonDownSelf";
     conditionUp = "!isNull (findDisplay 1713999) && {profileNamespace getVariable ['AGM_Interaction_AutoCloseMenu', false]}";
     statementUp = "if (AGM_Interaction_MenuType mod 2 == 1) then {call AGM_Interaction_fnc_onButtonUp};";
-    exceptions[] = {"AGM_Interaction_isNotDead","AGM_Drag_isNotDragging", "AGM_Medical_canTreat", "AGM_Interaction_isNotEscorting", "AGM_Interaction_isNotSwimming", "AGM_Core_notOnMap"};
+    exceptions[] = {"AGM_Drag_isNotDragging", "AGM_Medical_canTreat", "AGM_Interaction_isNotEscorting", "AGM_Interaction_isNotSwimming", "AGM_Core_notOnMap"};
     key = 219;
     shift = 0;
     control = 1;
