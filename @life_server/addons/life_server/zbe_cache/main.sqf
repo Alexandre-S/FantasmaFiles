@@ -12,7 +12,9 @@ zbe_allVehicles	   			= 0;
 zbe_cachedVehicles 			= 0;
 zbe_objectView	   			= 0;
 zbe_players					= [];
+zbe_players2					= [];
 zbe_cachedAi 				= [];
+zbe_cachedP 				= [];
 
 call compileFinal preprocessFileLineNumbers "\life_server\zbe_cache\zbe_functions.sqf";
 
@@ -47,7 +49,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		zbe_players = (switchableUnits + playableUnits);
 		{
 			if !(_x in zbe_players) then {
-					_disable = _x getVariable ["zbe_cacheDisabled",false];
+				_disable = _x getVariable ["zbe_cacheDisabled",false];
 				if (!_disable && !(_x in zbe_cachedAi)) then {
 					zbe_cachedAi = zbe_cachedAi + [_x];
 					[zbe_aiCacheDist, _x, zbe_minFrameRate, zbe_debug] execFSM "\life_server\zbe_cache\zbe_aiCaching2.fsm";
@@ -56,6 +58,136 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach allUnits;
 	};
 };
+
+
+/*[] spawn  {
+	sleep 60;
+	while {true} do {
+		sleep 15;
+		zbe_players2 = (switchableUnits + playableUnits);
+		{
+			_disable = _x getVariable ["zbe_cachePDisabled",false];
+			if (!_disable && !(_x in zbe_cachedP)) then {
+				zbe_cachedP = zbe_cachedP + [_x];
+				[1200, _x, zbe_minFrameRate, zbe_debug] spawn hav_CachePlayer;
+			};
+
+		} forEach zbe_players2;
+	};
+};*/
+		
+hav_CachePlayer = {
+	private["_distance","_p","_fps","_debug","_trandomc","_trandomu","_while"];
+	_distance = _this select 0;
+	_p = _this select 1;
+	_fps = _this select 2;
+	_debug = _this select 3;
+	// _trandomc = (1 + (random 2));
+	// _trandomu = (15 + (random 2));
+	_zbe_cachedOther = [];
+	
+	_while = true;
+	diag_log format["Havena_cacheP - Start - player %1",_p];
+	while{_while} do {
+	
+	
+		if(isNull _p) exitWith {
+			zbe_cachedP = zbe_cachedP - [_p];
+			_while = false;
+			diag_log format["Havena_cacheP - End - player NULL %1",_p];
+		};
+		
+		if(!isplayer _p) exitWith {
+			zbe_cachedP = zbe_cachedP - [_p];
+			_while = false;
+			diag_log format["Havena_cacheP - End - not player %1",_p];
+		};
+		
+		// ==============
+		_totalcar = [5000, 5000] nearEntities [["LandVehicle", "Air", "Ship"], 10000];
+		_removecar = _totalcar;
+		
+		_listtotal = zbe_players2;
+		_list = _p nearEntities ["Man", _distance];
+		
+		// player proche
+		{
+			//si player cache
+			if(isplayer _x) then {
+				_listtotal = _listtotal - [_x];
+				if(_x in _zbe_cachedOther) then {
+					_zbe_cachedOther = _zbe_cachedOther - [_x];
+					
+					[[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
+					// _x enablesimulation true;
+					// _x switchMove (animationState player);
+					// _x hideobject false;
+					// _p reveal _x;
+				};
+			};
+		} forEach _list;
+		
+		//car proche
+		_listcar = _p nearEntities [["LandVehicle", "Air", "Ship"], _distance];
+		{
+			//si veh cache
+			_removecar = _removecar - [_x]; 
+			if(_x in _zbe_cachedOther) then {
+				_zbe_cachedOther = _zbe_cachedOther - [_x];
+				
+				[[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
+				// _x enablesimulation true;
+				// _x hideobject false;
+			};
+			//si crew veh cache
+			{
+				
+				_listtotal = _listtotal - [_x];
+				if(_x in _zbe_cachedOther) then {
+					_zbe_cachedOther = _zbe_cachedOther - [_x];
+					
+					[[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
+					// _x enablesimulation true;
+					// _x switchMove (animationState player);
+					// _x hideobject false;
+					// _p reveal _x;
+				};
+			} forEach (crew _x);
+			
+		} forEach _listcar;
+
+		//cache player
+		{
+			if!(_x in _zbe_cachedOther) then {
+				_zbe_cachedOther = _zbe_cachedOther + [_x];
+				[[_x],"life_fnc_cache",_p,false] spawn life_fnc_MP;
+				// _x hideobject true;
+				// _x enablesimulation false;
+			};
+		} forEach _listtotal;
+
+		//cache car
+		{
+			if!(_x in _zbe_cachedOther) then {
+				_zbe_cachedOther = _zbe_cachedOther + [_x];
+				[[_x],"life_fnc_cache",_p,false] spawn life_fnc_MP;
+				// _x hideobject true;
+				// _x enablesimulation false;
+			};
+		} forEach _removecar;
+		
+		// verif du cache
+		{
+			if(isnull _x) then {
+				_zbe_cachedOther = _zbe_cachedOther - [_x];
+			};
+		} forEach _zbe_cachedOther;
+
+		// hint format ["%1 - %2 || %3 - %4 || %5 ",count zbe_players2, count _listtotal,count _totalcar,count _removecar,(diag_tickTime - _t1)];
+		sleep 3;
+	};
+};
+
 /*
 [] spawn  {
 	sleep 60;

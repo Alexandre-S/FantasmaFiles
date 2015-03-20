@@ -145,6 +145,24 @@ combat_mode =
 		};
 };
 
+life_fnc_uncache = 
+{
+	private["_veh"];
+	_veh = (_this select 0);
+	_veh enablesimulation true;
+	_veh reveal _x;
+	_veh hideobject false;
+};
+
+life_fnc_cache = 
+{
+	private["_veh"];
+	_veh = (_this select 0);
+	_veh enablesimulation false;
+	_veh hideobject true;
+	// _veh reveal _x;
+};
+
 alarm_check = 
 {
 	private["_unit","_mag","_list"];
