@@ -151,9 +151,14 @@ life_fnc_uncache =
 	_veh = (_this select 0);
 	{
 		if(!isNull _x) then {
-			_x enablesimulation true;
-			_x reveal _x;
-			_x hideobject false;
+			[_x] spawn {
+				private["_x1"];
+				_x1 = (_this select 0);
+				_x1 enablesimulation true;
+				sleep 0.5;
+				player reveal _x1;
+				_x1 hideobject false;
+			};
 		};
 	} forEach _veh;
 	if(havena_debugcache) then { systemChat format ["HAVENA_UNCACHE - %1",_veh]	};

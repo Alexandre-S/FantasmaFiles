@@ -80,7 +80,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 [] spawn  {
 	sleep 30;
 	while {true} do {
-	sleep 3;
+		sleep 5;
 		//check
 		{
 			if(isNull _x) then {
@@ -98,7 +98,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 	private["_landall","_all"];
 	sleep 15;
 	while {true} do {
-	sleep 1;
+		sleep 1;
 		_landall = [];
 		{
 			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
@@ -111,6 +111,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 };
 
 hav_CachePlayer = {
+	sleep 60;
 	private["_distance","_p","_fps","_debug","_trandomc","_trandomu","_while","_life_corpse_var","_preal","_disable"];
 	_distance = _this select 0;
 	_p = _this select 1;
@@ -152,45 +153,26 @@ hav_CachePlayer = {
 		// init
 		_hav_acache = [];
 		_hav_auncache = [];
-		
-		/*_landall = [];
-		{
-			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
-				_landall pushback _x;
-			};
-		} foreach vehicles;
-		_all = allUnits + _landall + allDead;
-		_allreal = _all - (agents - [teamMemberNull]);*/
 
-		//verif cache
-		{
-			if(isNull _x) then {
-				_hav_cached = _hav_cached - [_x];
-			};
-		} forEach _hav_cached;
+		//verif cache	
+		_hav_cached = _hav_cached - [objNull];
 
 		//cache uncahe
 		{
 			if(!isNull _x) then {
-				if(_preal distance _x > _distance && !_disable) then {
-					if!(_x in _hav_cached) then {
-						if(count _hav_acache < 5) then {
-							_hav_cached pushBack _x;
-							_hav_acache pushBack _x;
-						};
+				if(!(_x in _hav_cached) && {_preal distance _x > _distance} && {!_disable}) then {
+						_hav_cached pushBack _x;
+						_hav_acache pushBack _x;
 						// _x hideobject true;
 						// _x enablesimulation false;
 						// [[_x],"life_fnc_cache",_p,false] spawn life_fnc_MP;
-					};
 				} else {
-					if(_x in _hav_cached) then {
 						// [[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
 						// _x enablesimulation true;
 						// _p reveal _x;
 						// _x hideobject false;
 						_hav_auncache pushBack _x;
 						_hav_cached = _hav_cached - [_x];
-					};
 				};
 			};
 		} forEach hav_allreal;
