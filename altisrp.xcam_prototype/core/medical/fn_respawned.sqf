@@ -16,6 +16,7 @@ life_respawned = false;
 player playMove "amovpercmstpsnonwnondnon";
 
 [[profileName, "COMA"],"life_fnc_deleteMarker",independent,false] spawn life_fnc_MP;
+[[profileName, "COMA"],"life_fnc_deleteMarker",west,false] spawn life_fnc_MP;
 
 life_corpse setVariable["Revive",nil,TRUE];
 life_corpse setVariable["name",nil,TRUE];
