@@ -160,19 +160,23 @@ hav_CachePlayer = {
 		//cache uncahe
 		{
 			if(!isNull _x) then {
-				if(!(_x in _hav_cached) && {_preal distance _x > _distance} && {!_disable}) then {
+				if(_preal distance _x > _distance && !_disable) then {
+					if!(_x in _hav_cached) then {
 						_hav_cached pushBack _x;
 						_hav_acache pushBack _x;
 						// _x hideobject true;
 						// _x enablesimulation false;
 						// [[_x],"life_fnc_cache",_p,false] spawn life_fnc_MP;
+					};
 				} else {
+					if(_x in _hav_cached) then {
 						// [[_x],"life_fnc_uncache",_p,false] spawn life_fnc_MP;
 						// _x enablesimulation true;
 						// _p reveal _x;
 						// _x hideobject false;
 						_hav_auncache pushBack _x;
 						_hav_cached = _hav_cached - [_x];
+					};
 				};
 			};
 		} forEach hav_allreal;

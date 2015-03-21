@@ -9,11 +9,23 @@ item4[] = {"uncache_",4,218,83.593071,13.734863,173.593063,63.734863,2.000000,"u
 item5[] = {"delay",8,218,-244.999054,92.440605,-154.999039,142.440414,0.000000,"delay"};
 item6[] = {"delayed",2,250,-257.049805,192.805710,-167.050018,242.805420,0.000000,"delayed"};
 item7[] = {"done_delay_",4,218,-129.129456,222.186279,-39.129463,272.186218,0.000000,"done delay?"};
-item8[] = {"refresh_",4,4314,63.086029,110.643044,153.086029,160.643036,1.000000,"refresh?"};
-item9[] = {"refresh",2,250,133.408188,190.935791,223.408203,240.935669,0.000000,"refresh"};
+item8[] = {"refresh_",4,218,63.086029,110.643044,153.086029,160.643036,1.000000,"refresh?"};
+item9[] = {"refresh",2,250,172.573029,133.968735,262.573120,183.968613,0.000000,"refresh"};
 item10[] = {"refresh_done",8,218,23.072472,239.398483,113.072456,289.398621,0.000000,"refresh done"};
 item11[] = {"end",1,250,-470.472931,78.307938,-380.472870,128.307922,0.000000,"end"};
-item12[] = {"uncache",1,250,139.549255,-103.274513,229.549286,-53.274529,0.000000,"uncache"};
+item12[] = {"uncache",2,250,139.549255,-103.274513,229.549271,-53.274513,0.000000,"uncache"};
+item13[] = {"delay",8,218,247.549286,-169.736069,337.549286,-119.736069,0.000000,"delay"};
+item14[] = {"delayed_1",2,250,351.988892,-194.659149,441.988892,-144.659149,0.000000,"delayed"};
+item15[] = {"done",4,218,448.120789,-208.900909,538.120789,-158.900909,0.000000,"done"};
+item16[] = {"uncache_end",1,250,530.010925,-144.812988,620.010986,-94.813004,0.000000,"uncache end"};
+item17[] = {"delay",8,218,190.582230,48.637688,280.582092,98.637779,0.000000,"delay"};
+item18[] = {"delayed_2",2,250,284.340515,24.901367,374.340546,74.901428,0.000000,"delayed"};
+item19[] = {"done",4,218,391.153687,36.769489,481.153687,86.769547,0.000000,"done"};
+item20[] = {"reveal",2,250,476.604309,164.945343,566.604797,214.945358,0.000000,"reveal"};
+item21[] = {"delay",8,218,439.813049,243.274994,529.813110,293.275024,0.000000,"delay"};
+item22[] = {"delayed_3",2,250,393.527344,325.165192,483.527374,375.165527,0.000000,"delayed"};
+item23[] = {"done",4,218,270.098724,352.461853,360.098724,402.461884,0.000000,"done"};
+item24[] = {"sim_false",2,250,143.109695,286.000336,233.109314,336.000366,0.000000,"sim false"};
 link0[] = {0,1};
 link1[] = {0,3};
 link2[] = {1,2};
@@ -27,10 +39,22 @@ link9[] = {5,6};
 link10[] = {6,7};
 link11[] = {7,2};
 link12[] = {8,9};
-link13[] = {9,10};
+link13[] = {9,17};
 link14[] = {10,2};
-globals[] = {0.000000,0,0,0,0,640,480,1,16,6316128,1,-617.736694,617.736206,468.091003,-268.164673,1041,615,1};
-window[] = {0,-1,-1,-1,-1,885,125,1577,125,1,1059};
+link15[] = {12,13};
+link16[] = {13,14};
+link17[] = {14,15};
+link18[] = {15,16};
+link19[] = {17,18};
+link20[] = {18,19};
+link21[] = {19,20};
+link22[] = {20,21};
+link23[] = {21,22};
+link24[] = {22,23};
+link25[] = {23,24};
+link26[] = {24,10};
+globals[] = {0.000000,0,0,0,0,640,480,1,28,6316128,1,-617.736694,617.736206,468.091003,-268.164673,1041,615,1};
+window[] = {0,-1,-1,-1,-1,985,225,1677,225,1,1059};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -149,19 +173,15 @@ class FSM
     {
       name = "refresh";
       init = /*%FSM<STATEINIT""">*/"_x1 enablesimulation true;" \n
-       "sleep 0.5;" \n
-       "player reveal _x1;" \n
-       "sleep 0.5;" \n
-       "_x1 enablesimulation false;" \n
-       "_cb = 0;"/*%FSM</STATEINIT""">*/;
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "refresh_done">*/
-        class refresh_done
+        /*%FSM<LINK "delay">*/
+        class delay
         {
           priority = 0.000000;
-          to="check";
+          to="delayed_2";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -186,8 +206,49 @@ class FSM
     {
       name = "uncache";
       init = /*%FSM<STATEINIT""">*/"_x1 enablesimulation true;" \n
-       "sleep 0.5;" \n
-       "player reveal _x1;" \n
+       ""/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "delay">*/
+        class delay
+        {
+          priority = 0.000000;
+          to="delayed_1";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delayed_1">*/
+    class delayed_1
+    {
+      name = "delayed_1";
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "done">*/
+        class done
+        {
+          priority = 0.000000;
+          to="uncache_end";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "uncache_end">*/
+    class uncache_end
+    {
+      name = "uncache_end";
+      init = /*%FSM<STATEINIT""">*/"player reveal _x1;" \n
        "_x1 hideobject false;" \n
        "uncachelist = uncachelist - [_x1];"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -196,12 +257,97 @@ class FSM
       };
     };
     /*%FSM</STATE>*/
+    /*%FSM<STATE "delayed_2">*/
+    class delayed_2
+    {
+      name = "delayed_2";
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "done">*/
+        class done
+        {
+          priority = 0.000000;
+          to="reveal";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "reveal">*/
+    class reveal
+    {
+      name = "reveal";
+      init = /*%FSM<STATEINIT""">*/"player reveal _x1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "delay">*/
+        class delay
+        {
+          priority = 0.000000;
+          to="delayed_3";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"delay"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delayed_3">*/
+    class delayed_3
+    {
+      name = "delayed_3";
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.5;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "done">*/
+        class done
+        {
+          priority = 0.000000;
+          to="sim_false";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "sim_false">*/
+    class sim_false
+    {
+      name = "sim_false";
+      init = /*%FSM<STATEINIT""">*/"_x1 enablesimulation false;" \n
+       "_cb = 0;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "refresh_done">*/
+        class refresh_done
+        {
+          priority = 0.000000;
+          to="check";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
   };
   initState="init";
   finalStates[] =
   {
     "end",
-    "uncache",
+    "uncache_end",
   };
 };
 /*%FSM</COMPILE>*/
