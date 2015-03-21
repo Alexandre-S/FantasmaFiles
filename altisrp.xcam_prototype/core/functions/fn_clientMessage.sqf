@@ -1,9 +1,11 @@
 if(isServer OR ((!IsDedicated)&&(!hasinterface))) exitwith {};
-private["_msg","_from", "_type","_fromplayer"];
+private["_msg","_from", "_type","_fromplayer","_position"];
 _msg = _this select 0;
 _fromplayer = _this select 1;
 _from = name _fromplayer;
 _type = _this select 2;
+_position = [_this,3,[],[[]]] call BIS_fnc_param;
+
 if(_from == "") exitWith {};
 switch (_type) do
 {
@@ -40,7 +42,7 @@ switch (_type) do
 		["AdminDispatch",[format["%1 a demandé un Admin!",_from]]] call bis_fnc_showNotification;
 		systemChat _message;
 		playSound "cell_ring_0";
-		[name _fromplayer, position _fromplayer,"ADMIN"] spawn life_fnc_createMarker;
+		[name _fromplayer, _position,"ADMIN"] spawn life_fnc_createMarker;
 	};
 	
 	case 3 :
@@ -77,7 +79,7 @@ switch (_type) do
 		
 		["MedicalRequestEmerg",[format["Nouvel appel d'urgence de: %1",_from]]] call bis_fnc_showNotification;
 		playSound "cell_ring_0";
-		[name _fromplayer, position _fromplayer,"SAMU"] spawn life_fnc_createMarker;
+		[name _fromplayer, _position,"SAMU"] spawn life_fnc_createMarker;
 	};
 	
 	case 6 :
@@ -90,7 +92,7 @@ switch (_type) do
 		["TextMessage",[format["Nouvel appel d'urgence de: %1",_from]]] call bis_fnc_showNotification;
 		systemChat _message;
 		playSound "cell_ring_0";
-		[name _fromplayer, position _fromplayer,"DEP"] spawn life_fnc_createMarker;
+		[name _fromplayer, _position,"DEP"] spawn life_fnc_createMarker;
 	};
 	
 	case 7 :
@@ -103,6 +105,6 @@ switch (_type) do
 		["TextMessage",[format["Nouvelle demande de taxi de: %1",_from]]] call bis_fnc_showNotification;
 		systemChat _message;
 		playSound "cell_ring_0";
-		[name _fromplayer, position _fromplayer,"TAXI"] spawn life_fnc_createMarker;
+		[name _fromplayer, _position,"TAXI"] spawn life_fnc_createMarker;
 	};
 };

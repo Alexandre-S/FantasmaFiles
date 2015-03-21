@@ -42,12 +42,12 @@ switch(_type) do
 	//to admins
 	case 2:
 	{	
-		[[_msg,_player,2],"life_fnc_clientMessage",true,false] spawn life_fnc_MP;
+		[[_msg,_player,2,position _player],"life_fnc_clientMessage",true,false] spawn life_fnc_MP;
 	};
 	//ems request
 	case 3:
 	{	
-		[[_msg,_player,5],"life_fnc_clientMessage",independent,false] spawn life_fnc_MP;
+		[[_msg,_player,5,position _player],"life_fnc_clientMessage",independent,false] spawn life_fnc_MP;
 	};
 	//adminToPerson
 	case 4:
@@ -72,7 +72,7 @@ switch(_type) do
 			};
 		} forEach playableUnits;
 		if(count _tabletemp > 0) then {
-			[[_msg,_player,6],"life_fnc_clientMessage",_tabletemp,false] spawn life_fnc_MP;
+			[[_msg,_player,6,position _player],"life_fnc_clientMessage",_tabletemp,false] spawn life_fnc_MP;
 		};
 	};
 	//MSGTAXI
@@ -85,7 +85,7 @@ switch(_type) do
 			};
 		} forEach playableUnits;
 		if(count _tabletemp > 0) then {
-			[[_msg,_player,7],"life_fnc_clientMessage",_tabletemp,false] spawn life_fnc_MP;
+			[[_msg,_player,7,position _player],"life_fnc_clientMessage",_tabletemp,false] spawn life_fnc_MP;
 		};
 	};
 };
