@@ -191,58 +191,6 @@ hav_CachePlayer = {
 	};
 };
 
-/*
-[] spawn  {
-	sleep 60;
-	private ["_allPlayers","_allAi","_aiacacher","_disable"];
-	while {true} do {
-		sleep 15;
-		zbe_players = (switchableUnits + playableUnits);
-		
-		_allPlayers = [];
-		_allAi = [];
-		{
-			if (isPlayer _x) then {
-				_allPlayers pushBack _x;
-			} else {
-				if(_x != master_group) then {
-					_allAi pushBack _x;
-				};
-			};
-		} forEach allUnits;
-		diag_log format["======= DEBUG - HAVENA_CACHE CHECK - PLAYER %1 - AI %2 - cached %3",count _allPlayers,count _allAi,count zbe_cachedAi];
-		{
-			_aiacacher = _x;
-			_disable = _aiacacher getVariable ["zbe_cacheDisabled",false];
-			
-			if ({_x distance _aiacacher < zbe_aiCacheDist} count _allPlayers == 0) then {
-				if (!_disable && !(_aiacacher in zbe_cachedAi) && !(isPlayer _aiacacher)) then {
-					zbe_cachedAi = zbe_cachedAi + [_aiacacher];
-					diag_log format["======= DEBUG - HAVENA_CACHE START - AI %1",_aiacacher];
-					// _aiacacher hideobjectGlobal true;
-					[[_aiacacher,true],"TON_fnc_hideobjectg",false,false] spawn life_fnc_MP;
-				};
-			} else {
-			if (!_disable && (_aiacacher in zbe_cachedAi)) then {
-					zbe_cachedAi = zbe_cachedAi - [_aiacacher];
-					diag_log format["======= DEBUG - HAVENA_CACHE STOP - AI %1",_aiacacher];
-					// _aiacacher hideobjectGlobal false;
-					[[_aiacacher,false],"TON_fnc_hideobjectg",false,false] spawn life_fnc_MP;
-				};
-			};			
-		} forEach _allAi;
-		
-		{
-			if(isPlayer _x) then {
-				[[_x,false],"TON_fnc_hideobjectg",false,false] spawn life_fnc_MP;
-				zbe_cachedAi = zbe_cachedAi - [_x];
-				diag_log format["======= DEBUG - HAVENA_CACHE STOPPLAYER - AI %1",_x];
-			};
-		} forEach zbe_cachedAi
-	};
-};
-*/
-
 
 // Vehicle Caching Beta (for client FPS)
 /*[] spawn {
