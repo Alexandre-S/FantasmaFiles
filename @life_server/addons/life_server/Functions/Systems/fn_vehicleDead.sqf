@@ -32,7 +32,7 @@ waitUntil {sleep (random 0.3); !DB_Async_Active};
 _sql = [_query,1] call DB_fnc_asyncCall;
 
 
-sleep (3 * 60);
+sleep (5 * 60);
 if(!isNil "_vehicle" && {!isNull _vehicle}) then {
 	deleteVehicle _vehicle;
 	_deleted = true;
