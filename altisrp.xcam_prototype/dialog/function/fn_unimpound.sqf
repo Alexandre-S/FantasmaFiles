@@ -21,6 +21,9 @@ _price = [_vehicle,__GETC__(life_garage_prices)] call life_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
 if(side player == west) then { _price = 1; };
 if(side player == independent) then { _price = 100; };
+if(license_civ_dep && _vehicle == "I_Heli_Transport_02_F") then {
+	_price = _price/10;
+};
 
 if(life_atmcash < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 

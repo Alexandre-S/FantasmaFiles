@@ -39,6 +39,9 @@ if(side player == independent) then {
 	_sellPrice = 100;
 	_assurPrice = 100;
 };
+if(license_civ_dep && (_className == "I_Heli_Transport_02_F" && _vehicleColor == 2)) then {
+	_retrievePrice = _retrievePrice/10;
+};
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>%1€</t><br/>
