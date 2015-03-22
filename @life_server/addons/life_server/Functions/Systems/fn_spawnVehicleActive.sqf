@@ -72,6 +72,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		//_sql = "Arma2Net.Unmanaged" callExtension format ["Arma2NETMySQLCommand ['%2', '%1']", _query,(call LIFE_SCHEMA_NAME)];
 
 		_vehicle = createVehicle [_classname,[0,0,999],[], 0, "NONE"];
+		_vehicle allowDamage false;
 		waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 
 		_vehicle setVariable ["BIS_enableRandomization",false];

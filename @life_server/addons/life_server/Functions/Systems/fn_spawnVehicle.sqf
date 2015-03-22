@@ -77,6 +77,7 @@ waitUntil {!DB_Async_Active};
 [_query,false] spawn DB_fnc_asyncCall;
 if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
+	_vehicle allowDamage false;
 	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_hs = nearestObjects[getMarkerPos _sp,["Land_Hospital_side2_F"],100];
@@ -90,6 +91,7 @@ if(typeName _sp == "STRING") then {
 	sleep 0.1;
 } else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
+	_vehicle allowDamage false;
 	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
 	_vehicle setPos _sp;
@@ -157,12 +159,15 @@ _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 //Sets of animations
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then
 {
-	[[_vehicle,"civ_littlebird",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	// [[_vehicle,"civ_littlebird",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
+
 };
 
 if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","B_MRAP_01_hmg_F"]) then
 {
-	[[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	// [[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 };
 
 if((_vInfo select 8) == 10 && (_vInfo select 2) == "C_Offroad_01_F") then
@@ -172,15 +177,19 @@ if((_vInfo select 8) == 10 && (_vInfo select 2) == "C_Offroad_01_F") then
 
 if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
 {
-	[[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	// [[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+
 };
 if((_vInfo select 1) == "civ" && (_vInfo select 2) == "LandRover_ACR") then
 {
-	[[_vehicle,"landrover_nocov",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	// [[_vehicle,"landrover_nocov",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
 };
 if((_vInfo select 1) == "civ" && (_vInfo select 2) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then
 {
-	[[_vehicle,"reb_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	// [[_vehicle,"reb_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
+	[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
 };
 if((_vInfo select 9) == 1) then
 {

@@ -271,7 +271,7 @@ hav_CachePlayer = {
 				zbe_log_stats = format ["Groups: %1 # All/Cached Units: %2/%3 # All/Cached Vehicles: %4/%5 # FPS: %6 # ObjectDrawDistance: %7", count allGroups, count allUnits, zbe_cachedUnits, zbe_allVehiclesCount, zbe_cachedVehicles, (round diag_fps), zbe_objectView];
 				// diag_log format ["%1 ZBE_Cache (%2) ---  %3", (round time), name player, zbe_log_stats];
 				diag_log format ["%1 ZBE_Cache --- %2 ", (round time), zbe_log_stats];*/
-				diag_log format ["%1 Hav_Cache --- %3 / %2", (round time), zbe_players2,zbe_cachedP];
+				diag_log format ["%1 Hav_Cache --- %3 / %2", (round time),count zbe_players2,count zbe_cachedP];
 				
 			};
 		};
