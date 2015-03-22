@@ -107,10 +107,10 @@ if(_mode) then {
 [[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",serverhc,false] spawn life_fnc_MP;
 life_vehicles pushBack _vehicle;
 
-[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-// [] call life_fnc_getHLC;
-// _handle = [[_vehicle,_colorIndex],"life_fnc_colorVehicle",serverhc,false] spawn life_fnc_MP;
-// waitUntil {sleep 0.1; scriptDone _handle};
+// [[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+[] call life_fnc_getHLC;
+_handle = [[_vehicle,_colorIndex],"life_fnc_colorVehicle",serverhc,false] spawn life_fnc_MP;
+waitUntil {sleep 0.1; scriptDone _handle};
 
 [[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 [[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
