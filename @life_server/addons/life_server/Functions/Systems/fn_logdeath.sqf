@@ -52,7 +52,7 @@ if(_uid == _sid) then {_weapon = "";};
 		_unit = _this select 0;
 		if(count(weapons _unit) > 0) then {
 			_Object = "GroundWeaponHolder" createVehicle getPosATL _unit;
-			_Object setVariable["idleTime",1,true];
+			_Object setVariable["idleTime",1];
 			{
 				_unit action ["DropWeapon", _Object, _x];
 			} foreach (weapons _unit);

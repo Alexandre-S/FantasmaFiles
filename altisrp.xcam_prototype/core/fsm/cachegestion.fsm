@@ -10,13 +10,13 @@ item5[] = {"delay",8,218,-244.999054,92.440605,-154.999039,142.440414,0.000000,"
 item6[] = {"delayed",2,250,-257.049805,192.805710,-167.050018,242.805420,0.000000,"delayed"};
 item7[] = {"done_delay_",4,218,-129.129456,222.186279,-39.129463,272.186218,0.000000,"done delay?"};
 item8[] = {"refresh_",4,218,63.086029,110.643044,153.086029,160.643036,1.000000,"refresh?"};
-item9[] = {"refresh",2,250,172.573029,133.968735,262.573120,183.968613,0.000000,"refresh"};
-item10[] = {"refresh_done",8,4314,23.072472,239.398483,113.072456,289.398621,0.000000,"refresh done"};
+item9[] = {"sim_true",2,250,172.573029,133.968735,262.573120,183.968613,0.000000,"sim true"};
+item10[] = {"refresh_done",8,218,23.072472,239.398483,113.072456,289.398621,0.000000,"refresh done"};
 item11[] = {"end",1,250,-470.472931,78.307938,-380.472870,128.307922,0.000000,"end"};
 item12[] = {"uncache",2,250,139.549255,-103.274513,229.549271,-53.274513,0.000000,"uncache"};
 item13[] = {"delay",8,218,247.549286,-169.736069,337.549286,-119.736069,0.000000,"delay"};
 item14[] = {"delayed_1",2,250,351.988892,-194.659149,441.988892,-144.659149,0.000000,"delayed"};
-item15[] = {"done",4,218,448.120789,-208.900909,538.120789,-158.900909,0.000000,"done"};
+item15[] = {"done",4,218,463.549347,-216.021790,553.549438,-166.021790,0.000000,"done"};
 item16[] = {"uncache_end",1,250,530.010925,-144.812988,620.010986,-94.813004,0.000000,"uncache end"};
 item17[] = {"delay",8,218,190.582230,48.637688,280.582092,98.637779,0.000000,"delay"};
 item18[] = {"delayed_2",2,250,284.340515,24.901367,374.340546,74.901428,0.000000,"delayed"};
@@ -53,8 +53,8 @@ link23[] = {21,22};
 link24[] = {22,23};
 link25[] = {23,24};
 link26[] = {24,10};
-globals[] = {0.000000,0,0,0,0,640,480,1,28,6316128,1,-617.736694,617.736206,468.091003,-268.164673,1041,615,1};
-window[] = {0,-1,-1,-1,-1,935,175,1627,175,1,1059};
+globals[] = {0.000000,0,0,0,0,640,480,1,29,6316128,1,-379.780334,855.692566,468.091003,-268.164673,1041,615,1};
+window[] = {0,-1,-1,-1,-1,871,242,1694,111,1,1059};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -67,7 +67,8 @@ class FSM
       name = "init";
       init = /*%FSM<STATEINIT""">*/"private[""_delayed"",""_cb"",""_x1""];" \n
        "_x1 = _this select 0;" \n
-       "_cb = 0;"/*%FSM</STATEINIT""">*/;
+       "_cb = 0;" \n
+       "_sim = simulationEnabled _x1;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -89,7 +90,7 @@ class FSM
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/"_x1 hideobject true;" \n
-           "_x1 enablesimulation false;"/*%FSM</ACTION""">*/;
+           "if(_sim) then { _x1 enablesimulation false; };"/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
@@ -127,9 +128,9 @@ class FSM
         class refresh_
         {
           priority = 1.000000;
-          to="refresh";
+          to="sim_true";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"_cb > 20"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"_cb > 30"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -150,8 +151,9 @@ class FSM
     class delayed
     {
       name = "delayed";
-      init = /*%FSM<STATEINIT""">*/"_delayed = time +  1;" \n
-       "_cb = _cb + 1;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_delayed = [] spawn {sleep 1;};" \n
+       "if(_sim) then { _cb = _cb + 1; };" \n
+       ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -161,17 +163,17 @@ class FSM
           priority = 0.000000;
           to="check";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"scriptdone _delayed"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
       };
     };
     /*%FSM</STATE>*/
-    /*%FSM<STATE "refresh">*/
-    class refresh
+    /*%FSM<STATE "sim_true">*/
+    class sim_true
     {
-      name = "refresh";
+      name = "sim_true";
       init = /*%FSM<STATEINIT""">*/"_x1 enablesimulation true;" \n
        ""/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
@@ -205,8 +207,7 @@ class FSM
     class uncache
     {
       name = "uncache";
-      init = /*%FSM<STATEINIT""">*/"_x1 enablesimulation true;" \n
-       ""/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"if(_sim) then { _x1 enablesimulation true; };"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -227,7 +228,7 @@ class FSM
     class delayed_1
     {
       name = "delayed_1";
-      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.5;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_delayed = [] spawn {sleep 0.5;};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -237,7 +238,7 @@ class FSM
           priority = 0.000000;
           to="uncache_end";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"scriptdone _delayed"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -261,7 +262,7 @@ class FSM
     class delayed_2
     {
       name = "delayed_2";
-      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.5;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_delayed = [] spawn {sleep 0.5;};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -271,7 +272,7 @@ class FSM
           priority = 0.000000;
           to="reveal";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"scriptdone _delayed"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/
@@ -303,7 +304,7 @@ class FSM
     class delayed_3
     {
       name = "delayed_3";
-      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.5;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_delayed = [] spawn {sleep 0.5;};"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
@@ -313,7 +314,7 @@ class FSM
           priority = 0.000000;
           to="sim_false";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"scriptdone _delayed"/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
         };
         /*%FSM</LINK>*/

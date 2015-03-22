@@ -34,4 +34,5 @@ _plate = round(random(1000000));
 [_uid,_side,_type,_classname,_color,_plate] call DB_fnc_insertVehicle;
 
 _vehicle setVariable["dbInfo",[_uid,_plate,1]];
-//_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"];
+_vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
+_vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];

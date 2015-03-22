@@ -91,11 +91,10 @@ sleep 0.01;
 // _vehicle setVariable ["tf_range", 50000, true];
 // sleep 0.01;
 
-_vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
+// _vehicle addEventHandler["Killed",{_this spawn TON_fnc_vehicleDead;}];
+// _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
 
-//life_vehicles set[count life_vehicles,_vehicle]; //Add err to the chain.
-[] call life_fnc_getHLC;
-[[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",serverhc,false] spawn life_fnc_MP;
+
 
 if(_mode) then {
 	//if(!(_className in ["B_G_Offroad_01_armed_F","B_MRAP_01_hmg_F"])) then {
@@ -104,10 +103,11 @@ if(_mode) then {
 	//};
 };
 
-// if(_className in life_ver_random) then { sleep 5; };
+[] call life_fnc_getHLC;
+[[getPlayerUID player,playerSide,_vehicle,1],"TON_fnc_keyManagement",serverhc,false] spawn life_fnc_MP;
 life_vehicles pushBack _vehicle;
-[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 
+[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
 // [] call life_fnc_getHLC;
 // _handle = [[_vehicle,_colorIndex],"life_fnc_colorVehicle",serverhc,false] spawn life_fnc_MP;
 // waitUntil {sleep 0.1; scriptDone _handle};

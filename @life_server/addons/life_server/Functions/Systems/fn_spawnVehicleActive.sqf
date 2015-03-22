@@ -107,7 +107,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 		sleep 0.01;
 		//_vehicle setVariable["spawned",false,true];
-		_vehicle setVariable["dbInfo",[(_pid),(call compile format["%1", _plate]),_insure],true];
+		_vehicle setVariable["dbInfo",[(_pid),(call compile format["%1", _plate]),_insure]];
 		//sleep 0.01;
 		//_vehicle setVariable["lastPos",[]];
 		sleep 0.01;
@@ -131,9 +131,9 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		// _handle = [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
 		// waitUntil {sleep 0.1; scriptDone _handle};
 		
+		_vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
+		_vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
 		
-		//_vehicle addEventHandler["Killed",{_this spawn TON_fnc_vehicleDead;}];
-		_vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 		[_vehicle] call life_fnc_clearVehicleAmmo;
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 		
