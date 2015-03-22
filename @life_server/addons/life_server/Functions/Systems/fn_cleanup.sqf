@@ -61,7 +61,7 @@ while {true} do
 						if(count _dbInfo > 0) then
 						{
 							systemChat "Fixing...";
-							waitUntil{!DB_Async_Active};
+							waitUntil {sleep (random 0.3); !DB_Async_Active};
 							_sql = [_query,1] call DB_fnc_asyncCall;
 						};
 					};
@@ -108,7 +108,7 @@ while {true} do
 								if(count _dbInfo > 0) then
 								{
 									systemChat "Fixing...";
-									waitUntil{!DB_Async_Active};
+									waitUntil {sleep (random 0.3); !DB_Async_Active};
 									_sql = [_query,1] call DB_fnc_asyncCall;
 								};
 								//{if (typeOf _x == "#particlesource") then {deleteVehicle _x}} forEach ((position _x) nearObjects 20);

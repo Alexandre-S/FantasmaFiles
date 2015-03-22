@@ -30,7 +30,7 @@ else
 	{
 		case "civ_littlebird":
 		{
-			waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
+			// waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
 			_vehicle animate ["addDoors",1];
 			_vehicle animate ["addBenches",0];
 			_vehicle animate ["addTread",0];
@@ -55,9 +55,9 @@ else
 		
 		case "med_offroad":
 		{
-			if(typeOf _vehicle == "C_Offroad_01_F") then {
+			/*if(typeOf _vehicle == "C_Offroad_01_F") then {
 				waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
-			};
+			};*/
 			_vehicle animate ["HideConstruction", 0];
 			_vehicle animate ["HidePolice", 0];
 			_vehicle animate ["HideDoor3", 0];
@@ -69,10 +69,10 @@ else
 		{
 			if(typeOf _vehicle == "C_Offroad_01_F") then {
 				// waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
-			// };
-			_vehicle animate ["HideConstruction", 0];
-			_vehicle animate ["HidePolice", 0];
-			_vehicle animate ["HideBumper2", 0];
+				// };
+				_vehicle animate ["HideConstruction", 0];
+				_vehicle animate ["HidePolice", 0];
+				_vehicle animate ["HideBumper2", 0];
 			};
 			_vehicle setVariable["lights",false,true];
 			sleep 0.01;
@@ -82,12 +82,12 @@ else
 		{
 			if(typeOf _vehicle in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {
 				// waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
-			// };
-			_vehicle animate [["HideBumper1","HideBumper2"] select floor random 2, 0];
-			_vehicle animate ["HideBackpacks", 0];
-			_vehicle animate ["HideConstruction", 0];
-			_vehicle animate ["HidePolice", 1];
-			_vehicle animate ["HideServices", 1];
+				// };
+				_vehicle animate [["HideBumper1","HideBumper2"] select floor random 2, 0];
+				_vehicle animate ["HideBackpacks", 0];
+				_vehicle animate ["HideConstruction", 0];
+				_vehicle animate ["HidePolice", 1];
+				_vehicle animate ["HideServices", 1];
 			};
 		};
 		

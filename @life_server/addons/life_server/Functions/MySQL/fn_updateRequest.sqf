@@ -45,5 +45,5 @@ switch (_side) do {
 	case independent: {_query = format["UPDATE players SET name='%1', cash='%2', bankacc='%3', med_licenses='%4', med_gear='%6', position='%7', alive='%8', hunger='%9', thirst='%10', damage='%11' WHERE playerid='%5'",_name,_cash,_bank,_licenses,_uid,_gear,_position,_alive,_hunger,_thirst,_damage];};
 };
 
-waitUntil {!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _queryResult = [_query,1] call DB_fnc_asyncCall;

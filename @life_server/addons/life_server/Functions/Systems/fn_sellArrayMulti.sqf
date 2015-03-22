@@ -56,7 +56,7 @@ sleep 0.5;
 
 _sell_array2 = [sell_array2] call DB_fnc_mresArray;
 _query = format["UPDATE prices SET price='%1' WHERE s='1' ",_sell_array2];
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _sql = [_query,1] call DB_fnc_asyncCall;
 //diag_log format["[fn_sellArrayMulti][BDD] sell_array2 = %1", _sell_array2];
 

@@ -17,7 +17,7 @@ if(isNull _ownerID OR _uid == "" OR _gangName == "" OR _unitid == -1) exitWith {
 _ownerID = _unitid;
 _gangName = [_gangName] call DB_fnc_mresString;
 _query = format["SELECT id FROM gangs WHERE name='%1' AND active='1'",_gangName];
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 //Check to see if the gang name already exists.
@@ -27,7 +27,7 @@ if(count _queryResult != 0) exitWith {
 };
 
 _query = format["SELECT id FROM gangs WHERE members LIKE '%2%1%2' AND active='1'",_uid,"%"];
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 //Check to see if this person already owns or belongs to a gang.
@@ -38,7 +38,7 @@ if(count _queryResult != 0) exitWith {
 
 //Check to see if a gang with that name already exists but is inactive.
 _query = format["SELECT id, active FROM gangs WHERE name='%1' AND active='0'",_gangName];
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 _gangMembers = [[_uid]] call DB_fnc_mresArray;
 
@@ -47,7 +47,7 @@ if(count _queryResult != 0) then {
 } else {
 	_query = format["INSERT INTO gangs (owner, name, members) VALUES('%1','%2','%3')",_uid,_gangName,_gangMembers];
 };
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _queryResult = [_query,1] call DB_fnc_asyncCall;
 
 _group setVariable["gang_name",_gangName,true];
@@ -59,7 +59,7 @@ _group setVariable["gang_members",[_uid],true];
 
 sleep 0.35;
 _query = format["SELECT id FROM gangs WHERE owner='%1' AND active='1'",_uid];
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
 _group setVariable["gang_id",(_queryResult select 0),true];

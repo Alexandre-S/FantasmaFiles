@@ -20,7 +20,7 @@ if(isNull _returnToSender || _unitid == -1) exitWith {systemChat "ReturnToSender
 
 _query = format["SELECT playerid, name FROM players WHERE playerid='%1'",_uid];
 
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
@@ -49,6 +49,6 @@ _query = format["INSERT INTO players (playerid, name, cash, bankacc, aliases, co
 	_alias
 ];
 
-waitUntil {!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 [_query,1] call DB_fnc_asyncCall;
 [[],"SOCK_fnc_dataQuery",_unitid,false] spawn life_fnc_MP;

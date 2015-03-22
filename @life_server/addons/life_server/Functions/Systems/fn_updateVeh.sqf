@@ -50,7 +50,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 						_query = format["UPDATE vehicles SET pos='%3', fuel='%4', dir='%5' WHERE pid='%1' AND plate='%2'",_uid,_plate,_pos,_fuel,_dir];
 					};
 					_vehicle setVariable ["lastPos",_pos];
-					waitUntil{!DB_Async_Active};
+					waitUntil {sleep (random 0.3); !DB_Async_Active};
 					_sql = [_query,1] call DB_fnc_asyncCall;
 					//diag_log format["[updateVehicles][%1] plate = %2 uid = %3 pos = %4 fuel = %5", _vehicle, _plate, _uid, _pos, _fuel];
 				};		
@@ -66,7 +66,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf 
 					_query = format["UPDATE vehicles SET pos='%3', fuel='%4', dir='%5' WHERE pid='%1' AND plate='%2'",_uid,_plate,_pos,_fuel,_dir];
 				};
 				_vehicle setVariable ["lastPos",_pos];
-				waitUntil{!DB_Async_Active};
+				waitUntil {sleep (random 0.3); !DB_Async_Active};
 				_sql = [_query,1] call DB_fnc_asyncCall;
 				//diag_log format["[updateVehicles][%1] plate = %2 uid = %3 pos = %4 fuel = %5", _vehicle, _plate, _uid, _pos, _fuel];
 			};

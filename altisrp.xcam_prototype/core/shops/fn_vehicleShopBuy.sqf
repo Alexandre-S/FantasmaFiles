@@ -6,7 +6,7 @@
 	Description:
 	Does something with vehicle purchasing.
 */
-private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_hs"];
+private["_mode","_spawnPoints","_className","_basePrice","_colorIndex","_spawnPoint","_vehicle","_hs","_handle"];
 _mode = _this select 0;
 if((lbCurSel 2302) == -1) exitWith {hint localize "STR_Shop_Veh_DidntPick"};
 _className = lbData[2302,(lbCurSel 2302)];
@@ -106,11 +106,14 @@ if(_mode) then {
 
 // if(_className in life_ver_random) then { sleep 5; };
 life_vehicles pushBack _vehicle;
-[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-[_vehicle] call life_fnc_clearVehicleAmmo;
+[] call life_fnc_getHLC;
+_handle = [[_vehicle,_colorIndex],"life_fnc_colorVehicle",serverhc,false] spawn life_fnc_MP;
+waitUntil {sleep 0.1; scriptDone _handle};
+
 [[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 [[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+[_vehicle] call life_fnc_clearVehicleAmmo;
 
 //Side Specific actions.
 switch(playerSide) do {
@@ -134,6 +137,9 @@ switch(playerSide) do {
 		};
 		if(_className in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {
 			[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
+		};
+		if(_className == "C_Van_01_fuel_F") then {
+			_vehicle setFuelCargo 0;
 		};
 	};
 	

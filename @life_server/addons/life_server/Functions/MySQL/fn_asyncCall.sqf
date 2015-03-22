@@ -10,7 +10,7 @@
 		1: INTEGER (1 = ASYNC + not return for update/insert, 2 = ASYNC + return for query's).
 		3: BOOL (True to return a single array, false to return multiple entries mainly for garage).
 */
-waitUntil {!DB_Async_Active};
+waitUntil {sleep (random 0.1); !DB_Async_Active};
 private["_queryStmt","_queryResult","_key","_mode","_return"];
 _queryStmt = [_this,0,"",[""]] call BIS_fnc_param;
 _mode = [_this,1,1,[0]] call BIS_fnc_param;

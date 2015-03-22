@@ -31,7 +31,7 @@ switch(_type) do
 		_toName = name _target;
 		_query = format["INSERT INTO messages (fromID, toID, message, fromName, toName) VALUES('%1', '%2', '""%3""', '%4', '%5')",_pid,_toID,_msg,_fromName,_toName];
 		diag_log format["Query: %1",_query];
-		waitUntil{!DB_Async_Active};
+		waitUntil {sleep (random 0.3); !DB_Async_Active};
 		[_query,1] call DB_fnc_asyncCall;
 	};
 	//message to cops

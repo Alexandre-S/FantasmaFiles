@@ -21,5 +21,5 @@ if(_className == "BAF_Offroad_D_HMG" || _className == "O_MRAP_02_F" || _classNam
 
 _query = format["INSERT INTO vehicles (side, classname, type, pid, alive, active, inventory, color, plate, insure) VALUES ('%1', '%2', '%3', '%4', '1','1','""[[],0]""', '%5', '%6', '%7')",_side,_className,_type,_uid,_color,_plate,_insure];
 
-waitUntil {!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 [_query,1] call DB_fnc_asyncCall;

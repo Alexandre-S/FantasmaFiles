@@ -9,7 +9,7 @@ if(server_debug) then { _t1 = diag_tickTime; };
 
 _query = "SELECT price FROM prices WHERE s='1'";
 
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
 _result = [_query,2] call DB_fnc_asyncCall;
 

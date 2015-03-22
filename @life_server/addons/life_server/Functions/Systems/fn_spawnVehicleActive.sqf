@@ -8,11 +8,11 @@
 */
 private["_vid","_sp","_pid","_query","_queryResult","_count","_sql","_vehicle","_nearVehicles","_name","_side","_plate","_color","_classname","_inv","_fuel","_insure","_dir","_t1","_realside"];
 
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _count = (["SELECT COUNT(*) FROM vehicles WHERE active='1' AND alive='1'",2] call DB_fnc_asyncCall) select 0;
 
 for [{_x=0},{_x<=_count},{_x=_x+10}] do {
-	waitUntil{!DB_Async_Active};
+	waitUntil {sleep (random 0.3); !DB_Async_Active};
 	// _query = format["SELECT id,pid,pos,name,side,plate,color,classname,inventory,fuel,insure,dir FROM vehicles WHERE active='1' AND alive='1' LIMIT %1,10",_x];
 	_query = format["SELECT vehicles.id, vehicles.pid, vehicles.pos, players.name, vehicles.side, vehicles.plate, vehicles.color, vehicles.classname, vehicles.inventory, vehicles.fuel, vehicles.insure, vehicles.dir FROM vehicles, players WHERE vehicles.pid = players.playerid AND vehicles.active='1' AND vehicles.alive='1' LIMIT %1,10",_x];
 
@@ -84,8 +84,8 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_vehicle setDir _dir;
 		_vehicle setVectorUp (surfaceNormal _sp);
 		_vehicle setPosATL _sp;
+		_vehicle lock 2;
 
-		
 		sleep 0.01;
 		_vehicle setVariable["idleTime",time];
 		sleep 0.01;
@@ -125,11 +125,18 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 			_vehicle setVariable["Assur",false,true];
 		};
 		sleep 0.01;*/
-
+		
+		//Reskin the vehicle 
+		// [[_vehicle,(call compile format["%1",_color])],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+		_handle = [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
+		waitUntil {sleep 0.1; scriptDone _handle};
+		
+		
 		//_vehicle addEventHandler["Killed",{_this spawn TON_fnc_vehicleDead;}];
 		_vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 		[_vehicle] call life_fnc_clearVehicleAmmo;
-		_vehicle lock 2;
+		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+		
 
 		_vehicle setFuel (parseNumber _fuel);
 		//Send keys over the network.
@@ -140,72 +147,46 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		[_pid,_realside,_vehicle,1] call TON_fnc_keyManagement;
 		//[[_pid,_realside,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
 
-		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
-		
-		[_vehicle,_color,_classname,_side] spawn
-		{
-			private["_vehicle","_color","_classname","_side"];
-
-			_vehicle = _this select 0;
-			_color = _this select 1;
-			_classname = _this select 2;
-			_side = _this select 3;
-			
-			// if(_classname in life_ver_random) then { sleep 5; };
-			
-			//Reskin the vehicle 
-			// [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
-			[[_vehicle,(call compile format["%1",_color])],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-			
-			//Sets of animations
-			/*if(_classname == "B_MRAP_01_hmg_F") then
-			{
-			  _vehicle disableTIEquipment true;
-			};*/
-			if(_classname == "C_Van_01_fuel_F") then
-			{
-			 _vehicle setFuelCargo 0;
-			};
-			if((_color) == 10 && (_classname) == "C_Offroad_01_F") then
-			{
-				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
-			};
-
-			if((_side) == "med" && (_classname) == "C_Offroad_01_F") then
-			{
-				[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
-			};
-			if((_side) == "civ" && (_classname) == "LandRover_ACR") then
-			{
-				[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
-			};
-
-			/*if((_color) == "11" && (_classname) == "C_Offroad_01_F") then
-			{
-				[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate; // vigil
-			};*/
-
-			if((_side) == "civ" && (_classname) == "B_Heli_Light_01_F") then
-			{
-				[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
-			};
-
-			if((_side) == "cop" && (_classname) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","B_MRAP_01_hmg_F"]) then
-			{
-				[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
-			};
-
-			if((_side) == "civ" && (_classname) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then
-			{
-				[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
-			};
-			
-			/*if(_classname in ["B_MRAP_01_F","C_SUV_01_F"] && ((_side) == "cop")) then {
-				_vehicle setVariable["lights",false,true];
-				sleep 0.01;
-			};*/
+		//Sets of animations
+		/*if(_classname == "B_MRAP_01_hmg_F") then {
+		  _vehicle disableTIEquipment true;
+		};*/
+		if(_classname == "C_Van_01_fuel_F") then {
+			_vehicle setFuelCargo 0;
 		};
+		if((_color) == 10 && (_classname) == "C_Offroad_01_F") then	{
+			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
+		};
+
+		if((_side) == "med" && (_classname) == "C_Offroad_01_F") then {
+			[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
+		};
+		if((_side) == "civ" && (_classname) == "LandRover_ACR") then {
+			[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
+		};
+
+		/*if((_color) == "11" && (_classname) == "C_Offroad_01_F") then	{
+			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate; // vigil
+		};*/
+
+		if((_side) == "civ" && (_classname) == "B_Heli_Light_01_F") then {
+			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
+		};
+
+		if((_side) == "cop" && (_classname) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","B_MRAP_01_hmg_F"]) then {
+			[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
+		};
+
+		if((_side) == "civ" && (_classname) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {
+			[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
+		};
+		
+		/*if(_classname in ["B_MRAP_01_F","C_SUV_01_F"] && ((_side) == "cop")) then {
+			_vehicle setVariable["lights",false,true];
+			sleep 0.01;
+		};*/
+
 		
 		[_vehicle] spawn
 		{

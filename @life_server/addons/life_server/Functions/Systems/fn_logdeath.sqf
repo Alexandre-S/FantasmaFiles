@@ -73,7 +73,7 @@ if(_uid == _sid) then {_weapon = "";};
 };*/
 
 _query = format["INSERT INTO logdeath (uid, sid, pos, type, distance, weapon) VALUES ('%1', '%2', '%3', '%4', '%5', '%6')",_uid,_sid,_pos,_type,_distance,_weapon];
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _result = [_query,1] call DB_fnc_asyncCall;
 
 if(server_debug && ((diag_tickTime - _t1) > 0.1) ) then { diag_log format["[debuglongtime] SYS fn_logdeath %1 ", diag_tickTime - _t1]; };

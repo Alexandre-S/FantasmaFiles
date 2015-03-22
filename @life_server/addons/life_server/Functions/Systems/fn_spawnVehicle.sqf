@@ -27,7 +27,7 @@ serv_sv_use pushBack _vid;
 
 _query = format["SELECT id, side, classname, type, pid, alive, active, plate, color, insure, fuel, inventory FROM vehicles WHERE id='%1' AND pid='%2'",_vid,_pid];
 
-waitUntil{!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 _tickTime = diag_tickTime;
 _queryResult = [_query,2] call DB_fnc_asyncCall;
 
@@ -73,7 +73,7 @@ _fuel = parseNumber(_vInfo select 10);
 
 _query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
-waitUntil {!DB_Async_Active};
+waitUntil {sleep (random 0.3); !DB_Async_Active};
 [_query,false] spawn DB_fnc_asyncCall;
 if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
@@ -99,6 +99,7 @@ if(typeName _sp == "STRING") then {
 	_vehicle setDir _dir;
 	_vehicle setFuel _fuel;
 };
+_vehicle lock 2;
 _vehicle setVariable ["BIS_enableRandomization",false];	
 sleep 0.01;
 // _inv = [(_vInfo select 11)] call DB_fnc_mresToArray;
@@ -137,7 +138,7 @@ sleep 0.01;
 // _vehicle setVariable ["tf_range", 50000, true];
 // sleep 0.01;
 
-_vehicle lock 2;
+
 //Send keys over the network.
 [_pid,_side,_vehicle,1] call TON_fnc_keyManagement;
 //[[_pid,_side,_vehicle,1],"TON_fnc_keyManagement",false,false] spawn life_fnc_MP;
@@ -148,61 +149,59 @@ _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9
 sleep 0.01;
 //_vehicle addEventHandler["Killed","_this spawn TON_fnc_vehicleDead"]; //Obsolete function?
 _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
+
+//Reskin the vehicle 
+// [[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+_handle = [_vehicle,_vInfo select 8] spawn life_fnc_colorVehicle;
+waitUntil {sleep 0.1; scriptDone _handle};
+
 [_vehicle] call life_fnc_clearVehicleAmmo;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 
 // if((_vInfo select 2) in life_ver_random) then { sleep 5; };
 
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
-//Reskin the vehicle 
-[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+
 //Sets of animations
-if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then
-{
+if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then {
 	// [[_vehicle,"civ_littlebird",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 	[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
-
 };
 
-if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","B_MRAP_01_hmg_F"]) then
-{
+if((_vInfo select 2) == "C_Van_01_fuel_F") then {
+	_vehicle setFuelCargo 0;
+};
+
+if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_01_F","C_SUV_01_F","B_MRAP_01_hmg_F"]) then {
 	// [[_vehicle,"cop_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 	[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 };
 
-if((_vInfo select 8) == 10 && (_vInfo select 2) == "C_Offroad_01_F") then
-{
+if((_vInfo select 8) == 10 && (_vInfo select 2) == "C_Offroad_01_F") then {
 	[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
 };
 
-if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then
-{
+if((_vInfo select 1) == "med" && (_vInfo select 2) == "C_Offroad_01_F") then {
 	// [[_vehicle,"med_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 	[_vehicle,"med_offroad",true] spawn life_fnc_vehicleAnimate;
 
 };
-if((_vInfo select 1) == "civ" && (_vInfo select 2) == "LandRover_ACR") then
-{
+if((_vInfo select 1) == "civ" && (_vInfo select 2) == "LandRover_ACR") then {
 	// [[_vehicle,"landrover_nocov",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 	[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
 };
-if((_vInfo select 1) == "civ" && (_vInfo select 2) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then
-{
+if((_vInfo select 1) == "civ" && (_vInfo select 2) in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {
 	// [[_vehicle,"reb_offroad",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 	[_vehicle,"reb_offroad",true] spawn life_fnc_vehicleAnimate;
 };
-if((_vInfo select 9) == 1) then
-{
+if((_vInfo select 9) == 1) then {
   [[1,"Votre vehicule est dispo et assuré ! "],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
-}
-else
-{
+} else {
   [[1,"Votre vehicule est dispo !"],"life_fnc_broadcast",_unit,false] spawn life_fnc_MP;
 };
 serv_sv_use = serv_sv_use - [_vid];
 
-[_vehicle] spawn
-{
+[_vehicle] spawn {
 	_vehicle = _this select 0;
 	sleep 5;
 	_vehicle allowDamage true;
