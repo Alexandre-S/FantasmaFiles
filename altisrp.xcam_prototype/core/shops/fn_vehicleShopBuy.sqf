@@ -106,9 +106,11 @@ if(_mode) then {
 
 // if(_className in life_ver_random) then { sleep 5; };
 life_vehicles pushBack _vehicle;
-[] call life_fnc_getHLC;
-_handle = [[_vehicle,_colorIndex],"life_fnc_colorVehicle",serverhc,false] spawn life_fnc_MP;
-waitUntil {sleep 0.1; scriptDone _handle};
+[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+
+// [] call life_fnc_getHLC;
+// _handle = [[_vehicle,_colorIndex],"life_fnc_colorVehicle",serverhc,false] spawn life_fnc_MP;
+// waitUntil {sleep 0.1; scriptDone _handle};
 
 [[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 [[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;

@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_queryResult","_count","_sql","_vehicle","_nearVehicles","_name","_side","_plate","_color","_classname","_inv","_fuel","_insure","_dir","_t1","_realside"];
+private["_vid","_sp","_pid","_query","_queryResult","_count","_sql","_vehicle","_nearVehicles","_name","_side","_plate","_color","_classname","_inv","_fuel","_insure","_dir","_t1","_realside","_handle"];
 
 waitUntil {sleep (random 0.3); !DB_Async_Active};
 _count = (["SELECT COUNT(*) FROM vehicles WHERE active='1' AND alive='1'",2] call DB_fnc_asyncCall) select 0;
@@ -127,9 +127,9 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		sleep 0.01;*/
 		
 		//Reskin the vehicle 
-		// [[_vehicle,(call compile format["%1",_color])],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-		_handle = [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
-		waitUntil {sleep 0.1; scriptDone _handle};
+		[[_vehicle,(call compile format["%1",_color])],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+		// _handle = [_vehicle,(call compile format["%1",_color])] spawn life_fnc_colorVehicle;
+		// waitUntil {sleep 0.1; scriptDone _handle};
 		
 		
 		//_vehicle addEventHandler["Killed",{_this spawn TON_fnc_vehicleDead;}];

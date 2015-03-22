@@ -6,7 +6,7 @@
 	Sends the query request to the database, if an array is returned then it creates
 	the vehicle if it's not in use or dead.
 */
-private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel","_unitid","_inv","_spexit"];
+private["_vid","_sp","_pid","_query","_sql","_vehicle","_nearVehicles","_name","_side","_tickTime","_dir","_fuel","_unitid","_inv","_spexit","_handle"];
 _vid = [_this,0,-1,[0]] call BIS_fnc_param;
 _pid = [_this,1,"",[""]] call BIS_fnc_param;
 _sp = [_this,2,[],[[],""]] call BIS_fnc_param;
@@ -151,9 +151,9 @@ sleep 0.01;
 _vehicle addEventHandler["GetOut", {_this call life_fnc_vehicleExit;}];
 
 //Reskin the vehicle 
-// [[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-_handle = [_vehicle,_vInfo select 8] spawn life_fnc_colorVehicle;
-waitUntil {sleep 0.1; scriptDone _handle};
+[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+// _handle = [_vehicle,_vInfo select 8] spawn life_fnc_colorVehicle;
+// waitUntil {sleep 0.1; scriptDone _handle};
 
 [_vehicle] call life_fnc_clearVehicleAmmo;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
