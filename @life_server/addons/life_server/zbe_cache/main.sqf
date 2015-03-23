@@ -115,7 +115,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		} forEach (agents - [teamMemberNull]);
 		
 		{
-			if(_x in _all) then {
+			if!(_x in _all) then {
 				_all pushBack _x;
 			};
 		} forEach allDead;
