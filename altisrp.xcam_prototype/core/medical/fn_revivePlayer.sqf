@@ -9,7 +9,8 @@ private["_target","_revivable","_targetName","_ui","_progressBar","_titleText","
 _target = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _target) exitWith {}; //DAFUQ?@!%$!R?EFFD?TGSF?HBS?DHBFNFD?YHDGN?D?FJH
 
-_revivable = _target getVariable["Revive",FALSE];
+_revivable = _target getVariable["Revive",nil];
+if(isNil "_revivable") exitWith {};
 if(_revivable) exitWith {};
 if(_target getVariable ["Reviving",ObjNull] == player) exitWith {hint localize "STR_Medic_AlreadyReviving";};
 if(player distance _target > 5) exitWith {}; //Not close enough.
