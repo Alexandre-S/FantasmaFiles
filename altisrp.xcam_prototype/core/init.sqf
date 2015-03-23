@@ -146,22 +146,10 @@ combat_mode =
 		};
 };
 
-life_fnc_uncache = 
+/*life_fnc_uncache = 
 {
 	private["_veh"];
 	_veh = (_this select 0);
-	/*{
-		if(!isNull _x) then {
-			[_x] spawn {
-				private["_x1"];
-				_x1 = (_this select 0);
-				_x1 enablesimulation true;
-				sleep 0.5;
-				player reveal _x1;
-				_x1 hideobject false;
-			};
-		};
-	} forEach _veh;*/
 	uncachelist append _veh;
 	if(havena_debugcache) then { systemChat format ["HAVENA_UNCACHE - %1",_veh]	};
 };
@@ -171,15 +159,11 @@ life_fnc_cache =
 	private["_veh"];
 	_veh = (_this select 0);
 	{
-		// if(!isNull _x) then {
-			// _x hideobject true;
-			// _x enablesimulation false;
-		// };
 		[_x] execFSM "core\fsm\cachegestion.fsm";
 		sleep 0.5;
 	} forEach _veh;
 	if(havena_debugcache) then { systemChat format ["HAVENA_CACHE - %1",_veh] };
-};
+};*/
 
 alarm_check = 
 {

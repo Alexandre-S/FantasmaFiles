@@ -40,7 +40,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 				};
 		} forEach allGroups;
 	};
-};*/
+};
 
 
 [] spawn  {
@@ -60,7 +60,6 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 	};
 };
 
-/*
 [] spawn  {
 	sleep 30;
 	while {true} do {
