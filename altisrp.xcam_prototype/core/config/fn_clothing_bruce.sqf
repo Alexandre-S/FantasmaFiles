@@ -101,7 +101,17 @@ switch (_filter) do
 			["U_I_HeliPilotCoveralls","Work on airport",6000],
 			["U_C_Journalist","AAN",6500],
 			["vip_clothes","Tenue footing",5500],
-			
+			["U_C_Driver_1_black",nil,1500],
+			["U_C_Driver_1_blue",nil,1500],
+			["U_C_Driver_1_red",nil,1500],
+			["U_C_Driver_1_orange",nil,1500],
+			["U_C_Driver_1_green",nil,1500],
+			["U_C_Driver_1_white",nil,1500],
+			["U_C_Driver_1_yellow",nil,1500],
+			["U_C_Driver_2",nil,3500],
+			["U_C_Driver_1",nil,3600],
+			["U_C_Driver_3",nil,3700],
+			["U_C_Driver_4",nil,3700],
 			["U_PMC_GTShirt_DJeans","TeeShirt vert et jean",3500],
 			["U_PMC_GTShirt_SJeans","TeeShirt vert et bas blanc",3500],
 			["U_PMC_BlkTShirt_DJeans","TeeShirt noir et jean",3500],
@@ -127,6 +137,11 @@ switch (_filter) do
 			["UVF_Soldier_Outfit_4","Polo Rugby",3500],
 			["rds_uniform_Functionary1",nil,7500],
 			["rds_uniform_Functionary2",nil,7500],
+			["rds_uniform_Functionary3",nil,7500],
+			["rds_uniform_Functionary4",nil,7500],
+			["rds_uniform_Functionary5",nil,7500],
+			["rds_uniform_Functionary6",nil,7500],
+			["rds_uniform_Functionary7",nil,7500],
 			["rds_uniform_priest",nil,2500]
 		];
 		/*if(license_civ_vigil) then
@@ -198,7 +213,17 @@ switch (_filter) do
 			["H_Capbw_tan_pmc",nil,300],
 			["H_Booniehat_rgr",nil,450],
 			["H_Booniehat_DMARPAT",nil,450],
-			["H_Booniehat_GCAMO",nil,450]
+			["H_Booniehat_GCAMO",nil,450],
+			["H_RacingHelmet_1_black_F",nil,1000],
+			["H_RacingHelmet_1_red_F",nil,1000],
+			["H_RacingHelmet_1_white_F",nil,1000],
+			["H_RacingHelmet_1_blue_F",nil,1000],
+			["H_RacingHelmet_1_yellow_F",nil,1000],
+			["H_RacingHelmet_1_green_F",nil,1000],
+			["H_RacingHelmet_1_F",nil,2500],
+			["H_RacingHelmet_2_F",nil,2500],
+			["H_RacingHelmet_3_F",nil,2500],
+			["H_RacingHelmet_4_F",nil,2500]
 		];
 	};
 	
