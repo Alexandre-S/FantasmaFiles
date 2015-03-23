@@ -109,7 +109,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		_all = allUnits + _landall + allDead;
 		hav_allreal = _all - (agents - [teamMemberNull]);*/
 		
-		_all = allUnits;
+		_all = [];
 		{
 			_all pushBack agent _x;
 		} forEach (agents - [teamMemberNull]);
@@ -120,14 +120,14 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 			};
 		} forEach allDead;
 		
-		_landall = [];
 		{
 			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
-				_landall pushback _x;
+				_all pushback _x;
 			};
 		} foreach vehicles;
 		
-		_all append _landall;
+		_all append allUnits;
+
 		hav_allreal = _all;
 	};
 };
