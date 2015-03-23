@@ -67,12 +67,13 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 		sleep 15;
 		zbe_players2 = (switchableUnits + playableUnits);
 		{
-			_disable = _x getVariable ["hav_cachePDis",false];
-			if (!_disable && !(_x in zbe_cachedP)) then {
-				zbe_cachedP = zbe_cachedP + [_x];
-				[1200, _x, zbe_minFrameRate, zbe_debug] spawn hav_CachePlayer;
+			if(!isNull _x) then {
+				_disable = _x getVariable ["hav_cachePDis",false];
+				if (!_disable && !(_x in zbe_cachedP)) then {
+					zbe_cachedP = zbe_cachedP + [_x];
+					[1200, _x, zbe_minFrameRate, zbe_debug] spawn hav_CachePlayer;
+				};
 			};
-
 		} forEach zbe_players2;
 	};
 };
@@ -98,7 +99,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 	private["_landall","_all"];
 	sleep 15;
 	while {true} do {
-		sleep 1;
+		sleep 2;
 		/*_landall = [];
 		{
 			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
@@ -182,7 +183,7 @@ hav_CachePlayer = {
 		{
 			if(!isNull _x) then {
 				if(_preal distance _x > _distance && !_disable) then {
-					if!(_x in _hav_cached) then {
+					if!((_x in _hav_cached) && (count _hav_acache < 10)) then {
 						_hav_cached pushBack _x;
 						_hav_acache pushBack _x;
 						// _x hideobject true;
