@@ -43,7 +43,7 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 };*/
 
 
-/*[] spawn  {
+[] spawn  {
 	sleep 60;
 	while {true} do {
 		sleep 15;
@@ -58,9 +58,9 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 			};
 		} forEach allUnits;
 	};
-};*/
+};
 
-
+/*
 [] spawn  {
 	sleep 30;
 	while {true} do {
@@ -99,36 +99,36 @@ zbe_centerPOS = [zbe_mapside, zbe_mapside, 0];
 	private["_landall","_all"];
 	sleep 15;
 	while {true} do {
-		sleep 2;
-		/*_landall = [];
+		sleep 1;
+		_landall = [];
 		{
 			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
 				_landall pushback _x;
 			};
 		} foreach vehicles;
 		_all = allUnits + _landall + allDead;
-		hav_allreal = _all - (agents - [teamMemberNull]);*/
+		hav_allreal = _all - (agents - [teamMemberNull]);
 		
-		_all = [];
-		{
-			_all pushBack agent _x;
-		} forEach (agents - [teamMemberNull]);
+		// _all = [];
+		// {
+			// _all pushBack agent _x;
+		// } forEach (agents - [teamMemberNull]);
 		
-		{
-			if!(_x in _all) then {
-				_all pushBack _x;
-			};
-		} forEach allDead;
+		// {
+			// if!(_x in _all) then {
+				// _all pushBack _x;
+			// };
+		// } forEach allDead;
 		
-		{
-			if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
-				_all pushback _x;
-			};
-		} foreach vehicles;
+		// {
+			// if((_x isKindOF "LandVehicle") || (_x isKindOf "Air") || (_x isKindOf "Ship")) then {
+				// _all pushback _x;
+			// };
+		// } foreach vehicles;
 		
-		_all append allUnits;
+		// _all append allUnits;
 
-		hav_allreal = _all;
+		// hav_allreal = _all;
 	};
 };
 
@@ -216,10 +216,10 @@ hav_CachePlayer = {
 		sleep 5;
 	};
 };
-
+*/
 
 // Vehicle Caching Beta (for client FPS)
-/*[] spawn {
+[] spawn {
 	sleep 60;
 	private ["_assetscar", "_assetsair", "_assetsboat"];
 	zbe_cached_cars = [];
@@ -268,17 +268,17 @@ hav_CachePlayer = {
 		zbe_allVehicles = (_assetscar + _assetsair + _assetsboat);
 		sleep 15;
 	};
-};*/
+};
 
 [] spawn {
 	sleep 30;
 	if (zbe_debug) then {
 			while {true} do {
 				Sleep 15;
-				/*zbe_cachedUnits = (count allUnits - ({simulationEnabled _x} count allUnits));
+				zbe_cachedUnits = (count allUnits - ({simulationEnabled _x} count allUnits));
 				zbe_cachedVehicles = (count zbe_allVehicles - ({simulationEnabled _x} count zbe_allVehicles));
 				zbe_allVehiclesCount = (count zbe_allVehicles);
-				hintSilent parseText format ["
+				/*hintSilent parseText format ["
                 <t color='#FFFFFF' size='1.5'>ZBE Caching</t><br/>
                 <t color='#FFFFFF'>Debug data</t><br/><br/>
                 <t color='#A1A4AD' align='left'>Game time in seconds:</t><t color='#FFFFFF' align='right'>%1</t><br/><br/>
@@ -289,11 +289,11 @@ hav_CachePlayer = {
                 <t color='#A1A4AD' align='left'>Cached vehicles:</t><t color='#39a0ff' align='right'>%6</t><br/><br/>
                 <t color='#A1A4AD' align='left'>FPS:</t><t color='#FFFFFF' align='right'>%7</t><br/><br/>
                 <t color='#A1A4AD' align='left'>Obj draw distance:</t><t color='#FFFFFF' align='right'>%8</t><br/>
-            ", (round time), count allGroups, count allUnits, zbe_cachedUnits, zbe_allVehiclesCount, zbe_cachedVehicles, (round diag_fps), zbe_objectView];
+            ", (round time), count allGroups, count allUnits, zbe_cachedUnits, zbe_allVehiclesCount, zbe_cachedVehicles, (round diag_fps), zbe_objectView];*/
 				zbe_log_stats = format ["Groups: %1 # All/Cached Units: %2/%3 # All/Cached Vehicles: %4/%5 # FPS: %6 # ObjectDrawDistance: %7", count allGroups, count allUnits, zbe_cachedUnits, zbe_allVehiclesCount, zbe_cachedVehicles, (round diag_fps), zbe_objectView];
 				// diag_log format ["%1 ZBE_Cache (%2) ---  %3", (round time), name player, zbe_log_stats];
-				diag_log format ["%1 ZBE_Cache --- %2 ", (round time), zbe_log_stats];*/
-				diag_log format ["%1 Hav_Cache --- %3 / %2", (round time),count zbe_players2,count zbe_cachedP];
+				diag_log format ["%1 ZBE_Cache --- %2 ", (round time), zbe_log_stats];
+				// diag_log format ["%1 Hav_Cache --- %3 / %2", (round time),count zbe_players2,count zbe_cachedP];
 				
 			};
 		};
