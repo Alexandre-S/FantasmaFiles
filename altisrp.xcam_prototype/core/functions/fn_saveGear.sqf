@@ -1,3 +1,4 @@
+if(isServer OR !hasInterface) exitwith {};
 /*
     File: fn_saveGear.sqf
     Author: Bryan "Tonic" Boardwine

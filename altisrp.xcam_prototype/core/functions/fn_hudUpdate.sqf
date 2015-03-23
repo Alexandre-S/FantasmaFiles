@@ -1,3 +1,4 @@
+if(isServer OR !hasInterface) exitwith {};
 /*
 	File: fn_hudUpdate.sqf
 	Author: Bryan "Tonic" Boardwine

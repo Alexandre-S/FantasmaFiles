@@ -1,4 +1,5 @@
 #include <macro.h>
+if(isServer OR !hasInterface) exitwith {};
 /*
 	Master client initialization file
 */

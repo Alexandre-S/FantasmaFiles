@@ -11,7 +11,7 @@
 	Will also become a standalone system which is why it's setup like this.
 */
 private["_binConfigPatches","_cfgPatches","_endM"];
-if(isServer && !hasInterface) exitWith {}; //Server doesn't need to know.
+if(isServer OR !hasInterface) exitwith {}; //Server doesn't need to know.
 
 CONST(W_O_O_K_I_E_ANTI_ANTI_HAX,"false");
 CONST(W_O_O_K_I_E_FUD_ANTI_ANTI_HAX,"false");

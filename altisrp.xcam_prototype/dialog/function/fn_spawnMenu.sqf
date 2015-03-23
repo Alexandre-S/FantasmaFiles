@@ -1,3 +1,4 @@
+if(isServer OR !hasInterface) exitwith {};
 /*
 	File: fn_spawnMenu.sqf
 	Author: Bryan "Tonic" Boardwine

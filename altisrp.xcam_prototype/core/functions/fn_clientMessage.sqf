@@ -1,4 +1,4 @@
-if(isServer OR ((!IsDedicated)&&(!hasinterface))) exitwith {};
+if(isServer OR !hasInterface) exitwith {};
 private["_msg","_from", "_type","_fromplayer","_position"];
 _msg = _this select 0;
 _fromplayer = _this select 1;

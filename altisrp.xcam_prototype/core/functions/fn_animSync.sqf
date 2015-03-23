@@ -1,7 +1,7 @@
 /*
 	File: fn_animSync.sqf
 */
-if(isServer OR ((!IsDedicated)&&(!hasinterface))) exitwith {};
+if(isServer OR !hasInterface) exitwith {};
 private["_unit","_anim"];
 _unit = [_this,0,ObjNull,[Objnull]] call BIS_fnc_param;
 _anim = [_this,1,"",[""]] call BIS_fnc_param;
