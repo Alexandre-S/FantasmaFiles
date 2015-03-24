@@ -24,6 +24,8 @@ if(!isNil "_life_corpse_var") then {
 
 deleteVehicle _unit;
 
+_uid spawn TON_fnc_houseCleanup;
+
 /*
 waitUntil{sleep 0.1;count(allDeadMen) > 0};
 {
@@ -48,5 +50,3 @@ waitUntil{sleep 0.1;count(allDeadMen) > 0};
 		};
 	};
 } foreach allDeadMen;*/
-
-_uid spawn TON_fnc_houseCleanup;

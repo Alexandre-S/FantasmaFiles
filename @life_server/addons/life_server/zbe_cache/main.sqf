@@ -270,7 +270,7 @@ hav_CachePlayer = {
 };
 
 [] spawn {
-	sleep 30;
+	sleep 60;
 	if (zbe_debug) then {
 			while {true} do {
 				Sleep 15;
