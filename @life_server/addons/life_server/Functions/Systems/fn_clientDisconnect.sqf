@@ -10,7 +10,7 @@ _unit = _this select 0;
 _id = _this select 1;
 _uid = _this select 2;
 _name = _this select 3;
-if(isNull _unit) exitWith {};
+if(isNull _unit) exitWith {false};
 
 _containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
 {deleteVehicle _x;} foreach _containers;
@@ -23,8 +23,6 @@ if(!isNil "_life_corpse_var") then {
 };
 
 deleteVehicle _unit;
-
-
 
 /*
 waitUntil{sleep 0.1;count(allDeadMen) > 0};
@@ -52,3 +50,5 @@ waitUntil{sleep 0.1;count(allDeadMen) > 0};
 } foreach allDeadMen;*/
 
 _uid spawn TON_fnc_houseCleanup;
+
+false;

@@ -107,8 +107,9 @@ if(!isHLC) then {
 	[] execFSM "\life_server\cleanup.fsm";
 	//General cleanup for clients disconnecting.
 	// addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
-	HC_DC = ["HC_Disconnected","onPlayerDisconnected",{if(!isNil "Havena_HLCOBJ" && {_uid == getPlayerUID Havena_HLCOBJ}) then {life_HC_isActive = false;};}] call BIS_fnc_addStackedEventHandler;
-	
+	// HC_DC = ["HC_Disconnected","onPlayerDisconnected",{if(!isNil "Havena_HLCOBJ" && {_uid == getPlayerUID Havena_HLCOBJ}) then {life_HC_isActive = false;};}] call BIS_fnc_addStackedEventHandler;
+	// addMissionEventHandler ["HandleDisconnect",{if(!isNil "Havena_HLCOBJ" && {_this select 0 == hc_1}) then {life_HC_isActive = false;};}]; //Do not second guess this, this can be stacked this way.
+
 	// serv var to hc
 	serverloadhc = true;
 	publicVariable "serverloadhc";
@@ -321,8 +322,8 @@ else
 	/*fed_bank setVariable["safe",(count playableUnits),true];
 	[] spawn TON_fnc_federalUpdate;*/
 	
-	life_HC_isActive = true;
-	publicVariableServer "life_HC_isActive";
+	// life_HC_isActive = true;
+	// publicVariableServer "life_HC_isActive";
 	Havena_HLCOBJ = player;
 	publicVariable "Havena_HLCOBJ";
 	
