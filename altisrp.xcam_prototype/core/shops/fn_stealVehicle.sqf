@@ -44,7 +44,7 @@ if(typeOf _vehicle in["BAF_Offroad_D_HMG"]) then { _color = floor(random 4); };
 hint format["Votre compte est débité de %1 € pour cette transaction et le véhicule est désormais votre.",_price];
 life_atmcash = life_atmcash - _price;
 [1] call SOCK_fnc_updatePartial;
-[[_vehicle],"TON_fnc_vehicleDead",false,false] spawn life_fnc_MP;
+//[[_vehicle],"TON_fnc_vehicleDead",false,false] spawn life_fnc_MP;
 sleep 0.05;
 [[(getPlayerUID player),playerSide,_vehicle,_color,1],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
 closeDialog 0;

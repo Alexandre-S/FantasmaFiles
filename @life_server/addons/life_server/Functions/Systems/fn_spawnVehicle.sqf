@@ -147,7 +147,7 @@ _vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 sleep 0.01;
 _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9]];
 sleep 0.01;
-_vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
+// _vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
 _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
 
 //Reskin the vehicle 
