@@ -50,5 +50,3 @@ waitUntil{sleep 0.1;count(allDeadMen) > 0};
 } foreach allDeadMen;*/
 
 _uid spawn TON_fnc_houseCleanup;
-
-false;
