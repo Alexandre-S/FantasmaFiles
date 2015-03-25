@@ -1,0 +1,51 @@
+ _positionArray = []; 
+    _buildingArray = nearestObjects [player, ["house"], 500];
+	
+	{
+	
+		_positionArray pushBack ([_x] call BIS_fnc_buildingPositions);
+		
+	}foreach _buildingArray;
+	
+
+	{
+        _element = _forEachIndex; 
+        {
+			_item="Sign_Pointer_F";
+			_item = switch (_forEachIndex) do
+			{
+			 case 0: {"Sign_Arrow_F"};
+			 case 1: {"Sign_Arrow_Green_F"};
+			 case 2: {"Sign_Arrow_Blue_F"};
+			 case 3: {"Sign_Arrow_Pink_F"};
+			 case 4: {"Sign_Arrow_Yellow_F"};
+			 case 5: {"Sign_Arrow_Cyan_F"};
+			 case 6: {"Sign_Arrow_Direction_F"};
+			 case 7: {"Sign_Arrow_Direction_Green_F"};
+			 case 8: {"Sign_Arrow_Direction_Blue_F"};
+			 case 9: {"Sign_Arrow_Direction_Pink_F"};
+			 case 10: {"Sign_Arrow_Direction_Yellow_F"};
+			 case 11: {"Sign_Arrow_Direction_Cyan_F"};
+			 default {"Sign_Pointer_F"};
+			};
+
+				
+					_loot = createVehicle [_item, _x, [], 0, "CAN_COLLIDE"]; 
+					
+						_newMarker = createMarker [format ["%1_%2", _element, _forEachIndex], _x]; 
+						_newMarker setMarkerShape "ICON"; 
+						_newMarker setMarkerType "mil_dot"; 
+						_newMarker setMarkerColor "ColorRed";
+						_txt= format ["%1_%2", _element, _forEachIndex];
+						_newMarker setMarkerText _txt;
+					 
+					 
+					[_newMarker, _loot, 500] spawn  
+					{
+						waitUntil {player distance (_this select 1) > (_this select 2)}; 
+						deleteVehicle (_this select 1); 
+						deleteMarker (_this select 0); 
+					};
+				
+        }forEach _x; 
+    }forEach _positionArray; 

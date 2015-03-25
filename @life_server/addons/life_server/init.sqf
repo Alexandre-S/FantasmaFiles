@@ -296,11 +296,12 @@ else
 	waitUntil {sleep 0.1;!isNil "serverloadhc"};
 	
 	//verif plantage
-	_handle = [] spawn  {
+	/*_handle = [] spawn  {
 		private["_vehicleClass","_dbInfo"];
 		{
-			_vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
-			if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
+			// _vehicleClass = getText(configFile >> "CfgVehicles" >> (typeOf _x) >> "vehicleClass");
+			// if(_vehicleClass in ["Car","Support","Air","Ship","Armored","Submarine"]) then
+			if((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
 			{
 				_dbInfo = _x getVariable["dbInfo",[]];
 				if(count _dbInfo > 0) then
@@ -317,7 +318,7 @@ else
 			};
 		} foreach vehicles;
 	};
-	waitUntil {sleep 0.1;scriptDone _handle};
+	waitUntil {sleep 0.1;scriptDone _handle};*/
 	
 	/*fed_bank setVariable["safe",(count playableUnits),true];
 	[] spawn TON_fnc_federalUpdate;*/
