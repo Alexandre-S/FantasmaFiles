@@ -106,10 +106,10 @@ while {true} do
 							};
 
 							if(isNull _x) then {
-								systemChat "VEH NULL";
+								systemChat "VEH REMOVE NULL";
 
 								if(count _dbInfo > 0) then {
-									systemChat "Fixing...";
+									systemChat "REMOVE Fixing...";
 									waitUntil {sleep (random 0.3); !DB_Async_Active};
 									_sql = [_query,1] call DB_fnc_asyncCall;
 								};
