@@ -21,7 +21,7 @@ if(!isNil "TON_Debug") then {
 if(!isNull _source) then {
 	if(_source != _unit) then {
 		_curWep = currentWeapon _source;
-		if(_projectile in ["B_9x21_Ball","B_556x45_dual"] && _curWep in ["hgun_P07_snds_F","arifle_SDAR_F"]) then {
+		/*if(_projectile in ["B_9x21_Ball","B_556x45_dual"] && _curWep in ["hgun_P07_snds_F","arifle_SDAR_F"]) then {
 			// if(side _source == west && playerSide != west) then {
 				private["_distance","_isVehicle","_isQuad"];
 				_distance = if(_projectile == "B_556x45_dual") then {100} else {35};
@@ -42,10 +42,33 @@ if(!isNull _source) then {
 			// };
 			
 			//Temp fix for super tasers on cops.
-			/*if(playerSide == west && side _source == west) then {
+			// if(playerSide == west && side _source == west) then {
+				// _damage = 0;
+			// };
+		};*/
+		
+		 if(_projectile == "DDOPP_B_Taser" && _curWep in ["DDOPP_X26","DDOPP_X26_b"]) then {
+			// if(side _source == west && playerSide != west) then {
 				_damage = 0;
-			};*/
+				private["_distance","_isVehicle","_isQuad"];
+				_distance = 15;
+				//_distance = if(_projectile == "B_556x45_dual") then {100} else {35};
+				_isVehicle = if(vehicle player != player) then {true} else {false};
+				_isQuad = if(_isVehicle) then {if((typeOf (vehicle player)) in ["B_Quadbike_01_F","C_Kart_01_Vrana_F","C_Kart_01_Red_F","C_Kart_01_Blu_F","C_Kart_01_Fuel_F","C_Kart_01_F","MMT_Civ"]) then {true} else {false}} else {false};		
+				if(_unit distance _source < _distance) then {
+					if(!life_istazed && !(_unit getVariable["AGM_isCaptive",false])) then {
+						if(_isVehicle && _isQuad) then {
+							player action ["Eject",vehicle player];
+							[_unit,_source] spawn life_fnc_tazed;
+						};
+						if(!_isVehicle) then {
+							[_unit,_source] spawn life_fnc_tazed;
+						};
+					};
+				};
+			// };
 		};
+		
 	};
 };
 
