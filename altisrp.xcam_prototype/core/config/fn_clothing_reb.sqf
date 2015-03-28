@@ -100,6 +100,12 @@ switch (_filter) do
 			_ret pushBack ["U_PMC_CombatUniformLS_SSBPBB",nil,20000];
 			_ret pushBack ["U_PMC_CombatUniformLS_SSGPBB",nil,20000];
 		};
+		// Faction 2 = AEP
+		if(__GETC__(life_factnumber) == 2) then
+		{
+			_ret pushBack ["SMD_US_BLOPS_BDU",nil,10000];
+			_ret pushBack ["SMD_US_BLOPS_Digi_BDU",nil,10000];
+		};
 		// Faction 3 = Héphaistos
 		if(__GETC__(life_factnumber) == 3) then
 		{
