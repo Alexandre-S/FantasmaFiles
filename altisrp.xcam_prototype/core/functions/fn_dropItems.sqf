@@ -20,7 +20,7 @@ if (_death) then {
 	_data2 = [_data2];
 	if(life_is_processing) exitWith {hint "Vous êtes en train de process petit malin.";_exit = true;};
 	/*if(player != vehicle player) exitWith {titleText["Vous ne pouvez pas jeter un objet lorsque vous êtes dans un véhicule.","PLAIN"];_exit = true;};
-	if(side player != west) then {
+	if(playerSide != west) then {
 		_ind = [_data,life_illegal_items] call life_fnc_index;
 		if(_ind != -1 && ([west,getPos player,100] call life_fnc_nearUnits)) exitWith {titleText["C'est un objet illégal et les flics sont à proximité, vous ne pouvez jetez pas cette preuve","PLAIN"];_exit = true;};
 	};*/

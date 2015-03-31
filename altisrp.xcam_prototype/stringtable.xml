@@ -1952,7 +1952,7 @@
 		<Key ID="STR_Jail_LicenseNOTF">
 			<Original>For being arrested you have lost the following licenses if you own them\n\nFirearms License\nRebel License</Original>
 			<German>Bei der Verhaftung hast du folgende Lizenzen verloren\n\nWaffen Lizenz\nRebellen Lizenz</German>
-			<French>Après votre mise en prison, vous avez perdu les licences suivante si vous les aviez\n\nFirearms License\nRebel License</French>
+			<French>Après votre mise en prison, vous avez perdu les licences suivante si vous les aviez\n\nPermis de chasse\nEntrainement terroriste\Entrainement Thug</French>
 			<Italian>A causa del tuo arresto hai perso le seguenti licenze, se le possedevi\n\nPorto d'armi\nLicenza Ribelle</Italian>
 			<Portuguese>Você perdeu as seguintes licenças por ter sido preso\n\nPorte de Armas\n\nTreinamento Rebelde</Portuguese>
 		</Key>
@@ -3349,13 +3349,6 @@
 			<Italian>Cavalerie</Italian>
 			<Portuguese>Cavalerie</Portuguese>
 		</Key>
-		<Key ID="STR_License_Snipe">
-			<Original>Sniper Licence</Original>
-			<German>Sniper Licence</German>
-			<French>License Tireur de précision</French>
-			<Italian>Sniper Licence</Italian>
-			<Portuguese>Sniper Licence</Portuguese>
-		</Key>
 		<Key ID="STR_License_BacPJ">
 			<Original>BAC/PJ Licence</Original>
 			<German>BAC/PJ Licence</German>
@@ -3363,33 +3356,12 @@
 			<Italian>BAC/PJ Licence</Italian>
 			<Portuguese>BAC/PJ Licence</Portuguese>
 		</Key>
-		<Key ID="STR_License_grenad">
-			<Original>Grenad Licence</Original>
-			<German>Grenad Licence</German>
-			<French>License Grenadier</French>
-			<Italian>Grenad Licence</Italian>
-			<Portuguese>Grenad Licence</Portuguese>
-		</Key>
-		<Key ID="STR_License_PilotAuto">
-			<Original>Pilot Auto Licence</Original>
-			<German>Pilot Auto Licence</German>
-			<French>License Pilote Auto</French>
-			<Italian>Pilot Auto Licence</Italian>
-			<Portuguese>Pilot Auto Licence</Portuguese>
-		</Key>
 		<Key ID="STR_License_OMedic">
-			<Original>ONU Medic Licence</Original>
-			<German>ONU Medic Licence</German>
-			<French>License Medic ONU</French>
-			<Italian>ONU Medic Licence</Italian>
-			<Portuguese>ONU Medic Licence</Portuguese>
-		</Key>
-		<Key ID="STR_License_OMecano">
-			<Original>ONU Mecano Licence</Original>
-			<German>ONU Mecano Licence</German>
-			<French>License Mecano ONU</French>
-			<Italian>ONU Mecano Licence</Italian>
-			<Portuguese>ONU Mecano Licence</Portuguese>
+			<Original>Cop Medic Licence</Original>
+			<German>Cop Medic Licence</German>
+			<French>License Medic Cop</French>
+			<Italian>Cop Medic Licence</Italian>
+			<Portuguese>Cop Medic Licence</Portuguese>
 		</Key>
 		<Key ID="STR_License_Rebel">
 			<Original>Rebel Training</Original>
@@ -3397,6 +3369,13 @@
 			<French>Entrainement terroriste</French>
 			<Italian>Licenza da Ribelle</Italian>
 			<Portuguese>Treinamento Rebelde</Portuguese>
+		</Key>
+		<Key ID="STR_License_Thug">
+			<Original>Thug Training</Original>
+			<German>Thugnausbildung</German>
+			<French>Entrainement Thug</French>
+			<Italian>Licenza da Thug</Italian>
+			<Portuguese>Treinamento Thug</Portuguese>
 		</Key>
 		<Key ID="STR_License_Truck">
 			<Original>Truck License</Original>

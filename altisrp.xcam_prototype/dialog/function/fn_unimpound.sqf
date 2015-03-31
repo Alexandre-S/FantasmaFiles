@@ -19,8 +19,8 @@ if(isNil "_vehicle") exitWith {hint localize "STR_Garage_Selection_Error"};
 
 _price = [_vehicle,__GETC__(life_garage_prices)] call life_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
-if(side player == west) then { _price = 1; };
-if(side player == independent) then { _price = 100; };
+if(playerSide == west) then { _price = 1; };
+if(playerSide == independent) then { _price = 100; };
 if(license_civ_dep && _vehicle == "I_Heli_Transport_02_F") then {
 	_price = _price/10;
 };

@@ -22,11 +22,11 @@ switch (_filter) do
 	{
 		_ret = 
 		[
-			["U_Rangemaster","Uniforme Croix-Rouge",250],
-			//["U_C_Journalist","Uniforme SAMU",250],
-			["U_Competitor","Uniforme Pompier",250],
-			["U_O_OfficerUniform_ocamo","Pompier intervention noir",550],
-			["U_C_WorkerCoveralls","Pompier intervention rouge",550],
+			// ["U_Rangemaster","Uniforme Croix-Rouge",250],
+			["U_Rangemaster","Uniforme SAMU",250],
+			["U_Competitor","Uniforme Pompier",500],
+			["U_O_OfficerUniform_ocamo","Pompier intervention noir",2500],
+			["U_C_WorkerCoveralls","Pompier intervention rouge",2500],
 			//["FANTASMA_MedicTenue",nil,550],
 			["U_I_Wetsuit",nil,1000]
 		];
@@ -39,33 +39,21 @@ switch (_filter) do
 		[	
 		
 		
-			["H_Cap_red",nil,130],
-			["H_Cap_oli",nil,130],
-			["H_Cap_headphones",nil,200],
-			["H_Cap_tan",nil,200],
-			["H_Cap_blk",nil,200],
-			["H_MilCap_gry",nil,200],
-			["H_Bandanna_sgg",nil,200],
-			["H_Bandanna_gry",nil,200],
-			["H_Watchcap_blk",nil,200],
-			["H_Hat_tan",nil,200],
-			["H_Hat_grey",nil,200],
-			["H_Hat_brown",nil,200],
-			["H_HelmetCrew_B",nil,500],
-			["H_PilotHelmetHeli_B",nil,500]
-	
-			// ["rds_Woodlander_cap1","Chapka 1",190],
-			// ["rds_Woodlander_cap2","Chapka 2",190],
-			// ["rds_Woodlander_cap3","Chapka 3",190],
-			// ["rds_Woodlander_cap4","Chapka 4",190],
-			// ["rds_Villager_cap1","Béret 1",170],
-			// ["rds_Villager_cap2","Béret 2",170],
-			// ["rds_Villager_cap3","Béret 3",170],
-			// ["rds_Villager_cap4","Béret 4",170],
-			// ["rds_worker_cap1","Bonnet 1",230],
-			// ["rds_worker_cap2","Bonnet 2",230],
-			// ["rds_worker_cap3","Bonnet 3",230],
-			// ["rds_worker_cap4","Bonnet 4",230]
+			["H_Cap_red",nil,500],
+			["H_MilCap_gry",nil,500],
+			["rhs_gssh18",nil,700],
+			["H_Cap_marshal",nil,700],
+			["H_Cap_headphones",nil,700]
+			// ["H_Cap_oli",nil,130],
+			// ["H_Cap_tan",nil,200],
+			// ["H_Cap_blk",nil,200],
+			// ["H_Bandanna_sgg",nil,200],
+			// ["H_Bandanna_gry",nil,200],
+			// ["H_Hat_tan",nil,200],
+			// ["H_Hat_grey",nil,200],
+			// ["H_Hat_brown",nil,200],
+			// ["H_HelmetCrew_B",nil,500],
+			// ["H_PilotHelmetHeli_B",nil,500]
 		];
 	};
 	
@@ -74,29 +62,40 @@ switch (_filter) do
 	{
 		_ret = 
 		[
-			["G_Shades_Black",nil,25],
-			["G_Shades_Blue",nil,20],
-			["G_Sport_Blackred",nil,20],
-			["G_Sport_Checkered",nil,20],
-			["G_Sport_Blackyellow",nil,20],
-			["G_Sport_BlackWhite",nil,20],
-			["G_Spectacles",nil,25],
-			["G_Spectacles_Tinted",nil,30],
-			["G_Squares",nil,10],
-			["G_Aviator",nil,100],
+			["G_Sport_BlackWhite",nil,50],
+			["G_Sport_Blackyellow",nil,50],
+			["G_Sport_Red",nil,50],
+			["G_Sport_Checkered",nil,50],
+			["G_Sport_Greenblack",nil,50],
+			["G_Sport_Blackred",nil,50],
+			
+			["G_Shades_Blue",nil,100],
+			["G_Shades_Black",nil,100],
+			["G_Shades_Red",nil,100],
+			["G_Shades_Green",nil,100],
+			["G_Squares_Tinted",nil,100],
+			["G_Squares",nil,100],
+			
+			["G_Lady_Red",nil,150],
 			["G_Lady_Mirror",nil,150],
 			["G_Lady_Dark",nil,150],
 			["G_Lady_Blue",nil,150],
-			["G_Lowprofile",nil,30],
-			["G_Combat",nil,55],
-			["G_Bandanna_tan",nil,100],
-			["G_Bandanna_khk",nil,100],
-			["G_Bandanna_blk",nil,100],
-			["G_Bandanna_oli",nil,100],
-			["G_Bandanna_shades",nil,100],
-			["G_Bandanna_sport",nil,100],
+			
+			["G_Spectacles",nil,200],
+			["G_Spectacles_Tinted",nil,200],
+			["G_Aviator",nil,200],
+			
+			["rhs_googles_black",nil,200],
+			["rhs_googles_clear",nil,200],
+			
+			["G_Lowprofile",nil,250],
+			["G_Goggles_VR",nil,250],
+
+			["Pomi_Goggles",nil,250],
+			["Pomi_Goggles_Grn",nil,250],
+			["Pomi_Goggles_Snd",nil,250]
+			
 			["Mask_M40",nil,2000],
-			["Mask_M40_OD",nil,2000],
 			["G_Diving",nil,500]
 		];
 	};
@@ -106,13 +105,11 @@ switch (_filter) do
 	{
 		_ret = 
 		[
-		
+			["rhs_vest_commander",nil,1000],
+			["rhs_6sh46",nil,1000],
 			
-			["V_Rangemaster_belt",nil,1000],
-			["V_BandollierB_blk",nil,1200],
-			["V_PlateCarrier1_blk",nil,1500],
-			["V_TacVest_blk",nil,1600],
-			["V_TacVestIR_blk",nil,1800],
+			["V_BandollierB_blk",nil,1500],
+			["V_TacVestIR_blk",nil,15000],
 			["V_RebreatherIR",nil,2000]
 		];
 	};
@@ -123,13 +120,15 @@ switch (_filter) do
 		_ret = 
 		[
 		
-			["PMC_AssaultPack_Blk",nil,2500],
-			["B_FieldPack_blk",nil,3000],
-			["PMC_B_Kitbag_blk",nil,4500],
-			["PMC_B_Carryall_blk",nil,5000],
+			["B_AssaultPack_blk",nil,2500],
+			["B_FieldPack_blk",nil,3500],
 			["B_TacticalPack_blk",nil,4500],
-			["tf_anarc164",nil,5000],
-			["B_Parachute",nil,5000]
+			["PMC_B_Kitbag_blk",nil,5500],
+			["PMC_B_Carryall_blk",nil,6500],
+			
+			["tf_anprc155",nil,15000],
+			// ["tf_anarc164",nil,15000],
+			["B_Parachute",nil,15000]
 		];
 	};
 };

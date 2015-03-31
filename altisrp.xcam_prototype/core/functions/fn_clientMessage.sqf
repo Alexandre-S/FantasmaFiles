@@ -20,7 +20,7 @@ switch (_type) do
 	
 	case 1 :
 	{
-		if(side player != west) exitWith {};
+		if(playerSide != west) exitWith {};
 		private["_message"];
 		_message = format["---APPEL GENDARMERIE DE %1: %2",_from,_msg];
 		hint parseText format ["<t color='#316dff'><t size='2'><t align='center'>Nouvelle demande<br/><br/><t color='#33CC33'><t align='left'><t size='1'>A: <t color='#ffffff'>Tous les agents<br/><t color='#33CC33'>De: <t color='#ffffff'>%1<br/><br/><t color='#33CC33'>Message:<br/><t color='#ffffff'>%2",_from,_msg];

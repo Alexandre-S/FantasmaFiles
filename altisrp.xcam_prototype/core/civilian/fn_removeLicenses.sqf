@@ -14,6 +14,7 @@ switch (_state) do
 	case 0:
 	{
 		license_civ_rebel = false;
+		license_civ_thug = false;
 		license_civ_gun = false;
 		//license_civ_driver = false;
 		//license_civ_heroin = false;
@@ -26,6 +27,7 @@ switch (_state) do
 	{
 		license_civ_gun = false;
 		license_civ_rebel = false;
+		license_civ_thug = false;
 		//license_civ_driver = false;
 		license_civ_dep = false;
 		if(player getVariable["life_dep", false]) then {

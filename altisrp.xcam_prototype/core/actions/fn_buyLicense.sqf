@@ -19,7 +19,7 @@ _price = ceil(_price - (((__GETC__(life_donator) * 5) / 100) * _price));
 	// life_isblacklisted = false;
 // };
 
-if (((_type == "taxi") || (_type == "dep")) && life_isrebel) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme terroriste."};
+if (((_type == "taxi") || (_type == "dep") || (_type == "thug") ) && life_isrebel) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme terroriste."};
 if (((_type == "rebel") || (_type == "dep")) && life_istaxi) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme Taxi."};
 if (((_type == "taxi") || (_type == "rebel")) && life_isdep) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme dépanneur."};
 
@@ -106,7 +106,7 @@ if (_type == "rebel") then
 		};
 	};
 	
-	_msg = parseText format["%1, vous êtes désormais rebelle!<br/><br/>En tant que <t color='#FF0000'>rebelle</t> vous devez vous conformer à certaines règles ou risquez la suppression de votre licence voir tout simplement être banni du serveur<br/><br/><t color='#FF0000'>Il est très important</t>de comprendre que vous êtes toujours un civil, et devez obéir à toutes les règles qui s'appliquent aux civils. Un rebelle se doit d'avoir un RP exemplaire. <br/><br/>En tant que rebelle, vous vous exposez à des représailles de la part des force de l'ordre. <t color='#00FF00'>Ne soyez pas étonné de vous faire attaquer sans sommation si vous vous ballader en tenu/équipement ou vehicules rebelles aux yeux de tous.</t>.<br/><br/>", profileName];
+	_msg = parseText format["%1, vous êtes désormais terroriste!<br/><br/>En tant que <t color='#FF0000'>terroriste</t> vous devez vous conformer à certaines règles ou risquez la suppression de votre licence voir tout simplement être banni du serveur<br/><br/><t color='#FF0000'>Il est très important</t>de comprendre que vous êtes toujours un civil, et devez obéir à toutes les règles qui s'appliquent aux civils. Un terroriste se doit d'avoir un RP exemplaire. <br/><br/> <t color='#00FF00'>Ne soyez pas étonné de vous faire attaquer sans sommation si vous vous ballader en tenu/équipement ou vehicules terroristes aux yeux de tous.</t>.<br/><br/>", profileName];
 	"Vous êtes un mafieux" hintC _msg;
 };
 

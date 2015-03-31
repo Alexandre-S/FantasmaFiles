@@ -1,0 +1,67 @@
+[] spawn {
+    _buildingArray = nearestObjects [player, ["house"], 50000];
+	_exlude = ["Land_Pier_F","Land_A_Crane_02a","Land_A_Crane_02b","Land_nav_pier_m_2","Land_Podesta_1_mid_cornp","Land_Podesta_1_stairs"];
+	
+	{
+		if(typeof _x in _exlude) then {
+			_buildingArray = _buildingArray - [_x];
+		};
+	}forEach _buildingArray;
+	hint format["%1", count _buildingArray];   
+
+	_z = 0;
+	while{_z<1000} do {
+		_building = _buildingArray select floor random count _buildingArray;
+		{
+			if(random 100 > 90) then {
+				_item="Sign_Pointer_F";
+				_item = switch (_forEachIndex) do
+				{
+					case 0: {"Sign_Arrow_F"};
+					case 1: {"Sign_Arrow_Green_F"};
+					case 2: {"Sign_Arrow_Blue_F"};
+					case 3: {"Sign_Arrow_Pink_F"};
+					case 4: {"Sign_Arrow_Yellow_F"};
+					case 5: {"Sign_Arrow_Cyan_F"};
+					case 6: {"Sign_Arrow_Direction_F"};
+					case 7: {"Sign_Arrow_Direction_Green_F"};
+					case 8: {"Sign_Arrow_Direction_Blue_F"};
+					case 9: {"Sign_Arrow_Direction_Pink_F"};
+					case 10: {"Sign_Arrow_Direction_Yellow_F"};
+					case 11: {"Sign_Arrow_Direction_Cyan_F"};
+					default {"Sign_Pointer_F"};
+				};
+
+					
+						_loot = createVehicle [_item, _x, [], 0, "CAN_COLLIDE"];
+						_holder = createVehicle ["Land_FMradio_F",_x, [], 0, "can_Collide"];
+						
+							_newMarker = createMarker [format ["%1_%2", _z, _forEachIndex], _x];
+							_newMarker setMarkerShape "ICON";
+							_newMarker setMarkerType "mil_dot";
+							_newMarker setMarkerColor "ColorRed";
+							_txt= format ["%1_%2", typeof _building, _forEachIndex];
+							_newMarker setMarkerText _txt;
+						 
+						 _z = _z+ 1;
+						
+			};
+		}forEach ([_building] call BIS_fnc_buildingPositions);
+
+	};
+	
+	hint format["%1 / %2",_z, count _buildingArray];   
+};
+
+
+
+
+
+
+
+	[_newMarker, _loot, 500] spawn  
+							{
+								waitUntil {player distance (_this select 1) > (_this select 2)};
+								deleteVehicle (_this select 1);
+								deleteMarker (_this select 0);
+							};

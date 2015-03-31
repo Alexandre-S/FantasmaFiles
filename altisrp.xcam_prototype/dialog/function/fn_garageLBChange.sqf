@@ -29,12 +29,12 @@ _assurPrice = if(_assurPrice == -1) then {1000} else {(__GETC__(life_assur_price
 //vente donator
 _sellPrice = ceil(_sellPrice + (((__GETC__(life_donator) * 5) / 100) * _sellPrice));
 
-if(side player == west) then {
+if(playerSide == west) then {
 	_retrievePrice = 1;
 	_sellPrice = 1;
 	_assurPrice = 1;
 };
-if(side player == independent) then {
+if(playerSide == independent) then {
 	_retrievePrice = 100;
 	_sellPrice = 100;
 	_assurPrice = 100;

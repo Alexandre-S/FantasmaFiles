@@ -16,26 +16,24 @@ switch (_type) do
 	case "pilot": {500000}; //Pilot/air license cost
 	case "gun": {100000}; //Firearm/gun license cost
 	case "dive": {65000}; //Diving license cost
-	case "oil": {60000}; //Oil processing license cost
+	case "oil": {70000}; //Oil processing license cost
 	case "cair": {100000}; //Cop Pilot License cost
 	case "swat": {35000}; //Swat License cost
 	case "cg": {5000}; //Coast guard license cost
-	case "piloteauto": {50000}; //piloteauto License cost
-	//case "snipe": {150000}; //snipe license cost
-	case "heroin": {250000}; //Heroin processing license cost
-	case "lsd": {225000}; //LSD processing license cost
-	case "marijuana": {200000}; //Marijuana processing license cost
-	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
+	case "heroin": {275000}; //Heroin processing license cost
+	case "lsd": {325000}; //LSD processing license cost
+	case "marijuana": {250000}; //Marijuana processing license cost
 	case "gang": {10000}; //Gang license cost
 	case "rebel": {150000}; //Rebel license cost
+	case "thug": {150000}; //Thug license cost
 	case "truck": {250000}; //Truck license cost
 	case "hunting": {25000};
-	case "diamond": {100000};
-	case "salt": {75000};
+	case "diamond": {85000};
+	case "salt": {45000};
 	case "cocaine": {300000};
-	case "sand": {75000};
-	case "iron": {90000};
-	case "copper": {15000};
+	case "sand": {115000};
+	case "iron": {30000};
+	case "copper": {100000};
 	case "cement": {15000};
 	case "mair": {15000};
 	case "home": {75000};

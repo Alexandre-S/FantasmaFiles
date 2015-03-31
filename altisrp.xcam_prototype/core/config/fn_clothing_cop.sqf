@@ -24,13 +24,11 @@ switch (_filter) do
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
-			// _ret pushBack ["ARC_FR_CE_Uniform",nil,0];
 			_ret pushBack ["rpima_uniform",nil,0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
-			// _ret pushBack ["ARC_FR_CE_Uniform_vest",nil,0];
 		};
 		// BAC / PJ
 		if(license_cop_bacpj) then
@@ -60,7 +58,7 @@ switch (_filter) do
 			_ret pushBack ["gign_uniform",nil,0];
 		};
 		// Pilote
-		if(license_cop_air || license_cop_onumecano) then
+		if(license_cop_air) then
 		{
 			_ret pushBack ["U_B_PilotCoveralls",nil,0];
 			_ret pushBack ["U_I_pilotCoveralls",nil,0];
@@ -70,7 +68,6 @@ switch (_filter) do
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
-			// _ret pushBack ["U_B_survival_uniform",nil,0];
 		};
 		
 		// Grade Haut-Gradés
@@ -78,12 +75,11 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_B_GhillieSuit",nil,0];
 			_ret pushBack ["U_I_GhillieSuit",nil,0];
-			// _ret pushBack ["U_O_GhillieSuit",nil,0];
 		};
 		
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		
-		if(life_sexe) then
+		/*if(life_sexe) then
 		{
 			_ret pushBack ["B_FEM_NATO","Tenue femme 1",0];
 			_ret pushBack ["B_FEM_FIA","Tenue femme 2",0];
@@ -96,7 +92,7 @@ switch (_filter) do
 			_ret pushBack ["B_FEM_NATO_Rolled","Tenue femme 9",0];
 			_ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",0];
 			_ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",0];
-		};
+		};*/
 	};
 	
 	//Hats
@@ -111,9 +107,9 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 3) then
 		{
 			_ret pushBack ["H_Beret_02",nil,0];
-			_ret pushBack ["H_PilotHelmetHeli_B",nil,0];
+			// _ret pushBack ["H_PilotHelmetHeli_B",nil,0];
 			_ret pushBack ["H_Cap_headphones",nil,0];
-			_ret pushBack ["H_Watchcap_khk",nil,0];
+			_ret pushBack ["H_Watchcap_blk",nil,0];
 		};
 		// PJ / BAC
 		if(license_cop_bacpj) then
@@ -125,14 +121,17 @@ switch (_filter) do
 			_ret pushBack ["H_Cap_blu",nil,0];
 			_ret pushBack ["H_Cap_grn",nil,0];
 			_ret pushBack ["H_Cap_grn_BI",nil,0];
+			
+			_ret pushBack ["H_Watchcap_khk",nil,0];
+			_ret pushBack ["H_Cap_police",nil,0];
 			_ret pushBack ["RPIMA_Balaclava",nil,0];
 		};
 		// Unité tactique
 		if(license_cop_swat) then
 		{
 			_ret pushBack ["H_Cap_oli_hs",nil,0];
-			_ret pushBack ["H_Booniehat_khk_hs",nil,0];
-			_ret pushBack ["H_MilCap_gry",nil,0];
+			_ret pushBack ["H_Booniehat_khk_hs",nil,0]; //
+			_ret pushBack ["H_MilCap_gry",nil,0]; //
 			_ret pushBack ["H_MilCap_mcamo",nil,0];
 			_ret pushBack ["gign_Balaclava",nil,0];
 			_ret pushBack ["gign_helm",nil,0];
@@ -140,12 +139,12 @@ switch (_filter) do
 			_ret pushBack ["gign_helm4",nil,0];
 		};
 		// Pilote
-		if(license_cop_air || license_cop_onumecano) then
+		if(license_cop_air) then
 		{
-			_ret pushBack ["H_HelmetCrew_B",nil,0];
-			_ret pushBack ["H_HelmetCrew_O",nil,0];
-			_ret pushBack ["H_CrewHelmetHeli_B",nil,0];
-			_ret pushBack ["H_CrewHelmetHeli_O",nil,0];
+			// _ret pushBack ["H_HelmetCrew_B",nil,0];
+			// _ret pushBack ["H_HelmetCrew_O",nil,0];
+			// _ret pushBack ["H_CrewHelmetHeli_B",nil,0];
+			// _ret pushBack ["H_CrewHelmetHeli_O",nil,0];
 		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
@@ -171,25 +170,19 @@ switch (_filter) do
 	{
 		_ret = 
 		[
-			["G_Shades_Black",nil,0],
-			["G_Shades_Blue",nil,0],
-			["G_Shades_Green",nil,0],
-			["G_Shades_Red",nil,0],
-			["G_Sport_Blackred",nil,0],
-			["G_Sport_Checkered",nil,0],
-			["G_Sport_Blackyellow",nil,0],
-			["G_Sport_BlackWhite",nil,0],
-			["G_Aviator",nil,0],
-			["G_Squares",nil,0],
-			["G_Lowprofile",nil,0],
-			["G_Combat",nil,0],
 			["G_Tactical_Clear",nil,0],
-			["Mask_M50",nil,0],
+			["G_Tactical_Black",nil,0],
 			
-			["rpima_goggle_orange",nil,0],
-			["rpima_goggle_black",nil,0],
-			["rpima_goggle_blue",nil,0],
-			["rpima_goggle_green",nil,0]
+			["Pomi_Goggles",nil,0],
+			["Pomi_Goggles_Grn",nil,0],
+			["Pomi_Goggles_Snd",nil,0]
+			
+			["Mask_M50",nil,0]
+			
+			// ["rpima_goggle_orange",nil,0],
+			// ["rpima_goggle_black",nil,0],
+			// ["rpima_goggle_blue",nil,0],
+			// ["rpima_goggle_green",nil,0]
 		];
 	};
 	
@@ -197,7 +190,7 @@ switch (_filter) do
 	case 3:
 	{
 		_ret pushBack ["V_Rangemaster_belt",nil,0];
-		_ret pushBack ["V_TacVest_oli",nil,0];
+		_ret pushBack ["V_TacVest_blk_POLICE",nil,0];
 		
 		if(__GETC__(life_coplevel) >= 2) then
 		{
@@ -210,12 +203,11 @@ switch (_filter) do
 			_ret pushBack["V_Chestrig_blk",nil,0];
 			_ret pushBack["V_Chestrig_oli",nil,0];
 			_ret pushBack["V_PlateCarrier1_rgr",nil,0];
-			_ret pushBack["V_PlateCarrier2_rgr",nil,0];
 			_ret pushBack["V_PlateCarrier1_blk",nil,0];
 		
 		};
 		// Medic
-		if(license_cop_onumedic) then
+		if(license_cop_medic) then
 		{
 			_ret pushBack ["V_TacVestIR_blk",nil,0];
 		};
@@ -223,7 +215,6 @@ switch (_filter) do
 		if(license_cop_swat) then
 		{
 			_ret pushBack["gign_HeavyVest",nil,0];
-			// _ret pushBack["gign_BlackVest",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 4) then
 		{
@@ -244,43 +235,45 @@ switch (_filter) do
 	{
 		_ret pushBack ["B_AssaultPack_rgr",nil,0];
 		_ret pushBack ["B_AssaultPack_blk",nil,0];
+		
 		_ret pushBack ["B_FieldPack_blk",nil,0];
-		_ret pushBack ["B_TacticalPack_blk",nil,0];
+		
 		_ret pushBack ["B_TacticalPack_rgr",nil,0];
-		_ret pushBack ["PMC_AssaultPack_Blk",nil,0];
+		_ret pushBack ["B_TacticalPack_blk",nil,0];
+		
 		_ret pushBack ["PMC_B_Kitbag_blk",nil,0];
+		
 		_ret pushBack ["PMC_B_Carryall_blk",nil,0];
+		
 		_ret pushBack ["tf_rt1523g_black",nil,0];
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
 		{
+			_ret pushBack ["B_AssaultPack_mcamo",nil,0];
 			_ret pushBack ["B_Kitbag_mcamo",nil,0];
-			_ret pushBack ["B_AssaultPack_dgtl",nil,0];
-			_ret pushBack ["B_AssaultPack_Kerry",nil,0];
 			_ret pushBack ["B_Kitbag_rgr",nil,0];
-			// _ret pushBack ["B_Bergen_blk",nil,0];
 			_ret pushBack ["B_Bergen_mcamo",nil,0];
-			_ret pushBack ["tf_rt1523g",nil,0];
-			_ret pushBack ["tf_rt1523g_sage",nil,0];
-			_ret pushBack ["tf_rt1523g_green",nil,0];
-			// _ret pushBack ["tf_rt1523g_rhs",nil,0];
-			_ret pushBack ["tf_rt1523g_fabric",nil,0];
-		};
-		// Unité Tactique
-		if(license_cop_swat) then
-		{
-			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
-		};
-		// Grade Lieutenant
-		if(__GETC__(life_coplevel) >= 2) then
-		{
 			_ret pushBack ["B_Carryall_cbr",nil,0];
 			_ret pushBack ["B_Carryall_khk",nil,0];
 			_ret pushBack ["B_Carryall_mcamo",nil,0];
+			
+			_ret pushBack ["tf_rt1523g",nil,0];
+			_ret pushBack ["tf_rt1523g_bwmod",nil,0];
+			_ret pushBack ["tf_rt1523g_sage",nil,0];
+			_ret pushBack ["tf_rt1523g_green",nil,0];
+			_ret pushBack ["tf_rt1523g_rhs",nil,0];
+			_ret pushBack ["tf_rt1523g_fabric",nil,0];
+			_ret pushBack ["tf_rt1523g_big",nil,0];
+			_ret pushBack ["tf_rt1523g_big_bwmod",nil,0];
+			_ret pushBack ["tf_rt1523g_big_rhs",nil,0];
+		};
+		// Unité Tactique
+		if(license_cop_swat || __GETC__(life_coplevel) >= 2) then
+		{
 			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
 		};
-		// Pilote
-		if(license_cop_air || license_cop_onumecano) then
+		// 
+		if(license_cop_air) then
 		{
 			_ret pushBack ["B_Parachute",nil,0];
 		};

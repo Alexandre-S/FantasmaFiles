@@ -29,16 +29,16 @@ switch(true) do
 	
 	
 	
-	case (playerSide == independent && _uniform == "U_Rangemaster"):
+	/*case (playerSide == independent && _uniform == "U_Rangemaster"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\medic_uniform.paa"];
 		//if(backpack player != "") then {(unitBackpack player) setObjectTextureGlobal [0,""];};
-	};
+	};*/
 	case (playerSide == independent && _uniform == "U_Competitor"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\Polo_Pompiers.paa"];
 	};
-	case (playerSide == independent && _uniform == "U_C_Journalist"):
+	case (playerSide == independent && _uniform == "U_Rangemaster"):
 	{
 		player setObjectTextureGlobal  [0, "altisrpfr\textures\uniforme_samu.paa"];
 	};

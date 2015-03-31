@@ -22,11 +22,15 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 	}
 	else
 	{
-		_price = (__GETC__(life_weapon_shop_array) select _iS) select 1;
-		//vente donator
-		_price = ceil(_price + (((__GETC__(life_donator) * 5) / 100) * _price));
+		if(playerSide in [west,independent]) then {
+			_price = 0;
+		} else {
+			_price = (__GETC__(life_weapon_shop_array) select _iS) select 1;
+			//vente donator
+			_price = ceil(_price + (((__GETC__(life_donator) * 5) / 100) * _price));
+		};
 	};
-	_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Prix: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
+	_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Vente: <t color='#8cff9b'>$%1</t></t>",[(_price)] call life_fnc_numberText];
 	_control lbSetValue[_index,_price];
 }
 else
