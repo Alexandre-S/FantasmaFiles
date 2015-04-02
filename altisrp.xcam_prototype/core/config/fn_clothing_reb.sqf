@@ -183,7 +183,7 @@ switch (_filter) do
 			["H_Shemag_olive",nil,1250],
 			["H_Shemag_olive_hs",nil,1250],
 			["H_ShemagOpen_khk",nil,1250],
-			["H_Shemag_tan",nil,1250],
+			["H_Shemag_tan",nil,1250]
 		];
 	
 		// Armée privée

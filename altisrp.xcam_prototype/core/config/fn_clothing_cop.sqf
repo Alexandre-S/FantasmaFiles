@@ -175,7 +175,7 @@ switch (_filter) do
 			
 			["Pomi_Goggles",nil,0],
 			["Pomi_Goggles_Grn",nil,0],
-			["Pomi_Goggles_Snd",nil,0]
+			["Pomi_Goggles_Snd",nil,0],
 			
 			["Mask_M50",nil,0]
 			

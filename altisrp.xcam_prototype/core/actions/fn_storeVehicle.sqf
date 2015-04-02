@@ -45,7 +45,7 @@ if(count _nearVehicles > 0) then
 		_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
 		if(_cP >= 1) exitWith {};
 		if(!alive player) exitWith {};
-		if(player != vehicle player) exitWith {};
+		if(player != vehicle player) exitWith {life_interrupted = true;};
 		if(life_interrupted) exitWith {};
 		if(isNil "_vehicle") exitWith {};
 		if(isNull _vehicle) exitWith {};
@@ -54,9 +54,9 @@ if(count _nearVehicles > 0) then
 	life_action_inUse = false;
 	5 cutText ["","PLAIN"];
 	player playActionNow "stop";
-	if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
+	if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"];};
 
-
+	if(!alive player) exitWith {};
 	if(isNil "_vehicle") exitWith {hint localize "STR_Garage_NoNPC"};
 	if(isNull _vehicle) exitWith {};
 	[] call life_fnc_getHLC;

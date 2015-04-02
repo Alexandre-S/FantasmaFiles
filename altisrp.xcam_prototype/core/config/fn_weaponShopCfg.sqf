@@ -326,7 +326,7 @@ switch(_shop) do
 							["AGM_HandFlare_White",1000],
 							["AGM_HandFlare_Red",1000],
 							["AGM_HandFlare_Green",1000],
-							["AGM_HandFlare_Yellow",1000]	
+							["AGM_HandFlare_Yellow",1000],
 							["AGM_IR_Strobe_Item",nil,0]
 						]
 					];

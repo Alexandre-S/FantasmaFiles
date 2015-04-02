@@ -93,7 +93,7 @@ switch (_filter) do
 
 			["Pomi_Goggles",nil,250],
 			["Pomi_Goggles_Grn",nil,250],
-			["Pomi_Goggles_Snd",nil,250]
+			["Pomi_Goggles_Snd",nil,250],
 			
 			["Mask_M40",nil,2000],
 			["G_Diving",nil,500]

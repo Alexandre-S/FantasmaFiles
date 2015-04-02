@@ -63,7 +63,7 @@ if((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle i
 		[[0,"STR_NOTF_HasImpounded",true,[profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		life_atmcash = life_atmcash + _price;
 	}
-		else
+	else
 	{
 		hint localize "STR_NOTF_ImpoundingCancelled";
 	};
