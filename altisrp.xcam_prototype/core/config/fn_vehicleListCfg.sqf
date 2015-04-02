@@ -31,10 +31,13 @@ switch (_shop) do
 			["C_Hatchback_01_F",14250],
 			["RDS_Lada_Civ_01",15000],
 			["RDS_Gaz24_Civ_01",16000],
+			["rhs_uaz_open_vmf",19500],
+			["rhs_uaz_vdv",22000],
 			["RDS_Golf4_Civ_01",41500],
 			["C_Offroad_01_F",33750],
-			["BAF_Offroad_D",47500],
 			["LandRover_ACR",47500],
+			["BAF_Offroad_D",50000],
+			["rhs_tigr_ffv_vdv",50000],
 			["C_SUV_01_F",52500],
 			["RDS_Octavia_Civ_01",60000],
 			["C_Van_01_transport_F",97500]
@@ -56,10 +59,13 @@ switch (_shop) do
 			["C_Hatchback_01_F",14250],
 			["RDS_Lada_Civ_01",15000],
 			["RDS_Gaz24_Civ_01",16000],
+			["rhs_uaz_open_vmf",19500],
+			["rhs_uaz_vdv",22000],
 			["RDS_Golf4_Civ_01",41500],
 			["C_Offroad_01_F",33750],
-			["BAF_Offroad_D",47500],
 			["LandRover_ACR",47500],
+			["BAF_Offroad_D",50000],
+			["rhs_tigr_ffv_vdv",50000],
 			["C_SUV_01_F",52500],
 			["C_Van_01_transport_F",97500]
 		];
@@ -80,25 +86,22 @@ switch (_shop) do
 		_return =
 		[
 			["C_Van_01_box_F",127500],
-			["DAR_4x4",175500],
-			["DAR_MK23",195300],
+			["rhs_gaz66o_msv",175500],
+			["rhs_gaz66_vdv",195300],
 			["I_Truck_02_transport_F",202500],
-			["DAR_MK27",228500],
 			["I_Truck_02_covered_F",262500],
-			["DAR_MK27T",288500],
 			["RDS_Ikarus_Civ_01",302500],
 			["O_Truck_03_transport_F",310000],
+			["RHS_Ural_Open_Civ_01",335250],
 			["B_Truck_01_transport_F",375000],
 			["O_Truck_03_covered_F",393750],
+			["rhs_ural_chdkz",400000],
 			["B_Truck_01_covered_F",412500]
-			
 		];
 		// Si donateur
 		if(__GETC__(life_donator) > 0) then
 		{
-			//_return pushBack ["DAR_LHS_8",335250];
 			_return pushBack ["B_Truck_01_box_F",450000];
-			_return pushBack ["DAR_LHS_16",450000];
 			_return pushBack ["O_Truck_03_device_F",450000];
 		};
 		if(player getVariable["life_dep",false]) then
