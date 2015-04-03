@@ -10,6 +10,8 @@ waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player
 player setVariable ["tf_voiceVolume", 0, true];
 player setVariable ["tf_globalVolume", 0];
 player setVariable ["tf_unable_to_use_radio", true];
+player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
+player setVariable ["tf_sendingDistanceMultiplicator", 0.5];
 if(!hasInterface) then {
 	diag_log format[" === DEBUG initplayerlocal HC %1",player];
 	[] call compile PreprocessFileLineNumbers "\life_server\init.sqf";
