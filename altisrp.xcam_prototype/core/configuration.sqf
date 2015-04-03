@@ -715,7 +715,7 @@ life_weapon_shop_array =
 	["I_FEM_AAF",800*0.5],
 	["I_FEM_AAF_long",2000*0.5],
 	["ice123_apo_bag",5000*0.5],
-	["ice123_apo_cloak",10000*0.5],
+	["ice123_apo_cloak",5000*0.5],
 	["ice123_apo_hood",1000*0.5],
 	["IRA_Balaclava_Brown",500*0.5],
 	["IRA_Soldier_Outfit_1",25000*0.5],
