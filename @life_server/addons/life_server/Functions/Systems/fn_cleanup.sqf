@@ -136,10 +136,15 @@ while {true} do
 							};
 						};
 					} else {
-						if((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Money_F","Land_Suitcase_F"]) then {
-							if ((time - _idleTime) > 600) then {
-								if(!isNil "_x" && {!isNull _x}) then {
-									deleteVehicle _x;
+						if((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Money_F","Land_Suitcase_F","WeaponHolderSimulated","GroundWeaponHolder"]) then {
+							if(_idleTime == 0) then {
+							// _x setVariable["idleTime",time,true];
+							_x setVariable["idleTime",time];
+							} else {
+								if ((time - _idleTime) > 600) then {
+									if(!isNil "_x" && {!isNull _x}) then {
+										deleteVehicle _x;
+									};
 								};
 							};
 						} else {
@@ -149,7 +154,7 @@ while {true} do
 								_idleTime = 1;
 							};
 							//,"Box_NATO_Support_F","Box_NATO_AmmoVeh_F"
-							if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F","B_supplyCrate_F","AGM_JerryCan","AGM_SpareTrack","AGM_SpareWheel","Land_BagFence_Long_F","Land_BagFence_Round_F","WeaponHolderSimulated","GroundWeaponHolder"])) then {
+							if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F","B_supplyCrate_F","AGM_JerryCan","AGM_SpareTrack","AGM_SpareWheel","Land_BagFence_Long_F","Land_BagFence_Round_F"])) then {
 								if(!isNil "_x" && {!isNull _x}) then {
 									diag_log format["[debug] fn_cleanupdivers %1 ",typeOf _x];
 									deleteVehicle _x;
