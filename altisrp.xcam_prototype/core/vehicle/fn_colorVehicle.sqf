@@ -68,25 +68,25 @@ if(!isNil "_texture3") then {
 	_vehicle setObjectTextureGlobal[2,_texture3];
 };
 if(!isNil "_texture4") then {
-	_vehicle setObjectTextureGlobal[3,_texture3];
+	_vehicle setObjectTextureGlobal[3,_texture4];
 };
 if(!isNil "_texture5") then {
-	_vehicle setObjectTextureGlobal[4,_texture3];
+	_vehicle setObjectTextureGlobal[4,_texture5];
 };
 if(!isNil "_texture6") then {
-	_vehicle setObjectTextureGlobal[5,_texture3];
+	_vehicle setObjectTextureGlobal[5,_texture6];
 };
 if(!isNil "_texture7") then {
-	_vehicle setObjectTextureGlobal[6,_texture3];
+	_vehicle setObjectTextureGlobal[6,_texture7];
 };
 if(!isNil "_texture8") then {
-	_vehicle setObjectTextureGlobal[7,_texture3];
+	_vehicle setObjectTextureGlobal[7,_texture8];
 };
 if(!isNil "_texture9") then {
-	_vehicle setObjectTextureGlobal[8,_texture3];
+	_vehicle setObjectTextureGlobal[8,_texture9];
 };
 if(!isNil "_texture10") then {
-	_vehicle setObjectTextureGlobal[9,_texture3];
+	_vehicle setObjectTextureGlobal[9,_texture10];
 };
 if(typeOf _vehicle == "C_Offroad_01_F") then {
 	if(_index < 5) then {
