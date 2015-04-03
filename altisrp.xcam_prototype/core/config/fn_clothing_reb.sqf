@@ -123,7 +123,8 @@ switch (_filter) do
 		// Faction 4 = Milice Sainte Croix
 		if(__GETC__(life_factnumber) == 4) then
 		{
-			_ret pushBack ["ice123_apo_cloak",nil,10000];
+			_ret pushBack ["rds_uniform_priest",nil,1000];
+			_ret pushBack ["ice123_apo_cloak",nil,5000];
 			// _ret pushBack ["msc_R_Yeti",nil,10000];
 			// _ret pushBack ["msc_Yeti",nil,10000];
 			// _ret pushBack ["msc_R_McamAlpine",nil,10000];
@@ -193,7 +194,6 @@ switch (_filter) do
 		// msc
 		if(__GETC__(life_factnumber) == 4) then
 		{
-			_ret pushBack ["rds_uniform_priest",nil,1000];
 			_ret pushBack ["ice123_apo_hood",nil,1000];
 		};
 		// Faction 3 = Religieux
@@ -272,6 +272,11 @@ switch (_filter) do
 			
 			["V_HarnessOGL_brn","Veste Explosive",500000]
 		];
+		
+		if(__GETC__(life_factnumber) == 4) then
+		{
+			_ret pushBack ["ice123_apo_bag",nil,5000];
+		};
 	};
 	
 	//Backpacks
