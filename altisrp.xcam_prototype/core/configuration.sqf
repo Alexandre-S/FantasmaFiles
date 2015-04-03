@@ -1112,6 +1112,8 @@ life_garage_sell =
 	//REB
 	["B_G_Offroad_01_armed_F",750000*0.49],
 	["BAF_Offroad_D_HMG",750000*0.49],
+	["rhsusf_m1025_d_m2",750000*0.49],
+	["rhsusf_m1025_d_s_m2",750000*0.49],
 	["PMC_Offroad_Transport",33750*0.49],
 	["PMC_Offroad_Armed",750000*0.49],
 	["PMC_MH9",412500*0.49],
@@ -1208,6 +1210,8 @@ life_garage_prices =
 	//REB
 	["B_G_Offroad_01_armed_F",750000*0.0735],
 	["BAF_Offroad_D_HMG",750000*0.0735],
+	["rhsusf_m1025_d_m2",750000*0.0735],
+	["rhsusf_m1025_d_s_m2",750000*0.0735],
 	["PMC_Offroad_Transport",33750*0.0735],
 	["PMC_Offroad_Armed",750000*0.0735],
 	["PMC_MH9",412500*0.0735],
@@ -1302,6 +1306,8 @@ life_assur_prices =
 	//REB
 	["B_G_Offroad_01_armed_F",750000*0.5],
 	["BAF_Offroad_D_HMG",750000*0.5],
+	["rhsusf_m1025_d_m2",750000*0.5],
+	["rhsusf_m1025_d_s_m2",750000*0.5],
 	["PMC_Offroad_Transport",33750*0.5],
 	["PMC_Offroad_Armed",750000*0.5],
 	["PMC_MH9",412500*0.5],

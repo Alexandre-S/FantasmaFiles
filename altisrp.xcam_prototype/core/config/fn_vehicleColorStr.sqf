@@ -691,6 +691,24 @@ switch (_vehicle) do
 			case 2: {_color = "Jaune"};
 		};
 	};
+	
+	case "rhsusf_m1025_d_m2" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Desert"};
+			case 1: {_color = "Woodland"};
+		};
+	};
+	
+	case "rhsusf_m1025_d_s_m2" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Desert"};
+			case 1: {_color = "Woodland"};
+		};
+	};
 };
 
 _color;

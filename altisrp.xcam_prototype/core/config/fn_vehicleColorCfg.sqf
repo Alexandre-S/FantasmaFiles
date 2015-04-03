@@ -697,6 +697,24 @@ switch (_vehicle) do
 			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civ1_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_plachta_civ1_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"]
 		];
 	};
+	
+	case "rhsusf_m1025_d_m2":
+	{
+		_ret = 
+		[
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa", ""]
+		];
+	};
+	
+	case "rhsusf_m1025_d_s_m2":
+	{
+		_ret = 
+		[
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
+		];
+	};
 };
 
 _ret;

@@ -205,6 +205,8 @@ switch (_shop) do
 			// _return pushBack ["O_MRAP_02_F",150000];
 			_return pushBack ["B_G_Offroad_01_armed_F",750000];
 			_return pushBack ["BAF_Offroad_D_HMG",750000];
+			_return pushBack ["rhsusf_m1025_d_m2",750000];
+			_return pushBack ["rhsusf_m1025_d_s_m2",750000];
 		};
 		// Faction 1 = Armée Privée
 		if(__GETC__(life_factnumber) == 1) then
