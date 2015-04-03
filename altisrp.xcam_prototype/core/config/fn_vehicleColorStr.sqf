@@ -670,6 +670,27 @@ switch (_vehicle) do
 			case 10: {_color = "Gris"};
 		};
 	};
+	
+	case "RHS_Ural_Open_Civ_01" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Bleu"};
+			case 1: {_color = "Bleu et Rouge"};
+			case 2: {_color = "Jaune"};
+			case 2: {_color = "Khaki"};
+		};
+	};
+	
+	case "RHS_Ural_Civ_01" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Bleu"};
+			case 1: {_color = "Bleu et Rouge"};
+			case 2: {_color = "Jaune"};
+		};
+	};
 };
 
 _color;

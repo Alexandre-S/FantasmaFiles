@@ -676,6 +676,27 @@ switch (_vehicle) do
 			["gnt_c185\tex\c185fuse5.paa","cop","gnt_c185\tex\c185wings5.paa"]
 		];
 	};
+	
+	case "RHS_Ural_Open_Civ_01":
+	{
+		_ret = 
+		[
+			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civil_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_plachta_civil_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"],
+			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civ2_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\Ural_plachta_civil_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"],
+			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civ1_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_plachta_civ1_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"],
+			["rhsafrf\addons\rhs_a2port_car\ural\data\ural_kabina_khk_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\ural\data\ural_open_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"]
+		];
+	};
+	
+	case "RHS_Ural_Civ_01":
+	{
+		_ret = 
+		[
+			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civil_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_plachta_civil_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"],
+			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civ2_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\Ural_plachta_civil_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"],
+			["rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_kabina_civ1_co.paa","civ", "rhsafrf\addons\rhs_a2port_car\Ural\Data\ural_plachta_civ1_co.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa", "rhsafrf\addons\RHS_Decals\Data\Labels\Misc\no_ca.paa"],
+		];
+	};
 };
 
 _ret;
