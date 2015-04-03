@@ -711,10 +711,30 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
 			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
 		];
 	};
+	
+	case "rhsusf_m1025_d":
+	{
+		_ret = 
+		[
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa", ""]
+		];
+	};
+	
+	case "rhsusf_m1025_d_s":
+	{
+		_ret = 
+		[
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
+		];
+	};
+	
+	
 };
 
 _ret;

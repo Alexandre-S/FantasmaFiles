@@ -22,6 +22,8 @@ switch (_className) do
 	case "rhs_uaz_open_vmf": {60};
 	case "rhs_uaz_vdv": {60};
 	case "RDS_Golf4_Civ_01": {60};
+	case "rhsusf_m1025_d": {70};
+	case "rhsusf_m1025_d_s": {70};
 	case "rhsusf_m1025_d_m2": {70};
 	case "rhsusf_m1025_d_s_m2": {70};
 	case "C_Offroad_01_F": {98};
