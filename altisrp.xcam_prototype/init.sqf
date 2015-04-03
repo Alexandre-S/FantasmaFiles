@@ -9,7 +9,7 @@ StartProgress = false;
 
 //TFR
 tf_radio_channel_name = "EN JEU TASK FORCE RADIO";
-tf_radio_channel_password = "123tfr";
+tf_radio_channel_password = "8heWrecawR";
 TF_terrain_interception_coefficient = 4.0;
 
 tf_west_radio_code = "_fantasma";

@@ -285,7 +285,7 @@ life_illegal_items =
 	["cocaine",2568*0.7],
 	["cocainep",2568],
 	["cannabis",2152*0.7],
-	["marijuana",21523],
+	["marijuana",2152],
 	["seigle",2808*0.7],
 	["lsd",2808],
 	["turtle",1400*1.3],
