@@ -107,6 +107,7 @@ ToolsMenu =
 		["Car God", [3],  "", -5, [["expression", format[_EXECscript1,"cargod.sqf"]]], "1", "1"],
 		["Spectate Player", [4],  "", -5, [["expression", format[_EXECscript1,"spectate.sqf"]]], "1", "1"],
 		["Teleport To Me", [5], "", -5, [["expression", format[_EXECscript1, "TPtoME.sqf"]]], "1", "1"],
+		["Teleport Me To Other", [5], "", -5, [["expression", format[_EXECscript1, "TPtoOther.sqf"]]], "1", "1"],
 		["ESP", [6], "", -5, [["expression", format[_EXECscript1, "ESP.sqf"]]], "1", "1"],
 		["Teleport", [7], "", -5, [["expression", format[_EXECscript1, "Tele.sqf"]]], "1", "1"],
 		["Camera", [8], "", -5, [["expression", format[_EXECscript1, "camera.sqf"]]], "1", "1"],
