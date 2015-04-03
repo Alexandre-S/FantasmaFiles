@@ -34,13 +34,13 @@ if(_bool) then
 			{
 				player addItemToBackpack _item;
 			}
-				else
+			else
 			{
 				if(_override) then
 				{
 					player addItem _item;
 				}
-					else
+				else
 				{
 					if(goggles player != "") then
 					{
@@ -91,7 +91,7 @@ if(_bool) then
 						_isgun = true;
 					};
 				}
-					else
+				else
 				{
 					_isgun = true;
 				};
@@ -104,12 +104,12 @@ if(_bool) then
 				{
 					player addItem _item;
 				}
-					else
+				else
 				{
 					player addWeapon _item;
 				};
 			}
-				else
+			else
 			{
 				switch(_details select 5) do
 				{
@@ -119,19 +119,19 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							if(_override) then
 							{
 								player addItem _item;
 							}
-								else
+							else
 							{
-								if(_item in (assignedItems  player)) then 
+								if(_item in (assignedItems player)) then 
 								{
 									player addItem _item;
 								} 
-									else 
+								else 
 								{
 									player addItem _item;
 									if(!(["AGM_",_item] call BIS_fnc_inString)) then {
@@ -147,19 +147,19 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							if(_override) then
 							{
 								player addItem _item;
 							}
-								else
+							else
 							{
-								if(headGear player == _item) then
+								if(headGear player == _item && {!_preview}) then
 								{
 									player addItem _item;
 								}
-									else
+								else
 								{
 									if(headGear player != "") then
 									{
@@ -176,13 +176,13 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							if(_override) then
 							{
 								player addItem _item;
 							}
-								else
+							else
 							{
 								if(player isKindOf "Civilian") then {
 									if(uniform player == _item && {!_preview}) then {
@@ -198,7 +198,7 @@ if(_bool) then
 											{player addItemToUniform _x} foreach _items;
 										};
 									};
-								} else {									
+								} else {					
 									if(uniform player != "") then {
 										_items = uniformItems player;
 										removeUniform player;
@@ -222,19 +222,19 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							if(_override) then
 							{
 								player addItem _item;
 							}
-								else
+							else
 							{
-								if(vest player == _item) then
+								if(vest player == _item && {!_preview}) then
 								{
 									player addItem _item;
 								}
-									else
+								else
 								{
 									if(vest player != "") then
 									{
@@ -259,7 +259,7 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							private["_type"];
 							_type = [_item,201] call life_fnc_accType;
@@ -272,13 +272,13 @@ if(_bool) then
 									case 3: { player addHandgunItem _item; };
 								};
 							}
-								else
+							else
 							{
 								if(_override) then
 								{
 									player addItem _item;
 								}
-									else
+								else
 								{
 									private["_wepItems","_action","_slotTaken"];
 										_wepItems = switch(_type) do {case 1:{primaryWeaponItems player}; case 2:{secondaryWeaponItems player}; case 3:{handgunItems player}; default {["","",""]};};
@@ -317,7 +317,7 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							private["_type"];
 							_type = [_item,301] call life_fnc_accType;
@@ -331,13 +331,13 @@ if(_bool) then
 									case 3: { player addHandgunItem _item; };
 								};
 							}
-								else
+							else
 							{
 								if(_override) then
 								{
 									player addItem _item;
 								}
-									else
+								else
 								{
 									private["_wepItems","_action","_slotTaken"];
 										_wepItems = switch(_type) do {case 1:{primaryWeaponItems player}; case 2:{secondaryWeaponItems player}; case 3:{handgunItems player}; default {["","",""]};};
@@ -376,7 +376,7 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							private["_type"];
 							_type = [_item,101] call life_fnc_accType;
@@ -390,13 +390,13 @@ if(_bool) then
 									case 3: { player addHandgunItem _item; };
 								};
 							}
-								else
+							else
 							{
 								if(_override) then
 								{
 									player addItem _item;
 								}
-									else
+								else
 								{
 									private["_wepItems","_action","_slotTaken"];
 										_wepItems = switch(_type) do {case 1:{primaryWeaponItems player}; case 2:{secondaryWeaponItems player}; case 3:{handgunItems player}; default {["","",""]};};
@@ -435,13 +435,13 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							if(_override) then
 							{
 								player addItem _item;
 							}
-								else
+							else
 							{
 								player addItem _item;
 								player assignItem _item;
@@ -455,13 +455,13 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						}
-							else
+						else
 						{
 							if(_override) then
 							{
 								player addItem _item;
 							}
-								else
+							else
 							{
 								player addItem _item;
 								player assignItem _item;
@@ -475,7 +475,7 @@ if(_bool) then
 						{
 							player addItemToBackpack _item;
 						} 
-							else 
+						else 
 						{
 							player addItem _item;
 						};
@@ -485,7 +485,7 @@ if(_bool) then
 		};
 	};
 }
-	else
+else
 {
 	switch((_details select 6)) do
 	{
@@ -505,7 +505,7 @@ if(_bool) then
 			{
 				removeGoggles player;
 			}
-				else
+			else
 			{
 				player removeItem _item;
 			};
@@ -522,7 +522,7 @@ if(_bool) then
 						_isgun = true;
 					};
 				}
-					else
+				else
 				{
 					_isgun = true;
 				};
@@ -543,7 +543,7 @@ if(_bool) then
 				{
 					player removeItem _item;
 				}
-					else
+				else
 				{
 					//FUCK YOU BOHEMIA INTERACTIVE I SHOULDN'T HAVE TO DO THIS.
 					//Lovely code provided by [OCB]Dash
@@ -602,7 +602,7 @@ if(_bool) then
 					{
 						_item call _tmpfunction;
 					}
-						else
+					else
 					{
 						switch(true) do
 						{
@@ -614,7 +614,7 @@ if(_bool) then
 					};
 				};
 			}
-				else
+			else
 			{
 				switch((_details select 5)) do
 				{

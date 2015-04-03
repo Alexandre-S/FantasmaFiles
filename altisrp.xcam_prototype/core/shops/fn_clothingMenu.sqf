@@ -77,7 +77,7 @@ if(isNil "life_clothesPurchased") exitWith
 		{
 			removeBackpack player;
 		}
-			else
+		else
 		{
 			removeBackpack player;
 			player addBackpack life_oldBackpack;
@@ -102,7 +102,7 @@ if(isNil "life_clothesPurchased") exitWith
 		{
 			removeVest player;
 		}
-			else
+		else
 		{
 			player addVest life_oldVest;
 			if(count life_oldVestItems > 0) then

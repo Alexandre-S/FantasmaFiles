@@ -36,3 +36,4 @@ if(_veh == "B_Heli_Transport_01_F") then
 clearWeaponCargoGlobal _vehicle;
 clearMagazineCargoGlobal _vehicle;
 clearItemCargoGlobal _vehicle;
+clearBackpackCargoGlobal _vehicle;

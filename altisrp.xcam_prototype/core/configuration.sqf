@@ -990,6 +990,8 @@ life_weapon_shop_array =
 	["U_PMC_WTShirt_DJeans",1500*0.5],
 	["U_Rangemaster",250*0.5],
 	["UVF_Soldier_Outfit_1",2000*0.5],
+	["UVF_Soldier_Outfit_2",50000*0.5],
+	["UVF_Soldier_Outfit_3",10000*0.5],
 	["UVF_Soldier_Outfit_4",1500*0.5],
 	["UVF_Soldier_Outfit_5",5000*0.5],
 	["V_BandollierB_blk",1500*0.5],

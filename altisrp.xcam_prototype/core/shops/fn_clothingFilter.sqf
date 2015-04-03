@@ -18,7 +18,7 @@ if(_selection == 4) then
 	life_shop_cam camSetPos (player modelToWorld [1,-4,2]);
 	life_shop_cam camCommit 1;
 }
-	else
+else
 {
 	life_shop_cam camSetTarget (player modelToWorld [0,0,1]);
 	life_shop_cam camSetPos (player modelToWorld [1,4,2]);
@@ -49,7 +49,7 @@ if(count _clothes == 0) exitWith {};
 	{
 		_list lbAdd format["%1",(getText(configFile >> (_details select 6) >> (_x select 0) >> "DisplayName"))];
 	}
-		else
+	else
 	{
 		_list lbAdd format["%1", _x select 1];
 	};
