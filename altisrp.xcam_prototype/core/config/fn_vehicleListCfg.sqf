@@ -195,7 +195,6 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",3500],
 			["B_G_Offroad_01_F",33750],
-			["rhs_tigr_ffv_vdv",50000],
 			["C_Heli_Light_01_civil_F",412500],
 			["B_Heli_Light_01_F",412500],
 			["O_Heli_Light_02_unarmed_F",700000],
@@ -205,6 +204,7 @@ switch (_shop) do
 		if(__GETC__(life_reblevel) >= 2) then
 		{
 			// _return pushBack ["O_MRAP_02_F",150000];
+			_return pushBack ["rhs_tigr_ffv_vdv",750000];
 			_return pushBack ["B_G_Offroad_01_armed_F",750000];
 			_return pushBack ["BAF_Offroad_D_HMG",750000];
 			_return pushBack ["rhsusf_m1025_d_m2",750000];
