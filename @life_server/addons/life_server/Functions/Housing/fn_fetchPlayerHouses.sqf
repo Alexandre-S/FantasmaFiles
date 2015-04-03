@@ -79,26 +79,26 @@ _return = [];
 		sleep 0.01;
 		//Add weapons to the crate.
 		{
-			// if(!(["mas_",_x] call BIS_fnc_inString)) then {
+			if(!(["CUP_",_x] call BIS_fnc_inString)) then {
 				_weaponCount = (_weapons select 1) select _forEachIndex;
 				_container addWeaponCargoGlobal [_x,_weaponCount];
-			// };
+			};
 		} foreach (_weapons select 0);
 		
 		//Add magazines
 		{
-			// if(!(["mas_",_x] call BIS_fnc_inString)) then {
+			if(!(["CUP_",_x] call BIS_fnc_inString)) then {
 				_magazineCount = (_magazines select 1) select _forEachIndex;
 				_container addMagazineCargoGlobal [_x,_magazineCount];
-			// };
+			};
 		} foreach (_magazines select 0);
 			
 		//Add items
 		{
-			// if(!(["mas_",_x] call BIS_fnc_inString)) then {
+			if(!(["CUP_",_x] call BIS_fnc_inString)) then {
 				_itemCount = (_items select 1) select _forEachIndex;
 				_container addItemCargoGlobal [_x,_itemCount];
-			// };
+			};
 		} foreach (_items select 0);
 		
 		//Add backpacks

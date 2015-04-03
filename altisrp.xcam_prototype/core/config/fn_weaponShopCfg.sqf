@@ -634,10 +634,6 @@ switch(_shop) do
 					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,54000];
 					(_ret select 1) pushBack ["rhs_weap_mk18_grip2",nil,100000];
 					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
-					
-					// (_ret select 1) pushBack ["CUP_arifle_G36C",nil,75000];
-					// (_ret select 1) pushBack ["CUP_30Rnd_556x45_G36",nil,575];
-					// (_ret select 1) pushBack ["CUP_optic_HoloBlack",nil,2500];
 				};
 			};
 		};
