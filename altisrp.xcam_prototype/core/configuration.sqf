@@ -1053,7 +1053,7 @@ life_garage_sell =
 	["B_G_Offroad_01_F",33750*0.49],
 	["LandRover_ACR",47500*0.49],
 	["BAF_Offroad_D",50000*0.49],
-	["rhs_tigr_ffv_vdv",50000*0.49],
+	["rhs_tigr_ffv_vdv",750000*0.49],
 	["C_SUV_01_F",52500*0.49],
 	["RDS_Octavia_Civ_01",60000*0.49],
 	["rhsusf_m1025_d",75500*0.49],
