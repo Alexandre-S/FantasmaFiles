@@ -34,14 +34,14 @@ switch (_className) do
 	case "C_Van_01_transport_F": {150};
 	case "C_Van_01_box_F": {225};
 	case "C_Van_01_fuel_F": {225};
-	case "rhs_gaz66o_msv": {250};
+	case "rhs_gaz66o_vdv": {250};
 	case "rhs_gaz66_vdv": {275};
 	case "I_Truck_02_transport_F": {300};
 	case "I_Truck_02_covered_F": {375};
 	case "O_Truck_03_transport_F": {428};
 	case "RHS_Ural_Open_Civ_01": {435};
 	case "B_Truck_01_transport_F": {450};
-	case "rhs_ural_chdkz": {470};
+	case "RHS_Ural_Civ_01": {470};
 	case "B_Truck_01_covered_F": {488};
 	case "O_Truck_03_covered_F": {468};
 	case "B_Truck_01_box_F": {600};

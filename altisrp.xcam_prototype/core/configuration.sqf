@@ -77,7 +77,7 @@ havena_debugcache = false;
 uncachelist = [];
 
 life_truckreverse_active = false;
-life_truck_types = ["B_Truck_01_mover_F","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_fuel_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F","RDS_Ikarus_Civ_01","rhs_gaz66o_msv","rhs_gaz66_vdv","RHS_Ural_Open_Civ_01","rhs_ural_chdkz"];
+life_truck_types = ["B_Truck_01_mover_F","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_fuel_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F","RDS_Ikarus_Civ_01","rhs_gaz66o_vdv","rhs_gaz66_vdv","RHS_Ural_Open_Civ_01","RHS_Ural_Civ_01"];
 life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","AGM_HandFlare_White","AGM_HandFlare_Red","AGM_HandFlare_Green","AGM_HandFlare_Yellow"];
 life_women = ["Oakes","Tyler","Tyler_scars","Mason","Mason_camo","Mason_Rigged","Mason_scars","Smith","Cheung","Quereshi"];
 // life_ver_random = ["C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_transport_F"];
@@ -1045,7 +1045,7 @@ life_garage_sell =
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.49],
-	["rhs_gaz66o_msv",175500*0.49],
+	["rhs_gaz66o_vdv",175500*0.49],
 	["rhs_gaz66_vdv",195300*0.49],
 	["I_Truck_02_transport_F",202500*0.49],
 	["I_Truck_02_covered_F",262500*0.49],
@@ -1054,7 +1054,7 @@ life_garage_sell =
 	["RHS_Ural_Open_Civ_01",335250*0.49],
 	["B_Truck_01_transport_F",375000*0.49],
 	["O_Truck_03_covered_F",393750*0.49],
-	["rhs_ural_chdkz",400000*0.49],
+	["RHS_Ural_Civ_01",400000*0.49],
 	["B_Truck_01_covered_F",412500*0.49],
 	
 	["B_Truck_01_box_F",450000*0.49],
@@ -1141,7 +1141,7 @@ life_garage_prices =
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.0735],
-	["rhs_gaz66o_msv",175500*0.0735],
+	["rhs_gaz66o_vdv",175500*0.0735],
 	["rhs_gaz66_vdv",195300*0.0735],
 	["I_Truck_02_transport_F",202500*0.0735],
 	["I_Truck_02_covered_F",262500*0.0735],
@@ -1150,7 +1150,7 @@ life_garage_prices =
 	["RHS_Ural_Open_Civ_01",335250*0.0735],
 	["B_Truck_01_transport_F",375000*0.0735],
 	["O_Truck_03_covered_F",393750*0.0735],
-	["rhs_ural_chdkz",400000*0.0735],
+	["RHS_Ural_Civ_01",400000*0.0735],
 	["B_Truck_01_covered_F",412500*0.0735],
 	
 	["B_Truck_01_box_F",450000*0.0735],
@@ -1235,7 +1235,7 @@ life_assur_prices =
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.5],
-	["rhs_gaz66o_msv",175500*0.5],
+	["rhs_gaz66o_vdv",175500*0.5],
 	["rhs_gaz66_vdv",195300*0.5],
 	["I_Truck_02_transport_F",202500*0.5],
 	["I_Truck_02_covered_F",262500*0.5],
@@ -1244,7 +1244,7 @@ life_assur_prices =
 	["RHS_Ural_Open_Civ_01",335250*0.5],
 	["B_Truck_01_transport_F",375000*0.5],
 	["O_Truck_03_covered_F",393750*0.5],
-	["rhs_ural_chdkz",400000*0.5],
+	["RHS_Ural_Civ_01",400000*0.5],
 	["B_Truck_01_covered_F",412500*0.5],
 	
 	["B_Truck_01_box_F",450000*0.5],

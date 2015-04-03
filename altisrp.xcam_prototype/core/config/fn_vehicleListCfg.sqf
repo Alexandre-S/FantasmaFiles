@@ -86,7 +86,7 @@ switch (_shop) do
 		_return =
 		[
 			["C_Van_01_box_F",127500],
-			["rhs_gaz66o_msv",175500],
+			["rhs_gaz66o_vdv",175500],
 			["rhs_gaz66_vdv",195300],
 			["I_Truck_02_transport_F",202500],
 			["I_Truck_02_covered_F",262500],
@@ -95,7 +95,7 @@ switch (_shop) do
 			["RHS_Ural_Open_Civ_01",335250],
 			["B_Truck_01_transport_F",375000],
 			["O_Truck_03_covered_F",393750],
-			["rhs_ural_chdkz",400000],
+			["RHS_Ural_Civ_01",400000],
 			["B_Truck_01_covered_F",412500]
 		];
 		// Si donateur
