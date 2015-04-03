@@ -413,7 +413,14 @@ switch(_shop) do
 							// makarov 9mm
 							["rhs_weap_makarov_pmm",nil,4900],
 							["rhs_mag_9x18_12_57N181S",nil,350],
+							
+							//.45
+							["hgun_Pistol_heavy_01_F",nil,5300],
+							["11Rnd_45ACP_Mag",nil,400],
 						
+							//Zubr terro
+							["hgun_Pistol_heavy_02_F",nil,9990],
+							["6Rnd_45ACP_Cylinder",nil,350],
 						
 							//ak74m
 							["rhs_weap_ak74m_folded",nil,100000],
@@ -603,9 +610,9 @@ switch(_shop) do
 						["hgun_Rook40_F",nil,4900],
 						["16Rnd_9x21_Mag",nil,350],
 						
-						//.45 pistol
-						["hgun_Pistol_heavy_02_F",nil,9990],
-						["6Rnd_45ACP_Cylinder",nil,350],
+						//.45
+						["hgun_ACPC2_F",nil,5300],
+						["9Rnd_45ACP_Mag",nil,400],
 						
 						//benelli m4 
 						["R3F_M4S90",nil,50000],
