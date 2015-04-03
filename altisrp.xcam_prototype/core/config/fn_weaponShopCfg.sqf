@@ -40,11 +40,19 @@ switch(_shop) do
 						["DDOPP_1Rnd_X26",nil,0],
 						// ["hgun_P07_snds_F","Stun Pistol",0],
 						// ["16Rnd_9x21_Mag","Stun Pistol Magazine",0],
-						["optic_Aco",nil,0],
-						["optic_ACO_grn",nil,0],
 						
 						["acc_flashlight",nil,0],
 						["R3F_LAMPE_SURB",nil,0],
+						
+						["optic_Aco",nil,3000],
+						["optic_ACO_grn",nil,3000],
+						["optic_Holosight",nil,3000],
+						["R3F_AIMPOINT",nil,3000],
+						["R3F_AIMPOINT_DES",nil,3000],
+						["rhsusf_acc_compm4",nil,3000],
+						["R3F_EOTECH",nil,3000],
+						["R3F_EOTECH_DES",nil,3000],
+						["rhsusf_acc_eotech_552",nil,3000],
 						
 						["Binocular",nil,0],
 						["AGM_NVG_Gen4",nil,0],
@@ -108,12 +116,6 @@ switch(_shop) do
 						["rhs_weap_m4a1_blockII_grip2_KAC",nil,0],
 						["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,0],
 						
-						// ["optic_Holosight_smg",nil,0],
-						["rhsusf_acc_eotech_552",nil,0],
-						["rhsusf_acc_compm4",nil,0],
-						["optic_MRCO",nil,0],
-						["optic_Hamr",nil,0],
-					
 						["AGM_M84",nil,0],
 						["AGM_Vector",nil,0]
 					]
@@ -134,6 +136,53 @@ switch(_shop) do
 				_ret =
 				["Armurerie : BAC et PJ",
 					[
+						// rook 9mm
+						["hgun_Rook40_F",nil,0],
+						["16Rnd_9x21_Mag",nil,0],
+						
+						//.45
+						["hgun_ACPC2_F",nil,0],
+						["9Rnd_45ACP_Mag",nil,0],
+						
+						//benelli m4 
+						["R3F_M4S90",nil,0],
+						["R3F_7Rnd_M4S90",nil,0],
+						["acc_flashlight",nil,0],
+						
+						// pompe court
+						["rhs_weap_M590_5RD",nil,0],
+						["rhsusf_5Rnd_00Buck",nil,0],
+
+						// pompe long
+						["rhs_weap_M590_8RD",nil,0],
+						["rhsusf_8Rnd_00Buck",nil,0],
+						
+						//enfield
+						["Trixie_Enfield",nil,0],
+						["Trixie_Enfield_Mag",nil,0],
+
+						//CZ550
+						["Trixie_CZ550_Rail",nil,0],
+						["Trixie_CZ550_Mag",nil,0],
+						
+						// optic
+						["optic_Aco",nil,0],
+						["optic_ACO_grn",nil,0],
+						["optic_Holosight",nil,0],
+						["R3F_AIMPOINT",nil,0],
+						["R3F_AIMPOINT_DES",nil,0],
+						["rhsusf_acc_compm4",nil,0],
+						["R3F_EOTECH",nil,0],
+						["R3F_EOTECH_DES",nil,0],
+						["rhsusf_acc_eotech_552",nil,0],
+						
+						//equip
+						["AGM_EarBuds",nil,0],
+						["AGM_ItemKestrel",nil,0],
+						["AGM_SpareBarrel",nil,0],
+						["AGM_CableTie",nil,0],
+						["AGM_NVG_Gen1",nil,0],
+					
 						["B_UavTerminal",nil,0]
 					]
 				];
@@ -258,6 +307,9 @@ switch(_shop) do
 						["R3F_Minimi",nil,0],
 						["R3F_200Rnd_556x45_MINIMI",nil,0],
 						
+						["optic_MRCO",nil,0],
+						["optic_Hamr",nil,0],
+						
 						["AGM_Vector",nil,0],
 						["Laserdesignator",nil,0],
 						["Laserbatteries",nil,0],
@@ -327,23 +379,58 @@ switch(_shop) do
 							["AGM_HandFlare_Red",1000],
 							["AGM_HandFlare_Green",1000],
 							["AGM_HandFlare_Yellow",1000],
-							["AGM_IR_Strobe_Item",nil,0]
+							["AGM_IR_Strobe_Item",nil,0],
+							["hgun_Rook40_F",nil,4900],
+							["16Rnd_9x21_Mag",nil,350],
+							["hgun_ACPC2_F",nil,5300],
+							["9Rnd_45ACP_Mag",nil,400]
 						]
 					];
 				};
 				// Croix Rouge rang 2
 				if(__GETC__(life_medicLevel) >= 2) then
 				{
-					(_ret select 1) pushBack ["hgun_ACPC2_F",nil,21500];
-					(_ret select 1) pushBack ["9Rnd_45ACP_Mag",nil,350];
+
+					//benelli m4 
+					(_ret select 1) pushBack ["R3F_M4S90",nil,50000];
+					(_ret select 1) pushBack ["R3F_7Rnd_M4S90",nil,450];
+					(_ret select 1) pushBack ["acc_flashlight",nil,1000];
+					
+					// pompe court
+					(_ret select 1) pushBack ["rhs_weap_M590_5RD",nil,64000];
+					(_ret select 1) pushBack ["rhsusf_5Rnd_00Buck",nil,350];
+
+					// pompe long
+					(_ret select 1) pushBack ["rhs_weap_M590_8RD",nil,67000];
+					(_ret select 1) pushBack ["rhsusf_8Rnd_00Buck",nil,550];
+					
+					//enfield
+					(_ret select 1) pushBack ["Trixie_Enfield",nil,70000];
+					(_ret select 1) pushBack ["Trixie_Enfield_Mag",nil,750];
+
+					//CZ550
+					(_ret select 1) pushBack ["Trixie_CZ550_Rail",nil,120000];
+					(_ret select 1) pushBack ["Trixie_CZ550_Mag",nil,1000];
+					
+					// optic
+					(_ret select 1) pushBack ["optic_Aco",nil,3000];
+					(_ret select 1) pushBack ["optic_ACO_grn",nil,3000];
+					(_ret select 1) pushBack ["optic_Holosight",nil,3000];
+					(_ret select 1) pushBack ["R3F_AIMPOINT",nil,3000];
+					(_ret select 1) pushBack ["R3F_AIMPOINT_DES",nil,3000];
+					(_ret select 1) pushBack ["rhsusf_acc_compm4",nil,3000];
+					(_ret select 1) pushBack ["R3F_EOTECH",nil,3000];
+					(_ret select 1) pushBack ["R3F_EOTECH_DES",nil,3000];
+					(_ret select 1) pushBack ["rhsusf_acc_eotech_552",nil,3000];
+					
 				};
 				// Croix Rouge rang 3
 				if(__GETC__(life_medicLevel) >= 3) then
 				{
-					(_ret select 1) pushBack ["hgun_PDW2000_F",nil,67500];
-					(_ret select 1) pushBack ["30Rnd_9x21_Mag",nil,950];
-					(_ret select 1) pushBack ["optic_ACO_grn",nil,3000];
-					(_ret select 1) pushBack ["optic_Aco",nil,3000];
+					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_mk18_grip2",nil,100000];
+					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
+
 				};
 				// Croix Rouge rang 4
 				if(__GETC__(life_medicLevel) >= 4) then
@@ -384,12 +471,13 @@ switch(_shop) do
 							//optic
 							["optic_Aco",nil,3000],
 							["optic_ACO_grn",nil,3000],
-							// ["optic_Holosight_smg",nil,25000],
-							["rhsusf_acc_eotech_552",nil,3000],
+							["optic_Holosight",nil,3000],
+							["R3F_AIMPOINT",nil,3000],
+							["R3F_AIMPOINT_DES",nil,3000],
 							["rhsusf_acc_compm4",nil,3000],
-							
-							["optic_MRCO",nil,10000],
-							["optic_Hamr",nil,10000],
+							["R3F_EOTECH",nil,3000],
+							["R3F_EOTECH_DES",nil,3000],
+							["rhsusf_acc_eotech_552",nil,3000],
 							
 							["AGM_EarBuds",nil,25],
 							["AGM_ItemKestrel",nil,500],
@@ -454,13 +542,13 @@ switch(_shop) do
 							
 							["optic_Aco",nil,3000],
 							["optic_ACO_grn",nil,3000],
-							// ["optic_Holosight_smg",nil,25000],
-							["rhsusf_acc_eotech_552",nil,3000],
+							["optic_Holosight",nil,3000],
+							["R3F_AIMPOINT",nil,3000],
+							["R3F_AIMPOINT_DES",nil,3000],
 							["rhsusf_acc_compm4",nil,3000],
-							
-							["optic_MRCO",nil,10000],
-							["optic_Hamr",nil,10000],
-							
+							["R3F_EOTECH",nil,3000],
+							["R3F_EOTECH_DES",nil,3000],
+							["rhsusf_acc_eotech_552",nil,3000],
 							
 							//equip
 							["acc_flashlight",nil,1000],
@@ -522,6 +610,10 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];	
 					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
 
+					
+					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
+					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
+					
 					if(__GETC__(life_factnumber) == 1) then
 					{
 
@@ -620,12 +712,13 @@ switch(_shop) do
 						// optic
 						["optic_Aco",nil,3000],
 						["optic_ACO_grn",nil,3000],
-						// ["optic_Holosight_smg",nil,25000],
-						["rhsusf_acc_eotech_552",nil,3000],
+						["optic_Holosight",nil,3000],
+						["R3F_AIMPOINT",nil,3000],
+						["R3F_AIMPOINT_DES",nil,3000],
 						["rhsusf_acc_compm4",nil,3000],
-						
-						//["optic_MRCO",nil,10000],
-						//["optic_Hamr",nil,10000],
+						["R3F_EOTECH",nil,3000],
+						["R3F_EOTECH_DES",nil,3000],
+						["rhsusf_acc_eotech_552",nil,3000],
 						
 						//equip
 						["AGM_EarBuds",nil,25],
@@ -638,7 +731,7 @@ switch(_shop) do
 				if(license_civ_gvt) then
 				{
 					//mk18 mod 1
-					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,54000];
+					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,100000];
 					(_ret select 1) pushBack ["rhs_weap_mk18_grip2",nil,100000];
 					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
 				};

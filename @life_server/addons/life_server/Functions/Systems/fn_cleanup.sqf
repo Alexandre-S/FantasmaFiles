@@ -138,8 +138,8 @@ while {true} do
 					} else {
 						if((typeOf _x) in ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Money_F","Land_Suitcase_F","WeaponHolderSimulated","GroundWeaponHolder"]) then {
 							if(_idleTime == 0) then {
-							// _x setVariable["idleTime",time,true];
-							_x setVariable["idleTime",time];
+								// _x setVariable["idleTime",time,true];
+								_x setVariable["idleTime",time];
 							} else {
 								if ((time - _idleTime) > 600) then {
 									if(!isNil "_x" && {!isNull _x}) then {
