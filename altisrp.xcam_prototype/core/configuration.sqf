@@ -741,6 +741,7 @@ life_weapon_shop_array =
 	["rds_uniform_citizen3",1000*0.5],
 	["rds_uniform_citizen4",1000*0.5],
 	["rds_uniform_doctor",2500*0.5],
+	["rds_uniform_doctor2",2500*0.5],
 	["rds_uniform_Functionary1",7500*0.5],
 	["rds_uniform_Functionary2",7500*0.5],
 	["rds_uniform_Functionary3",7500*0.5],

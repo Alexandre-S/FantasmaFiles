@@ -116,6 +116,7 @@ switch (_filter) do
 			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
 			
 			_ret pushBack ["rds_uniform_doctor",nil,2500];
+			_ret pushBack ["rds_uniform_doctor2",nil,2500];
 			// _ret pushBack ["U_C_Scientist",nil,2500];
 			_ret pushBack ["rhs_uniform_df15",nil,2500];
 			
