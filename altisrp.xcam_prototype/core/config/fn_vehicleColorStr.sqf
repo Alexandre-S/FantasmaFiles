@@ -678,7 +678,7 @@ switch (_vehicle) do
 			case 0: {_color = "Bleu"};
 			case 1: {_color = "Bleu et Rouge"};
 			case 2: {_color = "Jaune"};
-			case 2: {_color = "Khaki"};
+			case 3: {_color = "Khaki"};
 		};
 	};
 	
