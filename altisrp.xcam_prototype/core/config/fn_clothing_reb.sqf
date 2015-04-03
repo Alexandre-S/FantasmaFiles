@@ -37,9 +37,8 @@ switch (_filter) do
 		_ret pushBack ["U_BG_Guerrilla_6_1",nil,5000];
 		_ret pushBack ["UVF_Soldier_Outfit_5","Veste khaki ouverte et jean",5000];
 		_ret pushBack ["IRA_Soldier_Outfit_6","Tenue marron et bas vert",5000];
-		// _ret pushBack ["UVF_Soldier_Outfit_2","Uniforme noir",50000];
-		// _ret pushBack ["UVF_Soldier_Outfit_3","Tenue noire et bas noir",10000];
-		
+		_ret pushBack ["UVF_Soldier_Outfit_2","Uniforme noir",50000];
+		_ret pushBack ["UVF_Soldier_Outfit_3","Tenue noire et bas noir",10000];
 		_ret pushBack ["U_CAF_AG_ME_FATIGUES_01","Tenue noir et pantalon treilli",10000];
 		_ret pushBack ["U_CAF_AG_ME_FATIGUES_01a","Tenue noir et pantalon treilli 2",10000];
 		_ret pushBack ["U_CAF_AG_ME_FATIGUES_01c","Tenue noir et pantalon khaki 3",10000];
@@ -243,6 +242,8 @@ switch (_filter) do
 			["V_I_G_resistanceLeader_F",nil,15000],
 			// ["V_PlateCarrierIA2_dgtl",nil,15000],
 			["V_PlateCarrierIA1_dgtl",nil,15000],
+			["V_PlateCarrierL_CTRG",nil,15000],
+			["V_PlateCarrier1_blk",15000],
 			
 			["rhs_6b23",nil,15000],
 			["rhs_6b23_crewofficer",nil,15000],
