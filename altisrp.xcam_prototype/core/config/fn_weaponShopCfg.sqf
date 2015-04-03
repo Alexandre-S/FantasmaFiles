@@ -642,8 +642,8 @@ switch(_shop) do
 						["rhsusf_acc_eotech_552",nil,3000],
 						["rhsusf_acc_compm4",nil,3000],
 						
-						["optic_MRCO",nil,10000],
-						["optic_Hamr",nil,10000],
+						//["optic_MRCO",nil,10000],
+						//["optic_Hamr",nil,10000],
 						
 						//equip
 						["AGM_EarBuds",nil,25],
