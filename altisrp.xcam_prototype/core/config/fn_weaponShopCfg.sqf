@@ -529,7 +529,11 @@ switch(_shop) do
 							
 							//m16a4 m4 m4a1
 							["rhs_weap_m16a4",nil,100000],
+							["rhs_weap_m16a4_grip",nil,100000],
+							["rhs_weap_m16a4_carryhandle",nil,100000],
+							["rhs_weap_m16a4_carryhandle_grip_pmag",nil,100000],
 							["rhs_weap_m4",nil,100000],
+							["rhs_weap_m4_grip",nil,100000],
 							// ["rhs_weap_m4_m320",nil,125000],
 							["rhs_weap_m4a1_carryhandle",nil,100000],
 							["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000],
