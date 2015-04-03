@@ -12,7 +12,7 @@ _validMenus = [
 	"RscMainMenu","RscMoveHigh","#WATCH","#WATCH0","RscWatchDir","RscWatchMoveDir","#GETIN","#RscStatus","RscCallSupport","#ACTION",
 	"RscCombatMode","RscFormations","RscTeam","RscSelectTeam","RscReply","#User:BIS_Menu_GroupCommunication","#CUSTOM_RADIO",
 	"RscRadio","RscGroupRootMenu","RscMenuReply","RscMenuStatus","","#User:BIS_fnc_addCommMenuItem_menu","RscMenuMove","RscMenuFormations",
-	"#USER:adminmenu","#USER:ToolsMenu","#USER:AdminToolsMenu","#USER:ModToolsMenu","#USER:_pmenu"
+	"#USER:adminmenu","#USER:ToolsMenu","#USER:AdminToolsMenu","#USER:ModToolsMenu","#USER:GMToolsMenu","#USER:_pmenu"
 ];
 
 _lastMenu = "";
