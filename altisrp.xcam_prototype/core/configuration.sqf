@@ -1058,6 +1058,7 @@ life_garage_sell =
 	["RDS_Octavia_Civ_01",60000*0.49],
 	["rhsusf_m1025_d",150000*0.49],
 	["rhsusf_m1025_d_s",150000*0.49],
+	["rhsusf_m998_d_2dr",75500*0.49],
 	["rhsusf_m998_d_s_2dr",75500*0.49],
 	["C_Van_01_transport_F",97500*0.49],
 	
@@ -1159,6 +1160,7 @@ life_garage_prices =
 	["RDS_Octavia_Civ_01",60000*0.0735],
 	["rhsusf_m1025_d",150000*0.0735],
 	["rhsusf_m1025_d_s",150000*0.0735],
+	["rhsusf_m998_d_2dr",75500*0.0735],
 	["rhsusf_m998_d_s_2dr",75500*0.0735],
 	["C_Van_01_transport_F",97500*0.0735],
 	["C_Hatchback_01_sport_F",45000*0.0735],
@@ -1257,6 +1259,7 @@ life_assur_prices =
 	["RDS_Octavia_Civ_01",60000*0.5],
 	["rhsusf_m1025_d",150000*0.5],
 	["rhsusf_m1025_d_s",150000*0.5],
+	["rhsusf_m998_d_2dr",75500*0.0735],
 	["rhsusf_m998_d_s_2dr",75500*0.0735],
 	["C_Van_01_transport_F",97500*0.5],
 	

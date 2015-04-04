@@ -18,3 +18,7 @@ UPDATE  `arma3life2`.`vehicles` SET  `classname` =  'B_Heli_Transport_01_F_RP' W
 UPDATE  `arma3life2`.`vehicles` SET  `classname` =  'B_Heli_Attack_01_F_RP' WHERE  `classname` = 'B_Heli_Attack_01_F';
 UPDATE  `arma3life2`.`vehicles` SET  `classname` =  'B_Heli_Transport_03_unarmed_F_RP' WHERE  `classname` = 'B_Heli_Transport_03_unarmed_F';
 UPDATE  `arma3life2`.`vehicles` SET  `classname` =  'B_Heli_Transport_03_F_RP' WHERE  `classname` = 'B_Heli_Transport_03_F';
+
+
+UPDATE  `arma3life2`.`vehicles` SET  `classname` =  'rhsusf_m998_d_2dr' WHERE  `classname` = 'rhsusf_m1025_d';
+UPDATE  `arma3life2`.`vehicles` SET  `classname` =  'rhsusf_m998_d_s_2dr' WHERE  `classname` = 'rhsusf_m1025_d_s';

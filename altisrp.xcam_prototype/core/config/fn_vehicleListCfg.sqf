@@ -39,6 +39,7 @@ switch (_shop) do
 			["BAF_Offroad_D",50000],
 			["C_SUV_01_F",52500],
 			["RDS_Octavia_Civ_01",60000],
+			["rhsusf_m998_d_2dr",75500],
 			["rhsusf_m998_d_s_2dr",75500],
 			["C_Van_01_transport_F",97500]
 		];
@@ -67,6 +68,7 @@ switch (_shop) do
 			["BAF_Offroad_D",50000],
 			["C_SUV_01_F",52500],
 			["RDS_Octavia_Civ_01",60000],
+			["rhsusf_m998_d_2dr",75500],
 			["rhsusf_m998_d_s_2dr",75500],
 			["C_Van_01_transport_F",97500]
 		];
