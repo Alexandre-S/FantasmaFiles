@@ -1024,11 +1024,11 @@ life_weapon_shop_array =
 	["V_Press_F",2000*0.5],
 	["V_Rangemaster_belt",1000*0.5],
 	["V_RebreatherIR",2000*0.5],
-	["V_TacVest_blk",15000*0.5],
-	["V_TacVest_brn",15000*0.5],
+	["V_TacVest_blk",25000*0.5],
+	["V_TacVest_brn",25000*0.5],
 	["V_TacVest_camo",25000*0.5],
-	["V_TacVest_khk",15000*0.5],
-	["V_TacVest_oli",15000*0.5],
+	["V_TacVest_khk",25000*0.5],
+	["V_TacVest_oli",25000*0.5],
 	["V_TacVestIR_blk",15000*0.5],
 	["vip_clothes",4500*0.5]
 ];
