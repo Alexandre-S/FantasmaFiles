@@ -39,6 +39,7 @@ switch (_shop) do
 			["BAF_Offroad_D",50000],
 			["C_SUV_01_F",52500],
 			["RDS_Octavia_Civ_01",60000],
+			["rhsusf_m998_d_s_2dr",75500],
 			["C_Van_01_transport_F",97500]
 		];
 		// Si donateur
@@ -66,6 +67,7 @@ switch (_shop) do
 			["BAF_Offroad_D",50000],
 			["C_SUV_01_F",52500],
 			["RDS_Octavia_Civ_01",60000],
+			["rhsusf_m998_d_s_2dr",75500],
 			["C_Van_01_transport_F",97500]
 		];
 		// Si donateur
@@ -211,8 +213,9 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",3500],
 			["B_G_Offroad_01_F",33750],
-			["rhsusf_m1025_d",75500],
-			["rhsusf_m1025_d_s",75500],
+			["rhsusf_m998_d_s_2dr",75500],
+			["rhsusf_m1025_d",150000],
+			["rhsusf_m1025_d_s",150000],
 			["C_Heli_Light_01_civil_F_RP",412500],
 			["B_Heli_Light_01_F_RP",412500],
 			["O_Heli_Light_02_unarmed_F_RP",700000],
