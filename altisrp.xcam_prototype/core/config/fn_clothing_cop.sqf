@@ -210,8 +210,15 @@ switch (_filter) do
 		{
 			_ret pushBack ["V_HarnessO_brn",nil,0];
 			_ret pushBack ["V_HarnessO_gry",nil,0];
+			
+			_ret pushBack ["V_Chestrig_khk",nil,0];
+			_ret pushBack ["V_Chestrig_rgr",nil,0];
+			
+			//gillet par balle
+			_ret pushBack ["V_TacVest_khk",nil,0];
 			_ret pushBack ["V_TacVest_brn",nil,0];
 			_ret pushBack ["V_TacVest_blk",nil,0];
+			_ret pushBack ["V_TacVest_oli",nil,0];
 		};
 		// Medic
 		if(license_cop_medic) then
