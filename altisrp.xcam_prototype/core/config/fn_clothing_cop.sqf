@@ -204,7 +204,14 @@ switch (_filter) do
 			_ret pushBack["V_Chestrig_oli",nil,0];
 			_ret pushBack["V_PlateCarrier1_rgr",nil,0];
 			_ret pushBack["V_PlateCarrier1_blk",nil,0];
-		
+		};
+		// PJ / BAC
+		if(license_cop_bacpj) then
+		{
+			_ret pushBack ["V_HarnessO_brn",nil,0];
+			_ret pushBack ["V_HarnessO_gry",nil,0];
+			_ret pushBack ["V_TacVest_brn",nil,0];
+			_ret pushBack ["V_TacVest_blk",nil,0];
 		};
 		// Medic
 		if(license_cop_medic) then
