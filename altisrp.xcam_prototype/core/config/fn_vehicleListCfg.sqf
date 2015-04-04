@@ -215,7 +215,6 @@ switch (_shop) do
 		[
 			["B_Quadbike_01_F",3500],
 			["B_G_Offroad_01_F",33750],
-			["rhsusf_m998_d_s_2dr",75500],
 			["rhsusf_m1025_d",150000],
 			["rhsusf_m1025_d_s",150000],
 			["C_Heli_Light_01_civil_F_RP",412500],
