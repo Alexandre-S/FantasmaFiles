@@ -44,15 +44,8 @@ switch(_shop) do
 						["acc_flashlight",nil,0],
 						["R3F_LAMPE_SURB",nil,0],
 						
-						["optic_Aco",nil,3000],
-						["optic_ACO_grn",nil,3000],
-						["optic_Holosight",nil,3000],
-						["R3F_AIMPOINT",nil,3000],
-						["R3F_AIMPOINT_DES",nil,3000],
-						["rhsusf_acc_compm4",nil,3000],
-						["R3F_EOTECH",nil,3000],
-						["R3F_EOTECH_DES",nil,3000],
-						["rhsusf_acc_eotech_552",nil,3000],
+						["optic_Aco",nil,0],
+						["optic_ACO_grn",nil,0],
 						
 						["Binocular",nil,0],
 						["AGM_NVG_Gen4",nil,0],
@@ -62,7 +55,7 @@ switch(_shop) do
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
 						["AGM_EarBuds",nil,0],
-						["AGM_ItemKestrel",nil,500],
+						["AGM_ItemKestrel",nil,0],
 						["AGM_MapTools",nil,0],
 						["AGM_SpareBarrel",nil,0],
 						["AGM_CableTie",nil,0],
@@ -115,9 +108,15 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_HK416",nil,0],
 						["rhs_weap_m4a1_blockII_grip2_KAC",nil,0],
 						["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,0],
+						["optic_Holosight",nil,0],
+						["R3F_AIMPOINT",nil,0],
+						["R3F_AIMPOINT_DES",nil,0],
+						["rhsusf_acc_compm4",nil,0],
+						["R3F_EOTECH",nil,0],
+						["R3F_EOTECH_DES",nil,0],
+						["rhsusf_acc_eotech_552",nil,0],
 						
-						["AGM_M84",nil,0],
-						["AGM_Vector",nil,0]
+						["AGM_M84",nil,0]
 					]
 				];
 			};
