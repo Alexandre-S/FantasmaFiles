@@ -77,7 +77,7 @@ havena_debugcache = false;
 uncachelist = [];
 
 life_truckreverse_active = false;
-life_truck_types = ["B_Truck_01_mover_F","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_fuel_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F","O_Truck_02_fuel_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F","RDS_Ikarus_Civ_01","rhs_gaz66o_vdv","rhs_gaz66_vdv","RHS_Ural_Open_Civ_01","RHS_Ural_Civ_01"];
+life_truck_types = ["B_Truck_01_mover_F_RP","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F_RP","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F_RP","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_fuel_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F","RDS_Ikarus_Civ_01","rhs_gaz66o_vdv","rhs_gaz66_vdv","RHS_Ural_Open_Civ_01","RHS_Ural_Civ_01"];
 life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","AGM_HandFlare_White","AGM_HandFlare_Red","AGM_HandFlare_Green","AGM_HandFlare_Yellow"];
 life_women = ["Oakes","Tyler","Tyler_scars","Mason","Mason_camo","Mason_Rigged","Mason_scars","Smith","Cheung","Quereshi"];
 // life_ver_random = ["C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_transport_F"];
@@ -1054,7 +1054,6 @@ life_garage_sell =
 	["B_G_Offroad_01_F",33750*0.49],
 	["LandRover_ACR",47500*0.49],
 	["BAF_Offroad_D",50000*0.49],
-	["rhs_tigr_ffv_vdv",750000*0.49],
 	["C_SUV_01_F",52500*0.49],
 	["RDS_Octavia_Civ_01",60000*0.49],
 	["rhsusf_m1025_d",75500*0.49],
@@ -1085,17 +1084,17 @@ life_garage_sell =
 	["O_Truck_03_device_F",450000*0.49],
 	
 	//AIR
-	["GNT_C185",207500*0.49],
-	["GNT_C185F",237500*0.49],
+	["GNT_C185_RP",207500*0.49],
+	["GNT_C185F_RP",237500*0.49],
 	//["bwi_a3_t6a_7",375000*0.49],
-	["sab_camel",375000*0.49],
-	["Sab_ana_An2",415000*0.49],
-	["C_Heli_Light_01_civil_F",337500*0.49],
-	["B_Heli_Light_01_F",337500*0.49],
-	["O_Heli_Light_02_unarmed_F",675000*0.49],
-	["I_Heli_Transport_02_F",750000*0.49],
+	["sab_camel_RP",375000*0.49],
+	["Sab_ana_An2_RP",415000*0.49],
+	["C_Heli_Light_01_civil_F_RP",337500*0.49],
+	["B_Heli_Light_01_F_RP",337500*0.49],
+	["O_Heli_Light_02_unarmed_F_RP",675000*0.49],
+	["I_Heli_Transport_02_F_RP",750000*0.49],
 	
-	["O_Heli_Transport_04_F",1000000*0.49],
+	["O_Heli_Transport_04_F_RP",1000000*0.49],
 	
 	//BOAT
 	["C_Rubberboat",3750*0.49],
@@ -1105,14 +1104,15 @@ life_garage_sell =
 	["Burnes_MK10_1",500000*0.49],
 	
 	//MED
-	["ACR_LandRover_AMB",33750*0.49],
-	["B_Truck_01_mover_F",30000*0.49],
-	["I_Truck_02_medical_F",20000*0.49],
+	["ACR_LandRover_AMB_RP",33750*0.49],
+	["B_Truck_01_mover_F_RP",30000*0.49],
+	["I_Truck_02_medical_F_RP",20000*0.49],
 	["O_Truck_03_medical_F",25000*0.49],
 	["B_Truck_01_medical_F",30000*0.49],
-	["O_Heli_Transport_04_medevac_F",150000*0.49],
+	["O_Heli_Transport_04_medevac_F_RP",150000*0.49],
 	
 	//REB
+	["rhs_tigr_ffv_vdv",750000*0.49],
 	["B_G_Offroad_01_armed_F",750000*0.49],
 	["BAF_Offroad_D_HMG",750000*0.49],
 	["rhsusf_m1025_d_m2",750000*0.49],
@@ -1122,12 +1122,12 @@ life_garage_sell =
 	["PMC_MH9",412500*0.49],
 	["O_MRAP_02_F",1000000*0.49],
 	["O_MRAP_02_hmg_F",1250000*0.49],
-	["O_Heli_Transport_04_covered_F",2500000*0.49],
+	["O_Heli_Transport_04_covered_F_RP",2500000*0.49],
 	
 	//COP
-	["I_Heli_light_03_unarmed_F",1],
-	["B_Heli_Transport_01_F",1],
-	["B_Heli_Attack_01_F",1],
+	["I_Heli_light_03_unarmed_F_RP",1],
+	["B_Heli_Transport_01_F_RP",1],
+	["B_Heli_Attack_01_F_RP",1],
 	["B_Boat_Transport_01_F",1],
 	["B_SDV_01_F",1]
 ];
@@ -1154,13 +1154,11 @@ life_garage_prices =
 	["B_G_Offroad_01_F",33750*0.0735],
 	["LandRover_ACR",47500*0.0735],
 	["BAF_Offroad_D",50000*0.0735],
-	["rhs_tigr_ffv_vdv",50000*0.0735],
 	["C_SUV_01_F",52500*0.0735],
 	["RDS_Octavia_Civ_01",60000*0.0735],
 	["rhsusf_m1025_d",75500*0.0735],
 	["rhsusf_m1025_d_s",75500*0.0735],
 	["C_Van_01_transport_F",97500*0.0735],
-	
 	["C_Hatchback_01_sport_F",45000*0.0735],
 	["C_Van_01_fuel_F",112500*0.0735],
 	
@@ -1185,17 +1183,17 @@ life_garage_prices =
 	["O_Truck_03_device_F",450000*0.0735],
 	
 	//AIR
-	["GNT_C185",207500*0.0735],
-	["GNT_C185F",237500*0.0735],
+	["GNT_C185_RP",207500*0.0735],
+	["GNT_C185F_RP",237500*0.0735],
 	//["bwi_a3_t6a_7",375000*0.0735],
-	["sab_camel",375000*0.0735],
-	["Sab_ana_An2",415000*0.0735],
-	["C_Heli_Light_01_civil_F",337500*0.245],
-	["B_Heli_Light_01_F",337500*0.245],
-	["O_Heli_Light_02_unarmed_F",675000*0.245],
-	["I_Heli_Transport_02_F",750000*0.245],
+	["sab_camel_RP",375000*0.0735],
+	["Sab_ana_An2_RP",415000*0.0735],
+	["C_Heli_Light_01_civil_F_RP",337500*0.245],
+	["B_Heli_Light_01_F_RP",337500*0.245],
+	["O_Heli_Light_02_unarmed_F_RP",675000*0.245],
+	["I_Heli_Transport_02_F_RP",750000*0.245],
 	
-	["O_Heli_Transport_04_F",1000000*0.245],
+	["O_Heli_Transport_04_F_RP",1000000*0.245],
 		
 	//BOAT
 	["C_Rubberboat",3750*0.0735],
@@ -1205,14 +1203,15 @@ life_garage_prices =
 	["Burnes_MK10_1",500000*0.0735],
 	
 	//MED
-	["ACR_LandRover_AMB",33750*0.0735],
-	["B_Truck_01_mover_F",30000*0.0735],
-	["I_Truck_02_medical_F",20000*0.0735],
+	["ACR_LandRover_AMB_RP",33750*0.0735],
+	["B_Truck_01_mover_F_RP",30000*0.0735],
+	["I_Truck_02_medical_F_RP",20000*0.0735],
 	["O_Truck_03_medical_F",25000*0.0735],
 	["B_Truck_01_medical_F",30000*0.0735],
-	["O_Heli_Transport_04_medevac_F",150000*0.245],
+	["O_Heli_Transport_04_medevac_F_RP",150000*0.245],
 	
 	//REB
+	["rhs_tigr_ffv_vdv",750000*0.0735],
 	["B_G_Offroad_01_armed_F",750000*0.0735],
 	["BAF_Offroad_D_HMG",750000*0.0735],
 	["rhsusf_m1025_d_m2",750000*0.0735],
@@ -1222,12 +1221,12 @@ life_garage_prices =
 	["PMC_MH9",412500*0.0735],
 	["O_MRAP_02_F",1000000*0.0735],
 	["O_MRAP_02_hmg_F",1250000*0.0735],
-	["O_Heli_Transport_04_covered_F",2500000*0.245],
+	["O_Heli_Transport_04_covered_F_RP",2500000*0.245],
 	
 	//ONU
-	["I_Heli_light_03_unarmed_F",1],
-	["B_Heli_Transport_01_F",1],
-	["B_Heli_Attack_01_F",1],
+	["I_Heli_light_03_unarmed_F_RP",1],
+	["B_Heli_Transport_01_F_RP",1],
+	["B_Heli_Attack_01_F_RP",1],
 	["B_Boat_Transport_01_F",1],
 	["B_SDV_01_F",1]
 ];
@@ -1252,7 +1251,6 @@ life_assur_prices =
 	["B_G_Offroad_01_F",33750*0.5],
 	["LandRover_ACR",47500*0.5],
 	["BAF_Offroad_D",50000*0.5],
-	["rhs_tigr_ffv_vdv",50000*0.5],
 	["C_SUV_01_F",52500*0.5],
 	["RDS_Octavia_Civ_01",60000*0.5],
 	["rhsusf_m1025_d",75500*0.5],
@@ -1283,17 +1281,17 @@ life_assur_prices =
 	["O_Truck_03_device_F",450000*0.5],
 	
 	//AIR
-	["GNT_C185",207500*0.5],
-	["GNT_C185F",237500*0.5],
+	["GNT_C185_RP",207500*0.5],
+	["GNT_C185F_RP",237500*0.5],
 	//["bwi_a3_t6a_7",375000*0.5],
-	["sab_camel",375000*0.5],
-	["Sab_ana_An2",415000*0.5],
-	["C_Heli_Light_01_civil_F",337500*0.5],
-	["B_Heli_Light_01_F",337500*0.5],
-	["O_Heli_Light_02_unarmed_F",675000*0.5],
-	["I_Heli_Transport_02_F",750000*0.5],
+	["sab_camel_RP",375000*0.5],
+	["Sab_ana_An2_RP",415000*0.5],
+	["C_Heli_Light_01_civil_F_RP",337500*0.5],
+	["B_Heli_Light_01_F_RP",337500*0.5],
+	["O_Heli_Light_02_unarmed_F_RP",675000*0.5],
+	["I_Heli_Transport_02_F_RP",750000*0.5],
 	
-	["O_Heli_Transport_04_F",1000000*0.5],
+	["O_Heli_Transport_04_F_RP",1000000*0.5],
 		
 	//BOAT
 	["C_Rubberboat",3750*0.5],
@@ -1303,14 +1301,15 @@ life_assur_prices =
 	["D41_Trawler",500000*0.5],
 	
 	//MED
-	["ACR_LandRover_AMB",33750*0.5],
-	["B_Truck_01_mover_F",30000*0.5],
-	["I_Truck_02_medical_F",20000*0.5],
+	["ACR_LandRover_AMB_RP",33750*0.5],
+	["B_Truck_01_mover_F_RP",30000*0.5],
+	["I_Truck_02_medical_F_RP",20000*0.5],
 	["O_Truck_03_medical_F",25000*0.5],
 	["B_Truck_01_medical_F",30000*0.5],
-	["O_Heli_Transport_04_medevac_F",150000*0.5],
+	["O_Heli_Transport_04_medevac_F_RP",150000*0.5],
 	
 	//REB
+	["rhs_tigr_ffv_vdv",750000*0.5],
 	["B_G_Offroad_01_armed_F",750000*0.5],
 	["BAF_Offroad_D_HMG",750000*0.5],
 	["rhsusf_m1025_d_m2",750000*0.5],
@@ -1320,12 +1319,12 @@ life_assur_prices =
 	["PMC_MH9",412500*0.5],
 	["O_MRAP_02_F",1000000*0.5],
 	["O_MRAP_02_hmg_F",1250000*0.5],
-	["O_Heli_Transport_04_covered_F",2500000*0.5],
+	["O_Heli_Transport_04_covered_F_RP",2500000*0.5],
 	
 	//ONU
-	["I_Heli_light_03_unarmed_F",1],
-	["B_Heli_Transport_01_F",1],
-	["B_Heli_Attack_01_F",1],
+	["I_Heli_light_03_unarmed_F_RP",1],
+	["B_Heli_Transport_01_F_RP",1],
+	["B_Heli_Attack_01_F_RP",1],
 	["B_Boat_Transport_01_F",1],
 	["B_SDV_01_F",1]
 ];

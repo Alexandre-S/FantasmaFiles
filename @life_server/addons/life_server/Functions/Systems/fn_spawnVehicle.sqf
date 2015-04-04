@@ -163,7 +163,7 @@ _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 [[_vehicle],"life_fnc_addVehicle2Chain",_unit,false] spawn life_fnc_MP;
 
 //Sets of animations
-if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F" && _vInfo select 8 != 13) then {
+if((_vInfo select 1) == "civ" && (_vInfo select 2) == "B_Heli_Light_01_F_RP" && _vInfo select 8 != 13) then {
 	// [[_vehicle,"civ_littlebird",true],"life_fnc_vehicleAnimate",_unit,false] spawn life_fnc_MP;
 	[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 };

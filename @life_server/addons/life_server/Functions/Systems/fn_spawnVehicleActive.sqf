@@ -170,7 +170,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate; // vigil
 		};*/
 
-		if((_side) == "civ" && (_classname) == "B_Heli_Light_01_F") then {
+		if((_side) == "civ" && (_classname) == "B_Heli_Light_01_F_RP") then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
 		};
 

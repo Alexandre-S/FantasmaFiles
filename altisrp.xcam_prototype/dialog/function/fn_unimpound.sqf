@@ -21,7 +21,7 @@ _price = [_vehicle,__GETC__(life_garage_prices)] call life_fnc_index;
 if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_prices) select _price) select 1;};
 if(playerSide == west) then { _price = 1; };
 if(playerSide == independent) then { _price = 100; };
-if(license_civ_dep && _vehicle == "I_Heli_Transport_02_F") then {
+if(license_civ_dep && _vehicle == "I_Heli_Transport_02_F_RP") then {
 	_price = _price/10;
 };
 

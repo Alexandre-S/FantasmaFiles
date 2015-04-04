@@ -98,7 +98,7 @@ else
 			sleep 2;
 			
 			// Quelques corrections visuelles pour des classes spécifiques
-			if (typeOf _remorqueur == "B_Truck_01_mover_F") then {_offset_attach_y = 1.0;}
+			if (typeOf _remorqueur == "B_Truck_01_mover_F_RP") then {_offset_attach_y = 1.0;}
 			else {_offset_attach_y = 0.2;};
 			
 			// Attacher à l'arrière du véhicule au ras du sol

@@ -276,7 +276,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "B_Heli_Light_01_F":
+	case "B_Heli_Light_01_F_RP":
 	{
 		switch (_index) do
 		{
@@ -298,7 +298,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "C_Heli_Light_01_civil_F":
+	case "C_Heli_Light_01_civil_F_RP":
 	{
 		switch (_index) do
 		{
@@ -320,7 +320,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "O_Heli_Light_02_unarmed_F":
+	case "O_Heli_Light_02_unarmed_F_RP":
 	{
 		switch (_index) do
 		{
@@ -350,7 +350,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "O_Truck_02_box_F":
+	case "O_Truck_02_box_F_RP":
 	{
 		switch (_index) do
 		{
@@ -512,7 +512,7 @@ switch (_vehicle) do
 		};
 	};*/
 	
-	case "O_Heli_Attack_02_black_F":
+	case "O_Heli_Attack_02_black_F_RP":
 	{
 		switch (_index) do
 		{
@@ -520,7 +520,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "I_Heli_Transport_02_F":
+	case "I_Heli_Transport_02_F_RP":
 	{
 		switch (_index) do
 		{
@@ -531,7 +531,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "I_Heli_light_03_unarmed_F":
+	case "I_Heli_light_03_unarmed_F_RP":
 	{
 		switch (_index) do
 		{
@@ -541,7 +541,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "B_Truck_01_mover_F":
+	case "B_Truck_01_mover_F_RP":
 	{
 		switch (_index) do
 		{
@@ -566,7 +566,7 @@ switch (_vehicle) do
 		};
 	};*/
 	
-	case "sab_camel":
+	case "sab_camel_RP":
 	{
 		switch (_index) do
 		{
@@ -575,7 +575,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "Sab_ana_An2":
+	case "Sab_ana_An2_RP":
 	{
 		switch (_index) do
 		{
@@ -635,7 +635,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "GNT_C185":
+	case "GNT_C185_RP":
 	{
 		switch (_index) do
 		{
@@ -653,7 +653,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "GNT_C185F":
+	case "GNT_C185F_RP":
 	{
 		switch (_index) do
 		{
