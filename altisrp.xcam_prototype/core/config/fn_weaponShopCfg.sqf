@@ -608,11 +608,14 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhs_30Rnd_762x39mm",nil,1500];
 					
 					
-					// m14 sr25
+					// m14 sr25 fnfal
 					(_ret select 1) pushBack ["rhs_weap_m14ebrri",nil,140000];	
 					(_ret select 1) pushBack ["rhs_weap_sr25",nil,140000];	
 					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];	
 					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
+					(_ret select 1) pushBack ["Trixie_FNFAL_Rail",nil,140000];
+					(_ret select 1) pushBack ["Trixie_FNFAL_Mag",nil,1500];
+					(_ret select 1) pushBack ["optic_DMS",nil,30000];
 
 					
 					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
@@ -660,6 +663,18 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhsusf_5Rnd_300winmag_xm2010",nil,3000];
 					
 					
+					//Hecate II
+					(_ret select 1) pushBack ["R3F_PGM_Hecate_II_POLY",nil,300000];
+					(_ret select 1) pushBack ["R3F_7Rnd_127x99_PGM",nil,4000];
+					
+					
+					//M107
+					(_ret select 1) pushBack ["R3F_M107",nil,500000];
+					(_ret select 1) pushBack ["R3F_10Rnd_127x99_M107",nil,7000];
+					
+					
+					(_ret select 1) pushBack ["optic_LRPS",nil,60000];
+					(_ret select 1) pushBack ["optic_SOS",nil,50000];
 					(_ret select 1) pushBack ["IEDUrbanSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["IEDLandSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["APERSMine_Range_Mag",nil,70000];

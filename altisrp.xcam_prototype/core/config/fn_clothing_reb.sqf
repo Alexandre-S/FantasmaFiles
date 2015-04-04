@@ -242,6 +242,8 @@ switch (_filter) do
 			["V_I_G_resistanceLeader_F",nil,15000],
 			// ["V_PlateCarrierIA2_dgtl",nil,15000],
 			["V_PlateCarrierIA1_dgtl",nil,15000],
+			["V_PlateCarrierL_CTRG",nil,15000],
+			["V_PlateCarrier1_blk",15000],
 			
 			["rhs_6b23",nil,15000],
 			["rhs_6b23_crewofficer",nil,15000],
