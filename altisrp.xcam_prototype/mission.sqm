@@ -3539,7 +3539,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire aerien"",life_fnc_vehicleShopMenu,[""civ_air"",civilian,[""civ_air_2_2""],""civ"",""Carl's Airial Auto's""]]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_air_2_2"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Concessionnaire aerien"",life_fnc_vehicleShopMenu,[""civ_air2"",civilian,[""civ_air_3""],""civ"",""Carl's Airial Auto's""]]; this addAction[""Garage aerien"",  {  [] call life_fnc_getHLC; [[getPlayerUID player,playerSide,""Air"",player,havena_id],""TON_fnc_getVehicles"",serverhc,false] spawn life_fnc_MP; life_garage_type = ""Air"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_air_3"";  }];  this addAction[""Ranger au garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 				};
 			};
 		};
@@ -25871,7 +25871,7 @@ class Mission
 		class Item216
 		{
 			position[]={8272.2285,9.4846792,3691.9329};
-			name="civ_air_2_2";
+			name="civ_air_3";
 			type="Empty";
 			angle=-148.5654;
 		};

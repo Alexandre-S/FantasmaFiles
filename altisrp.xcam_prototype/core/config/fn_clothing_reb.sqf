@@ -237,14 +237,6 @@ switch (_filter) do
 			["rhs_6sh92_digi",nil,5000],
 			["rhs_vydra_3m",nil,5000],
 			
-			
-			["V_TacVest_camo",nil,15000],
-			["V_I_G_resistanceLeader_F",nil,15000],
-			// ["V_PlateCarrierIA2_dgtl",nil,15000],
-			["V_PlateCarrierIA1_dgtl",nil,15000],
-			["V_PlateCarrierL_CTRG",nil,15000],
-			["V_PlateCarrier1_blk",15000],
-			
 			["rhs_6b23",nil,15000],
 			["rhs_6b23_crewofficer",nil,15000],
 			["rhs_6b23_crew",nil,15000],
@@ -271,6 +263,12 @@ switch (_filter) do
 			["rhs_6b23_ML_rifleman",nil,15000],
 			["rhs_6b23_ML_sniper",nil,15000],
 			["rhs_6b23_ML_6sh92",nil,15000],
+			
+			["V_TacVest_camo",nil,25000],
+			["V_I_G_resistanceLeader_F",nil,25000],
+			// ["V_PlateCarrierIA2_dgtl",nil,25000],
+			["V_PlateCarrierIA1_dgtl",nil,25000],
+			["V_PlateCarrier1_rgr",nil,25000],
 			
 			["V_HarnessOGL_brn","Veste Explosive",500000]
 		];

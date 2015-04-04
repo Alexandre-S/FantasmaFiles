@@ -132,6 +132,24 @@ switch (_shop) do
 		};
 	};
 	
+	case "civ_air2":
+	{
+		_return =
+		[
+			["C_Heli_Light_01_civil_F",337500],
+			["B_Heli_Light_01_F",337500],
+			["O_Heli_Light_02_unarmed_F",675000]
+		];
+		if(player getVariable["life_dep",false] || {license_civ_gvt} || {__GETC__(life_donator) > 0}) then
+		{
+			_return pushBack ["I_Heli_Transport_02_F",750000]; // dep
+		};
+		if(__GETC__(life_donator) > 0) then
+		{
+			_return pushBack ["O_Heli_Transport_04_F",1000000];
+		};
+	};
+	
 	case "civ_ship":
 	{
 		_return =

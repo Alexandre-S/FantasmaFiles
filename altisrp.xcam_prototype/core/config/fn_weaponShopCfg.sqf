@@ -46,6 +46,13 @@ switch(_shop) do
 						
 						["optic_Aco",nil,0],
 						["optic_ACO_grn",nil,0],
+						["optic_Holosight",nil,0],
+						["R3F_AIMPOINT",nil,0],
+						["R3F_AIMPOINT_DES",nil,0],
+						["rhsusf_acc_compm4",nil,0],
+						["R3F_EOTECH",nil,0],
+						["R3F_EOTECH_DES",nil,0],
+						["rhsusf_acc_eotech_552",nil,0],
 						
 						["Binocular",nil,0],
 						["AGM_NVG_Gen4",nil,0],
@@ -108,14 +115,7 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_HK416",nil,0],
 						["rhs_weap_m4a1_blockII_grip2_KAC",nil,0],
 						["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,0],
-						["optic_Holosight",nil,0],
-						["R3F_AIMPOINT",nil,0],
-						["R3F_AIMPOINT_DES",nil,0],
-						["rhsusf_acc_compm4",nil,0],
-						["R3F_EOTECH",nil,0],
-						["R3F_EOTECH_DES",nil,0],
-						["rhsusf_acc_eotech_552",nil,0],
-						
+	
 						["AGM_M84",nil,0]
 					]
 				];
@@ -305,6 +305,16 @@ switch(_shop) do
 						
 						["R3F_Minimi",nil,0],
 						["R3F_200Rnd_556x45_MINIMI",nil,0],
+
+						["R3F_M107",nil,0],
+						["R3F_M107_DES",nil,0],
+						["R3F_10Rnd_127x99_M107",nil,0],
+						
+						["rhs_weap_XM2010",nil,0],
+						["rhs_weap_XM2010_wd",nil,0],
+						["rhs_weap_XM2010_d",nil,0],
+						["rhs_weap_XM2010_sa",nil,0],
+						["rhsusf_5Rnd_300winmag_xm2010",nil,0],
 						
 						["optic_MRCO",nil,0],
 						["optic_Hamr",nil,0],
@@ -610,15 +620,9 @@ switch(_shop) do
 					// m14 sr25 fnfal
 					(_ret select 1) pushBack ["rhs_weap_m14ebrri",nil,140000];	
 					(_ret select 1) pushBack ["rhs_weap_sr25",nil,140000];	
-					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];	
-					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
+					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];
 					(_ret select 1) pushBack ["Trixie_FNFAL_Rail",nil,140000];
-					(_ret select 1) pushBack ["Trixie_FNFAL_Mag",nil,1500];
-					(_ret select 1) pushBack ["optic_DMS",nil,30000];
-
-					
-					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
-					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
+					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
 					
 					if(__GETC__(life_factnumber) == 1) then
 					{
@@ -653,27 +657,19 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhs_weap_svds_npz",nil,250000];
 					(_ret select 1) pushBack ["rhs_10Rnd_762x54mmR_7N1",nil,3000];
 					
-					
-					//m2010
-					(_ret select 1) pushBack ["rhs_weap_XM2010",nil,250000];
-					(_ret select 1) pushBack ["rhs_weap_XM2010_wd",nil,250000];
-					(_ret select 1) pushBack ["rhs_weap_XM2010_d",nil,250000];
-					(_ret select 1) pushBack ["rhs_weap_XM2010_sa",nil,250000];
-					(_ret select 1) pushBack ["rhsusf_5Rnd_300winmag_xm2010",nil,3000];
-					
-					
+					//FRF2
+					(_ret select 1) pushBack ["R3F_FRF2",nil,250000];
+					(_ret select 1) pushBack ["R3F_FRF2_DES",nil,250000];
+					(_ret select 1) pushBack ["R3F_10Rnd_762x51_FRF2",nil,3000];
+
 					//Hecate II
-					(_ret select 1) pushBack ["R3F_PGM_Hecate_II_POLY",nil,300000];
+					(_ret select 1) pushBack ["R3F_PGM_Hecate_II",nil,300000];
+					(_ret select 1) pushBack ["R3F_PGM_Hecate_II_DES",nil,300000];
 					(_ret select 1) pushBack ["R3F_7Rnd_127x99_PGM",nil,4000];
 					
+					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
+					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
 					
-					//M107
-					(_ret select 1) pushBack ["R3F_M107",nil,500000];
-					(_ret select 1) pushBack ["R3F_10Rnd_127x99_M107",nil,7000];
-					
-					
-					(_ret select 1) pushBack ["optic_LRPS",nil,60000];
-					(_ret select 1) pushBack ["optic_SOS",nil,50000];
 					(_ret select 1) pushBack ["IEDUrbanSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["IEDLandSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["APERSMine_Range_Mag",nil,70000];
