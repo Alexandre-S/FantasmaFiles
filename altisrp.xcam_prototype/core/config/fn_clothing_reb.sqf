@@ -270,7 +270,8 @@ switch (_filter) do
 			["V_PlateCarrierIA1_dgtl",nil,25000],
 			["V_PlateCarrier1_rgr",nil,25000],
 			
-			["V_HarnessOGL_brn","Veste Explosive",500000]
+			["V_HarnessOGL_brn","Veste Explosive",500000],
+			["",nil,0]
 		];
 		
 		if(__GETC__(life_factnumber) == 4) then

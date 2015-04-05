@@ -414,7 +414,8 @@ switch (_filter) do
 			["V_TacVest_khk",nil,25000],
 			["V_TacVest_brn",nil,25000],
 			["V_TacVest_blk",nil,25000],
-			["V_TacVest_oli",nil,25000]
+			["V_TacVest_oli",nil,25000],
+			["",nil,0]
 		];
 	};
 	
