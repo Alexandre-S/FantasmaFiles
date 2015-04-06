@@ -111,8 +111,8 @@ if(_dice <= _chance) then
 	if((_building getVariable["locked",false])) then {
 		_building setVariable["locked",false,true];
 	};
-	[] call life_fnc_getHLC;
-	[[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
+	// [] call life_fnc_getHLC;
+	// [[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
 }
 else
 {

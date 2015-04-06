@@ -107,8 +107,8 @@ if(!_isVehicle) then {
 	if(_dice <= _chance) then {
 		titleText[localize "STR_ISTR_Lock_Success","PLAIN"];
 		life_vehicles pushBack _curTarget;
-		[] call life_fnc_getHLC;
-		[[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
+		// [] call life_fnc_getHLC;
+		// [[getPlayerUID player,profileName,"487"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
 		[[0,"STR_ISTR_Lock_FailedNOTF",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 	} else {
 		// [] call life_fnc_getHLC;

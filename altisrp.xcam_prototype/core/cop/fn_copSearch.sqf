@@ -30,13 +30,13 @@ if(count _invs > 0) then
 			_illegal = _illegal + ((_x select 1) * ((__GETC__(sell_array) select _index) select 1));
 		};
 	} foreach _invs;
-	if(_illegal > 6000) then
+	/*if(_illegal > 6000) then
 	{
 		[] call life_fnc_getHLC;
 		[[getPlayerUID _civ,_civ getVariable["realname",name _civ],"482"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
 	};
 	[] call life_fnc_getHLC;
-	[[getPlayerUID _civ,_civ getVariable["realname",name _civ],"481"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
+	[[getPlayerUID _civ,_civ getVariable["realname",name _civ],"481"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;*/
 	[[0,"STR_Cop_Contraband",true,[(_civ getVariable["realname",name _civ]),[_illegal] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 }
 	else
