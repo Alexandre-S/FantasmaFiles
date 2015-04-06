@@ -165,12 +165,6 @@ while {true} do
 				};
 			};
 		} foreach vehicles;
-		//Group clean (Local)
-		{
-			if(local _x && {(count units _x == 0)}) then {
-				deleteGroup _x;
-			};
-		} foreach allGroups;
 		_debugmap = false;
 	if(server_debug && ((diag_tickTime - _t1) > 0.1) ) then { diag_log format["[debuglongtime] SYS fn_cleanup %1 ", diag_tickTime - _t1]; };
 	// };
