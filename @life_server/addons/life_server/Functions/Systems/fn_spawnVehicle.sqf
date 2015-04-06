@@ -208,7 +208,7 @@ serv_sv_use = serv_sv_use - [_vid];
 };
 
 // Force session DB save every 1 mins
-[] call life_fnc_getHLC;
+[] call TON_fnc_getHLC;
 [_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 
 // Problem with TAFR

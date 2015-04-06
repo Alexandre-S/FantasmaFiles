@@ -199,7 +199,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		[_vehicle] spawn  {
 			_vehicle = _this select 0;
 			sleep (random 60);
-			[] call life_fnc_getHLC;
+			[] call TON_fnc_getHLC;
 			[_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 		};
 		if(server_debug && ((diag_tickTime - _t1) > 0.1) ) then { diag_log format["[debuglongtime] SYS fn_spawnVehicleActive %1 ", diag_tickTime - _t1]; };
