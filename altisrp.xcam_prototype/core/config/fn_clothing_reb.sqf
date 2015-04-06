@@ -266,7 +266,7 @@ switch (_filter) do
 			
 			["V_TacVest_camo",nil,25000],
 			["V_I_G_resistanceLeader_F",nil,25000],
-			// ["V_PlateCarrierIA2_dgtl",nil,25000],
+		
 			["V_PlateCarrierIA1_dgtl",nil,25000],
 			["V_PlateCarrier1_rgr",nil,25000],
 			["V_PlateCarrier1_PMC_blk",nil,25000],
@@ -274,8 +274,9 @@ switch (_filter) do
 			["V_PlateCarrier1_PMC_rgr",nil,25000],
 			["V_PlateCarrier1_PMC_khki",nil,25000],
 			["V_PlateCarrier1_PMC_marpat",nil,25000],
-			["V_PlateCarrierInd_PMC_blk",nil,50000],
-			["V_PlateCarrierInd_PMC_grn",nil,50000],
+			// ["V_PlateCarrierIA2_dgtl",nil,50000],
+			// ["V_PlateCarrierInd_PMC_blk",nil,50000],
+			// ["V_PlateCarrierInd_PMC_grn",nil,50000],
 			
 			["V_HarnessOGL_brn","Veste Explosive",500000]
 		];
