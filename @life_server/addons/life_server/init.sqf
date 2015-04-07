@@ -136,7 +136,7 @@ if(!isHLC) then {
 		  while{true} do
 		  {
 			sleep (1 * 60);
-			if(countsellitem > 1000 && ((time - last_sellArrayMulti) > 900)) then {
+			if(countsellitem > 1500 && ((time - last_sellArrayMulti) > 1350)) then {
 				last_sellArrayMulti = time;
 				[] call TON_fnc_sellArrayMulti;
 			};
@@ -344,7 +344,7 @@ else
 	  while{true} do
 	  {
 		sleep (1 * 60);
-		if(countsellitem > 1000 && ((time - last_sellArrayMulti) > 900)) then {
+		if(countsellitem > 1500 && ((time - last_sellArrayMulti) > 1350)) then {
 			last_sellArrayMulti = time;
 			[] call TON_fnc_sellArrayMulti;
 		};

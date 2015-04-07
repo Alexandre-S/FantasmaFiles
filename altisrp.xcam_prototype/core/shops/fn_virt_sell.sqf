@@ -91,6 +91,6 @@ if(life_shop_type == "heroin") then
 		_array pushBack [getPlayerUID player,profileName,_amount];
 		life_shop_npc setVariable["sellers",_array,true];
 	};
-
+};
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;
