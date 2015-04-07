@@ -12,6 +12,12 @@ life_drug_level = life_drug_level + 0.10;
 if (life_drug_level > 1) then { life_drug_level = 1; };
 [] call life_fnc_hudUpdate;
 
+_dice = random(1);
+if(_dice <= 0.30) then
+{
+	dependance = dependance + 0.10;
+};
+
 if (life_heroin_effect == 0) then
 {
 	life_heroin_effect = time;

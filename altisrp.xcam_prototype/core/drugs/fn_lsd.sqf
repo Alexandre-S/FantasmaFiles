@@ -11,6 +11,12 @@ if (!([false,"lsd",1] call life_fnc_handleInv)) exitWith {};
 life_drug_level = life_drug_level + 0.2;
 if (life_drug_level > 1) then { life_drug_level = 1; };
 
+_dice = random(1);
+if(_dice <= 0.7) then
+{
+	dependance = dependance + 0.2;
+};
+
 if (life_lsd_effect == 0) then
 {
 	life_lsd_effect = time;

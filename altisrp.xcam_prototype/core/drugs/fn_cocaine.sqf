@@ -11,6 +11,12 @@ if (!([false,"cocainep",1] call life_fnc_handleInv)) exitWith {};
 life_drug_level = life_drug_level + 0.15;
 if (life_drug_level > 1) then { life_drug_level = 1; };
 
+_dice = random(1);
+if(_dice <= 0.15) then
+{
+	dependance = dependance + 0.15;
+};
+
 [] spawn
 {
 	life_cocaine_effect = time;

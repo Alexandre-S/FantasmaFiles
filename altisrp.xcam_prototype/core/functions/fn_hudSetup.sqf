@@ -19,13 +19,15 @@ _version ctrlSetText format["BETA: 0.%1.%2",(productVersion select 2),(productVe
 [] spawn
 {
 	sleep 1;
-	private["_dam","_cash","_volumelvl"];
+	private["_dam","_cash","_volumelvl","_dependance","_life_drug_level"];
 	while {true} do
 	{
 		_dam = damage player;
 		_cash  = life_cash;
+		_dependance = dependance;
+		_life_drug_level = life_drug_level;
 		if(isnil "TF_speak_volume_level") then {_volumelvl = "normal"; } else {	_volumelvl = TF_speak_volume_level;	};
-		waitUntil {sleep 0.1; ((damage player) != _dam || _cash != life_cash || _volumelvl != TF_speak_volume_level)};
+		waitUntil {sleep 0.1; ((damage player) != _dam || _cash != life_cash || _volumelvl != TF_speak_volume_level || _dependance != dependance || _life_drug_level != life_drug_level)};
 		[] call life_fnc_hudUpdate;
 	};
 };
