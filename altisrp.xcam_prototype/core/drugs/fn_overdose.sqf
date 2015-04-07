@@ -33,7 +33,7 @@ disableUserInput false;
 
 if(_overdose == 0) then {
 _death = random 1;
-if (_death > 0.7) then { hint "Vous venez de mourir d'une overdose !"; player setDamage 1; }
-else { player playActionNow "gestureNod"; };
+} else { _death = 0; };
 
-life_drug_level = 0;
+if (_death > 0.7) then { hint "Vous venez de mourir d'une overdose !"; player setDamage 1; life_drug_level = 0; }
+else { player playActionNow "gestureNod"; };
