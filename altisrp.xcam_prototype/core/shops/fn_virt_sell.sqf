@@ -8,7 +8,7 @@
 */
 if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
 life_action_delay = time;
-private["_type","_index","_price","_var","_amount","_name","_marketprice","_weight","_index2"];
+private["_type","_index","_price","_var","_amount","_name","_marketprice","_weight","_index2","_array","_ind","_val","_valdeja","_trop"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _index = [_type,__GETC__(sell_array)] call life_fnc_index;
@@ -26,6 +26,25 @@ _amount = ctrlText 2405;
 if(!([_amount] call life_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _amount = parseNumber (_amount);
 if(_amount > (missionNameSpace getVariable _var)) exitWith {hint localize "STR_Shop_Virt_NotEnough"};
+
+_trop = false;
+if(life_shop_type == "heroin") then
+{
+	_array = life_shop_npc getVariable["sellers",[]];
+	_ind = [getPlayerUID player,_array] call life_fnc_index;
+	if(_ind != -1) then
+	{
+		_valdeja = (_array select _ind) select 2;
+		if(_valdeja>25) then {
+			_trop = true;
+		} else {
+			if((_valdeja+_amount)>25) then {
+				_amount = (25-_valdeja);
+			};
+		};
+	};
+};
+if(_trop) exitWith {hint localize "STR_Shop_Virt_Trop"};
 
 if(_index2 != -1) then {
 // if!(_type in ["water","coffee","donuts","tbacon","lockpick","pickaxe","redgull","fuelF","spikeStrip","pcp","storage1","storage2","nitro","redburger","soda","apple","rabbit","peach"]) then {
@@ -58,21 +77,20 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 
 if(life_shop_type == "heroin") then
 {
-	private["_array","_ind","_val"];
-	_array = life_shop_npc getVariable["sellers",[]];
-	_ind = [getPlayerUID player,_array] call life_fnc_index;
+	// _array = life_shop_npc getVariable["sellers",[]];
+	// _ind = [getPlayerUID player,_array] call life_fnc_index;
 	if(_ind != -1) then
 	{
 		_val = (_array select _ind) select 2;
-		_val = _val + _price;
+		_val = _val + _amount;
 		_array set[_ind,[getPlayerUID player,profileName,_val]];
 		life_shop_npc setVariable["sellers",_array,true];
 	}
 	else
 	{
-		_array pushBack [getPlayerUID player,profileName,_price];
+		_array pushBack [getPlayerUID player,profileName,_amount];
 		life_shop_npc setVariable["sellers",_array,true];
 	};
-};
+
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;

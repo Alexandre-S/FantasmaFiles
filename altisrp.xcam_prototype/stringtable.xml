@@ -4675,6 +4675,8 @@
 			<Italian>Hai venduto %1 %2 al prezzo di €%3</Italian>
 			<Portuguese>Você vendeu %1 %2 por R$%3</Portuguese>
 		</Key>
+		<Key ID="STR_Shop_Virt_Trop">
+		</Key>
 		<Key ID="STR_Shop_Weapon_NoSelect">
 			<Original>You need to select an item to buy/sell.</Original>
 			<German>Du musst einen Gegenstand auswählen, um ihn zu kaufen / zu verkaufen.</German>

@@ -13,7 +13,8 @@ _names = "";
 {
 	if(_x select 2 > 150000) then
 	{
-		_val = round((_x select 2) / 16);
+		// _val = round((_x select 2) / 16);
+		_val = (_x select 2);
 	};
 	// [] call life_fnc_getHLC;
 	// [[_x select 0,_x select 1,"483",_val],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;
