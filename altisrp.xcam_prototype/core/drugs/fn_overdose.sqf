@@ -5,7 +5,7 @@
 	Description:
 	Took things a little too far!
 */
-private["_overdose","_gesture","_duration"]
+private["_overdose","_gesture","_duration"];
 _overdose = [_this,0,0,[0]] call bis_fnc_param;
 _gesture = "GestureSpasm%1";
 _duration = ceil random 20;

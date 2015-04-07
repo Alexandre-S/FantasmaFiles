@@ -165,7 +165,7 @@ if(!isHLC) then {
 			_queue = _logic getvariable "BIS_fnc_MP_queue";
 			_logic setVariable["BIS_fnc_MP_queue",[],TRUE];
 		
-		
+			{
 			_x setVariable["sellers",[],true];
 			// } foreach [Dealer_1,Dealer_2,Dealer_3];
 			} foreach [Dealer_1,Dealer_2];
@@ -217,8 +217,8 @@ if(!isHLC) then {
 	publicVariable "TON_fnc_player_query";
 	
 	//Lockup the dome
-	private["_dome","_rsb"];
-	/*_dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
+	/*private["_dome","_rsb"];
+	_dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
 	_rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];
 
 	for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _dome animate [format["Door_%1_rot",_i],0];};
