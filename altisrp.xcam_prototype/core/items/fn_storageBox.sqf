@@ -47,12 +47,10 @@ switch (_boxType) do {
 		[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 		
 		//Empty out the crate
-		// clearWeaponCargoGlobal _container;
-		// clearMagazineCargoGlobal _container;
-		// clearItemCargoGlobal _container;
-		// clearBackpackCargoGlobal _container;
-		[] call life_fnc_getHLC;
-		[[_container],"life_fnc_clearVehicleAmmo",serverhc,false] spawn life_fnc_MP;
+		clearWeaponCargoGlobal _container;
+		clearMagazineCargoGlobal _container;
+		clearItemCargoGlobal _container;
+		clearBackpackCargoGlobal _container;
 	};
 	
 	case "storagebig": {
@@ -65,11 +63,9 @@ switch (_boxType) do {
 		[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 		
 		//Empty out the crate
-		// clearWeaponCargoGlobal _container;
-		// clearMagazineCargoGlobal _container;
-		// clearItemCargoGlobal _container;
-		// clearBackpackCargoGlobal _container;
-		[] call life_fnc_getHLC;
-		[[_container],"life_fnc_clearVehicleAmmo",serverhc,false] spawn life_fnc_MP;
+		clearWeaponCargoGlobal _container;
+		clearMagazineCargoGlobal _container;
+		clearItemCargoGlobal _container;
+		clearBackpackCargoGlobal _container;
 	};
 };

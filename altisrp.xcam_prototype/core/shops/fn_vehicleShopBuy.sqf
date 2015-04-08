@@ -115,9 +115,7 @@ waitUntil {sleep 0.1; scriptDone _handle};
 [[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 [[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
-[] call life_fnc_getHLC;
-[[_vehicle],"life_fnc_clearVehicleAmmo",serverhc,false] spawn life_fnc_MP;
-// [_vehicle] call life_fnc_clearVehicleAmmo;
+[_vehicle] call life_fnc_clearVehicleAmmo;
 
 //Side Specific actions.
 switch(playerSide) do {
