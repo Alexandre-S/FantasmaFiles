@@ -115,7 +115,8 @@ class Mission
 		"A3Data",
 		"A3_Structures_F_Households_Stone_Small",
 		"A3_Misc_F_Helpers",
-		"A3_Structures_F_EPB_Civ_Accessories"
+		"A3_Structures_F_EPB_Civ_Accessories",
+		"castructureshouse_housev2"
 	};
 	addOnsAuto[]=
 	{
@@ -145,7 +146,7 @@ class Mission
 		"A3_Structures_F_Ind_Cargo",
 		"aia_misc3_config",
 		"A3_Structures_F_Mil_Shelters",
-		"xCam_EU",
+		"castructureshouse_housev2",
 		"A3_Structures_F_Mil_Flags",
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"A3_Signs_F",
@@ -5533,7 +5534,7 @@ class Mission
 			special="NONE";
 			id=338;
 			side="EMPTY";
-			vehicle="xcam_HouseV2_04_Interier_dam";
+			vehicle="Land_HouseV2_04_Interier_dam";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13289,7 +13290,7 @@ class Mission
 			offsetY=-0.061264001;
 			id=1063;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13300,7 +13301,7 @@ class Mission
 			offsetY=0.0177841;
 			id=1064;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13360,7 +13361,7 @@ class Mission
 			offsetY=-0.18058801;
 			id=1070;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13371,7 +13372,7 @@ class Mission
 			offsetY=0.0540924;
 			id=1071;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13474,7 +13475,7 @@ class Mission
 			offsetY=-0.0189819;
 			id=1081;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13485,7 +13486,7 @@ class Mission
 			offsetY=0.102921;
 			id=1082;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13550,7 +13551,7 @@ class Mission
 			offsetY=0.238251;
 			id=1088;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13561,7 +13562,7 @@ class Mission
 			offsetY=0.53237897;
 			id=1089;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -13572,7 +13573,7 @@ class Mission
 			offsetY=0.40090901;
 			id=1090;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -15848,7 +15849,7 @@ class Mission
 			azimut=30;
 			id=1299;
 			side="EMPTY";
-			vehicle="xcam_grav_6konec";
+			vehicle="land_grav_6konec";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -15858,7 +15859,7 @@ class Mission
 			azimut=30;
 			id=1300;
 			side="EMPTY";
-			vehicle="xcam_grav_25";
+			vehicle="land_grav_25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -15868,7 +15869,7 @@ class Mission
 			azimut=26;
 			id=1301;
 			side="EMPTY";
-			vehicle="xcam_grav_30_25";
+			vehicle="land_grav_30_25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -15878,7 +15879,7 @@ class Mission
 			azimut=59.004398;
 			id=1302;
 			side="EMPTY";
-			vehicle="xcam_grav_22_50";
+			vehicle="land_grav_22_50";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -15888,7 +15889,7 @@ class Mission
 			azimut=239.00301;
 			id=1303;
 			side="EMPTY";
-			vehicle="xcam_grav_22_50";
+			vehicle="land_grav_22_50";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -15898,7 +15899,7 @@ class Mission
 			azimut=53;
 			id=1304;
 			side="EMPTY";
-			vehicle="xcam_grav_30_25";
+			vehicle="land_grav_30_25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16007,7 +16008,7 @@ class Mission
 			azimut=260.00201;
 			id=1314;
 			side="EMPTY";
-			vehicle="xcam_grav_6konec";
+			vehicle="land_grav_6konec";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16226,7 +16227,7 @@ class Mission
 			azimut=73;
 			id=1334;
 			side="EMPTY";
-			vehicle="xcam_grav_0_2000";
+			vehicle="land_grav_0_2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16236,7 +16237,7 @@ class Mission
 			azimut=252.002;
 			id=1335;
 			side="EMPTY";
-			vehicle="xcam_grav_30_25";
+			vehicle="land_grav_30_25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16246,7 +16247,7 @@ class Mission
 			azimut=276.00201;
 			id=1336;
 			side="EMPTY";
-			vehicle="xcam_grav_60_10";
+			vehicle="land_grav_60_10";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16256,7 +16257,7 @@ class Mission
 			azimut=96;
 			id=1337;
 			side="EMPTY";
-			vehicle="xcam_grav_6konec";
+			vehicle="land_grav_6konec";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16266,7 +16267,7 @@ class Mission
 			azimut=96;
 			id=1338;
 			side="EMPTY";
-			vehicle="xcam_grav_6";
+			vehicle="land_grav_6";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16276,7 +16277,7 @@ class Mission
 			azimut=97;
 			id=1339;
 			side="EMPTY";
-			vehicle="xcam_grav_60_10";
+			vehicle="land_grav_60_10";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16286,7 +16287,7 @@ class Mission
 			azimut=230.00301;
 			id=1340;
 			side="EMPTY";
-			vehicle="xcam_grav_22_50";
+			vehicle="land_grav_22_50";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -16318,7 +16319,7 @@ class Mission
 			azimut=228.00101;
 			id=1343;
 			side="EMPTY";
-			vehicle="xcam_grav_6konec";
+			vehicle="land_grav_6konec";
 			skill=0.60000002;
 		};
 		class Item1070
@@ -16327,7 +16328,7 @@ class Mission
 			azimut=49;
 			id=1344;
 			side="EMPTY";
-			vehicle="xcam_grav_6";
+			vehicle="land_grav_6";
 			skill=0.60000002;
 		};
 		class Item1071
@@ -17908,7 +17909,7 @@ class Mission
 			azimut=301.00299;
 			id=1498;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1225
@@ -17917,7 +17918,7 @@ class Mission
 			azimut=261.00201;
 			id=1499;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1226
@@ -18492,7 +18493,7 @@ class Mission
 			azimut=337.004;
 			id=1556;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1283
@@ -18501,7 +18502,7 @@ class Mission
 			azimut=5;
 			id=1557;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 		};
 		class Item1284
@@ -19377,7 +19378,7 @@ class Mission
 			azimut=151.004;
 			id=1641;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1368
@@ -19386,7 +19387,7 @@ class Mission
 			azimut=5;
 			id=1642;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 		};
 		class Item1369
@@ -19395,7 +19396,7 @@ class Mission
 			azimut=5;
 			id=1643;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 		};
 		class Item1370
@@ -19869,7 +19870,7 @@ class Mission
 			azimut=298.00699;
 			id=1690;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1417
@@ -19878,7 +19879,7 @@ class Mission
 			azimut=323.00699;
 			id=1691;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1418
@@ -19886,7 +19887,7 @@ class Mission
 			position[]={7226.9902,39.330002,3707.98};
 			id=1692;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 		};
 		class Item1419
@@ -20129,7 +20130,7 @@ class Mission
 			azimut=114.004;
 			id=1715;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 		};
 		class Item1442
@@ -20742,7 +20743,7 @@ class Mission
 			position[]={7226.9902,39.330002,3722};
 			id=1774;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20751,7 +20752,7 @@ class Mission
 			position[]={7226.9902,39.330002,3736.02};
 			id=1775;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20760,7 +20761,7 @@ class Mission
 			position[]={7226.9902,39.330002,3750.05};
 			id=1776;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20769,7 +20770,7 @@ class Mission
 			position[]={7226.9902,39.330002,3791.8701};
 			id=1777;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20778,7 +20779,7 @@ class Mission
 			position[]={7226.9902,39.330002,3764.0701};
 			id=1778;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20787,7 +20788,7 @@ class Mission
 			position[]={7226.9902,39.330002,3778.1001};
 			id=1779;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20796,7 +20797,7 @@ class Mission
 			position[]={7227.04,39.330002,3805.71};
 			id=1780;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20806,7 +20807,7 @@ class Mission
 			azimut=122;
 			id=1781;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20816,7 +20817,7 @@ class Mission
 			azimut=155;
 			id=1782;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A32_086_R25";
+			vehicle="land_path_W7_A32_086_R25";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20826,7 +20827,7 @@ class Mission
 			azimut=31;
 			id=1783;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -20836,7 +20837,7 @@ class Mission
 			azimut=5;
 			id=1784;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A0_401_R2000";
+			vehicle="land_path_W7_A0_401_R2000";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -22809,7 +22810,7 @@ class Mission
 			offsetY=0.0177097;
 			id=1967;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A16_043_R25";
+			vehicle="land_path_W7_A16_043_R25";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false";
 		};
@@ -22941,7 +22942,7 @@ class Mission
 			offsetY=-0.047328901;
 			id=1979;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A10_695_R75";
+			vehicle="land_path_W7_A10_695_R75";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
@@ -22952,7 +22953,7 @@ class Mission
 			offsetY=0.090000197;
 			id=1980;
 			side="EMPTY";
-			vehicle="xcam_path_W7_A10_695_R75";
+			vehicle="land_path_W7_A10_695_R75";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
