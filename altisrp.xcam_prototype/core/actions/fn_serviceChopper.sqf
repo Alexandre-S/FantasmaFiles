@@ -6,12 +6,10 @@
 	Main functionality for the chopper service paid, to be replaced in later version.
 */
 disableSerialization;
-private["_search","_ui","_progress","_cP","_pgText","_title"];
+private["_search","_ui","_progress","_cP","_pgText","_title","_sp"];
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_Action"};
-_search = nearestObjects[getPos air_sp, ["Air"],5];
-if(count _search == 0) then {
-	_search = nearestObjects[getPos air_sp_2, ["Air"],5];
-};
+_sp = [(_this select 3),0,"",[""]] call BIS_fnc_param;
+_search = nearestObjects[getPos _sp, ["Air"],5];
 if(count _search == 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
 if(life_cash < 1000) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 life_cash = life_cash - 1000;
@@ -34,7 +32,7 @@ while {true} do
 	if(_cP >= 1) exitWith {};
 };
 
-if(!alive (_search select 0) || ((_search select 0) distance air_sp > 10 || (_search select 0) distance air_sp_2 > 10)) exitWith {life_action_inUse = false; hint localize "STR_Service_Chopper_Missing"};
+if(!alive (_search select 0) || (_search select 0) distance _sp > 10) exitWith {life_action_inUse = false; hint localize "STR_Service_Chopper_Missing"};
 if(!local (_search select 0)) then
 {
 	[[(_search select 0),1],"life_fnc_setFuel",(_search select 0),false] spawn life_fnc_MP;
