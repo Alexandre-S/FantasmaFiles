@@ -233,7 +233,7 @@ switch (_shop) do
 			_return pushBack ["rhsusf_m1025_d_s_m2",750000];
 		};
 		// Faction 1 = Armée Privée
-		if(__GETC__(life_factnumber) == 1) then
+		/*if(__GETC__(life_factnumber) == 1) then
 		{
 			_return pushBack ["PMC_Offroad_Transport",33750];
 			_return pushBack ["PMC_MH9",412500];
@@ -242,7 +242,7 @@ switch (_shop) do
 			{
 				_return pushBack ["PMC_Offroad_Armed",750000];
 			};
-		};
+		};*/
 		// Si leader de faction
 		if(__GETC__(life_reblevel) >= 3) then
 		{

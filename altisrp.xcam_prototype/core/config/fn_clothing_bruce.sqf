@@ -143,7 +143,7 @@ switch (_filter) do
 			["vip_clothes","Tenue footing",4500],
 
 
-			["U_PMC_IndUniformRS_BSBPBB",nil,5000],
+			//["U_PMC_IndUniformRS_BSBPBB",nil,5000],
 			["U_PMC_IndUniformRS_BSGPBB",nil,5000],
 			["U_PMC_IndUniformRS_BSTPTB",nil,5000],
 			["U_PMC_IndUniformRS_GSGPBB",nil,5000],
@@ -153,7 +153,7 @@ switch (_filter) do
 			["U_PMC_IndUniformRS_TSBPBB",nil,5000],
 			["U_PMC_IndUniformRS_TSGPBB",nil,5000],
 			
-			["U_PMC_IndUniformLS_BSBPBB",nil,5000],
+			//["U_PMC_IndUniformLS_BSBPBB",nil,5000],
 			["U_PMC_IndUniformLS_BSGPBB",nil,5000],
 			["U_PMC_IndUniformLS_BSTPTB",nil,5000],
 			["U_PMC_IndUniformLS_GSGPBB",nil,5000],
