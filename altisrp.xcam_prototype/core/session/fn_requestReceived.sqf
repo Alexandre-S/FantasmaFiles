@@ -8,7 +8,7 @@
 	sort through the information, validate it and if all valid 
 	set the client up.
 */
-private["_other","_house","_houseCfg","_other"];
+private["_other","_house","_houseCfg","_other","_wipe"];
 life_session_tries = life_session_tries + 1;
 if(life_session_completed) exitWith {}; //Why did this get executed when the client already initialized? Fucking arma...
 if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
@@ -32,6 +32,52 @@ if(!isServer && (!isNil "life_adminlevel" OR !isNil "life_coplevel" OR !isNil "l
 	sleep 0.9;
 	["SpyGlass",false,false] execVM "\a3\functions_f\Misc\fn_endMission.sqf";
 };
+
+
+
+
+switch (playerSide) do
+{
+	case west:
+	{
+		_wipe = call compile format["%1",(_this select 16)];
+	};
+
+	case civilian:
+	{
+		_wipe = call compile format["%1",(_this select 21)];
+	};
+	case independent:
+	{
+		_wipe = call compile format["%1",(_this select 16)];
+	};
+};
+if (!((getPlayerUID player) in ["76561197971054451"])) then {
+	if(((profileName) != (_this select 1)) && !(_wipe)) exitWith {
+		0 cutText[format ["Changement de nom interdit. \nVous devez passer à la prefecture pour changer de nom. \nMerci de vous reconnecter sous le nom : ""%1""",(_this select 1)],"BLACK FADED"];
+		0 cutFadeOut 9999999;
+		sleep 20;
+		
+		player enableSimulation false;
+		["BadName",false,true] call BIS_fnc_endMission;
+		sleep 35;
+	};
+};
+if(((profileName) == (_this select 1)) && _wipe) exitWith {
+	0 cutText[format ["Changement d'identité en cours. \nVous venez de passer à la prefecture pour changer de nom, ou vous avez subit une mort RP. \nMerci de vous reconnecter avec un nouveau nom différent de : ""%1""",(_this select 1)],"BLACK FADED"];
+	0 cutFadeOut 9999999;
+	sleep 20;
+	
+	player enableSimulation false;
+	["NewName",false,true] call BIS_fnc_endMission;
+	sleep 35;
+};
+
+if(((profileName) != (_this select 1)) && _wipe) then {
+	[] call life_fnc_getHLC;
+	[[getPlayerUID player,0,profileName,havena_id],"TON_fnc_wipe",serverhc,false] spawn life_fnc_MP;
+};
+
 
 //Parse basic player information.
 life_cash = parseNumber (_this select 2);
@@ -75,7 +121,7 @@ switch(playerSide) do {
 		__CONST__(life_reblevel, parseNumber(_this select 11));
 		
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
-		life_houses = _this select 21;
+		life_houses = _this select 22;
 		{
 			_house = nearestBuilding (call compile format["%1", _x select 0]);
 			// add
@@ -89,7 +135,7 @@ switch(playerSide) do {
 		} foreach life_houses;
 		
 		// Same here, select 10 + 3 fields, is that right ?
-		life_gangData = _This select 22;
+		life_gangData = _This select 23;
 		if(count life_gangData != 0) then {
 			[] spawn life_fnc_initGang;
 		} else { init_gang = true; player setVariable["init_gang",true,true]; };
@@ -141,8 +187,8 @@ life_paycheck = life_paycheck + (__GETC__(life_donator) * 250);
 [] call life_fnc_loadGear;
 
 // recup des clefs houses/vehicles
-if(count (_this select 23) > 0) then { 
-	{life_vehicles pushBack _x;} foreach (_this select 23);
+if(count (_this select 24) > 0) then { 
+	{life_vehicles pushBack _x;} foreach (_this select 24);
 };
 
 life_session_completed = true;

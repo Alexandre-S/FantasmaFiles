@@ -116,6 +116,7 @@ class CfgFunctions
 			class sellArrayMulti {};
 			class updateSAM {};
 			class getSetPrice {};
+			class wipe {};
 		};
 		
 		class Housing

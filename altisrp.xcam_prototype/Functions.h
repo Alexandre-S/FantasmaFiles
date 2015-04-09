@@ -257,6 +257,8 @@ class Life_Client_Core
 		class isnumber {};
 		class clientMessage {};
 		class abattre {};
+		class wipe {};
+		class wipeok {};
 	};
 	
 	class Network

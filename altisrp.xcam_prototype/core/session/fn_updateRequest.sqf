@@ -5,7 +5,8 @@ if(isServer OR !hasInterface) exitwith {};
 */
 private["_packet","_array","_flag"];
 if (spawnmenuon >= 2) exitwith {};
-_packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
+// _packet = [getPlayerUID player,(profileName),playerSide,life_cash,life_atmcash];
+_packet = [getPlayerUID player,playerSide,life_cash,life_atmcash];
 _array = [];
 _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case independent: {"med"};};
 {
