@@ -14,10 +14,10 @@
 			<French>Marché Rebel</French>
 		</Key>
 		<Key ID="STR_Shops_Gang">
-			<Original>Gang Market</Original>
+			<Original>Group Market</Original>
 			<German>Gang Markt</German>
 			<Italian>Mercato Gang</Italian>
-			<French>Marché de Gang</French>
+			<French>Marché de Groupe</French>
 		</Key>
 		<Key ID="STR_Shops_Wongs">
 			<Original>Wong's Food Cart</Original>
@@ -351,9 +351,9 @@
 			<Portuguese>Você não tem todo esse dinheiro.</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_DepositGang">
- 			<Original>You have deposited $%1 into your gangs bank account</Original>
+ 			<Original>You have deposited $%1 into your group bank account</Original>
 			<German>Du hast $%1 auf dein Gang Konto überwiesen</German>
- 			<French>Vous avez déposé %1 € sur le compte bancaire de votre gang.</French>
+ 			<French>Vous avez déposé %1 € sur le compte bancaire de votre groupe.</French>
 			<Italian>Hai despoitato €%1 nel conto bancario della tua gang</Italian>
 			<Portuguese>Você depositou R$%1 na conta de sua gangue.</Portuguese>
  		</Key>
@@ -427,16 +427,16 @@
 	</Package>
 	<Package name="Gang_Menu">
 		<Key ID="STR_Gang_Title">
-			<Original>Gang Management</Original>
+			<Original>Group Management</Original>
 			<German>Gang Verwaltung</German>
-			<French>Gestion du Gang</French>
+			<French>Gestion du Groupe</French>
 			<Italian>Gestione Gang</Italian>
 			<Portuguese>Gerenciar Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_Title2">
-			<Original>Gang Management - Current Gangs</Original>
+			<Original>Group Management - Current Groups</Original>
 			<German>Gang Übersicht - Aktuelle Gangs</German>
-			<French>Gestion de Gangs - Liste des Gangs Actuels</French>
+			<French>Gestion de Groupe - Liste des Groupes Actuels</French>
 			<Italian>Gestione Gang - Gang Attuali</Italian>
 			<Portuguese>Gerenciar Gangue</Portuguese>
 		</Key>
@@ -476,9 +476,9 @@
 			<Portuguese>Passar Liderança</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_PriceTxt">
-			<Original>To create a gang it costs $%1</Original>
+			<Original>To create a group it costs $%1</Original>
 			<German>Eine Gang zu erstellen kostet $%1</German>
-			<French>Créer un gang coute %1 €</French>
+			<French>Créer un groupe coute %1 €</French>
 			<Italian>Creare una gang costa €%1</Italian>
 			<Portuguese>Criar uma Gangue custa R$%1</Portuguese>
 		</Key>
@@ -490,16 +490,16 @@
 			<Portuguese>Criar</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_YGN">
-			<Original>Your Gang Name</Original>
+			<Original>Your Group Name</Original>
 			<German>Dein Gang Name</German>
-			<French>Nom de ton Gang</French>
+			<French>Nom du Groupe</French>
 			<Italian>Nome della tua Gang</Italian>
 			<Portuguese>Nome da Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_MainMenu">
-			<Original>You aren't in a gang currently, what do you want to do?</Original>
+			<Original>You aren't in a group currently, what do you want to do?</Original>
 			<German>Du bist in keiner Gang, was möchtest du machen?</German>
-			<French>Tu n'as pas de gang actuellement</French>
+			<French>Tu n'as pas de groupe actuellement</French>
 			<Italian>Non sei in una gang, cosa intendi fare?</Italian>
 			<Portuguese>Você não está em uma Gangue, o que deseja fazer?</Portuguese>
 		</Key>
@@ -518,20 +518,20 @@
 			<Portuguese>Convidar Jogador</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_Disband_Gang">
-			<Original>Disband Gang</Original>
+			<Original>Disband Group</Original>
 			<German>Gang auflösen</German>
-			<French>Dissoudre Gang</French>
+			<French>Dissoudre Groupe</French>
 			<Italian>Sciogli Gang</Italian>		
 			<Portuguese>Desfazer Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_Whithdraw">
-			<Original>Whitdraw Gang</Original>
+			<Original>Whitdraw Group</Original>
 			<French>Retirer argent</French>
 		</Key>
 		<Key ID="STR_Gang_Invitation">
-			<Original>Gang Invitation</Original>
+			<Original>Group Invitation</Original>
 			<German>Gang Einladung</German>	
-			<French>Invitation de Gang</French>
+			<French>Invitation de Groupe</French>
 			<Italian>Invito Gang</Italian>
 			<Portuguese>Convite para Gangue</Portuguese>
 		</Key>
@@ -551,14 +551,14 @@
 			<French>Retrait Argent</French>
 		</Key>
 		<Key ID="STR_Gang_Transfer">
-			<Original>Transfer Gang Leadership</Original>
+			<Original>Transfer Group Leadership</Original>
 			<German>Gangleitung übertragen</German>	
-			<French>Transfert du commandement du Gang</French>
+			<French>Transfert du commandement du Groupe</French>
 			<Italian>Trasferisci Comando</Italian>
 			<Portuguese>Transferir Liderança</Portuguese>
 		</Key>
 		<Key ID="STR_Gang_UpgradeMax">
-			<Original>Upgrade Maximum Allowed Gang Members</Original>
+			<Original>Upgrade Maximum Allowed Group Members</Original>
 			<German>Maximale Anzahl an Gang Mitgliedern erhöhen</German>	
 			<French>Augmentation du nombre de membre acceptés</French>
 			<Italian>Aumenta numero massimo membri della Gang</Italian>
@@ -567,16 +567,16 @@
 	</Package>
 	<Package name="Gang_Notification">
 		<Key ID="STR_GNOTF_CreateGang">
-			<Original>You must create a gang first before capturing it!</Original>
+			<Original>You must create a group first before capturing it!</Original>
 			<German>Du musst erst in einer Gang sein, um einzunehmen zu können!</German>	
-			<French>Vous devez créer un gang avant de le capturer!</French>
+			<French>Vous devez créer un groupe avant de le capturer!</French>
 			<Italian>Devi creare una gang prima di catturarla!</Italian>
 			<Portuguese>Você precisa criar uma gangue antes de tentar capturar esse esconderijo!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Controlled">
-			<Original>Your gang already has control over this hideout!</Original>
+			<Original>Your group already has control over this hideout!</Original>
 			<German>Deine Gang hat bereits die Kontrolle über dieses Versteck!</German>	
-			<French>Votre bande a déjà le contrôle de cette cachette!</French>
+			<French>Votre groupe a déjà le contrôle de cette cachette!</French>
 			<Italian>La tua Gang ha già il controllo di questo Covo</Italian>
 			<Portuguese>Sua gangue já tem controle sobre esse esconderijo!</Portuguese>
 		</Key>
@@ -588,9 +588,9 @@
 			<Portuguese>Somente uma pessoa pode capturar!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_AlreadyControlled">
-			<Original>This hideout is controlled by %1.&lt;br/&gt;&lt;br/&gt;Are you sure you want to take over their gang area?</Original>
+			<Original>This hideout is controlled by %1.&lt;br/&gt;&lt;br/&gt;Are you sure you want to take over their group area?</Original>
 			<German>Das Versteck wird durch %1 kontrolliert.&lt;br/&gt;&lt;br/&gt;Bist du sicher, dass du ihr Gang Gebiet übernehmen möchtest?</German>
-			<French>Cette cachette est contrôlée par %1.&lt;br/&gt;&lt;br/&gt;Etes-vous sûr que vous voulez prendre en charge leur zone de gang?</French>
+			<French>Cette cachette est contrôlée par %1.&lt;br/&gt;&lt;br/&gt;Etes-vous sûr que vous voulez prendre en charge leur zone de groupe?</French>
 			<Italian>Questo Covo è controllato da %1.&lt;br/&gt;&lt;br/&gt;Sicuro di voler prendere il controllo della loro area?</Italian>
 			<Portuguese>Esse esconderijo é controlado por %1.&lt;br/&gt;&lt;br/&gt;Você tem certeza que deseja tomar essa área?</Portuguese>
 		</Key>
@@ -616,23 +616,23 @@
 			<Portuguese>Capturando Esconderijo</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CaptureSuccess">
-			<Original>%1 and his gang: %2 - have taken control of a local hideout!</Original>
+			<Original>%1 and his group: %2 - have taken control of a local hideout!</Original>
 			<German>%1 und seine Gang: 2% - haben die Kontrolle über ein lokales Versteck übernommen!</German>
-			<French>%1 et son gang: %2 ont prit le controle d'une planque !</French>
+			<French>%1 et son group: %2 ont prit le controle d'une planque !</French>
 			<Italian>%1 e la sua Gang: % 2 - hanno preso il controllo di un Covo!</Italian>
 			<Portuguese>%1 e sua gangue: %2 - agora tem o controle de um esconderijo!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_Over32">
-			<Original>You can't have a gang name longer then 32 characters.</Original>
+			<Original>You can't have a group name longer then 32 characters.</Original>
 			<German>Dein Gang Name kann nicht länger als 32 Zeichen sein.</German>
-			<French>Vous ne pouvez pas avoir un nom de gang de plus de 32 caractères.</French>
+			<French>Vous ne pouvez pas avoir un nom de groupe de plus de 32 caractères.</French>
 			<Italian>%1 e la sua Gang: % 2 - hanno preso il controllo di un Covo!</Italian>
 			<Portuguese>O nome de sua gangue não pode ter mais de 32 caracteres.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_IncorrectChar">
-			<Original>You have invalid characters in your gang name. It can only consist of Numbers and letters with an underscore</Original>
+			<Original>You have invalid characters in your group name. It can only consist of Numbers and letters with an underscore</Original>
 			<German>Du hast ein ungültiges Zeichen in deinem Gang Namen. Der Name darf nur aus Zahlen und Buchstaben sowie einem Unterstrich bestehen</German>	
-			<French>Vous avez des caractères non valides dans le nom de votre gang. Il ne peut contenir que des lettres, chiffres, et underscore ( _ )</French>
+			<French>Vous avez des caractères non valides dans le nom de votre groupe. Il ne peut contenir que des lettres, chiffres, et underscore ( _ )</French>
 			<Italian>Hai inserito caratteri non validi nel nome della Gang. Puoi inserire solo numeri e lettere con un underscore</Italian>
 			<Portuguese>O nome da sua gangue tem caracteres inválidos. O nome so pode conter caracteres e números separados por sublinhado</Portuguese>
 		</Key>
@@ -644,23 +644,23 @@
 			<Portuguese>Você não tem dinheiro suficiente na sua conta bancária.\n\nFaltam: R$%1</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_CreateSuccess">
-			<Original>You have created the gang %1 for $%2</Original>
+			<Original>You have created the group %1 for $%2</Original>
 			<German>Du hast die Gang %1 für $%2 erstellt</German>
-			<French>Vous avez créé le gang %1 pour %2 €</French>
+			<French>Vous avez créé le groupe %1 pour %2 €</French>
 			<Italian>Hai creato la Gang %1 al costo di €%2</Italian>
 			<Portuguese>Você criou a gangue %1 por R$%2</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_DisbandWarn">
-			<Original>You are about to disband the gang, by disbanding the gang it will be removed from the database and the group will be dropped. &lt;br/&gt;&lt;br/&gt;Are you sure you want to disband the group? You will not be refunded the price for creating it.</Original>
+			<Original>You are about to disband the group, by disbanding the group it will be removed from the database and the group will be dropped. &lt;br/&gt;&lt;br/&gt;Are you sure you want to disband the group? You will not be refunded the price for creating it.</Original>
 			<German>Du bist dabei, die Gang aufzulösen. Durch Auflösung der Gang wird sie aus der Datenbank entfernt. &lt;br/&gt;&lt;br/&gt;Bist du sicher, dass du die Gang auflösen willst? Du erhältst den Preis für die Erstellung nicht zurück.</German>
-			<French>Vous vous apprêtez à dissoudre le gang, en démantelant le gang, il sera supprimé de la base de données et le groupe sera supprimé. &lt;br/&gt;&lt;br/&gt;Etes-vous sûr de vouloir dissoudre le groupe? Vous ne serez pas remboursé du prix de sa création</French>
+			<French>Vous vous apprêtez à dissoudre le groupe, en démantelant le groupe, il sera supprimé de la base de données et le groupe sera supprimé. &lt;br/&gt;&lt;br/&gt;Etes-vous sûr de vouloir dissoudre le groupe? Vous ne serez pas remboursé du prix de sa création</French>
 			<Italian>Stai per sciogliere la Gang, facendolo sarà rimossa dal Database e il gruppo verrà cancellato. &lt;br/&gt;&lt;br/&gt;Sei sicuro di voler sciogliere il gruppo? Non verrai rimborsato dei fondi spesi per crearlo.</Italian>
 			<Portuguese>Você vai desfazer a sua gangue, ela será apagada do banco de dados. &lt;br/&gt;&lt;br/&gt;Você tem certeza que quer desfazer a gangue? Você não será reembolsado.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_DisbandGangPro">
-			<Original>Disbanding the gang...</Original>
+			<Original>Disbanding the group...</Original>
 			<German>Gang wird aufgelöst...</German>
-			<French>Démantèlement du gang ...</French>
+			<French>Démantèlement du groupe ...</French>
 			<Italian>Sciogliendo la Gang...</Italian>
 			<Portuguese>Desfazendo gangue...</Portuguese>
 		</Key>
@@ -672,23 +672,23 @@
 			<Portuguese>Cancelar ação de desfazer gangue</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_DisbandWarn_2">
-			<Original>The leader has disbanded the gang.</Original>
+			<Original>The leader has disbanded the groupe.</Original>
 			<German>Der Anführer hat die Gang aufgelöst.</German>
-			<French>Le chef a démantelé le gang.</French>
+			<French>Le chef a démantelé le groupe.</French>
 			<Italian>Il Capo ha sciolto la Gang</Italian>
 			<Portuguese>O lider da gangue desfez a gangue.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_InviteMSG">
-			<Original>%1 has invited you to a gang called %2&lt;br/&gt;If you accept the invitation you will be a part of their gang and will have access to the gang funds and controlled gang hideouts.</Original>
+			<Original>%1 has invited you to a group called %2&lt;br/&gt;If you accept the invitation you will be a part of their group and will have access to the group funds and controlled group hideouts.</Original>
 			<German>%1 hat dich zu einer Gang namens %2 eingeladen &lt;br/&gt; Wenn Du die Einladung annimmst, wirst du ein Teil der Gang und bekommst Zugang zu den Gang-Konten und kontrollierten Gang Verstecken.</German>
-			<French>%1 vous a invité dans un gang appelé %2&lt;br/&gt;Si vous acceptez l'invitation, vous ferez partie de leur gang et aurez accès à des fonds de gangs et des cachettes de gangs contrôlés.</French>
+			<French>%1 vous a invité dans un groupe appelé %2&lt;br/&gt;Si vous acceptez l'invitation, vous ferez partie de leur groupe et aurez accès à des fonds de groupe et des cachettes de groupe contrôlés.</French>
 			<Italian>%1 ti ha invitato nella Gang: %2&lt;br/&gt;Se vuoi accettarai l'invito entrerai a far parte della loro Gang ed avrai accesso ai loro fondi e ai loro Covi.</Italian>
 			<Portuguese>%1 convidou você para a gangue %2&lt;br/&gt;Se você aceitar você terá acesso aos recursos da gangue e os esconderijos.</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_InvitePlayerMSG">
-			<Original>You are about to invite %1 to your gang, if they accept the invite they will have access to the gang's funds.</Original>
+			<Original>You are about to invite %1 to your group, if they accept the invite they will have access to the group's funds.</Original>
 			<German>Du bist dabei, %1 in deine Gang einzuladen. Wenn die Einladung angenommen wird, hat der Spieler Zugang zu den Mitteln der Gang.</German>
-			<French>Vous êtes sur le point d'inviter %1 à votre gang, s'il accepte l'invitation, il aura accès aux fonds du gang.</French>
+			<French>Vous êtes sur le point d'inviter %1 à votre groupe, s'il accepte l'invitation, il aura accès aux fonds du groupe.</French>
 			<Italian>Stai per invitare %1 nella tua Gang, se accetterà l'invito avrà accesso ai fondi della Gang.</Italian>
 			<Portuguese>Você vai convidar %1 para a gangue, ele terá acesso aos recursos da gangue.</Portuguese>
 		</Key>
@@ -700,9 +700,9 @@
 			<Portuguese>Você tem que selecionar um jogador para convidar!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_InviteSent">
-			<Original>You have sent a invite to your gang to %1</Original>
+			<Original>You have sent a invite to your group to %1</Original>
 			<German>Du hast eine Einladung in deine Gang an %1 gesendet</German>
-			<French>Vous avez envoyé une invitation de gang à %1</French>
+			<French>Vous avez envoyé une invitation de groupe à %1</French>
 			<Italian>Hai mandato l'invito alla tua Gang a %1</Italian>
 			<Portuguese>Você enviou um convite para %1 se juntar a sua gangue</Portuguese>
 		</Key>
@@ -721,9 +721,9 @@
 			<Portuguese>Você não pode kickar você mesmo!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_MaxSlot">
-			<Original>Your gang has reached its maximum allowed slots, please upgrade your gangs slot limit.</Original>
+			<Original>Your group has reached its maximum allowed slots, please upgrade your groups slot limit.</Original>
 			<German>Deine Gang hat die maximale Anzahl an Plätzen erreicht, bitte erhöhe das Limit deiner Gang.</German>
-			<French>Votre gang a atteint le nombre maximum de membre, veuillez augmenter cette limite.</French>
+			<French>Votre groupe a atteint le nombre maximum de membre, veuillez augmenter cette limite.</French>
 			<Italian>la tua Gang ha raggiungo il numero massimo di posti consentiti, aumentane il limite.</Italian>
 			<Portuguese>Sua gangue está lotada, você deve aumentar o número máximo de jogadores.</Portuguese>
 		</Key>
@@ -735,16 +735,16 @@
 			<Portuguese>Você tem que selecionar um jogador para kickar!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_LeaderLeave">
-			<Original>You cannot leave the gang without appointing a new leader first!</Original>
+			<Original>You cannot leave the group without appointing a new leader first!</Original>
 			<German>Du kannst die Gang nicht verlassen, ohne einen neuen Anführer zu ernennen!</German>
-			<French>Vous ne pouvez pas quitter le gang sans la nomination d'un nouveau chef !</French>
+			<French>Vous ne pouvez pas quitter le groupe sans la nomination d'un nouveau chef !</French>
 			<Italian>Non puoi abbandonare la Gang prima di aver selezionato un nuovo Capo!</Italian>
 			<Portuguese>Você não pode sair da gangue sem transferir a liderança antes!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_TransferMSG">
-			<Original>You are about to transfer leadership over to %1&lt;br/&gt;By transferring leadership you will no longer be in control of the gang unless ownership is transferred back.</Original>
+			<Original>You are about to transfer leadership over to %1&lt;br/&gt;By transferring leadership you will no longer be in control of the group unless ownership is transferred back.</Original>
 			<German>Du bist dabei, die Führung an %1 zu übertragen&lt;br/&gt;Durch die Übertragung der Leitung der Gang hast du keine Kontrolle mehr.</German>
-			<French>Vous allez transférer le commandement à %1&lt;br/&gt;En transférant le commandement, vous ne serez plus le chef du gang, sauf si le commandement est transféré de nouveau.</French>
+			<French>Vous allez transférer le commandement à %1&lt;br/&gt;En transférant le commandement, vous ne serez plus le chef du group, sauf si le commandement est transféré de nouveau.</French>
 			<Italian>Stai per traferire il comando a %1&lt;br/&gt;Facendolo non avrai più il controllo della Gang fino a quando non ti verrà restituito il comando.</Italian>
 			<Portuguese>Você vai transferir a liderança da gangue para %1&lt;br/&gt;Você não será mais o lider da gangue.</Portuguese>
 		</Key>
@@ -770,9 +770,9 @@
 			<Portuguese>Você tem que selecionar um jogador antes!</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_MaxMemberMSG">
-			<Original>You are about to upgrade the maximum members allowed for your gang.</Original>
+			<Original>You are about to upgrade the maximum members allowed for your group.</Original>
 			<German>Du bist dabei, die maximale Anzahl an Mitgliedern zu erhöhen.</German>
-			<French>Vous êtes sur le point de mettre à niveau la limite de membre autorisées pour votre gang.</French>
+			<French>Vous êtes sur le point de mettre à niveau la limite de membre autorisées pour votre groupe.</French>
 			<Italian>Stai aumentando il numero massimo di membri consentiti all'interno della tua Gang</Italian>
 			<Portuguese>Você vai atualizar o limite de membros da gangue.</Portuguese>
 		</Key>
@@ -798,7 +798,7 @@
 			<Portuguese>Preço:</Portuguese>
 		</Key>
 		<Key ID="STR_GNOTF_NotEoughMoney_2">
-			<Original>You do not have enough money in your bank account to upgrade the gangs maximum member limit.</Original>
+			<Original>You do not have enough money in your bank account to upgrade the groups maximum member limit.</Original>
 			<German>Du hast nicht genug Geld auf deinem Bankkonto, um das Mitgliederlimit deiner Gang zu erhöhen.</German>
 			<French>Vous n'avez pas assez d'argent dans votre compte bancaire pour mettre à niveau la limite de membre maximale.</French>
 			<Italian>Non hai abbastanza fondi nel tuo conto in banca per aumentare il limite massimo di membri.</Italian>
@@ -840,9 +840,9 @@
 			<Portuguese>Recursos:</Portuguese>
 		</Key>
 		<Key ID='STR_GNOTF_GangLeader'>
-			<Original>(Gang Leader)</Original>
+			<Original>(Group Leader)</Original>
 			<German>(Anführer)</German>
-			<French>(Gang Leader)</French>
+			<French>(Groupe Leader)</French>
 			<Italian>(Capo Gang)</Italian>
 			<Portuguese>(Lider da Gangue)</Portuguese>
 		</Key>
@@ -1028,9 +1028,9 @@
 			<Portuguese>Dinheiro</Portuguese>
 		</Key>
 		<Key ID="STR_PM_MyGang">
-			<Original>My Gang</Original>
+			<Original>My Group</Original>
 			<German>Meine Gang</German>
-			<French>Mon Gang</French>
+			<French>Mon Groupe</French>
 			<Italian>Mia Gang</Italian>
 			<Portuguese>Gangue</Portuguese>
 		</Key>
@@ -1816,8 +1816,8 @@
 			<Portuguese>Você não tem todo esse dinheiro em sua conta bancária.</Portuguese>
  		</Key>
  		<Key ID="STR_ATM_GangLimit">
- 			<Original>You can't add more than %1 € on your gang account</Original>
- 			<French>Vous ne pouvez pas déposer plus de %1 € sur votre compte de gang</French>
+ 			<Original>You can't add more than %1 € on your group account</Original>
+ 			<French>Vous ne pouvez pas déposer plus de %1 € sur votre compte de groupe</French>
  		</Key>
  		<Key ID="STR_NOTF_CouldntAdd">
  			<Original>Couldn't add it to your inventory.</Original>
@@ -4187,9 +4187,9 @@
 			<Portuguese>Apagar Luz</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_DepositToGang">
-			<Original>Deposit To Gang</Original>
+			<Original>Deposit To Group</Original>
 			<German>Auf Gang-Konto einzahlen</German>
-			<French>Déposer pour le gang</French>
+			<French>Déposer pour le Groupe</French>
 			<Italian>Deposita alla Gang</Italian>
 			<Portuguese>Depositar para a Gangue</Portuguese>
 		</Key>
@@ -4613,16 +4613,16 @@
 			<Portuguese>Você não tem todos esse items para vender</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_Gang_FundsMSG">
-			<Original>The gang has enough funds to pay for this, would you like to pay with the gangs funds or your own?</Original>
+			<Original>The Group has enough funds to pay for this, would you like to pay with the Groups funds or your own?</Original>
 			<German>Die Gang hat genügend Geld, um dafür zu zahlen. Willst du mit dem Geld der Gang oder deinem eigenen bezahlen?</German>
-			<French>Le gang a suffisamment de fonds pour payer cet achat. Voulez-vous payer avec les fonds de gangs ou les vôtres?</French>
+			<French>Le Groupe a suffisamment de fonds pour payer cet achat. Voulez-vous payer avec les fonds de Groupe ou les vôtres?</French>
 			<Italian>La Gang ha fondi a sufficienza per pagare questo, vuoi usare i fondi della Gang o i tuoi personali?</Italian>
 			<Portuguese>A Gangue tem dinheiro suficiente para pagar por isso, você gostaria de usar o dinheiro da Gangue?</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_Gang_Funds">
-			<Original>Gang Funds:</Original>
+			<Original>Group Funds:</Original>
 			<German>Geld der Gang:</German>
-			<French>Fonds du gang:</French>
+			<French>Fonds du Groupe:</French>
 			<Italian>Fondi Gang:</Italian>
 			<Portuguese>Recurso da Gangue:</Portuguese>
 		</Key>
@@ -4634,16 +4634,16 @@
 			<Portuguese>Seu Dinheiro:</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_YourorGang">
-			<Original>Pay with cash or gang funds</Original>
+			<Original>Pay with cash or Group funds</Original>
 			<German>Mit Bargeld oder Geld der Gang bezahlen</German>
-			<French>Payez avec votre argent ou avec les fonds du gangs</French>
+			<French>Payez avec votre argent ou avec les fonds du Groupe</French>
 			<Italian>Paga con i tuoi contanti o i fondi della Gang</Italian>
 			<Portuguese>Pagar a Sua conta ou da Gangue</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_UI_GangFunds">
-			<Original>Gang Funds</Original>
+			<Original>Group Funds</Original>
 			<German>Geld der Gang</German>
-			<French>Fonds du gang:</French>
+			<French>Fonds du Groupe:</French>
 			<Italian>Fondi Gang</Italian>
 			<Portuguese>Dinheiro da Gangue</Portuguese>
 		</Key>
@@ -4655,9 +4655,9 @@
 			<Portuguese>Seu Dinheiro</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Virt_BoughtGang">
-			<Original>You bought %1 %2 for $%3 with the gangs funds</Original>
+			<Original>You bought %1 %2 for $%3 with the Groups funds</Original>
 			<German>Du kaufst %1 %2 für $%3 mit dem Geld der Gang</German>
-			<French>Vous avez acheté %1 %2 pour %3 € avec les fonds du gangs</French>
+			<French>Vous avez acheté %1 %2 pour %3 € avec les fonds du Groupe</French>
 			<Italian>Hai comprato %1 %2 al costo di €%3 con i fondi della Gang</Italian>
 			<Portuguese>Você comprou %1 %2 por R$%3 com o dinheiro de gague</Portuguese>
 		</Key>
@@ -4694,9 +4694,9 @@
 			<Portuguese>Você vendeu %1 por &lt;t color='#8cff9b'&gt;R$%2&lt;/t&gt;</Portuguese>
 		</Key>
 		<Key ID="STR_Shop_Weapon_BoughtGang">
-			<Original>You bought a %1 for &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; with the gangs funds.</Original>
+			<Original>You bought a %1 for &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; with the Groups funds.</Original>
 			<German>Du hast eine %1 für &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; mit dem Geld der Gang gekauft.</German>
-			<French>Vous avez acheté un %1 pour &lt;t color='#8cff9b'&gt;%2 €&lt;/t&gt; avec les fonds du gang.</French>
+			<French>Vous avez acheté un %1 pour &lt;t color='#8cff9b'&gt;%2 €&lt;/t&gt; avec les fonds du Groupe.</French>
 			<Italian>Hai comprato un %1 al costo di &lt;t color='#8cff9b'&gt;$%2&lt;/t&gt; con i fondi della Gang.</Italian>
 			<Portuguese>Você comprou %1 por &lt;t color='#8cff9b'&gt;R$%2&lt;/t&gt; com o dinheiro da gangue.</Portuguese>
 		</Key>
