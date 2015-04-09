@@ -85,7 +85,8 @@ if(typeName _sp == "STRING") then {
 		_hs = _hs select 0;
 		_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	} else {
-		_hs = ((getMarkerPos _sp) nearestObject 485277);
+		// _hs = ((getMarkerPos _sp) nearestObject 485277);
+		_hs = ((getMarkerPos _sp) nearestObject 268089);
 		_vehicle setPosATL (_hs modelToWorld [-16.5,-24.3,10.2]);
 	};
 	sleep 0.1;

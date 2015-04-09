@@ -59,7 +59,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 		_hs = _hs select 0;
 		_vehicle setPosATL (_hs modelToWorld [-0.4,-4,12.65]);
 	} else {
-		_hs = ((getMarkerPos _spawnPoint) nearestObject 485277);
+		// _hs = ((getMarkerPos _spawnPoint) nearestObject 485277);
+		_hs = ((getMarkerPos _spawnPoint) nearestObject 268089);
 		_vehicle setPosATL (_hs modelToWorld [-16.5,-24.3,10.2]);
 	};
 	// _vehicle setPosATL _spawnPoint;
