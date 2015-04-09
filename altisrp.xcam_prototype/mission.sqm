@@ -5533,7 +5533,7 @@ class Mission
 			special="NONE";
 			id=338;
 			side="EMPTY";
-			vehicle="xcam_HouseV2_04_Interier_dam";
+			vehicle="Land_HouseV2_04_Interier_dam";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;";
 		};
