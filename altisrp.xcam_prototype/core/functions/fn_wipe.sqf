@@ -26,7 +26,8 @@ if(_action) then {
 	] call BIS_fnc_guiMessage;
 	
 	if(_action2) then {
-		hint "Changement d'identité en cours...patienter quelques secondes...";
+		hint "Changement d'identité en cours...patientez quelques secondes...";
+		titleText ["Changement d'identité en cours...patientez quelques secondes...", "PLAIN"];
 		closeDialog 0;
 		[] call life_fnc_getHLC;
 		[[getPlayerUID player,1,profileName,havena_id],"TON_fnc_wipe",serverhc,false] spawn life_fnc_MP;
