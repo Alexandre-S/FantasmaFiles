@@ -142,6 +142,15 @@ switch (_filter) do
 			// _ret pushBack ["U_B_GhillieSuit",nil,50000];
 			_ret pushBack ["U_I_GhillieSuit",nil,70000];
 			//_ret pushBack ["vip_clothes",nil,50000];
+			_ret pushBack ["U_I_FullGhillie_ard",nil,70000];
+			_ret pushBack ["U_O_FullGhillie_ard",nil,70000];
+			//_ret pushBack ["U_B_FullGhillie_ard",nil,70000];
+			_ret pushBack ["U_I_FullGhillie_lsh",nil,70000];
+			_ret pushBack ["U_O_FullGhillie_lsh",nil,70000];
+			//_ret pushBack ["U_B_FullGhillie_lsh",nil,70000];
+			_ret pushBack ["U_I_FullGhillie_sard",nil,70000];
+			_ret pushBack ["U_O_FullGhillie_sard",nil,70000];
+			//_ret pushBack ["U_B_FullGhillie_sard",nil,70000];
 		};
 	};
 	

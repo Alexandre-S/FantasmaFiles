@@ -75,6 +75,9 @@ switch (_filter) do
 		{
 			_ret pushBack ["U_B_GhillieSuit",nil,0];
 			_ret pushBack ["U_I_GhillieSuit",nil,0];
+			_ret pushBack ["U_B_FullGhillie_ard",nil,0];
+			_ret pushBack ["U_B_FullGhillie_lsh",nil,0];
+			_ret pushBack ["U_B_FullGhillie_sard",nil,0];
 		};
 		
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
