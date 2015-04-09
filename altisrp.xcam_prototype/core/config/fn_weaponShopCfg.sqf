@@ -346,7 +346,11 @@ switch(_shop) do
 						["R3F_Minimi_762",nil,0],
 						["R3F_100Rnd_762x51_MINIMI",nil,0],
 						["R3F_PGM_Hecate_II_DES",nil,0],
-						["R3F_7Rnd_127x99_PGM",nil,0]
+						["R3F_7Rnd_127x99_PGM",nil,0],
+						["R3F_STINGER",nil,0],
+						["R3F_STINGER_mag",nil,0],
+						["R3F_AT4CS",nil,0],
+						["R3F_AT4CS_Mag",nil,0]
 					]
 				];
 			};
@@ -621,8 +625,9 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhs_weap_m14ebrri",nil,140000];	
 					(_ret select 1) pushBack ["rhs_weap_sr25",nil,140000];	
 					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];
-					(_ret select 1) pushBack ["Trixie_FNFAL_Rail",nil,140000];
 					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
+					(_ret select 1) pushBack ["Trixie_FNFAL_Rail",nil,140000];
+					(_ret select 1) pushBack ["Trixie_FNFAL_Mag",nil,1500];
 					
 					if(__GETC__(life_factnumber) == 1) then
 					{
@@ -666,6 +671,22 @@ switch(_shop) do
 					(_ret select 1) pushBack ["R3F_PGM_Hecate_II",nil,300000];
 					(_ret select 1) pushBack ["R3F_PGM_Hecate_II_DES",nil,300000];
 					(_ret select 1) pushBack ["R3F_7Rnd_127x99_PGM",nil,4000];
+					
+					//RPG7 - Sol
+					(_ret select 1) pushBack ["rhs_weap_rpg7",nil,600000];
+					(_ret select 1) pushBack ["rhs_rpg7_PG7VL_mag",nil,20000];
+					
+					//RPG 26 - Sol
+					(_ret select 1) pushBack ["rhs_weap_rpg26",nil,550000];
+					(_ret select 1) pushBack ["rhs_rpg26_mag",nil,15000];
+					
+					//RPG2 - Sol
+					(_ret select 1) pushBack ["rhs_weap_rshg2",nil,500000];
+					(_ret select 1) pushBack ["rhs_rshg2_mag",nil,10000];
+					
+					//Stinger - Anti Air
+					(_ret select 1) pushBack ["rhs_weap_fim92",nil,500000];
+					(_ret select 1) pushBack ["rhs_fim92_mag",nil,10000];
 					
 					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
 					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
