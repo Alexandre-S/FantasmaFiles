@@ -52,7 +52,7 @@ switch (playerSide) do
 		_wipe = call compile format["%1",(_this select 16)];
 	};
 };
-if (!((getPlayerUID player) in ["76561197971054451"])) then {
+if (!((getPlayerUID player) in ["76561197971054451","76561197999056075","76561198026019944","76561197983740568","76561198010101889","76561197985429466","76561197969337890","76561198007128754","76561197997451635"])) then {
 	if(((profileName) != (_this select 1)) && !(_wipe)) exitWith {
 		0 cutText[format ["Changement de nom interdit. \nVous devez passer à la prefecture pour changer de nom. \nMerci de vous reconnecter sous le nom : ""%1""",(_this select 1)],"BLACK FADED"];
 		0 cutFadeOut 9999999;

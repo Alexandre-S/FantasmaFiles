@@ -5,7 +5,7 @@
 	Description:
 	Ain't got time to describe it, READ THE FILE NAME!
 */
-private["_uid","_side","_cash","_bank","_licenses","_gear","_name","_query","_thread","_position","_alive","_thirst","_hunger","_damage"];
+private["_uid","_side","_cash","_bank","_licenses","_gear","_query","_thread","_position","_alive","_thirst","_hunger","_damage"];
 _uid = [_this,0,"",[""]] call BIS_fnc_param;
 _side = [_this,1,sideUnknown,[civilian]] call BIS_fnc_param;
 _cash = [_this,2,0,[0]] call BIS_fnc_param;
