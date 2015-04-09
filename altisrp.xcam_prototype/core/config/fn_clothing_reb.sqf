@@ -141,16 +141,13 @@ switch (_filter) do
 			_ret pushBack ["U_O_GhillieSuit",nil,70000];
 			// _ret pushBack ["U_B_GhillieSuit",nil,50000];
 			_ret pushBack ["U_I_GhillieSuit",nil,70000];
-			//_ret pushBack ["vip_clothes",nil,50000];
 			_ret pushBack ["U_I_FullGhillie_ard",nil,70000];
-			_ret pushBack ["U_O_FullGhillie_ard",nil,70000];
-			//_ret pushBack ["U_B_FullGhillie_ard",nil,70000];
 			_ret pushBack ["U_I_FullGhillie_lsh",nil,70000];
-			_ret pushBack ["U_O_FullGhillie_lsh",nil,70000];
-			//_ret pushBack ["U_B_FullGhillie_lsh",nil,70000];
 			_ret pushBack ["U_I_FullGhillie_sard",nil,70000];
-			_ret pushBack ["U_O_FullGhillie_sard",nil,70000];
-			//_ret pushBack ["U_B_FullGhillie_sard",nil,70000];
+			
+			_ret pushBack ["U_O_FullGhillie_ard",nil,100000];
+			_ret pushBack ["U_O_FullGhillie_lsh",nil,100000];
+			_ret pushBack ["U_O_FullGhillie_sard",nil,100000];
 		};
 	};
 	
@@ -286,12 +283,13 @@ switch (_filter) do
 			["V_PlateCarrier1_PMC_rgr",nil,25000],
 			["V_PlateCarrier1_PMC_khki",nil,25000],
 			["V_PlateCarrier1_PMC_marpat",nil,25000],
-			["V_PlateCarrierSpec_mtp",nil,40000],
-			["V_PlateCarrierSpec_blk",nil,40000],
-			["V_PlateCarrierSpec_rgr",nil,40000],
-			["V_PlateCarrierIA2_dgtl",nil,60000],
-			["V_PlateCarrierInd_PMC_blk",nil,60000],
-			["V_PlateCarrierInd_PMC_grn",nil,60000],
+			["V_PlateCarrierIA2_dgtl",nil,50000],
+			// ["V_PlateCarrierInd_PMC_blk",nil,50000], bug
+			// ["V_PlateCarrierInd_PMC_grn",nil,50000], bug
+			["V_PlateCarrierSpec_mtp",nil,60000],
+			["V_PlateCarrierSpec_blk",nil,60000],
+			["V_PlateCarrierSpec_rgr",nil,60000],
+			
 			
 			["V_HarnessOGL_brn","Veste Explosive",500000]
 		];
