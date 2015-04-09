@@ -26,9 +26,9 @@ if (pselect5 != "exit") then
 		if(name _x == _name) then
 		{
 			hint format ["Teleporting to %1", _name];
-			[vehicle player, [2, 2, 0]] attachTo _x;
+			vehicle player attachTo [_x, [2, 2, 0]];
 			sleep 0.25;
-			detach [vehicle player, [2, 2, 0]];
+			detach vehicle player;
 		};
 	} forEach entities "CAManBase";
 };
