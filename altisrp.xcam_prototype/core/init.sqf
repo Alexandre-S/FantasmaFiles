@@ -293,6 +293,7 @@ player enableFatigue (__GETC__(life_enableFatigue));
 			[8] call SOCK_fnc_updatePartial; //Silent pos Sync
 		};
 	};
+};
 
 [] spawn
 {
