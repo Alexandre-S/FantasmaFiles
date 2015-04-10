@@ -98,8 +98,8 @@ if(!isHLC) then {
 	serv_sv_use = [];
 	
 	if(server_test) then {
-		/*fed_bank setVariable["safe",(count playableUnits),true];
-		[] spawn TON_fnc_federalUpdate;*/
+		fed_bank setVariable["safe",(count playableUnits),true];
+		[] spawn TON_fnc_federalUpdate;
 
 		[] spawn TON_fnc_cleanup;
 		life_wanted_list = [];
@@ -217,14 +217,17 @@ if(!isHLC) then {
 	publicVariable "TON_fnc_player_query";
 	
 	//Lockup the dome
-	/*private["_dome","_rsb"];
-	_dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
-	_rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];
-
+	private["_dome","_rsb"];
+	// _dome = nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"];
+	_dome = nearestObject [[7327.0898,3683.3899,39.330002],"Land_Dome_Big_F"];
+	// _rsb = nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"];
+	_rsb = nearestObject [[7325.9902,3691.22,39.330002],"Land_Research_house_V1_F"];
+	
 	for "_i" from 1 to 3 do {_dome setVariable[format["bis_disabled_Door_%1",_i],1,true]; _dome animate [format["Door_%1_rot",_i],0];};
 	_rsb setVariable["bis_disabled_Door_1",1,true];
 	_rsb allowDamage false;
-	_dome allowDamage false;*/
+	_dome allowDamage false;	
+	
 	life_server_isReady = true;
 	publicVariable "life_server_isReady";
 	
@@ -312,8 +315,8 @@ else
 	};
 	waitUntil {sleep 0.1;scriptDone _handle};*/
 	
-	/*fed_bank setVariable["safe",(count playableUnits),true];
-	[] spawn TON_fnc_federalUpdate;*/
+	fed_bank setVariable["safe",(count playableUnits),true];
+	[] spawn TON_fnc_federalUpdate;
 	
 	// life_HC_isActive = true;
 	// publicVariableServer "life_HC_isActive";
