@@ -62,6 +62,11 @@ if (!((getPlayerUID player) in ["76561197971054451","76561197999056075","7656119
 		["BadName",false,true] call BIS_fnc_endMission;
 		sleep 35;
 	};
+} else {
+	if(((profileName) != (_this select 1)) && !(_wipe)) exitWith {
+		[] call life_fnc_getHLC;
+		[[getPlayerUID player,0,profileName,havena_id],"TON_fnc_wipe",serverhc,false] spawn life_fnc_MP;
+	};
 };
 if(((profileName) == (_this select 1)) && _wipe) exitWith {
 	0 cutText[format ["Changement d'identité en cours. \nVous venez de passer à la prefecture pour changer de nom, ou vous avez subit une mort RP. \nMerci de vous reconnecter avec un nouveau nom différent de : ""%1""",(_this select 1)],"BLACK FADED"];
