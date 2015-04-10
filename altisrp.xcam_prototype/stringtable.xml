@@ -3682,7 +3682,7 @@
 		</Key>
 		<Key ID="STR_ISTR_Box_HouseFull_don">
 			<Original>You must be donator for place more storage containers in your house.</Original>
-			<French>Vous devez être donateur pour placer d'autres conteneur dans votre maison.</French>
+			<French>Vous devez avoir un niveau de donateur plus élevé pour placer d'autres conteneur dans votre maison.</French>
 		</Key>
 		<Key ID="STR_ISTR_Box_HouseFull_2">
 			<Original>No more free storage spaces in your house.</Original>
