@@ -1733,18 +1733,18 @@
 			<Portuguese>Você foi retirado do veículo</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_GivenItem">
-			<Original>%1 has gave you %2 %3</Original>
-			<German>%1 hat dir %2 %3 gegeben</German>
-			<French>%1 vous a donné %2 %3</French>
-			<Italian>%1 ti ha dato %2 %3</Italian>
-			<Portuguese>%1 lhe deu %2 %3</Portuguese>
+			<Original>Someone has gave you %2 %3</Original>
+			<German>Someone hat dir %2 %3 gegeben</German>
+			<French>Quelqu'un vous a donné %2 %3</French>
+			<Italian>Someone ti ha dato %2 %3</Italian>
+			<Portuguese>Someone lhe deu %2 %3</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_GivenMoney">
-			<Original>%1 has given you $%2</Original>
-			<German>%1 hat dir $%2 gegeben</German>
-			<French>%1 vous a donné %2 €</French>
-			<Italian>%1 ti ha dato €%2</Italian>
-			<Portuguese>%1 lhe deu R$%2</Portuguese>
+			<Original>Someone has given you $%2</Original>
+			<German>Someone hat dir $%2 gegeben</German>
+			<French>Quelqu'un vous a donné %2 €</French>
+			<Italian>Someone ti ha dato €%2</Italian>
+			<Portuguese>Someone lhe deu R$%2</Portuguese>
 		</Key>
 		<Key ID="STR_NOTF_SendingData">
 			<Original>Sending information to server please wait.....</Original>
