@@ -5,7 +5,7 @@
 	Called upon first spawn selection and welcomes our player.
 */
 
-private["_action"];
+private["_action","_action2"];
 
 life_firstSpawn = false;
 
@@ -15,17 +15,29 @@ _action = [
 
 	Ne jamais commettre de ""tir à vue"".<br/><br/>
 
-	Par ""tir à vue"" on entend ""tirer sur une personne sans raison"". En d'autre terme cela signifie tirer sur un autre joueur sans provocation ou interaction préalable. Rappelez-vous, Fantasma est un jeu de rôle avant tout, pas uniquement un FPS. Vous devez avoir établi une interaction avec une personne, ou être directement menacé, avant d'ouvrir le feu.<br/><br/>
+	Par ""tir à vue"" on entend ""tirer sur une personne sans raison"". En d'autre terme cela signifie tirer sur un autre joueur sans provocation ou interaction préalable. Rappelez-vous, Fantasma est un jeu de rôle avant tout, pas uniquement un FPS. Vous devez avoir établi une interaction avec une personne, ou être directement menacé, avant d'ouvrir le feu.",
+	"Bienvenue sur Altis Life Fantasma - Serveur RôlePlay 1/2",
+	"Suite",
+	"Non"
+] call BIS_fnc_guiMessage;
 
-	Par exemple si une personne tente de vous piller, ""Mettez les mains sur la tête ou vous allez mourir."" vous avez alors plusieurs choix qui s'offre à vous, soit coopérer pour garder la vie sauve, soit vous enfuir au risque de vous faire abattre si vous ne courrez pas assez vite ou que vous ne tirez pas le premier.<br/>
+
+if(!_action2) then {
+	player enableSimulation false;
+	["ServerRP",false,true] call BIS_fnc_endMission;
+	sleep 35;
+};
+
+_action2 = [
+	"Par exemple si une personne tente de vous piller, ""Mettez les mains sur la tête ou vous allez mourir."" vous avez alors plusieurs choix qui s'offre à vous, soit coopérer pour garder la vie sauve, soit vous enfuir au risque de vous faire abattre si vous ne courrez pas assez vite ou que vous ne tirez pas le premier.<br/>
 	Il existe une exception à cette règle pour les zones illégales, les lieux marqués sur votre carte par des marqueurs rouges sont considérés comme des zones illégales. la règle de ""tir à vue"" ne s'applique pas dans ces zones qui sont par définitions dangereuses!",
-	"Bienvenue sur Altis Life Fantasma - Serveur RôlePlay",
+	"Bienvenue sur Altis Life Fantasma - Serveur RôlePlay 2/2",
 	"OK",
 	"Non"
 ] call BIS_fnc_guiMessage;
 
 
-if(!_action) then {
+if(!_action2) then {
 	player enableSimulation false;
 	["ServerRP",false,true] call BIS_fnc_endMission;
 	sleep 35;
