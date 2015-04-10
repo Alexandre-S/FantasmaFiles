@@ -44,7 +44,9 @@ _near_units = [];
 */
 
 _near lbAdd format["%1","Cible"];
+_near lbSetData [(lbSize _near)-1,"targetgiveitemmoney"];
 _near_i lbAdd format["%1","Cible"];
+_near_i lbSetData [(lbSize _near)-1,"targetgiveitemmoney"];
 
 _near_units = [];
 {  _near_units set [count _near_units, name _x]; } foreach playableUnits;

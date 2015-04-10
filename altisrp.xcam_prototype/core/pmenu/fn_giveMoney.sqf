@@ -12,6 +12,7 @@ _amount = ctrlText 2018;
 ctrlShow[2001,false];
 if((lbCurSel 2022) == -1) exitWith {hint "Vous n'avez selectionné aucune personne!";ctrlShow[2001,true];};
 _unit = lbData [2022,lbCurSel 2022];
+if(_unit == "targetgiveitemmoney") then {
 	_unit = cursorTarget;
 } else {
 	_unit = call compile format["%1",_unit];
