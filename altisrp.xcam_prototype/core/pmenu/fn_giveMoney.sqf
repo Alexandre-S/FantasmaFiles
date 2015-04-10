@@ -17,9 +17,9 @@ if(_unit == "targetgiveitemmoney") then {
 } else {
 	_unit = call compile format["%1",_unit];
 };
-if(isNil "_unit") exitWith {ctrlShow[2001,true];};
-if(isNull _unit) exitWith {ctrlShow[2001,true];};
-if(_unit == player) exitWith {ctrlShow[2001,true];};
+if(isNil "_unit") exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2001,true];};
+if(isNull _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2001,true];};
+if(_unit == player) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2001,true];};
 if(!isPlayer _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2001,true];};
 if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 
@@ -30,7 +30,8 @@ if(parseNumber(_amount) <= 0) exitWith {hint "You need to enter an actual amount
 if(parseNumber(_amount) > life_cash) exitWith {hint "You don't have that much to give!";ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "The selected player is not within range";};
-hint format["You gave $%1 to %2",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]];
+// hint format["You gave $%1 to %2",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]];
+hint format["Vous avez donné $%1 à quelqu'un",[(parseNumber(_amount))] call life_fnc_numberText];
 life_cash = life_cash - (parseNumber(_amount));
 [0] call SOCK_fnc_updatePartial;
 [[_unit,_amount,player],"life_fnc_receiveMoney",_unit,false] spawn life_fnc_MP;

@@ -19,9 +19,9 @@ if(_unit == "targetgiveitemmoney") then {
 };
 if((lbCurSel 2005) == -1) exitWith {hint "Vous n'avez selectionnez aucun objet à donner.";ctrlShow[2002,true];};
 _item = lbData [2005,(lbCurSel 2005)];
-if(isNil "_unit") exitWith {ctrlShow[2002,true];};
-if(isNull _unit) exitWith {ctrlShow[2002,true];};
-if(_unit == player) exitWith {ctrlShow[2002,true];};
+if(isNil "_unit") exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
+if(isNull _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
+if(_unit == player) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(!isPlayer _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(life_is_processing) exitWith {hint "Vous êtes en train de process petit malin.";ctrlShow[2002,true];};
 if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
@@ -34,7 +34,8 @@ if(!([false,_item,(parseNumber _val)] call life_fnc_handleInv)) exitWith {hint "
 [[_unit,_val,_item,player],"life_fnc_receiveItem",_unit,false] spawn life_fnc_MP;
 _type = [_item,0] call life_fnc_varHandle;
 _type = [_type] call life_fnc_varToStr;
-hint format["You gave %1 %2 %3",_unit getVariable["realname",name _unit],_val,_type];
+// hint format["You gave %1 %2 %3",_unit getVariable["realname",name _unit],_val,_type];
+hint format["Vous avez donné %1 %2 à quelqu'un",_val,_type];
 [] call life_fnc_p_updateMenu;
 
 ctrlShow[2002,true];
