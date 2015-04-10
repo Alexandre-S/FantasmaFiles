@@ -115,7 +115,8 @@ class Mission
 		"A3Data",
 		"A3_Structures_F_Households_Stone_Small",
 		"A3_Misc_F_Helpers",
-		"A3_Structures_F_EPB_Civ_Accessories"
+		"A3_Structures_F_EPB_Civ_Accessories",
+		"castructureshouse_housev2"
 	};
 	addOnsAuto[]=
 	{
@@ -145,7 +146,7 @@ class Mission
 		"A3_Structures_F_Ind_Cargo",
 		"aia_misc3_config",
 		"A3_Structures_F_Mil_Shelters",
-		"xCam_EU",
+		"castructureshouse_housev2",
 		"A3_Structures_F_Mil_Flags",
 		"A3_Structures_F_EPA_Mil_Scrapyard",
 		"A3_Signs_F",
@@ -189,6 +190,7 @@ class Mission
 		"A3_Data_F",
 		"A3_Structures_F_EPA_Civ_Camping",
 		"A3_Structures_F_Households_House_Big02",
+		"xCam_EU",
 		"A3_Structures_F_EPC_Civ_PlayGround",
 		"A3_Structures_F_Civ_Chapels",
 		"A3_Structures_F_EPB_Civ_PlayGround",
@@ -4853,7 +4855,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1722;
+		items=1723;
 		class Item0
 		{
 			position[]={631.26245,1.8341906,479.21826};
@@ -23117,6 +23119,18 @@ class Mission
 			vehicle="Land_CashDesk_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item1722
+		{
+			position[]={7325.9834,39.330002,3693.522};
+			azimut=-2.8241799;
+			offsetY=0.75;
+			id=1996;
+			side="EMPTY";
+			vehicle="Land_CargoBox_V1_F";
+			skill=0.60000002;
+			text="fed_bank";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Ouvrir Coffre"",life_fnc_safeOpen,"""",0,false,false,"""",' playerSide == civilian && {_target getVariable[""safe_open"",false]} '];  this addAction[""Réparer Coffre"",life_fnc_safeFix,"""",0,false,false,"""",' playerSide == west && {_target getVariable [""safe_open"",false]} ' ];";
 		};
 	};
 	class Markers
