@@ -3908,11 +3908,11 @@
 			<Portuguese>Você pode dar respawn</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_RevivePay">
-			<Original>%1 has revived you and a fee of $%2 was taken from your bank account for their services.</Original>
-			<German>%1 hat dich wiederbelebt und dafür eine Gebühr von $%2 von deinem Bankkonto eingezogen.</German>
-			<French>%1 vous à réanimé, les fraits de %2 € sont transférés depuit votre compte bancaire pour leurs services.</French>
-			<Italian>%1 ti ha rianimato e sono stati prelevati €%2 dal tuo conto in banca per pagare la prestazione.</Italian>
-			<Portuguese>%1 reviveu você e uma taxa de R$2% foi cobrada da sua conta bancária para os serviços prestados.</Portuguese>
+			<Original>A medic has revived you and a fee of $%1 was taken from your bank account for their services.</Original>
+			<German>Medic hat dich wiederbelebt und dafür eine Gebühr von $%1 von deinem Bankkonto eingezogen.</German>
+			<French>Un médecin vous à réanimé, les fraits de %1 € sont transférés depuit votre compte bancaire pour leurs services.</French>
+			<Italian>Medic ti ha rianimato e sono stati prelevati €%1 dal tuo conto in banca per pagare la prestazione.</Italian>
+			<Portuguese>Medic reviveu você e uma taxa de R$1% foi cobrada da sua conta bancária para os serviços prestados.</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_AlreadyReviving">
 			<Original>Someone else is already reviving this person</Original>
@@ -3936,11 +3936,11 @@
 			<Portuguese>Esse jogador já deu respow ou já foi reanimado.</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_RevivePayReceive">
-			<Original>You have revived %1 and received $%2 for your services.</Original>
-			<German>Du hast %1 wiederbelebt und $%2 für deine Dienste erhalten.</German>
-			<French>Vous avez réanimé %1 vous avez reçu %2 € pour votre aide</French>
-			<Italian>Hai rianimato %1 e hai ricevuto €%2 per la tua prestazione.</Italian>
-			<Portuguese>Você reviveu %1 e recebeu R$%2 de seus serviços prestados.</Portuguese>
+			<Original>You have revived target and received $%1 for your services.</Original>
+			<German>Du hast wiederbelebt und $%1 für deine Dienste erhalten.</German>
+			<French>Vous avez réanimé la personne vous avez reçu %1 € pour votre aide</French>
+			<Italian>Hai rianimato e hai ricevuto €%1 per la tua prestazione.</Italian>
+			<Portuguese>Você reviveu e recebeu R$%1 de seus serviços prestados.</Portuguese>
 		</Key>
 		<Key ID="STR_Medic_TooFar">
 			<Original>You got to far away from the body.</Original>
