@@ -28,11 +28,11 @@ if(_veh != player) then {
 				[_veh] call life_fnc_openInventory;
 			};
 		} else {
-			if (_veh isKindOf "LandVehicle" OR _veh isKindOf "Air" OR _veh isKindOf "Ship") then {
+			// if (_veh isKindOf "LandVehicle" OR _veh isKindOf "Air" OR _veh isKindOf "Ship") then {
 				if(_veh in life_vehicles OR {locked _veh == 0}) then {
 					[_veh] call life_fnc_openInventory;
 				};
-			};
+			// };
 		};
 	};
 };
