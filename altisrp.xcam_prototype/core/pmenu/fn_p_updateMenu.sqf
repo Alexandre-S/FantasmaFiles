@@ -42,6 +42,10 @@ _near_units = [];
 	};
 } foreach _near_units;
 */
+
+_near lbAdd format["%1","Cible"];
+_near_i lbAdd format["%1","Cible"];
+
 _near_units = [];
 {  _near_units set [count _near_units, name _x]; } foreach playableUnits;
 _near_units = _near_units call BIS_fnc_sortAlphabetically;

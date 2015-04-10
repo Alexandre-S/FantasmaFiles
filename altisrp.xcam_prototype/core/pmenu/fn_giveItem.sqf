@@ -10,14 +10,18 @@
 private["_unit","_val"];
 _val = ctrlText 2010;
 ctrlShow[2002,false];
-if((lbCurSel 2023) == -1) exitWith {hint "No one was selected!";ctrlShow[2002,true];};
+if((lbCurSel 2023) == -1) exitWith {hint "Vous n'avez selectionné aucune personne!";ctrlShow[2002,true];};
 _unit = lbData [2023,lbCurSel 2023];
-_unit = call compile format["%1",_unit];
-if((lbCurSel 2005) == -1) exitWith {hint "You didn't select an item you wanted to give.";ctrlShow[2002,true];};
+	_unit = cursorTarget;
+} else {
+	_unit = call compile format["%1",_unit];
+};
+if((lbCurSel 2005) == -1) exitWith {hint "Vous n'avez selectionnez aucun objet à donner.";ctrlShow[2002,true];};
 _item = lbData [2005,(lbCurSel 2005)];
 if(isNil "_unit") exitWith {ctrlShow[2002,true];};
-if(_unit == player) exitWith {ctrlShow[2002,true];};
 if(isNull _unit) exitWith {ctrlShow[2002,true];};
+if(_unit == player) exitWith {ctrlShow[2002,true];};
+if(!isPlayer _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(life_is_processing) exitWith {hint "Vous êtes en train de process petit malin.";ctrlShow[2002,true];};
 if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 

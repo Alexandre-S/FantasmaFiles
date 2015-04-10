@@ -10,12 +10,16 @@ life_action_delay = time;
 private["_unit","_amount"];
 _amount = ctrlText 2018;
 ctrlShow[2001,false];
-if((lbCurSel 2022) == -1) exitWith {hint "No one was selected!";ctrlShow[2001,true];};
+if((lbCurSel 2022) == -1) exitWith {hint "Vous n'avez selectionné aucune personne!";ctrlShow[2001,true];};
 _unit = lbData [2022,lbCurSel 2022];
-_unit = call compile format["%1",_unit];
+	_unit = cursorTarget;
+} else {
+	_unit = call compile format["%1",_unit];
+};
 if(isNil "_unit") exitWith {ctrlShow[2001,true];};
-if(_unit == player) exitWith {ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};
+if(_unit == player) exitWith {ctrlShow[2001,true];};
+if(!isPlayer _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2001,true];};
 if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
 
 //A series of checks *ugh*

@@ -51,6 +51,10 @@ for "_i" from 0 to (count life_vehicles)-1 do
 	};
 } foreach _near_units;
 */
+
+_plist lbAdd format["%1","Cible"];
+_plist lbSetData [(lbSize _plist)-1,"targetkeygive"];
+
 _near_units = _near_units call BIS_fnc_sortAlphabetically;
 {
 	_name = _x;
