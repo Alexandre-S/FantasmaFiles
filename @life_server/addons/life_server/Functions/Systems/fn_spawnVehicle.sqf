@@ -112,10 +112,10 @@ _vehicle setVariable["idleTime",time];
 sleep 0.01;
 // _vehicle setVariable["lootM",false];
 // sleep 0.01;
-_vehicle setVariable ["R3F_LOG_disabled", false,true];
+//_vehicle setVariable ["R3F_LOG_disabled", false,true];
 //sleep 0.01;
 //_vehicle setVariable["lastPos",[]];
-sleep 0.01;
+//sleep 0.01;
 
 //Side Specific actions.
 switch(_side) do {

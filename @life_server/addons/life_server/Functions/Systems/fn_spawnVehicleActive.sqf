@@ -91,8 +91,8 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		sleep 0.01;
 		// _vehicle setVariable["lootM",false];
 		// sleep 0.01;
-		_vehicle setVariable ["R3F_LOG_disabled", false,true];
-		sleep 0.01;
+		//_vehicle setVariable ["R3F_LOG_disabled", false,true];
+		//sleep 0.01;
 		if((_side) == "cop") then
 		{
 			_vehicle setVariable ["tf_side", "west", true];	
