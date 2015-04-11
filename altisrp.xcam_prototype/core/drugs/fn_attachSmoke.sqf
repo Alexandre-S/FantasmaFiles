@@ -5,7 +5,7 @@
 	Description: 
 	Marijuana is bad, mmkay?
 */
-
+private["_unit","_pe"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if (isNull _unit) exitWith {};
 
