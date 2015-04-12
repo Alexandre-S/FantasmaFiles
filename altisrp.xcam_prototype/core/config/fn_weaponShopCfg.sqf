@@ -588,7 +588,10 @@ switch(_shop) do
 
 							["tf_anprc148jem",nil,5000],
 							["AGM_NVG_Gen1",nil,2000],
-
+							
+							//Grenade incendiaire : molotov
+							["rhs_mag_an_m14_th3",nil,15000],
+							
 							["SmokeShellRed",nil,1000],
 							["SmokeShellGreen",nil,1000],
 							//["SmokeShellYellow",nil,1000],

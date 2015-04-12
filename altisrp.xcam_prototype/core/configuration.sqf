@@ -421,6 +421,7 @@ life_weapon_shop_array =
 	["APERSMine_Range_Mag",70000*0.5],
 	["APERSTripMine_Wire_Mag",70000*0.5],
 	["Binocular",150*0.5],
+	["rhs_mag_an_m14_th3",15000*0.5],
 	["Chemlight_blue",300*0.5],
 	["Chemlight_green",300*0.5],
 	["Chemlight_red",300*0.5],
