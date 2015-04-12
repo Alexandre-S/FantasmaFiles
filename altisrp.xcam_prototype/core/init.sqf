@@ -297,7 +297,7 @@ player enableFatigue (__GETC__(life_enableFatigue));
 
 [] spawn
 {
-	private["_od"]
+	private["_od"];
 	sleep (5*60);
 	life_drug_level = life_drug_level - 0.05;
 	if(dependance>life_drug_level) then {
