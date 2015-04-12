@@ -1072,11 +1072,18 @@
 	</Package>
 	<Package name="Settings_Menu">
 		<Key ID="STR_SM_Title">
-			<Original>Settings Menu</Original>
-			<German>Einstellungen</German>
-			<French>Paramètres</French>
-			<Italian>Menu Impostazioni</Italian>
-			<Portuguese>Menu de Configuração</Portuguese>
+			<Original>Visual settings</Original>
+			<German>Einstellungen visual</German>
+			<French>Paramètres visuels</French>
+			<Italian>Menu Impostazioni visual</Italian>
+			<Portuguese>Menu de Configuração visual</Portuguese>
+		</Key>
+		<Key ID="STR_SM_Title2">
+			<Original>Audio settings (percent)</Original>
+			<German>Einstellungen audio (percent)</German>
+			<French>Paramètres audio (en pourcent)</French>
+			<Italian>Menu Impostazioni audio (percent)</Italian>
+			<Portuguese>Menu de Configuração audio (percent)</Portuguese>
 		</Key>
 		<Key ID="STR_SM_onFoot">
 			<Original>On Foot:</Original>

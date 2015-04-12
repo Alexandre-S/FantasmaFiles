@@ -18,17 +18,22 @@ ctrlSetText[2912, format["%1", tawvd_car]];
 ctrlSetText[2922, format["%1", tawvd_air]];
 ctrlSetText[2932, format["%1", havena_targetfps]];
 ctrlSetText[2942, format["%1", havena_mincombat]];
+ctrlSetText[2952, format["%1", youri_sound_foot]];
+ctrlSetText[2954, format["%1", youri_sound_car]];
+ctrlSetText[2956, format["%1", youri_sound_air]];
+ctrlSetText[2958, format["%1", youri_sound_boat]];
 
 //Setup Sliders range
 { slidersetRange [_x,200,12000];} foreach [2901,2911,2921,2941];
 { slidersetRange [_x,5,120];} foreach [2931];
+{ slidersetRange [_x,1,100];} foreach [2951,2953,2955,2957];
 //Setup Sliders speed
 { ((findDisplay 2900) displayCtrl _x) sliderSetSpeed [50,50,50]; } foreach [2901,2911,2921,2941];
-{ ((findDisplay 2900) displayCtrl _x) sliderSetSpeed [1,1,1]; } foreach [2931];
+{ ((findDisplay 2900) displayCtrl _x) sliderSetSpeed [1,1,1]; } foreach [2931,2951,2953,2955,2957];
 //Setup Sliders position
 {
 	sliderSetPosition[_x select 0, _x select 1];
-} foreach [[2901,tawvd_foot],[2911,tawvd_car],[2921,tawvd_air],[2931,havena_targetfps],[2941,havena_mincombat]];
+} foreach [[2901,tawvd_foot],[2911,tawvd_car],[2921,tawvd_air],[2931,havena_targetfps],[2941,havena_mincombat],[2951,youri_sound_foot],[2953,youri_sound_car],[2955,youri_sound_air],[2957,youri_sound_boat]];
 
 private["_display","_side","_tags","_objs","_herb"];
 _display = findDisplay 2900;

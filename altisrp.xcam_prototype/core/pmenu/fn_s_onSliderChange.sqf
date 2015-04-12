@@ -47,4 +47,32 @@ switch (_mode) do
 		ctrlSetText[2942,format["%1",round(_value)]];
 		// [] call life_fnc_updateViewDistance;
 	};
+	
+	case 5:
+	{
+		youri_sound_foot = round(_value);
+		ctrlSetText[2952,format["%1",round(_value)]];
+		[] call life_fnc_updateSound;
+	};
+	
+	case 6:
+	{
+		youri_sound_car = round(_value);
+		ctrlSetText[2954,format["%1",round(_value)]];
+		[] call life_fnc_updateSound;
+	};
+	
+	case 7:
+	{
+		youri_sound_air = round(_value);
+		ctrlSetText[2956,format["%1",round(_value)]];
+		[] call life_fnc_updateSound;
+	};
+	
+	case 8:
+	{
+		youri_sound_boat = round(_value);
+		ctrlSetText[2958,format["%1",round(_value)]];
+		[] call life_fnc_updateSound;
+	};
 };

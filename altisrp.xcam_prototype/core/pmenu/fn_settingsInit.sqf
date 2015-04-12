@@ -19,6 +19,7 @@ tawvd_addon_disable = true;
 	while {true} do
 	{
 		_recorded = vehicle player;
+		[] call life_fnc_updateSound;
 		[] call life_fnc_updateViewDistance;
 		waitUntil {sleep 1; _recorded != vehicle player || !alive player};
 		/*if(vehicle player != _recorded OR !alive player) then {
