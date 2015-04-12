@@ -20,12 +20,12 @@ _exit = false;
 if(__GETC__(life_adminlevel) > 0) then{
 	if(count life_houses >= 6) then {_exit = true; hint "Un membre du staff ne peut pas avoir plus de 6 bâtiments à la fois.";};
 } else{
-	if(__GETC__(life_donator==0)) then {
-		_exit = true; hint "L'achat de batiment est réservé au membres premium.";
-	} else {
+	// if(__GETC__(life_donator==0)) then {
+		// _exit = true; hint "L'achat de batiment est réservé au membres premium.";
+	// } else {
 		if(count life_houses >= (__GETC__(life_donator)+(__GETC__(life_houseLimit)))) then {_exit = true; hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
 		if(count life_houses >= 4) then {_exit = true; hint "Vous ne pouvez pas posséder plus de 4 bâtiments à la fois.";};
-	};
+	// };
 	// if(count life_houses >= (__GETC__(life_houseLimit))) exitWith {hint format[localize "STR_House_Max_House",__GETC__(life_houseLimit)]};
 };
 if(_exit) exitWith {closeDialog 0;};
