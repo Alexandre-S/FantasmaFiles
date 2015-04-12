@@ -22,7 +22,7 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 
-if(!_action2) then {
+if(!_action) then {
 	player enableSimulation false;
 	["ServerRP",false,true] call BIS_fnc_endMission;
 	sleep 35;
