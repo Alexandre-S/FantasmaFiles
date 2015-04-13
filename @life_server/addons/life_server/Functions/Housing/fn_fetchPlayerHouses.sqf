@@ -69,14 +69,14 @@ _return = [];
 		sleep 0.01;
 		
 		_containers pushBack _container;
-		clearWeaponCargoGlobal _container;
-		sleep 0.01;
-		clearItemCargoGlobal _container;
-		sleep 0.01;
-		clearMagazineCargoGlobal _container;
-		sleep 0.01;
-		clearBackpackCargoGlobal _container;
-		sleep 0.01;
+		// clearWeaponCargoGlobal _container;
+		// sleep 0.01;
+		// clearItemCargoGlobal _container;
+		// sleep 0.01;
+		// clearMagazineCargoGlobal _container;
+		// sleep 0.01;
+		// clearBackpackCargoGlobal _container;
+		// sleep 0.01;
 		//Add weapons to the crate.
 		{
 			if(!(["CUP_",_x] call BIS_fnc_inString)) then {
