@@ -300,6 +300,7 @@ player enableFatigue (__GETC__(life_enableFatigue));
 	private["_od"];
 	sleep (5*60);
 	life_drug_level = life_drug_level - 0.05;
+	if(life_drug_level<0) then {life_drug_level = 0;};
 	if(dependance>life_drug_level) then {
 	_od = random 1;
 		if (_od > 0.6) then { [1] spawn life_fnc_overdose; };
@@ -310,4 +311,5 @@ player enableFatigue (__GETC__(life_enableFatigue));
 {
 	sleep (30*60);
 	dependance = dependance - 0.05;
+	if(dependance<0) then {dependance = 0;};
 };
