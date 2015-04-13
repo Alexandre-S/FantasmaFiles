@@ -20,7 +20,7 @@ if(_isPack == 1 && playerSide != west) then {
 	};
 };
 if(playerSide != west) then{
-	if((typeOf _container) in ["Box_IND_Grenades_F","B_supplyCrate_F"]) exitWith {
+	if((typeOf _container) in ["Box_IND_Grenades_F_RP","B_supplyCrate_F_RP"]) exitWith {
 		_house = nearestBuilding (getPosATL player);
 		// add
 		_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;

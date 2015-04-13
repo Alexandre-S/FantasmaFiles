@@ -92,7 +92,7 @@ switch (_className) do
 	case "B_Boat_Transport_01_F_RP": {68};
 	case "B_SDV_01_F": {68};
 	case "Land_CargoBox_V1_F": {5000};
-	case "Box_IND_Grenades_F": {250};
-	case "B_supplyCrate_F": {500};
+	case "Box_IND_Grenades_F_RP": {250};
+	case "B_supplyCrate_F_RP": {500};
 	default {-1};
 };

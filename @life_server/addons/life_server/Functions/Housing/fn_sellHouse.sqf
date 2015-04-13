@@ -23,7 +23,7 @@ if(_houseID == -1) then {
 _house setVariable["house_id",nil,true];
 _house setVariable["house_owner",nil,true];
 _radius = (((boundingBoxReal _house select 0) select 2) - ((boundingBoxReal _house select 1) select 2));
-_containers = nearestObjects[(getPosATL _house),["Box_IND_Grenades_F","B_supplyCrate_F"],_radius];
+_containers = nearestObjects[(getPosATL _house),["Box_IND_Grenades_F_RP","B_supplyCrate_F_RP"],_radius];
 {deleteVehicle _x} foreach _containers; //Fuck the way you do things Tonic, go fix it
 waitUntil {sleep (random 0.3); !DB_Async_Active};
 [_query,1] call DB_fnc_asyncCall;

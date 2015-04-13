@@ -23,8 +23,8 @@
 5 "ACR_" !"ACR_LandRover_AMB"
 
 // Ammo boxes
-5 "Box_" !"B_Truck_01_box_F" !"C_Van_01_box_F" !"Box_NATO_AmmoVeh_F" !"Box_NATO_Support_F" !"Box_IND_Grenades_F" !"O_Truck_02_box_F_RP"
-5 "_supplyCrate_" !"B_supplyCrate_F"
+5 "Box_" !"B_Truck_01_box_F" !"C_Van_01_box_F" !"Box_NATO_AmmoVeh_F" !"Box_NATO_Support_F" !"Box_IND_Grenades_F_RP" !"O_Truck_02_box_F_RP"
+5 "_supplyCrate_" !"B_supplyCrate_F_RP"
 
 // Units
 5 "C_man_" !"C_man_1" !"C_man_polo_6_F" !"C_man_polo_4_F" !"C_man_1_2_F" !"C_man_polo_1_F" !"C_man_1_3_F"
