@@ -152,9 +152,9 @@ sleep 0.01;
 _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
 
 //Reskin the vehicle 
-// [[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
-_handle = [_vehicle,_vInfo select 8] spawn life_fnc_colorVehicle;
-waitUntil {sleep 0.1; scriptDone _handle};
+[[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;
+// _handle = [_vehicle,_vInfo select 8] spawn life_fnc_colorVehicle;
+// waitUntil {sleep 0.1; scriptDone _handle};
 
 _vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 [_vehicle] call life_fnc_clearVehicleAmmo;

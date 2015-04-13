@@ -7450,7 +7450,7 @@ class Mission
 			side="EMPTY";
 			vehicle="SignAd_Sponsor_Fuel_white_F";
 			skill=0.60000002;
-			init="this setVectorUp[0,0,0.1]; this allowDamage false; this enableSimulation false; this setObjectTextureGlobal [0,""icons\blk.paa""];";
+			init="this setVectorUp[0,0,0.1]; this allowDamage false; this enableSimulation false; this setObjectTexture [0,""icons\blk.paa""];";
 		};
 		class Item252
 		{
