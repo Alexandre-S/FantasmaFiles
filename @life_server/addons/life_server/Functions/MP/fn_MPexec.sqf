@@ -12,8 +12,8 @@
 	BOOL - true if function was executed successfuly
 */
 private ["_params","_functionName","_target","_isPersistent","_isCall","_varName","_varValue","_function","_validFunctions","_exitScript","_param2"];
-_exitScript = false;
 
+_exitScript = false;
 _varName = _this select 0;
 _varValue = _this select 1;
 
@@ -51,6 +51,9 @@ if (typename _target == typename []) then {
 				_ownerID = owner (missionnamespace getvariable [_target,objnull]);
 			};
 			case (typename objnull): {
+				private ["_targetCuratorUnit"];
+				_targetCuratorUnit = getassignedcuratorunit _target;
+				if !(isnull _targetCuratorUnit) then {_target = _targetCuratorUnit;};
 				_ownerID = owner _target;
 			};
 			case (typename true): {
@@ -110,6 +113,8 @@ if (typename _target == typename []) then {
 		if (_canExecute) then {
 			_function = missionnamespace getvariable _functionName;
 			if (!isnil "_function") then {
+
+				//--- Function
 				if (_isCall) then {
 					_params call _function;
 				} else {

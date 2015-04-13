@@ -83,7 +83,13 @@ if (ismultiplayer && _mode == 0) then {
 
 			//--- Server process
 			switch (typename _target) do {
+				case (typename ""): {
+					_ownerID = owner (missionnamespace getvariable [_target,objnull]);
+				};
 				case (typename objnull): {
+					private ["_targetCuratorUnit"];
+					_targetCuratorUnit = getassignedcuratorunit _target;
+					if !(isnull _targetCuratorUnit) then {_target = _targetCuratorUnit;};
 					_ownerID = owner _target;
 				};
 				case (typename true): {
@@ -94,9 +100,6 @@ if (ismultiplayer && _mode == 0) then {
 				};
 				case (typename grpnull);
 				case (typename sideUnknown): {
-					_ownerID = -1;
-				};
-				case (typeName ""): {
 					_ownerID = -1;
 				};
 			};
