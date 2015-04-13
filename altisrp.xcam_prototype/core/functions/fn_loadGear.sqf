@@ -257,4 +257,4 @@ if(_launcher != "") then {
     };
 } foreach (_sItems);
 
-[] call life_fnc_updateClothing;
+//[] call life_fnc_updateClothing;

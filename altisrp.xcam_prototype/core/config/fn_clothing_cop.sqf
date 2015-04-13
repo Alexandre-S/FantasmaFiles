@@ -19,7 +19,7 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
-		_ret pushBack ["U_Rangemaster","Uniforme de gendarme",0];
+		_ret pushBack ["U_PoloGendarmerie","Uniforme de gendarme",0];
 		
 		// Grade Brigadier
 		if(__GETC__(life_coplevel) >= 2) then
@@ -33,8 +33,8 @@ switch (_filter) do
 		// BAC / PJ
 		if(license_cop_bacpj) then
 		{
-			_ret pushBack ["U_B_CombatUniform_mcam","Polaire Gendarme",0];
-			_ret pushBack ["U_B_SpecopsUniform_sgg","Polaire Bleue Gendarme",0];
+			_ret pushBack ["U_B_UniformePolaireGendarme","Polaire Gendarme",0];
+			_ret pushBack ["U_B_UniformePolaireBleueGendarme","Polaire Bleue Gendarme",0];
 			_ret pushBack ["C_Uniform_survivor3_l",nil,0];
 			_ret pushBack ["B_Uniform_survivor2_l",nil,0];
 			_ret pushBack ["U_C_HunterBody_grn",nil,0];

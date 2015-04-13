@@ -284,7 +284,7 @@ player enableFatigue (__GETC__(life_enableFatigue));
 	_nb = 0;
 	while {true} do {
 		sleep (30 + (random 30));
-		[] call life_fnc_updateClothing;
+		//[] call life_fnc_updateClothing;
 		_nb = _nb+1;
 		if(_nb == 5) then {
 			[] call SOCK_fnc_updateRequest;

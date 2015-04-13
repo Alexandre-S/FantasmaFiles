@@ -20,14 +20,14 @@ switch(playerSide) do
 	case west: {}; //Blah
 	case civilian: {
 		//Currently stoping the civilians from taking the indep clothing from medics.
-		if(_item in ["U_Rangemaster"]) then {
+		if(_item in ["U_Rangemaster","U_PoloGendarmerie","U_uniformesamu","U_PoloPompiers","U_B_UniformePolaireGendarme","U_B_UniformePolaireBleueGendarme"]) then {
 			[_item,false,false,false,false] call life_fnc_handleItem;
 		};
 	};
 	case independent: {};
 };
 
-[] call life_fnc_updateClothing;
+//[] call life_fnc_updateClothing;
 
 // BOX
 

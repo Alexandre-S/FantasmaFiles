@@ -167,7 +167,7 @@ class Life_Client_Core
 		class clothing_kart {};
 		class clothing_med {};
 		
-		class updateClothing {};
+		// class updateClothing {};
 		class itemIcon {};
 	};
 

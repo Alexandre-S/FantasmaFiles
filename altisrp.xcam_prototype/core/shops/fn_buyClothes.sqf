@@ -22,4 +22,4 @@ playSound "caching";
 life_clothesPurchased = true;
 closeDialog 0;
 
-[] call life_fnc_updateClothing;
+//[] call life_fnc_updateClothing;
