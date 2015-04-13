@@ -117,6 +117,8 @@ class Life_Client_Core
 		class suicideBomb {};
 		class sirenstart {};
 		class activateNitro {};
+		class showId {};
+		class viewId {};
 	};
 	
 	class Housing

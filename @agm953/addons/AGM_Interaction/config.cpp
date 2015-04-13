@@ -455,6 +455,14 @@ class CfgVehicles {
         showDisabled = 0;
         priority = 1.9;
       };
+	  class AGM_Carte {
+        displayName = "Présenter carte";
+        distance = 4;
+        condition = "_target isKindOf 'Man' && {alive _target}";
+        statement = "[_target] spawn life_fnc_showId";
+        showDisabled = 0;
+        priority = 2.7;
+      };
 	  class AGM_Reanimer {
         displayName = "Réanimer";
         distance = 4;
