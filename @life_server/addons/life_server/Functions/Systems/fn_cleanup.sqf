@@ -33,28 +33,31 @@ while {true} do
 					if(((time - _idleTime) > 180) || (_idleTime==0)) then {
 						_dbInfo = _x getVariable["dbInfo",[]];
 						_needfix = _x getVariable["needfix",false];
-						if(count _dbInfo > 0 && {_x getVariable["waitdel",0] == 0}) then {
-							_x setVariable["waitdel",1];
+						if(count _dbInfo > 0) then {
 							_uid = _dbInfo select 0;
 							_plate = _dbInfo select 1;
-							_assur = _dbInfo select 2;
+							
+							if (_x getVariable["waitdel",0] == 0) then {
+								_x setVariable["waitdel",1];
+								_assur = _dbInfo select 2;
 
-							if(_assur == 1) then {
-								_x setVariable["needfix",true];
-								_query = format["UPDATE vehicles SET insure='0', inventory='""[[],0]""' WHERE pid='%1' AND plate='%2'",_uid,_plate];
-							} else {
-								_query = format["UPDATE vehicles SET active='0', alive='0', inventory='""[[],0]""' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+								if(_assur == 1) then {
+									_x setVariable["needfix",true];
+									_query = format["UPDATE vehicles SET insure='0', inventory='""[[],0]""' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+								} else {
+									_query = format["UPDATE vehicles SET active='0', alive='0', inventory='""[[],0]""' WHERE pid='%1' AND plate='%2'",_uid,_plate];
+								};
+								
+								[_x] spawn {
+									private["_veh"];
+									_veh = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
+									sleep (4 * 60);
+									_veh setVariable["waitdel",-1];
+								};
+						
+								waitUntil {sleep (random 0.3); !DB_Async_Active};
+								_sql = [_query,1] call DB_fnc_asyncCall;
 							};
-							
-							[_x] spawn {
-								private["_veh"];
-								_veh = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
-								sleep (4 * 60);
-								_veh setVariable["waitdel",-1];
-							};
-							
-							waitUntil {sleep (random 0.3); !DB_Async_Active};
-							_sql = [_query,1] call DB_fnc_asyncCall;
 						};
 						if(!isNil "_x" && {!isNull _x} && {_x getVariable["waitdel",0] <= 0}) then {
 							deleteVehicle _x;
