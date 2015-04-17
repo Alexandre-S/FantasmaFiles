@@ -117,6 +117,8 @@ class CfgFunctions
 			class updateSAM {};
 			class getSetPrice {};
 			class wipe {};
+			class repMap {};
+			class rmdam {};
 		};
 		
 		class Housing
