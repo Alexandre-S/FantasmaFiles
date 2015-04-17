@@ -1,3 +1,4 @@
+#include <macro.h>
 /*
 	File: fn_showId.sqf
 	Author: Youri Litovski
