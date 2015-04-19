@@ -306,9 +306,9 @@ switch(_shop) do
 						["R3F_Minimi",nil,0],
 						["R3F_200Rnd_556x45_MINIMI",nil,0],
 
-						["R3F_M107",nil,0],
-						["R3F_M107_DES",nil,0],
-						["R3F_10Rnd_127x99_M107",nil,0],
+						["rhs_weap_XM2010",nil,0],
+						["rhs_weap_XM2010_sa",nil,0],
+						["rhsusf_5Rnd_300winmag_xm2010",nil,0],
 						
 						["rhs_weap_XM2010",nil,0],
 						["rhs_weap_XM2010_wd",nil,0],
@@ -350,7 +350,8 @@ switch(_shop) do
 						["R3F_STINGER",nil,0],
 						["R3F_STINGER_mag",nil,0],
 						["R3F_AT4CS",nil,0],
-						["R3F_AT4CS_Mag",nil,0]
+						["R3F_AT4CS_Mag",nil,0],
+						["optic_LRPS",nil,0]
 					]
 				];
 			};
@@ -693,6 +694,7 @@ switch(_shop) do
 					
 					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
 					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
+					(_ret select 1) pushBack ["optic_LRPS",nil,100000];
 					
 					(_ret select 1) pushBack ["IEDUrbanSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["IEDLandSmall_Remote_Mag",nil,50000];
