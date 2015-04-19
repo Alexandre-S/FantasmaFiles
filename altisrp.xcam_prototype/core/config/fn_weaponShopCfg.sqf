@@ -306,9 +306,9 @@ switch(_shop) do
 						["R3F_Minimi",nil,0],
 						["R3F_200Rnd_556x45_MINIMI",nil,0],
 
-						["rhs_weap_XM2010",nil,0],
-						["rhs_weap_XM2010_sa",nil,0],
-						["rhsusf_5Rnd_300winmag_xm2010",nil,0],
+						["R3F_M107",nil,0],
+						["R3F_M107_DES",nil,0],
+						["R3F_10Rnd_127x99_M107",nil,0],
 						
 						["rhs_weap_XM2010",nil,0],
 						["rhs_weap_XM2010_wd",nil,0],
