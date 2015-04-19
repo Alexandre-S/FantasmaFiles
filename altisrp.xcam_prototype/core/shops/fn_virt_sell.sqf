@@ -35,8 +35,11 @@ if(life_shop_type == "heroin") then
 	if(_ind != -1) then
 	{
 		_valdeja = (_array select _ind) select 2;
+		if(_valdeja>30) then {
 			_trop = true;
 		} else {
+			if((_valdeja+_amount)>30) then {
+				_amount = (30-_valdeja);
 			};
 		};
 	};
