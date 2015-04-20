@@ -1141,6 +1141,7 @@ life_garage_sell =
 	["C_Boat_Civil_01_rescue_F",31500*0.49],
 	["D41_Trawler",130000*0.49],
 	["Burnes_MK10_1",500000*0.49],
+	["ffaa_ar_lcm",500000*0.49],
 	
 	//MED
 	["ACR_LandRover_AMB_RP",33750*0.49],
@@ -1242,6 +1243,7 @@ life_garage_prices =
 	["C_Boat_Civil_01_rescue_F",31500*0.0735],
 	["D41_Trawler",130000*0.0735],
 	["Burnes_MK10_1",500000*0.0735],
+	["ffaa_ar_lcm",500000*0.0735],
 	
 	//MED
 	["ACR_LandRover_AMB_RP",33750*0.0735],

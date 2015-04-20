@@ -161,7 +161,8 @@ switch (_shop) do
 			["C_Rubberboat",3750],
 			["C_Boat_Civil_01_F",33000],
 			// ["D41_Trawler",130000]
-			["Burnes_MK10_1",500000]
+			["Burnes_MK10_1",500000],
+			["ffaa_ar_lcm",500000]
 		];
 	};
 	
@@ -326,6 +327,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 1) then
 		{
 			_return pushBack["C_Boat_Civil_01_police_F",0];
+			_return pushBack["ffaa_ar_supercat",0];
 		};
 		if(__GETC__(life_coplevel) >= 2) then
 		{
