@@ -78,7 +78,7 @@ switch (_shop) do
 			_return pushBack ["C_Hatchback_01_sport_F",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
 		};
-		if(license_civ_gvt) then
+		if(l_c_gvt) then
 		{
 			_return pushBack ["I_MRAP_03_F",650000];
 		};
@@ -126,7 +126,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F_RP",337500],
 			["O_Heli_Light_02_unarmed_F_RP",675000]
 		];
-		if(player getVariable["life_dep",false] || {license_civ_gvt} || {__GETC__(life_donator) > 0}) then
+		if(player getVariable["life_dep",false] || {l_c_gvt} || {__GETC__(life_donator) > 0}) then
 		{
 			_return pushBack ["I_Heli_Transport_02_F_RP",750000]; // dep
 		};
@@ -144,7 +144,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F_RP",337500],
 			["O_Heli_Light_02_unarmed_F_RP",675000]
 		];
-		if(player getVariable["life_dep",false] || {license_civ_gvt} || {__GETC__(life_donator) > 0}) then
+		if(player getVariable["life_dep",false] || {l_c_gvt} || {__GETC__(life_donator) > 0}) then
 		{
 			_return pushBack ["I_Heli_Transport_02_F_RP",750000]; // dep
 		};

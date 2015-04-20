@@ -24,9 +24,9 @@ if (((_type == "rebel") || (_type == "dep")) && life_istaxi) exitWith {hint "Vou
 if (((_type == "taxi") || (_type == "rebel")) && life_isdep) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme dépanneur."};
 
 
-if(!life_isrebel && (_license select 0) == "license_civ_rebel") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre une faction terroriste"};
-if(!life_isdep && (_license select 0) == "license_civ_dep") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre les dépanneurs"};
-if(!life_istaxi && (_license select 0) == "license_civ_taxi") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre les Taxis"};
+if(!life_isrebel && (_license select 0) == "l_c_rebel") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre une faction terroriste"};
+if(!life_isdep && (_license select 0) == "l_c_dep") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre les dépanneurs"};
+if(!life_istaxi && (_license select 0) == "l_c_taxi") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre les Taxis"};
 
 
 if(life_cash < _price) exitWith {hint format[localize "STR_NOTF_NE_1",[_price] call life_fnc_numberText,_license select 1];};

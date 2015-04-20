@@ -18,25 +18,25 @@ if(_veh == "B_Quadbike_01_F") exitWith {true}; //ATV's don't need to require a l
 switch (life_veh_shop select 0) do
 {
 	case "med_shop": {_ret = true;};
-	case "kart_shop": {_ret = license_civ_driver;};
-	case "med_air_hs": {_ret = license_med_air;};
-	case "civ_car": {_ret = license_civ_driver;};
-	case "civ_ship": {_ret = license_civ_boat;};
-	case "civ_air": {_ret = license_civ_air;};
-	case "civ_air2": {_ret = license_civ_air;};
-	case "cop_air": {_ret = license_cop_air;};
-	case "cop_airhq": {_ret = license_cop_air;};
-	case "civ_truck":	{_ret = license_civ_truck;};
-	case "reb_car": {_ret = license_civ_rebel;};
+	case "kart_shop": {_ret = l_c_driver;};
+	case "med_air_hs": {_ret = l_m_air;};
+	case "civ_car": {_ret = l_c_driver;};
+	case "civ_ship": {_ret = l_c_boat;};
+	case "civ_air": {_ret = l_c_air;};
+	case "civ_air2": {_ret = l_c_air;};
+	case "cop_air": {_ret = l_g_air;};
+	case "cop_airhq": {_ret = l_g_air;};
+	case "civ_truck":	{_ret = l_c_truck;};
+	case "reb_car": {_ret = l_c_rebel;};
 	case "cop_car": {_ret = true;};
-	case "gvt_car": {_ret = license_civ_gvt;};
+	case "gvt_car": {_ret = l_c_gvt;};
 	case "med_sea": {_ret = true;};
 	
 	case "cop_ship": 
 	{
 		if(_veh == "B_Boat_Armed_01_minigun_F") then
 		{
-			_ret = license_cop_cg;
+			_ret = l_g_cg;
 		}
 			else
 		{

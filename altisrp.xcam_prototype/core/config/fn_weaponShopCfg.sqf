@@ -128,7 +128,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_bacpj): {"Vous n'avez pas la formation BAC / PJ !"};
+			case (!l_g_bacpj): {"Vous n'avez pas la formation BAC / PJ !"};
 			//case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
 			default
 			{
@@ -194,7 +194,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_grenadier): {"Vous n'avez pas la formation grenadier !"};
+			case (!l_g_grenadier): {"Vous n'avez pas la formation grenadier !"};
 			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
 			default
 			{
@@ -226,7 +226,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_air): {"Vous n'avez pas la formation aérienne !"};
+			case (!l_g_air): {"Vous n'avez pas la formation aérienne !"};
 			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
 			default
 			{
@@ -247,7 +247,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_onumecano): {"Vous n'avez pas la formation mécano / personnel naviguant !"};
+			case (!l_g_onumecano): {"Vous n'avez pas la formation mécano / personnel naviguant !"};
 			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
 			default
 			{
@@ -269,7 +269,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_medic): {"Vous n'avez pas la formation médic !"};
+			case (!l_g_medic): {"Vous n'avez pas la formation médic !"};
 			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
 			default
 			{
@@ -288,7 +288,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!license_cop_swat): {"Vous n'avez pas la formation unité tactique !"};
+			case (!l_g_swat): {"Vous n'avez pas la formation unité tactique !"};
 			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
 			default
 			{
@@ -460,8 +460,8 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Vous n'êtes pas un citoyen, oust !"};
-			case (!license_civ_rebel && __GETC__(life_reblevel) >= 1): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
-			case (!license_civ_thug && __GETC__(life_reblevel) == 0): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
+			case (!l_c_rebel && __GETC__(life_reblevel) >= 1): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
+			case (!l_c_thug && __GETC__(life_reblevel) == 0): {"Hey l'ami, je te connais pas moi, t'achéteras rien ici sans signer notre contrat !"};
 			default
 			{
 				// Rang 1
@@ -713,7 +713,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			//case (playerSide != civilian): {"Vous n'êtes pas civil !"};
-			case (!license_civ_gun): {"Désolé monsieur, vous n'avez pas le permis de port d'armes !"};
+			case (!l_c_gun): {"Désolé monsieur, vous n'avez pas le permis de port d'armes !"};
 			default
 			{
 				_ret = 
@@ -768,7 +768,7 @@ switch(_shop) do
 						["AGM_NVG_Gen1",nil,2000]
 					]
 				];
-				if(license_civ_gvt) then
+				if(l_c_gvt) then
 				{
 					//mk18 mod 1
 					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,100000];

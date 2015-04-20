@@ -40,7 +40,7 @@ if(playerSide == independent) then {
 	_sellPrice = 100;
 	_assurPrice = 100;
 };
-if(license_civ_dep && (_className == "I_Heli_Transport_02_F_RP" && (_dataArr select 1) == 2)) then {
+if(l_c_dep && (_className == "I_Heli_Transport_02_F_RP" && (_dataArr select 1) == 2)) then {
 	_retrievePrice = _retrievePrice/10;
 };
 

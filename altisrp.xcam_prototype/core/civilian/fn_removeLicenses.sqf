@@ -13,27 +13,27 @@ switch (_state) do
 	//Death while being wanted
 	case 0:
 	{
-		license_civ_rebel = false;
-		license_civ_thug = false;
-		license_civ_gun = false;
-		//license_civ_driver = false;
-		//license_civ_heroin = false;
-		//license_civ_marijuana = false;
-		//license_civ_coke = false;
+		l_c_rebel = false;
+		l_c_thug = false;
+		l_c_gun = false;
+		//l_c_driver = false;
+		//l_c_heroin = false;
+		//l_c_marijuana = false;
+		//l_c_coke = false;
 	};
 	
 	//Jail licenses
 	case 1:
 	{
-		license_civ_gun = false;
-		license_civ_rebel = false;
-		license_civ_thug = false;
-		//license_civ_driver = false;
-		license_civ_dep = false;
+		l_c_gun = false;
+		l_c_rebel = false;
+		l_c_thug = false;
+		//l_c_driver = false;
+		l_c_dep = false;
 		if(player getVariable["life_dep", false]) then {
 			player setVariable["life_dep", false, true];
 		};
-		license_civ_taxi = false;
+		l_c_taxi = false;
 		if(player getVariable["life_taxi", false]) then {
 			player setVariable["life_taxi", false, true];
 		};
@@ -42,11 +42,11 @@ switch (_state) do
 	//Remove motor vehicle licenses
 	case 2:
 	{
-		if(license_civ_driver OR license_civ_air OR license_civ_truck OR license_civ_boat) then {
-			//license_civ_driver = false;
-			//license_civ_air = false;
-			//license_civ_truck = false;
-			//license_civ_boat = false;
+		if(l_c_driver OR l_c_air OR l_c_truck OR l_c_boat) then {
+			//l_c_driver = false;
+			//l_c_air = false;
+			//l_c_truck = false;
+			//l_c_boat = false;
 			//hint localize "STR_Civ_LicenseRemove_1";
 		};
 	};
@@ -54,8 +54,8 @@ switch (_state) do
 	//Killing someone while owning a gun license
 	case 3:
 	{
-		if(license_civ_gun) then {
-			//license_civ_gun = false;
+		if(l_c_gun) then {
+			//l_c_gun = false;
 			//hint localize "STR_Civ_LicenseRemove_2";
 		};
 	};
@@ -65,55 +65,55 @@ switch (_state) do
     // Permis de Conduire
     case 10:
     {
-        license_civ_driver = false;
+        l_c_driver = false;
         hint localize "STR_Civ_RevokeLicense_Driver";
     };
     // Permis de Camions
     case 11:
     {
-        license_civ_truck = false;
+        l_c_truck = false;
         hint localize "STR_Civ_RevokeLicense_Truck";
     };
     // Brevet de Pilote
     case 12:
     {
-        license_civ_air = false;
+        l_c_air = false;
         hint localize "STR_Civ_RevokeLicense_Pilot";
     };
     // Permis de Bateau
     case 13:
     {
-        license_civ_boat = false;
+        l_c_boat = false;
         hint localize "STR_Civ_RevokeLicense_Boating";
     };
     // Permis de plongée
     case 14:
     {
-        license_civ_dive = false;
+        l_c_dive = false;
         hint localize "STR_Civ_RevokeLicense_Diving";
     };
     // Licence de Taxi
     /*case 15:
     {
-        license_civ_taxi = false;
+        l_c_taxi = false;
         hint localize "STR_Civ_RevokeLicense_Taxi";
     };*/
     // Toutes les licences
     case 16:
     {
-        license_civ_driver = false;
-        license_civ_truck = false;
-        license_civ_air = false;
-        license_civ_boat = false;
-        license_civ_air = false;
-        license_civ_dive = false;
-        // license_civ_taxi = false;
+        l_c_driver = false;
+        l_c_truck = false;
+        l_c_air = false;
+        l_c_boat = false;
+        l_c_air = false;
+        l_c_dive = false;
+        // l_c_taxi = false;
         hint localize "STR_Civ_RevokeLicense_AllMotor";
     };
     // Permis de port d'armes
     case 17:
     {
-        license_civ_gun = false;
+        l_c_gun = false;
         hint localize "STR_Civ_RevokeLicense_Firearm";
     };
 };

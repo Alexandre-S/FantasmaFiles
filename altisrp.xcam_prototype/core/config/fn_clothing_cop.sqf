@@ -31,7 +31,7 @@ switch (_filter) do
 		{
 		};
 		// BAC / PJ
-		if(license_cop_bacpj) then
+		if(l_g_bacpj) then
 		{
 			_ret pushBack ["U_B_UniformePolaireGendarme","Polaire Gendarme",0];
 			_ret pushBack ["U_B_UniformePolaireBleueGendarme","Polaire Bleue Gendarme",0];
@@ -53,12 +53,12 @@ switch (_filter) do
 			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
 		};
 		// Unité tactique
-		if(license_cop_swat) then
+		if(l_g_swat) then
 		{
 			_ret pushBack ["gign_uniform",nil,0];
 		};
 		// Pilote
-		if(license_cop_air) then
+		if(l_g_air) then
 		{
 			_ret pushBack ["U_B_PilotCoveralls",nil,0];
 			_ret pushBack ["U_I_pilotCoveralls",nil,0];
@@ -115,7 +115,7 @@ switch (_filter) do
 			_ret pushBack ["H_Watchcap_blk",nil,0];
 		};
 		// PJ / BAC
-		if(license_cop_bacpj) then
+		if(l_g_bacpj) then
 		{
 			_ret pushBack ["H_Booniehat_tan",nil,0];
 			_ret pushBack ["H_Hat_grey",nil,0];
@@ -130,7 +130,7 @@ switch (_filter) do
 			_ret pushBack ["RPIMA_Balaclava",nil,0];
 		};
 		// Unité tactique
-		if(license_cop_swat) then
+		if(l_g_swat) then
 		{
 			_ret pushBack ["H_Cap_oli_hs",nil,0];
 			_ret pushBack ["H_Booniehat_khk_hs",nil,0]; //
@@ -142,7 +142,7 @@ switch (_filter) do
 			_ret pushBack ["gign_helm4",nil,0];
 		};
 		// Pilote
-		if(license_cop_air) then
+		if(l_g_air) then
 		{
 			// _ret pushBack ["H_HelmetCrew_B",nil,0];
 			// _ret pushBack ["H_HelmetCrew_O",nil,0];
@@ -209,7 +209,7 @@ switch (_filter) do
 			_ret pushBack["V_PlateCarrier1_blk",nil,0];
 		};
 		// PJ / BAC
-		if(license_cop_bacpj) then
+		if(l_g_bacpj) then
 		{
 			_ret pushBack ["V_HarnessO_brn",nil,0];
 			_ret pushBack ["V_HarnessO_gry",nil,0];
@@ -224,12 +224,12 @@ switch (_filter) do
 			_ret pushBack ["V_TacVest_oli",nil,0];
 		};
 		// Medic
-		if(license_cop_medic) then
+		if(l_g_medic) then
 		{
 			_ret pushBack ["V_TacVestIR_blk",nil,0];
 		};
 		// Unité tactique
-		if(license_cop_swat) then
+		if(l_g_swat) then
 		{
 			_ret pushBack["gign_HeavyVest",nil,0];
 		};
@@ -285,12 +285,12 @@ switch (_filter) do
 			_ret pushBack ["tf_rt1523g_big_rhs",nil,0];
 		};
 		// Unité Tactique
-		if(license_cop_swat || __GETC__(life_coplevel) >= 2) then
+		if(l_g_swat || __GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
 		};
 		// 
-		if(license_cop_air) then
+		if(l_g_air) then
 		{
 			_ret pushBack ["B_Parachute",nil,0];
 		};
