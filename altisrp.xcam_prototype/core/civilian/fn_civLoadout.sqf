@@ -20,5 +20,5 @@ player assignItem "ItemCompass";
 player addItem "ItemWatch";
 player assignItem "ItemWatch";
 
-[] call life_fnc_saveGear;
+//[] call life_fnc_saveGear;
 //[] call life_fnc_updateClothing;
