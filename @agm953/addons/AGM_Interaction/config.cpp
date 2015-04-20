@@ -478,7 +478,7 @@ class CfgVehicles {
 	  {
 		displayName = "Interaction Gendarme";
 		distance = 4;
-		condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west}";
+		condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
 		statement = "";
 		showDisabled = 0;
 		priority = 3.2;
@@ -490,7 +490,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_pInAct_checkLicenses";
 			distance = 4;
-			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
 			statement = "[[player],""life_fnc_licenseCheck"",_target,FALSE] spawn life_fnc_MP";
 			showDisabled = 1;
 			// icon = "\AGM_Interaction\UI\team\team_red_ca.paa";
@@ -502,7 +502,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_pInAct_SearchPlayer";
 			distance = 4;
-			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false]) OR (_target getVariable['AGM_isSurrender',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
 			statement = "[_target] spawn life_fnc_searchAction";
 			showDisabled = 1;
 			// icon = "\AGM_Interaction\UI\team\team_green_ca.paa";
@@ -514,7 +514,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_pInAct_TicketBtn";
 			distance = 4;
-			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
 			statement = "[_target] call life_fnc_ticketAction";
 			showDisabled = 1;
 			// icon = "\AGM_Interaction\UI\team\team_blue_ca.paa";
@@ -526,7 +526,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_pInAct_RevokeLicense";
 			distance = 4;
-			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian}";
+			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
 			statement = "[_target] call life_fnc_revokeLicense";
 			showDisabled = 1;
 			// icon = "\AGM_Interaction\UI\team\team_yellow_ca.paa";
@@ -538,7 +538,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_pInAct_Arrest";
 			distance = 4;
-			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target == civilian} && ((player distance (getMarkerPos ""police_hq_1"") < 30) OR  (player distance (getMarkerPos ""police_hq_2"") < 30) OR (player distance (getMarkerPos ""cop_spawn_3"") < 30) OR (player distance (getMarkerPos ""cop_spawn_5"") < 30))";
+			condition = "alive _target && {isPlayer _target} && {_target isKindOf ""Man""} && {(_target getVariable['AGM_isCaptive',false])} && {!(player getVariable['AGM_isCaptive',false])} && {playerSide == west} && {side _target in [civilian,independent]} && ((player distance (getMarkerPos ""police_hq_1"") < 30) OR  (player distance (getMarkerPos ""police_hq_2"") < 30) OR (player distance (getMarkerPos ""cop_spawn_3"") < 30) OR (player distance (getMarkerPos ""cop_spawn_5"") < 30))";
 			statement = "[_target] call life_fnc_arrestAction";
 			showDisabled = 1;
 			// icon = "\AGM_Interaction\UI\team\team_white_ca.paa";
