@@ -70,7 +70,7 @@ if(life_is_arrested) exitWith {
 	life_is_arrested = false;
 	[player,TRUE] spawn life_fnc_jail;
 	spawnmenuon = 0;
-	[] call SOCK_fnc_updateRequest;
+	// [] call SOCK_fnc_updateRequest;
 };
 
 //Johnny law got me but didn't let the EMS revive me, reward them half the bounty.
