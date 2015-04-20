@@ -58,8 +58,8 @@ switch (true) do
 		hint localize "STR_Jail_Paid";
 		serv_wanted_remove = [player];
 		player setPos (getMarkerPos "jail_release");
-		[] call life_fnc_getHLC;
-		[[getPlayerUID player],"life_fnc_wantedRemove",serverhc,false] spawn life_fnc_MP;
+		// [] call life_fnc_getHLC;
+		// [[getPlayerUID player],"life_fnc_wantedRemove",serverhc,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
 	};
 	
@@ -77,8 +77,8 @@ switch (true) do
 	{
 		life_is_arrested = false;
 		hint localize "STR_Jail_Released";
-		[] call life_fnc_getHLC;
-		[[getPlayerUID player],"life_fnc_wantedRemove",serverhc,false] spawn life_fnc_MP;
+		// [] call life_fnc_getHLC;
+		// [[getPlayerUID player],"life_fnc_wantedRemove",serverhc,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
 		[5] call SOCK_fnc_updatePartial;
 	};

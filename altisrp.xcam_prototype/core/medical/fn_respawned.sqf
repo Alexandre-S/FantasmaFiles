@@ -81,10 +81,10 @@ if(life_is_arrested) exitWith {
 };*/
 
 //So I guess a fellow gang member, cop or myself killed myself so get me off that Altis Most Wanted
-if(life_removeWanted) then {
+/*if(life_removeWanted) then {
 	[] call life_fnc_getHLC;
 	[[getPlayerUID player],"life_fnc_wantedRemove",serverhc,false] spawn life_fnc_MP;
-};
+};*/
 
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.

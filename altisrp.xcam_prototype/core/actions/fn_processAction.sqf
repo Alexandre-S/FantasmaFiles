@@ -107,4 +107,6 @@ else
 	titleText[format[localize "STR_Process_Processed2",_oldVal,_itemName,[_cost] call life_fnc_numberText],"PLAIN"];
 	life_cash = life_cash - _cost;
 	life_is_processing = false;
+	[0] call SOCK_fnc_updatePartial;
+	[3] call SOCK_fnc_updatePartial;
 };	

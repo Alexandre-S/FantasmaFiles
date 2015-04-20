@@ -58,4 +58,5 @@ else
 
 life_cash = life_cash - _cost;
 playSound "caching";
+[0] call SOCK_fnc_updatePartial;
 //["atm","take",_cost] call life_fnc_updateCash;

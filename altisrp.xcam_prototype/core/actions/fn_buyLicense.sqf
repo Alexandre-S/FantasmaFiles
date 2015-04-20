@@ -111,3 +111,4 @@ if (_type == "rebel") then
 };
 
 [2] call SOCK_fnc_updatePartial;
+[0] call SOCK_fnc_updatePartial;

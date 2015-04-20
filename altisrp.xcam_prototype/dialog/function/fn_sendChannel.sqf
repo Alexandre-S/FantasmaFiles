@@ -18,6 +18,7 @@ if ( life_cash < 30000 ) exitWith { [[1,"Vous devez payer 30000€ pour envoyer 
 //if ( playerSide != civilian ) exitWith { systemChat "Du musst Zivilist sein um einen Nachricht zu senden!"; }; // Hint if not civilian
 if !(life_channel_send) exitWith { [[1,"Vous devez attendre 10 minutes pour renvoyer un message"],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP; }; //Gives Player the Hint to Wait 10 mins
 life_cash = life_cash - 30000;
+[0] call SOCK_fnc_updatePartial;
 
 _message = ctrlText 9001;
 [[1,format ["%1 envoie le message suivant depuis Channel 7: \n\n %2",name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;

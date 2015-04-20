@@ -22,4 +22,5 @@ playSound "caching";
 life_clothesPurchased = true;
 closeDialog 0;
 
+[0] call SOCK_fnc_updatePartial;
 //[] call life_fnc_updateClothing;

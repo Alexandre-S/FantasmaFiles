@@ -87,4 +87,6 @@ else
 		[_item,true] spawn life_fnc_handleItem;
 	};
 };
-[] call life_fnc_saveGear;
+//[] call life_fnc_saveGear;
+[0] call SOCK_fnc_updatePartial;
+[3] call SOCK_fnc_updatePartial;

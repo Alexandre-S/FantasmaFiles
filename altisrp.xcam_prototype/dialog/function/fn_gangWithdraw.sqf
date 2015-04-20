@@ -24,6 +24,6 @@ grpPlayer setVariable ["gang_bank",_gFund,true];
 
 hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText];
 [] call life_fnc_gangAtmMenu;
-[6] call SOCK_fnc_updatePartial;
+[0] call SOCK_fnc_updatePartial;
 [] call life_fnc_getHLC;
 [[1,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;

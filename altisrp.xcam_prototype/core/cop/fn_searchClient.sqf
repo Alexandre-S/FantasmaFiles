@@ -21,7 +21,7 @@ _robber = false;
 		[false,(_x select 0),_val] call life_fnc_handleInv;
 	};
 } foreach life_illegal_items;
-diag_log format["DEBUGSEARCHCLIENT1 %1",_inv];
+// diag_log format["DEBUGSEARCHCLIENT1 %1",_inv];
 // Check for hidden weapons.
 if (uniform player != "") then {
 	{
@@ -35,7 +35,7 @@ if (uniform player != "") then {
 		};
 	} forEach (uniformItems player);
 };
-diag_log format["DEBUGSEARCHCLIENT2 %1",_inv];
+// diag_log format["DEBUGSEARCHCLIENT2 %1",_inv];
 if (vest player != "") then {
 	{
 		_cfg = [_x] call life_fnc_fetchCfgDetails;
@@ -48,7 +48,7 @@ if (vest player != "") then {
 		};
 	} forEach (vestItems player);
 };
-diag_log format["DEBUGSEARCHCLIENT3 %1",_inv];
+// diag_log format["DEBUGSEARCHCLIENT3 %1",_inv];
 if (backpack player != "") then {
 	{
 		_cfg = [_x] call life_fnc_fetchCfgDetails;
@@ -61,7 +61,7 @@ if (backpack player != "") then {
 		};
 	} forEach (backpackItems player);
 };
-diag_log format["DEBUGSEARCHCLIENT4 %1",_inv];
+// diag_log format["DEBUGSEARCHCLIENT4 %1",_inv];
 if(!life_use_atm) then 
 {
 	life_cash = 0;

@@ -29,7 +29,8 @@ if(playerSide == independent) then { _price = 100; };
 [] call life_fnc_getHLC;
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",serverhc,false] spawn life_fnc_MP;
 hint format[localize "STR_Garage_SoldCar",[_price] call life_fnc_numberText];
-life_atmcash = life_atmcash + _price;
+life_cash = life_cash + _price;
+[0] call SOCK_fnc_updatePartial;
 
 life_action_inUse = false; // duping fix
 closeDialog 0;
