@@ -7,7 +7,7 @@
 	Can't be bothered to answer it.. Already deleted it by accident..
 */
 disableSerialization;
-private["_control","_index","_className","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_assurPrice","_assur"];
+private["_control","_index","_className","_dataArr","_vehicleColor","_vehicleInfo","_trunkSpace","_sellPrice","_retrievePrice","_assurPrice","_assur","_four"];
 _control = _this select 0;
 _index = _this select 1;
 
@@ -16,6 +16,7 @@ _dataArr = _control lbData _index;
 _dataArr = call compile format["%1",_dataArr];
 _className = _dataArr select 0;
 _assur = (_dataArr select 2);
+_four = (_dataArr select 3);
 _vehicleColor = [_className,_dataArr select 1] call life_fnc_vehicleColorStr;
 _vehicleInfo = [_className] call life_fnc_fetchVehInfo;
 _trunkSpace = [_className] call life_fnc_vehicleWeightCfg;
@@ -43,8 +44,12 @@ if(license_civ_dep && (_className == "I_Heli_Transport_02_F_RP" && (_dataArr sel
 	_retrievePrice = _retrievePrice/10;
 };
 
+if(_four == 1) then {
+	_retrievePrice = _retrievePrice + _assurPrice;
+};
+
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
-	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>%1€</t><br/>
+	" +(localize "STR_Shop_Veh_UI_RetrievalP")+ " %12%1€ %13</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>%2€</t><br/>
 	Prix assurance: <t color='#8cff9b'>%9€</t><br/>
 	Etat de l'assurance: %10<br/>
@@ -66,7 +71,9 @@ _vehicleInfo select 12,
 _vehicleColor,
 [_assurPrice] call life_fnc_numberText,
 if(_assur == 1) then {"<t color='#8cff9b'>Assuré</t>"} else {"<t color='#FF0000'>Pas d'assurance</t>"},
-_vehicleInfo select 9
+_vehicleInfo select 9,
+if(_four == 1) then {"<t color='8cff9b'>"} else {"<t color='FF0000'>"},
+if(_four == 1) then {" (En Fourrière)"} else {""}
 ];
 
 if(_assur == 1) then {
