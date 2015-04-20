@@ -183,7 +183,9 @@ switch(playerSide) do {
 	};
 };
 
-life_paycheck = life_paycheck + (__GETC__(life_donator) * 250);
+// life_paycheck = life_paycheck + (__GETC__(life_donator) * 250);
+life_paycheck = ceil(life_paycheck + (((__GETC__(life_donator) * 5) / 100) * life_paycheck));
+
 
 /*if ((count life_position) > 0) then {
 	life_position = life_position findEmptyPosition [1,50,typeof player];
