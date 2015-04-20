@@ -3,7 +3,7 @@
 	Author: alleskapot & Lifted
 	Thanks again for all the help alleskapot!
 	Description:
-	Ermöglicht senden bzw. die Abfrage des Geschriebenen.
+	ErmÃ¶glicht senden bzw. die Abfrage des Geschriebenen.
 	
 	this addAction["Send Message",life_fnc_calldialog,0];
 

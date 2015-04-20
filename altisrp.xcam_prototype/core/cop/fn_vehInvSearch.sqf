@@ -32,11 +32,11 @@ _value = 0;
 
 if(_value > 0) then
 {
-	[[0,"STR_NOTF_VehContraband",true,[[_value] call life_fnc_numberText]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,"STR_NOTF_VehContraband",true,[[_value] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 	life_atmcash = life_atmcash + _value;
 	_vehicle setVariable["Trunk",[[],0],true];
 }
-	else
+else
 {
 	hint localize "STR_Cop_NoIllegalVeh";
 };
