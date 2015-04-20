@@ -1343,7 +1343,8 @@ life_assur_prices =
 	["C_Boat_Civil_01_F",33000*0.5],
 	["C_Boat_Civil_01_rescue_F",31500*0.5],
 	["D41_Trawler",130000*0.5],
-	["D41_Trawler",500000*0.5],
+	["Burnes_MK10_1",500000*0.5],
+	["ffaa_ar_lcm",500000*0.5],
 	
 	//MED
 	["ACR_LandRover_AMB_RP",33750*0.5],
