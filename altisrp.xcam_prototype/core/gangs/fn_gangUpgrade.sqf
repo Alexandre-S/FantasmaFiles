@@ -5,7 +5,7 @@
 	Description:
 	Determinds the upgrade price and blah
 */
-private["_maxMembers","_slotUpgrade","_upgradePrice"];
+private["_maxMembers","_slotUpgrade","_upgradePrice","_action"];
 _maxMembers = grpPlayer getVariable ["gang_maxMembers",8];
 _slotUpgrade = _maxMembers + 4;
 _upgradePrice = round(_slotUpgrade * (__GETC__(life_gangUpgradeBase)) / (__GETC__(life_gangUpgradeMultipler)));

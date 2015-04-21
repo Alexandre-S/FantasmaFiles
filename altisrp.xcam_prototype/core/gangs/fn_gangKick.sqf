@@ -17,7 +17,7 @@ if!(_unit getVariable["init_gang",false]) exitwith {hint "Impossible de kicker c
 
 _grp = grpPlayer;
 _unitID = getPlayerUID _unit;
-_members = _grp getVariable "gang_members";
+_members = _grp getVariable ["gang_members",nil];
 if(isNil "_members") exitWith {};
 if(typeName _members != "ARRAY") exitWith {};
 _members = _members - [_unitID];

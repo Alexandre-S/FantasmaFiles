@@ -10,7 +10,7 @@ if(steamid == (grpPlayer getVariable "gang_owner")) exitWith {hint localize "STR
 if!(init_gang) exitwith {};
 
 _grp = grpPlayer;
-_grpMembers = _grp getVariable "gang_members";
+_grpMembers = _grp getVariable ["gang_members",nil];
 if(isNil "_grpMembers") exitWith {};
 if(typeName _grpMembers != "ARRAY") exitWith {};
 _grpMembers = _grpMembers - [steamid];

@@ -5,7 +5,7 @@
 	Description:
 	Prompts the player about an invite.
 */
-private["_name","_group"];
+private["_name","_group","_grpMembers","_action","_gangName"];
 _name = [_this,0,"",[""]] call BIS_fnc_param;
 _group = [_this,1,grpNull,[grpNull]] call BIS_fnc_param;
 if(_name == "" OR isNull _group) exitWith {}; //Fail horn anyone?
@@ -25,9 +25,12 @@ if(_action) then {
 	[] call life_fnc_getHLC;
 	[[4,_group],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 } else {
-	_grpMembers = grpPlayer getVariable "gang_members";
+	sleep 1;
+	_grpMembers = _group getVariable ["gang_members",nil];
+	if(isNil "_grpMembers") exitWith {};
+	if(typeName _grpMembers != "ARRAY") exitWith {};
 	_grpMembers = _grpMembers - [steamid];
-	grpPlayer setVariable["gang_members",_grpMembers,true];
+	_group setVariable["gang_members",_grpMembers,true];
 	[] call life_fnc_getHLC;
 	[[4,_group],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 };

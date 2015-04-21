@@ -17,7 +17,7 @@ switch (_mode) do {
 	case 0: {
 		_bank = [(_group getVariable ["gang_bank",0])] call DB_fnc_numberSafe;
 		_maxMembers = _group getVariable ["gang_maxMembers",8];
-		_members = [(_group getVariable "gang_members")] call DB_fnc_mresArray;
+		// _members = [(_group getVariable "gang_members")] call DB_fnc_mresArray;
 		_owner = _group getVariable ["gang_owner",""];
 		if(_owner == "") exitWith {};
 		
@@ -39,7 +39,7 @@ switch (_mode) do {
 	};
 	
 	case 4: {
-		_members = _group getVariable "gang_members";
+		_members = _group getVariable ["gang_members",nil];
 		if(isNil "_members") exitWith {};
 		if(typeName _members != "ARRAY") exitWith {};
 		_maxMembers = _group getVariable ["gang_maxMembers",8];

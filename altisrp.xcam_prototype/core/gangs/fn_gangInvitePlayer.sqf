@@ -5,7 +5,7 @@
 	Description:
 	Starts the invite process?
 */
-private["_unit"];
+private["_unit","_action","_members"];
 disableSerialization;
 
 if((lbCurSel 2632) == -1) exitWith {hint localize "STR_GNOTF_SelectPerson"};
@@ -26,7 +26,9 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	_members = grpPlayer getVariable "gang_members";
+	_members = grpPlayer getVariable ["gang_members",nil];
+	if(isNil "_members") exitWith {};
+	if(typeName _members != "ARRAY") exitWith {};
 	_members pushBack steamid;
 	grpPlayer setVariable["gang_members",_members,true];
 	hint format[localize "STR_GNOTF_InviteSent",_unit getVariable["realname",name _unit]];
