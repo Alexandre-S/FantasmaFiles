@@ -32,7 +32,7 @@ goatgroup = createGroup Civilian;
 		// _total = 200 - _alive;
 		// if (time - life_animals_spawned_time > 60) then
 		// {
-			_total = 50 - count life_animals_array;
+			_total = 80 - count life_animals_array;
 			for "_i" from 1 to _total do
 			{
 				_type = _animals call BIS_fnc_selectRandom;

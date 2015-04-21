@@ -49,7 +49,7 @@ if(_four == 1) then {
 };
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
-	" +(localize "STR_Shop_Veh_UI_RetrievalP")+ " %12%1€ %13</t><br/>
+	" " +(localize "STR_Shop_Veh_UI_RetrievalP")+ " %12%1€ %13</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>%2€</t><br/>
 	Prix assurance: <t color='#8cff9b'>%9€</t><br/>
 	Etat de l'assurance: %10<br/>
