@@ -26,11 +26,11 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	[[profileName,grpPlayer],"life_fnc_gangInvite",_unit,false] spawn life_fnc_MP;
 	_members = grpPlayer getVariable "gang_members";
-	_members pushBack getPlayerUID _unit;
+	_members pushBack steamid;
 	grpPlayer setVariable["gang_members",_members,true];
 	hint format[localize "STR_GNOTF_InviteSent",_unit getVariable["realname",name _unit]];
+	[[profileName,grpPlayer],"life_fnc_gangInvite",_unit,false] spawn life_fnc_MP;
 } else {
 	hint localize "STR_GNOTF_InviteCancel";
 };

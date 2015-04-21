@@ -6,6 +6,5 @@ if(player == _unit && (group player) == _group) then
 {
 	life_my_gang = ObjNull;
 	[player] joinSilent (createGroup civilian);
-	hint "Vous avez été ejecté du groupe.";
-	
+	hint "Vous avez Ã©tÃ© ejectÃ© du groupe.";
 };
