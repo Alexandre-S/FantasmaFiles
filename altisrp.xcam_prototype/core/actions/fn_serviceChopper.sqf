@@ -9,7 +9,7 @@ disableSerialization;
 private["_search","_ui","_progress","_cP","_pgText","_title","_sp"];
 if(life_action_inUse) exitWith {hint localize "STR_NOTF_Action"};
 _sp = [(_this select 3),0,"",[""]] call BIS_fnc_param;
-_search = nearestObjects[getPos _sp, ["Air"],5];
+_search = nearestObjects[getPos _sp, ["Air"],10];
 if(count _search == 0) exitWith {hint localize "STR_Service_Chopper_NoAir"};
 if(life_cash < 1000) exitWith {hint localize "STR_Serive_Chopper_NotEnough"};
 life_cash = life_cash - 1000;
@@ -37,7 +37,7 @@ if(!local (_search select 0)) then
 {
 	[[(_search select 0),1],"life_fnc_setFuel",(_search select 0),false] spawn life_fnc_MP;
 }
-	else
+else
 {
 	(_search select 0) setFuel 1;
 };

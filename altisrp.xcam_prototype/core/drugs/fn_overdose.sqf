@@ -31,9 +31,7 @@ for "_i" from 1 to _duration do {
 
 disableUserInput false;
 
-if(_overdose == 0) then {
-_death = random 1;
-} else { _death = 0; };
+if(_overdose == 0) then {_death = random 1;} else {_death = 0;};
 
-if (_death > 0.7) then { hint "Vous venez de mourir d'une overdose !"; player setDamage 1; life_drug_level = 0; }
-else { player playActionNow "gestureNod"; };
+if (_death > 0.7) then { hint "Vous venez de mourir d'une overdose !"; player setDamage 1; life_drug_level = 0;
+} else { player playActionNow "gestureNod"; };
