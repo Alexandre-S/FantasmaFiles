@@ -16,17 +16,16 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 	
 	{
 		_pos = call compile format["%1",_x select 2];
-		_house = nearestBuilding _pos;
-		if(_house distance _pos > 1) then {
-			_house = (nearestObjects[_pos,["House_F"],20] select 0);
-			diag_log format["DEBUG INIT HOUSE > 1 | %1 - %2",_house,_house distance _pos]
-		};
+		// _house = nearestBuilding _pos;
+		// if(_house distance _pos > 1) then {
+		_house = (nearestObjects[_pos,["House_F"],20] select 0);
+		// };
 		// add
 		_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-		if(count _houseCfg == 0) then
-		{
-			_house = (nearestObjects[_pos,["House_F"],20] select 0);
-		};
+		// if(count _houseCfg == 0) then
+		// {
+			// _house = (nearestObjects[_pos,["House_F"],20] select 0);
+		// };
 		
 		_house setVariable["house_owner",[_x select 1,_x select 3],true];
 		sleep 0.01;
