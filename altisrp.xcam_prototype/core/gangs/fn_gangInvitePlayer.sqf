@@ -29,7 +29,7 @@ if(_action) then {
 	_members = grpPlayer getVariable ["gang_members",nil];
 	if(isNil "_members") exitWith {};
 	if(typeName _members != "ARRAY") exitWith {};
-	_members pushBack steamid;
+	_members pushBack (getPlayerUID _unit);
 	grpPlayer setVariable["gang_members",_members,true];
 	hint format[localize "STR_GNOTF_InviteSent",_unit getVariable["realname",name _unit]];
 	[[profileName,grpPlayer],"life_fnc_gangInvite",_unit,false] spawn life_fnc_MP;
