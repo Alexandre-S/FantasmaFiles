@@ -13,8 +13,8 @@ _inv = [];
 // _robber = false;
 //items
 {
-	_var = [_x select 0,0] call life_fnc_varHandle;
-	_val = missionNamespace getVariable _var;
+	// _var = [_x,1] call life_fnc_varHandle;
+	_val = missionNamespace getVariable _x;
 	if(_val > 0) then
 	{
 		// _inv pushBack [_x select 0,_val];

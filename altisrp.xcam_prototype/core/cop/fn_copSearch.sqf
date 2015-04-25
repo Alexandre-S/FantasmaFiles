@@ -23,7 +23,8 @@ _inv = "";
 if(count _invs > 0) then
 {
 	{
-		_inv = _inv + format["%1 %2<br/>",_x select 1,[([_x select 0,0] call life_fnc_varHandle)] call life_fnc_varToStr];
+		// _inv = _inv + format["%1 %2<br/>",_x select 1,[([_x select 0,0] call life_fnc_varHandle)] call life_fnc_varToStr];
+		_inv = _inv + format["%2 [x%1]<br/>",_x select 1,[_x select 0] call life_fnc_varToStr];
 		/*_index = [_x select 0,__GETC__(sell_array)] call life_fnc_index;
 		if(_index != -1) then
 		{
