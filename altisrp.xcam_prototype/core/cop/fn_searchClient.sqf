@@ -17,7 +17,8 @@ _inv = [];
 	_val = missionNamespace getVariable _var;
 	if(_val > 0) then
 	{
-		_inv pushBack [_x select 0,_val];
+		// _inv pushBack [_x select 0,_val];
+		_inv pushBack [_x,_val];
 		// [false,(_x select 0),_val] call life_fnc_handleInv;
 	};
 } foreach life_inv_items;
@@ -73,6 +74,6 @@ if(!life_use_atm) then
 
 if((count _guns) == 0) then { _guns = "Aucune arme trouvée"; };
 */
-hint "Une personne fouille vos objets/votre Cash";
+hint "Une personne fouille vos objets/vos poches";
 // [[player,_inv,_robber,_guns, life_atmcash, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;
 [[player,_inv, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;

@@ -18,7 +18,7 @@ if(isNull _civ) exitWith {};
 
 // _totalThune = _atmcash + _cash;
 
-_illegal = 0;
+// _illegal = 0;
 _inv = "";
 if(count _invs > 0) then
 {
