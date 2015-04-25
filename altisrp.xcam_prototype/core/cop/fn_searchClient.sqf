@@ -5,22 +5,24 @@
 	Description:
 	Searches the player and he returns information back to the player.
 */
-private["_cop","_guns","_inv","_var","_val","_robber","_cfg"];
+private["_cop","_inv","_var","_val"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 if(isNull _cop) exitWith {};
-_guns = [];
+// _guns = [];
 _inv = [];
-_robber = false;
-//Illegal items
+// _robber = false;
+//items
 {
 	_var = [_x select 0,0] call life_fnc_varHandle;
 	_val = missionNamespace getVariable _var;
 	if(_val > 0) then
 	{
 		_inv pushBack [_x select 0,_val];
-		[false,(_x select 0),_val] call life_fnc_handleInv;
+		// [false,(_x select 0),_val] call life_fnc_handleInv;
 	};
-} foreach life_illegal_items;
+} foreach life_inv_items;
+
+/*
 // diag_log format["DEBUGSEARCHCLIENT1 %1",_inv];
 // Check for hidden weapons.
 if (uniform player != "") then {
@@ -61,6 +63,7 @@ if (backpack player != "") then {
 		};
 	} forEach (backpackItems player);
 };
+
 // diag_log format["DEBUGSEARCHCLIENT4 %1",_inv];
 if(!life_use_atm) then 
 {
@@ -69,6 +72,7 @@ if(!life_use_atm) then
 };
 
 if((count _guns) == 0) then { _guns = "Aucune arme trouvée"; };
-
-
-[[player,_inv,_robber,_guns, life_atmcash, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;
+*/
+hint "Une personne fouille vos objets/votre Cash";
+// [[player,_inv,_robber,_guns, life_atmcash, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;
+[[player,_inv, life_cash],"life_fnc_copSearch",_cop,false] spawn life_fnc_MP;

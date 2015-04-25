@@ -385,7 +385,6 @@ class CfgVehicles {
           hotkey = "Y";
           enableInside = 1;
         };
-
         class AGM_LeaveTeam {
           displayName = "$STR_AGM_Interaction_LeaveTeam";
           distance = 4;
@@ -498,7 +497,7 @@ class CfgVehicles {
 			hotkey = "L";
 			enableInside = 1;
 		};
-		class AGM_CopSearchPlayer
+		/*class AGM_CopSearchPlayer
 		{
 			displayName = "$STR_pInAct_SearchPlayer";
 			distance = 4;
@@ -509,7 +508,7 @@ class CfgVehicles {
 			priority = 2.3;
 			hotkey = "S";
 			enableInside = 1;
-		};
+		};*/
 		class AGM_CopTicket
 		{
 			displayName = "$STR_pInAct_TicketBtn";

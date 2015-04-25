@@ -160,7 +160,7 @@ class CfgVehicles {
         displayName = "$STR_AGM_Captives_FriskPerson";
         distance = 2;
         condition = "[_player, _target] call AGM_Captives_fnc_canFriskPerson";
-        statement = "[_player, _target] call AGM_Captives_fnc_openFriskMenu";
+        statement = "[_player, _target] call AGM_Captives_fnc_openFriskMenu;[_target] spawn life_fnc_searchAction;";
         showDisabled = 0;
         //icon = "";  //@todo
         priority = 3;

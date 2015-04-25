@@ -2332,11 +2332,11 @@
 			<Portuguese>Não foi possível mover o item do invetário para o cofre.</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_CouldntSearch">
-			<Original>Couldn't search %1</Original>
-			<German>Konnte %1 nicht durchsuchen</German>
-			<French>Impossible de fouiller %1</French>
-			<Italian>Impossibile ispezionare %1</Italian>
-			<Portuguese>Não foi possível buscar por %1</Portuguese>
+			<Original>Couldn't search target</Original>
+			<German>Konnte target nicht durchsuchen</German>
+			<French>Impossible de fouiller la cible</French>
+			<Italian>Impossibile ispezionare target</Italian>
+			<Portuguese>Não foi possível buscar por target</Portuguese>
 		</Key>
 		<Key ID="STR_Cop_RepairingDoor">
 			<Original>Repairing Door...</Original>
@@ -4061,9 +4061,9 @@
 			<Portuguese>Verificar Licenças</Portuguese>
 		</Key>
 		<Key ID="STR_pInAct_SearchPlayer">
-			<Original>Search Player</Original>
+			<Original>Search Item/cash</Original>
 			<German>Spieler durchsuchen</German>
-			<French>Fouiller joueur</French>
+			<French>Fouiller Objets/Cash</French>
 			<Italian>Ricerca Giocatore</Italian>
 			<Portuguese>Buscar por Jogador</Portuguese>
 		</Key>
