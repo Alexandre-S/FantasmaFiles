@@ -12,13 +12,14 @@ _houses = [_query,2,true] call DB_fnc_asyncCall;
 if(count _houses == 0) exitWith {};
 {
 	_pos = call compile format["%1",_x select 1];
-	_house = nearestBuilding _pos;
+	// _house = nearestBuilding _pos;
+	_house = (nearestObjects[_pos,["House_F"],20] select 0);
 	// add
 	_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-	if(count _houseCfg == 0) then
-	{
-		_house = (nearestObjects[_pos,["House_F"],20] select 0);
-	};
+	// if(count _houseCfg == 0) then
+	// {
+		// _house = (nearestObjects[_pos,["House_F"],20] select 0);
+	// };
 	
 	if(!isNil {(_house getVariable "containers")}) then {
 		{if(!isNull _x) then {deleteVehicle _x;};} foreach (_house getVariable "containers");

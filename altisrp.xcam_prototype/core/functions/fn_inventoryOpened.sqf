@@ -21,13 +21,14 @@ if(_isPack == 1 && playerSide != west) then {
 };
 if(playerSide != west) then{
 	if((typeOf _container) in ["Box_IND_Grenades_F_RP","B_supplyCrate_F_RP"]) exitWith {
-		_house = nearestBuilding (getPosATL player);
+		// _house = nearestBuilding (getPosATL player);
+		_house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
 		// add
 		_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-		if(count _houseCfg == 0) then
-		{
-			_house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
-		};
+		// if(count _houseCfg == 0) then
+		// {
+			// _house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
+		// };
 		
 		_locked = _house getVariable ["locked",nil];
 		_close = false;

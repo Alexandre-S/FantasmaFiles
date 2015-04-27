@@ -38,13 +38,14 @@ switch (_side) do
 		if(count life_houses > 0) then {
 			{
 				_pos = call compile format["%1",_x select 0];
-				_house = nearestBuilding _pos;
+				// _house = nearestBuilding _pos;
+				_house = (nearestObjects[_pos,["House_F"],20] select 0);
 				// add
 				_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-				if(count _houseCfg == 0) then
-				{
-					_house = (nearestObjects[_pos,["House_F"],20] select 0);
-				};
+				// if(count _houseCfg == 0) then
+				// {
+					// _house = (nearestObjects[_pos,["House_F"],20] select 0);
+				// };
 				
 				_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
 				

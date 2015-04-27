@@ -14,13 +14,14 @@ _houses = [_query,2,true] call DB_fnc_asyncCall;
 _return = [];
 {
 	_pos = call compile format["%1",_x select 1];
-	_house = nearestBuilding _pos;
+	// _house = nearestBuilding _pos;
+	_house = (nearestObjects[_pos,["House_F"],20] select 0);
 	// add
 	_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-	if(count _houseCfg == 0) then
-	{
-		_house = (nearestObjects[_pos,["House_F"],20] select 0);
-	};
+	// if(count _houseCfg == 0) then
+	// {
+		// _house = (nearestObjects[_pos,["House_F"],20] select 0);
+	// };
 	
 	_house allowDamage false;
 	_containers = [];

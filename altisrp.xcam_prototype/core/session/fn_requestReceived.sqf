@@ -128,13 +128,15 @@ switch(playerSide) do {
 		// so, here i change the select 9 to select 12 (+3 fields to civilian side). Is that right ?
 		life_houses = _this select 22;
 		{
-			_house = nearestBuilding (call compile format["%1", _x select 0]);
+			// _house = nearestBuilding (call compile format["%1", _x select 0]);
+			_house = (nearestObjects[(call compile format["%1", _x select 0]),["House_F"],20] select 0);
+
 			// add
 			_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
-			if(count _houseCfg == 0) then
-			{
-				_house = (nearestObjects[(call compile format["%1", _x select 0]),["House_F"],20] select 0);
-			};
+			// if(count _houseCfg == 0) then
+			// {
+				// _house = (nearestObjects[(call compile format["%1", _x select 0]),["House_F"],20] select 0);
+			// };
 			
 			life_vehicles pushBack _house;
 		} foreach life_houses;
