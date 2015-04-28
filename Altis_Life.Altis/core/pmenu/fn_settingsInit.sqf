@@ -9,7 +9,7 @@
 // tawvd_car = viewDistance;
 // tawvd_air = viewDistance;
 tawvd_foot = havena_minview;
-tawvd_car = 400;
+tawvd_car = 800;
 tawvd_air = 1000;
 tawvd_addon_disable = true;
 
