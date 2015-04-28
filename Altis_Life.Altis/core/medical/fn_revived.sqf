@@ -52,7 +52,7 @@ player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 
-player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
-player setVariable ["tf_sendingDistanceMultiplicator", 0.5];
+//player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
+//player setVariable ["tf_sendingDistanceMultiplicator", 0.5];
 
 [] call life_fnc_hudUpdate; //Request update of hud.

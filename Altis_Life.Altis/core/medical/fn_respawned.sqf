@@ -33,8 +33,8 @@ player setVariable["AGM_isCaptive",false,true];
 player setVariable["AGM_isEscorting",false,true];
 player setVariable["AGM_isSurrender", false, true];
 
-player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
-player setVariable ["tf_sendingDistanceMultiplicator", 0.5];
+//player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
+//player setVariable ["tf_sendingDistanceMultiplicator", 0.5];
 
 //Load gear for a 'new life'
 switch(playerSide) do

@@ -136,8 +136,8 @@ switch(_side) do {
 };
 _vehicle setVariable ["tf_hasRadio", true, true];
 sleep 0.01;
-// _vehicle setVariable ["tf_range", 50000, true];
-// sleep 0.01;
+_vehicle setVariable ["tf_range", 50000, true];
+sleep 0.01;
 
 
 //Send keys over the network.

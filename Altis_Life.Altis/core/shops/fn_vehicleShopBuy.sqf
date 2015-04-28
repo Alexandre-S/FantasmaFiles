@@ -89,8 +89,8 @@ sleep 0.01;
 sleep 0.01;
 _vehicle setVariable ["tf_hasRadio", true, true];
 sleep 0.01;
-// _vehicle setVariable ["tf_range", 50000, true];
-// sleep 0.01;
+_vehicle setVariable ["tf_range", 50000, true];
+sleep 0.01;
 
 // _vehicle addEventHandler["Killed",{_this spawn TON_fnc_vehicleDead;}];
 // _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];

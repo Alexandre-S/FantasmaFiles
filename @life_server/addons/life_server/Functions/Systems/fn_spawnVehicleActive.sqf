@@ -1,4 +1,5 @@
 /*
+/*
 	File: fn_spawnVehicleActive.sqf
 	Author: Havena
 	
@@ -102,8 +103,8 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		sleep 0.01;
 		_vehicle setVariable ["tf_hasRadio", true, true];
 		sleep 0.01;
-		// _vehicle setVariable ["tf_range", 50000, true];
-		// sleep 0.01;
+		_vehicle setVariable ["tf_range", 50000, true];
+		sleep 0.01;
 		_vehicle setVariable["vehicle_info_owners",[[_pid,_name]],true];
 		sleep 0.01;
 		//_vehicle setVariable["spawned",false,true];
