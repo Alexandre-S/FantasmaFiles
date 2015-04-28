@@ -39,7 +39,7 @@ goatgroup = createGroup Civilian;
 				// _animal = _type createVehicleLocal ([_pos, [1,500] call BIS_fnc_randomInt, [0,359] call BIS_fnc_randomInt] call BIS_fnc_relPos);
 				// _animal = goatgroup createUnit [_type, ([_pos, [1,500] call BIS_fnc_randomInt, [0,359] call BIS_fnc_randomInt] call BIS_fnc_relPos),[],0,"NONE"];
 				// _animal = (createGroup east) createUnit [_type, ([_pos, [1,50] call BIS_fnc_randomInt, [0,50] call BIS_fnc_randomInt] call BIS_fnc_relPos),[],0,"NONE"];
-				_animal = createAgent [_type, _pos,[],450,"NONE"];
+				_animal = createAgent [_type, _pos,[],1100,"NONE"];
 				_animal setdir (random 360);
 				_animal switchmove "walkf";
 				//_animal setVariable ["zbe_cacheDisabled",true];
@@ -116,7 +116,7 @@ goatgroup = createGroup Civilian;
 	{
 		sleep 60*5;
 		{
-			if((_x distance _pos) > 500) then
+			if((_x distance _pos) > 1200) then
 			{
 				deleteVehicle _x;
 				life_animals_array = life_animals_array - [_x];
