@@ -1,0 +1,275 @@
+author = "Tonic & Havena";
+onLoadName = "AltisLife Fantasma 5.7.3";
+onLoadMission = "Un Jeu de rôle de www.altisrp.fr";
+joinUnassigned = 1;
+respawn = BASE;
+respawndelay = 5;
+disabledAI = true;
+disableChannels[]={0,1,2,3,5};
+loadScreen = "altisrpfr\images\mission_splash.paa";
+enableDebugConsole = 1;
+respawnDialog = 0;
+
+class Header
+{
+	gameType = RPG;
+	minPlayers = 1;
+	maxPlayers = 162;
+};
+
+wreckLimit = 15;
+wreckRemovalMinTime = 360;
+wreckRemovalMaxTime = 720;
+corpseLimit = 150;
+corpseRemovalMinTime = 999;
+corpseRemovalMaxTime = 9999;
+// Rotorlib obligatoire
+forceRotorLibSimulation = 1;
+
+#include "dialog\MasterHandler.h"
+//#include "R3F_LOG\desc_include.h"
+
+class RscTitles
+{
+	#include "dialog\ui.hpp"
+	#include "dialog\progress.hpp"
+	#include "dialog\hud_nameTags.h"
+};
+
+class CfgFunctions
+{
+	#include "Functions.h"
+};
+/*
+class CfgSounds
+{
+	sounds[] = {};
+	class SirenSamu
+	{
+		name = "SirenSamu";
+		sound[] = {"\sounds\SirenSamu.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	class SirenLong
+	{
+		name = "SirenLong";
+		sound[] = {"\sounds\Siren_Long.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class tazersound
+	{
+		name = "Tazersound";
+		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		titles[] = {};
+	};
+	
+	class flashbang
+	{
+		name = "flashbang";
+		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class Beep
+	{
+		name = "Beep";
+		sound[] = {"\sounds\Beep.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class BeepBeep
+	{
+		name = "BeepBeep";
+		sound[] = {"\sounds\BeepBeep.ogg", 1.0, 1};
+		titles[] = {};
+	};
+};*/
+
+class CfgDebriefing
+{
+	class NotWhitelisted
+	{
+		title = "Echec de mission";
+		subtitle = "Vous n'êtes pas white-listé pour utiliser ce slot";
+		description = "Vous n'êtes pas aurotisé a utiliser ce slot car vous n'avez pas les permissions requises, essayez un autre slot.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class Blacklisted
+	{
+		title = "Echec de mission";
+		subtitle = "Vous êtes blacklisté par la Gendarmerie";
+		description = "Vous n'êtes pas autorisé à être membre de la gendarmerie suite à vos précédentes actions et les admins vous ont retiré l'accès pour être membre de la gendarmerie.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class SpyGlass
+	{
+		title = "Le SpyGlass t'a vu !";
+		subTitle = "Vous êtes détecté par le SpyGlass";
+		description = "Vous êtes détecté comme cheateur et un report a été adressé au serveur. Profitez bien de votre journée.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotPremium
+	{
+		title = "Place réservée";
+		subtitle = "Vous n'êtes pas autorisé a utiliser ce slot";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas membre premium, essayez un autre emplacement";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotFemale
+	{
+		title = "Echec de connection";
+		subtitle = "Vous n'êtes pas autorisé à utiliser un skin féminin";
+		description = "Vous ne pouvez pas rejoindre le serveur avec un visage féminin. Veuillez le changer dans votre profil ou faire une demande au staff";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotCop
+	{
+		title = "Réservé Gendarmerie";
+		subtitle = "Vous ne faite pas parti de la Gendarmerie";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas un membre de la Gendarmerie, essayez un autre emplacement.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NotCiv
+	{
+		title = "Réservé Civils";
+		subtitle = "Vous n'êtes pas civil";
+		description = "Vous n'êtes pas autorisé à utiliser ce slot parce que vous n'êtes pas civil. Essayez un slot Medic ou Gendarme";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class SessionError
+	{
+		title = "Erreur de chargement";
+		subtitle = "Erreur lors du chargement de la session";
+		description = "Erreur lors du chargement de la session, reessayez de vous connecter.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class BadName
+	{
+		title = "mauvaise identité";
+		subtitle = "Nom de joueur inconnu";
+		description = "Vous n'êtes pas autorisé à changer de nom sans passer par la préfecture. Merci de vous reconnecter avec votre ancien nom.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class NewName
+	{
+		title = "Changement d'identité";
+		subtitle = "Changement d'identité en cours";
+		description = "Vous venez de faire une demande de changement d'identité. Merci de vous reconnecter avec votre nouveau nom.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class ServerRP
+	{
+		title = "Serveur Roleplay";
+		subtitle = "Vous êtes sur un serveur Roleplay (RP)";
+		description = "Vous devez incarner votre personne au plus proche de la réalité. Merci de lire les règles.";
+		pictureBackground = "";
+		picture = "";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+};
+
+class CfgNotifications
+{
+	class MedicalRequestEmerg
+	{
+		title = "EMS Requested";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 5;
+		priority = 7;
+	};
+	
+	class DeliveryAssigned
+	{
+		title = "Delivery Job Accepted";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+		description = "%1";
+		duration = 10;
+		priority = 7;
+	};
+	
+	class DeliveryFailed
+	{
+		title = "Delivery Job Failed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+		description = "%1";
+		duration = 7;
+		priority = 7;
+	};
+	
+	class DeliverySucceeded
+	{
+		title = "Delivery Job Completed";
+		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+		description = "%1";
+		duration = 6;
+		priority = 6;
+	};
+	
+	class TextMessage
+	{
+		title = "Received A Text Message";
+		iconPicture = "altisrpfr\icons\messagenew.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class PoliceDispatch
+	{
+		title = "911 Dispatch Center";
+		iconPicture = "altisrpfr\icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminDispatch
+	{
+		title = "Admin Dispatch Center";
+		iconPicture = "altisrpfr\icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 6;
+	};
+	
+	class AdminMessage
+	{
+		title = "Admin Message";
+		iconPicture = "altisrpfr\icons\messageadmin.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
+};
