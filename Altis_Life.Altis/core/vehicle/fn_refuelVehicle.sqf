@@ -42,9 +42,11 @@ while {_level < 1} do
 	
 	hintSilent parseText format["<t color='#cec25b'>Litres:</t> %1<br/><t color='#cec25b'>Prix total :</t> %2€<br/><t color='#cec25b'>Réservoir à :</t> %3%4", _litres, [_cost] call life_fnc_numberText, floor (_level * 100), "%"];
 };
-if(_exit) exitWith { hint "Vous n'avez pas assez d'argent pour faire le plein d'essence !";  };
+if(_exit) then { hint "Vous n'avez pas assez d'argent pour faire le plein d'essence !";  };
 
-hintSilent parseText format["<t color='#cec25b'>Litres:</t> %1<br/><t color='#cec25b'>Prix total :</t> %2€<br/><t color='#cec25b'>Réservoir à :</t> %3%4", _litres, [_cost] call life_fnc_numberText, floor (_level * 100), "%"];
+// hintSilent parseText format["<t color='#cec25b'>Litres:</t> %1<br/><t color='#cec25b'>Prix total :</t> %2€<br/><t color='#cec25b'>Réservoir à :</t> %3%4", _litres, [_cost] call life_fnc_numberText, floor (_level * 100), "%"];
+
+if(_litres<2) exitwith {};
 
 if(!local _vehicle) then
 {
