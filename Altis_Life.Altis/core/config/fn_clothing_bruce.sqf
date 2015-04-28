@@ -223,7 +223,11 @@ switch (_filter) do
 		
 		if(player getVariable["life_dep",false]) then
 		{
-			_ret pushBack ["U_Competitor","Uniforme Dépanneur",500];
+			//_ret pushBack ["U_Competitor","Uniforme Dépanneur",500];
+			_ret pushBack ["U_PoloDep","Uniforme Dépanneur",500];
+			_ret pushBack ["U_C_DepanneurJaune","Combi Jaune",1500];
+			_ret pushBack ["U_C_DepanneurOrange","Combi Orange",1500];
+			
 		};
 		if(life_sexe) then
 		{
