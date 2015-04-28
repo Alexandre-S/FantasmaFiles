@@ -1690,7 +1690,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_51";
-					description="Réservé premium - Civ 51";
+					description="Découverte -  Civ 51";
 				};
 			};
 		};
@@ -1712,7 +1712,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_52";
-					description="Réservé premium - Civ 52";
+					description="Découverte -  Civ 52";
 				};
 			};
 		};
@@ -1734,7 +1734,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_53";
-					description="Réservé premium - Civ 53";
+					description="Découverte -  Civ 53";
 				};
 			};
 		};
@@ -1756,7 +1756,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_54";
-					description="Réservé premium - Civ 54";
+					description="Découverte -  Civ 54";
 				};
 			};
 		};
@@ -1778,7 +1778,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_55";
-					description="Réservé premium - Civ 55";
+					description="Découverte -  Civ 55";
 				};
 			};
 		};
@@ -1800,7 +1800,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_56";
-					description="Réservé premium - Civ 56";
+					description="Découverte -  Civ 56";
 				};
 			};
 		};
@@ -1822,7 +1822,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_57";
-					description="Réservé premium - Civ 57";
+					description="Découverte -  Civ 57";
 				};
 			};
 		};
@@ -1844,7 +1844,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_58";
-					description="Réservé premium - Civ 58";
+					description="Découverte -  Civ 58";
 				};
 			};
 		};
@@ -1866,7 +1866,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_59";
-					description="Réservé premium - Civ 59";
+					description="Découverte -  Civ 59";
 				};
 			};
 		};
@@ -1888,7 +1888,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_60";
-					description="Réservé premium - Civ 60";
+					description="Découverte -  Civ 60";
 				};
 			};
 		};
@@ -1910,7 +1910,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_61";
-					description="Réservé premium - Civ 61";
+					description="Découverte -  Civ 61";
 				};
 			};
 		};
@@ -1932,7 +1932,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_62";
-					description="Réservé premium - Civ 62";
+					description="Découverte -  Civ 62";
 				};
 			};
 		};
@@ -1954,7 +1954,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_63";
-					description="Réservé premium - Civ 63";
+					description="Découverte -  Civ 63";
 				};
 			};
 		};
@@ -1976,7 +1976,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_64";
-					description="Réservé premium - Civ 64";
+					description="Découverte -  Civ 64";
 				};
 			};
 		};
@@ -1998,7 +1998,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_65";
-					description="Réservé premium - Civ 65";
+					description="Découverte -  Civ 65";
 				};
 			};
 		};
@@ -2020,7 +2020,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
-					description="Réservé premium - Civ 70";
+					description="Découverte -  Civ 70";
 				};
 			};
 		};
@@ -2042,7 +2042,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_69";
-					description="Réservé premium - Civ 69";
+					description="Découverte -  Civ 69";
 				};
 			};
 		};
@@ -2064,7 +2064,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_68";
-					description="Réservé premium - Civ 68";
+					description="Découverte -  Civ 68";
 				};
 			};
 		};
@@ -2086,7 +2086,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_67";
-					description="Réservé premium - Civ 67";
+					description="Découverte -  Civ 67";
 				};
 			};
 		};
@@ -2108,7 +2108,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_66";
-					description="Réservé premium - Civ 66";
+					description="Découverte -  Civ 66";
 				};
 			};
 		};
