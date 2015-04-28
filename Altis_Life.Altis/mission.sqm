@@ -11017,7 +11017,7 @@ class Mission
 			name="Dealer_1";
 			text="Dealer";
 			type="mil_dot";
-			colorName="ColorRed";
+			colorName="Color1_FD_F";
 			angle=-57.933102;
 		};
 		class Item74
