@@ -24,7 +24,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "C_Hatchback_01_sport_F":
+	case "C_Hatchback_01_sport_F_RP":
 	{
 		_path = "\a3\soft_f_gamma\Hatchback_01\data\";
 		_ret =

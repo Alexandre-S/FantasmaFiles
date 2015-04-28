@@ -16,7 +16,7 @@ if(isNull _vehicle OR !alive _vehicle OR _index == -1) exitWith {};
 	{
 		case "C_Offroad_01_F": {[[_vehicle,"color",3,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
 		case "C_Hatchback_01_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
-		case "C_Hatchback_01_sport_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
+		case "C_Hatchback_01_sport_F_RP": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
 		case "C_SUV_01_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
 		case "C_Van_01_box_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
 		case "C_Van_01_transport_F": {[[_vehicle,"color",1,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;};
@@ -28,7 +28,7 @@ if(isNull _vehicle OR !alive _vehicle OR _index == -1) exitWith {};
 		case "B_G_Offroad_01_F": {_vehicle setVariable["color",3];};
 		case "B_G_Offroad_01_armed_F": {_vehicle setVariable["color",3];};
 		case "C_Hatchback_01_F": {_vehicle setVariable["color",1];};
-		case "C_Hatchback_01_sport_F": {_vehicle setVariable["color",1];};
+		case "C_Hatchback_01_sport_F_RP": {_vehicle setVariable["color",1];};
 		case "C_SUV_01_F": {_vehicle setVariable["color",1];};
 		case "C_Van_01_box_F": {_vehicle setVariable["color",1];};
 		case "C_Van_01_transport_F": {_vehicle setVariable["color",1];};
