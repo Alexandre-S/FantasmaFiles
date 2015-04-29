@@ -157,7 +157,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "C_Hatchback_01_sport_F":
+	case "C_Hatchback_01_sport_F_RP":
 	{
 		switch(_index) do
 		{

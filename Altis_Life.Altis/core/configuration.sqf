@@ -86,7 +86,6 @@ life_truckreverse_active = false;
 life_truck_types = ["B_Truck_01_mover_F_RP","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F_RP","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F_RP","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_fuel_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F","O_Truck_03_covered_F","O_Truck_03_device_F","RDS_Ikarus_Civ_01","rhs_gaz66o_vdv","rhs_gaz66_vdv","RHS_Ural_Open_Civ_01","RHS_Ural_Civ_01"];
 life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","AGM_HandFlare_White","AGM_HandFlare_Red","AGM_HandFlare_Green","AGM_HandFlare_Yellow"];
 life_women = ["Oakes","Tyler","Tyler_scars","Mason","Mason_camo","Mason_Rigged","Mason_scars","Smith","Cheung","Quereshi"];
-// life_ver_random = ["C_Offroad_01_F","C_Hatchback_01_F","C_Hatchback_01_sport_F","C_SUV_01_F","C_Van_01_box_F","C_Van_01_transport_F"];
 life_civ_weapon = ["Binocular","Trixie_CZ550_Rail","Trixie_Enfield","rhs_weap_M590_8RD","rhs_weap_M590_5RD","R3F_M4S90","hgun_ACPC2_F","hgun_Rook40_F","SMG_02_F","SMG_01_F","hgun_PDW2000_F"];
 //Persistent Saving
 __CONST__(life_save_civ,TRUE); //Save weapons for civs?
@@ -1101,7 +1100,7 @@ life_garage_sell =
 	["rhsusf_m998_d_s_2dr",75500*0.49],
 	["C_Van_01_transport_F",97500*0.49],
 	
-	["C_Hatchback_01_sport_F",45000*0.49],
+	["C_Hatchback_01_sport_F_RP",45000*0.49],
 	["C_Van_01_fuel_F",112500*0.49],
 	
 	//GVT
@@ -1203,7 +1202,7 @@ life_garage_prices =
 	["rhsusf_m998_d_2dr",75500*0.0735],
 	["rhsusf_m998_d_s_2dr",75500*0.0735],
 	["C_Van_01_transport_F",97500*0.0735],
-	["C_Hatchback_01_sport_F",45000*0.0735],
+	["C_Hatchback_01_sport_F_RP",45000*0.0735],
 	["C_Van_01_fuel_F",112500*0.0735],
 	
 	//GVT
@@ -1304,7 +1303,7 @@ life_assur_prices =
 	["rhsusf_m998_d_s_2dr",75500*0.0735],
 	["C_Van_01_transport_F",97500*0.5],
 	
-	["C_Hatchback_01_sport_F",45000*0.5],
+	["C_Hatchback_01_sport_F_RP",45000*0.5],
 	["C_Van_01_fuel_F",112500*0.5],
 	
 	//GVT

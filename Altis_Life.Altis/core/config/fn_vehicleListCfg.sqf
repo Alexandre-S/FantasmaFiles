@@ -46,7 +46,7 @@ switch (_shop) do
 		// Si donateur
 		if(__GETC__(life_donator) > 0) then
 		{
-			_return pushBack ["C_Hatchback_01_sport_F",45000];
+			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
 		};
 	};
@@ -75,7 +75,7 @@ switch (_shop) do
 		// Si donateur
 		if(__GETC__(life_donator) > 0) then
 		{
-			_return pushBack ["C_Hatchback_01_sport_F",45000];
+			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
 		};
 		if(l_c_gvt) then
@@ -175,7 +175,7 @@ switch (_shop) do
 		];
 		if(__GETC__(life_medicLevel) >= 2 && __GETC__(life_donator) > 0) then
 		{
-			_return pushBack ["C_Hatchback_01_sport_F",45000];
+			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			//_return pushBack ["B_Truck_01_mover_F_RP",30000];
 		};
 		if(__GETC__(life_medicLevel) >= 3) then
@@ -265,7 +265,7 @@ switch (_shop) do
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
-			_return pushBack ["C_Hatchback_01_sport_F",0];
+			_return pushBack ["C_Hatchback_01_sport_F_RP",0];
 			_return pushBack ["I_Truck_02_transport_F",0]; //ZAMAK transport
 			_return pushBack ["I_Truck_02_covered_F",0]; //ZAMAK Couvert
 		};
