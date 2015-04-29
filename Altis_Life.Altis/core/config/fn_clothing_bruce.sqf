@@ -204,10 +204,10 @@ switch (_filter) do
 			["rds_uniform_Functionary4",nil,7500],
 			["rds_uniform_Functionary5",nil,7500],
 			["rds_uniform_Functionary6",nil,7500],
-			["rds_uniform_Functionary7",nil,7500],
+			["rds_uniform_Functionary7",nil,7500]
 			
 		
-			["U_C_Driver_1_black",nil,10000],
+			/*["U_C_Driver_1_black",nil,10000],
 			["U_C_Driver_1_blue",nil,10000],
 			["U_C_Driver_1_red",nil,10000],
 			["U_C_Driver_1_orange",nil,10000],
@@ -217,7 +217,7 @@ switch (_filter) do
 			["U_C_Driver_2",nil,10000],
 			["U_C_Driver_1",nil,10000],
 			["U_C_Driver_3",nil,10000],
-			["U_C_Driver_4",nil,10000]
+			["U_C_Driver_4",nil,10000]*/
 
 		];
 		
@@ -333,10 +333,10 @@ switch (_filter) do
 			["H_caf_ag_paktol",nil,700],
 			["H_caf_ag_paktol_04",nil,700],
 			 
-			["H_caf_ag_turban",nil,700],
+			["H_caf_ag_turban",nil,700]
 			
 			
-			["H_RacingHelmet_1_black_F",nil,2500],
+			/*["H_RacingHelmet_1_black_F",nil,2500],
 			["H_RacingHelmet_1_red_F",nil,2500],
 			["H_RacingHelmet_1_white_F",nil,2500],
 			["H_RacingHelmet_1_blue_F",nil,2500],
@@ -346,7 +346,7 @@ switch (_filter) do
 			["H_RacingHelmet_1_F",nil,2500],
 			["H_RacingHelmet_2_F",nil,2500],
 			["H_RacingHelmet_3_F",nil,2500],
-			["H_RacingHelmet_4_F",nil,2500]
+			["H_RacingHelmet_4_F",nil,2500]*/
 		];
 	};
 	
