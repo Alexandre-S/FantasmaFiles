@@ -40,7 +40,7 @@ _display = findDisplay 2900;
 _side = _display displayCtrl 2971;
 _tags = _display displayCtrl 2970;
 _objs = _display displayCtrl 2972;
-_herb = _display displayCtrl 2973;
+// _herb = _display displayCtrl 2973;
 
 if(isNil "life_tagson") then {
 	//life_sidechat = true;
@@ -90,7 +90,7 @@ if(life_autofps) then {
 };
 
 
-if(life_herbe) then {
+/*if(life_herbe) then {
 	_herb ctrlSetTextColor [0,1,0,1];
 	_herb ctrlSetText "ON";
 	_herb buttonSetAction "life_herbe=false; setTerrainGrid 50; [] call life_fnc_settingsMenu;";
@@ -98,4 +98,4 @@ if(life_herbe) then {
 	_herb ctrlSetTextColor [1,0,0,1];
 	_herb ctrlSetText "OFF";
 	_herb buttonSetAction "life_herbe=true; setTerrainGrid 48; [] call life_fnc_settingsMenu;";
-};
+};*/

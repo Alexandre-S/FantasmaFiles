@@ -57,13 +57,13 @@ class SettingsMenu
 			y = 0.63;
 		};
 		
-		class RemoveherbeHeader : PlayerTagsHeader
+		/*class RemoveherbeHeader : PlayerTagsHeader
 		{
 			idc = -1;
 			text = "Supprimer les herbes";
 			
 			y = 0.68;
-		};
+		};*/
 		
 		class Title : life_RscTitle
 		{
@@ -411,12 +411,12 @@ class SettingsMenu
 			y = 0.63;
 		};
 		
-		class HerbeONOFF : PlayerTagsONOFF
+		/*class HerbeONOFF : PlayerTagsONOFF
 		{
 			tooltip = "Désactive l'affichage de l'herbe";
 			idc = 2973;
 			y = 0.68;
-		};
+		};*/
 		
 		class ButtonClose : life_RscButtonMenu {
 			idc = -1;
