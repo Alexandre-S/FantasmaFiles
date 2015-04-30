@@ -2468,7 +2468,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_w_worker_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this allowDamage false; this addAction[""Service Helicopter"",life_fnc_serviceChopper];";
+					init="this enableSimulation false; this allowDamage false; this addAction[""Service Helicopter"",life_fnc_serviceChopper,[""air_sp""]];";
 				};
 				class Item20
 				{

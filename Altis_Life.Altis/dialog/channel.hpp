@@ -61,7 +61,7 @@ class controls {
 		class Channel7Description : Life_RscStructuredText
 		{
 			idc = -1;
-			text = "Ce message sera envoyé à tout le monde. Attention à ce que vous écrivez !";
+			text = "Ce message sera envoyé à tout le monde. Attention à ce que vous écrivez ! Coût 10000€";
 			x = 0.12;
             y = 0.5;
 			w = 0.5;
