@@ -8,8 +8,8 @@ private["_position","_house","_houseCfg","_houseName","_marker"];
 if(count life_houses == 0) exitWith {}; //Nothing to do.
 {
 	_position = call compile format["%1",_x select 0];
-	_house = nearestBuilding _position;
-	// _house = (nearestObjects[_position,["House_F"],20] select 0);
+	// _house = nearestBuilding _position;
+	_house = (nearestObjects[_position,["House_F"],20] select 0);
 	
 	// add
 	_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
