@@ -6,7 +6,7 @@
 	Refuel a vehicle!
 */
 
-private ["_vehicle","_capacity","_litres","_cost","_level","_tick","_delay","_tax","_exit"];
+private ["_vehicle","_capacity","_litres","_cost","_cost2","_level","_tick","_delay","_tax","_exit"];
 
 if (vehicle player != player) exitWith { hint "Veuillez descendre du véhicule pour remettre de l'essence !"; };
 _vehicle = nearestObjects [(_this select 0), ["Air", "LandVehicle"], 10];
@@ -32,10 +32,11 @@ while {_level < 1} do
 	if (player distance (_this select 0) > 5) exitWith {};
 	if (vehicle player != player) exitWith {};
 	
+	_cost2 = _cost + (60 * (1 + _tax));
+	if (life_cash < _cost2) exitWith {_exit = true;};
+	_cost = _cost2;
 	_litres = _litres + 1;
-	_cost = _cost + (60 * (1 + _tax));
-	if (life_cash < _cost) exitWith {_exit = true;};
-	
+
 	_tick = 1 / _capacity;
 	_level = _level + _tick;
 	if (_level > 1) then { _level = 1; };
@@ -46,7 +47,7 @@ if(_exit) then { hint "Vous n'avez pas assez d'argent pour faire le plein d'esse
 
 // hintSilent parseText format["<t color='#cec25b'>Litres:</t> %1<br/><t color='#cec25b'>Prix total :</t> %2€<br/><t color='#cec25b'>Réservoir à :</t> %3%4", _litres, [_cost] call life_fnc_numberText, floor (_level * 100), "%"];
 
-if(_litres<2) exitwith {};
+if(_litres<1) exitwith {};
 
 if(!local _vehicle) then
 {
