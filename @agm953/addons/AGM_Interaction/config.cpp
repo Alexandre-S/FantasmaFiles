@@ -819,8 +819,8 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Repair";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
-			statement = "[_target] spawn life_fnc_repairTruck";
+			condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+			statement = "[_target] spawn life_fnc_repairTruckCheck";
 			showDisabled = 1;
 			priority = 1.6;
 			// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -895,8 +895,8 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Repair";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
-			statement = "[_target] spawn life_fnc_repairTruck";
+			condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+			statement = "[_target] spawn life_fnc_repairTruckCheck";
 			showDisabled = 0;
 			priority = 1.6;
 			// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -953,8 +953,8 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Repair";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
-			statement = "[_target] spawn life_fnc_repairTruck";
+			condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+			statement = "[_target] spawn life_fnc_repairTruckCheck";
 			showDisabled = 0;
 			priority = 1.6;
 			// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -1009,8 +1009,8 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Repair";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
-			statement = "[_target] spawn life_fnc_repairTruck";
+			condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+			statement = "[_target] spawn life_fnc_repairTruckCheck";
 			showDisabled = 0;
 			priority = 1.6;
 			// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
@@ -1067,8 +1067,8 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_Repair";
 			distance = 4;
-			condition = "alive _target && {speed _target == 0} && {""ToolKit"" in (items player)} && {(damage _target < 1)}";
-			statement = "[_target] spawn life_fnc_repairTruck";
+			condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+			statement = "[_target] spawn life_fnc_repairTruckCheck";
 			showDisabled = 0;
 			priority = 1.6;
 			// icon = "\A3\ui_f\data\igui\cfg\actions\gear_ca.paa";
