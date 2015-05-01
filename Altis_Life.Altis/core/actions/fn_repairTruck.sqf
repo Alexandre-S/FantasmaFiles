@@ -49,7 +49,7 @@ if(_PartN in _restrict) then {
 
 	if("ToolKit" in (items player)) then {
 	
-		_pompe = count (nearestObjects[_position,["Land_fs_feed_F"],10]);
+		_pompe = count (nearestObjects[position _veh,["Land_fs_feed_F"],10]);
 	
 		if(_HitP > 0.5) then {
 		
