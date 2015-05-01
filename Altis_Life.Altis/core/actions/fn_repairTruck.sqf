@@ -110,9 +110,9 @@ if(_PartN in _restrict) then {
 	
 	} else {
 		if(count _mecano > 0) then {
-			hint "Vous devez avoir un Toolkit pour réparer cette pièce. Pensez à appeller un dépanneur si vous n'êtes pas doué en mécanique.";
+			hint "Vous devez avoir une trousse à outil pour réparer cette pièce. Pensez à appeller un dépanneur si vous n'êtes pas doué en mécanique.";
 		} else {
-			hint "Vous devez avoir un Toolkit pour réparer cette pièce. ";
+			hint "Vous devez avoir une trousse à outil pour réparer cette pièce. ";
 		};
 	};
 } else {
@@ -177,6 +177,16 @@ if(_repar != 1) then {
 		if ((random 1) > 0.5) then { player removeItem "ToolKit"; };
 	};
 	// _veh setDamage 0;
-	_veh setHitPointDamage [_PartN, _repar];
+	
+	if(!local _veh) then
+	{
+		[[_veh,_PartN,_repar],"life_fnc_setHitPointDamage",_veh,false] spawn life_fnc_MP;
+	}
+	else
+	{
+		_veh setHitPointDamage [_PartN, _repar];
+	};
+	
+	
 	// titleText[localize "STR_NOTF_RepairedVehicle","PLAIN"];
 };
