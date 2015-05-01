@@ -49,65 +49,68 @@ if(_PartN in _restrict) then {
 
 	if("ToolKit" in (items player)) then {
 	
-		_pompe = count (nearestObjects[position _veh,["Land_fs_feed_F"],10]);
-	
-		if(_HitP > 0.5) then {
-		
-			if(count _mecano > 0) then {
-				if(_pompe>0) then {
-					_action = [
-							format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué. Elle peut endommager vos outils. La Station service est fermé. Contactez un dépanneur si vous avez un doute",_PartName],
-							format["Réparation de %1",_PartName],
-							"Oui",
-							"Non"
-						] call BIS_fnc_guiMessage;
-				} else {
-					_action = [
-							format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué. Elle peut endommager vos outils. Contactez un dépanneur si vous avez un doute",_PartName],
-							format["Réparation de %1",_PartName],
-							"Oui",
-							"Non"
-						] call BIS_fnc_guiMessage;
-				};
-				if(_action) then {
-					_repar = 0.5;
-				};
-			} else {
-				if(_pompe>0) then {
-					hint "Pas de problème, Le mécano de la station va vous aider...";
-					_repar = 0;
-				} else {
-					_action = [
-							format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué. Elle peut endommager vos outils. Rendez-vous à la station service la plus proche si vous avez un doute.",_PartName],
-							format["Réparation de %1",_PartName],
-							"Oui",
-							"Non"
-						] call BIS_fnc_guiMessage;
-
-						if(_action) then {
-							_repar = 0.5;
-						};
-				};
-			};
-
+		if(player getVariable["life_dep",false]) then {
+			_repar = 0;
 		} else {
+			_pompe = count (nearestObjects[position _veh,["Land_fs_feed_F"],10]);
+		
+			if(_HitP > 0.5) then {
+			
+				if(count _mecano > 0) then {
+					if(_pompe>0) then {
+						_action = [
+								format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué. Elle peut endommager vos outils. La Station service est fermé. Contactez un dépanneur si vous avez un doute",_PartName],
+								format["Réparation de %1",_PartName],
+								"Oui",
+								"Non"
+							] call BIS_fnc_guiMessage;
+					} else {
+						_action = [
+								format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué. Elle peut endommager vos outils. Contactez un dépanneur si vous avez un doute",_PartName],
+								format["Réparation de %1",_PartName],
+								"Oui",
+								"Non"
+							] call BIS_fnc_guiMessage;
+					};
+					if(_action) then {
+						_repar = 0.5;
+					};
+				} else {
+					if(_pompe>0) then {
+						hint "Pas de problème, Le mécano de la station va vous aider...";
+						_repar = 0;
+					} else {
+						_action = [
+								format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué. Elle peut endommager vos outils. Rendez-vous à la station service la plus proche si vous avez un doute.",_PartName],
+								format["Réparation de %1",_PartName],
+								"Oui",
+								"Non"
+							] call BIS_fnc_guiMessage;
 
-			if(count _mecano > 0) then {
-				if(_pompe>0) then {
-					hint "Vous n'avez pas les compétences pour réparer d'avantage cette pièce. La station service est fermé. Contactez un dépanneur.";
-				} else {
-					hint "Vous n'avez pas les compétences pour réparer d'avantage cette pièce. Contactez un dépanneur.";
+							if(_action) then {
+								_repar = 0.5;
+							};
+					};
 				};
+
 			} else {
-				if(_pompe>0) then {
-					hint "Pas de problème, Le mécano de la station va vous aider...";
-					_repar = 0;
+
+				if(count _mecano > 0) then {
+					if(_pompe>0) then {
+						hint "Vous n'avez pas les compétences pour réparer d'avantage cette pièce. La station service est fermé. Contactez un dépanneur.";
+					} else {
+						hint "Vous n'avez pas les compétences pour réparer d'avantage cette pièce. Contactez un dépanneur.";
+					};
 				} else {
-					hint "Vous n'avez pas les compétences pour réparer d'avantage cette pièce. Rendez-vous à la station service la plus proche.";
+					if(_pompe>0) then {
+						hint "Pas de problème, Le mécano de la station va vous aider...";
+						_repar = 0;
+					} else {
+						hint "Vous n'avez pas les compétences pour réparer d'avantage cette pièce. Rendez-vous à la station service la plus proche.";
+					};
 				};
 			};
 		};
-	
 	} else {
 		if(count _mecano > 0) then {
 			hint "Vous devez avoir une trousse à outil pour réparer cette pièce. Pensez à appeller un dépanneur si vous n'êtes pas doué en mécanique.";
