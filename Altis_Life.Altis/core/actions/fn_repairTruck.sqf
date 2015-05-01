@@ -109,7 +109,7 @@ if(_PartN in _restrict) then {
 		};
 	
 	} else {
-		if(count _tabletemp > 0) then {
+		if(count _mecano > 0) then {
 			hint "Vous devez avoir un Toolkit pour réparer cette pièce. Pensez à appeller un dépanneur si vous n'êtes pas doué en mécanique.";
 		} else {
 			hint "Vous devez avoir un Toolkit pour réparer cette pièce. ";

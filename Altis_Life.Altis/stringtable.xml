@@ -4231,9 +4231,9 @@
 			<Portuguese>Empurar Barco</Portuguese>
 		</Key>
 		<Key ID="STR_vInAct_Repair">
-			<Original>Repair Vehicle</Original>
+			<Original>Inspect Vehicle</Original>
 			<German>Fahrzeug reparieren</German>
-			<French>Réparer véhicule</French>
+			<French>Inspecter véhicule</French>
 			<Italian>Ripara Veicolo</Italian>
 			<Portuguese>Concertar Veículo</Portuguese>
 		</Key>

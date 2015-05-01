@@ -193,7 +193,7 @@ for "_i" from 0 to _hitC do {
 [_vehicle,_veh_actions] spawn {
 	private["_veh"];
 	_veh = (_this select 0);
-	sleep (2*60);
+	sleep (3*60);
 	if(isNil "_veh" || isNull _veh) exitwith {};
 	{
 		(_this select 0) removeAction _x;
