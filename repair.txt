@@ -1,0 +1,413 @@
+SetPartDmg = {
+	private ["_veh","_PartN","_HitP","_restrict","_action"];
+	_restrict = ["HitEngine",
+		"HitEngine1",
+		"HitEngine2",
+		"HitEngine3",
+		"HitHRotor",
+		"HitVRotor",
+		"HitFuel",
+		"HitFuel2",
+		"HitHull",
+		"HitBody",
+		"HitAvionics",
+		"HitRGlass",
+		"HitLGlass",
+		"HitGlass1",
+		"HitGlass2",
+		"HitGlass3",
+		"HitGlass4",
+		"HitGlass5",
+		"HitGlass6"];
+    _veh = _this select 0; 
+	_PartN = (_this select 3) select 0;
+	_PartName = (_this select 3) select 1;
+	_HitP = _veh getHitPointDamage _PartN;
+
+
+	if(_HitP > 0) then {
+			if(_PartN in _restrict) then {
+				if(_HitP > 0.5) then {
+				
+					_action = [
+						format["Vous êtes sur le point de réparer %1 <br/> Cette réparation est difficile et risqué.",_PartName],
+						format["Réparation de %1",_PartName],
+						"Oui",
+						"Non"
+					] call BIS_fnc_guiMessage;
+
+
+					if(_action) then {
+						_veh setHitPointDamage [_PartN, 0.5];
+						hint "rep 50";
+					};
+	
+				} else {
+					hint "vous n'avez pas les compétences pour réparer d'avantage cette pièce. Contactez un dépanneur ou rendez-vous au garage le plus proche.";
+				};
+			} else {
+				_veh setHitPointDamage [_PartN, 0];
+				hint "rep 0";
+			};
+		};
+};
+
+
+GetPartDmg = {
+	private ["_objtype","_array","_hitC","_cfg","_PartN","_PartName","_HitP","_veh_actions"];
+
+	_objtype = typeOf _this; 
+	_array = []; 
+	_hitC = (count ((configFile >> "CfgVehicles" >> _objtype >> "HitPoints") call Bis_fnc_getCfgSubClasses)) - 1; 
+	_veh_actions = [];
+	for "_i" from 0 to _hitC do {
+		_cfg = (configFile >> "CfgVehicles" >> _objtype >> "HitPoints") select _i; 
+		_PartN = configName _cfg;
+		_PartName = getText(_cfg >> "name");
+		_HitP = _this getHitPointDamage _PartN;
+		_array set [_i,[_PartName,_PartN,_HitP]];
+
+		if(_PartN == "HitEngine") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitEngine1") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine1"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitEngine2") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine2"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitEngine3") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine3"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitFuel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitFuel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitFuel2") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitFuel2"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitHull") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitHull"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitAvionics") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitAvionics"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitMissiles") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitMissiles"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitBody") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitBody"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitHRotor") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitHRotor"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitVRotor") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitVRotor"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitLFWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLFWheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitLBWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLBWheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitLMWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLMWheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitLF2Wheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLF2Wheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitRFWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRFWheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitRBWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRBWheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitRMWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRMWheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitRF2Wheel") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRF2Wheel"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitRGlass") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRGlass"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitRGlass") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRGlass"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass1") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass1"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass2") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass2"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass3") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass3"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass4") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass4"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass5") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass5"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass6") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass6"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass7") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass7"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass8") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass8"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass9") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass9"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass10") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass10"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass11") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass11"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass12") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass12"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass13") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass13"; _degat > 0 && _degat <= 0.2' ]); };
+		if(_PartN == "HitGlass14") then { _veh_actions pushback (_this addAction [ format["<t color='#00D600'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass14"; _degat > 0 && _degat <= 0.2' ]); };
+		
+		if(_PartN == "HitEngine") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitEngine1") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine1"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitEngine2") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine2"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitEngine3") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine3"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitFuel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitFuel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitFuel2") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitFuel2"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitHull") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitHull"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitAvionics") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitAvionics"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitMissiles") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitMissiles"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitBody") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitBody"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitHRotor") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitHRotor"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitVRotor") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitVRotor"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitLFWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLFWheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitLBWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLBWheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitLMWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLMWheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitLF2Wheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLF2Wheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitRFWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRFWheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitRBWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRBWheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitRMWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRMWheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitRF2Wheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRF2Wheel"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitRGlass") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRGlass"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitRGlass") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRGlass"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass1") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass1"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass2") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass2"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass3") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass3"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass4") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass4"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass5") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass5"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass6") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass6"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass7") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass7"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass8") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass8"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass9") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass9"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass10") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass10"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass11") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass11"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass12") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass12"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass13") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass13"; _degat > 0.2 && _degat <= 0.5' ]); };
+		if(_PartN == "HitGlass14") then { _veh_actions pushback (_this addAction [ format["<t color='#FFFF33'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass14"; _degat > 0.2 && _degat <= 0.5' ]); };
+		
+		
+		if(_PartN == "HitEngine") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine"; _degat > 0.5' ]); };
+		if(_PartN == "HitEngine1") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine1"; _degat > 0.5' ]); };
+		if(_PartN == "HitEngine2") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine2"; _degat > 0.5' ]); };
+		if(_PartN == "HitEngine3") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitEngine3"; _degat > 0.5' ]); };
+		if(_PartN == "HitFuel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitFuel"; _degat > 0.5' ]); };
+		if(_PartN == "HitFuel2") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitFuel2"; _degat > 0.5' ]); };
+		if(_PartN == "HitHull") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitHull"; _degat > 0.5' ]); };
+		if(_PartN == "HitAvionics") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitAvionics"; _degat > 0.5' ]); };
+		if(_PartN == "HitMissiles") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitMissiles"; _degat > 0.5' ]); };
+		if(_PartN == "HitBody") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitBody"; _degat > 0.5' ]); };
+		if(_PartN == "HitHRotor") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitHRotor"; _degat > 0.5' ]); };
+		if(_PartN == "HitVRotor") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitVRotor"; _degat > 0.5' ]); };
+		if(_PartN == "HitLFWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLFWheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitLBWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLBWheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitLMWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLMWheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitLF2Wheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitLF2Wheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitRFWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRFWheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitRBWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRBWheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitRMWheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRMWheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitRF2Wheel") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRF2Wheel"; _degat > 0.5' ]); };
+		if(_PartN == "HitRGlass") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRGlass"; _degat > 0.5' ]); };
+		if(_PartN == "HitRGlass") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitRGlass"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass1") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass1"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass2") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass2"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass3") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass3"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass4") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass4"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass5") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass5"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass6") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass6"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass7") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass7"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass8") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass8"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass9") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass9"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass10") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass10"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass11") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass11"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass12") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass12"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass13") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass13"; _degat > 0.5' ]); };
+		if(_PartN == "HitGlass14") then { _veh_actions pushback (_this addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], {_this call SetPartDmg}, [_PartN,_PartName], 0, false, false, "", '_degat = _target getHitPointDamage "HitGlass14"; _degat > 0.5' ]); };
+	};
+
+	[_this,_veh_actions] spawn {
+		private["_veh"];
+		_veh = (_this select 0);
+		sleep 10;
+		if(isNil "_veh" || isNull _veh) exitwith {};
+		{
+			(_this select 0) removeAction _x;
+		}foreach (_this select 1);
+		hint format ["REMOVE %1",_this];
+	};
+	
+	_array
+};  
+
+
+hint format["%1",cursorTarget call GetPartDmg];
+
+
+
+GetPartDmg2 = {
+	private ["_objtype","_array","_hitC","_cfg","_PartN","_PartName","_HitP","_restrict","_code"];
+
+	_restrict = ["HitEngine",
+	"HitEngine2",
+	"HitEngine3",
+	"HitHRotor",
+	"HitVRotor",
+	"HitFuel",
+	"HitHull",
+	"HitBody",
+	"HitTail",
+	"HitAvionics",
+	"HitRGlass",
+	"HitLGlass",
+	"HitGlass1",
+	"HitGlass2",
+	"HitGlass3",
+	"HitGlass4",
+	"HitGlass5",
+	"HitGlass6"];
+
+
+	_objtype = typeOf _this; 
+	_array = []; 
+	_hitC = (count ((configFile >> "CfgVehicles" >> _objtype >> "HitPoints") call Bis_fnc_getCfgSubClasses)) - 1; 
+	for "_i" from 0 to _hitC do {
+		_cfg = (configFile >> "CfgVehicles" >> _objtype >> "HitPoints") select _i; 
+		_PartN = configName _cfg;
+		_PartName = getText(_cfg >> "name");
+		_HitP = _this getHitPointDamage _PartN;
+		
+		_array set [_i,[_PartName,_PartN,_HitP]];
+
+		
+		if(_HitP > 0) then {
+		
+			if(_PartN in _restrict) then {
+				if(_HitP > 0.5) then {
+					_this setHitPointDamage [_PartN, 0.5];
+				};
+			} else {
+				_this setHitPointDamage [_PartN, 0];
+			};
+		};
+
+		
+		
+	}; 
+
+		
+	_array
+};  hint format["%1",cursorTarget call GetPartDmg2];
+
+
+
+
+_veh = cursorTarget;
+_array = [];
+
+_HitPoint = ["HitEngine",
+"HitEngine2",
+"HitEngine3",
+"HitHRotor",
+"HitVRotor",
+"HitBatteries",
+"HitLight",
+"HitHydraulics",
+"HitTransmission",
+"HitGear",
+"HitFuel",
+"HitHStabilizerL1",
+"HitHStabilizerR1",
+"HitVStabilizer1",
+"HitTail",
+"HitPitotTube",
+"HitStaticPort",
+"HitStarter1",
+"HitStarter2",
+"HitStarter3",
+"HitAvionics",
+"HitHull",
+"HitMissiles",
+"HitRGlass",
+"HitLGlass",
+"HitGlass1",
+"HitGlass2",
+"HitGlass3",
+"HitGlass4",
+"HitGlass5",
+"HitGlass6",
+"HitLFWheel",
+"HitLBWheel",
+"HitLMWheel",
+"HitLF2Wheel",
+"HitRFWheel",
+"HitRBWheel",
+"HitRMWheel",
+"HitRF2Wheel"];
+
+
+_restrict = ["HitEngine",
+"HitEngine2",
+"HitEngine3",
+"HitHRotor",
+"HitVRotor",
+"HitFuel",
+"HitTail",
+"HitAvionics"];
+
+{
+	_part = _veh getHitPointDamage _x;
+	
+	if(!isNil "_part" && {_part > 0}) then {
+		_array pushback [_x,_part];
+		if(_x in _restrict) then {
+			if(_part > 0.5) then {
+				_veh setHitPointDamage [_x, 0.5];
+			};
+		} else {
+			_veh setHitPointDamage [_x, 0];
+		};
+	};
+
+	
+} foreach _HitPoint;
+
+hint format ["%1",_array];
+
+
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Moteur</t>", {_this call SetPartDmg}, ["HitEngine","Moteur"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Moteur1</t>", {_this call SetPartDmg}, ["HitEngine1","Moteur1"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine1"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Moteur2</t>", {_this call SetPartDmg}, ["HitEngine2","Moteur2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine2"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Moteur3</t>", {_this call SetPartDmg}, ["HitEngine3","Moteur3"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine3"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Fuel</t>", {_this call SetPartDmg}, ["HitFuel","Fuel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitFuel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Fuel2</t>", {_this call SetPartDmg}, ["HitFuel2","Fuel2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitFuel2"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Hull</t>", {_this call SetPartDmg}, ["HitHull","Hull"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitHull"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Avionics</t>", {_this call SetPartDmg}, ["HitAvionics","Avionics"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitAvionics"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Missiles</t>", {_this call SetPartDmg}, ["HitMissiles","Missiles"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitMissiles"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Body</t>", {_this call SetPartDmg}, ["HitBody","Body"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitBody"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer HRotor</t>", {_this call SetPartDmg}, ["HitHRotor","HRotor"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitHRotor"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer VRotor</t>", {_this call SetPartDmg}, ["HitVRotor","VRotor"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer LFWheel</t>", {_this call SetPartDmg}, ["HitLFWheel","LFWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLFWheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer LBWheel</t>", {_this call SetPartDmg}, ["HitLBWheel","LBWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLBWheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer LMWheel</t>", {_this call SetPartDmg}, ["HitLMWheel","LMWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLMWheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer LF2Wheel</t>", {_this call SetPartDmg}, ["HitLF2Wheel","LF2Wheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLF2Wheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer RFWheel</t>", {_this call SetPartDmg}, ["HitRFWheel","RFWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRFWheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer RBWheel</t>", {_this call SetPartDmg}, ["HitRBWheel","RBWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRBWheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer RMWheel</t>", {_this call SetPartDmg}, ["HitRMWheel","RMWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRMWheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer RF2Wheel</t>", {_this call SetPartDmg}, ["HitRF2Wheel","RF2Wheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRF2Wheel"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer RGlass</t>", {_this call SetPartDmg}, ["HitRGlass","RGlass"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRGlass"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer LGlass</t>", {_this call SetPartDmg}, ["HitLGlass","LGlass"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLGlass"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Glass1</t>", {_this call SetPartDmg}, ["HitGlass1","Glass1"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass1"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Glass2</t>", {_this call SetPartDmg}, ["HitGlass2","Glass2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass2"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Glass3</t>", {_this call SetPartDmg}, ["HitGlass3","Glass3"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass3"; _degat > 0 && _degat <= 0.2}' ]);
+life_actions pushBack (player addAction ["<t color='#00D600'>Réparer Glass4</t>", {_this call SetPartDmg}, ["HitGlass4","Glass4"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass4"; _degat > 0 && _degat <= 0.2}' ]);
+
+
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Moteur</t>", {_this call SetPartDmg}, ["HitEngine","Moteur"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Moteur1</t>", {_this call SetPartDmg}, ["HitEngine1","Moteur1"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine1"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Moteur2</t>", {_this call SetPartDmg}, ["HitEngine2","Moteur2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine2"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Moteur3</t>", {_this call SetPartDmg}, ["HitEngine3","Moteur3"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine3"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Fuel</t>", {_this call SetPartDmg}, ["HitFuel","Fuel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitFuel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Fuel2</t>", {_this call SetPartDmg}, ["HitFuel2","Fuel2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitFuel2"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Hull</t>", {_this call SetPartDmg}, ["HitHull","Hull"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitHull"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Avionics</t>", {_this call SetPartDmg}, ["HitAvionics","Avionics"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitAvionics"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Missiles</t>", {_this call SetPartDmg}, ["HitMissiles","Missiles"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitMissiles"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Body</t>", {_this call SetPartDmg}, ["HitBody","Body"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitBody"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer HRotor</t>", {_this call SetPartDmg}, ["HitHRotor","HRotor"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitHRotor"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer VRotor</t>", {_this call SetPartDmg}, ["HitVRotor","VRotor"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer LFWheel</t>", {_this call SetPartDmg}, ["HitLFWheel","LFWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLFWheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer LBWheel</t>", {_this call SetPartDmg}, ["HitLBWheel","LBWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLBWheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer LMWheel</t>", {_this call SetPartDmg}, ["HitLMWheel","LMWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLMWheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer LF2Wheel</t>", {_this call SetPartDmg}, ["HitLF2Wheel","LF2Wheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLF2Wheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer RFWheel</t>", {_this call SetPartDmg}, ["HitRFWheel","RFWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRFWheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer RBWheel</t>", {_this call SetPartDmg}, ["HitRBWheel","RBWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRBWheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer RMWheel</t>", {_this call SetPartDmg}, ["HitRMWheel","RMWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRMWheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer RF2Wheel</t>", {_this call SetPartDmg}, ["HitRF2Wheel","RF2Wheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRF2Wheel"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer RGlass</t>", {_this call SetPartDmg}, ["HitRGlass","RGlass"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRGlass"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer LGlass</t>", {_this call SetPartDmg}, ["HitLGlass","LGlass"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLGlass"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Glass1</t>", {_this call SetPartDmg}, ["HitGlass1","Glass1"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass1"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Glass2</t>", {_this call SetPartDmg}, ["HitGlass2","Glass2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass2"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Glass3</t>", {_this call SetPartDmg}, ["HitGlass3","Glass3"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass3"; _degat >= 0.2 && _degat < 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FFFF33'>Réparer Glass4</t>", {_this call SetPartDmg}, ["HitGlass4","Glass4"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass4"; _degat >= 0.2 && _degat < 0.5}' ]);
+
+
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Moteur</t>", {_this call SetPartDmg}, ["HitEngine","Moteur"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Moteur1</t>", {_this call SetPartDmg}, ["HitEngine1","Moteur1"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine1"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Moteur2</t>", {_this call SetPartDmg}, ["HitEngine2","Moteur2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine2"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Moteur3</t>", {_this call SetPartDmg}, ["HitEngine3","Moteur3"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine3"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Fuel</t>", {_this call SetPartDmg}, ["HitFuel","Fuel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitFuel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Fuel2</t>", {_this call SetPartDmg}, ["HitFuel2","Fuel2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitFuel2"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Hull</t>", {_this call SetPartDmg}, ["HitHull","Hull"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitHull"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Avionics</t>", {_this call SetPartDmg}, ["HitAvionics","Avionics"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitAvionics"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Missiles</t>", {_this call SetPartDmg}, ["HitMissiles","Missiles"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitMissiles"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Body</t>", {_this call SetPartDmg}, ["HitBody","Body"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitBody"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer HRotor</t>", {_this call SetPartDmg}, ["HitHRotor","HRotor"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitHRotor"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer VRotor</t>", {_this call SetPartDmg}, ["HitVRotor","VRotor"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitEngine"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer LFWheel</t>", {_this call SetPartDmg}, ["HitLFWheel","LFWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLFWheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer LBWheel</t>", {_this call SetPartDmg}, ["HitLBWheel","LBWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLBWheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer LMWheel</t>", {_this call SetPartDmg}, ["HitLMWheel","LMWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLMWheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer LF2Wheel</t>", {_this call SetPartDmg}, ["HitLF2Wheel","LF2Wheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLF2Wheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer RFWheel</t>", {_this call SetPartDmg}, ["HitRFWheel","RFWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRFWheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer RBWheel</t>", {_this call SetPartDmg}, ["HitRBWheel","RBWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRBWheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer RMWheel</t>", {_this call SetPartDmg}, ["HitRMWheel","RMWheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRMWheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer RF2Wheel</t>", {_this call SetPartDmg}, ["HitRF2Wheel","RF2Wheel"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRF2Wheel"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer RGlass</t>", {_this call SetPartDmg}, ["HitRGlass","RGlass"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitRGlass"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer LGlass</t>", {_this call SetPartDmg}, ["HitLGlass","LGlass"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitLGlass"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Glass1</t>", {_this call SetPartDmg}, ["HitGlass1","Glass1"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass1"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Glass2</t>", {_this call SetPartDmg}, ["HitGlass2","Glass2"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass2"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Glass3</t>", {_this call SetPartDmg}, ["HitGlass3","Glass3"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass3"; _degat >= 0.5}' ]);
+life_actions pushBack (player addAction ["<t color='#FF0000'>Réparer Glass4</t>", {_this call SetPartDmg}, ["HitGlass4","Glass4"], 0, false, false, "", '!isNull cursorTarget && {cursorTarget distance player < 5} && {(cursorTarget isKindOf "Car")||(cursorTarget isKindOf "Air")||(cursorTarget isKindOf "Ship")} && { _degat = cursorTarget getHitPointDamage "HitGlass4"; _degat >= 0.5}' ]);
