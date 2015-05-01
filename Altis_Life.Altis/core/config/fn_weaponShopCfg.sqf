@@ -382,7 +382,7 @@ switch(_shop) do
 							["AGM_EarBuds",nil,25],
 							["AGM_ItemKestrel",nil,500],
 							["Binocular",nil,150],
-							["ToolKit",nil,9500],
+							["ToolKit",nil,3000],
 							["FirstAidKit",nil,1000],
 							["Medikit",nil,500],
 							["AGM_NVG_Gen2",nil,1200],
@@ -573,7 +573,7 @@ switch(_shop) do
 							
 							
 							["Binocular",nil,150],
-							["ToolKit",nil,9500],
+							["ToolKit",nil,3000],
 							["FirstAidKit",nil,1000],
 							["ItemWatch","SmartWatch",100],
 							["AGM_Altimeter","SmartWatch Altimètre",100],
@@ -805,7 +805,7 @@ switch(_shop) do
 		_ret = 
 		["Magasin Général",
 			[
-				["ToolKit",nil,9500],
+				["ToolKit",nil,3000],
 				["Binocular",nil,150],
 				["ItemGPS",nil,100],
 				["tf_anprc148jem",nil,5000],

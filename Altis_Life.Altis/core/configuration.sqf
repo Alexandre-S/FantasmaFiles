@@ -535,7 +535,7 @@ life_weapon_shop_array =
 	["SmokeShellPurple",1000*0.5],
 	["SmokeShellRed",1000*0.5],
 	["tf_anprc148jem",5000*0.5],
-	["ToolKit",9500*0.5],
+	["ToolKit",3000*0.5],
 	["Trixie_CZ550_Mag",1000*0.5],
 	["Trixie_CZ550_Rail",120000*0.5],
 	["Trixie_Enfield",70000*0.5],
