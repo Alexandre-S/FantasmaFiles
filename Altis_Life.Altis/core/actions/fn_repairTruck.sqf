@@ -173,8 +173,8 @@ if(_repar != 1) then {
 	player playActionNow "stop";
 	if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 	if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
-	if((playerSide != west) && !(player getVariable["life_dep",false])) then {
-		if ((random 1) > 0.5) then { player removeItem "ToolKit"; };
+	if((playerSide != west) && !(player getVariable["life_dep",false]) && (_repar != 0)) then {
+		if ((random 1) > 0.33) then { player removeItem "ToolKit"; };
 	};
 	// _veh setDamage 0;
 	
