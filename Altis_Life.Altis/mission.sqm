@@ -3908,7 +3908,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_6_F_asia";
 					skill=0.60000002;
-					text="Dealer_3_1";
+					text="Dealer_2";
 					init="removeAllWeapons this; this allowDamage false; this enableSimulation false; this addAction[""Drug Dealer"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Question Dealer"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
 				};
 				class Item140
