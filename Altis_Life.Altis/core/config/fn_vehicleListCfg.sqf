@@ -124,7 +124,8 @@ switch (_shop) do
 			["Sab_ana_An2_RP",415000],
 			["C_Heli_Light_01_civil_F_RP",337500],
 			["B_Heli_Light_01_F_RP",337500],
-			["O_Heli_Light_02_unarmed_F_RP",675000]
+			["O_Heli_Light_02_unarmed_F_RP",675000],
+			["RHS_Mi8mt_Cargo_vdv",700000]
 		];
 		if(player getVariable["life_dep",false] || {l_c_gvt} || {__GETC__(life_donator) > 0}) then
 		{
