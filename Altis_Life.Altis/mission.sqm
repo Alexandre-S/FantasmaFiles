@@ -20552,7 +20552,7 @@ class Mission
 		{
 			position[]={16722.275,10.754601,13550.465};
 			name="villa_president";
-			text="Villa présidentielle";
+			text="Complexe gouvernemental";
 			type="o_hq";
 			colorName="ColorGreen";
 		};
