@@ -1238,7 +1238,8 @@ life_garage_prices =
 	["B_Heli_Light_01_F_RP",337500*0.245],
 	["O_Heli_Light_02_unarmed_F_RP",675000*0.245],
 	["I_Heli_Transport_02_F_RP",750000*0.245],
-	
+	["RHS_Mi8mt_Cargo_vdv",700000*0.245],
+
 	["O_Heli_Transport_04_F_RP",1000000*0.245],
 		
 	//BOAT
@@ -1256,6 +1257,7 @@ life_garage_prices =
 	["O_Truck_03_medical_F",25000*0.0735],
 	["B_Truck_01_medical_F",30000*0.0735],
 	["O_Heli_Transport_04_medevac_F_RP",150000*0.245],
+	["RHS_UH60M_MEV_d",250000*0.245],
 	
 	//REB
 	["rhs_tigr_ffv_vdv",750000*0.0735],
@@ -1268,6 +1270,7 @@ life_garage_prices =
 	["PMC_MH9",412500*0.0735],
 	["O_MRAP_02_F",1000000*0.0735],
 	["O_MRAP_02_hmg_F",1250000*0.0735],
+	["RHS_UH60M_MEV2_d",1500000*0.245],
 	["O_Heli_Transport_04_covered_F_RP",2500000*0.245],
 	
 	//ONU
@@ -1339,7 +1342,8 @@ life_assur_prices =
 	["B_Heli_Light_01_F_RP",337500*0.5],
 	["O_Heli_Light_02_unarmed_F_RP",675000*0.5],
 	["I_Heli_Transport_02_F_RP",750000*0.5],
-	
+	["RHS_Mi8mt_Cargo_vdv",700000*0.5],
+
 	["O_Heli_Transport_04_F_RP",1000000*0.5],
 		
 	//BOAT
@@ -1357,6 +1361,7 @@ life_assur_prices =
 	["O_Truck_03_medical_F",25000*0.5],
 	["B_Truck_01_medical_F",30000*0.5],
 	["O_Heli_Transport_04_medevac_F_RP",150000*0.5],
+	["RHS_UH60M_MEV_d",250000*0.5],
 	
 	//REB
 	["rhs_tigr_ffv_vdv",750000*0.5],
@@ -1369,6 +1374,7 @@ life_assur_prices =
 	["PMC_MH9",412500*0.5],
 	["O_MRAP_02_F",1000000*0.5],
 	["O_MRAP_02_hmg_F",1250000*0.5],
+	["RHS_UH60M_MEV2_d",1500000*0.5],
 	["O_Heli_Transport_04_covered_F_RP",2500000*0.5],
 	
 	//ONU
