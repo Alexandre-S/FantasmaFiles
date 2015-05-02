@@ -727,6 +727,28 @@ switch (_vehicle) do
 			case 1: {_color = "Woodland"};
 		};
 	};
+	
+	case "RHS_UH60M_MEV2_d" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Noir"};
+		};
+	};
+	
+	case "RHS_Mi8mt_Cargo_vdv" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "AMA"};
+			case 1: {_color = "Kaki"};
+			case 2: {_color = "Camo désert"};
+			case 3: {_color = "Camo europe"};
+			case 3: {_color = "Camo hiver"};
+			case 3: {_color = "Camo takistan"};
+			case 5: {_color = "Gris"};
+		};
+	};
 };
 
 _color;

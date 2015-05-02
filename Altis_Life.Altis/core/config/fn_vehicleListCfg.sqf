@@ -142,7 +142,8 @@ switch (_shop) do
 		[
 			["C_Heli_Light_01_civil_F_RP",337500],
 			["B_Heli_Light_01_F_RP",337500],
-			["O_Heli_Light_02_unarmed_F_RP",675000]
+			["O_Heli_Light_02_unarmed_F_RP",675000],
+			["RHS_Mi8mt_Cargo_vdv",700000]
 		];
 		if(player getVariable["life_dep",false] || {l_c_gvt} || {__GETC__(life_donator) > 0}) then
 		{
@@ -207,6 +208,7 @@ switch (_shop) do
 		if(__GETC__(life_medicLevel) >= 4 && __GETC__(life_donator) > 0) then
 		{
 			_return pushBack ["O_Heli_Transport_04_medevac_F_RP",150000];
+			_return pushBack ["RHS_UH60M_MEV_d",250000];
 		};
 	};
 	
@@ -221,7 +223,8 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F_RP",412500],
 			["B_Heli_Light_01_F_RP",412500],
 			["O_Heli_Light_02_unarmed_F_RP",700000],
-			["I_Heli_Transport_02_F_RP",750000]
+			["I_Heli_Transport_02_F_RP",750000],
+			["RHS_UH60M_MEV2_d",1500000]
 		];
 		// Grade 2
 		if(__GETC__(life_reblevel) >= 2) then
@@ -311,6 +314,7 @@ switch (_shop) do
 		{
 			_return pushBack["B_Heli_Transport_01_F_RP",0];
 			_return pushBack["B_Heli_Transport_03_F_RP",0];
+			_return pushBack["RHS_UH60M_d",0];
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then

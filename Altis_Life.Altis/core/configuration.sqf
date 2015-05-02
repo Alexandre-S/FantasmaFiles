@@ -1133,6 +1133,7 @@ life_garage_sell =
 	["B_Heli_Light_01_F_RP",337500*0.49],
 	["O_Heli_Light_02_unarmed_F_RP",675000*0.49],
 	["I_Heli_Transport_02_F_RP",750000*0.49],
+	["RHS_Mi8mt_Cargo_vdv",700000*0.49],
 	
 	["O_Heli_Transport_04_F_RP",1000000*0.49],
 	
@@ -1151,6 +1152,7 @@ life_garage_sell =
 	["O_Truck_03_medical_F",25000*0.49],
 	["B_Truck_01_medical_F",30000*0.49],
 	["O_Heli_Transport_04_medevac_F_RP",150000*0.49],
+	["RHS_UH60M_MEV_d",250000*0.49],
 	
 	//REB
 	["rhs_tigr_ffv_vdv",750000*0.49],
@@ -1163,6 +1165,7 @@ life_garage_sell =
 	["PMC_MH9",412500*0.49],
 	["O_MRAP_02_F",1000000*0.49],
 	["O_MRAP_02_hmg_F",1250000*0.49],
+	["RHS_UH60M_MEV2_d",1500000*0.49],
 	["O_Heli_Transport_04_covered_F_RP",2500000*0.49],
 	
 	//COP

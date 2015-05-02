@@ -720,8 +720,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa", ""]
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa", ""]
 		];
 	};
 	
@@ -729,8 +729,30 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","civ", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
+		];
+	};
+	
+	case "RHS_UH60M_MEV2_d":
+	{
+		_ret = 
+		[
+			["rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_fuselage_co.paa","reb","rhsusf\addons\rhsusf_a2port_air\uh60m\data\uh60m_engine_co.paa","rhsusf\addons\rhsusf_a2port_air\uh60m\data\default_co.paa"]
+		];
+	};
+	
+	case "RHS_Mi8mt_Cargo_vdv":
+	{
+		_ret = 
+		[
+			["\rhsafrf\addons\rhs_a2port_air\Mi17\data\mi8civil_body_g_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo2_co.paa","a3\data_f\clear_empty.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"],
+			["\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_body_g_camo2_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo2_co.paa","a3\data_f\clear_empty.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"],
+			["\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_body_g_camo3_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa","a3\data_f\clear_empty.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"],
+			["\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_body_g_camo1_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa","a3\data_f\clear_empty.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"],
+			["\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_body_g_camo4_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa","a3\data_f\clear_empty.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"],
+			["\rhsafrf\addons\rhs_a2port_air\Mi17\data\mi8_body_g_chdkz_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\Mi17\data\camo\mi8_det_g_camo1_co.paa","a3\data_f\clear_empty.paa","rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"],
+			["\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_body_g_vsr_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_det_g_co.paa","a3\data_f\clear_empty.paa","\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"]
 		];
 	};
 	
