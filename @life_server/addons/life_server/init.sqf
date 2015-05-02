@@ -154,7 +154,7 @@ if(!isHLC) then {
 			_logic setVariable["BIS_fnc_MP_queue",[],TRUE];
 		
 			{
-			_x setVariable["sellers",[],true];
+				_x setVariable["sellers",[],true];
 			} foreach [Dealer_1,Dealer_2,Dealer_3];
 		};
 	};

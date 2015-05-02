@@ -744,9 +744,9 @@ switch (_vehicle) do
 			case 1: {_color = "Kaki"};
 			case 2: {_color = "Camo désert"};
 			case 3: {_color = "Camo europe"};
-			case 3: {_color = "Camo hiver"};
-			case 3: {_color = "Camo takistan"};
-			case 5: {_color = "Gris"};
+			case 4: {_color = "Camo hiver"};
+			case 5: {_color = "Camo takistan"};
+			case 6: {_color = "Gris"};
 		};
 	};
 };
