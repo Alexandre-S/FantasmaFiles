@@ -11305,7 +11305,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Altis_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setdir 237.953; this setposATL [16821.822266,13552,2.38419e-007]; this setVectorUp [0,0,1]";
+			init="this allowDamage false; this setdir 237.953; this setposATL [16821.822266,13552,2.38419e-007]; this setVectorUp [0,0,1]";
 		};
 		class Item591
 		{
@@ -14085,7 +14085,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Flag_Altis_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setdir 48.659; this setposATL [16754.841797,13627.766602,2.55724]; this setVectorUp [0,0,1]";
+			init="this allowDamage false; this setdir 48.659; this setposATL [16754.841797,13627.766602,2.55724]; this setVectorUp [0,0,1]";
 		};
 		class Item844
 		{
