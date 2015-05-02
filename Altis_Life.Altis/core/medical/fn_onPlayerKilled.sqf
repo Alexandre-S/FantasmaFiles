@@ -44,10 +44,15 @@ _unit spawn
 	disableSerialization;
 	_RespawnBtn = ((findDisplay 7300) displayCtrl 7302);
 	_Timer = ((findDisplay 7300) displayCtrl 7301);
-	if(__GETC__(life_adminlevel) > 0) then{
+	if(__GETC__(life_adminlevel) > 0) then {
+		maxTimeRespawn = time + 10;
+		_RespawnBtn ctrlEnable false;
+		waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(maxTimeRespawn - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
+		round(maxTimeRespawn - time) <= 0 OR isNull _this};
 		_RespawnBtn ctrlEnable true;
 		_Timer ctrlSetText localize "STR_Medic_Respawn_2";
-	} else{
+		maxTimeRespawn = 0;
+	} else {
 		maxTimeRespawn = time + (life_respawn_timer * 60);
 		_RespawnBtn ctrlEnable false;
 		waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(maxTimeRespawn - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
