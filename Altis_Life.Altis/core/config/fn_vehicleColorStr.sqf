@@ -295,6 +295,7 @@ switch (_vehicle) do
 			case 12: {_color = "N-Waves Blue"};
 			case 13: {_color = "N-Terroriste Digital"};
 			case 14: {_color = "N-Croix-Rouge"};
+			case 15: {_color = "N-Depanneur"};
 		};
 	};
 	
@@ -317,6 +318,7 @@ switch (_vehicle) do
 			case 12: {_color = "P-Waves Blue"};
 			case 13: {_color = "P-Terroriste Digital"};
 			case 14: {_color = "P-Croix-Rouge"};
+			case 15: {_color = "P-Depanneur"};
 		};
 	};
 	

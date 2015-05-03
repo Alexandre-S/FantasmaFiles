@@ -19,7 +19,8 @@ switch (_vehicle) do
 		[
 			[_path + "heli_transport_02_1_ion_co.paa","civ",_path + "heli_transport_02_2_ion_co.paa",_path + "heli_transport_02_3_ion_co.paa"],
 			[_path + "heli_transport_02_1_dahoman_co.paa","civ",_path + "heli_transport_02_2_dahoman_co.paa",_path + "heli_transport_02_3_dahoman_co.paa"],
-			["altisrpfr\textures\mohawk_dep_hull.paa","dep","altisrpfr\textures\mohawk_dep_back_hull.paa","altisrpfr\textures\mohawk_dep_rotor.paa"],
+			// ["altisrpfr\textures\mohawk_dep_hull.paa","dep","altisrpfr\textures\mohawk_dep_back_hull.paa","altisrpfr\textures\mohawk_dep_rotor.paa"],
+			["altisrpfr\textures\ch49-dep1.paa","dep","altisrpfr\textures\ch49-dep2.paa","altisrpfr\textures\ch49-dep3.paa"],
 			["altisrpfr\textures\CH49_USMC_1.paa","gvt","altisrpfr\textures\CH49_USMC_2.paa","altisrpfr\textures\CH49_USMC_3.paa"]
 		];
 	};
@@ -66,7 +67,8 @@ switch (_vehicle) do
 			["#(ai,64,64,1)Fresnel(0.3,3)","cop"],
 			["altisrpfr\textures\med_offroad.paa","med"],
 			["altisrpfr\textures\offroad_rouille.paa","civ"],
-			["altisrpfr\textures\offroad_depannage.paa","dep"],
+			// ["altisrpfr\textures\offroad_depannage.paa","dep"],
+			["altisrpfr\textures\offroaddep.paa","dep"],
 			["altisrpfr\textures\offroad_vigil.paa","vig"],
 			["#(ai,64,64,1)Fresnel(1.3,7)","civ"],
 			["altisrpfr\textures\offroad_taxi.paa","taxi"],
@@ -307,7 +309,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["altisrpfr\textures\heli_medic_light.paa","med"]
+			["altisrpfr\textures\heli_medic_light.paa","med"],
+			["altisrpfr\textures\heli_light_01_ext_dep.paa","dep"]
 		];
 	};
 	
@@ -329,7 +332,8 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
-			["altisrpfr\textures\heli_medic_light.paa","med"]
+			["altisrpfr\textures\heli_medic_light.paa","med"],
+			["altisrpfr\textures\heli_light_01_ext_dep.paa","dep"]
 		];
 	};
 	
@@ -370,7 +374,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["altisrpfr\textures\CIV_Depann_hemtt.paa","dep"]
+			// ["altisrpfr\textures\CIV_Depann_hemtt.paa","dep"]
+			["altisrpfr\textures\hemttdep.paa","dep"]
 		];
 	};
 	
