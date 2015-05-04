@@ -8947,7 +8947,7 @@ class Mission
 		{
 			position[]={7742.7612,13.874804,4542.3198};
 			name="salt_1";
-			text="Sel";
+			text="Bois";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -8955,7 +8955,7 @@ class Mission
 		{
 			position[]={2619.0325,13.9,4914.4585};
 			name="Salt";
-			text="Sel";
+			text="Bois";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -9381,7 +9381,7 @@ class Mission
 		{
 			position[]={7972.5552,33.07,3303.0435};
 			name="oil_trader_1";
-			text="Sel";
+			text="Bois";
 			type="b_unknown";
 			colorName="ColorOrange";
 		};

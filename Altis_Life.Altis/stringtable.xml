@@ -86,10 +86,10 @@
 			<French>Bijouterie</French>
 		</Key>
 		<Key ID="STR_Shops_Salt">
-			<Original>Salt Trader</Original>
+			<Original>Wood Trader</Original>
 			<German>Salzhändler</German>
 			<Italian>Vendita Sale</Italian>
-			<French>Acheteur de sel</French>
+			<French>Acheteur de Bois</French>
 		</Key>
 	</Package>
 	<Package name="Global">
@@ -3155,16 +3155,16 @@
 			<Portuguese>Areia</Portuguese>
 		</Key>
 		<Key ID="STR_Item_Salt">
-			<Original>Salt</Original>
+			<Original>Wood</Original>
 			<German>Salz</German>
-			<French>Sel</French>
+			<French>Bois</French>
 			<Italian>Sale</Italian>
 			<Portuguese>Sal</Portuguese>
 		</Key>
 		<Key ID="STR_Item_SaltR">
-			<Original>Refined salt</Original>
+			<Original>Refined Wood</Original>
 			<German>Raffiniertes Salz</German>
-			<French>Sel raffiné</French>
+			<French>Planches de bois</French>
 			<Italian>Sale raffinato</Italian>
 			<Portuguese>Sal Refinado</Portuguese>
 		</Key>
@@ -3420,9 +3420,9 @@
 			<Portuguese>Processamento de Areia</Portuguese>
 		</Key>
 		<Key ID="STR_License_Salt">
-			<Original>Salt Processing</Original>
+			<Original>Wood Processing</Original>
 			<German>Salzverarbeitung</German>
-			<French>Traitement du sel</French>
+			<French>Traitement du bois</French>
 			<Italian>Processo Sale</Italian>
 			<Portuguese>Processamento de Sal</Portuguese>
 		</Key>
@@ -3785,9 +3785,9 @@
 			<Portuguese>Processando Areia</Portuguese>
 		</Key>
 		<Key ID="STR_Process_Salt">
-			<Original>Processing salt</Original>
+			<Original>Processing Wood</Original>
 			<German>Salz wird verarbeitet</German>
-			<French>Traitement du sel</French>
+			<French>Traitement du bois</French>
 			<Italian>Processando Sale</Italian>
 			<Portuguese>Refinando Sal</Portuguese>
 		</Key>
