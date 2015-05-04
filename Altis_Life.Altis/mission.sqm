@@ -21196,6 +21196,27 @@ class Mission
 			colorName="ColorGreen";
 		};
 	};
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4808.9902,23.853289,10944.904};
+			a=4000;
+			b=4000;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="colorchange";
+			expCond="vehicle player in thisList";
+			expActiv="""colorCorrections"" ppEffectEnable true;   ""colorCorrections"" ppEffectAdjust[ 0.7, 0.8, 0, [-2.32, 0.17, 0.71, 0],[1.09, 0.91, 0.66, 0.27],[-1.24, 3.03, 0.37, -1.69]];   ""colorCorrections"" ppEffectCommit 1; ""filmGrain"" ppEffectEnable true;    ""filmGrain"" ppEffectAdjust [0.1, -1, 0.1, 0.05, 2, false];    ""filmGrain"" ppEffectCommit 1;";
+			expDesactiv="""colorCorrections"" ppEffectEnable false; ""chromAberration"" ppEffectEnable false; ""filmGrain"" ppEffectEnable false;";
+			class Effects
+			{
+			};
+		};
+	};
 };
 class Intro
 {
