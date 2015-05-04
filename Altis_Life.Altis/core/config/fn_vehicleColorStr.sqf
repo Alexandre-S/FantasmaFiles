@@ -178,8 +178,9 @@ switch (_vehicle) do
 			case 14: {_color = "RedGull"};
 			case 15: {_color = "Banalisée blanche"};
 			case 16: {_color = "Banalisée grise"};
-			case 17: {_color = "Croix-Rouge"};
+			case 17: {_color = "SMUR"};
 			case 18: {_color = "Banalisée noir"};
+			case 19: {_color = "Croix-Rouge"};
 		};
 	};
 	

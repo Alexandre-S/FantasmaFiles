@@ -47,9 +47,10 @@ switch (_vehicle) do
 			["altisrpfr\textures\hsport_redgull.paa","civ"],
 			[_path + "hatchback_01_ext_base07_co.paa","cop"],
 			[_path + "hatchback_01_ext_base08_co.paa","cop"],
-			["altisrpfr\textures\Hayon_sport_medic.paa","med"],
+			["altisrpfr\textures\hayon_smur.paa","med"],
 			[_path + "hatchback_01_ext_base09_co.paa","cop"],
-			["#(ai,64,64,1)Fresnel(1.3,7)","cop"]
+			["#(ai,64,64,1)Fresnel(1.3,7)","cop"],
+			["altisrpfr\textures\Hayon_sport_medic.paa","med"]
 		];
 	};
 		
