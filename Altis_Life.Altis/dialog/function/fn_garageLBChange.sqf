@@ -40,8 +40,10 @@ if(playerSide == independent) then {
 	_sellPrice = 100;
 	_assurPrice = 100;
 };
-if(l_c_dep && (_className == "I_Heli_Transport_02_F_RP" && (_dataArr select 1) == 2)) then {
+if(l_c_dep && ((_className == "I_Heli_Transport_02_F_RP" && (_dataArr select 1) == 2) || (_className == "C_Offroad_01_F" && (_dataArr select 1) == 10) || (_className == "B_Heli_Light_01_F_RP" && (_dataArr select 1) == 15) || (_className == "C_Heli_Light_01_civil_F_RP" && (_dataArr select 1) == 15) || (_className == "B_Truck_01_mover_F_RP" && (_dataArr select 1) == 0) )) then {
+//if(l_c_dep) then {
 	_retrievePrice = _retrievePrice/10;
+	_assurPrice = _assurPrice/10;
 };
 
 if(_four == 1) then {
