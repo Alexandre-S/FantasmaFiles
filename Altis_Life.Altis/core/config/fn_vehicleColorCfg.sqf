@@ -25,7 +25,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "I_Heli_Transport_02_F_DEP_RP":
+	/*case "I_Heli_Transport_02_F_DEP_RP":
 	{
 		_path = "\a3\air_f_beta\Heli_Transport_02\Data\Skins\";
 		_ret =
@@ -33,7 +33,7 @@ switch (_vehicle) do
 			["altisrpfr\textures\ch49-dep1.paa","civ","altisrpfr\textures\ch49-dep2.paa","altisrpfr\textures\ch49-dep3.paa"]
 			
 		];
-	};
+	};*/
 	
 	case "C_Hatchback_01_sport_F_RP":
 	{
@@ -405,14 +405,14 @@ switch (_vehicle) do
 		];
 	};
 
-	case "B_Truck_01_mover_F_RP":
+	/*case "B_Truck_01_mover_F_RP":
 	{
 		_ret = 
 		[
 			// ["altisrpfr\textures\CIV_Depann_hemtt.paa","dep"]
 			["altisrpfr\textures\hemttdep.paa","civ"]
 		];
-	};
+	};*/
 	
 	case "O_Truck_02_box_F_RP":
 	{

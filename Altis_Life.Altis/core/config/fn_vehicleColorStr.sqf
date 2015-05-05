@@ -559,13 +559,13 @@ switch (_vehicle) do
 		};
 	};	
 	
-	case "I_Heli_Transport_02_F_DEP_RP":
+	/*case "I_Heli_Transport_02_F_DEP_RP":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Dépanneur"};
 		};
-	};
+	};*/
 	
 	case "I_Heli_light_03_unarmed_F_RP":
 	{
@@ -577,13 +577,13 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "B_Truck_01_mover_F_RP":
+	/*case "B_Truck_01_mover_F_RP":
 	{
 		switch (_index) do
 		{
 			case 0: {_color = "Dépanneuse"};
 		};
-	};
+	};*/
 	
 	/*case "bwi_a3_t6a_7":
 	{
