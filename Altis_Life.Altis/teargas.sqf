@@ -1,4 +1,21 @@
 sleep 5;
+
+ef1 = ppEffectCreate ["colorCorrections", 1501];
+ef1 ppEffectAdjust[ 0.7, 0.8, 0, [-2.32, 0.17, 0.71, 0],[1.09, 0.91, 0.66, 0.27],[-1.24, 3.03, 0.37, -1.69]];
+ef1 ppEffectCommit 1;
+
+ef2 = ppEffectCreate ["filmGrain", 1502];
+ef2 ppEffectAdjust [0.1, -1, 0.1, 0.05, 2, false];
+ef2 ppEffectCommit 1;
+
+ef3 = ppEffectCreate ["colorCorrections", 1503];
+ef3 ppEffectAdjust[ 0.7, 0.8, 0, [-2.32, 0.17, 0.71, 0],[1.09, 0.91, 0.66, 0.27],[-1.24, 3.03, 0.37, -1.69]];
+ef3 ppEffectCommit 1;
+
+ef4 = ppEffectCreate ["filmGrain", 1504];
+ef4 ppEffectAdjust [0.1, -1, 0.1, 0.05, 2, false];
+ef4 ppEffectCommit 1;
+
 [] spawn {
 	While{true} do 
 	{
