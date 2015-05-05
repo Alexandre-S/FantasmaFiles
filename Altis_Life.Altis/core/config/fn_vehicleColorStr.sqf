@@ -296,7 +296,7 @@ switch (_vehicle) do
 			case 12: {_color = "N-Waves Blue"};
 			case 13: {_color = "N-Terroriste Digital"};
 			case 14: {_color = "N-Croix-Rouge"};
-			case 15: {_color = "N-Depanneur"};
+			case 15: {_color = "N-Dépanneur"};
 		};
 	};
 	
@@ -319,7 +319,7 @@ switch (_vehicle) do
 			case 12: {_color = "P-Waves Blue"};
 			case 13: {_color = "P-Terroriste Digital"};
 			case 14: {_color = "P-Croix-Rouge"};
-			case 15: {_color = "P-Depanneur"};
+			case 15: {_color = "P-Dépanneur"};
 		};
 	};
 	
@@ -529,7 +529,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Ion"};
 			case 1: {_color = "Dahoman"};
-			case 2: {_color = "Depanneur"};
+			case 2: {_color = "Dépanneur"};
 			case 3: {_color = "Gouvernement"};
 		};
 	};

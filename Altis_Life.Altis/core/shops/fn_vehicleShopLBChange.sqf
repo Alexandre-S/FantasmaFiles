@@ -40,7 +40,8 @@ lbClear _ctrl;
 _colorArray = [_className] call life_fnc_vehicleColorCfg;
 
 for "_i" from 0 to count(_colorArray)-1 do {
-	if((_colorArray select _i) select 1 == (life_veh_shop select 2) OR ((_colorArray select _i) select 1 == "dep" && {(life_veh_shop select 2) == "civ"} && {l_c_dep}) OR ((_colorArray select _i) select 1 == "vig" && {(life_veh_shop select 2) == "civ"} && {l_c_vigil}) OR ((_colorArray select _i) select 1 == "gvt" && {(life_veh_shop select 2) == "civ"} && {l_c_gvt}) OR ((_colorArray select _i) select 1 == "taxi" && {(life_veh_shop select 2) == "civ"} && {l_c_taxi})) then {
+	// if((_colorArray select _i) select 1 == (life_veh_shop select 2) OR ((_colorArray select _i) select 1 == "dep" && {(life_veh_shop select 2) == "civ"} && {l_c_dep}) OR ((_colorArray select _i) select 1 == "vig" && {(life_veh_shop select 2) == "civ"} && {l_c_vigil}) OR ((_colorArray select _i) select 1 == "gvt" && {(life_veh_shop select 2) == "civ"} && {l_c_gvt}) OR ((_colorArray select _i) select 1 == "taxi" && {(life_veh_shop select 2) == "civ"} && {l_c_taxi})) then {
+	if((_colorArray select _i) select 1 == (life_veh_shop select 2) OR ((_colorArray select _i) select 1 == "gvt" && {(life_veh_shop select 2) == "civ"} && {l_c_gvt}) OR ((_colorArray select _i) select 1 == "taxi" && {(life_veh_shop select 2) == "civ"} && {l_c_taxi})) then {
 		_temp = [_className,_i] call life_fnc_vehicleColorStr;
 		_ctrl lbAdd format["%1",_temp];
 		_ctrl lbSetValue [(lbSize _ctrl)-1,_i];

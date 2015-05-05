@@ -1103,6 +1103,13 @@ life_garage_sell =
 	["C_Hatchback_01_sport_F_RP",45000*0.49],
 	["C_Van_01_fuel_F",112500*0.49],
 	
+	//DEP
+	["C_Offroad_01_F_DEP_RP",3375*0.49],
+	["B_Truck_01_mover_F_RP",30000*0.49],
+	["B_Heli_Light_01_F_DEP_RP",33750*0.49],
+	["C_Heli_Light_01_civil_F_DEP_RP",33750*0.49],
+	["I_Heli_Transport_02_F_DEP_RP",75000*0.49],
+
 	//GVT
 	["I_MRAP_03_F",650000*0.49],
 	
@@ -1147,7 +1154,6 @@ life_garage_sell =
 	
 	//MED
 	["ACR_LandRover_AMB_RP",33750*0.49],
-	["B_Truck_01_mover_F_RP",30000*0.49],
 	["I_Truck_02_medical_F_RP",20000*0.49],
 	["O_Truck_03_medical_F",25000*0.49],
 	["B_Truck_01_medical_F",30000*0.49],
@@ -1208,6 +1214,13 @@ life_garage_prices =
 	["C_Hatchback_01_sport_F_RP",45000*0.0735],
 	["C_Van_01_fuel_F",112500*0.0735],
 	
+	//DEP
+	["C_Offroad_01_F_DEP_RP",3375*0.0735],
+	["B_Truck_01_mover_F_RP",30000*0.0735],
+	["B_Heli_Light_01_F_DEP_RP",33750*0.245],
+	["C_Heli_Light_01_civil_F_DEP_RP",33750*0.245],
+	["I_Heli_Transport_02_F_DEP_RP",75000*0.245],
+	
 	//GVT
 	["I_MRAP_03_F",650000*0.0735],
 	
@@ -1252,7 +1265,6 @@ life_garage_prices =
 	
 	//MED
 	["ACR_LandRover_AMB_RP",33750*0.0735],
-	["B_Truck_01_mover_F_RP",30000*0.0735],
 	["I_Truck_02_medical_F_RP",20000*0.0735],
 	["O_Truck_03_medical_F",25000*0.0735],
 	["B_Truck_01_medical_F",30000*0.0735],
@@ -1312,6 +1324,13 @@ life_assur_prices =
 	["C_Hatchback_01_sport_F_RP",45000*0.5],
 	["C_Van_01_fuel_F",112500*0.5],
 	
+	//DEP
+	["C_Offroad_01_F_DEP_RP",3375*0.5],
+	["B_Truck_01_mover_F_RP",30000*0.5],
+	["B_Heli_Light_01_F_DEP_RP",33750*0.5],
+	["C_Heli_Light_01_civil_F_DEP_RP",33750*0.5],
+	["I_Heli_Transport_02_F_DEP_RP",75000*0.5],
+	
 	//GVT
 	["I_MRAP_03_F",650000*0.5],
 	
@@ -1356,7 +1375,6 @@ life_assur_prices =
 	
 	//MED
 	["ACR_LandRover_AMB_RP",33750*0.5],
-	["B_Truck_01_mover_F_RP",30000*0.5],
 	["I_Truck_02_medical_F_RP",20000*0.5],
 	["O_Truck_03_medical_F",25000*0.5],
 	["B_Truck_01_medical_F",30000*0.5],

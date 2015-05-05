@@ -29,6 +29,8 @@ _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) 
 _assurPrice = if(_assurPrice == -1) then {1000} else {(__GETC__(life_assur_prices) select _assurPrice) select 1;};
 //vente donator
 _sellPrice = ceil(_sellPrice + (((__GETC__(life_donator) * 5) / 100) * _sellPrice));
+_assurPrice = ceil(_assurPrice + (((__GETC__(life_donator) * 5) / 100) * _assurPrice));
+_retrievePrice = ceil(_retrievePrice + (((__GETC__(life_donator) * 5) / 100) * _retrievePrice));
 
 if(playerSide == west) then {
 	_retrievePrice = 1;
@@ -40,11 +42,10 @@ if(playerSide == independent) then {
 	_sellPrice = 100;
 	_assurPrice = 100;
 };
-if(l_c_dep && ((_className == "I_Heli_Transport_02_F_RP" && (_dataArr select 1) == 2) || (_className == "C_Offroad_01_F" && (_dataArr select 1) == 10) || (_className == "B_Heli_Light_01_F_RP" && (_dataArr select 1) == 15) || (_className == "C_Heli_Light_01_civil_F_RP" && (_dataArr select 1) == 15) || (_className == "B_Truck_01_mover_F_RP" && (_dataArr select 1) == 0) )) then {
-//if(l_c_dep) then {
-	_retrievePrice = _retrievePrice/10;
-	_assurPrice = _assurPrice/10;
-};
+// if(l_c_dep && ((_className == "I_Heli_Transport_02_F_RP" && (_dataArr select 1) == 2) || (_className == "C_Offroad_01_F" && (_dataArr select 1) == 10) || ((_className == "B_Heli_Light_01_F_RP" || _className == "C_Heli_Light_01_civil_F_RP") && (_dataArr select 1) == 15) || (_className == "B_Truck_01_mover_F_RP" && (_dataArr select 1) == 0))) then {
+	// _retrievePrice = _retrievePrice/10;
+	// _assurPrice = _assurPrice/10;
+// };
 
 if(_four == 1) then {
 	_retrievePrice = _retrievePrice + _assurPrice;
