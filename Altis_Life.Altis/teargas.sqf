@@ -5,7 +5,10 @@ ef1 ppEffectAdjust[ 0.7, 0.8, 0, [-2.32, 0.17, 0.71, 0],[1.09, 0.91, 0.66, 0.27]
 ef1 ppEffectCommit 1;
 
 ef2 = ppEffectCreate ["filmGrain", 1502];
-ef2 ppEffectAdjust [0.1, -1, 0.1, 0.05, 2, false];
+// ef2 ppEffectAdjust [0.1, -1, 0.1, 0.05, 2, false];
+// ef2 ppEffectAdjust [0.1, -1, 8, 0.5, 0.5, true]; 
+ef2 ppEffectAdjust [1, 5, 8, 0.5, 0.5, true]; 
+
 ef2 ppEffectCommit 1;
 
 ef3 = ppEffectCreate ["colorCorrections", 1503];
@@ -13,7 +16,9 @@ ef3 ppEffectAdjust [1,1,-0.01,[0.0,0.0,0.0,0.0],[1.5,1,1.2,0.6],[0.199,0.587,0.1
 ef3 ppEffectCommit 1;
 
 ef4 = ppEffectCreate ["filmGrain", 1504];
-ef4 ppEffectAdjust [0.05, -1, 0.1, 0.05, 2, false];
+// ef4 ppEffectAdjust [0.05, -1, 0.1, 0.05, 2, false];
+// ef4 ppEffectAdjust [0.1, 0.9, 8, 0.5, 0.5, true]; 
+ef4 ppEffectAdjust [1, 14, 8, 0.5, 0.5, true];
 ef4 ppEffectCommit 1;
 
 [] spawn {
