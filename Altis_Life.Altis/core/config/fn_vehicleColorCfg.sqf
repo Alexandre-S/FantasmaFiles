@@ -410,6 +410,7 @@ switch (_vehicle) do
 		_ret = 
 		[
 			// ["altisrpfr\textures\CIV_Depann_hemtt.paa","dep"]
+			["altisrpfr\textures\hemttdep.paa","civ"]
 		];
 	};
 	
