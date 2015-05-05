@@ -71,7 +71,7 @@ if(_spexit) exitWith
 };
 _fuel = parseNumber(_vInfo select 10);
 
-_query = format["UPDATE vehicles SET active='1' WHERE pid='%1' AND id='%2'",_pid,_vid];
+_query = format["UPDATE vehicles SET active='1', four = '0' WHERE pid='%1' AND id='%2'",_pid,_vid];
 
 waitUntil {sleep (random 0.3); !DB_Async_Active};
 [_query,false] spawn DB_fnc_asyncCall;
