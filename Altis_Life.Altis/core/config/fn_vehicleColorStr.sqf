@@ -36,6 +36,14 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "C_Offroad_01_F_DEP_RP" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Dépanneur";};
+		};
+	};
+	
 	case "B_G_Offroad_01_F" :
 	{
 		switch (_index) do
@@ -296,7 +304,15 @@ switch (_vehicle) do
 			case 12: {_color = "N-Waves Blue"};
 			case 13: {_color = "N-Terroriste Digital"};
 			case 14: {_color = "N-Croix-Rouge"};
-			case 15: {_color = "N-Dépanneur"};
+			// case 15: {_color = "N-Dépanneur"};
+		};
+	};
+	
+	case "B_Heli_Light_01_F_DEP_RP":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "N-Dépanneur"};
 		};
 	};
 	
@@ -319,9 +335,18 @@ switch (_vehicle) do
 			case 12: {_color = "P-Waves Blue"};
 			case 13: {_color = "P-Terroriste Digital"};
 			case 14: {_color = "P-Croix-Rouge"};
-			case 15: {_color = "P-Dépanneur"};
+			// case 15: {_color = "P-Dépanneur"};
 		};
 	};
+	
+	case "C_Heli_Light_01_civil_F_DEP_RP":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "P-Dépanneur"};
+		};
+	};
+	
 	
 	case "O_Heli_Light_02_unarmed_F_RP":
 	{
@@ -531,6 +556,14 @@ switch (_vehicle) do
 			case 1: {_color = "Dahoman"};
 			case 2: {_color = "Dépanneur"};
 			case 3: {_color = "Gouvernement"};
+		};
+	};	
+	
+	case "I_Heli_Transport_02_F_DEP_RP":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Dépanneur"};
 		};
 	};
 	

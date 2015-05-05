@@ -43,6 +43,10 @@ switch (_shop) do
 			["rhsusf_m998_d_s_2dr",75500],
 			["C_Van_01_transport_F",97500]
 		];
+		if(player getVariable["life_dep",false]) then
+		{
+			_return pushBack ["C_Offroad_01_F_DEP_RP",3375]; //Service Truck
+		};
 		// Si donateur
 		if(__GETC__(life_donator) > 0) then
 		{
@@ -127,9 +131,15 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F_RP",675000],
 			["RHS_Mi8mt_Cargo_vdv",700000]
 		];
-		if(player getVariable["life_dep",false] || {l_c_gvt} || {__GETC__(life_donator) > 0}) then
+		if(player getVariable["life_dep",false]) then
 		{
-			_return pushBack ["I_Heli_Transport_02_F_RP",750000]; // dep
+			_return pushBack ["B_Heli_Light_01_F_DEP_RP",33750]; // dep
+			_return pushBack ["C_Heli_Light_01_civil_F_DEP_RP",33750]; // dep
+			_return pushBack ["I_Heli_Transport_02_F_DEP_RP",75000]; // dep
+		};
+		if(l_c_gvt || {__GETC__(life_donator) > 0}) then
+		{
+			_return pushBack ["I_Heli_Transport_02_F_RP",750000];
 		};
 		if(__GETC__(life_donator) > 0) then
 		{
@@ -146,9 +156,15 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F_RP",675000],
 			["RHS_Mi8mt_Cargo_vdv",700000]
 		];
-		if(player getVariable["life_dep",false] || {l_c_gvt} || {__GETC__(life_donator) > 0}) then
+		if(player getVariable["life_dep",false]) then
 		{
-			_return pushBack ["I_Heli_Transport_02_F_RP",750000]; // dep
+			_return pushBack ["B_Heli_Light_01_F_DEP_RP",33750]; // dep
+			_return pushBack ["C_Heli_Light_01_civil_F_DEP_RP",33750]; // dep
+			_return pushBack ["I_Heli_Transport_02_F_DEP_RP",75000]; // dep
+		};
+		if(l_c_gvt || {__GETC__(life_donator) > 0}) then
+		{
+			_return pushBack ["I_Heli_Transport_02_F_RP",750000];
 		};
 		if(__GETC__(life_donator) > 0) then
 		{
