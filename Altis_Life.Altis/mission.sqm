@@ -22126,7 +22126,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="colorchange";
-			expCond="(vehicle player) in thisList && !(goggles (vehicle player) in [""Mask_M50"",""Mask_M40"",""Mask_M40_OD""])";
+			expCond="player in thisList && !(goggles player in [""Mask_M50"",""Mask_M40"",""Mask_M40_OD""])";
 			expActiv="ef1 ppEffectEnable true; ef2 ppEffectEnable true; ";
 			expDesactiv="ef1 ppEffectEnable false; ef2 ppEffectEnable false;";
 			class Effects
@@ -22143,7 +22143,7 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="colorchange";
-			expCond="(vehicle player) in thisList && (goggles (vehicle player) in [""Mask_M50"",""Mask_M40"",""Mask_M40_OD""])";
+			expCond="player in thisList && (goggles player in [""Mask_M50"",""Mask_M40"",""Mask_M40_OD""])";
 			expActiv="ef3 ppEffectEnable true; ef4 ppEffectEnable true; ";
 			expDesactiv="ef3 ppEffectEnable false; ef4 ppEffectEnable false;";
 			class Effects
