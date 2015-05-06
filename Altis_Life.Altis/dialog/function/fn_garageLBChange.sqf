@@ -29,8 +29,8 @@ _sellPrice = if(_sellPrice == -1) then {1000} else {(__GETC__(life_garage_sell) 
 _assurPrice = if(_assurPrice == -1) then {1000} else {(__GETC__(life_assur_prices) select _assurPrice) select 1;};
 //vente donator
 _sellPrice = ceil(_sellPrice + (((__GETC__(life_donator) * 5) / 100) * _sellPrice));
-_assurPrice = ceil(_assurPrice + (((__GETC__(life_donator) * 5) / 100) * _assurPrice));
-_retrievePrice = ceil(_retrievePrice + (((__GETC__(life_donator) * 5) / 100) * _retrievePrice));
+_assurPrice = ceil(_assurPrice - (((__GETC__(life_donator) * 5) / 100) * _assurPrice));
+_retrievePrice = ceil(_retrievePrice - (((__GETC__(life_donator) * 5) / 100) * _retrievePrice));
 
 if(playerSide == west) then {
 	_retrievePrice = 1;
