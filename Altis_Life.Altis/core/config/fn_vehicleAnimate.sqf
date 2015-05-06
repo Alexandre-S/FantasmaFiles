@@ -45,7 +45,7 @@ else
 		{
 			//waitUntil{!isNil {_vehicle getVariable "color"}};	
 			_vehicle animate ["HideServices", 0];
-			_vehicle animate ["HideDoor3", 1];
+			_vehicle animate ["HideDoor3", 0];
 			_vehicle animate ["HideBumper1", 0];
 			_vehicle setVariable ["service_truck", true, true];
 			sleep 0.01;

@@ -135,7 +135,8 @@ switch(playerSide) do {
 		if((life_veh_shop select 2) == "civ" && {_className == "LandRover_ACR"}) then {
 			[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
 		};
-		if(_className == "C_Offroad_01_F" && _colorIndex == 10) then {
+		// if(_className == "C_Offroad_01_F" && _colorIndex == 10) then {
+		if(_className == "C_Offroad_01_F_DEP_RP") then {
 			[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
 		};
 		if(_className in ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F"]) then {

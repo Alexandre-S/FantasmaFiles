@@ -178,7 +178,8 @@ if((_vInfo select 1) == "cop" && (_vInfo select 2) in ["C_Offroad_01_F","B_MRAP_
 	[_vehicle,"cop_offroad",true] spawn life_fnc_vehicleAnimate;
 };
 
-if((_vInfo select 8) == 10 && (_vInfo select 2) == "C_Offroad_01_F") then {
+// if((_vInfo select 8) == 10 && (_vInfo select 2) == "C_Offroad_01_F") then {
+if((_vInfo select 2) == "C_Offroad_01_F_DEP_RP") then {
 	[_vehicle,"service_truck",true] spawn life_fnc_vehicleAnimate;
 };
 
