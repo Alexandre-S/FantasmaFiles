@@ -60,8 +60,8 @@ switch (_className) do
 	case "O_Heli_Transport_04_covered_F_RP": {60};
 	case "O_Heli_Transport_04_F_RP": {60};
 	case "RHS_UH60M_d": {50}; // flic
-	case "RHS_UH60M_MEV2_d": {50}; // reb
-	case "RHS_UH60M_MEV_d": {50}; // croix rouge
+	case "RHS_UH60M_MEV2_d_RP": {50}; // reb
+	case "RHS_UH60M_MEV_d_RP": {50}; // croix rouge
 	//case "bwi_a3_t6a_7": {23};
 	//case "bwi_a3_at6b_3": {23};
 	case "sab_camel_RP": {23};
@@ -79,7 +79,7 @@ switch (_className) do
 	case "O_Truck_03_medical_F": {450};
 	case "B_Truck_01_medical_F": {488};
 	case "I_Heli_Transport_02_F_RP": {105};
-	case "RHS_Mi8mt_Cargo_vdv": {100};
+	case "RHS_Mi8mt_Cargo_vdv_RP": {100};
 	case "B_G_Offroad_01_armed_F": {98};
 	case "BAF_Offroad_D_HMG": {98};
 	case "PMC_Offroad_Transport": {98};

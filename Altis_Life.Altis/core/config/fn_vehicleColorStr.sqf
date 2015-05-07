@@ -764,7 +764,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "RHS_UH60M_MEV2_d" :
+	case "RHS_UH60M_MEV2_d_RP" :
 	{
 		switch (_index) do
 		{
@@ -772,7 +772,7 @@ switch (_vehicle) do
 		};
 	};
 	
-	case "RHS_Mi8mt_Cargo_vdv" :
+	case "RHS_Mi8mt_Cargo_vdv_RP" :
 	{
 		switch (_index) do
 		{
