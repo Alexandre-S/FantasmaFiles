@@ -28,6 +28,7 @@ else
 {
 	switch (_animate) do
 	{
+	/*
 		case "civ_littlebird":
 		{
 			// waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
@@ -39,7 +40,7 @@ else
 			_vehicle lockCargo [3,true];
 			_vehicle lockCargo [4,true];
 			_vehicle lockCargo [5,true];
-		};
+		};*/
 		
 		case "service_truck":
 		{

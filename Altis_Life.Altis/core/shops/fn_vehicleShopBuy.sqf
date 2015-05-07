@@ -129,9 +129,9 @@ switch(playerSide) do {
 	case civilian: {
 		_vehicle setVariable ["tf_side", playerSide, true];
 		sleep 0.01;
-		if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F_RP"}) then {
+		/*if((life_veh_shop select 2) == "civ" && {_className == "B_Heli_Light_01_F_RP"}) then {
 			[_vehicle,"civ_littlebird",true] spawn life_fnc_vehicleAnimate;
-		};
+		};*/
 		if((life_veh_shop select 2) == "civ" && {_className == "LandRover_ACR"}) then {
 			[_vehicle,"landrover_nocov",true] spawn life_fnc_vehicleAnimate;
 		};
