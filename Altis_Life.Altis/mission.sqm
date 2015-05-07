@@ -8240,7 +8240,7 @@ class Mission
 			vehicle="Land_Laptop_unfolded_F";
 			skill=0.60000002;
 			text="C7N_laptop";
-			init="this enableSimulation false; this allowDamage false; this setVectorUp[0,0,0.1]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setVectorUp[0,0,0.1]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item299
 		{
@@ -10476,7 +10476,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [6833.5815, 16168.417, -0.00019836426]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [6833.5815, 16168.417, -0.00019836426]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item508
 		{
@@ -10495,7 +10495,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_TBox_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [5582.6929, 11991.961, 3.0517578e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [5582.6929, 11991.961, 3.0517578e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item510
 		{
@@ -10515,7 +10515,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_TBox_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [9241.3857, 11485.678, -7.6293945e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [9241.3857, 11485.678, -7.6293945e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item512
 		{
@@ -10535,7 +10535,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_TBox_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [13775.286, 6391.2378, 1.1444092e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [13775.286, 6391.2378, 1.1444092e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item514
 		{
@@ -10555,7 +10555,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item516
 		{
@@ -10615,7 +10615,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [12486.451, 14195.611, -3.1471252e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [12486.451, 14195.611, -3.1471252e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item522
 		{
@@ -10625,7 +10625,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [14452.715, 16337.347, 9.5367432e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [14452.715, 16337.347, 9.5367432e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item523
 		{
@@ -10645,7 +10645,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [9223.3193, 19251.389, 3.0517578e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [9223.3193, 19251.389, 3.0517578e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item525
 		{
@@ -10665,7 +10665,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [4761.231, 21926.34, -3.0517578e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [4761.231, 21926.34, -3.0517578e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item527
 		{
@@ -10685,7 +10685,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [9126.042, 21645.039, -1.9073486e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [9126.042, 21645.039, -1.9073486e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item529
 		{
@@ -10695,7 +10695,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [11741.175, 18250.012, -7.6293945e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [11741.175, 18250.012, -7.6293945e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item530
 		{
@@ -10735,7 +10735,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [14062.098, 18739.691, 2.0980835e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [14062.098, 18739.691, 2.0980835e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item534
 		{
@@ -10745,7 +10745,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [16078.706, 16995.053, -0.00010299683]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [16078.706, 16995.053, -0.00010299683]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item535
 		{
@@ -10765,7 +10765,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [18839.934, 15619.771, -5.3405762e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [18839.934, 15619.771, -5.3405762e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item537
 		{
@@ -10785,7 +10785,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [16809.793, 12680.858, -5.7220459e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [16809.793, 12680.858, -5.7220459e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item539
 		{
@@ -10805,7 +10805,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [19948.82, 11432.577, -6.4849854e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [19948.82, 11432.577, -6.4849854e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item541
 		{
@@ -10825,7 +10825,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [20794.92, 7178.2021, 5.531311e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [20794.92, 7178.2021, 5.531311e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item543
 		{
@@ -10845,7 +10845,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [22948.9, 18881.525, 1.2874603e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [22948.9, 18881.525, 1.2874603e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item545
 		{
@@ -10865,7 +10865,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [22010.672, 21204.514, 6.4849854e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [22010.672, 21204.514, 6.4849854e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item547
 		{
@@ -10875,7 +10875,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [26274.992, 22188.17, 6.8664551e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [26274.992, 22188.17, 6.8664551e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item548
 		{
@@ -10895,7 +10895,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [8932.4258, 7508.2969, 7.6293945e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [8932.4258, 7508.2969, 7.6293945e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item550
 		{
@@ -10915,7 +10915,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [14891.003, 11055.444, -3.0517578e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [14891.003, 11055.444, -3.0517578e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item552
 		{
@@ -10935,7 +10935,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_TBox_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [22145.914, 14173.559, -6.6757202e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [22145.914, 14173.559, -6.6757202e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item554
 		{
@@ -10955,7 +10955,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_TBox_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [23748.871, 24233.752, -5.3405762e-005]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [23748.871, 24233.752, -5.3405762e-005]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item556
 		{
@@ -10975,7 +10975,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [26727.061, 24589.135, -0.00012207031]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [26727.061, 24589.135, -0.00012207031]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item558
 		{
@@ -10985,7 +10985,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.40000001;
-			init="this enableSimulation false; this allowDamage false; this setpos [15346.854, 15892.679, 7.6293945e-006]; this addAction[""Envoyer un message"",life_fnc_calldialog,0];";
+			init="this enableSimulation false; this allowDamage false; this setpos [15346.854, 15892.679, 7.6293945e-006]; this addAction [""Envoyer un message"",life_fnc_calldialog, 0, 3, true, true, """", ' _this distance _target < 5 && cursorTarget == _target ' ];";
 		};
 		class Item559
 		{
