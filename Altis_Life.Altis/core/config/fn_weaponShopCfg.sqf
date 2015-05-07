@@ -144,8 +144,8 @@ switch(_shop) do
 						["9Rnd_45ACP_Mag",nil,0],
 						
 						//benelli m4 
-						["R3F_M4S90",nil,0],
-						["R3F_7Rnd_M4S90",nil,0],
+						// ["R3F_M4S90",nil,0],
+						// ["R3F_7Rnd_M4S90",nil,0],
 						["acc_flashlight",nil,0],
 						
 						// pompe court
@@ -406,8 +406,8 @@ switch(_shop) do
 				{
 
 					//benelli m4 
-					(_ret select 1) pushBack ["R3F_M4S90",nil,50000];
-					(_ret select 1) pushBack ["R3F_7Rnd_M4S90",nil,450];
+					// (_ret select 1) pushBack ["R3F_M4S90",nil,50000];
+					// (_ret select 1) pushBack ["R3F_7Rnd_M4S90",nil,450];
 					(_ret select 1) pushBack ["acc_flashlight",nil,1000];
 					
 					// pompe court
@@ -729,8 +729,8 @@ switch(_shop) do
 						["9Rnd_45ACP_Mag",nil,400],
 						
 						//benelli m4 
-						["R3F_M4S90",nil,50000],
-						["R3F_7Rnd_M4S90",nil,450],
+						// ["R3F_M4S90",nil,50000],
+						// ["R3F_7Rnd_M4S90",nil,450],
 						["acc_flashlight",nil,1000],
 						
 						// pompe court
