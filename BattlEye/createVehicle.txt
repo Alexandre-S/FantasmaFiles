@@ -15,7 +15,7 @@
 5 "_Quadbike_" !"B_Quadbike_01_F"
 5 "_Rubberboat" !"C_Rubberboat"
 5 "_SDV_" !"B_SDV_01_F"
-5 "_Truck_" !"I_Truck_02_transport_F" !"I_Truck_02_covered_F" !"B_Truck_01_transport_F" !"B_Truck_01_box_F" !"B_Truck_01_covered_F" !"B_Truck_01_mover_F_RP" !"O_Truck_03_transport_F" !"O_Truck_03_covered_F" !"O_Truck_03_device_F" !"sab_UN_Truck_C" !"sab_UN_Truck_Medi" !"O_Truck_03_medical_F" !"I_Truck_02_medical_F_RP" !"B_Truck_01_medical_F" !"sab_UN_Truck_O" !"sab_UN_Truck_Fuel" !"sab_UN_Truck_Ammo" !"sab_UN_Truck_Rep" !"O_Truck_02_box_F_RP"
+5 "_Truck_" !"I_Truck_02_transport_F" !"I_Truck_02_covered_F" !"B_Truck_01_transport_F" !"B_Truck_01_box_F" !"B_Truck_01_covered_F" !"B_Truck_01_mover_F_RP" !"O_Truck_03_transport_F_RP" !"O_Truck_03_covered_F_RP" !"O_Truck_03_device_F_RP" !"sab_UN_Truck_C" !"sab_UN_Truck_Medi" !"O_Truck_03_medical_F_RP" !"I_Truck_02_medical_F_RP" !"B_Truck_01_medical_F" !"sab_UN_Truck_O" !"sab_UN_Truck_Fuel" !"sab_UN_Truck_Ammo" !"sab_UN_Truck_Rep" !"O_Truck_02_box_F_RP"
 5 "PMC_" !"PMC_Offroad_Transport" !"PMC_Offroad_Armed" !"PMC_MH9" !"PMC_AssaultPack_Blk" !"PMC_B_Kitbag_blk" !"PMC_B_Carryall_blk"
 5 "bwi_" !"bwi_a3_t6a_7" !"bwi_a3_at6b_3"
 5 "BAF_" !"BAF_Offroad_D" !"BAF_Offroad_D_HMG"

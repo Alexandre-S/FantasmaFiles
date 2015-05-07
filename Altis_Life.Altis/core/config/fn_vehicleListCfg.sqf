@@ -98,10 +98,10 @@ switch (_shop) do
 			["I_Truck_02_transport_F",202500],
 			["I_Truck_02_covered_F",262500],
 			["RDS_Ikarus_Civ_01",302500],
-			["O_Truck_03_transport_F",310000],
+			["O_Truck_03_transport_F_RP",310000],
 			["RHS_Ural_Open_Civ_01",335250],
 			["B_Truck_01_transport_F",375000],
-			["O_Truck_03_covered_F",393750],
+			["O_Truck_03_covered_F_RP",393750],
 			["RHS_Ural_Civ_01",400000],
 			["B_Truck_01_covered_F",412500]
 		];
@@ -109,7 +109,7 @@ switch (_shop) do
 		if(__GETC__(life_donator) > 0) then
 		{
 			_return pushBack ["B_Truck_01_box_F",450000];
-			_return pushBack ["O_Truck_03_device_F",450000];
+			_return pushBack ["O_Truck_03_device_F_RP",450000];
 		};
 		if(player getVariable["life_dep",false]) then
 		{
@@ -200,7 +200,7 @@ switch (_shop) do
 		{
 			_return pushBack ["I_Truck_02_medical_F_RP",20000];
 			_return pushBack ["O_Truck_02_box_F_RP",20000];
-			// _return pushBack ["O_Truck_03_medical_F",25000];
+			// _return pushBack ["O_Truck_03_medical_F_RP",25000];
 			// _return pushBack ["B_Truck_01_medical_F",30000];
 		};
 	};

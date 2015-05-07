@@ -532,7 +532,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "O_Truck_03_transport_F":
+	case "O_Truck_03_transport_F_RP":
 	{
 		_ret = 
 		[
@@ -541,7 +541,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "O_Truck_03_covered_F":
+	case "O_Truck_03_covered_F_RP":
 	{
 		_ret = 
 		[
@@ -550,7 +550,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "O_Truck_03_device_F":
+	case "O_Truck_03_device_F_RP":
 	{
 		_ret = 
 		[
@@ -559,7 +559,7 @@ switch (_vehicle) do
 		];
 	};
 	
-	case "O_Truck_03_medical_F":
+	case "O_Truck_03_medical_F_RP":
 	{
 		_ret = 
 		[

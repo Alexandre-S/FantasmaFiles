@@ -879,7 +879,7 @@ class CfgVehicles {
 		{
 			displayName = "$STR_vInAct_DeviceMine";
 			distance = 4;
-			condition = "alive _target && {typeOf _target == ""O_Truck_03_device_F""} && {playerSide != west} && !(!isNil {(_target getVariable ""mining"")} OR !local _target && {_target in life_vehicles})";
+			condition = "alive _target && {typeOf _target == ""O_Truck_03_device_F_RP""} && {playerSide != west} && !(!isNil {(_target getVariable ""mining"")} OR !local _target && {_target in life_vehicles})";
 			statement = "[_target] spawn life_fnc_deviceMine";
 			showDisabled = 0;
 			priority = 1.6;

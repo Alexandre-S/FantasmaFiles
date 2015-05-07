@@ -45,14 +45,14 @@ switch (_className) do
 	case "rhs_gaz66_vdv": {275};
 	case "I_Truck_02_transport_F": {300};
 	case "I_Truck_02_covered_F": {375};
-	case "O_Truck_03_transport_F": {428};
+	case "O_Truck_03_transport_F_RP": {428};
 	case "RHS_Ural_Open_Civ_01": {435};
 	case "B_Truck_01_transport_F": {450};
 	case "RHS_Ural_Civ_01": {470};
 	case "B_Truck_01_covered_F": {488};
-	case "O_Truck_03_covered_F": {468};
+	case "O_Truck_03_covered_F_RP": {468};
 	case "B_Truck_01_box_F": {600};
-	case "O_Truck_03_device_F": {525};
+	case "O_Truck_03_device_F_RP": {525};
 	case "C_Heli_Light_01_civil_F_RP": {15};
 	case "B_Heli_Light_01_F_RP": {15};
 	case "O_Heli_Light_02_unarmed_F_RP": {45};
@@ -76,7 +76,7 @@ switch (_className) do
 	case "Burnes_MK10_1": {98};
 	case "ffaa_ar_lcm": {98};
 	case "I_Truck_02_medical_F_RP": {375};
-	case "O_Truck_03_medical_F": {450};
+	case "O_Truck_03_medical_F_RP": {450};
 	case "B_Truck_01_medical_F": {488};
 	case "I_Heli_Transport_02_F_RP": {105};
 	case "RHS_Mi8mt_Cargo_vdv_RP": {100};
