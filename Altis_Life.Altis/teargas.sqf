@@ -57,7 +57,7 @@ ef4 ppEffectCommit 1;
 		while {sleep 0.3;(alive player AND (goggles player in ["Mask_M50","Mask_M40","Mask_M40_OD"]))} do 
 		{
 			// playsound3d ["A3\sounds_f\characters\human-sfx\other\diver-breath-2.wss",player,false,getposASL player, 0.8,1,15];
-			[[player, "diverbreath2",15],"life_fnc_playSound",true,false] spawn life_fnc_MP;
+			[[player, "diverbreath2",5],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 			sleep (random 2+5);
 		};
 		life_Mask_sound = false;
