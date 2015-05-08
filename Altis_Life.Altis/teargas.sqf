@@ -48,6 +48,7 @@ ef4 ppEffectCommit 1;
 		sleep 5;
 	};
 };
+/*
 [] spawn {
 	While{true} do 
 	{
@@ -62,4 +63,4 @@ ef4 ppEffectCommit 1;
 		};
 		life_Mask_sound = false;
 	};
-};
+};*/
