@@ -216,7 +216,7 @@ alarm_check =
 };
 
 player addEventHandler ["FiredNear", " if(!((_this select 6) in life_chemlist)) then { [] spawn combat_mode; }; "];
-// player addEventHandler ["fired", "[_this] spawn alarm_check;"];
+player addEventHandler ["fired", "[_this] spawn alarm_check;"];
 
 diag_log "::Life Client:: Vidage des pompes à essences..";
 _pumps = [];

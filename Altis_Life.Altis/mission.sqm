@@ -29,7 +29,6 @@ class Mission
 		"A3_Structures_F_Naval_Buoys",
 		"A3_Weapons_F_Explosives",
 		"A3_Structures_F_Ind_Cargo",
-		"A3_Structures_F_Research",
 		"A3_Structures_F_EPC_Civ_Accessories",
 		"A3_Structures_F_Ind_Shed",
 		"A3_Structures_F_Wrecks",
@@ -5241,7 +5240,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=1751;
+		items=1762;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -23818,6 +23817,116 @@ class Mission
 			vehicle="xcam_t_OleaE1s_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;this setdir 238.79;this setposATL [9213.666016,21621.796875,0];this setVectorUp [0,0,1]";
+		};
+		class Item1751
+		{
+			position[]={14030.502,25.710655,18749.738};
+			azimut=-221.25301;
+			id=2058;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1752
+		{
+			position[]={14228.28,18.295347,18319.648};
+			azimut=-221.25301;
+			id=2059;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1753
+		{
+			position[]={14397.516,38.228107,19040.725};
+			azimut=-221.25301;
+			id=2060;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1754
+		{
+			position[]={14178.535,19.040102,16331.155};
+			azimut=-221.25301;
+			id=2061;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1755
+		{
+			position[]={15986.342,14.17444,16904.09};
+			azimut=-357.95654;
+			id=2062;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1756
+		{
+			position[]={16113.728,13.687159,17137.09};
+			azimut=-389.38434;
+			id=2063;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1757
+		{
+			position[]={16737.963,11.362305,12493.827};
+			azimut=-339.62384;
+			id=2064;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1758
+		{
+			position[]={16830.939,18.92794,12855.013};
+			azimut=-150.24962;
+			id=2065;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1759
+		{
+			position[]={25812.053,20.378801,21389.58};
+			azimut=113.97282;
+			id=2066;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1760
+		{
+			position[]={25576.082,19.039736,21281.08};
+			azimut=378.36148;
+			id=2067;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item1761
+		{
+			position[]={6105.5464,25.368933,15008.308};
+			azimut=378.36148;
+			id=2068;
+			side="EMPTY";
+			vehicle="Land_Loudspeakers_F";
+			skill=0.40000001;
+			init="this enableSimulation false; this allowDamage false;";
 		};
 	};
 	class Markers
