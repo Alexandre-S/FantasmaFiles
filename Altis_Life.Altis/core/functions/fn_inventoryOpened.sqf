@@ -14,9 +14,7 @@ if(_isPack == 1 && playerSide != west) then {
 	hint localize "STR_MISC_Backpack";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
-		closeDialog 0;
-		sleep 0.01;
-		closeDialog 0;
+		while {!isNull (findDisplay 602)} do { closeDialog 0; };
 	};
 };
 if(playerSide != west) then{
@@ -37,9 +35,7 @@ if(playerSide != west) then{
 			hint localize "STR_House_ContainerDeny";
 			[] spawn {
 				waitUntil {!isNull (findDisplay 602)};
-				closeDialog 0;
-				sleep 0.01;
-				closeDialog 0;
+				while {!isNull (findDisplay 602)} do { closeDialog 0; };
 			};
 		};
 	};
@@ -50,9 +46,7 @@ if(playerSide != west) then{
 			hint localize "STR_MISC_VehInventory";
 			[] spawn {
 				waitUntil {!isNull (findDisplay 602)};
-				closeDialog 0;
-				sleep 0.01;
-				closeDialog 0;
+				while {!isNull (findDisplay 602)} do { closeDialog 0; };
 			};
 		};
 	};
@@ -63,8 +57,6 @@ if(_container isKindOf "Man" && !alive _container && _container getVariable["sid
 	hint localize "STR_NOTF_NoLootingPerson";
 	[] spawn {
 		waitUntil {!isNull (findDisplay 602)};
-		closeDialog 0;
-		sleep 0.01;
-		closeDialog 0;
+		while {!isNull (findDisplay 602)} do { closeDialog 0; };
 	};
 };
