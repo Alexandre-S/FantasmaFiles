@@ -27,7 +27,7 @@
 5 "_supplyCrate_" !"B_supplyCrate_F_RP"
 
 // Units
-5 "C_man_" !"C_man_1" !"C_man_polo_6_F" !"C_man_polo_4_F" !"C_man_1_2_F" !"C_man_polo_1_F" !"C_man_1_3_F"
+5 "C_man_" !"C_man_1" !"C_man_1_RP" !"C_man_polo_6_F" !"C_man_polo_4_F" !"C_man_1_2_F" !"C_man_polo_1_F" !"C_man_1_3_F"
 
 // Buildings & objects
 5 "Bomb"
