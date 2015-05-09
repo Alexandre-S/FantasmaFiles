@@ -7,6 +7,7 @@
 "BIS_fnc_MP_packet" addPublicVariableEventHandler {_this call life_fnc_MPexec};
 //This is a headless client, he doesn't need to do anything but keep being headless..
 waitUntil {sleep 0.1;!isNull player && player == player}; //Wait till the player is ready
+player setVariable ["BIS_enableRandomization",false];
 waitUntil {sleep 0.1;time > 10 && alive player}; //Wait till the player is ready
 player setVariable ["tf_voiceVolume", 0, true];
 player setVariable ["tf_globalVolume", 0];

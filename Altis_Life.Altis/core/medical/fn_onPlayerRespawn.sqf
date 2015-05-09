@@ -8,6 +8,7 @@
 */
 private["_unit","_corpse"];
 _unit = _this select 0;
+_unit setVariable ["BIS_enableRandomization",false];
 _corpse = _this select 1;
 life_corpse = _corpse;
 life_corpse setVariable["life_corps",true,true];
