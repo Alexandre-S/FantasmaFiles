@@ -239,7 +239,7 @@ class Mission
 					azimut=-2234.1799;
 					id=0;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -253,7 +253,7 @@ class Mission
 					azimut=-794.64697;
 					id=1;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_2";
@@ -266,7 +266,7 @@ class Mission
 					azimut=-794.64697;
 					id=2;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_3";
@@ -279,7 +279,7 @@ class Mission
 					azimut=-794.64697;
 					id=3;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_4";
@@ -292,7 +292,7 @@ class Mission
 					azimut=-794.64697;
 					id=4;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_5";
@@ -305,7 +305,7 @@ class Mission
 					azimut=-794.64697;
 					id=5;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_6";
@@ -318,7 +318,7 @@ class Mission
 					azimut=-794.64697;
 					id=6;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_7";
@@ -331,7 +331,7 @@ class Mission
 					azimut=-794.64697;
 					id=7;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_8";
@@ -344,7 +344,7 @@ class Mission
 					azimut=-794.64697;
 					id=8;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_9";
@@ -357,7 +357,7 @@ class Mission
 					azimut=-794.64697;
 					id=9;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_10";
@@ -370,7 +370,7 @@ class Mission
 					azimut=-1143.1801;
 					id=10;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_11";
@@ -383,7 +383,7 @@ class Mission
 					azimut=-794.64697;
 					id=11;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_12";
@@ -396,7 +396,7 @@ class Mission
 					azimut=-794.64697;
 					id=12;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_13";
@@ -409,7 +409,7 @@ class Mission
 					azimut=-794.64697;
 					id=13;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_14";
@@ -422,7 +422,7 @@ class Mission
 					azimut=-794.64697;
 					id=14;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_15";
@@ -435,7 +435,7 @@ class Mission
 					azimut=-441.37399;
 					id=15;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_16";
@@ -448,7 +448,7 @@ class Mission
 					azimut=-794.64697;
 					id=16;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_17";
@@ -461,7 +461,7 @@ class Mission
 					azimut=-794.64697;
 					id=17;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_18";
@@ -474,7 +474,7 @@ class Mission
 					azimut=-794.64697;
 					id=18;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_19";
@@ -487,7 +487,7 @@ class Mission
 					azimut=-1143.1801;
 					id=19;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_20";
@@ -500,7 +500,7 @@ class Mission
 					azimut=-1143.1801;
 					id=20;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_21";
@@ -513,7 +513,7 @@ class Mission
 					azimut=-1143.1801;
 					id=21;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_22";
@@ -526,7 +526,7 @@ class Mission
 					azimut=-1143.1801;
 					id=22;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_23";
@@ -539,7 +539,7 @@ class Mission
 					azimut=-1143.1801;
 					id=23;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_24";
@@ -552,7 +552,7 @@ class Mission
 					azimut=-1143.1801;
 					id=24;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_25";
@@ -565,7 +565,7 @@ class Mission
 					azimut=-1193.1543;
 					id=25;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_26";
@@ -578,7 +578,7 @@ class Mission
 					azimut=-1193.15;
 					id=26;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_27";
@@ -591,7 +591,7 @@ class Mission
 					azimut=-1193.15;
 					id=27;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_28";
@@ -604,7 +604,7 @@ class Mission
 					azimut=-1193.15;
 					id=28;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_29";
@@ -617,7 +617,7 @@ class Mission
 					azimut=-1193.15;
 					id=29;
 					side="WEST";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="cop_30";
@@ -639,7 +639,7 @@ class Mission
 					special="NONE";
 					id=30;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -683,7 +683,7 @@ class Mission
 					special="NONE";
 					id=32;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -727,7 +727,7 @@ class Mission
 					special="NONE";
 					id=34;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -749,7 +749,7 @@ class Mission
 					special="NONE";
 					id=35;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -793,7 +793,7 @@ class Mission
 					special="NONE";
 					id=37;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -837,7 +837,7 @@ class Mission
 					special="NONE";
 					id=39;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -859,7 +859,7 @@ class Mission
 					special="NONE";
 					id=40;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -903,7 +903,7 @@ class Mission
 					special="NONE";
 					id=42;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -947,7 +947,7 @@ class Mission
 					special="NONE";
 					id=44;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -969,7 +969,7 @@ class Mission
 					special="NONE";
 					id=45;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1013,7 +1013,7 @@ class Mission
 					special="NONE";
 					id=47;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1057,7 +1057,7 @@ class Mission
 					special="NONE";
 					id=49;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1079,7 +1079,7 @@ class Mission
 					special="NONE";
 					id=50;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1123,7 +1123,7 @@ class Mission
 					special="NONE";
 					id=52;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1167,7 +1167,7 @@ class Mission
 					special="NONE";
 					id=54;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1189,7 +1189,7 @@ class Mission
 					special="NONE";
 					id=55;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1233,7 +1233,7 @@ class Mission
 					special="NONE";
 					id=57;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1277,7 +1277,7 @@ class Mission
 					special="NONE";
 					id=59;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1299,7 +1299,7 @@ class Mission
 					special="NONE";
 					id=60;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1343,7 +1343,7 @@ class Mission
 					special="NONE";
 					id=62;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1387,7 +1387,7 @@ class Mission
 					special="NONE";
 					id=64;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1409,7 +1409,7 @@ class Mission
 					special="NONE";
 					id=65;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1453,7 +1453,7 @@ class Mission
 					special="NONE";
 					id=67;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1497,7 +1497,7 @@ class Mission
 					special="NONE";
 					id=69;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1541,7 +1541,7 @@ class Mission
 					special="NONE";
 					id=71;
 					side="CIV";
-					vehicle="C_man_1_RP_2_F";
+					vehicle="C_man_1_2_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1585,7 +1585,7 @@ class Mission
 					special="NONE";
 					id=73;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1607,7 +1607,7 @@ class Mission
 					special="NONE";
 					id=74;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1651,7 +1651,7 @@ class Mission
 					special="NONE";
 					id=76;
 					side="CIV";
-					vehicle="C_man_1_RP_2_F";
+					vehicle="C_man_1_2_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1695,7 +1695,7 @@ class Mission
 					special="NONE";
 					id=78;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1717,7 +1717,7 @@ class Mission
 					special="NONE";
 					id=79;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1761,7 +1761,7 @@ class Mission
 					special="NONE";
 					id=81;
 					side="CIV";
-					vehicle="C_man_1_RP_2_F";
+					vehicle="C_man_1_2_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1805,7 +1805,7 @@ class Mission
 					special="NONE";
 					id=83;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1827,7 +1827,7 @@ class Mission
 					special="NONE";
 					id=84;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1849,7 +1849,7 @@ class Mission
 					special="NONE";
 					id=85;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1871,7 +1871,7 @@ class Mission
 					special="NONE";
 					id=86;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1893,7 +1893,7 @@ class Mission
 					special="NONE";
 					id=87;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1915,7 +1915,7 @@ class Mission
 					special="NONE";
 					id=88;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1937,7 +1937,7 @@ class Mission
 					special="NONE";
 					id=89;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1959,7 +1959,7 @@ class Mission
 					special="NONE";
 					id=90;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -1981,7 +1981,7 @@ class Mission
 					special="NONE";
 					id=91;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2003,7 +2003,7 @@ class Mission
 					special="NONE";
 					id=92;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2025,7 +2025,7 @@ class Mission
 					special="NONE";
 					id=93;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2047,7 +2047,7 @@ class Mission
 					special="NONE";
 					id=94;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2069,7 +2069,7 @@ class Mission
 					special="NONE";
 					id=95;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2091,7 +2091,7 @@ class Mission
 					special="NONE";
 					id=96;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2113,7 +2113,7 @@ class Mission
 					special="NONE";
 					id=97;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2135,7 +2135,7 @@ class Mission
 					special="NONE";
 					id=98;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2157,7 +2157,7 @@ class Mission
 					special="NONE";
 					id=99;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2179,7 +2179,7 @@ class Mission
 					special="NONE";
 					id=100;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2201,7 +2201,7 @@ class Mission
 					special="NONE";
 					id=101;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2223,7 +2223,7 @@ class Mission
 					special="NONE";
 					id=102;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2245,7 +2245,7 @@ class Mission
 					special="NONE";
 					id=103;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2267,7 +2267,7 @@ class Mission
 					special="NONE";
 					id=104;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -2289,7 +2289,7 @@ class Mission
 					special="NONE";
 					id=105;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					leader=1;
 					rank="COLONEL";
 					skill=0.60000002;
@@ -2328,7 +2328,7 @@ class Mission
 					special="NONE";
 					id=108;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_1";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Amélioration d'habitation"",life_fnc_virt_menu,""house""]; this addAction[""<t color='#FF3333'>Changer d'identité (500.000€)</t>"",life_fnc_wipe]; this addAction[format[""%1 ($%2)"",[""l_c_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !l_c_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !l_c_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !l_c_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !l_c_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !l_c_home && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_hunting""] call life_fnc_varToStr,[([""hunting""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""hunting"",0,false,false,"""",' !l_c_hunting && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_dep""] call life_fnc_varToStr,[([""dep""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dep"",0,false,false,"""",' !l_c_dep && playerSide == civilian && life_isdep']; this addAction[format[""%1 ($%2)"",[""l_c_taxi""] call life_fnc_varToStr,[([""taxi""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""taxi"",0,false,false,"""",' !l_c_taxi && playerSide == civilian && life_istaxi']; this setVariable[""realname"",""Préfécture""];";
@@ -2364,7 +2364,7 @@ class Mission
 					special="NONE";
 					id=111;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
@@ -2387,7 +2387,7 @@ class Mission
 					special="NONE";
 					id=113;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Oil"",life_fnc_processAction,""oil"",0,false,false,"""",' life_inv_oilu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_oil""] call life_fnc_varToStr,[([""oil""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !l_c_oil && playerSide == civilian '];";
 				};
@@ -2435,7 +2435,7 @@ class Mission
 					special="NONE";
 					id=117;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Iron"",life_fnc_processAction,""iron"",0,false,false,"""",' life_inv_ironore > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_iron""] call life_fnc_varToStr,[([""iron""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""iron"",0,false,false,"""",' !l_c_iron && playerSide == civilian '];";
 				};
@@ -2602,7 +2602,7 @@ class Mission
 					special="NONE";
 					id=131;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
@@ -2708,7 +2708,7 @@ class Mission
 					special="NONE";
 					id=140;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Fish Market"",life_fnc_virt_menu,""fishmarket""];";
 				};
@@ -2789,7 +2789,7 @@ class Mission
 					special="NONE";
 					id=147;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Clothing Store"",life_fnc_clothingMenu,""bruce""];";
 				};
@@ -2882,7 +2882,7 @@ class Mission
 					special="NONE";
 					id=155;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_2";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Amélioration d'habitation"",life_fnc_virt_menu,""house""]; this addAction[""<t color='#FF3333'>Changer d'identité (500.000€)</t>"",life_fnc_wipe]; this addAction[format[""%1 ($%2)"",[""l_c_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !l_c_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !l_c_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !l_c_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !l_c_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !l_c_home && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_hunting""] call life_fnc_varToStr,[([""hunting""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""hunting"",0,false,false,"""",' !l_c_hunting && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_dep""] call life_fnc_varToStr,[([""dep""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dep"",0,false,false,"""",' !l_c_dep && playerSide == civilian && life_isdep']; this addAction[format[""%1 ($%2)"",[""l_c_taxi""] call life_fnc_varToStr,[([""taxi""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""taxi"",0,false,false,"""",' !l_c_taxi && playerSide == civilian && life_istaxi']; this setVariable[""realname"",""Préfécture""];";
@@ -2907,7 +2907,7 @@ class Mission
 					special="NONE";
 					id=157;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					text="license_shop_3";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Amélioration d'habitation"",life_fnc_virt_menu,""house""]; this addAction[""<t color='#FF3333'>Changer d'identité (500.000€)</t>"",life_fnc_wipe]; this addAction[format[""%1 ($%2)"",[""l_c_driver""] call life_fnc_varToStr,[([""driver""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""driver"",0,false,false,"""",' !l_c_driver && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_boat""] call life_fnc_varToStr,[([""boat""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""boat"",0,false,false,"""",' !l_c_boat && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_air""] call life_fnc_varToStr,[([""pilot""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""pilot"",0,false,false,"""",' !l_c_air && playerSide == civilian '];  this addAction[format[""%1 ($%2)"",[""l_c_truck""] call life_fnc_varToStr,[([""truck""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""truck"",0,false,false,"""",' !l_c_truck && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_home""] call life_fnc_varToStr,[([""home""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""home"",0,false,false,"""",' !l_c_home && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_hunting""] call life_fnc_varToStr,[([""hunting""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""hunting"",0,false,false,"""",' !l_c_hunting && playerSide == civilian ']; this addAction[format[""%1 ($%2)"",[""l_c_dep""] call life_fnc_varToStr,[([""dep""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""dep"",0,false,false,"""",' !l_c_dep && playerSide == civilian && life_isdep']; this addAction[format[""%1 ($%2)"",[""l_c_taxi""] call life_fnc_varToStr,[([""taxi""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""taxi"",0,false,false,"""",' !l_c_taxi && playerSide == civilian && life_istaxi']; this setVariable[""realname"",""Préfécture""];";
@@ -2943,7 +2943,7 @@ class Mission
 					special="NONE";
 					id=160;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Oil Trader"",life_fnc_virt_menu,""oil""];";
 				};
@@ -2954,7 +2954,7 @@ class Mission
 					special="NONE";
 					id=161;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Diamond"",life_fnc_processAction,""diamond"",0,false,false,"""",' life_inv_diamond > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_diamond""] call life_fnc_varToStr,[([""diamond""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""diamond"",0,false,false,"""",' !l_c_diamond && playerSide == civilian '];";
 				};
@@ -2965,7 +2965,7 @@ class Mission
 					special="NONE";
 					id=162;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Glass Trader"",life_fnc_virt_menu,""glass""];";
 				};
@@ -2976,7 +2976,7 @@ class Mission
 					special="NONE";
 					id=163;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Iron / Copper Trader"",life_fnc_virt_menu,""iron""];";
 				};
@@ -2987,7 +2987,7 @@ class Mission
 					special="NONE";
 					id=164;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Copper"",life_fnc_processAction,""copper"",0,false,false,"""",' life_inv_copperore > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_copper""] call life_fnc_varToStr,[([""copper""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""copper"",0,false,false,"""",' !l_c_copper && playerSide == civilian '];";
 				};
@@ -2998,7 +2998,7 @@ class Mission
 					special="NONE";
 					id=165;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Diamond Trader"",life_fnc_virt_menu,""diamond""];";
 				};
@@ -3009,7 +3009,7 @@ class Mission
 					special="NONE";
 					id=166;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Salt Trader"",life_fnc_virt_menu,""salt""];";
 				};
@@ -3020,7 +3020,7 @@ class Mission
 					special="NONE";
 					id=167;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Sand"",life_fnc_processAction,""sand"",0,false,false,"""",' life_inv_sand > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_sand""] call life_fnc_varToStr,[([""sand""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""sand"",0,false,false,"""",' !l_c_sand && playerSide == civilian '];";
 				};
@@ -3056,7 +3056,7 @@ class Mission
 					special="NONE";
 					id=170;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Salt"",life_fnc_processAction,""salt"",0,false,false,"""",' life_inv_salt > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_salt""] call life_fnc_varToStr,[([""salt""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""salt"",0,false,false,"""",' !l_c_salt && playerSide == civilian '];";
 				};
@@ -3067,7 +3067,7 @@ class Mission
 					special="NONE";
 					id=171;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Clothing Store"",life_fnc_clothingMenu,""bruce""];";
 				};
@@ -3126,7 +3126,7 @@ class Mission
 					special="NONE";
 					id=176;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Héroine"",life_fnc_processAction,""heroin"",0,false,false,"""",' life_inv_heroinu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_heroin""] call life_fnc_varToStr,[([""heroin""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""heroin"",0,false,false,"""",' !l_c_heroin && playerSide == civilian '];";
 				};
@@ -3137,7 +3137,7 @@ class Mission
 					special="NONE";
 					id=177;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Cocaine"",life_fnc_processAction,""cocaine"",0,false,false,"""",' life_inv_coke > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_coke""] call life_fnc_varToStr,[([""cocaine""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cocaine"",0,false,false,"""",' !l_c_coke && playerSide == civilian '];";
 				};
@@ -3159,7 +3159,7 @@ class Mission
 					special="NONE";
 					id=179;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Marchand de ciment"",life_fnc_virt_menu,""cement""];";
 				};
@@ -3170,7 +3170,7 @@ class Mission
 					special="NONE";
 					id=180;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Pierre"",life_fnc_processAction,""cement"",0,false,false,"""",' life_inv_rock > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_cement""] call life_fnc_varToStr,[([""cement""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""cement"",0,false,false,"""",' !l_c_cement && playerSide == civilian '];";
 				};
@@ -3205,7 +3205,7 @@ class Mission
 					special="NONE";
 					id=183;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Palais Nippon"",life_fnc_virt_menu,""wongs""];";
 				};
@@ -3228,7 +3228,7 @@ class Mission
 					special="NONE";
 					id=185;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Receler"",life_fnc_chopShopMenu,""chop_shop_1""];";
 				};
@@ -3239,7 +3239,7 @@ class Mission
 					special="NONE";
 					id=186;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Receler"",life_fnc_chopShopMenu,""chop_shop_4""];";
 				};
@@ -3250,7 +3250,7 @@ class Mission
 					special="NONE";
 					id=187;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Receler"",life_fnc_chopShopMenu,""chop_shop_3""];";
 				};
@@ -3353,7 +3353,7 @@ class Mission
 					special="NONE";
 					id=196;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Palais Nippon"",life_fnc_virt_menu,""wongs""];";
 				};
@@ -3364,7 +3364,7 @@ class Mission
 					special="NONE";
 					id=197;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Palais Nippon"",life_fnc_virt_menu,""wongs""];";
 				};
@@ -3444,7 +3444,7 @@ class Mission
 					special="NONE";
 					id=204;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Oil Trader"",life_fnc_virt_menu,""oil""];";
 				};
@@ -3455,7 +3455,7 @@ class Mission
 					special="NONE";
 					id=205;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Iron"",life_fnc_processAction,""iron"",0,false,false,"""",' life_inv_ironore > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_iron""] call life_fnc_varToStr,[([""iron""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""iron"",0,false,false,"""",' !l_c_iron && playerSide == civilian '];";
 				};
@@ -3466,7 +3466,7 @@ class Mission
 					special="NONE";
 					id=206;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Copper"",life_fnc_processAction,""copper"",0,false,false,"""",' life_inv_copperore > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_copper""] call life_fnc_varToStr,[([""copper""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""copper"",0,false,false,"""",' !l_c_copper && playerSide == civilian '];";
 				};
@@ -3477,7 +3477,7 @@ class Mission
 					special="NONE";
 					id=207;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Iron / Copper Trader"",life_fnc_virt_menu,""iron""];";
 				};
@@ -3488,7 +3488,7 @@ class Mission
 					special="NONE";
 					id=208;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Glass Trader"",life_fnc_virt_menu,""glass""];";
 				};
@@ -3499,7 +3499,7 @@ class Mission
 					special="NONE";
 					id=209;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Oil"",life_fnc_processAction,""oil"",0,false,false,"""",' life_inv_oilu > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_oil""] call life_fnc_varToStr,[([""oil""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""oil"",0,false,false,"""",' !l_c_oil && playerSide == civilian '];";
 				};
@@ -3510,7 +3510,7 @@ class Mission
 					special="NONE";
 					id=210;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Sand"",life_fnc_processAction,""sand"",0,false,false,"""",' life_inv_sand > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_sand""] call life_fnc_varToStr,[([""sand""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""sand"",0,false,false,"""",' !l_c_sand && playerSide == civilian '];";
 				};
@@ -3521,7 +3521,7 @@ class Mission
 					special="NONE";
 					id=211;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this enableSimulation false; this allowDamage false; this addAction[""Process Salt"",life_fnc_processAction,""salt"",0,false,false,"""",' life_inv_salt > 0 && !life_is_processing']; this addAction[format[""%1 ($%2)"",[""l_c_salt""] call life_fnc_varToStr,[([""salt""] call life_fnc_licensePrice)] call life_fnc_numberText],life_fnc_buyLicense,""salt"",0,false,false,"""",' !l_c_salt && playerSide == civilian '];";
 				};
@@ -3532,7 +3532,7 @@ class Mission
 					special="NONE";
 					id=212;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Salt Trader"",life_fnc_virt_menu,""salt""];";
 				};
@@ -3614,7 +3614,7 @@ class Mission
 					special="NONE";
 					id=219;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Superette"",life_fnc_virt_menu,""market""]; this addAction[""Magasin Dépanneurs"",life_fnc_virt_menu,""dep""];";
 				};
@@ -3658,7 +3658,7 @@ class Mission
 					special="NONE";
 					id=223;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Clothing Store"",life_fnc_clothingMenu,""bruce""];";
 				};
@@ -3839,7 +3839,7 @@ class Mission
 					special="NONE";
 					id=238;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					text="station_6_3_1";
 					init="this enableSimulation false; this allowDamage false; this addAction[""Quincaillerie"",life_fnc_weaponShopMenu,""genstore""]; this addAction[""Superette"",life_fnc_virt_menu,""station_ser_virt""]; removeUniform this; this addUniform ""U_Competitor"";";
@@ -3934,7 +3934,7 @@ class Mission
 					special="NONE";
 					id=246;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					skill=0.60000002;
 					init="this allowDamage false; this enableSimulation false; this addAction[""Iron / Copper Trader"",life_fnc_virt_menu,""iron""];";
 				};
@@ -4021,7 +4021,7 @@ class Mission
 					special="NONE";
 					id=249;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4043,7 +4043,7 @@ class Mission
 					special="NONE";
 					id=250;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4065,7 +4065,7 @@ class Mission
 					special="NONE";
 					id=251;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4087,7 +4087,7 @@ class Mission
 					special="NONE";
 					id=252;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4109,7 +4109,7 @@ class Mission
 					special="NONE";
 					id=253;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4131,7 +4131,7 @@ class Mission
 					special="NONE";
 					id=254;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4153,7 +4153,7 @@ class Mission
 					special="NONE";
 					id=255;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4175,7 +4175,7 @@ class Mission
 					special="NONE";
 					id=256;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4197,7 +4197,7 @@ class Mission
 					special="NONE";
 					id=257;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4219,7 +4219,7 @@ class Mission
 					special="NONE";
 					id=258;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4241,7 +4241,7 @@ class Mission
 					special="NONE";
 					id=259;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4263,7 +4263,7 @@ class Mission
 					special="NONE";
 					id=260;
 					side="CIV";
-					vehicle="C_man_1_RP_3_F";
+					vehicle="C_man_1_3_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4285,7 +4285,7 @@ class Mission
 					special="NONE";
 					id=261;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4307,7 +4307,7 @@ class Mission
 					special="NONE";
 					id=262;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4329,7 +4329,7 @@ class Mission
 					special="NONE";
 					id=263;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4351,7 +4351,7 @@ class Mission
 					special="NONE";
 					id=264;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4373,7 +4373,7 @@ class Mission
 					special="NONE";
 					id=265;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4395,7 +4395,7 @@ class Mission
 					special="NONE";
 					id=266;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4417,7 +4417,7 @@ class Mission
 					special="NONE";
 					id=267;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4439,7 +4439,7 @@ class Mission
 					special="NONE";
 					id=268;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4461,7 +4461,7 @@ class Mission
 					special="NONE";
 					id=269;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4483,7 +4483,7 @@ class Mission
 					special="NONE";
 					id=270;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4505,7 +4505,7 @@ class Mission
 					special="NONE";
 					id=271;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4527,7 +4527,7 @@ class Mission
 					special="NONE";
 					id=272;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4549,7 +4549,7 @@ class Mission
 					special="NONE";
 					id=273;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4571,7 +4571,7 @@ class Mission
 					special="NONE";
 					id=274;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4593,7 +4593,7 @@ class Mission
 					special="NONE";
 					id=275;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4615,7 +4615,7 @@ class Mission
 					special="NONE";
 					id=276;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4637,7 +4637,7 @@ class Mission
 					special="NONE";
 					id=277;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4659,7 +4659,7 @@ class Mission
 					special="NONE";
 					id=278;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4681,7 +4681,7 @@ class Mission
 					special="NONE";
 					id=279;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4703,7 +4703,7 @@ class Mission
 					special="NONE";
 					id=280;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4725,7 +4725,7 @@ class Mission
 					special="NONE";
 					id=281;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4747,7 +4747,7 @@ class Mission
 					special="NONE";
 					id=282;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4769,7 +4769,7 @@ class Mission
 					special="NONE";
 					id=283;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4791,7 +4791,7 @@ class Mission
 					special="NONE";
 					id=284;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4813,7 +4813,7 @@ class Mission
 					special="NONE";
 					id=285;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4835,7 +4835,7 @@ class Mission
 					special="NONE";
 					id=286;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4857,7 +4857,7 @@ class Mission
 					special="NONE";
 					id=287;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4879,7 +4879,7 @@ class Mission
 					special="NONE";
 					id=288;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4901,7 +4901,7 @@ class Mission
 					special="NONE";
 					id=289;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4923,7 +4923,7 @@ class Mission
 					special="NONE";
 					id=290;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4945,7 +4945,7 @@ class Mission
 					special="NONE";
 					id=291;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4967,7 +4967,7 @@ class Mission
 					special="NONE";
 					id=292;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -4989,7 +4989,7 @@ class Mission
 					special="NONE";
 					id=293;
 					side="CIV";
-					vehicle="C_man_1_RP";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
