@@ -69,4 +69,4 @@ if(life_firstSpawn) then {
 };
 spawnmenuon = 0;
 [] call SOCK_fnc_updateRequest;
-[] call life_fnc_hudSetup;
+// [] call life_fnc_hudSetup;
