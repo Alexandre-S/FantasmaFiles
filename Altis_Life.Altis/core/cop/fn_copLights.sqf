@@ -1,3 +1,4 @@
+if(isServer OR !hasInterface) exitwith {}; //NO SERVER DO NOT EXECUTE IT!
 /*
 	File: fn_copLights.sqf
 	Author: mindstorm, modified by Adanteh
@@ -96,24 +97,24 @@ _lightleft setLightDayLight true;
 _lightright setLightDayLight true;
 
 _leftRed = true;  
-while{ (alive _vehicle)} do  
-{  
-	if(!(_vehicle getVariable "lights")) exitWith {};
-	if(_leftRed) then  
-	{  
+while{(alive _vehicle)} do  
+{
+	if(!(_vehicle getVariable ["lights",false])) exitWith {};
+	if(_leftRed) then
+	{
 		_leftRed = false;  
 		_lightright setLightBrightness 0.0;  
 		sleep 0.05;
 		_lightleft setLightBrightness 6;  
-	}  
-		else  
-	{  
+	}
+	else  
+	{
 		_leftRed = true;  
 		_lightleft setLightBrightness 0.0;  
 		sleep 0.05;
 		_lightright setLightBrightness 6;  
-	};  
+	};
 	sleep (_this select 1);  
-};  
+};
 deleteVehicle _lightleft;
 deleteVehicle _lightright;

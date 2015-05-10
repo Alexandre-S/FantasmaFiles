@@ -42,7 +42,7 @@ switch(_type) do
 	//to admins
 	case 2:
 	{	
-		[[_msg,_player,2],"life_fnc_clientMessage",true,false] spawn life_fnc_MP;
+		[[_msg,_player,2],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
 	};
 	//ems request
 	case 3:
@@ -60,7 +60,7 @@ switch(_type) do
 	//adminMsgAll
 	case 5:
 	{
-		[[_msg,_player,4],"life_fnc_clientMessage",true,false] spawn life_fnc_MP;
+		[[_msg,_player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
 	};
 	//MSGDEP
 	case 6:
