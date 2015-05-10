@@ -8,6 +8,19 @@ serverhc = false;
 server_debug = true;
 
 
+[] spawn {
+	while{true} do
+	 {
+		diag_log format["====================diag_activeSQFScripts %1",count diag_activeSQFScripts];
+		{diag_log str _x} forEach diag_activeSQFScripts;
+		diag_log format["====================diag_activeSQSScripts %1",count diag_activeSQSScripts];
+		{diag_log str _x} forEach diag_activeSQSScripts;
+		diag_log format["====================diag_activeMissionFSMs %1",count diag_activeMissionFSMs];
+		{diag_log str _x} forEach diag_activeMissionFSMs;
+		sleep 60;
+	};
+};
+
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
 
 if(!isHLC) then {
