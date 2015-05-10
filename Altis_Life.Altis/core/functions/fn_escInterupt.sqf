@@ -51,7 +51,7 @@ _canUseControls = {
 	
 while {true} do
 {
-	waitUntil{!isNull (findDisplay 49)};
+	waitUntil{sleep 0.03;!isNull (findDisplay 49)};
 	_abortButton = (findDisplay 49) displayCtrl 104;
 	[] call life_fnc_getHLC;
 	//_abortButton buttonSetAction "[[player],""TON_fnc_cleanupRequest"",serverhc,false] spawn life_fnc_MP";
@@ -68,5 +68,5 @@ while {true} do
 	if(_usebleCtrl) then {
 		_respawnButton ctrlEnable true; //Enable the button.
 	};
-	waitUntil{isNull (findDisplay 49)};
+	waitUntil{sleep 0.03;isNull (findDisplay 49)};
 };
