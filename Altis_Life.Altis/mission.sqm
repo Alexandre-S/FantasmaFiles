@@ -230,7 +230,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=127;
+		items=126;
 		class Item0
 		{
 			side="WEST";
@@ -5154,53 +5154,6 @@ class Mission
 			};
 		};
 		class Item125
-		{
-			side="LOGIC";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={8326.1162,83.689415,25089.033};
-					class args
-					{
-						items=4;
-						class Item0
-						{
-							value="76561198010101889";
-							parentCls="ModuleCurator_F";
-							typeName="Owner";
-						};
-						class Item1
-						{
-							value="Zeus";
-							parentCls="ModuleCurator_F";
-							typeName="Name";
-						};
-						class Item2
-						{
-							value="2";
-							parentCls="ModuleCurator_F";
-							typeName="Addons";
-						};
-						class Item3
-						{
-							value="0";
-							parentCls="ModuleCurator_F";
-							typeName="Forced";
-						};
-					};
-					id=305;
-					side="LOGIC";
-					vehicle="ModuleCurator_F";
-					leader=1;
-					lock="UNLOCKED";
-					skill=0.60000002;
-					text="zeus_1";
-				};
-			};
-		};
-		class Item126
 		{
 			side="LOGIC";
 			class Vehicles
