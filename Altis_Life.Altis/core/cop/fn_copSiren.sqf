@@ -1,3 +1,4 @@
+if(isServer OR !hasInterface) exitwith {}; //NO SERVER DO NOT EXECUTE IT!
 /*
 	File: fn_copSiren.sqf
 	Author: Bryan "Tonic" Boardwine
