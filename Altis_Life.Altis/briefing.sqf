@@ -1,4 +1,5 @@
-﻿waitUntil {sleep 0.1; !isNull player && player == player};
+﻿if(isServer OR !hasInterface) exitwith {}; //NO SERVER DO NOT EXECUTE IT!
+waitUntil {sleep 0.1; !isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
 
 player createDiarySubject ["sealteamsloth","Altisrp.fr"];
