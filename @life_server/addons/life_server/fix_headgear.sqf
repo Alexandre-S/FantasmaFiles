@@ -15,6 +15,8 @@
 	Returns:
 	Nothing
 */
+if !(_this getVariable ["BIS_enableRandomization",true]) exitWith {}; // If the parameter is not true, the script won't run. This enables a possibility to disable randomization for mission characters.
+
 private["_headgear","_headCount","_clothes","_uniform"];
 _headgear = ["H_Cap_tan", "H_Cap_blk", "H_Cap_blk_CMMG", "H_Cap_brn_SPECOPS",  "H_Cap_tan_specops_US", "H_Cap_khaki_specops_UK", "H_Cap_red", "H_Cap_grn", 
 			 "H_Cap_blu", "H_Cap_grn_BI", "H_Cap_blk_Raven", "H_Cap_blk_ION", "H_Bandanna_khk", "H_Bandanna_sgg", "H_Bandanna_cbr", "H_Bandanna_gry", "H_Bandanna_camo", "H_Bandanna_mcamo", 
