@@ -14,9 +14,9 @@ disableSerialization;
 
 waitUntil {!isnull (findDisplay 9000)};
 
-if ( life_cash < 10000 ) exitWith { [[1,"Vous devez payer 10000€ pour envoyer un message"],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP; }; // Hint if person haves no 6000 dollar
+if ( life_cash < 10000 ) exitWith { [[1,"Vous devez payer 10000€ pour envoyer un message"],"life_fnc_broadcast",player,false] spawn life_fnc_MP; }; // Hint if person haves no 6000 dollar
 //if ( playerSide != civilian ) exitWith { systemChat "Du musst Zivilist sein um einen Nachricht zu senden!"; }; // Hint if not civilian
-if !(life_channel_send) exitWith { [[1,"Vous devez attendre 10 minutes pour renvoyer un message"],"life_fnc_broadcast",_ownerID,false] spawn life_fnc_MP; }; //Gives Player the Hint to Wait 10 mins
+if !(life_channel_send) exitWith { [[1,"Vous devez attendre 10 minutes pour renvoyer un message"],"life_fnc_broadcast",player,false] spawn life_fnc_MP; }; //Gives Player the Hint to Wait 10 mins
 life_cash = life_cash - 10000;
 [0] call SOCK_fnc_updatePartial;
 
