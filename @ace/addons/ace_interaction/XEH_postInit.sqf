@@ -74,4 +74,121 @@ private ["_team"];
 },
 [29, [false, false, false]], false] call cba_fnc_addKeybind;
 
+["ACE3 Common", QGVAR(Ymenu), "Menu Y",
+{
+    // Conditions: canInteract
+	if !([ACE_player, objNull, ["isNotSwimming"]] call EFUNC(common,canInteractWith)) exitWith {false};
+    //if !([ACE_player, objNull, ["isNotDragging"]] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
+	// Conditions: specific
+	// if!((!player getVariable [QGVAR(isEscorting), false]) && {!(player getVariable [QGVAR(isHandcuffed), false])} && {!(player getVariable [QGVAR(isSurrendering), false])} && {!(player getVariable ["ACE_isUnconscious", false])}) exitWith {false};
+	
+    // Statement
+    [] call life_fnc_p_openMenu;
+    true
+},
+{false},
+[21, [false, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(CopSiren), "Sirène véhicule",
+{
+    // Conditions: canInteract
+    if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
+	// Conditions: specific
+	if!((playerSide in [west,independent]) && {vehicle player != player} && {!life_siren_active} && {(driver vehicle player) == player}) exitWith {false};
+	
+    // Statement
+    [] call life_fnc_sirenstart;
+    true
+},
+{false},
+[33, [true, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(CopRadar), "Radar Gendarmerie",
+{
+    // Conditions: canInteract
+    if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
+	// Conditions: specific
+	// if!((playerSide in [west,independent]) && {vehicle player != player} && {!life_siren_active} && {(driver vehicle player) == player}) exitWith {false};
+	
+    // Statement
+    [] call life_fnc_radar;
+    true
+},
+{false},
+[38, [false, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(Carlock), "Vérouiller/Déverouiller véhicule",
+{
+    // Conditions: canInteract
+	if !([ACE_player, objNull, ["isNotSwimming"]] call EFUNC(common,canInteractWith)) exitWith {false};
+	// Conditions: specific
+	// if!((!player getVariable [QGVAR(isEscorting), false]) && {!(player getVariable [QGVAR(isHandcuffed), false])} && {!(player getVariable [QGVAR(isSurrendering), false])} && {!(player getVariable ["ACE_isUnconscious", false])}) exitWith {false};
+	
+    // Statement
+    [] call life_fnc_lockVehicleCheck;
+    true
+},
+{false},
+[22, [false, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(OpenInventory), "Inventaire véhicule",
+{
+    // Conditions: canInteract
+	if !([ACE_player, objNull, ["isNotSwimming"]] call EFUNC(common,canInteractWith)) exitWith {false};
+	// Conditions: specific
+	// if!((!player getVariable [QGVAR(isEscorting), false]) && {!(player getVariable [QGVAR(isHandcuffed), false])} && {!(player getVariable [QGVAR(isSurrendering), false])} && {!(player getVariable ["ACE_isUnconscious", false])}) exitWith {false};
+	
+    // Statement
+    [] call life_fnc_openInventoryCheck;
+    true
+},
+{false},
+[20, [false, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(Fight), "Combat - Main/Arme",
+{
+    // Conditions: canInteract
+	if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};
+	// Conditions: specific
+	if!(isNil 'MOCAP_disabled_fighting' && {vehicle player == player}) exitWith {false};
+	
+    // Statement
+    'hand' call MOCAP_RscDisplayMission_fnc_EH_keyDown;
+    true
+},
+{false},
+[46, [false, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(FightLegs), "Combat - Pied",
+{
+    // Conditions: canInteract
+	if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};
+	// Conditions: specific
+	if!(isNil 'MOCAP_disabled_fighting' && {vehicle player == player}) exitWith {false};
+	
+    // Statement
+    'leg' call MOCAP_RscDisplayMission_fnc_EH_keyDown;
+    true
+},
+{false},
+[46, [true, false, false]], false] call cba_fnc_addKeybind;
+
+["ACE3 Common", QGVAR(FightKill), "Combat - Etrangler",
+{
+    // Conditions: canInteract
+	if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};
+	// Conditions: specific
+	if!(isNil 'MOCAP_disabled_fighting' && {vehicle player == player}) exitWith {false};
+	
+    // Statement
+    'grab' call MOCAP_RscDisplayMission_fnc_EH_keyDown;
+    true
+},
+{false},
+[46, [false, true, false]], false] call cba_fnc_addKeybind;
+
+
+["isNotDead", {alive _player && isNil (_player getVariable 'Revive')}] call EFUNC(common,addCanInteractWithCondition);
+["isNotIncapacitated", {(animationState player) != 'Incapacitated' && !(player getVariable ['MOCAP_lockControls', false]) && !(player getVariable ['MOCAP_animationInProgress', false])}] call EFUNC(common,addCanInteractWithCondition);
+
 ["isNotSwimming", {!underwater (_this select 0)}] call EFUNC(common,addCanInteractWithCondition);
