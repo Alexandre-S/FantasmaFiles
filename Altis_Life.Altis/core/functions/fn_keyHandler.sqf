@@ -21,7 +21,7 @@ _mapKey = actionKeys "ShowMap" select 0;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Vault handling...
-if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["AGM_isCaptive",false])}) exitWith {
+if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["isHandcuffed",false])}) exitWith {
 	true;
 };
 
@@ -51,7 +51,7 @@ if(count (actionKeys "User10") != 0 && {(inputAction "User10" > 0)}) exitWith {
 };
 
 if ((_code==47)||(_code==19)||(_code==20)||(_code==34)) then{
-	_handled = ((playerSide != west) && ((player getVariable ["AGM_isCaptive",false]) OR (player getVariable ["AGM_isEscorting",false])));
+	_handled = ((playerSide != west) && ((player getVariable ["isHandcuffed",false]) OR (player getVariable ["isEscorting",false])));
 };
 
 if(_code in(actionKeys "PersonView"))then{
@@ -181,7 +181,7 @@ switch (_code) do
 		if(_shift) then {_handled = true;};
 		if(_shift && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1 && (animationState player) != "Incapacitated") then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["AGM_isCaptive",false]) && !life_istazed && !(cursorTarget getVariable ["AGM_isCaptive",false])) then
+			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["isHandcuffed",false]) && !life_istazed && !(cursorTarget getVariable ["isHandcuffed",false])) then
 			{
 				[cursorTarget] spawn life_fnc_knockoutAction;
 				if("ItemWatch" in assignedItems cursorTarget OR "AGM_Altimeter" in assignedItems cursorTarget) then {

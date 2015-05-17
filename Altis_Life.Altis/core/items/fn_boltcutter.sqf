@@ -90,7 +90,7 @@ while {true} do
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
-if((player getVariable["AGM_isCaptive",false])) exitWith {life_action_inUse = false;};
+if((player getVariable["isHandcuffed",false])) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 

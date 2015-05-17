@@ -29,9 +29,9 @@ player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 
-player setVariable["AGM_isCaptive",false,true];
-player setVariable["AGM_isEscorting",false,true];
-player setVariable["AGM_isSurrender", false, true];
+player setVariable["isHandcuffed",false,true];
+player setVariable["isEscorting",false,true];
+player setVariable["isSurrendering", false, true];
 
 //player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
 //player setVariable ["tf_sendingDistanceMultiplicator", 0.5];

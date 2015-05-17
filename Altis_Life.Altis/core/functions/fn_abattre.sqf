@@ -57,14 +57,14 @@ while {true} do
 	if(_cP >= 1 OR !alive player) exitWith {};
 	if(life_istazed) exitWith {}; //Tazed
 	if(life_interrupted) exitWith {};
-	if((player getVariable["AGM_isCaptive",false])) exitWith {};
+	if((player getVariable["isHandcuffed",false])) exitWith {};
 	if(player distance _unit > 4) exitWith {_badDistance = true;};
 };
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
-if((player getVariable["AGM_isCaptive",false])) exitWith {life_action_inUse = false;};
+if((player getVariable["isHandcuffed",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "Vous êtes trop loin de la cible","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 life_action_inUse = false;

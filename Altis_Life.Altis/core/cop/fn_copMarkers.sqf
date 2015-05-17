@@ -11,7 +11,7 @@ _cops = [];
 
 sleep 0.25;
 if(visibleMap) then {
-	{if(side _x == west && !(_x getVariable ["AGM_isCaptive", false])) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+	{if(side _x == west && !(_x getVariable ["isHandcuffed", false])) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 
 	//Create markers
 	{

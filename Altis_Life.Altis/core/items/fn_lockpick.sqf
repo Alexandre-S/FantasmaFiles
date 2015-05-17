@@ -17,7 +17,7 @@ if(_isVehicle && _curTarget in life_vehicles) exitWith {hint localize "STR_ISTR_
 
 //More error checks
 if(!_isVehicle && !isPlayer _curTarget) exitWith {};
-if(!_isVehicle && !(_curTarget getVariable["AGM_isCaptive",false])) exitWith {};
+if(!_isVehicle && !(_curTarget getVariable["isHandcuffed",false])) exitWith {};
 
 _title = format[localize "STR_ISTR_Lock_Process",if(!_isVehicle) then {"Handcuffs"} else {getText(configFile >> "CfgVehicles" >> (typeOf _curTarget) >> "displayName")}];
 life_action_inUse = true; //Lock out other actions
@@ -69,7 +69,7 @@ while {true} do
 	if(_cP >= 1 OR !alive player) exitWith {};
 	if(life_istazed) exitWith {}; //Tazed
 	if(life_interrupted) exitWith {};
-	if((player getVariable["AGM_isCaptive",false])) exitWith {};
+	if((player getVariable["isHandcuffed",false])) exitWith {};
 	if(player distance _curTarget > _distance) exitWith {_badDistance = true;};
 };
 
@@ -77,7 +77,7 @@ while {true} do
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
-if((player getVariable["AGM_isCaptive",false])) exitWith {life_action_inUse = false;};
+if((player getVariable["isHandcuffed",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};

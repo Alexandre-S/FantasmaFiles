@@ -45,7 +45,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		if(animationState player == "AinjPfalMstpSnonWnonDf_carried_fallwc") then {
 			[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		};
-		if(!(player getVariable["AGM_isEscorting",false])) then {
+		if(!(player getVariable["isEscorting",false])) then {
 			detach player;
 		};
 		life_istazed = false;
