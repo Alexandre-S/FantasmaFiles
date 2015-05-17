@@ -12,9 +12,9 @@ if(isNull _unit) exitWith {}; //Dafuq?
 if(_unit != player) exitWith {}; //Dafuq?
 if(life_is_arrested) exitWith {}; //Dafuq i'm already arrested
 _bad = [_this,1,false,[false]] call BIS_fnc_param;
-[player, false] call AGM_Captives_fnc_setCaptive;
-player setVariable["isHandcuffed",false,true];
-player setVariable["isEscorting",false,true];
+["SetHandcuffed", [player], [player, false]] call ACE_common_fnc_targetEvent;
+player setVariable["ACE_captives_isHandcuffed",false,true];
+player setVariable["ACE_captives_isEscorting",false,true];
 
 titleText[localize "STR_Jail_Warn","PLAIN"];
 hint localize "STR_Jail_LicenseNOTF";

@@ -20,7 +20,7 @@ else
     cutText ["Godmode désativé.", "PLAIN"];
 	// player allowDamage true;
 	// player removeAllEventHandlers "handleDamage";
-	// player addEventHandler["handleDamage",{_this call AGM_Medical_fnc_handleDamage}];
+	// player addEventHandler["handleDamage",{_this call ACE_Medical_fnc_handleDamage}];
 	// player addEventHandler ["handleDamage", {true}];
 	player setVariable["gm_cheat", false, true];
 };

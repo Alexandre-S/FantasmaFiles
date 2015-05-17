@@ -28,17 +28,17 @@ _cP = 0.01;
 // play appropriate anim
 private "_fnc_playAnim";
 _fnc_playAnim = {
-	if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
+	if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "ACE_isLadder") == 1) then {
 		_this action ["LadderOff", nearestObject [position _this, "House"]];
 	};
 	waitUntil {isTouchingGround _this OR underwater _this};
-	waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
+	waitUntil {!([_this] call ACE_Common_fnc_inTransitionAnim) or !(alive _this)};
 	if !(alive _this) exitWith {};
-	[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
+	[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call ACE_Common_fnc_doAnimation;
 	sleep 0.15;
 	if(player != vehicle player) exitWith {};
 	if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
+		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call ACE_Common_fnc_doAnimation;
 	};
 };
 

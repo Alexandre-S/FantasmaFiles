@@ -80,12 +80,12 @@ youri_sound_foot = 100;
 youri_sound_car = 100;
 youri_sound_air = 80;
 youri_sound_boat = 100;
-AGM_Hearing_disableVolumeUpdate = true;
+ACE_Hearing_disableVolumeUpdate = true;
 allside = [civilian,independent,west];
 
 life_truckreverse_active = false;
 life_truck_types = ["B_Truck_01_mover_F_RP","B_Truck_01_box_F","B_Truck_01_ammo_F","B_Truck_01_fuel_F","B_Truck_01_medical_F","B_Truck_01_Repair_F","O_Truck_02_covered_F","O_Truck_02_transport_F","O_Truck_02_box_F_RP","O_Truck_02_fuel_F","O_Truck_02_Ammo_F","O_Truck_02_medical_F","I_Truck_02_ammo_F","I_Truck_02_fuel_F","I_Truck_02_medical_F_RP","I_Truck_02_box_F","C_Van_01_transport_F","C_Van_01_box_F","C_Van_01_fuel_F","I_G_Van_01_fuel_F","I_G_Van_01_transport_F","I_G_Truck_02_Repair","I_G_Truck_02_Fuel","I_Truck_02_transport_F","I_Truck_02_covered_F","B_Truck_01_transport_F","B_Truck_01_covered_F","O_Truck_03_transport_F_RP","O_Truck_03_covered_F_RP","O_Truck_03_device_F_RP","RDS_Ikarus_Civ_01","rhs_gaz66o_vdv","rhs_gaz66_vdv","RHS_Ural_Open_Civ_01","RHS_Ural_Civ_01"];
-life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","AGM_HandFlare_White","AGM_HandFlare_Red","AGM_HandFlare_Green","AGM_HandFlare_Yellow"];
+life_chemlist = ["Chemlight_red","Chemlight_yellow","Chemlight_green","Chemlight_blue","SmokeShell","SmokeShellRed","SmokeShellGreen","SmokeShellYellow","SmokeShellPurple","SmokeShellBlue","SmokeShellOrange","ACE_HandFlare_White","ACE_HandFlare_Red","ACE_HandFlare_Green","ACE_HandFlare_Yellow"];
 life_women = ["Oakes","Tyler","Tyler_scars","Mason","Mason_camo","Mason_Rigged","Mason_scars","Smith","Cheung","Quereshi"];
 life_civ_weapon = ["Binocular","Trixie_CZ550_Rail","Trixie_Enfield","rhs_weap_M590_8RD","rhs_weap_M590_5RD","R3F_M4S90","hgun_ACPC2_F","hgun_Rook40_F","SMG_02_F","SMG_01_F","hgun_PDW2000_F"];
 //Persistent Saving
@@ -138,7 +138,7 @@ __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
 life_istazed = false;
-player setvariable["AGM_istazed",false,true];
+player setvariable["ACE_istazed",false,true];
 life_my_gang = ObjNull;
 
 life_vehicles = [];
@@ -409,20 +409,20 @@ life_weapon_shop_array =
 	["6Rnd_45ACP_Cylinder",350*0.5],
 	["9Rnd_45ACP_Mag",350*0.5],
 	["acc_flashlight",1000*0.5],
-	["AGM_Altimeter",100*0.5],
-	["AGM_CableTie",100*0.5],
-	["AGM_EarBuds",25*0.5],
-	["AGM_HandFlare_Green",1000*0.5],
-	["AGM_HandFlare_Red",1000*0.5],
-	["AGM_HandFlare_White",1000*0.5],
-	["AGM_HandFlare_Yellow",1000*0.5],
-	["AGM_IR_Strobe_Item",0*0.5],
-	["AGM_ItemKestrel",500*0.5],
-	["AGM_MapTools",500*0.5],
-	["AGM_NVG_Gen1",2000*0.5],
-	["AGM_NVG_Gen2",1200*0.5],
-	["AGM_SpareBarrel",1000*0.5],
-	["AGM_Vector",15000*0.5],
+	["ACE_Altimeter",100*0.5],
+	["ACE_CableTie",100*0.5],
+	["ACE_EarPlugs",25*0.5],
+	["ACE_HandFlare_Green",1000*0.5],
+	["ACE_HandFlare_Red",1000*0.5],
+	["ACE_HandFlare_White",1000*0.5],
+	["ACE_HandFlare_Yellow",1000*0.5],
+	["ACE_IR_Strobe_Item",0*0.5],
+	["ACE_Kestrel4500",500*0.5],
+	["ACE_MapTools",500*0.5],
+	["ACE_NVG_Gen1",2000*0.5],
+	["ACE_NVG_Gen2",1200*0.5],
+	["ACE_SpareBarrel",1000*0.5],
+	["ACE_Vector",15000*0.5],
 	["APERSMine_Range_Mag",70000*0.5],
 	["APERSTripMine_Wire_Mag",70000*0.5],
 	["Binocular",150*0.5],

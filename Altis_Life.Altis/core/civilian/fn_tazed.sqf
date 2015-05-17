@@ -8,14 +8,14 @@
 private["_unit","_shooter","_curWep","_curMags","_attach"];
 _unit = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _shooter = [_this,1,Objnull,[Objnull]] call BIS_fnc_param;
-// if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_istazed = false; _unit setvariable["AGM_istazed",false,true]; };
+// if(isNull _unit OR isNull _shooter) exitWith {player allowDamage true; life_istazed = false; _unit setvariable["ACE_istazed",false,true]; };
 if(isNull _unit OR isNull _shooter) exitWith {};
 
 if(_shooter isKindOf "Man" && alive player) then
 {
 	if(!life_istazed) then
 	{
-		_unit setvariable["AGM_istazed",true,true];
+		_unit setvariable["ACE_istazed",true,true];
 		life_istazed = true;
 		/*_curWep = currentWeapon player;
 		_curMags = magazines player;
@@ -45,11 +45,11 @@ if(_shooter isKindOf "Man" && alive player) then
 		if(animationState player == "AinjPfalMstpSnonWnonDf_carried_fallwc") then {
 			[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		};
-		if(!(player getVariable["isEscorting",false])) then {
+		if(!(player getVariable["ACE_captives_isEscorting",false])) then {
 			detach player;
 		};
 		life_istazed = false;
-		_unit setvariable["AGM_istazed",false,true];
+		_unit setvariable["ACE_istazed",false,true];
 		// player allowDamage true;
 		deleteVehicle _obj;
 		disableUserInput false;
@@ -58,6 +58,6 @@ if(_shooter isKindOf "Man" && alive player) then
 else
 {
 	// _unit allowDamage true;
-	_unit setvariable["AGM_istazed",false,true];
+	_unit setvariable["ACE_istazed",false,true];
 	life_istazed = false;
 };

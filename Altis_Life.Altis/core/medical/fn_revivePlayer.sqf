@@ -34,17 +34,17 @@ _cP = 0.01;
 // play appropriate anim
 private "_fnc_playAnim";
 _fnc_playAnim = {
-	if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "AGM_isLadder") == 1) then {
+	if (getNumber (configFile >> "CfgMovesMaleSdr" >> "States" >> animationState _this >> "ACE_isLadder") == 1) then {
 		_this action ["LadderOff", nearestObject [position _this, "House"]];
 	};
 	waitUntil {isTouchingGround _this OR underwater _this};
-	waitUntil {!([_this] call AGM_Core_fnc_inTransitionAnim) or !(alive _this)};
+	waitUntil {!([_this] call ACE_Common_fnc_inTransitionAnim) or !(alive _this)};
 	if !(alive _this) exitWith {};
-	[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call AGM_Core_fnc_doAnimation;
+	[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 1, True] call ACE_Common_fnc_doAnimation;
 	sleep 0.15;
 	if(player != vehicle player) exitWith {};
 	if (animationState _this != "AinvPknlMstpSnonWnonDnon_medic_1") then {
-		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call AGM_Core_fnc_doAnimation;
+		[_this, "AinvPknlMstpSnonWnonDnon_medic_1", 2, True] call ACE_Common_fnc_doAnimation;
 	};
 };
 
@@ -63,7 +63,7 @@ while {true} do
 	if(_cP >= 1 OR !alive player) exitWith {};
 	if(life_istazed) exitWith {}; //Tazed
 	if(life_interrupted) exitWith {};
-	if((player getVariable["isHandcuffed",false])) exitWith {};
+	if((player getVariable["ACE_captives_isHandcuffed",false])) exitWith {};
 	if(player distance _target > 4) exitWith {_badDistance = true;};
 	if(_target getVariable["Revive",FALSE]) exitWith {};
 	if(_target getVariable["Reviving",ObjNull] != player) exitWith {};
@@ -76,7 +76,7 @@ if(_target getVariable ["Reviving",ObjNull] != player) exitWith {hint localize "
 _target setVariable["Reviving",NIL,TRUE];
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if(_target getVariable["Revive",FALSE]) exitWith {hint localize "STR_Medic_RevivedRespawned"};
-if((player getVariable["isHandcuffed",false])) exitWith {life_action_inUse = false;};
+if((player getVariable["ACE_captives_isHandcuffed",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_Medic_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 

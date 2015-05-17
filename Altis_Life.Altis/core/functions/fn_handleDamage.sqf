@@ -30,7 +30,7 @@ if(!isNull _source) then {
 				
 				_damage = 0;
 				if(_unit distance _source < _distance) then {
-					if(!life_istazed && !(_unit getVariable["isHandcuffed",false])) then {
+					if(!life_istazed && !(_unit getVariable["ACE_captives_isHandcuffed",false])) then {
 						if(_isVehicle && _isQuad) then {
 							player action ["Eject",vehicle player];
 							[_unit,_source] spawn life_fnc_tazed;
@@ -56,7 +56,7 @@ if(!isNull _source) then {
 				_isVehicle = if(vehicle player != player) then {true} else {false};
 				_isQuad = if(_isVehicle) then {if((typeOf (vehicle player)) in ["B_Quadbike_01_F","C_Kart_01_Vrana_F","C_Kart_01_Red_F","C_Kart_01_Blu_F","C_Kart_01_Fuel_F","C_Kart_01_F","MMT_Civ"]) then {true} else {false}} else {false};		
 				if(_unit distance _source < _distance) then {
-					if(!life_istazed && !(_unit getVariable["isHandcuffed",false])) then {
+					if(!life_istazed && !(_unit getVariable["ACE_captives_isHandcuffed",false])) then {
 						if(_isVehicle && _isQuad) then {
 							player action ["Eject",vehicle player];
 							[_unit,_source] spawn life_fnc_tazed;

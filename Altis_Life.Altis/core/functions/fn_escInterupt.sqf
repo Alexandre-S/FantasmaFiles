@@ -46,7 +46,7 @@ _escSync = {
 
 _canUseControls = {
 	if(playerSide == west) exitWith {true};
-	if((player getVariable["isHandcuffed",FALSE]) OR (player getVariable["isEscorting",FALSE]) OR (life_is_arrested) OR (life_istazed)) then {false} else {true};
+	if((player getVariable["ACE_captives_isHandcuffed",FALSE]) OR (player getVariable["ACE_captives_isEscorting",FALSE]) OR (life_is_arrested) OR (life_istazed)) then {false} else {true};
 };
 	
 while {true} do

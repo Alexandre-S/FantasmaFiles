@@ -66,7 +66,7 @@ while {true} do
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
-if((player getVariable["isHandcuffed",false])) exitWith {life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
+if((player getVariable["ACE_captives_isHandcuffed",false])) exitWith {life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_GNOTF_CaptureCancel","PLAIN"]; life_action_inUse = false;_hideout setVariable["inCapture",false,true];};
 life_action_inUse = false;
 

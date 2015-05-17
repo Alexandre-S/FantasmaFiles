@@ -55,22 +55,22 @@ switch(_shop) do
 						["rhsusf_acc_eotech_552",nil,0],
 						
 						["Binocular",nil,0],
-						["AGM_NVG_Gen4",nil,0],
+						["ACE_NVG_Gen4",nil,0],
 						
 						["SmokeShellYellow","Gaz Lacrimo",0],
 
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
-						["AGM_EarBuds",nil,0],
-						["AGM_ItemKestrel",nil,0],
-						["AGM_MapTools",nil,0],
-						["AGM_SpareBarrel",nil,0],
-						["AGM_CableTie",nil,0],
+						["ACE_EarPlugs",nil,0],
+						["ACE_Kestrel4500",nil,0],
+						["ACE_MapTools",nil,0],
+						["ACE_SpareBarrel",nil,0],
+						["ACE_CableTie",nil,0],
 						["ItemGPS",nil,0],
 						["ItemMap",nil,0],
 						["ItemCompass",nil,0],
 						["ItemWatch","SmartWatch",0],
-						["AGM_Altimeter","SmartWatch Altimètre",0],
+						["ACE_Altimeter","SmartWatch Altimètre",0],
 						["tf_anprc152",nil,0],
 						["Chemlight_red",nil,0],
 						["Chemlight_yellow",nil,0],
@@ -82,11 +82,11 @@ switch(_shop) do
 						["SmokeShellPurple",nil,0],
 						["SmokeShellBlue",nil,0],
 						["SmokeShellOrange",nil,0],
-						["AGM_HandFlare_White",nil,0],
-						["AGM_HandFlare_Red",nil,0],
-						["AGM_HandFlare_Green",nil,0],
-						["AGM_HandFlare_Yellow",nil,0],
-						["AGM_IR_Strobe_Item",nil,0]
+						["ACE_HandFlare_White",nil,0],
+						["ACE_HandFlare_Red",nil,0],
+						["ACE_HandFlare_Green",nil,0],
+						["ACE_HandFlare_Yellow",nil,0],
+						["ACE_IR_Strobe_Item",nil,0]
 					]
 				];
 			};
@@ -116,7 +116,7 @@ switch(_shop) do
 						["rhs_weap_m4a1_blockII_grip2_KAC",nil,0],
 						["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,0],
 	
-						["AGM_M84",nil,0]
+						["ACE_M84",nil,0]
 					]
 				];
 			};
@@ -176,11 +176,11 @@ switch(_shop) do
 						["rhsusf_acc_eotech_552",nil,0],
 						
 						//equip
-						["AGM_EarBuds",nil,0],
-						["AGM_ItemKestrel",nil,0],
-						["AGM_SpareBarrel",nil,0],
-						["AGM_CableTie",nil,0],
-						["AGM_NVG_Gen1",nil,0],
+						["ACE_EarPlugs",nil,0],
+						["ACE_Kestrel4500",nil,0],
+						["ACE_SpareBarrel",nil,0],
+						["ACE_CableTie",nil,0],
+						["ACE_NVG_Gen1",nil,0],
 					
 						["B_UavTerminal",nil,0]
 					]
@@ -319,12 +319,12 @@ switch(_shop) do
 						["optic_MRCO",nil,0],
 						["optic_Hamr",nil,0],
 						
-						["AGM_Vector",nil,0],
+						["ACE_Vector",nil,0],
 						["Laserdesignator",nil,0],
 						["Laserbatteries",nil,0],
 						["B_UavTerminal",nil,0],
 						["MineDetector",nil,0],
-						["AGM_ItemKestrel",nil,0]
+						["ACE_Kestrel4500",nil,0]
 					]
 				];
 			};
@@ -374,26 +374,26 @@ switch(_shop) do
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,100],
 							["ItemWatch","SmartWatch",100],
-							["AGM_Altimeter","SmartWatch Altimètre",100],
+							["ACE_Altimeter","SmartWatch Altimètre",100],
 							["ItemMap",nil,100],
-							["AGM_MapTools",nil,500],
-							["AGM_SpareBarrel",nil,1000],
-							["AGM_CableTie",nil,100],
-							["AGM_EarBuds",nil,25],
-							["AGM_ItemKestrel",nil,500],
+							["ACE_MapTools",nil,500],
+							["ACE_SpareBarrel",nil,1000],
+							["ACE_CableTie",nil,100],
+							["ACE_EarPlugs",nil,25],
+							["ACE_Kestrel4500",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,3000],
 							["FirstAidKit",nil,1000],
 							["Medikit",nil,500],
-							["AGM_NVG_Gen2",nil,1200],
+							["ACE_NVG_Gen2",nil,1200],
 							["SmokeShellRed",nil,1000],
 							["Chemlight_blue",nil,300],
 							["Chemlight_yellow",nil,300],
-							["AGM_HandFlare_White",1000],
-							["AGM_HandFlare_Red",1000],
-							["AGM_HandFlare_Green",1000],
-							["AGM_HandFlare_Yellow",1000],
-							["AGM_IR_Strobe_Item",nil,0],
+							["ACE_HandFlare_White",1000],
+							["ACE_HandFlare_Red",1000],
+							["ACE_HandFlare_Green",1000],
+							["ACE_HandFlare_Yellow",1000],
+							["ACE_IR_Strobe_Item",nil,0],
 							["hgun_Rook40_F",nil,4900],
 							["16Rnd_9x21_Mag",nil,350],
 							["hgun_ACPC2_F",nil,5300],
@@ -493,11 +493,11 @@ switch(_shop) do
 							["R3F_EOTECH_DES",nil,3000],
 							["rhsusf_acc_eotech_552",nil,3000],
 							
-							["AGM_EarBuds",nil,25],
-							["AGM_ItemKestrel",nil,500],
-							["AGM_SpareBarrel",nil,1000],
-							["AGM_CableTie",nil,100],
-							["AGM_NVG_Gen1",nil,2000]
+							["ACE_EarPlugs",nil,25],
+							["ACE_Kestrel4500",nil,500],
+							["ACE_SpareBarrel",nil,1000],
+							["ACE_CableTie",nil,100],
+							["ACE_NVG_Gen1",nil,2000]
 						]
 					];
 				};
@@ -576,19 +576,19 @@ switch(_shop) do
 							["ToolKit",nil,3000],
 							["FirstAidKit",nil,1000],
 							["ItemWatch","SmartWatch",100],
-							["AGM_Altimeter","SmartWatch Altimètre",100],
-							["AGM_CableTie",nil,100],
-							["AGM_EarBuds",nil,25],
-							["AGM_ItemKestrel",nil,500],
+							["ACE_Altimeter","SmartWatch Altimètre",100],
+							["ACE_CableTie",nil,100],
+							["ACE_EarPlugs",nil,25],
+							["ACE_Kestrel4500",nil,500],
 							["ItemCompass",nil,100],
 
 							["ItemMap",nil,100],
-							["AGM_MapTools",nil,500],
-							["AGM_SpareBarrel",nil,1000],
+							["ACE_MapTools",nil,500],
+							["ACE_SpareBarrel",nil,1000],
 							["ItemGPS",nil,100],
 
 							["tf_anprc148jem",nil,5000],
-							["AGM_NVG_Gen1",nil,2000],
+							["ACE_NVG_Gen1",nil,2000],
 							
 							//Grenade incendiaire : molotov
 							["rhs_mag_an_m14_th3",nil,15000],
@@ -599,10 +599,10 @@ switch(_shop) do
 							["SmokeShellPurple",nil,1000],
 							["SmokeShellBlue",nil,1000],
 							["SmokeShellOrange",nil,1000],
-							["AGM_HandFlare_White",nil,1000],
-							["AGM_HandFlare_Red",nil,1000],
-							["AGM_HandFlare_Green",nil,1000],
-							["AGM_HandFlare_Yellow",nil,1000]					
+							["ACE_HandFlare_White",nil,1000],
+							["ACE_HandFlare_Red",nil,1000],
+							["ACE_HandFlare_Green",nil,1000],
+							["ACE_HandFlare_Yellow",nil,1000]					
 						]
 					];
 					if(__GETC__(life_factnumber) == 1) then
@@ -638,7 +638,7 @@ switch(_shop) do
 
 					};
 				
-					(_ret select 1) pushBack ["AGM_Vector",nil,15000];
+					(_ret select 1) pushBack ["ACE_Vector",nil,15000];
 				};
 				// Rang 3
 				if(__GETC__(life_reblevel) >= 3) then
@@ -761,11 +761,11 @@ switch(_shop) do
 						["rhsusf_acc_eotech_552",nil,3000],
 						
 						//equip
-						["AGM_EarBuds",nil,25],
-						["AGM_ItemKestrel",nil,500],
-						["AGM_SpareBarrel",nil,1000],
-						["AGM_CableTie",nil,100],
-						["AGM_NVG_Gen1",nil,2000]
+						["ACE_EarPlugs",nil,25],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_SpareBarrel",nil,1000],
+						["ACE_CableTie",nil,100],
+						["ACE_NVG_Gen1",nil,2000]
 					]
 				];
 				if(l_c_gvt) then
@@ -791,9 +791,9 @@ switch(_shop) do
 					[
 						["optic_ACO_grn",nil,2500],
 						["optic_Aco",nil,2500],
-						["AGM_EarBuds",nil,25],
-						["AGM_ItemKestrel",nil,500],
-						["AGM_SpareBarrel",nil,1000]
+						["ACE_EarPlugs",nil,25],
+						["ACE_Kestrel4500",nil,500],
+						["ACE_SpareBarrel",nil,1000]
 					]
 				];
 			};
@@ -812,17 +812,17 @@ switch(_shop) do
 				["ItemMap",nil,100],
 				["ItemCompass",nil,100],
 				["ItemWatch","SmartWatch",100],
-				["AGM_Altimeter","SmartWatch Altimètre",100],
-				["AGM_MapTools",nil,500],
+				["ACE_Altimeter","SmartWatch Altimètre",100],
+				["ACE_MapTools",nil,500],
 				["FirstAidKit",nil,1000],
 				["Chemlight_red",nil,300],
 				["Chemlight_yellow",nil,300],
 				["Chemlight_green",nil,300],
 				["Chemlight_blue",nil,300],
-				["AGM_HandFlare_White",nil,1000],
-				["AGM_HandFlare_Red",nil,1000],
-				["AGM_HandFlare_Green",nil,1000],
-				["AGM_HandFlare_Yellow",nil,1000]
+				["ACE_HandFlare_White",nil,1000],
+				["ACE_HandFlare_Red",nil,1000],
+				["ACE_HandFlare_Green",nil,1000],
+				["ACE_HandFlare_Yellow",nil,1000]
 			]
 		];
 	};

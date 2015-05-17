@@ -20,9 +20,9 @@ private["_containers"];
 //{deleteVehicle _x;} foreach _containers; //Delete the containers.
 
 //Set some vars on our new body.
-_unit setVariable["isHandcuffed",false,true];
-_unit setVariable["isEscorting",false,true];
-_unit setVariable["isSurrendering", false, true];
+_unit setVariable["ACE_captives_isHandcuffed",false,true];
+_unit setVariable["ACE_captives_isEscorting",false,true];
+_unit setVariable["ACE_captives_isSurrendering", false, true];
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Reset the UID.
 _unit setVariable["realname",profileName,true]; //Reset the players name.
 

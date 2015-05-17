@@ -134,7 +134,7 @@ if(_bool) then
 								else 
 								{
 									player addItem _item;
-									if(!(["AGM_",_item] call BIS_fnc_inString)) then {
+									if(!(["ACE_",_item] call BIS_fnc_inString)) then {
 										player assignItem _item;
 									};
 								};
