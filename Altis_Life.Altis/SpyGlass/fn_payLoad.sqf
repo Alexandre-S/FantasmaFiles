@@ -50,7 +50,7 @@ private["_children","_allowedChildren"];
 _children = [configFile >> "RscDisplayMPInterrupt" >> "controls",0] call BIS_fnc_returnChildren;
 _allowedChildren = [
 "Title","MissionTitle","DifficultyTitle","PlayersName","ButtonCancel","ButtonSAVE","ButtonSkip","ButtonRespawn","ButtonOptions",
-"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox","Version","TraffLight","CBA_CREDITS_CONT_C","CBA_CREDITS_M_P","AGM_Tile"
+"ButtonVideo","ButtonAudio","ButtonControls","ButtonGame","ButtonTutorialHints","ButtonAbort","DebugConsole","Feedback","MessageBox","Version","TraffLight","CBA_CREDITS_CONT_C","CBA_CREDITS_M_P","ACE_Open_settingsMenu_Btn"
 ];
 
 {

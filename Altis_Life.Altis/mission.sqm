@@ -71,7 +71,7 @@ class Mission
 		"A3_Characters_F_Kart",
 		"CBA_Main",
 		"task_force_radio_items",
-		"AGM_Core",
+		"ace_main",
 		"A3_Structures_F_Heli_Ind_Machines",
 		"A3_Characters_F_Beta",
 		"A3_Supplies_F_Heli_Fuel",
@@ -121,7 +121,7 @@ class Mission
 		"rds_a2port_cman",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Data_F_Curator_Characters",
-		"agm_core",
+		"ace_main",
 		"A3_Structures_F_Civ_Garbage",
 		"A3_Structures_F_Ind_ConcreteMixingPlant",
 		"A3_Structures_F_Mil_Helipads",
@@ -5168,25 +5168,25 @@ class Mission
 						class Item0
 						{
 							value="2";
-							parentCls="AGM_ModuleCheckPBOs";
+							parentCls="ACE_ModuleCheckPBOs";
 							typeName="Action";
 						};
 						class Item1
 						{
 							value="1";
-							parentCls="AGM_ModuleCheckPBOs";
+							parentCls="ACE_ModuleCheckPBOs";
 							typeName="CheckAll";
 						};
 						class Item2
 						{
 							value="[""DragonFyre_Bullethits"",""DragonFyre_Explosions"",""DragonFyre_Sonic_Cracks"",""DragonFyre_230mm_Titan"",""DragonFyre_Air_Weapons"",""DragonFyre_35mm_Autocannon"",""DragonFyre_120mm_Cannon"",""DragonFyre_Autocannon"",""DragonFyre_DAGR"",""DragonFyre_DAR"",""DragonFyre_Minigun"",""DragonFyre_30mm_Cannon"",""DragonFyre_Gau8"",""DragonFyre_155mm_AMOS"",""DragonFyre_M134"",""DragonFyre_LMGRCWS"",""DragonFyre_GMG20"",""DragonFyre_GMG40"",""DragonFyre_127"",""DragonFyre_Skalpel_ATGM"",""DragonFyre_Skyfire"",""DragonFyre_Veh_Titan"",""DragonFyre_4Five45"",""DragonFyre_ACPC"",""DragonFyre_MX"",""DragonFyre_M6"",""DragonFyre_Khaybar"",""DragonFyre_M320R"",""DragonFyre_EBR"",""DragonFyre_FS2000"",""DragonFyre_M200"",""DragonFyre_P07"",""DragonFyre_NLAW"",""DragonFyre_PDW"",""DragonFyre_Rahim"",""DragonFyre_Rook40"",""DragonFyre_RPG32"",""DragonFyre_Scorpian"",""DragonFyre_TRG20"",""DragonFyre_UGL"",""DragonFyre_SDAR"",""DragonFyre_Vector"",""DragonFyre_Zafir"",""DragonFyre_Zubr45"",""DragonFyre_Movement"",""DragonFyre_Distance"",""DragonFyre_FighterPlane3"",""DragonFyre_CAS_Plane1"",""DragonFyre_AH99_Blackfoot"",""DragonFyre_AH9_Pawnee"",""DragonFyre_UAV_1"",""DragonFyre_CH67_Huron"",""DragonFyre_CH49_Mohawk"",""DragonFyre_Mi290_Taru"",""DragonFyre_Mi48_Kajman"",""DragonFyre_UAV_2"",""DragonFyre_Po30_Orca"",""DragonFyre_CAS_Plane2"",""DragonFyre_UH80_GhostHawk"",""DragonFyre_WY55_Hellcat"",""DragonFyre_Boat_Armed_1"",""DragonFyre_2S9_Sorcher"",""DragonFyre_AFV4_Gorgon"",""DragonFyre_AMV7_Marshal"",""DragonFyre_BTRK_Kamysh"",""DragonFyre_FV720_Mora"",""DragonFyre_IFV6a_Cheetah"",""DragonFyre_IFV6c_Panther"",""DragonFyre_M2A1_Slammer"",""DragonFyre_M4_Scorcher"",""DragonFyre_M5_Sandstorm"",""DragonFyre_MBT52_Kuma"",""DragonFyre_MSE3_Marid"",""DragonFyre_T100_Varsuk"",""DragonFyre_ZSU39_Tigris"",""DragonFyre_Hatchback"",""DragonFyre_truck1"",""DragonFyre_Hunter"",""DragonFyre_Ifrit"",""DragonFyre_Offroad"",""DragonFyre_Quadbike"",""DragonFyre_Strider"",""DragonFyre_SUV"",""DragonFyre_truck2"",""DragonFyre_Van"",""DragonFyre_Truck3"",""jsrs_environment"",""dragonfyre_titan"",""jsrs2_distance"",""asm"",""life_server""]";
-							parentCls="AGM_ModuleCheckPBOs";
+							parentCls="ACE_ModuleCheckPBOs";
 							typeName="Whitelist";
 						};
 					};
 					id=306;
 					side="LOGIC";
-					vehicle="AGM_ModuleCheckPBOs";
+					vehicle="ACE_ModuleCheckPBOs";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
