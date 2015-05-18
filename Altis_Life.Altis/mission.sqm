@@ -108,7 +108,9 @@ class Mission
 		"A3_Structures_F_Ind_CarService",
 		"A3_Structures_F_Civ_Offices",
 		"A3_Structures_F_Ind_Windmill",
-		"A3_Structures_F_EPC_Dominants_GhostHotel"
+		"A3_Structures_F_EPC_Dominants_GhostHotel",
+		"ace_common",
+		"ace_advanced_ballistics"
 	};
 	addOnsAuto[]=
 	{
@@ -121,7 +123,8 @@ class Mission
 		"rds_a2port_cman",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Data_F_Curator_Characters",
-		"ace_main",
+		"ace_common",
+		"ace_advanced_ballistics",
 		"A3_Structures_F_Civ_Garbage",
 		"A3_Structures_F_Ind_ConcreteMixingPlant",
 		"A3_Structures_F_Mil_Helipads",
@@ -230,7 +233,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=126;
+		items=127;
 		class Item0
 		{
 			side="WEST";
@@ -5184,13 +5187,89 @@ class Mission
 							typeName="Whitelist";
 						};
 					};
-					id=306;
+					id=305;
 					side="LOGIC";
 					vehicle="ACE_ModuleCheckPBOs";
 					leader=1;
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="checkpbo";
+				};
+			};
+		};
+		class Item126
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8405.1758,-97.243988,25944.027};
+					class args
+					{
+						items=9;
+						class Item0
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="alwaysSimulateForSnipers";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="disabledInFullAutoMode";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="onlyActiveForLocalPlayers";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="ammoTemperatureEnabled";
+						};
+						class Item5
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="barrelLengthInfluenceEnabled";
+						};
+						class Item6
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="bulletTraceEnabled";
+						};
+						class Item7
+						{
+							value="0";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationInterval";
+						};
+						class Item8
+						{
+							value="3000";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="simulationRadius";
+						};
+					};
+					id=306;
+					side="LOGIC";
+					vehicle="ace_advanced_ballistics_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
 				};
 			};
 		};
