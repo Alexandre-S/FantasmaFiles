@@ -77,7 +77,7 @@ private ["_team"];
 ["ACE3 Common", QGVAR(Ymenu), "Menu Y",
 {
     // Conditions: canInteract
-	if !([ACE_player, objNull, ["isNotSwimming"]] call EFUNC(common,canInteractWith)) exitWith {false};
+	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};
     //if !([ACE_player, objNull, ["isNotDragging"]] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
 	// Conditions: specific
 	// if!((!player getVariable [QGVAR(isEscorting), false]) && {!(player getVariable [QGVAR(isHandcuffed), false])} && {!(player getVariable [QGVAR(isSurrendering), false])} && {!(player getVariable ["ACE_isUnconscious", false])}) exitWith {false};
@@ -92,7 +92,7 @@ private ["_team"];
 ["ACE3 Common", QGVAR(CopSiren), "Sirène véhicule",
 {
     // Conditions: canInteract
-    if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
+    if !([ACE_player, objNull, ["isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
 	// Conditions: specific
 	if!((playerSide in [west,independent]) && {vehicle player != player} && {!life_siren_active} && {(driver vehicle player) == player}) exitWith {false};
 	
@@ -120,7 +120,7 @@ private ["_team"];
 ["ACE3 Common", QGVAR(Carlock), "Vérouiller/Déverouiller véhicule",
 {
     // Conditions: canInteract
-	if !([ACE_player, objNull, ["isNotSwimming"]] call EFUNC(common,canInteractWith)) exitWith {false};
+	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};
 	// Conditions: specific
 	// if!((!player getVariable [QGVAR(isEscorting), false]) && {!(player getVariable [QGVAR(isHandcuffed), false])} && {!(player getVariable [QGVAR(isSurrendering), false])} && {!(player getVariable ["ACE_isUnconscious", false])}) exitWith {false};
 	
@@ -134,7 +134,7 @@ private ["_team"];
 ["ACE3 Common", QGVAR(OpenInventory), "Inventaire véhicule",
 {
     // Conditions: canInteract
-	if !([ACE_player, objNull, ["isNotSwimming"]] call EFUNC(common,canInteractWith)) exitWith {false};
+	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};
 	// Conditions: specific
 	// if!((!player getVariable [QGVAR(isEscorting), false]) && {!(player getVariable [QGVAR(isHandcuffed), false])} && {!(player getVariable [QGVAR(isSurrendering), false])} && {!(player getVariable ["ACE_isUnconscious", false])}) exitWith {false};
 	
