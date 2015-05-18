@@ -33,7 +33,7 @@ class CfgVehicles {
                 icon = "\a3\ui_f\data\IGUI\Cfg\Actions\eject_ca.paa";
                 selection = "pelvis";
 
-                class ACE_TeamManagement {
+                /*class ACE_TeamManagement {
                     displayName = "$STR_ACE_Interaction_TeamManagement";
                     condition = QUOTE([ARR_2(_player,_target)] call DFUNC(canJoinTeam) && {GVAR(EnableTeamManagement)});
                     statement = "";
@@ -100,7 +100,7 @@ class CfgVehicles {
                     hotkey = "J";
                 };
 
-                /*class ACE_GetDown {
+                class ACE_GetDown {
                     displayName = "$STR_ACE_Interaction_GetDown";
                     condition = QUOTE([_target] call DFUNC(canInteractWithCivilian));
                     statement = QUOTE([_target] call DFUNC(getDown));
