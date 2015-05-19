@@ -318,6 +318,7 @@ switch(_shop) do
 						
 						["optic_MRCO",nil,0],
 						["optic_Hamr",nil,0],
+						["optic_LRPS",nil,0]
 						
 						["ACE_Vector",nil,0],
 						["Laserdesignator",nil,0],
@@ -350,8 +351,7 @@ switch(_shop) do
 						["R3F_STINGER",nil,0],
 						["R3F_STINGER_mag",nil,0],
 						["R3F_AT4CS",nil,0],
-						["R3F_AT4CS_Mag",nil,0],
-						["optic_LRPS",nil,0]
+						["R3F_AT4CS_Mag",nil,0]
 					]
 				];
 			};

@@ -1,0 +1,15 @@
+UPDATE players SET cop_gear = REPLACE(cop_gear, 'AGM_ItemKestrel', 'ACE_Kestrel4500');
+UPDATE players SET cop_gear = REPLACE(cop_gear, 'AGM_EarBuds', 'ACE_Earplugs');
+UPDATE players SET cop_gear = REPLACE(cop_gear, 'AGM_', 'ACE_');
+
+UPDATE players SET med_gear = REPLACE(med_gear, 'AGM_ItemKestrel', 'ACE_Kestrel4500');
+UPDATE players SET med_gear = REPLACE(med_gear, 'AGM_EarBuds', 'ACE_Earplugs');
+UPDATE players SET med_gear = REPLACE(med_gear, 'AGM_', 'ACE_');
+
+UPDATE players SET civ_gear = REPLACE(civ_gear, 'AGM_ItemKestrel', 'ACE_Kestrel4500');
+UPDATE players SET civ_gear = REPLACE(civ_gear, 'AGM_EarBuds', 'ACE_Earplugs');
+UPDATE players SET civ_gear = REPLACE(civ_gear, 'AGM_', 'ACE_');
+
+UPDATE houses SET containers = REPLACE(containers, 'AGM_ItemKestrel', 'ACE_Kestrel4500');
+UPDATE houses SET containers = REPLACE(containers, 'AGM_EarBuds', 'ACE_Earplugs');
+UPDATE houses SET containers = REPLACE(containers, 'AGM_', 'ACE_');
