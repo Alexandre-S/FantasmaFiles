@@ -114,5 +114,6 @@ switch (_var) do
 	case "l_c_dep": {"Licence de dépanneur"};
 	case "l_c_hunting": {"Licence de chasseur"};
 	case "l_c_taxi": {"Licence de taxi"};
+	case "l_c_airsoft": {"Licence d'airsoft"};
 	default {"Erreur"};
 };

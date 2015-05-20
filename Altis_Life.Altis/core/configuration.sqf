@@ -275,7 +275,8 @@ life_licenses =
 	["l_c_vigil","civ"],
 	["l_c_dep","civ"],
 	["l_c_hunting","civ"],
-	["l_c_taxi","civ"]
+	["l_c_taxi","civ"],
+	["l_c_airsoft","civ"]
 ];
 
 //Setup License Variables

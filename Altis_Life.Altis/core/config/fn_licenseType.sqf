@@ -48,6 +48,7 @@ switch (_mode) do
 			case "dep": {_var = "l_c_dep"};
 			case "hunting": {_var = "l_c_hunting"};
 			case "taxi": {_var = "l_c_taxi"};
+			case "airsoft": {_var = "l_c_airsoft"};
 			default {_var = ""};
 		};
 	};
@@ -88,6 +89,7 @@ switch (_mode) do
 			case "l_c_dep": {_var = "dep"};
 			case "l_c_hunting": {_var = "hunting"};
 			case "l_c_taxi": {_var = "taxi"};
+			case "l_c_airsoft": {_var = "airsoft"};
 			default {_var = ""};
 		};
 	};

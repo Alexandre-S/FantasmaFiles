@@ -775,6 +775,26 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhs_weap_mk18_grip2",nil,100000];
 					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
 				};
+				if(l_c_airsoft) then
+				{
+					(_ret select 1) pushBack ["hgun_Rook40_F_as",nil,2450];
+					(_ret select 1) pushBack ["16Rnd_9x21_Mag_airsoft",nil,175];
+					(_ret select 1) pushBack ["rhs_weap_makarov_pmm_as",nil,2450];
+					(_ret select 1) pushBack ["mag_9x18_12_57N181S_airsoft",nil,175];
+					(_ret select 1) pushBack ["hgun_ACPC2_F_as",nil,2650];
+					(_ret select 1) pushBack ["9Rnd_45ACP_Mag_airsoft",nil,200];
+					(_ret select 1) pushBack ["rhsusf_weap_m1911a1_as",nil,2650];
+					(_ret select 1) pushBack ["mag_7x45acp_MHP_airsoft",nil,200];
+					(_ret select 1) pushBack ["rhs_weap_m4_as",nil,50000];
+					(_ret select 1) pushBack ["rhs_weap_m4a1_blockII_as",nil,50000];
+					(_ret select 1) pushBack ["rhs_weap_m16a4_as",nil,50000];
+					(_ret select 1) pushBack ["30Rnd_556x45_Stanag_airsoft",nil,500];
+					(_ret select 1) pushBack ["rhs_weap_ak74m_as",nil,50000];
+					(_ret select 1) pushBack ["30Rnd_545x39_AK_airsoft",nil,500];
+					(_ret select 1) pushBack ["rhs_weap_akm_as",nil,70000];
+					(_ret select 1) pushBack ["rhs_weap_akms_as",nil,70000];
+					(_ret select 1) pushBack ["30Rnd_762x39mm_airsoft",nil,750];
+				};
 			};
 		};
 	};
