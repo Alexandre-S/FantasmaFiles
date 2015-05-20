@@ -12,6 +12,7 @@ waitUntil {sleep 0.1;time > 10 && alive player}; //Wait till the player is ready
 player setVariable ["tf_voiceVolume", 0, true];
 player setVariable ["tf_globalVolume", 0];
 player setVariable ["tf_unable_to_use_radio", true];
+allside = [civilian,independent,west];
 // player setVariable ["tf_receivingDistanceMultiplicator", 0.5];
 // player setVariable ["tf_sendingDistanceMultiplicator", 0.5];
 if(!hasInterface) then {

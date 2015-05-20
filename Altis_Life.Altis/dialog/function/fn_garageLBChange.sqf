@@ -75,7 +75,7 @@ _vehicleColor,
 [_assurPrice] call life_fnc_numberText,
 if(_assur == 1) then {"<t color='#8cff9b'>Assuré</t>"} else {"<t color='#FF0000'>Pas d'assurance</t>"},
 _vehicleInfo select 9,
-if(_four == 1) then {"<t color='8cff9b'>"} else {"<t color='FF0000'>"},
+if(_four == 1) then {"<t color='8cff9b'>"} else {"<t color='#FF0000'>"},
 if(_four == 1) then {" (En Fourrière)"} else {""}
 ];
 
