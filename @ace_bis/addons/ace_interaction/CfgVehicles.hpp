@@ -131,7 +131,7 @@ class CfgVehicles {
 					priority = 1.9;
 				  };
 				  class ACE_Carte {
-					displayName = "Présenter carte";
+					displayName = "PrÃ©senter carte";
 					distance = 4;
 					condition = "_target isKindOf 'Man' && {alive _target}";
 					statement = "[_target] spawn life_fnc_showId";
@@ -140,7 +140,7 @@ class CfgVehicles {
 					priority = 2.7;
 				  };
 				  class ACE_Reanimer {
-					displayName = "Réanimer";
+					displayName = "RÃ©animer";
 					distance = 4;
 					condition = "(_target isKindOf 'Man') && {!alive _target} && {playerSide in [west,independent]} && {'Medikit' in (items player)}";
 					statement = "[_target] spawn life_fnc_revivePlayer";
@@ -491,7 +491,7 @@ class CfgVehicles {
 		    };
 			class ACE_SkinAnimal
 		    {
-				displayName = "Dépecer";
+				displayName = "DÃ©pecer";
 				condition = "alive player && playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 4 && !life_istazed && !(player getVariable 'AGM_isEscorting') && !(player getVariable 'ACE_Captives_isHandcuffed') && !(player getVariable 'ACE_Captives_isSurrendering') && (typeOf cursorTarget) in ['Cock_random_F','Hen_random_F','Goat_random_F','Sheep_random_F'] && !alive life_cursorTarget";
 				statement = "[] spawn life_fnc_skinAnimal;";
 				showDisabled = 1;
