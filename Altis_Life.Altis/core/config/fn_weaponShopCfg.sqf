@@ -318,7 +318,7 @@ switch(_shop) do
 						
 						["optic_MRCO",nil,0],
 						["optic_Hamr",nil,0],
-						["optic_LRPS",nil,0]
+						["optic_LRPS",nil,0],
 						
 						["ACE_Vector",nil,0],
 						["Laserdesignator",nil,0],
