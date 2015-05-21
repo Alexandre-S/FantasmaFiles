@@ -189,6 +189,27 @@ switch(_shop) do
 		};
 	};
 	
+	case "cop_aprg":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!l_g_aprg): {"Vous n'avez pas la formation BAC / PJ !"};
+			//case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
+			default
+			{
+				_ret =
+				["Armurerie : APRG",
+					[
+						// MK 18
+						["rhs_weap_mk18_grip2",nil,0],
+						["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
 	/*case "cop_grenadier":
 	{
 		switch(true) do
@@ -768,13 +789,6 @@ switch(_shop) do
 						["ACE_NVG_Gen1",nil,2000]
 					]
 				];
-				if(l_c_gvt) then
-				{
-					//mk18 mod 1
-					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,100000];
-					(_ret select 1) pushBack ["rhs_weap_mk18_grip2",nil,100000];
-					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
-				};
 				if(l_c_airsoft) then
 				{
 					(_ret select 1) pushBack ["hgun_Rook40_F_as",nil,2450];

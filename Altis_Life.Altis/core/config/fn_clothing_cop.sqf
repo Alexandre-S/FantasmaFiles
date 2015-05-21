@@ -52,6 +52,12 @@ switch (_filter) do
 			_ret pushBack ["U_BG_Guerilla3_1",nil,0];
 			_ret pushBack ["U_BG_Guerilla3_2",nil,0];
 		};
+		// APRG
+		if(l_g_aprg) then
+		{
+			_ret pushBack ["UVF_Soldier_Outfit_4",nil,0];
+			_ret pushBack ["U_PMC_BluPolo_BgPants",nil,0];
+		};
 		// Unité tactique
 		if(l_g_swat) then
 		{
@@ -128,6 +134,11 @@ switch (_filter) do
 			_ret pushBack ["H_Watchcap_khk",nil,0];
 			_ret pushBack ["H_Cap_police",nil,0];
 			_ret pushBack ["RPIMA_Balaclava",nil,0];
+		};
+		// APRG
+		if(l_g_aprg) then
+		{
+			_ret pushBack ["rds_worker_cap4",nil,0];
 		};
 		// Unité tactique
 		if(l_g_swat) then
@@ -223,6 +234,11 @@ switch (_filter) do
 			_ret pushBack ["V_TacVest_blk",nil,0];
 			_ret pushBack ["V_TacVest_oli",nil,0];
 		};
+		// APRG
+		if(l_g_aprg) then
+		{
+			_ret pushBack ["V_PlateCarrier1_PMC_blk",nil,0];
+		};
 		// Medic
 		if(l_g_medic) then
 		{
@@ -283,6 +299,11 @@ switch (_filter) do
 			_ret pushBack ["tf_rt1523g_big",nil,0];
 			_ret pushBack ["tf_rt1523g_big_bwmod",nil,0];
 			_ret pushBack ["tf_rt1523g_big_rhs",nil,0];
+		};
+		// APRG
+		if(l_g_aprg) then
+		{
+			_ret pushBack ["PMC_B_Carryall_blk",nil,0];
 		};
 		// Unité Tactique
 		if(l_g_swat || __GETC__(life_coplevel) >= 2) then

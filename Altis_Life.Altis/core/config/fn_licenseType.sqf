@@ -27,6 +27,7 @@ switch (_mode) do
 			case "cg": {_var = "l_g_cg"}; //Coast guard license cost
 			case "bacpj": {_var = "l_g_bacpj"}; //BacPJ
 			case "medic": {_var = "l_g_medic"}; //cop medic license cost
+			case "aprg": {_var = "l_g_aprg"}; //APRG
 			case "heroin": {_var = "l_c_heroin"}; //Heroin processing license cost
 			case "lsd": {_var = "l_c_lsd"}; //LSD processing license cost
 			case "marijuana": {_var = "l_c_marijuana"}; //Marijuana processing license cost
@@ -68,6 +69,7 @@ switch (_mode) do
 			case "l_g_cg": {_var = "cg"}; //Coast guard license cost
 			case "l_g_bacpj": {_var = "bacpj"}; //BacPJ
 			case "l_g_medic": {_var = "medic"}; //cop medic license cost
+			case "l_g_aprg": {_var = "aprg"}; //APRG
 			case "l_c_heroin": {_var = "heroin"}; //Heroin processing license cost
 			case "l_c_lsd": {_var = "lsd"}; //LSD processing license cost
 			case "l_c_marijuana": {_var = "marijuana"}; //Marijuana processing license cost

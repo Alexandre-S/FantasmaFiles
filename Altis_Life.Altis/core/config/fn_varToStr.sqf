@@ -96,6 +96,7 @@ switch (_var) do
 	case "l_g_cg": {(localize "STR_License_CG")};
 	case "l_g_bacpj": {(localize "STR_License_BacPJ")};
 	case "l_g_medic": {(localize "STR_License_OMedic")};
+	case "l_g_aprg": {"Licence APRG"};
 	case "l_c_rebel": {(localize "STR_License_Rebel")};
 	case "l_c_thug": {(localize "STR_License_Thug")};
 	case "l_c_truck": {(localize "STR_License_Truck")};
