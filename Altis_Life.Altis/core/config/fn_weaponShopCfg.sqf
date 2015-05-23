@@ -194,7 +194,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Interdit aux civils !"};
-			case (!l_g_aprg): {"Vous n'avez pas la formation BAC / PJ !"};
+			case (!l_g_aprg): {"Vous n'avez pas la formation APRG !"};
 			//case (__GETC__(life_coplevel) < 3): {"Réservé aux lieutenant!"};
 			default
 			{
