@@ -263,6 +263,8 @@ class Life_Client_Core
 		class abattre {};
 		class wipe {};
 		class wipeok {};
+		class airsoft {};
+		class hitSound {};
 	};
 	
 	class Network

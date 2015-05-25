@@ -75,6 +75,7 @@ if(!isNull _source) then {
 			if(!_isVehicle) then {
 				cutText ["Une bille d'airsoft vous touche !!!", "PLAIN"];
 				hint "Une bille d'airsoft vous touche !!!";
+				[_unit,_source] spawn life_fnc_airsoft;
 			};
 		};
 	};

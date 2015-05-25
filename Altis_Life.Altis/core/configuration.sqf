@@ -137,6 +137,7 @@ __CONST__(life_impound_car,350);
 __CONST__(life_impound_boat,250);
 __CONST__(life_impound_air,850);
 life_istazed = false;
+life_isOut = false;
 player setvariable["ACE_istazed",false,true];
 life_my_gang = ObjNull;
 
