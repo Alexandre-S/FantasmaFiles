@@ -120,6 +120,8 @@ class Life_Client_Core
 		class activateNitro {};
 		class showId {};
 		class viewId {};
+		class airsoftStart {};
+		class airsoftGear {};
 	};
 	
 	class Housing
@@ -265,6 +267,7 @@ class Life_Client_Core
 		class wipeok {};
 		class airsoft {};
 		class hitSound {};
+		class varAirsoft {};
 	};
 	
 	class Network
