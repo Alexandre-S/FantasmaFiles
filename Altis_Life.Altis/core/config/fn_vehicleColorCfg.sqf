@@ -795,6 +795,17 @@ switch (_vehicle) do
 			["\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_body_g_vsr_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_det_g_co.paa","a3\data_f\clear_empty.paa","\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"]
 		];
 	};
+	case "Skyline_Mercedes_300_Fantasma_F":
+	{
+		_ret = 
+		[
+			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.541176,0.541176,0.541176,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.878431,0.568627,0.219608,1.0,CO)","civ"],
+			["#(argb,8,8,3)color(0.870588,0.886275,0.278431,1.0,CO)","civ"]
+		];
+	};
 	
 	
 };

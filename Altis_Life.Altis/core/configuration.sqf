@@ -1130,6 +1130,7 @@ life_garage_sell =
 	
 	["C_Hatchback_01_sport_F_RP",45000*0.49],
 	["C_Van_01_fuel_F",112500*0.49],
+	["Skyline_Mercedes_300_Fantasma_F",130000*0.49],
 	
 	//DEP
 	["C_Offroad_01_F_DEP_RP",3375*0.49],
@@ -1241,6 +1242,7 @@ life_garage_prices =
 	["C_Van_01_transport_F",97500*0.0735],
 	["C_Hatchback_01_sport_F_RP",45000*0.0735],
 	["C_Van_01_fuel_F",112500*0.0735],
+	["Skyline_Mercedes_300_Fantasma_F",130000*0.0735],
 	
 	//DEP
 	["C_Offroad_01_F_DEP_RP",3375*0.0735],
@@ -1351,6 +1353,7 @@ life_assur_prices =
 	
 	["C_Hatchback_01_sport_F_RP",45000*0.5],
 	["C_Van_01_fuel_F",112500*0.5],
+	["Skyline_Mercedes_300_Fantasma_F",130000*0.5],
 	
 	//DEP
 	["C_Offroad_01_F_DEP_RP",3375*0.5],
