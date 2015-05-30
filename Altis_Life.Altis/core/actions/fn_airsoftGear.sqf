@@ -15,7 +15,6 @@ if(_rec == "tB") then {
 	player addItemToUniform "Pomi_Goggles";
 	player addItemToUniform "ACE_EarPlugs";
 	player addItemToVest "H_ag_bandanna_02";
-	[["team",true],"life_fnc_varAirsoft",true,false] spawn life_fnc_MP;
 };
 if(_rec == "tJ") then {
 	titleText["Vous rejoignez l'équipe jaune","PLAIN"];
@@ -25,7 +24,6 @@ if(_rec == "tJ") then {
 	player addItemToUniform "Pomi_Goggles";
 	player addItemToUniform "ACE_EarPlugs";
 	player addItemToVest "H_ag_bandanna_02";
-	[["team",true],"life_fnc_varAirsoft",true,false] spawn life_fnc_MP;
 };
 if(_rec == "1911") then {
 	titleText["Vous recevez un M1911 et 5 chargeurs","PLAIN"];
