@@ -28,7 +28,6 @@ switch (_className) do
 	case "rhsusf_m1025_d_s_m2": {70};
 	case "rhsusf_m998_d_2dr": {70};
 	case "rhsusf_m998_d_s_2dr": {70};
-	case "Skyline_Mercedes_300_Fantasma_F": {60};
 	case "C_Offroad_01_F": {98};
 	case "B_G_Offroad_01_F": {98};
 	case "rhs_tigr_ffv_vdv": {110};

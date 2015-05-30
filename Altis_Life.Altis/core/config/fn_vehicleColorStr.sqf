@@ -785,18 +785,6 @@ switch (_vehicle) do
 			case 6: {_color = "Gris"};
 		};
 	};
-	
-	case "Skyline_Mercedes_300_Fantasma_F" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Noir"};
-			case 1: {_color = "Blanc"};
-			case 2: {_color = "Gris"};
-			case 3: {_color = "Orange"};
-			case 4: {_color = "Jaune"};
-		};
-	};
 };
 
 _color;

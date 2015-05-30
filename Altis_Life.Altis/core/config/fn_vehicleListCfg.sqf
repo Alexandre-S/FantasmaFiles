@@ -52,7 +52,6 @@ switch (_shop) do
 		{
 			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
-			_return pushBack ["Skyline_Mercedes_300_Fantasma_F",130000];
 		};
 	};
 	
@@ -82,7 +81,6 @@ switch (_shop) do
 		{
 			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
-			_return pushBack ["Skyline_Mercedes_300_Fantasma_F",130000];
 		};
 		if(l_c_gvt) then
 		{
