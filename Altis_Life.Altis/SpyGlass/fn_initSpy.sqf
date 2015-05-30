@@ -147,7 +147,7 @@ _patchList =
 "ffaa_ar_supercat","ffaa_ar_lcm","ffaa_data",
 "xCam_EU",
 "ace_main","ace_APL","ace_common","ace_difficulties","ace_flashsuppressors","ace_frag","ace_goggles","ace_grenades","ace_hitreactions","ace_interact_menu","ace_interaction","ace_inventory","ace_laser","ace_laser_selfdesignate","ace_laserpointer","ace_logistics_uavbattery","ace_logistics_wirecutter","ace_magazinerepack","ace_map","ace_maptools","ace_markers","ace_microdagr","ace_missionModules","ace_modules","ace_movement","ace_nightvision","ace_noidle","ace_noradio","ace_norearm","ace_optics","ace_optionsmenu","ace_overheating","ace_overpressure","ACE_Parachute","ace_protection","ace_ragdolls","ace_recoil","ace_reload","ace_reloadlaunchers","ace_safemode","ace_scopes","ace_smallarms","ace_thermals","ace_vector","ace_vehicles","ace_weaponselect","ace_weather","ace_winddeflection","ace_aircraft","ace_attach","ace_backpacks","ace_ballistics","ace_captives","ace_disarming","ace_dragging","ace_explosives","ace_hearing","ace_kestrel4500","ace_medical","ace_advanced_ballistics",
-"ace_rhs_c_weapons_comp","ace_rhsusf_c_weapons_comp","ace_asdg_comp"
+"ace_rhs_c_weapons_comp","ace_rhsusf_c_weapons_comp","ace_asdg_comp","kio_kio_fhat"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..

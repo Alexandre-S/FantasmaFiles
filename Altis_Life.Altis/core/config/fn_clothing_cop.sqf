@@ -223,6 +223,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["H_Beret_blk",nil,0];
+			_ret pushBack ["kio_fhat",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 3) then
 		{
@@ -348,6 +349,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 4) then
 		{
 			_ret pushBack ["H_Beret_Colonel",nil,0];
+			_ret pushBack ["kio_fhat_g",nil,0];
 		};
 		// Grade Colonel
 		if(__GETC__(life_coplevel) >= 5) then
