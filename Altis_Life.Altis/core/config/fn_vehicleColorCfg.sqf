@@ -156,7 +156,10 @@ switch (_vehicle) do
 		[
 			["\rds_a2port_civ\volha\Data\Volha_ECIV_CO.paa","civ"],
 			["\rds_a2port_civ\volha\Data\Volha_Gray_ECIV_CO.paa","civ"],
-			["\rds_a2port_civ\volha\Data\Volha_Black_ECIV_CO.paa","civ"]
+			["\rds_a2port_civ\volha\Data\Volha_Black_ECIV_CO.paa","civ"],
+			["\rds_a2port_civ\volha\Data\Volha_ECIV_CO.paa","cop"],
+			["\rds_a2port_civ\volha\Data\Volha_Gray_ECIV_CO.paa","cop"],
+			["\rds_a2port_civ\volha\Data\Volha_Black_ECIV_CO.paa","cop"]
 		];
 	};
 	
@@ -213,7 +216,13 @@ switch (_vehicle) do
 			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_yellow_CO.paa","civ"],
 			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_blue_CO.paa","civ"],
 			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_white_CO.paa","civ"],
-			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_green_CO.paa","civ"]
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_green_CO.paa","civ"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_co.paa","cop"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_black_CO.paa","cop"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_yellow_CO.paa","cop"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_blue_CO.paa","cop"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_white_CO.paa","cop"],
+			["\rds_a2port_civ\VWGOLF\Data\vwgolf_body_green_CO.paa","cop"]
 		];
 	};
 	
@@ -234,7 +243,9 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa","cop"],
 			["\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa","cop"],
-			["altisrpfr\textures\suv_taxi.paa","taxi"]
+			["altisrpfr\textures\suv_taxi.paa","taxi"],
+			["altisrpfr\textures\suv_bleuflamme.paa","cop"],
+			["altisrpfr\textures\suv_rouille.paa","cop"]
 		];
 	};
 	
@@ -645,7 +656,12 @@ switch (_vehicle) do
 			["pansy\LandRover\data\lr_acr_base_co","civ","pansy\LandRover\data\lr_acr_spec_co"],
 			["pansy\LandRover\data\lr_base_red_co","civ","pansy\LandRover\data\lr_special_red_co"],
 			["pansy\LandRover\data\lr_base_w_baf_co","civ","pansy\LandRover\data\lr_special_w_baf_co"],
-			["pansy\LandRover\data\lr_base_acrs_co","civ","pansy\LandRover\data\lr_special_acr_co"]
+			["pansy\LandRover\data\lr_base_acrs_co","civ","pansy\LandRover\data\lr_special_acr_co"],
+			["pansy\LandRover\data\lr_base_baf_co","cop","pansy\LandRover\data\lr_special_baf_co"],
+			["pansy\LandRover\data\lr_acr_base_co","cop","pansy\LandRover\data\lr_acr_spec_co"],
+			["pansy\LandRover\data\lr_base_red_co","cop","pansy\LandRover\data\lr_special_red_co"],
+			["pansy\LandRover\data\lr_base_w_baf_co","cop","pansy\LandRover\data\lr_special_w_baf_co"],
+			["pansy\LandRover\data\lr_base_acrs_co","cop","pansy\LandRover\data\lr_special_acr_co"]
 		];
 	};
 	
@@ -657,7 +673,12 @@ switch (_vehicle) do
 			["pansy\LandRover\data\lr_acr_base_co","civ","pansy\LandRover\data\lr_acr_spec_co"],
 			["pansy\LandRover\data\lr_base_red_co","civ","pansy\LandRover\data\lr_special_red_co"],
 			["pansy\LandRover\data\lr_base_w_baf_co","civ","pansy\LandRover\data\lr_special_w_baf_co"],
-			["pansy\LandRover\data\lr_base_acrs_co","civ","pansy\LandRover\data\lr_special_acr_co"]
+			["pansy\LandRover\data\lr_base_acrs_co","civ","pansy\LandRover\data\lr_special_acr_co"],
+			["pansy\LandRover\data\lr_base_baf_co","cop","pansy\LandRover\data\lr_special_baf_co"],
+			["pansy\LandRover\data\lr_acr_base_co","cop","pansy\LandRover\data\lr_acr_spec_co"],
+			["pansy\LandRover\data\lr_base_red_co","cop","pansy\LandRover\data\lr_special_red_co"],
+			["pansy\LandRover\data\lr_base_w_baf_co","cop","pansy\LandRover\data\lr_special_w_baf_co"],
+			["pansy\LandRover\data\lr_base_acrs_co","cop","pansy\LandRover\data\lr_special_acr_co"]
 		];
 	};
 	

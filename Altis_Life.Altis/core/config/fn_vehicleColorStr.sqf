@@ -105,6 +105,9 @@ switch (_vehicle) do
 			case 0: {_color = "Bleu";};
 			case 1: {_color = "Gris";};
 			case 2: {_color = "Noir";};
+			case 3: {_color = "Bleu";};
+			case 4: {_color = "Gris";};
+			case 5: {_color = "Noir";};
 		};
 	};
 	
@@ -162,6 +165,12 @@ switch (_vehicle) do
 			case 3: {_color = "Bleu";};
 			case 4: {_color = "Blanche";};
 			case 5: {_color = "Verte";};
+			case 6: {_color = "Rouge";};
+			case 7: {_color = "Noir";};
+			case 8: {_color = "Jaune";};
+			case 9: {_color = "Bleu";};
+			case 10: {_color = "Blanche";};
+			case 11: {_color = "Verte";};
 		};
 	};
 	
@@ -637,6 +646,11 @@ switch (_vehicle) do
 			case 2: {_color = "Rouge Bâché"};
 			case 3: {_color = "Vert Camo Bâché"};
 			case 4: {_color = "Désert Camo Bâché"};
+			case 5: {_color = "Beige Bâché"};
+			case 6: {_color = "Vert Bâché"};
+			case 7: {_color = "Rouge Bâché"};
+			case 8: {_color = "Vert Camo Bâché"};
+			case 9: {_color = "Désert Camo Bâché"};
 		};
 	};
 	
@@ -649,6 +663,11 @@ switch (_vehicle) do
 			case 2: {_color = "Rouge Débâché"};
 			case 3: {_color = "Vert Camo Débâché"};
 			case 4: {_color = "Désert Camo Débâché"};
+			case 5: {_color = "Beige Débâché"};
+			case 6: {_color = "Vert Débâché"};
+			case 7: {_color = "Rouge Débâché"};
+			case 8: {_color = "Vert Camo Débâché"};
+			case 9: {_color = "Désert Camo Débâché"};
 		};
 	};
 	

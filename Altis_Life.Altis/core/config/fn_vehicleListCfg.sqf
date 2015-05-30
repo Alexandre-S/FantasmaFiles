@@ -282,6 +282,14 @@ switch (_shop) do
 			_return pushBack ["C_Offroad_01_F",0];
 			_return pushBack ["C_SUV_01_F",0];
 		};
+		// BAC / PJ
+		if(l_g_bacpj) then
+		{
+			_return pushBack ["RDS_Golf4_Civ_01",0];
+			_return pushBack ["RDS_Gaz24_Civ_01",0];
+			_return pushBack ["BAF_Offroad_D",0];
+			_return pushBack ["LandRover_ACR",0];
+		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
 		{
