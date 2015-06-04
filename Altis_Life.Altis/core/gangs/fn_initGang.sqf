@@ -58,5 +58,4 @@ if(!isNil "_group") then {
 
 init_gang = true;
 // player setVariable["init_gang",true,true];
-[] call life_fnc_getHLC;
 [[player,"init_gang",true,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;

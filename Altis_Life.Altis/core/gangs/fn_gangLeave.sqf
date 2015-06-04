@@ -34,5 +34,5 @@ closeDialog 0;
 	
 	[player] joinSilent (createGroup civilian);
 	init_gang = true;
-	hint "Vous avez quitté le groupe.";
+	hint "Vous avez quittÃ© le groupe.";
 };
