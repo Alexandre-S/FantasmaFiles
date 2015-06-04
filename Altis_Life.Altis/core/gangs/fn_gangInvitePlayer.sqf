@@ -30,7 +30,10 @@ if(_action) then {
 	if(isNil "_members") exitWith {};
 	if(typeName _members != "ARRAY") exitWith {};
 	_members pushBack (getPlayerUID _unit);
-	grpPlayer setVariable["gang_members",_members,true];
+	// grpPlayer setVariable["gang_members",_members,true];
+	
+	[[grpPlayer,"gang_members",_members,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	
 	hint format[localize "STR_GNOTF_InviteSent",_unit getVariable["realname",name _unit]];
 	[[profileName,grpPlayer],"life_fnc_gangInvite",_unit,false] spawn life_fnc_MP;
 } else {

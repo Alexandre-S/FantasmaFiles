@@ -25,7 +25,10 @@ _action = [
 if(_action) then {
 	_unitID = getPlayerUID _unit;
 	if(_unitID == "") exitWith {hint "Bad UID?"}; //Unlikely?
-	grpPlayer setVariable["gang_owner",_unitID,true];
+	// grpPlayer setVariable["gang_owner",_unitID,true];
+	
+	[[grpPlayer,"gang_owner",_unitID,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	
 	grpPlayer selectLeader _unit;
 	[[_unit,grpPlayer],"life_fnc_clientGangLeader",_unit,false] spawn life_fnc_MP; //Boot that bitch!
 	[] call life_fnc_getHLC;

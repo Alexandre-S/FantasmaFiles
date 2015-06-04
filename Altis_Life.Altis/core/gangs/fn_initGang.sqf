@@ -40,13 +40,23 @@ if(!isNil "_group") then {
 	};
 } else {
 	_group = group player;
-	_group setVariable["gang_id",(life_gangData select 0),true];
-	_group setVariable["gang_owner",(life_gangData select 1),true];
-	_group setVariable["gang_name",(life_gangData select 2),true];
-	_group setVariable["gang_maxMembers",(life_gangData select 3),true];
-	_group setVariable["gang_bank",(life_gangData select 4),true];
-	_group setVariable["gang_members",(life_gangData select 5),true];
+	// _group setVariable["gang_id",(life_gangData select 0),true];
+	// _group setVariable["gang_owner",(life_gangData select 1),true];
+	// _group setVariable["gang_name",(life_gangData select 2),true];
+	// _group setVariable["gang_maxMembers",(life_gangData select 3),true];
+	// _group setVariable["gang_bank",(life_gangData select 4),true];
+	// _group setVariable["gang_members",(life_gangData select 5),true];
+	
+	[[_group,"gang_id",(life_gangData select 0),true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	[[_group,"gang_owner",(life_gangData select 1),true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	[[_group,"gang_name",(life_gangData select 2),true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	[[_group,"gang_maxMembers",(life_gangData select 3),true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	[[_group,"gang_bank",(life_gangData select 4),true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	[[_group,"gang_members",(life_gangData select 5),true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+	
 };
 
 init_gang = true;
-player setVariable["init_gang",true,true];
+// player setVariable["init_gang",true,true];
+[] call life_fnc_getHLC;
+[[player,"init_gang",true,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;

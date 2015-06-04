@@ -21,7 +21,9 @@ _members = _grp getVariable ["gang_members",nil];
 if(isNil "_members") exitWith {};
 if(typeName _members != "ARRAY") exitWith {};
 _members = _members - [_unitID];
-_grp setVariable["gang_members",_members,true];
+//_grp setVariable["gang_members",_members,true];
+
+[[_grp,"gang_members",_members,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 
 [[_unit,_grp],"life_fnc_clientGangKick",_unit,false] spawn life_fnc_MP; //Boot that bitch!
 [] call life_fnc_getHLC;

@@ -30,7 +30,9 @@ if(_action) then {
 	if(isNil "_grpMembers") exitWith {};
 	if(typeName _grpMembers != "ARRAY") exitWith {};
 	_grpMembers = _grpMembers - [steamid];
-	_group setVariable["gang_members",_grpMembers,true];
+	// _group setVariable["gang_members",_grpMembers,true];
+	[[_group,"gang_members",_grpMembers,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
+
 	[] call life_fnc_getHLC;
 	[[4,_group],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 };
