@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=ddopp_taserpack
+Pbo Type is: Arma Addon
+Sha: '2B1C1209114F7A588AEE1986A1E33DD385717C32'
+//////</HEADER>//////
