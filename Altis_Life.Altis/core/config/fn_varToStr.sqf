@@ -81,6 +81,18 @@ switch (_var) do
 	case "life_inv_ruby": {"Rubis"};
 	case "life_inv_diamondf": {"Diamant Parfait"};
 	case "life_inv_pearl": {"Perle"};
+	case "life_inv_mash": {"Mixture écrasée"};
+	case "life_inv_yeast": {"Levure"};
+	case "life_inv_rye": {"Malt"};
+	case "life_inv_hops": {"Houblon"};
+	case "life_inv_whiskey": {"Whiskey distillé"};
+	case "life_inv_beerp": {"Bière fermentée"};
+	case "life_inv_bottles": {"Bouteille de verre"};
+	case "life_inv_cornmeal": {"Grains de maïs"};
+	case "life_inv_bottledwhiskey": {"Bouteille de whisky"};
+	case "life_inv_bottledbeer": {"Bouteille de bière"};
+	case "life_inv_bottledshine": {"Bouteille de moonshine"};
+	case "life_inv_moonshine": {"Moonshine distillé"};
 
 	//License Block
 	case "l_c_driver": {(localize "STR_License_Driver")};
@@ -116,5 +128,8 @@ switch (_var) do
 	case "l_c_hunting": {"Licence de chasseur"};
 	case "l_c_taxi": {"Licence de taxi"};
 	case "l_c_airsoft": {"Licence d'airsoft"};
+	case "l_c_stiller": {"Licence distilation"};
+	case "l_c_liquor": {"Licence liqueur"};
+	case "l_c_bottler": {"Licence de mise en bouteille"};
 	default {"Erreur"};
 };

@@ -50,6 +50,17 @@ switch (_mode) do
 			case "hunting": {_var = "l_c_hunting"};
 			case "taxi": {_var = "l_c_taxi"};
 			case "airsoft": {_var = "l_c_airsoft"};
+			case "liquor": {_var = "l_c_liquor"};
+			case "beer": {_var = "l_c_liquor"};
+			case "stiller": {_var = "l_c_stiller"};
+			case "whiskey": {_var = "l_c_stiller"};
+			case "moonshine": {_var = "l_c_stiller"};
+			case "mash": {_var = "l_c_stiller"};
+			case "bottledshine": {_var = "l_c_bottler"};
+			case "bottledbeer": {_var = "l_c_bottler"};
+			case "bottledwhiskey": {_var = "l_c_bottler"};
+			case "bottler": {_var = "l_c_bottler"};
+			case "glassbottle": {_var = "l_c_bottler"};
 			default {_var = ""};
 		};
 	};

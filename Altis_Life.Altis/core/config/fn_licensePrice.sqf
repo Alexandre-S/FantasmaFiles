@@ -39,4 +39,8 @@ switch (_type) do
 	case "home": {75000};
 	case "dep": {50000};
 	case "taxi": {50000};
+	case "stiller":{50000};
+	case "liquor":{100000};
+	case "bottler":{100000};
+	case "mash":{100000};
 };

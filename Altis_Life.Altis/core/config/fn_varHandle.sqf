@@ -85,6 +85,18 @@ switch (_mode) do
 			case "ruby": {"life_inv_ruby"};
 			case "diamondf": {"life_inv_diamondf"};
 			case "pearl": {"life_inv_pearl"};
+			case "rye": {"life_inv_rye"};
+			case "hops": {"life_inv_hops"};
+			case "yeast": {"life_inv_yeast"};
+			case "cornmeal": {"life_inv_cornmeal"};
+			case "moonshine": {"life_inv_moonshine"};
+			case "bottles": {"life_inv_bottles"};
+			case "bottledshine": {"life_inv_bottledshine"};
+			case "bottledbeer": {"life_inv_bottledbeer"};
+			case "bottledwhiskey": {"life_inv_bottledwhiskey"};
+			case "beerp": {"life_inv_beerp"};
+			case "whiskey": {"life_inv_whiskey"};
+			case "mash": {"life_inv_mash"};
 		};
 	};
 	
@@ -161,6 +173,18 @@ switch (_mode) do
 			case "life_inv_ruby": {"ruby"};
 			case "life_inv_diamondf": {"diamondf"};
 			case "life_inv_pearl": {"pearl"};
+			case "life_inv_mash": {"mash"};
+			case "life_inv_yeast": {"yeast"};
+			case "life_inv_rye": {"rye"};
+			case "life_inv_hops": {"hops"};
+			case "life_inv_whiskey": {"whiskey"};
+			case "life_inv_beerp": {"beerp"};
+			case "life_inv_bottles": {"bottles"};
+			case "life_inv_cornmeal": {"cornmeal"};
+			case "life_inv_bottledwhiskey": {"bottledwhiskey"};
+			case "life_inv_bottledbeer": {"bottledbeer"};
+			case "life_inv_bottledshine": {"bottledshine"};
+			case "life_inv_moonshine": {"moonshine"};
 		};
 	};
 };

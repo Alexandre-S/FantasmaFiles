@@ -63,6 +63,7 @@ life_smoking = false;
 life_heroin_effect = 0;
 life_cocaine_effect = 0;
 life_lsd_effect = 0;
+life_drink = 0;
 
 life_autofps = true;
 havena_targetfps = 40;
@@ -246,7 +247,19 @@ life_inv_items =
 	"life_inv_silverpiece",
 	"life_inv_ruby",
 	"life_inv_diamondf",
-	"life_inv_pearl"
+	"life_inv_pearl",
+	"life_inv_cornmeal",
+	"life_inv_beerp",
+	"life_inv_whiskey",
+	"life_inv_rye",
+	"life_inv_hops",
+	"life_inv_yeast",
+	"life_inv_bottles",
+	"life_inv_bottledshine",
+	"life_inv_bottledbeer",
+	"life_inv_bottledwhiskey",
+	"life_inv_moonshine",
+	"life_inv_mash"
 ];
 
 //Setup variable inv vars.
@@ -287,7 +300,10 @@ life_licenses =
 	["l_c_dep","civ"],
 	["l_c_hunting","civ"],
 	["l_c_taxi","civ"],
-	["l_c_airsoft","civ"]
+	["l_c_airsoft","civ"],
+	["l_c_stiller","civ"],
+	["l_c_liquor","civ"],
+	["l_c_bottler","civ"]
 ];
 
 //Setup License Variables
@@ -308,13 +324,17 @@ life_illegal_items =
 	["turtle",1400*1.3],
 	["blastingcharge",35000],
 	["boltcutter",7500],
-	["dog",650*1.3]
+	["dog",650*1.3],
+	["moonshine",9000],
+	["bottledshine",11000],
+	["mash",5000]
 ];
 
 
 /*
 	Sell / buy arrays
 */
+// Prix auxquel vend le joueur au pnj
 sell_array = 
 [
 	["apple",50],
@@ -371,10 +391,23 @@ sell_array =
 	["silverpiece",750],
 	["ruby",2500],
 	["diamondf",10000],
-	["pearl",2000]
+	["pearl",2000],
+	["bottledshine",3000], 
+	["bottledwhiskey",2500], 
+	["bottledbeer",1500], 
+	["moonshine",2000], 
+	["whiskey",1500], 
+	["beerp",500], 
+	["mash",700], 
+	["rye",500], 
+	["hops",300], 
+	["yeast",150], 
+	["cornmeal",100], 
+	["bottles",75], 
 ];
 __CONST__(sell_array,sell_array);
 
+// Prix auquel le joueur ACHETE au PNJ
 buy_array = 
 [
 	["apple",150],
@@ -408,7 +441,10 @@ buy_array =
 	["cone",100],
 	["gpstracker",50000],
 	["nitro",25000],
-	["excavator",5000]
+	["excavator",5000],
+	["bottledshine",12500], 
+	["bottledwhiskey",8000], 
+	["bottledbeer",6000] 
 ];
 __CONST__(buy_array,buy_array);
 

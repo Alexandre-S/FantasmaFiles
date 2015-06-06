@@ -122,6 +122,7 @@ class Life_Client_Core
 		class viewId {};
 		class airsoftStart {};
 		class airsoftGear {};
+		class soufflerBallon {};
 	};
 	
 	class Housing
@@ -353,6 +354,7 @@ class Life_Client_Core
 		class seizeObjects {};
 		class tazerFix {};
 		class copOpener {};
+		class breathalyzer {};
 	};
 	
 	class Gangs
@@ -417,6 +419,9 @@ class Life_Client_Core
 		class gpsTracker {};
 		class nitro {};
 		class searchWreck {};
+		class drinkbeer {};
+		class drinkmoonshine {};
+		class drinkwhiskey {};
 	};
 	
 	class Drugs

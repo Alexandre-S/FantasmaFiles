@@ -2564,6 +2564,34 @@
 			<Italian>Il veicolo non contiene così tanti oggetti.</Italian>
 			<Portuguese>A mala não tem toda essa contidade de items.</Portuguese>
 		</Key>
+		<Key ID="STR_MISC_StPubIntox">
+			<Original>%1 has passed out drunk in public!</Original>
+			<English>%1 has passed out drunk in public!</English>
+			<German>%1 hat sich betrunken im öffentlichen bestanden!</German>
+			<French>%1 viens de tomber dans le coma!</French>
+		</Key>
+		<Key ID="STR_MISC_AlreadyDrinking">
+			<Original>You are already drinking some booze</Original>
+			<English>You are already drinking some booze</English>
+			<German>Du bist schon etwas trinken Alkohol</German>
+			<French>Vous êtes déjà en train de boire!</French>
+		</Key>
+		<Key ID="STR_MISC_WestIndNoNo">
+			<Original>No drinking on duty</Original>
+			<English>No drinking on duty</English>
+			<German>Kein Trinkwasser im Dienst</German>
+			<French>Pas boire pendant le travail</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut">
+			<Original>You have passed out</Original>
+			<English>You have passed out</English>
+			<French>Vous faite un blackout!</French>
+		</Key>
+		<Key ID="STR_MISC_DrunkBlackOut1">
+			<Original>What the hell happened to me??</Original>
+			<English>What the hell happened to me??</English>
+			<French>Putain la gueule de bois...</French>
+		</Key>
 	</Package>
 	<Package name="Housing_Strings">
 		<Key ID="STR_House_ContainerError">
@@ -2809,6 +2837,18 @@
 			<French>Cannabis</French>
 			<Italian>Cannabis</Italian>
 			<Portuguese>Maconha não Processada</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Rye">
+			<Original>Rye Plants</Original>
+			<French>Malt</French>
+		</Key>
+		<Key ID="STR_Item_Hops">
+			<Original>Hops</Original>
+			<French>Houblon</French>
+		</Key>
+		<Key ID="STR_Item_Yeast">
+			<Original>Yeast</Original>
+			<French>Levure</French>
 		</Key>
 		<Key ID="STR_Item_Apple">
 			<Original>Apple</Original>
@@ -3876,6 +3916,18 @@
 			<French>Récolter de la cocaine</French>
 			<Italian>Raccogli Cocaina</Italian>
 			<Portuguese>Colher Cocaina</Portuguese>
+		</Key>
+		<Key ID="STR_Gather_Rye">
+			<Original>Gather Rye</Original>
+			<French>Récolter Malt</French>
+		</Key>
+		<Key ID="STR_Gather_Hops">
+			<Original>Pick Hops</Original>
+			<French>Récolter Houblon</French>
+		</Key>
+		<Key ID="STR_Gather_Yeast">
+			<Original>Gather Yeast</Original>
+			<French>Récolter levure</French>
 		</Key>
 	</Package>
 	<Package name="Medical_Strings">
