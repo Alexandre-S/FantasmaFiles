@@ -174,7 +174,7 @@ switch (true) do
 		{
 			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.06;
-			if (life_drink < 0.07) exitWith {};
+			//if (life_drink < 0.07) exitWith {};
 			[] spawn life_fnc_drinkwhiskey;
 		};
 	};
@@ -186,7 +186,7 @@ switch (true) do
 		{
 			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.08;
-			if (life_drink < 0.09) exitWith {};
+			//if (life_drink < 0.09) exitWith {};
 			[] spawn life_fnc_drinkmoonshine;
 		};
 	};
@@ -198,7 +198,7 @@ switch (true) do
 		{
 			if(isNil "life_drink") then {life_drink = 0;};
 			life_drink = life_drink + 0.02;
-			if (life_drink < 0.06) exitWith {};
+			//if (life_drink < 0.06) exitWith {};
 			[] spawn life_fnc_drinkbeer;
 		};
 	};

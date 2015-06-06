@@ -132,19 +132,21 @@
 	{
 		waitUntil {(life_drink > 0)};
 		while{(life_drink > 0)} do {
-		
+			enableCamShake true;
 			if(life_drink > 0.08) then {
-			"radialBlur" ppEffectEnable true;
-			"radialBlur" ppEffectAdjust[0.08, 0,0.35,0.37];
-			"radialBlur" ppEffectCommit 3;
-			sleep 240;
-			life_drink = life_drink - 0.02;
+				"radialBlur" ppEffectEnable true;
+				"radialBlur" ppEffectAdjust[0.2, 0.15,0.35,0.37];
+				"radialBlur" ppEffectCommit 3;
+				addCamShake[random 10, 240, random 10];
+				sleep 240;
+				life_drink = life_drink - 0.02;
 			} else {
-			"radialBlur" ppEffectEnable true;
-			"radialBlur" ppEffectAdjust[0.05, 0,0.36,0.38];
-			"radialBlur" ppEffectCommit 1;
-			sleep 180;
-			life_drink = life_drink - 0.02;
+				"radialBlur" ppEffectEnable true;
+				"radialBlur" ppEffectAdjust[0.05, 0,0.36,0.38];
+				"radialBlur" ppEffectCommit 1;
+				addCamShake[random 6, 180, random 4];
+				sleep 180;
+				life_drink = life_drink - 0.02;
 			};
 		};
 		
@@ -152,6 +154,7 @@
 		"radialBlur" ppEffectCommit 5;
 		"radialBlur" ppEffectEnable false;
 		life_drink = 0;
+		resetCamShake;
 		
 	};
 };

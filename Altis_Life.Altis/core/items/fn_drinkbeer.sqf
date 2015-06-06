@@ -19,14 +19,14 @@ for "_i" from 0 to 59 do
 		"chromAberration" ppEffectCommit 1;   
 		"radialBlur" ppEffectAdjust  [random 0.05,random 0.05,0.3,0.3];
 		"radialBlur" ppEffectCommit 1;
-		addcamShake[random 4, 2, random 4];
+		addCamShake[random 4, 2, random 4];
 		sleep 1;
 	} else {
 		"chromAberration" ppEffectAdjust [random 0.05,random 0.05,true];
 		"chromAberration" ppEffectCommit 1;   
 		"radialBlur" ppEffectAdjust  [random 0.03,random 0.03,0.4,0.4];
 		"radialBlur" ppEffectCommit 1;
-		addcamShake[random 3, 1, random 3];
+		addCamShake[random 3, 1, random 3];
 		sleep 1;
 	};
 };

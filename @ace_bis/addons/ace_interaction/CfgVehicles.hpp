@@ -141,7 +141,7 @@ class CfgVehicles {
 				  };
 				  class ACE_CopAlcool
 				  {
-					  displayName = "Contrôler Alcool";
+					  displayName = "Contrôler Alcool et Stup";
 					  distance = 4;
 					  condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {playerSide == west} && {side _target in [civilian,independent,west]}";
 					  statement = "[_target] call life_fnc_breathalyzer";

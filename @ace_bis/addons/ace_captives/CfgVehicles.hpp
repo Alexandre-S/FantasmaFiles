@@ -60,7 +60,8 @@ class CfgVehicles {
                     displayName = "$STR_ACE_Captives_FriskPerson";
                     distance = 2;
                     condition = QUOTE([ARR_2(_player, _target)] call FUNC(canFriskPerson));
-                    statement = QUOTE([ARR_2(_player, _target)] call FUNC(doFriskPerson));
+                    //statement = QUOTE([ARR_2(_player, _target)] call FUNC(doFriskPerson));
+					statement = "[_target] spawn life_fnc_searchAction";
                     showDisabled = 0;
                     //icon = "";  //@todo
                     priority = 3;
