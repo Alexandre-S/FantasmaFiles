@@ -47,7 +47,7 @@ if(!isNull _source) then {
 			// };
 		};*/
 		
-		 if(_projectile == "DDOPP_B_Taser" && _curWep in ["DDOPP_X26","DDOPP_X26_b"]) then {
+		 if(_projectile == "DDOPP_B_Taser" && _curWep in ["DDOPP_X26","DDOPP_X26_b","DDOPP_X3","DDOPP_X3_b"]) then {
 			// if(side _source == west && playerSide != west) then {
 				_damage = 0;
 				private["_distance","_isVehicle","_isQuad"];

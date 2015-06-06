@@ -115,7 +115,9 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_HK416",nil,0],
 						["rhs_weap_m4a1_blockII_grip2_KAC",nil,0],
 						["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,0],
-	
+						["DDOPP_X3",nil,0],
+						["DDOPP_X3_b",nil,0],
+						["DDOPP_3Rnd_X3",nil,0],
 						["ACE_M84",nil,0]
 					]
 				];
