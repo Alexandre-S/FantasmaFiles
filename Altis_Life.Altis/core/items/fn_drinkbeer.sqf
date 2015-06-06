@@ -13,7 +13,7 @@ player setVariable["inDrink",true,true];
 
 for "_i" from 0 to 59 do
 {
-    if(life_drink > 0.12) then {
+    if(life_drink > 0.15) then {
 
 		"chromAberration" ppEffectAdjust[0.16,random 0.16, true];
 		"chromAberration" ppEffectCommit 1;   
@@ -30,7 +30,7 @@ for "_i" from 0 to 59 do
 		sleep 1;
 	};
 };
-if (life_drink > 0.22) then {
+if (life_drink > 0.5) then {
 	titleText [localize "STR_MISC_DrunkBlackOut","BLACK OUT"];
 	player playMoveNow "Incapacitated";
 	//titleText[localize "STR_MISC_DrunkBlackOut","BLACK IN"];
@@ -57,4 +57,4 @@ sleep 6;
 //"chromAberration" ppEffectEnable false;
 //"radialBlur" ppEffectEnable false;
 resetCamShake;
-if(life_drink != 0) then {life_drink = life_drink - 0.02;};
+if(life_drink != 0) then {life_drink = life_drink - 0.05;};

@@ -14,25 +14,25 @@ player setVariable["inDrink",true,true];
 
 for "_i" from 0 to 89 do
 {
-    if(life_drink > 0.12) then {
+    if(life_drink > 0.20) then {
 		"chromAberration" ppEffectAdjust[0,random 0.15, false];
 		"chromAberration" ppEffectCommit 1;   
 		"radialBlur" ppEffectAdjust  [random 0.1,random 0.1,0.3,0.3];
 		"radialBlur" ppEffectCommit 1;
 		"colorCorrections" ppEffectAdjust[ 0.44, 0.76, 0.7, [0.1, -0.57, 0, 0.05],[1.8, 1.3, 0.3, 0.7],[0.2, 0.59, 0.11, 0]];
 		"colorCorrections" ppEffectCommit 1;
-		addCamShake[random 4, 2, random 4];
+		addCamShake[random 7, 2, random 7];
 		sleep 1;
 	} else {
 		"chromAberration" ppEffectAdjust [random 0.05,random 0.05,true];
 		"chromAberration" ppEffectCommit 1;   
 		"radialBlur" ppEffectAdjust  [random 0.01,random 0.01,0.5,0.5];
 		"radialBlur" ppEffectCommit 1;
-		addCamShake[random 4, 2, random 4];
+		addCamShake[random 7, 2, random 7];
 		sleep 1;
 	};
 };
-if (life_drink > 0.22) then {
+if (life_drink > 0.5) then {
 	titleText [localize "STR_MISC_DrunkBlackOut","BLACK OUT"];
 	player playMoveNow "Incapacitated";
 	//titleText[localize "STR_MISC_DrunkBlackOut","BLACK IN"];
@@ -62,4 +62,4 @@ sleep 6;
 //"radialBlur" ppEffectEnable false;
 //"colorCorrections" ppEffectEnable false;
 resetCamShake;
-if(life_drink != 0) then {life_drink = life_drink - 0.02;};
+if(life_drink != 0) then {life_drink = life_drink - 0.05;};
