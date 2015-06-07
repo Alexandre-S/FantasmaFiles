@@ -144,7 +144,7 @@ class CfgVehicles {
 					  displayName = "Contrôler Alcool et Stup";
 					  distance = 4;
 					  condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {playerSide == west} && {side _target in [civilian,independent,west]}";
-					  statement = "[_target] spawn life_fnc_breathalyzer";
+					  statement = "[_target,player] spawn life_fnc_breathalyzer";
 					  showDisabled = 0;
 					  priority = 2.3;
 					  hotkey = "A";
