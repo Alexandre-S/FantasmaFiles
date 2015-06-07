@@ -1,5 +1,0 @@
-///////<HEADER>///////
-prefix=kio_fhat
-Pbo Type is: Arma Addon
-Sha: 'A1E7C08D91D71980434814AA8FBA90DC7E6320FC'
-//////</HEADER>//////
