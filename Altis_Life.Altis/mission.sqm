@@ -42763,7 +42763,7 @@ class Mission
 		class Item276
 		{
 			position[]={16551.695,14.54816,16132.104};
-			name="Gen_3_4_2_1_1_1";
+			name="Bar_Cland1";
 			text="Bar clandestin";
 			type="c_unknown";
 			colorName="ColorEAST";
@@ -42771,7 +42771,7 @@ class Mission
 		class Item277
 		{
 			position[]={27088.143,22.303467,23271.164};
-			name="Gen_3_4_2_1_1_1_1";
+			name="Bar_Cland2";
 			text="Bar clandestin";
 			type="c_unknown";
 			colorName="ColorEAST";
