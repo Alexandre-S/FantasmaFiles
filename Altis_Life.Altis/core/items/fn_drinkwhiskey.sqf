@@ -4,7 +4,7 @@
 	drinkypoo
 */
 closeDialog 0;
-hintSilent parseText format["Votre taux d'alcool<br/> <t size='1.4'><t color='#FF0000'>%1</t></t>",[life_drink] call life_fnc_numberText];
+hintSilent parseText format["Votre taux d'alcool augmente moyennement"];
 sleep 4;
 "chromAbberation" ppEffectEnable true;
 "radialBlur" ppEffectEnable true;

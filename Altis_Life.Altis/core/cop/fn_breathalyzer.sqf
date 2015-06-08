@@ -5,7 +5,7 @@
 	Adaptation : youri
 */
 private["_target","_drinky","_druglvl"];
-_target = [_this,0,"",[""]] call BIS_fnc_param;
+_target = _this select 0;
 _drinky = _this select 1;
 _druglvl = _this select 2;
 if(isNull _target) exitWith {};
