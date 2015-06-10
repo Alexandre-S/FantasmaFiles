@@ -404,7 +404,7 @@ sell_array =
 	["hops",300], 
 	["yeast",150], 
 	["cornmeal",100], 
-	["bottles",75], 
+	["bottles",75]
 ];
 __CONST__(sell_array,sell_array);
 
