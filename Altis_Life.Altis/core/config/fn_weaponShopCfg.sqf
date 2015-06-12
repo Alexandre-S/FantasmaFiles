@@ -306,6 +306,26 @@ switch(_shop) do
 		};
 	};
 	
+	case "cop_cg":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!l_g_cg): {"Vous n'avez pas la formation maritime !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Maritime",
+					[
+						["arifle_SDAR_F",nil,0],
+						["20Rnd_556x45_UW_mag",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
 	case "cop_swat":
 	{
 		switch(true) do
