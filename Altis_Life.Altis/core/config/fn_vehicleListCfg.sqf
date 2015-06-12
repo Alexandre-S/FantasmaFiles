@@ -289,6 +289,7 @@ switch (_shop) do
 			_return pushBack ["RDS_Gaz24_Civ_01",0];
 			_return pushBack ["BAF_Offroad_D",0];
 			_return pushBack ["LandRover_ACR",0];
+			_return pushBack ["C_Van_01_box_F",0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
@@ -366,6 +367,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 5) then
 		{
 			_return pushBack["B_Boat_Armed_01_minigun_F",0];
+			_return pushBack["B_SDV_01_F",0];
 		};
 	};
 };

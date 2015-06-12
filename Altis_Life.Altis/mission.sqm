@@ -5427,7 +5427,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=3323;
+		items=3324;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -40658,10 +40658,20 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false;this setdir 309.243;this setposATL [19888.933594,16438.962891,-0.0565472];this setVectorUp [0,0,1]";
 		};
+		class Item3323
+		{
+			position[]={17386.318,14.599124,13173.955};
+			azimut=315.69653;
+			id=3640;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>DAB</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""<t color='#ADFF2F'>DAB Groupe</t>"",life_fnc_gangAtmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 && getPlayerUID player == (group player getVariable [""gang_owner"",""0""])'];";
+		};
 	};
 	class Markers
 	{
-		items=281;
+		items=282;
 		class Item0
 		{
 			position[]={8326.8896,82.8312,25066.445};
@@ -42799,6 +42809,14 @@ class Mission
 			text="Levure";
 			type="mil_triangle";
 			colorName="ColorKhaki";
+		};
+		class Item281
+		{
+			position[]={17386.225,14.598917,13174.018};
+			name="atm_marker_1_3_1";
+			type="loc_Tourism";
+			colorName="ColorGreen";
+			angle=-40.076271;
 		};
 	};
 	class Sensors
