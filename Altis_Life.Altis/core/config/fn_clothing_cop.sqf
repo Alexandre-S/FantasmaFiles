@@ -340,10 +340,10 @@ switch (_filter) do
 		// Pilote
 		if(l_g_air) then
 		{
-			// _ret pushBack ["H_HelmetCrew_B",nil,0];
-			// _ret pushBack ["H_HelmetCrew_O",nil,0];
-			// _ret pushBack ["H_CrewHelmetHeli_B",nil,0];
-			// _ret pushBack ["H_CrewHelmetHeli_O",nil,0];
+			_ret pushBack ["H_HelmetCrew_B",nil,0];
+			_ret pushBack ["H_HelmetCrew_O",nil,0];
+			_ret pushBack ["H_CrewHelmetHeli_B",nil,0];
+			_ret pushBack ["H_CrewHelmetHeli_O",nil,0];
 		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then

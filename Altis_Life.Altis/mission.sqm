@@ -2785,7 +2785,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3";
-					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Maritime"",life_fnc_weaponShopMenu,""cop_cg""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item42
 				{
@@ -2832,7 +2832,7 @@ class Mission
 					side="WEST";
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
-					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Maritime"",life_fnc_weaponShopMenu,""cop_cg""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item46
 				{
@@ -3041,7 +3041,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_1";
-					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Maritime"",life_fnc_weaponShopMenu,""cop_cg""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item64
 				{
@@ -3053,7 +3053,7 @@ class Mission
 					vehicle="B_RangeMaster_F";
 					skill=0.60000002;
 					text="h1_3_2";
-					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
+					init="this enableSimulation false; this addAction[""Magasin gendarmerie"",life_fnc_virt_menu,""cop""];  this allowDamage false;  this addAction[""Vestiaire gendarmerie"",life_fnc_clothingMenu,""cop""];  this addAction[""Armurerie : Equipement Général"",life_fnc_weaponShopMenu,""cop_basic""];  this addAction[""Armurerie standard"",life_fnc_weaponShopMenu,""cop_armurerie""];  this addAction[""Armurerie : BAC / PJ"",life_fnc_weaponShopMenu,""cop_bacpj""]; this addAction[""Armurerie : APRG"",life_fnc_weaponShopMenu,""cop_aprg""]; this addAction[""Armurerie : Médic"",life_fnc_weaponShopMenu,""cop_medic""]; this addAction[""Armurerie : Unité Tactique"",life_fnc_weaponShopMenu,""cop_swat""]; this addAction[""Armurerie : Maritime"",life_fnc_weaponShopMenu,""cop_cg""]; this addAction[""Armurerie : Haut-Gradés"",life_fnc_weaponShopMenu,""cop_major""]; ";
 				};
 				class Item65
 				{
