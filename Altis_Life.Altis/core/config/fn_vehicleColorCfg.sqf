@@ -262,7 +262,17 @@ switch (_vehicle) do
 			["\plp_truckColors\van_front\van_01_ext_lightyellow_CO.paa","civ","\plp_truckColors\van_box\van_01_adds_yellow_CO.paa"],
 			["\plp_truckColors\van_front\van_01_ext_orange_CO.paa","civ","\plp_truckColors\van_box\van_01_adds_yellow_CO.paa"],
 			["\plp_truckColors\van_front\van_01_ext_grey_CO.paa","civ","\plp_truckColors\van_box\van_01_adds_white_CO.paa"],
-			["\plp_truckColors\van_front\van_01_ext_black_CO.paa","civ","\plp_truckColors\van_box\van_01_adds_black_CO.paa"]
+			["\plp_truckColors\van_front\van_01_ext_black_CO.paa","civ","\plp_truckColors\van_box\van_01_adds_black_CO.paa"],
+			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_co.paa","cop"],
+			["\a3\soft_f_gamma\Van_01\Data\van_01_ext_red_co.paa","cop"],
+			["\plp_truckColors\van_front\van_01_ext_blue_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_blue_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_darkblue_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_white_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_darkgreen_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_green_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_lightgreen_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_white_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_lightyellow_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_yellow_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_orange_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_yellow_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_grey_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_white_CO.paa"],
+			["\plp_truckColors\van_front\van_01_ext_black_CO.paa","cop","\plp_truckColors\van_box\van_01_adds_black_CO.paa"]
 		];
 	};
 	

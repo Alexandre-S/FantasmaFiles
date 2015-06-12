@@ -236,6 +236,16 @@ switch (_vehicle) do
 			case 7: {_color = "Orange"};
 			case 8: {_color = "Gris"};
 			case 9: {_color = "Noir"};
+			case 10: {_color = "Blanc"};
+			case 11: {_color = "Rouge"};
+			case 12: {_color = "Bleu"};
+			case 13: {_color = "Bleu nuit"};
+			case 14: {_color = "Vert foncé"};
+			case 15: {_color = "Vert clair"};
+			case 16: {_color = "Jaune clair"};
+			case 17: {_color = "Orange"};
+			case 18: {_color = "Gris"};
+			case 19: {_color = "Noir"};
 		};
 	};
 	
