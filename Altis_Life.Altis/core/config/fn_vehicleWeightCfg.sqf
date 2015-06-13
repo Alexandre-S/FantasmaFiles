@@ -15,6 +15,9 @@ switch (_className) do
 	case "C_Kart_01_Red_F": {7};
 	case "C_Kart_01_Vrana_F": {7};
 	case "B_Quadbike_01_F": {38};
+	case "cl3_chopper_gold": {15};
+	case "cl3_enduro_black": {20};
+	case "cl3_xr_1000_black": {25};
 	case "RDS_S1203_Civ_01": {135};
 	case "C_Hatchback_01_F": {60};
 	case "RDS_Lada_Civ_01": {60};

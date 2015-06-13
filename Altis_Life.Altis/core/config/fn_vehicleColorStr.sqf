@@ -814,6 +814,52 @@ switch (_vehicle) do
 			case 6: {_color = "Gris"};
 		};
 	};
+	
+	case "cl3_xr_1000_black" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Gendarmerie"};
+			case 1: {_color = "Blanc"};
+			case 2: {_color = "Violet"};
+			case 3: {_color = "Argenté"};
+			case 4: {_color = "Sable"};
+			case 5: {_color = "Rouge"};
+			case 6: {_color = "Bleu"};
+			case 7: {_color = "Noir"};
+			case 8: {_color = "Flammes 1"};
+			case 9: {_color = "Flammes 2"};
+		};
+	};
+	
+	case "cl3_chopper_gold" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Doré"};
+			case 1: {_color = "Bleu"};
+			case 2: {_color = "Vert"};
+			case 3: {_color = "Rouge"};
+			case 4: {_color = "Argenté"};
+		};
+	};
+	
+	case "cl3_enduro_black" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Blanc"};
+			case 1: {_color = "Violet"};
+			case 2: {_color = "Argenté"};
+			case 3: {_color = "Sable"};
+			case 4: {_color = "Rouge"};
+			case 5: {_color = "Bleu"};
+			case 6: {_color = "Noir"};
+			case 7: {_color = "Flammes 1"};
+			case 8: {_color = "Flammes 2"};
+			case 9: {_color = "Flammes 3"};
+		};
+	};
 };
 
 _color;
