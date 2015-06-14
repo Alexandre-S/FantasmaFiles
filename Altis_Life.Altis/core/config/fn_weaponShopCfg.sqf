@@ -777,12 +777,12 @@ switch(_shop) do
 						["acc_flashlight",nil,1000],
 						
 						// pompe court
-						["rhs_weap_M590_5RD",nil,64000],
-						["rhsusf_5Rnd_00Buck",nil,350],
+						//["rhs_weap_M590_5RD",nil,64000],
+						//["rhsusf_5Rnd_00Buck",nil,350],
 
 						// pompe long
-						["rhs_weap_M590_8RD",nil,67000],
-						["rhsusf_8Rnd_00Buck",nil,550],
+						//["rhs_weap_M590_8RD",nil,67000],
+						//["rhsusf_8Rnd_00Buck",nil,550],
 						
 						//enfield
 						["Trixie_Enfield",nil,70000],
