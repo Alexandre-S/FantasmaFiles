@@ -25,6 +25,7 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["rpima_uniform",nil,0];
+			_ret pushBack ["U_B_UniformePolaireGendarme","Polaire Gendarme",0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
@@ -33,7 +34,6 @@ switch (_filter) do
 		// BAC / PJ
 		if(l_g_bacpj) then
 		{
-			_ret pushBack ["U_B_UniformePolaireGendarme","Polaire Gendarme",0];
 			_ret pushBack ["U_B_UniformePolaireBleueGendarme","Polaire Bleue Gendarme",0];
 			_ret pushBack ["U_C_Poloshirt_blue","Poloshirt Blue",0];
 			_ret pushBack ["U_C_Poloshirt_burgundy","Poloshirt Burgundy",0];
@@ -174,6 +174,15 @@ switch (_filter) do
 		{
 			_ret pushBack ["gign_uniform",nil,0];
 		};
+		// Unité tactique
+		if(l_g_swatSnipe) then
+		{
+			_ret pushBack ["U_B_GhillieSuit",nil,0];
+			_ret pushBack ["U_I_GhillieSuit",nil,0];
+			_ret pushBack ["U_B_FullGhillie_ard",nil,0];
+			_ret pushBack ["U_B_FullGhillie_lsh",nil,0];
+			_ret pushBack ["U_B_FullGhillie_sard",nil,0];
+		};
 		// Pilote
 		if(l_g_air) then
 		{
@@ -190,11 +199,7 @@ switch (_filter) do
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
-			_ret pushBack ["U_B_GhillieSuit",nil,0];
-			_ret pushBack ["U_I_GhillieSuit",nil,0];
-			_ret pushBack ["U_B_FullGhillie_ard",nil,0];
-			_ret pushBack ["U_B_FullGhillie_lsh",nil,0];
-			_ret pushBack ["U_B_FullGhillie_sard",nil,0];
+			
 		};
 		
 		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
@@ -338,7 +343,7 @@ switch (_filter) do
 			_ret pushBack ["gign_helm4",nil,0];
 		};
 		// Pilote
-		if(l_g_air) then
+		if(l_g_air || l_g_airT) then
 		{
 			_ret pushBack ["H_HelmetCrew_B",nil,0];
 			_ret pushBack ["H_HelmetCrew_O",nil,0];
@@ -558,7 +563,7 @@ switch (_filter) do
 			_ret pushBack ["PMC_B_Carryall_blk",nil,0];
 		};
 		// Unité Tactique
-		if(l_g_swat || __GETC__(life_coplevel) >= 2) then
+		if(l_g_swatDrone) then
 		{
 			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
 		};

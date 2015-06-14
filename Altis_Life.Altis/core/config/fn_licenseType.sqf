@@ -23,8 +23,13 @@ switch (_mode) do
 			case "dive": {_var = "l_c_dive"}; //Diving license cost
 			case "oil": {_var = "l_c_oil"}; //Oil processing license cost
 			case "cair": {_var = "l_g_air"}; //Cop Pilot License cost
+			case "cairT": {_var = "l_g_airT"}; //Cop Tactic Pilot License cost
 			case "swat": {_var = "l_g_swat"}; //Swat License cost
+			case "swatSnipe": {_var = "l_g_swatSnipe"}; //Swat License cost
+			case "swatBall": {_var = "l_g_swatBall"}; //Swat License cost
+			case "swatDrone": {_var = "l_g_swatDrone"}; //Swat License cost
 			case "cg": {_var = "l_g_cg"}; //Coast guard license cost
+			case "ctrl": {_var = "l_g_ctrl"}; //controle aerien license cost
 			case "bacpj": {_var = "l_g_bacpj"}; //BacPJ
 			case "medic": {_var = "l_g_medic"}; //cop medic license cost
 			case "aprg": {_var = "l_g_aprg"}; //APRG
@@ -76,8 +81,13 @@ switch (_mode) do
 			case "l_c_dive": {_var = "dive"}; //Diving license cost
 			case "l_c_oil": {_var = "oil"}; //Oil processing license cost
 			case "l_g_air": {_var = "cair"}; //Cop Pilot License cost
+			case "l_g_airT": {_var = "cairT"}; //Cop tactic Pilot License cost
 			case "l_g_swat": {_var = "swat"}; //Swat License cost
+			case "l_g_swatSnipe": {_var = "swatSnipe"}; //Swat License cost
+			case "l_g_swatBall": {_var = "swatBall"}; //Swat License cost
+			case "l_g_swatDrone": {_var = "swatDrone"}; //Swat License cost
 			case "l_g_cg": {_var = "cg"}; //Coast guard license cost
+			case "l_g_ctrl": {_var = "ctrl"}; //controle aerien license cost
 			case "l_g_bacpj": {_var = "bacpj"}; //BacPJ
 			case "l_g_medic": {_var = "medic"}; //cop medic license cost
 			case "l_g_aprg": {_var = "aprg"}; //APRG

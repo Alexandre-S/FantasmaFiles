@@ -151,12 +151,12 @@ switch(_shop) do
 						["acc_flashlight",nil,0],
 						
 						// pompe court
-						["rhs_weap_M590_5RD",nil,0],
-						["rhsusf_5Rnd_00Buck",nil,0],
+						//["rhs_weap_M590_5RD",nil,0],
+						//["rhsusf_5Rnd_00Buck",nil,0],
 
 						// pompe long
-						["rhs_weap_M590_8RD",nil,0],
-						["rhsusf_8Rnd_00Buck",nil,0],
+						//["rhs_weap_M590_8RD",nil,0],
+						//["rhsusf_8Rnd_00Buck",nil,0],
 						
 						//enfield
 						["Trixie_Enfield",nil,0],
@@ -326,6 +326,26 @@ switch(_shop) do
 		};
 	};
 	
+	case "cop_ctrl":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!l_g_ctrl): {"Vous n'avez pas la formation maritime !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Controle Aerien",
+					[
+						["R3F_STINGER",nil,0],
+						["R3F_STINGER_mag",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
 	case "cop_swat":
 	{
 		switch(true) do
@@ -338,8 +358,6 @@ switch(_shop) do
 				_ret =
 				["Armurerie : Unité Tactique",
 					[
-						["gign_shield",nil,0],
-						
 						["R3F_HK417M",nil,0],
 						["R3F_HK417M_DES",nil,0],
 						["R3F_HK417L",nil,0],
@@ -348,29 +366,42 @@ switch(_shop) do
 						
 						["R3F_Minimi",nil,0],
 						["R3F_200Rnd_556x45_MINIMI",nil,0],
-
-						["R3F_M107",nil,0],
-						["R3F_M107_DES",nil,0],
-						["R3F_10Rnd_127x99_M107",nil,0],
-						
-						["rhs_weap_XM2010",nil,0],
-						["rhs_weap_XM2010_wd",nil,0],
-						["rhs_weap_XM2010_d",nil,0],
-						["rhs_weap_XM2010_sa",nil,0],
-						["rhsusf_5Rnd_300winmag_xm2010",nil,0],
 						
 						["optic_MRCO",nil,0],
 						["optic_Hamr",nil,0],
-						["optic_LRPS",nil,0],
 						
-						["ACE_Vector",nil,0],
 						["Laserdesignator",nil,0],
 						["Laserbatteries",nil,0],
-						["B_UavTerminal",nil,0],
-						["MineDetector",nil,0],
-						["ACE_Kestrel4500",nil,0]
+						["MineDetector",nil,0]
 					]
 				];
+				// Snipe
+				if(l_g_swatSnipe) then
+				{
+					(_ret select 1) pushBack ["R3F_M107",nil,0];
+					(_ret select 1) pushBack ["R3F_M107_DES",nil,0];
+					(_ret select 1) pushBack ["R3F_10Rnd_127x99_M107",nil,0];
+					(_ret select 1) pushBack ["rhs_weap_XM2010",nil,0];
+					(_ret select 1) pushBack ["rhs_weap_XM2010_wd",nil,0];
+					(_ret select 1) pushBack ["rhs_weap_XM2010_d",nil,0];
+					(_ret select 1) pushBack ["rhs_weap_XM2010_sa",nil,0];
+					(_ret select 1) pushBack ["rhsusf_5Rnd_300winmag_xm2010",nil,0];
+					(_ret select 1) pushBack ["optic_LRPS",nil,0];
+					(_ret select 1) pushBack ["ACE_Vector",nil,0];
+					(_ret select 1) pushBack ["ACE_Kestrel4500",nil,0];
+				};
+				// Ballistique
+				if(l_g_swatBall) then
+				{
+					(_ret select 1) pushBack ["gign_shield",nil,0];
+					(_ret select 1) pushBack ["rhsusf_weap_m1911a1",nil,0];
+					(_ret select 1) pushBack ["rhsusf_mag_7x45acp_MHP",nil,0];
+				};
+				// Ballistique
+				if(l_g_swatDrone) then
+				{
+					(_ret select 1) pushBack ["B_UavTerminal",nil,0];
+				};
 			};
 		};
 	};

@@ -319,25 +319,21 @@ switch (_shop) do
 	
 	case "cop_air":
 	{
-		// Grade Brigadier
-		if(__GETC__(life_coplevel) >= 2) then
+		// Pilote transport
+		if(l_g_air) then
 		{
 			_return pushBack["GNT_C185_RP",0];
 			_return pushBack["GNT_C185F_RP",0];
 			_return pushBack["C_Heli_Light_01_civil_F_RP",0];
 			_return pushBack["B_Heli_Light_01_F_RP",0];
-		};
-		// Grade Lieutenant
-		if(__GETC__(life_coplevel) >= 3) then
-		{
 			_return pushBack["O_Heli_Light_02_unarmed_F_RP",0];
-			_return pushBack["I_Heli_light_03_unarmed_F_RP",0];
 			_return pushBack["B_Heli_Transport_03_unarmed_F_RP",0];
 			_return pushBack["O_Heli_Transport_04_F_RP",0];
 		};
-		// Grade Colonel
-		if(__GETC__(life_coplevel) >= 5) then
+		// Pilote Tactique
+		if(l_g_airT) then
 		{
+			_return pushBack["I_Heli_light_03_unarmed_F_RP",0];
 			_return pushBack["B_Heli_Transport_01_F_RP",0];
 			_return pushBack["B_Heli_Transport_03_F_RP",0];
 			_return pushBack["RHS_UH60M_d",0];
@@ -351,23 +347,20 @@ switch (_shop) do
 	
 	case "cop_ship":
 	{
-		_return pushBack["B_Boat_Transport_01_F",0];
-		_return pushBack["B_Lifeboat",0];
-		// Grade Brigadier
-		if(__GETC__(life_coplevel) >= 1) then
+		_return pushBack["C_Boat_Civil_01_police_F",0];
+		
+		// Garde Cote
+		if(l_g_cg) then
 		{
-			_return pushBack["C_Boat_Civil_01_police_F",0];
+			_return pushBack["B_Boat_Transport_01_F",0];
+			_return pushBack["B_Lifeboat",0];
 			_return pushBack["ffaa_ar_supercat",0];
-		};
-		if(__GETC__(life_coplevel) >= 2) then
-		{
-			_return pushBack["C_Boat_Civil_01_police_F",0];
+			_return pushBack["B_Boat_Armed_01_minigun_F",0];
+			_return pushBack["B_SDV_01_F",0];
 		};
 		// Grade Haut-Gradés
 		if(__GETC__(life_coplevel) >= 5) then
 		{
-			_return pushBack["B_Boat_Armed_01_minigun_F",0];
-			_return pushBack["B_SDV_01_F",0];
 		};
 	};
 };

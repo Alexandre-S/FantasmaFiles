@@ -268,8 +268,13 @@ life_inv_items =
 life_licenses =
 [
 	["l_g_air","cop"],
+	["l_g_airT","cop"],
 	["l_g_swat","cop"],
+	["l_g_swatSnipe","cop"],
+	["l_g_swatBall","cop"],
+	["l_g_swatDrone","cop"],
 	["l_g_cg","cop"],
+	["l_g_ctrl","cop"],
 	["l_g_bacpj","cop"],
 	["l_g_medic","cop"],
 	["l_g_aprg","cop"],
