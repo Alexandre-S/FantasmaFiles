@@ -25,7 +25,6 @@ switch (_filter) do
 		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_ret pushBack ["rpima_uniform",nil,0];
-			_ret pushBack ["U_B_UniformePolaireGendarme","Polaire Gendarme",0];
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
@@ -34,6 +33,7 @@ switch (_filter) do
 		// BAC / PJ
 		if(l_g_bacpj) then
 		{
+			_ret pushBack ["U_B_UniformePolaireGendarme","Polaire Gendarme",0];
 			_ret pushBack ["U_B_UniformePolaireBleueGendarme","Polaire Bleue Gendarme",0];
 			_ret pushBack ["U_C_Poloshirt_blue","Poloshirt Blue",0];
 			_ret pushBack ["U_C_Poloshirt_burgundy","Poloshirt Burgundy",0];
@@ -224,16 +224,6 @@ switch (_filter) do
 		{
 			_ret pushBack ["H_Beret_blk",nil,0];
 			_ret pushBack ["kio_fhat",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_black_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_red_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_white_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_blue_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_yellow_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_green_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_1_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_2_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_3_F",nil,0];
-			_ret pushBack ["H_RacingHelmet_4_F",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 3) then
 		{

@@ -1152,12 +1152,6 @@ life_garage_sell =
 	["RDS_Gaz24_Civ_01",16000*0.49],
 	["rhs_uaz_open_vmf",19500*0.49],
 	["rhs_uaz_vdv",22000*0.49],
-	
-	//Motos
-	["cl3_chopper_gold",35000*0.49],
-	["cl3_enduro_black",55000*0.49],
-	["cl3_xr_1000_black",75000*0.49],
-	
 	["RDS_Golf4_Civ_01",41500*0.49],
 	["C_Offroad_01_F",33750*0.49],
 	["B_G_Offroad_01_F",33750*0.49],
@@ -1270,12 +1264,6 @@ life_garage_prices =
 	["RDS_Gaz24_Civ_01",16000*0.0735],
 	["rhs_uaz_open_vmf",19500*0.0735],
 	["rhs_uaz_vdv",22000*0.0735],
-	
-	//Motos
-	["cl3_chopper_gold",35000*0.0735],
-	["cl3_enduro_black",55000*0.0735],
-	["cl3_xr_1000_black",75000*0.0735],
-	
 	["RDS_Golf4_Civ_01",41500*0.0735],
 	["C_Offroad_01_F",33750*0.0735],
 	["B_G_Offroad_01_F",33750*0.0735],
@@ -1385,12 +1373,6 @@ life_assur_prices =
 	["RDS_Gaz24_Civ_01",16000*0.5],
 	["rhs_uaz_open_vmf",19500*0.5],
 	["rhs_uaz_vdv",22000*0.5],
-	
-	//Motos
-	["cl3_chopper_gold",35000*0.5],
-	["cl3_enduro_black",55000*0.5],
-	["cl3_xr_1000_black",75000*0.5],
-	
 	["RDS_Golf4_Civ_01",41500*0.5],
 	["C_Offroad_01_F",33750*0.5],
 	["B_G_Offroad_01_F",33750*0.5],

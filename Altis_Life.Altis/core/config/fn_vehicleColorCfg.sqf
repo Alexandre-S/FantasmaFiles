@@ -826,51 +826,6 @@ switch (_vehicle) do
 			["\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_body_g_vsr_co.paa","civ","\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_det_g_co.paa","a3\data_f\clear_empty.paa","\rhsafrf\addons\rhs_a2port_air\mi17\data\mi8_decals_ca.paa","a3\data_f\clear_empty.paa","a3\data_f\clear_empty.paa"]
 		];
 	};
-	case "cl3_xr_1000_black":
-	{
-		_ret = 
-		[
-			["","cop","","","","","","","","","","","","","","","","\cl3_mbikes\xr_1000\data\clpd_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_white_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\violet_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\silver_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\sand_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\red_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_blue_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_black_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_flame1_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_flame2_co.paa"]
-		];
-	};
-	
-	case "cl3_chopper_gold":
-	{
-		_ret = 
-		[
-			["","civ","","","","","","","","","","","","","","","","\cl3_mbikes\chopper\data\chopper_skin_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_mbikes\chopper\data\chopper_skin_blue_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_mbikes\chopper\data\chopper_skin_green_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_mbikes\chopper\data\chopper_skin_red_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_mbikes\chopper\data\chopper_skin_silver_co.paa"]
-		];
-	};
-	
-	case "cl3_enduro_black":
-	{
-		_ret = 
-		[
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_white_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\violet_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\silver_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\sand_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\red_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_blue_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_black_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_flame_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_flame1_co.paa"],
-			["","civ","","","","","","","","","","","","","","","","\cl3_vehiclefunctions\skins\skin_flame2_co.paa"]
-		];
-	};
 	
 	
 };
