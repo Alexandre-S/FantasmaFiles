@@ -9,7 +9,7 @@ if(vest player != "V_HarnessOGL_brn") exitWith {};
 
 sleep 1; 
 
-_boum = "Bo_Mk82" createVehicle [0,0,9999];
+_boum = "Bo_GBU12_LGB_MI10" createVehicle [0,0,9999];
 _boum setPos (getPos player);
 _boum setVelocity [100,0,0];
 
