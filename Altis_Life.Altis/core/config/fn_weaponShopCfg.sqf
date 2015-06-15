@@ -178,7 +178,6 @@ switch(_shop) do
 						
 						//equip
 						["ACE_EarPlugs",nil,0],
-						["ACE_Kestrel4500",nil,0],
 						["ACE_SpareBarrel",nil,0],
 						["ACE_CableTie",nil,0],
 						["ACE_NVG_Gen1",nil,0],
@@ -443,6 +442,9 @@ switch(_shop) do
 					_ret =
 					["Magasin Service",
 						[
+							["hgun_Pistol_Signal_F",nil,3000],
+							["6Rnd_GreenSignal_F",nil,250],
+							["6Rnd_RedSignal_F",nil,250],
 							["tf_anprc148jem",nil,5000],
 							["ItemGPS",nil,100],
 							["ItemCompass",nil,100],
@@ -450,10 +452,8 @@ switch(_shop) do
 							["ACE_Altimeter","SmartWatch Altimètre",100],
 							["ItemMap",nil,100],
 							["ACE_MapTools",nil,500],
-							["ACE_SpareBarrel",nil,1000],
 							["ACE_CableTie",nil,100],
 							["ACE_EarPlugs",nil,25],
-							["ACE_Kestrel4500",nil,500],
 							["Binocular",nil,150],
 							["ToolKit",nil,3000],
 							["FirstAidKit",nil,1000],
@@ -466,63 +466,24 @@ switch(_shop) do
 							["ACE_HandFlare_Red",1000],
 							["ACE_HandFlare_Green",1000],
 							["ACE_HandFlare_Yellow",1000],
-							["ACE_IR_Strobe_Item",nil,0],
-							["hgun_Rook40_F",nil,4900],
-							["16Rnd_9x21_Mag",nil,350],
-							["hgun_ACPC2_F",nil,5300],
-							["9Rnd_45ACP_Mag",nil,400]
+							["ACE_IR_Strobe_Item",nil,0]
 						]
 					];
 				};
 				// Croix Rouge rang 2
 				if(__GETC__(life_medicLevel) >= 2) then
 				{
-
-					//benelli m4 
-					// (_ret select 1) pushBack ["R3F_M4S90",nil,50000];
-					// (_ret select 1) pushBack ["R3F_7Rnd_M4S90",nil,450];
-					(_ret select 1) pushBack ["acc_flashlight",nil,1000];
-					
-					// pompe court
-					(_ret select 1) pushBack ["rhs_weap_M590_5RD",nil,64000];
-					(_ret select 1) pushBack ["rhsusf_5Rnd_00Buck",nil,350];
-
-					// pompe long
-					(_ret select 1) pushBack ["rhs_weap_M590_8RD",nil,67000];
-					(_ret select 1) pushBack ["rhsusf_8Rnd_00Buck",nil,550];
-					
-					//enfield
-					(_ret select 1) pushBack ["Trixie_Enfield",nil,70000];
-					(_ret select 1) pushBack ["Trixie_Enfield_Mag",nil,750];
-
-					//CZ550
-					(_ret select 1) pushBack ["Trixie_CZ550_Rail",nil,120000];
-					(_ret select 1) pushBack ["Trixie_CZ550_Mag",nil,1000];
-					
-					// optic
-					(_ret select 1) pushBack ["optic_Aco",nil,3000];
-					(_ret select 1) pushBack ["optic_ACO_grn",nil,3000];
-					(_ret select 1) pushBack ["optic_Holosight",nil,3000];
-					(_ret select 1) pushBack ["R3F_AIMPOINT",nil,3000];
-					(_ret select 1) pushBack ["R3F_AIMPOINT_DES",nil,3000];
-					(_ret select 1) pushBack ["rhsusf_acc_compm4",nil,3000];
-					(_ret select 1) pushBack ["R3F_EOTECH",nil,3000];
-					(_ret select 1) pushBack ["R3F_EOTECH_DES",nil,3000];
-					(_ret select 1) pushBack ["rhsusf_acc_eotech_552",nil,3000];
-					
 				};
 				// Croix Rouge rang 3
 				if(__GETC__(life_medicLevel) >= 3) then
 				{
-					// (_ret select 1) pushBack ["rhs_weap_mk18",nil,100000];
-					(_ret select 1) pushBack ["rhs_weap_mk18_grip2",nil,100000];
-					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
 
 				};
 				// Croix Rouge rang 4
 				if(__GETC__(life_medicLevel) >= 4) then
 				{
-					
+					(_ret select 1) pushBack ["rhsusf_weap_m1911a1_as",nil,6000];
+					(_ret select 1) pushBack ["mag_7x45acp_MHP_airsoft",nil,800];
 				};
 			};
 		};
