@@ -412,13 +412,7 @@ switch (_filter) do
 			["V_HarnessO_gry",nil,3500],
 			
 			["V_Chestrig_khk",nil,3500],
-			["V_Chestrig_rgr",nil,3500],
-			
-			//gillet par balle
-			["V_TacVest_khk",nil,25000],
-			["V_TacVest_brn",nil,25000],
-			["V_TacVest_blk",nil,25000],
-			["V_TacVest_oli",nil,25000]
+			["V_Chestrig_rgr",nil,3500]
 		];
 	};
 	
