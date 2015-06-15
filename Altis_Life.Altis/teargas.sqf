@@ -42,10 +42,10 @@ ef4 ppEffectCommit 1;
 			addCamShake [10, 45, 10];    // sets shakevalues
 			player setFatigue 1; // sets the fatigue to 100%
 			5 fadeSound 0.1;     // fades the sound to 10% in 5 seconds
-
+			// (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; 
 		};
 		
-		sleep 5;
+		sleep 0.5;
 	};
 };
 /*
