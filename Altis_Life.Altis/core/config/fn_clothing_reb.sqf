@@ -152,6 +152,41 @@ switch (_filter) do
 				_ret pushBack ["U_O_FullGhillie_sard",nil,100000];
 			};
 		};
+		if(l_c_thug) then
+		{
+			_ret = 
+			[
+				//["U_PMC_IndUniformRS_BSBPBB",nil,5000],
+				["U_PMC_IndUniformRS_BSGPBB",nil,5000],
+				["U_PMC_IndUniformRS_BSTPTB",nil,5000],
+				["U_PMC_IndUniformRS_GSGPBB",nil,5000],
+				["U_PMC_IndUniformRS_GSBPBB",nil,5000],
+				["U_PMC_IndUniformRS_GSTPTB",nil,5000],
+				["U_PMC_IndUniformRS_TSTPTB",nil,5000],
+				["U_PMC_IndUniformRS_TSBPBB",nil,5000],
+				["U_PMC_IndUniformRS_TSGPBB",nil,5000],
+				
+				//["U_PMC_IndUniformLS_BSBPBB",nil,5000],
+				["U_PMC_IndUniformLS_BSGPBB",nil,5000],
+				["U_PMC_IndUniformLS_BSTPTB",nil,5000],
+				["U_PMC_IndUniformLS_GSGPBB",nil,5000],
+				["U_PMC_IndUniformLS_GSBPBB",nil,5000],
+				["U_PMC_IndUniformLS_GSTPTB",nil,5000],
+				["U_PMC_IndUniformLS_TSTPTB",nil,5000],
+				["U_PMC_IndUniformLS_TSBPBB",nil,5000],
+				["U_PMC_IndUniformLS_TSGPBB",nil,5000],
+				
+				["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,5000],
+				["U_PMC_CombatUniformLS_ChckLB_GPBB",nil,5000],
+				["U_PMC_CombatUniformLS_ChckLR_SPBB",nil,5000],
+				["U_PMC_CombatUniformLS_ChckP_BPBB",nil,5000],
+				
+				["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,5000],
+				["U_PMC_CombatUniformRS_ChckLB_GPBB",nil,5000],
+				["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,5000],
+				["U_PMC_CombatUniformRS_ChckP_BPBB",nil,5000]
+			];
+		};
 	};
 	
 	//Hats

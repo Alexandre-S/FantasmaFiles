@@ -141,37 +141,6 @@ switch (_filter) do
 			["U_NikosBody","Rakail",3500],
 			
 			["vip_clothes","Tenue footing",4500],
-
-
-			//["U_PMC_IndUniformRS_BSBPBB",nil,5000],
-			["U_PMC_IndUniformRS_BSGPBB",nil,5000],
-			["U_PMC_IndUniformRS_BSTPTB",nil,5000],
-			["U_PMC_IndUniformRS_GSGPBB",nil,5000],
-			["U_PMC_IndUniformRS_GSBPBB",nil,5000],
-			["U_PMC_IndUniformRS_GSTPTB",nil,5000],
-			["U_PMC_IndUniformRS_TSTPTB",nil,5000],
-			["U_PMC_IndUniformRS_TSBPBB",nil,5000],
-			["U_PMC_IndUniformRS_TSGPBB",nil,5000],
-			
-			//["U_PMC_IndUniformLS_BSBPBB",nil,5000],
-			["U_PMC_IndUniformLS_BSGPBB",nil,5000],
-			["U_PMC_IndUniformLS_BSTPTB",nil,5000],
-			["U_PMC_IndUniformLS_GSGPBB",nil,5000],
-			["U_PMC_IndUniformLS_GSBPBB",nil,5000],
-			["U_PMC_IndUniformLS_GSTPTB",nil,5000],
-			["U_PMC_IndUniformLS_TSTPTB",nil,5000],
-			["U_PMC_IndUniformLS_TSBPBB",nil,5000],
-			["U_PMC_IndUniformLS_TSGPBB",nil,5000],
-			
-			["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,5000],
-			["U_PMC_CombatUniformLS_ChckLB_GPBB",nil,5000],
-			["U_PMC_CombatUniformLS_ChckLR_SPBB",nil,5000],
-			["U_PMC_CombatUniformLS_ChckP_BPBB",nil,5000],
-			
-			["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,5000],
-			["U_PMC_CombatUniformRS_ChckLB_GPBB",nil,5000],
-			["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,5000],
-			["U_PMC_CombatUniformRS_ChckP_BPBB",nil,5000],
 			
 			["U_CAF_AG_ME_ROBES_01","Tenue gris et vert avec veston bleu",5000],
 			["U_CAF_AG_ME_ROBES_01a",nil,5000],
@@ -192,9 +161,6 @@ switch (_filter) do
 			["U_CAF_AG_ME_ROBES_04b",nil,5000],
 			["U_CAF_AG_ME_ROBES_04c","Veste bleu et robe bleu",5000],
 			["U_CAF_AG_ME_ROBES_04d","Veste marron et robe verte et marron",5000],
-			
-		
-			
 
 			["U_NikosAgedBody","Casual Wears",5000],
 			
