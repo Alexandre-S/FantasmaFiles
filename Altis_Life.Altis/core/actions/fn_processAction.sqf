@@ -12,7 +12,9 @@ _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
 //Error check
 if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
-
+if(_type in ["heroin","lsd","cocaine","marijuana"]) then{
+	if(({side _x == west} count playableUnits) <= 3) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];};
+};
 //unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 _itemInfo = switch (_type) do
 {

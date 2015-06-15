@@ -56,9 +56,9 @@ while {true} do {
 	if(!alive _vehicle OR isNull _vehicle) exitWith {};
 	if(isEngineOn _vehicle) exitWith {titleText[localize "STR_NOTF_MiningStopped","PLAIN"];};
 	titleText[localize "STR_NOTF_DeviceMining","PLAIN"];
-	_time = time + 27;
+	_time = time + 15;
 	
-	//Wait for 27 seconds with a 'delta-time' wait.
+	//Wait for 15 seconds with a 'delta-time' wait.
 	waitUntil {
 		if(isEngineOn _vehicle) exitWith {titleText[localize "STR_NOTF_MiningStopped","PLAIN"]; true};
 		if(round(_time - time) < 1) exitWith {true};
