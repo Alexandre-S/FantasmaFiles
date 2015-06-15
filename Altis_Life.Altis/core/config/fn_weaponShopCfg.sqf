@@ -62,7 +62,6 @@ switch(_shop) do
 						["ToolKit",nil,0],
 						["FirstAidKit",nil,0],
 						["ACE_EarPlugs",nil,0],
-						["ACE_Kestrel4500",nil,0],
 						["ACE_MapTools",nil,0],
 						["ACE_SpareBarrel",nil,0],
 						["ACE_CableTie",nil,0],
