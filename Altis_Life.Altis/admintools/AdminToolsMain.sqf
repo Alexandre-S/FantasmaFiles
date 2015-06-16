@@ -29,11 +29,20 @@ _EXECscript2 = 'player execVM "'+_pathtovehicles+'%1"';
 
 //customise these menus to fit your server
 if ((getPlayerUID player) in ["76561197971054451","76561197999056075","76561198026019944","76561197983740568","76561198010101889","76561197985429466","76561197969337890","76561198007128754","76561197997451635","76561198004672533","76561198049343521"]) then { //all admins
-	if ((getPlayerUID player) in ["76561197999056075","76561198026019944","76561197983740568","76561197969337890","76561198007128754","76561198049343521"]) then { //mods
+	if ((getPlayerUID player) in ["76561197999056075","76561198026019944","76561197983740568","76561198007128754","76561198049343521"]) then { //mods
         adminmenu =
         [
 			["",true],
 				["Tools Menu", [2], "#USER:GMToolsMenu", -5, [["expression", ""]], "1", "1"],
+				["", [-1], "", -5, [["expression", ""]], "1", "0"],
+			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
+        ];
+	};
+	if ((getPlayerUID player) in ["76561197969337890"]) then { //mods
+        adminmenu =
+        [
+			["",true],
+				["Tools Menu", [2], "#USER:GM2ToolsMenu", -5, [["expression", ""]], "1", "1"],
 				["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
         ];
@@ -77,6 +86,22 @@ GMToolsMenu =
 		["Teleport Me To Other", [5], "", -5, [["expression", format[_EXECscript1, "TPtoOther.sqf"]]], "1", "1"],
 		//["Invisible", [5], "", -5, [["expression", format[_EXECscript1, "fufu.sqf"]]], "1", "1"],
 		//["ESP", [6], "", -5, [["expression", format[_EXECscript1, "ESP.sqf"]]], "1", "1"],
+		["Teleport", [7], "", -5, [["expression", format[_EXECscript1, "Tele.sqf"]]], "1", "1"],
+		["Camera", [8], "", -5, [["expression", format[_EXECscript1, "camera.sqf"]]], "1", "1"],
+		//["Heal", [9], "", -5, [["expression", format[_EXECscript1, "heal.sqf"]]], "1", "1"],
+		["", [-1], "", -5, [["expression", ""]], "1", "0"],
+			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
+];
+GM2ToolsMenu =
+[
+	["",true],
+		//["God Mode", [2],  "", -5, [["expression", format[_EXECscript1,"Godmode.sqf"]]], "1", "1"],
+		//["Car God", [3],  "", -5, [["expression", format[_EXECscript1,"cargod.sqf"]]], "1", "1"],
+		//["Spectate Player", [4],  "", -5, [["expression", format[_EXECscript1,"spectate.sqf"]]], "1", "1"],
+		["Teleport To Me", [5], "", -5, [["expression", format[_EXECscript1, "TPtoME.sqf"]]], "1", "1"],
+		["Teleport Me To Other", [5], "", -5, [["expression", format[_EXECscript1, "TPtoOther.sqf"]]], "1", "1"],
+		//["Invisible", [5], "", -5, [["expression", format[_EXECscript1, "fufu.sqf"]]], "1", "1"],
+		["ESP", [6], "", -5, [["expression", format[_EXECscript1, "ESP.sqf"]]], "1", "1"],
 		["Teleport", [7], "", -5, [["expression", format[_EXECscript1, "Tele.sqf"]]], "1", "1"],
 		["Camera", [8], "", -5, [["expression", format[_EXECscript1, "camera.sqf"]]], "1", "1"],
 		//["Heal", [9], "", -5, [["expression", format[_EXECscript1, "heal.sqf"]]], "1", "1"],
