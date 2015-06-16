@@ -786,9 +786,9 @@ switch(_shop) do
 						["RH_m9",nil,4900],
 						["RH_15Rnd_9x19_M9",nil,350],
 						
-						// Glock 18 9mm
-						["RH_g18",nil,4900],
-						["RH_33Rnd_9x19_g18",nil,350],
+						// Glock 19 9mm
+						["RH_g19",nil,4900],
+						["RH_17Rnd_9x19_g17",nil,350],
 						
 						// P226 9mm
 						["RH_p226",nil,4900],
@@ -809,6 +809,15 @@ switch(_shop) do
 						// 1911 Kimber 45
 						["RH_kimber",nil,5300],
 						["RH_7Rnd_45cal_m1911",nil,400],
+						
+						// TTracker .45
+						["RH_ttracker",nil,7000],
+						["RH_ttracker_g",nil,7000],
+						["RH_6Rnd_45ACP_Mag",nil,600],
+						
+						// MP412 .357
+						["RH_mp412",nil,9000],
+						["RH_6Rnd_357_Mag",nil,800],
 						
 						//benelli m4 
 						// ["R3F_M4S90",nil,50000],
