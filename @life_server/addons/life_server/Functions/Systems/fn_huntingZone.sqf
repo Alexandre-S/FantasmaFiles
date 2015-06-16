@@ -32,14 +32,14 @@ goatgroup = createGroup Civilian;
 		// _total = 200 - _alive;
 		// if (time - life_animals_spawned_time > 60) then
 		// {
-			_total = 80 - count life_animals_array;
+			_total = 200 - count life_animals_array;
 			for "_i" from 1 to _total do
 			{
 				_type = _animals call BIS_fnc_selectRandom;
 				// _animal = _type createVehicleLocal ([_pos, [1,500] call BIS_fnc_randomInt, [0,359] call BIS_fnc_randomInt] call BIS_fnc_relPos);
 				// _animal = goatgroup createUnit [_type, ([_pos, [1,500] call BIS_fnc_randomInt, [0,359] call BIS_fnc_randomInt] call BIS_fnc_relPos),[],0,"NONE"];
 				// _animal = (createGroup east) createUnit [_type, ([_pos, [1,50] call BIS_fnc_randomInt, [0,50] call BIS_fnc_randomInt] call BIS_fnc_relPos),[],0,"NONE"];
-				_animal = createAgent [_type, _pos,[],1100,"NONE"];
+				_animal = createAgent [_type, _pos,[],300,"NONE"];
 				_animal setdir (random 360);
 				_animal switchmove "walkf";
 				//_animal setVariable ["zbe_cacheDisabled",true];
