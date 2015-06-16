@@ -810,6 +810,10 @@ switch(_shop) do
 						["RH_kimber",nil,5300],
 						["RH_7Rnd_45cal_m1911",nil,400],
 						
+						// mateba 44
+						["RH_mateba",nil,6500],
+						["RH_6Rnd_44_Mag",nil,550],
+						
 						// TTracker .45
 						["RH_ttracker",nil,7000],
 						["RH_ttracker_g",nil,7000],
@@ -817,6 +821,7 @@ switch(_shop) do
 						
 						// MP412 .357
 						["RH_mp412",nil,9000],
+						["RH_python",nil,9000],
 						["RH_6Rnd_357_Mag",nil,800],
 						
 						//benelli m4 
