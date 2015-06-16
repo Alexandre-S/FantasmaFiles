@@ -515,6 +515,14 @@ switch(_shop) do
 							//sting 9mm
 							["SMG_02_F",nil,73450],
 							["30Rnd_9x21_Mag",nil,950],
+
+							//TEC9
+							["RH_tec9",nil,8000],
+							["RH_32Rnd_9x19_tec",nil,600],
+
+							//Uzi
+							["RH_muzi",nil,8000],
+							["RH_30Rnd_9x19_UZI",nil,600],
 							
 							//optic
 							["optic_Aco",nil,3000],
@@ -758,9 +766,49 @@ switch(_shop) do
 						["hgun_Rook40_F",nil,4900],
 						["16Rnd_9x21_Mag",nil,350],
 						
-						//.45
+						// CZ75 9mm
+						["RH_cz75",nil,4900],
+						["RH_16Rnd_9x19_cz",nil,350],
+						
+						// SW659 9mm
+						["RH_sw659",nil,4900],
+						["RH_14Rnd_9x19_sw",nil,350], 
+						
+						// MAK 9mm
+						["RH_mak",nil,4900],
+						["RH_8Rnd_9x18_Mak",nil,350],
+						
+						// VP70 9mm
+						["RH_vp70",nil,4900],
+						["RH_18Rnd_9x19_VP",nil,350],
+						
+						// M9 9mm
+						["RH_m9",nil,4900],
+						["RH_15Rnd_9x19_M9",nil,350],
+						
+						// Glock 18 9mm
+						["RH_g18",nil,4900],
+						["RH_33Rnd_9x19_g18",nil,350],
+						
+						// P226 9mm
+						["RH_p226",nil,4900],
+						["RH_15Rnd_9x19_SIG",nil,350],
+						
+						// GHS18 9mm
+						["RH_gsh18",nil,4900],
+						["RH_18Rnd_9x19_gsh",nil,350],
+						
+						// ACP .45
 						["hgun_ACPC2_F",nil,5300],
 						["9Rnd_45ACP_Mag",nil,400],
+						
+						// USP 45
+						["RH_usp",nil,5300],
+						["RH_12Rnd_45cal_usp",nil,400],
+						
+						// 1911 Kimber 45
+						["RH_kimber",nil,5300],
+						["RH_7Rnd_45cal_m1911",nil,400],
 						
 						//benelli m4 
 						// ["R3F_M4S90",nil,50000],
