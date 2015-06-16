@@ -78,6 +78,16 @@ if(!isNull _source) then {
 				[_unit,_source] spawn life_fnc_airsoft;
 			};
 		};
+		if(_projectile in ["fantasma_ammo_45ACP_MHP_medic","B_762x54_Ball"] && _curWep in ["rhsusf_weap_m1911a1_medic","srifle_DMR_01_F"]) then {
+			_damage = 0;
+			private["_isVehicle"];
+			_isVehicle = if(vehicle player != player) then {true} else {false};
+			if(!_isVehicle) then {
+				cutText ["Une fléchette tranquillisante vous touche !!!", "PLAIN"];
+				hint "Une fléchette tranquillisante vous touche !!!";
+				[_unit,_source] spawn life_fnc_airsoft;
+			};
+		};
 	};
 };
 

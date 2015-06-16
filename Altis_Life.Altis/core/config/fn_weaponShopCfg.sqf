@@ -473,6 +473,8 @@ switch(_shop) do
 				// Croix Rouge rang 2
 				if(__GETC__(life_medicLevel) >= 2) then
 				{
+					(_ret select 1) pushBack ["rhsusf_weap_m1911a1_medic",nil,6000];
+					(_ret select 1) pushBack ["mag_7x45acp_MHP_medic",nil,500];
 				};
 				// Croix Rouge rang 3
 				if(__GETC__(life_medicLevel) >= 3) then
@@ -482,8 +484,8 @@ switch(_shop) do
 				// Croix Rouge rang 4
 				if(__GETC__(life_medicLevel) >= 4) then
 				{
-					(_ret select 1) pushBack ["rhsusf_weap_m1911a1_as",nil,6000];
-					(_ret select 1) pushBack ["mag_7x45acp_MHP_airsoft",nil,800];
+					(_ret select 1) pushBack ["srifle_DMR_01_F",nil,40000];
+					(_ret select 1) pushBack ["10Rnd_762x54_Mag",nil,800];
 				};
 			};
 		};
