@@ -26,4 +26,4 @@ hint format [localize "STR_ATM_WithdrawSuccess",[_val] call life_fnc_numberText]
 [] call life_fnc_gangAtmMenu;
 [0] call SOCK_fnc_updatePartial;
 [] call life_fnc_getHLC;
-[[1,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+[[1,grpPlayer,_gFund],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;

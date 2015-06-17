@@ -32,7 +32,7 @@ if(_action) then {
 	
 	hint parseText format[localize "STR_GNOTF_UpgradeSuccess",_maxMembers,_slotUpgrade,[_upgradePrice] call life_fnc_numberText];
 	[] call life_fnc_getHLC;
-	[[2,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+	[[2,grpPlayer,_slotUpgrade],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 } else {
 	hint localize "STR_GNOTF_UpgradeCancel";
 };

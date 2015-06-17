@@ -26,4 +26,4 @@ hint format[localize "STR_ATM_DepositGang",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;
 [6] call SOCK_fnc_updatePartial; //Silent Sync
 [] call life_fnc_getHLC;
-[[1,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+[[1,grpPlayer,_gFund],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;

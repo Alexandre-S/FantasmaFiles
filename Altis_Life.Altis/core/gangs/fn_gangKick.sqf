@@ -27,5 +27,5 @@ _members = _members - [_unitID];
 
 [[_unit,_grp],"life_fnc_clientGangKick",_unit,false] spawn life_fnc_MP; //Boot that bitch!
 [] call life_fnc_getHLC;
-[[4,_grp],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
+[[4,_grp,_members],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
 [] call life_fnc_gangMenu;

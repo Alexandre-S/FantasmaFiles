@@ -32,7 +32,7 @@ if(_action) then {
 	grpPlayer selectLeader _unit;
 	[[_unit,grpPlayer],"life_fnc_clientGangLeader",_unit,false] spawn life_fnc_MP; //Boot that bitch!
 	[] call life_fnc_getHLC;
-	[[3,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
+	[[3,grpPlayer,_unitID],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP; //Update the database.
 } else {
 	hint localize "STR_GNOTF_TransferCancel";
 };

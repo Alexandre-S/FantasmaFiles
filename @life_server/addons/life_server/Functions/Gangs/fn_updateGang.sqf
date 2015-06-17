@@ -4,7 +4,7 @@
 	Description:
 	Updates the gang information?
 */
-private["_mode","_group","_groupID","_bank","_maxMembers","_members","_query","_owner","_membersFinal"];
+private["_mode","_group","_groupID","_bank","_maxMembers","_members","_query","_owner","_membersFinal","_slotUpgrade"];
 _mode = [_this,0,0,[0]] call BIS_fnc_param;
 _group = [_this,1,grpNull,[grpNull]] call BIS_fnc_param;
 
@@ -25,22 +25,29 @@ switch (_mode) do {
 	};
 	
 	case 1: {
-		_query = format["UPDATE gangs SET bank='%1' WHERE id='%2'",([(_group getVariable ["gang_bank",0])] call DB_fnc_numberSafe),_groupID];
+		_bank = [_this,2,0,[0]] call BIS_fnc_param;
+		_query = format["UPDATE gangs SET bank='%1' WHERE id='%2'",([_bank] call DB_fnc_numberSafe),_groupID];
 	};
 	
 	case 2: {
-		_query = format["UPDATE gangs SET maxmembers='%1' WHERE id='%2'",(_group getVariable ["gang_maxMembers",8]),_groupID];
+		_slotUpgrade = [_this,2,8,[0]] call BIS_fnc_param;
+		// _query = format["UPDATE gangs SET maxmembers='%1' WHERE id='%2'",(_group getVariable ["gang_maxMembers",8]),_groupID];
+		_query = format["UPDATE gangs SET maxmembers='%1' WHERE id='%2'",_slotUpgrade,_groupID];
 	};
 	
 	case 3: {
-		_owner = _group getVariable["gang_owner",""];
-		if(_owner == "") exitWith {};
+		// _owner = _group getVariable["gang_owner",""];
+		_owner = [_this,2,0,[0]] call BIS_fnc_param;
+		// if(_owner == "") exitWith {};
+		if(_owner == 0) exitWith {};
 		_query = format["UPDATE gangs SET owner='%1' WHERE id='%2'",_owner,_groupID];
 	};
 	
 	case 4: {
-		_members = _group getVariable ["gang_members",nil];
-		if(isNil "_members") exitWith {};
+		// _members = _group getVariable ["gang_members",nil];
+		_members = [_this,2,[],[[]]] call BIS_fnc_param;
+		// if(isNil "_members") exitWith {};
+		if(count _members == 0) exitWith {};
 		if(typeName _members != "ARRAY") exitWith {};
 		_maxMembers = _group getVariable ["gang_maxMembers",8];
 		if(count _members > _maxMembers) then {

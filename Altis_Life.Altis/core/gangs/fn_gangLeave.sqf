@@ -28,7 +28,7 @@ closeDialog 0;
 	sleep 1;
 	
 	[] call life_fnc_getHLC;
-	[[4,_grp],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+	[[4,_grp,_grpMembers],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 	
 	sleep 1;
 	

@@ -32,4 +32,4 @@ grpPlayer setVariable ["gang_bank",_gFund,true];
 hint format[localize "STR_ATM_SentMoneySuccess",[_val] call life_fnc_numberText,_unit getVariable["realname",name _unit],[_tax] call life_fnc_numberText];
 // [1] call SOCK_fnc_updatePartial;
 [] call life_fnc_getHLC;
-[[1,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+[[1,grpPlayer,_gFund],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;

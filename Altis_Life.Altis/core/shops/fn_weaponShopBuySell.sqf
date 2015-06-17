@@ -71,7 +71,7 @@ else
 			grpPlayer setVariable["gang_bank",_funds,true];
 			[_item,true] spawn life_fnc_handleItem;
 			[] call life_fnc_getHLC;
-			[[1,grpPlayer],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+			[[1,grpPlayer,_funds],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 		} else {
 			if(_price > life_cash) exitWith {hint localize "STR_NOTF_NotEnoughMoney"};
 			hint parseText format[localize "STR_Shop_Weapon_BoughtItem",_itemInfo select 1,[_price] call life_fnc_numberText];
