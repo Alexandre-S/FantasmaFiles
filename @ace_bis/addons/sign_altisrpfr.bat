@@ -32,6 +32,7 @@ DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_map.pbo
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_maptools.pbo
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_markers.pbo
+DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_medical.pbo
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_microdagr.pbo
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_missionmodules.pbo
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace_bis\addons\ace_modules.pbo
