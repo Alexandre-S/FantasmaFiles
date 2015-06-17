@@ -780,10 +780,6 @@ switch(_shop) do
 						["RH_mak",nil,4900],
 						["RH_8Rnd_9x18_Mak",nil,350],
 						
-						// VP70 9mm
-						["RH_vp70",nil,4900],
-						["RH_18Rnd_9x19_VP",nil,350],
-						
 						// M9 9mm
 						["RH_m9",nil,4900],
 						["RH_15Rnd_9x19_M9",nil,350],
