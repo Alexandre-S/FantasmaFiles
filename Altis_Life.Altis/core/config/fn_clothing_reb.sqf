@@ -19,6 +19,41 @@ switch (_filter) do
 	//Uniforms
 	case 0:
 	{
+		if(l_c_thug) then
+		{
+			_ret = 
+			[
+				//["U_PMC_IndUniformRS_BSBPBB",nil,5000],
+				["U_PMC_IndUniformRS_BSGPBB",nil,5000],
+				["U_PMC_IndUniformRS_BSTPTB",nil,5000],
+				["U_PMC_IndUniformRS_GSGPBB",nil,5000],
+				["U_PMC_IndUniformRS_GSBPBB",nil,5000],
+				["U_PMC_IndUniformRS_GSTPTB",nil,5000],
+				["U_PMC_IndUniformRS_TSTPTB",nil,5000],
+				["U_PMC_IndUniformRS_TSBPBB",nil,5000],
+				["U_PMC_IndUniformRS_TSGPBB",nil,5000],
+				
+				//["U_PMC_IndUniformLS_BSBPBB",nil,5000],
+				["U_PMC_IndUniformLS_BSGPBB",nil,5000],
+				["U_PMC_IndUniformLS_BSTPTB",nil,5000],
+				["U_PMC_IndUniformLS_GSGPBB",nil,5000],
+				["U_PMC_IndUniformLS_GSBPBB",nil,5000],
+				["U_PMC_IndUniformLS_GSTPTB",nil,5000],
+				["U_PMC_IndUniformLS_TSTPTB",nil,5000],
+				["U_PMC_IndUniformLS_TSBPBB",nil,5000],
+				["U_PMC_IndUniformLS_TSGPBB",nil,5000],
+				
+				["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,5000],
+				["U_PMC_CombatUniformLS_ChckLB_GPBB",nil,5000],
+				["U_PMC_CombatUniformLS_ChckLR_SPBB",nil,5000],
+				["U_PMC_CombatUniformLS_ChckP_BPBB",nil,5000],
+				
+				["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,5000],
+				["U_PMC_CombatUniformRS_ChckLB_GPBB",nil,5000],
+				["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,5000],
+				["U_PMC_CombatUniformRS_ChckP_BPBB",nil,5000]
+			];
+		};
 		if(l_c_rebel) then
 		{
 			if(life_sexe) then
@@ -152,41 +187,6 @@ switch (_filter) do
 				_ret pushBack ["U_O_FullGhillie_sard",nil,100000];
 			};
 		};
-		if(l_c_thug) then
-		{
-			_ret = 
-			[
-				//["U_PMC_IndUniformRS_BSBPBB",nil,5000],
-				["U_PMC_IndUniformRS_BSGPBB",nil,5000],
-				["U_PMC_IndUniformRS_BSTPTB",nil,5000],
-				["U_PMC_IndUniformRS_GSGPBB",nil,5000],
-				["U_PMC_IndUniformRS_GSBPBB",nil,5000],
-				["U_PMC_IndUniformRS_GSTPTB",nil,5000],
-				["U_PMC_IndUniformRS_TSTPTB",nil,5000],
-				["U_PMC_IndUniformRS_TSBPBB",nil,5000],
-				["U_PMC_IndUniformRS_TSGPBB",nil,5000],
-				
-				//["U_PMC_IndUniformLS_BSBPBB",nil,5000],
-				["U_PMC_IndUniformLS_BSGPBB",nil,5000],
-				["U_PMC_IndUniformLS_BSTPTB",nil,5000],
-				["U_PMC_IndUniformLS_GSGPBB",nil,5000],
-				["U_PMC_IndUniformLS_GSBPBB",nil,5000],
-				["U_PMC_IndUniformLS_GSTPTB",nil,5000],
-				["U_PMC_IndUniformLS_TSTPTB",nil,5000],
-				["U_PMC_IndUniformLS_TSBPBB",nil,5000],
-				["U_PMC_IndUniformLS_TSGPBB",nil,5000],
-				
-				["U_PMC_CombatUniformLS_ChckDBS_GPSB",nil,5000],
-				["U_PMC_CombatUniformLS_ChckLB_GPBB",nil,5000],
-				["U_PMC_CombatUniformLS_ChckLR_SPBB",nil,5000],
-				["U_PMC_CombatUniformLS_ChckP_BPBB",nil,5000],
-				
-				["U_PMC_CombatUniformRS_ChckDBS_GPSB",nil,5000],
-				["U_PMC_CombatUniformRS_ChckLB_GPBB",nil,5000],
-				["U_PMC_CombatUniformRS_ChckLR_SPBB",nil,5000],
-				["U_PMC_CombatUniformRS_ChckP_BPBB",nil,5000]
-			];
-		};
 	};
 	
 	//Hats
@@ -256,6 +256,23 @@ switch (_filter) do
 	//Glasses
 	case 2:
 	{
+		if(l_c_thug) then
+		{
+			_ret = 
+			[
+				["G_Bandanna_tan",nil,250],
+				["G_Bandanna_khk",nil,250],
+				["G_Bandanna_blk",nil,250],
+				["G_Bandanna_oli",nil,250],
+				["G_Bandanna_beast",nil,250],
+				["G_Bandanna_shades",nil,350],
+				["G_Bandanna_sport",nil,350],
+				["G_Bandanna_aviator",nil,350],
+
+				["Mask_M40",nil,2000],
+				["Mask_M40_OD",nil,2000]
+			];
+		};
 		if(l_c_rebel) then
 		{
 			_ret = 
@@ -274,23 +291,6 @@ switch (_filter) do
 				["G_Balaclava_blk",nil,500],
 				["G_Balaclava_lowprofile",nil,700],
 				["G_Balaclava_combat",nil,700],
-
-				["Mask_M40",nil,2000],
-				["Mask_M40_OD",nil,2000]
-			];
-		};
-		if(l_c_thug) then
-		{
-			_ret = 
-			[
-				["G_Bandanna_tan",nil,250],
-				["G_Bandanna_khk",nil,250],
-				["G_Bandanna_blk",nil,250],
-				["G_Bandanna_oli",nil,250],
-				["G_Bandanna_beast",nil,250],
-				["G_Bandanna_shades",nil,350],
-				["G_Bandanna_sport",nil,350],
-				["G_Bandanna_aviator",nil,350],
 
 				["Mask_M40",nil,2000],
 				["Mask_M40_OD",nil,2000]
