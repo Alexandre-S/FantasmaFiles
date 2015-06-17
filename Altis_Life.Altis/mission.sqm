@@ -43371,17 +43371,13 @@ class Mission
 		{
 			position[]={7284.625,96.240692,20746.514};
 			name="weed_1";
-			text="Cannabis";
-			type="mil_triangle";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item79
 		{
 			position[]={7153.0273,4.0996947,11026.181};
 			name="Weed_p_1";
-			text="Marijuana";
-			type="mil_box";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item80
 		{
@@ -43558,9 +43554,7 @@ class Mission
 		{
 			position[]={20869.371,2.4190235,14638.896};
 			name="cocaine_1";
-			text="Coca";
-			type="mil_triangle";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item104
 		{
@@ -43656,17 +43650,13 @@ class Mission
 		{
 			position[]={12446.235,69.797646,21691.459};
 			name="heroin_1";
-			text="Pavot";
-			type="mil_triangle";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item116
 		{
 			position[]={3756.4561,34.372402,12374.715};
 			name="heroin_p";
-			text="Héroine";
-			type="mil_box";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item117
 		{
@@ -44418,17 +44408,13 @@ class Mission
 		{
 			position[]={18324.502,9.0371761,7888.1929};
 			name="seigle_1";
-			text="Seigle";
-			type="mil_triangle";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item214
 		{
 			position[]={3584.7214,22.066113,14446.426};
 			name="lsd_p_1";
-			text="LSD";
-			type="mil_box";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item215
 		{
@@ -44501,9 +44487,7 @@ class Mission
 		{
 			position[]={3643.2891,6.4655452,10151.415};
 			name="cocaine_processing";
-			text="Cocaine";
-			type="mil_box";
-			colorName="Color1_FD_F";
+			type="Empty";
 		};
 		class Item224
 		{
