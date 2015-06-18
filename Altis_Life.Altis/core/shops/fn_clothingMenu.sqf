@@ -12,7 +12,7 @@ disableSerialization;
 
 //Cop / Civ Pre Check
 if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
-if((_this select 3) == "reb" && !l_c_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
+if((_this select 3) == "reb" && (!l_c_rebel && !l_c_thug)) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["copdive"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !l_c_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
