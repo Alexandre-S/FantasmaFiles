@@ -141,26 +141,6 @@ switch (_filter) do
 			["U_NikosBody","Rakail",3500],
 			
 			["vip_clothes","Tenue footing",4500],
-			
-			["U_CAF_AG_ME_ROBES_01","Tenue gris et vert avec veston bleu",5000],
-			["U_CAF_AG_ME_ROBES_01a",nil,5000],
-			["U_CAF_AG_ME_ROBES_01b",nil,5000],
-			["U_CAF_AG_ME_ROBES_01c",nil,5000],
-			["U_CAF_AG_ME_ROBES_01d",nil,5000],
-			["U_CAF_AG_ME_ROBES_02",nil,5000],
-			["U_CAF_AG_ME_ROBES_02a","Veste ouverte noir et robe marron",5000],
-			["U_CAF_AG_ME_ROBES_02b",nil,5000],
-			["U_CAF_AG_ME_ROBES_02c",nil,5000],
-			["U_CAF_AG_ME_ROBES_03",nil,5000],
-			["U_CAF_AG_ME_ROBES_03a",nil,5000],
-			["U_CAF_AG_ME_ROBES_03b",nil,5000],
-			["U_CAF_AG_ME_ROBES_03c",nil,5000],
-			["U_CAF_AG_ME_ROBES_03d","Veston noir et robe blanche",5000],
-			["U_CAF_AG_ME_ROBES_04",nil,5000],
-			["U_CAF_AG_ME_ROBES_04a","Veste marron et robe verte et marron",5000],
-			["U_CAF_AG_ME_ROBES_04b",nil,5000],
-			["U_CAF_AG_ME_ROBES_04c","Veste bleu et robe bleu",5000],
-			["U_CAF_AG_ME_ROBES_04d","Veste marron et robe verte et marron",5000],
 
 			["U_NikosAgedBody","Casual Wears",5000],
 			
@@ -281,9 +261,6 @@ switch (_filter) do
 			["H_Hat_tan",nil,700],
 			["H_Hat_brown",nil,700],
 			
-			
-			["H_caf_ag_fur2",nil,700],
-			["H_caf_ag_fur",nil,700],
 			["rds_Woodlander_cap1","Chapka 1",700],
 			["rds_Woodlander_cap2","Chapka 2",700],
 			["rds_Woodlander_cap3","Chapka 3",700],
@@ -297,9 +274,7 @@ switch (_filter) do
 			["H_caf_ag_paktol_02",nil,700],
 			["H_caf_ag_paktol_03",nil,700],
 			["H_caf_ag_paktol",nil,700],
-			["H_caf_ag_paktol_04",nil,700],
-			 
-			["H_caf_ag_turban",nil,700]
+			["H_caf_ag_paktol_04",nil,700]
 			
 			
 			/*["H_RacingHelmet_1_black_F",nil,2500],
