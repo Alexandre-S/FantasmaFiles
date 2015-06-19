@@ -1,8 +1,8 @@
 // 404 Wasteland TPG Edition - createVehicle.txt BattlEye filters by AgentRev
 
 // Vehicles
-5 "_APC_"
-5 "APC" !"sab_UN_APC"
+5 "_APC_" !"B_APC_Wheeled_01_cannon_F"
+5 "APC" !"sab_UN_APC" !"B_APC_Wheeled_01_cannon_F"
 5 "CRV" !"sab_UN_CRV"
 5 "Kuma" !"sab_UN_Kuma"
 5 "Panther" !"sab_UN_Panther"
