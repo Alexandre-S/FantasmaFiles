@@ -151,7 +151,7 @@ _patchList =
 "CALanguageCL3","cl3_mbikes","cl3_mod_client","cl3_sounds","cl3_vehiclefunctions","cl3_wheeled","STGI","ST_STHud","ST_STHud_Usermenu",
 "rh_de","RH_de_cfg",
 "ace_rhs_c_weapons_comp","ace_rhsusf_c_weapons_comp","ace_asdg_comp","kio_kio_fhat","Skyline_Mercedes_300_SEL",
-"cba_enable_auto_xeh","ace_dagr","ace_huntir","ace_mx2a","ace_spottingscope","ace_tacticalladder","ace_yardage450"
+"cba_enable_auto_xeh","ace_fonts","ace_dagr","ace_huntir","ace_mx2a","ace_spottingscope","ace_tripod","ace_tacticalladder","ace_ui","ace_yardage450","ace_rangecard"
 
 ];
 
