@@ -8,9 +8,10 @@
 */
 if((time - life_action_delay) < 2) exitWith {hint "Vous ne pouvez pas effectuer autant d'opération en si peu de temps.. merci de patienter"};
 life_action_delay = time;
-private["_type","_index","_price","_var","_amount","_name","_marketprice","_weight","_index2","_array","_ind","_val","_valdeja","_trop"];
+private["_blok","_type","_index","_price","_var","_amount","_name","_marketprice","_weight","_index2","_array","_ind","_val","_valdeja","_trop"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
+_blok = false;
 _index = [_type,__GETC__(sell_array)] call life_fnc_index;
 if(_index == -1) exitWith {};
 _price = (__GETC__(sell_array) select _index) select 1;
@@ -30,7 +31,10 @@ if(_amount > (missionNameSpace getVariable _var)) exitWith {hint localize "STR_S
 _trop = false;
 if(life_shop_type == "heroin") then
 {
-	if(({side _x == west} count playableUnits) <= 3) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];};
+	if(({side _x == west} count playableUnits) <= 3) then {
+		hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];
+		_blok = true;
+	};
 	_array = life_shop_npc getVariable["sellers",[]];
 	_ind = [getPlayerUID player,_array] call life_fnc_index;
 	if(_ind != -1) then
