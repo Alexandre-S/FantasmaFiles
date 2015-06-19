@@ -336,7 +336,6 @@ switch (_shop) do
 			_return pushBack["I_Heli_light_03_unarmed_F_RP",0];
 			_return pushBack["B_Heli_Transport_01_F_RP",0];
 			_return pushBack["B_Heli_Transport_03_F_RP",0];
-			_return pushBack["RHS_UH60M_d",0];
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
