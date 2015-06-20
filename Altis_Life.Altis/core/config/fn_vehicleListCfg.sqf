@@ -240,8 +240,8 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F_RP",412500],
 			["B_Heli_Light_01_F_RP",412500],
 			["O_Heli_Light_02_unarmed_F_RP",700000],
-			["I_Heli_Transport_02_F_RP",750000],
-			["RHS_UH60M_MEV2_d",1500000]
+			["I_Heli_Transport_02_F_RP",750000]
+			//["RHS_UH60M_MEV2_d",1500000]
 		];
 		// Grade 2
 		if(__GETC__(life_reblevel) >= 2) then
@@ -336,6 +336,7 @@ switch (_shop) do
 			_return pushBack["I_Heli_light_03_unarmed_F_RP",0];
 			_return pushBack["B_Heli_Transport_01_F_RP",0];
 			_return pushBack["B_Heli_Transport_03_F_RP",0];
+			_return pushBack["RHS_UH60M_d",0];
 		};
 		// Grade Général
 		if(__GETC__(life_coplevel) >= 6) then
