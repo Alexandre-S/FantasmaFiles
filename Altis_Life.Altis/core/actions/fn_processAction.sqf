@@ -20,9 +20,7 @@ if(_type in ["heroin","lsd","cocaine","marijuana"]) then{
 	};
 };
 
-if(_blok) then{
-	exitWith {};
-} else {
+if(!_blok) then {
 	//unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 	_itemInfo = switch (_type) do
 	{
