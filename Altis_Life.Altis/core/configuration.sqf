@@ -393,7 +393,7 @@ sell_array =
 	["ruby",2500],
 	["diamondf",10000],
 	["pearl",2000],
-	["bottledshine",3000], 
+	["bottledshine",16000], 
 	["bottledwhiskey",12329], 
 	["bottledbeer",9987], 
 	["moonshine",2000], 
@@ -443,9 +443,9 @@ buy_array =
 	["gpstracker",50000],
 	["nitro",25000],
 	["excavator",5000],
-	["bottledshine",12500], 
-	["bottledwhiskey",18000], 
-	["bottledbeer",16000] 
+	["bottledshine",36000], 
+	["bottledwhiskey",28000], 
+	["bottledbeer",20000] 
 ];
 __CONST__(buy_array,buy_array);
 
