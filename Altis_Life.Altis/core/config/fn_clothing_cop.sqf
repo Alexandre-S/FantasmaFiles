@@ -567,6 +567,11 @@ switch (_filter) do
 		{
 			_ret pushBack ["B_UAV_01_backpack_F",nil,0];
 		};
+		// Unité Swat
+		if(l_g_swat) then
+		{
+			_ret pushBack ["B_Parachute",nil,0];
+		};
 		// 
 		if(l_g_air) then
 		{
