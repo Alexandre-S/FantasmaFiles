@@ -23,6 +23,12 @@ if(_marketprice != -1) then { _price = _marketprice; };*/
 //vente donator
 _price = ceil(_price + (((__GETC__(life_donator) * 5) / 100) * _price));
 
+// Si pas de licence entreprise, prix - 20%
+if(!l_c_entreprise && life_shop_type != "heroin") then
+{
+	_price = ceil(_price * 0.80);
+};
+
 _amount = ctrlText 2405;
 if(!([_amount] call life_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _amount = parseNumber (_amount);
@@ -32,7 +38,7 @@ _trop = false;
 if(life_shop_type == "heroin") then
 {
 	if(({side _x == west} count playableUnits) <= 3) then {
-		hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];
+		//hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];
 		_blok = true;
 	};
 	_array = life_shop_npc getVariable["sellers",[]];
@@ -49,7 +55,7 @@ if(life_shop_type == "heroin") then
 		};
 	};
 };
-//if(_trop) exitWith {hint localize "STR_Shop_Virt_Trop"};
+if(_blok) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."]};
 
 if(_index2 != -1) then {
 // if!(_type in ["water","coffee","donuts","tbacon","lockpick","pickaxe","redgull","fuelF","spikeStrip","pcp","storage1","storage2","nitro","redburger","soda","apple","rabbit","peach"]) then {
