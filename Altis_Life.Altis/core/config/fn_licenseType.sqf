@@ -66,6 +66,7 @@ switch (_mode) do
 			case "bottledwhiskey": {_var = "l_c_bottler"};
 			case "bottler": {_var = "l_c_bottler"};
 			case "glassbottle": {_var = "l_c_bottler"};
+			case "entreprise": {_var = "l_c_entreprise"}; //Licence entreprise
 			default {_var = ""};
 		};
 	};
@@ -113,6 +114,7 @@ switch (_mode) do
 			case "l_c_hunting": {_var = "hunting"};
 			case "l_c_taxi": {_var = "taxi"};
 			case "l_c_airsoft": {_var = "airsoft"};
+			case "l_c_entreprise": {_var = "entreprise"}; //Licence entreprise
 			default {_var = ""};
 		};
 	};

@@ -136,5 +136,6 @@ switch (_var) do
 	case "l_c_stiller": {"Licence distilation"};
 	case "l_c_liquor": {"Licence liqueur"};
 	case "l_c_bottler": {"Licence de mise en bouteille"};
+	case "l_c_entreprise": {"Licence entreprise"};
 	default {"Erreur"};
 };
