@@ -376,9 +376,9 @@ switch(_shop) do
 				// Snipe
 				if(l_g_swatSnipe) then
 				{
-					(_ret select 1) pushBack ["R3F_M107",nil,0];
-					(_ret select 1) pushBack ["R3F_M107_DES",nil,0];
-					(_ret select 1) pushBack ["R3F_10Rnd_127x99_M107",nil,0];
+					(_ret select 1) pushBack ["R3F_PGM_Hecate_II",nil,0];
+					(_ret select 1) pushBack ["R3F_PGM_Hecate_II_DES",nil,0];
+					(_ret select 1) pushBack ["R3F_7Rnd_127x99_PGM",nil,0];
 					(_ret select 1) pushBack ["rhs_weap_XM2010",nil,0];
 					(_ret select 1) pushBack ["rhs_weap_XM2010_wd",nil,0];
 					(_ret select 1) pushBack ["rhs_weap_XM2010_d",nil,0];
@@ -418,12 +418,16 @@ switch(_shop) do
 						["rpima_shield",nil,0],
 						["R3F_Minimi_762",nil,0],
 						["R3F_100Rnd_762x51_MINIMI",nil,0],
-						["R3F_PGM_Hecate_II_DES",nil,0],
-						["R3F_7Rnd_127x99_PGM",nil,0],
 						["R3F_STINGER",nil,0],
 						["R3F_STINGER_mag",nil,0],
-						["R3F_AT4CS",nil,0],
-						["R3F_AT4CS_Mag",nil,0]
+						["rhs_weap_rpg26",nil,0],
+						["rhs_rpg26_mag",nil,0],
+						["rhs_weap_M136",nil,0],
+						["rhs_m136_mag",nil,0],
+						["rhs_weap_M136_hedp",nil,0],
+						["rhs_m136_hedp_mag",nil,0],
+						["rhs_weap_M136_hp",nil,0],
+						["rhs_m136_hp_mag",nil,0]
 					]
 				];
 			};
@@ -715,10 +719,10 @@ switch(_shop) do
 					(_ret select 1) pushBack ["R3F_FRF2_DES",nil,250000];
 					(_ret select 1) pushBack ["R3F_10Rnd_762x51_FRF2",nil,3000];
 
-					//Hecate II
-					(_ret select 1) pushBack ["R3F_PGM_Hecate_II",nil,300000];
-					(_ret select 1) pushBack ["R3F_PGM_Hecate_II_DES",nil,300000];
-					(_ret select 1) pushBack ["R3F_7Rnd_127x99_PGM",nil,4000];
+					//M107
+					(_ret select 1) pushBack ["R3F_M107",nil,300000];
+					(_ret select 1) pushBack ["R3F_M107_DES",nil,300000];
+					(_ret select 1) pushBack ["R3F_10Rnd_127x99_M107",nil,4000];
 					
 					//RPG7 - Sol
 					(_ret select 1) pushBack ["rhs_weap_rpg7",nil,600000];
