@@ -83,7 +83,7 @@ switch (_filter) do
 			// _ret pushBack ["rhs_uniform_df15",nil,1250];
 			_ret pushBack ["U_C_WorkerCoveralls","Mechanic Coveralls",0];
 			_ret pushBack ["U_I_HeliPilotCoveralls","Work on airport",0];
-			// _ret pushBack ["rds_uniform_priest",nil,2500];
+			// _ret pushBack ["rds_uniform_priest",nil,0];
 			
 			_ret pushBack ["rds_uniform_Profiteer1",nil,0];
 			_ret pushBack ["rds_uniform_Profiteer2",nil,0];
@@ -525,37 +525,37 @@ switch (_filter) do
 		// PJ / BAC
 		if(l_g_bacpj) then
 		{
-			_ret pushBack ["rhs_sidor",nil,2500];
-			_ret pushBack ["rhs_assault_umbts",nil,2500];
+			_ret pushBack ["rhs_sidor",nil,0];
+			_ret pushBack ["rhs_assault_umbts",nil,0];
 			
-			_ret pushBack ["B_AssaultPack_cbr",nil,2500];
-			_ret pushBack ["B_AssaultPack_khk",nil,2500];
-			_ret pushBack ["B_AssaultPack_sgg",nil,2500];
-			_ret pushBack ["B_AssaultPack_rgr",nil,2500];
-			_ret pushBack ["B_AssaultPack_blk",nil,2500];
+			_ret pushBack ["B_AssaultPack_cbr",nil,0];
+			_ret pushBack ["B_AssaultPack_khk",nil,0];
+			_ret pushBack ["B_AssaultPack_sgg",nil,0];
+			_ret pushBack ["B_AssaultPack_rgr",nil,0];
+			_ret pushBack ["B_AssaultPack_blk",nil,0];
 			
-			_ret pushBack ["B_FieldPack_cbr",nil,3500];
-			_ret pushBack ["B_FieldPack_khk",nil,3500];
-			_ret pushBack ["B_FieldPack_oli",nil,3500];
-			_ret pushBack ["B_FieldPack_blk",nil,3500];
-			_ret pushBack ["B_FieldPack_oucamo",nil,3500];
+			_ret pushBack ["B_FieldPack_cbr",nil,0];
+			_ret pushBack ["B_FieldPack_khk",nil,0];
+			_ret pushBack ["B_FieldPack_oli",nil,0];
+			_ret pushBack ["B_FieldPack_blk",nil,0];
+			_ret pushBack ["B_FieldPack_oucamo",nil,0];
 			
-			_ret pushBack ["B_TacticalPack_blk",nil,4500];
-			_ret pushBack ["B_TacticalPack_oli",nil,4500];
-			_ret pushBack ["B_TacticalPack_rgr",nil,4500];
-			_ret pushBack ["B_Bergen_sgg",nil,4500];
+			_ret pushBack ["B_TacticalPack_blk",nil,0];
+			_ret pushBack ["B_TacticalPack_oli",nil,0];
+			_ret pushBack ["B_TacticalPack_rgr",nil,0];
+			_ret pushBack ["B_Bergen_sgg",nil,0];
 			
-			_ret pushBack ["B_Kitbag_cbr",nil,5500];
-			_ret pushBack ["B_Kitbag_sgg",nil,5500];
-			_ret pushBack ["B_Kitbag_rgr",nil,5500];
-			_ret pushBack ["PMC_B_Kitbag_blk",nil,5500];
+			_ret pushBack ["B_Kitbag_cbr",nil,0];
+			_ret pushBack ["B_Kitbag_sgg",nil,0];
+			_ret pushBack ["B_Kitbag_rgr",nil,0];
+			_ret pushBack ["PMC_B_Kitbag_blk",nil,0];
 			
 			
-			_ret pushBack ["B_Carryall_oli",nil,6500];
-			_ret pushBack ["B_Carryall_cbr",nil,6500];
-			_ret pushBack ["B_Carryall_khk",nil,6500];
-			_ret pushBack ["PMC_B_Carryall_blk",nil,6500];
-			_ret pushBack ["B_Carryall_oucamo",nil,6500];
+			_ret pushBack ["B_Carryall_oli",nil,0];
+			_ret pushBack ["B_Carryall_cbr",nil,0];
+			_ret pushBack ["B_Carryall_khk",nil,0];
+			_ret pushBack ["PMC_B_Carryall_blk",nil,0];
+			_ret pushBack ["B_Carryall_oucamo",nil,0];
 		};
 		// APRG
 		if(l_g_aprg) then
