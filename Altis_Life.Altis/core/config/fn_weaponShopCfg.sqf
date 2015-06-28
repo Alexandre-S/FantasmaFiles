@@ -420,14 +420,8 @@ switch(_shop) do
 						["R3F_100Rnd_762x51_MINIMI",nil,0],
 						["R3F_STINGER",nil,0],
 						["R3F_STINGER_mag",nil,0],
-						["rhs_weap_rpg26",nil,0],
-						["rhs_rpg26_mag",nil,0],
-						["rhs_weap_M136",nil,0],
-						["rhs_m136_mag",nil,0],
-						["rhs_weap_M136_hedp",nil,0],
-						["rhs_m136_hedp_mag",nil,0],
-						["rhs_weap_M136_hp",nil,0],
-						["rhs_m136_hp_mag",nil,0]
+						["R3F_AT4CS",nil,0],
+						["R3F_AT4CS_Mag",nil,0]
 					]
 				];
 			};
