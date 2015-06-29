@@ -21,5 +21,5 @@ PARAMS_2(_unit,_target);
 _unit removeItem "ACE_CableTie";
 
 playSound3D [QUOTE(PATHTO_R(sounds\cable_tie_zipping.ogg)), objNull, false, (getPosASL _target), 1, 1, 10];
-
+_target setVariable ["tf_unable_to_use_radio", true];
 ["SetHandcuffed", [_target], [_target, true]] call EFUNC(common,targetEvent);
