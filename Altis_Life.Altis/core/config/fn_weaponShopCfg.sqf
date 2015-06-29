@@ -344,6 +344,32 @@ switch(_shop) do
 		};
 	};
 	
+	case "cop_demo":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"Interdit aux civils !"};
+			case (!l_g_demo): {"Vous n'avez pas la formation demolisseur !"};
+			//case (__GETC__(life_coplevel) < 5): {"Réservé aux Haut-Gradés!"};
+			default
+			{
+				_ret =
+				["Armurerie : Démolisseur",
+					[
+						["ACE_DefusalKit",nil,0],
+						["ACE_Clacker",nil,0],
+						["MineDetector",nil,0],
+						["IEDUrbanSmall_Remote_Mag",nil,0],
+						["IEDLandSmall_Remote_Mag",nil,0],
+						["APERSMine_Range_Mag",nil,0],
+						["APERSTripMine_Wire_Mag",nil,0],
+						["SatchelCharge_Remote_Mag",nil,0]
+					]
+				];
+			};
+		};
+	};
+	
 	case "cop_swat":
 	{
 		switch(true) do
@@ -738,6 +764,8 @@ switch(_shop) do
 					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
 					(_ret select 1) pushBack ["optic_LRPS",nil,100000];
 					
+					
+					(_ret select 1) pushBack ["ACE_M26_Clacker",nil,5000];
 					(_ret select 1) pushBack ["IEDUrbanSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["IEDLandSmall_Remote_Mag",nil,50000];
 					(_ret select 1) pushBack ["APERSMine_Range_Mag",nil,70000];

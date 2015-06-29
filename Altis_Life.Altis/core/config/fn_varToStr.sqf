@@ -105,6 +105,7 @@ switch (_var) do
 	case "l_c_gun": {(localize "STR_License_Firearm")};
 	case "l_g_air": {(localize "STR_License_Pilot")};
 	case "l_g_airT": {"Pilote Tactique"};
+	case "l_g_demo": {"Démolisseur"};
 	case "l_g_swat": {"GIGN"};
 	case "l_g_swatSnipe": {"GIGN THP"};
 	case "l_g_swatBall": {"GIGN Ballistique"};

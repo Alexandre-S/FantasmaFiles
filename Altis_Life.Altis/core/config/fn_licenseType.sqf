@@ -24,6 +24,7 @@ switch (_mode) do
 			case "oil": {_var = "l_c_oil"}; //Oil processing license cost
 			case "cair": {_var = "l_g_air"}; //Cop Pilot License cost
 			case "cairT": {_var = "l_g_airT"}; //Cop Tactic Pilot License cost
+			case "demo": {_var = "l_g_demo"}; //demo License cost
 			case "swat": {_var = "l_g_swat"}; //Swat License cost
 			case "swatSnipe": {_var = "l_g_swatSnipe"}; //Swat License cost
 			case "swatBall": {_var = "l_g_swatBall"}; //Swat License cost
@@ -83,6 +84,7 @@ switch (_mode) do
 			case "l_c_oil": {_var = "oil"}; //Oil processing license cost
 			case "l_g_air": {_var = "cair"}; //Cop Pilot License cost
 			case "l_g_airT": {_var = "cairT"}; //Cop tactic Pilot License cost
+			case "l_g_demo": {_var = "demo"}; //demo License cost
 			case "l_g_swat": {_var = "swat"}; //Swat License cost
 			case "l_g_swatSnipe": {_var = "swatSnipe"}; //Swat License cost
 			case "l_g_swatBall": {_var = "swatBall"}; //Swat License cost

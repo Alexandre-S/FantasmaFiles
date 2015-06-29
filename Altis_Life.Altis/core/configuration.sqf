@@ -269,6 +269,7 @@ life_licenses =
 [
 	["l_g_air","cop"],
 	["l_g_airT","cop"],
+	["l_g_demo","cop"],
 	["l_g_swat","cop"],
 	["l_g_swatSnipe","cop"],
 	["l_g_swatBall","cop"],
@@ -608,6 +609,7 @@ life_weapon_shop_array =
 	["rhsusf_acc_compm4",3000*0.5],
 	["rhsusf_acc_eotech_552",3000*0.5],
 	["SatchelCharge_Remote_Mag",200000*0.5],
+	["ACE_M26_Clacker",5000*0.5],
 	["SMG_01_F",69450*0.5],
 	["SMG_02_F",73450*0.5],
 	["hgun_Rook40_F_as",nil,2450*0.5],
