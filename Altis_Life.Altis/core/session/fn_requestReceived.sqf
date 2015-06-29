@@ -129,7 +129,8 @@ switch(playerSide) do {
 		life_houses = _this select 22;
 		{
 			// _house = nearestBuilding (call compile format["%1", _x select 0]);
-			_house = (nearestObjects[(call compile format["%1", _x select 0]),["House_F"],20] select 0);
+			//_house = (nearestObjects[(call compile format["%1", _x select 0]),["House_F"],20] select 0);
+			_house = nearestObject [(call compile format["%1", _x select 0]),"house_F"];
 
 			// add
 			_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;

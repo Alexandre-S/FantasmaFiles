@@ -9,7 +9,8 @@ private["_boxType","_house","_positions","_containers","_pos","_houseCfg"];
 _boxType = _this select 0;
 
 // _house = nearestBuilding (getPosATL player);
-_house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
+//_house = (nearestObjects[(getPosATL player),["House_F"],20] select 0);
+_house = nearestObject [(getPosATL player),"house_F"];
 // add
 _houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 // if(count _houseCfg == 0) then

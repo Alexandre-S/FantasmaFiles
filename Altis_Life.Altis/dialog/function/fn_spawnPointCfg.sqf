@@ -36,7 +36,8 @@ switch (_side) do
 			{
 				_pos = call compile format["%1",_x select 0];
 				// _house = nearestBuilding _pos;
-				_house = (nearestObjects[_pos,["House_F"],20] select 0);
+				//_house = (nearestObjects[_pos,["House_F"],20] select 0);
+				_house = nearestObject [_pos,"house_F"];
 				// add
 				_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
 				// if(count _houseCfg == 0) then
