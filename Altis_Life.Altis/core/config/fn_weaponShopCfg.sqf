@@ -413,6 +413,7 @@ switch(_shop) do
 					(_ret select 1) pushBack ["optic_LRPS",nil,0];
 					(_ret select 1) pushBack ["ACE_Vector",nil,0];
 					(_ret select 1) pushBack ["ACE_Kestrel4500",nil,0];
+					(_ret select 1) pushBack ["ACE_RangeCard",nil,0];
 				};
 				// Ballistique
 				if(l_g_swatBall) then
