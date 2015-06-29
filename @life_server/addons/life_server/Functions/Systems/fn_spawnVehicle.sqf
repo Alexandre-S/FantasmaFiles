@@ -77,6 +77,7 @@ waitUntil {sleep (random 0.3); !DB_Async_Active};
 [_query,false] spawn DB_fnc_asyncCall;
 if(typeName _sp == "STRING") then {
 	_vehicle = createVehicle[(_vInfo select 2),[0,0,999],[],0,"NONE"];
+	_vehicle setVariable ["BIS_enableRandomization",false];	
 	_vehicle allowDamage false;
 	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
@@ -92,6 +93,7 @@ if(typeName _sp == "STRING") then {
 	sleep 0.1;
 } else {
 	_vehicle = createVehicle [(_vInfo select 2),_sp,[],0,"NONE"];
+	_vehicle setVariable ["BIS_enableRandomization",false];	
 	_vehicle allowDamage false;
 	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
@@ -101,7 +103,6 @@ if(typeName _sp == "STRING") then {
 	_vehicle setFuel _fuel;
 };
 _vehicle lock 2;
-_vehicle setVariable ["BIS_enableRandomization",false];	
 sleep 0.01;
 // _inv = [(_vInfo select 11)] call DB_fnc_mresToArray;
 // if(typeName _inv == "STRING") then {_inv = call compile format["%1", _inv];};

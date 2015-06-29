@@ -51,6 +51,7 @@ if(count _spawnPoint == 0) exitWith {hint localize "STR_Shop_Veh_Block";};
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
+	_vehicle setVariable ["BIS_enableRandomization",false];
 	_vehicle allowDamage false;
 	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false;
@@ -67,6 +68,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle lock 2;
 } else {
 	_vehicle = createVehicle [_className, _spawnPoint, [], 0, "NONE"];
+	_vehicle setVariable ["BIS_enableRandomization",false];
 	_vehicle allowDamage false;
 	waitUntil {sleep 0.1; !isNil "_vehicle" && {!isNull _vehicle}};
 	_vehicle allowDamage false; //Temp disable damage handling..
@@ -76,7 +78,6 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle setPos _spawnPoint;
 	_vehicle setFuel 0.8;
 };
-_vehicle setVariable ["BIS_enableRandomization",false];
 sleep 0.01;
 _vehicle setVariable ["Trunk",[[],0],true];
 sleep 0.01;
