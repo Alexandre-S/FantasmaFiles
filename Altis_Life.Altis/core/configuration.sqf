@@ -310,7 +310,8 @@ life_licenses =
 	["l_c_stiller","civ"],
 	["l_c_liquor","civ"],
 	["l_c_bottler","civ"],
-	["l_c_entreprise","civ"]
+	["l_c_entreprise","civ"],
+	["l_c_media","civ"]
 ];
 
 //Setup License Variables
