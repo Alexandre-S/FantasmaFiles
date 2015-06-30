@@ -3534,7 +3534,7 @@
 		<Key ID="STR_ISTR_Blast_Placed">
 			<Original>A blasting charge has been placed on the federal reserves vault, You have till the clock runs out to disarm the charge!</Original>
 			<German>Eine Sprengladung wurde am Safe angebracht. Du hast Zeit, bis die Uhr abläuft, um die Ladung zu entschärfen!</German>
-			<French>Une charge de dynamite a été placé sur le coffre des réserves fédérales, Vous avez jusqu'au temps imparti pour désarmorcer la charge!</French>
+			<French> €€€ Une charge de dynamite a été placé sur le coffre des réserves fédérales, Vous avez jusqu'au temps imparti pour désarmorcer la charge! €€€</French>
 			<Italian>Una carica esplosiva è stata piazzata sulla cassaforte della Riserva Federale, puoi cercare di disinnescarla prima che scada il tempo!</Italian>
 			<Portuguese>O explosivo foi colocado no cofre , Você tem até o tempo acabar para desarmar o explosivo.</Portuguese>
 		</Key>
@@ -3572,6 +3572,10 @@
 			<French>€€€ QUELQU'UN TENTE DE S'INTRODUIRE DANS LA RÈSERVE FÈDÈRALE €€€</French>
 			<Italian>!!!!!! QUALCUNO STA CERCANDO DI INTRODURSI NELLA RISERVA FEDERALE !!!!!!</Italian>
 			<Portuguese>!!!!! A RESERVA FEDERAL ESTÁ SENDO ROUBADA !!!!!!</Portuguese>
+		</Key>
+		<Key ID="STR_ISTR_Bolt_AlertFedVault">
+			<Original>!!!!! THE VAULT IS OPEN !!!!!!</Original>
+			<French>€€€ LE COFFRE A ÈTÈ OUVERT €€€</French>
 		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertHouse">
 			<Original>%1 was seen breaking into a house.</Original>

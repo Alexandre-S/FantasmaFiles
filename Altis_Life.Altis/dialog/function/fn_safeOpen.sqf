@@ -15,6 +15,7 @@ if({side _x == west} count playableUnits < 5) exitWith {hint localize "STR_Civ_N
 if(!createDialog "Federal_Safe") exitWith {localize "STR_MISC_DialogError"};
 disableSerialization;
 ctrlSetText[3501,(localize "STR_Civ_SafeInv")];
+[[[1,2],"STR_ISTR_Bolt_AlertFedVault",true,[]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 [life_safeObj] call life_fnc_safeInventory;
 life_safeObj setVariable["inUse",true,true];
 [life_safeObj] spawn
