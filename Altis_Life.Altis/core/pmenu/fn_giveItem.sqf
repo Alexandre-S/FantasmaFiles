@@ -22,6 +22,7 @@ _item = lbData [2005,(lbCurSel 2005)];
 if(isNil "_unit") exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(isNull _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(_unit == player) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
+if(!(_unit isKindOf "Man")) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(!isPlayer _unit) exitWith {hint "La cible n'est pas un joueur !";ctrlShow[2002,true];};
 if(life_is_processing) exitWith {hint "Vous êtes en train de process petit malin.";ctrlShow[2002,true];};
 if(player distance _unit > 10) exitWith {hint "Cette personne est trop loin";ctrlShow[2001,true];};
