@@ -11,6 +11,7 @@ if(typeOf _vault != "Land_CargoBox_V1_F") exitWith {hint localize "STR_ISTR_Blas
 if(_vault getVariable["chargeplaced",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyPlaced"};
 if(_vault getVariable["safe_open",false]) exitWith {hint localize "STR_ISTR_Blast_AlreadyOpen"};
 if(!([false,"blastingcharge",1] call life_fnc_handleInv)) exitWith {}; //Error?
+if({side _x == west} count playableUnits < 5) exitWith {hint localize "STR_Civ_NotEnoughCops"};
 
 _vault setVariable["chargeplaced",true,true];
 [[[1,2],"STR_ISTR_Blast_Placed",true,[]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
