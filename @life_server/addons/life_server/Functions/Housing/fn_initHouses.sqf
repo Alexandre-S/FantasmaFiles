@@ -18,8 +18,7 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		_pos = call compile format["%1",_x select 2];
 		// _house = nearestBuilding _pos;
 		// if(_house distance _pos > 1) then {
-		//_house = (nearestObjects[_pos,["House_F"],20] select 0);
-		_house = nearestObject [_pos,"house_F"];
+		_house = (nearestObjects[_pos,["House_F"],20] select 0);
 		// };
 		// add
 		_houseCfg = [(typeOf _house)] call life_fnc_houseConfig;
