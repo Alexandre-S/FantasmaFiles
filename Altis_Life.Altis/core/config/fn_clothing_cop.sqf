@@ -191,6 +191,11 @@ switch (_filter) do
 			_ret pushBack ["U_B_HeliPilotCoveralls",nil,0];
 			_ret pushBack ["U_I_HeliPilotCoveralls",nil,0];
 		};
+		// Bomb squad
+		if(l_g_demo) then
+		{
+			_ret pushBack ["U_bombsuit",nil,0];
+		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
@@ -350,6 +355,13 @@ switch (_filter) do
 			_ret pushBack ["H_CrewHelmetHeli_B",nil,0];
 			_ret pushBack ["H_CrewHelmetHeli_O",nil,0];
 		};
+		// Bomb squad
+		if(l_g_demo) then
+		{
+			_ret pushBack ["H_Bombsuit_Helmet",nil,0];
+			_ret pushBack ["H_Titan_Helmet",nil,0];
+			_ret pushBack ["H_Titan_Helmet_O",nil,0];
+		};
 		// Grade Capitaine
 		if(__GETC__(life_coplevel) >= 4) then
 		{
@@ -470,6 +482,24 @@ switch (_filter) do
 		if(l_g_swat) then
 		{
 			_ret pushBack["gign_HeavyVest",nil,0];
+		};
+		// Bomb squad
+		if(l_g_demo) then
+		{
+			_ret pushBack ["Specter_RAV",nil,0];
+			_ret pushBack ["Specter_RAV_BLK",nil,0];
+			_ret pushBack ["Specter_MBSS",nil,0];
+			_ret pushBack ["Specter_MBSS_BLK",nil,0];
+			_ret pushBack ["Specter_MBSS_TAN",nil,0];
+			_ret pushBack ["Specter_MBSS_light",nil,0];
+			_ret pushBack ["Specter_MBSS_light_BLK",nil,0];
+			_ret pushBack ["Specter_MBSS_light_TAN",nil,0];
+			_ret pushBack ["Specter_MBSS_PACA",nil,0];
+			_ret pushBack ["Specter_MBSS_PACA_BLK",nil,0];
+			_ret pushBack ["Specter_MBSS_PACA_TAN",nil,0];
+			_ret pushBack ["Specter_MBSS_PACA_l",nil,0];
+			_ret pushBack ["Specter_MBSS_PACA_l_BLK",nil,0];
+			_ret pushBack ["Specter_MBSS_PACA_l_TAN",nil,0];
 		};
 		if(__GETC__(life_coplevel) >= 4) then
 		{
