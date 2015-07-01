@@ -446,9 +446,9 @@ buy_array =
 	["gpstracker",50000],
 	["nitro",25000],
 	["excavator",5000],
-	["bottledshine",36000], 
-	["bottledwhiskey",28000], 
-	["bottledbeer",20000] 
+	["bottledshine",46000], 
+	["bottledwhiskey",38000], 
+	["bottledbeer",30000] 
 ];
 __CONST__(buy_array,buy_array);
 
