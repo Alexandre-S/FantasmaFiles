@@ -337,6 +337,7 @@ switch (_filter) do
 			["rhs_6sh46",nil,1000],
 
 			["V_Rangemaster_belt",nil,1000],
+			["rhs_vest_commander",nil,1000],
 		
 			["V_BandollierB_cbr",nil,1500],
 			["V_BandollierB_oli",nil,1500],
