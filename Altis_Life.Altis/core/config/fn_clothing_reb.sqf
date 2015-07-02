@@ -134,11 +134,17 @@ switch (_filter) do
 			{
 				
 			};
-			// Faction 2 = AEP
+			// Faction 2 = Danann
 			if(__GETC__(life_factnumber) == 2) then
 			{
-				// _ret pushBack ["SMD_US_BLOPS_BDU",nil,10000];
-				// _ret pushBack ["SMD_US_BLOPS_Digi_BDU",nil,10000];
+				_ret pushBack ["ice123_apo_cloak","Robe de pratiquant",2000];
+				_ret pushBack ["U_PMC_GrnPolo_BgPants","Protecteur des forets",2500];
+				
+				// Si lieutenant faction
+				if(__GETC__(life_reblevel) >= 2) then
+				{
+					_ret pushBack ["rds_uniform_priest","Tenu de ceremonie",5000];
+				};	
 			};
 			// Faction 3 = Héphaistos
 			if(__GETC__(life_factnumber) == 3) then
@@ -260,6 +266,24 @@ switch (_filter) do
 			if(__GETC__(life_factnumber) == 1) then
 			{
 			};
+			// Danann
+			if(__GETC__(life_factnumber) == 2) then
+			{
+				_ret pushBack ["ice123_apo_hood","Capuche de pratiquant",700];
+				_ret pushBack ["H_Bandanna_khk","Khaki Bandanna",1000];
+				_ret pushBack ["rhs_tsh4_bala","Chapeau du Fou",1200];
+				
+				// Si Lnt de faction
+				if(__GETC__(life_reblevel) >= 2) then
+				{
+					_ret pushBack ["rhs_beanie_green","Bonnet Lieutenant",1500];
+				};			
+				
+				// Si leader de faction
+				if(__GETC__(life_reblevel) >= 3) then
+				{
+					_ret pushBack ["rhs_Booniehat_flora","Chapeau du Guide",1800];
+				};	
 			// msc
 			if(__GETC__(life_factnumber) == 4) then
 			{
@@ -318,6 +342,12 @@ switch (_filter) do
 				["Mask_M40",nil,2000],
 				["Mask_M40_OD",nil,2000]
 			];
+			
+			// Danann
+			if(__GETC__(life_factnumber) == 2) then
+			{
+				_ret pushBack ["rhs_scarf",nil,1200];
+			};
 		};
 	};
 	
@@ -393,6 +423,25 @@ switch (_filter) do
 				["V_HarnessOGL_brn","Veste Explosive",500000]
 			];
 			
+			// Danann
+			if(__GETC__(life_factnumber) == 2) then
+			{
+				_ret pushBack ["ice123_apo_bag",nil,2500];
+				_ret pushBack ["rhs_vest_commander",nil,2500];
+				_ret pushBack ["V_HarnessO_gry",nil,8500];
+				_ret pushBack ["rhsusf_spc",nil,12500];
+				_ret pushBack ["Specter_MBSS_PACA_l_TAN",nil,15000];
+				
+				_ret pushBack ["rhs_6sh92_digi_radio",nil,15000];
+				_ret pushBack ["rhs_6b23_6sh92_radio",nil,15000];	
+		
+				// Si Lnt de faction
+				if(__GETC__(life_reblevel) >= 2) then
+				{
+					_ret pushBack ["Specter_MBSS_BLK",nil,15000];
+					_ret pushBack ["Specter_RAV_BLK",nil,25000];
+				};			
+			};			
 			if(__GETC__(life_factnumber) == 4) then
 			{
 				_ret pushBack ["ice123_apo_bag",nil,5000];
@@ -411,6 +460,7 @@ switch (_filter) do
 				["B_AssaultPack_dgtl",nil,2500],
 				["B_AssaultPack_mcamo",nil,2500],
 				["B_AssaultPack_blk",nil,2500],
+				["PMC_AssaultPack_Blk",nil,2500],
 				
 				["B_FieldPack_ocamo",nil,3500],
 				["B_FieldPack_blk",nil,3500],
@@ -434,6 +484,24 @@ switch (_filter) do
 				
 				["B_Parachute",nil,15000]
 			];
+			
+			// Danann
+			if(__GETC__(life_factnumber) == 2) then
+			{
+				_ret pushBack ["rhs_sidor",nil,2000];
+				
+				_ret pushBack ["PMC_AssaultPack_Tan",nil,2500];
+				
+				_ret pushBack ["B_FieldPack_cbr",nil,3500];
+				_ret pushBack ["B_FieldPack_oli",nil,3500];		
+				
+				_ret pushBack ["B_Carryall_cbr",nil,6500];	
+				_ret pushBack ["B_Carryall_oli",nil,6500];					
+				
+				_ret pushBack ["tf_anprc155_coyote",nil,15000];				
+				_ret pushBack ["tf_rt1523g_green",nil,15000];		
+			
+			};			
 		};
 	};
 };

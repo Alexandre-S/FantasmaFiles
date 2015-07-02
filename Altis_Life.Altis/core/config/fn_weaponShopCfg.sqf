@@ -680,6 +680,11 @@ switch(_shop) do
 						// (_ret select 1) pushBack ["PMC_m4m203",nil,25000];
 						// (_ret select 1) pushBack ["30Rnd_556x45_Stanag",nil,250];
 					};
+					if(__GETC__(life_factnumber) == 2) then
+					{
+						(_ret select 1) pushBack ["RH_mk2",nil,5300];
+
+					};
 				};
 				// Rang 2
 				if(__GETC__(life_reblevel) >= 2) then
@@ -774,6 +779,13 @@ switch(_shop) do
 					(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,200000];
 					(_ret select 1) pushBack ["O_HMG_01_high_weapon_F",nil,400000];
 					(_ret select 1) pushBack ["O_HMG_01_support_high_F",nil,7000];
+					
+					if(__GETC__(life_factnumber) == 2) then
+					{
+						(_ret select 1) pushBack ["Trixie_CZ550",nil,120000];
+						(_ret select 1) pushBack ["Trixie_CZ550_Mag",nil,1000];
+						
+					};
 				};
 			};
 		};
