@@ -1557,6 +1557,10 @@
 			<Italian>%1 ha sequestrato il %2 di %3</Italian>
 			<Portuguese>%1 apreendeu %3 de %2</Portuguese>
 		</Key>
+		<Key ID="STR_NOTF_HasBeenImpounded">
+			<Original>%1 your %2 has been impounded</Original>
+			<French>%1 votre %2 a été mit en fourrière.</French>
+		</Key>
 		<Key ID="STR_NOTF_AbortESC">
 			<Original>Abort available in %1</Original>
 			<German>Abbruch möglich in %1</German>

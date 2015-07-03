@@ -5,7 +5,7 @@
 	Description:
 	Impounds the vehicle
 */
-private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP"];
+private["_vehicle","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP","_owner"];
 _vehicle = cursorTarget;
 if(!((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
@@ -13,8 +13,9 @@ if((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle i
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
+	_owner = (_vehicleData select 0) select 1;
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
-	[[0,"STR_NOTF_BeingImpounded",true,[(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+	[[0,"STR_NOTF_BeingImpounded",true,[(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",_owner,false] spawn life_fnc_MP;
 	life_action_inUse = true;
 	
 	_upp = localize "STR_NOTF_Impounding";
@@ -60,7 +61,8 @@ if((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle i
 		[[_vehicle,true,player,havena_id],"TON_fnc_vehicleStore",serverhc,false] spawn life_fnc_MP;
 		waitUntil {sleep 0.1; !life_impound_inuse};
 		hint format[localize "STR_NOTF_Impounded",_type,_price];
-		[[0,"STR_NOTF_HasImpounded",true,[profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		[[0,"STR_NOTF_HasImpounded",true,[profileName,(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[[0,"STR_NOTF_HasBeenImpounded",true,[_owner,_vehicleName]],"life_fnc_broadcast",_owner,false] spawn life_fnc_MP;
 		life_atmcash = life_atmcash + _price;
 	}
 	else
