@@ -284,6 +284,7 @@ switch (_filter) do
 				{
 					_ret pushBack ["rhs_Booniehat_flora","Chapeau du Guide",1800];
 				};	
+			};
 			// msc
 			if(__GETC__(life_factnumber) == 4) then
 			{
