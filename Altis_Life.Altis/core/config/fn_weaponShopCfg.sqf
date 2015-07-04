@@ -682,7 +682,6 @@ switch(_shop) do
 					};
 					if(__GETC__(life_factnumber) == 2) then
 					{
-						(_ret select 1) pushBack ["RH_mk2",nil,5300];
 
 					};
 				};
