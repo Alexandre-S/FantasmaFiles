@@ -99,6 +99,7 @@ switch (_filter) do
 			["U_PMC_BluPolo_GrnPants",nil,1500],
 			["U_PMC_BrnPolo_BgPants",nil,1500],
 			["U_PMC_BrnPolo_BluPants","Polo marron et jean",1500],
+			["U_PMC_GrnPolo_BgPants",nil,1500],
 			["U_PMC_WhtPolo_BgPants",nil,1500],
 			["U_PMC_WhtPolo_BluPants","Polo blanc et jean",1500],
 			["U_PMC_WhtPolo_GrnPants",nil,1500],
@@ -199,6 +200,7 @@ switch (_filter) do
 			["H_Bandanna_sand","Bandanna sable",250],
 			["H_Bandanna_gry","Grey Bandanna",250],
 			["H_Bandanna_cbr",nil,250],
+			["H_Bandanna_khk","Khaki Bandanna",250],
 			["H_Bandanna_sgg","Sage Bandanna",250],
 			["H_Bandanna_surfer","bandanna surfer bleu",250],
 			["H_ag_bandanna_01","bandanna surfer pomme",250],
@@ -334,6 +336,7 @@ switch (_filter) do
 	{
 		_ret = 
 		[
+			["rhs_vest_commander",nil,1000],
 			["rhs_6sh46",nil,1000],
 
 			["V_Rangemaster_belt",nil,1000],
