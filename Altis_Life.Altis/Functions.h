@@ -357,6 +357,7 @@ class Life_Client_Core
 		class breathalyzer {};
 		class souffler {};
 		class copSos {};
+		class bankWarning {};
 	};
 	
 	class Gangs

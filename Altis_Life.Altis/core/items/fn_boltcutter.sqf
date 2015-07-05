@@ -6,14 +6,17 @@
 */
 if(isNil "life_boltcutter_uses") then {life_boltcutter_uses = true;};
 if(life_action_inUse) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
-private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui","_chance","_dice"];
+private["_building","_door","_doors","_cpRate","_title","_progressBar","_titleText","_cp","_ui","_chance","_dice","_type"];
 _building = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _building) exitWith {};
 if(!(_building isKindOf "House_F")) exitWith {hint "You are not looking at a house door."};
 if((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _building OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _building) then {
 	[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+	[["banque"],"life_fnc_bankWarning",west,false] spawn life_fnc_MP;
+	_type = "banque";
 } else {
 	[[0,"STR_ISTR_Bolt_AlertHouse",true,[profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+	_type = "house";
 };
 
 _doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _building) >> "NumberOfDoors");
@@ -100,16 +103,20 @@ if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith {life_action_inUs
 	// life_boltcutter_uses = 0;
 // };
 switch (typeOf _building) do {
-	case "Land_Dome_Big_F": {_chance = 20;};
-	case "Land_Research_house_V1_F": {_chance = 20;};
+	case "Land_Dome_Big_F": {_chance = 10;};
+	case "Land_Research_house_V1_F": {_chance = 10;};
 	default {_chance = 5;}
 };
-_dice = random(100);
+_dice = (floor(random 100) + 1);
 if(_dice <= _chance) then
 {
 	_building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
 	if((_building getVariable["locked",false])) then {
 		_building setVariable["locked",false,true];
+	};
+	if(_type == "banque"){
+		[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[["banque"],"life_fnc_bankWarning",west,false] spawn life_fnc_MP;
 	};
 	// [] call life_fnc_getHLC;
 	// [[getPlayerUID player,profileName,"459"],"life_fnc_wantedAdd",serverhc,false] spawn life_fnc_MP;

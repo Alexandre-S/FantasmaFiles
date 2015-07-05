@@ -225,7 +225,7 @@ switch (_shop) do
 		if(__GETC__(life_medicLevel) >= 4 && __GETC__(life_donator) > 0) then
 		{
 			_return pushBack ["O_Heli_Transport_04_medevac_F_RP",150000];
-			_return pushBack ["RHS_UH60M_MEV_d",250000];
+			_return pushBack ["RHS_UH60M_MEV_d_RP",250000];
 		};
 	};
 	
@@ -241,7 +241,7 @@ switch (_shop) do
 			["B_Heli_Light_01_F_RP",412500],
 			["O_Heli_Light_02_unarmed_F_RP",700000],
 			["I_Heli_Transport_02_F_RP",750000]
-			//["RHS_UH60M_MEV2_d",1500000]
+			["RHS_UH60M_MEV2_d_RP",1500000]
 		];
 		// Grade 2
 		if(__GETC__(life_reblevel) >= 2) then

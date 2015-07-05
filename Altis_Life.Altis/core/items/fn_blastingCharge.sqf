@@ -15,6 +15,7 @@ if({side _x == west} count playableUnits < 5) exitWith {hint localize "STR_Civ_N
 
 _vault setVariable["chargeplaced",true,true];
 [[[1,2],"STR_ISTR_Blast_Placed",true,[]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+[["banque"],"life_fnc_bankWarning",west,false] spawn life_fnc_MP;
 hint localize "STR_ISTR_Blast_KeepOff";
 _handle = [] spawn life_fnc_demoChargeTimer;
 [[],"life_fnc_demoChargeTimer",west,false] spawn life_fnc_MP;
