@@ -71,6 +71,7 @@ havena_mincombat = 800;
 havena_minview = 500;
 havena_maxview = havena_minview+1000;
 havena_shadow = 50;
+havena_view_save = viewDistance;
 havena_view = viewDistance;
 havena_grid = 25; //48
 havena_debug = false;
