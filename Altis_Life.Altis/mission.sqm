@@ -5399,7 +5399,7 @@ class Mission
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="";
+							typeName="alwaysSimulateForSnipers";
 						};
 						class Item2
 						{
@@ -5411,7 +5411,7 @@ class Mission
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="";
+							typeName="onlyActiveForLocalPlayers";
 						};
 						class Item4
 						{
