@@ -30,6 +30,10 @@ switch (_filter) do
 			//["FANTASMA_MedicTenue",nil,550],
 			["U_I_Wetsuit",nil,1000]
 		];
+		if(__GETC__(life_medicLevel) == 5) then
+		{
+			_ret pushBack ["rds_uniform_doctor",nil,2500];
+		};
 	};
 	
 	//Hats

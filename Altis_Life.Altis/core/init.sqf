@@ -173,6 +173,7 @@ alarm_check =
 	//hint format ["%1 %2",_weapon,_mag];
 	
 	if(side _unit == west) exitwith {};
+	if(side _unit == independent ) exitwith {};
 	if(_unit getvariable ["alarm_check",false]) exitwith {};
 	
 	if!(_mag in life_chemlist) then {
