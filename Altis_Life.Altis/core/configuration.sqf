@@ -66,7 +66,7 @@ life_lsd_effect = 0;
 life_drink = 0;
 
 life_autofps = true;
-havena_targetfps = 40;
+havena_targetfps = 35;
 havena_mincombat = 800;
 havena_minview = 500;
 havena_maxview = havena_minview+1000;

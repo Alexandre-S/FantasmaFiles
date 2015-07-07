@@ -3,7 +3,7 @@
 /*
 item0[] = {"init",0,250,34.428276,-124.815567,124.428238,-74.815567,0.000000,"init"};
 item1[] = {"ready_",8,218,-144.329956,-50.495338,-54.329956,-0.495338,0.000000,"ready?"};
-item2[] = {"lets_go",2,4346,-158.427032,45.901817,-68.427032,95.901947,0.000000,"lets go"};
+item2[] = {"lets_go",2,250,-158.427032,45.901817,-68.427032,95.901947,0.000000,"lets go"};
 item3[] = {"low_fps_",4,218,-449.622467,180.509384,-359.622314,230.509552,2.000000,"low fps?"};
 item4[] = {"high_fps_",4,218,109.575523,168.514206,199.575363,218.514236,1.000000,"high fps?"};
 item5[] = {"OFF",4,218,60.844330,455.744904,150.844177,505.744904,0.000000,"OFF"};
@@ -19,7 +19,7 @@ item14[] = {"delay",8,218,-269.505646,-102.722237,-179.505646,-52.722237,0.00000
 item15[] = {"delayed_1",2,250,-417.007996,-101.774094,-327.007965,-51.774048,0.000000,"delayed"};
 item16[] = {"done_delay_",4,218,-317.266266,27.532471,-227.266266,77.532471,0.000000,"done delay?"};
 item17[] = {"map_open_",4,218,-290.864746,-32.667034,-200.864746,17.332966,3.000000,"map open?"};
-item18[] = {"delayed_2",2,250,-149.680176,192.885330,-59.680161,242.885330,0.000000,"delayed"};
+item18[] = {"delayed_2",2,4346,-149.680176,192.885330,-59.680161,242.885330,0.000000,"delayed"};
 item19[] = {"done_delay_",4,218,-149.680176,124.889877,-59.680176,174.889877,0.000000,"done delay?"};
 link0[] = {0,1};
 link1[] = {1,2};
@@ -47,7 +47,7 @@ link22[] = {17,15};
 link23[] = {18,19};
 link24[] = {19,2};
 globals[] = {0.000000,0,0,0,0,640,480,2,64,6316128,1,-557.983276,389.181641,766.455811,-302.220367,794,911,1};
-window[] = {2,-1,-1,-1,-1,1133,250,1968,250,3,812};
+window[] = {2,-1,-1,-1,-1,1083,200,1918,200,3,812};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -61,8 +61,7 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"private[""_delayed""];" \n
        "" \n
        "havena_objectView = round(havena_view*0.8);" \n
-       "//setObjectViewDistance [havena_objectView,havena_shadow];" \n
-       "setObjectViewDistance havena_objectView;" \n
+       "setObjectViewDistance [havena_objectView,havena_shadow];" \n
        "setViewDistance havena_view;" \n
        "" \n
        "//setTerrainGrid havena_grid;"/*%FSM</STATEINIT""">*/;
@@ -292,7 +291,7 @@ class FSM
     class delayed_2
     {
       name = "delayed_2";
-      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.1;"/*%FSM</STATEINIT""">*/;
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.05;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
