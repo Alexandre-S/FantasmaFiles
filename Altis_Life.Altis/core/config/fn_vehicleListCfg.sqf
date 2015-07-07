@@ -82,7 +82,7 @@ switch (_shop) do
 			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
 		};
-		if(l_c_gvt && __GETC__(life_adminlevel) => 1) then
+		if(l_c_gvt && (__GETC__(life_adminlevel) > 0)) then
 		{
 			_return pushBack ["I_MRAP_03_F",650000];
 		};
@@ -240,7 +240,7 @@ switch (_shop) do
 			["C_Heli_Light_01_civil_F_RP",412500],
 			["B_Heli_Light_01_F_RP",412500],
 			["O_Heli_Light_02_unarmed_F_RP",700000],
-			["I_Heli_Transport_02_F_RP",750000]
+			["I_Heli_Transport_02_F_RP",750000],
 			["RHS_UH60M_MEV2_d_RP",1500000]
 		];
 		// Grade 2

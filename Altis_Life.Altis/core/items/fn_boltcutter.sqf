@@ -114,7 +114,7 @@ if(_dice <= _chance) then
 	if((_building getVariable["locked",false])) then {
 		_building setVariable["locked",false,true];
 	};
-	if(_type == "banque"){
+	if(_type == "banque") then {
 		[[[1,2],"STR_ISTR_Bolt_AlertFed",true,[]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		[["banque"],"life_fnc_bankWarning",west,false] spawn life_fnc_MP;
 	};
