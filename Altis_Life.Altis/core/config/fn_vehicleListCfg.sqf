@@ -82,7 +82,7 @@ switch (_shop) do
 			_return pushBack ["C_Hatchback_01_sport_F_RP",45000];
 			_return pushBack ["C_Van_01_fuel_F",112500];
 		};
-		if(l_c_gvt) then
+		if(l_c_gvt && __GETC__(life_adminlevel) => 1) then
 		{
 			_return pushBack ["I_MRAP_03_F",650000];
 		};
