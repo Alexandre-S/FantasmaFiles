@@ -9,7 +9,7 @@ private["_medicsOnline"];
 _medicsOnline = {_x != player && {side _x == independent} && {alive _x}} count playableUnits > 0; //Check if medics (indep) are in the room.
 
 // +5 min
-maxTimeRespawn = maxTimeRespawn + 60*3;
+maxTimeRespawn = maxTimeRespawn + 60*5;
 
 if(_medicsOnline) then {
 	//There is medics let's send them the request.
@@ -24,6 +24,6 @@ if(_medicsOnline) then {
 [] spawn 
 {
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable false;
-	sleep (2 * 60);
+	sleep (3 * 60);
 	((findDisplay 7300) displayCtrl 7303) ctrlEnable true;
 };
