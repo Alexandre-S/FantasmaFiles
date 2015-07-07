@@ -1,24 +1,26 @@
 /*%FSM<COMPILE "C:\Program Files (x86)\Bohemia Interactive\Tools\FSM Editor Personal Edition\scriptedFSM.cfg, autoc">*/
 /*%FSM<HEAD>*/
 /*
-item0[] = {"init",0,4346,34.428276,-124.815567,124.428238,-74.815567,0.000000,"init"};
+item0[] = {"init",0,250,34.428276,-124.815567,124.428238,-74.815567,0.000000,"init"};
 item1[] = {"ready_",8,218,-144.329956,-50.495338,-54.329956,-0.495338,0.000000,"ready?"};
-item2[] = {"lets_go",2,250,-158.427032,45.901817,-68.427032,95.901947,0.000000,"lets go"};
-item3[] = {"low_fps_",4,218,-282.616058,151.879715,-192.615921,201.879898,2.000000,"low fps?"};
-item4[] = {"high_fps_",4,218,-20.450897,148.234863,69.548996,198.234894,1.000000,"high fps?"};
+item2[] = {"lets_go",2,4346,-158.427032,45.901817,-68.427032,95.901947,0.000000,"lets go"};
+item3[] = {"low_fps_",4,218,-449.622467,180.509384,-359.622314,230.509552,2.000000,"low fps?"};
+item4[] = {"high_fps_",4,218,109.575523,168.514206,199.575363,218.514236,1.000000,"high fps?"};
 item5[] = {"OFF",4,218,60.844330,455.744904,150.844177,505.744904,0.000000,"OFF"};
 item6[] = {"delayed",2,250,58.992859,589.668762,148.993073,639.668274,0.000000,"delayed"};
 item7[] = {"ON",4,218,266.945129,29.234726,356.945038,79.233841,0.000000,"ON"};
-item8[] = {"update",2,250,-147.215363,281.554871,-57.215199,331.554840,0.000000,"update"};
+item8[] = {"update",2,250,-147.215363,376.987091,-57.215199,426.987061,0.000000,"update"};
 item9[] = {"check",2,250,-146.653168,594.266724,-56.653221,644.267029,0.000000,"check"};
-item10[] = {"ON",4,218,-146.934357,379.573608,-56.934265,429.573700,0.000000,"ON"};
-item11[] = {"true",8,218,-149.103882,150.874710,-59.103882,200.874710,0.000000,"true"};
+item10[] = {"ON",4,218,-148.127258,455.919403,-58.127174,505.919250,0.000000,"ON"};
+item11[] = {"delay",8,218,-151.489685,264.200470,-61.489685,314.200470,0.000000,"delay"};
 item12[] = {"delay_done_",4,218,266.604309,452.140198,356.604309,502.139832,0.000000,"delay done?"};
 item13[] = {"wait",2,250,265.898499,315.690491,355.898376,365.690521,0.000000,"wait"};
 item14[] = {"delay",8,218,-269.505646,-102.722237,-179.505646,-52.722237,0.000000,"delay"};
 item15[] = {"delayed_1",2,250,-417.007996,-101.774094,-327.007965,-51.774048,0.000000,"delayed"};
 item16[] = {"done_delay_",4,218,-317.266266,27.532471,-227.266266,77.532471,0.000000,"done delay?"};
 item17[] = {"map_open_",4,218,-290.864746,-32.667034,-200.864746,17.332966,3.000000,"map open?"};
+item18[] = {"delayed_2",2,250,-149.680176,192.885330,-59.680161,242.885330,0.000000,"delayed"};
+item19[] = {"done_delay_",4,218,-149.680176,124.889877,-59.680176,174.889877,0.000000,"done delay?"};
 link0[] = {0,1};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -34,7 +36,7 @@ link11[] = {8,11};
 link12[] = {9,5};
 link13[] = {9,10};
 link14[] = {10,8};
-link15[] = {11,2};
+link15[] = {11,18};
 link16[] = {12,13};
 link17[] = {13,5};
 link18[] = {13,7};
@@ -42,8 +44,10 @@ link19[] = {14,15};
 link20[] = {15,16};
 link21[] = {16,2};
 link22[] = {17,15};
-globals[] = {0.000000,0,0,0,0,640,480,2,62,6316128,1,-557.983276,389.181641,766.455811,-302.220367,701,738,1};
-window[] = {0,-1,-1,-1,-1,1083,200,1918,200,1,719};
+link23[] = {18,19};
+link24[] = {19,2};
+globals[] = {0.000000,0,0,0,0,640,480,2,64,6316128,1,-557.983276,389.181641,766.455811,-302.220367,794,911,1};
+window[] = {2,-1,-1,-1,-1,1133,250,1968,250,3,812};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -57,7 +61,8 @@ class FSM
       init = /*%FSM<STATEINIT""">*/"private[""_delayed""];" \n
        "" \n
        "havena_objectView = round(havena_view*0.8);" \n
-       "setObjectViewDistance [havena_objectView,havena_shadow];" \n
+       "//setObjectViewDistance [havena_objectView,havena_shadow];" \n
+       "setObjectViewDistance havena_objectView;" \n
        "setViewDistance havena_view;" \n
        "" \n
        "//setTerrainGrid havena_grid;"/*%FSM</STATEINIT""">*/;
@@ -185,11 +190,11 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "true">*/
-        class true
+        /*%FSM<LINK "delay">*/
+        class delay
         {
           priority = 0.000000;
-          to="lets_go";
+          to="delayed_2";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -266,6 +271,27 @@ class FSM
     class delayed_1
     {
       name = "delayed_1";
+      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.1;"/*%FSM</STATEINIT""">*/;
+      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
+      class Links
+      {
+        /*%FSM<LINK "done_delay_">*/
+        class done_delay_
+        {
+          priority = 0.000000;
+          to="lets_go";
+          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
+          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
+          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
+        };
+        /*%FSM</LINK>*/
+      };
+    };
+    /*%FSM</STATE>*/
+    /*%FSM<STATE "delayed_2">*/
+    class delayed_2
+    {
+      name = "delayed_2";
       init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.1;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
