@@ -22,8 +22,11 @@ _action = [
 
 if(_action) then {
 	[player] join _group;
+	_grpMembers = _group getVariable ["gang_members",nil];
+	if(isNil "_grpMembers") exitWith {};
+	if(typeName _grpMembers != "ARRAY") exitWith {};
 	[] call life_fnc_getHLC;
-	[[4,_group],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
+	[[4,_group,_grpMembers],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 } else {
 	sleep 1;
 	_grpMembers = _group getVariable ["gang_members",nil];
