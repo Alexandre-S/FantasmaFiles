@@ -42557,7 +42557,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=297;
+		items=298;
 		class Item0
 		{
 			position[]={8326.8896,82.8312,25066.445};
@@ -44799,6 +44799,14 @@ class Mission
 			name="civ_car_2_5";
 			type="Empty";
 			angle=543.68402;
+		};
+		class Item297
+		{
+			position[]={16429.549,4.7323685,15714.868};
+			name="Aphrodite";
+			text="Aphrodite Club";
+			type="o_installation";
+			colorName="ColorGreen";
 		};
 	};
 	class Sensors
