@@ -68,7 +68,7 @@ if(!isNull _source) then {
 				};
 			// };
 		};
-		if(_projectile in ["fantasma_ammo_556x45_airsoft","fantasma_B_545x39_airsoft","fantasma_B_762x39_airsoft","fantasma_ammo_45ACP_MHP_airsoft","fantasma_B_9x18_57N181S","fantasma_B_9x21_Ball","fantasma_B_45ACP_Ball_Green"] && _curWep in ["rhs_weap_m4_as","rhs_weap_m4a1_blockII_as","rhs_weap_m16a4_as","rhs_weap_ak74m_as","rhs_weap_akm_as","rhs_weap_akms_as","rhsusf_weap_m1911a1_as","rhs_weap_makarov_pmm_as","hgun_Rook40_F_as","hgun_ACPC2_F_as"]) then {
+		if(_projectile in ["R3F_556x45_Ball_airsoft","R3F_762x51_Ball_airsoft","rhsusf_B_300winmag_airsoft","fantasma_ammo_556x45_airsoft","fantasma_B_545x39_airsoft","fantasma_B_762x39_airsoft","fantasma_ammo_45ACP_MHP_airsoft","fantasma_B_9x18_57N181S","fantasma_B_9x21_Ball","fantasma_B_45ACP_Ball_Green"] && _curWep in ["R3F_Famas_F1_as","R3F_Famas_surb_as","R3F_Famas_G2_HG_as","R3F_HK416M_as","R3F_HK417L_as","rhs_weap_XM2010_as","rhs_weap_m4_as","rhs_weap_m4a1_blockII_as","rhs_weap_m16a4_as","rhs_weap_ak74m_as","rhs_weap_akm_as","rhs_weap_akms_as","rhsusf_weap_m1911a1_as","rhs_weap_makarov_pmm_as","hgun_Rook40_F_as","hgun_ACPC2_F_as"]) then {
 			_damage = 0;
 			private["_isVehicle"];
 			_isVehicle = if(vehicle player != player) then {true} else {false};

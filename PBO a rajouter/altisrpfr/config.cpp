@@ -492,6 +492,60 @@ class cfgWeapons
 		magazines[] = {"9Rnd_45ACP_Mag_airsoft"};
 		displayName = "ACP-C2 .45 Airsoft";
 	};
+	class R3F_Famas_F1;
+	class R3F_Famas_F1_as: R3F_Famas_F1
+	{
+		author = "Youri";
+		descriptionShort = "Fusil d'assaut<br/>Calibre: 25 Bille Airsoft";
+		magazines[] = {"R3F_25Rnd_556x45_FAMAS_airsoft"};
+		displayName = "Famas F1 5.56 Airsoft";
+		modes[] = {"Single","Burst"};
+	};
+	class R3F_Famas_surb;
+	class R3F_Famas_surb_as: R3F_Famas_surb
+	{
+		author = "Youri";
+		descriptionShort = "Fusil d'assaut<br/>Calibre: 30 Bille Airsoft";
+		magazines[] = {"R3F_30Rnd_556x45_FAMAS_airsoft"};
+		displayName = "Famas C 5.56 Airsoft";
+		modes[] = {"Single","Burst"};
+	};
+	class R3F_Famas_G2_HG;
+	class R3F_Famas_G2_HG_as: R3F_Famas_G2_HG
+	{
+		author = "Youri";
+		descriptionShort = "Fusil d'assaut<br/>Calibre: 30 Bille Airsoft";
+		magazines[] = {"R3F_30Rnd_556x45_FAMAS_airsoft"};
+		displayName = "Famas C 5.56 Airsoft";
+		modes[] = {"Single","Burst"};
+	};
+	class R3F_HK416M;
+	class R3F_HK416M_as: R3F_HK416M
+	{
+		author = "Youri";
+		descriptionShort = "Fusil d'assaut<br/>Calibre: 30 Bille Airsoft";
+		magazines[] = {"R3F_30Rnd_556x45_HK416_airsoft"};
+		displayName = "HK416 14.5 pouces Airsoft";
+		modes[] = {"Single"};
+	};
+	class R3F_HK417L;
+	class R3F_HK417L_as: R3F_HK417L
+	{
+		author = "Youri";
+		descriptionShort = "Fusil d'assaut<br/>Calibre: 20 Bille Airsoft";
+		magazines[] = {"R3F_20Rnd_762x51_HK417_airsoft"};
+		displayName = "HK417 20 pouces Airsoft";
+		modes[] = {"Single"};
+	};
+	class rhs_weap_XM2010;
+	class rhs_weap_XM2010_as: rhs_weap_XM2010
+	{
+		author = "Youri";
+		descriptionShort = "Fusil de sniper<br/>Calibre: 5 Bille Airsoft";
+		magazines[] = {"rhsusf_5Rnd_300winmag_xm2010_airsoft"};
+		displayName = "M2010 ESR Airsoft";
+		modes[] = {"Single","far_optic1","medium_optic2","far_optic2"};
+	};
 	
 	class U_PMC_IndUniformRS_GSGPBB;
 	class U_Bleu_Airsoft: U_PMC_IndUniformRS_GSGPBB
@@ -634,6 +688,47 @@ class cfgMagazines
 		ammo = "fantasma_B_45ACP_Ball_Green";
 		descriptionShort = "8 billes";
 	};
+	class R3F_25Rnd_556x45_FAMAS;
+	class R3F_25Rnd_556x45_FAMAS_airsoft: R3F_25Rnd_556x45_FAMAS
+	{
+		author = "Youri";
+		displayName = "Chargeur Airsoft 5.56 Famas";
+		ammo = "R3F_556x45_Ball_airsoft";
+		descriptionShort = "25 billes";
+	};
+	class R3F_30Rnd_556x45_FAMAS;
+	class R3F_30Rnd_556x45_FAMAS_airsoft: R3F_30Rnd_556x45_FAMAS
+	{
+		author = "Youri";
+		displayName = "Chargeur Airsoft 5.56 Famas";
+		ammo = "R3F_556x45_Ball_airsoft";
+		descriptionShort = "30 billes";
+	};
+	class R3F_30Rnd_556x45_HK416;
+	class R3F_30Rnd_556x45_HK416_airsoft: R3F_30Rnd_556x45_HK416
+	{
+		author = "Youri";
+		displayName = "Chargeur Airsoft 5.56 HK416";
+		ammo = "R3F_556x45_Ball_airsoft";
+		descriptionShort = "30 billes";
+	};
+	class R3F_20Rnd_762x51_HK417;
+	class R3F_20Rnd_762x51_HK417_airsoft: R3F_20Rnd_762x51_HK417
+	{
+		author = "Youri";
+		displayName = "Chargeur Airsoft 7.62 HK417";
+		ammo = "R3F_762x51_Ball_airsoft";
+		descriptionShort = "20 billes";
+	};
+	class rhsusf_5Rnd_300winmag_xm2010;
+	class rhsusf_5Rnd_300winmag_xm2010_airsoft: CA_Magazine
+	{
+		author = "Youri";
+		displayName = "Chargeur Airsoft .300 Winchester";
+		ammo = "rhsusf_B_300winmag_airsoft";
+		descriptionShort = "5 billes";
+	};
+	
 };
 
 class cfgAmmo
@@ -676,6 +771,21 @@ class cfgAmmo
 	class fantasma_B_45ACP_Ball_Green: B_45ACP_Ball_Green
 	{
 		hit = 8;
+	};
+	class R3F_556x45_Ball;
+	class R3F_556x45_Ball_airsoft: R3F_556x45_Ball
+	{
+		hit = 10;
+	};
+	class R3F_762x51_Ball;
+	class R3F_762x51_Ball_airsoft: R3F_762x51_Ball
+	{
+		hit = 15;
+	};
+	class rhsusf_B_300winmag;
+	class rhsusf_B_300winmag_airsoft: rhsusf_B_300winmag
+	{
+		hit = 18.5;
 	};
 };
 

@@ -427,6 +427,21 @@ switch(_shop) do
 				{
 					(_ret select 1) pushBack ["B_UavTerminal",nil,0];
 				};
+				// capitaine
+				if(__GETC__(life_coplevel) > 4) then
+				{
+					(_ret select 1) pushBack ["R3F_Famas_F1_as",nil,0];
+					(_ret select 1) pushBack ["R3F_25Rnd_556x45_FAMAS_airsoft",nil,0];
+					(_ret select 1) pushBack ["R3F_Famas_surb_as",nil,0];
+					(_ret select 1) pushBack ["R3F_Famas_G2_HG_as",nil,0];
+					(_ret select 1) pushBack ["R3F_30Rnd_556x45_FAMAS_airsoft",nil,0];
+					(_ret select 1) pushBack ["R3F_HK416M_as",nil,0];
+					(_ret select 1) pushBack ["R3F_30Rnd_556x45_HK416_airsoft",nil,0];
+					(_ret select 1) pushBack ["R3F_HK417L_as",nil,0];
+					(_ret select 1) pushBack ["R3F_20Rnd_762x51_HK417_airsoft",nil,0];
+					(_ret select 1) pushBack ["rhs_weap_XM2010_as",nil,0];
+					(_ret select 1) pushBack ["rhsusf_5Rnd_300winmag_xm2010_airsoft",nil,0];
+				};
 			};
 		};
 	};
