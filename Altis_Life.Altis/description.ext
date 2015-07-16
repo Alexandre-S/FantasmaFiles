@@ -6,6 +6,7 @@ respawn = BASE;
 respawndelay = 5;
 disabledAI = true;
 disableChannels[]={0,1,2,3,5};
+disableRandomization[] = {"All"};
 loadScreen = "altisrpfr\images\mission_splash.paa";
 enableDebugConsole = 1;
 respawnDialog = 0;
