@@ -55,6 +55,7 @@ switch (_className) do
 	case "O_Truck_03_device_F_RP": {525};
 	case "C_Heli_Light_01_civil_F_RP": {15};
 	case "B_Heli_Light_01_F_RP": {15};
+	case "EC635_SAMU": {15};
 	case "O_Heli_Light_02_unarmed_F_RP": {45};
 	case "O_Heli_Transport_04_medevac_F_RP": {60};
 	case "O_Heli_Transport_04_covered_F_RP": {60};
@@ -85,6 +86,9 @@ switch (_className) do
 	case "PMC_Offroad_Transport": {98};
 	case "PMC_Offroad_Armed": {98};
 	case "PMC_MH9": {15};
+	case "B_MRAP_01_F": {90};
+	case "B_MRAP_01_hmg_F": {90};
+	case "B_APC_Wheeled_01_cannon_F": {150};
 	case "O_MRAP_02_F": {90};
 	case "O_MRAP_02_hmg_F": {90};
 	case "I_MRAP_03_F": {90};

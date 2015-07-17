@@ -814,6 +814,15 @@ switch (_vehicle) do
 			case 6: {_color = "Gris"};
 		};
 	};
+	
+	case "EC635_SAMU" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "SAMU"};
+			case 1: {_color = "Sécurité Civile"};
+		};
+	};
 };
 
 _color;

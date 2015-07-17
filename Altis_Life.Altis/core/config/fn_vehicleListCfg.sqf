@@ -217,6 +217,7 @@ switch (_shop) do
 		{
 			_return pushBack ["C_Heli_Light_01_civil_F_RP",40000];
 			_return pushBack ["B_Heli_Light_01_F_RP",40000];
+			_return pushBack ["EC635_SAMU",60000];
 		};
 		if(__GETC__(life_medicLevel) >= 2) then
 		{

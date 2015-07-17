@@ -827,7 +827,14 @@ switch (_vehicle) do
 		];
 	};
 	
-	
+	case "EC635_SAMU":
+	{
+		_ret = 
+		[
+			["altisrpfr\textures\EC635\samu\outerHaul_co.paa","med","altisrpfr\textures\EC635\samu\UpperParts_co.paa","altisrpfr\textures\EC635\samu\Tail_co.paa","altisrpfr\textures\EC635\samu\bawl_co.paa","altisrpfr\textures\EC635\samu\SideDoors_co.paa","altisrpfr\textures\EC635\samu\CargoDoors_co.paa"],
+			["altisrpfr\textures\EC635\secuciv\outerHaul_co.paa","med","altisrpfr\textures\EC635\secuciv\UpperParts_co.paa","altisrpfr\textures\EC635\secuciv\Tail_co.paa","altisrpfr\textures\EC635\secuciv\bawl_co.paa","altisrpfr\textures\EC635\secuciv\SideDoors_co.paa","altisrpfr\textures\EC635\secuciv\CargoDoors_co.paa"]
+		];
+	};
 };
 
 _ret;
