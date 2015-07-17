@@ -428,7 +428,7 @@ switch(_shop) do
 					(_ret select 1) pushBack ["B_UavTerminal",nil,0];
 				};
 				// capitaine
-				if(__GETC__(life_coplevel) > 4) then
+				if(__GETC__(life_coplevel) >= 4) then
 				{
 					(_ret select 1) pushBack ["R3F_Famas_F1_as",nil,0];
 					(_ret select 1) pushBack ["R3F_25Rnd_556x45_FAMAS_airsoft",nil,0];
