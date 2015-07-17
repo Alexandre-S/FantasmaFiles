@@ -41,7 +41,7 @@ if(life_shop_type == "heroin") then
 		//hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];
 		_blok = true;
 	};
-	_array = life_shop_npc getVariable["sellers",[]];
+	/*_array = life_shop_npc getVariable["sellers",[]];
 	_ind = [getPlayerUID player,_array] call life_fnc_index;
 	if(_ind != -1) then
 	{
@@ -53,9 +53,9 @@ if(life_shop_type == "heroin") then
 				_amount = (30-_valdeja);
 			};
 		};
-	};
+	};*/
 };
-if(_blok) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."]};
+if(_blok) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment.<br/><br/>[HRP]Pas assez de gendarmes présents[/HRP]"]};
 
 if(_index2 != -1) then {
 // if!(_type in ["water","coffee","donuts","tbacon","lockpick","pickaxe","redgull","fuelF","spikeStrip","pcp","storage1","storage2","nitro","redburger","soda","apple","rabbit","peach"]) then {

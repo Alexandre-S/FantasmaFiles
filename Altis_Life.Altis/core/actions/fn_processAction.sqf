@@ -15,7 +15,7 @@ _blok = false;
 if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
 if(_type in ["heroin","lsd","cocaine","marijuana"]) then{
 	if(({side _x == west} count playableUnits) <= 3) then{
-		hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];
+		hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment.<br/><br/>[HRP]Pas assez de gendarmes présents[/HRP]"];
 		_blok = true;
 	};
 };
