@@ -721,7 +721,7 @@ class cfgMagazines
 		descriptionShort = "20 billes";
 	};
 	class rhsusf_5Rnd_300winmag_xm2010;
-	class rhsusf_5Rnd_300winmag_xm2010_airsoft: CA_Magazine
+	class rhsusf_5Rnd_300winmag_xm2010_airsoft: rhsusf_5Rnd_300winmag_xm2010
 	{
 		author = "Youri";
 		displayName = "Chargeur Airsoft .300 Winchester";
