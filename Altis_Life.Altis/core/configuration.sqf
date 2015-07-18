@@ -1219,7 +1219,6 @@ life_garage_sell =
 
 	//GVT
 	["I_MRAP_03_F",650000*0.49],
-	["BAF_ArmoredSUV_Unarmed_DG1",145000*0.49],
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.49],
@@ -1332,7 +1331,6 @@ life_garage_prices =
 	
 	//GVT
 	["I_MRAP_03_F",650000*0.0735],
-	["BAF_ArmoredSUV_Unarmed_DG1",145000*0.0735],
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.0735],
@@ -1444,7 +1442,6 @@ life_assur_prices =
 	
 	//GVT
 	["I_MRAP_03_F",650000*0.5],
-	["BAF_ArmoredSUV_Unarmed_DG1",145000*0.5],
 	
 	//TRUCK
 	["C_Van_01_box_F",127500*0.5],

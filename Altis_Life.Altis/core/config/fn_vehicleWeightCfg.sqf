@@ -36,7 +36,6 @@ switch (_className) do
 	case "ACR_LandRover_AMB_RP": {103};
 	case "RDS_Octavia_Civ_01": {75};
 	case "C_SUV_01_F": {75};
-	case "BAF_ArmoredSUV_Unarmed_DG1": {90};
 	case "RDS_Ikarus_Civ_01": {113};
 	case "B_Truck_01_mover_F_RP": {113};
 	case "C_Van_01_transport_F": {150};
