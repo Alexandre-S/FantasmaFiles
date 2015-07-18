@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.97
+//Sat Jul 18 18:53:41 2015 : Source 'file' date Sat Jul 18 18:53:41 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class DG_UKBAF : Aircraft\Data\rotorblur_tail.rvmat{
+class StageTI
+{
+	texture = "DG_UKBAF\Aircraft\Data\ah64_tail_rotor_blur_ti_ca.paa";
+};
+//};

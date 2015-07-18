@@ -1,0 +1,19 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.97
+//Sat Jul 18 18:53:41 2015 : Source 'file' date Sat Jul 18 18:53:41 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class DG_UKBAF : Aircraft\Data\flare_lights_front_baf.rvmat{
+ambient[] = {0.9,1,1,1};
+diffuse[] = {0.9,1,1,1};
+forcedDiffuse[] = {0.9,1,1,1};
+emmisive[] = {0.9,1,1,1};
+specular[] = {0,0,0,1};
+specularPower = 1;
+renderFlags[] = {"NoZWrite"};
+PixelShaderID = "Normal";
+VertexShaderID = "Basic";
+//};

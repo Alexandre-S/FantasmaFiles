@@ -1,0 +1,13 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: Produced from mikero's Dos Tools Dll version 4.97
+//Sat Jul 18 18:53:41 2015 : Source 'file' date Sat Jul 18 18:53:41 2015
+//http://dev-heaven.net/projects/list_files/mikero-pbodll
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+//Class DG_UKBAF : Vehicles\ArmoredSUV\data\plastic_material.rvmat{
+surfaceInfo = "DG_UKBAF\Vehicles\ArmoredSUV\data\plastic_material.bisurf";
+diffuse[] = {0.5,0.5,1.0,1.0};
+ambient[] = {0.5,0.5,1.0,1.0};
+//};
