@@ -53117,7 +53117,7 @@ class Mission
 		};
 		class Item118
 		{
-			position[]={16434.219,-0.011649869,12580.866};
+			position[]={16423.67,-0.11768131,12541.909};
 			name="civ_ship_2";
 			type="loc_Quay";
 			colorName="ColorWhite";
@@ -53132,7 +53132,7 @@ class Mission
 		};
 		class Item120
 		{
-			position[]={17567.459,0,18918.814};
+			position[]={17573.672,0.013281412,18868.002};
 			name="civ_ship_3";
 			type="loc_Quay";
 			colorName="ColorWhite";
