@@ -21,6 +21,7 @@ switch (_shop) do
 	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
 	case "heroin": {["Drug Dealer",["cocainep","heroinp","marijuana","lsd"]]};
 	case "oil": {["Oil Trader",["oilp","pickaxe","fuelF"]]};
+	case "gaz": {["Gaz Trader",["gazp","pickaxe"]]};
 	case "fishmarket": {["Altis Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "glass": {["Altis Glass Dealer",["glass"]]};
 	case "iron": {["Altis Industrial Trader",["iron_r","copper_r"]]};

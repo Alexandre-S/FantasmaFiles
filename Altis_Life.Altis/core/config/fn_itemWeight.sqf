@@ -15,6 +15,8 @@ switch (_item) do
 	// case "handcuffkeys": {1};
 	case "oilu": {5};
 	case "oilp": {4};
+	case "gazu": {3};
+	case "gazp": {2};
 	case "heroinu": {3};
 	case "heroinp": {2};
 	case "seigle": {3};

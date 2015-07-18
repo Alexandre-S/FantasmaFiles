@@ -9,7 +9,7 @@ if(isNil "life_action_gathering") then {life_action_gathering = true;};
 if(life_action_inUse) exitWith {hint "Vous ne pouvez pas utiliser rapidement les touches d'actions!"};
 life_action_inUse = true;
 private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zone"];
-_resourceZones = ["apple_1","apple_2","apple_2_1","apple_3","apple_4","peaches_1","peaches_2","peaches_2_1","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","seigle_1","rye_1","hops_1","yeast_1"];
+_resourceZones = ["apple_1","apple_2","apple_2_1","apple_3","apple_4","peaches_1","peaches_2","peaches_2_1","peaches_3","peaches_4","heroin_1","cocaine_1","weed_1","seigle_1","rye_1","mash_1","hops_1","yeast_1"];
 _zone = "";
 _gather = "";
 // if(life_action_gathering) exitWith {}; //Action is in use, exit to prevent spamming.
@@ -38,6 +38,9 @@ if(_zone == "") then {
 		case (player distance (getMarkerPos "diamond_1") < 75): {_gather = "diamond"; _val = 1;};
 		case (player distance (getMarkerPos "oil_1") < 75) : {_gather = "oilu"; _val = 1;};
 		case (player distance (getMarkerPos "oil_2") < 75) : {_gather = "oilu"; _val = 1;};
+		case (player distance (getMarkerPos "gaz_rig_1") < 75) : {_gather = "gazu"; _val = 1;};
+		case (player distance (getMarkerPos "gaz_rig_2") < 75) : {_gather = "gazu"; _val = 1;};
+		case (player distance (getMarkerPos "gaz_rig_3") < 75) : {_gather = "gazu"; _val = 1;};
 		case (player distance (getMarkerPos "rock_1") < 75): {_gather = "rock"; _val = 2;};
 		default {_gather = "";};
 	};
@@ -51,6 +54,7 @@ if(_zone == "") then {
 		case (_zone in ["weed_1"]): {_gather = "cannabis"; _val = 1;};
 		case (_zone in ["seigle_1"]): {_gather = "seigle"; _val = 1;};
 		case (_zone in ["rye_1"]): {_gather = "rye"; _val = 2;};
+		case (_zone in ["mash_1"]): {_gather = "cornmeal"; _val = 2;};
 		case (_zone in ["yeast_1"]): {_gather = "yeast"; _val = 2;};
 		case (_zone in ["hops_1"]): {_gather = "hops"; _val = 2;}; 
 		default {""};
@@ -72,11 +76,11 @@ while {life_carryWeight < life_maxWeight} do
 	if (speed player > 1) exitWith { titleText["Récolte annulée. Vous devez rester immobile pendant la récolte.","PLAIN"]; };
 	_val = [1,2,3,4] call BIS_fnc_selectRandom;
 	_diff = [_gather,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
-	if((_gather == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") && (life_inv_pickaxe < 1)) exitWith {hint "Vous avez besoin d'une pioche pour effectuer cette action.";};
+	if((_gather == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "gazu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") && (life_inv_pickaxe < 1)) exitWith {hint "Vous avez besoin d'une pioche pour effectuer cette action.";};
 	// if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
 	if(!(_diff > 0)) exitWith { titleText [format["Récolte terminé. Vous n'avez plus de place pour stocker plus de %1.", _itemName],"PLAIN"]; };
 
-	if(_gather == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") then {
+	if(_gather == "sand" || _gather == "salt" || _gather == "rock" || _gather == "oilu" || _gather == "gazu" || _gather == "ironore" || _gather == "diamond" || _gather == "copperore") then {
 		//[[player, "mining",10],"life_fnc_playSound",true,false] spawn life_fnc_MP;
 		playSound "mining";
 	}

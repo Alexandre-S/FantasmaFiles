@@ -22,6 +22,7 @@ switch (_mode) do
 			case "gun": {_var = "l_c_gun"}; //Firearm/gun license cost
 			case "dive": {_var = "l_c_dive"}; //Diving license cost
 			case "oil": {_var = "l_c_oil"}; //Oil processing license cost
+			case "gaz": {_var = "l_c_gaz"}; //Gaz processing license cost
 			case "cair": {_var = "l_g_air"}; //Cop Pilot License cost
 			case "cairT": {_var = "l_g_airT"}; //Cop Tactic Pilot License cost
 			case "demo": {_var = "l_g_demo"}; //demo License cost
@@ -83,6 +84,7 @@ switch (_mode) do
 			case "l_c_gun": {_var = "gun"}; //Firearm/gun license cost
 			case "l_c_dive": {_var = "dive"}; //Diving license cost
 			case "l_c_oil": {_var = "oil"}; //Oil processing license cost
+			case "l_c_gaz": {_var = "gaz"}; //Gaz processing license cost
 			case "l_g_air": {_var = "cair"}; //Cop Pilot License cost
 			case "l_g_airT": {_var = "cairT"}; //Cop tactic Pilot License cost
 			case "l_g_demo": {_var = "demo"}; //demo License cost

@@ -39,8 +39,10 @@ _item = switch(true) do {
 	case (_zone in ["sand_1","sand_1_1"]): {"sand"};
 	case (_zone in ["diamond_1"]): {"diamond"};
 	case (_zone in ["oil_1","oil_2"]): {"oilu"};
+	case (_zone in ["gaz_rig_1","gaz_rig_2","gaz_rig_3"]): {"gazu"};
 	case (_zone in ["rock_1"]): {"rock"};
 	case (_zone in ["rye_1"]): {"rye"};
+	case (_zone in ["mash_1"]): {"cornmeal"};
 	case (_zone in ["yeast_1"]): {"yeast"};
 	case (_zone in ["hops_1"]): {"hops"}; 
 	default {""};

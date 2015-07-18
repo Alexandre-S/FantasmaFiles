@@ -2917,6 +2917,14 @@
 			<Italian>Olio processato</Italian>
 			<Portuguese>Petróleo Refinado</Portuguese>
 		</Key>
+		<Key ID="STR_Item_GazU">
+			<Original>Unprocessed Gaz</Original>
+			<French>Gaz non raffiné</French>
+		</Key>
+		<Key ID="STR_Item_GazP">
+			<Original>Processed Gaz</Original>
+			<French>Gaz raffiné</French>
+		</Key>
 		<Key ID="STR_Item_HeroinU">
 			<Original>Unprocessed Heroin</Original>
 			<German>Unverarbeitetes Heroin</German>
@@ -3361,9 +3369,13 @@
 		<Key ID="STR_License_Oil">
 			<Original>Oil Processing</Original>
 			<German>Ölverarbeitung</German>
-			<French>Raffinage de du pétrole</French>
+			<French>Raffinage de pétrole</French>
 			<Italian>Processo Olio</Italian>
 			<Portuguese>Refinamento de Petróleo</Portuguese>
+		</Key>
+		<Key ID="STR_License_Gaz">
+			<Original>Gaz Processing</Original>
+			<French>Raffinage de Gaz</French>
 		</Key>
 		<Key ID="STR_License_Diving">
 			<Original>Diving License</Original>
@@ -3789,6 +3801,10 @@
 			<French>Raffinage de Pétrole</French>
 			<Italian>Processando l'Olio</Italian>
 			<Portuguese>Processando Oleo</Portuguese>
+		</Key>
+		<Key ID="STR_Process_Gaz">
+			<Original>Processing Gaz</Original>
+			<French>Raffinage de Gaz</French>
 		</Key>
 		<Key ID="STR_Process_Diamond">
 			<Original>Cutting Diamonds</Original>

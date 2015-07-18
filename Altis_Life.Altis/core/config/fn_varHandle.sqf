@@ -20,6 +20,8 @@ switch (_mode) do
 			// case "handcuffkeys": {"life_inv_handcuffkeys"};
 			case "oilu": {"life_inv_oilu"};
 			case "oilp": {"life_inv_oilp"};
+			case "gazu": {"life_inv_gazu"};
+			case "gazp": {"life_inv_gazp"};
 			case "heroinu": {"life_inv_heroinu"};
 			case "heroinp": {"life_inv_heroinp"};
 			case "seigle": {"life_inv_seigle"};
@@ -108,6 +110,8 @@ switch (_mode) do
 			case "life_inv_handcuffkeys": {"handcuffkeys"};
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
+			case "life_inv_gazu": {"gazu"};
+			case "life_inv_gazp": {"gazp"};
 			case "life_inv_heroinu": {"heroinu"};
 			case "life_inv_heroinp": {"heroinp"};
 			case "life_inv_seigle": {"seigle"};

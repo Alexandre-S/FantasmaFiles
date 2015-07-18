@@ -25,6 +25,7 @@ if(!_blok) then {
 	_itemInfo = switch (_type) do
 	{
 		case "oil": {["oilu","oilp",1200,(localize "STR_Process_Oil"),false];};
+		case "gaz": {["gazu","gazp",1000,(localize "STR_Process_Gaz"),false];};
 		case "diamond": {["diamond","diamondc",1350,(localize "STR_Process_Diamond"),false];};
 		case "heroin": {["heroinu","heroinp",1750,(localize "STR_Process_Heroin"),false];};
 		case "lsd": {["seigle","lsd",750,(localize "STR_Process_LSD"),false];};
