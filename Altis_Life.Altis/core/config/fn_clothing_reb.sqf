@@ -70,6 +70,7 @@ switch (_filter) do
 				_ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",3000];
 				_ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",3000];
 			};
+			_ret pushBack ["U_B_Wetsuit",nil,2000];
 			_ret pushBack ["U_I_G_Story_Protagonist_F","Work",5000];
 			_ret pushBack ["U_BG_Guerrilla_6_1",nil,5000];
 			_ret pushBack ["UVF_Soldier_Outfit_5","Veste khaki ouverte et jean",5000];
@@ -325,6 +326,7 @@ switch (_filter) do
 		{
 			_ret = 
 			[
+				["G_Diving",nil,500],
 				["G_Bandanna_tan",nil,250],
 				["G_Bandanna_khk",nil,250],
 				["G_Bandanna_blk",nil,250],
@@ -372,6 +374,7 @@ switch (_filter) do
 		{
 			_ret = 
 			[
+				["V_RebreatherB",nil,5000],
 				["rhs_6sh92",nil,5000],
 				["rhs_6sh92_digi",nil,5000],
 				["rhs_vydra_3m",nil,5000],
