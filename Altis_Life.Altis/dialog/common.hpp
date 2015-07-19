@@ -212,6 +212,7 @@ idc = -1;
     font = "PuristaLight";
     color[] = {1, 1, 1, 1};
     colorActive[] = {1, 0.2, 0.2, 1};
+	colorDisabled[] = {};
     soundEnter[] = {"\A3\ui_f\data\sound\onover", 0.09, 1};
     soundPush[] = {"\A3\ui_f\data\sound\new1", 0.0, 0};
     soundClick[] = {"\A3\ui_f\data\sound\onclick", 0.07, 1};
