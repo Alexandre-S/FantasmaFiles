@@ -153,9 +153,8 @@ _patchList =
 "WarFXPE","Blastcore_SmokeCS","Blastcore_VEP","Blastcore_Sun",
 "Specter_Armaments","Test_Character_F","Talon_UGV",
 "HAFM_EC635_Config","HAFM_EC635",
-"ace_rhs_c_weapons_comp","ace_rhsusf_c_weapons_comp","ace_asdg_comp","kio_kio_fhat","Skyline_Mercedes_300_SEL",
-"cba_enable_auto_xeh","ace_fonts","ace_dagr","ace_huntir","ace_mx2a","ace_spottingscope","ace_tripod","ace_tacticalladder","ace_ui","ace_yardage450","ace_rangecard"
-
+"cba_enable_auto_xeh","ace_fonts","ace_dagr","ace_huntir","ace_mx2a","ace_spottingscope","ace_tripod","ace_tacticalladder","ace_ui","ace_yardage450","ace_rangecard",
+"rhs_infantry2","rhs_c_identity","rhs_identity","rhsusf_c_identity","rhsusf_cars","rhsusf_weapons2"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
