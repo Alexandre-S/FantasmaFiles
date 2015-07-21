@@ -123,7 +123,9 @@ class Mission
 		"A3_Structures_F_Items_Cans",
 		"A3_Structures_F_Ind_Pipes",
 		"A3_Structures_F_Ind_Tank",
-		"A3_Structures_F_Ind_Crane"
+		"A3_Structures_F_Ind_Crane",
+		"ace_winddeflection",
+		"ace_map"
 	};
 	addOnsAuto[]=
 	{
@@ -235,7 +237,9 @@ class Mission
 		"A3_Structures_F_Ind_Pipes",
 		"A3_Structures_F_Ind_Tank",
 		"A3_Structures_F_Ind_Crane",
-		"a3_map_altis"
+		"a3_map_altis",
+		"ace_winddeflection",
+		"ace_map"
 	};
 	randomSeed=2004553;
 	class Intel
@@ -264,7 +268,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=128;
+		items=130;
 		class Item0
 		{
 			side="WEST";
@@ -5524,10 +5528,10 @@ class Mission
 					position[]={8405.1758,-97.243988,25944.027};
 					class args
 					{
-						items=9;
+						items=10;
 						class Item0
 						{
-							value="1";
+							value="0";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
 							typeName="enabled";
 						};
@@ -5535,45 +5539,51 @@ class Mission
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="alwaysSimulateForSnipers";
+							typeName="simulateForSnipers";
 						};
 						class Item2
 						{
 							value="0";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="disabledInFullAutoMode";
+							typeName="simulateForGroupMembers";
 						};
 						class Item3
 						{
-							value="1";
+							value="0";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="onlyActiveForLocalPlayers";
+							typeName="simulateForEveryone";
 						};
 						class Item4
 						{
-							value="1";
+							value="0";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="ammoTemperatureEnabled";
+							typeName="disabledInFullAutoMode";
 						};
 						class Item5
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="barrelLengthInfluenceEnabled";
+							typeName="ammoTemperatureEnabled";
 						};
 						class Item6
 						{
 							value="1";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
-							typeName="bulletTraceEnabled";
+							typeName="barrelLengthInfluenceEnabled";
 						};
 						class Item7
+						{
+							value="1";
+							parentCls="ace_advanced_ballistics_ModuleSettings";
+							typeName="bulletTraceEnabled";
+						};
+						class Item8
 						{
 							value="0";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
 							typeName="simulationInterval";
 						};
-						class Item8
+						class Item9
 						{
 							value="3000";
 							parentCls="ace_advanced_ballistics_ModuleSettings";
@@ -5590,6 +5600,98 @@ class Mission
 			};
 		};
 		class Item127
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8406.1758,-98.243988,25944.027};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="0";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="enabled";
+						};
+						class Item1
+						{
+							value="0";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="vehicleEnabled";
+						};
+						class Item2
+						{
+							value="0.05";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="simulationInterval";
+						};
+						class Item3
+						{
+							value="3000";
+							parentCls="ace_winddeflection_ModuleSettings";
+							typeName="simulationRadius";
+						};
+					};
+					id=0;
+					side="LOGIC";
+					vehicle="ace_winddeflection_ModuleSettings";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item128
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8407.1758,-99.243988,25944.027};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapIllumination";
+						};
+						class Item1
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShake";
+						};
+						class Item2
+						{
+							value="0";
+							parentCls="ACE_ModuleMap";
+							typeName="MapLimitZoom";
+						};
+						class Item3
+						{
+							value="1";
+							parentCls="ACE_ModuleMap";
+							typeName="MapShowCursorCoordinates";
+						};
+					};
+					id=2;
+					side="LOGIC";
+					vehicle="ACE_ModuleMap";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item129
 		{
 			side="LOGIC";
 			class Vehicles
