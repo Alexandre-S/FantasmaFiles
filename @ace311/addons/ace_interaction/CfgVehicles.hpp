@@ -130,7 +130,7 @@ class CfgVehicles {
 					priority = 1.9;
 				};
 				class ACE_Carte {
-					displayName = "Présenter plaque gendarme";
+					displayName = "PrÃ©senter plaque gendarme";
 					distance = 4;
 					condition = "_target isKindOf 'Man' && {alive _target} && {playerSide == west}";
 					statement = "[_target,'flic'] spawn life_fnc_showId";
@@ -139,7 +139,7 @@ class CfgVehicles {
 					priority = 2.6;
 				};
 				class ACE_Carte2 {
-					displayName = "Présenter carte";
+					displayName = "PrÃ©senter carte";
 					distance = 4;
 					condition = "_target isKindOf 'Man' && {alive _target}";
 					statement = "[_target,'civ'] spawn life_fnc_showId";
@@ -148,7 +148,7 @@ class CfgVehicles {
 					priority = 2.7;
 				};
 				class ACE_CopAlcool	{
-					  displayName = "Contrôler Alcool et Stup";
+					  displayName = "ContrÃ´ler Alcool et Stup";
 					  distance = 4;
 					  condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {playerSide == west} && {side _target in [civilian,independent,west]}";
 					  /*statement = "[_target,player] spawn life_fnc_souffler";*/
@@ -158,7 +158,7 @@ class CfgVehicles {
 					  hotkey = "A";
 				};
 				class ACE_Reanimer {
-					displayName = "Réanimer";
+					displayName = "RÃ©animer";
 					distance = 4;
 					condition = "(_target isKindOf 'Man') && {!alive _target} && {playerSide in [west,independent]} && {'Medikit' in (items player)}";
 					statement = "[_target] spawn life_fnc_revivePlayer";
@@ -282,86 +282,86 @@ class CfgVehicles {
 
         class ACE_SelfActions {
             class ACE_TeamManagement {
-                displayName = CSTRING(TeamManagement);
-                condition = QUOTE(GVAR(EnableTeamManagement));
-                exceptions[] = {"isNotInside"};
-                statement = "";
-                showDisabled = 1;
-                priority = 3.2;
-                icon = PATHTOF(UI\team\team_management_ca.paa);
-                hotkey = "M";
+				displayName = CSTRING(TeamManagement);
+				condition = QUOTE(GVAR(EnableTeamManagement));
+				exceptions[] = {"isNotInside"};
+				statement = "";
+				showDisabled = 1;
+				priority = 3.2;
+				icon = PATHTOF(UI\team\team_management_ca.paa);
+				hotkey = "M";
 
-                class ACE_JoinTeamRed {
-                    displayName = CSTRING(JoinTeamRed);
-                    condition = QUOTE(true);
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE([ARR_2(_player,'RED')] call DFUNC(joinTeam));
-                    showDisabled = 1;
-                    priority = 2.4;
-                    icon = PATHTOF(UI\team\team_red_ca.paa);
-                    hotkey = "R";
-                };
-                class ACE_JoinTeamGreen {
-                    displayName = CSTRING(JoinTeamGreen);
-                    condition = QUOTE(true);
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE([ARR_2(_player,'GREEN')] call DFUNC(joinTeam));
-                    showDisabled = 1;
-                    priority = 2.3;
-                    icon = PATHTOF(UI\team\team_green_ca.paa);
-                    hotkey = "G";
-                };
-                class ACE_JoinTeamBlue {
-                    displayName = CSTRING(JoinTeamBlue);
-                    condition = QUOTE(true);
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE([ARR_2(_player,'BLUE')] call DFUNC(joinTeam));
-                    showDisabled = 1;
-                    priority = 2.2;
-                    icon = PATHTOF(UI\team\team_blue_ca.paa);
-                    hotkey = "B";
-                };
-                class ACE_JoinTeamYellow {
-                    displayName = CSTRING(JoinTeamYellow);
-                    condition = QUOTE(true);
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE([ARR_2(_player,'YELLOW')] call DFUNC(joinTeam));
-                    showDisabled = 1;
-                    priority = 2.1;
-                    icon = PATHTOF(UI\team\team_yellow_ca.paa);
-                    hotkey = "Y";
-                };
+				class ACE_JoinTeamRed {
+					displayName = CSTRING(JoinTeamRed);
+					condition = QUOTE(true);
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE([ARR_2(_player,'RED')] call DFUNC(joinTeam));
+					showDisabled = 1;
+					priority = 2.4;
+					icon = PATHTOF(UI\team\team_red_ca.paa);
+					hotkey = "R";
+				};
+				class ACE_JoinTeamGreen {
+					displayName = CSTRING(JoinTeamGreen);
+					condition = QUOTE(true);
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE([ARR_2(_player,'GREEN')] call DFUNC(joinTeam));
+					showDisabled = 1;
+					priority = 2.3;
+					icon = PATHTOF(UI\team\team_green_ca.paa);
+					hotkey = "G";
+				};
+				class ACE_JoinTeamBlue {
+					displayName = CSTRING(JoinTeamBlue);
+					condition = QUOTE(true);
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE([ARR_2(_player,'BLUE')] call DFUNC(joinTeam));
+					showDisabled = 1;
+					priority = 2.2;
+					icon = PATHTOF(UI\team\team_blue_ca.paa);
+					hotkey = "B";
+				};
+				class ACE_JoinTeamYellow {
+					displayName = CSTRING(JoinTeamYellow);
+					condition = QUOTE(true);
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE([ARR_2(_player,'YELLOW')] call DFUNC(joinTeam));
+					showDisabled = 1;
+					priority = 2.1;
+					icon = PATHTOF(UI\team\team_yellow_ca.paa);
+					hotkey = "Y";
+				};
 
-                class ACE_LeaveTeam {
-                    displayName = CSTRING(LeaveTeam);
-                    condition = QUOTE(assignedTeam _player != 'MAIN');
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE([ARR_2(_player,'MAIN')] call DFUNC(joinTeam));
-                    showDisabled = 1;
-                    priority = 2.5;
-                    icon = PATHTOF(UI\team\team_white_ca.paa);
-                    hotkey = "N";
-                };
-                /*class ACE_BecomeLeader {
-                    displayName = CSTRING(BecomeLeader);
-                    condition = QUOTE(_this call DFUNC(canBecomeLeader));
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE(_this call DFUNC(doBecomeLeader));
-                    showDisabled = 1;
-                    priority = 1.0;
-                    icon = PATHTOF(UI\team\team_white_ca.paa);
-                    hotkey = "L";
-                };
-                class ACE_LeaveGroup {
-                    displayName = CSTRING(LeaveGroup);
-                    condition = QUOTE(count (units group _player) > 1);
-                    exceptions[] = {"isNotInside"};
-                    statement = QUOTE(_oldGroup = units group _player; _newGroup = createGroup side _player; [_player] joinSilent _newGroup; {_player reveal _x} forEach _oldGroup;);
-                    showDisabled = 1;
-                    priority = 1.2;
-                    icon = PATHTOF(UI\team\team_management_ca.paa);
-                    hotkey = "M";*/
-                };
+				class ACE_LeaveTeam {
+					displayName = CSTRING(LeaveTeam);
+					condition = QUOTE(assignedTeam _player != 'MAIN');
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE([ARR_2(_player,'MAIN')] call DFUNC(joinTeam));
+					showDisabled = 1;
+					priority = 2.5;
+					icon = PATHTOF(UI\team\team_white_ca.paa);
+					hotkey = "N";
+				};
+				/*class ACE_BecomeLeader {
+					displayName = CSTRING(BecomeLeader);
+					condition = QUOTE(_this call DFUNC(canBecomeLeader));
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE(_this call DFUNC(doBecomeLeader));
+					showDisabled = 1;
+					priority = 1.0;
+					icon = PATHTOF(UI\team\team_white_ca.paa);
+					hotkey = "L";
+				};
+				class ACE_LeaveGroup {
+					displayName = CSTRING(LeaveGroup);
+					condition = QUOTE(count (units group _player) > 1);
+					exceptions[] = {"isNotInside"};
+					statement = QUOTE(_oldGroup = units group _player; _newGroup = createGroup side _player; [_player] joinSilent _newGroup; {_player reveal _x} forEach _oldGroup;);
+					showDisabled = 1;
+					priority = 1.2;
+					icon = PATHTOF(UI\team\team_management_ca.paa);
+					hotkey = "M";
+				};*/
             };
 
             class ACE_Gestures {
@@ -504,7 +504,7 @@ class CfgVehicles {
 		    };
 			class ACE_SkinAnimal
 		    {
-				displayName = "Dépecer";
+				displayName = "DÃ©pecer";
 				condition = "alive player && playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 4 && !life_istazed && !(player getVariable 'AGM_isEscorting') && !(player getVariable 'ACE_Captives_isHandcuffed') && !(player getVariable 'ACE_Captives_isSurrendering') && (typeOf cursorTarget) in ['Cock_random_F','Hen_random_F','Goat_random_F','Sheep_random_F'] && !alive life_cursorTarget";
 				statement = "[] spawn life_fnc_skinAnimal;";
 				showDisabled = 1;

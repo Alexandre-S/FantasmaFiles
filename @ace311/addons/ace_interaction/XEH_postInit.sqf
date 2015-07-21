@@ -90,7 +90,7 @@ private ["_team"];
 {false},
 [21, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(CopSiren), "Sirène véhicule",
+["ACE3 Common", QGVAR(CopSiren), "SirÃ¨ne vÃ©hicule",
 {
     // Conditions: canInteract
     if !([ACE_player, objNull, ["isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
@@ -118,7 +118,7 @@ private ["_team"];
 {false},
 [38, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(Carlock), "Vérouiller/Déverouiller véhicule",
+["ACE3 Common", QGVAR(Carlock), "VÃ©rouiller/DÃ©verouiller vÃ©hicule",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};
@@ -132,7 +132,7 @@ private ["_team"];
 {false},
 [22, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(OpenInventory), "Inventaire véhicule",
+["ACE3 Common", QGVAR(OpenInventory), "Inventaire vÃ©hicule",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};

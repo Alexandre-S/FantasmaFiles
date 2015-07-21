@@ -64,7 +64,7 @@ class CfgVehicles {
                     priority = 1.2;
                 };
 				class ACE_FriskPerson {
-                    displayName = CSTRING(STR_ACE_Captives_FriskPerson);
+                    displayName = "Fouiller";
                     distance = 2;
                     condition = QUOTE([ARR_2(_player, _target)] call FUNC(canFriskPerson));
                     //statement = QUOTE([ARR_2(_player, _target)] call FUNC(doFriskPerson));

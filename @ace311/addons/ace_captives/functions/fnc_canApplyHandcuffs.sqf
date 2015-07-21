@@ -23,4 +23,5 @@ PARAMS_2(_unit,_target);
 (GVAR(allowHandcuffOwnSide) || {(side _unit) != (side _target)}) &&
 ("ACE_CableTie" in (items _unit)) &&
 {alive _target} &&
-{!(_target getVariable [QGVAR(isHandcuffed), false])}
+{!(_target getVariable [QGVAR(isHandcuffed), false])} &&
+{(_target getVariable [QGVAR(isSurrendering), false]) || ((animationState _target) == 'Incapacitated') || (_target getVariable ['ACE_istazed', false])}
