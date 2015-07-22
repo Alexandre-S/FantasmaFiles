@@ -50,12 +50,13 @@ if(!isHLC) then {
 			_result = "extDB" callExtension "9:VERSION";
 			diag_log format ["extDB: Version: %1", _result];
 			if(_result == "") exitWith {};
-			if ((parseNumber _result) < 14) exitWith {diag_log "Error: extDB version 14 or Higher Required";};
+			if ((parseNumber _result) < 35) exitWith {diag_log "Error: extDB version 35 or Higher Required";};
 
 			//Initialize the database
 			_result = "extDB" callExtension "9:DATABASE:Database2";
 			if(_result != "[1]") exitWith {diag_log "extDB: Error with Database Connection";};
-			_result = "extDB" callExtension format["9:ADD:DB_RAW_V2:%1",(call life_sql_id)];
+			_result = "extDB" callExtension format["9:ADD_DATABASE_PROTOCOL:Database2:SQL_RAW_v3:%1:ADD_QUOTES",(call life_sql_id)];
+			// _result = "extDB" callExtension format["9:ADD:DB_RAW_V2:%1",(call life_sql_id)];
 			if(_result != "[1]") exitWith {diag_log "extDB: Error with Database Connection";};
 			"extDB" callExtension "9:LOCK";
 			_extDB = true;
@@ -249,17 +250,18 @@ else
 		uiNamespace setVariable ["life_sql_id",life_sql_id];
 
 		//extDB Version
-		_result = "extDB" callExtension "9:VERSION";
+		_result = "extDB2" callExtension "9:VERSION";
 		diag_log format ["extDB: Version: %1", _result];
 		if(_result == "") exitWith {};
-		if ((parseNumber _result) < 14) exitWith {diag_log "Error: extDB version 14 or Higher Required";};
+		if ((parseNumber _result) < 35) exitWith {diag_log "Error: extDB version 35 or Higher Required";};
 
 		//Initialize the database
-		_result = "extDB" callExtension "9:DATABASE:Database2";
+		_result = "extDB2" callExtension "9:ADD_DATABASE:Database2";
 		if(_result != "[1]") exitWith {diag_log "extDB: Error with Database Connection";};
-		_result = "extDB" callExtension format["9:ADD:DB_RAW_V2:%1",(call life_sql_id)];
+		_result = "extDB2" callExtension format["9:ADD_DATABASE_PROTOCOL:Database2:SQL_RAW_v2:%1:ADD_QUOTES",(call life_sql_id)];
+		// _result = "extDB" callExtension format["9:ADD:DB_RAW_V2:%1",(call life_sql_id)];
 		if(_result != "[1]") exitWith {diag_log "extDB: Error with Database Connection";};
-		"extDB" callExtension "9:LOCK";
+		"extDB2" callExtension "9:LOCK";
 		_extDB = true;
 		diag_log "extDB: Connected to Database";
 	} else {
