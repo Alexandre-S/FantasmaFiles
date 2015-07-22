@@ -18,7 +18,7 @@
 5 "_Truck_" !"I_Truck_02_transport_F" !"I_Truck_02_covered_F" !"B_Truck_01_transport_F" !"B_Truck_01_box_F" !"B_Truck_01_covered_F" !"B_Truck_01_mover_F_RP" !"O_Truck_03_transport_F_RP" !"O_Truck_03_covered_F_RP" !"O_Truck_03_device_F_RP" !"O_Truck_03_medical_F_RP" !"I_Truck_02_medical_F_RP" !"B_Truck_01_medical_F" !"O_Truck_02_box_F_RP"
 5 "PMC_" !"PMC_Offroad_Transport" !"PMC_Offroad_Armed" !"PMC_MH9" !"PMC_AssaultPack_Blk" !"PMC_B_Kitbag_blk" !"PMC_B_Carryall_blk"
 5 "bwi_" !"bwi_a3_t6a_7" !"bwi_a3_at6b_3"
-5 "BAF_" !"BAF_Offroad_D" !"BAF_Offroad_D_HMG"
+5 "BAF_" !"BAF_Offroad_D" !"BAF_Offroad_D_HMG" !"BAF_ArmoredSUV_Unarmed_DG1"
 5 "LandRover_" !"ACR_LandRover_AMB" !"LandRover_ACR"
 5 "ACR_" !"ACR_LandRover_AMB"
 
