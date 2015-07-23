@@ -82,11 +82,11 @@ if(__GETC__(life_adminlevel) > 0) then {
 if(life_autofps) then {
 	_side ctrlSetTextColor [0,1,0,1];
 	_side ctrlSetText "ON";
-	_side buttonSetAction "life_autofps=false; ctrlShow[2901,false]; ctrlShow[2902,false]; ctrlShow[2911,false]; ctrlShow[2912,false]; ctrlShow[2921,false]; ctrlShow[2922,false]; ctrlShow[2931,false]; ctrlShow[2932,false]; ctrlShow[2941,false]; ctrlShow[2942,false]; setViewDistance -1; setViewDistance havena_view_save; setObjectViewDistance havena_objectView_save; call life_fnc_settingsMenu;";
+	_side buttonSetAction "life_autofps=false; setViewDistance havena_view_save; setObjectViewDistance havena_objectView_save[]; [] call life_fnc_settingsMenu;";
 } else {
 	_side ctrlSetTextColor [1,0,0,1];
 	_side ctrlSetText "OFF";
-	_side buttonSetAction "life_autofps=true; ctrlShow[2901,true]; ctrlShow[2902,true]; ctrlShow[2911,true]; ctrlShow[2912,true]; ctrlShow[2921,true]; ctrlShow[2922,true]; ctrlShow[2931,true]; ctrlShow[2932,true]; ctrlShow[2941,true]; ctrlShow[2942,true]; [] call life_fnc_settingsMenu;";
+	_side buttonSetAction "life_autofps=true; [] call life_fnc_settingsMenu;";
 };
 
 
