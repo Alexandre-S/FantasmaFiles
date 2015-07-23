@@ -82,7 +82,7 @@ if(__GETC__(life_adminlevel) > 0) then {
 if(life_autofps) then {
 	_side ctrlSetTextColor [0,1,0,1];
 	_side ctrlSetText "ON";
-	_side buttonSetAction "life_autofps=false; setViewDistance havena_view_save; setObjectViewDistance havena_objectView_save[]; [] call life_fnc_settingsMenu;";
+	_side buttonSetAction "life_autofps=false; setViewDistance havena_view_save; setObjectViewDistance havena_objectView_save; [] call life_fnc_settingsMenu;";
 } else {
 	_side ctrlSetTextColor [1,0,0,1];
 	_side ctrlSetText "OFF";
