@@ -43,9 +43,10 @@ switch (_boxType) do {
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;
-		_house setVariable["containers",_containers,true];
+		// _house setVariable["containers",_containers,true];
+		[[_house,"containers",_containers,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 		[] call life_fnc_getHLC;
-		[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
+		[[_house,1,_containers],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 		
 		//Empty out the crate
 		// clearWeaponCargoGlobal _container;
@@ -59,9 +60,10 @@ switch (_boxType) do {
 		_container setPosATL _pos;
 		
 		_containers pushBack _container;
-		_house setVariable["containers",_containers,true];
+		// _house setVariable["containers",_containers,true];
+		[[_house,"containers",_containers,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 		[] call life_fnc_getHLC;
-		[[_house],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
+		[[_house,1,_containers],"TON_fnc_updateHouseContainers",serverhc,false] spawn life_fnc_MP;
 		
 		//Empty out the crate
 		// clearWeaponCargoGlobal _container;
