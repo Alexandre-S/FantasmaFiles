@@ -14,7 +14,7 @@ if(life_action_inUse) exitWith {}; //Action is in use, exit to prevent spamming.
 if(life_interrupted) exitWith {life_interrupted = false;};
 _isWater = surfaceIsWater (getPosASL player);
 if(isNull _curTarget) exitWith {
-	if(_isWater) then {
+	if(_isWater && (player distance (getMarkerPos "gaz_rig_1") > 75) && (player distance (getMarkerPos "gaz_rig_2") > 75) && (player distance (getMarkerPos "gaz_rig_3") > 75)) then {
 		private["_fish"];
 		_fish = (nearestObjects[getPos player,["Fish_Base_F"],3]) select 0;
 		if(!isNil "_fish") then {
