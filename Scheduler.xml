@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<Scheduler>
+    <!-- INTERNAL COMMANDS -->
+    <job id="1">
+        <time>07:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="2">
+        <time>07:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="3">
+        <time>07:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="4">
+        <time>07:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="5">
+        <time>07:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="6">
+        <time>07:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+    <job id="7">
+        <time>07:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+    <job id="8">
+        <time>07:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="9">
+        <time>07:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="10">
+        <time>07:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="11">
+        <time>07:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="12">
+        <time>07:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="13">
+        <time>07:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="14">
+        <time>07:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="15">
+        <time>07:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="16">
+        <time>07:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+	<job id="17">
+        <time>07:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="18">
+        <time>07:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="19">
+        <time>13:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="20">
+        <time>13:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="21">
+        <time>13:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="22">
+        <time>13:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="23">
+        <time>13:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="24">
+        <time>13:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+    <job id="25">
+        <time>13:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+    <job id="26">
+        <time>13:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="27">
+        <time>13:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="28">
+        <time>13:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="29">
+        <time>13:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="30">
+        <time>13:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="31">
+        <time>13:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="32">
+        <time>13:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="33">
+        <time>13:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="34">
+        <time>13:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+	<job id="35">
+        <time>13:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="36">
+        <time>13:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="37">
+        <time>19:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="38">
+        <time>19:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="39">
+        <time>19:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="40">
+        <time>19:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="41">
+        <time>19:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="42">
+        <time>19:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+    <job id="43">
+        <time>19:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+    <job id="44">
+        <time>19:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="45">
+        <time>19:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="46">
+        <time>19:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="47">
+        <time>19:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="48">
+        <time>19:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="49">
+        <time>19:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="50">
+        <time>19:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="51">
+        <time>19:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="52">
+        <time>19:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+	<job id="53">
+        <time>19:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="54">
+        <time>19:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="55">
+        <time>01:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="56">
+        <time>01:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="57">
+        <time>01:00:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 heure</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="58">
+        <time>01:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="59">
+        <time>01:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="60">
+        <time>01:30:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 30 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+    <job id="61">
+        <time>01:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+    <job id="62">
+        <time>01:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="63">
+        <time>01:45:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 15 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="64">
+        <time>01:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="65">
+        <time>01:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="66">
+        <time>01:50:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 10 min</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="67">
+        <time>01:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="68">
+        <time>01:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="69">
+        <time>01:55:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 5 min. Merci de ne plus deplacer vos vehicules</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>	
+	<job id="70">
+        <time>01:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>		
+	<job id="71">
+        <time>01:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+	<job id="72">
+        <time>01:59:00</time>
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>say -1 Reboot du server dans 1 min. Merci de vous deconnecter du serveur</cmd>    
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="73">
+        <time>08:00:00</time> <!-- shutdown -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>#shutdown</cmd>	
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="74">
+        <time>14:00:00</time> <!-- shutdown  -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>#shutdown</cmd>	
+        <cmdtype>0</cmdtype>           
+    </job>
+    <job id="75">
+        <time>20:00:00</time> <!-- shutdown  -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>#shutdown</cmd>	
+        <cmdtype>0</cmdtype>             
+    </job>
+    <job id="76">
+        <time>02:00:00</time> <!-- shutdown  -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>#shutdown</cmd>	
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="77">
+        <time>07:59:50</time> <!-- shutdown -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>#restart</cmd>	
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="78">
+        <time>13:59:50</time> <!-- shutdown  -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop>
+        <cmd>#restart</cmd>	
+        <cmdtype>0</cmdtype>           
+    </job>
+    <job id="79">
+        <time>19:59:50</time> <!-- shutdown  -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>#restart</cmd>	
+        <cmdtype>0</cmdtype>             
+    </job>
+    <job id="80">
+        <time>01:59:50</time> <!-- shutdown  -->
+        <day>1,2,3,4,5,6,7</day>
+        <loop>0</loop> 
+        <cmd>#restart</cmd>	
+        <cmdtype>0</cmdtype>            
+    </job>
+    <job id="81">
+      <time>001500</time> <!-- run every 10 min -->
+      <delay>000000</delay>      
+      <day>1,2,3,4,5,6,7</day>
+      <loop>1</loop> 
+      <cmd>say -1 TEAMSPEAK OBLIGATOIRE TS.ALTISRP.FR</cmd>    
+      <cmdtype>0</cmdtype>            
+    </job>
+    <job id="82">
+      <time>001000</time> <!-- run every 10 min -->
+      <delay>000000</delay>      
+      <day>1,2,3,4,5,6,7</day>
+      <loop>1</loop>
+      <cmd>say -1 REBOOT A 08h 14h 20h 02h - RAPPEL: JE NE DEPLACE PLUS MES VEHICULES PENDANT 5 MIN AVANT CHAQUE REBOOT</cmd>    
+      <cmdtype>0</cmdtype>            
+    </job> 	
+</Scheduler>
