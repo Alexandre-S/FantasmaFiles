@@ -1,0 +1,90 @@
+PLP ASSET Airport		plp_mark_as_airport
+PLP ASSET Airport 2		plp_mark_as_airport2
+PLP ASSET Air Radar		plp_mark_as_airradar
+PLP ASSET Ammunition		plp_mark_as_ammunition
+PLP ASSET Anti Air (Cannon)	plp_mark_as_aacannon
+PLP ASSET Anti Air (Missile)	plp_mark_as_aamissile
+PLP ASSET Artillery (Cannon)	plp_mark_as_artycannon
+PLP ASSET Artillery (Rocket)	plp_mark_as_artyrocket
+PLP ASSET Backpack		plp_mark_as_backpack
+PLP ASSET Bicycle		plp_mark_as_bicycle
+PLP ASSET Binoculars		plp_mark_as_binoculars
+PLP ASSET Boat			plp_mark_as_boat
+PLP ASSET Building		plp_mark_as_building
+PLP ASSET Camp			plp_mark_as_camp
+PLP ASSET Canteen		plp_mark_as_canteen
+PLP ASSET Checkpoint		plp_mark_as_checkpoint
+PLP ASSET Cross			plp_mark_as_cross
+PLP ASSET Drinking Water	plp_mark_as_drinkingwater
+PLP ASSET Electronics		plp_mark_as_electronics
+PLP ASSET Explosives		plp_mark_as_explosives
+PLP ASSET Flag			plp_mark_as_flag
+PLP ASSET Fuel			plp_mark_as_fuel
+PLP ASSET Handgrenade		plp_mark_as_handgrenade
+PLP ASSET Hardpoint		plp_mark_as_hardpoint
+PLP ASSET Helicopter		plp_mark_as_helicopter
+PLP ASSET House			plp_mark_as_house
+PLP ASSET Industrial		plp_mark_as_industrial
+PLP ASSET Infantry		plp_mark_as_infantry
+PLP ASSET Launcher		plp_mark_as_launcher
+PLP ASSET Machinegun		plp_mark_as_machinegun
+PLP ASSET Machinegun Nest	plp_mark_as_machinegunnest
+PLP ASSET Map Tools		plp_mark_as_maptools
+PLP ASSET Mortar		plp_mark_as_mortar
+PLP ASSET Motorized Inf		plp_mark_as_motinfantry
+PLP ASSET Motorcycle		plp_mark_as_motorcycle
+PLP ASSET Pistol		plp_mark_as_pistol
+PLP ASSET Police		plp_mark_as_police
+PLP ASSET Quad			plp_mark_as_quad
+PLP ASSET Radiotower		plp_mark_as_radiotower
+PLP ASSET Repairs		plp_mark_as_repairs
+PLP ASSET Rifle			plp_mark_as_rifle
+PLP ASSET Shotgun		plp_mark_as_shotgun
+PLP ASSET Sniper Rifle		plp_mark_as_sniperrifle
+PLP ASSET Special Forces	plp_mark_as_specialforces
+PLP ASSET Storage		plp_mark_as_storage
+PLP ASSET Submachinegun		plp_mark_as_submachinegun
+PLP ASSET Tank			plp_mark_as_tank
+PLP ASSET Truck			plp_mark_as_truck
+PLP ASSET Vehicle		plp_mark_as_vehicle
+PLP ASSET Voltage		plp_mark_as_voltage
+PLP ASSET Watchtower		plp_mark_as_watchtower
+PLP CIVIL Animals		plp_mark_civ_animals
+PLP CIVIL Beach			plp_mark_civ_beach
+PLP CIVIL Bed			plp_mark_civ_bed
+PLP CIVIL Bridge		plp_mark_civ_bridge
+PLP CIVIL Bus			plp_mark_civ_bus
+PLP CIVIL Car Workshop		plp_mark_civ_carWorkshop
+PLP CIVIL Camping Site		plp_mark_civ_campingsite
+PLP CIVIL Church		plp_mark_civ_church
+PLP CIVIL Commercial Zone	plp_mark_civ_commercialzone
+PLP CIVIL Coffee		plp_mark_civ_coffee
+PLP CIVIL Fire department	plp_mark_civ_firedepartment
+PLP CIVIL Food			plp_mark_civ_food
+PLP CIVIL Fuel Station		plp_mark_civ_fuelstation
+PLP CIVIL Harbor		plp_mark_civ_harbor
+PLP CIVIL Hiking Trail		plp_mark_civ_hikingtrail
+PLP CIVIL Hospital A		plp_mark_civ_hospitalA
+PLP CIVIL Hospital B		plp_mark_civ_hospitalB
+PLP CIVIL Industrial		plp_mark_civ_industrial
+PLP CIVIL Information		plp_mark_civ_information
+PLP CIVIL Lake			plp_mark_civ_lake
+PLP CIVIL Mobile Home		plp_mark_civ_mobilehome
+PLP CIVIL Mountain		plp_mark_civ_mountain
+PLP CIVIL Motorway A		plp_mark_civ_motorwayA
+PLP CIVIL Motorway B		plp_mark_civ_motorwayB
+PLP CIVIL Nature Reserve	plp_mark_civ_naturereserve
+PLP CIVIL Parking Lot		plp_mark_civ_parkinglot
+PLP CIVIL Parking Lot (Roofed)	plp_mark_civ_parkinglotroofed
+PLP CIVIL Radar Control		plp_mark_civ_radarcontrol
+PLP CIVIL Road works		plp_mark_civ_roadworks
+PLP CIVIL Ruins			plp_mark_civ_ruins
+PLP CIVIL Shopping Cart		plp_mark_civ_shoppingcart
+PLP CIVIL Taxi			plp_mark_civ_taxi
+PLP CIVIL Telephone		plp_mark_civ_telephone
+PLP CIVIL Toilets		plp_mark_civ_toilets
+PLP CIVIL Train			plp_mark_civ_train
+PLP CIVIL Tree			plp_mark_civ_tree
+PLP CIVIL Viewpoint		plp_mark_civ_viewpoint
+
+

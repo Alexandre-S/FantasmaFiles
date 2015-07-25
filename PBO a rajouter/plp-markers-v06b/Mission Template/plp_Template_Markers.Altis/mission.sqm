@@ -1,0 +1,860 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_map_altis",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
+		"a3_map_altis"
+	};
+	randomSeed=6101155;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=1;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10058.201,193.18526,19602.379};
+					id=0;
+					side="WEST";
+					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=87;
+		class Item0
+		{
+			position[]={13034.603,-0.13508028,26014.906};
+			name="a";
+			type="plp_mark_as_airport";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item1
+		{
+			position[]={13344.474,0.0094985962,26017.041};
+			name="a_1";
+			type="plp_mark_as_airport2";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item2
+		{
+			position[]={13894.317,0.069344535,26010.857};
+			name="a_1_1";
+			type="plp_mark_as_airradar";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item3
+		{
+			position[]={13333.315,-0.11913691,24027.4};
+			name="a_1_2";
+			type="plp_mark_as_ammunition";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item4
+		{
+			position[]={14499.011,-0.00099755824,25320.893};
+			name="a_1_3";
+			type="plp_mark_as_aacannon";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item5
+		{
+			position[]={14501.49,0.037850138,24961.35};
+			name="a_1_4";
+			type="plp_mark_as_aamissile";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item6
+		{
+			position[]={14918.873,0.074528337,25318.793};
+			name="a_1_5";
+			type="plp_mark_as_artycannon";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item7
+		{
+			position[]={14916.317,0.17280672,24964.217};
+			name="a_1_6";
+			type="plp_mark_as_artyrocket";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item8
+		{
+			position[]={13633.227,0.19134344,24024.48};
+			name="a_1_7";
+			type="plp_mark_as_backpack";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item9
+		{
+			position[]={15783.561,0.14140378,26011.113};
+			name="a_1_8";
+			type="plp_mark_as_bicycle";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item10
+		{
+			position[]={13938.069,0.22728066,24031.576};
+			name="a_1_9";
+			type="plp_mark_as_binoculars";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item11
+		{
+			position[]={13359.339,-0.032488316,25655.303};
+			name="a_1_10";
+			type="plp_mark_as_boat";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item12
+		{
+			position[]={11369.385,-0.018626601,26026.258};
+			name="a_1_11_1";
+			type="plp_mark_as_camp";
+			a=1.5;
+			b=1.5;
+		};
+		class Item13
+		{
+			position[]={11359.387,-0.029807895,25671.699};
+			name="a_1_11_2";
+			type="plp_mark_as_cross";
+			a=1.5;
+			b=1.5;
+		};
+		class Item14
+		{
+			position[]={11359.388,-0.22971344,25307.162};
+			name="a_1_11_3";
+			type="plp_mark_as_canteen";
+			a=1.5;
+			b=1.5;
+		};
+		class Item15
+		{
+			position[]={11884.186,-0.0090821236,25661.715};
+			name="a_1_11";
+			type="plp_mark_as_building";
+			a=1.5;
+			b=1.5;
+		};
+		class Item16
+		{
+			position[]={12422.437,0.12237063,25661.297};
+			name="a_1_11_4";
+			type="plp_mark_as_checkpoint";
+			a=1.5;
+			b=1.5;
+			angle=-0.39548585;
+		};
+		class Item17
+		{
+			position[]={11354.392,-0.2913608,24982.563};
+			name="a_1_11_5";
+			type="plp_mark_as_drinkingwater";
+			a=1.5;
+			b=1.5;
+		};
+		class Item18
+		{
+			position[]={14248.276,-0.20045756,24033.752};
+			name="a_1_11_6";
+			type="plp_mark_as_electronics";
+			a=1.5;
+			b=1.5;
+		};
+		class Item19
+		{
+			position[]={14553.161,-0.28716338,24043.738};
+			name="a_1_11_7";
+			type="plp_mark_as_explosives";
+			a=1.5;
+			b=1.5;
+		};
+		class Item20
+		{
+			position[]={12428.977,-0.20365429,26021.266};
+			name="a_1_11_8";
+			type="plp_mark_as_flag";
+			a=1.5;
+			b=1.5;
+		};
+		class Item21
+		{
+			position[]={11359.387,-0.29045063,24642.99};
+			name="a_1_11_9";
+			type="plp_mark_as_fuel";
+			a=1.5;
+			b=1.5;
+		};
+		class Item22
+		{
+			position[]={14853.045,0.18805474,24038.744};
+			name="a_1_11_10";
+			type="plp_mark_as_handgrenade";
+			a=1.5;
+			b=1.5;
+		};
+		class Item23
+		{
+			position[]={12423.979,0.050498225,25312.15};
+			name="a_1_11_11";
+			type="plp_mark_as_hardpoint";
+			a=1.5;
+			b=1.5;
+		};
+		class Item24
+		{
+			position[]={13038.742,0.13662687,25661.713};
+			name="a_1_11_12";
+			type="plp_mark_as_helicopter";
+			a=1.5;
+			b=1.5;
+		};
+		class Item25
+		{
+			position[]={11884.186,-0.024729529,26021.266};
+			name="a_1_11_13";
+			type="plp_mark_as_house";
+			a=1.5;
+			b=1.5;
+		};
+		class Item26
+		{
+			position[]={11884.187,0.14741817,25297.166};
+			name="a_1_11_14";
+			type="plp_mark_as_industrial";
+			a=1.5;
+			b=1.5;
+		};
+		class Item27
+		{
+			position[]={14493.185,-0.041144192,26016.268};
+			name="a_1_11_15";
+			type="plp_mark_as_infantry";
+			a=1.5;
+			b=1.5;
+		};
+		class Item28
+		{
+			position[]={14868.036,0.17607129,23734.121};
+			name="a_1_11_16";
+			type="plp_mark_as_launcher";
+			a=1.5;
+			b=1.5;
+		};
+		class Item29
+		{
+			position[]={14553.158,0.13873067,23729.131};
+			name="a_1_11_17";
+			type="plp_mark_as_machinegun";
+			a=1.5;
+			b=1.5;
+		};
+		class Item30
+		{
+			position[]={12413.982,-0.18977541,24633};
+			name="a_1_11_18";
+			type="plp_mark_as_machinegunnest";
+			a=1.5;
+			b=1.5;
+		};
+		class Item31
+		{
+			position[]={13033.745,0.19987883,24023.762};
+			name="a_1_11_19";
+			type="plp_mark_as_maptools";
+			a=1.5;
+			b=1.5;
+		};
+		class Item32
+		{
+			position[]={14488.188,0.23822156,25656.725};
+			name="a_1_11_20";
+			type="plp_mark_as_mortar";
+			a=1.5;
+			b=1.5;
+		};
+		class Item33
+		{
+			position[]={16187.536,-0.13132073,25262.217};
+			name="a_1_11_21";
+			type="plp_mark_as_motinfantry";
+			a=1.5;
+			b=1.5;
+		};
+		class Item34
+		{
+			position[]={15787.688,0.23504645,25641.736};
+			name="a_1_11_22";
+			type="plp_mark_as_motorcycle";
+			a=1.5;
+			b=1.5;
+		};
+		class Item35
+		{
+			position[]={13028.746,-0.024175115,23694.178};
+			name="a_1_11_23";
+			type="plp_mark_as_pistol";
+			a=1.5;
+			b=1.5;
+		};
+		class Item36
+		{
+			position[]={12413.983,-0.29038322,24293.424};
+			name="a_1_11_24";
+			type="plp_mark_as_police";
+			a=1.5;
+			b=1.5;
+		};
+		class Item37
+		{
+			position[]={15787.688,-0.11619244,25277.191};
+			name="a_1_11_25";
+			type="plp_mark_as_quad";
+			a=1.5;
+			b=1.5;
+		};
+		class Item38
+		{
+			position[]={13893.415,0.0013544261,25646.73};
+			name="a_1_11_26";
+			type="plp_mark_as_radiotower";
+			a=1.5;
+			b=1.5;
+		};
+		class Item39
+		{
+			position[]={11354.39,-0.23171511,24308.404};
+			name="a_1_11_27";
+			type="plp_mark_as_repairs";
+			a=1.5;
+			b=1.5;
+		};
+		class Item40
+		{
+			position[]={13948.394,-0.015821517,23704.164};
+			name="a_1_11_28";
+			type="plp_mark_as_rifle";
+			a=1.5;
+			b=1.5;
+		};
+		class Item41
+		{
+			position[]={13633.514,-0.17697735,23694.174};
+			name="a_1_11_29";
+			type="plp_mark_as_shotgun";
+			a=1.5;
+			b=1.5;
+		};
+		class Item42
+		{
+			position[]={14248.277,-0.18281402,23704.162};
+			name="a_1_11_30";
+			type="plp_mark_as_sniperrifle";
+			a=1.5;
+			b=1.5;
+		};
+		class Item43
+		{
+			position[]={14913.025,-0.0027858913,26016.273};
+			name="a_1_11_31";
+			type="plp_mark_as_specialforces";
+			a=1.5;
+			b=1.5;
+		};
+		class Item44
+		{
+			position[]={11349.39,0.10730314,24008.781};
+			name="a_1_11_32";
+			type="plp_mark_as_storage";
+			a=1.5;
+			b=1.5;
+		};
+		class Item45
+		{
+			position[]={13328.631,0.0094025638,23684.188};
+			name="a_1_11_33";
+			type="plp_mark_as_submachinegun";
+			a=1.5;
+			b=1.5;
+		};
+		class Item46
+		{
+			position[]={16182.536,-0.081165671,24887.682};
+			name="a_1_11_34";
+			type="plp_mark_as_tank";
+			a=1.5;
+			b=1.5;
+		};
+		class Item47
+		{
+			position[]={16192.534,0.1298091,25641.74};
+			name="a_1_11_35";
+			type="plp_mark_as_truck";
+			a=1.5;
+			b=1.5;
+		};
+		class Item48
+		{
+			position[]={16192.532,0.26279879,26011.275};
+			name="a_1_11_36";
+			type="plp_mark_as_vehicle";
+			a=1.5;
+			b=1.5;
+		};
+		class Item49
+		{
+			position[]={11349.392,0.082858577,23709.154};
+			name="a_1_11_37";
+			type="plp_mark_as_voltage";
+			a=1.5;
+			b=1.5;
+		};
+		class Item50
+		{
+			position[]={12428.977,-0.17988603,24972.576};
+			name="a_1_11_38";
+			type="plp_mark_as_watchtower";
+			a=1.5;
+			b=1.5;
+		};
+		class Item51
+		{
+			position[]={11691.59,31.027405,22825.885};
+			name="c";
+			type="plp_mark_civ_animals";
+			a=1.5;
+			b=1.5;
+		};
+		class Item52
+		{
+			position[]={11695.964,46.544941,21750.055};
+			name="c_1";
+			type="plp_mark_civ_beach";
+			a=1.5;
+			b=1.5;
+		};
+		class Item53
+		{
+			position[]={13963.539,36.934742,22471.51};
+			name="c_2";
+			type="plp_mark_civ_bed";
+			a=1.5;
+			b=1.5;
+		};
+		class Item54
+		{
+			position[]={12571.599,53.625458,22811.359};
+			name="c_3";
+			type="plp_mark_civ_bridge";
+			a=1.5;
+			b=1.5;
+		};
+		class Item55
+		{
+			position[]={14834.145,2.4943798,22809.449};
+			name="c_4";
+			type="plp_mark_civ_bus";
+			a=1.5;
+			b=1.5;
+		};
+		class Item56
+		{
+			position[]={13947.529,55.371056,22132.783};
+			name="c_5";
+			type="plp_mark_civ_carWorkshop";
+			a=1.5;
+			b=1.5;
+		};
+		class Item57
+		{
+			position[]={12166.682,11.151644,22826.596};
+			name="c_6";
+			type="plp_mark_civ_campingsite";
+			a=1.5;
+			b=1.5;
+		};
+		class Item58
+		{
+			position[]={12575.973,39.213345,22461.496};
+			name="c_7";
+			type="plp_mark_civ_church";
+			a=1.5;
+			b=1.5;
+		};
+		class Item59
+		{
+			position[]={15501.705,40.338165,21777.695};
+			name="c_8";
+			type="plp_mark_civ_commercialzone";
+			a=1.5;
+			b=1.5;
+		};
+		class Item60
+		{
+			position[]={13604.505,61.478477,22813.172};
+			name="c_9";
+			type="plp_mark_civ_coffee";
+			a=1.5;
+			b=1.5;
+		};
+		class Item61
+		{
+			position[]={13758.445,95.122375,21385.943};
+			name="c_10";
+			type="plp_mark_civ_firedepartment";
+			a=1.5;
+			b=1.5;
+		};
+		class Item62
+		{
+			position[]={13969.281,52.450764,22812.467};
+			name="c_11";
+			type="plp_mark_civ_food";
+			a=1.5;
+			b=1.5;
+		};
+		class Item63
+		{
+			position[]={13595.031,52.342979,22136.648};
+			name="c_12";
+			type="plp_mark_civ_fuelstation";
+			a=1.5;
+			b=1.5;
+		};
+		class Item64
+		{
+			position[]={12572.383,76.937454,21737.133};
+			name="c_13";
+			type="plp_mark_civ_harbor";
+			a=1.5;
+			b=1.5;
+		};
+		class Item65
+		{
+			position[]={11350.472,1.5476745,22825.883};
+			name="c_14";
+			type="plp_mark_civ_hikingtrail";
+			a=1.5;
+			b=1.5;
+		};
+		class Item66
+		{
+			position[]={15497.852,-0.0007968545,22815.688};
+			name="c_15";
+			type="plp_mark_civ_hospitalA";
+			a=1.5;
+			b=1.5;
+		};
+		class Item67
+		{
+			position[]={15496.68,0,22497.627};
+			name="c_16";
+			type="plp_mark_civ_hospitalB";
+			a=1.5;
+			b=1.5;
+		};
+		class Item68
+		{
+			position[]={12942.695,56.38348,22813.055};
+			name="c_17";
+			type="plp_mark_civ_industrial";
+			a=1.5;
+			b=1.5;
+		};
+		class Item69
+		{
+			position[]={13593.021,63.829227,21792.482};
+			name="c_18";
+			type="plp_mark_civ_information";
+			a=1.5;
+			b=1.5;
+		};
+		class Item70
+		{
+			position[]={11350.472,65.858337,21750.053};
+			name="c_19";
+			type="plp_mark_civ_lake";
+			a=1.5;
+			b=1.5;
+		};
+		class Item71
+		{
+			position[]={12162.029,20.67046,22477.996};
+			name="c_20";
+			type="plp_mark_civ_mobilehome";
+			a=1.5;
+			b=1.5;
+		};
+		class Item72
+		{
+			position[]={11695.965,26.125576,22126.156};
+			name="c_21";
+			type="plp_mark_civ_mountain";
+			a=1.5;
+			b=1.5;
+		};
+		class Item73
+		{
+			position[]={12922.958,79.287636,21377.693};
+			name="c_22";
+			type="plp_mark_civ_motorwayA";
+			a=1.5;
+			b=1.5;
+		};
+		class Item74
+		{
+			position[]={13237.14,74.348412,21373.613};
+			name="c_23";
+			type="plp_mark_civ_motorwayB";
+			a=1.5;
+			b=1.5;
+		};
+		class Item75
+		{
+			position[]={11691.588,22.133379,22476.025};
+			name="c_24";
+			type="plp_mark_civ_naturereserve";
+			a=1.5;
+			b=1.5;
+		};
+		class Item76
+		{
+			position[]={14549.902,11.31187,22817.412};
+			name="c_25";
+			type="plp_mark_civ_parkinglot";
+			a=1.5;
+			b=1.5;
+		};
+		class Item77
+		{
+			position[]={14545.313,35.728466,22491.1};
+			name="c_26";
+			type="plp_mark_civ_parkinglotroofed";
+			a=1.5;
+			b=1.5;
+		};
+		class Item78
+		{
+			position[]={14544.024,80.673592,21780.141};
+			name="c_27";
+			type="plp_mark_civ_radarcontrol";
+			a=1.5;
+			b=1.5;
+		};
+		class Item79
+		{
+			position[]={12149.233,109.54437,21372.01};
+			name="c_28";
+			type="plp_mark_civ_roadworks";
+			a=1.5;
+			b=1.5;
+		};
+		class Item80
+		{
+			position[]={12565.819,66.535828,22123.266};
+			name="c_29";
+			type="plp_mark_civ_ruins";
+			a=1.5;
+			b=1.5;
+		};
+		class Item81
+		{
+			position[]={14839.016,51.20607,22165.758};
+			name="c_31";
+			type="plp_mark_civ_taxi";
+			a=1.5;
+			b=1.5;
+		};
+		class Item82
+		{
+			position[]={13935.437,93.281464,21795.529};
+			name="c_32";
+			type="plp_mark_civ_telephone";
+			a=1.5;
+			b=1.5;
+		};
+		class Item83
+		{
+			position[]={13602.789,47.934734,22471.598};
+			name="c_33";
+			type="plp_mark_civ_toilets";
+			a=1.5;
+			b=1.5;
+		};
+		class Item84
+		{
+			position[]={14849.665,31.714533,22484.762};
+			name="c_34";
+			type="plp_mark_civ_train";
+			a=1.5;
+			b=1.5;
+		};
+		class Item85
+		{
+			position[]={11341.727,80.680481,22467.275};
+			name="c_35";
+			type="plp_mark_civ_tree";
+			a=1.5;
+			b=1.5;
+		};
+		class Item86
+		{
+			position[]={11345.999,33.151661,22122.816};
+			name="c_36";
+			type="plp_mark_civ_viewpoint";
+			a=1.5;
+			b=1.5;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=12757909;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=16575285;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_altis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_altis"
+	};
+	randomSeed=12012339;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=24;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
