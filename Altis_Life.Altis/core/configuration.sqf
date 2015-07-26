@@ -875,6 +875,9 @@ life_weapon_shop_array =
 	["rds_Profiteer_cap2",600*0.5],
 	["rds_Profiteer_cap3",600*0.5],
 	["rds_Profiteer_cap4",600*0.5],
+	["rds_uniform_Policeman",3500*0.5],
+	["rhs_uniform_m88_patchless",5500*0.5],
+	["rhsusf_iotv_ocp",12500*0.5],
 	["rds_uniform_assistant",1550*0.5],
 	["rds_uniform_citizen1",1000*0.5],
 	["rds_uniform_citizen2",1000*0.5],
@@ -1175,7 +1178,9 @@ life_weapon_shop_array =
 	["V_TacVest_khk",25000*0.5],
 	["V_TacVest_oli",25000*0.5],
 	["V_TacVestIR_blk",15000*0.5],
-	["vip_clothes",4500*0.5]
+	["vip_clothes",4500*0.5],
+	["RH_fn57",4900*0.5],
+	["RH_20Rnd_57x28_FN",350*0.5]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 

@@ -939,6 +939,93 @@ switch(_shop) do
 		};
 	};
 	
+	case "gvt":
+	{
+		switch(true) do
+		{
+			//case (playerSide != civilian): {"Vous n'êtes pas civil !"};
+			case (!l_c_gvt): {"Désolé monsieur, vous n'êtes pas assermenté !"};
+			default
+			{
+				_ret = 
+				["Armurerie",
+					[
+						//venin .45
+						["SMG_01_F",nil,69450],
+						["30Rnd_45ACP_Mag_SMG_01",nil,750],
+
+						//sting 9mm
+						["SMG_02_F",nil,73450],
+						["30Rnd_9x21_Mag",nil,950],
+						
+						//FN57
+						["RH_fn57",nil,4900],
+						["RH_20Rnd_57x28_FN",nil,350],
+						
+						// Glock 19 9mm
+						["RH_g19",nil,4900],
+						["RH_17Rnd_9x19_g17",nil,350],
+						
+						// optic
+						["optic_Aco",nil,3000],
+						["optic_ACO_grn",nil,3000],
+						["optic_Holosight",nil,3000],
+						["R3F_AIMPOINT",nil,3000],
+						["R3F_AIMPOINT_DES",nil,3000],
+						["rhsusf_acc_compm4",nil,3000],
+						["R3F_EOTECH",nil,3000],
+						["R3F_EOTECH_DES",nil,3000],
+						["rhsusf_acc_eotech_552",nil,3000],
+						
+						//gear
+						["acc_flashlight",nil,1000],
+						["Binocular",nil,150],
+						["ToolKit",nil,3000],
+						["FirstAidKit",nil,1000],
+						["ItemWatch","SmartWatch",100],
+						["ACE_Altimeter","SmartWatch Altimètre",100],
+						["ACE_CableTie",nil,100],
+						["ACE_EarPlugs",nil,25],
+						["ACE_Kestrel4500",nil,500],
+						["ItemCompass",nil,100],
+
+						["ItemMap",nil,100],
+						["ACE_MapTools",nil,500],
+						["ACE_SpareBarrel",nil,1000],
+						["ItemGPS",nil,100],
+
+						["tf_anprc148jem",nil,5000],
+						["ACE_NVG_Gen1",nil,2000]
+					]
+				];
+				
+				// Rang 2
+				if(__GETC__(life_reblevel) >= 2) then
+				{
+					(_ret select 1) pushBack ["rhs_weap_m16a4",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_m16a4_grip",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_m16a4_carryhandle",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_m16a4_carryhandle_grip_pmag",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_m4",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_m4_grip",nil,100000];
+					(_ret select 1) pushBack ["rhs_weap_m4a1_carryhandle",nil,100000];
+					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
+				};
+				
+				// Rang 3
+				if(__GETC__(life_reblevel) >= 3) then
+				{
+					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
+					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
+					(_ret select 1) pushBack ["rhs_weap_m14ebrri",nil,140000];	
+					(_ret select 1) pushBack ["rhs_weap_sr25",nil,140000];	
+					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];
+					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
+				};
+			};
+		};
+	};
+	
 	case "gang":
 	{
 		switch(true) do

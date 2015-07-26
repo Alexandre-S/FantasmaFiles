@@ -207,7 +207,7 @@ switch (_filter) do
 			
 		};
 		
-		_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
+		//_ret pushBack ["rds_uniform_Policeman","Tenue d'apparat",0];
 		
 		/*if(life_sexe) then
 		{

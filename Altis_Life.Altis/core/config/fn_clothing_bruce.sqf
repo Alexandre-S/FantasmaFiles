@@ -174,6 +174,12 @@ switch (_filter) do
 			_ret pushBack ["U_C_DepanneurOrange","Combi Orange",1500];
 			
 		};
+		
+		if(l_c_gvt) then
+		{
+			_ret pushBack ["rds_uniform_Policeman",nil,3500];
+			_ret pushBack ["rhs_uniform_m88_patchless",nil,5500];
+		};
 		if(life_sexe) then
 		{
 			_ret pushBack ["B_FEM_NATO","Tenue femme 1",800];
@@ -287,6 +293,11 @@ switch (_filter) do
 			["H_RacingHelmet_3_F",nil,2500],
 			["H_RacingHelmet_4_F",nil,2500]*/
 		];
+		
+		if(l_c_gvt) then
+		{
+			_ret pushBack ["rhs_Booniehat_ocp",nil,700];
+		};
 	};
 	
 	//Glasses
@@ -353,6 +364,12 @@ switch (_filter) do
 			["V_Chestrig_khk",nil,3500],
 			["V_Chestrig_rgr",nil,3500]
 		];
+		
+		if(l_c_gvt) then
+		{
+			_ret pushBack ["rhsusf_iotv_ocp",nil,12500];
+			_ret pushBack ["V_PlateCarrier1_PMC_blk",nil,25000];
+		};
 	};
 	
 	//Backpacks
