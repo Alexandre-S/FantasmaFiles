@@ -167,6 +167,12 @@ switch(playerSide) do {
 		_other = ["taxi",0] call life_fnc_licenseType;
 		if(!life_istaxi) then { missionNamespace setVariable [_other select 0,false]; };
 		if (missionNamespace getVariable[_other select 0,false]) then{ player setVariable["life_taxi", true, true];};
+		
+		_other = ["gvt",0] call life_fnc_licenseType;
+		// if(!life_isgvt) then { missionNamespace setVariable [_other select 0,false]; };
+		if (missionNamespace getVariable[_other select 0,false]) then{ player setVariable["life_gvt", true, true];};
+		
+		
 	};
 	
 	case independent: {

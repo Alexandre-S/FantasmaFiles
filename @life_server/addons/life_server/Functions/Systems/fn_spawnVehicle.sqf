@@ -151,6 +151,9 @@ _vehicle setVariable["dbInfo",[(_vInfo select 4),_vInfo select 7,_vInfo select 9
 sleep 0.01;
 // _vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
 _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
+if(_vehicle isKindOf "Helicopter") then {
+	_vehicle addEventHandler["RopeAttach", {_this spawn life_fnc_RopeAttach;}];
+};
 
 //Reskin the vehicle 
 [[_vehicle,_vInfo select 8],"life_fnc_colorVehicle",true,false] spawn life_fnc_MP;

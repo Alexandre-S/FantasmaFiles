@@ -134,7 +134,9 @@ for [{_x=0},{_x<=_count},{_x=_x+10}] do {
 		
 		// _vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
 		_vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
-		
+		if(_vehicle isKindOf "Helicopter") then {
+			_vehicle addEventHandler["RopeAttach", {_this spawn life_fnc_RopeAttach;}];
+		};
 		[_vehicle] call life_fnc_clearVehicleAmmo;
 		_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 		

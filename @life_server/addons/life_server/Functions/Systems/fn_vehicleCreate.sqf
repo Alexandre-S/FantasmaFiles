@@ -36,3 +36,6 @@ _plate = round(random(1000000));
 _vehicle setVariable["dbInfo",[_uid,_plate,1]];
 // _vehicle addEventHandler["Killed",{(_this select 0) spawn TON_fnc_vehicleDead;}];
 _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
+if(_vehicle isKindOf "Helicopter") then {
+	_vehicle addEventHandler["RopeAttach", {_this spawn life_fnc_RopeAttach;}];
+};

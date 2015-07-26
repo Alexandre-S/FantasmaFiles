@@ -253,6 +253,7 @@ class Life_Client_Core
 		class fatigueReset {};
 		class getHLC {};
 		class vehicleExit {};
+		class RopeAttach {};
 		class createMarker {};
 		class deleteMarker {};
 		class bourse {};
