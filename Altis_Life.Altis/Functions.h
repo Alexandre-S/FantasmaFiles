@@ -358,6 +358,7 @@ class Life_Client_Core
 		class breathalyzer {};
 		class souffler {};
 		class copSos {};
+		class medSos {};
 		class bankWarning {};
 	};
 	

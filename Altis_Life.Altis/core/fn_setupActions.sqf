@@ -52,6 +52,7 @@ switch (playerSide) do
 		// Prendre sac de sable
 		life_actions = life_actions + [player addAction["Prendre sacs de sable (droit)",life_fnc_packupsandbag,"",0,false,false,"",' _sandbag = nearestObjects[getPos player,["Land_BagFence_Long_F"],8] select 0; !isNil "_sandbag" && !isNil {(_sandbag getVariable "item")}']];
 		life_actions = life_actions + [player addAction["Prendre sacs de sable (arrondis)",life_fnc_packupsandbagr,"",0,false,false,"",' _sandbagr = nearestObjects[getPos player,["Land_BagFence_Round_F"],8] select 0; !isNil "_sandbagr" && !isNil {(_sandbagr getVariable "item")}']];
+		life_actions = life_actions + [player addAction["SOS",life_fnc_medSos,"",0,false,false,"",'playerSide == independent']];
 	};
 };
 
