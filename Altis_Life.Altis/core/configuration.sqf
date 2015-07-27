@@ -704,6 +704,8 @@ life_weapon_shop_array =
 	["C_Uniform_survivor5_l",2250*0.5],
 	["C_Uniform_survivor6_l",2250*0.5],
 	["C_Uniform_survivor7_l",2250*0.5],
+	["rhs_uniform_FROG01_m81",10000*0.5],
+	["rhs_uniform_FROG01_wd",10000*0.5],
 	["FANTASMA_BlackHunter",2000*0.5],
 	["FANTASMA_GiletPolo",1500*0.5],
 	["G_Aviator",200*0.5],

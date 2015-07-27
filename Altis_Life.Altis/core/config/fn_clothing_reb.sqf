@@ -129,11 +129,13 @@ switch (_filter) do
 			
 			_ret pushBack ["U_O_PilotCoveralls",nil,20000];
 			
-
 			// Armée privée
 			if(__GETC__(life_factnumber) == 1) then
 			{
-				
+				_ret pushBack ["rds_uniform_Functionary1",nil,7500];
+				_ret pushBack ["rds_uniform_Functionary5",nil,7500];
+				_ret pushBack ["rhs_uniform_FROG01_m81",nil,10000];
+				_ret pushBack ["rhs_uniform_FROG01_wd",nil,10000];
 			};
 			// Faction 2 = Danann
 			if(__GETC__(life_factnumber) == 2) then
@@ -266,6 +268,7 @@ switch (_filter) do
 			// Armée privée
 			if(__GETC__(life_factnumber) == 1) then
 			{
+				_ret pushBack ["H_caf_ag_fur2",nil,700];
 			};
 			// Danann
 			if(__GETC__(life_factnumber) == 2) then
