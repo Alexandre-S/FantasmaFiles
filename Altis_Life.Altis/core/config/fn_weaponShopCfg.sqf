@@ -999,8 +999,8 @@ switch(_shop) do
 					]
 				];
 				
-				// Rang 2
-				if(__GETC__(life_reblevel) >= 2) then
+				// Rang 1
+				if(__GETC__(life_reblevel) >= 1) then
 				{
 					(_ret select 1) pushBack ["rhs_weap_m16a4",nil,100000];
 					(_ret select 1) pushBack ["rhs_weap_m16a4_grip",nil,100000];
@@ -1012,15 +1012,22 @@ switch(_shop) do
 					(_ret select 1) pushBack ["rhs_mag_30Rnd_556x45_Mk318_Stanag",nil,1000];
 				};
 				
+				// Rang 2
+				if(__GETC__(life_reblevel) >= 2) then
+				{
+					(_ret select 1) pushBack ["rhs_weap_m14ebrri",nil,140000];	
+					(_ret select 1) pushBack ["rhs_weap_sr25",nil,140000];	
+					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];
+					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
+					(_ret select 1) pushBack ["Trixie_FNFAL_Rail",nil,140000];
+					(_ret select 1) pushBack ["Trixie_FNFAL_Mag",nil,1500];
+				};
+				
 				// Rang 3
 				if(__GETC__(life_reblevel) >= 3) then
 				{
 					(_ret select 1) pushBack ["optic_MRCO",nil,10000];
 					(_ret select 1) pushBack ["optic_Hamr",nil,10000];
-					(_ret select 1) pushBack ["rhs_weap_m14ebrri",nil,140000];	
-					(_ret select 1) pushBack ["rhs_weap_sr25",nil,140000];	
-					(_ret select 1) pushBack ["rhs_weap_sr25_ec",nil,140000];
-					(_ret select 1) pushBack ["rhsusf_20Rnd_762x51_m118_special_Mag",nil,1500];	
 				};
 			};
 		};

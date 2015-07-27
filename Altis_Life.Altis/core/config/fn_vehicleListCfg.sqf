@@ -86,7 +86,7 @@ switch (_shop) do
 		{
 			_return pushBack ["BAF_ArmoredSUV_Unarmed_DG1",145000];
 		};
-		if(l_c_gvt && (__GETC__(life_adminlevel) > 0)) then
+		if(l_c_gvt && (__GETC__(life_reblevel) >= 3)) then
 		{
 			_return pushBack ["I_MRAP_03_F",650000];
 		};
