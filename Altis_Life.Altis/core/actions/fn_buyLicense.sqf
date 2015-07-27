@@ -22,7 +22,7 @@ _price = ceil(_price - (((__GETC__(life_donator) * 5) / 100) * _price));
 if (((_type == "taxi") || (_type == "dep") || (_type == "thug") ) && life_isrebel) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme terroriste."};
 if (((_type == "rebel") || (_type == "dep")) && life_istaxi) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme Taxi."};
 if (((_type == "taxi") || (_type == "rebel")) && life_isdep) exitWith {hint "Vous ne pouvez pas effectuer ces métiers car vous êtes fiché comme dépanneur."};
-
+if (((_type == "rebel") || (_type == "dep") || (_type == "thug") || (_type == "taxi")) && l_c_gvt) exitWith {hint "Vous ne pouvez pas effectuer ce métiers car vous êtes fiché comme Gouvernement."};
 
 if(!life_isrebel && (_license select 0) == "l_c_rebel") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre une faction terroriste"};
 if(!life_isdep && (_license select 0) == "l_c_dep") exitWith {hint "Vous devez faire une demande sur le forum pour rejoindre les dépanneurs"};
