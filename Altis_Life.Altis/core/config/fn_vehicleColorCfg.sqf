@@ -533,7 +533,9 @@ switch (_vehicle) do
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_vert.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_violet.paa"],
 			
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"]
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"],
+			
+			["\a3\soft_f_beta\Truck_02\data\truck_02_kab_indp_co.paa","reb","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_indp_co.paa"]
 		];
 	};
 	
@@ -549,7 +551,8 @@ switch (_vehicle) do
 			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","civ","altisrpfr\textures\zamak_bache_rouge.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","civ","altisrpfr\textures\zamak_bache_vert.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_violet.paa"],
-			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"]
+			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"],
+			["\a3\soft_f_beta\Truck_02\data\truck_02_kab_indp_co.paa","reb","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_indp_co.paa"]
 		];
 	};
 	
@@ -558,7 +561,8 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["\bzly_mantrucks\data\wd_ext01.paa","civ","\bzly_mantrucks\data\wd_ext02.paa","\bzly_mantrucks\data\wd_cargo.paa"],
-			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"]
+			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"],
+			["\a3\soft_f_epc\Truck_03\Data\truck_03_ext01_co.paa","reb","\a3\soft_f_epc\Truck_03\Data\truck_03_ext02_co.paa","\a3\soft_f_epc\Truck_03\Data\truck_03_cargo_co.paa"]
 		];
 	};
 	
@@ -567,7 +571,8 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["\bzly_mantrucks\data\wd_ext01.paa","civ","\bzly_mantrucks\data\wd_ext02.paa","\bzly_mantrucks\data\wd_cargo.paa"],
-			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"]
+			["\bzly_mantrucks\data\des_ext01.paa","civ","\bzly_mantrucks\data\des_ext02.paa","\bzly_mantrucks\data\des_cargo.paa"],
+			["\a3\soft_f_epc\Truck_03\Data\truck_03_ext01_co.paa","reb","\a3\soft_f_epc\Truck_03\Data\truck_03_ext02_co.paa","\a3\soft_f_epc\Truck_03\Data\truck_03_cargo_co.paa"]
 		];
 	};
 	

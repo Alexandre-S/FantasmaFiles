@@ -496,6 +496,8 @@ switch (_vehicle) do
 			case 77: {_color = "Violet"};
 			
 			case 78: {_color = "Noir"};
+			
+			case 79: {_color = "Camo (Terro)"};
 		};
 	};
 	
@@ -512,6 +514,7 @@ switch (_vehicle) do
 			case 6: {_color = "Vert"};
 			case 7: {_color = "Violet"};
 			case 8: {_color = "Noir"};
+			case 9: {_color = "Camo (Terro)"};
 		};
 	};
 	
@@ -521,6 +524,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Kaki"};
 			case 1: {_color = "Desert"};
+			case 2: {_color = "Camo (terro)"};
 		};
 	};
 	
@@ -530,6 +534,7 @@ switch (_vehicle) do
 		{
 			case 0: {_color = "Kaki"};
 			case 1: {_color = "Desert"};
+			case 2: {_color = "Camo (terro)"};
 		};
 	};
 	
