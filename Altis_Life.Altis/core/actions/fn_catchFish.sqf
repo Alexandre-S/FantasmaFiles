@@ -25,6 +25,7 @@ if(_type == "") exitWith {}; //Couldn't get a type
 
 if(([true,_type,1] call life_fnc_handleInv)) then
 {
-	deleteVehicle _fish;
+	// deleteVehicle _fish;
+	[[_fish],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 	titleText[format[(localize "STR_NOTF_Fishing"),_type],"PLAIN"];
 };

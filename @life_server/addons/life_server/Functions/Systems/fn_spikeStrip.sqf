@@ -16,6 +16,9 @@ waitUntil {sleep 0.1; _nearVehicles = nearestObjects[getPos _spikeStrip,["LandVe
 if(isNull _spikeStrip) exitWith {}; //It was picked up?
 _vehicle = _nearVehicles select 0;
 
-if(isNil "_vehicle") exitWith {deleteVehicle _spikeStrip;};
+if(isNil "_vehicle") exitWith {
+	[[_spikeStrip],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+	// deleteVehicle _spikeStrip;
+};
 [[_vehicle],"life_fnc_spikeStripEffect",_vehicle,false] spawn life_fnc_MP;
 deleteVehicle _spikeStrip;

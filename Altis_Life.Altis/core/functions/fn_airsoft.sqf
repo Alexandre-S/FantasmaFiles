@@ -44,7 +44,8 @@ if(_shooter isKindOf "Man" && alive player) then
 		};
 		detach player;
 		life_isOut = false;
-		deleteVehicle _obj;
+		// deleteVehicle _obj;
+		[[_obj],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 		disableUserInput false;
 	};
 }

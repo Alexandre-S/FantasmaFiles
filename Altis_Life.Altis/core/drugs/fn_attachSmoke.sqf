@@ -17,4 +17,5 @@ _pe setDropInterval 0.015;
 _pe attachTo [_unit,[0,0,0],"head"];
 sleep 300;
 detach _pe;
-deleteVehicle _pe;
+// deleteVehicle _pe;
+[[_pe],"life_fnc_delveh",true,false] spawn life_fnc_MP;

@@ -39,7 +39,8 @@ if(_impound) then
 		// (owner _unit) publicVariableClient "life_impound_inuse";
 		[["life_impound_inuse",false],"life_fnc_netSetVar",_unitid,false] spawn life_fnc_MP;
 		if(!isNil "_vehicle" && {!isNull _vehicle}) then {
-			deleteVehicle _vehicle;
+			// deleteVehicle _vehicle;
+			[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 		};
 	} 
 	else
@@ -49,7 +50,8 @@ if(_impound) then
 		_thread = [_query,1] call DB_fnc_asyncCall;
 		//waitUntil {scriptDone _thread};
 		if(!isNil "_vehicle" && {!isNull _vehicle}) then {
-			deleteVehicle _vehicle;
+			// deleteVehicle _vehicle;
+			[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 		};
 		// life_impound_inuse = false;
 		// (owner _unit) publicVariableClient "life_impound_inuse";
@@ -81,7 +83,8 @@ else
 	_thread = [_query,1] call DB_fnc_asyncCall;
 	//waitUntil {scriptDone _thread};
 	if(!isNil "_vehicle" && {!isNull _vehicle}) then {
-		deleteVehicle _vehicle;
+		// deleteVehicle _vehicle;
+		[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 	};
 	// life_garage_store = false;
 	// (owner _unit) publicVariableClient "life_garage_store";

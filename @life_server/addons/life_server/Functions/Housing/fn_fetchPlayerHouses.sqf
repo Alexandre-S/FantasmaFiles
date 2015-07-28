@@ -28,7 +28,10 @@ _return = [];
 	_house setVariable["slots",[],true];
 	sleep 0.01;
 	if(!isNil {(_house getVariable "containers")}) then {
-		{if(!isNull _x) then {deleteVehicle _x;};} foreach (_house getVariable "containers");
+		{if(!isNull _x) then {
+			// deleteVehicle _x;
+			[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+		};} foreach (_house getVariable "containers");
 	};
 	
 	_trunk = [_x select 2] call DB_fnc_mresToArray;

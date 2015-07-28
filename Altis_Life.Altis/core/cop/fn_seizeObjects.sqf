@@ -15,7 +15,9 @@ for "_i" from 0 to count _clear - 1
 do
 {
 	_destroyed = _destroyed + 1;
-	deleteVehicle (_clear select _i);
+	// deleteVehicle (_clear select _i);
+	[[(_clear select _i)],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+
 };
 
 titleText[format["saisi de %1 objets au sol.", _destroyed],"PLAIN"];

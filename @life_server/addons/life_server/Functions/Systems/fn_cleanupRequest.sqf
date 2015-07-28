@@ -17,9 +17,13 @@ while {true} do {
 	if(!alive _client) exitWith {
 		_containers = nearestObjects[_client,["WeaponHolderSimulated"],5];
 		if(count _containers > 0) then {
-			{deleteVehicle _x;} foreach _containers; //Delete the containers.
+			{
+				[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+				// deleteVehicle _x;
+			} foreach _containers; //Delete the containers.
 		};
-		deleteVehicle _client; //Get rid of the corpse.
+		[[_client],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+		// deleteVehicle _client; //Get rid of the corpse.
 	};
 	
 	_loops = _loops + 1;

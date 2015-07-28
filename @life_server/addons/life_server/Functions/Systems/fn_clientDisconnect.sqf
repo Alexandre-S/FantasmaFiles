@@ -13,16 +13,21 @@ _name = _this select 3;
 if(isNull _unit) exitWith {false};
 
 _containers = nearestObjects[_unit,["WeaponHolderSimulated"],5];
-{deleteVehicle _x;} foreach _containers;
+{
+	//deleteVehicle _x;
+	[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+} foreach _containers;
 
 _life_corpse_var = _unit getVariable["life_corpse_var",nil];
 if(!isNil "_life_corpse_var") then {
 	diag_log format ["REMOVE_BODY_DECO - %1",_life_corpse_var];
 	// hideBody _life_corpse_var;
-	deleteVehicle _life_corpse_var;
+	// deleteVehicle _life_corpse_var;
+	[[_life_corpse_var],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 };
 
-deleteVehicle _unit;
+// deleteVehicle _unit;
+[[_unit],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 
 _uid spawn TON_fnc_houseCleanup;
 

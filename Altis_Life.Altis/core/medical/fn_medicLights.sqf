@@ -102,5 +102,7 @@ while{(alive _vehicle)} do
 	};
 	sleep (_this select 1);  
 };
-deleteVehicle _lightleft;
-deleteVehicle _lightright;
+// deleteVehicle _lightleft;
+[[_lightleft],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+// deleteVehicle _lightright;
+[[_lightright],"life_fnc_delveh",true,false] spawn life_fnc_MP;

@@ -23,7 +23,8 @@ if((_obj getVariable["PickedUp",false])) exitWith {
 _obj setVariable["PickedUp",TRUE,TRUE];
 if(!isNil {_val}) then
 {
-	deleteVehicle _obj;
+	//deleteVehicle _obj;
+	[[_obj],"life_fnc_delveh",true,false] spawn life_fnc_MP;
 	//waitUntil {isNull _obj};
 	
 	//Stop people picking up huge values of money which should stop spreading dirty money.

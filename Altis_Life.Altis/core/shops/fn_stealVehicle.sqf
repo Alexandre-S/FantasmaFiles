@@ -49,4 +49,7 @@ sleep 0.05;
 [[(getPlayerUID player),playerSide,_vehicle,_color,1],"TON_fnc_vehicleCreate",false,false] spawn life_fnc_MP;
 closeDialog 0;
 sleep 0.5;
-if(!isNil "_vehicle" && !isNull _vehicle) then { deleteVehicle _vehicle; }; 
+if(!isNil "_vehicle" && !isNull _vehicle) then {
+	// deleteVehicle _vehicle;
+	[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+};
