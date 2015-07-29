@@ -155,7 +155,8 @@ _patchList =
 "HAFM_EC635_Config","HAFM_EC635",
 "cba_enable_auto_xeh","ace_fonts","ace_dagr","ace_huntir","ace_mx2a","ace_spottingscope","ace_tripod","ace_tacticalladder","ace_ui","ace_yardage450","ace_rangecard",
 "rhs_infantry2","rhs_c_identity","rhs_identity","rhsusf_c_identity","rhsusf_cars","rhsusf_weapons2",
-"asdg_jointrails_xtra","plp_containers"
+"asdg_jointrails_xtra","plp_containers",
+"ace_finger","ace_sitting","ace_slideshow"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..

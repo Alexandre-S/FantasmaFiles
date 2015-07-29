@@ -18,3 +18,4 @@
 PARAMS_2(_unit,_target);
 
 ["SetHandcuffed", [_target], [_target, false]] call EFUNC(common,targetEvent);
+_target setVariable ["tf_unable_to_use_radio", true];
