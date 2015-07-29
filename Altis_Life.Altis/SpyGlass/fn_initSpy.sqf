@@ -156,6 +156,7 @@ _patchList =
 "cba_enable_auto_xeh","ace_fonts","ace_dagr","ace_huntir","ace_mx2a","ace_spottingscope","ace_tripod","ace_tacticalladder","ace_ui","ace_yardage450","ace_rangecard",
 "rhs_infantry2","rhs_c_identity","rhs_identity","rhsusf_c_identity","rhsusf_cars","rhsusf_weapons2",
 "asdg_jointrails_xtra","plp_containers",
+"asdg_jointmuzzles","asdg_jointrails_xacc","asdg_jointrails_xdmr06","asdg_jointrails_xebr","asdg_jointrails_xm200","asdg_jointrails_xmmg01","asdg_jointrails_xmmg02","asdg_jointrails_xzafir",
 "ace_finger","ace_sitting","ace_slideshow"
 ];
 
