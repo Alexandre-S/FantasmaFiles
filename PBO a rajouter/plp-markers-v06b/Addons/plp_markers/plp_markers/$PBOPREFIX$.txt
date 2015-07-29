@@ -1,6 +1,0 @@
-///////<HEADER>///////
-prefix=plp_markers
-Mikero=DePbo.dll
-Pbo Type is: Arma Addon
-Sha: '51CC0D1AB0C492E4E80B3F1341C9F1954D1C0FC3'
-//////</HEADER>//////
