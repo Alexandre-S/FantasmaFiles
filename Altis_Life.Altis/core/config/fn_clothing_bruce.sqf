@@ -180,7 +180,7 @@ switch (_filter) do
 			_ret pushBack ["rds_uniform_Policeman",nil,3500];
 			_ret pushBack ["rhs_uniform_m88_patchless",nil,5500];
 		};
-		if(life_sexe) then
+		/*if(life_sexe) then
 		{
 			_ret pushBack ["B_FEM_NATO","Tenue femme 1",800];
 			_ret pushBack ["B_FEM_FIA","Tenue femme 2",800];
@@ -193,7 +193,7 @@ switch (_filter) do
 			// _ret pushBack ["B_FEM_NATO_Rolled","Tenue femme 9",2100];
 			// _ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",2100];
 			// _ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",2100];
-		};
+		};*/
 	};
 	
 	//Hats

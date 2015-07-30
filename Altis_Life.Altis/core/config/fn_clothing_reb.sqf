@@ -56,7 +56,7 @@ switch (_filter) do
 		};
 		if(l_c_rebel) then
 		{
-			if(life_sexe) then
+			/*if(life_sexe) then
 			{
 				// _ret pushBack ["B_FEM_NATO","Tenue femme 1",800];
 				// _ret pushBack ["B_FEM_FIA","Tenue femme 2",800];
@@ -69,7 +69,7 @@ switch (_filter) do
 				_ret pushBack ["B_FEM_NATO_Rolled","Tenue femme 9",3000];
 				_ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",3000];
 				_ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",3000];
-			};
+			};*/
 			_ret pushBack ["U_B_Wetsuit",nil,2000];
 			_ret pushBack ["U_I_G_Story_Protagonist_F","Work",5000];
 			_ret pushBack ["U_BG_Guerrilla_6_1",nil,5000];
