@@ -196,6 +196,10 @@ for "_i" from 0 to _hitC do {
 	if(_PartN == "HitGlass14") then { _veh_actions pushback (_vehicle addAction [ format["<t color='#FF0000'>Réparer %1</t>", _PartName], life_fnc_repairTruck, [_PartN,_PartName], 0, false, true, "", '_degat = _target getHitPointDamage "HitGlass14"; !life_action_inUse && _degat > 0.5' ]); };
 };
 
+_veh_actions pushback (_vehicle addAction [ "<t color='#00D600'>Réparer Phare</t>", life_fnc_repairTruck, ["","Phare"], 0, false, true, "", '_degat = _target getHitPointDamage ""; !life_action_inUse && _degat > 0 && _degat <= 0.2' ]);
+_veh_actions pushback (_vehicle addAction [ "<t color='#FFFF33'>Réparer Phare</t>", life_fnc_repairTruck, ["","Phare"], 0, false, true, "", '_degat = _target getHitPointDamage ""; !life_action_inUse && _degat > 0 && _degat <= 0.2' ]);
+_veh_actions pushback (_vehicle addAction [ "<t color='#FF0000'>Réparer Phare</t>", life_fnc_repairTruck, ["","Phare"], 0, false, true, "", '_degat = _target getHitPointDamage ""; !life_action_inUse && _degat > 0 && _degat <= 0.2' ]);
+
 [_vehicle,_veh_actions] spawn {
 	private["_veh"];
 	_veh = (_this select 0);
