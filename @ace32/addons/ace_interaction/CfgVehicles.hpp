@@ -129,6 +129,22 @@ class CfgVehicles {
 					showDisabled = 0;
 					priority = 1.9;
 				};
+				class Ace_Balise_On {
+					displayName = "Allumer la balise";
+					distance = 4;
+					condition = "{(_target getVariable 'balise_off')} && _target isKindOf 'Man' && {alive _target} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+					statement = "[['on'],'life_fnc_shutBalise',_target,FALSE] spawn life_fnc_MP";
+					showDisabled = 0;
+					priority = 2.3;
+				};
+				class Ace_Balise_Off {
+					displayName = "Couper la balise";
+					distance = 4;
+					condition = "{!(_target getVariable 'balise_off')} && _target isKindOf 'Man' && {alive _target} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+					statement = "[['off'],'life_fnc_shutBalise',_target,FALSE] spawn life_fnc_MP";
+					showDisabled = 0;
+					priority = 2.3;
+				};
 				class ACE_Carte {
 					displayName = "Présenter plaque gendarme";
 					distance = 4;
@@ -491,6 +507,22 @@ class CfgVehicles {
 				priority = 0.9;
 				hotkey = "B";
 		    };
+			class Ace_Balise_On_Self {
+				displayName = "Allumer la balise";
+				distance = 4;
+				condition = "{(player getVariable 'balise_off')} && player isKindOf 'Man' && {alive player} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+				statement = "['on'] call life_fnc_shutBalise";
+				showDisabled = 0;
+				priority = 2.3;
+			};
+			class Ace_Balise_Off_Self {
+				displayName = "Couper la balise";
+				distance = 4;
+				condition = "{!(player getVariable 'balise_off')} && player isKindOf 'Man' && {alive player} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+				statement = "['off'] call life_fnc_shutBalise";
+				showDisabled = 0;
+				priority = 2.3;
+			};
 		    /*class ACE_HuntingTrack
 		    {
 				displayName = "Traquer animaux";

@@ -361,6 +361,7 @@ class Life_Client_Core
 		class copSos {};
 		class medSos {};
 		class bankWarning {};
+		class shutBalise {};
 	};
 	
 	class Gangs

@@ -39,6 +39,7 @@ if(!hasInterface) then {
 	illegalmarkersCivils = ["Dealer_1","Dealer_2","Dealer_1_3_1","Rebelop","Rebelop_1","Rebelop_2","Dealer_1_4","Dealer_1_3"];
 	if(playerSide == west) then {
 		{ deleteMarkerLocal _x; } forEach illegalmarkers ;
+		player setVariable ["balise_off",false,true];
 	};
 	if(playerSide == independent) then {
 		{ deleteMarkerLocal _x; } forEach illegalmarkers ;
