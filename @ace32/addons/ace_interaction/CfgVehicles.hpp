@@ -132,7 +132,7 @@ class CfgVehicles {
 				class Ace_Balise_On {
 					displayName = "Allumer la balise";
 					distance = 4;
-					condition = "{(_target getVariable 'balise_off')} && _target isKindOf 'Man' && {alive _target} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+					condition = "{(_target getVariable ['balise_off',false])} && _target isKindOf 'Man' && {alive _target} && {playerSide == west} && {(call life_coplevel) >= 5}";
 					statement = "[['on'],'life_fnc_shutBalise',_target,FALSE] spawn life_fnc_MP";
 					showDisabled = 0;
 					priority = 2.3;
@@ -140,7 +140,7 @@ class CfgVehicles {
 				class Ace_Balise_Off {
 					displayName = "Couper la balise";
 					distance = 4;
-					condition = "{!(_target getVariable 'balise_off')} && _target isKindOf 'Man' && {alive _target} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+					condition = "{!(_target getVariable ['balise_off',false])} && _target isKindOf 'Man' && {alive _target} && {playerSide == west} && {(call life_coplevel) >= 5}";
 					statement = "[['off'],'life_fnc_shutBalise',_target,FALSE] spawn life_fnc_MP";
 					showDisabled = 0;
 					priority = 2.3;
@@ -510,7 +510,7 @@ class CfgVehicles {
 			class Ace_Balise_On_Self {
 				displayName = "Allumer la balise";
 				distance = 4;
-				condition = "{(player getVariable 'balise_off')} && player isKindOf 'Man' && {alive player} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+				condition = "{(player getVariable ['balise_off',false])} && player isKindOf 'Man' && {alive player} && {playerSide == west} && {(call life_coplevel) >= 5}";
 				statement = "['on'] call life_fnc_shutBalise";
 				showDisabled = 0;
 				priority = 2.3;
@@ -518,7 +518,7 @@ class CfgVehicles {
 			class Ace_Balise_Off_Self {
 				displayName = "Couper la balise";
 				distance = 4;
-				condition = "{!(player getVariable 'balise_off')} && player isKindOf 'Man' && {alive player} && {playerSide == west} && {__GETC__(life_coplevel) >= 5}";
+				condition = "{!(player getVariable ['balise_off',false])} && player isKindOf 'Man' && {alive player} && {playerSide == west} && {(call life_coplevel) >= 5}";
 				statement = "['off'] call life_fnc_shutBalise";
 				showDisabled = 0;
 				priority = 2.3;
