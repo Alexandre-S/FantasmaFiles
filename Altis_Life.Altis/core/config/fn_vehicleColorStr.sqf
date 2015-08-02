@@ -498,6 +498,93 @@ switch (_vehicle) do
 			case 78: {_color = "Noir"};
 			
 			case 79: {_color = "Camo (Terro)"};
+			
+			//cop
+			case 80: {_color = "Orange"};
+			
+			case 81: {_color = "Blanc/Beige"};
+			case 82: {_color = "Blanc"};
+			case 83: {_color = "Blanc/Bleu"};
+			case 84: {_color = "Blanc/Bleu clair"};
+			case 85: {_color = "Blanc/Gris"};
+			case 86: {_color = "Blanc/Jaune"};
+			case 87: {_color = "Blanc/Jaune clair"};
+			case 88: {_color = "Blanc/Orange"};
+			case 89: {_color = "Blanc/Rouge"};
+			case 90: {_color = "Blanc/Vert"};
+			case 91: {_color = "Blanc/Violet"};
+			
+			case 92: {_color = "Jaune clair/Beige"};
+			case 93: {_color = "Jaune clair/Blanc"};
+			case 94: {_color = "Jaune clair/Bleu"};
+			case 95: {_color = "Jaune clair/Bleu clair"};
+			case 96: {_color = "Jaune clair/Gris"};
+			case 97: {_color = "Jaune clair/Jaune"};
+			case 98: {_color = "Jaune clair"};
+			case 99: {_color = "Jaune clair/Orange"};
+			case 100: {_color = "Jaune clair/Rouge"};
+			case 101: {_color = "Jaune clair/Vert"};
+			case 102: {_color = "Jaune clair/Violet"};
+			
+			case 103: {_color = "Jaune/Beige"};
+			case 104: {_color = "Jaune/Blanc"};
+			case 105: {_color = "Jaune/Bleu"};
+			case 106: {_color = "Jaune/Bleu clair"};
+			case 107: {_color = "Jaune/Gris"};
+			case 108: {_color = "Jaune"};
+			case 109: {_color = "Jaune/Jaune clair"};
+			case 110: {_color = "Jaune/Orange"};
+			case 111: {_color = "Jaune/Rouge"};
+			case 112: {_color = "Jaune/Vert"};
+			case 113: {_color = "Jaune/Violet"};
+			
+			case 114: {_color = "Rouge/Beige"};
+			case 115: {_color = "Rouge/Blanc"};
+			case 116: {_color = "Rouge/Bleu"};
+			case 117: {_color = "Rouge/Bleu clair"};
+			case 118: {_color = "Rouge/Gris"};
+			case 119: {_color = "Rouge/Jaune"};
+			case 120: {_color = "Rouge/Jaune clair"};
+			case 121: {_color = "Rouge/Orange"};
+			case 122: {_color = "Rouge"};
+			case 123: {_color = "Rouge/Vert"};
+			case 124: {_color = "Rouge/Violet"};
+			
+			case 125: {_color = "Rouge vif/Beige"};
+			case 126: {_color = "Rouge vif/Blanc"};
+			case 127: {_color = "Rouge vif/Bleu"};
+			case 128: {_color = "Rouge vif/Bleu clair"};
+			case 129: {_color = "Rouge vif/Gris"};
+			case 130: {_color = "Rouge vif/Jaune"};
+			case 131: {_color = "Rouge vif/Jaune clair"};
+			case 132: {_color = "Rouge vif/Orange"};
+			case 133: {_color = "Rouge vif/Rouge"};
+			case 134: {_color = "Rouge vif/Vert"};
+			case 135: {_color = "Rouge vif/Violet"};
+			
+			case 136: {_color = "Vert/Beige"};
+			case 137: {_color = "Vert/Blanc"};
+			case 138: {_color = "Vert/Bleu"};
+			case 139: {_color = "Vert/Bleu clair"};
+			case 140: {_color = "Vert/Gris"};
+			case 141: {_color = "Vert/Jaune"};
+			case 142: {_color = "Vert/Jaune clair"};
+			case 143: {_color = "Vert/Orange"};
+			case 144: {_color = "Vert/Rouge"};
+			case 145: {_color = "Vert"};
+			case 146: {_color = "Vert/Violet"};
+			
+			case 147: {_color = "Violet/Beige"};
+			case 148: {_color = "Violet/Blanc"};
+			case 149: {_color = "Violet/Bleu"};
+			case 150: {_color = "Violet/Bleu clair"};
+			case 151: {_color = "Violet/Gris"};
+			case 152: {_color = "Violet/Jaune"};
+			case 153: {_color = "Violet/Jaune clair"};
+			case 154: {_color = "Violet/Orange"};
+			case 155: {_color = "Violet/Rouge"};
+			case 156: {_color = "Violet/Vert"};
+			case 157: {_color = "Violet"};
 		};
 	};
 	
@@ -515,6 +602,14 @@ switch (_vehicle) do
 			case 7: {_color = "Violet"};
 			case 8: {_color = "Noir"};
 			case 9: {_color = "Camo (Terro)"};
+			case 10: {_color = "Orange"};
+			case 11: {_color = "Blanc"};
+			case 12: {_color = "Jaune clair"};
+			case 13: {_color = "Jaune"};
+			case 14: {_color = "Rouge"};
+			case 15: {_color = "Rouge vif"};
+			case 16: {_color = "Vert"};
+			case 17: {_color = "Violet"};
 		};
 	};
 	

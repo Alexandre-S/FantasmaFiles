@@ -535,7 +535,93 @@ switch (_vehicle) do
 			
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"],
 			
-			["\a3\soft_f_beta\Truck_02\data\truck_02_kab_indp_co.paa","reb","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_indp_co.paa"]
+			["\a3\soft_f_beta\Truck_02\data\truck_02_kab_indp_co.paa","reb","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_indp_co.paa"],
+			
+			["\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa","cop","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"],
+			
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_beige.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_bleu.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_bleuclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_gris.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_orange.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"]
 		];
 	};
 	
@@ -552,7 +638,15 @@ switch (_vehicle) do
 			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","civ","altisrpfr\textures\zamak_bache_vert.paa"],
 			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","civ","altisrpfr\textures\zamak_bache_violet.paa"],
 			["#(argb,8,8,3)color(0.05,0.05,0.05,1)","cop","#(argb,8,8,3)color(0.05,0.05,0.05,1)"],
-			["\a3\soft_f_beta\Truck_02\data\truck_02_kab_indp_co.paa","reb","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_indp_co.paa"]
+			["\a3\soft_f_beta\Truck_02\data\truck_02_kab_indp_co.paa","reb","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_indp_co.paa"],
+			["\A3\Soft_F_Beta\Truck_02\data\truck_02_kab_co.paa","cop","\a3\soft_f_beta\Truck_02\data\truck_02_kuz_co.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_blanc.paa","cop","altisrpfr\textures\zamak_bache_blanc.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jauneclair.paa","cop","altisrpfr\textures\zamak_bache_jauneclair.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_jaune.paa","cop","altisrpfr\textures\zamak_bache_jaune.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougeuse.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_rougefonce.paa","cop","altisrpfr\textures\zamak_bache_rouge.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_vertkaki.paa","cop","altisrpfr\textures\zamak_bache_vert.paa"],
+			["altisrpfr\textures\zamak_cabine_diffu_violet.paa","cop","altisrpfr\textures\zamak_bache_violet.paa"]
 		];
 	};
 	
@@ -778,8 +872,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa", ""]
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_D_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_WD_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa",""]
 		];
 	};
 	
@@ -787,8 +881,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_D_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_d_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa",""],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_WD_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\mk64mount_w_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa",""]
 		];
 	};
 	
@@ -796,8 +890,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa", ""]
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_D_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_d_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\a12^_co.paa"],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_WD_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\101stab_502reg_2ndbn_a12_w_co.paa",""]
 		];
 	};
 	
@@ -805,8 +899,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""],
-			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb", "rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa", "rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa", "rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa", ""]
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_d_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_D_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_d_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_d_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa",""],
+			["rhsusf\addons\rhsusf_hmmwv\textures\m998_exterior_w_co.paa","reb","rhsusf\addons\rhsusf_hmmwv\textures\m998_interior_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\A2_parts_WD_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\wheel_wranglermt_b_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m998_mainbody_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\gratting_w_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\tile_exmetal_co.paa","rhsusf\addons\rhsusf_hmmwv\textures\m1025_w_co.paa","rhsusf\addons\rhsusf_hmmwv\unitdecals\usmc_210321_ca.paa",""]
 		];
 	};
 	

@@ -301,6 +301,8 @@ switch (_shop) do
 			_return pushBack ["BAF_Offroad_D",0];
 			_return pushBack ["LandRover_ACR",0];
 			_return pushBack ["C_Van_01_box_F",0];
+			_return pushBack ["I_Truck_02_transport_F",0]; //ZAMAK transport
+			_return pushBack ["I_Truck_02_covered_F",0]; //ZAMAK Couvert
 		};
 		// Grade Lieutenant
 		if(__GETC__(life_coplevel) >= 3) then
