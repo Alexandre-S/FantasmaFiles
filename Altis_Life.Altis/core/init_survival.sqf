@@ -137,15 +137,15 @@
 				"radialBlur" ppEffectEnable true;
 				"radialBlur" ppEffectAdjust[0.2, 0.15,0.35,0.37];
 				"radialBlur" ppEffectCommit 3;
-				addCamShake[random 6, 300, random 6];
-				sleep 300;
+				addCamShake[random 6, 900, random 6];
+				sleep 900;
 				life_drink = life_drink - 0.05;
 			} else {
 				"radialBlur" ppEffectEnable true;
 				"radialBlur" ppEffectAdjust[0.05, 0,0.36,0.38];
 				"radialBlur" ppEffectCommit 1;
-				addCamShake[random 4, 180, random 4];
-				sleep 180;
+				addCamShake[random 4, 600, random 4];
+				sleep 600;
 				life_drink = life_drink - 0.05;
 			};
 		};
