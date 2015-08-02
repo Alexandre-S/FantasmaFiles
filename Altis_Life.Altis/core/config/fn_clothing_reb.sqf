@@ -70,6 +70,38 @@ switch (_filter) do
 				_ret pushBack ["O_FEM_CSAT_Rolled","Tenue femme 10",3000];
 				_ret pushBack ["B_FEM_AAF_Rolled","Tenue femme 11",3000];
 			};*/
+			
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_02","Bas treillis et polo 1",10000];
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_02a","Bas treillis et polo 2",10000];
+		
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03","Veste treilli ouverte et bas noir",10000];
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03a","Veste treilli ouverte et bas jean",10000];
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03b","Veste khaki marron ouverte et bas vert",10000];
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03c","Veste khaki vert ouverte et bas vert",10000];
+
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01","Uniforme Vert",50000];
+			_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
+			
+			_ret pushBack ["U_CAF_AG_ME_ROBES_01","Tenue gris et vert avec veston bleu",5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_01a",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_01b",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_01c",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_01d",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_02",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_02a","Veste ouverte noir et robe marron",5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_02b",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_02c",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_03",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_03a",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_03b",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_03c",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_03d","Veston noir et robe blanche",5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04a","Veste marron et robe verte et marron",5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04b",nil,5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04c","Veste bleu et robe bleu",5000];
+			_ret pushBack ["U_CAF_AG_ME_ROBES_04d","Veste marron et robe verte et marron",5000];
+			
 			_ret pushBack ["U_B_Wetsuit",nil,2000];
 			_ret pushBack ["U_I_G_Story_Protagonist_F","Work",5000];
 			_ret pushBack ["U_BG_Guerrilla_6_1",nil,5000];
@@ -149,45 +181,14 @@ switch (_filter) do
 					_ret pushBack ["rds_uniform_priest","Tenu de ceremonie",5000];
 				};	
 			};
-			// Faction 3 = Héphaistos
+			// Faction 3 = Cosmo Data
 			if(__GETC__(life_factnumber) == 3) then
 			{
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_02","Bas treillis et polo 1",10000];
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_02a","Bas treillis et polo 2",10000];
-			
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03","Veste treilli ouverte et bas noir",10000];
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03a","Veste treilli ouverte et bas jean",10000];
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03b","Veste khaki marron ouverte et bas vert",10000];
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_03c","Veste khaki vert ouverte et bas vert",10000];
-
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01","Uniforme Vert",50000];
-				_ret pushBack ["U_CAF_AG_EEUR_FATIGUES_01a","Uniforme Marron",50000];
-				
-				_ret pushBack ["U_CAF_AG_ME_ROBES_01","Tenue gris et vert avec veston bleu",5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_01a",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_01b",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_01c",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_01d",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_02",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_02a","Veste ouverte noir et robe marron",5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_02b",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_02c",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_03",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_03a",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_03b",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_03c",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_03d","Veston noir et robe blanche",5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_04",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_04a","Veste marron et robe verte et marron",5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_04b",nil,5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_04c","Veste bleu et robe bleu",5000];
-				_ret pushBack ["U_CAF_AG_ME_ROBES_04d","Veste marron et robe verte et marron",5000];
-				
 				_ret pushBack ["rds_uniform_doctor",nil,2500];
 				_ret pushBack ["rds_uniform_doctor2",nil,2500];
 				// _ret pushBack ["U_C_Scientist",nil,2500];
 				_ret pushBack ["rhs_uniform_df15",nil,2500];
-				
+				_ret pushBack ["SMD_US_BLOPS_Digi_BDU",nil,10000];
 			};
 			// Faction 4 = Milice Sainte Croix
 			if(__GETC__(life_factnumber) == 4) then
@@ -262,7 +263,11 @@ switch (_filter) do
 				["H_Shemag_olive",nil,1250],
 				["H_Shemag_olive_hs",nil,1250],
 				["H_ShemagOpen_khk",nil,1250],
-				["H_Shemag_tan",nil,1250]
+				["H_Shemag_tan",nil,1250],
+				["H_caf_ag_turban",nil,700],
+				["H_caf_ag_beanie",nil,600],
+				["H_caf_ag_fur2",nil,700],
+				["H_caf_ag_fur",nil,700]
 			];
 		
 			// Armée privée
@@ -294,13 +299,10 @@ switch (_filter) do
 			{
 				_ret pushBack ["ice123_apo_hood",nil,1000];
 			};
-			// Faction 3 = Religieux
+			// Faction 3 = Cosmo Data
 			if(__GETC__(life_factnumber) == 3) then
 			{
-				_ret pushBack ["H_caf_ag_turban",nil,700];
-				_ret pushBack ["H_caf_ag_beanie",nil,600];
-				_ret pushBack ["H_caf_ag_fur2",nil,700];
-				_ret pushBack ["H_caf_ag_fur",nil,700];
+				_ret pushBack ["ATHhelm_Balaclava1",nil,2000];
 			};
 		};
 	};
@@ -449,6 +451,11 @@ switch (_filter) do
 					_ret pushBack ["Specter_RAV_BLK",nil,25000];
 				};			
 			};			
+			// Faction 3 = Cosmo Data
+			if(__GETC__(life_factnumber) == 3) then
+			{
+				_ret pushBack ["V_PlateCarrierGL_blk",nil,50000];
+			};
 			if(__GETC__(life_factnumber) == 4) then
 			{
 				_ret pushBack ["ice123_apo_bag",nil,5000];

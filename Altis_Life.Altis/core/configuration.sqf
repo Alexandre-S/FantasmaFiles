@@ -1171,6 +1171,7 @@ life_weapon_shop_array =
 	["V_PlateCarrierIA2_dgtl",50000*0.5],
 	["V_PlateCarrierInd_PMC_blk",50000*0.5],
 	["V_PlateCarrierInd_PMC_grn",50000*0.5],
+	["V_PlateCarrierGL_blk",50000*0.5],
 	["V_Press_F",2000*0.5],
 	["V_Rangemaster_belt",1000*0.5],
 	["V_RebreatherIR",2000*0.5],
@@ -1182,7 +1183,8 @@ life_weapon_shop_array =
 	["V_TacVestIR_blk",15000*0.5],
 	["vip_clothes",4500*0.5],
 	["RH_fn57",4900*0.5],
-	["RH_20Rnd_57x28_FN",350*0.5]
+	["RH_20Rnd_57x28_FN",350*0.5],
+	["ATHhelm_Balaclava1",2000*0.5]
 ];
 __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 
