@@ -142,7 +142,7 @@ switch (true) do
 		[cursorTarget] spawn life_fnc_gpsTracker;
 	}; 
 	
-	case (_item in ["cannabis","marijuana"]):
+	case (_item == "marijuana"):
 	{
 		[_item] spawn life_fnc_marijuana;
 	};
