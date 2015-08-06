@@ -27,7 +27,7 @@ _callerName = [_varValue,6,"",[""]] call bis_fnc_param;
 _callerUID = [_varValue,7,"",[""]] call bis_fnc_param;
 
 if(!(["life_fnc_",_functionName] call BIS_fnc_inString) && {!(["SPY_fnc_",_functionName] call BIS_fnc_inString)} && {!(["DB_fnc_",_functionName] call BIS_fnc_inString)} && {!(["TON_fnc_",_functionName] call BIS_fnc_inString)} &&
-{!(toLower(_functionName) in ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledsecondaries","bis_fnc_effectkilledairdestructionstage2","bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","bis_fnc_curatorrespawn","mb_fnc_updateweather","mocap_fnc_strokeeffects"])} && {!(["SOCK_fnc_",_functionName] call BIS_fnc_inString)}) exitWith {diag_log format["===========MPexecFAIL2=========== %1 - %2 - %3",_functionName,_callerName,_callerUID]; false;};
+{!(toLower(_functionName) in ["bis_fnc_execvm","bis_fnc_effectkilledairdestruction","bis_fnc_effectkilledsecondaries","bis_fnc_effectkilledairdestructionstage2","bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","bis_fnc_curatorrespawn","mb_fnc_updateweather","mocap_fnc_strokeeffects","rhs_fnc_mi8_checkDoor"])} && {!(["SOCK_fnc_",_functionName] call BIS_fnc_inString)}) exitWith {diag_log format["===========MPexecFAIL2=========== %1 - %2 - %3",_functionName,_callerName,_callerUID]; false;};
 if(toLower(_functionName) == "db_fnc_asynccall") exitWith {false};
 if(toLower(_functionName) == "db_fnc_mresToArray") exitWith {false};
 
@@ -37,7 +37,7 @@ if(_functionName == "bis_fnc_execvm") then {
 	if(_param2 != "initPlayerServer.sqf") exitWith {_exitScope = true; diag_log format["===========MPexecFAIL3=========== %1 - %2 - %3 - %4 - %5 - %6 - %7",_functionName,_params,_target,_isPersistent,_isCall,_callerName,_callerUID];};
 };
 
-if((_callerName == "" OR _callerUID == "") && (!(toLower(_functionName) in ["bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","mocap_fnc_strokeeffects","life_fnc_attachSmoke","bis_fnc_effectkilledsecondaries","BIS_fnc_effectKilledAirDestruction","bis_fnc_execvm"]))) exitWith {diag_log format["===========MPexecFAIL4=========== %1 - %2 - %3",_functionName,_callerName,_callerUID];}; //NO.
+if((_callerName == "" OR _callerUID == "") && (!(toLower(_functionName) in ["bis_fnc_modulelightning","bis_fnc_shownotification","bis_fnc_estimatedtimeleft","mocap_fnc_strokeeffects","life_fnc_attachSmoke","bis_fnc_effectkilledsecondaries","BIS_fnc_effectKilledAirDestruction","bis_fnc_execvm","bis_fnc_curatorrespawn","rhs_fnc_mi8_checkDoor"]))) exitWith {diag_log format["===========MPexecFAIL4=========== %1 - %2 - %3",_functionName,_callerName,_callerUID];}; //NO.
 
 if(_callerUID != "__SERVER__" && _callerName != "__SERVER__" && toLower(_functionName) in ["spy_fnc_cookiejar","spy_fnc_notifyadmins"]) then {
 	//Check if the sender & reported UID match, if they don't exit.
