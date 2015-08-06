@@ -28,8 +28,8 @@ _validFunctions = ["bis_fnc_execvm","BIS_fnc_effectKilledAirDestruction","BIS_fn
 if(!(_functionName in _validFunctions)) exitWith {diag_log format["===========MPexecFAIL=========== %1 - %2 - %3",_functionName]; false;}; //NO.
 if(_functionName == "bis_fnc_execvm") then {
 	_param2 = _params select 1;
-	if(isNil "_param2") exitWith {_exitScript = true;};
-	if(_param2 != "initPlayerServer.sqf") exitWith {_exitScript = true;};
+	if(isNil "_param2") exitWith {_exitScript = true; diag_log format["===========MPexecFAILb=========== %1 - %2 - %3 - %4 - %5",_functionName,_params,_target,_isPersistent,_isCall];};
+	if(_param2 != "initPlayerServer.sqf") exitWith {_exitScript = true; diag_log format["===========MPexecFAILb=========== %1 - %2 - %3 - %4 - %5",_functionName,_params,_target,_isPersistent,_isCall];};
 };
 
 if(_exitScript) exitWith {false};
