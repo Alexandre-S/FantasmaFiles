@@ -32,7 +32,7 @@ class CfgVehicles {
                 icon = "\a3\ui_f\data\IGUI\Cfg\Actions\eject_ca.paa";
                 selection = "pelvis";
 
-                class ACE_TeamManagement {
+                /*class ACE_TeamManagement {
                     displayName = CSTRING(TeamManagement);
                     condition = QUOTE([ARR_2(_player,_target)] call DFUNC(canJoinTeam) && {GVAR(EnableTeamManagement)});
                     statement = "";
@@ -119,7 +119,116 @@ class CfgVehicles {
                     statement = QUOTE([ARR_3(_target,'{_this addRating -rating _this}',_target)] call DEFUNC(common,execRemoteFnc));
                     showDisabled = 0;
                     priority = 2.5;
-                };
+                };*/
+				class ACE_Abattre {
+					displayName = "Abattre";
+					distance = 4;
+					condition = "_target isKindOf 'Man' && {!alive _target}";
+					statement = "[_target] spawn life_fnc_abattre";
+					exceptions[] = {"isNotSwimming"};
+					showDisabled = 0;
+					priority = 1.9;
+				};
+				class Ace_Balise_On {
+					displayName = "Allumer la balise";
+					distance = 4;
+					condition = "(_target getVariable ['balise_off',false]) && {playerSide == west} && {(call life_coplevel) >= 5}";
+					statement = "[['on'],'life_fnc_shutBalise',_target,FALSE] spawn life_fnc_MP";
+					showDisabled = 0;
+					priority = 2.3;
+				};
+				class Ace_Balise_Off {
+					displayName = "Couper la balise";
+					distance = 4;
+					condition = "!(_target getVariable ['balise_off',false]) && {playerSide == west} && {(call life_coplevel) >= 5}";
+					statement = "[['off'],'life_fnc_shutBalise',_target,FALSE] spawn life_fnc_MP";
+					showDisabled = 0;
+					priority = 2.3;
+				};
+				class ACE_Carte {
+					displayName = "Présenter plaque gendarme";
+					distance = 4;
+					condition = "_target isKindOf 'Man' && {alive _target} && {playerSide == west}";
+					statement = "[_target,'flic'] spawn life_fnc_showId";
+					exceptions[] = {"isNotSwimming"};
+					showDisabled = 0;
+					priority = 2.6;
+				};
+				class ACE_Carte2 {
+					displayName = "Présenter carte";
+					distance = 4;
+					condition = "_target isKindOf 'Man' && {alive _target}";
+					statement = "[_target,'civ'] spawn life_fnc_showId";
+					exceptions[] = {"isNotSwimming"};
+					showDisabled = 0;
+					priority = 2.7;
+				};
+				class ACE_CopAlcool	{
+					  displayName = "Contrôler Alcool et Stup";
+					  distance = 4;
+					  condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {playerSide == west} && {side _target in [civilian,independent,west]}";
+					  /*statement = "[_target,player] spawn life_fnc_souffler";*/
+					  statement = "[[player],'life_fnc_soufflerBallon',_target,FALSE] spawn life_fnc_MP";
+					  showDisabled = 0;
+					  priority = 2.3;
+					  hotkey = "A";
+				};
+				class ACE_Reanimer {
+					displayName = "Réanimer";
+					distance = 4;
+					condition = "(_target isKindOf 'Man') && {!alive _target} && {playerSide in [west,independent]} && {'Medikit' in (items player)}";
+					statement = "[_target] spawn life_fnc_revivePlayer";
+					exceptions[] = {"isNotSwimming"};
+					showDisabled = 0;
+					priority = 2.5;
+					hotkey = "R";
+				};
+				class ACE_Copinteraction {
+					displayName = "Interaction Gendarme";
+					distance = 4;
+					condition = "(alive _target) && {isPlayer _target} && {_target isKindOf 'Man'} && {(_target getVariable['ACE_Captives_isHandcuffed',false]) OR (_target getVariable['ACE_Captives_isSurrendering',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
+					statement = "";
+					showDisabled = 0;
+					priority = 3.2;
+					subMenu[] = {"ACE_Copinteraction",0};
+					hotkey = "C";
+					class ACE_CopCheckLicenses {
+						displayName = "$STR_pInAct_checkLicenses";
+						distance = 4;
+						condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {(_target getVariable['ACE_Captives_isHandcuffed',false]) OR (_target getVariable['ACE_Captives_isSurrendering',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
+						statement = "[[player],'life_fnc_licenseCheck',_target,FALSE] spawn life_fnc_MP";
+						showDisabled = 1;
+						priority = 2.4;
+						hotkey = "L";
+					};
+					class ACE_CopTicket {
+						displayName = "$STR_pInAct_TicketBtn";
+						distance = 4;
+						condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {(_target getVariable['ACE_Captives_isHandcuffed',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
+						statement = "[_target] call life_fnc_ticketAction";
+						showDisabled = 1;
+						priority = 2.2;
+						hotkey = "T";
+					};
+					class ACE_RevokeLicense {
+						displayName = "$STR_pInAct_RevokeLicense";
+						distance = 4;
+						condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {(_target getVariable['ACE_Captives_isHandcuffed',false])} && {playerSide == west} && {side _target in [civilian,independent]}";
+						statement = "[_target] call life_fnc_revokeLicense";
+						showDisabled = 1;
+						priority = 2.1;
+						hotkey = "R";
+					};
+					class ACE_Prison {
+						displayName = "$STR_pInAct_Arrest";
+						distance = 4;
+						condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {(_target getVariable['ACE_Captives_isHandcuffed',false])} && {playerSide == west} && {side _target in [civilian,independent]} && ((player distance (getMarkerPos 'police_hq_1') < 30) OR  (player distance (getMarkerPos 'police_hq_2') < 30) OR (player distance (getMarkerPos 'cop_spawn_3') < 30) OR (player distance (getMarkerPos 'cop_spawn_5') < 30))";
+						statement = "[_target] call life_fnc_arrestAction";
+						showDisabled = 1;
+						priority = 2.5;
+						hotkey = "P";
+					};
+				};
             };
             class ACE_Torso {
                 displayName = CSTRING(Torso);
@@ -249,7 +358,7 @@ class CfgVehicles {
                     icon = PATHTOF(UI\team\team_white_ca.paa);
                     hotkey = "N";
                 };
-                class ACE_BecomeLeader {
+                /*class ACE_BecomeLeader {
                     displayName = CSTRING(BecomeLeader);
                     condition = QUOTE(_this call DFUNC(canBecomeLeader));
                     exceptions[] = {"isNotInside", "isNotSitting"};
@@ -268,7 +377,7 @@ class CfgVehicles {
                     priority = 1.2;
                     icon = PATHTOF(UI\team\team_management_ca.paa);
                     hotkey = "M";
-                };
+                };*/
             };
 
             class ACE_Gestures {
@@ -386,6 +495,54 @@ class CfgVehicles {
                 icon = "";  // @todo
                 hotkey = "E";
             };
+			
+			class ACE_Vesteexplo
+		    {
+				displayName = "Activer veste";
+				// condition = QUOTE((vest _target == 'V_HarnessOGL_brn') && {alive _target} && {playerSide == civilian} && {!life_istazed} && {!_target getVariable [QGVAR(isEscorting), false]} && {!(_target getVariable [QGVAR(isHandcuffed), false])} && {!(_target getVariable [QGVAR(isSurrendering), false])} && {!(_target getVariable ["ACE_isUnconscious", false])});
+				condition = "(vest _target == 'V_HarnessOGL_brn') && {alive _target} && {playerSide == civilian} && {!life_istazed}";
+				// exceptions[] = {"isNotEscorting", "isNotHandcuffed","isNotSurrendering"};
+				statement = "[] spawn life_fnc_suicideBomb;";
+				showDisabled = 0;
+				priority = 0.9;
+				hotkey = "B";
+		    };
+			class Ace_Balise_On_Self {
+				displayName = "Allumer la balise";
+				distance = 4;
+				condition = "(player getVariable ['balise_off',false]) && {playerSide == west} && {(call life_coplevel) >= 5}";
+				statement = "['on'] call life_fnc_shutBalise";
+				showDisabled = 0;
+				priority = 2.3;
+			};
+			class Ace_Balise_Off_Self {
+				displayName = "Couper la balise";
+				distance = 4;
+				condition = "!(player getVariable ['balise_off',false]) && {playerSide == west} && {(call life_coplevel) >= 5}";
+				statement = "['off'] call life_fnc_shutBalise";
+				showDisabled = 0;
+				priority = 2.3;
+			};
+		    /*class ACE_HuntingTrack
+		    {
+				displayName = "Traquer animaux";
+				// condition = QUOTE((alive _target) && {playerSide == civilian} && {!life_istazed} && {!_target getVariable [QGVAR(isEscorting), false]} && {!(_target getVariable [QGVAR(isHandcuffed), false])} && {!(_target getVariable [QGVAR(isSurrendering), false])} && {!(_target getVariable ["ACE_isUnconscious", false])});
+				condition = QUOTE((alive _target) && {playerSide == civilian} && {!life_istazed});
+				exceptions[] = {"isNotEscorting", "isNotHandcuffed","isNotSurrendering"};
+				statement = QUOTE([] spawn life_fnc_trackAnimal;);
+				showDisabled = 1;
+				priority = 0.5;
+				hotkey = "C";
+		    };
+			class ACE_SkinAnimal
+		    {
+				displayName = "Dépecer";
+				condition = "alive player && playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 4 && !life_istazed && !(player getVariable 'AGM_isEscorting') && !(player getVariable 'ACE_Captives_isHandcuffed') && !(player getVariable 'ACE_Captives_isSurrendering') && (typeOf cursorTarget) in ['Cock_random_F','Hen_random_F','Goat_random_F','Sheep_random_F'] && !alive life_cursorTarget";
+				statement = "[] spawn life_fnc_skinAnimal;";
+				showDisabled = 1;
+				priority = 0.2;
+				hotkey = "D";
+		    };*/
         };
     };
 
@@ -403,6 +560,62 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE(_this call DFUNC(addPassengersActions));
                 };
+				class ACE_repair {
+					displayName = "$STR_vInAct_Repair";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+					statement = "[_target] spawn life_fnc_repairTruckCheck";
+					showDisabled = 1;
+					priority = 1.6;
+				};
+				class ACE_copRegistration {
+					displayName = "$STR_vInAct_Registration";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_searchVehAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class ACE_copPullout {
+					displayName = "Sortir tt le monde";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+					statement = "[_target] spawn life_fnc_pulloutAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class ACE_Impound {
+					displayName = "$STR_vInAct_Impound";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_impoundAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class ACE_Kart {
+					displayName = "$STR_vInAct_GetInKart";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""]} && {canMove _target} && {count crew _target != 0} && {locked _target == 0}";
+					statement = "player moveInDriver _target";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class ACE_Unflip {
+					displayName = "$STR_vInAct_Unflip";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target == 0}";
+					statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class ACE_DeviceMine {
+					displayName = "$STR_vInAct_DeviceMine";
+					distance = 4;
+					condition = "alive _target && {typeOf _target == ""O_Truck_03_device_F_RP""} && {playerSide != west} && !(!isNil {(_target getVariable ""mining"")} OR !local _target && {_target in life_vehicles})";
+					statement = "[_target] spawn life_fnc_deviceMine";
+					showDisabled = 0;
+					priority = 1.6;
+				};
             };
         };
         class ACE_SelfActions {
@@ -427,6 +640,46 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE(_this call DFUNC(addPassengersActions));
                 };
+				class AGM_repair {
+					displayName = "$STR_vInAct_Repair";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+					statement = "[_target] spawn life_fnc_repairTruckCheck";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copRegistration {
+					displayName = "$STR_vInAct_Registration";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_searchVehAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copPullout {
+					displayName = "Sortir tt le monde";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+					statement = "[_target] spawn life_fnc_pulloutAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Impound {
+					displayName = "$STR_vInAct_Impound";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_impoundAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Unflip {
+					displayName = "$STR_vInAct_Unflip";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target == 0}";
+					statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
+					showDisabled = 0;
+					priority = 1.6;
+				};
             };
         };
         class ACE_SelfActions {
@@ -453,6 +706,46 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE(_this call DFUNC(addPassengersActions));
                 };
+				class AGM_repair {
+					displayName = "$STR_vInAct_Repair";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+					statement = "[_target] spawn life_fnc_repairTruckCheck";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copRegistration {
+					displayName = "$STR_vInAct_Registration";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_searchVehAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copPullout {
+					displayName = "Sortir tt le monde";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+					statement = "[_target] spawn life_fnc_pulloutAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Impound {
+					displayName = "$STR_vInAct_Impound";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_impoundAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Unflip {
+					displayName = "$STR_vInAct_Unflip";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target == 0}";
+					statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
+					showDisabled = 0;
+					priority = 1.6;
+				};
             };
         };
         class ACE_SelfActions {
@@ -477,6 +770,46 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE(_this call DFUNC(addPassengersActions));
                 };
+				class AGM_repair {
+					displayName = "$STR_vInAct_Repair";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+					statement = "[_target] spawn life_fnc_repairTruckCheck";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copRegistration {
+					displayName = "$STR_vInAct_Registration";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_searchVehAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copPullout {
+					displayName = "Sortir tt le monde";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+					statement = "[_target] spawn life_fnc_pulloutAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Impound {
+					displayName = "$STR_vInAct_Impound";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_impoundAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Unflip {
+					displayName = "$STR_vInAct_Unflip";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {!(typeOf (_target) in [""C_Kart_01_Blu_F"",""C_Kart_01_Red_F"",""C_Kart_01_Fuel_F"",""C_Kart_01_Vrana_F""])} && {!(canMove _target)} && {count crew _target == 0}";
+					statement = "_target setPos [getPos _target select 0, getPos _target select 1, (getPos _target select 2)+0.5]";
+					showDisabled = 0;
+					priority = 1.6;
+				};
             };
         };
         class ACE_SelfActions {
@@ -512,6 +845,38 @@ class CfgVehicles {
                     statement = "";
                     insertChildren = QUOTE(_this call DFUNC(addPassengersActions));
                 };
+				class AGM_repair {
+					displayName = "$STR_vInAct_Repair";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(damage _target < 1)}";
+					statement = "[_target] spawn life_fnc_repairTruckCheck";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copRegistration {
+					displayName = "$STR_vInAct_Registration";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_searchVehAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_copPullout {
+					displayName = "Sortir tt le monde";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {count crew _target != 0} && {playerSide == west}";
+					statement = "[_target] spawn life_fnc_pulloutAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
+				class AGM_Impound {
+					displayName = "$STR_vInAct_Impound";
+					distance = 4;
+					condition = "alive _target && {speed _target == 0} && {(playerSide == west) OR ((playerSide == civilian) && (player getVariable['life_dep',false])) OR (player getVariable['is_admin',false])}";
+					statement = "[_target] spawn life_fnc_impoundAction";
+					showDisabled = 0;
+					priority = 1.6;
+				};
             };
         };
         class ACE_SelfActions {
