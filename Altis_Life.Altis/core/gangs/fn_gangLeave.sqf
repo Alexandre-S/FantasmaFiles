@@ -20,7 +20,6 @@ _grpMembers = _grpMembers - [steamid];
 closeDialog 0;
 
 
-	
 hint "Patientez...";
 init_gang = false;
 
@@ -28,7 +27,10 @@ init_gang = false;
 [] call life_fnc_getHLC;
 [[4,_grp,_grpMembers],"TON_fnc_updateGang",serverhc,false] spawn life_fnc_MP;
 
+[] spawn {
+	sleep 5;
 
-[player] joinSilent (createGroup civilian);
-init_gang = true;
-hint "Vous avez quitté le groupe.";
+	[player] joinSilent (createGroup civilian);
+	init_gang = true;
+	hint "Vous avez quitté le groupe.";
+};
