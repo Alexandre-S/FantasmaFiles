@@ -60,21 +60,14 @@ while {true} do
 							};
 						};
 						if(!isNil "_x" && {!isNull _x} && {_x getVariable["waitdel",0] <= 0}) then {
-							// deleteVehicle _x;
-							[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-
+							deleteVehicle _x;
 							_deleted = true;
 						};
 						//{if (typeOf _x == "#particlesource") then {deleteVehicle _x}} forEach ((position _x) nearObjects 20);
 						
 						
 						if(_deleted) then {
-							if(!isNil "_x" && {!isNull _x}) then {
-								sleep 1;
-								[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-								// deleteVehicle _x;
-								sleep 1;
-							};
+							if(!isNil "_x" && {!isNull _x}) then { sleep 1; deleteVehicle _x; sleep 1; };
 							// waitUntil {isNull _x};
 							_deleted = false;
 						};
@@ -112,18 +105,12 @@ while {true} do
 									_query = format["UPDATE vehicles SET active='0', inventory='""[[],0]""' WHERE pid='%1' AND plate='%2'",_uid,_plate];
 								};
 								if(!isNil "_x" && {!isNull _x}) then {
-									// deleteVehicle _x;
-									[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+									deleteVehicle _x;
 									_deleted = true;
 								};
 								
 								if(_deleted) then {
-									if(!isNil "_x" && {!isNull _x}) then {
-										sleep 1;
-										[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-										// deleteVehicle _x;
-										sleep 1;
-									};
+									if(!isNil "_x" && {!isNull _x}) then { sleep 1; deleteVehicle _x; sleep 1; };
 									// waitUntil {isNull _x};
 									_deleted = false;
 								};
@@ -159,8 +146,7 @@ while {true} do
 							} else {
 								if ((time - _idleTime) > 600) then {
 									if(!isNil "_x" && {!isNull _x}) then {
-										// deleteVehicle _x;
-										[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+										deleteVehicle _x;
 									};
 								};
 							};
@@ -174,8 +160,7 @@ while {true} do
 							if(_idleTime == 0 && !((typeOf _x) in ["Land_CargoBox_V1_F","B_UAV_01_F","Land_CashDesk_F","RoadBarrier_small_F","RoadCone_L_F","Land_Razorwire_F","Box_IND_Grenades_F_RP","B_supplyCrate_F_RP","Land_BagFence_Long_F","Land_BagFence_Round_F","Rope"])) then {
 								if(!isNil "_x" && {!isNull _x}) then {
 									diag_log format["[debug] fn_cleanupdivers %1 ",typeOf _x];
-									// deleteVehicle _x;
-									[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+									deleteVehicle _x;
 								};
 							};
 						};

@@ -22,10 +22,7 @@ if(_mode) then {
 		case ((typeOf _house) in ["Land_i_House_Small_03_V1_F","Land_i_House_Small_03_V3_F","Land_i_House_Small_03_V3_F"]): {_lightSource lightAttachObject [_house,[-3.3,1,2.5]];};
 		default {_exit = true;};
 	};
-	if(_exit) exitWith {
-		[[_lightSource],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-		// deleteVehicle _lightSource;
-	};
+	if(_exit) exitWith {deleteVehicle _lightSource;};
 	
 	_lightSource setLightColor [250,150,50];
 	_lightSource setLightAmbient [1,1,0.2];

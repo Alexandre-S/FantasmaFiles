@@ -45,6 +45,5 @@ if(animationState player == "Incapacitated") then {
 	player playMoveNow "amovppnemstpsraswrfldnon";
 };
 detach player;
-//deleteVehicle _obj;
-[[_obj],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+deleteVehicle _obj;
 player setVariable["robbed",FALSE,TRUE];

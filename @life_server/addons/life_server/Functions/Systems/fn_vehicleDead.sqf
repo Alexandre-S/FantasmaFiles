@@ -34,19 +34,13 @@ _sql = [_query,1] call DB_fnc_asyncCall;
 
 sleep (5 * 60);
 if(!isNil "_vehicle" && {!isNull _vehicle}) then {
-	// deleteVehicle _vehicle;
-	[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+	deleteVehicle _vehicle;
 	_deleted = true;
 };
 
 
 if(_deleted) then {
-	if(!isNil "_x" && {!isNull _x}) then {
-		sleep 1;
-		[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-		// deleteVehicle _x;
-		sleep 1;
-	};
+	if(!isNil "_x" && {!isNull _x}) then { sleep 1; deleteVehicle _x; sleep 1; };
 	// waitUntil {isNull _x};
 	_deleted = false;
 };

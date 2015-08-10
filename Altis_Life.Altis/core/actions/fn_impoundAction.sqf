@@ -12,10 +12,7 @@ if(player distance cursorTarget > 10) exitWith {};
 if((_vehicle isKindOf "LandVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship")) then
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
-	if(count _vehicleData == 0) exitWith {
-		// deleteVehicle _vehicle
-		[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-	}; //Bad vehicle.
+	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
 	_owner = (_vehicleData select 0) select 1;
 	_vehicleName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 	[[0,"STR_NOTF_BeingImpounded",true,[(_vehicleData select 0) select 1,_vehicleName]],"life_fnc_broadcast",_owner,false] spawn life_fnc_MP;

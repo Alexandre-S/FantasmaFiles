@@ -51,8 +51,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		life_istazed = false;
 		_unit setvariable["ACE_istazed",false,true];
 		// player allowDamage true;
-		//deleteVehicle _obj;
-		[[_obj],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+		deleteVehicle _obj;
 		disableUserInput false;
 	};
 }

@@ -270,7 +270,6 @@ class Life_Client_Core
 		class airsoft {};
 		class hitSound {};
 		class varAirsoft {};
-		class delveh {};
 	};
 	
 	class Network

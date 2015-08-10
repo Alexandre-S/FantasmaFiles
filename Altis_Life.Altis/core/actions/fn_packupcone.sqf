@@ -13,6 +13,5 @@ if(isNil "_cone") exitWith {};
 if(([true,"cone",1] call life_fnc_handleInv)) then
 {
     titleText["Vous avez ramassé le cône.","PLAIN"];
-    //deleteVehicle _cone;
-	[[_cone],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+    deleteVehicle _cone;
 };

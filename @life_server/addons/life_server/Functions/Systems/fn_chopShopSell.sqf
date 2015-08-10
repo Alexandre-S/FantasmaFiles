@@ -39,9 +39,7 @@ if(count _dbInfo > 0) then {
 	_sql = [_query,1] call DB_fnc_asyncCall;
 };
 
-// deleteVehicle _vehicle;
-[[_vehicle],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-
+deleteVehicle _vehicle;
 [["life_action_inUse",false],"life_fnc_netSetVar",_unitid,false] spawn life_fnc_MP;
 [["life_cash",_cash],"life_fnc_netSetVar",_unitid,false] spawn life_fnc_MP;
 [[2,format[(localize "STR_NOTF_ChopSoldCar"),_displayName,[_price] call life_fnc_numberText]],"life_fnc_broadcast",_unitid,false] spawn life_fnc_MP;

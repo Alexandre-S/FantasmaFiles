@@ -15,7 +15,6 @@ if(player distance _obj > 3.5) exitWith {};
 
 if(([true,"turtle",1] call life_fnc_handleInv)) then
 {
-	//deleteVehicle _obj;
-	[[_obj],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+	deleteVehicle _obj;
 	titleText[localize "STR_NOTF_CaughtTurtle","PLAIN"];
 };

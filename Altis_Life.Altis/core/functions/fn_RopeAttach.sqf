@@ -12,8 +12,7 @@ _unit = driver _vehicle;
 
 
 if(!(side _unit in [independent,west] || _unit getVariable["life_dep", false] || _unit getVariable["life_gvt", false])) then {
-	//deleteVehicle _rope;
-	[[_rope],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+	deleteVehicle _rope;
 };
 
 

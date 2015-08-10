@@ -22,10 +22,7 @@ if(count _houses == 0) exitWith {};
 	// };
 	
 	if(!isNil {(_house getVariable "containers")}) then {
-		{if(!isNull _x) then {
-			// deleteVehicle _x;
-			[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-		};} foreach (_house getVariable "containers");
+		{if(!isNull _x) then {deleteVehicle _x;};} foreach (_house getVariable "containers");
 		_house setVariable["containers",nil,true];
 	};
 } foreach _houses;

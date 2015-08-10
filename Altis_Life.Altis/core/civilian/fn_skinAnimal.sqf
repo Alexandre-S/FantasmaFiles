@@ -35,5 +35,4 @@ if (_item != "") then { _success = [true,_item,1] call life_fnc_handleInv; };
 if (_success) then { [[0,2], format["Vous avez dépouillé un %1 et récolté %2.", getText(configFile >> "CfgVehicles" >> (typeOf _corpse) >> "displayName"),[[_item,0] call life_fnc_varHandle] call life_fnc_varToStr]] call life_fnc_broadcast; }
 else { [[0,2], "Vous n'avez rien récolté de valeurs. Vos sacs sont pleins ?"] call life_fnc_broadcast; };
 
-//deleteVehicle _corpse;
-[[_corpse],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+deleteVehicle _corpse;

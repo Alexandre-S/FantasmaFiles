@@ -74,10 +74,7 @@ goatgroup = createGroup Civilian;
 							_a = _this select 0;
 							sleep 300;
 							life_animals_array = life_animals_array - [_a];
-							if(!isNull _a) then {
-								// deleteVehicle _a;
-								[[_a],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-							};
+							if(!isNull _a) then {deleteVehicle _a;};
 						};
 					};
 				}];
@@ -121,8 +118,7 @@ goatgroup = createGroup Civilian;
 		{
 			if((_x distance _pos) > 1200) then
 			{
-				// deleteVehicle _x;
-				[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+				deleteVehicle _x;
 				life_animals_array = life_animals_array - [_x];
 			};
 		} foreach life_animals_array;

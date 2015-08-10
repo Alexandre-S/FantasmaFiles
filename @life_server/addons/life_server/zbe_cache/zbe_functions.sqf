@@ -1,7 +1,5 @@
 zbe_deleteunitsnotleaderfnc = {
-	{
-		[[_x],"life_fnc_delveh",true,false] spawn life_fnc_MP;
-		// deleteVehicle _x;
+	{deleteVehicle _x;
 	} forEach units _this - [leader _this];
 };
 

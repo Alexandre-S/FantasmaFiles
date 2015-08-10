@@ -14,6 +14,5 @@ if(isNil "_mauer") exitWith {};
 if(([true,"mauer",1] call life_fnc_handleInv)) then
 {
     titleText["Vous avez ramassé la barrière.","PLAIN"];
-    //deleteVehicle _mauer;
-	[[_mauer],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+    deleteVehicle _mauer;
 };

@@ -14,6 +14,5 @@ if(([true,"spikeStrip",1] call life_fnc_handleInv)) then
 	titleText[localize "STR_NOTF_SpikeStrip","PLAIN"];
 	player removeAction life_action_spikeStripPickup;
 	life_action_spikeStripPickup = nil;
-	//deleteVehicle _spikes;
-	[[_spikes],"life_fnc_delveh",true,false] spawn life_fnc_MP;
+	deleteVehicle _spikes;
 };
