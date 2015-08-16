@@ -146,7 +146,7 @@ class CfgVehicles {
 					priority = 2.3;
 				};
 				class ACE_Carte {
-					displayName = "Présenter plaque gendarme";
+					displayName = "Presenter plaque gendarme";
 					distance = 4;
 					condition = "_target isKindOf 'Man' && {alive _target} && {playerSide == west}";
 					statement = "[_target,'flic'] spawn life_fnc_showId";
@@ -155,7 +155,7 @@ class CfgVehicles {
 					priority = 2.6;
 				};
 				class ACE_Carte2 {
-					displayName = "Présenter carte";
+					displayName = "Presenter carte";
 					distance = 4;
 					condition = "_target isKindOf 'Man' && {alive _target}";
 					statement = "[_target,'civ'] spawn life_fnc_showId";
@@ -164,7 +164,7 @@ class CfgVehicles {
 					priority = 2.7;
 				};
 				class ACE_CopAlcool	{
-					  displayName = "Contrôler Alcool et Stup";
+					  displayName = "Controler Alcool et Stup";
 					  distance = 4;
 					  condition = "alive _target && {isPlayer _target} && {_target isKindOf 'Man'} && {playerSide == west} && {side _target in [civilian,independent,west]}";
 					  /*statement = "[_target,player] spawn life_fnc_souffler";*/
@@ -174,7 +174,7 @@ class CfgVehicles {
 					  hotkey = "A";
 				};
 				class ACE_Reanimer {
-					displayName = "Réanimer";
+					displayName = "Reanimer";
 					distance = 4;
 					condition = "(_target isKindOf 'Man') && {!alive _target} && {playerSide in [west,independent]} && {'Medikit' in (items player)}";
 					statement = "[_target] spawn life_fnc_revivePlayer";
@@ -536,7 +536,7 @@ class CfgVehicles {
 		    };
 			class ACE_SkinAnimal
 		    {
-				displayName = "Dépecer";
+				displayName = "Depecer";
 				condition = "alive player && playerSide == civilian && !isNull cursorTarget && (player distance cursorTarget) < 4 && !life_istazed && !(player getVariable 'AGM_isEscorting') && !(player getVariable 'ACE_Captives_isHandcuffed') && !(player getVariable 'ACE_Captives_isSurrendering') && (typeOf cursorTarget) in ['Cock_random_F','Hen_random_F','Goat_random_F','Sheep_random_F'] && !alive life_cursorTarget";
 				statement = "[] spawn life_fnc_skinAnimal;";
 				showDisabled = 1;

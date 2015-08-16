@@ -90,7 +90,7 @@ private ["_team"];
 {false},
 [21, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(CopSiren), "Sirène véhicule",
+["ACE3 Common", QGVAR(CopSiren), "Sirene vehicule",
 {
     // Conditions: canInteract
     if !([ACE_player, objNull, ["isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};   // not needed
@@ -118,7 +118,7 @@ private ["_team"];
 {false},
 [38, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(Carlock), "Vérouiller/Déverouiller véhicule",
+["ACE3 Common", QGVAR(Carlock), "Verouiller Deverouiller vehicule",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};
@@ -132,7 +132,7 @@ private ["_team"];
 {false},
 [22, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(OpenInventory), "Inventaire véhicule",
+["ACE3 Common", QGVAR(OpenInventory), "Inventaire vehicule",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, ["isNotSwimming","isNotInside"]] call EFUNC(common,canInteractWith)) exitWith {false};
@@ -146,7 +146,7 @@ private ["_team"];
 {false},
 [20, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(Fight), "Combat - Main/Arme",
+["ACE3 Common", QGVAR(Fight), "Combat Main Arme",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};
@@ -160,7 +160,7 @@ private ["_team"];
 {false},
 [46, [false, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(FightLegs), "Combat - Pied",
+["ACE3 Common", QGVAR(FightLegs), "Combat Pied",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};
@@ -174,7 +174,7 @@ private ["_team"];
 {false},
 [46, [true, false, false]], false] call cba_fnc_addKeybind;
 
-["ACE3 Common", QGVAR(FightKill), "Combat - Etrangler",
+["ACE3 Common", QGVAR(FightKill), "Combat Etrangler",
 {
     // Conditions: canInteract
 	if !([ACE_player, objNull, []] call EFUNC(common,canInteractWith)) exitWith {false};
