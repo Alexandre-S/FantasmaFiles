@@ -55,7 +55,8 @@ _water ctrlSetText format["%1", life_thirst];
 _water ctrlCommit 0;
 //Update Health
 _health ctrlSetPosition [safeZoneX+safeZoneW-0.090,safeZoneY+safeZoneH-0.456];
-_health ctrlSetText format["%1", round((1 - (damage player)) * 100)];
+// _health ctrlSetText format["%1", round((1 - (damage player)) * 100)];
+_health ctrlSetText format["%1", (player getVariable["ACE_medical_bloodVolume",100])];
 _health ctrlCommit 0;
 //Update Money
 _dependance ctrlSetPosition [safeZoneX+safeZoneW-0.090,safeZoneY+safeZoneH-0.410];

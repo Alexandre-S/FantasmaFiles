@@ -121,4 +121,5 @@ if((_damage > 0.01) && (_part == "") && (alive _unit) && (!isNull _source) && (_
 };
 
 [] call life_fnc_hudUpdate;
+_damage = 0;
 _damage;
