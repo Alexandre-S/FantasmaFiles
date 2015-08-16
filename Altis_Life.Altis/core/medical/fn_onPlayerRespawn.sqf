@@ -9,10 +9,10 @@
 private["_unit","_corpse"];
 _unit = _this select 0;
 _unit setVariable ["BIS_enableRandomization",false];
-// _corpse = _this select 1;
-// life_corpse = _corpse;
-// life_corpse setVariable["life_corps",true,true];
-// _unit setVariable["life_corpse_var",_corpse,true];
+_corpse = _this select 1;
+life_corpse = _corpse;
+life_corpse setVariable["life_corps",true,true];
+_unit setVariable["life_corpse_var",_corpse,true];
 
 //Comment this code out if you want them to keep the weapon on the ground.
 private["_containers"];
@@ -20,9 +20,9 @@ private["_containers"];
 //{deleteVehicle _x;} foreach _containers; //Delete the containers.
 
 //Set some vars on our new body.
-// _unit setVariable["ACE_captives_isHandcuffed",false,true];
-// _unit setVariable["ACE_captives_isEscorting",false,true];
-// _unit setVariable["ACE_captives_isSurrendering", false, true];
+_unit setVariable["ACE_captives_isHandcuffed",false,true];
+_unit setVariable["ACE_captives_isEscorting",false,true];
+_unit setVariable["ACE_captives_isSurrendering", false, true];
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Reset the UID.
 _unit setVariable["realname",profileName,true]; //Reset the players name.
 

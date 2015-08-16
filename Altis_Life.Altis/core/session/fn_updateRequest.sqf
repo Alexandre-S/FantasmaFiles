@@ -28,15 +28,13 @@ if (spawnmenuon == 1) then {
 	_packet pushBack (getPosATL player);
 };
 
-if((player getVariable["ACE_isUnconscious",false]) || !(alive player)) then {life_is_alive = false;} else {life_is_alive = true;};
-//if((player getVariable["Revive",true]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
+if((player getVariable["Revive",true]) && alive player) then {life_is_alive = true;} else {life_is_alive = false;};
 //diag_log format ["DEBUG CLIENT UPDATE %1, %2", player getVariable["Revive",false], alive player];
 _packet pushBack life_is_alive;
 
 _packet pushBack life_hunger;
 _packet pushBack life_thirst;
-// _packet pushBack (damage player);
-_packet pushBack (player getVariable["ACE_medical_bloodVolume",100]);
+_packet pushBack (damage player);
 
 switch (playerSide) do {
 	case civilian: {

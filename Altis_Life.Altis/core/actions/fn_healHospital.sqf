@@ -10,7 +10,5 @@ titleText[localize "STR_NOTF_HS_Healing","PLAIN"];
 sleep 8;
 if(player distance (_this select 0) > 5) exitWith {titleText[localize "STR_NOTF_HS_ToFar","PLAIN"]};
 titleText[localize "STR_NOTF_HS_Healed","PLAIN"];
-// player setdamage 0;
-player setVariable["ACE_medical_bloodVolume",100,true];
-
+player setdamage 0;
 life_cash = life_cash - 100;
