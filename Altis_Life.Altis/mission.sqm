@@ -5351,7 +5351,7 @@ class Mission
 					special="NONE";
 					id=319;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -5367,7 +5367,7 @@ class Mission
 					special="NONE";
 					id=320;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_1";
@@ -5382,7 +5382,7 @@ class Mission
 					special="NONE";
 					id=321;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_2";
@@ -5397,7 +5397,7 @@ class Mission
 					special="NONE";
 					id=322;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_10";
@@ -5412,7 +5412,7 @@ class Mission
 					special="NONE";
 					id=323;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_9";
@@ -5427,7 +5427,7 @@ class Mission
 					special="NONE";
 					id=324;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_8";
@@ -5442,7 +5442,7 @@ class Mission
 					special="NONE";
 					id=325;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_4";
@@ -5457,7 +5457,7 @@ class Mission
 					special="NONE";
 					id=326;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_5";
@@ -5472,7 +5472,7 @@ class Mission
 					special="NONE";
 					id=327;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_6";
@@ -5487,7 +5487,7 @@ class Mission
 					special="NONE";
 					id=328;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_7";
@@ -5501,7 +5501,7 @@ class Mission
 					azimut=30.994539;
 					id=329;
 					side="GUER";
-					vehicle="i_survivor_F";
+					vehicle="C_man_1";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="medic_11";
