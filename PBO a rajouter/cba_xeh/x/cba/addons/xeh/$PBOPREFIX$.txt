@@ -1,0 +1,5 @@
+///////<HEADER>///////
+prefix=x\cba\addons\xeh
+Pbo Type is: Arma Addon
+Sha: '0402D1F5F9B9EE858F92B6010FBD0B2A0ABED4C0'
+//////</HEADER>//////
