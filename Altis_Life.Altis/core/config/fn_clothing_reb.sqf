@@ -504,8 +504,6 @@ switch (_filter) do
 			{
 				_ret pushBack ["rhs_sidor",nil,2000];
 				
-				_ret pushBack ["PMC_AssaultPack_Tan",nil,2500];
-				
 				_ret pushBack ["B_FieldPack_cbr",nil,3500];
 				_ret pushBack ["B_FieldPack_oli",nil,3500];		
 				
