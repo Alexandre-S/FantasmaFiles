@@ -158,7 +158,8 @@ _patchList =
 "asdg_jointrails_xtra","plp_containers",
 "asdg_jointmuzzles","asdg_jointrails_xacc","asdg_jointrails_xdmr06","asdg_jointrails_xebr","asdg_jointrails_xm200","asdg_jointrails_xmmg01","asdg_jointrails_xmmg02","asdg_jointrails_xzafir",
 "ace_finger","ace_sitting","ace_slideshow",
-"PG_SERVICES_PMC_UNITS","PG_SERVICES_PMC_HEADER","FEMAL3_v1","More_Heads"
+"PG_SERVICES_PMC_UNITS","PG_SERVICES_PMC_HEADER","FEMAL3_v1","More_Heads",
+"cba_jr"
 ];
 
 uiNamespace setVariable["RscDisplayRemoteMissions",displayNull]; //For Spy-Glass..
