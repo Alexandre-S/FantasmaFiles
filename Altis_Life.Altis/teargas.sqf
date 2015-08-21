@@ -30,8 +30,7 @@ ef4 ppEffectCommit 1;
 		resetCamShake; // resets the shake
 		20 fadeSound 1;     //fades the sound back to normal
 
-
-		waituntil{ sleep 0.3; (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)) };
+		waituntil{ sleep 0.5; (((nearestObject [getpos player, "SmokeShellYellow"]) distance player < 10) && (getpos (nearestObject [getpos player, "SmokeShellYellow"]) select 2 < 0.5)) };
 
 		if (!(goggles player in ["Mask_M50","Mask_M40","Mask_M40_OD"])) then
 		{

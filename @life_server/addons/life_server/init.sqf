@@ -10,15 +10,32 @@ server_debug = true;
 
 [] spawn {
 	while{true} do
-	 {
-		diag_log format["==============================FPS %1",diag_fps];
-		diag_log format["====================diag_activeSQFScripts %1",count diag_activeSQFScripts];
-		{diag_log format["==========%1",_x];} forEach diag_activeSQFScripts;
-		diag_log format["====================diag_activeSQSScripts %1",count diag_activeSQSScripts];
-		{diag_log format["====================%1",_x];} forEach diag_activeSQSScripts;
-		diag_log format["====================diag_activeMissionFSMs %1",count diag_activeMissionFSMs];
-		{diag_log format["====================%1",_x];} forEach diag_activeMissionFSMs;
+	{
+		savefps1sec = diag_fps;
 		sleep 1;
+		if(savefps1sec>diag_fps+4) then {
+			diag_log format["==========FPS %1 = Players %2",diag_fps,allPlayers];
+			diag_log format["=====diag_activeSQFScripts %1",count diag_activeSQFScripts];
+			{diag_log format["===%1",_x];} forEach diag_activeSQFScripts;
+			diag_log format["=====diag_activeSQSScripts %1",count diag_activeSQSScripts];
+			{diag_log format["===%1",_x];} forEach diag_activeSQSScripts;
+			diag_log format["=====diag_activeMissionFSMs %1",count diag_activeMissionFSMs];
+			{diag_log format["===%1",_x];} forEach diag_activeMissionFSMs;
+		};
+	};
+};
+
+[] spawn {
+	while{true} do
+	{
+		sleep 30;
+		diag_log format["----------FPS %1 = Players %2",diag_fps,allPlayers];
+		diag_log format["-----diag_activeSQFScripts %1",count diag_activeSQFScripts];
+		{diag_log format["---%1",_x];} forEach diag_activeSQFScripts;
+		diag_log format["-----diag_activeSQSScripts %1",count diag_activeSQSScripts];
+		{diag_log format["---%1",_x];} forEach diag_activeSQSScripts;
+		diag_log format["-----diag_activeMissionFSMs %1",count diag_activeMissionFSMs];
+		{diag_log format["---%1",_x];} forEach diag_activeMissionFSMs;
 	};
 };
 
