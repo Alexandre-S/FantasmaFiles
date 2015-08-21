@@ -11,20 +11,21 @@ server_debug = true;
 [] spawn {
 	while{true} do
 	 {
+		diag_log format["==============================FPS %1",diag_fps];
 		diag_log format["====================diag_activeSQFScripts %1",count diag_activeSQFScripts];
-		{diag_log str _x} forEach diag_activeSQFScripts;
+		{diag_log format["==========%1",_x];} forEach diag_activeSQFScripts;
 		diag_log format["====================diag_activeSQSScripts %1",count diag_activeSQSScripts];
-		{diag_log str _x} forEach diag_activeSQSScripts;
+		{diag_log format["====================%1",_x];} forEach diag_activeSQSScripts;
 		diag_log format["====================diag_activeMissionFSMs %1",count diag_activeMissionFSMs];
-		{diag_log str _x} forEach diag_activeMissionFSMs;
-		sleep 60;
+		{diag_log format["====================%1",_x];} forEach diag_activeMissionFSMs;
+		sleep 1;
 	};
 };
 
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
 
 if(!isHLC) then {
-		
+
 	life_server_isReady = false;
 	publicVariable "life_server_isReady";
 
@@ -83,11 +84,40 @@ if(!isHLC) then {
 		["CALL deleteOldGangs",1] spawn DB_fnc_asyncCall; //Maybe delete old gangs
 	};
 	
+	master_group attachTo[bank_obj,[0,0,0]];
+	//onMapSingleClick "if(_alt) then {vehicle player setPos _pos};";
+
+	//Spawn the new hospitals.
+	{
+		_hs = createVehicle ["Land_Hospital_main_F", [0,0,0], [], 0, "NONE"];
+		_hs setDir (markerDir _x);
+		_hs setPosATL (getMarkerPos _x);
+		_var = createVehicle ["Land_Hospital_side1_F", [0,0,0], [], 0, "NONE"];
+		_var attachTo [_hs, [4.69775,32.6045,-0.1125]];
+		detach _var;
+		_var = createVehicle ["Land_Hospital_side2_F", [0,0,0], [], 0, "NONE"];
+		_var attachTo [_hs, [-28.0336,-10.0317,0.0889387]]; 
+		detach _var;
+	} foreach ["hospital_3"];
+	
+	//Strip NPC's of weapons
+	{
+		if(!isPlayer _x) then {
+			_npc = _x;
+			{
+				if(_x != "") then {
+					_npc removeWeapon _x;
+				};
+			} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
+		};
+	} foreach allUnits;
+	
+	[4,true,12] execFSM "\life_server\timeModule.fsm";
+	
 	life_adminlevel = 0;
 	life_medicLevel = 0;
 	life_coplevel = 0;
 	
-
 	//Null out harmful things for the server.
 	__CONST__(JxMxE_PublishVehicle,"No");
 
@@ -107,11 +137,14 @@ if(!isHLC) then {
 		life_wanted_list = [];
 	};
 	[] execFSM "\life_server\cleanup.fsm";
+	
 	//General cleanup for clients disconnecting.
 	// addMissionEventHandler ["HandleDisconnect",{_this call TON_fnc_clientDisconnect; false;}]; //Do not second guess this, this can be stacked this way.
 	// HC_DC = ["HC_Disconnected","onPlayerDisconnected",{if(!isNil "Havena_HLCOBJ" && {_uid == getPlayerUID Havena_HLCOBJ}) then {life_HC_isActive = false;};}] call BIS_fnc_addStackedEventHandler;
 	// addMissionEventHandler ["HandleDisconnect",{if(!isNil "Havena_HLCOBJ" && {_this select 0 == hc_1}) then {life_HC_isActive = false;};}]; //Do not second guess this, this can be stacked this way.
 
+	addMissionEventHandler ["HandleDisconnect",{[] call TON_fnc_getHLC; [_this,"TON_fnc_clientDisconnect",serverhc,false] call life_fnc_MP; false;}]; //Do not second guess this, this can be stacked this way.
+	
 	// serv var to hc
 	serverloadhc = true;
 	publicVariable "serverloadhc";
@@ -149,8 +182,6 @@ if(!isHLC) then {
 	{
 		waitUntil {sleep 0.1;!isNil "Havena_HLCOBJ2"};
 	};
-	
-	addMissionEventHandler ["HandleDisconnect",{[] call TON_fnc_getHLC; [_this,"TON_fnc_clientDisconnect",serverhc,false] call life_fnc_MP; false;}]; //Do not second guess this, this can be stacked this way.
 
 	// life_gang_list = [];
 	// publicVariable "life_gang_list";
@@ -173,17 +204,7 @@ if(!isHLC) then {
 		};
 	};
 
-	//Strip NPC's of weapons
-	{
-		if(!isPlayer _x) then {
-			_npc = _x;
-			{
-				if(_x != "") then {
-					_npc removeWeapon _x;
-				};
-			} foreach [primaryWeapon _npc,secondaryWeapon _npc,handgunWeapon _npc];
-		};
-	} foreach allUnits;
+
 
 	if(server_test) then {
 		_handle = [] spawn TON_fnc_initHouses;

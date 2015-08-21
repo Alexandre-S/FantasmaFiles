@@ -53,7 +53,7 @@ _filter lbAdd localize "STR_Shop_UI_Backpack";
 _filter lbSetCurSel 0;
 
 life_oldClothes = uniform player;
-life_olduniformItems = uniformItems player;
+life_oldUniformItems = uniformItems player;
 life_oldBackpack = backpack player;
 life_oldVest = vest player;
 life_oldVestItems = vestItems player;
