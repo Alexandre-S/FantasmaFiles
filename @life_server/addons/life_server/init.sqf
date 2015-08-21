@@ -377,7 +377,7 @@ else
 			publicVariableServer "PO3_sVAR_HLCKeepAlive";
 			diag_log format["%1 sent %2 keepAlive to Server",player,PO3_sVAR_HLCKeepAlive];
 
-			sleep 15;
+			sleep 600;
 		};
 	};
 	
