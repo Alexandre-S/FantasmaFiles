@@ -3,5 +3,7 @@ DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace3
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace321\addons\ace_interaction.pbo
 
 DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace321\addons\ace_common.pbo
+DSSignFile.exe havena.biprivatekey C:\Users\sil\Documents\GitHub\altislife\@ace321\addons\ace_interact_menu.pbo
+
 
 PAUSE
