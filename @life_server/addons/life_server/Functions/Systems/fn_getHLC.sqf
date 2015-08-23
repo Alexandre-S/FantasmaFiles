@@ -1,8 +1,13 @@
 if(server_test) then {
 	serverhc = false;
 }else{
-	waitUntil {!isNil "Havena_HLCOBJ"};
-	waitUntil {!isNil "Havena_HLCOBJ2"};
+
+	if(isNil "Havena_HLCOBJ") then {
+		waitUntil {sleep 0.1;(!isNil "Havena_HLCOBJ")};
+	};
+	if(isNil "Havena_HLCOBJ2") then {
+		waitUntil {sleep 0.1;(!isNil "Havena_HLCOBJ2")};
+	};
 	// if (!(isplayer Havena_HLCOBJ) || !((getPlayerUID Havena_HLCOBJ) == "76561198128988909")) then {
 		if ((isnull Havena_HLCOBJ) || ((typeOf Havena_HLCOBJ) != "HeadlessClient_F")) then {
 		// waitUntil {sleep 0.1;(isplayer Havena_HLCOBJ)};
