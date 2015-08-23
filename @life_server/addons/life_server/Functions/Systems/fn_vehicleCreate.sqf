@@ -39,3 +39,6 @@ _vehicle addEventHandler["GetOut", {_this spawn life_fnc_vehicleExit;}];
 if(_vehicle isKindOf "Helicopter") then {
 	_vehicle addEventHandler["RopeAttach", {_this spawn life_fnc_RopeAttach;}];
 };
+
+[] call life_fnc_getHLC;
+[_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;

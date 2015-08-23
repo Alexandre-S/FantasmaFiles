@@ -170,8 +170,8 @@ playSound "caching";
 };
 
 // Force session DB save every 1 mins
-[] call life_fnc_getHLC;
-[_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
+// [] call life_fnc_getHLC;
+// [_vehicle,"TON_fnc_updateVeh",serverhc,false] spawn life_fnc_MP;
 
 [0] call SOCK_fnc_updatePartial;
 // closeDialog 0; //Exit the menu.
