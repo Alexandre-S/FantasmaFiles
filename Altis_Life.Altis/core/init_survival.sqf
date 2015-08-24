@@ -64,12 +64,12 @@
 	private["_bp","_load","_cfg"];
 	while{true} do
 	{
-		waitUntil {sleep 0.1; backpack player != ""};
+		waitUntil {sleep 0.3; backpack player != ""};
 		_bp = backpack player;
 		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
-		waitUntil {sleep 0.1; backpack player != _bp};
+		waitUntil {sleep 0.3; backpack player != _bp};
 		if(backpack player == "") then 
 		{
 			life_maxWeight = life_maxWeightT;
@@ -130,7 +130,7 @@
 {
 	while {true} do
 	{
-		waitUntil {(life_drink > 0)};
+		waitUntil {sleep 0.3; life_drink > 0};
 		while{(life_drink > 0)} do {
 			enableCamShake true;
 			if(life_drink > 0.25) then {
