@@ -14,7 +14,7 @@ titleText ["ESP activé pour 2 min, F4 pour desactiver","PLAIN DOWN"]; titleFade
 //player setVariable ["hav_cachePDis",true,true];
 
 [] spawn {
-	sleep 120;
+	sleep 300;
 	marker_mapesp = false;
 };
 
