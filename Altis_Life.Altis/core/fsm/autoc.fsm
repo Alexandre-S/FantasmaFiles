@@ -12,15 +12,13 @@ item7[] = {"ON",4,218,266.945129,29.234726,356.945038,79.233841,0.000000,"ON"};
 item8[] = {"update",2,250,-147.215363,376.987091,-57.215199,426.987061,0.000000,"update"};
 item9[] = {"check",2,250,-146.653168,594.266724,-56.653221,644.267029,0.000000,"check"};
 item10[] = {"ON",4,218,-148.127258,455.919403,-58.127174,505.919250,0.000000,"ON"};
-item11[] = {"delay",8,218,-151.489685,264.200470,-61.489685,314.200470,0.000000,"delay"};
+item11[] = {"true_",8,4314,-151.489685,264.200470,-61.489685,314.200470,0.000000,"true" \n ""};
 item12[] = {"delay_done_",4,218,266.604309,452.140198,356.604309,502.139832,0.000000,"delay done?"};
 item13[] = {"wait",2,250,265.898499,315.690491,355.898376,365.690521,0.000000,"wait"};
 item14[] = {"delay",8,218,-269.505646,-102.722237,-179.505646,-52.722237,0.000000,"delay"};
 item15[] = {"delayed_1",2,250,-417.007996,-101.774094,-327.007965,-51.774048,0.000000,"delayed"};
 item16[] = {"done_delay_",4,218,-317.266266,27.532471,-227.266266,77.532471,0.000000,"done delay?"};
 item17[] = {"map_open_",4,218,-290.864746,-32.667034,-200.864746,17.332966,3.000000,"map open?"};
-item18[] = {"delayed_2",2,4346,-149.680176,192.885330,-59.680161,242.885330,0.000000,"delayed"};
-item19[] = {"done_delay_",4,218,-149.680176,124.889877,-59.680176,174.889877,0.000000,"done delay?"};
 link0[] = {0,1};
 link1[] = {1,2};
 link2[] = {2,3};
@@ -36,7 +34,7 @@ link11[] = {8,11};
 link12[] = {9,5};
 link13[] = {9,10};
 link14[] = {10,8};
-link15[] = {11,18};
+link15[] = {11,2};
 link16[] = {12,13};
 link17[] = {13,5};
 link18[] = {13,7};
@@ -44,10 +42,8 @@ link19[] = {14,15};
 link20[] = {15,16};
 link21[] = {16,2};
 link22[] = {17,15};
-link23[] = {18,19};
-link24[] = {19,2};
 globals[] = {0.000000,0,0,0,0,640,480,2,64,6316128,1,-557.983276,389.181641,766.455811,-302.220367,794,911,1};
-window[] = {2,-1,-1,-1,-1,1083,200,1918,200,3,812};
+window[] = {2,-1,-1,-1,-1,983,100,1818,100,3,812};
 *//*%FSM</HEAD>*/
 class FSM
 {
@@ -189,11 +185,11 @@ class FSM
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
-        /*%FSM<LINK "delay">*/
-        class delay
+        /*%FSM<LINK "true_">*/
+        class true_
         {
           priority = 0.000000;
-          to="delayed_2";
+          to="lets_go";
           precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
           condition=/*%FSM<CONDITION""">*/""/*%FSM</CONDITION""">*/;
           action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
@@ -271,27 +267,6 @@ class FSM
     {
       name = "delayed_1";
       init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.1;"/*%FSM</STATEINIT""">*/;
-      precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
-      class Links
-      {
-        /*%FSM<LINK "done_delay_">*/
-        class done_delay_
-        {
-          priority = 0.000000;
-          to="lets_go";
-          precondition = /*%FSM<CONDPRECONDITION""">*/""/*%FSM</CONDPRECONDITION""">*/;
-          condition=/*%FSM<CONDITION""">*/"time > _delayed"/*%FSM</CONDITION""">*/;
-          action=/*%FSM<ACTION""">*/""/*%FSM</ACTION""">*/;
-        };
-        /*%FSM</LINK>*/
-      };
-    };
-    /*%FSM</STATE>*/
-    /*%FSM<STATE "delayed_2">*/
-    class delayed_2
-    {
-      name = "delayed_2";
-      init = /*%FSM<STATEINIT""">*/"_delayed = time +  0.05;"/*%FSM</STATEINIT""">*/;
       precondition = /*%FSM<STATEPRECONDITION""">*/""/*%FSM</STATEPRECONDITION""">*/;
       class Links
       {
