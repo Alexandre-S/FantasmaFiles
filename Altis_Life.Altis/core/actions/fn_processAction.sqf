@@ -10,17 +10,17 @@ life_action_delay = time;
 private["_blok","_vendor","_type","_itemInfo","_2var","_oldItem","_oldItem2","_newItem","_cost","_upp","_hasLicense","_itemName","_oldVal","_oldVal2","_ui","_progress","_pgText","_cP","_delayInt","_error1","_error2"];
 _vendor = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _type = [_this,3,"",[""]] call BIS_fnc_param;
-_blok = false;
+// _blok = false;
 //Error check
 if(isNull _vendor OR _type == "" OR (player distance _vendor > 10)) exitWith {};
-if(_type in ["heroin","lsd","cocaine","marijuana"]) then{
+/*if(_type in ["heroin","lsd","cocaine","marijuana"]) then{
 	if(({side _x == west} count playableUnits) <= 3) then{
 		hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment.<br/><br/>[HRP]Pas assez de gendarmes présents[/HRP]"];
 		_blok = true;
 	};
-};
+};*/
 
-if(!_blok) then {
+// if(!_blok) then {
 	//unprocessed item,processed item, cost if no license,Text to display (I.e Processing  (percent) ..."
 	_itemInfo = switch (_type) do
 	{
@@ -97,6 +97,10 @@ if(!_blok) then {
 	if(_hasLicense) then
 	{
 		_delayInt = _oldVal * 0.03;
+		if(_type in ["heroin","lsd","cocaine","marijuana","moonshine","bottledshine"]) then {
+			_delayInt = _oldVal * 0.09;
+		};
+		
 		while{true} do
 		{
 			sleep _delayInt;
@@ -128,6 +132,9 @@ if(!_blok) then {
 		if(life_cash < _cost) exitWith {hint format[localize "STR_Process_License",[_cost] call life_fnc_numberText]; 5 cutText ["","PLAIN"]; life_is_processing = false;};
 		
 		_delayInt = _oldVal * 0.09;
+		if(_type in ["heroin","lsd","cocaine","marijuana","moonshine","bottledshine"]) then {
+			_delayInt = _oldVal * 0.18;
+		};
 		while{true} do
 		{
 			sleep _delayInt;
@@ -158,4 +165,4 @@ if(!_blok) then {
 		[0] call SOCK_fnc_updatePartial;
 		[3] call SOCK_fnc_updatePartial;
 	};	
-};
+// };

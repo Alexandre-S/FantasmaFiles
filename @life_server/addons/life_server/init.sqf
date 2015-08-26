@@ -169,7 +169,7 @@ if(!isHLC) then {
 		
 			{
 				_x setVariable["sellers",[],true];
-			} foreach [Dealer_1,Dealer_2,Dealer_3];
+			} foreach [Dealer_1,Dealer_2,Dealer_3,Speakeasy_1,Speakeasy_2];
 		};
 	};
 

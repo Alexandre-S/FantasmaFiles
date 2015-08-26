@@ -12,7 +12,8 @@ switch (_shop) do
 {
 	case "market": {["Altis Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","chicken","goat","sheep","excavator","cornmeal","bottles"]]};
 	case "bar": {["The Lounge",["bottledbeer","bottledwhiskey"]]};
-	case "speakeasy": {["Speakeasy's",["bottledwhiskey","bottledshine","bottledbeer","moonshine"]]};
+	case "speakeasy": {["Speakeasy's",["bottledshine"]]};
+	// case "speakeasy": {["Speakeasy's",["bottledwhiskey","bottledshine","bottledbeer","moonshine"]]};
 	case "house": {["House Market",["storagesmall","storagebig"]]};
 	case "station_ser_virt": {["Station Service",["water","rabbit","redgull","tbacon","pickaxe","fuelF","nitro"]]};
 	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","boltcutter","blastingcharge","sandbag","sandbagr"]]};

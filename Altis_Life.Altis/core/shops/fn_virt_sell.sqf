@@ -11,7 +11,7 @@ life_action_delay = time;
 private["_blok","_type","_index","_price","_var","_amount","_name","_marketprice","_weight","_index2","_array","_ind","_val","_valdeja","_trop"];
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
-_blok = false;
+// _blok = false;
 _index = [_type,__GETC__(sell_array)] call life_fnc_index;
 if(_index == -1) exitWith {};
 _price = (__GETC__(sell_array) select _index) select 1;
@@ -24,7 +24,7 @@ if(_marketprice != -1) then { _price = _marketprice; };*/
 _price = ceil(_price + (((__GETC__(life_donator) * 5) / 100) * _price));
 
 // Si pas de licence entreprise, prix - 20%
-if(!l_c_entreprise && life_shop_type != "heroin") then
+if(!l_c_entreprise && !(life_shop_type in ["heroin","speakeasy"])) then
 {
 	_price = ceil(_price * 0.80);
 };
@@ -35,27 +35,28 @@ _amount = parseNumber (_amount);
 if(_amount > (missionNameSpace getVariable _var)) exitWith {hint localize "STR_Shop_Virt_NotEnough"};
 
 _trop = false;
-if(life_shop_type == "heroin") then
+if(life_shop_type in ["heroin","speakeasy"]) then
 {
-	if(({side _x == west} count playableUnits) <= 3) then {
-		//hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment."];
+	/*if(({side _x == west} count playableUnits) <= 3) then {
 		_blok = true;
-	};
-	/*_array = life_shop_npc getVariable["sellers",[]];
+	};*/
+	_array = life_shop_npc getVariable["sellers",[]];
 	_ind = [getPlayerUID player,_array] call life_fnc_index;
 	if(_ind != -1) then
 	{
 		_valdeja = (_array select _ind) select 2;
-		if(_valdeja>30) then {
+		if(_valdeja>10) then {
 			_trop = true;
 		} else {
-			if((_valdeja+_amount)>30) then {
-				_amount = (30-_valdeja);
+			if((_valdeja+_amount)>10) then {
+				_amount = (10-_valdeja);
 			};
 		};
-	};*/
+	};
 };
-if(_blok) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment.<br/><br/>[HRP]Pas assez de gendarmes présents[/HRP]"]};
+// if(_blok) exitWith {hint format["Désolé mon pote, mais je ne peux rien faire pour toi pour le moment.<br/><br/>[HRP]Pas assez de gendarmes présents[/HRP]"]};
+
+if(_trop) exitWith {hint localize "STR_Shop_Virt_Trop"};
 
 if(_index2 != -1) then {
 // if!(_type in ["water","coffee","donuts","tbacon","lockpick","pickaxe","redgull","fuelF","spikeStrip","pcp","storage1","storage2","nitro","redburger","soda","apple","rabbit","peach"]) then {
@@ -83,10 +84,9 @@ if(([false,_type,_amount] call life_fnc_handleInv)) then
 	};*/
 	playSound "caching";
 	[] call life_fnc_virt_update;
-	
 };
 
-if(life_shop_type == "heroin") then
+if(life_shop_type in ["heroin","speakeasy"]) then
 {
 	// _array = life_shop_npc getVariable["sellers",[]];
 	// _ind = [getPlayerUID player,_array] call life_fnc_index;

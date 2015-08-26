@@ -43,6 +43,8 @@ if(life_inv_turtle > 0) then {[false,"turtle",life_inv_turtle] call life_fnc_han
 if(life_inv_cannabis > 0) then {[false,"cannabis",life_inv_cannabis] call life_fnc_handleInv;};
 if(life_inv_marijuana > 0) then {[false,"marijuana",life_inv_marijuana] call life_fnc_handleInv;};
 if(life_inv_lockpick > 0) then {[false,"lockpick",life_inv_lockpick] call life_fnc_handleInv;};
+if(life_inv_moonshine > 0) then {[false,"lockpick",life_inv_lockpick] call life_fnc_handleInv;};
+if(life_inv_bottledshine > 0) then {[false,"lockpick",life_inv_lockpick] call life_fnc_handleInv;};
 life_is_arrested = true;
 
 removeAllWeapons player;
