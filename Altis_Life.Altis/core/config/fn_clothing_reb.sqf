@@ -266,7 +266,7 @@ switch (_filter) do
 				["H_Shemag_tan",nil,1250],
 				["H_caf_ag_turban",nil,700],
 				["H_caf_ag_beanie",nil,600],
-				["H_caf_ag_fur2",nil,700],
+				// ["H_caf_ag_fur2",nil,700],
 				["H_caf_ag_fur",nil,700]
 			];
 		
