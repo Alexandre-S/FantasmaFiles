@@ -2,7 +2,12 @@ if(isServer OR !hasInterface) exitwith {};
 private["_msg","_from", "_type","_fromplayer","_position"];
 _msg = _this select 0;
 _fromplayer = _this select 1;
-_from = name _fromplayer;
+if(isNull _fromplayer) then {
+	_from = "automatique";
+} else {
+	_from = name _fromplayer;
+};
+
 _type = _this select 2;
 if(_from == "") exitWith {};
 switch (_type) do

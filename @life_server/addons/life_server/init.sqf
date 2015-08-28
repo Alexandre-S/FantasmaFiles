@@ -24,6 +24,19 @@ server_debug = true;
 if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; };
 
 if(!isHLC) then {
+
+	[] spawn {
+		sleep 234*60;
+		[["REBOOT SERVEUR DANS 5 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 4 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 3 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 2 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 1 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+	};
 		
 	life_server_isReady = false;
 	publicVariable "life_server_isReady";

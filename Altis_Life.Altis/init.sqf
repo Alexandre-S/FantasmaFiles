@@ -7,6 +7,8 @@ X_Client = false;
 X_JIP = false;
 StartProgress = false;
 
+allside = [civilian,independent,west];
+
 //TFR
 tf_radio_channel_name = "EN JEU TASK FORCE RADIO";
 tf_radio_channel_password = "8heWrecawR";
