@@ -18,11 +18,11 @@ if(_uid == "" OR _profileName == "" OR _unitid == -1) exitWith {};
 if(_code == 0) then {
 	_query = format["UPDATE players SET name='%3', wipe='%2' WHERE playerid='%1'",_uid,_code,_profileName];
 	//Execute SQL Statement
-	waitUntil{!DB_Async_Active};
+	waitUntil{sleep 0.1;!DB_Async_Active};
 	_sql = [_query,1] call DB_fnc_asyncCall;
 } else {
 	_query = format["SELECT name, aliases FROM players WHERE playerid='%1'",_uid];
-	waitUntil{!DB_Async_Active};
+	waitUntil{sleep 0.1;!DB_Async_Active};
 	_result = [_query,2] call DB_fnc_asyncCall;
 
 	_name = (_result select 0);
@@ -36,24 +36,24 @@ if(_code == 0) then {
 		_aliases pushBack _name;
 		_aliases = [_aliases] call DB_fnc_mresArray;
 		_query = format["UPDATE players SET aliases='%1' WHERE playerid='%2'",_aliases,_uid];
-		waitUntil{!DB_Async_Active};
+		waitUntil{sleep 0.1;!DB_Async_Active};
 		_result = [_query,1] call DB_fnc_asyncCall;
 	};
 
 
 	_query = format["UPDATE players SET name='%3', cash='0', bankacc='10000', coplevel='0', cop_licenses='""[]""', civ_licenses='""[]""', med_licenses='""[]""',cop_gear='""[]""', med_gear='""[]""', mediclevel='0', arrested='0', civ_gear='""[]""', blacklist='0', faction_reb='0', grade_reb='0', position='""[]""', taxi='0', dep='0', damage='0', hunger='100', thirst='100', wipe='%2' WHERE playerid='%1'",_uid,_code,_profileName];
 	//Execute SQL Statement
-	waitUntil{!DB_Async_Active};
+	waitUntil{sleep 0.1;!DB_Async_Active};
 	_sql = [_query,2] call DB_fnc_asyncCall;
 
 	_query = format["UPDATE houses SET owned='0' WHERE pid = '%1'",_uid];
 	//Execute SQL Statement
-	waitUntil{!DB_Async_Active};
+	waitUntil{sleep 0.1;!DB_Async_Active};
 	_sql = [_query,2] call DB_fnc_asyncCall;
 
 	_query = format["UPDATE vehicles SET alive='0' WHERE pid = '%1'",_uid];
 	//Execute SQL Statement
-	waitUntil{!DB_Async_Active};
+	waitUntil{sleep 0.1;!DB_Async_Active};
 	_sql = [_query,2] call DB_fnc_asyncCall;
 
 	[[],"life_fnc_wipeok",_unitid,false] spawn life_fnc_MP;
