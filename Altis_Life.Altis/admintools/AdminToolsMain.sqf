@@ -27,11 +27,13 @@ _EXECscript2 = 'player execVM "'+_pathtovehicles+'%1"';
 	76561198049343521 : Oleksiy Ilya
 	76561198119632246 : Mike DelAvega
 	76561198115580555 : Igor Pokrovsky
+	76561198059456390 : Jean-Pierre Boutentrain
+	76561198043520847 : Vlad Bazarov
 */
 
 //customise these menus to fit your server
-if ((getPlayerUID player) in ["76561197971054451","76561197999056075","76561198026019944","76561197983740568","76561198010101889","76561197985429466","76561197969337890","76561197997451635","76561198004672533","76561198119632246","76561198115580555"]) then { //all admins
-	if ((getPlayerUID player) in ["76561197999056075","76561198026019944","76561197983740568","76561198119632246","76561198115580555"]) then { //mods
+if ((getPlayerUID player) in ["76561197971054451","76561198026019944","76561197985429466","76561197969337890","76561197997451635","76561198004672533","76561198119632246","76561198115580555","76561198007128754","76561198059456390","76561198043520847"]) then { //all admins
+	if ((getPlayerUID player) in ["76561198119632246","76561198115580555","76561198004672533","76561198059456390","76561198026019944","76561198043520847"]) then { //mods
         adminmenu =
         [
 			["",true],
@@ -40,16 +42,7 @@ if ((getPlayerUID player) in ["76561197971054451","76561197999056075","765611980
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
         ];
 	};
-	if ((getPlayerUID player) in ["76561197969337890"]) then { //mods
-        adminmenu =
-        [
-			["",true],
-				["Tools Menu", [2], "#USER:GM2ToolsMenu", -5, [["expression", ""]], "1", "1"],
-				["", [-1], "", -5, [["expression", ""]], "1", "0"],
-			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
-        ];
-	};
-	if ((getPlayerUID player) in ["76561197985429466","76561197997451635"]) then { //globaux
+	if ((getPlayerUID player) in ["76561197969337890"]) then { //globaux
         adminmenu =
         [
 			["",true],
@@ -58,16 +51,7 @@ if ((getPlayerUID player) in ["76561197971054451","76561197999056075","765611980
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
         ];
 	};
-	if ((getPlayerUID player) in ["76561198004672533"]) then { //gendarme spy
-        adminmenu =
-        [
-			["",true],
-				["Tools Menu", [2], "#USER:AdminToolsMenu", -5, [["expression", ""]], "1", "1"],
-				["", [-1], "", -5, [["expression", ""]], "1", "0"],
-			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]	
-        ];
-	};
-	if ((getPlayerUID player) in ["76561197971054451","76561198010101889"]) then { // super admins
+	if ((getPlayerUID player) in ["76561197971054451","76561197985429466","76561197997451635","76561198007128754"]) then { // super admins
 		adminmenu =
 		[
 			["",true],
@@ -94,22 +78,6 @@ GMToolsMenu =
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
-GM2ToolsMenu =
-[
-	["",true],
-		//["God Mode", [2],  "", -5, [["expression", format[_EXECscript1,"Godmode.sqf"]]], "1", "1"],
-		//["Car God", [3],  "", -5, [["expression", format[_EXECscript1,"cargod.sqf"]]], "1", "1"],
-		//["Spectate Player", [4],  "", -5, [["expression", format[_EXECscript1,"spectate.sqf"]]], "1", "1"],
-		["Teleport To Me", [5], "", -5, [["expression", format[_EXECscript1, "TPtoME.sqf"]]], "1", "1"],
-		["Teleport Me To Other", [5], "", -5, [["expression", format[_EXECscript1, "TPtoOther.sqf"]]], "1", "1"],
-		//["Invisible", [5], "", -5, [["expression", format[_EXECscript1, "fufu.sqf"]]], "1", "1"],
-		["ESP", [6], "", -5, [["expression", format[_EXECscript1, "ESP.sqf"]]], "1", "1"],
-		["Teleport", [7], "", -5, [["expression", format[_EXECscript1, "Tele.sqf"]]], "1", "1"],
-		["Camera", [8], "", -5, [["expression", format[_EXECscript1, "camera.sqf"]]], "1", "1"],
-		//["Heal", [9], "", -5, [["expression", format[_EXECscript1, "heal.sqf"]]], "1", "1"],
-		["", [-1], "", -5, [["expression", ""]], "1", "0"],
-			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
-];
 //customise to fit
 ModToolsMenu =
 [
@@ -128,7 +96,7 @@ ModToolsMenu =
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
 ];
 //customise to fit
-AdminToolsMenu =
+/*AdminToolsMenu =
 [
 	["",true],
 		//["God Mode", [2],  "", -5, [["expression", format[_EXECscript1,"Godmode.sqf"]]], "1", "1"],
@@ -143,7 +111,7 @@ AdminToolsMenu =
 		//["Heal", [9], "", -5, [["expression", format[_EXECscript1, "heal.sqf"]]], "1", "1"],
 		["", [-1], "", -5, [["expression", ""]], "1", "0"],
 			["Exit", [13], "", -3, [["expression", ""]], "1", "1"]
-];
+];*/
 ToolsMenu =
 [
 	["",true],
