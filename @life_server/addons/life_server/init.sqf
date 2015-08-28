@@ -25,19 +25,6 @@ if ((!IsDedicated)&&(!hasinterface)) then {	isHLC = true; }else{ isHLC = false; 
 
 if(!isHLC) then {
 
-	[] spawn {
-		sleep 234*60;
-		[["REBOOT SERVEUR DANS 5 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
-		sleep 60;
-		[["REBOOT SERVEUR DANS 4 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
-		sleep 60;
-		[["REBOOT SERVEUR DANS 3 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
-		sleep 60;
-		[["REBOOT SERVEUR DANS 2 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
-		sleep 60;
-		[["REBOOT SERVEUR DANS 1 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
-	};
-		
 	life_server_isReady = false;
 	publicVariable "life_server_isReady";
 
@@ -247,6 +234,19 @@ if(!isHLC) then {
 		//[AiCacheDistance(players),TargetFPS(-1 for Auto),Debug,CarCacheDistance,AirCacheDistance,BoatCacheDistance]execvm "zbe_cache\main.sqf";
 		[100,-1,true,100,1000,1000]execvm "\life_server\zbe_cache\main.sqf";
 		[] spawn TON_fnc_huntingZone;
+	};
+	
+	[] spawn {
+		sleep 21240;
+		[["REBOOT SERVEUR DANS 5 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 4 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 3 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 2 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
+		sleep 60;
+		[["REBOOT SERVEUR DANS 1 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
 	};
 }
 else
