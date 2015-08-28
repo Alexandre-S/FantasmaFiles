@@ -499,6 +499,13 @@ switch (_filter) do
 				["B_Parachute",nil,15000]
 			];
 			
+			// CosmoData
+			if(__GETC__(life_factnumber) == 3) then
+			{
+				_ret pushBack ["I_UAV_01_backpack_F",nil,30000];
+			};			
+						
+			
 			// Danann
 			if(__GETC__(life_factnumber) == 2) then
 			{

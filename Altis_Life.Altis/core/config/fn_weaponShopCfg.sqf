@@ -697,8 +697,12 @@ switch(_shop) do
 					};
 					if(__GETC__(life_factnumber) == 2) then
 					{
-							(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,40000];
-							(_ret select 1) pushBack ["ACE_M26_Clacker",nil,1000];
+							(_ret select 1) pushBack ["SatchelCharge_Remote_Mag",nil,30000];
+							(_ret select 1) pushBack ["ACE_M26_Clacker",nil,11000];
+					};
+					if(__GETC__(life_factnumber) == 3) then
+					{
+							(_ret select 1) pushBack ["Item_I_UavTerminal",nil,11000];
 					};
 				};
 				// Rang 2
