@@ -13,6 +13,7 @@ _vehicles = [_this,0,[],[[]]] call BIS_fnc_param;
 
 ctrlShow[2803,false];
 ctrlShow[2830,false];
+ctrlShow [97480,false];
 waitUntil {!isNull (findDisplay 2800)};
 
 if(count _vehicles == 0) exitWith
