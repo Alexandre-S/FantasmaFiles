@@ -237,7 +237,7 @@ if(!isHLC) then {
 	};
 	
 	[] spawn {
-		sleep 21240;
+		sleep 21060;
 		[["REBOOT SERVEUR DANS 5 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
 		sleep 60;
 		[["REBOOT SERVEUR DANS 4 MIN",player,4],"life_fnc_clientMessage",allside,false] spawn life_fnc_MP;
