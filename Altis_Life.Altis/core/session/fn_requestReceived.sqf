@@ -195,12 +195,12 @@ switch(playerSide) do {
 life_paycheck = ceil(life_paycheck + (((__GETC__(life_donator) * 5) / 100) * life_paycheck));
 
 
-if ((count life_position) > 0) then {
+/*if ((count life_position) > 0) then {
 	_temp_life_position = life_position findEmptyPosition [1,20,typeof player];
 	if (count _temp_life_position > 0) then {
 		life_position = _temp_life_position;
 	};
-};
+};*/
 
 [] call life_fnc_loadGear;
 
