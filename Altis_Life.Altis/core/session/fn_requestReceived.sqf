@@ -8,7 +8,7 @@
 	sort through the information, validate it and if all valid 
 	set the client up.
 */
-private["_other","_house","_houseCfg","_other","_wipe"];
+private["_other","_house","_houseCfg","_other","_wipe","_temp_life_position"];
 life_session_tries = life_session_tries + 1;
 if(life_session_completed) exitWith {}; //Why did this get executed when the client already initialized? Fucking arma...
 if(life_session_tries > 3) exitWith {cutText[localize "STR_Session_Error","BLACK FADED"]; 0 cutFadeOut 999999999;};
@@ -108,7 +108,7 @@ switch(playerSide) do {
 		life_is_alive = _this select 10;
 		life_tfrreboot = _this select 11;
 		if(life_is_alive) then {
-			player setdamage parseNumber(_this select 12);
+			player setdamage (parseNumber(_this select 12) min 0.95);
 			life_hunger = parseNumber(_this select 13);
 			life_thirst = parseNumber(_this select 14);
 		};
@@ -152,7 +152,7 @@ switch(playerSide) do {
 		life_is_alive = _this select 13;
 		life_tfrreboot = _this select 14;
 		if(life_is_alive) then {
-			player setdamage parseNumber(_this select 15);
+			player setdamage (parseNumber(_this select 15) min 0.95);
 			life_hunger = parseNumber(_this select 16);
 			life_thirst = parseNumber(_this select 17);
 		};
@@ -182,7 +182,7 @@ switch(playerSide) do {
 		life_is_alive = _this select 10;
 		life_tfrreboot = _this select 11;
 		if(life_is_alive) then {
-			player setdamage parseNumber(_this select 12);
+			player setdamage (parseNumber(_this select 12) min 0.95);
 			life_hunger = parseNumber(_this select 13);
 			life_thirst = parseNumber(_this select 14);
 		};
@@ -195,9 +195,12 @@ switch(playerSide) do {
 life_paycheck = ceil(life_paycheck + (((__GETC__(life_donator) * 5) / 100) * life_paycheck));
 
 
-/*if ((count life_position) > 0) then {
-	life_position = life_position findEmptyPosition [1,50,typeof player];
-};*/
+if ((count life_position) > 0) then {
+	_temp_life_position = life_position findEmptyPosition [1,20,typeof player];
+	if (count _temp_life_position > 0) then {
+		life_position = _temp_life_position;
+	};
+};
 
 [] call life_fnc_loadGear;
 
