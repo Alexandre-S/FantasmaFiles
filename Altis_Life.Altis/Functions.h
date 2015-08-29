@@ -276,6 +276,7 @@ class Life_Client_Core
 	{
 		file = "core\functions\network";
 		class broadcast {};
+		class broadcast_admin {};
 		class MP {};
 		class MPexec {};
 		class netSetVar {};
