@@ -37,7 +37,7 @@ if(_amount > (missionNameSpace getVariable _var)) exitWith {hint localize "STR_S
 _trop = false;
 if(life_shop_type in ["heroin","speakeasy"]) then
 {
-	if(_amount > 10) exitWith {_amount = 10;};
+	if(_amount > 10) then {_amount = 10;};
 
 	/*if(({side _x == west} count playableUnits) <= 3) then {
 		_blok = true;
