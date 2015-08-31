@@ -29,7 +29,7 @@ switch (_shop) do
 	// case "diamond": {["Diamond Dealer",["diamond","diamondc"]]};
 	case "diamond": {["Diamond Dealer",["diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
-	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","tbacon","turtlesoup","apple","redgull","fuelF","defusekit","mauer","cone","gpstracker","sandbag","sandbagr"]]};
+	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","tbacon","apple","redgull","fuelF","defusekit","mauer","cone","gpstracker","sandbag","sandbagr"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar","diamondf","ruby","pearl","doubloon","silverpiece"]]};
 	case "med": {["Med Item Shop",["donuts","coffee","water","rabbit","apple","redgull","fuelF","mauer","cone"]]};
