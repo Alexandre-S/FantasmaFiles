@@ -257,8 +257,6 @@ switch (_filter) do
 				
 				["H_Hat_camo",nil,700],
 				
-				["H_caf_ag_wrap",nil,1250],	
-				
 				["H_ShemagOpen_tan",nil,1250],
 				["H_Shemag_olive",nil,1250],
 				["H_Shemag_olive_hs",nil,1250],
@@ -291,7 +289,7 @@ switch (_filter) do
 				// Si leader de faction
 				if(__GETC__(life_reblevel) >= 3) then
 				{
-					_ret pushBack ["rhs_Booniehat_flora","Chapeau du Guide",1800];
+					_ret pushBack ["H_caf_ag_wrap","Masque du Guide",1800];
 				};	
 			};
 			// msc
@@ -436,20 +434,6 @@ switch (_filter) do
 			if(__GETC__(life_factnumber) == 2) then
 			{
 				_ret pushBack ["ice123_apo_bag",nil,2500];
-				_ret pushBack ["rhs_vest_commander",nil,2500];
-				_ret pushBack ["V_HarnessO_gry",nil,8500];
-				_ret pushBack ["rhsusf_spc",nil,12500];
-				_ret pushBack ["Specter_MBSS_PACA_l_TAN",nil,15000];
-				
-				_ret pushBack ["rhs_6sh92_digi_radio",nil,15000];
-				_ret pushBack ["rhs_6b23_6sh92_radio",nil,15000];	
-		
-				// Si Lnt de faction
-				if(__GETC__(life_reblevel) >= 2) then
-				{
-					_ret pushBack ["Specter_MBSS_BLK",nil,15000];
-					_ret pushBack ["Specter_RAV_BLK",nil,25000];
-				};			
 			};			
 			// Faction 3 = Cosmo Data
 			if(__GETC__(life_factnumber) == 3) then
@@ -458,7 +442,7 @@ switch (_filter) do
 			};
 			if(__GETC__(life_factnumber) == 4) then
 			{
-				_ret pushBack ["ice123_apo_bag",nil,5000];
+				_ret pushBack ["ice123_apo_bag",nil,2500];
 			};
 		};
 	};
