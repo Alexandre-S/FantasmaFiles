@@ -1,2 +1,0 @@
-This file is required for a future addition to our website. Please do not remove it.
-It is an encryped xml file which contains some data about the included files.

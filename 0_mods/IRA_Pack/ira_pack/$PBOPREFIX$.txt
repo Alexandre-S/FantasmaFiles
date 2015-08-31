@@ -1,5 +1,0 @@
-///////<HEADER>///////
-prefix=ira_pack
-Pbo Type is: Arma Unknown Addon (no config).
-Sha: 'C221512C400AC9B2C1DBDE5FDB1A18A18349DEE8'
-//////</HEADER>//////

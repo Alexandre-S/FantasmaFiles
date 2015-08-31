@@ -34,6 +34,7 @@ if (_state) then {
     _unit setVariable [QGVAR(isSurrendering), true, true];
 
     [_unit, QGVAR(Surrendered), true] call EFUNC(common,setCaptivityStatus);
+	_unit setVariable ["tf_unable_to_use_radio", true];
 
     if (_unit == ACE_player) then {
         showHUD false;
@@ -62,6 +63,7 @@ if (_state) then {
 } else {
     _unit setVariable [QGVAR(isSurrendering), false, true];
     [_unit, QGVAR(Surrendered), false] call EFUNC(common,setCaptivityStatus);
+	_unit setVariable ["tf_unable_to_use_radio", false];
 
     //remove AnimChanged EH
     private "_animChangedEHID";
