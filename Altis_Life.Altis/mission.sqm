@@ -2110,7 +2110,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_65";
-					description="Découverte -  Civ 65";
+					description="Réservé premium -  Civ 65";
 				};
 			};
 		};
@@ -2132,7 +2132,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
-					description="Découverte -  Civ 70";
+					description="Réservé premium -  Civ 70";
 				};
 			};
 		};
@@ -2154,7 +2154,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_69";
-					description="Découverte -  Civ 69";
+					description="Réservé premium -  Civ 69";
 				};
 			};
 		};
@@ -2176,7 +2176,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_68";
-					description="Découverte -  Civ 68";
+					description="Réservé premium -  Civ 68";
 				};
 			};
 		};
@@ -2198,7 +2198,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_67";
-					description="Découverte -  Civ 67";
+					description="Réservé premium -  Civ 67";
 				};
 			};
 		};
@@ -2220,7 +2220,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="civ_66";
-					description="Découverte -  Civ 66";
+					description="Réservé premium -  Civ 66";
 				};
 			};
 		};
