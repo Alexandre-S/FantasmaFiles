@@ -702,7 +702,7 @@ switch(_shop) do
 					};
 					if(__GETC__(life_factnumber) == 3) then
 					{
-							(_ret select 1) pushBack ["Item_I_UavTerminal",nil,11000];
+							(_ret select 1) pushBack ["I_UavTerminal",nil,11000];
 					};
 				};
 				// Rang 2
