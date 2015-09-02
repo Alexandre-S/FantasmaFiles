@@ -108,6 +108,7 @@ class Mission
 		"A3_Structures_F_Ind_Windmill",
 		"A3_Structures_F_EPC_Dominants_GhostHotel",
 		"ace_common",
+		"task_force_radio_items"
 		"ace_advanced_ballistics",
 		"A3_Structures_F_Dominants_Hospital",
 		"A3_Structures_F_Research",
@@ -133,8 +134,7 @@ class Mission
 		"ace_hearing",
 		"A3_Structures_F_Mark_Training",
 		"ace_weather",
-		"3DEN",
-		"A3_Structures_F_Ind_ReservoirTank"
+		"3DEN"
 	};
 	addOnsAuto[]=
 	{
@@ -254,9 +254,7 @@ class Mission
 		"A3_Structures_F_Ind_Crane",
 		"A3_Structures_F_Civ_Offices",
 		"A3_Structures_F_Households_House_Shop02",
-		"A3_Structures_F_Mark_Training",
-		"A3_Structures_F_Ind_Windmill",
-		"A3_Structures_F_Ind_ReservoirTank",
+		"A3_Structures_F_Mark_Training",	
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -61984,7 +61982,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=4;
+		items=5;
 		class Item0
 		{
 			position[]={4808.9902,23.853289,10944.904};
@@ -62043,11 +62041,30 @@ class Mission
 			b=4000;
 			activationBy="ANY";
 			repeating=1;
+			timeoutMin=20;
+			timeoutMid=20;
+			timeoutMax=20;
 			interruptable=1;
 			age="UNKNOWN";
 			name="DestructAir";
 			expCond="this && (""Air"" countType thislist > 0)";
-			expActiv="(thislist select 0) setHitPointDamage [""hitEngine"",1]; hint ""Le nuage du volcan vient de casser le moteur de votre appareil""";
+			expActiv="(thislist select 0) setHitPointDamage [""hitEngine"",1];";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={4809.0479,23.852716,10945.002};
+			a=4000;
+			b=4000;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="DestructAir_1";
+			expCond="this && (""Air"" countType thislist > 0)";
+			expActiv="hint ""Attention, si vous restez dans cette zone avec votre appareil, le moteur va casser du au nuage du volcan. Quittez la zone !""";
 			class Effects
 			{
 			};
