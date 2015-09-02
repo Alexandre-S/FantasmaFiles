@@ -62047,8 +62047,8 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="DestructAir";
-			expCond="this && (""Air"" countType thislist > 0)";
-			expActiv="(thislist select 0) setHitPointDamage [""hitEngine"",1];";
+			expCond="(vehicle player) != player && {(vehicle player) in thisList} && {(vehicle player) isKindOf ""air""}";
+			expActiv="(vehicle player) setHitPointDamage [""hitEngine"",1];";
 			class Effects
 			{
 			};
@@ -62063,8 +62063,8 @@ class Mission
 			interruptable=1;
 			age="UNKNOWN";
 			name="DestructAir_1";
-			expCond="this && (""Air"" countType thislist > 0)";
-			expActiv="hint ""Attention, si vous restez dans cette zone avec votre appareil, le moteur va casser du au nuage du volcan. Quittez la zone !""";
+			expCond="(vehicle player) != player && {(vehicle player) in thisList} && {(vehicle player) isKindOf ""air""}";
+			expActiv="hint ""Attention, vous entrez dans un le nuage volcanique ! si vous restez dans cette zone avec votre appareil, votre moteur va s'endommager. Quittez la zone !""";
 			class Effects
 			{
 			};
