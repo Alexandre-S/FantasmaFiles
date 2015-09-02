@@ -21,8 +21,8 @@ life_cash = life_cash - 10000;
 [0] call SOCK_fnc_updatePartial;
 
 _message = ctrlText 9001;
-[[1,format ["%1 envoie le message suivant depuis Altis Telekom: \n\n %2",name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;
-[[0,format ["%1 envoie le message suivant depuis Altis Telekom: %2",name player,_message]],"life_fnc_broadcast",true,false] call life_fnc_MP;
+[[1,format ["%1 envoie le message suivant depuis Altis Telekom: \n\n %2",name player,_message]],"life_fnc_broadcast",allside,false] call life_fnc_MP;
+[[0,format ["%1 envoie le message suivant depuis Altis Telekom: %2",name player,_message]],"life_fnc_broadcast",allside,false] call life_fnc_MP;
 life_channel_send = false;
 
 [] spawn

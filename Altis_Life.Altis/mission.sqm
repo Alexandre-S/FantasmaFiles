@@ -108,7 +108,7 @@ class Mission
 		"A3_Structures_F_Ind_Windmill",
 		"A3_Structures_F_EPC_Dominants_GhostHotel",
 		"ace_common",
-		"task_force_radio_items"
+		"task_force_radio_items",
 		"ace_advanced_ballistics",
 		"A3_Structures_F_Dominants_Hospital",
 		"A3_Structures_F_Research",

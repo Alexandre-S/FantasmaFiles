@@ -9,7 +9,7 @@ private["_actualunit"];
 //hint "Adding Markers on the map";
 admin_F4_EH = (findDisplay 46) displayAddEventHandler ["KeyDown","if ((_this select 1) == 0x3E) then {marker_mapesp = false;};"];	
 titleText ["ESP activé pour 2 min, F4 pour desactiver","PLAIN DOWN"]; titleFadeOut 4;
-[[0,format ["GM %1 utilise l'ESP",name player]],"life_fnc_broadcast_admin",true,false] call life_fnc_MP;
+[[0,format ["GM %1 utilise l'ESP",name player]],"life_fnc_broadcast_admin",allside,false] call life_fnc_MP;
 //player setVariable ["hav_cachePDis",true,true];
 
 [] spawn {

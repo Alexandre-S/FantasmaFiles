@@ -6,7 +6,7 @@ abcd={
 	openMap [false, false];
 };
 
-[[0,format ["GM %1 utilise TP",name player]],"life_fnc_broadcast_admin",true,false] call life_fnc_MP;
+[[0,format ["GM %1 utilise TP",name player]],"life_fnc_broadcast_admin",allside,false] call life_fnc_MP;
 
 openMap [true, false];
 onMapSingleClick "[_pos select 0, _pos select 1, _pos select 2] call abcd";

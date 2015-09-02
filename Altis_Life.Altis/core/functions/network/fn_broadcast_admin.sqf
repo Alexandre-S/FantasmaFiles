@@ -1,3 +1,4 @@
+if(isServer OR !hasInterface) exitwith {}; //NO SERVER DO NOT EXECUTE IT!
 #include <macro.h>
 /*
 	File: fn_broadcast.sqf
