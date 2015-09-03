@@ -55574,7 +55574,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_CratesWooden_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;this setdir 539.204;this setposATL [9780.306641,19419.105469,0.611953];this setVectorUp [0,0,1]";
+			init="this allowDamage false; this enableSimulation false;this setdir 539.204;this setposATL [9780.306641,19419.105469,0.375427];this setVectorUp [0,0,1]";
 		};
 		class Item4631
 		{
@@ -55585,7 +55585,7 @@ class Mission
 			side="EMPTY";
 			vehicle="xcam_CratesWooden_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;this setdir 179.204;this setposATL [9780.326172,19417.677734,0.611954];this setVectorUp [0,0,1]";
+			init="this allowDamage false; this enableSimulation false;this setdir 179.204;this setposATL [9780.323242,19417.726563,0.287033];this setVectorUp [0,0,1]";
 		};
 		class Item4632
 		{
