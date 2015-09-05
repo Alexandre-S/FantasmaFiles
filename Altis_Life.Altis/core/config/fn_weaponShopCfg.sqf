@@ -31,8 +31,8 @@ switch(_shop) do
 				["Equipement General",
 					[
 					
-						["R3F_M4S90",nil,0],
-						["R3F_7Rnd_M4S90",nil,0],
+						//["R3F_M4S90",nil,0],
+						//["R3F_7Rnd_M4S90",nil,0],
 						["R3F_MP5SD",nil,0],
 						["R3F_30Rnd_9x19_MP5",nil,0],
 					
