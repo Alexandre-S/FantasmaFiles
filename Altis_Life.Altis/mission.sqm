@@ -61959,7 +61959,7 @@ class Mission
 		class Item303
 		{
 			position[]={16715.959,12.869532,12555.36};
-			name="Dealer_1_3_2";
+			name="Dealer_1_3";
 			text="Dealer";
 			type="mil_dot";
 			colorName="Color1_FD_F";
@@ -61968,7 +61968,7 @@ class Mission
 		class Item304
 		{
 			position[]={13984.911,25.137457,18759.121};
-			name="Dealer_1_2";
+			name="Dealer_1";
 			text="Dealer";
 			type="mil_dot";
 			colorName="Color1_FD_F";
@@ -61977,7 +61977,7 @@ class Mission
 		class Item305
 		{
 			position[]={25727.342,20.174103,21325.113};
-			name="Dealer_1_3_1_1";
+			name="Dealer_1_3_1";
 			text="Dealer";
 			type="mil_dot";
 			colorName="Color1_FD_F";
